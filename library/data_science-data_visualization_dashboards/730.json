@@ -1,0 +1,68 @@
+{
+  "index": 730,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create a uniapp vue3 ts H5 page with simple line charts and bar charts.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the vue3 + ts UniApp project structure correctly set up?",
+      "description": "Check if the project includes essential files: pages.json, manifest.json, App.vue, main.ts and appropriate tsconfig.json. Verify proper TypeScript configuration with strict type checking and vue3 support. Ensure the project structure follows UniApp conventions with appropriate directory organization (pages/, components/, static/, etc.). Score 0 if missing critical files, 5 if basic structure exists but with configuration issues, 10 if perfectly configured with proper type declarations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are line charts properly implemented with appropriate libraries?",
+      "description": "Evaluate if a suitable charting library compatible with UniApp is used (such as echarts, uCharts, or F2). Check if the line chart implementation includes: dynamic data binding, responsive sizing, proper axis configuration, and legend display. Examine if TypeScript interfaces/types are defined for chart data. Deduct 5 points if the chart is not responsive, 3 points if missing proper type definitions, and 5 points if lacking customization options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are bar charts correctly implemented with proper data visualization principles?",
+      "description": "Verify if the bar chart implementation includes appropriate scales, labels, and color encoding. Check for animations, tooltips, and interaction capabilities. Ensure data is properly bound with TypeScript interfaces. Verify if the chart handles edge cases like empty data, overflow values, and resizing. Deduct 3 points if lacking proper color contrast, 5 points if missing interactive features, and 5 points if data binding is improperly typed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the H5 compatibility and responsiveness properly handled?",
+      "description": "Check if the page adapts to different screen sizes using UniApp's responsive design capabilities. Verify if conditional compilation (@/:#ifdef H5) is used appropriately for H5-specific code. Test if touch events are properly handled for mobile browsers. Ensure viewport meta tags are correctly set for mobile devices. Deduct 5 points if the layout breaks on common mobile dimensions, 3 points if touch interactions are missing, and 5 points if H5-specific optimizations are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as data loading failures, malformed data, network errors, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper error boundaries in Vue components. Verify if charts handle edge cases gracefully (empty datasets, extreme values). Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive chart tooltips with rich content 2. Chart theme switching based on system preference 3. Gesture-based chart interactions 4. Data export capabilities 5. Animated transitions between data views). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant chart library imports (e.g., including multiple charting libraries for similar purposes) 2. Unnecessary components or modules unrelated to visualization (e.g., complex multimedia elements) 3. Excessive animations or effects that impact performance on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core chart functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component organization (separating chart components from data fetching logic), TypeScript usage quality (proper interfaces, avoiding any/unknown types), and code reusability. Check if composition API is used appropriately with proper lifecycle hooks. Deduct 5 points if TypeScript is used poorly or has numerous type assertions; deduct 5 points if the code has high duplication between chart implementations; deduct 5 points if the composition API is misused or reactive references are implemented incorrectly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching in charts (consistent palette, appropriate contrast) 2) Proper layout spacing (chart margins, padding between elements) 3) Professional typography (readable labels, appropriate font sizing for mobile). Deduct 3 points for cluttered charts, 5 points for poor color choices that impede data interpretation, and 5 points for illegible labels or overlapping elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Chart rendering and updates within 300ms 2) Smooth animations for transitions between data states 3) Responsive touch interactions without lag. Check if the charts respond immediately to user inputs. Deduct 5 points for noticeable lag when interacting with charts, 3 points for jerky animations, and 5 points for charts that don't provide immediate visual feedback during interaction. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

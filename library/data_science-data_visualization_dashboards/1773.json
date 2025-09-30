@@ -1,0 +1,68 @@
+{
+  "index": 1773,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Write a front-end page for well logging curves using G2.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the well logging curve visualization implementation complete?",
+      "description": "Review whether the code accurately implements well logging curve visualization with G2, including proper data binding, axis configuration, and curve rendering. Evaluate the inclusion of essential well logging curve types (e.g., gamma ray, resistivity, density, neutron). Score 0 if core visualization is absent, 5 if only basic curves are implemented, and 10 if multiple curve types with correct scaling are fully supported.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the depth track and scale system properly implemented?",
+      "description": "Check if the code includes a proper depth track with configurable units (meters/feet), major/minor grid lines, and depth labels. Evaluate whether depth scale adjustments (zoom in/out, scrolling) are implemented with proper handling of data windowing. Deduct 5 points if depth track is missing or static, 3 points if depth scaling is inflexible, and 2 points if grid lines are improperly spaced.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are curve interactions and data analysis tools provided?",
+      "description": "Evaluate the implementation of interactive features such as curve value display on hover/click, curve comparison tools, crosshair functionality, and data point selection. Check whether analysis tools like curve averaging, min/max identification, or interval statistics are available. Score 0 if no interactions exist, 5 for basic hover information, and 10 for comprehensive analysis capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there track management and multi-curve display functionality?",
+      "description": "Review whether the code supports multiple track displays with proper layout management, curve overlay capabilities, and track resizing/reordering. Check if curve visibility toggling is implemented and if the code handles different curve scales within the same track. Deduct 5 points if multiple tracks aren't supported, 3 points if track management is limited, and 2 points if curve overlays aren't properly handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data points, irregular data intervals, extremely large/small values, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time curve data updates 2. Advanced filtering options for noise reduction 3. Formation tops overlay 4. Lithology visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to scale curves) 2. Function modules unrelated to well logging (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/UI components), code organization, and potential for extension. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between G2 configuration and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with appropriate curve color distinction 2) Proper layout spacing with clear track separation 3) Professional labeling system with readable fonts (≥ 12px, proper contrast). Deduct 3 points for each overlapping visual element, 5 points for poor curve color selection making curves difficult to distinguish, and 5 points for unclear or missing axis labels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Smooth scrolling/zooming of log data 2) Responsive curve highlighting/selection 3) Clear visual indicators for interactive elements. Deduct 5 points for laggy scrolling/zooming, 3 points for delayed curve value display on interaction, and 5 points for missing visual feedback on user actions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

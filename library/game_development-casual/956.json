@@ -1,0 +1,68 @@
+{
+  "index": 956,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and can be demonstrated. Create executable code for a WeChat mini-program version of the Snake game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Snake game logic fully implemented?",
+      "description": "Check whether the code accurately implements the snake movement mechanics, collision detection (with walls, self, and food), and score tracking. Score 0 if the core game logic is missing, 5 if only basic movement is implemented, and 10 if it includes variable speed levels, different food types, and proper game state management (start, pause, game over).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WeChat mini-program framework correctly utilized?",
+      "description": "Evaluate whether the code properly uses the WeChat mini-program lifecycle hooks (onLoad, onReady, onShow, onHide), page routing, and follows the MINA framework architecture (app.js, pages structure, etc.). Deduct 5 points if app.json configuration is incomplete, 3 points if global state management is improperly handled, and 5 points if page routing is missing or incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game rendering optimized for the WeChat mini-program environment?",
+      "description": "Check whether the rendering uses canvas for smooth gameplay (required for games) rather than slow WXML DOM manipulation. Assess whether requestAnimationFrame or wx.createAnimation is properly used for animation frames. Deduct 5 points if rendering causes visible performance issues, 3 points if memory leak occurs during long gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are WeChat mini-program specific features integrated?",
+      "description": "Evaluate whether the game leverages WeChat-specific features like local storage for high scores, share functionality, user avatars, or leaderboards using cloud functions. Score 0 if no WeChat-specific features are used, 5 if only basic storage is implemented, and 10 if multiple platform-specific features are properly integrated and enhance the gaming experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as application suspension/resumption, unexpected user inputs, device rotation, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups and special foods 2. Multiplayer mode using WeChat's real-time communication 3. Customizable snake skins). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple game loop implementations) 2. Function modules unrelated to the snake game (e.g., unnecessary mini-program pages) 3. Fancy effects that affect performance (e.g., excessive particle animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), proper commenting, and mini-program best practices. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the project structure doesn't follow WeChat mini-program conventions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile game design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout for different device sizes (responsive design) 3) Professional UI elements (buttons, score displays, game over screens). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for interfaces that don't respect the safe areas on modern devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the touch controls are responsive and intuitive for a mobile snake game: 1) Touch response delay ≤ 100ms 2) Intuitive swipe or button controls for changing direction 3) Proper visual feedback for player actions. Deduct 5 points for input lag exceeding 150ms, 3 points for unnatural snake movement animations, and 5 points for controls that are difficult to use with one hand. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

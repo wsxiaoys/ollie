@@ -1,0 +1,68 @@
+{
+  "index": 161,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Game Rules\n- **Choose a Gesture**: Select rock, paper, or scissors by clicking the buttons.\n- **Machine Learning Opponent**: The computer uses a recurrent neural network to predict and react to the player's moves.\n\n### Game Features\n- **AI Technology**: Neural network implemented using the `brain.js` library.\n- **Real-time Learning**: The AI learns and adapts in real-time based on the player's choices.\n\n### Game Tips\n- **Vary Your Strategy**: Frequently change your move patterns to increase the difficulty for AI prediction.\n- **Observe AI Patterns**: Pay attention to the AI's move tendencies and adjust your strategy accordingly.\n\n### Summary\n\"Recurrent Neural Network - Rock, Paper, Scissors\" is an interactive experience that uses neural network technology to simulate the rock, paper, scissors game. Players compete against a computer based on machine learning algorithms, predicting and making moves. This game demonstrates the application of artificial intelligence in gaming, providing a novel experience of competing against AI.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the RNN implementation for the AI opponent correctly implemented?",
+      "description": "Check whether the code correctly implements a recurrent neural network using brain.js library. Verify that the network architecture is appropriate for sequence prediction (has memory cells, proper input/output dimensions, and appropriate activation functions). Score 0 if there's no neural network implementation, 5 if a basic neural network exists but lacks recurrent connections, and 10 if a proper RNN is implemented with appropriate parameters.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the game implement real-time learning capabilities?",
+      "description": "Evaluate whether the AI can learn from player's moves in real-time. Check for: 1) Move history tracking mechanism 2) Periodic retraining of the network with new data 3) Clear evidence that AI predictions change based on player's patterns. Deduct 5 points if learning only happens at game restart, 3 points if the learning rate is too low to notice adaptation. Full score requires demonstrating that the AI improves predictions after recognizing patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the rock-paper-scissors game logic correctly implemented?",
+      "description": "Review the core game logic implementation, including win determination, score tracking, and game state management. Check that rock beats scissors, scissors beats paper, and paper beats rock. Verify that ties are correctly identified. Deduct 5 points if any rule is implemented incorrectly, 3 points if edge cases (like simultaneous moves) aren't handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the interface provide meaningful feedback on the AI's learning process?",
+      "description": "Assess whether the interface shows the player how the AI is learning and adapting. Check for: 1) Visualization of AI confidence levels 2) Pattern recognition indicators 3) Prediction probability display. Deduct 3 points for each missing feedback element that would help the player understand the AI's decision-making process. Full score requires clear visualization of how the AI is adapting to the player's strategy.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unexpected inputs, connection issues with brain.js library, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visualization of neural network structure 2. Pattern analysis of player's moves 3. Difficulty levels that adjust the AI's learning rate). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple prediction algorithms running simultaneously) 2. Function modules unrelated to the rock-paper-scissors game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down AI response). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/AI logic layers), code organization, and optimization for browser performance. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling for the brain.js library integration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance when making selections. Deduct 5 points for each operation without feedback, 3 points for visual stuttering during animations, and 5 points if the game controls are not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

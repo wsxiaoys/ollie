@@ -1,0 +1,68 @@
+{
+  "index": 1516,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. How do I write a web-based inventory management system suitable for a small online shop, with the database stored locally?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the inventory management core functionality fully implemented?",
+      "description": "Review whether the code accurately implements essential inventory operations through HTML/JavaScript, including product CRUD operations (Create, Read, Update, Delete), stock level tracking, low stock alerts, and batch operations. Score 0 if core inventory logic is missing, 5 if only basic add/remove products is implemented, and 10 if comprehensive inventory management including stock adjustments, product categories, and search/filter functionality is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the local database storage properly implemented?",
+      "description": "Check whether the local storage implementation uses appropriate technologies (IndexedDB/WebSQL/localStorage) with proper data persistence, transaction handling, and data integrity checks. Evaluate if the database schema is well-designed for inventory needs. Deduct 5 points if data corruption risks exist, 3 points if no backup/export mechanism is provided, and 3 points if storage quota management is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the small shop business logic accurately modeled?",
+      "description": "Evaluate whether the system addresses small shop specific needs: supplier management, purchase orders, sales tracking, profit margin calculations, and basic reporting. Check if multi-location inventory support and barcode scanning integration are considered. Deduct 5 points if essential business workflows are missing, 3 points if no sales analytics are provided, and 2 points if supplier relationship management is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is comprehensive data management and reporting constructed?",
+      "description": "Check whether the code includes complete data lifecycle management: inventory reports, sales analytics, stock movement history, and data export/import capabilities. Evaluate if real-time dashboard with key metrics is implemented. Deduct 5 points if historical data tracking is not implemented, 3 points if no visual charts/graphs are provided, and 2 points if data export functionality is missing. Give 10 points if fully implemented with professional reporting features.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid product data, storage quota exceeded, concurrent operations, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include input validation, error boundaries, and graceful degradation, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the small shop experience (e.g., 1. Automated reorder suggestions based on sales patterns 2. QR code generation for products 3. Mobile-responsive design for on-the-go inventory checks 4. Integration with popular e-commerce platforms). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple product search mechanisms coexisting) 2. Function modules unrelated to inventory management (e.g., built-in games or social features) 3. Overly complex features that don't fit small shop needs (e.g., enterprise-level workflow systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core inventory functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data layer/business logic/presentation layers), proper error handling, and code organization. Deduct 5 points if global state pollution is found or no design patterns are used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if no data validation layer exists; deduct 2 points if performance optimization is ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern web application principles: 1) Clean and professional color scheme suitable for business use (no more than 3 primary colors) 2) Proper layout spacing with clear information hierarchy (element spacing follows 8px grid system) 3) Professional typography (body font size ≥ 14px, line height over 1.5 times) 4) Consistent iconography and visual elements. Deduct 3 points for each cluttered section, 5 points for unprofessional color combinations, and 5 points for poor information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the user interactions conform to modern web application standards: 1) Form submissions and data operations provide immediate feedback (≤ 100ms) 2) Loading states and transitions are smooth (300-500ms duration) 3) Clear navigation and workflow guidance 4) Responsive design works across devices. Deduct 5 points for each operation without proper feedback, 3 points for jarring transitions or slow performance, and 5 points for confusing navigation or hidden critical functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

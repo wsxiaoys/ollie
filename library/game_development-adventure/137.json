@@ -1,0 +1,68 @@
+{
+  "index": 137,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes.\nPlease use HTML and JavaScript to implement an Ancient Ruins adventure game where players need to explore ruins and discover secrets. Tip: Implement exploration and decryption mechanisms.\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Ancient Ruins exploration system fully implemented?",
+      "description": "Review whether the code implements a navigable ruins environment with interactive elements (rooms, corridors, landmarks) and clear spatial relationships. Check if the player can move between different areas of the ruins with appropriate transitions and if the environment provides adequate visual/textual feedback about the current location. Score 0 if there's no exploration functionality, 5 if basic movement between fixed locations exists, and 10 if a comprehensive ruins exploration system with multiple paths and areas is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are puzzle/decryption mechanisms properly integrated?",
+      "description": "Evaluate the implementation of puzzles or decryption challenges within the game. Check for variety (at least 3 different types), increasing difficulty progression, clear feedback on success/failure, and hint systems. Puzzles should be contextually appropriate for ancient ruins (hieroglyphics, symbol matching, sequence puzzles, etc.). Deduct 5 points if puzzles are too simplistic or illogical, 3 points if there's no difficulty curve, and 5 points if puzzle completion doesn't meaningfully advance gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a discovery/reward system for exploration?",
+      "description": "Check whether the game includes a system for discovering artifacts, treasures, or secrets that rewards player exploration. Evaluate if found items are tracked in an inventory, if discoveries reveal lore/story elements, and if there are hidden areas requiring specific actions to access. Deduct 3 points if discoveries are purely cosmetic with no gameplay effect, 5 points if there's no tracking system, and 5 points if discoveries aren't integrated into the overall game narrative.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state persistence implemented?",
+      "description": "Assess whether the game implements state management to save player progress, discovered items, and solved puzzles. Check for local storage implementation, save/load functionality, and whether the game state persists across browser sessions. Deduct 3 points if only partial game state is saved, 5 points if there's no auto-save feature, and 8 points if progress is completely lost on page refresh.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid player input, browser compatibility issues, resource loading failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic lighting/shadow effects matching the ruins theme 2. Environmental sound effects triggered by player actions 3. Procedurally generated room layouts for replayability). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement control systems) 2. Function modules unrelated to the ruins exploration theme (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, quality of comments, and reusability of components. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comments are missing or unhelpful. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles while maintaining an ancient ruins aesthetic: 1) Thematic color palette suitable for ruins (earthy tones, stone textures) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Atmospheric typography (readable yet thematic fonts). Deduct 3 points for inconsistent visual elements, 5 points for unreadable text or controls, and 5 points for visuals that break immersion. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animations between ruins areas feel natural (300-500ms) 3) Clear visual indicators for interactive elements. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between scenes, and 5 points for interactive elements that aren't clearly distinguishable from decorative ones. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Adventure",
+  "difficulty": "medium"
+}

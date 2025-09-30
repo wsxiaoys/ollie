@@ -1,0 +1,68 @@
+{
+  "index": 1336,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code in your demonstration. Write a JD.com (京东) e-commerce homepage using Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core e-commerce homepage structure fully implemented?",
+      "description": "Review whether the code includes essential e-commerce components: header with search functionality, navigation menu, product carousel/banner, featured products grid, category navigation, and footer. Score 0 if the basic structure is missing, 5 if partial implementation exists, and 10 if all core components are properly structured and responsive.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue component architecture properly designed?",
+      "description": "Evaluate the Vue component hierarchy and data flow. Components should follow single-responsibility principle, with clear parent-child relationships and proper props/events communication. Deduct 5 points for global state overuse when local state is sufficient, 3 points for prop drilling beyond 3 levels, and 5 points for missing key Vue lifecycle hooks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the JD.com brand identity properly represented?",
+      "description": "Check whether the implementation captures JD.com's distinctive visual elements: correct logo usage, JD's red color scheme (#E1251B), typography style, and overall brand aesthetic. Deduct 3 points for incorrect brand colors, 5 points for missing or improper logo placement, and 3 points if the overall visual doesn't match JD's signature style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the product display and catalog navigation properly implemented?",
+      "description": "Evaluate the product grid/list implementation including image display, pricing, ratings, promotional badges, and category filtering/navigation. Check for lazy-loading of images and infinite scrolling or pagination. Deduct 5 points if product cards lack essential information, 3 points for inefficient rendering of large lists, and 5 points for poor category navigation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors during product loading, image loading failures, search with no results, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Personalized product recommendations 2. Interactive product previews 3. Voice search capability). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple carousel components with similar functionality) 2. Function modules unrelated to e-commerce (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, services, and store), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or Vue best practices are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not properly configured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

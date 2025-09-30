@@ -1,0 +1,68 @@
+{
+  "index": 1325,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Pay attention to ensure that the generated code is executable for display.\n\nThe chess board is typically n×n in size. In this problem, we specify the board size as 11×11.\n• Both sides take turns placing pieces continuously. Once placed on the board, chess pieces cannot be moved or removed.\n• The red side (the letter side in the coordinate system mentioned later) goes first.\n• Since Hex has a significant first-mover advantage, we introduce the pie rule: after the first piece is placed, the opponent can choose to swap this piece for their own and place it at a position symmetrical to the original position along the diagonal of the board. First and second players are randomly determined.\n• The side that connects the opposite sides of the board with pieces of the same color wins. Please regenerate the .js code according to these rules.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Hex game board system fully implemented?",
+      "description": "Review whether the code accurately implements the 11×11 hexagonal board coordinate system through HTML/JavaScript, including proper hexagonal cell rendering, coordinate mapping, and visual representation of the hex grid. Check if the hexagonal geometry is mathematically correct with proper spacing and alignment. Score 0 if the hexagonal board is not implemented, 5 if only basic grid is shown without proper hex geometry, and 10 if the complete hexagonal board with accurate coordinates is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the Hex game rules correctly implemented?",
+      "description": "Evaluate whether the core Hex rules are properly coded: alternating turns (red goes first), permanent piece placement (no movement/removal), and win condition detection (connecting opposite sides). Verify the algorithm can detect valid connections across the board boundaries. Score 0 if basic rules are missing, 5 if only placement and turns work, and 10 if all rules including win detection are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the pie rule mechanism correctly designed and implemented?",
+      "description": "Check whether the pie rule is properly implemented: after the first move, the second player can swap the piece and place it at the diagonally symmetric position. Verify the diagonal symmetry calculation is mathematically accurate for the 11×11 hex board and that the swap option is presented at the correct timing. Score 0 if pie rule is missing, 5 if only basic swap is implemented without proper symmetry, and 10 if complete pie rule with accurate diagonal symmetry is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the win condition detection algorithm efficient and accurate?",
+      "description": "Evaluate the path-finding algorithm used to detect winning connections. Check if it uses efficient algorithms (like BFS/DFS or Union-Find) to detect connections between opposite sides. Verify it correctly identifies all possible winning paths and handles edge cases. Score 0 if win detection is missing or incorrect, 5 if basic detection works but is inefficient, and 10 if optimal algorithm with complete accuracy is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as clicking occupied cells, invalid coordinates, rapid clicking, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the Hex gaming experience (e.g., 1. Move history with undo functionality 2. AI opponent with difficulty levels 3. Game analysis showing potential winning paths 4. Save/load game functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple win detection algorithms coexisting) 2. Function modules unrelated to Hex game (e.g., built-in calculators) 3. Fancy effects that affect performance (e.g., excessive animations on every click). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core Hex functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/interaction layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code structure is chaotic without proper separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Hex board design follows modern design principles: 1) Harmonious color scheme for red/blue pieces and board 2) Proper hexagonal cell sizing and spacing 3) Clear visual distinction between empty and occupied cells 4) Professional typography for game status. Deduct 3 points for each crowded visual element, 5 points for poor color contrast making pieces hard to distinguish, and 5 points for unclear board layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions conform to user expectations: 1) Immediate visual feedback on cell hover 2) Smooth piece placement animation ≤ 300ms 3) Clear indication of current player's turn 4) Responsive highlighting of potential winning connections. Deduct 5 points for each operation without feedback, 3 points for laggy animations, and 5 points for unclear game state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 46,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and ready for demonstration.\n\nPlease help me implement the following requirement using code. Create a vector image of a SIM card using SVG code, featuring a distinctive yellow and black design presented on a white background.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SIM card structure properly implemented?",
+      "description": "Verify if the SVG code accurately represents the rectangular shape and the characteristic chip area of a SIM card. Check if dimensions are appropriate (typically 25x15mm proportion) and if the SVG viewBox is properly set. Score 5 if only basic rectangle is present, 8 if chip area is included but poorly positioned, and 10 if all structural elements are correctly implemented with proper proportions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the design feature the required yellow and black color scheme?",
+      "description": "Evaluate if the color palette strictly adheres to the yellow and black requirement with proper contrast on the white background. Check if colors are applied appropriately to different elements (e.g., card body, chip, connector areas). Deduct 5 points if colors are inconsistent, 3 points if yellow/black balance is poor, and 7 points if additional colors are unnecessarily introduced. Consider color hex values and opacity settings.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the chip contact area accurately represented?",
+      "description": "Assess if the gold contact area (chip) follows ISO/IEC 7816 standards with proper layout of connection points. The 8 contact points should be precisely positioned. Score 5 if contacts are present but inaccurately positioned, 8 if proportionally correct but missing some details, and 10 if fully compliant with industry standards including proper spacing between contacts.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the beveled corners and card notch properly implemented?",
+      "description": "Check if the SIM card includes the characteristic angled corner (usually top right) and any necessary notch. The beveled corner should be at a 45° angle and sized approximately 3mm. Score 0 if completely missing, 5 if only roughly implemented, and 10 if precisely drawn with proper path instructions or rx/ry attributes for rounded corners.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG code is properly structured with appropriate namespaces, valid attributes, and fallback options. Check if the code is compatible across different browsers and rendering engines. Code with strong robustness should have proper DOCTYPE declarations, viewBox settings, and avoid presentation attributes that might cause rendering issues. Give 10 points for highly robust code, 5 points for average robustness, and 0 points if critical issues are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visual appeal (e.g., 1. Subtle gradient effects 2. Embedded manufacturer logo or text 3. Interactive hover effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary nested groups or containers 2. Duplicate definitions that could be simplified with reusable components 3. Over-complex paths that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visual elements are obscured by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (such as proper commenting, semantic grouping, and meaningful element IDs), optimization for file size (avoiding unnecessary decimal places in coordinates), and maintainability. Deduct 5 points if SVG elements lack proper structure or naming; deduct 5 points if the code is unnecessarily verbose or inefficient; deduct 5 points if there is no consideration for scalability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the graphic vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Proportional accuracy to real SIM cards 2) Clean, crisp edges without aliasing 3) Proper use of stroke widths and fill patterns. Deduct 3 points for each visual inconsistency, 5 points for disproportionate elements, and 5 points for poor edge rendering or pixelation issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the SVG optimized for various display contexts?",
+      "description": "Judge whether the SVG is prepared for different usage contexts: 1) Responsive scaling with proper viewBox and preserveAspectRatio 2) Appropriate metadata for accessibility 3) Consideration for print and digital display differences. Deduct 5 points for fixed dimensions without relative scaling, 3 points for missing title/description elements, and 5 points for elements that would render poorly at different sizes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

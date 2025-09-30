@@ -1,0 +1,68 @@
+{
+  "index": 298,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Create a commercial property rental management system, including contract functionality, with each menu item represented as a separate webpage that links together.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core property management functionality fully implemented?",
+      "description": "Review whether the code accurately implements CRUD operations for properties, tenants, and landlords. Check if property listing details include essential information (location, size, price, availability). Score 0 if the core property management is not implemented, 5 if only basic listing is available, and 10 if comprehensive property management with search filters and sorting capabilities is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the contract management system complete?",
+      "description": "Evaluate whether the contract module includes creation, signing, renewal, termination, and amendment workflows. Check for essential contract fields (parties involved, property details, rent amount, payment schedule, term length, special clauses). Deduct 3 points if digital signature capabilities are missing, 3 points if contract versioning is not implemented, and 2 points if contract templates are not available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the financial transaction module properly integrated?",
+      "description": "Check if the system handles rent collection, payment tracking, invoicing, and financial reporting. Verify integration with contract terms for automatic payment calculations and rental increments. Deduct 3 points if reporting functionality is missing, 3 points if payment history is not tracked, and 2 points if there's no notification system for due/overdue payments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the navigation and menu system properly implemented across pages?",
+      "description": "Evaluate the implementation of separate webpages for each menu item with proper navigation links between them. Check that URLs are structured logically, breadcrumbs are provided, and the current page is highlighted in the navigation. Deduct 3 points if direct navigation between related pages is missing, 3 points if the navigation hierarchy is unclear, and 2 points if the menu system isn't responsive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, database connection issues, authentication failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include form validation, handle edge cases, and provide meaningful error messages, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive property maps with virtual tours 2. AI-powered rent optimization suggestions 3. Integrated maintenance request system with priority handling). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user profile management systems) 2. Function modules unrelated to property management (e.g., a built-in game for tenants) 3. Fancy effects that affect performance (e.g., excessive animations on dashboard). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/business logic/presentation layers), code reusability, and adherence to design patterns. Deduct 5 points if global state pollution is found or appropriate design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if there's no error logging mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for a commercial property system (professional blues/grays with accent colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for property listing interactions. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling through property listings, and 5 points for hard-to-find key function buttons like contract creation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

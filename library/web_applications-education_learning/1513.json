@@ -1,0 +1,68 @@
+{
+  "index": 1513,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Develop a simple news webpage using Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue application structure properly set up?",
+      "description": "Evaluate whether the code includes proper Vue application initialization, component structure, and project organization. Look for a main Vue instance, component registration, and appropriate separation of concerns. Score 0 if Vue is not properly initialized, 5 if basic setup exists but lacks organization, and 10 if the project follows Vue best practices with proper component hierarchy and module structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are news data fetching and state management implemented effectively?",
+      "description": "Check if the application includes proper data fetching (using Axios, Fetch API, etc.) from news APIs or mock data. Verify implementation of state management (Vuex store, reactive data, or composition API). Deduct 5 points if there's no error handling for failed requests, 3 points if caching mechanisms are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the news listing functionality complete?",
+      "description": "Assess whether the code implements core news listing features including article cards, pagination/infinite scroll, and category filtering. Verify that article previews show essential information (title, date, source, thumbnail). Score 0 if basic listing is missing, 5 if only simple listing exists without filtering/pagination, and 10 if the implementation is comprehensive with multiple viewing options.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the application provide news detail view and user interaction?",
+      "description": "Evaluate if the application includes article detail views with Vue Router implementation, and user interaction features such as bookmarking, sharing, or commenting functionality. Check for proper route navigation and parameter passing. Deduct 5 points if routing is incorrectly implemented, 3 points if back navigation is broken. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, malformed data, slow network connections, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark mode toggle 2. Reading time estimation 3. Text-to-speech for articles 4. Personalized news recommendations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management solutions coexisting) 2. Function modules unrelated to news (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component design (such as separating presentational/container components), proper Vue lifecycle usage, computed properties vs methods usage, and build process configuration. Deduct 5 points if prop validation is missing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if event handling is improperly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

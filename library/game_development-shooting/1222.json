@@ -1,0 +1,68 @@
+{
+  "index": 1222,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. Write me the code for a WeChat mini-game called \"Aircraft Battle.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core aircraft battle gameplay fully implemented?",
+      "description": "Review whether the code implements essential game mechanics: player aircraft control, enemy aircraft generation and movement patterns, collision detection, bullet firing mechanisms, and scoring system. Score 0 if the core gameplay is missing, 5 if only basic features are implemented, and 10 if the game includes advanced features like different enemy types, power-ups, and level progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WeChat mini-game API integration properly implemented?",
+      "description": "Check whether the code correctly uses WeChat Mini Game APIs (wx.* namespace) for essential functions: canvas rendering, touch controls, lifecycle management, and local storage for high scores. Deduct 5 points if the code doesn't use WeChat-specific APIs, 3 points if some APIs are incorrectly implemented, and 2 points if optional APIs like sharing or cloud storage aren't utilized. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is game state management properly designed?",
+      "description": "Evaluate whether the code includes proper game state management: game start/pause/resume/over states, scene transitions, and persistent data handling. Check for proper initialization, destruction, and garbage collection to prevent memory leaks. Deduct 5 points if game states are hard-coded without a state machine, 3 points if state transitions have bugs. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the performance optimization suitable for mobile devices?",
+      "description": "Assess whether the code implements optimization techniques suitable for mobile devices: sprite batching, object pooling for bullets/enemies, efficient collision detection algorithms, frame rate management, and adapting to different screen sizes. Deduct 5 points if frame rate drops below 30fps with multiple enemies, 3 points if memory usage grows continuously during gameplay. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as touch events outside game area, rapid multi-touching, app suspension/resume, low memory warnings, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment 2. Unique weapon systems or enemy patterns 3. Boss battles with special mechanics 4. Social features like friend challenges). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to aircraft battle gameplay 3. Fancy effects that affect performance (e.g., excessive particle effects on low-end devices). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game entities, rendering, input handling), naming conventions, code comments, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear structure separating core game logic from rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the visual design follows game UI principles: 1) Clear visual hierarchy for gameplay elements vs. UI elements 2) Readable text and UI elements at mobile screen distances 3) Consistent visual style and theme 4) Non-intrusive HUD elements that don't obstruct gameplay. Deduct 3 points for each cluttered screen area, 5 points for unreadable or poorly contrasted UI elements, and 5 points for inconsistent visual style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game controls and feedback conform to mobile gaming standards: 1) Responsive aircraft movement (≤50ms input lag) 2) Clear visual/audio feedback for hits, misses, and power-ups 3) Consistent frame rate during intense action. Deduct 5 points for noticeable input lag, 3 points for missing feedback on important game events, and 5 points for stuttering animations during normal gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1764,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to generate executable code for display whenever possible. Create a text-based game for me, specifically an RPG-style leveling and monster-fighting text game, implemented in HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core RPG combat system fully implemented?",
+      "description": "Review whether the code accurately implements essential RPG combat mechanics through HTML/JavaScript, including player attributes (HP, MP, strength, etc.), enemy encounters, turn-based combat, and damage calculation. Score 0 if core combat mechanics are missing, 5 if basic combat is implemented but lacks depth, and 10 if the system includes critical hits, special attacks, and varied enemy behaviors.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the character progression system properly designed?",
+      "description": "Evaluate the implementation of leveling mechanics, experience point accumulation, skill progression, and statistical growth. Check if the code includes level-up events with meaningful attribute increases, unlockable abilities, and balanced progression curves. Deduct 5 points if the leveling system is too simplistic (just number increases), and 3 points if there's no meaningful progression impact on gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game economy and inventory system functional?",
+      "description": "Assess whether the code implements a proper inventory system with items, equipment management, currency, and potentially crafting mechanics. Check for item differentiation (weapons, armor, consumables), equipment effects on character stats, and economic balance. Deduct 5 points if inventory management is missing, and 3 points if item effects aren't properly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a proper game state management and storyline progression?",
+      "description": "Review the implementation of game state persistence, save/load functionality, quest/mission tracking, and narrative elements. Check if the code manages different game states (exploration, combat, inventory) and transitions between them smoothly. Deduct 5 points if there's no game state persistence, and 3 points if the narrative elements are completely missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, unexpected user actions, state inconsistencies, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic storytelling that adapts to player choices 2. Procedurally generated monsters or dungeons 3. Special events or mini-games within the main game). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to heal the character) 2. Function modules unrelated to the RPG experience (e.g., a built-in calculator) 3. Fancy effects that affect performance or readability. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game mechanics and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the text-based UI follows good design principles: 1) Clear information hierarchy (important stats easily visible) 2) Proper layout and spacing (organized sections with adequate whitespace) 3) Consistent styling (uniform text formatting, colors, and visual elements). Deduct 3 points for cluttered information display, 5 points for inconsistent styling, and 5 points for poor readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction intuitive and responsive?",
+      "description": "Judge whether the game controls and feedback conform to user expectations: 1) Clear action buttons or commands 2) Immediate feedback for player actions 3) Helpful instructions or UI guidance. Deduct 5 points for confusing controls, 3 points for delayed or missing feedback, and 5 points for lack of instructions on how to play. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "easy"
+}

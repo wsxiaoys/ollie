@@ -1,0 +1,68 @@
+{
+  "index": 1401,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable. Create a one-click solution for checking system server CPU usage, memory usage, application process status, and the number of data packets in a specified folder. Display results via web interface.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the system monitoring functionality comprehensively implemented?",
+      "description": "Evaluate whether the code properly implements monitoring for CPU usage (both overall and per core), memory usage (including physical and virtual memory), and system load. Score 0 if monitoring functionality is missing, 5 if only basic metrics are covered, and 10 if comprehensive monitoring with historical trends is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the process status monitoring fully functional?",
+      "description": "Check whether the code can properly list running processes with essential information (PID, name, CPU/memory usage, runtime), allow filtering processes by name/resource usage, and detect abnormal states. Deduct 3 points if process listing is incomplete, 4 points if sorting/filtering is missing, and 5 points if abnormal state detection isn't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data packet counting functionality correctly implemented?",
+      "description": "Verify that the code can accurately count files in a specified folder, categorize them by type, detect file size anomalies, and provide statistical summaries. Deduct 5 points if only basic counting is implemented without categorization, 3 points if file integrity checking is missing, and 5 points if there's no way to handle large directories efficiently. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the web interface properly implemented with responsive design?",
+      "description": "Assess whether the web interface displays all monitoring data clearly, refreshes automatically, adapts to different screen sizes, and provides an intuitive navigation system. Deduct 5 points if the interface is not responsive, 5 points if data visualization is poor/missing, and 3 points if automatic refresh functionality isn't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission issues, network errors, missing directories, system call failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Alert thresholds with notifications 2. Interactive charts with drill-down capabilities 3. Historical data with trend analysis 4. Cross-server comparison). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar monitoring functions 2. Function modules unrelated to system monitoring 3. Fancy effects that affect monitoring performance or accuracy. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating backend/frontend, data collection/presentation layers), error handling, logging mechanisms, and configuration options. Deduct 3 points if global state pollution is found; deduct 3 points if the code duplication rate is too high; deduct 4 points if there's no configuration flexibility for monitoring parameters. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional monitoring dashboard standards?",
+      "description": "Evaluate whether the dashboard follows monitoring UI best practices: 1) Clear information hierarchy with critical alerts highlighted 2) Consistent use of color coding for status indicators 3) Proper data visualization (charts, gauges, tables) for different metrics. Deduct 3 points for cluttered layouts, 3 points for poor color contrast/accessibility issues, and 4 points for inappropriate visualization choices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction practical for a monitoring system?",
+      "description": "Judge whether the interface provides: 1) Real-time data updates without page reloads 2) Intuitive controls for time range selection and data filtering 3) Quick access to critical information with minimal clicks 4) Efficient data refresh that doesn't impact browser performance. Deduct 3 points for refresh implementations that cause flickering, 3 points for difficult navigation between monitoring sections, and 4 points for slow loading times with large datasets. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

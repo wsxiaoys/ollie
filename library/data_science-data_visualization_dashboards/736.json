@@ -1,0 +1,68 @@
+{
+  "index": 736,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the generated code is executable for demonstration purposes. Develop a national map of China using Vue and AntV.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the code implement a complete China map visualization?",
+      "description": "Check whether the code correctly renders a detailed map of China with proper geographical boundaries using AntV (G2, G2Plot, or L7). Verify that all provinces, autonomous regions, municipalities, and special administrative regions are accurately displayed. Score 0 if only a basic outline is shown, 5 if most regions are present but with inaccuracies, 10 if the map is complete and geographically accurate with proper GeoJSON data.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue integration properly implemented?",
+      "description": "Evaluate whether Vue's reactivity system is properly utilized for data binding and component architecture. Check for proper Vue lifecycle hooks, computed properties, and watchers when handling map interactions. Deduct 5 points if Vue components are not modular, 3 points if Vue's reactivity is not leveraged, and 2 points if Vue best practices (like single-file components) are not followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are map interactions and user controls implemented?",
+      "description": "Verify the implementation of essential map interactions: zooming, panning, region selection, hover effects, and tooltip information. Check whether the map responds to user interactions with appropriate visual feedback. Award 10 points for comprehensive interactions with smooth transitions, 5 points for basic interactions, and 0 points if interactions are missing or non-functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data visualization and thematic mapping functionality implemented?",
+      "description": "Assess whether the code supports thematic mapping capabilities with dynamic data binding (e.g., choropleth maps showing population density, economic indicators, etc.). Check if the visualization includes a legend and supports data updates. Award 10 points for complete implementation with multiple visualization options, 5 points for basic implementation, and 0 points if absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing GeoJSON data, API errors, malformed data, slow network connections, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation showing historical changes in regions 2. 3D terrain visualization 3. Interactive drill-down from national to province to city level). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant map rendering logic (e.g., multiple renderers for the same area) 2. Function modules unrelated to the China map visualization (e.g., irrelevant charts) 3. Fancy effects that affect performance (e.g., excessive animations or unnecessary 3D effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/interaction layers), component reusability, and build process configuration. Deduct 5 points if global state pollution is found or Vue design patterns are not used correctly; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not properly configured for a production environment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors for the map, appropriate contrast for data visualization) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout of controls and legends. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the map interactions conform to human perception characteristics: 1) Click/hover feedback delay ≤ 100ms 2) Zoom/pan animations controlled between 300-500ms 3) Clear visual feedback for selected regions. Deduct 5 points for each operation without feedback, 3 points for visual lag during map navigation, and 5 points for hard-to-find key function controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

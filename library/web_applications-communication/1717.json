@@ -1,0 +1,68 @@
+{
+  "index": 1717,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to provide executable code demonstrations when possible. \n\n1. Code for a mini program that allows uploading photos and videos\n2. Code that enables categorizing and annotating photos and videos uploaded to the mini program, with capability to share them via WeChat while hiding certain key text information \n3. Specify the WeChat mini program",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat mini program photo/video upload functionality fully implemented?",
+      "description": "Review whether the code properly implements the WeChat API for media upload, including proper handling of file formats (JPEG, PNG, MP4, etc.), size restrictions (maximum 10MB per file as per WeChat limits), and compression options. Check if the implementation handles both image and video preview before upload. Score 0 if core upload functionality is missing, 5 if only basic uploads work without proper feedback, and 10 if the implementation handles all file types with progress indicators and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the media categorization and annotation system comprehensively designed?",
+      "description": "Evaluate whether the code implements a robust categorization system (folder/album structure, tags, or both) and annotation capabilities (text overlays, descriptions, location data). Check if the system allows for searching/filtering based on categories and annotations. Deduct 5 points if the categorization is limited to only basic folders, 3 points if annotation capabilities are minimal. The full score is 10 points if a comprehensive system with multiple organization methods and rich annotation options is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the WeChat sharing functionality properly implemented with information hiding?",
+      "description": "Check whether the code correctly implements the WeChat sharing mechanism using official APIs and properly handles the information hiding requirements. Verify if sensitive text can be selectively hidden when sharing while maintaining the visual integrity of the media. Deduct 5 points if sharing works but without information hiding capabilities, 3 points if the hiding mechanism is basic (e.g., simple blurring without options). Full score requires flexible control over what information is hidden and how it's masked when shared.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the mini program properly integrated with the WeChat ecosystem?",
+      "description": "Review whether the code properly utilizes WeChat's specific APIs and conventions, including login flow, user profile integration, permissions management, and adherence to WeChat's design guidelines. Check if the program leverages WeChat-specific capabilities like cloud storage and OpenID. Deduct 5 points if basic WeChat integration is missing, 3 points if only partial integration exists. Full score requires seamless integration with multiple WeChat platform features.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, permission denials, invalid file types, large file uploads, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered auto-tagging of photos 2. Custom filters or effects for photos/videos 3. Batch processing capabilities 4. Timeline visualization of media). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple media pickers) 2. Function modules unrelated to media management (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations on every screen). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/API calls), component reusability, and configuration management. Deduct 5 points if global state pollution is found or if proper WeChat mini program patterns are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error logging or monitoring integration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat's design guidelines and modern principles: 1) Harmonious color matching (following WeChat's palette) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a design that clashes with WeChat's aesthetic, and 5 points for chaotic media gallery layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Touch feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual cues during upload/processing. Deduct 5 points for each operation without feedback, 3 points for laggy transitions when browsing media, and 5 points for confusing navigation between categories. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

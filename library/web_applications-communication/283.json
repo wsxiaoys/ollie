@@ -1,0 +1,68 @@
+{
+  "index": 283,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code demonstrations when possible. Help me write a beautiful couple's chat dialogue box based on Vue3, uni-app and Socket.io.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 component structure properly implemented?",
+      "description": "Evaluate the component architecture for the chat dialogue box. Check if it uses Vue3 composition API effectively with proper reactive data, computed properties, and lifecycle hooks. Verify separation of concerns (UI components, data handling, socket connection management). Deduct 5 points if still using Vue2 patterns, 3 points if composition API is poorly implemented, and 3 points if reactive references are misused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the uni-app cross-platform adaptation implemented correctly?",
+      "description": "Review whether the code properly utilizes uni-app APIs for multi-platform compatibility. Check for conditional platform-specific code, proper usage of uni-app UI components, and responsive layouts that work across mobile/desktop. Verify if platform-specific edge cases are handled (iOS safe areas, Android back button). Deduct 5 points if only works on one platform, 3 points if missing key platform adaptations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Socket.io integration complete and robust?",
+      "description": "Assess the Socket.io implementation for real-time messaging. Verify presence of connection management (connect, disconnect, reconnect), proper event handling, typing indicators, read receipts, and error handling. Check for disconnection resilience with message queue/local storage. Deduct 5 points if missing reconnection logic, 3 points if lacking offline message handling, and 3 points if connection state isn't visually indicated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the couple-specific chat functionality well-designed?",
+      "description": "Evaluate special features tailored for couples: private photo sharing, calendar/date planning, mood tracking, anniversary reminders, etc. Check for couple-specific UI elements like paired avatars, relationship milestone tracking, or customized themes. Deduct 5 points if implementation is generic without couple-specific features, 3 points if couple features exist but are poorly integrated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, message send failures, invalid inputs, image upload errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Voice/video call integration 2. Custom animated emojis/stickers for couples 3. Message translation for multilingual couples 4. Interactive games within the chat). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple message sending methods) 2. Function modules unrelated to couple communication (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core chat functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/network layers), component reusability, code documentation, and adherence to Vue3/uni-app best practices. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error logging or debugging capabilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the chat UI follows modern design principles: 1) Romantic yet clean color scheme suitable for couples 2) Clear message distinction between partners with personalized bubbles 3) Proper spacing and typography for readability (body font size ≥ 14px, line height 1.5x). Deduct 3 points for cluttered layouts, 5 points for unappealing color combinations, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the chat interactions conform to user expectations: 1) Message sending/receiving animations feel natural 2) Smooth scrolling and message history loading 3) Responsive UI feedback for all actions (typing, message sent/read). Deduct 5 points for laggy scrolling, 3 points for jarring transitions, and 5 points if the chat doesn't automatically scroll to new messages. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

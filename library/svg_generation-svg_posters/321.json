@@ -1,0 +1,68 @@
+{
+  "index": 321,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable whenever possible. I am a frontend developer, and I need to develop a customizable recruitment poster application where users can design their own poster templates and export them as vector files. How can this be implemented using Vue and SVG?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core SVG poster generation system fully implemented?",
+      "description": "Check whether the code effectively implements an SVG-based poster generation system that allows for dynamic customization. Score 0 if there's no SVG generation code, 5 if basic SVG elements are rendered without proper customization, and 10 if the system provides a comprehensive API for creating, modifying, and styling SVG elements in the poster context.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the Vue implementation provide a robust component architecture for the editor?",
+      "description": "Evaluate the Vue component architecture. Check if components are properly segregated (e.g., canvas component, toolbar component, property panel component), if they use proper prop validation, emit proper events, and if the state management is appropriate for this use case (Vuex/Pinia for complex state, component state for local concerns). Deduct 3 points for monolithic components, 3 points for prop-drilling beyond 2 levels, and 4 points if reactive data isn't properly utilized.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the template management system properly implemented?",
+      "description": "Verify if users can save, load, and manage poster templates. Check if templates are serialized in a proper format (JSON), if the system handles template versioning, and if predefined templates are available as starting points. Deduct 5 points if template saving is not implemented, 3 points if there's no way to categorize templates, and 2 points if template previews aren't generated.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the vector file export functionality correctly implemented?",
+      "description": "Examine if the system can export designs in vector formats (SVG, AI, EPS, or PDF). Check if the export preserves all visual elements, layers, and effects. Verify if text remains editable in the exported files. Deduct 5 points if only raster export is available, 5 points if vector export loses fidelity, and 5 points if user isn't given export options (size, format, quality).",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid SVG data, failed exports, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaborative editing 2. AI-assisted design recommendations 3. Advanced SVG filters and effects 4. Integration with design asset libraries). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit the same property) 2. Function modules unrelated to poster design (e.g., a built-in image editor when simple crop/resize would suffice) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor logic/view/data layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Posters",
+  "difficulty": "medium"
+}

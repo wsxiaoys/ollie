@@ -1,0 +1,68 @@
+{
+  "index": 221,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. Below is a complete UI design solution for a real-time captioning mobile app, including core functional pages and visual style specifications:\n\n1. Design Style\nColor scheme:\n- Primary color: Deep blue (#2563EB) for tech feel + Light gray (#F5F5F5) for background\n- Secondary colors: Green (#10B981) for real-time caption highlights + Red (#EF4444) for recording warnings\nTypography: Google Sans (tech-oriented sans-serif font)\nIcons: Material Design linear icon library\nAnimation effects: Caption line-by-line scrolling, microphone sound wave animation\n\n2. Core Page Designs\n① Splash Screen\nClean LOGO + Slogan (\"Real-time transcription, communication without barriers\")\nDeep blue background + White dynamic waveform graphic\n\n② Main Page (Real-time Captions)\nMain page illustration\n\nHeader bar: Microphone status icon (dynamic sound wave), Language switch button (Chinese/English)\nCentral area:\n- Real-time caption display box (black background with white text, enlarged font)\n- Caption pause/save button (floating in bottom right corner)\nBottom control bar:\n- Large circular microphone button (red/green status toggle)\n- Settings/History record quick access\n\n③ Settings Page\nLanguage settings:\n- Source language/target language selection (dialect options supported)\n- Translation toggle (Chinese-English bidirectional)\nDisplay settings:\n- Caption font size/color\n- Background opacity adjustment\nAdvanced features:\n- Offline mode toggle\n- Sensitive word filtering\n\n④ History Records Page\nTimeline list (grouped by date)\nEach record displays:\n- Timestamp + first line text preview\n- Category tags (meeting/classroom/video, etc.)\nSearch bar + Batch export button (supports TXT/PDF)\n\n⑤ Recording Details Page\nAudio waveform visualization\nFull text display (editable for corrections)\nBottom action bar:\n- Share/Export/Delete\n- Key segment marking feature\n\n⑥ User Onboarding (First Launch)\n3-screen sliding guide:\n- Permission explanations (microphone/storage)\n- Core feature demonstrations (GIF animations)\n- Personalized setting recommendations\n\n3. Interaction Details\nVoice feedback: Vibration notifications when recording starts/ends\nReal-time optimization:\n- Captions scroll line by line (keeping the last 3 lines)\n- Key terminology highlighting (requires custom glossary)\nAccessibility design:\n- High contrast mode\n- Font scaling up to 200%\n\nPlease output the corresponding complete HTML code for me",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are all core UI pages completely implemented according to the design specifications?",
+      "description": "Review whether the code accurately implements all 6 specified pages (Splash Screen, Main Page, Settings, History Records, Recording Details, User Onboarding) with HTML structure matching the design requirements. Check if each page contains the specified elements: splash screen with logo and slogan, main page with header bar/caption display/control bar, settings with language/display/advanced options, history with timeline list, recording details with waveform visualization, and onboarding with 3-screen guide. Score 0 if missing core pages, 5 if only basic structure is implemented, and 10 if all pages are fully detailed according to specifications.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the visual design strictly follow the specified color scheme and typography standards?",
+      "description": "Evaluate whether the implementation uses the exact color palette: Primary deep blue (#2563EB), light gray background (#F5F5F5), green highlights (#10B981), red warnings (#EF4444). Check if Google Sans font family is properly implemented and Material Design icons are correctly integrated. Verify background opacity settings, high contrast mode availability, and font scaling up to 200% as specified. Deduct 3 points for each incorrect color usage, 5 points if font family is not Google Sans, and 3 points if Material Design icons are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the real-time captioning interface and interaction mechanisms properly implemented?",
+      "description": "Check whether the main captioning interface includes: black background caption display box with white enlarged text, line-by-line scrolling animation keeping last 3 lines visible, dynamic microphone sound wave animation, floating pause/save button, large circular microphone button with red/green status toggle, and key terminology highlighting functionality. Verify if the interface supports the specified real-time optimization features and maintains proper visual hierarchy. Score 0 if core captioning interface is missing, 5 if basic display is implemented without animations, and 10 if all real-time features are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the specialized features and accessibility options comprehensively developed?",
+      "description": "Evaluate implementation of advanced features: language switching (Chinese/English with dialect support), translation toggle, offline mode, sensitive word filtering, audio waveform visualization, editable text corrections, category tagging system, search functionality, batch export (TXT/PDF), key segment marking, vibration feedback, and permission handling explanations. Check if accessibility features like high contrast mode and 200% font scaling are working. Deduct 3 points for each missing major feature, 5 points if accessibility options are not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases appropriately?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone permission denial, network interruption, audio processing errors, invalid user inputs, page navigation failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper error boundaries, fallback mechanisms, and user-friendly error messages. Give 10 points if fully robust, 5 points if average robustness, and 0 points if no exception handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance user experience beyond basic requirements?",
+      "description": "Check whether the code includes surprise features that enhance the captioning experience (e.g., 1. Smart punctuation insertion 2. Speaker identification and labeling 3. Custom vocabulary learning 4. Voice command shortcuts 5. Real-time confidence scoring display 6. Automatic meeting minutes generation). Add 3 points for each practical innovative feature implemented that genuinely improves the real-time captioning workflow (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features that detract from the core functionality?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing pipelines coexisting) 2. Function modules unrelated to real-time captioning (e.g., built-in games or social features) 3. Excessive visual effects that impact performance (e.g., complex 3D animations during captioning). Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with core captioning performance or usability.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate high engineering quality and maintainability?",
+      "description": "Review modular design (such as separating audio processing/UI components/data management layers), component reusability, proper state management, and code organization. Deduct 5 points if global state pollution is found or modern development patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 3 points if CSS/JavaScript is not properly organized into modules. Evaluate proper use of semantic HTML and accessibility attributes. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional mobile app design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Proper color contrast ratios (WCAG AA compliance) 2) Touch-friendly element sizing (minimum 44px touch targets) 3) Consistent spacing system (8px grid adherence) 4) Professional typography hierarchy (readable font sizes ≥14px, proper line heights) 5) Proper visual feedback for all interactive elements. Deduct 3 points for each accessibility violation, 5 points for poor color contrast, and 5 points for inconsistent spacing or typography. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the animations and transitions smooth with appropriate timing and performance?",
+      "description": "Judge whether the dynamic effects enhance usability: 1) Caption scrolling animations are smooth and don't interfere with reading 2) Microphone sound wave animation reflects actual audio input 3) Page transitions are fluid (300-500ms duration) 4) Touch feedback is immediate (≤100ms) 5) Loading states are properly animated 6) No janky animations or performance issues during real-time captioning. Deduct 5 points for each choppy animation, 3 points for inappropriate timing, and 5 points if animations negatively impact core functionality performance. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

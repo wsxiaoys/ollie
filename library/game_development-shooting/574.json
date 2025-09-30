@@ -1,0 +1,68 @@
+{
+  "index": 574,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable. \n\n## Role\nYou are an experienced code expert. Given a software development requirement description, you need to generate project code according to these requirements. Strictly follow the rules to help users generate complete project code fully commented in simple and easy-to-understand language, without outputting anything else.\n\n## Output Rules\n1. You will always generate complete, runnable project code; please ensure the project is complete and executable\n2. Ensure that all code files you output are complete, don't omit any code\n3. Carefully review and check all code before the final output, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n## Project Requirements Description\nCreate a pirate shooting game with an island scene. Pirates will appear from various corners of the island and approach the player's ship. The player controls a ship at the bottom of the screen and fires cannonballs by clicking with the mouse. When a cannonball hits a pirate, the pirate falls into the water and disappears, and the player's score increases by 1. When pirates board the ship, the player loses 1 life point, with an initial life count of 8. When life reaches 0, the game is over.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core pirate shooting game mechanic fully implemented?",
+      "description": "Review whether the code accurately implements the core game mechanics: player ship at the bottom, pirates spawning from different locations, mouse-click firing of cannonballs, collision detection between cannonballs and pirates, and scoring system. Score 0 if the core interaction logic is not implemented, 5 if basic shooting is implemented but with flaws, and 10 if all required game mechanics function correctly with proper hit detection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the pirate enemy AI behavior properly implemented?",
+      "description": "Evaluate whether pirates appear from various corners of the island as specified, follow reasonable movement patterns toward the player's ship, and properly disappear when hit by cannonballs. Check if the pirate spawning mechanism increases difficulty over time. Deduct 3 points if pirates move unrealistically, 3 points if the spawning logic is too simple/predictable, and 4 points if pirates don't properly approach the player's ship. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the player life/game over system correctly implemented?",
+      "description": "Verify that the game implements the 8 initial life points, correctly detects when pirates board the ship to deduct life points, and properly triggers game over when lives reach 0. Check for a clear game over screen with score display and restart option. Deduct 5 points if life deduction is inconsistent, 3 points if visual feedback is missing when losing lives, and 5 points if the game over condition doesn't work properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the island scene and visual presentation properly implemented?",
+      "description": "Assess whether the code creates a visually coherent island scene with appropriate water surroundings, and whether the graphics (ship, pirates, cannonballs, island) are well-implemented and thematically consistent. Deduct 3 points for mismatched visual elements, 5 points for poor scene composition, and 5 points if the island scenery is missing or poorly executed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid mouse clicks, browser resizing, performance degradation with many sprites) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups that temporarily enhance firing rate or damage 2. Weather effects that affect gameplay 3. Special pirate types with different behaviors). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the pirate game theme (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's poor separation of concerns between game components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching appropriate for a pirate theme 2) Proper layout of UI elements (score display, life indicators, etc.) 3) Professional font system and readable text. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate response to mouse clicks for firing 2) Smooth pirate and cannonball movement animations 3) Clear visual feedback for hits and life loss. Deduct 5 points for delayed shooting response, 3 points for choppy animations, and 5 points for unclear visual feedback on important game events. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 857,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. I am a university student new to Java, and I need to create a one-on-one psychological counseling mini program. The main function is to assign volunteers to clients based on their needs and categories. Please provide complete code using only the WeChat Mini Program development tool. If backend integration is necessary, please provide the complete frontend code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Mini Program foundation correctly set up?",
+      "description": "Check if the project structure follows WeChat Mini Program standards with app.js, app.json, app.wxss, and appropriate page folders. Verify the required configuration in app.json (including pages array, window settings, tabBar if needed). Deduct 5 points if core configuration files are missing, 3 points for incorrect structure. Score 0 if the code doesn't use WeChat Mini Program framework at all, 5 if basic structure exists but with issues, 10 if perfectly configured.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the client-volunteer matching system properly implemented?",
+      "description": "Evaluate if the matching algorithm considers client needs and volunteer categories. Check if there's logic for comparing client requirements with volunteer expertise, availability tracking, and conflict resolution. Deduct 5 points if matching is random without consideration of needs, 3 points if only basic category matching exists. Score 10 if the system includes sophisticated matching with priority handling and multiple matching criteria.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the user authentication and role management functionalities implemented?",
+      "description": "Check if the code differentiates between clients and volunteers with proper role-based access control. Verify if user registration, login using WeChat authentication, and profile management are implemented. Deduct 5 points if no role distinction exists, 3 points if roles exist but permissions aren't enforced. Score 10 if comprehensive user management with proper WeChat login integration is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the counseling session management fully functional?",
+      "description": "Review whether the code supports scheduling, session status tracking (pending/ongoing/completed), and feedback collection. Check if notifications for session changes are implemented. Deduct 5 points if scheduling is missing, 3 points if session status can't be tracked. Score 10 if the system handles the complete counseling lifecycle with reminders and feedback mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid inputs, edge cases in matching logic) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted matching suggestions 2. In-app secure messaging for counseling 3. Mood tracking for clients with visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user management systems) 2. Function modules unrelated to counseling (e.g., a built-in game system) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/API calls), use of component-based architecture, and proper state management practices in the Mini Program context. Deduct 5 points if global state is used inappropriately; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design principles: 1) Consistent with WeChat's visual language 2) Proper layout using flex boxes and rpx units 3) Appropriate use of WeChat UI components. Deduct 3 points for each inconsistent visual element, 5 points for poor responsive design, and 5 points for non-standard UI component implementations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions conform to Mini Program best practices: 1) Page transitions are smooth 2) Loading states are properly indicated 3) Form validation provides immediate feedback. Deduct 5 points for each interaction without loading indicators during network requests, 3 points for jarring page transitions, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

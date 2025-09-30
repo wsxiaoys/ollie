@@ -1,0 +1,68 @@
+{
+  "index": 3,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes.\n\nPlease use HTML and JavaScript to implement an interactive NPC.\n\n**Task**: Implement an interactive NPC system where players can converse with NPCs, accept quests, or obtain clues.\n\n**Hint**: You can set different dialogue content and tasks for each NPC, and adjust the game progression based on player choices.\n\nInclude comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the NPC dialogue system fully implemented?",
+      "description": "Review whether the code implements a complete dialogue system that includes multiple conversation paths, branching dialogue options, and persistent dialogue state tracking. Score 0 if basic dialogue display is missing, 5 if only linear conversations are supported, and 10 if the system handles complex branching dialogues with contextual responses based on previous player choices.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the quest/task system functional?",
+      "description": "Evaluate whether the code includes a quest management system that allows NPCs to offer quests, track quest progress, and provide appropriate rewards. Check if there are quest states (available, active, completed, failed). Deduct 5 points if quest tracking is absent, 3 points if quest state persistence is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the NPC state management implemented?",
+      "description": "Check if NPCs have different states and behaviors based on game progression, player actions, or time of day. NPCs should remember past interactions and adjust their dialogue/behavior accordingly. Deduct 5 points if NPCs have static behavior regardless of player actions, 3 points if state changes aren't persistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a clue/information system that affects gameplay?",
+      "description": "Assess whether information/clues provided by NPCs are tracked and have actual impact on gameplay mechanics or story progression. Check if the system includes hints, critical information, or red herrings that influence player decisions. Deduct 5 points if information has no gameplay impact, 3 points if the information system lacks variety. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as undefined inputs, missing data, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. NPC mood/relationship system 2. Voice acting integration 3. Dynamic facial expressions/animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple dialogue display systems) 2. Function modules unrelated to NPC interaction (e.g., a built-in inventory system not connected to dialogues) 3. Fancy effects that affect performance (e.g., unnecessary animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating dialogue logic/view/data layers), code organization, and developer documentation through comments. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if helpful comments are missing or inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the NPC interaction interface follows modern design principles: 1) Harmonious color matching for dialogue boxes and UI elements 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (dialogue text size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the NPC interaction experience conforms to human perception characteristics: 1) Dialogue response delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual indication of dialogue options and NPC status. Deduct 5 points for each interaction without feedback, 3 points for jarring transitions between dialogue states, and 5 points for confusing navigation in conversation trees. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "easy"
+}

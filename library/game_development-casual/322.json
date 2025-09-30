@@ -1,0 +1,68 @@
+{
+  "index": 322,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Help me write a frontend program for a princess makeup game where a princess can get a makeover, including applying eyeshadow, changing contacts, switching hairstyles, changing hair color, and applying lipstick. Include buttons for these operations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core princess makeup system fully implemented?",
+      "description": "Review whether the code accurately implements the princess makeover functionality through HTML/CSS/JavaScript. Check if all required features (eyeshadow, contacts, hairstyles, hair color, and lipstick) are properly implemented with layering techniques. Score 0 if the core makeup functions are missing, 5 if only basic functions are implemented without visual effects, and 10 if all makeup options include proper visual transformations and blending modes.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the UI control system properly designed?",
+      "description": "Evaluate whether the interface includes all specified buttons (eyeshadow, contacts, hairstyles, hair color, and lipstick) and whether these controls are logically organized. Check if each button triggers the appropriate makeup action and if there are options/variations within each category. Deduct 2 points for each missing makeup category, and 1 point if a category exists but has no style variations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the makeup application process interactive and realistic?",
+      "description": "Assess whether the makeup application looks realistic with proper blending on the princess model. Check if there are transitions between makeup states rather than abrupt changes. Score 10 if the makeup application includes visual effects like color blending, transparency, and proper layering; 5 if changes are visible but lack realism; 0 if changes are too simplistic (e.g., just swapping entire face images).",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the state management of the princess makeover properly implemented?",
+      "description": "Check if the code maintains the princess's current state across different makeup applications. Verify if multiple makeup elements can be combined (e.g., applying both eyeshadow and lipstick). Deduct 5 points if previous makeup gets erased when applying new makeup, and 3 points if there's no way to reset individual makeup elements. Give 10 points if the state management allows for complete customization.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing image assets, unsupported browsers, rapid sequential clicks, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Before/after comparison slider 2. Save/share makeover results 3. Animated makeup application effects 4. Personalized recommendations based on selections). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to apply the same makeup) 2. Function modules unrelated to makeup (e.g., a built-in game unrelated to the makeover) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI logic/rendering/asset management), code reusability for different makeup types, and asset loading optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if large image assets aren't properly managed (e.g., no lazy loading). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suited for a princess theme (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the makeup application effects conform to user expectations: 1) Makeup application feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual indication of selected makeup items. Deduct 5 points if makeup changes have no visual feedback, 3 points for laggy transitions when changing multiple makeup items quickly, and 5 points for confusing UI that doesn't indicate current selections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

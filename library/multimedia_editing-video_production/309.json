@@ -1,0 +1,68 @@
+{
+  "index": 309,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable and can be demonstrated. Create a Xiaohongshu (Little Red Book) style text image, convert the image to video, add music, make it downloadable, and implement it using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Xiaohongshu-style text image generation fully implemented?",
+      "description": "Review whether the code accurately implements Xiaohongshu-style visual elements through HTML/CSS/JavaScript, including gradient backgrounds, emoji decorations, stylized fonts, and proper text layout. Check if it supports multi-line text input, automatic line wrapping, and character limits. Score 0 if basic text-to-image conversion is not implemented, 5 if only simple text overlay is achieved, and 10 if all authentic Xiaohongshu visual styles are replicated including shadows, borders, and brand-consistent aesthetics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image-to-video conversion mechanism properly implemented?",
+      "description": "Check whether the code uses Canvas API or WebGL to convert static images into video format (MP4/WebM). Evaluate if it includes proper frame rate control (minimum 24fps), duration settings, and transition effects. Verify if the video encoding uses efficient compression algorithms. Deduct 5 points if video quality is poor (resolution below 720p), and 3 points if frame rate is inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio integration and synchronization system designed correctly?",
+      "description": "Evaluate whether the music integration uses Web Audio API for seamless audio-video synchronization. Check if it supports multiple audio formats (MP3/WAV/OGG), volume control, and fade-in/fade-out effects. Verify if background music loops properly and matches video duration. Deduct 5 points if audio-video sync drift exceeds 50ms, and 3 points if audio quality is compressed below 128kbps. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the download functionality complete with proper file handling?",
+      "description": "Check whether the code implements client-side file generation using Blob API and provides downloadable links for both image and video files. Evaluate if it includes proper filename generation, file size optimization, and format selection options. Verify cross-browser compatibility for download functionality. Deduct 5 points if download fails on major browsers, and 3 points if file naming is not user-friendly. Give 10 points if fully implemented with progress indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as oversized text input, unsupported file formats, browser compatibility issues, memory limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle media processing failures, canvas rendering errors, and file system limitations, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time text style preview 2. Multiple template themes selection 3. Custom font upload 4. Social sharing integration 5. Batch processing capabilities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image rendering engines coexisting) 2. Function modules unrelated to text-image-video creation (e.g., built-in social media feeds) 3. Fancy effects that affect performance (e.g., excessive particle animations during processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating text processing/image generation/video conversion/audio handling layers), error handling coverage, and performance optimization. Deduct 5 points if memory leaks are found during media processing or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no progress feedback for long-running operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles and Xiaohongshu's aesthetic: 1) Harmonious color matching with brand-consistent pink/coral themes 2) Proper layout spacing following 8px grid system 3) Professional typography with readable fonts (≥14px, line height ≥1.5). Check if the text image output matches authentic Xiaohongshu post aesthetics. Deduct 3 points for each crowded visual element, 5 points for off-brand color schemes, and 5 points for poor text-image composition. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Real-time text preview updates ≤100ms 2) Image generation feedback with progress indicators 3) Video processing with loading states 4) Smooth transitions between editing and preview modes (300-500ms). Deduct 5 points for each operation without visual feedback, 3 points for laggy text input responses, and 5 points if users cannot track processing progress. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

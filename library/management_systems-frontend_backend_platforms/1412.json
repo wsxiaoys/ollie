@@ -1,0 +1,68 @@
+{
+  "index": 1412,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you produce is executable for demonstration. Student Information Management System, requirements: student personal information, grade statistics and query, exam paper archiving, error analysis.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the student information management module fully implemented?",
+      "description": "Evaluate whether the code includes CRUD operations for student data (add, retrieve, update, delete). Check for proper data validation (e.g., format validation for email/phone, required fields checking). Review if student profiles include essential fields (name, ID, contact info, enrollment date, etc.). Score 0 if core functionality is missing, 5 if basic operations are implemented with minimal validation, 10 if comprehensive student management with robust validation is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the grade statistics and query system comprehensive?",
+      "description": "Check whether the system supports multiple query parameters (by student ID, name, course, score range, time period). Evaluate if statistical functions are implemented (average, median, standard deviation, percentile ranking, etc.). Review if the code includes data visualization components for grades (charts, graphs). Deduct 3 points if sorting/filtering options are limited, 5 points if statistical calculations are missing, and 3 points if visual representation is absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the exam paper archiving system properly designed?",
+      "description": "Review if the code implements secure storage for exam papers with proper versioning control. Check if the system supports various file formats (PDF, images, etc.) and includes metadata tagging (subject, exam date, difficulty level, topics covered). Evaluate search/retrieval functionality by various parameters. Deduct 5 points if versioning is missing, 3 points if file format support is limited, and 3 points if search capabilities are basic. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the error analysis functionality effectively implemented?",
+      "description": "Examine if the code provides tools for tracking common mistakes, identifying knowledge gaps, and generating improvement recommendations. Check for pattern recognition in errors and trend analysis over time. Review if the system correlates errors with specific topics/concepts. Deduct 5 points if only basic error logging exists without analysis, 3 points if trend tracking is missing, and 3 points if personalized recommendations are absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common error scenarios (invalid input, database connection failures, file upload issues, concurrent access conflicts). Check for proper exception handling with meaningful error messages for users and detailed logging for administrators. Review if the system includes data backup/recovery mechanisms. Code with strong robustness should handle these edge cases effectively, giving 10 points. If robustness is average, give 5 points, and if exceptions are unhandled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered learning recommendations based on error patterns 2. Automatic grade report generation with customizable templates 3. Mobile-responsive design with notification systems 4. Integration with external learning management systems). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementation of similar functionality (e.g., multiple ways to calculate the same statistics) 2. Function modules unrelated to student/grade management (e.g., built-in games or entertainment features) 3. Overly complex animations or visual effects that slow down performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data models, services, controllers, views), code reusability, and maintainability. Check for proper comments/documentation, consistent naming conventions, and code organization. Evaluate database design principles (normalization, indexing, constraints). Deduct 5 points if global state is overused, 5 points if code duplication rate exceeds 30%, and 5 points if proper security measures (authentication, authorization, input sanitization) are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Consistent color scheme appropriate for an educational tool (no more than 3 primary colors) 2) Proper information hierarchy with clear visual separation between different functional areas 3) Appropriate typography for readability (headings vs. data display vs. input forms). Deduct 3 points for cluttered layouts, 5 points for poor color combinations affecting readability, and 5 points for inconsistent styling across different screens. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive?",
+      "description": "Judge whether the system provides appropriate feedback for user actions: 1) Form validation with clear error messages 2) Loading indicators for data processing operations 3) Confirmation dialogs for critical actions (deletions, grade changes) 4) Intuitive navigation between different system modules. Deduct 5 points for operations without feedback, 3 points for confusing navigation paths, and 5 points for unintuitive data entry workflows or hard-to-locate key functions. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

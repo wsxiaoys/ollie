@@ -1,0 +1,68 @@
+{
+  "index": 527,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Please write code to implement a building drawing management system where architects can upload CAD drawings and BIM models. The system should support online drawing preview, version comparison, annotation marking functions, provide project classification and drawing numbering management, support drawing approval workflow, and be able to record drawing modification history and reasons for changes.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the CAD/BIM file upload and storage system fully implemented?",
+      "description": "Review whether the code accurately implements a secure upload mechanism for CAD drawings and BIM models, including proper file type validation, size checking, and storage management. Check if the system handles various CAD/BIM formats (DWG, DXF, RVT, IFC) and optimizes storage through compression or cloud storage integration. Score 0 if the upload functionality is missing, 5 if basic upload exists without format validation, and 10 if a complete, secure, and optimized upload system is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the online drawing preview functionality effectively implemented?",
+      "description": "Evaluate whether the system includes robust rendering engines to display CAD drawings and BIM models directly in the browser without requiring special software. Check if the preview supports essential functions like zooming, panning, layer toggling, and 3D model rotation for BIM. The preview should work across major browsers and maintain drawing fidelity. Deduct 3 points if the preview is limited to certain file types, 4 points if 3D model interactivity is missing, and 3 points if the rendering quality is poor or slow. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "How comprehensive is the version comparison and annotation system?",
+      "description": "Check if the code implements side-by-side visual comparison between drawing versions with highlighted differences and if annotations can be added as overlays on drawings without modifying the original files. The annotation system should support text notes, measurement tools, redline markups, and the ability to assign annotations to specific team members. Deduct 3 points if visual diff is missing, 3 points if annotation types are limited, and 4 points if annotation sharing/assignment capabilities are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the project classification, drawing numbering, and approval workflow system properly implemented?",
+      "description": "Assess whether the system includes a hierarchical project organization structure, an automated drawing numbering system based on configurable rules, and a flexible approval workflow engine. The workflow should support multi-stage approvals with role-based permissions, electronic signatures, and automatic notifications. Deduct 3 points for lacking custom classification hierarchies, 3 points for manual numbering, and 4 points if the approval workflow doesn't support parallel or conditional paths. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted CAD files, concurrent edits, server timeouts during large file uploads, permission conflicts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered drawing analysis for errors or compliance issues 2. Automatic generation of viewports and cross-sections from BIM models 3. AR/VR integration for immersive drawing review). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file viewers with overlapping capabilities) 2. Function modules unrelated to drawing management (e.g., a built-in general chat system not tied to drawings) 3. Fancy effects that affect performance (e.g., excessive animations when switching between drawings). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file handling/rendering/workflow layers), unit test coverage, and build process automation. Check for proper handling of large files through streaming or chunked processing. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching appropriate for a technical CAD/BIM platform (neutral palette with clear accent colors for actions) 2) Proper layout spacing that maximizes drawing visibility while maintaining access to tools 3) Professional typography system that ensures readability of technical annotations and metadata. Deduct 3 points for each crowded toolbar or panel, 5 points for poor drawing-to-interface ratio, and 5 points for unclear visual hierarchy of tools and information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to professional CAD/BIM user expectations: 1) Drawing rendering and manipulation response ≤ 200ms 2) Smooth zoom/pan interactions without visual artifacts 3) Intuitive tool selection and application. Deduct 5 points for each operation that causes noticeable lag when manipulating drawings, 3 points for awkward tool switching mechanisms, and 5 points for non-standard interaction patterns that contradict common CAD conventions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

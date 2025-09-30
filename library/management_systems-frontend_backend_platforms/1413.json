@@ -1,0 +1,68 @@
+{
+  "index": 1413,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure to ensure that the generated code is executable and displayable. I have implemented a switching effect for a login/registration page where when a user clicks on the login or registration button, an overlay appears containing a form where the user can enter their username and password, then click the submit button to login or register. When the user clicks the return button, the overlay is hidden, and the login or registration form is displayed in the main area. This effect can improve user experience, making it more convenient for users to login or register. Please implement the above code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the login/registration switching effect fully implemented?",
+      "description": "Check if the code properly implements the switching mechanism between login and registration forms with overlay functionality. Verify that clicking on login/registration buttons shows the appropriate overlay with form, and clicking return hides the overlay displaying the form in the main area. Score 0 if the switching effect isn't implemented, 5 if only basic toggling is present, and 10 if smoothly transitions between states with proper visibility control.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are form input validations properly implemented?",
+      "description": "Evaluate if the code includes client-side validation for username/password fields (minimum length, required fields, password complexity, etc.). Check for real-time validation feedback as users type. Deduct 3 points if basic validation is missing, 2 points if validation exists but without user feedback, and 5 points if there's no validation at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the form submission handling implemented correctly?",
+      "description": "Review whether form submission prevents default behavior and includes proper event handling. Check if there's mock API integration or preparation for backend communication. Deduct 5 points if form submission isn't handled properly, 3 points if there's no feedback after submission, and 3 points if there's no error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the overlay functionality properly implemented with accessibility considerations?",
+      "description": "Examine if the overlay properly covers the main content, has appropriate z-index management, and includes accessibility features (focus trapping, escape key to close, screen reader compatibility). Deduct 3 points for missing keyboard navigation, 3 points for improper focus management, and 4 points for inaccessible overlay controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form submission with empty fields, rapid toggling between forms, browser resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Password strength indicator 2. Social media login options 3. Remember me functionality 4. Password visibility toggle). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple event listeners for the same action) 2. Function modules unrelated to login/registration (e.g., unnecessary widgets) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/validation/event handling), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional form design (clear labels, properly sized inputs, consistent styling). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for misaligned form elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the transition effects conform to human perception characteristics: 1) Form switching animation duration between 200-400ms 2) Clear visual feedback for button clicks and form submission 3) Smooth overlay appearance/disappearance. Deduct 5 points for jarring transitions, 3 points for missing hover states on interactive elements, and 5 points for inconsistent animation timing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

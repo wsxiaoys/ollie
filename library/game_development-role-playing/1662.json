@@ -1,0 +1,68 @@
+{
+  "index": 1662,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Create an HTML game with the theme of \"YWT Adventure,\" using a style similar to Pokemon. Ideally the game interface should be 3D, with characters having health bars and being controllable.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D game world and rendering system fully implemented?",
+      "description": "Review whether the code accurately implements 3D rendering using WebGL/Three.js or similar technologies, including proper 3D scene setup, camera controls, lighting systems, and terrain/environment models. Check if the 3D world has depth, proper perspective projection, and realistic spatial positioning. Score 0 if only 2D sprites are used, 5 if basic 3D elements exist but lack proper lighting/shadows, and 10 if a complete 3D environment with professional rendering quality is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the character system with health management properly designed?",
+      "description": "Evaluate whether characters have fully functional health bar systems, including real-time HP display, damage calculation, healing mechanisms, and visual feedback for health changes. Check if health bars are properly positioned above characters, have smooth animations for health changes, and include status effects visualization. Deduct 5 points if health bars are static or poorly positioned, 3 points if damage calculations are incorrect or missing. Full score requires Pokemon-style health management with smooth transitions and visual polish.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the character controls responsive and adventure mechanics implemented?",
+      "description": "Check whether the character movement system includes smooth WASD/arrow key controls, collision detection with environment, interaction with NPCs/objects, and adventure progression mechanics. Evaluate if the controls feel responsive (input lag < 50ms), include animations for different movement states, and support exploration features like item collection, dialogue systems, or quest mechanics. Deduct 5 points if movement is choppy or unresponsive, 5 points if collision detection is missing or buggy.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game capture the Pokemon-style adventure essence?",
+      "description": "Assess whether the game successfully implements Pokemon-inspired gameplay elements such as creature encounters, turn-based or real-time combat systems, character progression, inventory management, or exploration rewards. Check for thematic consistency in art style, UI design, and game mechanics that evoke the Pokemon adventure experience. Score 0 if no Pokemon-style elements exist, 5 if basic encounter/combat mechanics are present, and 10 if comprehensive adventure systems with proper game flow are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases properly?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user inputs, browser compatibility issues, performance drops, collision edge cases, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should gracefully handle WebGL context loss, memory management, and various device capabilities. Give 10 points if fully robust, 5 points if basic error handling exists, and 0 points if no exception handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance the adventure experience?",
+      "description": "Check whether the code includes creative features that elevate the gaming experience (e.g., 1. Dynamic weather/day-night cycles 2. Procedural terrain generation 3. Advanced particle effects for abilities 4. Mini-map or compass navigation 5. Audio-reactive elements). Add 2-3 points for each well-implemented innovative feature that genuinely improves gameplay immersion (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or performance-hindering features?",
+      "description": "Strictly identify three types of issues: 1. Redundant implementations of similar functionality (e.g., multiple rendering loops or duplicate input handlers) 2. Unnecessary features unrelated to the adventure game core (e.g., unrelated mini-games or excessive UI elements) 3. Performance-heavy effects that cause frame drops (e.g., excessive particle systems, unoptimized 3D models). Deduct 3 points for each redundancy found, and deduct 10 points if core gameplay is negatively affected.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate proper engineering practices?",
+      "description": "Review modular architecture (separation of game logic/rendering/input systems), code organization, performance optimization techniques, and asset management. Check for proper use of design patterns, efficient memory usage, and clean code structure. Deduct 5 points for global variable pollution or lack of proper class/module structure; deduct 5 points if code duplication exceeds 30%; deduct 5 points for poor performance optimization (frame rate < 30fps on average hardware).",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional game UI standards?",
+      "description": "Evaluate whether the game interface follows modern game UI principles: 1) Cohesive color palette suitable for adventure theme 2) Proper HUD layout with health bars, inventory, and controls clearly visible 3) Consistent visual hierarchy and readable typography (font size ≥ 12px for UI elements). Deduct 3 points for each cluttered UI element, 5 points for poor contrast or readability issues, and 5 points for inconsistent visual style that breaks immersion.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the game interactions fluid and provide proper feedback?",
+      "description": "Judge whether the interactive elements provide satisfying user feedback: 1) Character actions have immediate visual/audio response (≤ 100ms) 2) Smooth animation transitions for movements and UI changes (200-400ms duration) 3) Clear visual indicators for interactable objects and game state changes 4) Consistent 60fps performance during gameplay. Deduct 5 points for each unresponsive interaction, 3 points for choppy animations or frame drops, and 5 points for unclear interaction affordances that confuse players.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "hard"
+}

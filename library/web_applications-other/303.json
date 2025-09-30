@@ -1,0 +1,68 @@
+{
+  "index": 303,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Now, start creating a capsule page according to your design concept:\n\nUse a step-by-step design, for example:\nInput title and description.\nUpload images or videos.\nSet opening time (supporting date and time picker).\nAdd tags (optional).\n\nRich text editor:\nSupport text formatting (bold, italic, underline, etc.).\nSupport inserting images, videos, emoticons, etc.\n\nAnimation effects:\nAdd a \"capsule sealed\" animation effect (such as capsule closing, time-lapse animation) after the user completes creation.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the step-by-step capsule creation design fully implemented?",
+      "description": "Review whether the code correctly implements all required steps (title/description input, image/video upload, date/time picker for opening time, optional tags). Score 0 if the core steps are missing, 5 if basic functionality is implemented but lacks proper field validation, 10 if all steps are fully implemented with appropriate user guidance and input validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the rich text editor implemented with all required features?",
+      "description": "Evaluate if the editor includes text formatting (bold, italic, underline), media insertion capabilities (images, videos), and emoticon support. Check for proper toolbar implementation, keyboard shortcuts, and formatting preservation. Score 3 for basic text formatting only, 7 for formatting plus media support, and 10 for complete implementation including emoticons and proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the 'capsule sealed' animation effect properly implemented?",
+      "description": "Assess whether the animation effect is triggered after user completes creation, provides visual feedback that enhances the capsule creation experience, and uses modern animation techniques (CSS animations, SVG animations, or JavaScript libraries like GSAP). Score 0 if animation is missing, 5 if basic animation exists but lacks polish, and 10 if animation is smooth, thematically appropriate, and enhances the user experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the media handling implementation robust and user-friendly?",
+      "description": "Verify if the code handles image/video uploads properly, including file type validation, size limits, preview functionality, progress indicators, and error handling. Check if the implementation supports multiple file formats and provides options for cropping/editing. Score 3 for basic upload, 7 for upload with previews and validation, 10 for complete media management with editing capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network issues during upload, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Preview of how the capsule will appear when opened 2. Social sharing integration 3. Customizable capsule themes/templates). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to insert the same type of media) 2. Function modules unrelated to the capsule creation (e.g., unrelated settings or features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, validation logic, and state management), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during step transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Other",
+  "difficulty": "easy"
+}

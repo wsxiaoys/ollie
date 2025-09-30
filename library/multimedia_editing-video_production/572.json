@@ -1,0 +1,68 @@
+{
+  "index": 572,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible.\n\n## Role\nYou are an experienced code expert. You have been provided with a software development requirement description, and you need to generate project code based on this description. Strictly follow the rules to help users generate the complete project code with simple and easy-to-understand comments, without adding anything else.\n\n## Output Rules\n1. You should always generate complete and runnable code. Please ensure the project is complete and executable.\n2. Make sure all code files you output are complete, without omitting any code.\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated.\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data.\n\n## Project Requirements Description\nCreate a video filter application page where users can upload videos, choose different filter effects (such as vintage, black and white, blur, etc.), preview the filtered video in real-time, and save the filtered video to their local device.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete video upload system implemented?",
+      "description": "Check whether the code implements a robust video upload system with features like file validation (format check, size limit), progress indicator, preview thumbnail generation, and error handling for unsuccessful uploads. Score 0 if upload functionality is missing, 5 if only basic upload is implemented without validation/progress indicators, and 10 if all features are included with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are multiple video filter effects properly implemented?",
+      "description": "Evaluate whether the code includes at least 5 distinct filter effects (vintage, black and white, blur, saturation, etc.) with proper implementation using WebGL/Canvas API. Each filter should have accurate shader code or canvas processing algorithms. Deduct 2 points for each missing essential filter (vintage, B&W, blur). Score 10 if all filters have proper implementations with performance optimization, 5 if filters work but without optimization, 0 if filters are not functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time video filter preview functionality working?",
+      "description": "Check if the application can apply filters in real-time while the video is playing without significant frame drops. The implementation should handle the video processing pipeline correctly using requestAnimationFrame or WebGL for optimal performance. Score 10 if preview is smooth (maintaining at least 24fps) even with complex filters, 5 if there's noticeable lag with complex filters, and 0 if real-time preview is not implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the filtered video export/save functionality complete?",
+      "description": "Evaluate whether the code includes a complete video export system that processes the entire video with selected filters and allows downloading. Check if it handles different resolutions, maintains original aspect ratio, and preserves audio. Score 10 if export works properly with progress indicator and quality options, 5 if basic export works but lacks advanced options, and 0 if export functionality is missing or non-functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, browser compatibility issues, memory limitations with large videos, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Filter intensity adjustment sliders 2. Custom filter creation tool 3. Filter application to specific video segments only). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar filters (e.g., multiple blur algorithms coexisting) 2. Function modules unrelated to video filtering (e.g., a built-in media player with unnecessary features) 3. Fancy effects that affect performance (e.g., excessive DOM animations during processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/filter processing/file handling layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Filter application feedback delay ≤ 200ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual guidance during processing operations. Deduct 5 points for each operation without feedback, 3 points for sluggish response when switching filters, and 5 points for confusing UI state during video processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

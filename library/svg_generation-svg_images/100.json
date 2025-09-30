@@ -1,0 +1,68 @@
+{
+  "index": 100,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for display. Please help me implement this SVG image using code. The earth has seven continents, including South America, which is part of the Americas.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG structure correctly implemented?",
+      "description": "Check if the SVG element is properly set up with appropriate viewBox, width, height attributes. Verify that namespaces are correctly declared. Score 0 if SVG is not implemented at all, 5 if basic structure exists but with errors, 10 if properly set up with correct dimensions and namespaces.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Earth representation accurate and complete?",
+      "description": "Evaluate whether all seven continents (Asia, Africa, North America, South America, Antarctica, Europe, and Australia) are properly represented on the SVG map. Check continent shapes for reasonable accuracy. Deduct 2 points for each missing continent. Deduct 3 points if South America is not clearly defined as part of the Americas. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the continent coloring and distinction clear?",
+      "description": "Review whether each continent has appropriate fill colors/patterns that make them distinguishable from each other and from oceans. Check if South America has a distinct visual representation while still maintaining a visual relationship with North America. Score 0 if continents are not visually distinct, 5 if basic differentiation exists, 10 if professional color schemes are applied with good contrast.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are proper map projections or geographic representations used?",
+      "description": "Assess whether an appropriate map projection is used (e.g., Mercator, Robinson, equirectangular). Check if the projection handles distortion reasonably and maintains recognizable continent shapes. Deduct 5 points for severe distortions that make continents unrecognizable, 3 points for inappropriate projection choice. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG code is well-structured, uses proper nesting, and follows best practices (e.g., grouping related elements with <g> tags, using proper path commands). Check if the SVG handles different viewport sizes properly. Code with strong robustness should gracefully handle browser variations, giving 10 points. If the robustness is average, give 5 points, and if it breaks easily in different contexts, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visualization (e.g., 1. Interactive hover effects for continent information 2. Smooth animations for rotation/zoom 3. Gradient or texture fills that add depth). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Excessive path points that could be simplified 2. Unnecessary graphical elements unrelated to the Earth representation 3. Over-complicated effects that increase file size without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core representation is obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular organization (such as separating continent definitions, styling, and any interactive components), code comments, and optimization for file size. Deduct 5 points if global attributes are inconsistently applied; deduct 5 points if there's significant duplicated path data or styling; deduct 5 points if the SVG is not optimized for rendering performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern visualization principles: 1) Harmonious color matching for continents and oceans (no more than 3-4 primary colors) 2) Clean visual hierarchy with appropriate stroke weights and fills 3) Professional presentation of labels or legends if included. Deduct 3 points for each cluttered visual element, 5 points for jarring color combinations, and 5 points for poor visual balance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless (if applicable)?",
+      "description": "Judge whether any interactive elements (if implemented) conform to user expectations: 1) Responsive hover/click states ≤ 100ms 2) Smooth transitions between states 3) Intuitive interaction patterns. For static SVGs without interaction, evaluate whether the code structure would easily support adding interactions later. Deduct 5 points for each broken interaction, 3 points for laggy animations, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

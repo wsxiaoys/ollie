@@ -1,0 +1,68 @@
+{
+  "index": 133,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. \n\nPlease help me implement the following requirement using code. Create a cube-shaped box design using SVG code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic cube structure correctly implemented in SVG?",
+      "description": "Review whether the SVG code correctly implements a 3D cube using appropriate elements (path, polygon, etc.). Check if all 6 faces are properly defined with correct coordinates to form a cube shape. Score 0 if no cube is formed, 5 if the cube shape is incomplete or distorted, and 10 if all faces are properly positioned to form a perfect cube.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the perspective projection handled properly?",
+      "description": "Evaluate whether the code implements proper perspective or isometric projection for the 3D cube. Check if the projection technique creates a convincing 3D appearance and if the cube's dimensions appear proportional. Deduct 5 points if the projection looks flat or distorted, and 3 points if only simple 2D representation is used. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is face visibility and occlusion handled correctly?",
+      "description": "Check if the code properly handles which faces should be visible from the viewing angle (hidden face removal). Verify that faces that should be hidden behind others are properly occluded. Give 10 points if z-ordering is perfect, 5 points if there are minor z-ordering issues, and 0 points if faces randomly appear in front of others regardless of spatial position.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are colors, shading, or textures applied appropriately?",
+      "description": "Assess whether the cube has appropriate colors, shading, or textures to enhance its 3D appearance. Check if different faces have distinct colors/shades to differentiate them. Deduct 5 points if all faces have identical appearance making it hard to distinguish them, and 3 points if the coloring doesn't help with depth perception. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle different viewport sizes, browser compatibility issues, and potential calculation edge cases. Code with strong robustness should be responsive and work across browsers, giving 10 points. If the robustness is average, give 5 points, and if the code breaks easily or has fixed dimensions that don't adapt, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the cube visualization (e.g., 1. Animation/rotation capabilities 2. Interactive manipulation 3. Light source simulation with dynamic shadows). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements or paths that overlap unnecessarily 2. Excessive attributes or styling that don't contribute to the cube visualization 3. Complicated effects that affect performance without improving visual quality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core cube rendering is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (such as grouping related SVG elements, using variables for repeated values), code reusability, and clarity of implementation. Deduct 5 points if SVG elements are not logically grouped; deduct 5 points if there's significant duplicate code that could be parameterized; deduct 5 points if there are no comments explaining complex calculations or transformations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visualization meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean and precise rendering without jagged edges 2) Proper proportions and perspective 3) Professional use of colors with appropriate contrast. Deduct 3 points for each visual artifact or rendering issue, 5 points for poor proportions, and 5 points for unprofessional color choices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless (if applicable)?",
+      "description": "Judge whether any interactive or animated elements conform to human perception characteristics: 1) Smooth transitions/animations with appropriate timing 2) Intuitive interactive controls if present 3) Clear visual feedback for interactions. Deduct 5 points for each jerky animation, 3 points for confusing interaction patterns, and 5 points for missing visual feedback when interacting. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

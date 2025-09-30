@@ -1,0 +1,68 @@
+{
+  "index": 400,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure that any code you generate is executable. Please help me create a small program for real-time baseball game score and situation display that can be used for live streaming on mobile Weibo and Douyin.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the baseball game scoreboard fully implemented?",
+      "description": "Review whether the code accurately implements essential baseball scoreboard elements including innings (top/bottom), runs, hits, errors, balls, strikes, outs, and current baserunners. Score 0 if core display elements are missing, 5 if basic scoring is implemented but lacking situation details, and 10 if the scoreboard includes all professional baseball statistics with proper layout and updates.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time data update mechanism implemented?",
+      "description": "Check whether the code includes proper data fetching mechanism (WebSocket, polling or Server-Sent Events) with error handling and reconnection logic. Verify that updates are reflected immediately on the UI without manual refresh. Deduct 5 points if updates require manual intervention, 3 points if the update frequency is inappropriate (too slow >5s or too resource-intensive <1s), and 3 points if there's no loading state or error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the mobile-first design properly implemented for Weibo and Douyin?",
+      "description": "Evaluate whether the UI is optimized for vertical mobile viewing (16:9 or 9:16 aspect ratios), respects platform-specific UI guidelines, and includes platform branding options. Check if the implementation uses responsive design principles with proper viewport settings. Deduct 5 points if the layout breaks on common mobile resolutions, 3 points if touch targets are smaller than 44x44px, and 5 points if the interface doesn't adapt to different orientations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the baseball field visualization interactive and accurate?",
+      "description": "Assess whether the code provides a clear visual representation of the baseball diamond with accurate baserunner positions, defensive positioning options, and play result animations. Check if the field visualization updates correctly based on game events. Deduct 5 points if the baseball diamond visualization is static or poorly implemented, 3 points if baserunner indicators are unclear, and 5 points if there are no visual cues for recent plays. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as data feed interruptions, malformed inputs, network latency, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like incomplete game data, mid-game reconnections, and unexpected server responses, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Pitch trajectory visualization 2. Player statistics pop-ups 3. Instant replay markers 4. Heat maps for hit distribution 5. Social media integration for user comments). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to display the same stat) 2. Function modules unrelated to baseball scoring (e.g., irrelevant animations) 3. Fancy effects that affect performance (e.g., excessive particle animations that drain battery). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), component reusability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error boundary or fallback UI implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional sports broadcasting standards?",
+      "description": "Evaluate whether the overall design follows professional sports visualization principles: 1) Clear team identification with logos and colors 2) Proper information hierarchy emphasizing current game situation 3) Professional typography (readable at small sizes, consistent labeling). Deduct 3 points for cluttered information display, 5 points for poor color contrast affecting readability, and 5 points for inconsistent visual styling across components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the live streaming integration well-implemented?",
+      "description": "Judge whether the code properly integrates with streaming platforms: 1) Transparent or chroma-key background options 2) Configurable overlay positioning 3) Optimized rendering performance for streaming <5% CPU overhead. Deduct 5 points for each missing integration feature with Weibo or Douyin APIs, 3 points for streaming-unfriendly rendering methods, and 5 points if the overlay causes significant performance issues during test cases. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

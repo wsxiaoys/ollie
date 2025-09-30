@@ -1,0 +1,68 @@
+{
+  "index": 368,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure any code you generate is executable for demonstration purposes. Vue3 + Vite rendering docx to a webpage",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the docx rendering implementation complete?",
+      "description": "Review whether the code accurately implements docx rendering functionality using Vue3 and Vite. Check if it handles all essential document elements (paragraphs, tables, lists, images, styles, formatting). Score 0 if the core rendering is not implemented, 5 if only basic text rendering works, and 10 if the implementation handles complex document features including styles and formatting.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue3 component architecture well-designed?",
+      "description": "Evaluate the component hierarchy design for docx rendering. Check for proper use of Vue3 features (Composition API, setup script, reactive state management). Components should be modular, reusable, and follow single-responsibility principle. Deduct 3 points for monolithic components, 3 points for prop drilling beyond 3 levels, and 3 points for not utilizing Vue3's reactivity system effectively. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Vite configuration properly optimized for the docx rendering?",
+      "description": "Check whether the Vite configuration is optimized for docx processing (proper plugins, asset handling, build optimization). Verify that dependencies for docx parsing are correctly integrated. Deduct 3 points if WASM/worker threads aren't used for heavy parsing, 3 points for missing code splitting, and 3 points if build optimizations aren't tailored for document processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the docx parsing and rendering pipeline efficient?",
+      "description": "Assess the efficiency of the parsing and rendering pipeline. Check if it uses streaming parsing for large documents, implements virtualization for long documents, and optimizes render cycles. Deduct 5 points if loading 5MB+ documents causes UI freezing, 3 points if rendering is not incremental/lazy, and 5 points if memory usage grows continuously with document size. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed docx files, network interruption during file loading, memory constraints). Code with strong robustness should gracefully handle these edge cases and provide user-friendly error messages. Award 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if exceptions crash the application.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaborative editing 2. Automatic document outline generation 3. Search/indexing of document content 4. Print-to-PDF with preservation of formatting). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant parsing/rendering logic (e.g., multiple docx parsers being used) 2. Function modules unrelated to document rendering (e.g., unnecessary analytics) 3. Fancy effects that affect performance (e.g., excessive animations during document loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating parsing/rendering/UI layers), test coverage for parsing edge cases, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the rendered document follows modern design principles: 1) Faithful reproduction of original docx styling 2) Proper layout spacing and margins 3) Professional font rendering with proper fallbacks. Deduct 3 points for inconsistent spacing between elements, 5 points for font rendering issues (jagged fonts, incorrect line height), and 5 points for layout that breaks on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Document loading progress indicators 2) Smooth scrolling through long documents 3) Responsive UI during document processing. Deduct 5 points if loading lacks progress indication, 3 points for scroll jank or stuttering, and 5 points for UI elements that shift during document rendering. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1140,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Implement a scenario using Vue framework for continuous log query output via SSE (Server-Sent Events).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SSE connection implementation complete?",
+      "description": "Check if the code properly establishes an EventSource connection to the server endpoint, includes appropriate error handling, reconnection logic, and event listeners. Deduct 5 points if reconnection is not implemented, 3 points if event type filtering is missing. Give 0 points if SSE implementation is absent, 5 points for basic connection, and 10 points for robust implementation with all recommended patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the log data rendering component properly implemented?",
+      "description": "Evaluate whether the Vue component correctly renders streaming log data with virtual scrolling for performance optimization when handling large volumes. Check if logs are properly formatted with timestamps, log levels, and message content. Deduct 3 points if logs aren't visually distinguished by severity level, 5 points if the component doesn't handle large log volumes efficiently. Full score requires proper data binding, reactivity, and optimized rendering.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are filtering and search capabilities implemented for logs?",
+      "description": "Assess if the implementation includes log filtering by severity level, timestamp range, and text search functionality. Check if filters are applied reactively without interrupting the SSE connection. Deduct 3 points for each missing core filter type (severity, time, text search), 5 points if filtering disrupts the SSE connection. Full marks require debounced search, highlighted matches, and preserved filter state.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper handling of SSE connection states and error scenarios?",
+      "description": "Review if the code handles all SSE connection states (connecting, open, error, closed) with appropriate UI feedback. Check for graceful handling of server disconnections, network failures, and reconnection attempts with exponential backoff. Deduct 5 points if error states aren't communicated to users, 3 points if reconnection doesn't use backoff strategy. Full score requires comprehensive state management and user notifications.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as server errors, malformed log entries, network interruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time log statistics/analytics 2. Log export functionality 3. Collapsible log grouping 4. Dark/light theme toggle 5. Customizable log highlighting). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple filtering mechanisms) 2. Function modules unrelated to log viewing (e.g., unnecessary dashboards) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue component architecture (SFC structure, proper use of props/emits), state management approach, code reusability, and adherence to Vue best practices. Deduct 5 points if global state is mismanaged; deduct 3 points if component responsibilities are poorly separated; deduct 3 points if Vue lifecycle hooks are misused; deduct 3 points if modern Vue features (composition API, script setup) are not utilized appropriately. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the log viewer UI follows professional design principles: 1) Consistent color coding for log levels 2) Proper layout with adequate whitespace 3) Typography that enhances readability (monospace for log content, sufficient contrast). Deduct 3 points for poor log level visualization, 5 points for cluttered layout, and 5 points for hard-to-read text formatting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the log viewer provides smooth user experience: 1) New logs appear without UI jank 2) Applying filters responds in under 200ms 3) Scrolling through large log volumes remains smooth 4) Visual indicators for new logs arriving. Deduct 5 points if the UI freezes during log influx, 3 points for laggy filtering, and 5 points if the current position is lost when new logs arrive. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

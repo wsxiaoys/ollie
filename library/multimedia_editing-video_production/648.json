@@ -1,0 +1,68 @@
+{
+  "index": 648,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is functional and executable. Create an online video resolution adjustment tool that allows users to upload videos and then adjust the resolution to either 720p or 480p, with the ability to download the processed video afterward.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload functionality properly implemented?",
+      "description": "Check if the code includes proper file input handling for video uploads, with support for common video formats (MP4, WebM, AVI, MOV). The implementation should validate file types, manage upload size limits (showing progress for large files), and handle upload errors gracefully with user feedback. Score 0 if no upload functionality exists, 5 if basic upload works but lacks validation, 10 if fully implemented with comprehensive error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the video resolution adjustment functionality correctly implemented?",
+      "description": "Evaluate whether the code properly implements resolution adjustment to exactly 720p (1280x720) and 480p (854x480) while maintaining aspect ratio. The implementation should use efficient video processing libraries (like FFmpeg wrappers or Web API solutions) and properly handle codec compatibility. Deduct 3 points if aspect ratio is not preserved, 5 points if resolution options are hardcoded without flexibility, and 5 points if the conversion process doesn't provide status updates. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the video download functionality properly implemented?",
+      "description": "Review if the code generates downloadable video files after processing, with proper file naming conventions and MIME type handling. Check if the implementation includes download progress indicators and handles large file downloads appropriately (using Blob or stream processing). Deduct 5 points if the download mechanism doesn't work for videos larger than 100MB, and 3 points if no file naming options are provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video preview functionality implemented?",
+      "description": "Assess whether the code includes a video preview feature that allows users to see both the original and processed videos for comparison. The preview should include basic playback controls (play/pause, seek, volume) and display resolution information. Deduct 5 points if the preview doesn't work across different browsers, and 3 points if the video controls are minimal or buggy. Give 10 points if the preview includes side-by-side comparison with visual quality indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, aborted uploads/downloads, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Video thumbnail generation 2. Batch processing multiple videos 3. Additional resolution options beyond requirements 4. Video compression settings). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video processing methods) 2. Function modules unrelated to video resolution adjustment (e.g., excessive video editing features) 3. Fancy effects that affect performance (e.g., unnecessary animations or filters). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/processing/storage logic), memory management (especially for video processing), and worker thread usage. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if memory leaks occur during video processing; deduct 5 points if large video processing blocks the UI thread. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Processing feedback is clear and immediate 2) Progress indicators for long operations (upload, processing, download) 3) Clear visual guidance through the workflow. Deduct 5 points for operations without progress indicators, 3 points for UI freezes during processing, and 5 points for confusing workflow navigation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "medium"
+}

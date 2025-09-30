@@ -1,0 +1,68 @@
+{
+  "index": 1414,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Vue 3 facial registration calling the mobile phone camera with background image addition.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the facial registration core functionality fully implemented?",
+      "description": "Check if the code correctly implements face detection using appropriate APIs (like Face API JS or OpenCV.js) and captures facial landmarks for registration. The system should detect faces in real-time through the mobile camera feed and validate that a proper face is present before allowing registration. Score 0 if face detection is not implemented, 5 if basic detection without landmarks is implemented, and 10 if full facial feature extraction is properly configured.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mobile camera access properly implemented?",
+      "description": "Verify that the code uses navigator.mediaDevices.getUserMedia() with proper constraints for mobile devices, handles permissions correctly, and includes fallback mechanisms. Check if the camera selection works for both front and back cameras and adjusts resolution based on device capabilities. Deduct 5 points if permission handling is missing, 3 points if device orientation changes aren't handled, and 2 points if there's no fallback for browsers with limited support.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the background image addition feature correctly implemented?",
+      "description": "Evaluate whether the code properly implements background replacement or addition using either Canvas manipulation, WebGL shaders, or CSS compositing. Check if the system handles edge detection around the face for natural blending and provides options for different backgrounds. Deduct 5 points if the background appears with jagged edges, 3 points if performance issues occur on mobile devices, and 2 points if background customization options are limited.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is proper Vue 3 composition API implementation used?",
+      "description": "Assess whether the code follows Vue 3 best practices using the Composition API with proper reactive references, computed properties, and lifecycle hooks. Check if components are well-structured with clear separation of concerns. Deduct 5 points for using Options API instead of Composition API, 3 points for improper ref/reactive usage, and 5 points for component logic that should be extracted into composables.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as camera permission denied, face not detected, device orientation changes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time facial expression detection 2. Multiple background filter options with previews 3. Adjustable face enhancement features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple camera initialization methods) 2. Function modules unrelated to facial registration (e.g., unnecessary animations) 3. Fancy effects that affect performance on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating camera access/face detection/UI components), code reusability through composables, and responsive design principles for mobile. Deduct 5 points if global state is used inappropriately, 5 points if there's no error handling strategy, and 5 points if the code lacks documentation or type definitions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile UI principles: 1) Touch-friendly element sizing (min 44x44px touch targets) 2) Clear visual feedback for registration steps 3) Appropriate use of mobile design patterns (bottom navigation, proper spacing). Deduct 3 points for each UI element that isn't mobile-optimized, 5 points for poor camera framing guidance, and 5 points for illegible text on varied backgrounds. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the application provides smooth performance on mobile devices: 1) Camera feed maintains at least 24fps 2) Face detection overlay renders without jitter 3) Background addition happens with minimal lag. Deduct 5 points for each second of processing delay, 3 points for camera feed stuttering, and 5 points if the facial registration flow requires more than 3 steps to complete. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

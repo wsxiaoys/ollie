@@ -1,0 +1,68 @@
+{
+  "index": 1217,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure to ensure that the code you generate is executable for demonstration. Please provide me with a free weather service application for a frontend using Vue 3 + Element UI JavaScript.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the weather service API integration complete and properly implemented?",
+      "description": "Check if the code includes appropriate API calls to a free weather service (such as OpenWeatherMap, WeatherAPI, etc.) with proper error handling and rate limiting considerations. The implementation should include API key management, proper request formatting, and response parsing. Deduct 5 points if error handling is missing, 3 points if there's no loading state during API calls, and 5 points if the API integration is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the Vue 3 application properly utilize Composition API?",
+      "description": "Evaluate whether the implementation leverages Vue 3's Composition API effectively with reactive state management, computed properties, and lifecycle hooks. Check for proper use of ref(), reactive(), watch(), watchEffect(), and onMounted(). Deduct 3 points for using Options API instead of Composition API, 5 points for global state management issues, and 3 points for improper reactivity management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Element UI integration complete with appropriate weather visualization components?",
+      "description": "Review the implementation of Element UI components such as cards, sliders, dropdowns, and tables to display weather data. The components should be properly themed and responsive. Look for customized weather icons, temperature displays, and forecast layouts. Deduct 5 points if basic Element UI components aren't used, 3 points for inconsistent styling, and 5 points if the components aren't properly responsive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are key weather application features implemented and functional?",
+      "description": "Check if the application includes essential weather features: current conditions, forecasts (hourly and multi-day), location search/geolocation, unit conversion (°C/°F), and weather alerts if available. Deduct 3 points for each missing core feature, 2 points for incomplete implementation of features, and 5 points if the data visualization is not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruption, invalid location inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather-based theme adaptation 2. Historical weather data visualization 3. Weather alerts with push notifications 4. Weather impact on daily activities suggestions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant API calls for the same data 2. Function modules unrelated to weather (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API services, components, composables), proper folder structure, code comments, and build process setup. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code lacks reusable components; deduct 5 points if there is no proper build configuration or environment variable management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern weather app design principles: 1) Weather-appropriate color scheme (cool blues for rain, warm yellows for sun) 2) Proper layout spacing with responsive design 3) Professional typography for temperature and condition displays (clear temperature numbers ≥ 18px). Deduct 3 points for each cluttered section, 5 points for a visually jarring interface, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to modern web app standards: 1) Smooth location transitions 2) Responsive weather data updates 3) Intuitive interactions for changing views/settings. Deduct 5 points for laggy transitions between views, 3 points for jerky animations, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

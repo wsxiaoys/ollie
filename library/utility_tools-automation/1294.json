@@ -1,0 +1,68 @@
+{
+  "index": 1294,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. I want to create a small program designed to help computer science graduates create their graduation projects. It will categorize graduation programs according to different types of functional systems, and then design an input template that allows users to input their system requirements. The program will then use the user's input along with predefined templates to generate code through AI, and integrate everything into a complete project.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the categorization system for graduation projects comprehensive and well-structured?",
+      "description": "Evaluate if the program provides a clear taxonomy of graduation project types (e.g., web applications, mobile apps, data analysis systems, IoT solutions, etc.). The categorization should be hierarchical with at least 3 levels of granularity and include at least 10 major categories with relevant subcategories. Deduct 3 points if major CS domains are missing, 5 points if categorization lacks proper hierarchy. Award full points only if the categorization is both comprehensive and logically structured.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the input templates for user requirements well-designed and domain-specific?",
+      "description": "Check if the templates are tailored to each project category with specific, relevant questions that guide users to provide comprehensive requirements. Templates should include mandatory fields (e.g., functional requirements, non-functional requirements, target users) and domain-specific fields (e.g., database schema fields for data-intensive applications, UI mockup options for frontend projects). Deduct 5 points if templates are too generic, 3 points if they lack validation for inputs. The full score requires dynamic template adaptation based on previous user inputs.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the AI code generation implementation effective and well-integrated?",
+      "description": "Review how the program interfaces with AI services for code generation. Check for proper API integration (with error handling and rate limiting), contextual prompt engineering that incorporates user requirements, and intelligent code assembly. Deduct 5 points if the AI integration lacks proper error handling, 5 points if it doesn't maintain context between requests, and 3 points if it doesn't provide progress feedback during generation. Full points require demonstrable code that can generate compilable project structures.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the program successfully integrate generated components into a complete project structure?",
+      "description": "Evaluate if the program properly assembles generated code modules into a cohesive project with correct dependency management, configuration files, and project structure. It should create proper directory structures, manage file relationships, resolve dependencies, and generate necessary build scripts or configuration files according to the project type. Deduct 5 points if integration creates conflicts, 3 points if build scripts are missing, and 5 points if dependencies aren't properly managed. Full points require a demonstration of a working project compilation/build process.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid user inputs, API failures, insufficient permissions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases and provide clear user guidance for recovery. Specifically check for input validation, error boundaries, logging mechanisms, and state recovery. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if exceptions are unmanaged.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time visual preview of generated project structure 2. Intelligent suggestion system based on requirement analysis 3. Version control integration for project evolution tracking). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple template engines doing the same work) 2. Function modules unrelated to project generation (e.g., a built-in game or entertainment feature) 3. Overly complex features that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of concerns between UI, requirement processing, code generation, and project assembly), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

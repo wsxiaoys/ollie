@@ -1,0 +1,68 @@
+{
+  "index": 711,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Create an epub reader desktop application using electron+vue3+vite+typescript",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the EPUB parsing and rendering functionality fully implemented?",
+      "description": "Verify if the code correctly implements EPUB parsing (extracting content, metadata, TOC from .epub files) and renders HTML/CSS content from EPUB files. Score 0 if core parsing is missing, 5 if basic content display works but with formatting issues, and 10 if it properly handles EPUB 2.0/3.0 standards including complex layouts, embedded fonts, and media overlays.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the e-reader navigation system complete and user-friendly?",
+      "description": "Check if the application implements essential navigation features: table of contents navigation, page turning animations, bookmarking system, search function, and reading progress tracking. Deduct 2 points for each missing core navigation feature. Score 10 only if the navigation is both complete and intuitive with keyboard shortcuts, touch gestures, and visual indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Electron integration properly implemented with Vue3 and Vite?",
+      "description": "Evaluate whether the code properly implements Electron's main and renderer processes with appropriate IPC communication. Check if the TypeScript types are correctly defined for Electron API interactions. Deduct 5 points if process separation is incorrect, 3 points if TypeScript interfaces are missing/incorrect, and 3 points if Vite configuration doesn't handle Electron's development and production builds properly.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the EPUB library management system robust and feature-complete?",
+      "description": "Assess if the application includes a library management system with metadata extraction, cover display, sorting/filtering options, and file system integration for importing and organizing EPUB files. Score 0 if no library management exists, 5 if basic listing is available, and 10 if it includes advanced features like collection management, reading history, and metadata editing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupt EPUB files, missing permissions, concurrent file operations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Night reading mode with blue light filter 2. Text-to-speech integration 3. Note-taking and highlighting with cloud sync 4. Dictionary/translation integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple layout engines) 2. Function modules unrelated to e-reading (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down page turning). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review TypeScript usage quality (proper interfaces/types, no any types), component architecture (proper separation of concerns, reusable components), state management patterns, and build process automation. Deduct 5 points if TypeScript is used incorrectly or inconsistently; deduct 3 points if components are tightly coupled; deduct 3 points if state management is chaotic; deduct 2 points if the build process is not optimized for both development and production. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern desktop application design principles: 1) Consistent theme with proper light/dark mode support 2) Proper use of whitespace and content hierarchy 3) Professional typography system with appropriate font scaling for readability. Deduct 3 points for inconsistent UI elements, 3 points for poor readability settings, and 4 points for lack of responsive design for different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to desktop application standards: 1) Fast startup time (under 3 seconds) 2) Smooth page turns without flickering 3) Responsive UI even with large EPUB files 4) Proper loading indicators for background operations. Deduct 3 points for laggy scrolling/page turning, 3 points for UI freezes during file operations, and 4 points for noticeable rendering issues when changing display settings. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

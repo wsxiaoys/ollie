@@ -1,0 +1,68 @@
+{
+  "index": 1551,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be displayed properly. \n\nPlease write an HTML for a production scheduling visualization dashboard that includes production order, order number, product name, customer, order quantity, order date, delivery date, completed quantity, progress, and quick-click buttons to adjust the order. The style should be beautiful, impressive, and have a technological feel, as the previous production interface was too rigid and monotonous.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core production scheduling data structure properly implemented?",
+      "description": "Check if the HTML/JavaScript implementation includes the complete required data fields (order number, product name, customer, order quantity, order date, delivery date, completed quantity, progress). Score 0 if missing more than 3 fields, 5 if missing 1-2 fields, 10 if all fields are properly structured with appropriate data types and validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the production order visualization components effectively designed?",
+      "description": "Evaluate if the dashboard presents production orders in an organized, scannable format (table, cards, or timeline). Check for sorting/filtering capabilities, visual indicators for status/progress (progress bars, colored indicators), and hover/click interactions for detailed information. Score 0 if visualization is basic text only, 5 for basic visual components, 10 for comprehensive visualization with intuitive information hierarchy.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the quick-click order adjustment functionality implemented correctly?",
+      "description": "Review if the quick-click buttons allow for efficient order adjustments (status changes, quantity updates, date modifications) with minimal clicks. Check for immediate visual feedback after actions, confirmation for critical changes, and proper event handling. Deduct 5 points if actions require more than 2 clicks, 3 points if visual confirmation is missing, and 5 points if state updates aren't reflected immediately.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the dashboard include effective data visualization for progress tracking?",
+      "description": "Assess if progress visualization uses appropriate chart types (progress bars, gauges, burndown charts) that clearly show completion status against targets. Check if visualizations update dynamically and include metrics like completion percentage, remaining units, and time-to-deadline indicators. Score 0 for text-only progress indicators, 5 for basic charts, 10 for comprehensive, intuitive visualizations that convey production status at a glance.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data fields, invalid dates, negative quantities, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time production status updates 2. Interactive drag-and-drop rescheduling 3. Predictive analytics for delivery risk). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit the same field) 2. Function modules unrelated to production scheduling (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), component reusability, and code organization. Deduct 5 points if global variable pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if CSS is not properly organized or inline styles are overused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles and has the requested 'technological feel': 1) Harmonious color matching (cohesive tech-inspired palette) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography (legible font choices, proper hierarchy). Deduct 3 points for each crowded visual element, 5 points for a generic or outdated visual style, and 5 points for poor contrast that affects readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for dashboard navigation. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between dashboard states, and 5 points for confusing navigation or hard-to-locate quick-action buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

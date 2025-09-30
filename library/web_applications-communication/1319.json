@@ -1,0 +1,68 @@
+{
+  "index": 1319,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the code you generate is executable for demonstration. Help me create the source code for a \"My Page\" (including user login functionality) for a scenic spot ticket-purchasing WeChat Mini Program developed using WeChat Developer Tools, and beautify the page design.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Mini Program user login system fully implemented?",
+      "description": "Review whether the code correctly implements WeChat Mini Program's authorization login process, including wx.getUserProfile(), wx.login(), and backend session_key validation. Check if user information storage and status management are properly handled. Score 0 if core login logic is missing, 5 if only basic login is implemented without proper error handling, and 10 if complete WeChat authorization flow with session management is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the \"My Page\" user interface comprehensively designed?",
+      "description": "Evaluate whether the My Page includes essential user center features: user avatar/nickname display, order history, ticket collection, personal settings, and logout functionality. Check if the page structure follows WeChat Mini Program design guidelines. Deduct 3 points for each missing core module, 5 points if navigation structure is unclear. Full score requires complete user center ecosystem.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the scenic spot ticket purchasing integration properly implemented?",
+      "description": "Check whether the My Page seamlessly integrates with ticket purchasing features, including order status display, ticket usage records, refund/exchange options, and QR code ticket display. Evaluate if the data flow between user operations and ticket management is correctly handled. Deduct 5 points if order management is incomplete, 3 points if ticket status updates are not real-time.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the WeChat Mini Program lifecycle and API usage correctly implemented?",
+      "description": "Review whether the code properly handles WeChat Mini Program lifecycle events (onLoad, onShow, onHide), uses appropriate APIs (wx.setStorageSync, wx.navigateTo, wx.showToast), and implements proper data binding with WXML/WXSS. Check if app.json and page.json configurations are complete. Deduct 5 points if lifecycle management is poor, 3 points if API usage is inefficient.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (network failure, login timeout, data loading errors, WeChat API call failures, etc.) and provide user-friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases and provide graceful degradation. Give 10 points if fully robust, 5 points if average robustness, 0 points if no exception handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance user experience?",
+      "description": "Check whether the code includes thoughtful features that improve user experience (e.g., 1. Smart recommendation based on visit history 2. Social sharing of scenic spot experiences 3. Offline ticket storage 4. Voice navigation integration 5. AR scenic spot preview). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user info storage methods) 2. Function modules unrelated to scenic spot ticketing (e.g., built-in games or unrelated e-commerce) 3. Excessive animations that affect Mini Program performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (proper separation of pages, components, and utils), code organization following WeChat Mini Program best practices, and reusable component structure. Deduct 5 points if global state pollution is found or improper data flow management; deduct 5 points if code duplication rate exceeds 30%; deduct 3 points if file structure doesn't follow Mini Program conventions.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet WeChat Mini Program and scenic spot industry standards?",
+      "description": "Evaluate whether the design follows WeChat Design Guidelines and scenic spot app aesthetics: 1) Color scheme suitable for tourism industry (natural, trustworthy colors) 2) Proper use of WeChat UI components (van-weapp or similar) 3) Clear visual hierarchy with tourism-themed iconography 4) Responsive design for different screen sizes. Deduct 3 points for each design inconsistency, 5 points for poor color choices, 5 points for cluttered layout.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and follows WeChat Mini Program UX patterns?",
+      "description": "Judge whether interactions conform to WeChat Mini Program user expectations: 1) Page transitions using proper navigation APIs 2) Loading states with wx.showLoading() 3) Touch feedback following WeChat standards 4) Intuitive gesture support 5) Proper use of WeChat native components. Deduct 5 points for each non-standard interaction pattern, 3 points for slow page transitions, 5 points for unclear user flow navigation.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

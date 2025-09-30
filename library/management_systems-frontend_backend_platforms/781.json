@@ -1,0 +1,68 @@
+{
+  "index": 781,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable when possible. Write code for a hardware and electrical retail store inventory management tool that will allow me to create a simple and user-friendly inventory management software.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core inventory management system properly implemented?",
+      "description": "Review whether the code accurately implements CRUD operations for inventory items, including fields for SKU, product name, category, price, quantity, supplier information, and reorder thresholds. Score 0 if basic inventory operations are missing, 5 if only basic operations are implemented without validation, and 10 if comprehensive inventory management with data validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the system include hardware/electrical specific features?",
+      "description": "Check whether the code includes domain-specific features for hardware/electrical retail such as: serial number tracking, warranty management, compatibility indicators, bulk pricing, and technical specifications management. Deduct 2 points for each missing essential feature. Give 10 points if all retail-specific features are implemented appropriately.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the database design and persistence layer well-implemented?",
+      "description": "Evaluate whether the database schema is properly normalized with appropriate relationships between entities (products, suppliers, categories, transactions). Check if the persistence layer handles data integrity, includes backup mechanisms, and uses efficient querying patterns. Deduct 5 points if the database design is flat/denormalized without justification, and 3 points if transaction safety is not implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the system provide comprehensive reporting and analytics?",
+      "description": "Assess whether the code implements essential retail analytics: inventory valuation, sales velocity, stockout prediction, reorder recommendations, and category performance visualization. Deduct 2 points for each missing critical report. The system should allow custom date ranges and export capabilities. Give 10 points if all key metrics are available with visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as duplicate SKUs, negative quantities, invalid price inputs, concurrent access, and data corruption) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Barcode/QR code scanning integration 2. Supplier communication module 3. Automated reordering based on sales velocity). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to update inventory) 2. Function modules unrelated to inventory management (e.g., a built-in game or irrelevant tools) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data access/business logic/presentation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and user-friendly?",
+      "description": "Judge whether the interface is truly user-friendly for retail staff: 1) Common operations require ≤ 3 clicks 2) Form auto-completion and validation 3) Clear visual feedback for actions 4) Consistent keyboard shortcuts. Deduct 5 points if bulk operations are not supported, 3 points for confusing navigation paths, and 5 points for operations that require unnecessary confirmation steps. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

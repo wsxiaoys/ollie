@@ -1,0 +1,68 @@
+{
+  "index": 1089,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure the code you generate is executable and demonstrable. Write a 360-degree panoramic stitching system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the panoramic image capture and stitching core functionality implemented?",
+      "description": "Examine whether the code implements essential panoramic stitching algorithms (feature detection, feature matching, homography estimation, and blending). Check if it handles proper feature detection (SIFT, SURF, ORB) and robust matching techniques (RANSAC). Score 0 if core stitching is missing, 5 if basic stitching is implemented but with visible seams, and 10 if the stitching produces seamless panoramas with proper cylindrical/spherical projection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 360-degree coverage properly handled?",
+      "description": "Verify that the system can stitch images into a complete 360-degree panorama, handling the wrapping at borders correctly. Check whether the code incorporates proper spherical or cylindrical projections to minimize distortion at poles. Deduct 5 points if the system can only handle partial panoramas, 3 points if border blending has noticeable artifacts, and 2 points if extreme viewing angles show warping issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a robust image alignment and blending system?",
+      "description": "Evaluate whether the code implements advanced blending techniques (multi-band blending, gradient-domain blending) to handle exposure differences between images. Check if the alignment system can handle parallax errors and ghosting from moving objects. Deduct 5 points if seams are visible between images, 3 points if exposure compensation is missing, and 3 points if there's no handling for moving objects. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an interactive viewing interface for the panoramas?",
+      "description": "Check if the system provides an interactive viewer (WebGL, Three.js, etc.) that allows users to navigate the 360-degree panorama with mouse/touch controls. Verify if the viewer implements proper perspective correction, smooth rotation, and zoom functionality. Deduct 5 points if navigation controls are missing, 3 points if the viewing experience is jerky/non-responsive, and 3 points if projection distortions aren't corrected during viewing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as low-feature images, extreme exposure differences, insufficient overlap between images, etc.) and provide friendly error prompts or recovery mechanisms. Check if there are validations for input images and graceful failure handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-exposure compensation across images 2. Removal of moving objects from panoramas 3. HDR panorama support 4. Real-time stitching preview). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar algorithms (e.g., multiple feature detectors running in parallel without purpose) 2. Function modules unrelated to panorama stitching (e.g., unnecessary image filters) 3. Computationally expensive processes that add little value (e.g., excessive resolution processing beyond viewing requirements). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating image processing/visualization/user interaction layers), algorithm optimization, memory management for large panoramas, and multithreading usage. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code lacks optimization for large images; deduct 5 points if there's no parallelization for computationally intensive tasks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the panorama viewing experience meets professional standards: 1) Responsive panning/zooming (≤ 60ms latency) 2) Smooth transitions between zoom levels 3) Intuitive navigation controls with visual feedback. Deduct 5 points for jerky panorama movement, 3 points for delayed response to user input, and 5 points for unintuitive navigation controls. Check if the panorama dynamically loads higher resolution tiles as needed without visible popping. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 725,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Help me create an aquaculture sector digital dashboard display using HTML and Chart.js.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete aquaculture dashboard layout implemented?",
+      "description": "Evaluate whether the code creates a comprehensive dashboard structure with proper sections for key aquaculture metrics (water quality parameters, fish growth data, feed conversion ratios, mortality rates, etc.). Score 0 if there's no dashboard structure, 5 if only a basic layout exists, and 10 if a complete, well-organized dashboard with all essential aquaculture KPIs is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are appropriate chart visualizations used for aquaculture data?",
+      "description": "Check if the code utilizes Chart.js to create suitable visualization types for different aquaculture metrics: line charts for time-series data (oxygen levels, temperature), bar charts for comparative data (harvest volumes, feed consumption), pie/doughnut charts for distribution data (species breakdown, cost allocation), and gauge charts for critical parameters with threshold limits. Deduct 3 points for each inappropriate chart type selection or missing essential visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time or simulated data monitoring implemented?",
+      "description": "Assess if the dashboard includes functionality for real-time data updates or simulated data streams that mimic actual aquaculture monitoring systems. Check for WebSocket connections, polling mechanisms, or timer-based updates. Score 0 if no data refresh mechanism exists, 5 if basic simulation is implemented, and 10 if a comprehensive real-time monitoring system with appropriate update frequencies for different metrics is included (e.g., critical parameters updating more frequently).",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are aquaculture-specific alert systems and thresholds implemented?",
+      "description": "Evaluate whether the code implements critical threshold alerts for key parameters such as dissolved oxygen, temperature, pH, ammonia levels, etc. Check if visual indicators (color changes, flashing elements) and notification systems are present when parameters breach safe ranges. Deduct 3 points for each missing critical parameter alert, and 5 points if no threshold system exists at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data points, sensor failures, extreme outlier values) and provide appropriate fallback mechanisms or error handling. Check for data validation before visualization and graceful degradation. Code with strong robustness should handle these edge cases effectively, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the aquaculture monitoring experience (e.g., 1. Predictive analytics for harvest timing 2. Weather data integration affecting water parameters 3. Interactive pond/tank selection map 4. Cross-parameter correlation visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant visualization of the same metrics in multiple formats 2. Excessive dashboard elements unrelated to aquaculture management 3. Fancy effects that affect performance or distract from critical data (e.g., unnecessary animations on critical alerts). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core monitoring functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data handling, visualization logic, and UI components), reusability of chart components, and maintainability. Check for proper Chart.js configuration with options appropriate for aquaculture data visualization. Deduct 5 points if global variables are excessively used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no organized structure for different dashboard sections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dashboard follows professional design principles: 1) Appropriate color scheme for data visualization (using blue tones for water parameters, red for alerts, etc.) 2) Proper layout with logical grouping of related metrics 3) Consistent typography with adequate contrast for legibility in control room environments. Deduct 3 points for cluttered visuals, 5 points for color schemes that make data interpretation difficult, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dashboard responsive and optimized for operational use?",
+      "description": "Judge whether the dashboard is optimized for practical use in aquaculture facilities: 1) Responsive design that works on different devices (control room monitors, tablets for on-site inspections) 2) Loading optimizations to handle large datasets 3) Appropriate data density that prioritizes critical information. Deduct 5 points if the dashboard is unusable on mobile devices, 3 points if charts render slowly with moderate data amounts, and 5 points if critical alerts aren't immediately visible. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

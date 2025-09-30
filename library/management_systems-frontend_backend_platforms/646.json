@@ -1,0 +1,68 @@
+{
+  "index": 646,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Translation\n\nYou are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes.\n\n======== ROLE ========\nYou are an experienced code expert. I will provide you with a software development requirement description, and I need you to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with clear and easy-to-understand comments. Don't output anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code and ensure the project is fully executable\n2. Ensure all code files you output are complete without omitting any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nPlease write code to implement a contract management system where users can upload contract files, categorize and tag them with keywords, and support online contract signing. The system should provide contract template management, allowing users to quickly generate standard contracts. Administrators should be able to review contract signing status and generate contract signing statistical reports.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the contract upload and storage system fully implemented?",
+      "description": "Check if the code implements complete file upload functionality with multi-format support (PDF, DOCX, etc.), secure storage mechanisms, version control for contracts, and proper file validation. Score 0 if upload functionality is missing, 5 if basic upload exists without validation or version control, and 10 if comprehensive upload with security measures and version tracking is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the contract categorization and tagging system properly implemented?",
+      "description": "Evaluate whether the code includes a robust categorization system with hierarchical categories, tag management with autocomplete suggestions, search functionality by tags/categories, and batch tagging capabilities. Deduct 3 points if hierarchical categories are missing, 3 points if tag search is inefficient, and 3 points if no tag analytics are provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the online contract signing functionality complete?",
+      "description": "Review the implementation of digital signature capabilities, including authentication verification, signature positioning, multi-party signing workflow, signature validation, and audit trails. Deduct 5 points if signature verification is weak, 3 points if the signing workflow doesn't support multiple parties, and 3 points if there's no audit trail. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the contract template management system effectively designed?",
+      "description": "Check if the system includes template creation/editing, variable field definition, template versioning, preview functionality before generation, and mass generation capabilities. Deduct 3 points if template versioning is missing, 3 points if variable field management is limited, and 3 points if there's no preview feature. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as file upload failures, signature verification errors, invalid template data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted contract analysis 2. Blockchain verification for signatures 3. Real-time collaboration on contract drafting). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload mechanisms coexisting) 2. Function modules unrelated to contract management (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., unnecessary animations on contract view). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating contract data/view/business logic layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the administrative reporting and analytics functionality complete?",
+      "description": "Judge whether the admin dashboard provides comprehensive reporting features: 1) Contract status visualization with filtering options 2) Statistical reports with exportable formats (PDF, Excel) 3) Performance metrics tracking (avg. signing time, rejection rates). Deduct 3 points for each missing report type, 3 points for non-interactive dashboards, and 5 points if data visualization is poor or misleading. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

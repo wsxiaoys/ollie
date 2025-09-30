@@ -1,0 +1,68 @@
+{
+  "index": 389,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Write an HTML code with the functionality of: scoring students in different math groups.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the student grouping and management system fully implemented?",
+      "description": "Review whether the code accurately implements student group creation, editing, and deletion through HTML/JavaScript, and whether it includes dynamic group member management (add/remove students), group information display, and group switching functionality. Score 0 if core grouping logic is not implemented, 5 if only basic group display is implemented, and 10 if complete group management with validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the scoring system comprehensively implemented?",
+      "description": "Check whether the scoring functionality includes multiple input methods (individual scoring, batch scoring, import from file), score validation (range checking, format validation), real-time score updates, and score history tracking. Deduct 5 points if input validation is missing, and 3 points if score modification/deletion functionality is not handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence and storage mechanism designed?",
+      "description": "Evaluate whether the system uses appropriate client-side storage (localStorage/sessionStorage/IndexedDB) to persist student data, group configurations, and scoring records. Check whether data import/export functionality is provided (JSON/CSV format support). Deduct 5 points if data is lost on page refresh. Check whether backup and recovery mechanisms are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are statistical analysis and reporting features constructed?",
+      "description": "Check whether the code includes comprehensive statistical analysis such as group performance comparison, individual student progress tracking, average/median/percentile calculations, and visual charts or graphs. Deduct 5 points if no statistical calculations are implemented, and 3 points if results are not displayed in an organized manner. Give 10 points if comprehensive analytics with visual representation are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input, empty data sets, duplicate student names, malformed import files, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automatic grade calculation with customizable weights 2. Progress tracking with timeline visualization 3. Collaborative scoring with multiple teacher accounts 4. Mobile-responsive design with touch interactions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring input methods that serve the same purpose) 2. Function modules unrelated to student scoring (e.g., built-in games or entertainment features) 3. Excessive animations that affect usability (e.g., overly complex transitions for simple operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data management/UI rendering/calculation logic), code organization and structure, and consistent coding patterns. Deduct 5 points if global state pollution is found or proper separation of concerns is not implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if inconsistent naming conventions or poor code documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern educational software design principles: 1) Clean and professional color scheme suitable for educational context (no more than 3 primary colors) 2) Proper layout spacing with clear visual hierarchy (element spacing follows consistent grid system) 3) Readable typography (body font size ≥ 14px, sufficient contrast ratios). Deduct 3 points for each cluttered visual element, 5 points for unprofessional color combinations, and 5 points for poor information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the user interactions conform to educational software usability standards: 1) Form input feedback and validation in real-time 2) Smooth transitions between different views/groups (300-500ms duration) 3) Clear visual indicators for active states and user actions 4) Intuitive navigation and workflow. Deduct 5 points for each operation without proper feedback, 3 points for confusing user flow, and 5 points for hard-to-discover essential functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

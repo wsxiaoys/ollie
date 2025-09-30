@@ -1,0 +1,68 @@
+{
+  "index": 1001,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display. I need a player that can scroll through and play multiple GIFs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the GIF player's core functionality fully implemented?",
+      "description": "Review whether the code accurately implements loading, displaying, and scrolling through multiple GIFs. Check if it handles different GIF formats properly and maintains timing for animated GIFs. Score 0 if the core functionality is missing, 5 if only basic display is implemented without scrolling, and 10 if both display and navigation between multiple GIFs work correctly.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the playback control system robust and complete?",
+      "description": "Evaluate the implementation of play, pause, stop, and navigation controls between multiple GIFs. Check if the player properly maintains the playback state of each GIF when switching between them. Deduct 3 points if play/pause functionality is buggy, 3 points if navigation controls are missing or incomplete, and 4 points if the current playback state is not preserved when switching between GIFs.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the solution handle GIF loading and optimization properly?",
+      "description": "Check whether the code implements proper preloading mechanisms for smooth transition between GIFs, lazy loading for better performance, and error handling for failed loads. Assess if it manages memory efficiently when dealing with multiple GIFs. Deduct 3 points for missing preloading, 3 points for excessive memory usage, and 4 points for poor error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a responsive design for different screen sizes?",
+      "description": "Evaluate whether the GIF player is responsive across different devices and screen sizes. Check if it properly scales GIFs without breaking aspect ratios, and if the controls remain accessible and usable on mobile devices. Deduct 5 points if the layout breaks on mobile devices, 3 points if controls become unusable at certain screen sizes, and 2 points if GIFs don't scale properly.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted GIFs, varying GIF sizes, network interruption during loading, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. GIF speed control 2. Frame-by-frame navigation 3. Thumbnail previews of all GIFs 4. Filter or effect application to GIFs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scrolling mechanisms) 2. Function modules unrelated to GIF playback (e.g., unnecessary audio players) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating GIF loading/playback/UI components), code reusability, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations are implemented for handling multiple large GIFs. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clean and intuitive controls that don't obstruct GIF viewing. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for poorly positioned controls that interfere with content. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Smooth transitions between GIFs with animation duration between 300-500ms 2) Responsive controls with click feedback delay ≤ 100ms 3) Clear visual indication of current GIF in the sequence. Deduct 5 points for each operation without feedback, 3 points for jerky transitions between GIFs, and 5 points for unclear navigation elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "easy"
+}

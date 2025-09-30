@@ -1,0 +1,68 @@
+{
+  "index": 1521,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the code you provide is executable. Create a Chinese character and pinyin matching game for me that can be run directly.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Chinese character and pinyin matching core functionality implemented?",
+      "description": "Review whether the code accurately implements the matching mechanism between Chinese characters and their corresponding pinyin, including validation of correct matches and handling of incorrect matches. Score 0 if the core matching logic is not implemented, 5 if only basic matching is implemented without feedback, and 10 if full matching with proper feedback and score tracking is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is there a diverse and educational character set included?",
+      "description": "Evaluate the variety and educational value of the Chinese characters included in the game. Check if characters are grouped by difficulty levels or thematic categories. Deduct 5 points if fewer than 20 characters are included, 3 points if characters lack proper pinyin annotations, and 2 points if there's no progression in character complexity. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the game include proper learning feedback and progression?",
+      "description": "Assess whether the game provides educational feedback when matches are made, such as character meanings, usage examples, or cultural context. Check if there's a learning progression system that tracks user performance. Deduct 5 points if no educational content is provided beyond the matching, and 3 points if there's no progress tracking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete game lifecycle with proper state management?",
+      "description": "Check whether the code includes complete game lifecycle management, including start/pause/resume/end states, score tracking, and session persistence. Deduct 5 points if there's no way to restart or reset the game, 3 points if the game state isn't preserved between sessions, and 2 points if there's no clear game completion state. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, browser compatibility issues, touch vs. mouse interactions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Audio pronunciation of characters 2. Character stroke order animations 3. Spaced repetition learning algorithm 4. Customizable character sets). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems) 2. Function modules unrelated to Chinese character learning (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations that slow loading times). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for an educational context 2) Proper layout with clear distinction between Chinese characters and pinyin 3) Professional font system with appropriate sizing for Chinese characters (large enough to see strokes clearly). Deduct 3 points for cluttered layouts, 5 points for poor character readability, and 5 points for inappropriate color schemes for educational content. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive for language learning?",
+      "description": "Judge whether the game interactions support effective language learning: 1) Clear visual indication of selection state 2) Intuitive matching mechanism 3) Appropriate feedback timing for learning retention. Deduct 5 points for confusing interaction patterns, 3 points for delayed feedback that interrupts the learning flow, and 5 points for accessibility issues that would prevent certain users from engaging with the content. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

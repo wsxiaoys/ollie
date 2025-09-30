@@ -1,0 +1,68 @@
+{
+  "index": 341,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Help me create a macOS desktop application using Electron. The application should include a tool list menu where users can select and use corresponding tools.\n\nFirst-level menu: JSON, with second-level menus: JSON Format, JSON DIFF.\n\nWhen clicking the \"JSON Format\" menu, the application should be divided into two rich text boxes internally. The left rich text box is for pasting the original JSON, and the right rich text box displays the formatted (beautified) JSON text.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Electron application structure properly implemented?",
+      "description": "Verify that the code includes essential Electron components: main process (main.js), renderer process, preload scripts, and proper IPC communication. The application should follow the Electron security best practices with contextIsolation enabled and nodeIntegration disabled. Deduct 5 points if missing proper window management (creation, close, minimize), 5 points if missing appropriate security configurations, and 5 points if the application lifecycle isn't handled correctly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the first-level JSON menu with second-level options correctly implemented?",
+      "description": "Check whether the menu structure is properly defined with 'JSON' as the first-level menu and 'JSON Format' and 'JSON DIFF' as second-level items. The menu should be created using Electron's Menu API with proper event handling. Deduct 5 points if the menu structure is incorrect, 3 points if keyboard shortcuts are missing, and 2 points if menu state management (enabling/disabling based on context) is not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the JSON Format functionality fully implemented?",
+      "description": "Evaluate whether the JSON Format tool correctly splits the view into two rich text areas, allows pasting in the left panel, and displays properly formatted JSON in the right panel. The formatter should handle indentation, line breaks, and color syntax highlighting. Deduct 5 points if syntax highlighting is missing, 3 points if large JSON files cause performance issues, and 5 points if the formatter doesn't handle JSON validation errors gracefully. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the JSON DIFF functionality properly designed and implemented?",
+      "description": "Assess whether the JSON DIFF tool allows comparing two JSON structures with clear visual indication of differences (additions, deletions, modifications). The diff view should highlight changes using color coding and provide a structured view of changes. Deduct 5 points if the diff algorithm doesn't handle nested structures, 3 points if large JSON comparison is inefficient, and 5 points if there's no option to ignore formatting/whitespace differences. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid JSON input, large files, memory constraints, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark/Light theme support 2. JSON schema validation 3. Export options to different formats). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple JSON parsers used) 2. Function modules unrelated to the core JSON tools (e.g., a built-in web browser) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data processing layers), error handling quality, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional macOS design standards?",
+      "description": "Evaluate whether the design follows macOS design principles: 1) Native-looking controls and interaction patterns 2) Proper spacing and alignment following Apple's Human Interface Guidelines 3) Professional typography with system font usage. Deduct 3 points for each non-native UI element, 5 points for layouts that don't adapt to window resizing, and 5 points for inconsistent visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback for JSON formatting operations 2) Smooth transitions between different tool views 3) Efficient handling of large JSON documents without UI freezing. Deduct 5 points for operations without visual feedback, 5 points for UI freezes during JSON processing, and 3 points for jarring transitions between application states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

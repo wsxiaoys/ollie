@@ -1,0 +1,68 @@
+{
+  "index": 900,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Help me create an HTML for a ward management system that can run on Hbuilder.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the ward management system's core functionality implemented?",
+      "description": "Evaluate whether the code implements essential ward management features: patient registration, bed assignment, staff scheduling, and patient records management. Score 0 if core functionalities are missing, 5 if only basic features are implemented, and 10 if comprehensive ward management capabilities are included with proper data validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the UI structure properly designed for a ward management system?",
+      "description": "Check whether the HTML structure follows proper hierarchy with semantic elements (header, nav, main, section, footer). Verify the presence of responsive design for different screen sizes (desktop, tablet, mobile) since ward staff may use various devices. Deduct 3 points if semantic HTML is not used, 3 points if responsiveness is missing, and 4 points if the navigation structure is confusing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data management and persistence properly implemented?",
+      "description": "Assess whether the system implements proper data handling mechanisms: local storage usage, form validation, and state management. Check for data integrity features like input validation and proper data structures. Deduct 5 points if no data persistence is implemented, and 5 points if input validation is inadequate or missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is HBuilder compatibility considered in the implementation?",
+      "description": "Verify whether the code utilizes HBuilder-specific features or plugins properly, like HTML5+ API integration, MUI components, or other HBuilder capabilities. Check if the app is configured for HBuilder deployment. Deduct 5 points if HBuilder compatibility issues exist, and 5 points if no HBuilder-specific optimizations are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, network issues, or user operation errors) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time bed occupancy visualization 2. Patient critical status alerts 3. Drag-and-drop bed assignment interface). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple patient search methods) 2. Function modules unrelated to ward management (e.g., a built-in game for staff) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code organization, and maintainability. Deduct 5 points if global variable pollution is found or if proper JavaScript patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code structure makes future maintenance difficult. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet healthcare UI standards?",
+      "description": "Evaluate whether the UI follows healthcare design principles: 1) Clean, professional color scheme appropriate for medical settings 2) Proper information hierarchy with critical patient data easily accessible 3) Consistent typography suitable for clinical reading (body font size ≥ 14px, clear headings). Deduct 3 points for visual clutter, 5 points for inappropriate color schemes for healthcare, and 5 points for poor information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and user-friendly for healthcare staff?",
+      "description": "Judge whether the system is optimized for healthcare workflows: 1) Quick access to critical patient information (≤ 2 clicks) 2) Form completion and submission within 30 seconds 3) Clear visual indicators for patient status changes. Deduct 5 points for each workflow requiring excessive steps, 3 points for slow-loading interfaces, and 5 points for confusing navigation between key system areas. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

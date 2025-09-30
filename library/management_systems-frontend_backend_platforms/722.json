@@ -1,0 +1,68 @@
+{
+  "index": 722,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the code you generate is executable. Very good. Now I'm providing fields from another database. Help me design code for the database, Python side, and front-end Avue. Please refer to the following:\n\n\"QianXun Wing Q30\":\n  \"Manufacturer\": \"QianXun Position\"\n  \"Dimensions\": \"4.128m×1.93m×0.75m\"\n  \"Cruising Range\": 280km\n  \"Rain Resistance\": \"Medium Rain\"\n  \"Wind Resistance\": \"Level 7\"\n  \"Maximum Load\": 10kg\n  \"Type\": \"Compound Wing\"\n\"QianXun Wing Q20\":\n  \"Manufacturer\": \"QianXun Position\"\n  \"Dimensions\": \"3.378m×1.5m×0.5m\"\n  \"Cruising Range\": 210km\n  \"Rain Resistance\": \"Medium Rain\"\n  \"Wind Resistance\": \"None\"\n  \"Maximum Load\": 3kg\n  \"Type\": \"Compound Wing\"\n\"QianXun Wing X8\":\n  \"Manufacturer\": \"QianXun Position\"\n  \"Dimensions\": ''\n  \"Cruising Range\": ''\n  \"Rain Resistance\": \"None\"\n  \"Wind Resistance\": \"Level 7\"\n  \"Maximum Load\": 5.5kg\n  \"Type\": \"Multi-Rotor Wing\"\n\"Extreme Fly M2000\":\n  \"Manufacturer\": \"Guangzhou Extreme Fly Technology Co., Ltd.\"\n  \"Dimensions\": ''\n  \"Cruising Range\": 86km\n  \"Rain Resistance\": \"None\"\n  \"Wind Resistance\": \"None\"\n  \"Maximum Load\": ''\n  \"Type\": \"Fixed Wing\"\n\"Extreme Fly V50-Pro\":\n  \"Manufacturer\": \"Guangzhou Extreme Fly Technology Co., Ltd.\"\n  \"Dimensions\": ''\n  \"Cruising Range\": ''\n  \"Rain Resistance\": \"None\"\n  \"Wind Resistance\": \"None\"\n  \"Maximum Load\": 20kg\n  \"Type\": \"Multi-Rotor Wing",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the database schema properly designed for the UAV data?",
+      "description": "Review whether the database schema correctly defines tables, fields, and relationships for storing UAV information. Check for proper field types (string for text fields, numeric for measurements, etc.), primary keys, and indexes. Evaluate normalization to avoid redundancy while maintaining query efficiency.Award 0 points if no schema is provided, 5 points for basic table creation without proper constraints, and 10 points for a complete schema with appropriate data types, constraints, and indexes optimized for UAV data retrieval.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is there a complete Python backend implementation for CRUD operations?",
+      "description": "Examine the Python code for comprehensive Create, Read, Update, and Delete operations on the UAV database. Check for proper error handling, input validation (especially for measurements and technical specifications), and appropriate ORM usage if applicable.Deduct 3 points if any CRUD operation is missing, 2 points for inadequate input validation, and 2 points for poor error handling. Award 10 points for a complete implementation with proper data validation, error handling, and efficient database operations.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a Python API layer that properly interfaces with the frontend?",
+      "description": "Verify if the Python code includes API endpoints (using frameworks like Flask or FastAPI) that expose the necessary data to the Avue frontend. Check for proper routing, authentication mechanisms, data serialization, and RESTful design principles.Award 0 points if no API is implemented, 5 points for basic endpoints without authentication or proper error responses, and 10 points for complete API implementation with authentication, proper status codes, and comprehensive documentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Avue frontend configuration properly implemented for UAV data display?",
+      "description": "Evaluate whether the Avue configuration correctly displays all UAV fields with appropriate form components (text fields, dropdowns for type selection, number inputs with proper units for measurements). Check for proper layout organization that logically groups related UAV specifications.Deduct 2 points for each missing or improperly configured field. Deduct 3 points if field validation is missing. Award full 10 points only if all UAV fields are properly displayed with appropriate input types and validation rules.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty fields in the provided data, malformed input, network issues, etc.) and provide friendly error handling. Check for input validation, null checks, and graceful degradation.Award 10 points for comprehensive error handling including input validation, meaningful error messages, and graceful degradation. Award 5 points if basic error handling exists but edge cases are missed. Award 0 points if no error handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes additional features that enhance usability (e.g., 1. UAV comparison visualization 2. Specification filtering system 3. Performance metrics charts 4. Integrated search functionality for UAV data).Add 3 points for each practical innovative feature implemented (maximum 10 points). Features must be relevant to UAV data management and visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant data storage or processing logic 2. Functionality unrelated to UAV data management 3. Overly complex UI elements that don't add value to UAV data visualization.Deduct 3 points for each redundancy found, and directly deduct 10 points if core UAV data management functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data access, business logic, and presentation layers), code reusability, appropriate comments, and adherence to language-specific conventions (PEP 8 for Python, standard JS practices for frontend).Deduct 5 points if code lacks separation of concerns; deduct 5 points if code duplication rate is over 30%; deduct 5 points if there are no meaningful comments or documentation. Award full 10 points for well-structured, documented, and maintainable code.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Avue interface follows modern design principles: 1) Appropriate color scheme for technical data 2) Proper layout with logical grouping of UAV specifications 3) Consistent typography enhancing readability of technical specifications.Deduct 3 points for each crowded visual element, 5 points for inappropriate color schemes for technical data, and 5 points for poor information hierarchy making UAV data hard to scan. Award 10 points for a clean, professional interface optimized for UAV data presentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the data visualization effective and intuitive?",
+      "description": "Judge whether the data presentation helps users understand UAV specifications: 1) Visual comparison of UAV capabilities 2) Appropriate charts for numeric specifications 3) Clear visual indicators for missing data points in the UAV specifications.Deduct 5 points for raw data display without any visualization, 3 points for basic visualization without comparative capabilities, and 5 points for visualizations that don't effectively communicate UAV performance differences. Award 10 points for comprehensive, intuitive data visualization that aids decision-making.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

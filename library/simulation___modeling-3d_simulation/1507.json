@@ -1,0 +1,68 @@
+{
+  "index": 1507,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that any code you generate is executable for demonstration purposes. • VR panoramic tour script framework",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the VR panoramic engine core correctly implemented?",
+      "description": "Evaluate if the code implements essential VR panorama functionality including equirectangular projection handling, sphere or cube mapping, proper field of view (FOV) calculations, and camera orientation controls. Score 0 if core rendering is missing, 5 if basic equirectangular display works but has distortion issues, 10 if it properly handles all projection types with correct perspective.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the code implement a proper navigation system for VR tour points?",
+      "description": "Check if the codebase provides a complete tour point system with hotspot management, scene transitions, waypoint visualization, and navigation controls. Deduct 3 points if hotspots aren't interactive, 4 points if scene transitions lack smooth blending effects, and 3 points if the tour graph structure isn't properly maintained. Full score requires a complete navigation state machine with history tracking.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is device orientation and control handling properly implemented?",
+      "description": "Verify if the code includes comprehensive device orientation support using gyroscope/accelerometer for mobile devices, mouse/touch drag controls, and proper handling of different input methods. Deduct 5 points if orientation controls aren't normalized across devices, 3 points if there's no device capability detection, and 2 points if smooth inertial movement is missing. Full implementation should include proper permission handling for device sensors.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the framework provide proper VR stereo rendering and WebXR integration?",
+      "description": "Assess whether the code implements proper stereoscopic rendering for VR headsets, includes WebXR API integration, handles correct interpupillary distance calculations, and manages head tracking. Deduct 5 points if stereo rendering is missing, 3 points if WebXR integration is incomplete, and 2 points if there's no fallback for non-WebXR browsers. The full score requires distortion correction for VR lenses.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common VR-specific issues like device orientation permission denials, WebGL context loss, texture loading failures, and memory management for large panoramas. Code should gracefully degrade when features aren't available and provide clear error feedback. Deduct 3 points for each unhandled critical error scenario, and 2 points if performance monitoring is absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Spatial audio integration 2. Interactive annotations with multimedia support 3. Procedural environment effects like weather/lighting 4. Auto-tour capabilities with timed transitions). Add 2.5 points for each practical innovative feature implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant rendering paths that could be unified 2. Feature modules unrelated to VR panoramic functionality 3. Heavy visual effects that significantly impact performance on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core VR experience is compromised by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the architecture for separation of concerns (renderer/controller/data model), proper asset loading pipeline, memory management for large panoramic images, and optimization techniques. Deduct 3 points for global state pollution, 3 points for lack of texture compression options, 2 points if there's no progressive loading for panoramas, and 2 points if the build process isn't optimized for web delivery.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the VR UI follows best practices: 1) Proper depth positioning of UI elements (0.5-2m virtual distance) 2) Ergonomic placement avoiding neck strain (within 30° vertical FOV) 3) Sufficient contrast and legibility at various distances 4) Gaze/controller interaction affordances. Deduct 3 points for each violation of VR ergonomic principles and 5 points for interfaces causing potential motion sickness.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the VR experience smooth and comfortable?",
+      "description": "Judge whether the implementation prioritizes user comfort: 1) Maintains min. 60fps without frame drops 2) Implements proper motion damping to prevent nausea 3) Avoids sudden camera movements or rotations 4) Includes comfort settings for movement speed and FOV adjustments. Deduct 3 points for each performance bottleneck identified, 5 points for missing comfort options, and 2 points if the experience doesn't gracefully handle variable device performance.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "medium"
+}

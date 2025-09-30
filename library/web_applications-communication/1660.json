@@ -1,0 +1,68 @@
+{
+  "index": 1660,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you produce is executable for demonstration purposes. Please write a login/registration component for me with refined styling, which can include a background image and the ability to switch between login and registration forms.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the login/registration component fully implemented?",
+      "description": "Check whether the component implements complete login and registration functionality with the ability to switch between forms. Validate that form fields include proper input validation (email format, password strength, etc.). Score 0 if core functionality is missing, 5 if only basic form submission is implemented without validation, and 10 if both login and registration forms are complete with comprehensive validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is form validation properly implemented?",
+      "description": "Evaluate the implementation of client-side validation including: required field checks, email format validation, password strength requirements, and instant feedback on validation errors. Deduct 3 points if validation only happens on submission rather than in real-time; deduct 5 points if validation is minimal or easily bypassed; deduct 5 points if there's no visual feedback for validation errors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the form switching mechanism implemented smoothly?",
+      "description": "Check if the component allows users to switch between login and registration forms without page reload, with smooth transitions. Evaluate whether the state management handles the transition properly, preserving data when appropriate. Deduct 5 points if switching causes jarring UI changes; deduct 3 points if data is inappropriately lost between switches; deduct 5 points if any errors occur during switching. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the background image feature properly implemented?",
+      "description": "Verify if the component supports background images with proper responsive behavior across different screen sizes. Check for proper image optimization, loading techniques (e.g., lazy loading), and fallbacks. Deduct 3 points if the background image isn't responsive; deduct 5 points if it significantly impacts performance; deduct 3 points if there are no fallbacks for failed image loads. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures during submission, browser compatibility issues, accessibility edge cases, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Social login integration 2. Password strength visual indicator 3. Remember me functionality 4. Intelligent form field auto-completion 5. Dark/light mode toggle). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation logics coexisting) 2. Function modules unrelated to login/registration (e.g., unnecessary animations or widgets) 3. Fancy effects that affect performance (e.g., excessive animations or heavy background effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components from validation logic), use of design patterns (e.g., controlled components, custom hooks), proper event handling, and clean code principles. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high; deduct 5 points if there's no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Proper contrast for readability. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 200-300ms 3) Clear visual focus guidance for keyboard navigation 4) Proper loading states during submissions. Deduct 5 points for each operation without feedback, 3 points for jarring animations, and 5 points for hard-to-find form elements or buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

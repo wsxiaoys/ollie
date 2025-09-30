@@ -1,0 +1,68 @@
+{
+  "index": 208,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable whenever possible. I am a programming beginner, please help me create a web-based animation showing stick figures fighting each other, and guide me on how to use it.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the stick figure fighting animation properly implemented?",
+      "description": "Review whether the code correctly implements stick figure characters with proper joint connections and movement capabilities. Check if the animation includes proper physics for realistic movements (e.g., gravity, momentum). Score 0 if stick figures are not properly rendered, 5 if basic static figures are drawn but animation is limited, and 10 if fully articulated stick figures with smooth movements are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the fighting interaction between stick figures implemented?",
+      "description": "Evaluate the implementation of combat mechanics between stick figures. Check for collision detection between figures, attack animations, defensive moves, and health/damage systems. Score 0 if no interaction exists, 5 if basic collision is implemented but combat feels unrealistic, and 10 if there's a comprehensive combat system with various attacks, defenses, and believable physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there user control for the stick figures?",
+      "description": "Assess the implementation of keyboard/mouse controls that allow users to manipulate at least one of the stick figures. Check for responsiveness (inputs registered within 100ms), intuitiveness of controls, and whether instructions are provided. Deduct 5 points if controls are limited to basic movements, 3 points if there are no alternative control schemes. Full score requires comprehensive controls for both movement and combat actions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the animation loop and game state management properly implemented?",
+      "description": "Examine whether the code implements proper requestAnimationFrame usage, maintains consistent frame rates (target 60fps), and handles game states (start, pause, resume, end conditions). Check for memory leaks during long gameplay. Deduct 5 points for frame rate issues, 5 points if there's no proper game state handling, and 3 points if animation timing is inconsistent.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (browser compatibility, window resizing, input device variations, performance degradation). Code with strong robustness should gracefully handle these scenarios with fallback mechanisms. Give 10 points for comprehensive error handling and browser compatibility, 5 points for average robustness, and 0 points if the code breaks easily under common variations.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special moves or combos 2. Environmental interactions like obstacles 3. Different fighting styles for stick figures 4. Sound effects synchronized with animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation loops or rendering processes 2. Unnecessary visual elements unrelated to the fighting animation 3. Complex effects that impact performance without adding value to the core experience. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code significantly impacts core animation performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of animation logic, rendering, and user input handling), clean code practices, and maintainability. Deduct 5 points if global variable pollution is excessive; deduct 5 points if there's high code duplication (over 30%); deduct 5 points if the code lacks proper commenting for a beginner to understand. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the animation canvas is properly positioned with adequate margins, if controls/UI elements follow consistent design principles, and if the overall visual presentation is clean. Deduct 3 points for poorly positioned elements, 5 points for inconsistent visual style between UI and animation, and 5 points for lack of visual feedback during interactions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the beginner guidance comprehensive and educational?",
+      "description": "Assess the quality of instructions provided for beginners: 1) Clear setup instructions that work without advanced knowledge 2) Explanation of code concepts used in the animation 3) Guidance on how to modify or extend the animation. Deduct 5 points if setup instructions are incomplete, 5 points if there's no explanation of core animation concepts, and 3 points if there's no guidance for customization. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

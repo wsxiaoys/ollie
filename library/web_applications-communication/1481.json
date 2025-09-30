@@ -1,0 +1,68 @@
+{
+  "index": 1481,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Create a \"My Page\" that requires logging in first. If a user doesn't have an account, they need to register. Only after logging in can they view the content of the page. The \"My Page\" should include a profile picture and personal information. Please make it visually appealing.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the authentication system fully implemented?",
+      "description": "Check whether the code properly implements login, registration, and authentication mechanisms. Verify if sessions or tokens are used for maintaining authentication state. Score 0 if no authentication system is implemented, 5 if basic login/logout functions exist without security measures, and 10 if a complete system with password hashing, session management, and security features is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the registration functionality properly implemented?",
+      "description": "Examine whether the registration form validates inputs (email format, password strength, etc.) on both client and server sides. Check if it prevents duplicate accounts, handles errors gracefully, and provides feedback to the user. Deduct 3 points if client-side validation is missing, 3 points if server-side validation is inadequate, and 4 points if there's no duplicate user checking mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user profile display system complete?",
+      "description": "Verify if the 'My Page' displays all essential user information (profile picture, username, email, etc.) and whether the code properly fetches this data from storage. Check if profile picture uploading/changing is supported. Score 0 if profile display is missing, 5 if basic information is shown without editing capabilities, and 10 if complete profile management with image upload functionality is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are authentication redirects and protected routes implemented?",
+      "description": "Evaluate whether unauthenticated users are properly redirected to login page when attempting to access protected content, and whether authenticated users are redirected to 'My Page' after login. Check if the application maintains authentication state across page reloads. Deduct 5 points if protection is easily bypassed, and 3 points if there are inconsistencies in the redirect logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid inputs, session timeouts, failed image uploads, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Social media integration 2. Dark/light theme toggle 3. Multiple profile picture options with filters). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication methods without clear purpose) 2. Function modules unrelated to user profiles (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating authentication logic/UI components/state management), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for form fields. Deduct 5 points for each operation without feedback, 3 points for jerky transitions between authentication steps, and 5 points for confusing navigation between login/register forms. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

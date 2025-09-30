@@ -1,0 +1,68 @@
+{
+  "index": 1688,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the code you produce is executable for demonstration. Create a network framework for a school using Semantic UI.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the school network framework architecture comprehensively designed?",
+      "description": "Review whether the code implements a complete school network framework including core modules: user management system (students/teachers/administrators), course management, grade management, and notification system. Check if the framework uses proper MVC/MVVM architecture patterns and includes database schema design. Score 0 if core school modules are missing, 5 if only basic user management is implemented, and 10 if all essential school management modules are fully integrated with proper data relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Semantic UI properly integrated and utilized?",
+      "description": "Evaluate whether Semantic UI components are correctly implemented including navigation menus, forms, tables, modals, and grid systems. Check if custom CSS properly extends Semantic UI themes without conflicts. Verify responsive design implementation across different screen sizes. Deduct 5 points if Semantic UI components are not properly initialized with JavaScript, and 3 points if responsive breakpoints are not handled correctly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user authentication and authorization system robust?",
+      "description": "Check whether the framework implements secure login/logout functionality with proper session management and role-based access control (RBAC) for different user types (students, teachers, administrators). Evaluate password hashing, CSRF protection, and input validation. Deduct 5 points if role-based permissions are not properly implemented, and 3 points if session security measures are inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data management and API integration complete?",
+      "description": "Assess whether the framework includes proper CRUD operations for school entities (users, courses, grades, schedules) with appropriate database connections. Check if RESTful API endpoints are designed with proper HTTP methods and status codes. Evaluate data validation, error handling, and transaction management. Deduct 5 points if database relationships are not properly established, and 3 points if API responses lack proper error handling. Give 10 points if fully implemented with comprehensive data flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user inputs, database connection failures, file upload errors, network timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the framework includes surprise features that enhance the school management experience (e.g., 1. Real-time dashboard with analytics 2. Automated email notifications for assignments/grades 3. Calendar integration with Google/Outlook 4. Mobile-responsive progressive web app features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user validation logics coexisting) 2. Function modules unrelated to school management (e.g., a built-in games section) 3. Fancy effects that affect performance (e.g., excessive animations on data tables). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core school management functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/presentation/data layers), code organization, and configuration management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if environment configuration is hardcoded without proper config files. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching consistent with Semantic UI theme (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent iconography and proper visual hierarchy. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout structure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Page transitions and modal animations duration controlled between 300-500ms 3) Clear visual focus guidance for navigation 4) Semantic UI component interactions (dropdowns, accordions, tabs) work smoothly. Deduct 5 points for each operation without feedback, 3 points for visual glitches during component state changes, and 5 points for hard-to-find navigation elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

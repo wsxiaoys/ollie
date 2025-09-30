@@ -1,0 +1,68 @@
+{
+  "index": 634,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Please write code to implement an insurance customer management system. Insurance agents can log in to add and manage customer information, record customer insurance needs and policy history. Customers can log in to view their own policy information, submit claims, and check claim progress. Administrators can review claim applications, manage insurance product information, and generate customer and claims statistical reports.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user authentication and role-based access control fully implemented?",
+      "description": "Review whether the code implements a secure authentication system with proper session management and distinct roles (agent, customer, administrator) with appropriate permission levels. Check for password hashing, CSRF protection, and session timeout features. Score 0 if authentication is missing, 5 if basic login exists but lacks proper role segregation, and 10 if complete RBAC with security measures is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the customer management functionality complete for agents?",
+      "description": "Verify if agents can add new customers, update customer information, record customer needs assessment, and track policy history. The system should include form validation, data sanitization, and proper relational database structure. Deduct 3 points if customer search functionality is missing, 3 points if data validation is inadequate, and 4 points if there's no way to record customer interactions or needs assessment. Full score requires complete CRUD operations with audit logging.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the policy management system properly implemented?",
+      "description": "Examine if the system allows for creating, updating, and managing policy information with appropriate relationships to customers and agents. Check if policy documents can be uploaded/stored, if premium calculations are included, and if policy status changes (active, lapsed, canceled) are tracked. Deduct 3 points for missing document management, 3 points for absence of policy lifecycle tracking, and 4 points if premium handling is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the claims processing workflow complete?",
+      "description": "Assess whether the code implements a complete claims lifecycle: submission by customers, review by administrators, status updates, documentation requirements, and payment processing. Check if the workflow handles multi-step approval processes and notification systems. Deduct 5 points if the workflow is linear without proper state management, 3 points if document upload/management for claims is missing, and 2 points if there's no notification system for status changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, duplicate submissions, database connection failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include try-catch blocks, input validation, and graceful error handling. Give 10 points for comprehensive error handling, 5 points for basic validation only, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered risk assessment tool 2. Automated policy renewal reminders 3. Interactive dashboards for claims analysis 4. Mobile-responsive design with push notifications). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate functionality across different modules (e.g., multiple customer search implementations) 2. Features unrelated to insurance management (e.g., built-in games or unnecessary social features) 3. Over-engineered components that complicate the system. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as MVC pattern or service-oriented architecture), unit test coverage, and build process automation. Check for code documentation, naming conventions, and consistent coding style. Deduct 5 points if global state pollution is found; deduct 3 points if the code lacks comments or documentation; deduct 2 points if there's no evidence of testing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Harmonious color scheme appropriate for financial/insurance context 2) Proper information hierarchy and form layout 3) Consistent typography and component styling across the application. Deduct 3 points for cluttered dashboards, 4 points for confusing navigation structure, and 3 points for inconsistent visual elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the system performance and data security adequately addressed?",
+      "description": "Judge whether the system handles performance considerations and security requirements: 1) Data encryption for sensitive customer information 2) Pagination for large data sets 3) Optimized database queries 4) Proper logging of system access and changes. Deduct 3 points for missing data encryption, 2 points for poor query optimization, 3 points for inadequate audit logging, and 2 points if there's no consideration for data backup/recovery. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

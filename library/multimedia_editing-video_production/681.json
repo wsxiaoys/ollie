@@ -1,0 +1,68 @@
+{
+  "index": 681,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. I am a code expert. Please use my professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable. \n\n======== ROLE ========\nYou are an experienced code expert. I am providing you with a software development requirement description and asking you to generate project code according to this requirement. Strictly follow the rules to help users generate complete project code that is fully commented in simple and easy-to-understand language. Don't output anything else.\n\n======== OUTPUT RULES ========\n1. You should always generate complete, runnable project code. Please ensure the project is complete and executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Before final output, carefully review and check all code to evaluate its executability. If the code cannot run or contains errors, it needs to be regenerated\n4. If the requirements include external API access or user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nPlease develop a short video effects editor that allows users to upload short videos and add various filter effects (such as black and white, vintage, warm tone, etc.) and dynamic stickers through WebGL. Users should be able to add text, emojis, and animation effects to the video through drag and drop, with precise control over their appearance time points and duration. Finally, support exporting the edited video in mp4 format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and processing system fully implemented?",
+      "description": "Review whether the code accurately implements video file upload functionality through HTML5 File API, includes video format validation (mp4, webm, mov), and proper video loading with metadata extraction. Check if video frame extraction and canvas rendering are properly implemented for editing operations. Score 0 if basic video loading is not implemented, 5 if only basic upload without processing is implemented, and 10 if complete video processing pipeline including frame-by-frame manipulation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are WebGL filter effects comprehensively implemented?",
+      "description": "Evaluate whether the WebGL implementation includes multiple shader-based filter effects (black and white, vintage, warm tone, etc.) with proper fragment and vertex shader programs. Check if the rendering pipeline efficiently processes video frames in real-time without performance degradation. Deduct 5 points if filters cause significant frame drops (>16.67ms per frame), and 3 points if shader compilation errors occur. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the timeline-based editing system with precise control implemented?",
+      "description": "Check whether the code includes a comprehensive timeline interface allowing users to control appearance time points and duration of effects/stickers/text with frame-level precision. Evaluate if drag-and-drop functionality is properly implemented with collision detection and snap-to-grid features. Deduct 5 points if timeline synchronization is inaccurate (>100ms deviation), and 3 points if drag-and-drop operations lack visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video export functionality with MP4 encoding properly constructed?",
+      "description": "Assess whether the code implements complete video export functionality using MediaRecorder API or WebCodecs API to generate MP4 files. Check if the export process maintains video quality, applies all effects correctly, and provides progress feedback. Deduct 5 points if export fails to preserve applied effects, and 3 points if no progress indication is provided during export. Give 10 points if fully functional with quality preservation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, large file uploads, WebGL context loss, memory overflow, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview with smooth playback 2. Advanced animation keyframe editor 3. Custom shader effect creator 4. Batch processing capabilities 5. Audio waveform visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video processing pipelines coexisting) 2. Function modules unrelated to video editing (e.g., built-in social sharing) 3. Fancy effects that affect performance (e.g., unnecessary particle systems during editing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core video editing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/UI/effects layers), WebGL resource management, and memory leak prevention. Deduct 5 points if WebGL context is not properly managed or shaders leak memory; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if video processing blocks the main thread without proper worker implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern video editing interface principles: 1) Professional dark theme with high contrast for video editing 2) Clear timeline visualization with proper scaling 3) Intuitive tool panels with recognizable icons 4) Proper video preview aspect ratio maintenance. Deduct 3 points for each poorly designed UI element, 5 points for unprofessional color schemes that strain eyes during long editing sessions, and 5 points for confusing timeline or control layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the video editing interactions conform to professional standards: 1) Real-time preview maintains 30fps during editing 2) Drag operations provide immediate visual feedback 3) Timeline scrubbing is smooth without stuttering 4) Effect application shows instant preview. Deduct 5 points for each laggy interaction, 3 points for delayed preview updates (>200ms), and 5 points for non-responsive timeline controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1392,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and displayable. Implement a front-end framework with a rectangle that has a default width of 500mm and height of 1200mm, with customizable height and width. This represents a glass panel. Then embed another rectangle on the right side of this rectangle, with a fixed height of 33mm and width of 73mm. This smaller rectangle should be positioned at a fixed distance of 950mm from the bottom of the outer rectangle.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the front-end framework properly implemented?",
+      "description": "Check if a proper framework is used (React, Vue, or vanilla JS) with appropriate component structure. The code should follow modern front-end practices with clear separation of concerns. Score 0 if no framework approach is used, 5 if basic implementation exists, and 10 if well-structured with proper component architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the glass panel dimensions correctly implemented?",
+      "description": "Verify that the main rectangle (glass panel) has the default dimensions of 500mm width and 1200mm height. Check if these dimensions are properly rendered and if the code includes functionality to customize both height and width. Deduct 5 points if default dimensions are incorrect, 3 points if customization is missing for either dimension.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the smaller rectangle accurately positioned and sized?",
+      "description": "Confirm that the smaller rectangle is precisely 73mm width by 33mm height, embedded on the right side of the main rectangle, and positioned exactly 950mm from the bottom of the outer rectangle. Deduct 5 points if dimensions are incorrect, 5 points if positioning is wrong.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a proper unit conversion system implemented?",
+      "description": "Evaluate whether the code handles unit conversion properly (mm to pixels or other screen units). Check if the system maintains proportions when resized and across different screen sizes. Deduct 5 points if conversion is inconsistent, 5 points if proportions are lost during resizing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as negative dimensions, extremely large values, browser compatibility issues, etc.) and provide friendly error handling or fallback mechanisms. Code with strong robustness should effectively handle edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive resizing with visual guides 2. Responsive scaling with device orientation 3. Animation effects when dimensions change). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple resize handlers) 2. Function modules unrelated to the rectangle requirements 3. Fancy effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering logic from dimension calculations), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization follows modern design principles: 1) Clean visual representation of the rectangles 2) Proper contrast between elements 3) Professional appearance with appropriate borders, shadows, or other visual cues to distinguish the rectangles. Deduct 3 points for each visual inconsistency, 5 points for poor visual hierarchy, and 5 points for unprofessional appearance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether any interactive elements (like customization controls) are intuitive and responsive: 1) Input feedback delay ≤ 100ms 2) Smooth transition when dimensions change 3) Clear visual indication of current dimensions. Deduct 5 points for each operation without feedback, 3 points for laggy transitions, and 5 points for confusing or hidden controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 226,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code can be executed and displayed. Based on this HTML foundation, support online editing and exporting of menu images.\n\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Premium Home-style Restaurant Menu</title>\n    <style>\n        body {\n            font-family: 'Microsoft YaHei', sans-serif;\n            background-color: #f8f8f8;\n            padding: 30px;\n        }\n\n        .menu-card {\n            background: white;\n            border-radius: 12px;\n            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);\n            padding: 25px;\n            max-width: 600px;\n            margin: 0 auto;\n        }\n\n        h1 {\n            text-align: center;\n            color: #c74a2a;\n            font-size: 28px;\n            margin-bottom: 25px;\n        }\n\n        .menu-table {\n            width: 100%;\n            border-collapse: collapse;\n            margin-bottom: 20px;\n        }\n\n        .menu-table th {\n            background-color: #f8f8f8;\n            font-weight: 600;\n            color: #333;\n            padding: 12px;\n        }\n\n        .menu-table td {\n            padding: 15px;\n            border-bottom: 1px solid #eee;\n            vertical-align: middle;\n        }\n\n        .combo-price {\n            text-align: right;\n            color: #c74a2a;\n            font-weight: bold;\n            width: 80px;\n        }\n\n        .additional {\n            background: #fff9f5;\n            padding: 15px;\n            border-radius: 8px;\n            margin-top: 25px;\n        }\n\n        .additional h3 {\n            color: #c74a2a;\n            margin: 0 0 12px 0;\n        }\n\n        .dish-item {\n            display: flex;\n            justify-content: space-between;\n            padding: 8px 0;\n            border-bottom: 1px dashed #ddd;\n        }\n\n        .price-tag {\n            color: #c74a2a;\n            font-size: 16px;\n        }\n    </style>\n</head>\n\n<body>\n    <div class=\"menu-card\">\n        <h1>Premium Home-style Restaurant</h1>\n        <p style=\"text-align: center; color: #666; margin-bottom: 25px;\">\n            March 28th Lunch Menu\n        </p>\n\n        <!-- Set Meal Combinations -->\n        <table class=\"menu-table\">\n            <thead>\n                <tr>\n                    <th>Set Meal Combinations</th>\n                    <th class=\"combo-price\">Price</th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr>\n                    <td>Main Meat Dish + Small Meat Dish + Vegetable</td>\n                    <td class=\"combo-price\">¥16</td>\n                </tr>\n                <tr>\n                    <td>2 Main Meat Dishes + Small Meat Dish + Vegetable</td>\n                    <td class=\"combo-price\">¥22</td>\n                </tr>\n            </tbody>\n        </table>\n\n        <!-- Additional Options -->\n        <div class=\"additional\">\n            <h3>Additional Options</h3>\n            <ul>\n                <li>Main Meat Dish ¥8, Small Meat Dish ¥4, Vegetable ¥2</li>\n            </ul>\n        </div>\n\n    <hr></hr>\n\n        <table class=\"menu-table\">\n            <thead>\n                <tr>\n                    <th>Rice with Toppings</th>\n                    <th class=\"combo-price\">Price</th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr>\n                    <td>Homestyle Stir-fried Pork</td>\n                    <td class=\"combo-price\">¥16</td>\n                </tr>\n                <tr>\n                    <td>Kung Pao Chicken</td>\n                    <td class=\"combo-price\">¥14</td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n</body>\n\n</html>",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is online menu editing functionality fully implemented?",
+      "description": "Review whether the code includes a complete editing system allowing users to modify menu items, prices, categories, and descriptions. Check for content validation, input field constraints, and real-time preview. Score 0 if no editing features exist, 5 if only basic text editing is supported, and 10 if comprehensive menu structure editing with validation is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the menu image export functionality properly implemented?",
+      "description": "Evaluate the export functionality for converting the menu to image format (PNG/JPEG/SVG). Check for proper rendering of all elements including special characters, custom fonts, and layout preservation. Score 0 if no export feature exists, 5 if basic screenshot functionality is available but with quality/formatting issues, and 10 if high-quality image export with customization options (resolution, format, crop area) is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the menu structure data model well-designed?",
+      "description": "Assess whether the code uses a structured data model (JSON/object) to represent menu items, categories, and pricing, enabling clean separation between data and presentation. Check if the model allows for dynamic updates and maintains data integrity. Deduct 5 points if global variables are overused; deduct 5 points if the data structure doesn't support menu hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive UI elements properly implemented for editing?",
+      "description": "Review the implementation of UI controls (buttons, form fields, dropdowns) for editing menu content. Check for consistent interaction patterns, visual feedback on actions, and clear edit/save states. Deduct 5 points for poor accessibility (no keyboard support, missing ARIA attributes); deduct 3 points if the interface lacks clear visual indication of editable elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, image generation failures, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Template gallery with different menu styles 2. QR code generation for digital menu sharing 3. Multilingual support 4. Print-optimized view). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple export methods doing the same thing) 2. Function modules unrelated to menu editing/export (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., heavy decorative elements that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating menu data/view/controller layers), browser compatibility, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code doesn't handle different device screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast editing operations, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

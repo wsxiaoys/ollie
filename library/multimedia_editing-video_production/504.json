@@ -1,0 +1,68 @@
+{
+  "index": 504,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and demonstrable. Implement a frontend tool for adding animated elements to videos, where users can upload videos, select different animated elements (such as twinkling stars, scrolling text, etc.) to add to the video, set the appearance time and duration of these animated elements, preview the effect, and then export the video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and processing functionality fully implemented?",
+      "description": "Check if the code implements a complete video upload system with proper file validation (format, size), progress indicators, and error handling. Verify if the uploaded video can be properly loaded into the editor canvas. Score 0 if upload functionality is missing, 5 if basic upload exists but lacks validation or proper error handling, and 10 if fully implemented with comprehensive validation and user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the animated elements library comprehensively implemented?",
+      "description": "Evaluate the variety and quality of animated elements provided (twinkling stars, scrolling text, particles, shapes, etc.). Check if each element has proper customization options (size, color, opacity, animation speed). Deduct 2 points for each major animation type missing, deduct 3 points if the animations are not smooth or have rendering issues. Give 10 points if at least 5 different animation categories with proper customization are available.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the timeline and keyframe editing system properly implemented?",
+      "description": "Assess whether users can precisely control when animated elements appear and disappear in the video. Check for the presence of a visual timeline interface, keyframe markers, ability to adjust duration, and precise timing controls. Deduct 5 points if only basic start/end time inputs are available without visual timeline, deduct 3 points if keyframe editing is clunky or imprecise. Give 10 points for a fully functional, intuitive timeline system.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the real-time preview and video export functionality implemented?",
+      "description": "Check if the tool provides real-time preview of the edited video with animations before export. Verify if the export function properly renders the final video with all added elements at the correct positions and times. Deduct 5 points if preview is severely lagging or inconsistent with the final export, deduct 8 points if export functionality is missing, deduct 3 points if export options (resolution, format) are limited. Give 10 points for smooth preview and high-quality export functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as browser compatibility issues, large video files, concurrent animations, and user operation errors. Look for error boundaries, graceful degradation, and informative error messages. Code with strong robustness should be able to effectively handle these scenarios, giving 10 points. If the robustness is average, give 5 points, and if no error handling is implemented, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted positioning of elements 2. Animation templates/presets library 3. Collaborative editing features 4. Audio-reactive animations). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation controls 2. Function modules unrelated to video editing (e.g., a built-in image gallery unrelated to the animations) 3. Fancy effects that affect performance (e.g., unnecessary UI animations that slow down the editor). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/animation logic/UI components), code reusability, performance optimization for video rendering, and proper state management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no optimization for video processing performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows professional video editing software conventions: 1) Clear workspace division (timeline, preview, controls panels) 2) Consistent color scheme appropriate for video editing (typically dark theme with accent colors) 3) Proper contrast for extended editing sessions. Deduct 3 points for cluttered interface elements, 5 points for poor workspace organization that hinders workflow, and 5 points for inappropriately bright colors that interfere with video content perception. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation controls and editing interactions are intuitive and responsive: 1) Dragging elements responds instantly (<100ms) 2) Timeline scrubbing is smooth and accurate 3) Preview updates happen within 500ms of edits 4) Element selection and manipulation have clear visual feedback. Deduct 5 points for laggy timeline interactions, 3 points for delayed preview updates, and 5 points for confusing animation controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

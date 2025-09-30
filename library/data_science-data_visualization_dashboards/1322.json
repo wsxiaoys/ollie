@@ -1,0 +1,68 @@
+{
+  "index": 1322,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. Create a bubble chart from table data, with engine displacement as the x-axis, price as the y-axis, and market share as the bubble size. Please generate the Echarts code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data transformation from table to chart properly implemented?",
+      "description": "Check if the code extracts and processes tabular data correctly to feed into the ECharts bubble chart. Verify if it handles data types properly (numbers for displacement, price, and market share). Deduct 5 points if data types aren't converted correctly, 3 points if there's no error handling for missing data, and 5 points if the data structure doesn't match ECharts requirements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the bubble chart implementation complete and accurate?",
+      "description": "Evaluate whether the ECharts bubble chart correctly visualizes the three variables: engine displacement (x-axis), price (y-axis), and market share (bubble size). Review if the axis definitions, series type, and bubble size scaling are properly configured. Give 10 points for a fully functioning bubble chart with appropriate scaling, 5 points if basic visualization works but with scaling issues, and 0 points if the chart doesn't display or uses incorrect chart type.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are appropriate scales and ranges used for the axes?",
+      "description": "Check if the x-axis (engine displacement) and y-axis (price) use appropriate scales and ranges. Verify if the axis minimums are set properly (e.g., starting from 0 or data minimum), whether logarithmic scales are used if there's large data variance, and if axis labels are formatted appropriately (e.g., currency for price, L/cc for displacement). Deduct 5 points for inappropriate scales, 3 points for poor label formatting, and 3 points for missing units. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the bubble size representation appropriate and meaningful?",
+      "description": "Assess whether the bubble size (market share) is appropriately scaled to be visually meaningful. Check if very small market shares are still visible and large shares don't overwhelm the chart. Verify if a symbolSize function is used to properly map data values to visual sizes. Deduct 5 points if bubble sizes are poorly scaled (too small/large), 3 points if the scaling is linear when logarithmic would be better (or vice versa), and 3 points if there's no legend to indicate what bubble sizes represent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, negative values, or extremely large/small values) and provide appropriate fallbacks or error handling. Code with strong robustness should handle these edge cases effectively, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive tooltips with additional information 2. Color coding by categories 3. Animation on load or data updates). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant chart components (e.g., unnecessary legends or grids) 2. Function modules unrelated to bubble chart visualization 3. Fancy effects that affect performance or clarity (e.g., excessive animations or 3D effects when not needed). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/chart configuration/event handling), code reusability, and maintainability. Deduct 5 points if global variable pollution is found or proper encapsulation is not used; deduct 5 points if the code duplication rate is too high; deduct 5 points if there are no comments for complex logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visualization meet professional design standards?",
+      "description": "Evaluate whether the chart follows data visualization best practices: 1) Appropriate color scheme (colorblind-friendly, meaningful use of colors) 2) Clear and legible labels and tooltips 3) Proper use of grid lines and axis ticks. Deduct 3 points for poor color choices, 5 points for illegible labels, and 5 points for missing or misleading legends/tooltips. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction experience smooth and informative?",
+      "description": "Judge whether the interactive features enhance data understanding: 1) Responsive tooltips that show precise values 2) Zoom/pan capabilities for exploring dense data 3) Highlighting or filtering options for data exploration. Deduct 5 points for missing tooltips, 3 points for slow or jerky interactions, and 5 points for insufficient information in interactive elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

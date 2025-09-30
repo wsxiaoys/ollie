@@ -1,0 +1,68 @@
+{
+  "index": 1343,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Help me create a small program for image-based search.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image loading and processing functionality properly implemented?",
+      "description": "Evaluate if the code correctly handles image loading (from file upload or URL), preprocessing (resizing, normalization), and error handling for corrupt or invalid images. Score 0 if image handling is missing, 5 if basic loading works but lacks preprocessing, and 10 if it includes comprehensive image manipulation with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image feature extraction algorithm well-implemented?",
+      "description": "Check whether the code implements proper feature extraction techniques (e.g., color histograms, SIFT, HOG features, or deep learning embeddings). Assess algorithm selection appropriateness for image search. Deduct 5 points if only basic pixel comparison is used, 3 points if advanced features are implemented but inefficiently. Give full 10 points for optimized, industry-standard feature extraction.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there an efficient image matching/similarity calculation mechanism?",
+      "description": "Evaluate the implementation of similarity metrics (e.g., cosine similarity, Euclidean distance) and optimization techniques for fast comparison. Check if indexing is used for large datasets. Deduct 5 points if brute-force comparison is used on large datasets, 3 points if metrics are implemented but without optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a well-designed search results display and user interface?",
+      "description": "Assess if the search results are clearly displayed with relevant information (similarity score, metadata), pagination if needed, and sorting options. Check for interactive previews and result filtering capabilities. Deduct 5 points for basic list display without visual thumbnails, 3 points if results lack metadata or sorting. Give 10 points for comprehensive, user-friendly result presentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid images, network failures, memory constraints with large datasets, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time visual feedback during search 2. Content-based filtering options 3. Interactive image editing before search). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar image processing functions 2. Feature modules unrelated to image search (e.g., a built-in social media sharing system) 3. Computationally expensive visualizations that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating image processing/feature extraction/search/UI layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional image display techniques (proper thumbnails, responsive galleries). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for poor image rendering quality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Search feedback delay ≤ 500ms or progress indicator for longer searches 2) Smooth transitions when displaying results 3) Clear visual guidance during the image upload and search process. Deduct 5 points for searches without progress indication, 3 points for jerky transitions between search states, and 5 points for unintuitive image upload interfaces. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 295,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Write a frontend program that simulates engine piston movement.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the engine piston simulation accurately implemented?",
+      "description": "Evaluate whether the simulation correctly models the piston motion physics (sinusoidal movement pattern, proper timing for strokes). Check if the connecting rod and crankshaft relationship is correctly represented mathematically. Score 0 if basic motion is absent, 5 if only basic up/down movement exists, and 10 if the complete four-stroke cycle (intake, compression, power, exhaust) is accurately visualized.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the visualization technically sound?",
+      "description": "Review whether the implementation uses appropriate frontend technologies (Canvas/SVG/WebGL) optimally. Check if the rendering loop maintains consistent frame rates (ideally 60fps) without stuttering. Deduct 5 points if inappropriate technology is chosen for the visualization (e.g., DOM manipulation for high-frequency updates), 3 points for frame rate issues, and 2 points for poor performance on mobile devices.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are physics parameters configurable and interactive?",
+      "description": "Assess if the simulation allows for user configuration of key parameters (RPM, cylinder dimensions, stroke length, etc.) with real-time response to changes. Review whether the UI provides interactive controls (sliders, inputs) that immediately affect the simulation. Deduct 5 points if parameters are hard-coded, 5 points if changes require page refresh, and 3 points if parameter ranges are unrealistic or unbound.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the simulation include educational features?",
+      "description": "Evaluate whether the simulation includes informative elements such as real-time measurements (pressure, temperature, velocity), phase indicators, or detailed explanations of the engine cycle. Score 0 if no educational features exist, 5 if basic labels are present, and 10 if comprehensive, interactive learning features are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (like extreme parameter values, browser resizing, device rotation, etc.) and provide friendly error handling. Code with strong robustness should maintain simulation integrity across these edge cases, giving 10 points. If robustness is average, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple viewpoints/cross-sections 2. Heat visualization during combustion 3. Sound effects synchronized with engine operation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations that could be optimized 2. Visualization elements that don't contribute to understanding the engine mechanics 3. Fancy effects that affect performance without educational value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of physics calculation/rendering/UI components), code reusability, and maintainability. Deduct 5 points if global state pollution is found or if design patterns are not used; deduct 5 points if the code duplication rate is high (over 30%); deduct 5 points if there's no separation between simulation logic and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization follows mechanical engineering visual conventions: 1) Accurate proportional representation 2) Clear differentiation between moving/static parts 3) Professional technical aesthetic (proper use of wireframes, cutaways, or transparent elements). Deduct 3 points for each visual inaccuracy, 5 points for unrealistic motion, and 5 points for poor readability of the mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the animation and controls conform to user expectations: 1) Consistent animation timing relative to selected RPM 2) Immediate visual feedback when parameters are changed 3) Smooth transitions between states or views. Deduct 5 points for delayed animation updates, 3 points for jittery motion, and 5 points for UI controls that don't provide immediate visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

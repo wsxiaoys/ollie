@@ -1,0 +1,68 @@
+{
+  "index": 445,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Complete code for implementing a scanning functionality in an Android WebView embedded with a Vue 2 project.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WebView initialization and configuration properly implemented?",
+      "description": "Check if the Android WebView is correctly initialized with proper settings for JavaScript, DOM storage, and file access. Verify if security settings are configured (e.g., setAllowFileAccess, setAllowContentAccess). Deduct 5 points for missing essential configurations that enable Vue.js to work properly; deduct 3 points if security best practices are not followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the native-to-JavaScript bridge properly implemented?",
+      "description": "Evaluate if a JavaScript interface is added to the WebView using addJavascriptInterface() with proper annotation (@JavascriptInterface). Check if the communication channel between native Android and Vue.js is established with proper error handling and type safety. Deduct 5 points if the bridge is not implemented; deduct 3 points if security measures (like input validation) are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the scanning functionality correctly implemented and integrated with Vue?",
+      "description": "Review the scanning implementation (camera access, barcode/QR detection) and its integration with Vue.js. Verify if permissions are properly requested (CAMERA permission), scanner initialization, result handling, and passing data back to Vue. Deduct 5 points if scanning doesn't work; deduct 3 points if the Vue component doesn't properly handle scan results. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper error handling for scanning scenarios?",
+      "description": "Check if the code handles potential errors like camera unavailability, permission denial, scan failures, or invalid scan content. Verify if proper feedback is provided to the user in case of errors. Deduct 3 points for each unhandled error scenario; deduct 5 points if the app crashes on common errors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as WebView loading errors, memory constraints, process lifecycle changes during scanning) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Customizable scan overlay 2. Multi-format scanning support 3. History of scanned items 4. Scan result processing options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scanning libraries used simultaneously) 2. Function modules unrelated to scanning (e.g., unnecessary analytics) 3. Fancy effects that affect scanning performance (e.g., excessive animations during scanning). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating scanning logic from UI/WebView interactions), error handling patterns, and resource management. Deduct 5 points if memory leaks are found (e.g., not releasing camera resources); deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no proper lifecycle management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the scanning UI follows modern design principles: 1) Clear scanning area indication 2) Proper camera preview sizing and positioning 3) Professional overlay design with intuitive visual guidance. Deduct 3 points for each confusing UI element, 5 points for poor contrast between scan area and background, and 5 points for illegible text instructions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the scanning experience conforms to human perception characteristics: 1) Immediate camera preview display ≤ 500ms 2) Scan recognition feedback within 100ms 3) Smooth transition between WebView and scanner. Deduct 5 points for noticeable lag when opening scanner, 3 points for jerky camera preview, and 5 points for abrupt transitions between scanning and result display. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Mobile Development",
+  "difficulty": "easy"
+}

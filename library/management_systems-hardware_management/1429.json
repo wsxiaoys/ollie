@@ -1,0 +1,68 @@
+{
+  "index": 1429,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable for demonstration purposes. Develop a web-driven website about mice that can configure mouse buttons and DPI settings through the mouse's HID protocol.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HID protocol implementation complete?",
+      "description": "Review whether the code correctly implements the HID protocol for mouse interaction, including reading device descriptors, sending/receiving control transfers, and handling feature reports. Check if the implementation supports USB standard HID reports (0x01-0x03) and vendor-specific reports. Score 0 if HID communication is not implemented, 5 if basic read/write operations are implemented, and 10 if the full protocol including error handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mouse button configuration functionality comprehensive?",
+      "description": "Evaluate whether the code allows complete button remapping (primary, secondary, tertiary buttons, side buttons, scroll wheel buttons), macros assignment, and profile management. Check if the implementation handles button event propagation correctly. Deduct 3 points if only basic remapping is supported, 5 points if macro functionality is missing, and 7 points if profile management is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the DPI settings system properly implemented?",
+      "description": "Check whether the code implements multi-level DPI settings with visual indicators, on-the-fly DPI switching, and axis-independent DPI configuration (X/Y separate values). Verify that the implementation correctly calculates and applies the appropriate values to the mouse hardware. Deduct 3 points for each missing feature. Give 10 points for comprehensive implementation with DPI visualization and real-time preview.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the web interface communication with hardware devices secure and efficient?",
+      "description": "Evaluate the implementation of Web HID API usage, permission handling, and device connection management. Check if the code includes device detection, connection retries, and disconnection handling. Verify proper error messages when hardware access is denied. Deduct 5 points if no permission handling exists, 3 points if connection state management is poor, and 3 points if there's no error recovery mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (unsupported devices, permission denials, disconnections during configuration, browser compatibility issues). Code with strong robustness should include feature detection, graceful degradation, and informative error messages. Give 10 points for comprehensive edge case handling, 5 points for basic error handling, and 0 points if exceptions are unmanaged.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time input visualization 2. Heatmap of button usage 3. Advanced macro recording with timing preservation 4. Sensor calibration tools). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant device polling mechanisms 2. Unnecessary device reconnection attempts 3. Excessive or duplicate UI elements for the same function. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of device communication, UI, state management), error handling strategies, and cross-browser compatibility. Deduct 3 points if global state pollution exists, 4 points if no abstraction layers separate hardware communication from UI logic, and 3 points if no fallback mechanisms exist for unsupported browsers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Mouse visualization is accurate and proportional 2) Configuration controls are logically grouped and labeled 3) Visual feedback indicates active settings and changes. Deduct 3 points for cluttered layouts, 3 points for confusing button/control labeling, and 4 points for lack of visual feedback during configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects enhance usability: 1) Real-time preview of button assignments 2) Visual confirmation of DPI changes 3) Clear indication of connection status 4) Smooth transitions between configuration screens. Deduct 2.5 points for each missing interaction enhancement. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

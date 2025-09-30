@@ -1,0 +1,68 @@
+{
+  "index": 336,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the generated code is executable for demonstration purposes. Please create a complete Chinese chess (Xiangqi) game using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Chinese chess (Xiangqi) board implementation correct?",
+      "description": "Check if the chessboard adheres to authentic Xiangqi specifications (9×10 grid with river, palace). Verify correct piece placement for both sides (red and black) including proper initial positioning. Deduct 5 points if the board layout is inaccurate, 3 points if piece positions are wrong. Give 0 points if the visual board representation is completely missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all chess pieces properly implemented with correct movement rules?",
+      "description": "Evaluate if all 7 piece types (General/King, Advisor, Elephant, Horse, Chariot, Cannon, Soldier/Pawn) follow correct movement patterns and restrictions (e.g., Elephant cannot cross river, General confined to palace). Check for implementation of special rules like flying General check prevention. Deduct 2 points for each piece type with incorrect movement logic. Score 0 if movement validation is absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game interaction logic fully functional?",
+      "description": "Assess if the game implements proper turn-based mechanics, piece selection, valid move highlighting, and move execution. Check for check/checkmate detection and game-ending conditions. Award 15 points for complete implementation with all features, 10 points if basic functionality works but lacks some refinements, 5 points if interaction is minimal, 0 points if unplayable.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include game state management?",
+      "description": "Verify if the game includes essential state management features: move history tracking, undo/redo functionality, game reset option, and potentially save/load capabilities. Award full points for comprehensive state management with all features, deduct 5 points if only basic state tracking exists, 0 points if no state management is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, attempted rule violations, etc.) and provide appropriate feedback. Check for event handling cleanup to prevent memory leaks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move suggestion system 2. Notation recording in Chinese chess format 3. Sound effects for moves/captures 4. Animation effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to restart the game) 2. Function modules unrelated to Chinese chess (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations slowing gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/event handling layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear structure or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows traditional Chinese chess aesthetics while maintaining modern UI principles: 1) Appropriate color scheme for board and pieces with good contrast 2) Clear distinction between red and black pieces 3) Professional typography for any Chinese characters. Deduct 3 points for poor piece visibility, 5 points for inappropriate styling that doesn't match Chinese chess traditions, and 5 points for cluttered layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when selecting pieces 2) Clear indication of possible moves 3) Smooth animation when moving pieces (150-300ms). Deduct 5 points if pieces move without animation, 3 points if selection states are unclear, and 5 points if there's significant lag between user action and visual response. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

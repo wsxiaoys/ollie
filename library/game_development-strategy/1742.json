@@ -1,0 +1,68 @@
+{
+  "index": 1742,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Help me create an HTML code file for a Go board (Gomoku) with a white board and black and white stones.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Go board (Gomoku) visual representation fully implemented?",
+      "description": "Check if the code accurately creates a standard Go board with the correct dimensions (typically 19x19 or 15x15 for Gomoku), proper grid lines, and star points (hoshi). Evaluate whether the board has the traditional wooden appearance with appropriate coloring. Score 0 if the board is missing, 5 if only a basic grid is implemented, and 10 if the board has authentic visual details.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the black and white stones properly implemented?",
+      "description": "Verify that both black and white stones are correctly rendered with appropriate sizing (stones should cover intersection points without obscuring adjacent lines), realistic appearance (including 3D effects or shadows), and proper contrast against the board. Deduct 3 points if stones lack visual depth, 5 points if they're poorly positioned on intersections, and 3 points if they don't match traditional Go stone aesthetics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the stone placement interaction implemented?",
+      "description": "Evaluate whether the code allows users to place stones on the board through mouse clicks on intersections. Check if the code correctly handles turn-based play (alternating between black and white stones) and prevents placing stones on occupied intersections. Score 0 if no interaction exists, 5 if basic placement works but has issues, and 10 if interaction is smooth and follows Go rules.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the basic Gomoku game rules implemented?",
+      "description": "Check if the code implements the win condition for Gomoku (5 stones in a row horizontally, vertically, or diagonally). The game should detect winning patterns automatically and notify players. Evaluate whether the game prevents further moves after a win. Score 0 if no win detection exists, 5 if only partial detection is implemented, and 10 if all win conditions are properly handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds clicks, rapid successive clicks, browser resizing, etc.) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Stone placement sound effects 2. Last move indicator 3. Move history/replay functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to place stones) 2. Function modules unrelated to the Go board (e.g., unrelated decorations) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating board rendering/game logic/user interaction), code reusability, and efficient DOM manipulation. Deduct 5 points if global variables are overused; deduct 5 points if the code lacks structure or comments; deduct 5 points if performance bottlenecks are evident (e.g., inefficient redrawing of the entire board). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows traditional Go aesthetics and modern design principles: 1) Authentic board appearance with warm wood tones 2) Proper sizing and proportions of board and stones 3) Clear visual contrast between board and stones. Deduct 3 points for inaccurate board-to-stone proportions, 5 points for non-traditional color schemes, and 5 points for poor spacing or alignment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the stone placement and other interactions feel natural: 1) Immediate visual feedback when placing stones 2) Smooth transitions or subtle animations if included 3) No noticeable lag between click and stone appearance. Deduct 5 points for delayed feedback, 3 points for jerky animations, and 5 points for unresponsive or confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

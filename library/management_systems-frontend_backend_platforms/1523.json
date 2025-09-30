@@ -1,0 +1,68 @@
+{
+  "index": 1523,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that any code you generate is executable for demonstration. What I need is something similar to the WeChat Pay developer platform or Alipay developer platform.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the payment gateway API integration fully implemented?",
+      "description": "Review whether the code accurately implements standard payment gateway protocols (RESTful or SOAP), includes proper authentication mechanisms (OAuth 2.0, API keys, or digital signatures), and handles payment lifecycles (initiation, confirmation, refund). Score 0 if the core payment API integration is missing, 5 if only basic payment flow is implemented without security considerations, and 10 if all standard payment protocols with proper security measures are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the developer authentication and authorization mechanisms implemented?",
+      "description": "Check whether the platform includes a complete developer onboarding process, sandbox environment, API key management system, and permission control. Deduct 5 points if multi-environment support (development, testing, production) is missing, and 3 points if there's no mechanism for API usage monitoring and rate limiting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the payment notification and callback system properly designed?",
+      "description": "Evaluate whether the system implements asynchronous notification mechanisms (webhooks), includes signature verification for callbacks, has retry logic for failed notifications, and provides a notification history dashboard. Deduct 5 points if notification verification is weak or missing, and 3 points if there's no retry mechanism for failed notifications. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the developer documentation and SDK implementation complete?",
+      "description": "Check whether the code includes comprehensive API documentation, interactive API explorers, code samples in multiple languages, and well-structured SDKs. Deduct 5 points if the documentation lacks practical examples, 3 points if there's no interactive testing capability, and 5 points if SDKs for major programming languages are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network timeouts, invalid parameters, duplicate transactions, etc.) and provide meaningful error codes with documentation. Code with strong robustness should implement idempotency for payment operations, transaction reconciliation mechanisms, and proper exception handling, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time payment analytics dashboard 2. Fraud detection system with machine learning 3. Interactive transaction flow visualization 4. Multi-currency support with automatic exchange rates). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar payment flows (e.g., multiple checkout processes coexisting) 2. Function modules unrelated to payment processing (e.g., a built-in social media feed) 3. Heavy UI elements that affect performance (e.g., unnecessary animations in transaction processing screens). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core payment functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/business logic/data layers), unit test coverage especially for payment calculation logic, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the developer portal design follows modern design principles: 1) Harmonious color matching that aligns with financial services (professional blues, whites, with accent colors) 2) Proper layout spacing for clear data visualization (8px grid system) 3) Professional typography system (readable monospace fonts for code samples, minimum 14px body text). Deduct 3 points for each crowded visual element, 5 points for inconsistent branding elements, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the developer platform interactions prioritize clarity and efficiency: 1) API response time indicators 2) Clear loading states for all asynchronous operations 3) Intuitive navigation between documentation, sandbox testing, and production monitoring. Deduct 5 points for operations lacking feedback, 3 points for confusing navigation patterns, and 5 points for critical functions (like API key generation) that lack confirmation dialogs. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

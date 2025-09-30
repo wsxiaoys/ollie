@@ -1,0 +1,68 @@
+{
+  "index": 1706,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration whenever possible. Set up user access restrictions, including IP range blacklists/whitelists, time range blacklists/whitelists, application name blacklists/whitelists, and hostname blacklists/whitelists.\n\nThe interface is divided into five sections:\nUser section: Displays the system's user list;\nTime range control: Lists time range controls for a selected user, with options to add, modify, and delete time range blacklists/whitelists;\nIP blacklist/whitelist control area: Lists IP blacklist/whitelist controls for a selected user, with options to add, modify, and delete IP blacklists/whitelists;\nApplication name blacklist/whitelist: Lists application name blacklist/whitelist controls for a selected user, with options to add, modify, and delete IP blacklists/whitelists;\nHostname blacklist/whitelist: Lists hostname blacklist/whitelist controls for a selected user, with options to add, modify, and delete IP blacklists/whitelists.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user section fully implemented?",
+      "description": "Evaluate if the user list display includes essential user information (username, status, last access time), proper pagination for large user counts, and search/filter functionality. Check if user selection triggers appropriate updates in all other sections. Score 0 if user listing is missing, 5 if basic display is implemented without filtering, and 10 if complete with search, sorting, and proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the time range control section properly implemented?",
+      "description": "Review if the time range control allows adding, modifying, and deleting time range blacklists/whitelists for selected users. Check for proper time validation (no overlapping ranges), timezone handling, recurrence options (daily, weekly, etc.), and visual representation of time ranges. Deduct 3 points if validation is missing, 3 points if timezone support is absent, and 3 points if the UI doesn't clearly visualize time conflicts. Full score for complete implementation is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the IP blacklist/whitelist control fully functional?",
+      "description": "Assess if the IP control section properly implements adding, modifying, and deleting IP blacklists/whitelists. Check for valid IP format validation (IPv4 and IPv6), CIDR notation support for subnet specification, bulk IP import functionality, and conflict detection between blacklist and whitelist entries. Deduct 3 points for missing IP validation, 3 points if CIDR notation isn't supported, and 3 points if conflict detection is absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are application name and hostname blacklist/whitelist sections properly implemented?",
+      "description": "Evaluate if both application name and hostname control sections allow adding, modifying, and deleting entries with proper validation. Check for wildcard pattern support (e.g., *.domain.com), case-sensitivity options, proper escaping of special characters, and duplicate entry prevention. Deduct 3 points for each section if pattern validation is missing, 2 points if wildcard support is lacking, and 3 points if there's no conflict prevention between blacklists and whitelists. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network errors, concurrent modifications by multiple admins, etc.) and provide friendly error prompts or recovery mechanisms. Code should validate all inputs before processing, handle API failures gracefully, and implement proper session management. Give 10 points for comprehensive error handling, 5 points for basic validation only, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time conflict visualization between rules 2. Rule testing simulator to see which rules would apply to a specific access attempt 3. Rule statistics showing most frequently triggered rules 4. Bulk import/export of rules). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar validation functions across different rule types 2. Function modules unrelated to access control (e.g., integrated chat systems) 3. Fancy visual effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rule management logic/UI rendering/API layers), unit test coverage, and build process automation. Check for proper state management patterns and reusable components across rule types. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check if the five distinct sections are clearly delineated yet visually cohesive. Deduct 3 points for each crowded section, 5 points for inconsistent styling across sections, and 5 points for chaotic rule presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance when switching between users or rule types. Evaluate if rule conflicts are highlighted in real-time and if rule changes propagate immediately across the interface. Deduct 5 points for each operation without feedback, 3 points for sluggish rule updates, and 5 points for confusing navigation between the five sections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

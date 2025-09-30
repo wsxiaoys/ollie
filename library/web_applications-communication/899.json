@@ -1,0 +1,68 @@
+{
+  "index": 899,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. I need a user login interface based on H5 and Java interaction.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the front-end login interface fully implemented with HTML5?",
+      "description": "Review whether the code properly implements a responsive login form with HTML5 features (such as form validation, placeholder attributes, and semantic elements). Check if it includes essential login fields (username/email, password) and appropriate input types with attributes for validation. Score 0 if there's no HTML5 implementation, 5 if basic login fields exist but lack proper validation, and 10 if the implementation is complete with modern HTML5 features.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the CSS styling professional and responsive?",
+      "description": "Evaluate if the CSS implementation follows responsive design principles with media queries for different devices. Check if it includes modern styling techniques (flexbox/grid, transitions, etc.) and handles different screen sizes properly. Deduct 5 points if the interface doesn't adapt to mobile screens, 3 points if there are clear styling inconsistencies, and 2 points if accessibility features (focus states, contrast ratios) are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the client-side validation logic properly implemented?",
+      "description": "Check whether JavaScript validation is implemented for all form inputs before submission. Verify that it includes real-time validation feedback, password strength indicators, and proper error handling. Deduct 5 points if validation only happens on submission without real-time feedback, 3 points if error messages are not specific or helpful, and 2 points if password strength requirements aren't enforced. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Java backend authentication system properly designed and secured?",
+      "description": "Evaluate the Java backend code for secure authentication practices including password hashing (using algorithms like bcrypt/PBKDF2), protection against SQL injection, and proper session management. Check if it implements token-based authentication (JWT/OAuth). Deduct 5 points if passwords are stored in plaintext/weak hashing, 5 points if there's no protection against brute force attacks, and 3 points if secure session handling is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures during login, invalid inputs, system unavailability, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should handle connection timeouts, server errors, and input validation gracefully. Give 10 points if all edge cases are handled, 5 points if only basic error handling exists, and 0 points if errors cause the system to crash.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the login system includes surprise features that enhance the experience (e.g., 1. Biometric authentication options 2. Social login integration 3. Two-factor authentication 4. Remember me functionality with secure cookie handling 5. Passwordless login options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant validation logic (e.g., duplicate validation in both HTML5 attributes and JavaScript) 2. Unnecessary API calls or data processing unrelated to authentication 3. Excessive animations or effects that slow down the login process. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core authentication function is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/API layers), appropriate design patterns, consistent error handling, and proper documentation. On the Java side, check for proper dependency injection, service-repository pattern, and exception handling. Deduct 5 points if global variables are overused; deduct 5 points if there's significant code duplication; deduct 5 points if logging is insufficient for debugging. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the login UI follows modern design principles: 1) Cohesive color scheme (no more than 3 primary colors) 2) Proper layout with adequate white space (following the 8px grid system) 3) Professional typography (readable font sizes ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy guiding users through the login flow. Deduct 3 points for cluttered design, 5 points for jarring color combinations, and 5 points for poor form layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the login interaction conforms to user expectations: 1) Login button shows loading state within 100ms of click 2) Form validation feedback appears immediately after input 3) Error messages are clearly displayed near the relevant fields 4) Successful login provides visual confirmation before redirect. Deduct 5 points for each interaction without feedback, 3 points for delayed responses over 300ms, and 5 points for confusing navigation after failed login attempts. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

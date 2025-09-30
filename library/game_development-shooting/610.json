@@ -1,0 +1,68 @@
+{
+  "index": 610,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Implement a shooting game where players control a mech that moves around the battlefield and shoots enemies. The mech can transform into flight mode, which increases movement speed but reduces attack power. The battlefield has varying terrain heights that affect player visibility and bullet trajectories.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the mech movement and transformation system fully implemented?",
+      "description": "Review whether the code accurately implements the mech's ground and flight movement mechanics. Check for: 1) smooth transition animations between modes, 2) appropriate speed differences between modes, 3) proper collision detection with terrain, and 4) responsive controls. Score 0 if basic movement is missing, 5 if only basic movement without transformation is implemented, and 10 if both modes with proper physics and transitions are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the combat system with varying attack power implemented correctly?",
+      "description": "Evaluate the implementation of the shooting mechanics, including: 1) different attack power between ground/flight modes, 2) bullet physics and collision detection, 3) visual feedback for hits/misses, and 4) weapon cooldown systems. Deduct 3 points if attack power doesn't vary between modes, 5 points if bullet trajectories don't account for terrain, and 3 points if hit detection is inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the terrain system with height variations properly implemented?",
+      "description": "Check whether the code implements terrain with varying heights that properly: 1) affects visibility through occlusion, 2) influences bullet trajectories (arc/gravity effects), 3) impacts player movement (climbing/descending slopes), and 4) provides tactical gameplay elements. Deduct 3 points for each missing feature. Score 0 if terrain is flat or non-functional. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the enemy AI and spawn system sufficiently challenging?",
+      "description": "Assess whether the enemy system includes: 1) varied enemy types with different behaviors, 2) appropriate difficulty scaling, 3) strategic positioning based on terrain, and 4) reasonable spawn patterns that create engaging gameplay. Deduct 3 points if enemies have no varied behaviors, 3 points if they don't interact with terrain, and 4 points if spawn patterns are random or overwhelming. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid mode switching, boundary collisions, many simultaneous projectiles, rapid fire inputs, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects affecting gameplay, 2. Destructible environment elements, 3. Special weapons or abilities unlocked during gameplay, 4. Physics-based chain reactions from explosions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple shooting mechanics that serve the same purpose) 2. Function modules unrelated to the game premise (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems that cause frame rate drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), component reusability, and performance optimization. Deduct 5 points if global state is overused or proper design patterns are missing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if frame rate optimizations for bullet/enemy handling are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the visual design follows modern game UI principles: 1) Clear HUD elements (health, ammo, mode indicator) that don't obstruct gameplay, 2) Appropriate visual feedback for hits/damage/mode changes, 3) Consistent art style with clear distinction between terrain, player, and enemies. Deduct 3 points for cluttered UI elements, 5 points for inconsistent visual style, and 5 points for poor readability during intense gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions conform to player expectations: 1) Input response delay ≤ 50ms, 2) Consistent frame rate (minimum 30 FPS) even with many objects, 3) Clear visual cues for mode changes and terrain interaction. Deduct 5 points for input lag, 3 points for frame drops during transformation animations, and 5 points for unclear visual feedback when interacting with terrain. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "medium"
+}

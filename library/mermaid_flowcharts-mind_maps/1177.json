@@ -1,0 +1,68 @@
+{
+  "index": 1177,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure that any code you generate is executable and can be demonstrated. Create an online-editable mind map.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core mind map rendering system fully implemented?",
+      "description": "Check whether the code creates a complete visual mind map structure with nodes and connections using SVG/Canvas/HTML. Verify if it includes essential features like node creation, connection drawing, and hierarchical representation. Score 0 if the mind map structure is not implemented, 5 if basic node display is implemented without proper connections, and 10 if a complete hierarchical mind map with proper visualization is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the editing functionality comprehensive?",
+      "description": "Evaluate whether users can add, edit, delete, and move nodes through intuitive interactions. Check for features like inline text editing, node dragging, context menus, and keyboard shortcuts. Deduct 3 points if inline editing is missing, 3 points if drag-and-drop functionality isn't smooth, and 4 points if keyboard shortcuts aren't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data structure design optimized for mind maps?",
+      "description": "Assess whether the code uses an appropriate tree-like data structure that efficiently represents hierarchical relationships and supports operations like adding child nodes, reordering siblings, and collapsing/expanding branches. Check if the data model is separate from the view layer. Deduct 5 points if the data structure doesn't properly maintain parent-child relationships, and 5 points if there's no clean separation between data and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are data persistence and sharing mechanisms implemented?",
+      "description": "Verify if the mind map can be saved (locally or cloud-based) and if the implementation includes export/import functionality in standard formats (like JSON, FreeMind, etc.). Check if there's a real-time collaboration feature or sharing capability. Award 3 points for local storage implementation, 3 points for export/import functionality, and 4 points for sharing or collaboration features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input, browser compatibility issues, large mind maps, etc.) and provide friendly error prompts or recovery mechanisms. Check for defensive programming practices like input validation and error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-layout algorithms 2. Rich node formatting options 3. Image/attachment support 4. Node filtering/searching 5. Presentation mode). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to achieve the same editing operation) 2. Function modules unrelated to mind mapping (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data model/view/controller layers), unit test coverage, and code organization. Check for proper event handling patterns and performance optimization for large mind maps. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if there's no performance optimization for large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing and node distribution 3) Professional font system (consistent typography hierarchy, readable font sizes) 4) Intuitive visual cues for editing operations. Deduct 3 points for each crowded visual element, 3 points for a glaring color combination, and 4 points for confusing user interface elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Node creation/editing feedback delay ≤ 100ms 2) Smooth animations for expanding/collapsing nodes (300-500ms) 3) Responsive drag-and-drop with visual feedback 4) Clear indication of selected/active nodes. Deduct 3 points for each operation without feedback, 2 points for jerky animations during interactions, and 5 points for hard-to-use editing controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Mermaid Flowcharts-Mind Maps",
+  "difficulty": "easy"
+}

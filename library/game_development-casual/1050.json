@@ -1,0 +1,68 @@
+{
+  "index": 1050,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. I want to develop a WeChat mini program with the following features: users can create coins to join families, wear family emblems, publish photos and text which can be commented on, and implement a real-time family activity ranking board. The activity level can be increased through online time, number of comments, published content, etc. Please refine and optimize these requirements, and provide the relevant development process and program code. In addition to the above, add a game module where players can earn points for rankings by playing games.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user family system fully implemented?",
+      "description": "Evaluate whether the code implements a complete family system including: creating families, joining families, family emblem customization, and member management. Check if the system includes permissions hierarchy (admin/member), invitation mechanisms, and family statistics. Score 0 if the core family functions are missing, 5 if only basic family creation and joining is implemented, and 10 if the system includes complete family management with role-based permissions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the social content publishing and interaction features functional?",
+      "description": "Review if the code properly implements content publishing (photos and text), comment system, and content management. Check for image compression, content filtering mechanisms, and proper database structures. Deduct 3 points if media upload lacks progress indicators, 3 points if there's no content moderation mechanism, and 4 points if comments lack pagination or proper notification systems. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the activity ranking system properly designed and implemented?",
+      "description": "Check whether the activity ranking system calculates and updates scores based on multiple metrics (online time, comments, content publishing) accurately. Evaluate if real-time updates are implemented using cloud functions or WebSocket, and if the system includes anti-cheating mechanisms. Deduct 5 points if the ranking algorithm is simplistic or easily exploitable, and 5 points if there's no real-time update mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game module for earning ranking points properly implemented?",
+      "description": "Assess the implementation of the game module, examining if it includes proper game mechanics, score tracking, and integration with the ranking system. Check for multiple game options, difficulty levels, and anti-cheating measures. Deduct 4 points if games are too simple (lacking engagement), 3 points if there's no progression system, and 3 points if score synchronization with the ranking system is unreliable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, user operation errors, server downtime, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR family emblem display 2. Voice commentary for content 3. Family-themed interactive stickers 4. Seasonal family event systems). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems coexisting) 2. Function modules unrelated to family/social system (e.g., unnecessary utility tools) 3. Heavy animations or effects that affect performance on limited mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/UI/network layers), appropriate use of WeChat mini program framework patterns, and code maintenance considerations. Deduct 5 points if global state management is chaotic; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error logging or monitoring implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mini program design principles: 1) Harmonious color matching aligned with WeChat's design language 2) Proper layout spacing respecting safe areas on different devices 3) Professional typographic hierarchy with clear readability on small screens. Deduct 3 points for each instance of poor tap target sizing, 5 points for non-standard component usage, and 5 points for layouts that break on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to WeChat mini program best practices: 1) Response to user input within 100ms 2) Proper loading states for network operations 3) Smooth transitions between pages and tabs 4) Optimized rendering performance for list views. Deduct 3 points for each janky scrolling implementation, 4 points for missing loading indicators during network operations, and 3 points for abrupt page transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

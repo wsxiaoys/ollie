@@ -1,0 +1,68 @@
+{
+  "index": 1264,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. I'd like to create a whack-a-mole mini-game. I'm a complete beginner, so please explain the detailed steps. Generate comprehensive code with explanatory comments. The code should be directly runnable in the WeChat Mini Program Developer Tools.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the whack-a-mole game mechanics through JavaScript, including random mole appearance, hit detection, and scoring system. Check if moles appear at random positions and timing, disappear after being hit or after a timeout, and if points are correctly awarded for successful hits. Score 0 if the core game logic is missing, 5 if basic functionality works but with issues, and 10 if the game mechanics are fully implemented with proper randomization and hit detection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game UI properly designed for WeChat Mini Program?",
+      "description": "Evaluate whether the implementation uses appropriate WeChat Mini Program components (WXML/WXSS) and follows the platform's design guidelines. Check if the implementation includes game board layout, mole holes, mole animations, hammer cursor/animation, and score display. Deduct 5 points if the UI doesn't follow WeChat Mini Program standards, and 3 points if essential visual elements are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are game difficulty levels and progression implemented?",
+      "description": "Check whether the code includes different difficulty levels (e.g., increasing speed of moles, decreasing appearance time, or introducing distractors). Evaluate if there's a clear progression system (increasing difficulty over time or levels) and if the game speed/challenge adapts to player performance. Deduct 5 points if there's no difficulty adjustment, 3 points if progression is too simple. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is game state management properly implemented?",
+      "description": "Assess whether the code handles different game states (start screen, gameplay, pause, game over) correctly and smoothly transitions between these states. Check if the implementation includes timer management, score tracking, high score recording, and proper game reset functionality. Deduct 5 points if state transitions are buggy, and 3 points if essential state management features are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid tapping, extreme screen sizes, unexpected user interactions) and provide friendly error handling or recovery mechanisms. Code with strong robustness should prevent cheating methods and handle edge cases effectively, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special bonus moles 2. Combo system for consecutive hits 3. Power-ups or special abilities 4. Themed visual/sound effects based on player performance). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple hit detection mechanisms) 2. Function modules unrelated to the whack-a-mole game (e.g., unnecessary mini-games within) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, and proper use of WeChat Mini Program lifecycle functions. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the file structure doesn't follow Mini Program best practices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile game design principles: 1) Appropriate and consistent color scheme 2) Proper layout for touch interactions (tap targets at least 44x44px) 3) Clear visual feedback for hits and misses 4) Adequate contrast between game elements. Deduct 3 points for each cluttered visual element, 5 points for an unappealing or inconsistent color scheme, and 5 points for poor visibility of game elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the touch interactions and animations conform to mobile gaming standards: 1) Hit registration delay ≤ 100ms 2) Smooth animations for mole appearance/disappearance 3) Intuitive hammer/tap feedback. Deduct 5 points for noticeable input lag, 3 points for janky animations, and 5 points for confusing or missing visual feedback on hit/miss actions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

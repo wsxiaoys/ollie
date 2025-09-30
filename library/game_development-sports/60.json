@@ -1,0 +1,68 @@
+{
+  "index": 60,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for display.\nPlease use HTML and JavaScript to implement a sports game: Animation and physical collision\n**Task**: Implement a physics collision system where players will collide during a match and trigger corresponding animation effects.\n**Hint**: You can use a physics engine and animation system to simulate collisions and animation transitions.\nCreate the game, and include some comments in the code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the physics collision system properly implemented?",
+      "description": "Evaluate whether the code accurately implements a physics-based collision detection system that handles different types of collisions (e.g., player-to-player, player-to-environment). Check for proper collision response including momentum conservation, force application, and rebound effects. Score 0 if collision detection is missing, 5 if only basic collisions are detected without proper physics, and 10 if the implementation includes realistic physical properties (mass, velocity, acceleration) with accurate response calculations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the animation system fully integrated with the physics system?",
+      "description": "Assess whether animations properly respond to collision events and transition smoothly between states (idle, running, collision, recovery). Check if the animation system includes proper blending, interpolation techniques, and timing synchronization with the physics engine. Deduct 5 points if animations don't match collision intensity, 3 points if transitions are jarring, and full points if animations dynamically adapt to different collision scenarios with proper transition timing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are different collision types handled with appropriate responses?",
+      "description": "Verify that the code differentiates between collision types (head-on, glancing, side impacts) and responds with different animation sequences and physical outcomes. Check whether collision angle and force affect the response. Score 0 if all collisions are handled identically, 5 if there's basic differentiation, and 10 if the system accounts for collision angle, force, player attributes, and produces varied realistic outcomes.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game loop and timing system well-designed?",
+      "description": "Review whether the game maintains consistent physics calculations regardless of frame rate (e.g., using delta time), includes proper update scheduling for physics and rendering, and handles performance optimization techniques. Deduct 5 points if physics calculations are frame-dependent, 3 points if there's no separation between physics and rendering loops, and 5 points if there's no handling for performance degradation scenarios.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as extreme collision velocities, edge cases in physical interactions, browser compatibility issues) and provide graceful degradation. Code with strong robustness should effectively prevent physics glitches, giving 10 points. If the robustness is average, give 5 points, and if no error handling exists for physics edge cases, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Slow-motion effects during significant collisions 2. Dynamic camera angles that focus on collision points 3. Visual/audio feedback proportional to collision intensity). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant physics calculations (e.g., multiple collision detection systems running in parallel) 2. Function modules unrelated to the sports game mechanics (e.g., unrelated mini-games) 3. Excessive effects that affect performance without meaningful gameplay impact. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/animation system/rendering layer), code documentation quality (especially for the physics implementation), and performance optimization techniques. Deduct 5 points if global state pollution is found or appropriate design patterns are not used; deduct 5 points if the code lacks comments explaining key physics concepts; deduct 5 points if no optimization is implemented for collision detection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design follows modern gaming principles: 1) Clear visual feedback for collisions 2) Proper contrast between interactive elements and background 3) Consistent visual language for game state representation. Deduct 3 points for cluttered collision effects, 5 points for poor player visibility, and 5 points for inconsistent visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the interaction feels natural and immediate: 1) Controls respond within 100ms 2) Physics behave predictably without unexplained jumps 3) Collisions feel impactful with appropriate visual and audio feedback. Deduct 5 points for input lag, 5 points for physics glitches during collisions, and 3 points for weak collision feedback that doesn't match impact intensity. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Sports",
+  "difficulty": "medium"
+}

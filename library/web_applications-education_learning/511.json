@@ -1,0 +1,68 @@
+{
+  "index": 511,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, expert responses. Ensure that the generated code is executable when possible. Implement a dynamic weather forecast website where users can input a city name to view real-time weather information. The page display should include weather icons, temperature, humidity, and other data, with the background automatically changing according to weather conditions. Support day and night modes, allow users to switch between viewing weather forecasts for the next five days, and present the data in chart format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core city search and weather data retrieval function implemented?",
+      "description": "Review whether the code implements a functional city search system that correctly queries weather data from a reliable API (like OpenWeatherMap, WeatherAPI, etc.). Check for proper error handling for invalid cities, API failures, and rate limiting. Score 0 if no search functionality exists, 5 if basic search works but lacks error handling, and 10 if comprehensive search with all error cases is handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time weather data display complete and accurate?",
+      "description": "Evaluate if the implementation displays all required weather data points (temperature, humidity, weather icons, etc.) and whether the data updates dynamically. Check if the icons properly represent different weather conditions. Deduct 3 points if temperature units aren't toggleable (°C/°F), 2 points if humidity data is missing, and 5 points if weather icons don't properly match conditions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the 5-day forecast feature fully implemented?",
+      "description": "Check if the code properly retrieves and displays forecast data for the next five days. Verify that the UI provides clear navigation between current weather and forecast views. Evaluate if the forecast data is comprehensive (temperature ranges, precipitation probability, etc.). Deduct 5 points if the forecast data is incomplete, 3 points if navigation between views is confusing, and 5 points if the forecast lacks visual differentiation from current weather data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the chart-based data visualization properly implemented?",
+      "description": "Assess whether the code uses appropriate chart libraries (Chart.js, D3.js, etc.) to visualize weather trends. Check if charts are responsive, interactive, and present data in an intuitive format. Verify that temperature, humidity, and other metrics are properly represented with appropriate scales. Deduct 3 points for non-interactive charts, 5 points for charts that don't resize responsively, and 5 points if data visualization is confusing or misleading. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruption, user input errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather alerts/notifications 2. Location-based automatic detection 3. Weather history comparison 4. Animation effects for different weather conditions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant API calls for the same data 2. Function modules unrelated to weather forecasting 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API service/UI components/data processing), use of modern front-end practices (like component-based architecture), and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (weather-appropriate and visually pleasing) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the background changes based on weather conditions are smooth and appropriate, and if the day/night mode transitions are well-implemented. Check if 1) Weather condition transitions are visually appealing 2) Day/night mode toggle is intuitive and changes all relevant elements 3) Response time for city search is ≤ 500ms with visual loading indicators. Deduct 5 points for jarring background transitions, 3 points if day/night mode is incomplete, and 5 points if interactions feel sluggish. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 670,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Create a subtitle generation tool where users can upload videos and add corresponding subtitle text based on provided timestamps. Support customization of font, color, and size. Subtitles should display synchronously during video playback and can be exported together with the video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and processing functionality fully implemented?",
+      "description": "Review whether the code accurately implements video file upload with proper format validation (MP4, WebM, AVI, etc.), file size restrictions, and progress indicators. Check if video metadata extraction (duration, resolution, frame rate) is correctly implemented and displayed. Score 0 if basic upload is not working, 5 if only simple upload without validation is implemented, and 10 if comprehensive upload with metadata processing and error handling is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the timestamp-based subtitle synchronization system implemented?",
+      "description": "Check whether the subtitle timing system includes accurate timestamp parsing, real-time synchronization with video playback, and frame-accurate positioning. Evaluate if the code handles subtitle display/hide transitions smoothly and supports common subtitle formats (SRT, VTT). Deduct 5 points if synchronization drift exceeds 100ms, and 3 points if subtitle overlap handling is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the subtitle customization interface designed with comprehensive options?",
+      "description": "Evaluate whether the customization system provides real-time preview of font family selection, size adjustment (with proper scaling), color picker with transparency support, and positioning controls. Check if text styling options include bold, italic, outline, and shadow effects. Deduct 3 points if font rendering is inconsistent across browsers, and 5 points if real-time preview is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video export functionality with embedded subtitles constructed?",
+      "description": "Check whether the code includes video processing capabilities to permanently embed subtitles into the video file, maintaining original quality and supporting multiple output formats. Evaluate if the export process includes progress tracking, quality options, and batch processing capabilities. Deduct 5 points if subtitles are only overlaid without proper encoding, and 3 points if export progress feedback is missing. Give 10 points if fully implemented with multiple format support.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted video files, invalid timestamp formats, memory limitations during processing, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-subtitle generation using speech recognition 2. Multi-language subtitle support with translation 3. Subtitle template library with preset styles 4. Keyboard shortcuts for efficient editing 5. Waveform visualization for audio timing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video players coexisting) 2. Function modules unrelated to subtitle generation (e.g., built-in video editing tools) 3. Heavy processing that affects performance (e.g., unnecessary real-time video filters). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core subtitle functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/subtitle engine/UI layers), error handling patterns, and code organization. Deduct 5 points if memory leaks are found in video processing or DOM manipulation; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper cleanup of video resources is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean timeline interface with clear timestamp markers 2) Intuitive drag-and-drop subtitle positioning 3) Professional video player controls with subtitle preview 4) Consistent spacing and typography (following 8px grid system). Deduct 3 points for each confusing UI element, 5 points for poor contrast in subtitle preview, and 5 points for cluttered timeline or control panels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Video playback controls respond within 100ms 2) Subtitle appearance/disappearance transitions are smooth (200-300ms) 3) Timeline scrubbing provides immediate visual feedback 4) Export progress updates smoothly without UI freezing. Deduct 5 points for each laggy interaction, 3 points for choppy video playback during subtitle editing, and 5 points for unresponsive timeline controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "medium"
+}

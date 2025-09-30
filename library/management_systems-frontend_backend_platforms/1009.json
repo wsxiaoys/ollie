@@ -1,0 +1,68 @@
+{
+  "index": 1009,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable for demonstration. First, complete the registration and login modules: for individual customers/corporate customers/individual salespeople, provide complete page files. The welcome page should include a redirect button for \"I am a customer, I want to buy insurance\" and a redirect button for \"I am a salesperson, I want to sell insurance\". Modular development is required. Provide the complete file for the welcome page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the welcome page with proper redirects fully implemented?",
+      "description": "Evaluate if the welcome page includes clearly visible and properly styled redirect buttons for 'I am a customer, I want to buy insurance' and 'I am a salesperson, I want to sell insurance'. Check if clicking these buttons correctly redirects users to appropriate registration/login pages. Score 0 if no welcome page is provided, 5 if the page exists with basic redirects, and 10 if the welcome page is comprehensive with proper routing, responsive design, and intuitive navigation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all registration modules for different user types implemented?",
+      "description": "Verify the implementation of registration forms for all specified user types: individual customers, corporate customers, and individual salespeople. Each form should include appropriate fields (e.g., personal details for individuals, company information for corporate users). Assess validation logic for each field (email format, password strength, required fields). Deduct 3 points for each missing user type registration, and 2 points for inadequate validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are login modules for all user types functional?",
+      "description": "Check if login functionality exists for all user types with proper authentication logic. Evaluate if login forms include username/email and password fields, 'remember me' option, and 'forgot password' link. Test if authentication errors display appropriate messages. Deduct 3 points for each missing user type login, 2 points if error handling is inadequate, and 2 points if session management is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is modular development properly implemented?",
+      "description": "Assess code organization: components should be properly separated, reusable, and follow a logical structure (e.g., separate components for forms, buttons, headers). Check if CSS is modularized (using CSS modules, styled-components, or similar approaches). Verify imports/exports are correctly used. Deduct 5 points if code is monolithic rather than modular, 3 points if styling is not modularized, and 3 points if there's significant code duplication. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form validation errors, network issues during login/registration, browser compatibility issues). Test edge cases (e.g., submitting empty forms, very long inputs). Code with strong robustness should provide friendly error prompts and recovery mechanisms. Give 10 points if thoroughly handled, 5 points if basic validation exists but edge cases are missed, and 0 points if no error handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multi-factor authentication 2. Social media login integration 3. Personalized welcome messages 4. Interactive onboarding tour 5. Localization/language selection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation systems) 2. Function modules unrelated to registration/login (e.g., unnecessary widgets) 3. Fancy effects that affect performance (e.g., heavy animations that slow page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separate components for UI, business logic, and data handling), code organization, naming conventions, and commenting quality. Assess if the code follows industry standard patterns (e.g., React component patterns). Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is high; deduct 5 points if variable/function naming is inconsistent or unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional form design (clear labels, appropriate input sizes, visible focus states) 4) Consistent typography (heading hierarchy, readable font sizes). Deduct 3 points for each design inconsistency, 5 points for accessibility issues (poor contrast, missing ARIA attributes), and 5 points for unprofessional visual appearance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the form interactions and page transitions conform to user expectations: 1) Form submission feedback is immediate 2) Error messages appear inline near relevant fields 3) Loading states are visually indicated 4) Transitions between pages are smooth. Deduct 5 points for abrupt page changes without feedback, 3 points for delayed form validation feedback, and 5 points for confusing navigation flow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

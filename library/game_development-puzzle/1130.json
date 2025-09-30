@@ -1,0 +1,68 @@
+{
+  "index": 1130,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Please write a mobile game program for Tetris.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Tetris core game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the 7 standard Tetris pieces (I, O, T, S, Z, J, L) with correct rotation states, proper grid-based movement system, line clearing detection, and gravity mechanics. Score 0 if basic piece spawning/movement is missing, 5 if only basic mechanics work without proper rotation, and 10 if all standard Tetris rules including wall kicks and T-spins are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mobile touch control system optimized?",
+      "description": "Check whether the touch controls are specifically designed for mobile devices including swipe gestures for movement, tap for rotation, swipe down for soft drop, and long press for hard drop. Evaluate touch responsiveness, gesture recognition accuracy, and haptic feedback. Deduct 5 points if gestures are unresponsive or conflicting, 3 points if no haptic feedback is provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game progression and scoring system properly designed?",
+      "description": "Evaluate whether the scoring system follows standard Tetris mechanics with increasing difficulty levels, proper line clear bonuses (single, double, triple, Tetris), and speed progression. Check for combo scoring, level advancement triggers, and high score persistence. Deduct 5 points if scoring is inconsistent with Tetris standards, 3 points if no difficulty progression exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management and persistence implemented?",
+      "description": "Check whether the code includes complete game state management with pause/resume functionality, game over handling, high score storage, and background/foreground state transitions for mobile. Evaluate local storage implementation for game progress. Deduct 5 points if no state persistence exists, 3 points if mobile lifecycle events aren't handled properly. Give 10 points if fully implemented with proper mobile state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid touch inputs, device rotation, memory constraints, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases and mobile-specific challenges, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance gameplay?",
+      "description": "Check whether the code includes engaging features that improve the mobile gaming experience (e.g., 1. Ghost piece preview 2. Hold piece functionality 3. Particle effects for line clears 4. Sound effects and music 5. Customizable themes). Add 2 points for each well-implemented feature that enhances gameplay without affecting performance (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to Tetris gameplay (e.g., built-in social media sharing) 3. Performance-heavy effects that cause frame drops on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if core game performance is impacted by unnecessary features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic, rendering, input handling), code organization, and mobile optimization practices. Deduct 5 points if global state pollution is found or no clear architecture pattern is used; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if no mobile performance optimizations are implemented (like requestAnimationFrame usage). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the mobile interface meet professional design standards?",
+      "description": "Evaluate whether the design is optimized for mobile screens: 1) Proper scaling for different screen sizes and orientations 2) Touch-friendly UI elements (minimum 44px touch targets) 3) Clear visual hierarchy with appropriate contrast ratios 4) Responsive layout that works on various mobile devices. Deduct 3 points for each UI element that's difficult to interact with on mobile, 5 points for poor readability, and 5 points for non-responsive design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the animations and visual feedback smooth for mobile?",
+      "description": "Judge whether the visual effects are optimized for mobile performance: 1) Consistent 60fps gameplay without frame drops 2) Smooth piece movement and rotation animations 3) Satisfying visual feedback for line clears and piece placement 4) Proper loading states and transitions. Deduct 5 points for noticeable frame drops during gameplay, 3 points for jarring or missing animations, and 5 points for poor visual feedback that makes gameplay unclear. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

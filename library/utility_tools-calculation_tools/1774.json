@@ -1,0 +1,68 @@
+{
+  "index": 1774,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Create a retirement calculator in HTML format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the retirement calculator core functionality properly implemented?",
+      "description": "Evaluate whether the calculator accurately computes retirement savings based on standard financial formulas (including compound interest calculation, inflation adjustment, and withdrawal rate projections). Check if it accounts for key variables: initial savings, monthly contribution, expected return rate, inflation rate, retirement age, and life expectancy. Score 0 if basic calculations are missing, 5 if only simple projections are implemented, and 10 if comprehensive financial modeling is included with accurate formulas.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the calculator include input validation and constraints?",
+      "description": "Check whether the form implements proper input validation (numeric constraints, reasonable ranges for percentages/ages, prevention of negative values, etc.). Verify if the code provides immediate feedback on invalid inputs and handles edge cases (extremely high return rates, unrealistic age inputs). Deduct 5 points if basic validation is missing, 3 points if validation exists but error messages are unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a visual representation of retirement projections?",
+      "description": "Assess whether the calculator includes data visualization components (charts/graphs) that illustrate retirement savings growth over time, showing accumulation and withdrawal phases. Check if the visualization is interactive, allowing users to see how changing variables affects outcomes. Award 10 points for comprehensive, interactive visualizations, 5 points for basic static charts, and 0 points if visual representation is entirely missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are additional financial planning features included?",
+      "description": "Evaluate whether the calculator goes beyond basic calculations to include features like different withdrawal strategies comparison, Social Security integration, tax implications modeling, or scenario comparison tools. Deduct 3 points for each major financial planning aspect missing that would be expected in a comprehensive retirement calculator. Full score is 10 points for a feature-complete financial planning tool.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as non-numeric inputs, extreme values, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Monte Carlo simulation for market variability 2. Automated savings goal recommendations 3. Dynamic retirement age adjustment based on savings rate). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar calculations (e.g., multiple formulas calculating the same metric) 2. Function modules unrelated to retirement planning (e.g., a built-in currency converter) 3. Fancy effects that affect performance (e.g., excessive animations that slow calculations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation logic/view/input handling), code organization, and maintainability. Deduct 5 points if global variable pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between HTML structure, CSS styling, and JavaScript functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for financial applications (professional, trustworthy palette) 2) Proper layout spacing with clear form organization and logical flow 3) Professional font system with adequate sizing for financial data readability. Deduct 3 points for cluttered input fields, 5 points for poor visual hierarchy of results, and 5 points for chaotic arrangement of controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the calculator provides immediate feedback on input changes: 1) Instant recalculation when inputs change 2) Smooth transitions when displaying results 3) Clear visual cues for important financial thresholds or goals. Deduct 5 points if calculations require manual triggering with no auto-update, 3 points for laggy updates when changing variables, and 5 points for confusing input-to-result relationships. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "easy"
+}

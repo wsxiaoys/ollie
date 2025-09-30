@@ -1,0 +1,68 @@
+{
+  "index": 1241,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Implement a shared editor using Vue 3, Tiptap, and Yjs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the shared editor core functionality properly implemented with Tiptap and Yjs?",
+      "description": "Check if the code correctly integrates Tiptap as the rich text editor framework with Yjs for real-time collaboration. The implementation should include proper document synchronization, cursor positions sharing, and handling of concurrent edits. Score 0 if integration is missing, 5 if basic integration exists but with limited features, and 10 if the integration is complete with full collaborative editing capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue 3 integration correctly implemented with Composition API?",
+      "description": "Evaluate if the code leverages Vue 3's Composition API effectively for state management and component organization. Check for proper use of reactive references, computed properties, lifecycle hooks, and component structure. Deduct 5 points if reactive data management is poorly implemented, 3 points if components are not properly structured, and 2 points if Vue 3 specific features aren't utilized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are real-time collaboration features fully implemented?",
+      "description": "Assess the implementation of collaboration features such as awareness (showing who's editing), cursor/selection highlighting, conflict resolution, and synchronization provider setup. Check if the code includes WebRTC or a proper WebSocket provider for Yjs. Deduct 5 points if user presence is not visualized, 3 points if conflict resolution is weak, and 3 points if synchronization is unreliable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper offline support and data persistence?",
+      "description": "Evaluate if the editor implements offline capabilities with local persistence and proper reconnection handling. Check for IndexedDB integration, state recovery mechanisms, and offline edit queueing. Deduct 5 points if offline editing is not supported, 3 points if synchronization after reconnection is problematic, and 2 points if there's no local persistence of documents. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, concurrent edit conflicts, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Commenting/annotation system 2. Document version history with diff viewing 3. Custom collaboration-friendly plugins 4. AI-assisted editing features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state synchronization mechanisms) 2. Function modules unrelated to collaborative editing (e.g., unnecessary media embeddings) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor logic/UI components/collaboration services), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Real-time updates appear within 100ms 2) UI updating smoothly during collaborative editing 3) Clear visual indicators for remote user actions. Deduct 5 points for each operation without feedback, 3 points for visual glitches during collaborative editing, and 5 points for confusing or inconsistent collaboration indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

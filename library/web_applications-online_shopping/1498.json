@@ -1,0 +1,68 @@
+{
+  "index": 1498,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration purposes. Design a WeChat Mini Program page for a self-service car wash that has a beautiful interface and is suitable for commercial use.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core business logic of the self-service car wash fully implemented?",
+      "description": "Review whether the code accurately implements the complete car wash service flow through WeChat Mini Program framework, including service selection (basic wash/premium wash/wax service), time slot booking, payment integration, and real-time status tracking. Score 0 if core business logic is missing, 5 if only basic service selection is implemented, and 10 if complete commercial workflow including WeChat Pay integration is fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WeChat Mini Program native functionality properly utilized?",
+      "description": "Check whether the implementation leverages WeChat Mini Program's native capabilities including location services (wx.getLocation), camera for QR code scanning (wx.scanCode), real-time messaging (WebSocket), and proper lifecycle management (onLoad/onShow/onHide). Deduct 5 points if location-based services are not implemented, 3 points if QR code scanning is missing, and 2 points if WeChat sharing functionality is absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence and state management architecture properly designed?",
+      "description": "Evaluate whether the mini program implements proper data flow management using WeChat's storage APIs (wx.setStorageSync/wx.getStorageSync), handles network requests with proper error handling, and maintains consistent state across page navigations. Check if user session management and order history persistence are implemented. Deduct 5 points if data consistency issues exist, 3 points if offline capability is missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the commercial-grade user experience workflow complete?",
+      "description": "Check whether the code includes complete commercial features such as user registration/login, service history tracking, membership system, promotional coupon management, and customer feedback mechanism. Evaluate if the booking confirmation process includes proper validation and confirmation steps. Deduct 5 points if payment flow is incomplete, 3 points if user account management is missing, 2 points if no feedback mechanism exists. Give 10 points if fully commercial-ready.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, WeChat API errors, payment interruptions, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper error boundaries, fallback UI states, and graceful degradation. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance commercial value?",
+      "description": "Check whether the code includes value-added features that enhance user experience (e.g., 1. AR car wash preview using camera 2. AI-powered service recommendations based on car type 3. Real-time queue monitoring with estimated wait times 4. Social sharing of wash completion with before/after photos). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple payment processing logics) 2. Function modules unrelated to car wash services (e.g., built-in games or social features) 3. Excessive animations that affect Mini Program performance limits. Deduct 3 points for each redundancy found, and directly deduct 10 points if core business functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design following WeChat Mini Program best practices (proper page/component separation, utils organization), code reusability, and adherence to WeChat Mini Program development standards. Deduct 5 points if global state pollution is found or improper use of Mini Program lifecycle; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if not following WeChat Mini Program coding standards. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet commercial Mini Program standards?",
+      "description": "Evaluate whether the UI design follows WeChat Design Guidelines and commercial standards: 1) Consistent with WeChat's visual language and color schemes 2) Proper use of WeChat UI components (weui) 3) Professional branding elements suitable for car wash business 4) Clear visual hierarchy with proper spacing (following 8px grid system) 5) Readable typography (minimum 28rpx font size). Deduct 3 points for each non-compliant visual element, 5 points for poor color harmony, and 5 points for unprofessional commercial appearance. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction design smooth and Mini Program compliant?",
+      "description": "Judge whether the interactions conform to WeChat Mini Program UX standards: 1) Touch feedback within 100ms following WeChat guidelines 2) Page transitions using proper Mini Program navigation APIs 3) Loading states with WeChat-style indicators 4) Proper use of Mini Program gestures and interactions 5) Accessibility considerations for diverse users. Deduct 5 points for each interaction not following WeChat standards, 3 points for performance issues during navigation, and 5 points for non-intuitive user flow. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

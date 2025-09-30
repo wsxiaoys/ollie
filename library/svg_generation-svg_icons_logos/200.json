@@ -1,0 +1,68 @@
+{
+  "index": 200,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable for demonstration whenever possible. Please help me implement this SVG image using code. The wheelchair is accessible for the handicapped person.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the wheelchair SVG fully implemented with proper structure?",
+      "description": "Evaluate whether the SVG code correctly implements a recognizable wheelchair symbol with appropriate elements (circles for wheels, lines/paths for the frame). Score 0 if the wheelchair is not implemented, 5 if it's basic but recognizable, and 10 if it includes detailed elements (wheel spokes, armrests, proper proportions) that make it highly identifiable.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the SVG use appropriate accessibility attributes?",
+      "description": "Check if accessibility attributes are implemented (role=\"img\", aria-label, title, desc elements). The SVG should be properly labeled as an accessibility symbol. Deduct 3 points if role attributes are missing, 3 points if descriptive elements are absent, and 4 points if screen reader compatibility is not considered. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the SVG properly scalable and responsive?",
+      "description": "Verify if the SVG uses proper viewBox attributes and relative units (percentages, em) rather than fixed pixel dimensions. The wheelchair symbol should scale appropriately across different screen sizes without distortion. Deduct 5 points if fixed dimensions are used and 5 points if the image loses clarity when scaled. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the SVG follow international standards for accessibility symbols?",
+      "description": "Assess if the wheelchair symbol conforms to recognized international accessibility standards (ISO 7001, ISA symbol). Check for correct proportions, colors (if specified), and recognizability. Deduct 10 points if the symbol doesn't adhere to recognized standards. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle different browser environments and includes fallback mechanisms (like PNG fallback for older browsers). Check for cross-browser compatibility and graceful degradation. Code with strong robustness should be able to display in all major browsers, giving 10 points. If the robustness is average, give 5 points, and if no cross-browser considerations are made, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Subtle animations when focused 2. Color theme adaptability for light/dark modes 3. Interactive elements that respond to user actions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate path definitions or elements 2. Unnecessary attributes that don't contribute to the appearance or function 3. Overly complex implementations that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functionality is obscured by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (proper grouping of SVG elements), naming conventions for IDs/classes, and maintainable structure. Deduct 5 points if elements aren't properly grouped; deduct 5 points if naming is inconsistent or unclear; deduct 5 points if the code lacks comments for complex parts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows modern design principles: 1) Clean lines and balanced proportions 2) Appropriate contrast for visibility 3) Professional appearance suitable for public signage. Deduct 3 points for each visual imbalance, 5 points for poor contrast that affects visibility, and 5 points for unprofessional appearance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is any dynamic interaction smooth and purposeful?",
+      "description": "If animations or interactions are included, judge whether they follow accessibility best practices: 1) Respects user preferences for reduced motion 2) Enhances rather than distracts from the symbol's purpose 3) Properly implemented with both CSS and SMIL methods for backward compatibility. Deduct 3 points for animations that can't be disabled, 4 points for distracting effects, and 3 points for poor animation performance. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Icons/Logos",
+  "difficulty": "hard"
+}

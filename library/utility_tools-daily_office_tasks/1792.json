@@ -1,0 +1,68 @@
+{
+  "index": 1792,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Design an Excel data import tool, with all code encapsulated in a single HTML file.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "File Upload and Parsing Functionality",
+      "description": "Evaluate whether the code implements comprehensive Excel file upload and parsing functionality. Check for support of multiple Excel formats (XLSX, XLS, CSV), proper error handling for invalid files, and the ability to handle large files without browser freezing through techniques like streaming or web workers.Score 0 if file upload or parsing is not implemented, 5 if only basic parsing of one format is supported, and 10 if multiple formats are supported with robust handling of different scenarios including large files.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Data Preview and Validation",
+      "description": "Assess if the tool provides an interactive preview of the imported data with column type detection and validation capabilities. Check for the ability to preview data before importing, highlight potential data issues (like format inconsistencies or missing values), and options for configuring how to handle validation errors.Deduct 5 points if preview functionality is missing, 3 points if validation is limited or non-existent. Give 10 points if both comprehensive preview and validation features are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Data Transformation Options",
+      "description": "Examine whether the code offers data transformation capabilities such as column mapping, data type conversion, filtering options, and basic transformations before final import. Look for the ability to select/deselect columns, rename fields, and apply formulaic transformations.Award 0 points if no transformation features exist, 5 points for basic column selection/mapping, and 10 points for comprehensive transformation features including data type conversion and custom transformations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Export/Save Functionality",
+      "description": "Evaluate if the tool provides options to export the processed data in different formats (JSON, CSV, etc.) or save/persist the data in some way (localStorage, download, etc.). Check for the ability to customize export options and handle large datasets efficiently.Score 0 if export functionality is missing, 5 if basic export to a single format is supported, and 10 if multiple export formats with customization options are available.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed Excel files, memory limitations, unsupported features) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Column statistics and data profiling 2. Smart column type detection 3. Template-based import configurations).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Feature Relevance and Conciseness",
+      "description": "Strictly check three types of redundancy: 1. Redundant libraries or dependencies for the same functionality 2. Feature modules unrelated to Excel import 3. Over-engineered components that complicate the solution unnecessarily.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular design (such as separating data processing/UI/storage concerns), code organization, and whether the solution is properly encapsulated in a single HTML file as required.Deduct 5 points if global namespace pollution is found or proper design patterns are not used; deduct 5 points if the code is difficult to maintain or extend; deduct 5 points if the solution is not properly encapsulated in a single HTML file. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Quality",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times).Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Dynamic Interaction Quality",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Clear feedback during file processing 2) Progress indicators for long operations 3) Intuitive drag-and-drop functionality if implemented.Deduct 5 points for each operation without feedback, 3 points for sluggish UI during file processing, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "medium"
+}

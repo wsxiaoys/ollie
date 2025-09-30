@@ -1,0 +1,68 @@
+{
+  "index": 1537,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable for demonstration. Based on this information, could you help me create a product prototype for an \"Electricity Price Model Configuration Module\"? Either provide an image directly or give me an HTML file that I can open in my browser myself.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the electricity price model configuration interface fully implemented?",
+      "description": "Review whether the code accurately implements configurable electricity pricing models through HTML/JavaScript, including time-of-use (TOU) pricing, tiered pricing, demand charges, and seasonal rate adjustments. Check if the interface allows users to set multiple rate periods, define price thresholds, and configure complex pricing structures. Score 0 if no pricing model configuration is implemented, 5 if only basic single-rate configuration exists, and 10 if comprehensive multi-tier pricing models with time-based variations are fully supported.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dynamic price calculation and preview functionality implemented?",
+      "description": "Evaluate whether the system provides real-time calculation of electricity costs based on configured parameters, with live preview of pricing impact. Check if the code includes validation for price configuration conflicts, automatic calculation of blended rates, and graphical representation of price structures. Deduct 5 points if calculation logic is missing or incorrect, and 3 points if no visual feedback is provided for price changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the configuration data management and persistence mechanism designed?",
+      "description": "Check whether the prototype includes proper data structure for storing pricing configurations, supports import/export of pricing templates, and provides version control for different pricing schemes. Evaluate if the system can handle multiple utility rate schedules and allows for easy switching between configurations. Deduct 5 points if no data persistence is implemented, and 3 points if configuration templates cannot be saved or loaded. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the pricing model validation and testing framework constructed?",
+      "description": "Review whether the code includes comprehensive validation for pricing model consistency, conflict detection between overlapping rate periods, and scenario testing capabilities. Check if the system provides simulation tools to test pricing models against sample usage data and generates accuracy reports. Deduct 5 points if no validation logic exists, and 3 points if edge cases in pricing periods are not handled. Give 10 points if fully implemented with comprehensive testing scenarios.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid price inputs, overlapping time periods, negative rates, extreme values, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively validate all user inputs, handle edge cases gracefully, and prevent system crashes from malformed data, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the user experience (e.g., 1. Interactive pricing calendar with drag-and-drop rate setting 2. Smart pricing recommendations based on usage patterns 3. Real-time cost impact visualization 4. Pricing model comparison tools). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple price calculation engines coexisting) 2. Function modules unrelated to electricity pricing (e.g., weather widgets or unrelated utilities) 3. Fancy effects that affect usability (e.g., excessive animations during price configuration). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core pricing configuration functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating pricing logic/UI components/data models), code organization, and maintainability. Deduct 5 points if global state pollution is found or proper separation of concerns is not implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code structure is not scalable for adding new pricing models. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern enterprise application design principles: 1) Professional color scheme suitable for utility management interfaces (no more than 3 primary colors) 2) Clear information hierarchy with proper spacing (element spacing follows the 8px multiple principle) 3) Professional typography system (body font size ≥ 14px, line height over 1.5 times) 4) Intuitive form layouts for complex pricing data. Deduct 3 points for each crowded visual element, 5 points for unprofessional color combinations, and 5 points for confusing data presentation layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive for configuration tasks?",
+      "description": "Judge whether the interface interactions are optimized for complex configuration tasks: 1) Form input feedback delay ≤ 100ms 2) Smooth transitions when switching between pricing models (300-500ms) 3) Clear visual indicators for active configuration sections 4) Intuitive navigation between different pricing parameters. Deduct 5 points for each configuration action without proper feedback, 3 points for confusing navigation flow, and 5 points for hard-to-locate critical configuration options. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1795,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable and ready for demonstration. Write a Super Mario-like game using JavaScript.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements Mario's movement system (left/right movement, jumping with gravity physics), collision detection with platforms and enemies, power-up collection mechanics, and level progression. Score 0 if basic movement is not implemented, 5 if only simple movement without collision detection, and 10 if all core mechanics including enemy interactions, power-ups, and level completion are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game physics engine properly implemented?",
+      "description": "Check whether the physics system includes realistic gravity simulation, momentum conservation during jumps, proper collision response, and smooth character acceleration/deceleration. Evaluate if the jump mechanics feel responsive and natural. Deduct 5 points if gravity calculations are incorrect, 3 points if collision detection has noticeable lag or glitches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game entities and level design comprehensively constructed?",
+      "description": "Evaluate whether the game includes multiple enemy types with distinct behaviors, interactive objects (coins, power-ups, blocks), scrolling background system, and at least one complete playable level. Check if enemies have proper AI patterns and if level elements are positioned logically. Deduct 5 points if enemies lack behavioral patterns, 3 points if level scrolling is jerky or incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete game state management system implemented?",
+      "description": "Check whether the code includes comprehensive game state management covering start screen, gameplay, pause/resume functionality, game over conditions, score tracking, and lives system. Evaluate if transitions between states are smooth and logical. Deduct 5 points if pause/resume is not implemented, 3 points if score system is missing or non-functional. Give 10 points if fully implemented with proper state transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as boundary collisions, rapid key presses, browser compatibility issues, performance drops on slower devices) and provide appropriate fallbacks or error handling. Code with strong robustness should gracefully handle edge cases and maintain stable frame rates. Give 10 points for excellent robustness, 5 points if average, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes enhanced features that elevate the gaming experience (e.g., 1. Particle effects for power-ups 2. Dynamic background music and sound effects 3. Multiple playable characters 4. Level editor functionality 5. Local high score system). Add 3 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to platformer gameplay (e.g., built-in chat system) 3. Excessive visual effects that impact performance (e.g., complex shader effects inappropriate for pixel art style). Deduct 3 points for each redundancy found, and directly deduct 10 points if core gameplay is hindered by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game engine, entities, input handling, and rendering layers), code organization with clear separation of concerns, and maintainable architecture. Deduct 5 points if global variables are overused or if there's no clear architectural pattern; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if the codebase lacks proper documentation or comments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design follows classic platformer aesthetics: 1) Consistent pixel art style or coherent art direction 2) Readable UI elements with appropriate contrast 3) Smooth sprite animations with proper frame timing 4) Clear visual hierarchy for game elements. Deduct 3 points for inconsistent art styles, 5 points for poor readability of UI text, and 5 points for choppy or missing character animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game controls and animations provide excellent user experience: 1) Input response time ≤ 50ms for platform games 2) Consistent 60fps performance during gameplay 3) Smooth character animations with proper easing 4) Clear visual feedback for all player actions. Deduct 5 points for noticeable input lag, 3 points for frame drops during normal gameplay, and 5 points for unclear or missing animation transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

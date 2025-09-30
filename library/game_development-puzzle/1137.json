@@ -1,0 +1,68 @@
+{
+  "index": 1137,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Help me create a small HTML game for memorizing vocabulary words.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core vocabulary memorization mechanism properly implemented?",
+      "description": "Review whether the code implements a proper spaced repetition system or other memory-enhancing algorithm. Check if words are shown at appropriate intervals based on user performance, and if there's a scoring mechanism that tracks learning progress. Score 0 if no memorization system exists, 5 if basic flashcards are implemented, and 10 if an advanced algorithm (like Leitner or SuperMemo) is properly coded.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the word database structure well-designed?",
+      "description": "Evaluate the data structure used for vocabulary storage. It should include at minimum: word, definition, example usage, and memorization metadata (like success rate or next review date). Check if the data persistence is implemented (LocalStorage, IndexedDB, etc.) and if there's import/export functionality for vocabulary lists. Deduct 5 points for missing persistence, and 3 points for limited word metadata. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are there appropriate learning modes and difficulty levels?",
+      "description": "Check whether the game offers different learning modes (e.g., flashcards, multiple choice, spelling test, matching) and adjustable difficulty levels. Deduct 3 points for each missing core learning mode, and 5 points if difficulty adjustment is absent. The system should adapt to user performance. Give 10 points only if at least three different learning modes are fully implemented with difficulty adaptation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete progress tracking and statistics system?",
+      "description": "Assess whether the code includes comprehensive tracking of user learning progress, including statistics on retention rate, commonly missed words, learning streaks, and visual progress charts. Deduct 5 points if there's no visualization of progress, 3 points if historical performance cannot be reviewed, and 2 points if no session-based feedback is provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty word lists, network interruption for external dictionary APIs if used, invalid user input, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Pronunciation audio for words 2. Visual mnemonics or image associations 3. Gamification elements like badges or leaderboards). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar learning methods 2. Function modules unrelated to vocabulary memorization 3. Fancy effects that affect performance and distract from the learning process. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core memorization functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), maintainability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation for complex functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for learning flow. Deduct 5 points for each operation without feedback, 3 points for distracting animations that impede learning, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

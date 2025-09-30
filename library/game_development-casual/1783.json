@@ -1,0 +1,68 @@
+{
+  "index": 1783,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable. Create web code for a fully automatic fast-paced game where a ball eats numerous dots.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanic implemented correctly?",
+      "description": "Review whether the code accurately implements the ball movement system through HTML5 Canvas/JavaScript, and whether it includes proper collision detection between the ball and dots. Score 0 if the core interaction logic is not implemented, 5 if only basic movement is implemented without proper physics, and 10 if smooth movement with proper momentum and collision is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automatic gameplay system functioning properly?",
+      "description": "Evaluate whether the ball moves automatically with intelligent pathfinding towards dots, implements proper decision-making algorithms for selecting which dots to target, and handles movement smoothly without player intervention. Deduct 5 points if the automation is rudimentary (straight-line movement only), and 3 points if the decision-making isn't optimized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dot generation and management system well-designed?",
+      "description": "Check whether the code implements proper dot spawning mechanisms with appropriate distribution algorithms, performance optimization for handling numerous dots simultaneously, and proper cleanup when dots are consumed. Deduct 5 points if dots appear in predictable patterns, and 3 points if performance degrades with many dots. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game progression and scoring system implemented?",
+      "description": "Assess whether the code includes game state management such as score tracking, difficulty progression (increasing speed or complexity), and win/lose conditions. Deduct 5 points if scoring is absent or simplistic, and 3 points if difficulty doesn't increase as the player progresses. Give 10 points if fully implemented with visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, window resizing, performance bottlenecks with many elements, etc.) and provide graceful degradation or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment based on performance 2. Visual effects when consuming dots 3. Variable dot sizes with different point values). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the core gameplay (e.g., unnecessary settings) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/physics layers), reusable component patterns, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the game loop implementation is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern gaming design principles: 1) Contrasting colors between ball, dots, and background for clear visibility 2) Proper layout with score/status information not interfering with gameplay 3) Consistent visual style throughout. Deduct 3 points for each visual element that hinders gameplay, 5 points for poor color choices that make objects hard to distinguish, and 5 points for cluttered UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game performance smooth and responsive?",
+      "description": "Judge whether the game maintains a consistent frame rate (60fps target): 1) No visible stuttering when many dots are present 2) Animation remains fluid throughout gameplay 3) No input lag when the game state changes. Deduct 5 points if the frame rate drops below 30fps with normal dot counts, 3 points for visible rendering artifacts, and 5 points for significant performance degradation over time. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

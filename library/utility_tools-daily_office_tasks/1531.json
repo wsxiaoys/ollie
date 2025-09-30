@@ -1,0 +1,68 @@
+{
+  "index": 1531,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. Write Vue code using uni-app to implement a writing pad program that can record the user's finger movement trajectories on the screen and display them exactly as drawn.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core drawing functionality correctly implemented?",
+      "description": "Check if the code accurately captures touch/mouse events and renders the drawing trajectory in real-time. Verify that the path follows the exact finger movement with proper event handling (touchstart, touchmove, touchend or equivalent). Score 0 if drawing is not implemented, 5 if basic drawing works but with noticeable lag or inaccuracies, and 10 if the drawing experience is smooth and precise.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the uni-app framework properly utilized for cross-platform compatibility?",
+      "description": "Evaluate whether the code correctly uses uni-app APIs and components for touch events and canvas operations. Check if platform-specific adaptations are implemented (App/H5/WeChat Mini Program). Deduct 3 points if platform-specific conditions are missing, 5 points if only one platform is supported, and 7 points if critical uni-app features are ignored. Give 10 points for full cross-platform implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the drawing configuration customizable?",
+      "description": "Assess if the writing pad provides customization options like line thickness, color, opacity, and stroke style. Check if these settings are reactive and properly applied to the drawing operations. Deduct 2 points for each missing essential customization feature. Award full 10 points if all common drawing settings are available and correctly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are important writing pad operations supported?",
+      "description": "Verify implementation of essential operations: clear canvas, undo/redo functionality, save/export drawing, and erase mode. Deduct 2 points for each missing operation. For operations that are present but partially implemented (e.g., undo without redo), deduct 1 point each. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as multi-touch conflicts, rapid drawing movements, edge-of-screen handling, device rotation, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Pressure sensitivity support 2. Stylus-specific optimizations 3. Drawing playback feature 4. Handwriting recognition). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event handlers or listeners that might cause memory leaks 2. Unnecessary re-rendering of the canvas 3. Fancy effects that affect drawing performance (e.g., complex animations during drawing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core drawing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/UI controls/data management), component reusability, and proper Vue lifecycle management. Deduct 5 points if global state is used improperly; deduct 3 points if Vue reactivity system is not used effectively; deduct 5 points if the code structure violates uni-app best practices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the drawing interaction smooth and responsive?",
+      "description": "Judge whether the drawing performance meets user expectations: 1) Line rendering delay ≤ 16ms (60fps) 2) No visible gap between touch point and rendered line 3) Smooth curves without jagged edges or pixelation. Deduct 5 points for noticeable lag between touch and drawing, 3 points for jerky line rendering during fast movements, and 5 points for poor performance on complex drawings. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1149,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Work on the project from requirements to finished product, based on the approach of a Huawei expert-led team developing from zero to one... Develop a real-time location monitoring module based on Vue.js, integrating the Amap (AutoNavi/Gaode Maps) API.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Amap API integration complete and functional?",
+      "description": "Review whether the code properly integrates Amap JavaScript API with correct key authentication, map initialization, and essential map controls. Check if the implementation includes proper error handling for API failures, coordinate system conversion (WGS84/GCJ02), and map style customization. Score 0 if API integration fails or key functions are missing, 5 if basic map display works but lacks essential features, and 10 if all core Amap functionalities are properly implemented with robust error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time location tracking mechanism properly implemented?",
+      "description": "Evaluate whether the code implements accurate geolocation acquisition using HTML5 Geolocation API or device GPS, includes position accuracy validation, and handles location permission requests gracefully. Check for real-time coordinate updates with appropriate frequency control (avoid battery drain), location smoothing algorithms, and fallback mechanisms when GPS is unavailable. Deduct 5 points if permission handling is missing, 3 points if location accuracy is poor, and 5 points if no battery optimization is considered. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Vue.js architecture and component design well-structured?",
+      "description": "Check whether the Vue.js implementation follows best practices including proper component decomposition (map component, location service, control panels), reactive data management using Vuex or Composition API, and lifecycle management for map initialization/destruction. Evaluate if the code uses Vue 3 features appropriately and maintains clean separation between map logic and Vue components. Deduct 5 points for poor component structure, 3 points for improper state management, and 5 points for memory leaks in component lifecycle. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the monitoring features comprehensive and enterprise-ready?",
+      "description": "Assess whether the module includes professional monitoring capabilities such as: location history tracking with timestamps, geofencing alerts, multi-target monitoring dashboard, location data export functionality, and real-time notification system. Check for admin panel features, user permission management, and monitoring analytics. Deduct 5 points if core monitoring features are missing, 3 points if data persistence is not implemented, and 5 points if the interface lacks professional monitoring tools. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, GPS signal loss, API rate limiting, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases including offline scenarios, location permission denial, and API quota exhaustion. Give 10 points if fully robust, 5 points if average robustness, and 0 points if no exception handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes impressive features that enhance the monitoring experience (e.g., 1. Predictive location analytics with AI 2. Custom heatmap visualization for location density 3. Voice alerts for geofencing 4. Real-time collaboration features 5. Advanced data visualization dashboards). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple location service instances) 2. Function modules unrelated to location monitoring (e.g., built-in weather widget) 3. Fancy effects that affect map performance (e.g., excessive marker animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core location functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating map service/location service/UI components), TypeScript usage, unit test coverage, and build process automation. Check for proper Vue.js project structure, ESLint configuration, and deployment scripts. Deduct 5 points if global state pollution is found or Vue best practices are not followed; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if build process is not automated. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional monitoring system standards?",
+      "description": "Evaluate whether the monitoring interface follows enterprise dashboard design principles: 1) Professional color scheme suitable for monitoring (dark theme support) 2) Clear information hierarchy with proper spacing (8px grid system) 3) Readable typography system (minimum 14px font, 1.5x line height) 4) Intuitive iconography for location states. Deduct 3 points for each cluttered visual element, 5 points for unprofessional color choices, and 5 points for poor information architecture. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the real-time interaction smooth and responsive?",
+      "description": "Judge whether the real-time features perform smoothly: 1) Map rendering and zoom operations ≤ 100ms response time 2) Location updates with smooth marker transitions (300-500ms) 3) Real-time data refresh without UI blocking 4) Clear visual feedback for all monitoring actions. Deduct 5 points for each laggy interaction, 3 points for choppy map animations, and 5 points for unclear system status indicators. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

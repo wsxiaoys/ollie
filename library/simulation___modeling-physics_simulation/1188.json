@@ -1,0 +1,68 @@
+{
+  "index": 1188,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that any code you provide is executable for demonstration. Create an HTML animation demonstrating the operation of the solar system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the solar system model astronomically accurate?",
+      "description": "Evaluate whether the code implements accurate relative scaling of planetary sizes, orbital distances, and orbital periods. Check if the sun is properly centered and planets rotate at different speeds according to astronomical data. Score 0 if planets are randomly positioned, 5 if basic orbital mechanics are implemented but with inaccurate scaling, and 10 if the model closely resembles actual astronomical proportions (with acceptable artistic license).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the animation implement smooth planetary motion?",
+      "description": "Check if the animation uses requestAnimationFrame() or appropriate timing mechanisms rather than setTimeout/setInterval for smoother rendering. Assess if orbital motion is fluid (minimum 30fps) and whether the code implements proper circular/elliptical paths using mathematical functions (sine/cosine or elliptical equations). Deduct 5 points for jerky animations or frame drops, and 3 points if orbital paths are visibly polygonal rather than smooth curves. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are interactive features included to enhance the learning experience?",
+      "description": "Evaluate the presence and quality of interactive elements such as zoom controls, planet information on hover/click, ability to adjust simulation speed, or toggle orbital paths/labels. Deduct 5 points if no interactivity exists, 3 points if interactions lack visual feedback, and 5 points if interactions break the simulation. The full score is 10 points only if multiple well-implemented interactive features are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the visualization include additional astronomical details?",
+      "description": "Check whether the implementation includes details such as planetary rotations, moon systems for relevant planets, asteroid belt representation, planetary textures/colors, or day/night cycles. Score 0 if only basic colored circles represent planets, 5 if some detailed elements are present but incomplete, and 10 if multiple astronomical details enhance the educational value of the animation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, browser compatibility issues, performance throttling, etc.) and provide graceful degradation or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic lighting/shadow effects 2. Comet/special astronomical event simulations 3. Time progression display showing Earth days/years). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar rendering functions 2. Function modules unrelated to the solar system (e.g., unnecessary UI elements) 3. Fancy effects that affect performance (e.g., excessive particle systems that slow down the animation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core animation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating astronomical calculations from rendering logic), code reusability (e.g., planet object factory pattern), and performance optimization techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations are evident for complex animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Aesthetically pleasing space background that enhances visibility of planets 2) Proper contrast between planets, orbits and background 3) Professional typographic system for any labels or information (legible font size ≥ 14px, appropriate contrast). Deduct 3 points for each visual element with poor contrast, 5 points for color combinations that reduce clarity, and 5 points for cluttered information display. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the animation and any interactive elements respond appropriately: 1) Animation runs at consistent framerate without stuttering 2) Interactive elements respond within 100ms 3) Transitions between different states (if any) are smooth and visually pleasing. Deduct 5 points for performance bottlenecks that cause visible lag, 3 points for delayed response to user inputs, and 5 points for abrupt visual changes without proper transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

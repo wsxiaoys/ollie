@@ -1,0 +1,68 @@
+{
+  "index": 416,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Pay attention to ensure the generated code is executable for demonstration. Visualization dashboard word cloud code, created with npm.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the word cloud visualization core functionality implemented correctly?",
+      "description": "Check if the code implements a proper word cloud visualization using appropriate npm packages (e.g., d3-cloud, react-wordcloud). The implementation should handle text processing, word frequency calculation, and visual rendering. Score 0 if no word cloud is generated, 5 if basic functionality exists with flaws, and 10 if the implementation is complete with proper text processing and visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the code handle data input and processing appropriately?",
+      "description": "Evaluate how the code handles text input (from files, APIs, or user input), processes it (tokenization, stopword removal, stemming/lemmatization), and calculates word frequencies. Check if it handles different languages, special characters, and case sensitivity. Deduct 3 points if stopwords aren't handled, 3 points if no text preprocessing exists, and 2 points if it only works with English text. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dashboard integration complete and functional?",
+      "description": "Assess if the word cloud is properly integrated into a dashboard context with appropriate layout structure. The dashboard should include controls for customization, data refresh mechanisms, and possibly other complementary visualizations. Deduct 5 points if the word cloud exists in isolation without dashboard elements, and 3 points if integration exists but with limited functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are word cloud customization options implemented?",
+      "description": "Check if the code allows customization of the word cloud appearance and behavior: font styles/sizes, color schemes, layout options (shape, orientation), minimum/maximum word count, and animation settings. Deduct 2 points for each major customization category missing. The full score is 10 points if comprehensive customization is available with intuitive controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty input, extremely large texts, malformed data, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive hovering effects with additional word information 2. Real-time word cloud updates based on streaming data 3. Exportable word cloud as SVG/PNG with custom branding). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functionality (e.g., multiple text processing pipelines) 2. Function modules unrelated to the word cloud dashboard (e.g., unnecessary analytics) 3. Fancy effects that affect performance (e.g., excessive animations that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/UI components), code organization, dependency management, and build configuration. Deduct 5 points if global state pollution is found; deduct 3 points if npm dependencies are not properly managed; deduct 5 points if the code lacks comments or documentation. Check if the project has a proper structure with clear separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern dashboard design principles: 1) Harmonious color matching with consistent palette 2) Proper layout with appropriate use of space and grid systems 3) Professional typography with readable fonts and proper contrast ratios. Deduct 3 points for cluttered layout, 5 points for poor color choices affecting readability, and 5 points for inconsistent styling across components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the word cloud and dashboard interactions are fluid and responsive: 1) Smooth transitions when filtering or updating data 2) Responsive design that works across device sizes 3) Performance optimization for large datasets without UI freezing. Deduct 5 points for laggy rendering with large word sets, 3 points for missing loading states during data processing, and 3 points for non-responsive design on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

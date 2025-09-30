@@ -1,0 +1,68 @@
+{
+  "index": 777,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable and properly displayed. Help me design a complete quantitative factor research platform, providing the full code. I store all my data in parquet format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Data Import and Processing Pipeline",
+      "description": "Evaluate whether the platform implements a complete data processing pipeline for parquet files. Check for efficient loading mechanisms with parallel processing, data type validation, handling of missing values, and automatic schema detection. Verify if there's memory optimization for large datasets through streaming or chunking. Score 0 if basic parquet loading is missing, 5 if only simple reading is implemented, and 10 if a complete pipeline with optimization is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Factor Creation and Calculation Framework",
+      "description": "Review the implementation of factor creation tools. Check for a flexible API that allows custom factor definitions, vectorized operations, proper time series alignment, and cross-sectional normalization. Verify if the code includes performance tracking for calculation time. Deduct 5 points if the framework doesn't support customized factor expressions, 3 points if it lacks batch processing capabilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Backtesting Engine Quality",
+      "description": "Assess the robustness of the backtesting engine, including accurate position tracking, proper handling of transaction costs, dividend adjustments, and various rebalancing strategies. Check if it supports multiple portfolio construction methods and risk models. Deduct 5 points if look-ahead bias prevention is missing, 3 points if transaction cost models are oversimplified, and 2 points if it lacks support for position constraints. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Performance Analysis and Visualization Tools",
+      "description": "Evaluate the comprehensiveness of performance metrics calculation and visualization capabilities. Check for standard metrics (Sharpe, Sortino, drawdowns, etc.), factor exposure analysis, and interactive visualization tools. The system should offer both time-series and cross-sectional analysis views. Deduct 5 points if key performance metrics are missing, 5 points if visualizations are static-only with no interactivity, 3 points if correlation/regression analysis tools are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted parquet files, out-of-memory errors, numerical instabilities in calculations, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper exception handling, input validation, and edge case management. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-factor discovery algorithms 2. Machine learning integration for factor evaluation 3. Real-time data streaming capabilities 4. GPU acceleration for calculations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar analysis functions (e.g., multiple ways to calculate the same metric) 2. Function modules unrelated to quantitative research (e.g., unnecessary UI elements) 3. Computationally expensive features that affect performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data access, factor calculation, backtesting, and visualization layers), unit test coverage for critical components, and build process automation. Check for proper documentation, maintainable code structure, and performance optimizations. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dashboard and visualization designs follow modern data visualization principles: 1) Consistent color coding for metrics (no more than 5 primary colors) 2) Proper layout with clear information hierarchy 3) Professional typography with appropriate sizing for data displays. Check if interactive elements are clearly distinguishable and follow standard conventions. Deduct 3 points for cluttered visualizations, 5 points for misleading data representations (e.g., truncated axes), and 5 points for poor information density. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the platform's interactive elements perform well: 1) Calculation and filtering operations respond within 500ms for standard datasets 2) Transitions between views are smooth and logical 3) Interactive charts provide immediate feedback on hover/selection. Evaluate if large data operations employ progress indicators or asynchronous processing. Deduct 5 points for unresponsive interfaces during calculations, 3 points for jarring transitions between analysis views, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Statistical Analysis",
+  "difficulty": "hard"
+}

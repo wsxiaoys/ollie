@@ -1,0 +1,68 @@
+{
+  "index": 15,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a Sliding Challenge game where players can slide down slopes or on icy surfaces and need to avoid obstacles. You can set the sliding speed and direction, and design sliding routes that require quick reactions.\n\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core sliding mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the physics of sliding (acceleration/deceleration) through HTML/JavaScript, and whether it handles different surface types (slopes vs. icy surfaces). Score 0 if the sliding mechanics are not implemented, 5 if only basic sliding is implemented without differentiation between surfaces, and 10 if the physics feels realistic with proper friction coefficients for different surfaces.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the obstacle avoidance mechanics well-designed?",
+      "description": "Check whether collision detection with obstacles is properly implemented, and whether the player feedback on collision is clear. Obstacles should have varying difficulty levels and require different reaction speeds. Deduct 5 points if collision detection is inaccurate or buggy, 3 points if all obstacles have the same difficulty level, and 2 points if visual feedback on collision is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the sliding speed and direction control intuitive?",
+      "description": "Evaluate whether the controls for adjusting sliding speed and direction are intuitive and responsive. The game should provide clear visual feedback when changing direction or speed. Deduct 5 points if the controls feel sluggish, 3 points if there's no visual feedback on direction changes, and 5 points if the control system is too complex for a sliding game. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the sliding routes designed with progressive difficulty?",
+      "description": "Check whether the sliding routes are designed with progressive difficulty, requiring increasingly quicker reactions from players. Routes should include varied challenges and interesting path choices. Deduct 5 points if the routes are too linear without branches, 3 points if the difficulty progression is too steep or nonexistent, and 3 points if the routes lack visual distinction. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, browser resizing, device rotation, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups that affect sliding physics 2. Weather effects that change surface conditions 3. Dynamic camera angles that react to speed). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to sliding gameplay (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/physics/rendering layers), code commenting quality, and optimization for different devices. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code commenting is insufficient despite the requirement; deduct 5 points if the game performs poorly on mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching that distinguishes different surfaces and obstacles clearly 2) Proper layout for UI elements that don't obstruct gameplay 3) Appropriate visual cues for speed and direction. Deduct 3 points for each hard-to-see obstacle, 5 points for confusing visual language, and 5 points for cluttered UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Control response delay ≤ 50ms 2) Smooth animations at minimum 30fps 3) Clear visual feedback for surface transitions. Deduct 5 points for each sluggish control response, 3 points for frame drops during critical gameplay moments, and 5 points for lack of visual/audio feedback when transitioning between surfaces. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

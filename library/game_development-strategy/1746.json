@@ -1,0 +1,68 @@
+{
+  "index": 1746,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Write a Chinese poker game (\"Dou Dizhu\") in HTML, assuming that Xiao Liang, Lao Liang, and Lao Yu are playing. The colors of the poker cards can be random. Include a restart button.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Chinese poker (Dou Dizhu) game logic fully implemented?",
+      "description": "Review whether the code correctly implements the Dou Dizhu rules, including card distribution (17 cards for farmers, 20 cards for landlord plus 3 face-up cards), card combinations (single, pair, trio, straight, bomb, etc.), and the rule that each play must be larger than the previous one. Score 0 if basic game flow is missing, 5 if only simple card plays are supported, and 10 if all standard combinations and gameplay mechanics are correctly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the card dealing and turn-based gameplay correctly implemented?",
+      "description": "Check if the code correctly implements the three-player mechanic with proper roles (landlord vs. farmers), role selection process, and turn-based gameplay where Xiao Liang, Lao Liang, and Lao Yu take turns. Verify that the game handles turn transitions properly, shows whose turn it is, and correctly validates if a player can pass or must play. Deduct 5 points if role assignment is missing, 3 points if turn indicators are unclear, and 2 points if passing mechanics are incorrect.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the winning conditions and game completion properly implemented?",
+      "description": "Evaluate whether the code correctly determines when a player has played all their cards (winning condition), properly awards points to either the landlord or the two farmers as a team, and shows appropriate game-over notifications. Check that the game state is properly updated when someone wins. Deduct 5 points if winning detection is buggy, 3 points if scoring is missing, and 2 points if the game doesn't clearly indicate who won.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the restart functionality properly implemented?",
+      "description": "Test whether the restart button completely resets the game state, redistributes cards randomly, and allows for a fresh game to begin. The reset should clear all previous game data, shuffle the deck properly, and reset the player roles. Deduct 5 points if the restart doesn't properly shuffle cards, 3 points if player states aren't fully reset, and 2 points if the game becomes unstable after multiple restarts.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as clicking cards when it's not your turn, trying to play invalid card combinations, or rapid button clicks). Code with strong robustness should prevent illegal moves and provide user feedback. Give 10 points if the code handles all edge cases gracefully, 5 points if it handles common cases but has minor issues, and 0 points if it breaks easily.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation for card dealing 2. Sound effects for card plays 3. Hints for possible moves 4. AI strategy for computer players 5. Game history/statistics). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle card selection) 2. Function modules unrelated to the poker game (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view layers), code organization, and maintainability. Deduct 5 points if global variable abuse is found; deduct 3 points if the code structure is chaotic with no clear separation of concerns; deduct 2 points if there's excessive code duplication. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the card display is clear and visually appealing: 1) Cards are easily distinguishable with clear suits and values 2) Player areas are well-defined with proper spacing 3) Current player and game state indicators are clearly visible. Deduct 3 points for cluttered card layouts, 4 points for poor visibility of critical game information, and 3 points for inconsistent visual styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the card interaction smooth and intuitive?",
+      "description": "Judge whether the card selection and play interactions are user-friendly: 1) Cards can be easily selected/deselected 2) Selected cards are visually distinct 3) Playing cards has clear feedback 4) Cards are properly arranged after each play. Deduct 3 points for clunky card selection, 3 points for unclear visual feedback when playing cards, and 4 points if the game becomes visually confusing during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

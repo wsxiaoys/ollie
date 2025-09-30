@@ -1,0 +1,68 @@
+{
+  "index": 1560,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. I want to create a WeChat mini program for recording running tracks, called \"Running Circle.\" The track color will be determined by the pace speed. It will use cloud development. Please provide me with the complete code for this mini program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core GPS tracking functionality fully implemented?",
+      "description": "Evaluate whether the code accurately implements real-time GPS tracking with appropriate positioning accuracy settings. Check if it handles different GPS states (high/low accuracy, no signal) and contains power optimization strategies. Score 0 if GPS tracking isn't implemented, 5 if basic tracking works but lacks error handling, and 10 if it includes comprehensive tracking with proper error handling and optimization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the pace-based track coloring system implemented correctly?",
+      "description": "Review whether the code includes algorithms to calculate pace (min/km) in real-time and applies appropriate color mapping based on pace thresholds. Check if color transitions are smooth and if the system handles edge cases like extremely slow/fast paces or GPS jumps. Deduct 5 points if pace calculation is inaccurate, 3 points if color mapping is simplistic or hard-coded, and 2 points if there's no visual feedback during running.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the WeChat cloud development integration complete?",
+      "description": "Assess whether the code properly utilizes WeChat cloud services for storing run data, user authentication, and sharing functionality. Check if it implements proper data synchronization between local storage and cloud databases. Deduct 5 points if cloud storage isn't implemented, 3 points if authentication is missing, and 3 points if there's no offline support with synchronization logic.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the run session lifecycle management properly implemented?",
+      "description": "Evaluate whether the code handles the complete lifecycle of a run session: preparation, start, pause/resume, completion, and summary. Check if it properly manages background/foreground transitions and includes mechanisms to prevent accidental data loss. Deduct 5 points if pause/resume functionality is missing, 3 points if background tracking isn't handled properly, and 2 points if run completion lacks proper validation or summary.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as GPS signal loss, battery optimization interference, accidental app closure, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-generated running insights 2. Social sharing with customizable post templates 3. Integration with music apps for run soundtrack 4. Gamification elements like achievements or challenges). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple location tracking methods used simultaneously) 2. Function modules unrelated to running tracking (e.g., unnecessary social features) 3. Fancy effects that affect performance and battery life (e.g., constant animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating tracking logic/UI/cloud service layers), component reusability, and mini program best practices. Deduct 5 points if global state pollution is found or if the code doesn't follow WeChat mini program development standards; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error logging or performance monitoring. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern WeChat mini program design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent with WeChat's design language. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic map-UI integration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Start/stop button feedback delay ≤ 100ms 2) Map updates at minimum 1Hz during activity 3) Smooth transition between different screens 4) Intuitive gestures for map manipulation. Deduct 5 points for each operation without feedback, 3 points for laggy map rendering during tracking, and 5 points for hard-to-reach controls during running. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

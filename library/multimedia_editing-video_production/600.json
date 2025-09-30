@@ -1,0 +1,68 @@
+{
+  "index": 600,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable whenever possible. Please implement a video Picture-in-Picture creation tool that allows users to upload two video clips, where one is reduced in size and floats at any position over the other video during playback. Users should be able to customize the size and position of the child video, and export the edited video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video uploading and processing functionality fully implemented?",
+      "description": "Review whether the code implements robust file uploading for the two video clips, with proper input validation, file type verification (checking for valid video formats like MP4, WebM, etc.), and error handling for oversized files. Check if the code includes progress indicators during upload. Score 0 if uploading is not implemented, 5 if basic uploading exists but lacks validation, 10 if complete with all error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Picture-in-Picture (PiP) display system correctly implemented?",
+      "description": "Evaluate the implementation of displaying one video over another. Check for proper z-index management, canvas or HTML5 video element positioning, and whether the solution maintains proper aspect ratios. Ensure the main video and PiP video render correctly without performance issues. Score 0 if PiP display is not implemented, 5 if basic implementation but with rendering glitches, 10 if fully functional with smooth rendering.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the customization controls for PiP size and position properly implemented?",
+      "description": "Check for interactive UI elements that allow users to resize (using handles or numeric inputs) and reposition (drag-and-drop or coordinate inputs) the PiP video. Verify that changes apply in real-time during preview. Deduct 5 points if only one type of customization is available, 3 points if the controls are unintuitive, 10 points if fully implemented with responsive feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video export functionality working correctly?",
+      "description": "Analyze whether the code includes proper video compositing and export capabilities using WebCodecs API, FFmpeg.js, or server-side processing. Check if it handles different video codecs and preserves quality settings. Verify if progress indicators are provided during export. Deduct 5 points if export quality is poor, 5 points if no format options are available, and 10 points if fully functional with multiple output options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incompatible video formats, browser compatibility issues, memory constraints with large videos, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time filters or effects for either video 2. Transition effects for PiP appearance/disappearance 3. Timeline editor for controlling when PiP appears). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar video processing functions 2. Function modules unrelated to video editing (e.g., unnecessary social sharing features) 3. Resource-heavy effects that affect performance (e.g., excessive animations in the UI). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing logic/UI/export modules), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check if video controls are intuitive and follow standard conventions. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the video playback and editing controls respond appropriately: 1) Preview updates occur within 100ms of adjustment 2) Smooth transitions when resizing/moving PiP window 3) Clear visual feedback during drag operations. Check if the video scrubbing is smooth and if the video playback synchronization between main and PiP videos is maintained. Deduct 5 points for each operation without feedback, 3 points for laggy video rendering during editing, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1657,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for display when possible. Help me create a web-based version of the Candy Crush-style match-3 puzzle game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core match-3 game mechanic fully implemented?",
+      "description": "Check if the code properly implements the fundamental match-3 mechanics including: grid generation, piece swapping logic, match detection (horizontal/vertical/L-shapes/T-shapes), cascade effects after matches, and board refilling. Score 0 if core matching isn't implemented, 5 if only basic 3-in-a-row detection works, and 10 if all professional match variations are supported with proper animations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are special candy/power-up mechanics implemented?",
+      "description": "Verify implementation of special candies created from matches of 4+ pieces (striped candies, wrapped candies, color bombs) with their specific effects. Check if the interactions between special candies are correctly handled (e.g., striped+wrapped combination). Deduct 3 points if only basic special candies exist, 5 points if combinations aren't implemented, and 7 points if animations for special effects are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the level progression and scoring system properly designed?",
+      "description": "Evaluate if the game includes level objectives (score targets, specific piece collection, obstacle clearing), move limits, progression tracking, and star ratings. Check if scoring calculations account for combo multipliers and special candy creations. Deduct 5 points if objectives are missing, 3 points if scoring lacks depth, and 5 points if level progression isn't persistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game include proper game state management and UI controls?",
+      "description": "Assess if the game handles different states (menu, playing, paused, game over) correctly with appropriate transitions. Check for UI elements including score display, move counter, level selector, restart button, and game over screen. Deduct 3 points for each missing critical UI element, and 5 points if state transitions are broken or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, rapid clicking, browser resizing, etc.) and provide friendly error handling. Check if the game prevents illegal moves and handles edge cases in the match detection algorithm. Deduct 3 points for each unhandled edge case, and 5 points if the game breaks under normal usage scenarios. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Daily challenges 2. Social sharing of scores 3. Custom themes or skins 4. Unique power-ups beyond standard match-3 games). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems) 2. Function modules unrelated to match-3 gameplay (e.g., unintegrated mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems causing lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, and maintainability. Check for proper use of design patterns, consistent naming conventions, and code reusability. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if the code lacks comments and documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game follows match-3 visual design principles: 1) Vibrant yet harmonious color palette for game pieces 2) Clear grid layout with appropriate spacing 3) Readable UI elements with proper contrast 4) Visually distinct special candies. Deduct 3 points for visually confusing game pieces, 5 points for unclear grid boundaries, and 5 points for poorly contrasting UI elements that affect readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations and interactions feel satisfying: 1) Responsive drag-and-swap operations (≤ 100ms) 2) Smooth matching and disappearing animations (300-500ms) 3) Pleasing cascading effects with appropriate timing 4) Satisfying visual/audio feedback for matches and special candy activations. Deduct 5 points for laggy animations, 3 points for missing feedback on matches, and 5 points for unpolished or abrupt transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

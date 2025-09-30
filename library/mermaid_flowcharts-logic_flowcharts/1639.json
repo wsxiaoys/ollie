@@ -1,0 +1,68 @@
+{
+  "index": 1639,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Provide sample code for using Rete.js in Vue 3, using the setup script syntax sugar.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is Rete.js core integration properly implemented?",
+      "description": "Review whether the code correctly integrates Rete.js with Vue 3 setup syntax, including proper engine initialization, area plugin configuration, and connection plugin setup. Check if the node editor instance is properly created and mounted to DOM elements. Score 0 if core Rete engine is not initialized, 5 if only basic editor is created without plugins, and 10 if complete integration with all essential plugins (Area, Connection, Render) is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are custom nodes and sockets correctly defined and functional?",
+      "description": "Evaluate whether custom node types are properly defined with input/output sockets, control elements, and data processing logic. Check if nodes can be added to the editor, connected properly, and execute their intended functions. Deduct 5 points if socket connections don't work, 3 points if node controls are non-functional. Full score requires at least 2-3 different node types with proper socket definitions and working connections.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Vue 3 reactivity system properly integrated with Rete.js?",
+      "description": "Check whether Vue 3's composition API (ref, reactive, computed) is correctly used to manage Rete.js state and provide reactive updates. Evaluate if changes in Vue components properly sync with Rete editor state and vice versa. Deduct 5 points if reactivity is broken or causes memory leaks, 3 points if state synchronization is inconsistent. Full score requires seamless two-way data binding between Vue and Rete.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data flow processing engine implemented with proper execution logic?",
+      "description": "Assess whether the node graph can execute properly with data flowing through connections, including proper input validation, data transformation, and output generation. Check if the execution order respects node dependencies and handles circular references. Deduct 5 points if execution logic is missing, 3 points if data types are not properly validated. Full score requires complete data processing pipeline with error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid node connections, missing dependencies, component lifecycle issues, memory leaks from Rete instances, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases and provide proper cleanup on component unmount, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom node templates with drag-and-drop palette 2. Real-time preview of node execution results 3. Serialization/deserialization of node graphs 4. Minimap or zoom controls 5. Undo/redo functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple editor initialization logic) 2. Function modules unrelated to Rete.js demonstration (e.g., unnecessary UI components) 3. Overly complex examples that obscure the core Rete.js usage patterns. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core Rete.js demonstration is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating node definitions, editor configuration, and Vue components), proper TypeScript usage if applicable, and Vue 3 best practices compliance. Deduct 5 points if global state pollution is found or composition API patterns are misused; deduct 5 points if code structure is poorly organized; deduct 5 points if dependencies are not properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for nodes and connections (no more than 3 primary colors) 2) Proper layout spacing (node editor container and controls follow consistent spacing) 3) Professional typography (readable node labels, proper font hierarchy). Deduct 3 points for each visually crowded element, 5 points for clashing color combinations, and 5 points for poor visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the node editor interactions conform to user expectations: 1) Node dragging responsiveness ≤ 16ms for 60fps 2) Connection creation with smooth bezier curves and visual feedback 3) Hover states and selection feedback are immediate and clear 4) Zoom and pan operations are fluid. Deduct 5 points for each laggy interaction, 3 points for poor visual feedback during operations, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Mermaid Flowcharts-Logic Flowcharts",
+  "difficulty": "hard"
+}

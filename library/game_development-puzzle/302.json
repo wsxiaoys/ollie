@@ -1,0 +1,68 @@
+{
+  "index": 302,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the code you produce is executable and functional. Please help me write a 2048 mini-game that can run in a browser.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core 2048 game logic fully implemented?",
+      "description": "Review whether the code accurately implements the 2048 game mechanics including tile merging, movement in all four directions, and scoring system. Check if the algorithm correctly handles the merging of same-value tiles and prevents illegal moves. Score 0 if the core logic is missing, 5 if basic movements work but with edge case bugs, and 10 if all game rules are perfectly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the game initialize and generate new tiles correctly?",
+      "description": "Evaluate whether the game properly initializes with 2 random tiles at the start, and adds a new tile (with value 2 or 4) after each valid move. Check if the random tile generation only occurs in empty spots and follows the correct probability distribution (90% for 2, 10% for 4). Deduct 5 points if random generation is deterministic or biased, and 3 points if new tiles don't appear after valid moves. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the win/lose condition properly implemented?",
+      "description": "Check if the game correctly detects win conditions (reaching the 2048 tile) and lose conditions (no valid moves available when the board is full). Verify that the game provides appropriate feedback upon winning or losing. Deduct 5 points if only one condition is implemented, and 3 points if the detection is delayed or buggy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the keyboard and touch/swipe controls implemented effectively?",
+      "description": "Assess whether the game responds to both keyboard inputs (arrow keys) and touch/swipe gestures on mobile devices. Check for gesture recognition accuracy, handling of simultaneous inputs, and prevention of accidental moves. Deduct 5 points if only keyboard controls work, 3 points if touch controls are implemented but unreliable, and 2 points if input handling has noticeable delay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid successive inputs, browser refresh, resizing window, etc.) and provide graceful degradation. Code with strong robustness should prevent game state corruption and handle these edge cases. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if the game breaks easily under non-standard use.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Undo/redo functionality 2. Customizable board size 3. Animation speed controls 4. Auto-save game progress 5. Leaderboard integration). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event listeners or game logic calculations 2. Unnecessary UI elements unrelated to the 2048 game 3. Overengineered animations that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic, UI rendering, and input handling), code reusability, and maintainability. Deduct 5 points if global state management is messy; deduct 3 points if magic numbers are used instead of constants; deduct 2 points if the code lacks comments on complex logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game follows the classic 2048 aesthetic while maintaining modern design principles: 1) Consistent color scheme for tile values 2) Clear visual distinction between different numbered tiles 3) Proper spacing and grid layout 4) Responsive design that works on different screen sizes. Deduct 3 points for inconsistent tile styling, 3 points for poor readability of numbers, and 4 points for non-responsive layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animations enhance the game experience: 1) Smooth tile sliding animations (150-250ms duration) 2) Tile merging animations with appropriate visual feedback 3) Subtle but visible new tile appearance effect. Deduct 4 points for jerky or missing movement animations, 3 points for abrupt tile appearances without animation, and 3 points for animations that are too slow and impede gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

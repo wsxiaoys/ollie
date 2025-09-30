@@ -1,0 +1,68 @@
+{
+  "index": 815,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Implement a system that, after receiving all system functional requirements submitted by users, automatically calls AI to generate code, module by module, and then compiles them into a complete, runnable system code package. Keep it simple and easy to implement. I'm providing you with a simplified approach: first, implement only the ability to generate a simple management system, then use templates to standardize user input, simplifying the understanding of the input.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the requirements parsing mechanism fully implemented?",
+      "description": "Evaluate whether the system effectively parses user-submitted requirements. Check for structured input validation, natural language processing capabilities, and domain-specific terminology recognition. Score 0 if there's no parsing mechanism, 5 if basic template-based requirement parsing exists, and 10 if advanced NLP techniques with error correction are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the code generation system properly integrated with AI models?",
+      "description": "Verify the integration with AI code generation services (like OpenAI API, Anthropic API, etc.). Check for proper API authentication, error handling for failed calls, rate limiting mechanisms, and response validation. Deduct 5 points if only a single AI provider is supported with no fallback, and 3 points if the system doesn't handle context limitations effectively. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the module-by-module generation approach implemented properly?",
+      "description": "Assess the system's ability to break down requirements into logical modules, generate code for each module independently, and maintain consistency across generated components. Check for dependency management between modules. Deduct 5 points if module interfaces are poorly defined, and 3 points if there's no mechanism to ensure consistency across modules. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the code compilation and packaging mechanism functional?",
+      "description": "Evaluate whether the system can effectively compile and package the generated code into a runnable system. Check for appropriate build tools integration, dependency management, and output validation. Deduct 5 points if the system can't handle compilation errors, and 3 points if it lacks appropriate packaging for different environments (development/production). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed requirements, AI service outages, compilation failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive requirement refinement 2. Visual preview of generated system components 3. Automatic code quality assessment). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple requirement parsing engines) 2. Function modules unrelated to code generation (e.g., built-in entertainment features) 3. Overly complex features that don't improve the core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating requirement processing/code generation/compilation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback during long-running operations like code generation. Deduct 5 points for each operation without feedback, 3 points for unclear progress indicators during generation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1381,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. Help me write a web code for an anesthesia record form, then verify if the web code can run properly. If not, modify it again until it's perfect.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic structure of the anesthesia record form implemented?",
+      "description": "Review whether the HTML structure properly includes all essential sections of an anesthesia record form: patient information, pre-anesthesia assessment, intraoperative monitoring, medications administration, fluid management, and post-anesthesia care. Score 0 if core sections are missing, 5 if basic structure exists but lacks medical specificity, and 10 if the form comprehensively covers all standard anesthesia documentation requirements.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the data input fields appropriate for clinical use?",
+      "description": "Evaluate whether the form includes the correct types of input fields for different medical data (e.g., dropdowns for ASA classification, numeric fields with proper ranges for vital signs, date/time pickers for procedures). Check if field validation implements medical constraints (e.g., systolic BP range 60-250 mmHg). Deduct 3 points for each critical medical field using inappropriate input types, and 5 points if validation is missing for critical values. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the form implement real-time vital signs charting?",
+      "description": "Check if the code includes a visual charting system for vital signs (HR, BP, SpO2, EtCO2, temperature) that can be updated in real-time. Evaluate if the charting uses appropriate visualization (line graphs for trends, color coding for out-of-range values). Deduct 5 points if charts are static, 3 points if they lack proper scaling, and 5 points if they don't support real-time updates. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there functionality for medication tracking and calculations?",
+      "description": "Review whether the code implements medication tracking with timestamps, dose calculations based on patient weight, and cumulative dose monitoring. Check for drug interaction warnings and automated BMI/dosage calculations. Deduct 3 points if timestamps aren't automatic, 5 points if weight-based calculations are missing, and 5 points if there's no cumulative dose tracking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data entry, connection issues during form submission, or browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance clinical workflow (e.g., 1. Voice input for hands-free documentation 2. Automated alerts for concerning vital sign trends 3. Integration with mock EMR systems 4. Offline functionality with data synchronization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate data entry fields for the same information 2. Functionality not typically needed in anesthesia documentation (e.g., complex animation effects) 3. Performance-heavy features that could slow down critical documentation during surgery. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core medical documentation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating medical data models/view/form validation), test coverage for critical calculations, and responsive design for different clinical environments. Deduct 5 points if global variables store critical patient data without proper encapsulation; deduct 5 points if medical calculations lack validation; deduct 5 points if the form breaks on mobile devices that might be used in medical settings. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet clinical design standards?",
+      "description": "Evaluate whether the design follows medical interface principles: 1) Clear visual hierarchy prioritizing critical patient data 2) Appropriate color schemes that highlight abnormal values and use accepted clinical color conventions (e.g., red for hypotension) 3) Readable typography under varied lighting conditions (operating room vs. recovery). Deduct 3 points for poor information hierarchy, 5 points for non-standard clinical color usage, and 5 points for text that would be illegible in medical settings. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the form optimized for clinical workflow?",
+      "description": "Judge whether the interface supports efficient clinical documentation: 1) Quick access to common medications and procedures 2) Keyboard shortcuts for frequent actions 3) Logical tab order following the anesthesia workflow 4) Auto-saving to prevent data loss. Deduct 5 points for workflow that contradicts clinical practice, 3 points for excessive clicks required for common tasks, and 5 points for designs that would distract from patient care. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

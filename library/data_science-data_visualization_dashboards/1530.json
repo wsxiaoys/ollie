@@ -1,0 +1,68 @@
+{
+  "index": 1530,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code where possible. Analyze file data and create a data dashboard in HTML format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data parsing and processing logic fully implemented?",
+      "description": "Review whether the code accurately implements file parsing functions (CSV, JSON, Excel, etc.), data cleaning procedures, and proper error handling for malformed data. Score 0 if no parsing logic exists, 5 if basic parsing is implemented but lacks error handling, and 10 if comprehensive data processing with validation and sanitization is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are appropriate data visualization components implemented?",
+      "description": "Check whether the code includes effective visualization components (charts, graphs, tables) relevant to the data being analyzed. Evaluate if appropriate visualization libraries (D3.js, Chart.js, Highcharts, etc.) are properly integrated. Deduct 5 points if visualizations are basic or don't match the data characteristics, and 3 points if interactive features are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dashboard layout well-designed with proper responsiveness?",
+      "description": "Evaluate whether the dashboard implements responsive design principles using flexbox/grid layouts for different screen sizes. Check if the layout adapts appropriately from desktop to mobile views. Deduct 5 points if there's no responsive design implementation, and 3 points if there are layout inconsistencies across devices. Give 10 points if fully implemented with proper breakpoints.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the dashboard include filtering, sorting, and data manipulation capabilities?",
+      "description": "Check whether users can interact with the data through filters, sorting options, and other data manipulation tools. Verify if real-time data updates are reflected in visualizations when filters are applied. Deduct 5 points if only basic sorting is available, and 3 points if filter operations cause performance issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed data files, missing values, network interruption when loading external resources, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic data refresh capabilities 2. Export/download options for visualizations 3. Custom theming or dark/light mode toggle). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple chart libraries doing the same job) 2. Function modules unrelated to data visualization (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive DOM manipulation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/UI components), code organization, and performance optimization. Deduct 5 points if global variable pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations are implemented for large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dashboard follows modern design principles: 1) Harmonious color matching with consistent data visualization colors 2) Proper layout spacing and information hierarchy 3) Professional typography with readable font sizes and sufficient contrast. Deduct 3 points for each crowded visual element, 5 points for inconsistent or inaccessible color schemes, and 5 points for poor information organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Dashboard loads within 3 seconds 2) Chart transitions are smooth between 300-500ms 3) Interactive elements provide clear feedback. Deduct 5 points for slow initial loading (>5s), 3 points for jerky transitions when filtering/sorting data, and 5 points for unresponsive UI elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

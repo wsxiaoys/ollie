@@ -1,0 +1,68 @@
+{
+  "index": 123,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable and demonstrable.\n\nPlease implement a drift mechanism using HTML and JavaScript.\n\n**Task**: Design a drift mechanism where players can drift to make quick turns or avoid obstacles.\n\n**Hint**: You can set up the drift trigger method and effects, and design tracks or scenarios that require drifting skills.\n\nPlease create a game and include some comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core drift mechanism properly implemented?",
+      "description": "Check whether the code accurately implements a realistic drift physics model that includes friction, inertia, and weight transfer. The drift should feel different from normal turning and require skill. Score 0 if no drift mechanic exists, 5 if basic drift is implemented but feels unrealistic, and 10 if the drift mechanism includes proper physics calculations with variables for different surfaces.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the drift trigger and control system intuitive?",
+      "description": "Evaluate the drift activation method (e.g., handbrake button, double-tap direction key) and the control system during drift. Check if there's proper input feedback and if the drift can be controlled mid-execution. Deduct 5 points if drift activation is unintuitive or inconsistent, 3 points if the drift control is too simplified without nuance, and 2 points if there's no visual or audio feedback when drifting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are meaningful drift scenarios or tracks implemented?",
+      "description": "Check whether the code includes challenging tracks or scenarios where drifting provides a tangible advantage (tight corners, obstacle courses, time trials). Deduct 5 points if there are no specific scenarios that encourage drifting, 3 points if the track design doesn't require skill to navigate with drifts, and 2 points if there's no variety in the course design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a meaningful scoring or feedback system for drifting?",
+      "description": "Evaluate if the implementation includes a scoring system, time bonuses, or other rewards for successful drifting. Check if the system provides feedback on drift quality (perfect drift, over-drift, etc.). Deduct 5 points if there's no scoring/reward system tied to drifting, 3 points if feedback is minimal, and 2 points if the scoring system doesn't reflect drift skill accurately. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, extreme speed conditions, collisions during drift) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Drift boost mechanics 2. Variable terrain effects on drift performance 3. Visual drift lines or tire marks 4. Drift combo system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar movement controls (e.g., multiple drift calculation systems coexisting) 2. Function modules unrelated to the drift mechanic (e.g., unnecessary weather effects) 3. Fancy effects that affect performance (e.g., excessive particle systems that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine, input handling, and rendering), code documentation, and optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments explaining the drift physics calculations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern gaming UI principles: 1) Clean HUD that doesn't obstruct gameplay 2) Clear visual indicators for drift status and performance 3) Appropriate use of motion blur or visual effects during drift. Deduct 3 points for cluttered UI elements, 5 points for distracting visual effects that make drifting harder to control, and 5 points for poor contrast that makes track boundaries difficult to see. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the drift mechanics feel responsive and natural: 1) Input response delay ≤ 50ms 2) Smooth transition between normal driving and drift state 3) Consistent frame rate during drift animations. Deduct 5 points for input lag during critical drift moments, 3 points for jittery vehicle movement during drift transitions, and 5 points for inconsistent physics behavior at different speeds. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

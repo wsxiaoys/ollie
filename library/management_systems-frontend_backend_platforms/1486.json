@@ -1,0 +1,68 @@
+{
+  "index": 1486,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable and ready for demonstration. I want to create a mobile app specifically for online food ordering, where customers can select menu items and place orders. Please help me generate a set of cloud-based code for this.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core food ordering system fully implemented?",
+      "description": "Review whether the code accurately implements the essential functions of a food ordering app: menu display, item selection, cart management, and order submission. Check if it includes proper validation for required order details (items, quantities, special instructions) and handles edge cases like out-of-stock items. Score 0 if the core ordering functionality is missing, 5 if only basic item selection is implemented, and 10 if the complete ordering flow with validation is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cloud backend properly configured for the mobile app?",
+      "description": "Evaluate if the backend infrastructure uses appropriate cloud services (Firebase, AWS, Azure, etc.) with proper API endpoints for authentication, data storage, and order processing. Check if the implementation includes security measures like API keys, request validation, and data encryption. Deduct 5 points if there's no proper authentication system, and 3 points if there's no error handling for API failures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is user authentication and profile management implemented?",
+      "description": "Check if the app includes secure user registration, login, and profile management features. Verify implementation of password hashing, session management, and account recovery options. Examine if user preferences and order history are stored securely. Deduct 5 points if authentication lacks multi-factor options or secure password policies, 3 points if profile editing is limited or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the payment processing system secure and functional?",
+      "description": "Analyze if the code includes integration with payment gateways, handles payment validation, and provides order confirmation. Check for implementation of secure payment methods, encryption of financial data, and compliance with financial regulations. Deduct 5 points if there's no payment validation logic, 3 points if receipt generation is missing, and 5 points if financial data isn't handled according to industry standards. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures during ordering, payment processing errors, invalid input data, etc.) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time order tracking 2. AI-based food recommendations 3. Augmented reality menu visualization 4. Dietary preference filtering). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add items to cart) 2. Function modules unrelated to food ordering (e.g., a built-in game while waiting) 3. Fancy effects that affect performance (e.g., excessive animations when browsing menu). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data layers), unit test coverage, and build process automation. Examine the use of appropriate design patterns for mobile development. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no CI/CD pipeline configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI design follows modern mobile app design principles: 1) Consistent color scheme (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows touch-target size principles) 3) Professional typography system (readable font sizes, proper contrast ratios). Deduct 3 points for each cluttered screen, 5 points for non-responsive layouts, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the app interactions conform to mobile UX best practices: 1) Touch response delay ≤ 100ms 2) Loading indicators for network operations 3) Smooth transitions between screens 4) Proper keyboard handling for form inputs. Deduct 5 points for each interaction without feedback, 3 points for jerky animations, and 5 points for difficult-to-access primary functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

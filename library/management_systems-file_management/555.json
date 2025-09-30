@@ -1,0 +1,68 @@
+{
+  "index": 555,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration. Design a timeline-based file management system where all files uploaded by users generate a timeline based on upload times. Users can quickly find specific files by dragging a timeline slider.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload and timeline organization system fully implemented?",
+      "description": "Review whether the code accurately implements file upload functionality with proper validation, storage handling, and timestamp recording. Check if the timeline organization is implemented with appropriate data structures for efficient retrieval based on timestamps. Score 0 if core upload functionality is missing, 5 if basic upload works but lacks proper timestamp handling, and 10 if the system includes complete file metadata tracking with reliable timestamp-based organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the timeline slider UI component properly designed and interactive?",
+      "description": "Evaluate the implementation of the slider component that allows users to navigate the timeline. Check for smooth dragging functionality, proper event handling, responsive updates, and visual feedback during interaction. The slider should accurately represent the time distribution of files. Deduct 5 points if the slider doesn't update the file view in real-time, and 3 points if it lacks visual cues about file density across different time periods. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the file visualization and time-based filtering mechanism implemented effectively?",
+      "description": "Check whether the system dynamically updates the file display as users drag the timeline slider. Assess if the filtering mechanism correctly identifies and displays files within the selected time range. Examine whether the system handles time zones properly and provides clear temporal context. Deduct 5 points if filtering has noticeable lag (>200ms), and 3 points if time range selection lacks precision controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete file management functionality beyond timeline navigation?",
+      "description": "Evaluate whether the code includes comprehensive file management features such as previewing, downloading, renaming, deleting, and categorizing files. Check if these operations integrate properly with the timeline system and maintain data consistency. Deduct 5 points if basic file operations are missing, and 3 points if operations don't update the timeline view accordingly. Give 10 points if fully implemented with seamless timeline integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as upload failures, invalid file types, large file handling, timeline edge cases, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based file content categorization 2. Timeline visualization with heat map showing upload frequency 3. Time-based file clustering or pattern recognition). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timeline navigation methods that serve the same purpose) 2. Function modules unrelated to timeline-based file management (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down timeline navigation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file handling logic/timeline visualization/UI components), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the timeline slider and file display updates conform to human perception characteristics: 1) Timeline drag response delay ≤ 100ms 2) File display transition animation duration controlled between 300-500ms 3) Clear visual indication of selected time period. Deduct 5 points for each operation without feedback, 3 points for visual stuttering during timeline navigation, and 5 points for confusion between timeline position and displayed files. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "medium"
+}

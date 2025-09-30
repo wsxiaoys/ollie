@@ -1,0 +1,68 @@
+{
+  "index": 853,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration purposes. Specifically, implement a personal center page for WeChat multi-platform, and package and release it to different platforms.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat personal center UI implemented comprehensively?",
+      "description": "Review whether the code accurately implements all essential UI elements of a typical WeChat personal center (profile avatar, nickname, WeChat ID, moments section, wallet, settings, etc.). Check if the layout properly adapts to various screen sizes using responsive design techniques. Score 0 if core UI components are missing, 5 if basic components are present but lack polish, and 10 if the implementation is complete and faithful to WeChat's design language.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the multi-platform adaptation properly implemented?",
+      "description": "Evaluate the code's approach to multi-platform support (iOS, Android, Web, Desktop). Check for platform-specific conditional rendering, use of adaptive frameworks (like Flutter, React Native, or WeChat Mini Program framework), and appropriate handling of different device capabilities. Deduct 3 points if any major platform is not properly supported, 5 points if platform-specific features are ignored, and give 10 points only if the solution elegantly handles all target platforms.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the packaging and release pipeline properly configured?",
+      "description": "Check if the code includes the necessary configuration files for building and releasing to different platforms (such as Xcode project files, Android Gradle scripts, web build tools, or cross-platform configurations). Verify if CI/CD pipeline scripts are provided with platform-specific signing processes. Deduct 3 points for each missing platform build configuration, and 5 points if the release process lacks security considerations. Full score requires comprehensive release automation for all platforms.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are platform-specific optimizations and features implemented?",
+      "description": "Assess whether the implementation includes platform-specific optimizations and unique features (like iOS haptic feedback, Android material design components, desktop window management, etc.). Check if the code leverages native capabilities when appropriate while maintaining a consistent user experience. Score 0 if no platform-specific optimizations exist, 5 if basic adaptations are present, and 10 if sophisticated platform-specific features are thoughtfully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, permission denials, different screen sizes, and device capabilities). Check for graceful error handling, fallback mechanisms, and proper state management. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Advanced theme customization beyond WeChat defaults 2. Intelligent notification grouping 3. Cross-device synchronization enhancements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple profile editors) 2. Function modules unrelated to personal center (e.g., a full chat implementation) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/network layers), unit test coverage, and build process automation. Assess code organization, naming conventions, and comments. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows WeChat's established design language while maintaining platform-specific conventions: 1) Consistent color scheme matching WeChat's palette 2) Proper layout spacing following platform guidelines 3) Typography that adapts to platform standards. Deduct 3 points for each inconsistency with WeChat's design, 5 points for platform-inappropriate visual elements, and 5 points for accessibility issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics and platform expectations: 1) Responsive touch/click feedback 2) Smooth transitions between views 3) Appropriate loading states. Deduct 5 points for each operation without feedback, 3 points for janky animations or transitions, and 5 points for interactions that don't match platform conventions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

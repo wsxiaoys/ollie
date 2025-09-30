@@ -1,0 +1,68 @@
+{
+  "index": 1617,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure that the generated code is executable for demonstration. Front-end image editing features including cutting, doodling, etc., with memory capability to revert to previous steps.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core image editing functionality correctly implemented?",
+      "description": "Review whether the code accurately implements essential image editing features (cutting, cropping, resizing, rotation) through Canvas/WebGL APIs. Check if the implementation handles proper aspect ratio maintenance, anti-aliasing for smooth edges, and correct pixel manipulation. Score 0 if no editing functions work, 5 if basic operations are buggy, and 10 if all operations produce professional-quality results.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the doodling/drawing system properly implemented?",
+      "description": "Evaluate if the drawing system includes multiple brush types, line smoothing algorithms, pressure sensitivity (if applicable), and proper rendering techniques. Check for stroke interpolation to ensure smooth curves even with fast mouse movements. Deduct 3 points if only basic drawing is implemented, 3 points if line quality is jagged, and 3 points if brush customization is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the undo/redo memory stack functionality complete?",
+      "description": "Assess if the code implements a proper state management system with command pattern or similar architecture to track editing history. Check if the memory management efficiently handles large images (using differential snapshots rather than full copies). Deduct 5 points if the history is limited to fewer than 10 steps, 3 points if large images cause performance issues, and 5 points if redo functionality is missing after undo. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are image manipulation filters and adjustments implemented?",
+      "description": "Check for implementation of common adjustments (brightness, contrast, saturation, etc.) and filters (blur, sharpen, etc.). Verify if the preview system allows real-time feedback before applying effects. Deduct 3 points if adjustments lack preview capability, 3 points if filters are implemented inefficiently causing lag, and 5 points if histogram visualization is missing for precise adjustments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as oversized images, unsupported formats, out-of-memory conditions, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper validation before operations and graceful degradation on errors. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted selection tools 2. Non-destructive editing layers 3. Advanced content-aware fill 4. Custom filter creation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple crop tools with identical functionality) 2. Function modules unrelated to image editing (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations when switching tools). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating core editing logic/rendering/UI layers), unit test coverage, and build process optimization. Check for proper separation of concerns and appropriate design patterns. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not optimized for performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows professional image editor conventions: 1) Logical tool grouping and accessibility 2) Proper layout with adequate workspace emphasis 3) Non-intrusive UI that maximizes canvas visibility. Deduct 3 points for cluttered toolbars, 5 points for inconsistent icon design, and 5 points for poor contrast that affects usability. Check if the interface resembles industry standards like Photoshop or GIMP. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to professional editing software standards: 1) Responsive brush strokes with no visible lag (≤ 16ms delay) 2) Smooth zoom/pan operations with proper interpolation 3) Appropriate visual feedback for selection and transformation operations. Deduct 5 points for noticeable lag when drawing, 3 points for jarring transitions between edit states, and 5 points for cursor feedback that doesn't match the active tool. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "hard"
+}

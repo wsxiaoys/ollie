@@ -1,0 +1,68 @@
+{
+  "index": 754,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Help create a data analysis dashboard based on the file, output it in HTML format so that the dashboard can be viewed on computers or mobile phones.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the dashboard's data import and parsing mechanism properly implemented?",
+      "description": "Evaluate whether the code properly handles file uploads, parses different file formats (CSV, Excel, JSON), and includes error handling for invalid data. Check for sanitization of input data and proper memory management for large files. Score 0 if data import is missing, 5 if only basic parsing is implemented, and 10 if full validation, sanitization, and handling of multiple formats is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the dashboard implement comprehensive data visualization components?",
+      "description": "Check for a variety of chart types (bar charts, line charts, pie charts, etc.) and their appropriateness for different data types. Assess whether charts include proper axes, legends, tooltips, and responsive scaling. Deduct 2 points for each missing essential chart type relevant to data analysis, and 3 points if interactive features (zoom, filtering) are absent. Give full points if visualizations are properly implemented with D3.js, Chart.js, or equivalent libraries.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are data filtering and manipulation capabilities implemented?",
+      "description": "Evaluate whether the dashboard allows users to filter, sort, and transform data dynamically. Check for features like date range selectors, category filters, search functionality, and real-time data updates. Deduct 3 points if filtering is limited to basic sorting, 5 points if dynamic filtering is absent, and 2 points if the filtering UI is not intuitive.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the responsive design properly implemented for cross-device compatibility?",
+      "description": "Check whether the dashboard properly adapts to different screen sizes (desktop, tablet, mobile) using media queries, flexible grids, and responsive design patterns. Verify that charts resize appropriately without loss of functionality. Deduct 5 points if the design breaks on mobile devices, 3 points if only partial responsiveness is implemented, and 2 points if touch interactions are not optimized for mobile users.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed data, network interruption, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered insights highlighting trends automatically 2. Export capabilities to multiple formats with customization 3. Dashboard state preservation between sessions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple chart libraries doing the same thing) 2. Function modules unrelated to data analysis (e.g., unnecessary animations or decorations) 3. Fancy effects that affect performance (e.g., excessive 3D effects or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/UI components), code organization patterns, and performance optimization. Deduct 5 points if global variable pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations (like lazy loading or data pagination) are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dashboard design follows modern design principles: 1) Harmonious color matching appropriate for data visualization (proper contrast, colorblind-friendly palette) 2) Proper layout with clear information hierarchy 3) Professional typography with appropriate font sizes for readability. Deduct 3 points for each cluttered dashboard section, 5 points for poor color choices that hinder data interpretation, and 5 points for inconsistent design patterns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Chart animations and transitions complete within 300-500ms 2) Filter applications reflect immediately in visualizations 3) Clear loading states during data processing. Deduct 5 points for laggy interactions, 3 points for missing feedback during user actions, and 5 points for confusing navigation between dashboard sections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

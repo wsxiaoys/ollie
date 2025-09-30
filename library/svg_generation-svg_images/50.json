@@ -1,0 +1,68 @@
+{
+  "index": 50,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional replies. Make sure the code you generate is executable and can be displayed. Please help me implement the following requirement using SVG code: create a close-up of a person sitting at a laptop with gears.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG rendering properly structured?",
+      "description": "Evaluate whether the SVG includes proper viewport dimensions, viewBox attributes, and organized layer grouping (<g> elements) for different components (person, laptop, gears). Check if proper SVG namespaces are declared. Score 0 if basic SVG structure is missing, 5 if structure exists but lacks organization, 10 if well-organized with proper nesting and namespaces.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the human figure accurately depicted in the close-up view?",
+      "description": "Review whether the person is properly proportioned with clear upper body details (head, torso, arms, hands) and sitting posture. Look for facial features, appropriate clothing details, and natural sitting position. Deduct 3 points if proportions are significantly off, 3 points if the sitting posture looks unnatural, and 4 points if facial/clothing details are completely missing. Full score for anatomically correct rendering that clearly shows a person in close-up view.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the laptop accurately depicted with appropriate details?",
+      "description": "Check if the laptop has realistic proportions, includes essential elements (screen, keyboard, touchpad), and positioned correctly relative to the person. Evaluate screen content visibility and keyboard detail level. Deduct 5 points if the laptop looks 2D or unrealistic, 3 points if essential elements are missing, and 2 points if the positioning relative to the person is implausible. Full score for a detailed, well-proportioned laptop with appropriate perspective.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the gears implemented with mechanical precision and appropriate placement?",
+      "description": "Assess whether gears include teeth details, have appropriate mechanical design (spokes, center holes), and are thoughtfully positioned in the composition (around/behind laptop, near person's head suggesting thought process, etc.). Evaluate if gears look like they could theoretically mesh. Deduct 3 points if gears lack tooth detail, 4 points if gears are randomly placed without purpose, and 3 points if fewer than 3 distinct gears are shown. Full score for precisely drawn gears with meaningful placement.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG code avoids hardcoded magic numbers, uses variables/functions for repeated elements (like multiple gears), and implements reusable patterns. Check if the code would scale to different viewports without breaking. Code with strong robustness should handle different display contexts effectively. Give 10 points for highly reusable code, 5 points for average implementation, and 0 points if the code is brittle with many magic numbers.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the SVG includes surprise features that enhance the experience (e.g., 1. Animation of spinning gears 2. Interactive elements that respond to hover/click 3. Gradient/lighting effects that give depth 4. Clever use of <clipPath> or masks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate paths or shapes that could be defined once and reused 2. Elements unrelated to the core request (person, laptop, gears) 3. Over-detailed elements that increase complexity without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code significantly impacts file size or readability.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as defining reusable components with <defs> and <symbol>), proper element IDs/classes, and optimized paths. Deduct 5 points if the code lacks any reuse of repeated elements; deduct 5 points if there's significant path complexity that could be simplified; deduct 5 points if basic SVG optimization techniques aren't applied (like removing unnecessary decimal precision). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color palette (no more than 3 primary colors with appropriate shades) 2) Proper composition with clear focal point 3) Appropriate use of style attributes for visual hierarchy. Deduct 3 points for each visually jarring element, 5 points for a clashing color scheme, and 5 points for poor composition where the focus is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the visual storytelling effective?",
+      "description": "Judge whether the SVG successfully communicates the intended concept: 1) Clear relationship between person and laptop 2) Gear placement that suggests mental work/productivity 3) Overall composition that conveys focused activity. Deduct 5 points if the relationship between elements is unclear, 3 points if the mood/tone doesn't match a work/creative scenario, and 5 points if the close-up perspective isn't effectively implemented. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

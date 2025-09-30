@@ -1,0 +1,68 @@
+{
+  "index": 893,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Write a Vue example for me that will help me comprehensively understand Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the example cover essential Vue fundamentals?",
+      "description": "Check if the code clearly demonstrates Vue's core concepts: data binding, directives (v-if, v-for, v-model, v-on), computed properties, watchers, and lifecycle hooks. All fundamental concepts should be included with proper explanations. Score 10 points for comprehensive coverage, 5 points if only basic concepts are included, 0 if fundamental Vue features are missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is component architecture properly demonstrated?",
+      "description": "Evaluate whether the example showcases Vue's component system including: parent-child components, props passing, custom events for child-to-parent communication, slots for content distribution, and scoped slots. Deduct 2 points for each missing component interaction pattern. The full implementation should demonstrate at least 3 levels of component nesting with clear separation of concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Vue Router implementation included and properly configured?",
+      "description": "Assess if the code includes Vue Router with dynamic routing, nested routes, navigation guards, route parameters, and programmatic navigation. The implementation should demonstrate lazy loading routes and route meta fields. Deduct 3 points if only basic routing is shown, 5 points if navigation guards are missing, and 10 points if routing is not implemented at all.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is Vuex state management properly implemented?",
+      "description": "Check if the example demonstrates Vuex with proper store structure (state, getters, mutations, actions, and modules). The code should show best practices for accessing store state, committing mutations, and dispatching actions. Look for module namespacing and proper separation of concerns. Full score requires at least 2 modules with different domains and async operations in actions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (empty data, loading states, error handling) and includes proper input validation. Code with strong robustness should include try/catch blocks, form validation, and graceful error presentation. Score 10 points if error handling is comprehensive, 5 points if basic error handling exists, 0 points if no error handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes advanced features like: 1. Custom directives 2. Mixins or composition API usage 3. Render functions or JSX 4. Vue plugins 5. Performance optimizations like keep-alive. Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant reactive data that could be computed properties 2. Unnecessary component nesting 3. Overcomplicated solutions for simple problems. Deduct 3 points for each redundancy found, and directly deduct 10 points if core Vue concepts are obscured by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (proper component structure, single file components), naming conventions, comments/documentation, and reusability. Deduct 3 points if global state is overused; deduct 3 points if components exceed 200 lines; deduct 2 points if naming is inconsistent; deduct 2 points if documentation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI components follow modern design principles: 1) Consistent color scheme 2) Proper spacing between elements 3) Responsive design considerations 4) Accessible contrast ratios. Deduct 3 points for inconsistent styling, 3 points for poor mobile responsiveness, 2 points for inaccessible color contrast, and 2 points for cluttered layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether transition/animation features are properly implemented: 1) Vue transition components for element/component transitions 2) List transitions 3) State transitions 4) Loading states with appropriate feedback. Deduct 3 points for missing transitions on important state changes, 3 points for janky animations, 2 points for missing loading indicators, and 2 points for abrupt UI changes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

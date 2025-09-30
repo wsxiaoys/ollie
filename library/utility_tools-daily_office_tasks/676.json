@@ -1,0 +1,68 @@
+{
+  "index": 676,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration.\n\n## Role\nYou are an experienced code expert. Given a software development requirement description, you are required to generate project code based on the project requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, and don't output anything else.\n\n## Output Rules\n1. You will always generate complete, runnable project code; please ensure the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements include external API access or user data (images, videos, audio, etc.), please provide mock data\n\n## Project Requirements Description\nDevelop a screenshot and annotation tool where users can take screenshots of the current webpage through a browser or upload images, then add annotations such as text, arrows, shapes, etc. on the screenshot. The tool should support undo and redo functions, save edited images locally or to the cloud, and provide features for sharing to social media.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the screenshot capture functionality fully implemented?",
+      "description": "Evaluate whether the code properly implements both webpage screenshot capture and image upload capabilities. Check for browser compatibility across Chrome, Firefox, and Safari. The screenshot mechanism should handle different screen sizes and viewport considerations.0 points if core screenshot functionality is missing, 5 points if only basic screenshots work with limited browser support, 10 points for a complete implementation supporting all major browsers with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are annotation tools comprehensive and usable?",
+      "description": "Assess the implementation of annotation features including text, arrows, shapes, highlighting, and freehand drawing. Check for customization options like colors, line thickness, font styles, and opacity settings. Tools should be intuitive with proper cursor indicators.Deduct 2 points for each missing essential annotation type (text, arrow, rectangle, oval, freehand). Deduct 3 points if customization options are severely limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the undo/redo functionality properly implemented?",
+      "description": "Check for a robust state management system that tracks all user actions. Verify that undo/redo works correctly for all annotation types and maintains proper state history. Test edge cases like maximum history depth and performance with many operations.0 points if undo/redo is missing, 5 points if implementation is basic or has inconsistencies across annotation types, 10 points for comprehensive implementation with proper state management and keyboard shortcuts (Ctrl+Z/Ctrl+Y).",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the save and export functions fully featured?",
+      "description": "Evaluate local saving options (PNG, JPEG, SVG formats) and cloud storage implementation. Check for proper file naming, compression options, and metadata handling. Verify that social media sharing includes proper preview generation and API integration.Deduct 3 points if only one file format is supported. Deduct 4 points if cloud storage is missing or poorly implemented. Deduct 3 points if social media sharing lacks proper API integration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common abnormal situations (such as invalid uploads, browser permission denials, network interruptions during save operations) and provides friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. OCR text recognition in screenshots 2. Auto-blur for sensitive information 3. Smart shape recognition for hand-drawn annotations).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar annotation tools 2. Function modules unrelated to screenshot/annotation purposes 3. Fancy effects that affect performance (e.g., excessive animations).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating annotation logic/UI components/storage layers), unit test coverage, and build process automation.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional toolbar and panel organization with appropriate icons and tooltips.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic tool arrangement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Annotation placement feedback delay ≤ 100ms 2) Drag operations feel responsive with no visual lag 3) Clear visual feedback when selecting/moving annotations.Deduct 5 points for each operation without feedback, 3 points for visual stuttering during annotation movement, and 5 points for hard-to-find or confusing annotation controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

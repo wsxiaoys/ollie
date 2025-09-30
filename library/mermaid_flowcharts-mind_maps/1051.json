@@ -1,0 +1,68 @@
+{
+  "index": 1051,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Output a mind map similar to XMind, as visual representations are easier for humans to understand.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the mind map core structure fully implemented?",
+      "description": "Review whether the code accurately implements the hierarchical tree structure through HTML/JavaScript/SVG, including node creation, parent-child relationships, and dynamic branching. Check if it supports multi-level nesting (at least 5 levels deep) and proper node positioning algorithms. Score 0 if basic tree structure is missing, 5 if only 2-3 levels are supported, and 10 if full hierarchical functionality with proper algorithms is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are interactive editing features comprehensively implemented?",
+      "description": "Evaluate whether the implementation includes essential mind map operations: adding/deleting nodes, editing text content, dragging to reorganize structure, and keyboard shortcuts support. Check for real-time content saving and undo/redo functionality. Deduct 3 points if drag-and-drop is not smooth, 5 points if keyboard navigation is missing, and 2 points if text editing has no auto-save. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the visual rendering engine optimized and scalable?",
+      "description": "Check whether the rendering system uses efficient algorithms for large datasets (1000+ nodes), implements proper viewport culling, and supports smooth zoom/pan operations. Evaluate if it uses canvas/SVG optimization techniques and maintains 60fps during interactions. Deduct 5 points if performance drops with 100+ nodes, 3 points if zoom operations are laggy, and 5 points if no viewport optimization exists. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are data export and import capabilities properly implemented?",
+      "description": "Verify whether the system supports multiple export formats (JSON, XML, image formats like PNG/SVG) and can import standard mind map formats. Check if the data structure preserves all visual and structural information during export/import cycles. Deduct 4 points if only one export format is supported, 3 points if imported data loses styling information, and 3 points if export images have quality issues. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, browser compatibility issues, memory leaks during long usage, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like empty nodes, circular references, and malformed import data, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered topic suggestions 2. Collaborative real-time editing 3. Smart auto-layout algorithms 4. Integration with external knowledge bases 5. Advanced search and filtering). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple layout algorithms doing the same thing) 2. Function modules unrelated to mind mapping (e.g., built-in games or unrelated widgets) 3. Fancy effects that affect performance (e.g., excessive animations or particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data model/view/controller layers), code organization, and maintainability. Check for proper separation of concerns, consistent coding style, and documentation quality. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if the code structure is chaotic with poor maintainability. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mind map UX principles: 1) Harmonious color scheme with proper contrast for nodes 2) Consistent visual hierarchy and spacing (following 8px grid system) 3) Professional typography (readable fonts, proper sizes ≥ 12px) 4) Intuitive iconography and visual cues. Deduct 3 points for each visually crowded element, 5 points for poor color accessibility, and 5 points for inconsistent visual language. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Node creation/deletion with smooth transitions 2) Hover states with immediate feedback (≤ 100ms) 3) Pan and zoom operations feel natural and responsive 4) Connection lines animate smoothly during restructuring 5) Loading states are properly handled. Deduct 5 points for each operation without visual feedback, 3 points for jerky animations, and 5 points for unresponsive interactive elements. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Mermaid Flowcharts-Mind Maps",
+  "difficulty": "hard"
+}

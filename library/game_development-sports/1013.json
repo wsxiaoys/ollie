@@ -1,0 +1,68 @@
+{
+  "index": 1013,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Write a racing game using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the racing game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the basic racing mechanics through HTML/JavaScript, including car movement controls, collision detection, and proper track boundaries. Score 0 if core mechanics are missing, 5 if only basic movement is implemented, and 10 if advanced features like acceleration/braking physics and proper collision handling are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game rendering engine properly built?",
+      "description": "Evaluate whether the game uses appropriate rendering techniques (Canvas, CSS transformations, or WebGL) with smooth animation (minimum 30 FPS). Check if rendering optimization techniques are applied (like sprite batching, object pooling, or off-screen rendering). Deduct 5 points if frame rate drops below 30 FPS during normal gameplay, 3 points if visual artifacts occur. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the race track and environment well-designed?",
+      "description": "Check if the racing track has a proper design with clear boundaries, checkpoints, and visual indicators. Evaluate whether the environment includes scenery elements, obstacles, or varying terrain that affects gameplay. Deduct 5 points if the track is too simplistic (just straight lines), 3 points if there's no visual differentiation between track and off-track areas. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game progression system implemented?",
+      "description": "Assess whether the game includes features like lap counting, timing system, position tracking (if multiple racers), and result display. Check for game states like countdown, race in progress, and finish. Deduct 5 points if there's no proper race beginning/end, 3 points if lap tracking or timing is missing. Give 10 points if fully implemented with additional features like personal best times or achievements.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, rapid input sequences, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects 2. Customizable vehicles 3. Multiplayer support via local play or simple AI opponents). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement control systems) 2. Function modules unrelated to racing (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects causing lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), code organization, and documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Clear heads-up display (HUD) with speed, position, and lap information 2) Proper contrast between game elements and background 3) Readable text even during fast gameplay (font size ≥ 14px). Deduct 3 points for each poorly positioned UI element, 5 points for unclear visual hierarchy, and 5 points for unreadable text during movement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the controls and feedback conform to player expectations: 1) Input response delay ≤ 50ms 2) Appropriate physics feel with weight and momentum 3) Clear visual/audio feedback for collisions, acceleration, and braking. Deduct 5 points for sluggish controls, 3 points for unrealistic physics that harm gameplay, and 5 points for lack of feedback during important game events. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Sports",
+  "difficulty": "medium"
+}

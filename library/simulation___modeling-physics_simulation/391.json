@@ -1,0 +1,68 @@
+{
+  "index": 391,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration when possible. Write frontend code that displays the three-body problem in motion.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the three-body problem accurately modeled mathematically?",
+      "description": "Review whether the code implements the correct differential equations that govern the three-body problem (typically using Newton's laws of gravitation). Check if the gravitational constant is properly applied, masses are configurable, and the force calculations are accurate. Score 0 if the mathematical model is incorrect, 5 if it's simplified but functional, and 10 if it accurately implements the complete n-body equations with proper vector mathematics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is a suitable numerical integration method implemented?",
+      "description": "Evaluate the numerical integration technique used (e.g., Euler, Runge-Kutta, Verlet, etc.). The three-body problem requires stable integration to prevent numerical errors from accumulating. Deduct 5 points for using simple Euler method without error compensation, 3 points if the time step isn't adaptive based on velocity/acceleration. Give 10 points for implementing a high-order method like RK4 or velocity Verlet with appropriate step size control.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the visualization rendering appropriate and accurate?",
+      "description": "Check if the visualization properly maps the physical simulation to the screen space, with appropriate scaling and coordinate transformation. Verify that the trajectories accurately reflect the computed positions, with options to display paths/trails. Deduct 5 points if the visualization doesn't maintain proper aspect ratios or if the scaling is inappropriate for viewing the entire system. Give 10 points for a visualization that clearly shows the complex orbital patterns with proper perspective handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive controls and configurations provided?",
+      "description": "Assess whether the implementation allows users to configure key parameters (masses, initial positions/velocities, simulation speed) and offers interactive controls (zoom, pan, pause/resume, reset). Deduct 3 points for each missing essential control, and 2 points if parameter boundaries aren't enforced. Give 10 points for a full suite of intuitive controls with preset configurations for interesting three-body scenarios (like figure-eight or specific Lagrangian point demonstrations).",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as bodies getting too close (causing numerical instability), very different mass scales, or extreme velocities. Check for overflow protection and error handling. Code with strong robustness should detect and manage these situations with appropriate warnings. Give 10 points for comprehensive error handling and stability measures, 5 points if basic protections exist but edge cases can still crash the simulation, and 0 points if no protections are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time energy conservation tracking 2. Chaos indicator visualizations 3. Reference frames switching 4. Time-reversibility demonstration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant physics calculations that could be optimized 2. Function modules unrelated to the three-body problem 3. Fancy visual effects that significantly impact performance without adding to understanding. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation is slowed down by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of physics engine from rendering logic), code organization, and potential for reuse or extension. Deduct 5 points if global state is overused; deduct 5 points if the code is difficult to extend to n-body problems; deduct 5 points if there's no clear separation between computation and visualization concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization follows modern design principles: 1) Clear visual distinction between bodies (size/color representing mass) 2) Proper use of contrast for trajectories 3) Clean interface elements that don't obstruct the simulation view. Deduct 3 points for cluttered displays, 5 points for poor color choices that make trajectories hard to follow, and 5 points for controls that interfere with viewing the simulation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and performant?",
+      "description": "Judge whether the animation maintains consistent frame rates even during complex orbital interactions: 1) Consistent 30+ FPS during normal operation 2) Efficient canvas/WebGL usage for rendering 3) Background computation handled with web workers if intensive. Deduct 5 points if the simulation noticeably lags during normal use, 3 points if there's no frame limiting to prevent resource overuse, and 5 points if the browser becomes unresponsive during certain configurations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

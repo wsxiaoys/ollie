@@ -1,0 +1,68 @@
+{
+  "index": 1527,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. Create a rich text editor that implements features such as highlighting spelling mistakes, suggesting corrections for misused idioms (using a pre-loaded database of common errors), and word count statistics.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the rich text editor core functionality fully implemented?",
+      "description": "Review whether the code accurately implements a rich text editor with contentEditable or a custom text rendering system. Must include text formatting (bold, italic, underline), paragraph management, cursor positioning, and text selection handling. Score 0 if basic text editing is not functional, 5 if only simple formatting is implemented, and 10 if all core rich text features including undo/redo, copy/paste, and format preservation are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the spelling mistake detection and highlighting system properly implemented?",
+      "description": "Check whether the spelling checker uses an efficient algorithm (such as Levenshtein distance or BK-tree) with a comprehensive dictionary. Must include real-time highlighting with visual indicators (underlines/highlights) and performance optimization for large texts. Deduct 5 points if detection accuracy is below 90%, deduct 3 points if highlighting performance causes lag on texts over 1000 words. Full score requires sub-200ms response time.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the idiom correction suggestion system designed with intelligent matching?",
+      "description": "Evaluate whether the idiom database includes contextual matching algorithms and provides ranked suggestions based on semantic similarity. Must implement fuzzy matching for partial idioms and context-aware corrections. Deduct 5 points if suggestions are purely string-based without context consideration, deduct 3 points if the database contains fewer than 200 common idiom errors. Full score requires intelligent ranking and contextual relevance.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is comprehensive word count statistics and text analysis implemented?",
+      "description": "Check whether the system provides real-time statistics including word count, character count, paragraph count, reading time estimation, and readability metrics. Must handle various text formats and unicode characters correctly. Deduct 5 points if statistics are not updated in real-time, deduct 3 points if special characters or formatting affects accuracy. Give 10 points if advanced metrics like sentence complexity are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed input, large text files, clipboard data corruption, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the writing experience (e.g., 1. Grammar checking with AI suggestions 2. Export to multiple formats (PDF, Word, Markdown) 3. Collaborative editing features 4. Voice-to-text integration 5. Writing analytics dashboard). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple spell-check engines running simultaneously) 2. Function modules unrelated to text editing (e.g., built-in games or media players) 3. Fancy effects that affect performance (e.g., excessive animations during typing). Deduct 3 points for each redundancy found, and directly deduct 10 points if core editing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor core/spell checker/UI layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the editor design follows modern design principles: 1) Clean, distraction-free writing environment 2) Proper typography with readable fonts (minimum 14px, line height ≥1.5) 3) Intuitive toolbar design with clear iconography 4) Consistent color scheme for different text states (normal, highlighted, error). Deduct 3 points for each cluttered UI element, 5 points for poor contrast ratios, and 5 points for confusing navigation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the editor interactions conform to user expectations: 1) Typing response delay ≤ 50ms 2) Spell-check highlighting appears within 300ms 3) Smooth scrolling and cursor movement 4) Intuitive keyboard shortcuts 5) Responsive suggestion popups. Deduct 5 points for each laggy interaction, 3 points for jarring visual updates during typing, and 5 points for missing standard editor shortcuts (Ctrl+B, Ctrl+I, etc.). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

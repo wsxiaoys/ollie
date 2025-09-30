@@ -1,0 +1,68 @@
+{
+  "index": 1220,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that any code you generate is executable for demonstration purposes. Design a frontend page similar to literature retrieval systems, referencing third-party open source projects.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the literature retrieval search functionality fully implemented?",
+      "description": "Check if the code includes a comprehensive search system with advanced filters (author, title, date range, keywords), fuzzy matching, and result sorting capabilities. Review whether proper query string handling and search parameter validation are implemented. Score 0 if there's no search functionality, 5 if only basic keyword search exists, and 10 if advanced search with filters and sorting is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the search results display system properly designed?",
+      "description": "Evaluate whether the results are displayed in a clean, organized format with proper pagination (10-20 items per page), sorting controls, and citation details. Check if each result includes essential bibliographic information (title, authors, publication, year, DOI/URL). Deduct 3 points if pagination is missing, 3 points if sorting options are absent, and 4 points if the results lack proper formatting for academic citations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a detailed view for individual literature entries?",
+      "description": "Check if users can view detailed information about a specific publication, including abstract, full citation, author details, and related papers. Assess whether the code provides options to export citations in multiple formats (BibTeX, RIS, EndNote). Deduct 5 points if detailed view is missing, 3 points if citation export functionality is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a user account system with save/bookmark functionality?",
+      "description": "Review whether the implementation includes user profiles with the ability to save searches, create bibliographies, and bookmark papers. Check for reading history tracking and organization of saved papers into collections/folders. Score 0 if no user system exists, 5 if basic bookmarking is available, and 10 if comprehensive user profiles with organized collections are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty search results, server errors, malformed queries) and provide friendly error prompts or recovery mechanisms. Check for input validation, error boundary components, and graceful fallbacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual citation network graphs 2. AI-powered paper recommendations 3. Browser extensions for one-click citation 4. Annotation tools for PDFs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search forms with overlapping functionality) 2. Function modules unrelated to literature retrieval (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., excessive animations or 3D visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, API services, and state management), component reusability, and build process automation. Examine code organization, naming conventions, and documentation quality. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern academic interface principles: 1) Clean, distraction-free reading experience 2) Proper typography for academic content (serif fonts for body text, adequate line spacing) 3) Consistent visual hierarchy with clear content separation. Deduct 3 points for cluttered layouts, 5 points for poor readability (small font sizes, insufficient contrast), and 5 points for inconsistent design patterns across pages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Search response time appears immediate (loading indicators for searches >300ms) 2) Smooth transitions between search results and detailed views 3) Intuitive interactions for filtering and refining searches. Deduct 5 points for laggy search experiences, 3 points for jarring page transitions, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

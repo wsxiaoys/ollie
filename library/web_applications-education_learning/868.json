@@ -1,0 +1,68 @@
+{
+  "index": 868,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be careful to ensure that any code you generate is executable for demonstration. Create a mini program using uniapp.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the uniapp project structure correctly implemented?",
+      "description": "Review whether the code follows the standard uniapp project structure with proper pages.json configuration, manifest.json settings, and component organization. Check if the project includes proper page routing, tabBar configuration, and global style definitions. Score 0 if basic project structure is missing, 5 if only partial structure is implemented, and 10 if complete uniapp architecture with proper configuration files is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are cross-platform compatibility features properly handled?",
+      "description": "Evaluate whether the code implements proper conditional compilation (#ifdef APP-PLUS, #ifdef MP-WEIXIN, etc.) and uses uniapp's unified APIs correctly. Check if platform-specific features are handled appropriately and if the app can run on multiple platforms (H5, WeChat Mini Program, App). Deduct 5 points if conditional compilation is missing, and 3 points if platform-specific APIs are not properly abstracted. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the component lifecycle and state management implemented correctly?",
+      "description": "Check whether Vue.js lifecycle hooks are properly used within uniapp context, including onLoad, onShow, onHide, and onUnload. Evaluate if state management follows Vue.js patterns with proper data binding and reactive updates. Deduct 5 points if lifecycle methods are incorrectly implemented, and 3 points if state management lacks reactivity. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are uniapp-specific APIs and features utilized effectively?",
+      "description": "Assess whether the code leverages uniapp's built-in APIs such as uni.request for network calls, uni.showToast for user feedback, uni.navigateTo for navigation, and other platform APIs. Check if storage, device capabilities, and native features are properly integrated. Deduct 5 points if basic uniapp APIs are not used, and 3 points if native feature integration is incomplete. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, API errors, user input validation, page navigation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the mobile app experience (e.g., 1. Gesture interactions and touch feedback 2. Local storage with offline capabilities 3. Native device integration like camera/GPS 4. Custom components with advanced animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple navigation methods coexisting) 2. Function modules unrelated to the mini program's core purpose 3. Heavy animations or effects that affect performance on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating pages/components/utils/api layers), proper use of uniapp plugins, and build configuration. Deduct 5 points if global state pollution is found or Vue.js best practices are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if manifest.json and pages.json are not properly configured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet mobile-first professional standards?",
+      "description": "Evaluate whether the design follows mobile UI principles: 1) Touch-friendly button sizes (minimum 44px touch targets) 2) Proper mobile spacing and typography (rpx units used correctly) 3) Responsive layout that works across different screen sizes 4) Consistent with platform design guidelines (iOS/Android/WeChat). Deduct 3 points for each non-mobile-optimized element, 5 points for poor touch interaction design, and 5 points for inconsistent visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile interaction smooth and intuitive?",
+      "description": "Judge whether the interactions are optimized for mobile devices: 1) Touch feedback with appropriate haptic responses 2) Smooth page transitions using uniapp's navigation APIs 3) Proper loading states and skeleton screens 4) Intuitive gesture support where applicable. Deduct 5 points for each missing touch feedback, 3 points for laggy transitions or animations, and 5 points for non-intuitive navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

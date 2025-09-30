@@ -1,0 +1,68 @@
+{
+  "index": 150,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable and can be displayed. Please help me implement this SVG image using code: a black and white Snapple logo with a hat on it.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG implementation of the Snapple logo accurate?",
+      "description": "Review whether the SVG code accurately represents the Snapple logo's distinctive shape, proportions, and font styling. The logo should include the characteristic oval/rounded rectangle shape with the Snapple text rendered in the correct typeface. Score 0 if the logo is unrecognizable as Snapple, 5 if it has major proportion issues or incorrect font styling, and 10 if it faithfully recreates the logo.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the black and white color scheme implemented correctly?",
+      "description": "Evaluate whether the code properly implements a true black and white (monochrome) color scheme without any gray gradients or colored elements. Check if the logo uses appropriate fill and stroke attributes with proper contrast between elements. Deduct 5 points if any colors other than black (#000000) and white (#FFFFFF) are used, and 3 points if contrast issues make parts of the logo difficult to distinguish. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the hat element properly integrated with the logo?",
+      "description": "Assess whether the hat is proportionally sized relative to the logo, positioned naturally on top of it, and designed in a style consistent with the logo's aesthetic. The hat should appear to be sitting on the logo rather than floating or awkwardly placed. Deduct 5 points if the hat's position is unnatural, 3 points if its size is disproportionate, and 5 points if its style clashes with the logo design. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SVG code optimized and efficiently structured?",
+      "description": "Check whether the SVG code uses proper path elements, groups for logical organization, and optimization techniques like reusing elements when appropriate. Evaluate if the code avoids unnecessary complexity, excessive nodes, or redundant path data. Deduct 5 points for inefficient path implementations, 3 points for lack of proper grouping, and 5 points for code that would be difficult to maintain or modify. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG code can handle different viewport sizes through proper viewBox settings, preserveAspectRatio attributes, and responsive design principles. Check if the code includes comments for complex sections and uses id/class attributes logically. Score 10 points for fully responsive SVG with appropriate fallbacks, 5 points if it works but lacks adaptability features, and 0 points if it breaks at different sizes or in different browsers.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visual appeal (e.g., 1. Subtle animations for the hat 2. Interactive elements like hover effects 3. Creative interpretation of the hat design that adds character). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary nested groups or container elements 2. Redundant path data that could be simplified 3. Excessive detail that doesn't contribute to the recognizability of the logo at normal viewing sizes. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundancies significantly increase file size or rendering complexity.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the code structure for proper organization, meaningful element IDs/classes, appropriate use of SVG elements (avoiding use of non-standard elements), and browser compatibility. Deduct 5 points if elements lack descriptive names; deduct 5 points if complex shapes use inefficient implementations instead of appropriate SVG elements; deduct 5 points if known browser compatibility issues aren't addressed. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual implementation meet professional design standards?",
+      "description": "Evaluate whether the SVG follows professional design principles: 1) Clean lines and proper stroke weights 2) Balanced negative space around and within the logo 3) Careful attention to detail in the letterforms and shapes. Deduct 3 points for each visual element with jagged edges or poor anti-aliasing, 5 points for imbalanced composition, and 5 points for inaccurate curve handling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the implementation accessible and semantically structured?",
+      "description": "Judge whether the SVG follows accessibility best practices: 1) Includes proper title and description elements 2) Uses ARIA attributes where appropriate 3) Maintains reasonable file size for quick loading. Deduct 5 points for missing essential accessibility attributes, 3 points for lack of descriptive elements, and 5 points for implementation that would be difficult for screen readers to interpret. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Icons/Logos",
+  "difficulty": "medium"
+}

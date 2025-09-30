@@ -1,0 +1,68 @@
+{
+  "index": 286,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable for demonstration. Please provide an example of a GIS project implemented with Vue 3 and Vite, with layer functionality supporting both 2D and 3D. The map should be implemented based on OpenLayers and Cesium.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the GIS project structure properly set up with Vue 3 and Vite?",
+      "description": "Check whether the code correctly configures a Vue 3 project using Vite build system, with proper directory structure following Vue best practices. Review the package.json for correct dependencies (vue, vite, typescript if applicable). Verify the proper configuration of essential plugins like vue-router for navigation, pinia/vuex for state management, and any GIS-specific plugins. Score 0 if Vue 3 + Vite setup is missing, 5 if basic setup exists but lacks organization, and 10 if project structure is comprehensive with proper separation of concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are OpenLayers and Cesium properly integrated for 2D/3D functionality?",
+      "description": "Evaluate the integration of OpenLayers for 2D mapping and Cesium for 3D visualization. Check if both libraries are properly imported, initialized without conflicts, and have appropriate version compatibility. Verify if the code includes a seamless toggle mechanism between 2D and 3D views while preserving the current viewport position. Deduct 5 points if only one library is implemented, 3 points if libraries are implemented but poorly integrated, and 2 points if the 2D/3D transition is jarring or loses state. Full score requires both libraries working harmoniously with smooth transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the layer system comprehensively implemented?",
+      "description": "Review the layer management system for both 2D and 3D modes. Check for layer types support (vector, raster, WMS, WMTS, GeoJSON, KML), layer operations (add, remove, toggle visibility, opacity control, reordering), and consistent layer representation across both OpenLayers and Cesium contexts. Deduct 3 points for each missing essential layer type, 5 points if layer persistence between 2D/3D modes is absent, and 5 points if layer styling capabilities are limited. Full score requires comprehensive layer management that works identically across both mapping engines.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper integration of spatial data sources and formats?",
+      "description": "Evaluate the implementation of data source handling for common GIS formats. Check if the code handles vector formats (GeoJSON, KML, TopoJSON), raster formats (GeoTIFF, raster tiles), and services (WMS, WMTS, WFS). Verify if the code implements proper data loading patterns with error handling, caching strategies, and on-demand loading. Deduct 3 points for each major format not supported, 5 points if data loading lacks error handling, and 5 points if there's no optimization for large datasets. Full score requires comprehensive format support with optimized loading strategies.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as map loading failures, data source errors, projection mismatches, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Check for proper async operation handling, especially for map initialization and data loading. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the GIS experience (e.g., 1. Advanced spatial analysis tools 2. Real-time collaborative mapping 3. AI-assisted feature recognition 4. Time-series animation for temporal data 5. Mobile-friendly responsive controls). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate map implementations that serve the same purpose 2. Unnecessary third-party libraries when OpenLayers/Cesium already provide the functionality 3. Overly complex custom implementations of features that are available in standard libraries. Deduct 3 points for each redundancy found, and directly deduct 10 points if core mapping functionality is obscured by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating map services, UI components, and state management), component reusability, and appropriate use of Vue 3 composition API or options API. Check if the code implements lazy loading for heavy mapping libraries, employs TypeScript for type safety, and uses proper build optimizations for map assets. Deduct 3 points if global state is used excessively, 3 points if mapping libraries are not lazy-loaded, 4 points if there's no type safety. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional GIS application standards?",
+      "description": "Evaluate whether the map UI follows modern GIS application design principles: 1) Clear distinction between map canvas and control panels 2) Intuitive layer control interface 3) Professional map controls (scale bar, north arrow, legend) 4) Accessibility considerations for map interactions. Deduct 3 points for cluttered map interface, 3 points for missing essential map controls, 4 points for poor contrast between map and overlay elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the map interaction smooth and responsive?",
+      "description": "Judge whether the map interactions conform to standard GIS application expectations: 1) Map pan/zoom responds within 50ms 2) Layer toggling updates visual immediately 3) 2D/3D transitions are smooth and maintain spatial context 4) Custom interaction tools work intuitively. Deduct 3 points for laggy map rendering, 3 points for slow layer updates, 4 points for jerky 2D/3D transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 936,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for display. Vue3 announcement viewer count with real-time updates.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 component structure correctly implemented?",
+      "description": "Evaluate if the code follows Vue3 best practices with Composition API usage (setup(), ref(), reactive()), proper component organization (single file components), and correct lifecycle hooks (onMounted(), onUnmounted()). Deduct 5 points if Options API is used instead of Composition API; deduct 3 points if lifecycle hooks are improperly utilized; deduct 5 points if reactive state management is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is real-time functionality properly implemented?",
+      "description": "Check if the code includes an effective real-time update mechanism (WebSockets, Server-Sent Events, or polling with appropriate intervals). Verify if connection management handles reconnection attempts, error states, and displays loading/error indicators. Deduct 5 points if only manual refresh is implemented, 3 points if the update mechanism has no error handling, and 5 points if there's no visual indicator during data loading. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the viewer count data storage and manipulation well-designed?",
+      "description": "Examine if the data structure for storing viewer counts is appropriate (time-series format for historical tracking, optimized for frequent updates). Check if state mutations follow Vue3 reactivity principles and if the code handles edge cases (null values, server errors, data type conversions). Deduct 5 points for improper reactivity implementation, 3 points for missing data validation, and 3 points for inefficient data structure choices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data visualization of viewer count implemented effectively?",
+      "description": "Evaluate the implementation of data visualization (charts/graphs using libraries like Chart.js, D3.js, or Vue-specific visualization libraries). Check if the visualization is responsive, handles different data ranges gracefully, includes proper axes labels, and shows trends clearly. Deduct 5 points if visualization is static (non-reactive to data changes), 3 points if it lacks visual clarity, and 5 points if it's not responsive to different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, API failures, data inconsistencies) and provide friendly error prompts or recovery mechanisms. Code should gracefully handle edge cases like empty data sets, unexpected data formats, and connection timeouts. Give 10 points if robust error handling is implemented throughout, 5 points if only basic error handling exists, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Viewer engagement metrics besides raw count 2. Notification system for significant viewer changes 3. Predictive analytics for viewer trends). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple methods updating the same state) 2. Function modules unrelated to viewer count tracking 3. Fancy effects that affect performance (e.g., excessive animations that impact data refresh rates). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data fetching, state management, and UI rendering), component reusability, and proper use of Vue3 features. Deduct 5 points if global state is used where component state would suffice; deduct 5 points if the codebase shows significant repetition; deduct 5 points if Vue3 reactivity system is misused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows modern UI principles: 1) Harmonious color scheme appropriate for data visualization (distinguishable data series, proper contrast) 2) Clean layout with appropriate spacing between elements 3) Typography that enhances readability of metrics and labels (proper sizing hierarchy, readable fonts). Deduct 3 points for cluttered interfaces, 5 points for poor color choices affecting data readability, and 5 points for inconsistent styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the real-time updates and transitions follow good UX principles: 1) Smooth transitions when counts update (no jarring changes) 2) Clear visual indication of new data arrival 3) Appropriate animation speed for count changes (not too fast to read, not too slow to feel outdated). Deduct 5 points for abrupt visual changes during updates, 3 points for missing loading states, and 5 points for animations that distract from data comprehension. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

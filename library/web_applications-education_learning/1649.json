@@ -1,0 +1,68 @@
+{
+  "index": 1649,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Create a simple English word quiz program that covers all the new vocabulary from elementary grades 1-6 (Hebei Education Edition), including translations, phonetic symbols, and pronunciation.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the vocabulary database comprehensively implemented?",
+      "description": "Review whether the code includes a complete vocabulary database covering grades 1-6 (Hebei Education Edition), with each word containing English spelling, Chinese translation, phonetic symbols, and pronunciation files. Check if the vocabulary is properly categorized by grade levels and topics. Score 0 if vocabulary data is missing or incomplete, 5 if only basic words are included without proper categorization, and 10 if all grade-level vocabulary is comprehensively organized with complete metadata.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the quiz modes and question types diversified?",
+      "description": "Evaluate whether the program implements multiple quiz formats including English-to-Chinese translation, Chinese-to-English translation, phonetic symbol recognition, spelling completion, and listening comprehension. Check if difficulty progression is implemented and adaptive question selection based on user performance exists. Deduct 3 points if less than 4 question types are implemented, deduct 5 points if no difficulty adaptation mechanism exists. Full score requires at least 5 different quiz modes with intelligent question generation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the pronunciation and phonetic system accurately implemented?",
+      "description": "Check whether the code includes accurate phonetic symbol display (IPA format) and high-quality pronunciation playback functionality. Evaluate if the pronunciation uses native speaker audio or high-quality TTS, and whether phonetic symbols are properly rendered with correct fonts. Deduct 5 points if pronunciation quality is poor or phonetic symbols are incorrectly displayed, deduct 3 points if audio loading is slow (>2 seconds). Full score requires crystal-clear pronunciation and perfectly formatted phonetic symbols.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the learning progress tracking and analytics system complete?",
+      "description": "Assess whether the program implements comprehensive progress tracking including accuracy rates, learning streaks, weak word identification, and performance analytics by grade/topic. Check if data persistence is implemented with local storage or database integration. Deduct 5 points if no progress tracking exists, deduct 3 points if data cannot be saved between sessions, deduct 2 points if analytics are basic without actionable insights. Full score requires detailed learning analytics with visual progress reports.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing audio files, network interruption, invalid user input, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like corrupted data, audio playback failures, and unexpected user interactions, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Gamification elements like points/badges/leaderboards 2. Speech recognition for pronunciation practice 3. Spaced repetition algorithm 4. Interactive word games/mini-games 5. Social features for competition). Add 2 points for each practical innovative feature implemented (maximum 10 points). Features must be functional and add genuine educational value.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems coexisting) 2. Function modules unrelated to vocabulary learning (e.g., built-in calculator or unrelated games) 3. Overly complex animations that distract from learning. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core learning functions are interfered with by redundant code or if the interface becomes cluttered.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating quiz logic/vocabulary data/UI components), code organization, and maintainability. Check for proper separation of concerns, reusable components, and clean architecture. Deduct 5 points if global state pollution is found or if code is monolithic without proper structure; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if naming conventions are inconsistent. The full score requires clean, well-organized, and maintainable code structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet educational software standards?",
+      "description": "Evaluate whether the design is child-friendly and educationally appropriate: 1) Clear, readable fonts suitable for young learners (minimum 16px for primary content) 2) Intuitive navigation with large, easily clickable buttons 3) Appropriate color scheme that aids learning without causing eye strain 4) Proper information hierarchy and layout spacing. Deduct 3 points for each confusing interface element, 5 points for poor readability, and 5 points for non-intuitive navigation. The full score requires a polished, professional educational interface.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and educationally effective?",
+      "description": "Judge whether the interactions support effective learning: 1) Immediate feedback on answers (≤200ms response time) 2) Clear visual/audio cues for correct/incorrect responses 3) Smooth transitions between questions (300-500ms) 4) Intuitive input methods for different question types 5) Proper pacing that allows for learning without rushing. Deduct 5 points for each delayed or missing feedback, 3 points for confusing interaction patterns, and 5 points for poor learning flow design. The full score requires seamless, educationally sound interactions.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

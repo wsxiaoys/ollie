@@ -1,0 +1,68 @@
+{
+  "index": 320,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code examples when possible. Build a company portal website using React.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core React component architecture properly implemented?",
+      "description": "Evaluate if the code follows React best practices with proper component hierarchy, separation of concerns, and state management. Check for functional components with hooks rather than class components, proper prop drilling or context usage, and implementation of reusable components. Score 0 if React fundamentals are missing, 5 if basic components exist but lack organization, and 10 if components are well-structured with clear responsibilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is routing functionality implemented effectively?",
+      "description": "Check if React Router (or equivalent) is properly configured with nested routes, route parameters, protected routes for admin sections, and proper navigation handling. Verify if there's a 404 page and that history navigation works correctly. Deduct 5 points if only basic routing is implemented without nested routes, 3 points if navigation state isn't preserved, and 2 points if there's no route protection for sensitive areas.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are key company portal pages and sections included?",
+      "description": "Verify the implementation of essential company portal sections: Homepage with company overview, About/Team page, Services/Products section, Contact form, News/Blog section, and Career opportunities. Each missing critical section deducts 2 points. Score 10 if all essential sections are present with proper content structure and information hierarchy.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there state management for complex data flows?",
+      "description": "Evaluate whether appropriate state management solutions (Context API, Redux, Zustand, etc.) are implemented for global state. Check if data fetching is handled with proper loading/error states and if caching strategies are used. Deduct 5 points if global state is handled improperly, 3 points if there's no loading/error handling, and 2 points if no data persistence strategy exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, slow connections, invalid user inputs) and provide friendly error boundaries or fallback UIs. Code with strong robustness should implement form validation, handle API timeouts gracefully, and prevent common React pitfalls like infinite render loops. Give 10 points if edge cases are thoroughly handled, 5 points if basic error handling exists, and 0 points if no error handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark/light theme toggle 2. Personalized dashboard for logged-in users 3. Interactive company timeline 4. Multilingual support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementations of similar functionalities 2. Unnecessary third-party packages for simple tasks 3. Over-engineered solutions for basic requirements. Deduct 3 points for each redundancy found, and directly deduct 10 points if core performance is compromised by excessive features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (proper folder structure, component naming conventions), testing implementation, and build configuration. Deduct 5 points if component organization is chaotic; deduct 3 points if there are no tests; deduct 2 points if there's no proper build optimization. Check for TypeScript usage or PropTypes for type checking, deducting 3 points if neither is used. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the UI implementation follows modern design principles: 1) Consistent component styling with a theme system 2) Responsive design for all screen sizes 3) Accessible UI elements with proper ARIA attributes 4) Consistent spacing and typography system. Deduct 3 points for inconsistent styling, 3 points for non-responsive layouts, and 4 points for accessibility issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and intuitive?",
+      "description": "Judge whether interactions provide appropriate feedback: 1) Form submission states clearly indicated 2) Navigation transitions are smooth 3) Interactive elements have hover/focus states 4) Loading states prevent UI jumping. Deduct 3 points for each missing feedback mechanism, 2 points for jarring transitions, and 5 points for confusing navigation patterns. Check if interactions work on both mouse and keyboard navigation, deducting 5 points for keyboard accessibility issues. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1630,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration purposes. Implement an editor similar to Microsoft Word in Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core text editing functionality fully implemented?",
+      "description": "Review whether the code implements essential text editing features using Vue: text input/deletion, cursor positioning, selection, copy/paste, and undo/redo. Check if contentEditable is properly utilized or if a custom implementation handles key events. Score 0 if basic text editing is missing, 5 if only simple text entry works, and 10 if all standard editing operations are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the formatting capabilities comprehensive?",
+      "description": "Evaluate the text formatting features: font styles (bold, italic, underline), font family/size selection, text alignment, paragraph spacing, bullet/numbered lists, and indentation. Verify that formatting is preserved when copying or saving content. Deduct 2 points for each missing core formatting feature. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is document structure management properly implemented?",
+      "description": "Check if the editor supports document structure features like headings, sections, page breaks, headers/footers, and tables. Assess whether the document model maintains a proper hierarchical structure rather than just styling text. Deduct 3 points if headings/sections are missing, 3 points if page management is absent, and 4 points if table support is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are file operations and document state management properly handled?",
+      "description": "Review implementation of new document creation, opening existing documents, saving (with appropriate formats like .docx or HTML), auto-save functionality, and document state tracking. Check if the editor prompts users about unsaved changes. Deduct 3 points if save/load is missing, 3 points without auto-save, and 4 points without document state management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (large documents, special characters, pasting from external sources, browser compatibility issues). Test if the editor prevents data loss during unexpected operations or crashes. Code with strong robustness should effectively handle these scenarios, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaboration 2. AI-powered writing suggestions 3. Voice-to-text input 4. Advanced find/replace with regex 5. Accessibility features like screen reader support). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functionality (e.g., multiple text selection mechanisms) 2. Function modules unrelated to word processing (e.g., built-in games or unrelated tools) 3. Fancy effects that affect performance (excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue component architecture (proper use of props/events/slots), state management approach, code reusability, and build process. Check for adherence to Vue best practices and performance optimization techniques. Deduct 3 points for improper component design, 3 points for inefficient state management, and 4 points if the code has poor maintainability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows Microsoft Word-like design principles: 1) Clean, organized toolbar/ribbon interface 2) Proper use of icons and tooltips 3) Consistent spacing and alignment 4) Professional color scheme similar to Microsoft Office. Deduct 3 points for cluttered toolbars, 3 points for inconsistent visual language, and 4 points for poor overall layout resemblance to a professional word processor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the editor provides smooth interactions: 1) Responsive typing with no perceptible lag 2) Smooth cursor movement and selection 3) Immediate visual feedback for formatting changes 4) Clean transitions between different view modes. Deduct 3 points for typing lag, 2 points for jerky scrolling/selection, 3 points for delayed formatting feedback, and 2 points for abrupt view transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Document Editor",
+  "difficulty": "medium"
+}

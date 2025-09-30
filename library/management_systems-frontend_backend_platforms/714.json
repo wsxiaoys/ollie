@@ -1,0 +1,68 @@
+{
+  "index": 714,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that any code you generate is executable. I want to develop several screens using the AutoNavi (Gaode) API with VUE3.\n\nFirst screen: Electronic Fence Management\nThe screen layout should be half data display area and half map. When I click on an electronic fence data entry, the map area should simultaneously display the electronic fence style. The screen should support adding, deleting, modifying, and querying electronic fences, and also allow customization directly on the map.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Electronic Fence Implementation",
+      "description": "Check if the code implements a complete electronic fence system with AutoNavi's API in Vue3, including polygon, circle, and rectangle fence types with visual representations. Score 0 if no fence drawing is implemented, 5 if only basic shapes without editing capabilities, and 10 if all fence types are implemented with full editing functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Map and Data Area Integration",
+      "description": "Evaluate the implementation of the half-data, half-map layout, checking whether the split view is properly responsive and maintains appropriate proportions across different screen sizes. Ensure synchronization between data entries and map visualization is working correctly (clicking a fence in the list highlights it on the map). Deduct 5 points if synchronization has noticeable lag (>200ms), 3 points if the layout breaks on certain screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "CRUD Operations for Electronic Fences",
+      "description": "Verify that all create, read, update, and delete operations for electronic fences are properly implemented. Each operation should update both the data display and map visualization. Check for client-side validation of fence parameters and proper error handling. Deduct 3 points for each missing operation, 3 points for improper validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Map-based Fence Customization",
+      "description": "Examine whether direct fence manipulation on the map is supported (drawing new fences, resizing, moving vertices, etc.). Check if the editing interface is intuitive with proper mouse interaction feedback. Deduct 5 points if vertex editing is not supported, 3 points if fence creation requires complex steps, and 3 points if there's no visual feedback during editing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, invalid coordinate inputs, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch import/export of fence data 2. Fence conflict detection 3. History tracking of fence changes 4. Heat map visualization of fence interactions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Feature Redundancy",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit the same fence property) 2. Function modules unrelated to fence management (e.g., unnecessary weather overlays) 3. Fancy effects that affect map performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review Vue3 component architecture, state management approach, code reusability, and proper use of Vue's Composition API. Deduct 5 points if global state is mismanaged; deduct 3 points if components are too tightly coupled; deduct 5 points if API integration is not properly abstracted; deduct 3 points if Vue3 best practices are not followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Quality",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing for both map and data areas 3) Professional typography system (consistent font hierarchy). Deduct 3 points for cluttered list displays, 5 points for poor contrast between map and UI elements, and 5 points for inconsistent styling between data area and map controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction Fluidity",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when selecting fences 2) Smooth animations for fence creation/editing (300-500ms) 3) Clear visual indicators for active/selected fences. Deduct 5 points for laggy map interactions, 3 points for jarring transitions between data and map updates, and 5 points for confusing fence selection states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

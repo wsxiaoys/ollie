@@ -1,0 +1,68 @@
+{
+  "index": 1011,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Vue3 Uni-app text display sentence by sentence, showing like a chat conversation.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 Uni-app text display component fully implemented?",
+      "description": "Review whether the code properly implements a Vue3 component that displays text sentence by sentence. Check if the component uses Vue3's Composition API correctly (refs, reactive, setup(), etc.). Score 0 if no functional component is implemented, 5 if the component works but without proper Vue3 paradigms, and 10 if the implementation follows Vue3 best practices with proper reactivity.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the sentence-by-sentence display mechanism properly implemented?",
+      "description": "Evaluate if the text is properly split into sentences (using regex or appropriate string manipulation) and displayed with a natural timing mechanism. Check if the implementation handles edge cases like empty strings, single sentences, and punctuation correctly. Deduct 5 points if sentence detection is flawed, and 3 points if the timing mechanism is too simplistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Uni-app cross-platform compatibility addressed?",
+      "description": "Check whether the code accounts for Uni-app's cross-platform requirements and uses platform-agnostic APIs. Verify that the component works across different platforms (iOS, Android, H5) without platform-specific code or with proper conditional compilation. Deduct 5 points if the code only works on a single platform, and 3 points if it uses deprecated Uni-app methods. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the chat conversation UX/UI properly designed?",
+      "description": "Assess if the implementation includes appropriate chat UI elements (message bubbles, timestamps, user avatars, etc.) and follows a proper conversation flow. Check if the component includes features like message status indicators and typing animations. Give 10 points if it fully resembles a professional chat interface, 5 points for basic conversation display, and 0 points if no chat-like UI is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty messages, extremely long sentences, network-loaded content, etc.) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Customizable typing speed 2. Text-to-speech integration 3. Read receipts or status indicators). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation or timing logic 2. Function modules unrelated to text display (e.g., unnecessary network calls) 3. Fancy effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating display logic/typing mechanics/styling), component reusability, and proper Vue3 practices. Deduct 5 points if global state is misused; deduct 5 points if the code has poor separation of concerns; deduct 5 points if Vue3 reactivity system is bypassed with direct DOM manipulation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern chat UI principles: 1) Distinguishable message bubbles with proper contrast 2) Consistent padding and margins (following the 8px rule) 3) Readable typography (font size ≥ 14px, appropriate line height). Deduct 3 points for cluttered message layout, 5 points for poor contrast making text hard to read, and 5 points for inconsistent bubble styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the typing animation and text transition smooth and natural?",
+      "description": "Judge whether the sentence-by-sentence display feels natural: 1) Appropriate typing speed (neither too fast nor too slow) 2) Smooth transitions between sentences 3) Natural pauses at punctuation. Deduct 5 points if the typing effect feels mechanical, 3 points for jarring transitions between sentences, and 5 points if the timing doesn't account for sentence length or complexity. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 414,
+  "question": "You are a coding expert, please utilize your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Create a 3D shooting game similar to Game for Peace (PUBG Mobile) using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "3D Rendering Engine Implementation",
+      "description": "Check whether the code implements a functional 3D rendering engine using WebGL/Three.js or equivalent technology. Score 0 if no 3D rendering is implemented, 5 if basic 3D objects are displayed without proper lighting/shading, and 10 if the engine supports proper 3D terrain, dynamic lighting, shadows, and object rendering with appropriate performance optimization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "First-Person Shooter Core Mechanics",
+      "description": "Evaluate the implementation of core FPS mechanics including character movement (WASD controls), aiming mechanism (mouse look), weapon system (multiple weapons with different characteristics), shooting mechanics with recoil and bullet physics, and hit detection. Deduct 2 points for each missing core mechanic. Score 10 if all core mechanics are implemented with realistic physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Battle Royale Game Loop",
+      "description": "Assess whether the code implements the complete battle royale game loop: player parachuting, shrinking play zone, looting system, and last-player-standing victory condition. Score 0 if the game loop is absent, 5 if only basic elements are implemented, and 10 if the full game cycle is present including shrinking zone damage, proper timing, and end-game scenarios.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "AI Bot Implementation",
+      "description": "Review whether the game includes AI opponents with appropriate behaviors: pathfinding, combat decision-making, looting, and using cover. Score 0 if no AI is implemented, 5 if bots only have basic movement and shooting, and 10 if bots demonstrate tactical behaviors including flanking, using cover, and adapting to player strategies.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (browser compatibility issues, variable screen sizes, resource loading failures, unexpected user inputs). Code with strong robustness should handle these edge cases with graceful degradation and informative error messages, scoring 10 points. If robustness is average, give 5 points, and if no exception handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprising features that enhance the experience (e.g., 1. Destructible environment 2. Weather effects affecting gameplay 3. Vehicle physics 4. Advanced hitbox system with damage zones). Add 2.5 points for each practical innovative feature implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Absence of Redundant Features",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement control systems) 2. Function modules unrelated to the core FPS experience 3. Excessive visual effects that severely impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular design (separation of rendering engine, game logic, input handling, physics), asset loading optimization, and memory management. Deduct 3 points if global state pollution exists; deduct 3 points if framerate drops below 30fps on standard hardware; deduct 4 points if no asset preloading or progressive loading is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Visual Design and UI",
+      "description": "Evaluate whether the game interface follows professional gaming UI principles: 1) Minimalist HUD that doesn't obstruct gameplay 2) Clear visual indicators for health, ammo, and minimap 3) Proper scaling on different devices. Deduct 3 points for cluttered UI elements, 3 points for poor contrast making information hard to read, and 4 points for non-responsive design elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Game Feel and Responsiveness",
+      "description": "Judge whether the game controls and feedback create satisfying game feel: 1) Input lag under 50ms 2) Visual feedback for all player actions including hits, damage taken, and healing 3) Appropriate sound effects synchronized with actions. Deduct 3 points for sluggish controls, 3 points for missing feedback on critical actions, and 4 points if weapon handling lacks weight or impact.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

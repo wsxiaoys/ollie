@@ -1,0 +1,68 @@
+{
+  "index": 810,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable and can be demonstrated. I've just created a project, but it has only one typical template that isn't helpful for me. I need to write a small program that allows for ordering food like in a restaurant.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the restaurant order system's core functionality fully implemented?",
+      "description": "Review whether the code implements the essential features of a food ordering system including menu display, item selection, cart management, and order submission. Score 0 if these core interactions are missing, 5 if only basic item selection is implemented, and 10 if the complete ordering flow is present with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the menu data structure and display properly designed?",
+      "description": "Evaluate whether the menu is structured logically (e.g., with categories, item descriptions, prices, and images) and displayed in an easily navigable format. Check if items can be filtered or searched. Deduct 5 points if the menu is just a flat list without categories, 3 points if item details are incomplete, and 2 points if no search/filter functionality exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the cart and order management system comprehensive?",
+      "description": "Check if the system allows adding/removing items from the cart, changing quantities, displaying subtotals and totals, and applying special requests or customizations. Verify that the order confirmation process includes a review step. Deduct 3 points if quantity modification isn't supported, 3 points if no order summary is shown, and 4 points if item customization is not possible. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a user authentication and order history feature?",
+      "description": "Assess whether the system includes user accounts, login functionality, and the ability to view past orders. Check if users can reorder previous meals and if guest ordering is supported as an alternative. Deduct 5 points if user authentication is missing, 3 points if order history isn't implemented, and 2 points if no guest ordering option exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (such as empty cart checkout attempts, invalid input values, network errors when fetching menu data, etc.) and provide friendly error messages. Code with strong error handling should receive 10 points. If only basic validation exists, give 5 points, and if no error handling is implemented, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time order status tracking 2. Dietary preference filters 3. Estimated preparation time calculator 4. Meal recommendation system based on past orders). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart management logics) 2. Function modules unrelated to food ordering (e.g., a built-in game while waiting) 3. Fancy effects that affect performance (e.g., excessive animations when adding items to cart). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/state management/data handling), component reusability, and code organization. Deduct 5 points if global state is poorly managed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear project structure or naming conventions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling through menu items, and 5 points for hard-to-find key function buttons like 'Add to Cart' or 'Checkout'. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 719,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. Please create an interface for the supplier admission center in an SRM system, which includes a stage progression tool for each phase and a kanban board displaying the task lists for pending items at each stage.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the supplier admission center interface fully implemented?",
+      "description": "Evaluate whether the code implements all required components: a central dashboard view, stage progression tool showing different phases (e.g., initial contact, qualification, documentation, evaluation, approval), and a kanban board displaying task lists for each stage. Score 0 if main components are missing, 5 if only basic layout is present, and 10 if all components are properly implemented with clear visual hierarchy and information architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the stage progression tool correctly implemented?",
+      "description": "Check if the stage progression tool visually represents the supplier onboarding pipeline with clear status indicators for each stage. It should include: 1) Visual indication of current stage, 2) Completed stages, 3) Upcoming stages, 4) Stage transitions with appropriate animations, and 5) Stage-specific metadata (time in stage, completion percentage). Deduct 2 points for each missing element. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the kanban board functionality properly implemented?",
+      "description": "Assess whether the kanban board correctly displays task cards organized by stages, with drag-and-drop functionality between columns, task filtering capabilities, and status updates reflected in real-time. Check that each task card contains essential information (task name, assignee, due date, priority). Deduct 3 points if drag-and-drop is not implemented, 2 points if filtering is missing, and 2 points if cards lack essential information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the data structures and state management appropriate for an SRM system?",
+      "description": "Review whether the code uses appropriate data structures for supplier information, stage definitions, and task management. Check if state management handles complex relationships between suppliers, approval stages, and associated tasks. Evaluate whether the code handles data mutations properly with proper validation. Deduct 3 points for inappropriate data modeling, 4 points for inefficient state management, and 3 points for missing validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty data states, network errors, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaboration indicators 2. Automated task progression based on conditions 3. Interactive supplier performance metrics 4. Intelligent stage duration predictions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management approaches coexisting) 2. Function modules unrelated to supplier management (e.g., built-in general chat system) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/data layers), component reusability, code organization, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent use of enterprise UI components. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for supplier progression workflow 4) Intuitive drag-and-drop interactions for kanban tasks. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

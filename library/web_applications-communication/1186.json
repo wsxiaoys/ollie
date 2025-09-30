@@ -1,0 +1,68 @@
+{
+  "index": 1186,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Help me create a webpage for listening to music by Jay Chou, BIGBANG, T-ARA, and EXO.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the music player functionality fully implemented?",
+      "description": "Review whether the code accurately implements core music player features including play/pause, next/previous track, volume control, and progress bar. Check if the player can handle different audio formats and provides proper feedback during playback. Score 0 if core playback functionality is missing, 5 if only basic controls are implemented, and 10 if all essential music player features work smoothly.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the music library of specified artists properly organized?",
+      "description": "Verify that the music library contains songs from all requested artists (Jay Chou, BIGBANG, T-ARA, and EXO) and that they are properly categorized and searchable. Check if metadata like artist info, album covers, and song details are displayed. Deduct 2 points for each missing artist, 3 points if song categorization is chaotic, and 3 points if metadata is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the playlist management system implemented?",
+      "description": "Evaluate if users can create, save, and manage custom playlists. Check for features like adding/removing songs, rearranging tracks, and saving playlist states. Verify if the system persists playlist data using localStorage or another storage method. Deduct 5 points if playlists can't be saved, 3 points if reordering isn't supported, and 3 points if there's no way to create multiple playlists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio visualization component implemented?",
+      "description": "Check whether the webpage includes audio visualization features like a waveform display, spectrum analyzer, or other visual effects that respond to the music. Assess the technical implementation using Web Audio API or Canvas/SVG for visualization. Deduct 5 points if there's no visualization, 3 points if visualizations don't sync properly with music, and 2 points if visualizations negatively impact performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as audio file loading errors, playback issues, network interruptions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Lyrics synchronization 2. Artist information popups 3. Music recommendation system 4. Theme customization based on album art). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple volume control mechanisms) 2. Function modules unrelated to music playing (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/audio control/data management layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

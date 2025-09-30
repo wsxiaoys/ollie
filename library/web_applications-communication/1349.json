@@ -1,0 +1,68 @@
+{
+  "index": 1349,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\n```\nconst sdpOffer = \"v=0\\r\\no=- 123456789 2 IN IP4 127.0.0.1\\r\\n...\"; // Generated SDP Offer\nconst base64Offer = btoa(sdpOffer); // Base64 encoding\n\nconst formData = new FormData();\nformData.append(\"data\", base64Offer);\n\nfetch(\"http://127.0.0.1:8083/stream/123/channel/1/webrtc\", {\n    method: \"POST\",\n    body: formData\n})\n.then(response => response.text())\n.then(base64Answer => {\n    const sdpAnswer = atob(base64Answer); // Base64 decoding\n    // Set the SDP Answer to RTCPeerConnection\n    peerConnection.setRemoteDescription(new RTCSessionDescription({ type: \"answer\", sdp: sdpAnswer }));\n});\n```\n\nCould you provide a complete HTML example?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WebRTC connection establishment process fully implemented?",
+      "description": "Review whether the code accurately implements the complete WebRTC handshake flow including createOffer(), setLocalDescription(), setRemoteDescription(), and ICE candidate handling. Score 0 if core RTCPeerConnection logic is missing, 5 if only basic SDP exchange is implemented, and 10 if complete signaling with error handling is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the media stream acquisition and display functionality implemented?",
+      "description": "Check whether getUserMedia() is properly implemented to access camera/microphone, and whether video/audio streams are correctly displayed in HTML video elements. Deduct 5 points if media constraints are not configured, and 3 points if stream cleanup on disconnect is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the server communication protocol designed with proper error handling?",
+      "description": "Evaluate whether the fetch API implementation includes proper HTTP status code handling, network timeout management, and retry mechanisms for failed requests. Deduct 5 points if no error boundaries exist for server communication failures. Check whether Base64 encoding/decoding has validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete WebRTC lifecycle management constructed?",
+      "description": "Check whether the code includes complete connection lifecycle management, including connection state monitoring, cleanup on page unload, and ICE connection state handling. Deduct 5 points if peer connection cleanup is not implemented, and 3 points if connection state callbacks are missing. Give 10 points if fully implemented with proper resource disposal.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as media permission denial, network interruption, SDP parsing errors, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the WebRTC experience (e.g., 1. Real-time bandwidth monitoring and quality adaptation 2. Screen sharing capabilities 3. Recording functionality with playback controls 4. Audio/video filters or effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple media stream handlers coexisting) 2. Function modules unrelated to WebRTC streaming (e.g., built-in file upload system) 3. Fancy effects that affect streaming performance (e.g., heavy CSS animations during video calls). Deduct 3 points for each redundancy found, and directly deduct 10 points if core streaming functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating WebRTC logic/UI components/server communication), proper async/await usage, and error boundary implementation. Deduct 5 points if global state pollution is found or promises are not properly handled; deduct 5 points if the code lacks proper separation of concerns; deduct 5 points if memory leaks exist in media stream handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Video element aspect ratio maintenance. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic video layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Media control button feedback delay ≤ 100ms 2) Connection status transition animations controlled between 300-500ms 3) Clear visual indicators for connection states (connecting/connected/disconnected) 4) Smooth video rendering without stuttering. Deduct 5 points for each operation without feedback, 3 points for jerky video transitions, and 5 points for unclear connection status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

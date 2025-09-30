@@ -1,0 +1,68 @@
+{
+  "index": 623,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and displayable. ======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code according to these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You should always generate complete, runnable project code, and ensure the project is fully executable\n2. Make sure all the code files you output are complete, don't omit any code\n3. Before providing the final output, carefully review and check all code to evaluate its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or the use of user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nImplement a front-end tool for adding echo effects to audio. Users can upload audio, set the echo intensity and delay time, add the echo effect to the audio, then listen to and save the new audio.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio upload functionality fully implemented?",
+      "description": "Check if the code properly implements file input for audio uploads with proper file type validation (accepting common audio formats like MP3, WAV, OGG). Verify if error handling exists for cases like invalid files, oversized files, or failed uploads. Score 0 if audio upload is missing, 5 if basic upload exists but lacks validation, and 10 if upload is fully implemented with proper validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the echo effect parameters properly implemented?",
+      "description": "Evaluate if the implementation allows users to adjust at least two key echo parameters: delay time (milliseconds) and intensity/feedback level (percentage). Check for appropriate input controls with reasonable value ranges and step intervals. Verify if the UI includes real-time feedback as parameters change. Deduct 5 points if only one parameter is implemented, 3 points if parameters lack appropriate constraints or validation, and 2 points if there's no visual feedback during adjustment.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio processing functionality correctly implemented using Web Audio API?",
+      "description": "Assess whether the implementation correctly uses the Web Audio API to create the echo effect. Check for proper implementation of audio nodes (AudioContext, DelayNode, GainNode) and their connections. The echo effect should be implemented by combining delay and gain nodes in the correct configuration. Score 0 if Web Audio API isn't used at all, 5 if basic nodes are used but incorrectly connected, and 10 if the audio graph is correctly implemented for a true echo effect.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio playback and preview functionality complete?",
+      "description": "Verify if users can play both the original and processed audio. Check for basic playback controls (play/pause at minimum), audio visualization, and the ability to compare original vs processed audio. Deduct 5 points if there's no way to compare before/after results, 3 points if playback controls are incomplete, and 2 points if there's no visual indicator of playback status or progress.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported audio formats, browser compatibility issues, memory management for large audio files, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time audio visualization 2. Multiple echo preset configurations 3. Batch processing capability). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing libraries used together) 2. Function modules unrelated to audio processing (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing logic/UI/file handling layers), error handling coverage, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no consideration for browser memory management when dealing with audio buffers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback when applying echo effects 2) Smooth transitions when switching between original and processed audio 3) Clear visual indication during audio processing. Deduct 5 points for each operation without feedback, 3 points for laggy performance during audio processing, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 929,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Now I need to create a Party History Quiz module with a backend using SpringBoot + MyBatis Plus, frontend using Vue3+TS, and MySQL as the database. Please help me design the database (remember to include comments), then write the backend and frontend code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the database design comprehensive and well-documented?",
+      "description": "Evaluate whether the database schema includes all necessary tables (users, questions, answers, quiz sessions, user progress), proper relationships (foreign keys), appropriate indexes for performance, and clear field comments. Check if the SQL script is executable and follows MySQL best practices with proper data types, constraints, and normalization. Score 0 if missing core tables, 5 if basic tables exist but lack optimization, 10 if fully optimized with comments and proper relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the SpringBoot + MyBatis Plus backend completely implemented?",
+      "description": "Check whether the backend includes proper layered architecture (controller, service, mapper), complete CRUD operations for all entities, proper exception handling, input validation, and authentication/authorization mechanisms. Verify MyBatis Plus is correctly configured with optimized SQL queries. Deduct 3 points for missing layers, 3 points for incomplete API endpoints, 4 points for missing authentication. Give 10 points if all components are properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Vue3+TS frontend implementation complete with TypeScript types?",
+      "description": "Evaluate if the frontend uses proper TypeScript interfaces/types for all data models, implements component composition with Composition API, includes proper routing setup, state management, and form validation. Check for type safety throughout the codebase without any 'any' types. Deduct 3 points for missing TypeScript interfaces, 3 points for improper component structure, 4 points if not using Vue3 features appropriately. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Party History Quiz functionality fully implemented?",
+      "description": "Check if the quiz system includes question randomization, answer validation, scoring mechanism, progress tracking, and results display. Verify if the quiz supports different question types (multiple choice, true/false, fill-in-the-blank), difficulty levels, and categories of Party history. Deduct 5 points if core quiz logic is missing, 3 points if tracking/progress features are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common abnormal situations (invalid inputs, network failures, database errors, concurrent user access) and provides friendly error prompts or recovery mechanisms. Check for input sanitization, proper logging, and transaction management. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time leaderboard 2. Achievement system 3. Interactive knowledge cards 4. Timed challenges 5. Social sharing of quiz results). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication mechanisms) 2. Function modules unrelated to Party history quiz (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (proper separation of concerns), code reusability, test coverage (unit tests, integration tests), and build process automation (CI/CD configuration). Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (red and gold theme appropriate for Party history, but not overwhelming) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast quiz navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

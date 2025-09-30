@@ -1,0 +1,68 @@
+{
+  "index": 1346,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Implement Amap (AutoNavi) API using Vue 3 to create a 3D map and draw building blocks.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 3 application structure correctly set up?",
+      "description": "Check if the code properly initializes a Vue 3 application with appropriate component architecture. Verify the presence of Vue 3 specific features like Composition API, proper lifecycle hooks, and reactive data management. Score 0 if Vue 3 is not used, 5 if basic implementation exists but with improper structure, and 10 if properly structured with clean component design patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Amap (AutoNavi) API integration complete?",
+      "description": "Assess whether the Amap API is correctly loaded, initialized with valid keys, and properly integrated. Check for error handling in API loading process and key validation. Deduct 5 points if the API key management is insecure, 3 points if version compatibility issues exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the 3D map functionality properly implemented?",
+      "description": "Evaluate if the code correctly initializes a 3D map view with proper view settings (pitch, rotation, zoom levels). Check if the 3D buildings layer is enabled and correctly configured. Score 0 if 3D view is missing, 5 if basic 3D functionality exists but with incorrect parameters, and 10 if fully implemented with optimized 3D rendering settings.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the building block drawing functionality complete?",
+      "description": "Verify if the code includes methods to draw custom building blocks with appropriate geometry (polygons, extrusions), proper height calculations, and styling options. Check if it includes options for custom colors, textures and opacity. Deduct 5 points if custom building geometry lacks precision, 5 points if height calculations are not dynamic or configurable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API loading failures, invalid coordinates, rendering errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic building highlighting on hover 2. Custom building information popups 3. Animation of building creation/modification). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant API initializations or map instances 2. Unnecessary feature loading unrelated to 3D buildings or map functionality 3. Excessive effects that impact map performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating map services/UI components/data handling), component reusability, and performance optimization techniques. Deduct 5 points if global state pollution is found; deduct 5 points if the code lacks proper documentation for API parameters; deduct 5 points if there's no optimization for large building datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the map visualization follows modern design principles: 1) Appropriate map style selection for 3D buildings 2) Clean UI controls for map navigation 3) Professional color scheme for building representation (avoiding visual clutter). Deduct 3 points for cluttered controls, 5 points for poor color contrast between buildings and base map, and 5 points for illegible labels or building information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the map interactions conform to user expectations: 1) Smooth camera transitions during navigation ≤ 500ms 2) Responsive building selection and information display ≤ 100ms 3) Efficient rendering during zoom/pan operations without jank. Deduct 5 points for laggy camera movements, 3 points for delayed building highlighting, and 5 points for freezes during building data updates. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

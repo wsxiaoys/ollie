@@ -1,0 +1,68 @@
+{
+  "index": 87,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. \n\nPlease help me implement the following requirement using code: Create an SVG that depicts binoculars for browsing, searching, and magnifying.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG binoculars structure accurately implemented?",
+      "description": "Review whether the code correctly implements the binoculars structure using SVG elements, including dual circular lenses, central bridge connection, eyepieces, and adjustment mechanism. Score 0 if basic binoculars shape is not recognizable, 5 if only basic circular lenses are implemented, and 10 if complete binoculars structure with all components (lenses, bridge, eyepieces, focusing ring details) is fully rendered.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the browsing, searching, and magnifying functionalities implemented?",
+      "description": "Check whether the code includes interactive browsing (pan/drag), search functionality (target highlighting/scanning animation), and magnification effects (zoom in/out with visual feedback). Deduct 5 points if magnification lacks smooth transition, 3 points if search function has no visual indicators. Two-way interaction between user input and visual response is required. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the SVG optimization and scalability properly designed?",
+      "description": "Evaluate whether the SVG uses efficient path optimization, proper viewBox configuration, and responsive scaling. Check if vector graphics maintain crisp edges at different zoom levels and use appropriate coordinate systems. Deduct 5 points if pixelation occurs during scaling, 3 points if SVG file size exceeds 50KB without justification. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete interaction lifecycle and state management constructed?",
+      "description": "Check whether the code includes complete interaction states such as idle/active/searching/magnifying modes, with proper state transitions and visual feedback. Deduct 5 points if state management is not implemented, 3 points if transition animations are missing or abrupt. Give 10 points if full lifecycle with smooth state transitions is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid SVG parameters, browser compatibility issues, touch/mouse event conflicts, etc.) and provide graceful degradation or recovery mechanisms. Code with strong robustness should effectively handle edge cases and cross-browser compatibility, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic lens reflection effects 2. Dynamic focus adjustment with blur effects 3. Multi-target search with breadcrumb trails 4. Gesture-based controls). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements or duplicate paths 2. Unnecessary JavaScript libraries for simple interactions 3. Over-complex animations that don't serve the core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if core binoculars functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of SVG structure, styling, and interaction logic), proper use of CSS classes vs inline styles, and clean JavaScript architecture. Deduct 5 points if inline styles dominate over CSS classes; deduct 5 points if JavaScript lacks proper event handling or uses deprecated methods; deduct 5 points if SVG structure is not semantic or accessible. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the binoculars design follows realistic proportions and professional aesthetics: 1) Accurate lens-to-body ratio (typically 1:1.2) 2) Consistent color scheme with realistic metallic/plastic textures 3) Proper shadow and highlight placement for 3D effect. Deduct 3 points for each unrealistic proportion, 5 points for inconsistent lighting/shadow direction, and 5 points for color choices that don't reflect real binoculars materials. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactive effects conform to natural binoculars usage: 1) Smooth magnification transitions (300-500ms duration) 2) Realistic focus adjustment with appropriate easing 3) Intuitive gesture mapping (pinch-to-zoom, drag-to-pan). Deduct 5 points for each jarring animation, 3 points for unnatural interaction patterns, and 5 points for poor touch/mouse event handling. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Icons/Logos",
+  "difficulty": "hard"
+}

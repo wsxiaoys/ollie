@@ -1,0 +1,68 @@
+{
+  "index": 724,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and demonstrable. Based on the previous response, please help write a set of sample code including front-end interface (WXML\\WXSS\\JS) and cloud function services to implement online customer service capabilities for a mini program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the customer service interface fully implemented?",
+      "description": "Review whether the WXML/WXSS code creates a professional customer service interface with message input area, message display area, and service status indicators. Score 0 if the core UI components are missing, 5 if basic elements exist but lack proper styling, and 10 if the interface is complete with responsive design and appropriate placeholder states.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time messaging function properly implemented?",
+      "description": "Evaluate the message sending/receiving logic using either WebSocket or cloud database subscription. Check for message typing indicators, read receipts, and proper message formatting. Deduct 5 points if there's no message timestamp display, 3 points if media messages aren't supported, and 3 points if there's no offline message handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are cloud functions correctly configured for customer service operations?",
+      "description": "Check whether cloud functions are properly implemented for message storage, user authentication, and service routing. Evaluate if the cloud functions follow proper security practices and include error handling. Deduct 5 points if there's no rate limiting implementation, 3 points if there's no validation of message content, and 3 points if logs/analytics are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete customer service workflow management system?",
+      "description": "Assess whether the code includes service queue management, automatic/manual service assignment, conversation history persistence, and session state management (active/waiting/closed). Deduct 5 points if there's no priority handling mechanism, 3 points if conversation continuity is broken after app restart, and 5 points if there's no service quality feedback collection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, message delivery failure, service unavailability, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered auto-replies 2. Quick response templates 3. Rich media message support like voice/image/location 4. Customer satisfaction rating system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar functions (e.g., multiple message sending methods) 2. Function modules unrelated to customer service (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations in conversation UI). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/network layers), component reusability, and proper use of mini program lifecycle hooks. Deduct 5 points if global state management is chaotic; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if performance optimizations are missing (e.g., virtual list for long conversations). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent with WeChat's design language 2) Proper use of spacing and layout (following the 8px grid system) 3) Clear visual hierarchy between customer and agent messages. Deduct 3 points for each obvious visual inconsistency, 5 points for poor readability of messages, and 5 points for unintuitive navigation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user expectations: 1) Message sending feedback ≤ 100ms 2) Smooth scrolling and message transitions 3) Clear loading states during operations. Deduct 5 points for laggy message list scrolling, 3 points for missing loading indicators during network operations, and 5 points for jerky transitions between different states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

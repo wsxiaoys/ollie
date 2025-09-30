@@ -1,0 +1,68 @@
+{
+  "index": 1202,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Take care to ensure that the generated code is executable for demonstration purposes. Write a piece of code for a prize wheel game where the wheel contents can be edited and the probability of winning can be modified.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the prize wheel core spinning mechanism properly implemented?",
+      "description": "Check if the code implements a visually accurate rotating wheel with proper physics (deceleration, inertia), smooth animation (60fps minimum), and clear indication of the selected prize. Score 0 if spinning is not implemented, 5 if basic rotation exists but lacks physics, and 10 if the spinning animation is realistic with proper easing functions and stopping mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the prize configuration and probability modification system complete?",
+      "description": "Evaluate whether the code allows full customization of prizes (names, colors, images) and precise probability settings for each slice. The system should maintain mathematical integrity (probabilities sum to 100%) and include validation. Deduct 5 points if only basic prize editing exists without probability control, and 3 points if validation is missing. Award full 10 points if the system includes weighted randomization implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a proper prize selection algorithm that respects configured probabilities?",
+      "description": "Review the randomization algorithm to ensure it accurately respects the configured probabilities. Check for proper weighted random selection rather than uniform distribution, and verify through statistical testing functions. Deduct 5 points if the algorithm shows bias, and 3 points if edge cases (like very low probabilities) aren't handled. Full 10 points requires mathematically sound implementation with verifiable outcomes.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete user interface for wheel configuration and result display?",
+      "description": "Assess whether the code includes intuitive interfaces for prize editing, probability adjustment, and result display. Check for form validation, real-time preview of wheel changes, and clear winner notification. Deduct 5 points if the configuration UI is incomplete, and 3 points if winner display lacks visual/audio feedback. Full 10 points requires a complete configuration panel with instant visual updates to the wheel.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid probability inputs, extremely fast consecutive spins, browser resize events, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Sound effects or haptic feedback, 2. Confetti animation for winners, 3. History of previous spins with statistics, 4. Mobile/touch support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple random algorithms) 2. Function modules unrelated to the prize wheel (e.g., unnecessary side games) 3. Fancy effects that affect performance (e.g., excessive particle animations that slow down the wheel). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating wheel logic/view/configuration), proper event handling, and appropriate use of design patterns. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is high (over 30%); deduct 5 points if browser compatibility is ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the wheel design follows modern UI principles: 1) Harmonious color matching for prize segments 2) Clear typography for prize labels 3) Proportional layout with proper wheel dimensions relative to the container. Deduct 3 points for each accessibility issue (poor contrast, tiny text), 5 points for clashing colors, and 5 points for prizes becoming illegible when spinning. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the spinning animation and user interactions follow natural expectations: 1) Responsive spin button with clear feedback 2) Smooth acceleration/deceleration curves 3) Clear indication when the wheel is active vs. available to spin again. Deduct 5 points for each interaction without feedback, 3 points for jerky animations, and 5 points for confusing states (e.g., unclear if wheel is currently spinning). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

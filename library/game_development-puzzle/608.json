@@ -1,0 +1,68 @@
+{
+  "index": 608,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. ======== ROLE ========\nYou are an experienced code expert. I will provide you with a software development requirement description, and you are required to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code that is fully commented in simple, easy-to-understand language, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, without omitting any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nCreate a color elimination game with an 8x8 grid of colored blocks as the interface. When three or more blocks of the same color form a straight line, they can be eliminated. After elimination, blocks from above will fall to fill the gaps. The game ends when no more blocks can be eliminated.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 8x8 grid interface fully implemented?",
+      "description": "Check if the code correctly implements an 8x8 grid of colored blocks using HTML/CSS/JavaScript. Verify that the grid layout is properly structured with appropriate positioning and spacing. Each block should have a clear visual representation with distinct colors.Score 0 if the grid is not implemented, 5 if the grid is implemented but has layout issues (inconsistent sizing, alignment problems), 10 if the grid is properly implemented with appropriate styling and responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the core elimination logic correctly implemented?",
+      "description": "Assess if the code accurately implements the matching and elimination mechanism for three or more same-colored blocks in straight lines (horizontal or vertical). Check if the algorithm correctly identifies all valid matches on the board after each move and handles multiple eliminations in a single turn.Score 0 if elimination logic is missing, 5 if basic elimination works but with bugs (e.g., not detecting all valid matches, incorrect pattern detection), 10 if elimination logic works flawlessly including handling edge cases.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the gravity/falling mechanism properly implemented?",
+      "description": "Evaluate if blocks correctly fall to fill empty spaces after eliminations. Check if the animation is smooth and the logic ensures blocks fall directly downward to fill the lowest available empty space. Verify that the grid state is correctly updated after falling.Score 0 if falling mechanism is not implemented, 5 if blocks fall but with issues (stuck blocks, incorrect positioning), 10 if the falling mechanism works seamlessly with proper animations and state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game end condition properly implemented?",
+      "description": "Check if the code correctly detects when no more possible eliminations are available and handles the game end appropriately. Verify that the game state is properly managed and the player is notified of the game end with appropriate UI feedback.Score 0 if end condition detection is missing, 5 if basic end detection exists but has flaws (false positives/negatives), 10 if the end condition is properly implemented with appropriate user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, rapid clicking, browser resizing, etc.) and provide friendly error handling or recovery mechanisms. Check if the game state remains consistent during unexpected interactions.Score 0 if no exception handling exists, 5 if basic error handling is implemented but edge cases are not covered, 10 if comprehensive error handling is implemented with graceful recovery mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special power-ups for larger matches 2. Score multipliers or combos 3. Sound effects and visual feedback 4. Difficulty levels or time challenges).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to check for matches) 2. Function modules unrelated to the elimination game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, naming conventions, and build process. Check for proper event handling and state management patterns.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between game logic and UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for blocks and background 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clear visual feedback for selections and eliminations 4) Readable score display and game information.Deduct 3 points for each crowded visual element, 5 points for clashing colors that affect gameplay, and 5 points for confusing visual feedback during matches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions conform to human perception characteristics: 1) Block selection feedback ≤ 100ms 2) Elimination and falling animations between 300-500ms 3) Clear visual guidance for possible matches. Check if the game feels responsive and satisfying to play.Deduct 5 points for each interaction without feedback, 3 points for jerky or inconsistent animations, and 5 points for confusing or delayed response to user input. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1723,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. I indeed use a webpage to implement consistent software categorization and image display. Various downloaded software is stored in the D:\\Download folder. Please write code to implement this, ensuring the webpage is aesthetically pleasing and elegant.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "File system scanning and categorization implementation",
+      "description": "Review whether the code properly implements a file system scanner that can traverse the D:\\Download directory, identify file types accurately, and categorize them based on extensions or content signatures. Check if it handles various edge cases like permissions, locked files, and large directories.0 points if no file scanning functionality exists, 5 points for basic extension-based categorization, 10 points for comprehensive detection including content signature analysis and proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "User interface design and visual categorization system",
+      "description": "Evaluate whether the UI implements a clear visual categorization system with consistent visual language for different software types. Check if the interface follows a grid layout, employs appropriate thumbnails/icons, and provides visual cues for software categories.Deduct 5 points for inconsistent visual language across categories, 3 points for poor information hierarchy, and 5 points for lack of visual differentiation between categories. 10 points for a comprehensive, well-designed categorization system.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Image rendering and thumbnail generation",
+      "description": "Assess if the code properly generates and caches thumbnails for software installers, optimizes image loading, and implements lazy loading for better performance. Check if appropriate default icons are used when thumbnails cannot be extracted.Deduct 5 points if no thumbnail generation exists, 3 points if thumbnails are not cached for performance, 2 points if image quality is poor. 10 points for optimal thumbnail extraction with fallback mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Search and filter functionality",
+      "description": "Check if the implementation includes robust search capabilities with real-time filtering, multiple filter criteria (size, date, type, name), and maintains usability during search operations.0 points if search functionality is missing, 5 points for basic text search only, 10 points for comprehensive search with multiple filters, highlighting, and keyboard shortcuts.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing files, access denied errors, corrupted images, network interruptions when fetching metadata) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-categorization using AI 2. Detect duplicates across categories 3. Visual history timeline of downloads 4. Integration with software update checks).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant file scanning algorithms 2. Unnecessary data processing unrelated to the core functionality 3. Fancy effects that affect load time and performance (e.g., excessive animations).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file system access/UI rendering/data processing), error handling coverage, and appropriate use of web technologies.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no build process or module system is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times).Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for software selection and category navigation.Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast category switching, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "medium"
+}

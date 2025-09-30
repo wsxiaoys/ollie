@@ -1,0 +1,68 @@
+{
+  "index": 28,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Please help me implement the following requirement using SVG code: create a person falling off a cliff with a parachute.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG structure properly implemented?",
+      "description": "Check whether the code includes proper SVG namespace, viewBox setting, and organized element grouping. The SVG should have appropriate dimensions and coordinate system. Deduct 3 points if namespace is missing, 3 points for improper viewBox setup, and 4 points for lack of logical grouping (<g> elements). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cliff scene visually represented?",
+      "description": "Evaluate whether the cliff is properly designed with clear visual distinction from the sky/background. The cliff should have some terrain details (like rocks, edges, texture). Give 3 points for basic shape representation, 7 points for a detailed cliff with texture, and 10 points for a visually compelling cliff with proper perspective. Deduct points if the cliff appears flat or poorly integrated into the scene.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the human figure properly designed and proportioned?",
+      "description": "Review the implementation of the human figure, checking for proper body proportions, limb articulation, and posture appropriate for falling. Score 3 points for a basic stick figure, 7 points for a properly proportioned body with distinguishable limbs, and 10 points for a detailed human figure with appropriate falling posture and visible facial features. Deduct points for anatomical errors or unnatural posing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the parachute properly implemented with realistic behavior?",
+      "description": "Check if the parachute is properly designed with canopy, strings connecting to the person, and appropriate deployment state. The parachute should appear to be catching air and slowing the descent. Score 3 points for basic shape, 7 points for proper structure with strings, and 10 points if the parachute shows realistic inflation and proper connection to the person. Deduct points if physics of deployment appears incorrect.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code is well-structured, uses proper SVG attributes, and avoids redundant or conflicting definitions. Good practices include descriptive IDs, clean path definitions, and appropriate use of SVG elements. Deduct 3 points for each significant error like invalid attributes or conflicting definitions. Give 10 points for clean, maintainable, and error-free code.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation of falling/parachute deployment 2. Environmental elements like clouds or birds 3. Interactive elements responding to user input). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate path definitions or elements serving the same purpose 2. Unnecessary complexity in shapes that could be simplified 3. Elements that distract from the core scene (falling person with parachute). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core elements are obscured by redundant visuals.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modularity (such as using <defs> for reusable elements), CSS organization (external or embedded styles), and SVG optimization techniques. Deduct 5 points if the code uses absolute positioning everywhere instead of relative positioning; deduct 5 points if there's excessive hard-coding instead of parametrization; deduct 5 points if optimization techniques like path simplification are ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual implementation meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color palette appropriate for the scene 2) Proper perspective and scaling 3) Good use of layers and depth. Deduct 3 points for each visual inconsistency, 5 points for inappropriate color choices, and 5 points for poor visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is there animation or potential for animation?",
+      "description": "Judge whether the scene includes or is prepared for animation: 1) SMIL animations or CSS/JavaScript hooks for animating the falling motion 2) Parachute deployment sequence 3) Environmental animations like clouds moving. Deduct 5 points if no animation or animation hooks are present, 3 points if animations are jerky or unrealistic, and 5 points if animation timing is inappropriate for the scene. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

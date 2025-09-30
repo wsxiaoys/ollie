@@ -1,0 +1,68 @@
+{
+  "index": 1596,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. How can AI be used to automatically create webpages?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the solution provide a comprehensive explanation of AI webpage generation approaches?",
+      "description": "Evaluate whether the response thoroughly explains different AI approaches for webpage generation (e.g., GPT models, GAN-based solutions, template-based AI systems, automated layout engines). Score 0 if only a single approach is mentioned, 5 if multiple approaches are covered but lack technical depth, and 10 if the explanation includes multiple well-explained methodologies with their respective strengths and limitations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is there functioning code for an AI webpage generator implementation?",
+      "description": "Check if the code provided can actually generate HTML/CSS webpages. The solution should include either: 1) integration with AI APIs (like OpenAI), 2) a local ML model implementation, or 3) a hybrid approach. Test if the code executes without errors and produces valid HTML output. Deduct 5 points if the code requires significant modifications to run, deduct all 10 points if the code is fundamentally flawed or non-executable.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the solution handle user requirements and content processing?",
+      "description": "Assess if the implementation includes parsing and understanding user requirements (e.g., converting natural language descriptions to webpage specifications). The code should extract key elements like layout preferences, color schemes, and content structure from user inputs. Deduct 5 points if the solution lacks requirement parsing mechanisms, deduct 3 points if it fails to handle ambiguous user inputs. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a mechanism for customization and refinement of AI-generated webpages?",
+      "description": "Evaluate whether the solution includes tools for users to refine the AI-generated content (such as feedback loops, parameter adjustments, or iterative generation). Check if the implementation allows for specification of style guides or brand requirements. Deduct 5 points if refinement is manual only, deduct 3 points if the customization options are too limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed user inputs, API failures, resource limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview of generated pages 2. Multi-modal input processing (text, images, voice) 3. Accessibility compliance checking for generated pages). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple HTML generators with overlapping capabilities) 2. Function modules unrelated to webpage generation (e.g., unnecessary analytics tools) 3. Resource-intensive features that affect performance (e.g., excessive API calls or computations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating AI logic/webpage rendering/user interface layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the solution consider webpage quality and standards compliance?",
+      "description": "Evaluate whether the generated webpages follow modern web standards: 1) Valid HTML/CSS that passes W3C validation 2) Responsive design principles for multi-device support 3) Semantic HTML structure for accessibility. Deduct 3 points for non-validating code, 5 points for non-responsive layouts, and 5 points for poor semantic structure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Does the solution address performance and scalability concerns?",
+      "description": "Judge whether the implementation considers performance optimization: 1) Generation time for pages ≤ 30 seconds 2) Reasonable resource consumption 3) Capability to handle multiple concurrent requests. Deduct 5 points for slow generation times, 3 points for excessive resource usage, and 5 points for lack of concurrent request handling. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

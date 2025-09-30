@@ -1,0 +1,68 @@
+{
+  "index": 230,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and expert responses. Be sure to make the code you generate executable for demonstration. How to use Tailwind CSS 4 in Electron.js with Vite, without using other frameworks such as React.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Electron.js + Vite integration properly configured?",
+      "description": "Check if the code includes proper configuration for Electron.js with Vite, including correct entry points, build scripts, and development server setup. Verify that main and renderer processes are correctly separated and communicate properly. Score 0 if basic integration is missing, 5 if it works but with suboptimal configuration, and 10 if fully optimized with proper HMR support.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Tailwind CSS 4 correctly installed and configured?",
+      "description": "Evaluate if Tailwind CSS 4 is correctly installed with proper postcss configuration. Check for presence of tailwind.config.js with appropriate content paths targeting Electron's renderer process files. Verify that the Tailwind directives (@tailwind base, components, utilities) are properly included. Deduct 5 points if configuration is incomplete, 3 points if customization options are missing, and 3 points if purging/content configuration is incorrect. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the build process properly set up without framework dependencies?",
+      "description": "Check if the build process avoids React, Vue, or other frameworks as specified. Verify that the solution uses vanilla JS or minimal libraries that don't qualify as frameworks. Ensure build scripts in package.json correctly handle both development and production builds for Electron without framework-specific configurations. Deduct 10 points if any framework is used, 5 points if build process doesn't handle both dev and prod environments.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a working demonstration of Tailwind CSS usage in the Electron app?",
+      "description": "Review whether the code includes practical examples of Tailwind CSS classes being used in HTML elements within the Electron renderer process. Check for demonstration of responsive design, dark mode support, and at least one custom component using Tailwind's @apply directive. Score 0 if no examples provided, 5 if basic examples only, 10 if comprehensive examples showing Tailwind CSS 4's new features.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing files, CSS parsing errors, electron process crashes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Hot reload with CSS changes preservation 2. Custom Tailwind plugins specific for desktop apps 3. Native OS integration with Tailwind-styled components). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant configuration files or duplicate Tailwind setups 2. Unnecessary dependencies that could bloat the Electron app 3. Overly complex build steps that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating main/renderer processes, CSS modules, and utility functions), file organization, and build process automation. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Development Configuration",
+  "difficulty": "medium"
+}

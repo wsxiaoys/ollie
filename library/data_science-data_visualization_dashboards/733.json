@@ -1,0 +1,68 @@
+{
+  "index": 733,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Write a JavaScript module for displaying DLIS imaging log curves on a web page, with capabilities for panning, zooming, and other operations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the DLIS file parsing implementation complete?",
+      "description": "Check if the code properly implements DLIS (Digital Log Interchange Standard) file parsing functionality, including handling of frame data, channel information, and curve data extraction. Score 0 if no DLIS parsing is implemented, 5 if only basic channel extraction is handled, and 10 if full DLIS standard compliance (including handling of complex frame structures, multi-frame data, and attribute metadata) is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the imaging log curves visualization components implemented correctly?",
+      "description": "Evaluate if the visualization accurately renders different curve types (density logs, resistivity logs, sonic logs, etc.) with appropriate scales, units, and visual representation. The implementation should include proper axis labeling, depth tracking, curve coloring based on log type, and handling of missing/null values in the data. Deduct 3 points if curve styling is incorrect, 5 points if depth tracking is inaccurate, and 3 points if null values aren't handled properly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is interactive panning functionality properly implemented?",
+      "description": "Assess whether smooth panning of log curves is implemented with proper event handling (mouse drag, touch swipe), boundary constraints, and performance optimization. The implementation should maintain context during panning and handle both vertical (depth) and horizontal (time/value) panning. Deduct 5 points if panning is jerky or has performance issues with large datasets, and 3 points if boundary constraints are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is interactive zooming functionality properly implemented?",
+      "description": "Check if zooming functionality includes both discrete zoom levels and continuous zooming, preserves the point of interest during zoom operations, and handles appropriate resampling/redrawing of curves at different zoom levels. The implementation should support mouse wheel, pinch gesture, and button-based zoom controls. Deduct 5 points if zooming causes visual artifacts, 3 points if zoom center point is incorrect, and 3 points if data resampling is inefficient. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed DLIS data, browser compatibility issues, memory constraints with large logs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time depth correlation between multiple logs 2. Interactive curve filtering/highlighting 3. Log curve statistical analysis overlays). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization functions (e.g., multiple rendering engines coexisting) 2. Function modules unrelated to log visualization (e.g., unnecessary 3D effects) 3. Fancy effects that affect performance (e.g., excessive animations or rendering filters). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/interaction layers), unit test coverage, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization exists for handling large log datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional domain standards?",
+      "description": "Evaluate whether the visualization follows geoscience/petroleum engineering visualization standards: 1) Industry-standard curve color coding 2) Proper depth scale representation 3) Professional grid and annotation system. Deduct 3 points for non-standard log curve representation, 5 points for inaccurate depth visualization, and 5 points for poor data value readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the interactive performance meets professional requirements: 1) Rendering updates within 60ms for smooth scrolling 2) Data loading/processing feedback for large logs 3) Responsive design across different screen sizes. Deduct 5 points for frame drops during scrolling/zooming, 3 points for inefficient canvas/SVG rendering techniques, and 5 points for poor handling of large datasets (>10MB). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "hard"
+}

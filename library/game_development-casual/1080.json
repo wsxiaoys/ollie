@@ -1,0 +1,68 @@
+{
+  "index": 1080,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Help me write a program for the card game \"Fight the Landlord\" (Dou Dizhu).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the card game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the 'Fight the Landlord' game rules including card ranking (3/4/5/.../Q/K/A/2/Jokers), valid combinations (singles, pairs, triplets, straights, etc.), and special hands (rockets, bombs). Score 0 if the core game logic is missing, 5 if only basic card play mechanics are implemented, and 10 if all official rules including landlord identification and bonus points are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the player turn system properly implemented?",
+      "description": "Check if the code correctly handles the turn-based gameplay with 3 players (1 landlord vs 2 farmers), proper turn rotation, pass/play options, and combination validation against the previous play. Evaluate if the code prevents out-of-turn plays and handles the winning condition (first player to play all cards). Deduct 5 points if turn validation is missing, 3 points if combination comparison is flawed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the card dealing and landlord selection process implemented?",
+      "description": "Evaluate whether the code includes random card shuffling and distribution (17 cards to each player with 3 landlord cards), bidding process for determining the landlord, and proper handling of the landlord receiving the extra cards. Check if the distribution is truly random and if the landlord selection follows standard rules. Deduct 5 points if the bidding system is missing, 3 points if the card distribution is not random. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the scoring mechanism and game state management implemented?",
+      "description": "Check whether the code tracks game points based on the standard multiplier system (base points × factors like bombs, rockets, spring, etc.), maintains game history, and handles multiple rounds. Evaluate if the code properly determines winners and calculates point transfers between players. Deduct 5 points if multipliers are not handled, 3 points if multi-round functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid card plays, disconnection during gameplay, repeated card selections, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI players with different difficulty levels 2. Card play suggestion feature 3. Card combination auto-sorting 4. Game replay functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple card validation logics) 2. Function modules unrelated to the card game (e.g., a built-in chat system unrelated to gameplay) 3. Fancy effects that affect performance (e.g., excessive card animations that slow gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/card management layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional card visualization (clear suits, ranks, and special effects for landlord cards). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic card layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Card selection feedback delay ≤ 100ms 2) Card play animations controlled between 300-500ms 3) Clear visual indication of current player turn and valid play options. Deduct 5 points for each operation without feedback, 3 points for laggy card animations during fast plays, and 5 points for unclear turn indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

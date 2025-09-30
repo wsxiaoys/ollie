@@ -1,0 +1,68 @@
+{
+  "index": 1249,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Create a small program code that combines Heavenly Stems and Earthly Branches, the Chinese Zodiac, and the 64 hexagrams of I Ching for auspicious time analysis.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Heavenly Stems and Earthly Branches calculation system accurately implemented?",
+      "description": "Review whether the code correctly implements the 60-year cycle calculation system (天干地支) with accurate mapping of the 10 Heavenly Stems and 12 Earthly Branches. Check if the conversion from Gregorian calendar to traditional Chinese calendar includes proper leap year handling and solar term calculations. Score 0 if basic stem-branch pairing is wrong, 5 if only basic conversion is implemented without solar terms, and 10 if complete with accurate astronomical calculations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Chinese Zodiac integration and compatibility analysis properly implemented?",
+      "description": "Evaluate whether the 12 zodiac animals (生肖) are correctly mapped to birth years and integrated with compatibility analysis (相冲相合). Check if the code includes zodiac personality traits, lucky elements (五行), and inter-zodiac relationship calculations. Deduct 5 points if zodiac-year mapping is incorrect, 3 points if compatibility logic is missing. Full score requires complete zodiac interaction matrix with Five Elements theory integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the 64 I Ching hexagrams correctly implemented with divination logic?",
+      "description": "Check whether all 64 hexagrams (六十四卦) are accurately represented with correct trigram combinations, names, and interpretations. Evaluate if the divination algorithm includes proper randomization methods (coin toss, yarrow stalk simulation) and hexagram transformation logic. Deduct 5 points if hexagram structures are wrong, 5 points if divination randomization is pseudo or biased. Requires complete hexagram database with changing lines functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the auspicious time analysis algorithm comprehensive and culturally accurate?",
+      "description": "Assess whether the time analysis combines all three systems (stems-branches, zodiac, I Ching) into coherent auspicious timing recommendations. Check if the algorithm considers traditional factors like conflict avoidance (冲煞), favorable directions (吉方), and time-specific activities. Deduct 5 points if integration logic is superficial, 3 points if cultural context is inaccurate. Full score requires sophisticated multi-factor analysis with seasonal adjustments.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as invalid dates, leap years, timezone conversions, and boundary conditions in calendar calculations. Code should gracefully handle user input errors and provide meaningful error messages for invalid queries. Give 10 points for comprehensive error handling, 5 points for basic exception management, and 0 points if crashes occur with invalid inputs.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance cultural authenticity?",
+      "description": "Check for creative features that add cultural depth such as: 1) Interactive hexagram casting animations 2) Personalized zodiac compatibility reports 3) Historical event correlation with stem-branch cycles 4) Multi-language support for traditional terms. Add 3 points for each well-implemented cultural feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly examine three types of redundancy: 1) Duplicate calendar conversion functions 2) Unrelated fortune-telling elements (Western astrology, tarot) 3) Excessive decorative animations that obscure cultural content. Deduct 3 points for each redundancy found, and directly deduct 10 points if core traditional systems are compromised by irrelevant features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular separation of calendar systems, zodiac logic, and I Ching components. Check for proper data structures, algorithm efficiency, and maintainable code organization. Deduct 5 points for monolithic code structure; deduct 5 points if calculation algorithms are inefficient; deduct 5 points if no input validation exists. Full score requires clean architecture with separated concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design respect traditional Chinese aesthetics?",
+      "description": "Evaluate whether the visual design incorporates traditional Chinese design elements appropriately: 1) Color harmony using traditional palettes (red, gold, jade green) 2) Typography respecting Chinese character spacing and hierarchy 3) Layout following traditional symmetry principles. Deduct 3 points for culturally inappropriate color choices, 5 points for poor Chinese text rendering, and 5 points for layout that conflicts with traditional aesthetics. Full score requires authentic cultural visual representation.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction intuitive and culturally contextual?",
+      "description": "Judge whether interactions follow cultural expectations: 1) Intuitive date selection with lunar calendar support 2) Clear hexagram casting process with appropriate ritual feel 3) Results presentation that respects traditional consultation format. Deduct 5 points for confusing navigation between different systems, 3 points for rushed transitions that break cultural immersion, and 5 points for results that lack traditional interpretive context. Full score requires seamless cultural user experience.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Divination",
+  "difficulty": "hard"
+}

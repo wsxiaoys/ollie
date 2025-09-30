@@ -1,0 +1,68 @@
+{
+  "index": 1601,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Write a demo of an electrocardiogram (ECG) drawing using uniapp with fixed data.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the ECG waveform rendering system correctly implemented?",
+      "description": "Review whether the code accurately implements the ECG waveform visualization using canvas or other suitable rendering approaches in uniapp. Check if the waveform follows standard ECG characteristics (P wave, QRS complex, T wave). Score 0 if there's no waveform rendering, 5 if basic lines are drawn but don't resemble an ECG pattern, and 10 if the waveform accurately represents cardiac electrical activity with appropriate amplitudes and intervals.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data structure for ECG representation properly designed?",
+      "description": "Evaluate whether the code includes an appropriate data structure to store and manage the fixed ECG data. Check if the data format is suitable for efficient rendering (time-series format, appropriate sampling rate). Deduct 5 points if the data structure is overly complex or inefficient, 3 points if data normalization is missing. Give 10 points if the data structure is optimized for ECG visualization with clear separation of data and rendering logic.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the real-time scrolling/update mechanism implemented?",
+      "description": "Check if the ECG visualization includes smooth scrolling effect that mimics a real ECG machine. Verify that the rendering loop maintains consistent frame rates without stuttering. Deduct 5 points if the animation is jerky, 3 points if the scroll speed isn't configurable. The full score is 10 points for implementations with smooth 60fps scrolling and proper timing controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are ECG visualization parameters configurable and appropriately set?",
+      "description": "Assess whether the code allows configuration of key ECG parameters such as paper speed (e.g., 25mm/s), amplitude (e.g., 10mm/mV), grid sizing, and waveform colors. Check if default values align with clinical standards. Deduct 3 points for each missing essential parameter configuration. Award 10 points if all standard ECG display parameters are configurable with sensible defaults.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as different screen sizes, orientation changes, unexpected data values, etc.) and provide graceful degradation or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Heart rate calculation and display 2. Waveform zooming/panning capabilities 3. Multiple lead visualization options 4. Abnormality detection visualization). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar rendering functions 2. Function modules unrelated to ECG visualization (e.g., unnecessary UI elements) 3. Fancy effects that affect performance (e.g., excessive animations or filters). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating data handling, rendering, and UI components), component reusability within uniapp framework, and code organization. Deduct 5 points if global state pollution is found or proper uni-app practices aren't followed; deduct 5 points if code duplication rate is high (over 30%); deduct 5 points if performance optimization for mobile devices is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional medical visualization standards?",
+      "description": "Evaluate whether the visualization follows clinical ECG display standards: 1) Appropriate grid system (1mm small squares, 5mm large squares) 2) Professional color scheme (usually red/black waveform on light background) 3) Proper scaling and proportions matching physical ECG paper. Deduct 3 points for inaccurate grid representation, 5 points for non-standard colors making interpretation difficult, and 5 points for incorrect scaling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the cross-platform compatibility ensured within uniapp?",
+      "description": "Judge whether the implementation properly leverages uniapp's cross-platform capabilities: 1) Uses compatible canvas APIs 2) Responsive design for different device sizes 3) Considers performance implications on lower-end devices. Deduct 4 points if the implementation only works on certain platforms, 3 points for significant performance differences between platforms, and 3 points for UI inconsistencies across devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

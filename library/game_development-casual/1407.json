@@ -1,0 +1,68 @@
+{
+  "index": 1407,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code whenever possible. Design a Snake game using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core snake game mechanics correctly implemented?",
+      "description": "Review the code for accurate implementation of basic game mechanics: snake movement in four directions, food spawning at random positions, and collision detection (snake-food, snake-wall, snake-self). Score 0 if core mechanics are missing, 5 if only basic movement exists, and 10 if all standard mechanics are properly implemented including speed adjustment as the snake grows.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game loop and user input handling properly designed?",
+      "description": "Examine the game's main loop structure for proper timing (using requestAnimationFrame or setInterval with appropriate intervals), and check input handling for responsiveness and prevention of illegal moves (like immediate reversal). Deduct 3 points for frame rate issues, 3 points for laggy input response, and 5 points if illegal moves are possible. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management complete?",
+      "description": "Verify if the code includes proper game state management (start, play, pause, game over) with appropriate transitions between states. Check for score tracking, high score persistence (localStorage), and game reset functionality. Deduct 3 points if any state is missing, 3 points without score persistence, 2 points if game reset requires page reload. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the HTML5 Canvas or DOM rendering optimized?",
+      "description": "Evaluate the rendering approach (Canvas or DOM elements) for efficiency. For Canvas, check if drawing operations are minimized and if the context is properly managed. For DOM, check if element creation/destruction is minimized. Deduct 5 points for unnecessary re-renders, 3 points for unoptimized drawing calls, and 3 points for lack of appropriate browser compatibility. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input sequences, browser tab switching, window resizing, etc.) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Different types of food with special effects 2. Obstacles or changing map layouts 3. Power-ups or special abilities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle the same input) 2. Function modules unrelated to the Snake game 3. Fancy effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of game logic, rendering, and input handling), code reusability, and maintainability. Deduct 5 points if game logic is tightly coupled with rendering; deduct 5 points if the code has high duplication rate; deduct 3 points if variable/function naming is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game design follows modern design principles: 1) Consistent visual style with appropriate color scheme 2) Clear game area boundaries and readable score display 3) Appropriate sizing of game elements for playability. Deduct 3 points for unclear game boundaries, 3 points for poor contrast making elements hard to see, 4 points for inconsistent sizing of snake segments or food. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game responds well to user input: 1) Immediate visual feedback on key presses 2) Smooth snake movement without jitter 3) Clear visual cues for game events (eating food, game over). Deduct 4 points for delayed movement response, 3 points for choppy animation, 3 points for lack of visual feedback on important game events. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

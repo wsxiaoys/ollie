@@ -1,0 +1,68 @@
+{
+  "index": 1741,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure the code you generate is executable. Our company has 10 systems, and we now need to create a large preview page, similar to a navigation homepage, where all systems are placed together. Through accessing a domain address, with automatically filled username and password, customers can easily click to see a demonstration page. Please develop a design that is visually appealing and impressive.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the navigation homepage layout well-designed?",
+      "description": "Evaluate the layout structure for the 10 system previews. Check if it uses responsive grid design, appropriate spacing, and visual hierarchy. The layout should maintain consistency across different screen sizes. Award 10 points for a professional grid system with breakpoints for multiple devices; 5 points if only basic layout is implemented without responsiveness; 0 points if systems are placed randomly without proper structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automatic authentication mechanism properly implemented?",
+      "description": "Verify the implementation of automatic username/password filling. Check if it uses secure methods (like JWT, OAuth, or secure cookies) rather than hardcoded credentials. Examine if the authentication is seamless for customers while maintaining security standards. Award 10 points for secure, seamless implementation; deduct 5 points if credentials are exposed in client-side code; 0 points if authentication doesn't work.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the system preview cards/tiles designed professionally?",
+      "description": "Review the visual design of each system preview card/tile. Check for consistent styling, appropriate information hierarchy, system logos/icons, and clear call-to-action buttons. Each preview should give users a clear understanding of the system's purpose. Award 10 points for professionally designed cards with all necessary elements; 5 points for basic implementation; deduct points for inconsistent design across cards.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the single sign-on (SSO) mechanism for accessing multiple systems implemented?",
+      "description": "Examine how the solution handles authentication across the 10 different systems. Check if it implements proper SSO functionality to prevent users from having to log in multiple times. Verify if session management and token passing between systems are handled securely. Award 10 points for a complete SSO implementation; 5 points if only basic inter-system authentication exists; 0 points if users must authenticate separately for each system.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as authentication failures, network errors, system unavailability, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive system previews/thumbnails 2. Custom theme selector for the navigation interface 3. Usage statistics dashboard for each system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication methods coexisting) 2. Function modules unrelated to navigation/preview (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., heavy animations that slow page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating authentication/UI/navigation logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

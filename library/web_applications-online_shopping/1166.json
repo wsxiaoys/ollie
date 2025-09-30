@@ -1,0 +1,68 @@
+{
+  "index": 1166,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code in your demonstrations whenever possible. How can one create a shopping app in a short time that aggregates prices and size information from major shopping websites to help users find the best purchasing channels?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the price aggregation system properly implemented?",
+      "description": "Review whether the code implements efficient web scraping or API integration for major shopping websites. Check for proper handling of different website structures, rate limiting, and data normalization. Score 0 if no aggregation functionality exists, 5 if only basic scraping is implemented without error handling, and 10 if a comprehensive solution with multiple source support is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the size information collection and standardization implemented correctly?",
+      "description": "Evaluate how the code extracts and normalizes size information across different retailers (e.g., converting between US/EU/UK size systems). Check for a comprehensive size mapping database and conversion logic. Deduct 5 points if size standardization is missing, 3 points if the system only handles a limited set of size formats. Full score requires handling of apparel, footwear, and other product category size variations.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the product comparison functionality complete?",
+      "description": "Check whether the app includes features to compare prices, shipping costs, delivery times, and seller ratings across platforms. The system should sort or filter products based on user preferences. Deduct 5 points if only basic price comparison exists without additional factors, 3 points if comparison lacks visual representation. Full implementation should include side-by-side comparison with highlighting of the best options.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a functional user preference and alert system?",
+      "description": "Assess whether the code implements user preferences storage, price drop alerts, and personalized recommendations. The system should allow users to set target prices and receive notifications. Deduct 5 points if no persistent storage is implemented, 3 points if alerts are missing. Give 10 points if the system includes machine learning for predictive price analysis and smart alerts.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as website structure changes, API failures, network interruptions, etc.) and provide graceful fallbacks or recovery mechanisms. Code with strong robustness should include retry mechanisms, cache systems, and alternate data sources. Give 10 points for comprehensive error handling, 5 points for basic exception handling, and 0 points if critical errors are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR integration for trying products virtually 2. Price history graphs with predictive analytics 3. Community-based reviews aggregation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple price sorting algorithms) 2. Function modules unrelated to shopping (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations on product cards). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data acquisition/processing/presentation layers), API abstraction for different shopping platforms, and caching strategy. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if security measures for user data are inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic product grid layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Product loading and filtering response ≤ 300ms 2) Smooth infinite scrolling without janky performance 3) Clear visual feedback for price comparison selections. Deduct 5 points for each laggy interaction, 3 points for missing loading states during data fetching, and 5 points for unintuitive navigation between product categories. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

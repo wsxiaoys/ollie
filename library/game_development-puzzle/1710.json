@@ -1,0 +1,68 @@
+{
+  "index": 1710,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Referring to https://blog.csdn.net/liuyinghui523/article/details/111638194?ops_request_misc=&request_id=&biz_id=102&utm_term=%E8%BF%9E%E8%BF%9E%E7%9C%8B%E6%B6%88%E6%B6%88%E4%B9%90%E7%9A%84%E7%AE%97%E6%B3%95&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-111638194.142^v102^control&spm=1018.2226.3001.4187, develop a Lianliankan (matching pairs) elimination algorithm with optimal path recommendation, and create a small Lianliankan puzzle game using Flutter.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Lianliankan elimination algorithm correctly implemented?",
+      "description": "Check if the algorithm can accurately determine whether two tiles can be connected with at most two turns. The implementation should include proper validation of matching pairs, path-finding logic, and boundary checks. Score 0 if the core algorithm is missing, 5 if basic matching works but has edge case issues, 10 if the algorithm is complete and handles all scenarios correctly.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the optimal path recommendation feature properly implemented?",
+      "description": "Evaluate whether the code includes an algorithm to find and highlight the shortest connecting path between two matching tiles. Check if it considers all possible paths and selects the optimal one with minimum turns. Score 0 if path recommendation is missing, 5 if basic path finding exists but isn't always optimal, 10 if the recommendation system consistently finds the best path.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game board generation and shuffling mechanism effectively designed?",
+      "description": "Review the algorithm for generating the game board with guaranteed solvable layouts. Check if the code ensures that all tiles have possible matches and includes a proper shuffling mechanism when no matches are available. Score 0 if board generation is missing or broken, 5 if basic board generation exists but may create unsolvable states, 10 if the system guarantees solvable boards and handles reshuffling appropriately.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Flutter UI implementation complete for the Lianliankan game?",
+      "description": "Check if the Flutter implementation includes all necessary UI components: game board with tiles, animation for selection and matching, score display, timer, and game control buttons. Score 0 if the Flutter implementation is missing, 5 if basic UI exists but lacks essential game elements, 10 if the UI is complete with all necessary components for a fully functional game.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid selections, edge cases in path finding, premature game termination) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Different difficulty levels 2. Custom themes or tile designs 3. Hint system with cooldown 4. Special power-ups or game modes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple path-finding algorithms without clear purpose) 2. Function modules unrelated to Lianliankan (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive animations slowing down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/state management layers), widget composition, state management approach, and code organization. Deduct 5 points if global state pollution is found or Flutter best practices aren't followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between UI and game logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography (readable font sizes, appropriate contrast). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for poorly aligned or inconsistent UI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions conform to human perception characteristics: 1) Responsive tile selection feedback ≤ 100ms 2) Smooth matching animations with appropriate duration (300-500ms) 3) Clear visual indication of successful matches and possible paths. Deduct 5 points for each operation without feedback, 3 points for laggy animations during gameplay, and 5 points for confusing or unclear game state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

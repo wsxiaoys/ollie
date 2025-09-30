@@ -1,0 +1,68 @@
+{
+  "index": 326,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration. Create a web game where Chinese characters appear on the webpage, and children read these characters aloud. The game should determine if the recording is successful, showing a checkmark when successful, and then verify if the child's pronunciation matches the Chinese character. If correct, the child earns points.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Chinese character display and pronunciation verification system fully implemented?",
+      "description": "Review whether the code accurately implements Chinese character display logic, including character selection algorithms, pronunciation standard comparison, and scoring mechanisms. Check if it supports multiple pronunciation standards (Mandarin/Pinyin) and handles polyphonic characters correctly. Score 0 if core pronunciation verification is not implemented, 5 if only basic character display is available, and 10 if complete pronunciation matching with accuracy scoring is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio recording and processing functionality properly implemented?",
+      "description": "Check whether the Web Audio API implementation includes proper microphone permission handling, real-time audio capture, noise reduction, and audio format conversion. Evaluate if the recording quality meets speech recognition requirements (sample rate ≥16kHz, bit depth ≥16bit). Deduct 5 points if recording permission errors are not handled, and 3 points if audio preprocessing is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the speech recognition and pronunciation accuracy assessment system designed?",
+      "description": "Evaluate whether the speech recognition uses reliable APIs (such as Web Speech API or third-party services) and implements pronunciation accuracy scoring algorithms. Check if it can distinguish similar pronunciations and provide detailed feedback on tone accuracy. Deduct 5 points if pronunciation accuracy is below 80% for standard pronunciation, and 3 points if tone recognition is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete game progression and scoring system constructed?",
+      "description": "Check whether the code includes complete game flow management: character progression logic, point accumulation system, difficulty level adjustment, and progress saving. Evaluate if it provides learning analytics and performance tracking for children. Deduct 5 points if progress persistence is not implemented, and 3 points if difficulty adaptation mechanism is missing. Give 10 points if fully implemented with comprehensive learning metrics.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone access denial, network interruption, browser compatibility issues, audio processing failures, etc.) and provide child-friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Real-time pronunciation waveform visualization 2. Gamified character collection system 3. Adaptive difficulty based on child's performance 4. Parent dashboard with learning progress). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing pipelines coexisting) 2. Function modules unrelated to language learning (e.g., built-in games unrelated to pronunciation) 3. Overly complex animations that may distract children from learning. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core learning functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/character management/UI layers), error handling coverage, and performance optimization. Deduct 5 points if memory leaks are found in audio processing or inefficient DOM manipulation; deduct 5 points if the code structure lacks clear separation of concerns; deduct 5 points if no performance monitoring for real-time audio processing is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet child-friendly and accessibility standards?",
+      "description": "Evaluate whether the design is suitable for children: 1) High contrast colors and large, clear Chinese characters (font size ≥ 24px) 2) Intuitive visual feedback with engaging animations 3) Simple navigation suitable for young users 4) Proper color psychology for learning environments. Deduct 3 points for each hard-to-read text element, 5 points for overwhelming visual complexity, and 5 points for poor accessibility compliance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interactive feedback immediate and encouraging?",
+      "description": "Judge whether the interactive responses are optimized for children's learning: 1) Visual feedback appears within 100ms of recording completion 2) Encouraging animations and sounds for correct answers 3) Gentle correction guidance for mistakes 4) Clear recording status indicators. Deduct 5 points for each delayed feedback response, 3 points for discouraging error messages, and 5 points for unclear recording state visualization. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

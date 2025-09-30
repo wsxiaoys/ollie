@@ -1,0 +1,68 @@
+{
+  "index": 1400,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Can you help me create a specific calculator for the Aura Rune builds in the Aoki Legend mobile game, which calculates optimal rune set combinations?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Aura Rune calculation algorithm correctly implemented?",
+      "description": "Review whether the code accurately implements the Aura Rune stat calculation formulas, including base stats, percentage bonuses, set effects, and multiplicative stacking rules. Check if all rune types (ATK, HP, DEF, SPD, CRIT, etc.) are properly defined with correct coefficient calculations. Score 0 if core calculation logic is missing, 5 if only basic stat additions are implemented, and 10 if all complex multiplier interactions and diminishing returns are accurately calculated.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the optimal combination recommendation engine fully functional?",
+      "description": "Evaluate whether the optimization algorithm can effectively compare different rune set combinations and recommend the best builds based on user-defined priorities (damage output, survivability, speed tuning). Check if the system implements proper weight scoring, considers set bonuses, and handles constraint optimization (e.g., minimum speed requirements). Deduct 5 points if the algorithm uses simple brute force without optimization, and 3 points if set synergy effects are not considered. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the rune database and filtering system comprehensive?",
+      "description": "Check whether the system includes a complete rune database with all available rune sets from Aoki Legend, proper categorization by main stats and substats, and advanced filtering options. Evaluate if users can input their current rune inventory and filter by quality grades, enhancement levels, and specific stat ranges. Deduct 5 points if rune data is incomplete or outdated, and 3 points if filtering functionality is limited. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are build comparison and export features properly implemented?",
+      "description": "Assess whether the calculator provides side-by-side build comparisons with detailed stat breakdowns, damage calculations against different enemy types, and export functionality for sharing builds. Check if the system includes build saving/loading, team synergy analysis, and integration with popular gaming platforms or forums. Deduct 5 points if comparison features are superficial, and 3 points if export formats are limited. Give 10 points if fully implemented with multiple export options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid rune inputs, calculation overflow, missing data, network timeouts when fetching game data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the calculator experience (e.g., 1. Real-time damage simulation against boss mechanics 2. AI-powered build suggestions based on current meta 3. Integration with game APIs for automatic rune import 4. Advanced statistical analysis with build performance tracking). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar calculation methods (e.g., multiple stat computation engines coexisting) 2. Function modules unrelated to rune optimization (e.g., built-in character tier lists or gacha simulators) 3. Overly complex animations that slow down calculations (e.g., elaborate 3D rune visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core calculation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation engine/UI components/data layers), unit test coverage for critical calculation functions, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the calculation accuracy is not validated through comprehensive testing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the calculator interface follows modern design principles: 1) Gaming-appropriate color scheme that matches Aoki Legend's aesthetic (no more than 4 primary colors) 2) Proper layout spacing with clear sections for input/results/comparison (element spacing follows the 8px multiple principle) 3) Professional typography with readable fonts (body font size ≥ 14px, line height over 1.5 times) 4) Intuitive iconography for different rune types. Deduct 3 points for each crowded visual element, 5 points for color combinations that strain the eyes during long calculation sessions, and 5 points for chaotic data presentation layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the calculator interactions conform to user expectations: 1) Calculation updates with input delay ≤ 200ms for real-time feedback 2) Smooth transitions between different build configurations (300-500ms) 3) Clear visual indicators for loading states during complex optimizations 4) Intuitive drag-and-drop or click interactions for rune selection. Deduct 5 points for each operation without proper feedback, 3 points for laggy performance during intensive calculations, and 5 points for confusing navigation between calculator sections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

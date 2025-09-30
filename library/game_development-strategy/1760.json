@@ -1,0 +1,68 @@
+{
+  "index": 1760,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. Change the chessboard color to a standard wood-texture style, and provide me with a complete deployable code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the chessboard correctly implemented with accurate rendering?",
+      "description": "Evaluate whether the chessboard dimensions are standard (8x8), squares are properly aligned, and piece placement follows chess rules. Check if the wood-texture style is properly implemented using CSS background images or canvas patterns. Score 0 if the board is incorrect, 5 if basic rendering is implemented but with minor issues, and 10 if the chessboard is perfectly rendered with proper wood textures that are not stretching or pixelated.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all chess pieces correctly displayed with proper styling?",
+      "description": "Review whether all 32 chess pieces are correctly positioned in their initial state and have clear, distinguishable designs. Verify that the pieces contrast well against the wood-texture background. Deduct 3 points if pieces are misaligned, 5 points if some pieces are missing or incorrectly styled, and 5 points if the pieces appear pixelated at standard zoom levels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the basic chess movement implementation functional?",
+      "description": "Check if the code includes proper event handling for piece selection and movement, with validation for legal chess moves according to each piece type. Verify implementation of special moves (castling, en passant, pawn promotion). Score 0 if movement is not implemented, 5 if only basic movement without special rules is provided, and 10 if all movement rules are correctly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the wood-texture styling appropriately implemented?",
+      "description": "Assess whether the wood texture appears realistic without being distracting, with proper contrast between light and dark squares. Check if the texture is implemented using optimized images or CSS patterns that don't cause performance issues. Deduct 5 points if the texture appears artificial or cartoonish, 3 points if the grain direction is inconsistent, and 5 points if the texture causes visual readability issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, browser resize events, or touch vs. mouse input differences) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move highlighting 2. Legal move indicators 3. Captured pieces display 4. Check/checkmate notifications with visual effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple methods for piece movement) 2. Function modules unrelated to the chess implementation (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive shadows or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating chess logic/view layers), code organization, and maintainability. Check for proper commenting and variable naming. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code is not organized into logical modules. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious integration of wood texture with UI elements 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system for any chess notations or UI elements (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for clashing color combinations with the wood texture, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Piece movement animation is smooth and natural 2) Selection feedback is immediate and clear 3) Transition animations (if any) are controlled between 300-500ms. Deduct 5 points for laggy piece movements, 3 points for missing visual feedback when selecting pieces, and 5 points for jarring or overly slow animations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

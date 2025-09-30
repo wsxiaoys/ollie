@@ -1,0 +1,68 @@
+{
+  "index": 1273,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable whenever possible. 2.2.1 Front-end Development Technology Overview:\n\n(1) WeChat Mini Program Development: As a lightweight application, WeChat Mini Programs allow users to directly use them within the WeChat environment without separate downloads. Developers can rely on the WeChat Mini Program framework, components, and APIs for efficient development, implementing interface construction and interactive functions. Through Mini Program development, users can conveniently perform campus second-hand transactions and life services operations within WeChat without switching to other applications.\n\nVue Framework Application: As a popular JavaScript framework, Vue is primarily used for creating user interfaces. Its application in web-based management system development enables developers to build interfaces quickly and efficiently. The Vue framework provides a series of components and directives that allow developers to easily implement various functions, while also offering reactive data binding and component-based development features, which are beneficial for code organization and maintenance. Now, based on the above content, please write about my Pomodoro diary system, which uses Vue, Spring Boot, and MySQL technologies.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Pomodoro timing system properly implemented in Vue?",
+      "description": "Examine whether the code correctly implements core Pomodoro functionality: 25-minute work periods, 5-minute short breaks, 15-minute long breaks after 4 work sessions. Check for visual countdown timer, progress indicators, and customizable time settings. Score 0 if the core timing mechanism is absent, 5 if basic timing exists but lacks configurability, and 10 if the implementation includes sound notifications, visual progress tracking, and allows user customization of time intervals.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the diary entry functionality properly connected to the Pomodoro system?",
+      "description": "Verify that completed Pomodoro sessions automatically prompt for diary entries or task completion notes. The system should record timestamps, duration, associated tasks, and completion status. Check if users can add reflections on productivity or notes about the completed work. Deduct 5 points if diary entries aren't linked to Pomodoro sessions, 3 points if entries lack metadata like timestamps or categories. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Spring Boot backend architecture properly designed with appropriate endpoints?",
+      "description": "Evaluate whether the API design follows RESTful principles with proper resource naming, HTTP methods (GET, POST, PUT, DELETE), and status codes. Check if controllers handle Pomodoro sessions, diary entries, user authentication, and data analytics endpoints. API versioning and documentation should be present. Deduct 5 points for missing authentication middleware, 3 points for inconsistent endpoint design patterns, and 5 points for poor error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the MySQL database schema optimized for the Pomodoro diary system?",
+      "description": "Review whether the database design includes appropriate tables (users, pomodoro_sessions, diary_entries, tasks, categories) with proper relationships and constraints. Evaluate if indexes are used for frequently queried fields, if normalization principles are followed, and if the schema supports analytics and reporting features. Deduct 5 points for missing foreign key relationships, 3 points for poor field type choices, and 5 points if data integrity constraints are inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption during a Pomodoro session, failed diary saves, authentication failures, etc.) and provide friendly error prompts or recovery mechanisms. Check if the application maintains state during browser refreshes. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Productivity analytics and visualizations 2. Intelligent task suggestions based on past performance 3. Focus mode with website blocking 4. Integration with calendar systems). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timer implementations) 2. Function modules unrelated to Pomodoro/diary functionality (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations during focus time). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating frontend components, backend services, and data access layers), unit test coverage for critical timing logic and data persistence, and build process automation. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching that supports focus (calming colors during work periods, energizing colors during breaks) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for distracting color combinations during focus time, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Timer updates occur without visual jitter 2) Transition between work and break states is clear but not jarring 3) Diary entry forms appear with appropriate timing and smooth animations. Deduct 5 points for each operation without feedback, 3 points for laggy timer countdowns, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

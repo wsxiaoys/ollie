@@ -1,0 +1,68 @@
+{
+  "index": 995,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Develop software with LeanKit's core functions and features using PySide6, and generate complete executable code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Kanban board functionality implemented?",
+      "description": "Check whether the code implements essential LeanKit features including drag-and-drop cards, columns/lanes configuration, and work item visualization. Score 0 if the Kanban board is not implemented, 5 if only basic card display exists without drag functionality, and 10 if the implementation includes full drag-and-drop support, column/lane customization, and card state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are work item management features properly implemented?",
+      "description": "Evaluate implementation of card creation, editing, deletion, with proper attributes (title, description, assignee, due date, priority, etc.). Check if cards support custom fields, attachments, and comments. Deduct 5 points if cards lack essential attributes, 3 points if history tracking is missing, and 2 points if bulk operations are not supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the workflow configuration system implemented?",
+      "description": "Assess whether users can define custom workflows with columns, sub-columns, and swim lanes. Check if the implementation includes work-in-progress limits, card filtering, and policy enforcement. Deduct 5 points if column/lane customization is missing, 3 points if WIP limits aren't implemented, and 3 points if workflow rules cannot be defined. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are analytics and reporting features included?",
+      "description": "Review the implementation of LeanKit's analytics features such as cycle time, lead time metrics, cumulative flow diagrams, and distribution charts. Verify that the system tracks historical data for reporting. Deduct 5 points if no analytics are present, 3 points if only basic charts exist without historical data, and 3 points if export functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input, concurrent operations, connection issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted card prioritization 2. Team member workload visualization 3. Automated bottleneck detection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple card creation dialogs) 2. Function modules unrelated to Kanban/LeanKit (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating model/view/controller layers), unit test coverage, and build process automation in the PySide6 implementation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper error handling and logging are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the PySide6 UI follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance in the PySide6 implementation. Deduct 5 points for each operation without feedback, 3 points for laggy drag-and-drop operations, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 668,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the code you generate is executable for demonstration.\n\n## Role\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n## Output Rules\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot run or contains errors, regenerate it\n4. If the requirements include external API access or require user data (images, videos, audio, etc.), provide mock data\n\n## Project Requirements Description\nImplement the frontend interface for an online handicraft teaching platform with a handicraft category navigation area, a production steps display area, and a user works sharing area. The handicraft category navigation area includes navigation buttons for various types of handicrafts such as origami, pottery, woodworking, etc. When users click a button, the production steps display area shows detailed step-by-step images and text instructions for that handicraft. The user works sharing area allows users to upload images of their own handicraft works with brief descriptions, and other users can browse and like these works.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the handicraft category navigation area fully implemented?",
+      "description": "Review whether the code effectively implements a navigation system for different handicraft categories (origami, pottery, woodworking, etc.). Check for proper styling, hover effects, active states, and mobile responsiveness. The navigation should clearly indicate the current selection and allow easy switching between categories.Score 0 if navigation is missing, 5 if basic buttons are implemented without proper state management, and 10 if fully implemented with responsive design and smooth state transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the production steps display area properly implemented?",
+      "description": "Evaluate whether the step-by-step instructions display system properly loads and presents detailed tutorials when a category is selected. Check for proper image loading with fallbacks, clear text instructions, step progression indicators, and responsive layout that works on various screen sizes. Instructions should be clearly organized with visual hierarchy.Deduct 3 points if images don't have proper loading states or alt text, 3 points if step progression is unclear, and 4 points if the content isn't properly responsive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user works sharing area functional and well-designed?",
+      "description": "Assess whether users can upload their handicraft images with descriptions, and if others can browse and like these works. Check for proper form validation, image preview before upload, appropriate image size handling, and user-friendly error messages. The gallery should have proper pagination or infinite scrolling.Deduct 3 points if upload functionality is incomplete, 3 points if image validation/preview is missing, 2 points if social features (likes) are not implemented, and 2 points if browsing mechanism is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data management and state synchronization properly implemented?",
+      "description": "Examine how the application manages data flow between components. Check for proper state management (using contexts, Redux, or similar), data fetching strategies, loading states, and error handling. Evaluate whether mock data is properly structured to simulate real API responses.Score 0 if there's no coherent state management, 5 if basic data flow exists but with flaws (missing loading states, poor error handling), and 10 if data management is comprehensive with proper loading indicators and error recovery mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as failed image loads, network errors, invalid uploads, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases and prevent UI crashes.Give 10 points for comprehensive error handling with user-friendly recovery options, 5 points for basic error handling without recovery paths, and 0 points if errors would crash the application or leave users stuck.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Step-by-step tutorial animations 2. AR preview for completed handicrafts 3. Social sharing with customized frames 4. Difficulty ratings with filtering).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image upload components) 2. Function modules unrelated to handicraft teaching (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations or transitions).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, service layers, and utilities), component reusability, and build process configuration. Check for proper use of hooks, proper prop types, and component composition.Deduct 5 points if global state pollution is found or components are not properly modularized; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not properly configured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for a creative platform 2) Proper layout spacing for content-heavy pages 3) Professional font system with good readability for instructions 4) Visual hierarchy that guides users through the learning process.Deduct 3 points for each crowded visual element, 5 points for poor color combinations that hinder readability, and 5 points for chaotic arrangement of tutorial content. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Smooth category switching without jarring reloads 2) Transition animations for step progression 3) Clear visual feedback on user actions like likes or uploads. Interface should feel responsive and intuitive.Deduct 5 points for each operation without feedback, 3 points for clunky transitions between views, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 432,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. A 'concave shape' is composed of 8 vertices, and we can draw a 'concave' or concave-like octagon by following vertices A through H in either clockwise or counterclockwise order. Now you need to determine, when a concave octagon is drawn on the canvas, how to identify two concave vertices and extend lines from these vertices to two edges, dividing the concave octagon into three quadrilaterals. You should draw using red solid lines, label each vertex (ABCDEFGH), mark the two intersection points of the extension lines with the edges as I and J, and represent the extension lines with blue dashed lines. Finally, output a complete HTML file.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the concave octagon geometry correctly implemented?",
+      "description": "Review whether the code accurately implements a concave octagon with 8 vertices (A-H) following proper geometric principles. Check if the vertices are positioned to create a valid concave shape with exactly 2 concave vertices (interior angles > 180°). Score 0 if the shape is not octagonal or lacks concave properties, 5 if basic octagon is drawn but concave vertices are incorrectly identified, and 10 if the concave octagon geometry is mathematically accurate with proper vertex positioning.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the concave vertices correctly identified and extension lines properly calculated?",
+      "description": "Evaluate whether the algorithm correctly identifies the two concave vertices through angle calculation or vector analysis. Check if extension lines from concave vertices to opposite edges are mathematically accurate and create exactly three quadrilaterals. Deduct 5 points if concave vertex detection is incorrect, 3 points if extension line calculations have geometric errors, and 5 points if the division doesn't result in proper quadrilaterals. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are intersection points I and J correctly calculated and marked?",
+      "description": "Check whether the intersection points I and J are accurately computed using line-segment intersection algorithms. Verify that these points lie on the octagon edges and are properly marked/labeled. The intersection calculation should handle edge cases like parallel lines or points outside polygon bounds. Deduct 5 points if intersection calculations are mathematically incorrect, 3 points if points are not properly constrained to edges, and 2 points for missing edge case handling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete geometric division into three quadrilaterals achieved?",
+      "description": "Evaluate whether the final result correctly divides the concave octagon into exactly three distinct quadrilaterals through the extension lines. Check if each resulting shape has 4 vertices and proper geometric properties. Verify that no area is left uncovered and no overlapping occurs. Deduct 5 points if division results in non-quadrilateral shapes, 3 points if area coverage is incomplete, and 2 points for overlapping regions. Give 10 points if perfect geometric division is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as degenerate polygons, collinear vertices, floating-point precision errors, canvas size variations, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should effectively handle edge cases in geometric calculations, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the geometric visualization experience (e.g., 1. Interactive vertex dragging to modify octagon shape 2. Animation showing step-by-step construction process 3. Real-time angle measurements display 4. Multiple octagon examples with different concave configurations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant geometric calculation methods (e.g., multiple angle detection algorithms coexisting) 2. Function modules unrelated to geometric visualization (e.g., built-in games or unrelated animations) 3. Excessive visual effects that distract from geometric clarity (e.g., rainbow colors, particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if core geometric functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating geometric calculations/rendering/interaction layers), code organization, and mathematical accuracy. Deduct 5 points if global state pollution is found or proper geometric abstractions are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if mathematical functions lack proper documentation or comments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the geometric visualization follows clear design principles: 1) Red solid lines for octagon edges are clearly visible (stroke-width ≥ 2px) 2) Blue dashed lines for extensions are distinguishable (proper dash pattern) 3) Vertex labels A-H and intersection points I,J are readable (font-size ≥ 12px) 4) Proper canvas size and coordinate system. Deduct 3 points for each unclear visual element, 5 points for poor color contrast, and 5 points for illegible labels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the geometric rendering accurate and visually clear?",
+      "description": "Judge whether the geometric elements are rendered with mathematical precision: 1) Lines connect exact vertex coordinates without gaps 2) Dashed extension lines have consistent styling 3) All geometric relationships are visually apparent 4) Proper scaling and positioning within canvas bounds. Deduct 5 points for each rendering inaccuracy, 3 points for inconsistent line styles, and 5 points for geometric elements extending outside visible area. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

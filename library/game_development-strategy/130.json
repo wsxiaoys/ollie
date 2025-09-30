@@ -1,0 +1,68 @@
+{
+  "index": 130,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration.\nPlease use HTML and JavaScript to implement a horror game: Monster AI and Escape Routes\n**Task**: Implement a monster AI system where monsters patrol randomly and track players, and players need to find safe routes to avoid capture.\n**Hint**: You can set different perception ranges and tracking algorithms for monsters, and design multiple escape routes in the scene.\n[CHAT_SEP]Please optimize the game answer above and add some comments to the code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the monster AI patrolling and tracking system fully implemented?",
+      "description": "Review whether the code implements different AI states (idle, patrolling, alert, tracking) with smooth transitions. Check if the monsters have proper path finding algorithms, random patrol routes, and player detection mechanisms. Score 0 if there's no AI implementation, 5 if only basic movement is present, and 10 if the AI includes perception ranges, memory of player's last position, and state machine transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the escape routes and navigation systems properly designed?",
+      "description": "Evaluate whether multiple escape routes are implemented with varying difficulty levels and strategic options (hiding spots, distractions, etc.). Check if the map design includes bottlenecks, alternative paths, and safe zones. Deduct 3 points if there's only one escape route, 5 points if the routes are too simplistic with no tactical choices, and 5 points if there's no visual indication of route options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the monster perception system implemented with different ranges and mechanics?",
+      "description": "Verify that monsters have multiple perception systems (sight, hearing, proximity) with appropriate ranges and detection logic. Check if environmental factors affect perception (darkness reducing sight range, noise masking player sounds). Score 0 if perception is binary (detect/not detect), 5 if only basic distance checks are implemented, and 10 if the system includes cone of vision, sound propagation, and environmental interactions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game loop and tension-building mechanism properly implemented?",
+      "description": "Assess whether the game implements proper tension-building mechanisms like proximity indicators, audio cues, and visual effects that intensify as danger approaches. Check for chase dynamics (monster speed adjustments, cornering behaviors) and escape mechanics (hiding, breaking line of sight). Deduct 5 points if tension indicators are absent and 5 points if the chase dynamics are too simple or unfair. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as off-map movement, collision edge cases, rapid state transitions, etc.) and provide appropriate fallbacks. Check error handling for game events, animation states, and player inputs. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the horror experience (e.g., 1. Dynamic lighting and shadows, 2. Procedurally generated maps, 3. Adaptive AI difficulty based on player skill, 4. Environmental interaction like creating distractions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the horror game (e.g., unnecessary mini-games) 3. Overly complex effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating AI logic/player controls/rendering layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no meaningful comments explaining complex algorithms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional horror game standards?",
+      "description": "Evaluate whether the visual design creates appropriate atmosphere: 1) Effective use of darkness and limited visibility 2) Unnerving color schemes and visual distortions 3) Minimal but impactful UI that maintains immersion. Deduct 3 points for inappropriately bright environments, 5 points for visually cluttered interfaces that break immersion, and 5 points for missing visual feedback on critical game states. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the player controls and monster interactions feel responsive and fair: 1) Movement controls respond within 100ms 2) Visual and audio feedback on detection and danger levels 3) Consistent framerate during intense chase sequences. Deduct 5 points for input lag exceeding 200ms, 5 points for missing feedback on critical game events (monster detection, near misses), and 3 points for frame rate drops during key gameplay moments. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

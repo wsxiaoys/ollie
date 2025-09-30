@@ -1,0 +1,68 @@
+{
+  "index": 19,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration.\nPlease use HTML and JavaScript to implement an Enemy AI\n**Task**: Write simple AI logic for enemies in a game, enabling them to automatically track and attack players.\n**Hint**: You can use simple pathfinding algorithms to implement enemy movement and attack behaviors.\ngame, and add some comments in the code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the enemy AI movement and pathfinding system properly implemented?",
+      "description": "Review whether the code implements effective pathfinding algorithms (A*, Dijkstra's, etc.) or simpler movement patterns (direct pursuit, flocking). Check if enemies can navigate around obstacles and avoid getting stuck in corners. Score 0 if movement is non-functional, 5 if basic direct pursuit is implemented, and 10 if sophisticated pathfinding with obstacle avoidance is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the enemy detection and player tracking mechanism implemented?",
+      "description": "Evaluate whether enemies can detect the player through vision cones, proximity detection, or other sensory systems. Check if the detection includes different states (unaware, suspicious, alerted). Verify if line-of-sight checks are implemented to prevent enemies from seeing through walls. Deduct 3 points if detection is binary (only sees/doesn't see), and 5 points if there's no line-of-sight verification. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the attack behavior and combat system implemented?",
+      "description": "Check if enemies have different attack patterns based on distance, cooldowns for attacks, and damage calculation. Ensure the attack system includes proper player feedback (visual/audio cues when being attacked). Deduct 5 points if attacks have no cooldown management, and 3 points if there's no feedback for incoming attacks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are different AI states and transitions properly managed?",
+      "description": "Verify if the code implements a state machine or behavior tree for enemy AI (patrol, chase, attack, retreat). Check if state transitions are smooth and logical based on game conditions. Deduct 5 points if only basic states exist with no transition logic, and 3 points if transitions are abrupt with no blending. Give 10 points for a complete state management system.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing player reference, edge cases in pathfinding, performance spikes, etc.) and provide graceful fallbacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment 2. Enemy cooperation and flanking behaviors 3. Learning from player patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple pathfinding algorithms running in parallel) 2. Function modules unrelated to enemy AI (e.g., weather effects) 3. Fancy effects that affect performance (e.g., excessive particle effects for each enemy). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating AI logic/movement/combat systems), code commenting quality and comprehensiveness, and performance optimization. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are insufficient comments for understanding the implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual representation meet professional game design standards?",
+      "description": "Evaluate whether the enemy visualization follows game design principles: 1) Clear visual indication of enemy states (patrol, alert, attacking) 2) Proper animation transitions between states 3) Visual differentiation between enemy types if multiple exist. Deduct 3 points for unclear state visualization, 5 points for missing animations or transitions, and 5 points for confusing enemy representation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction between enemies and the game environment seamless?",
+      "description": "Judge whether enemies interact properly with the game environment: 1) Proper collision detection with environment objects 2) Appropriate reaction to environmental changes or events 3) Performance optimization for multiple enemies. Deduct 5 points for collision detection issues, 3 points for ignoring environmental factors, and 5 points for significant performance drops with multiple enemies. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

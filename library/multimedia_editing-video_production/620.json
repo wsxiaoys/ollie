@@ -1,0 +1,68 @@
+{
+  "index": 620,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display whenever possible. ======== ROLE ========\nYou are an experienced code expert. Given a software development requirement description, you are required to generate project code based on the project requirements. Strictly follow the rules to help users generate the complete project code with simple and easy-to-understand language comments. Do not output anything else.\n\n======== OUTPUT RULES ========\n1. You will always generate complete, runnable project code. Please ensure the project is complete and executable\n2. Ensure that all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements include external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nCreate a web-based dynamic graphic video generation tool where users can add various graphics (such as shapes, lines, icons), set animation paths and effects for them, adjust animation order and rhythm, and export as a video file. Provide real-time preview functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the graphic element creation system fully implemented?",
+      "description": "Review whether the code allows users to add various graphics (shapes, lines, icons) with customizable properties (size, color, position, etc.). Check if the implementation includes a comprehensive library of shapes and if custom SVG/path imports are supported. Score 0 if basic shapes creation is missing, 5 if only basic shapes with limited customization are available, and 10 if a complete graphic creation system with extensive customization options is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the animation path and effect system robust?",
+      "description": "Evaluate whether the code implements a complete animation system that allows setting paths (linear, curved, custom), timing functions (ease-in, ease-out, bounce, etc.), and transformation effects (scale, rotate, opacity, etc.). Check if keyframe-based animation is supported with editable control points. Deduct 5 points if only basic linear animations are implemented, 3 points if timing functions are limited, and 2 points if transformation options are restricted. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the animation sequencing and timing control comprehensive?",
+      "description": "Check whether the code provides a timeline interface for adjusting animation order, duration, delays, and overlaps. Examine if the system supports grouping animations, setting dependencies (one animation triggering another), and creating complex sequences. Verify if there's a mechanism to preview specific segments. Deduct 5 points if animations can't be reordered, 3 points if timing adjustments are limited, and 2 points if there's no way to create animation dependencies. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video export functionality properly implemented?",
+      "description": "Assess whether the code includes a working video export system that can render animations to a standard video format with various quality options. Check if the implementation handles the complex process of converting DOM/Canvas animations to video frames, maintaining consistent frame rates, and showing export progress. Verify support for different resolutions and formats. Score 0 if export is missing, 5 if only basic screenshot/GIF export is available, and 10 if full video export with options is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as large file imports, memory constraints with complex animations, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should prevent project data loss during crashes, implement undo/redo functionality, and include proper error boundaries. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted animation suggestions 2. Audio synchronization capabilities 3. Template library with preset animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation functions (e.g., multiple tweening engines coexisting) 2. Function modules unrelated to animation creation (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive background effects in the editor itself). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering/animation logic/UI layers), unit test coverage, and build process automation. Check for performance optimizations like canvas rendering vs. DOM manipulation, worker threads for heavy processing, and efficient data structures for animation state. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check if the UI provides clear workspace separation between canvas, timeline, and tools panels. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Real-time preview updates without noticeable lag 3) Drag-and-drop interactions for timeline adjustments feel natural with proper snapping. Check if the scrubbing through timeline provides smooth frame updates and if canvas transformations (zoom, pan) are fluid. Deduct 5 points for each operation without feedback, 3 points for visual stuttering during preview, and 5 points for unintuitive interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

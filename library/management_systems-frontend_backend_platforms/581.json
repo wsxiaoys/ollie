@@ -1,0 +1,68 @@
+{
+  "index": 581,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. Implement a smart expense report recognition system that supports uploading receipts via photos, automatically recognizes key fields (amount/date/type), generates editable expense report forms, and integrates with the company's financial system API.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the receipt image upload and processing system fully implemented?",
+      "description": "Evaluate whether the code implements a complete image upload system with proper handling of various image formats (JPEG, PNG, PDF), compression for large files, and image preprocessing (rotation correction, brightness adjustment) before OCR processing. Score 0 if image upload isn't implemented, 5 if basic upload exists but lacks preprocessing, and 10 if all features including error handling for corrupted images are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the OCR recognition system properly implemented for key expense fields?",
+      "description": "Check if the code implements accurate OCR functionality that can identify and extract key fields (amount, date, merchant name, expense type, tax information) from receipts. Assess the implementation of field validation logic (date format checks, currency symbol handling, etc.). Score 0 if OCR is missing, 5 if basic recognition exists but accuracy is questionable, and 10 if robust field extraction with confidence scoring and fallback mechanisms are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the editable expense report form generation complete?",
+      "description": "Review the implementation of dynamic form generation based on OCR results, with proper editable fields, validation for each field type, and preservation of original image data alongside the form. Score 0 if form generation is missing, 5 if basic non-customizable forms exist, and 10 if fully responsive forms with field-level validation, draft saving, and multi-receipt support are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the financial system API integration properly implemented?",
+      "description": "Evaluate the code for comprehensive API integration including authentication handling, data formatting to match API requirements, request/response logging, error handling with retry mechanisms, and transaction verification. Check for proper handling of API rate limits and asynchronous submission. Score 0 if API integration is missing, 5 if basic submission exists without proper error handling, and 10 if complete bidirectional integration with sync status tracking is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as blurry images, network interruption, incomplete receipts, API failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered expense categorization 2. Automated currency conversion for international receipts 3. Receipt fraud detection algorithms 4. Budget tracking visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image processing pipelines) 2. Function modules unrelated to expense reporting (e.g., excessive user profile features) 3. Fancy effects that affect performance (e.g., unnecessary animations during OCR processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating OCR logic/UI/API integration layers), unit test coverage for critical components like field extraction, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors for financial applications) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic receipt preview layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Feedback during OCR processing with accurate progress indicators 2) Smooth transitions between upload, recognition, and form editing stages 3) Clear visual guidance for correcting recognition errors. Deduct 5 points for lack of loading states during processing, 3 points for jarring transitions between workflow steps, and 5 points for unintuitive error correction interfaces. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 650,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Implement an automatic backup tool that allows users to select data they need to back up (such as notes, task lists, etc.), and regularly save the data to local or cloud storage, providing recovery and version management functions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the backup source selection mechanism properly implemented?",
+      "description": "Evaluate whether the code implements a flexible selection mechanism that allows users to choose specific data types (notes, tasks, etc.) or files for backup, with proper file system permissions handling. Score 0 if selection functionality is missing, 5 if basic file selection is implemented, and 10 if the implementation includes advanced features like wildcards, exclusion rules, and metadata-based filtering.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the backup scheduling system fully functional?",
+      "description": "Check whether the tool implements configurable backup scheduling with options for frequency (hourly, daily, weekly), specific times, and event-triggered backups. Deduct 3 points if the scheduling is hardcoded, 5 points if it lacks persistence across system restarts, and 5 points if it doesn't handle missed backup windows. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the backup storage mechanism properly designed?",
+      "description": "Assess whether the tool provides both local and cloud storage options with proper authentication, encryption, and storage optimization. Check for incremental backup capability to save space and bandwidth. Deduct 5 points if only one storage type is supported, 3 points if data is not encrypted, and 3 points if no compression or deduplication is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are version management and recovery features comprehensive?",
+      "description": "Evaluate whether the tool implements a clear version history, point-in-time recovery capabilities, and efficient version pruning mechanisms. Check for features like version browsing, comparison, and selective restoration. Deduct 5 points if only full restores are possible, 3 points if version metadata is incomplete, and 5 points if there's no conflict resolution for multi-device scenarios. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, permission issues, storage limitations, corrupted backups, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered selective backup suggestions 2. Cross-device sync capabilities 3. Content-aware backup prioritization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar backup methods 2. Function modules unrelated to data backup/recovery (e.g., a built-in media player) 3. Fancy effects that affect performance (e.g., unnecessary animations during backup). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating backup logic/UI/storage layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Backup progress indicators with accurate time estimation 2) Non-blocking UI during backup operations 3) Clear visual feedback for completed/failed backups. Deduct 5 points for operations without feedback, 3 points for UI freezes during backups, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

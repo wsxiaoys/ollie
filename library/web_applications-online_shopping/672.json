@@ -1,0 +1,68 @@
+{
+  "index": 672,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable and demonstrable. Please develop an online second-hand goods trading platform where users can post and browse information about used items. The product listing should support sorting by price, posting time, and seller rating. The detail page should display product images, descriptions, and seller information. The shopping cart should include a negotiation feature allowing users to initiate price negotiations with sellers and complete payment after a deal is reached.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic product listing functionality fully implemented?",
+      "description": "Check if the code implements a responsive product grid with the required sorting options (price, posting time, seller rating). The implementation should include proper filtering mechanisms and smooth re-sorting without page refresh. Score 0 if the listing is not implemented, 5 if only basic listing without sorting is available, and 10 if all sorting features work correctly with visual feedback for active sorting.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the product detail page complete and informative?",
+      "description": "Evaluate whether the product detail page displays all required components: multiple product images with a gallery viewer, comprehensive product descriptions with condition details, complete seller information with rating and history. Deduct 3 points if image zoom/gallery is missing, 3 points if product condition details are inadequate, and 4 points if seller information lacks transaction history or ratings. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the negotiation feature functional and user-friendly?",
+      "description": "Review the implementation of the price negotiation system. It should include a proposal mechanism, counter-offer capability, negotiation history display, and final agreement confirmation. Deduct 3 points if there's no negotiation history, 4 points if counter-offers aren't supported, and 3 points if there's no clear visual indication of the negotiation status. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the shopping cart and checkout process properly implemented?",
+      "description": "Assess the shopping cart functionality including item addition/removal, quantity adjustment, price calculation with any negotiated discounts, and a secure checkout flow. Verify that the cart maintains state across page navigation and handles multiple sellers correctly. Deduct 4 points if negotiated prices aren't reflected in checkout, 3 points for missing cart persistence, and 3 points for inadequate payment flow. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, invalid input data, image loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR view of products in your space 2. Automated condition assessment from photos 3. Seller verification system with trust scores). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart implementations) 2. Function modules unrelated to second-hand trading (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations on product cards). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/UI/state management layers), component reusability, and code organization. Deduct 5 points if global state is managed chaotically; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between UI and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Consistent product card design with clear price visibility 2) Proper whitespace and information hierarchy 3) Professional typography that enhances readability of product descriptions. Deduct 3 points for cluttered product listings, 5 points for poor information hierarchy, and 5 points for inconsistent visual language between pages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user expectations for an e-commerce platform: 1) Smooth transitions between product list and details 2) Real-time feedback during negotiation processes 3) Clear visual indicators for cart updates. Deduct 5 points for jarring page transitions, 3 points for delayed feedback on critical actions like 'Add to Cart', and 5 points for confusing navigation flows. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

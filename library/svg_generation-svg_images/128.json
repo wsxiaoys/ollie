@@ -1,0 +1,68 @@
+{
+  "index": 128,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Please help me implement this SVG image using code: a black and white picture of a fish with a long tail.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the fish anatomical structure accurately implemented?",
+      "description": "Review whether the SVG code accurately depicts the basic anatomical structure of a fish through path/polygon elements, including head, body, fins, and especially the prominent long tail feature. Check if the proportions are realistic and the body structure is coherent. Score 0 if basic fish shape is not recognizable, 5 if only basic outline is present, and 10 if all anatomical features including detailed fins, scales pattern, and elongated tail are properly rendered.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the black and white contrast effectively achieved?",
+      "description": "Evaluate whether the SVG implementation uses appropriate fill/stroke attributes to create clear black and white contrast without relying on color. Check if visual hierarchy is established through pure monochrome values (#000000, #ffffff, and grayscale variants). Deduct 5 points if any color other than black/white/gray is used, deduct 3 points if contrast ratio is insufficient for accessibility standards. Full score requires crisp black and white definition with proper shading gradients.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the long tail feature prominently and elegantly designed?",
+      "description": "Assess whether the fish's long tail is the visual centerpiece with flowing, graceful curves using smooth SVG path commands (cubic bezier curves recommended). The tail should demonstrate dynamic movement and occupy significant visual space. Deduct 5 points if tail appears stiff or geometric, deduct 3 points if tail proportions don't emphasize the 'long' characteristic. Full score requires fluid, organic tail design that enhances the overall composition.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SVG code structure optimized and semantically correct?",
+      "description": "Check whether the SVG markup follows best practices with proper viewBox definition, organized grouping elements, and efficient path optimization. Evaluate if the code uses semantic grouping (<g> elements) for logical parts and includes appropriate metadata. Deduct 5 points if paths are not optimized (excessive anchor points), deduct 3 points if no proper viewBox is set, deduct 5 points if code structure is chaotic without logical grouping. Full score requires clean, maintainable SVG architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, scaling problems, rendering errors) and includes fallback mechanisms or error handling. Code with strong robustness should work consistently across different browsers and screen sizes, giving 10 points. If the robustness is average with minor compatibility issues, give 5 points, and if no error handling or compatibility considerations are present, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes creative enhancements that elevate the basic fish illustration (e.g., 1. Subtle animation of tail movement 2. Interactive hover effects 3. Layered depth through multiple SVG groups 4. Artistic texture patterns within the fish body). Add 3 points for each well-implemented innovative feature that enhances visual appeal without compromising the core requirement (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary complex paths that could be simplified 2. Features unrelated to the fish illustration (e.g., background elements, decorative borders) 3. Overly complex effects that don't enhance the black and white fish representation. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core fish illustration is obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization, proper indentation, meaningful comments, and adherence to SVG best practices. Check for clean path definitions, consistent naming conventions, and reusable elements. Deduct 5 points if code is poorly formatted or lacks comments; deduct 5 points if paths are not optimized for file size; deduct 5 points if no consideration for maintainability. The full score requires professional-grade SVG implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual composition meet professional design standards?",
+      "description": "Evaluate whether the fish illustration follows design principles: 1) Balanced composition with proper negative space 2) Clear focal hierarchy with the long tail as emphasis 3) Harmonious proportions following natural fish anatomy 4) Effective use of black and white contrast for visual impact. Deduct 3 points for each compositional weakness, 5 points for poor proportion relationships, and 5 points for ineffective contrast usage. The full score requires gallery-worthy artistic composition.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the visual clarity and detail precision exceptional?",
+      "description": "Judge whether the SVG renders with crisp, clean lines and appropriate level of detail: 1) Sharp edges without aliasing artifacts 2) Smooth curves with optimal anchor point placement 3) Consistent line weights and styling 4) Clear definition at various zoom levels. Deduct 5 points for each rendering quality issue, 3 points for inconsistent line weights, and 5 points for poor scalability. The full score requires pixel-perfect clarity at all viewing sizes.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

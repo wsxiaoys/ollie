@@ -1,0 +1,68 @@
+{
+  "index": 713,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable when possible. Write a user login window program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user interface for the login window properly implemented?",
+      "description": "Review whether the code creates a clean, functional login interface with appropriate input fields (username/email, password), login button, and possibly a registration link or forgot password option. Score 0 if no UI is implemented, 5 if basic fields are present but poorly organized, and 10 if the interface is complete with proper layout and responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is input validation properly implemented?",
+      "description": "Check whether the code includes client-side validation for user inputs (e.g., email format validation, password complexity requirements, empty field checks). Deduct 3 points for missing validation on critical fields, 5 points for no validation at all. The input fields should provide visual feedback on validation errors. Full score requires comprehensive validation with clear error messages.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the authentication mechanism secure and properly implemented?",
+      "description": "Evaluate whether the authentication process follows security best practices: password hashing, secure storage, HTTPS support for API calls, and protection against common attacks (XSS, CSRF). Deduct 5 points if passwords are stored/transmitted in plain text, 3 points if no session management is implemented, and 3 points if there's no CSRF protection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the login state management properly implemented?",
+      "description": "Check if the code implements proper login state management, including session/token handling, storage of authentication credentials, and proper logout functionality. Deduct 5 points if credentials are stored insecurely (e.g., in localStorage without encryption), 3 points if there's no session timeout handling, and 3 points if logout functionality is missing or incomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, server timeouts, invalid credentials, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Social media login integration 2. Two-factor authentication 3. Biometric authentication options 4. Remember me functionality 5. Smart form completion). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation systems) 2. Function modules unrelated to login (e.g., complex animations that distract) 3. Fancy effects that affect performance (e.g., heavy background animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/authentication layers), appropriate error handling, and maintainable code structure. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation for complex logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for form elements. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Form submission feedback is immediate 3) Clear visual focus states for keyboard navigation 4) Smooth transitions between form states (e.g., error/success). Deduct 5 points for each operation without feedback, 3 points for jarring transitions, and 5 points for keyboard inaccessibility. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

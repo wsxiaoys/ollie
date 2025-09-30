@@ -1,0 +1,68 @@
+{
+  "index": 617,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. \n\n======== ROLE ========\nYou are an experienced code expert. I'll provide you with a software development requirement description, and you should generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code. Please ensure the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nImplement a multi-user online whiteboard collaboration tool that supports real-time drawing, adding notes, and uploading images. All users can simultaneously draw on the whiteboard, with each user's cursor position and operations synchronized in real-time to other users. Provide various drawing tools such as pencil, line, arrow, rectangle, etc., as well as text box and sticky note functions. Implement infinite scrolling and zooming capabilities for the whiteboard area. Add a user list displaying all current online collaborators and distinguish their drawing content with different colors. Support undo/redo operations, as well as whiteboard content export and sharing functions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the real-time whiteboard drawing functionality fully implemented?",
+      "description": "Review whether the code implements a canvas-based drawing system with various tools (pencil, line, arrow, rectangle). Check if the drawing operations are properly captured, rendered, and have consistent behavior across different browsers. Examine if the drawing system supports different stroke widths, colors, and opacity settings. Score 0 if basic drawing functionality is missing, 5 if only basic pencil tool is implemented, and 10 if all specified drawing tools are fully functional with proper options.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the multi-user collaboration system properly implemented?",
+      "description": "Evaluate the real-time synchronization mechanism (WebSocket or similar technology), checking if user actions are properly broadcast to other connected users. Examine if the system handles concurrent edits appropriately, maintains consistency across clients, and includes conflict resolution. Verify if cursor positions are tracked and displayed for all users. Deduct 5 points if synchronization has noticeable lag (>300ms), 3 points if cursor tracking is missing, and 3 points if conflicts aren't handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the text and image integration features implemented?",
+      "description": "Check if the code includes functionality for adding text boxes, sticky notes, and uploading/embedding images on the whiteboard. Verify that text elements are editable, support formatting, and can be repositioned. For images, check if upload, resize, and repositioning are supported. Deduct 4 points if text formatting is missing, 3 points if image upload doesn't handle different file formats, and 3 points if positioning/resizing of elements is buggy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the infinite canvas with zoom and pan functionality implemented?",
+      "description": "Evaluate if the whiteboard supports infinite scrolling in all directions, smooth zooming (in/out), and easy panning. Check if the implementation maintains drawing quality at different zoom levels and if performance remains smooth when navigating large canvases. Verify if there are navigation aids (e.g., mini-map, zoom percentage indicator). Deduct 4 points if zooming is jerky or pixelated, 3 points if panning has performance issues, and 3 points if the canvas size is limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, concurrent edits collision, large whiteboard content, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted drawing recognition 2. Advanced collaboration features like voting or attention focus 3. Templates library for common diagrams 4. Voice annotations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple drawing libraries overlapping) 2. Function modules unrelated to whiteboard collaboration (e.g., a built-in chat system that duplicates existing communication) 3. Fancy effects that affect performance (e.g., excessive animations that slow down drawing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/UI components/networking layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Drawing response delay ≤ 50ms 2) UI transition animation duration controlled between 200-400ms 3) Clear visual feedback for tool selection and active users. Deduct 5 points for each operation without feedback, 3 points for noticeable lag during multi-user interaction, and 5 points for poorly accessible tool selection UI. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

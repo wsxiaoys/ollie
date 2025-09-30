@@ -1,0 +1,68 @@
+{
+  "index": 367,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for display. Create a front-end model of the solar system in motion.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete 3D solar system model implemented?",
+      "description": "Review whether the code accurately models the sun, all eight planets (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune), and possibly other celestial bodies like the moon, asteroid belt, or dwarf planets. Check if the planets have appropriate relative sizes, colors, and textures. Score 0 if only basic shapes are used, 5 if planets have distinct appearances but lack detail, and 10 if a realistic representation with textures and distinctive features is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the orbital motion correctly implemented?",
+      "description": "Evaluate if the orbital mechanics follow realistic patterns with proper elliptical orbits, different speeds based on distance from the sun (Kepler's laws), and correct orbital inclinations. Deduct 5 points if orbits are perfect circles without inclination, 3 points if orbital speeds don't follow astronomical principles, and 2 points if planetary rotations (day/night cycles) are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are lighting effects and shadows properly implemented?",
+      "description": "Check whether the sun acts as a light source that correctly illuminates planets based on their position, creating realistic day/night cycles and shadows. Score 0 if there's no lighting, 5 if basic lighting exists but without shadows or proper reflections, and 10 if the implementation includes dynamic lighting, shadows, and possibly atmospheric effects like Earth's blue halo or Venus's cloud coverage.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there interactivity and user control?",
+      "description": "Assess whether users can interact with the solar system model through features like zooming, rotating the view, focusing on specific planets, adjusting simulation speed, or accessing information about celestial bodies. Deduct 3 points for each missing core interaction (zoom, pan, focus selection), and give full 10 points if advanced controls like time manipulation and educational overlays are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resize, device orientation changes, performance throttling on weaker devices, etc.) and provide fallback mechanisms. Code with strong robustness should adapt to different screen sizes and maintain performance through level-of-detail adjustments. Give 10 points for comprehensive error handling and graceful degradation, 5 points for basic responsive behavior, and 0 points if the visualization breaks easily.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic asteroid belt simulation 2. Comet trajectories 3. Space missions visualization 4. Educational information panels 5. Realistic star background). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations that could be optimized (e.g., recalculating constants for each frame) 2. Unnecessary visual elements that detract from the main solar system (e.g., unrelated UI elements) 3. Excessive effects that impact performance without adding educational value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core solar system visualization is compromised by unnecessary features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of astronomical calculations, rendering logic, and user interface), efficient use of rendering techniques (WebGL/Three.js optimization), and appropriate design patterns. Deduct 5 points if global state pollution is found; deduct 3 points if inefficient rendering approaches are used; deduct 2 points if the animation loop is poorly implemented causing performance issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows astronomical visualization principles: 1) Scientific color accuracy for celestial bodies 2) Clear visual hierarchy with proper scale indicators 3) Unobtrusive UI controls that don't interfere with the visualization. Deduct 3 points for inaccurate planet colors, 4 points for poor visual proportion between celestial bodies, and 3 points for cluttered interface elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation performance maintains a consistent frame rate (ideally 60fps): 1) Smooth orbital motion without stuttering 2) Responsive camera controls with inertia 3) Proper loading strategies for textures and models. Deduct 5 points for noticeable frame drops during normal use, 3 points for jerky transitions when changing focus between planets, and 2 points for slow initial loading without progress indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

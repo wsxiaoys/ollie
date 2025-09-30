@@ -1,0 +1,68 @@
+{
+  "index": 611,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable for demonstration. Implement a survey analysis tool that supports creation of various question types, setting up skip logic, and generating statistical charts (such as heatmaps for matrix questions) after collecting results. The implementation should include CSV export of response data and progress tracking for form completion.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the survey creation system fully implemented?",
+      "description": "Review whether the code provides a comprehensive interface for creating various question types (single choice, multiple choice, matrix, open-ended, rating scales). Check if the question configuration allows for required/optional settings, help text, and input validation. Award 3 points for each major question type fully implemented, 0 if core question types are missing, and 10 if all standard survey question types plus advanced options are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the skip logic functionality properly implemented?",
+      "description": "Evaluate the complexity of conditional logic the system supports. Check for: 1) Basic conditional display based on previous answers, 2) Multiple condition combinations (AND/OR logic), 3) Skip patterns that can span multiple questions, 4) Proper validation handling with skip logic. Deduct 3 points if only basic conditions are supported, 5 points if complex conditions aren't handled, and 10 points if skip logic is missing entirely. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the statistical visualization components properly implemented?",
+      "description": "Review the statistical charts implementation, especially focusing on heatmaps for matrix questions. Check if visualizations: 1) Accurately represent collected data, 2) Include proper scales and legends, 3) Are responsive across devices, 4) Provide interactive features (hovering, filtering, etc.). Award 2 points for each chart type properly implemented with 10 points maximum. Deduct 5 points if heatmap visualization for matrix questions is missing or poorly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data export and progress tracking functionality working correctly?",
+      "description": "Verify that the CSV export functionality correctly formats all question types and responses, includes metadata (timestamps, user IDs), and handles special characters. Check if the progress tracking system accurately reflects completion percentage, saves partial progress, and provides visual feedback. Deduct 5 points if CSV export is missing essential data or has formatting issues, and 5 points if progress tracking is inaccurate or incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, partial form submissions, browser refresh/navigation, data parsing errors) and provide friendly error prompts or recovery mechanisms. Test edge cases like extremely long responses or special characters in answers. Deduct 3 points for each major vulnerability found. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaborative editing of surveys, 2. AI-assisted question suggestions, 3. Advanced sentiment analysis for open responses, 4. Response validation with machine learning). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant data processing pipelines (e.g., multiple parsing mechanisms for the same data type) 2. Function modules unrelated to survey analysis (e.g., unnecessary social media integrations) 3. Heavy visual effects that affect performance (e.g., excessive animations in data visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating survey creation/data collection/analysis layers), unit test coverage for critical functions like skip logic and data aggregation, and build process automation. Check for proper data validation before processing. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high; deduct 5 points if there are no data validation safeguards. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the survey tool follows modern design principles: 1) Clean form layouts with proper grouping 2) Consistent visual hierarchy for questions and controls 3) Professional typography with proper line spacing (≥1.5) and contrast ratios (≥4.5:1) for accessibility. Check how charts are styled and if they follow data visualization best practices. Deduct 3 points for cluttered layouts, 5 points for poor information hierarchy, and 5 points for inaccessible design choices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the survey tool provides appropriate interactions: 1) Instant validation feedback for user inputs 2) Smooth transitions between question sections 3) Responsive chart interaction with tooltips and hover states. Test on different devices and screen sizes. Deduct 5 points if form submission lacks clear feedback, 3 points for janky transitions between questions, and 5 points if visualizations don't resize properly on different screens. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

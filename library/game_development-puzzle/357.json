@@ -1,0 +1,68 @@
+{
+  "index": 357,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Write code for an HTML Tetris game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Tetris game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the standard Tetris mechanics including tetromino generation, rotation, movement, line clearing, and scoring. Check if the game follows official Tetris guidelines for piece spawning positions and rotation systems (SRS). Score 0 if basic tetromino movement is missing, 5 if basic mechanics work but advanced features (wall kicks, T-spins) are missing, and 10 if a complete implementation following Tetris guidelines is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game board rendering and collision detection properly implemented?",
+      "description": "Evaluate the code for proper rendering of the game grid, active tetromino, preview of the next piece, and ghost piece (showing where the current piece will land). Check if collision detection works correctly for wall boundaries, floor, and occupied cells. Deduct 5 points if ghost piece is missing, 3 points if next piece preview is missing, and 5 points if collision detection has flaws. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game controls and input handling well-implemented?",
+      "description": "Check if the code properly handles keyboard input for movement (left/right/down), rotation, hard drop, and pause functionality. Verify if the code implements standard control schemes and allows for customizable controls. Deduct 3 points if only basic controls are implemented, 3 points if input handling is laggy or unresponsive, and 5 points if key rebinding is not possible. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the scoring system and level progression implemented correctly?",
+      "description": "Assess whether the game includes a proper scoring system that rewards line clears (especially multi-line clears like Tetris), implements increasing difficulty through speed progression, and tracks high scores. Deduct 3 points if multi-line clear bonuses are missing, 3 points if difficulty doesn't increase with levels, and 5 points if there's no high score tracking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input, browser resizing, focus loss, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Hold piece functionality 2. Battle mode with garbage lines 3. Special effects for Tetris clears 4. Mobile touch support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to restart the game) 2. Function modules unrelated to Tetris (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, maintainability, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the game loop implementation causes performance issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (clear distinction between tetrominos, background and UI elements) 2) Proper layout spacing (clear separation between game board, next piece preview, score display) 3) Professional font system (readable score and level indicators, consistent styling). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate response to key presses (≤ 50ms) 2) Smooth animation for line clears and piece movements 3) Clear visual and audio feedback for game events (line clears, game over). Deduct 5 points for each operation without feedback, 3 points for stuttering animations during fast movement, and 5 points for inconsistent game speed. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

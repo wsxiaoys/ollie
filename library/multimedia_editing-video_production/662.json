@@ -1,0 +1,68 @@
+{
+  "index": 662,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the code you generate is executable for display. Develop a video timeline marking tool that allows users to add bookmark tags on the video timeline, attach text notes and thumbnails to each bookmark, support quick navigation through bookmarks, and export project files containing all marking information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video player functionality properly implemented?",
+      "description": "Evaluate whether the code creates a functional HTML5 video player that includes standard controls (play/pause, volume, fullscreen) and implements a custom timeline with proper event handling. The player should support common video formats (MP4, WebM) and handle video loading errors gracefully. Score 0 if no functional video player exists, 5 if only basic playback works, and 10 for a complete implementation with error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the bookmark tagging system fully implemented?",
+      "description": "Check if the code allows users to create, edit, and delete bookmarks at specific timestamps on the video timeline. Bookmarks should be visually displayed on the timeline with proper positioning according to their timestamps. Deduct 5 points if bookmark creation is buggy, 3 points if bookmark positioning is inaccurate, and 2 points if editing functionality is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are text notes and thumbnails properly attached to bookmarks?",
+      "description": "Assess whether the code implements functionality to add text notes to bookmarks and automatically generates thumbnails for each bookmark. Notes should be editable and thumbnails should accurately represent the video frame at the bookmark timestamp. Deduct 5 points if thumbnails aren't generated or are of poor quality, and 5 points if text note functionality is missing or incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is bookmark navigation and project export functionality implemented?",
+      "description": "Verify if the code implements quick navigation between bookmarks (clicking on a bookmark should seek the video to that timestamp) and allows exporting/importing project files containing all marking information (timestamps, notes, thumbnails). Deduct 5 points if navigation is not smooth or has bugs, and 5 points if export/import functionality is missing or incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, large video files, concurrent bookmark operations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Keyboard shortcuts for efficient marking 2. Color-coding for different types of bookmarks 3. Timeline zooming for precision marking). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to create bookmarks that confuse users) 2. Function modules unrelated to video marking (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video player/bookmark management/UI components), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Bookmark creation response delay ≤ 100ms 2) Transition animations when navigating between bookmarks controlled between 200-400ms 3) Clear visual indication of current bookmark and playback position. Deduct 5 points for each operation without feedback, 3 points for jerky timeline scrolling, and 5 points for confusing navigation between bookmarks. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "easy"
+}

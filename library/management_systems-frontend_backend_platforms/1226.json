@@ -1,0 +1,68 @@
+{
+  "index": 1226,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. I am a professional business driver, please help me develop an app to record vehicle travel.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core vehicle tracking functionality fully implemented?",
+      "description": "Evaluate whether the code includes accurate GPS location tracking, distance calculation algorithms, and trip recording mechanisms. Check if the implementation handles location updates efficiently (using proper intervals to balance accuracy and battery usage). Score 0 if core tracking is missing, 5 if basic location recording is implemented, and 10 if it includes advanced features like background tracking and offline functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the trip management system comprehensive?",
+      "description": "Review whether the application provides complete trip lifecycle management including start/pause/resume/end operations, automatic trip detection, and manual trip editing capabilities. Deduct 5 points if trip categorization (business vs. personal) is missing, and 3 points if there's no ability to annotate or tag trips. Give 10 points if the trip management system is fully featured with validation checks.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are business-specific reporting features implemented?",
+      "description": "Check if the code includes business-specific reporting such as expense calculations, mileage summaries, and exportable reports in standard formats (PDF, CSV). Verify if tax-related calculations are supported (e.g., business vs. personal mileage separation). Deduct 5 points if export functionality is missing, and 3 points if the reports lack customization options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data persistence and synchronization mechanism reliable?",
+      "description": "Evaluate whether the app implements proper data storage (local database like SQLite/Realm), backup mechanisms, and cloud synchronization options. Check if data integrity is maintained through proper transaction handling and conflict resolution. Deduct 5 points if there's no automated backup system, and 3 points if cross-device synchronization is missing. Give 10 points for a complete implementation with data recovery options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as GPS signal loss, network interruption, app backgrounding, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automatic business destination recognition 2. Integration with expense management systems 3. Voice commands for hands-free operation while driving). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple location tracking methods running simultaneously) 2. Function modules unrelated to business driving (e.g., a built-in music player) 3. Fancy effects that affect performance or distract while driving (e.g., complex animations during navigation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating location services/UI/data storage layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design standards for vehicle apps: 1) High-contrast display readable in varying light conditions 2) Proper layout with touch targets ≥ 48px for use while stationary 3) Simplified interface with minimal interaction required while driving. Deduct 3 points for each hard-to-read element, 5 points for distracting interface elements, and 5 points for designs requiring complex interactions while driving. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction suitable for use in a vehicle environment?",
+      "description": "Judge whether the app interactions are appropriate for a driving context: 1) Voice feedback for critical operations 2) Single-tap or voice command for essential functions 3) Automatic mode switching between driving/stationary states. Deduct 5 points for interactions requiring precise touch control while moving, 3 points for distracting animations or notifications, and 5 points for critical functions buried in menus. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

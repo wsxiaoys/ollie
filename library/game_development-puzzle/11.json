@@ -1,0 +1,68 @@
+{
+  "index": 11,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable.\n\nPlease use HTML and JavaScript to implement environmental interaction.\n**Task**: Add environmental interaction functionality that allows characters to interact with objects in the scene, such as pushing boxes, pulling levers, etc.\n**Tip**: You can use a simple physics engine to implement object movement and design puzzle elements for levels. Please think through and answer in detail, aiming to implement a solution that is as complete as possible, meets the requirements, has a good game interface, and high playability. Note: Use HTML to implement the above functionality, ensuring it can be directly executed in the frontend.\n\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the character-object interaction system fully implemented?",
+      "description": "Evaluate whether the code accurately implements core interactions like pushing boxes and pulling levers with proper collision detection and physics calculations. Score 0 if interactions are absent, 5 if only basic interactions work, and 10 if multiple interactions are implemented with physical properties (mass, friction, momentum).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the physics engine properly implemented?",
+      "description": "Check if the code includes essential physics calculations (collision detection, object momentum, velocity) and handles edge cases like stacking objects or preventing objects from passing through walls. Score 0 for no physics implementation, 5 for basic physics without edge cases, and 10 for robust physics handling all scenarios.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the interactive puzzle elements well-designed?",
+      "description": "Review whether the solution includes actual puzzle scenarios using the environmental interactions (e.g., box-pushing puzzles, lever-activated doors, pressure plates). Deduct 5 points if puzzle logic is inconsistent, 3 points if puzzle difficulty is poorly balanced. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the level design system implemented?",
+      "description": "Evaluate whether the code includes a level structure with progressive challenges, objectives, and states (solved/unsolved). Check for level progression logic and state management. Deduct 5 points if level state persistence is missing, 3 points if level transitions are abrupt. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input, out-of-bounds movement, object stacking, wall clipping, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Physics-based chain reactions 2. Interactive tutorial system 3. Multiple solution paths for puzzles). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to environmental interaction (e.g., unnecessary scoring system) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics/game logic/input handling/rendering layers), code organization, and implementation of design patterns. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are insufficient comments explaining complex physics calculations or game logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Clear visual distinction between interactive and non-interactive elements 2) Intuitive feedback when interacting with objects 3) Visual cues for physics interactions (shadows, movement indicators). Deduct 3 points for each confusing interactive element, 5 points for unclear visual feedback, and 5 points for misleading physics representations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the movement and physics interactions feel natural: 1) Character movement response ≤ 50ms 2) Physics calculations maintain 60fps even with multiple objects 3) Smooth transitions during object interactions. Deduct 5 points for each laggy interaction, 3 points for physics glitches during complex interactions, and 5 points for jerky animation during object movement. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

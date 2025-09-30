@@ -1,0 +1,68 @@
+{
+  "index": 1204,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Now I need you to simply create a program where a virtual joystick on a webpage controls the movement of a small car with four motors. The main controller board is an ESP32.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the virtual joystick UI implementation complete and intuitive?",
+      "description": "Evaluate if the HTML/CSS/JavaScript implementation creates a responsive, touch-compatible joystick that provides clear visual feedback. Check if it tracks both X/Y position with appropriate sensitivity and returns to center when released. Score 0 if no visual joystick exists, 5 if basic implementation without proper touch events, 10 if fully responsive with visual feedback and smooth touch/mouse interaction.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the motor control logic properly implemented on the ESP32?",
+      "description": "Review the ESP32 code for proper motor driver initialization, PWM setup and pin control. Check if the code handles differential steering (different speeds on left/right wheels) and includes proper ramping to avoid sudden starts/stops. Deduct 5 points if motor safety limits are missing, 3 points if PWM frequency is inappropriate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the communication between the web interface and ESP32 properly established?",
+      "description": "Assess if WebSocket or HTTP protocol implementation is complete with proper handshaking, error handling, and reconnection capabilities. Check if the communication handles connection drops gracefully. Deduct 5 points if the communication is one-way only, 3 points if security measures like CORS or authentication are missing, and 5 points if no connection status is displayed to users. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the control translation from joystick position to motor commands accurate?",
+      "description": "Verify the mathematical model that converts joystick X/Y coordinates to individual motor speeds. Check for proper handling of steering angles, forward/reverse transitions, and speed control. Deduct 5 points if the algorithm doesn't support diagonal movement, 3 points if speed scaling is linear rather than exponential for fine control, and 5 points if no deadzone handling exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as connection loss, erratic joystick input, motor stalls, low battery, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Battery level indicator 2. Speed/distance telemetry visualization 3. Obstacle detection feedback 4. Custom control profiles). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple joystick libraries coexisting) 2. Function modules unrelated to car control (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive CSS transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/communication/motor control layers), exception handling, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper comments and documentation are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional visual hierarchy (clear distinction between control elements and feedback displays). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for poor mobile responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Joystick response delay ≤ 100ms 2) Car movement feedback within 200ms 3) Smooth animation for joystick movement. Deduct 5 points for noticeable input lag, 3 points for jerky joystick movement, and 5 points if the car response doesn't match joystick position accurately. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

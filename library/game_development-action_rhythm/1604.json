@@ -1,0 +1,68 @@
+{
+  "index": 1604,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Make sure the generated code is executable for demonstration purposes. Write code for a Super Mario-like game that I can run on my mobile device.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the game's physics system fully implemented?",
+      "description": "Review whether the code accurately implements Super Mario-style physics including gravity effects, character movement, jump mechanics, and collision detection. Score 0 if the core physics logic is not implemented, 5 if basic movement and jumping are implemented but lack polish, and 10 if the game features accurate momentum, variable jump heights based on button press duration, and proper collision handling including platform interactions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the core gameplay mechanics present and functional?",
+      "description": "Check whether essential Super Mario mechanics are implemented, including enemy interactions (stomping, side collisions), power-ups (mushroom for growth, etc.), collectibles (coins), and level completion conditions. Deduct 3 points if enemy interaction is missing, 3 points if power-ups are not implemented, 2 points if collectibles don't work properly, and 2 points if level completion logic is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is mobile-specific optimization and responsive design implemented?",
+      "description": "Evaluate whether the game properly adapts to different mobile screen sizes, implements touch controls effectively (virtual d-pad, gesture controls, etc.), and handles device orientation changes. Additionally, check for mobile performance optimizations like asset loading strategies and battery consumption considerations. Deduct 4 points for non-responsive design, 3 points for poor touch controls, and 3 points for missing mobile-specific optimizations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the level design system flexible and functional?",
+      "description": "Assess whether the code includes a tile-based or similar level system that allows for creating Super Mario-style environments with platforms, pipes, blocks, and obstacles. Check if the level rendering is optimized (only rendering visible elements) and if the camera system follows the player appropriately. Deduct 4 points if the level system is hard-coded without flexibility, 3 points if camera movement is jerky or problematic, and 3 points if performance issues occur with larger levels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid touch inputs, device rotation, background/foreground app transitions, memory constraints, and varying network conditions) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom character skins 2. Level editor functionality 3. Special power-ups beyond the original game 4. Social sharing of gameplay achievements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple physics engines running simultaneously) 2. Function modules unrelated to the core Mario gameplay (e.g., a built-in chat system) 3. Fancy effects that affect mobile performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), asset management approach, and code reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the game assets aren't properly managed for mobile optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile game design principles: 1) Visually distinct game elements with clear silhouettes 2) Appropriate visual hierarchy highlighting interactive elements 3) Unobtrusive UI that doesn't block gameplay 4) Proper touch target sizes (minimum 44×44 points). Deduct 3 points for each cluttered visual area, 5 points for poor contrast/readability, and 5 points for UI elements that obstruct crucial gameplay areas. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game responds appropriately to player input: 1) Input response delay ≤ 50ms 2) Consistent frame rate (minimum 30 FPS) 3) Appropriate feedback for all player actions (visual/audio cues). Deduct 5 points if input lag exceeds 100ms, 3 points if frame drops occur during normal gameplay, and 5 points if essential feedback is missing for critical actions (jumping, taking damage, etc.). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

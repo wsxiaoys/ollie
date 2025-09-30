@@ -1,0 +1,68 @@
+{
+  "index": 975,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Can an xbuild h5 vue project that generates a mobile APP create a floating window that displays over other applications?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the cross-platform capability accurately explained?",
+      "description": "Evaluate whether the response clearly distinguishes between WebView/H5 limitations and native app capabilities regarding system-level floating windows. Check if it explains that Vue-based H5 apps cannot create OS-level floating windows that display over other applications without native integration. Deduct 5 points for ambiguous explanations, 10 points for incorrect technical information about WebView capabilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the native bridge integration solution properly implemented?",
+      "description": "Check whether the solution provides a complete native bridge implementation (e.g., using JSBridge, Capacitor, or other native plugins) that connects the Vue application with native functionality required for floating windows. Evaluate if the code includes both the JavaScript interface and corresponding native code (Java/Kotlin for Android, Swift/Objective-C for iOS). Score 0 if missing entirely, 5 for partial implementation, and 10 for complete implementation with proper documentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is a viable alternative solution proposed for H5 constraints?",
+      "description": "Assess whether practical alternatives are provided given H5 limitations, such as in-app floating components, PWA notification techniques, or hybrid approaches. Evaluate the practicality and implementation completeness of these alternatives. Score 0 if no alternatives are provided, 5 for conceptual alternatives without implementation, and 10 for fully implemented alternatives with code examples.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are permission requirements and platform differences clearly addressed?",
+      "description": "Review whether the response accurately outlines the permission requirements for floating windows across different platforms (especially Android's SYSTEM_ALERT_WINDOW permission), including code snippets for requesting these permissions. Evaluate explanation of iOS limitations and workarounds. Deduct 3 points for each platform with missing permission handling, and 5 points for incorrect permission information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission denials, API version compatibility issues, application lifecycle events, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Adaptive floating window behavior based on user context 2. Gesture-based controls for the floating window 3. Smart positioning to avoid keyboard/UI overlaps). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple window creation methods) 2. Function modules unrelated to floating windows (e.g., unnecessary analytics) 3. Performance-heavy effects that aren't essential. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of UI/logic/platform-specific code), reusability of components, and proper error handling. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if platform-specific code is not properly isolated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the floating window interface meet professional design standards?",
+      "description": "Evaluate whether the floating window design follows mobile UI principles: 1) Appropriate size and positioning (not blocking critical content) 2) Clear visual hierarchy with proper contrast 3) Touch-friendly target sizes (minimum 44px). Deduct 3 points for each usability issue, 5 points for poor visibility/contrast, and 5 points for designs that don't account for different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the floating window interactions are fluid and intuitive: 1) Drag-and-drop responsiveness within 50ms 2) Smooth transitions when showing/hiding (animation duration 200-300ms) 3) Clear visual feedback for all interactions. Deduct 5 points for laggy animations, 3 points for missing interaction states, and 5 points for unintuitive gesture controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Mobile Development",
+  "difficulty": "easy"
+}

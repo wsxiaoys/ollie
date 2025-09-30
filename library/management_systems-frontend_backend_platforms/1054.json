@@ -1,0 +1,68 @@
+{
+  "index": 1054,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Create a front-end UI interface for a base station maintenance system, with a top navigation bar that includes base station information and alarm information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the top navigation bar properly implemented?",
+      "description": "Check whether the navigation bar is properly positioned at the top of the page, with clearly visible menu items for base station information and alarm information. The bar should be responsive, maintain visibility during scrolling, and use appropriate contrast for readability. Deduct 3 points if the navigation is not fixed to the top, 5 points if menu items are not clearly visible, and 5 points if it's not responsive across different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the base station information section comprehensively implemented?",
+      "description": "Evaluate whether the code accurately implements the base station information display, including essential data fields (station ID, location, status, equipment list, maintenance history). Check for proper data formatting, sorting capabilities, and filtering options. Score 0 if the section is missing, 5 if only basic information is displayed without interaction features, and 10 if comprehensive information with advanced filtering/sorting is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the alarm information system functional?",
+      "description": "Review if the alarm information section includes critical elements: alarm severity indicators (color-coding), timestamp display, alarm categorization, and acknowledgment mechanisms. Verify whether visual/audio indicators for critical alarms are implemented. Deduct 5 points if severity indicators are missing, 3 points if acknowledgment functionality is absent, and 3 points if there's no alarm history view. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a dashboard or visualization component for monitoring?",
+      "description": "Check whether the interface includes data visualization components like status charts, alarm trend graphs, or geographic maps showing base station distribution. Evaluate if the visualizations are interactive and provide meaningful insights. Deduct 5 points if visualizations are static only, 5 points if key metrics are missing, and 3 points if legends/tooltips are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as data loading failures, empty states, network interruption, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time alert notifications 2. Dark/light theme toggle 3. Customizable dashboard layouts 4. Interactive equipment diagrams). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to display the same information) 2. Function modules unrelated to base station maintenance (e.g., unrelated analytics) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/data services/state management), component reusability, and build process optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns between UI and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for alarm states. Deduct 5 points for each operation without feedback, 3 points for laggy transitions between interface sections, and 5 points for hard-to-find critical alarm information. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 987,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. Include visualization with dual curves showing backtest returns and stock returns.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the backtesting system properly implemented?",
+      "description": "Review whether the code accurately implements the backtesting framework with proper time series handling, transaction cost modeling, and performance calculation. Score 0 if the backtesting logic is missing, 5 if only basic backtesting is implemented without accounting for market frictions, and 10 if slippage, commission, and other market mechanics are fully modeled.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dual curve visualization correctly implemented?",
+      "description": "Evaluate whether the code includes a proper visualization component that clearly displays both backtest returns and stock returns on the same chart. Check for proper labeling, legends, time axis handling, and scaling methods. Deduct 5 points if curves lack proper scaling, 3 points if legends or axes are missing/unclear, and 2 points if the visualization is not interactive when it should be. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the data handling and financial calculations accurate?",
+      "description": "Assess the correctness of financial calculations such as returns, drawdowns, Sharpe ratio, and other performance metrics. Check if data preprocessing handles missing values, adjusts for splits/dividends, and maintains point-in-time integrity. Deduct 5 points for look-ahead bias, 3 points for incorrect return calculations, and 5 points for improper handling of financial time series data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the code modular and reusable for different strategy implementations?",
+      "description": "Check whether the code architecture separates data handling, strategy logic, execution, and visualization components. The design should allow for easy swapping of different strategies or stocks while maintaining the same backtesting framework. Deduct 5 points if components are tightly coupled, 3 points if strategy parameters cannot be easily modified, and 2 points if the code doesn't support multiple asset types. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, outliers, API failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive drill-down into specific time periods 2. Risk attribution analysis 3. Automated strategy parameter optimization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar calculations (e.g., multiple ways to calculate returns) 2. Function modules unrelated to financial analysis (e.g., excessive decorative elements) 3. Computationally expensive operations that don't add analytical value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data acquisition/processing/visualization layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visualization meet professional financial charting standards?",
+      "description": "Evaluate whether the charts follow financial industry standards: 1) Proper color scheme for gains/losses (typically green/red) 2) Clear labeling of key events and metrics 3) Appropriate scale for returns (log scale or percentage) 4) Inclusion of benchmark comparison. Deduct 3 points for each misleading visual element, 5 points for improper scaling that distorts performance perception, and 3 points for missing critical information like drawdowns or volatility. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the chart interaction smooth and informative?",
+      "description": "Judge whether the chart interactions enhance financial analysis: 1) Tooltips showing precise values on hover 2) Ability to zoom into specific time periods 3) Toggle visibility of different metrics 4) Export functionality for research purposes. Deduct 3 points for each missing key interaction, 5 points for laggy/unresponsive charts with large datasets, and 3 points for interactions that don't add analytical value. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

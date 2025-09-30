@@ -1,0 +1,68 @@
+{
+  "index": 419,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration. Help me implement a spray paint-like effect using mouse and SVG.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the spray paint basic functionality implemented correctly?",
+      "description": "Review whether the code implements the fundamental spray paint effect using SVG, including random particle generation within a circular area around the mouse pointer. Score 0 if the spray functionality is missing, 5 if basic spray is implemented but lacks randomness or proper distribution, and 10 if the spray effect looks natural with proper density and dispersion patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is mouse interaction properly handled for the spray paint effect?",
+      "description": "Check if the code correctly handles mouse events (mousedown, mousemove, mouseup) to create continuous painting when dragging and properly stops when released. Verify if it includes both click-to-spray and drag-to-spray capabilities. Deduct 5 points if only one mouse event type is supported, 3 points if event listeners aren't properly removed when needed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are spray paint customization options provided?",
+      "description": "Evaluate whether the code allows for customization of spray parameters such as spray radius, density, color, opacity, and particle size. Score 0 if no customization options exist, 5 if only basic color/size options are available, and 10 if comprehensive controls for all spray properties are implemented with intuitive interfaces.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SVG implementation efficient and performant?",
+      "description": "Assess whether the code uses SVG efficiently by examining if it: properly manages DOM elements (creating/removing nodes to prevent excessive memory usage), uses appropriate SVG elements for spray particles, and maintains good performance even with many particles. Deduct 5 points if frame rate drops noticeably during usage, 5 points if memory usage grows uncontrollably. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid mouse movements, browser resize events, touch inputs on mobile devices) and provide graceful degradation or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Pressure sensitivity support for tablets 2. Texture/pattern options for spray particles 3. Undo/redo functionality 4. Save/export canvas as image). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event listeners that could cause memory leaks 2. Unnecessary calculations in animation loops 3. Fancy effects that severely affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating spray logic/UI controls/event handling), code reusability, and maintainability. Deduct 5 points if global state pollution is found or proper encapsulation is not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns between rendering and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean canvas area with proper contrast between UI controls and drawing area 2) Proper layout spacing for control panels (element spacing follows the 8px multiple principle) 3) Intuitive iconography for spray tools. Deduct 3 points for cluttered UI elements, 5 points for poor contrast making the spray effect hard to see, and 5 points for confusing tool indicators. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the spray painting interaction smooth and realistic?",
+      "description": "Judge whether the spray effect feels natural and responsive: 1) Spray response time ≤ 50ms 2) Particle rendering doesn't lag behind cursor movement 3) Natural-looking spray dispersion pattern similar to real spray paint. Deduct 5 points for noticeable lag between mouse movement and spray rendering, 3 points for unnatural particle distribution patterns, and 5 points for jarring transitions when changing spray parameters. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 479,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Develop a speech-to-text tool that allows users to upload audio files (mp3, wav formats) or record speech in real-time using a microphone. The tool should convert speech content into text and display the recognition results on the interface in real-time. Users should be able to pause, continue input, and edit the recognized text. The interface should also provide language selection (supporting at least English and Chinese), speech rate adjustment functionality, and text export capabilities (supporting txt and doc formats). You can use the browser's built-in speech recognition API or integrate third-party APIs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio input functionality fully implemented?",
+      "description": "Evaluate whether the implementation properly handles both file uploading (.mp3, .wav formats) and real-time microphone recording. Check for proper file validation, format detection, and error handling for unsupported formats. Verify that the microphone access requests appropriate browser permissions and provides fallback options. Score 0 if neither input method works, 5 if only one method is implemented or both have significant issues, and 10 if both methods are fully functional with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the speech recognition mechanism work effectively?",
+      "description": "Assess the implementation of speech recognition using either the browser's Web Speech API or integration with third-party services (like Google Speech-to-Text, Azure Speech, etc.). Check for proper initialization, event handling, error recovery, and continuous recognition capability. Verify language detection accuracy and appropriate handling of recognition confidence levels. Deduct 5 points if recognition doesn't work reliably, 3 points if language support is limited to fewer than two languages, and 2 points if there's no visible feedback during recognition. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the real-time transcription and editing features implemented?",
+      "description": "Evaluate whether the tool displays recognition results in real-time, provides pause/resume functionality for the speech recognition process, and allows for text editing of the recognized content. Check if the interim results are displayed differently from final results, if there's a clear visual indication of the recognition status, and if text editing preserves formatting and cursor position. Deduct 5 points if real-time display is missing, 3 points if pause/resume functionality doesn't work properly, and 3 points if text editing capabilities are limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is multilingual support with speech rate adjustment implemented?",
+      "description": "Check if the tool supports at least English and Chinese language selection with proper UI controls. Verify that changing languages actually affects the recognition results. Additionally, evaluate the implementation of speech rate adjustment (slow, normal, fast) and its effect on recognition accuracy. Deduct 5 points if language switching doesn't work properly, 3 points if fewer than two languages are supported, and 3 points if speech rate adjustment is missing or non-functional. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone access denial, audio file corruption, network interruption, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Speaker diarization (distinguishing between different speakers) 2. Automatic punctuation and formatting 3. Real-time translation capabilities alongside transcription 4. Voice activity detection with visual feedback). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing pipelines) 2. Function modules unrelated to speech-to-text (e.g., unnecessary media players) 3. Fancy effects that affect performance (e.g., excessive animations that delay transcription display). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/recognition/display layers), error handling, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if resource management is poor (e.g., memory leaks, unclosed audio streams). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Clear visual feedback when speech is being recorded or processed 2) Smooth transitions between recording states and recognition results 3) Intuitive controls for pausing, resuming, and exporting text. Deduct 5 points for each operation without feedback, 3 points for laggy text updates during recognition, and 5 points for hard-to-find key function buttons like language selection or export options. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Batch Processing",
+  "difficulty": "easy"
+}

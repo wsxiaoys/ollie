@@ -1,0 +1,68 @@
+{
+  "index": 214,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Ensure the code you produce is executable for display. Write a frontend program that simulates the moon's rotation.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the moon rotation simulation accurately implemented?",
+      "description": "Examine if the code correctly implements orbital mechanics for the moon's rotation, including proper axis tilt (5.14°), accurate rotation period (27.3 days), and realistic lunar libration effect. Score 0 if the rotation is static or inaccurate, 5 if basic rotation is implemented but lacks precision in orbital mechanics, and 10 if the simulation is astronomically accurate.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the simulation include proper visual representation of the moon?",
+      "description": "Check if the moon is visually represented with accurate textures showing craters, maria, and highlands. The texture mapping should wrap correctly on a sphere with proper lighting conditions to show the moon phases. Deduct 5 points if the texture is low resolution or unrealistic, 3 points if the lighting model doesn't accurately show phases, and 2 points if the surface details are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Earth-Moon system properly implemented?",
+      "description": "Verify if the simulation includes the Earth and shows the correct spatial relationship between Earth and Moon (average distance ratio and size ratio). The simulation should show how the moon orbits the Earth while rotating on its axis. Deduct 5 points if the Earth is missing, 3 points if the distance/size proportions are dramatically wrong, and 2 points if the orbital mechanics aren't synchronized with rotation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an interactive user control system?",
+      "description": "Evaluate whether users can control the simulation through features like zoom, rotation speed adjustment, time controls (pause/play/fast-forward), and camera angle changes. Deduct 3 points for each missing core control, and 2 points if the controls are implemented but not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resize, performance throttling, texture loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time phase indicator with dates 2. Ability to view from different celestial perspectives 3. Information overlay about moon features when hovering). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple camera controls doing the same thing) 2. Function modules unrelated to moon simulation (e.g., unrelated animations) 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down the simulation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering logic/physics calculation/user interaction layers), code organization, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no performance optimization for smooth animation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean starfield or space background that doesn't distract from the main simulation 2) Proper layout spacing for controls and information panels 3) Professional font system for any displayed data or controls. Deduct 3 points for each visually distracting element, 5 points for poorly contrasting color combinations that hinder visibility, and 5 points for chaotic UI layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the rendering and animation smooth and seamless?",
+      "description": "Judge whether the animation maintains a consistent frame rate (60fps) without stuttering, even during user interactions. Check if lighting transitions are smooth when showing moon phases. Deduct 5 points for noticeable frame drops, 3 points for jerky rotation or movement, and 5 points for sudden visual glitches during animations or transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

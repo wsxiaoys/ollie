@@ -1,0 +1,68 @@
+{
+  "index": 912,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Collection Pages\n│   ├── Product Collection\n│   ├── Collection List\n├── Shopee\n│   ├── Product Listing\n│   │   ├── Store Product Drafts\n│   │   ├── Global Product Drafts\n│   │   ├── Publishing Records\n│   │   ├── Pricing Templates\n│   ├── Online Products\n│   │   ├── Store Products\n│   │   ├── Global Products\n│   ├── Marketing Management\n│       ├── Discount Templates\n│       └── Discount Campaigns\n├── Lazada\n│   ├── Product Listing\n│   │   ├── Store Product Drafts\n│   │   ├── Global Product Drafts\n│   │   ├── Publishing Records\n│   ├── Online Products\n│       └── Store Products",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the full hierarchical structure of the navigation system properly implemented?",
+      "description": "Check whether the code accurately implements the nested menu structure using appropriate HTML/CSS/JS components. Verify proper indentation visual cues, expand/collapse functionality for submenus, and breadcrumb navigation. Score 0 if the hierarchy is not represented, 5 if basic structure is implemented but lacks visual distinctions, and 10 if the full hierarchy with proper interaction is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cross-platform e-commerce product management functionality implemented?",
+      "description": "Evaluate whether the code handles both Shopee and Lazada platforms with their distinct features. Check for platform-specific API integrations, data models for different product types (Store/Global), and unified management interfaces. Deduct 5 points if platform-specific features are missing, 3 points if data synchronization between platforms is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the product draft and publishing workflows properly implemented?",
+      "description": "Assess the implementation of product lifecycles including draft creation, editing, and publishing processes. Check for status tracking, version control, and publishing validation rules. Verify that publishing records are maintained properly. Deduct 5 points if validation rules are missing, 3 points if status transitions are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the marketing management functionality properly integrated with product data?",
+      "description": "Examine the relationship between products and marketing features (discount templates/campaigns). Check for data consistency between product listings and promotional features, including pricing template integration. Deduct 5 points if product-discount relationships are not properly modeled, 3 points if promotional features lack scheduling capabilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, invalid product data, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Cross-platform bulk operations 2. AI-powered product categorization 3. Smart pricing recommendations based on market data). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementation of similar functions across platforms 2. Unused or legacy code paths 3. Unnecessarily complex UI components that slow down the interface. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating platform-specific logic from common functionality), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance when navigating complex menu structures. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

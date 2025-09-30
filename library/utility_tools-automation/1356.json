@@ -1,0 +1,68 @@
+{
+  "index": 1356,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Ensure the code you generate is executable for demonstration. Implement an SSH pseudo-terminal (pty) using Tauri, Vue 3, and Xterm.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Tauri application shell properly configured?",
+      "description": "Review whether the Tauri initialization code correctly configures application permissions, especially for file system access and child process spawning which are essential for PTY operations. Check if security allowlist is properly set in tauri.conf.json. Score 0 if Tauri configuration is missing, 5 if basic configuration exists but lacks proper permissions, and 10 if full configuration with proper security considerations is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the PTY (pseudo-terminal) implementation complete?",
+      "description": "Evaluate if the code properly implements node-pty or similar library integration through Tauri commands. Check whether terminal size handling, process spawning with correct shell detection (based on platform), and proper process management (start/stop/kill) are implemented. Deduct 5 points if terminal resizing doesn't work, 3 points if shell detection is hardcoded rather than platform-aware, and 5 points if process termination is not handled cleanly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Vue 3 and Xterm.js integration properly implemented?",
+      "description": "Check whether the Vue 3 application correctly initializes and manages the Xterm.js instance, including proper component lifecycle hooks (mounted, unmounted), terminal options configuration, and addon integration (fit, webLinks, etc.). Score 0 if the integration is broken, 5 if basic terminal functionality works without advanced features, and 10 if full integration with proper Vue reactivity and all necessary Xterm.js addons is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is bidirectional data flow between PTY and terminal UI properly handled?",
+      "description": "Assess if the implementation correctly handles the data flow: user input from Xterm.js to the PTY process and output from the PTY process back to Xterm.js display. Check for proper event listeners, data encoding/decoding, and buffer management. Deduct 5 points if there are noticeable delays in data transmission, 3 points if character encoding issues exist, and 5 points if input/output streams aren't properly cleaned up. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as PTY process crashes, IPC errors, unexpected terminal output, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Terminal session recording and playback 2. Split-pane terminal support 3. Custom themes with preview). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to spawn terminals) 2. Function modules unrelated to terminal emulation 3. Fancy effects that affect terminal performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating terminal logic/view/IPC layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional terminal design standards?",
+      "description": "Evaluate whether the terminal design follows modern design principles: 1) Appropriate color scheme with good contrast 2) Proper font selection (monospace fonts with clear distinction between similar characters like 0/O, 1/l) 3) Efficient use of screen real estate with minimal GUI elements. Deduct 3 points for poor font rendering, 5 points for readability issues in the terminal, and 5 points for excessive GUI elements that reduce usable terminal space. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the terminal interaction responsive and efficient?",
+      "description": "Judge whether the terminal performance meets professional standards: 1) Input latency under 50ms 2) Ability to handle large outputs without freezing 3) Efficient handling of escape sequences and terminal control codes. Deduct 5 points for noticeable input lag, 3 points for performance degradation with large outputs, and 5 points for incorrect rendering of common terminal applications (vim, htop, etc.). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

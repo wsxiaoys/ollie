@@ -1,0 +1,68 @@
+{
+  "index": 1684,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for display whenever possible. Help me create a luck-based dice game in HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core dice game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements random dice generation, score calculation, and turn-based gameplay. Score 0 if the core logic is missing, 5 if only basic dice rolling is implemented without complete game rules, and 10 if the game includes comprehensive rules (scoring system, win conditions, etc.).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dice rolling animation and visualization properly executed?",
+      "description": "Check if the dice rolling includes proper visual feedback (animation, transitions, or at minimum state changes) that makes the randomness feel authentic. Deduct 5 points if there's no visual feedback during rolls, 3 points if the animation is jerky or unnatural, and 2 points if the dice representation is too simplistic (e.g., just numbers without dice faces).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the game have complete player interaction and game flow?",
+      "description": "Evaluate whether the game has clear turn management, score tracking, and game progression (start game, player turns, end game conditions). Deduct 4 points if turn management is unclear, 3 points if there's no proper score display, and 3 points if the game lacks clear start/end states.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the rules of the game clearly presented to the player?",
+      "description": "Check if the game includes clear instructions, scoring explanations, and feedback on player actions. Give 10 points if all rules are clearly explained in the UI, 5 points if basic instructions exist but some rules remain unclear, and 0 points if no instructions or rules are provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as repeated clicks during animations, browser compatibility issues, state inconsistencies) and provide friendly error handling. Code with strong robustness should prevent game-breaking behaviors, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Sound effects for dice rolls 2. Customizable dice themes/colors 3. Statistics tracking across games 4. Special dice or bonus mechanics). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple RNG systems) 2. Function modules unrelated to dice gaming (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive particles or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic/view/event handling), code reusability, and maintainability. Deduct 5 points if global state pollution is found or if variables/functions are poorly named; deduct 5 points if the code duplication rate is too high; deduct 5 points if there's no separation of concerns between presentation and logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Dice rolling animation duration appropriate (not too quick or too slow) 3) Clear visual guidance for player actions. Deduct 5 points for each operation without feedback, 3 points for jarring or inconsistent animations, and 5 points for confusing player action indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

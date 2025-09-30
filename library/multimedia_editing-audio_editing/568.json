@@ -1,0 +1,68 @@
+{
+  "index": 568,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the code you generate is executable.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code that is fully commented in simple, easy-to-understand language. Do not output anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete without omitting any code\n3. Carefully review and check all code before final output to evaluate its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), provide simulated data\n\n======== PROJECT REQUIREMENT DESCRIPTION ========\nCreate a front-end project for removing vocals from audio. Users can upload audio files containing vocals, and the program will attempt to remove the vocals. After processing, users can listen to and save the instrumental version of the audio.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio file upload and processing system fully implemented?",
+      "description": "Review whether the code accurately implements file upload functionality for audio files, validates file types/sizes, and provides appropriate feedback during the upload process. Check if error handling for invalid files is implemented. Score 0 if the upload functionality is missing, 5 if basic upload is implemented without validation, and 10 if complete with validation, progress indication, and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the vocal removal algorithm correctly implemented?",
+      "description": "Evaluate the implementation of the vocal removal algorithm. Check if it uses appropriate audio processing techniques (such as center channel elimination, frequency filtering, or machine learning approaches). Verify if the algorithm handles different audio formats and quality levels. Score 0 if no algorithm is implemented, 5 if a basic approach is used but with significant limitations, and 10 if a comprehensive solution with adjustable parameters is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio playback functionality complete and user-friendly?",
+      "description": "Check if the code includes proper audio playback controls for both the original and processed audio. This should include play/pause, volume control, seeking capabilities, and display of current playback position/duration. Score 0 if playback is missing, 5 if basic playback is implemented but missing controls, and 10 if all expected features are present with visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio download/save functionality implemented correctly?",
+      "description": "Review if the code allows users to save/download the processed instrumental audio in appropriate formats. Check if file naming conventions and metadata are handled properly. Score 0 if saving functionality is missing, 5 if basic download is implemented but with limitations, and 10 if the feature is complete with format options and proper metadata preservation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incompatible audio formats, large file sizes, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realtime visualization of audio waves/spectrum 2. Adjustable parameters for vocal isolation strength 3. Before/after comparison functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing libraries doing the same work) 2. Function modules unrelated to audio processing (e.g., unnecessary social media integrations) 3. Fancy effects that affect performance (e.g., excessive animations that slow down audio processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing logic/UI/file handling), code reusability, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback during audio processing. Deduct 5 points for each operation without feedback, 3 points for laggy UI during audio processing, and 5 points for confusing processing state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "medium"
+}

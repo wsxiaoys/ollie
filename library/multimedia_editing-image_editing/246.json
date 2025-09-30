@@ -1,0 +1,68 @@
+{
+  "index": 246,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Please provide code for merging two images using canvas in uniapp and uploading them to the server.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image merging functionality correctly implemented using canvas in UniApp?",
+      "description": "Verify that the code correctly loads and merges two images on a canvas element compatible with UniApp. Check if it handles different image sizes (scaling/positioning), maintains aspect ratios, and processes images without distortion. Score 0 if canvas merging is not implemented, 5 if basic merging is done without handling edge cases, and 10 if the solution is comprehensive with proper error handling for image loading.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image upload mechanism to server properly implemented?",
+      "description": "Evaluate whether the code includes complete HTTP/HTTPS upload functionality using UniApp's upload APIs (uni.uploadFile). Check if it properly handles authentication, includes progress tracking, manages timeouts, and implements retry mechanisms. Deduct 5 points if upload error handling is missing, and 3 points if there's no upload progress indication. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the solution handle the UniApp cross-platform compatibility?",
+      "description": "Assess if the code accounts for platform differences in canvas API implementation across different platforms (iOS, Android, H5, mini-programs). Check if conditional code is used to handle platform-specific issues, and if polyfills are implemented where needed. Deduct 5 points if the solution works on only one platform, 3 points if minor platform-specific adjustments are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the image processing optimization implemented?",
+      "description": "Review whether the solution includes image optimization techniques such as compression before upload, proper memory management for large images, and canvas size optimization. Check if the code handles different image formats and converts them appropriately. Deduct 5 points if there's no compression implementation, 3 points if memory management is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as image loading failures, network issues during upload, unsupported image formats, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Image filters or effects during merging 2. Drag-and-drop positioning of images before merging 3. Preview functionality with adjustable parameters). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant image processing operations that could be optimized 2. Function modules unrelated to image merging and uploading 3. Unnecessary canvas operations that impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating image processing/UI/network layers), error handling practices, and code reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between business logic and UI components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI elements for image selection, merging preview, and upload progress follow modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Visual feedback during image loading and processing ≤ 100ms 2) Smooth transitions between selection, preview, and upload states 3) Clear upload progress indication. Deduct 5 points for each operation without feedback, 3 points for jerky animations during processing, and 5 points for unclear upload status indication. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

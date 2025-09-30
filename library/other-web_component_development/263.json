@@ -1,0 +1,68 @@
+{
+  "index": 263,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure to ensure that any code you generate is executable and demonstrable. Vue virtual table component development.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the virtual table core virtualization logic properly implemented?",
+      "description": "Review whether the code correctly implements row/column virtualization by rendering only visible elements within the viewport. Check for proper calculation of visible range based on scroll position, container dimensions, and item heights. Score 0 if virtualization is absent, 5 if only basic virtualization exists, and 10 if both horizontal and vertical virtualization with variable height/width support are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the scroll performance optimization comprehensive?",
+      "description": "Evaluate whether the implementation uses proper optimization techniques such as: requestAnimationFrame for scroll handling, debouncing of expensive calculations, DOM recycling patterns, and efficient style updates. Check for frame rate maintenance under heavy load (should maintain 60fps with 10,000+ rows). Deduct 5 points if scroll jank occurs with large datasets, 3 points if memory usage grows significantly during scrolling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the essential table features complete?",
+      "description": "Assess the implementation of core table functionalities: column sorting, filtering, resizing, reordering, fixed headers/columns, cell formatting, and nested data support. Each missing essential feature deducts 2 points. The component should maintain virtualization effectiveness while supporting these features. Deduct 5 points if features break virtualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the component API well designed for Vue ecosystem integration?",
+      "description": "Evaluate the component API design including props interface, events emission, slots usage, and Vue lifecycle hooks handling. Verify that the component respects Vue's reactivity system and properly implements v-model/two-way binding where appropriate. Check compatibility with both Vue 2 and Vue 3 or clear documentation about version support. Deduct 5 points for incomplete reactivity, 3 points for poor slot implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (empty data sets, dynamic data updates, window resizing, extreme dimensions, etc.) and provides appropriate error boundaries. Check for defensive programming practices around scroll calculations. Deduct 3 points for each unhandled edge case. Code with strong robustness should handle these scenarios gracefully, giving 10 points. If the robustness is average, give 5 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Progressive loading with placeholders 2. Cell-level animations that maintain performance 3. Context-aware column width optimization 4. Intelligent sticky positioning). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Multiple implementations of scrolling logic 2. Features unrelated to table visualization 3. Heavy visual effects that compromise virtualization performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core virtualization is compromised by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review separation of concerns (data handling, virtualization logic, rendering, event handling), test coverage for core logic, and build configuration. Check for TypeScript type definitions and JSDoc documentation. Deduct 5 points if global state management is chaotic; deduct 5 points if the code has excessive coupling between components; deduct 5 points if there's no build optimization for tree-shaking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the table design follows modern UI principles: 1) Consistent cell padding and alignment 2) Clear visual hierarchy between header/data rows 3) Proper use of borders and separators 4) Responsive design considerations. Deduct 3 points for inconsistent spacing, 5 points for poor contrast between UI elements, and 5 points for lack of visual feedback on interaction (hover, selection states). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the scrolling behavior feels native and smooth: 1) No visible rendering gaps during fast scrolling 2) Smooth transition when items enter/exit the viewport 3) Proper handling of touch/trackpad inertial scrolling. Deduct 5 points for visible rendering pop-in/flicker, 3 points for scroll position jumping, and 5 points for poor touch device support. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Web Component Development",
+  "difficulty": "medium"
+}

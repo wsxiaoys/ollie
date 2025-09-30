@@ -1,0 +1,68 @@
+{
+  "index": 327,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Help me create an HTML webpage that implements a random name selection function, supporting the import of a name list through local Excel file upload. Design a beautiful interface with three buttons: start, pause, and reset.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core random name selection functionality fully implemented?",
+      "description": "Review whether the code accurately implements the random name selection algorithm, including proper randomization, no repetition of selected names (unless reset), and visual indication of the currently selected name. Score 0 if the selection logic is not implemented, 5 if basic selection exists but has flaws, and 10 if the selection is truly random with proper visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Excel file import functionality properly implemented?",
+      "description": "Check whether the code can correctly parse Excel files (.xlsx/.xls), extract name data from different sheet structures, handle various Excel format issues (merged cells, empty cells, etc.), and provide error feedback for invalid files. Deduct 5 points if only CSV is supported but not Excel, 3 points if the parsing is buggy, and 2 points if there's no validation feedback. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the three required control buttons (start, pause, reset) implemented with proper functionality?",
+      "description": "Evaluate whether the three buttons work as expected: start initiates the selection animation, pause freezes the current selection, and reset clears the selection history. Each button should have appropriate state management (disabled when relevant) and provide visual feedback when clicked. Deduct 3 points per missing or non-functional button. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper state management for the name selection process?",
+      "description": "Check if the application maintains proper states for: loaded names list, currently selected name, selection history, and application status (idle/selecting/paused). The state transitions should be logical and bug-free (e.g., can't pause if not started). Deduct 3 points for each state management flaw, and 5 points if the selection history is not maintained. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty Excel files, unsupported file formats, rapid button clicking, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation effects during name selection 2. Sound effects for selection events 3. History log of previously selected names 4. Export of selection results). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to select names) 2. Function modules unrelated to name selection (e.g., unneeded analytics) 3. Fancy effects that affect performance (e.g., excessive animations that slow down selection). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/data processing/event handling), code organization, use of appropriate design patterns, and defensive programming techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code isn't properly commented or documented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for name display vs. controls. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Name selection animation is visually pleasing but not distracting 3) Clear visual indication when a name is finally selected. Deduct 5 points for each operation without feedback, 3 points for jarring or too-fast animations during selection, and 5 points for unclear indication of the selected name. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

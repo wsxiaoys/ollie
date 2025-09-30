@@ -1,0 +1,68 @@
+{
+  "index": 999,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Write a Godzilla versus Kong game where two players control the characters, and victory is determined by clicking speed.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanic of clicking speed competition implemented?",
+      "description": "Check if the code implements a click speed counter for each character (Godzilla and Kong), with proper event listeners and score tracking. Scoring should accurately reflect click frequency over time rather than just raw click counts. Score 0 if this core mechanic is missing, 5 points if basic click counting exists but lacks proper timing mechanisms, and 10 points if the system includes click rate calculation with time normalization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are Godzilla and Kong characters properly implemented with visual feedback?",
+      "description": "Evaluate if both characters have distinct visual representations with appropriate animations/visual changes that respond to player actions. Characters should display different states (idle, attacking, winning, losing). Deduct 5 points if characters are static images without animations, 3 points if only basic state changes exist. Give 10 points if characters have fluid animations tied to game actions with proper hit/impact effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the two-player control system properly implemented?",
+      "description": "Review whether the game properly supports two separate input mechanisms (e.g., different keyboard keys or screen areas) that don't interfere with each other. Check if player controls are clearly explained and if the system prevents cross-player inputs. Deduct 5 points if inputs frequently conflict, 3 points if controls are functional but poorly explained. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete game flow with victory conditions?",
+      "description": "Check if the game properly implements start states, battle progression, victory determination, and match conclusion with restart options. Victory should be clearly tied to clicking performance with appropriate thresholds. Deduct 5 points if victory conditions are unclear, 3 points if game restart is missing, and 5 points if there's no proper battle progression visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking beyond normal counts, browser compatibility issues, simultaneous key presses) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special power moves triggered at certain click rates 2. Dynamic background changes based on who's winning 3. Character-specific sound effects for attacks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple click counters using different methods) 2. Function modules unrelated to the Godzilla vs. Kong battle theme (e.g., unnecessary settings options) 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or proper encapsulation is missing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or is difficult to maintain. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching appropriate to the monster battle theme 2) Proper layout spacing (character positioning, UI elements, score displays) 3) Professional font system with readable health/score indicators during fast gameplay. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Character attack animations properly timed with player clicks 3) Clear visual indicators of which player is currently winning. Deduct 5 points for each operation without feedback, 3 points for stuttering animations during rapid clicking, and 5 points for unclear game state visualization. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

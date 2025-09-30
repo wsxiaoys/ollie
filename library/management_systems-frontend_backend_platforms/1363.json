@@ -1,0 +1,68 @@
+{
+  "index": 1363,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. I want to design a GUI for sensor calibration, such as camera intrinsic calibration, camera-to-LiDAR extrinsic calibration, and LiDAR-to-LiDAR calibration, with each task on a separate page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-page GUI architecture implemented correctly?",
+      "description": "Evaluate whether the code implements a clean multi-page architecture with separate pages for camera intrinsic calibration, camera-to-LiDAR extrinsic calibration, and LiDAR-to-LiDAR calibration. Check for proper navigation between pages, consistent layout framework, and state management across different calibration workflows. Score 0 if pages are not separated, 5 if basic page separation exists but with navigation issues, and 10 if a complete, smooth multi-page system is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the camera intrinsic calibration functionality complete?",
+      "description": "Review the implementation of camera intrinsic calibration features, including checkerboard pattern detection, multiple image collection interface, calibration parameter visualization, and reprojection error analysis. Check for essential operations like image upload/capture, automatic corner detection with visual feedback, and parameter output (focal length, principal point, distortion coefficients). Deduct 5 points if corner detection visualization is missing, 3 points if reprojection error analysis is absent, and 2 points if parameter export functionality is not provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the camera-to-LiDAR extrinsic calibration implementation comprehensive?",
+      "description": "Assess the camera-to-LiDAR calibration functionality, including point cloud and image visualization, feature correspondence selection, transformation matrix computation, and calibration quality evaluation. Check for interactive point selection in both modalities, visualization of projection results, and optimization workflow. Deduct 5 points if real-time visualization of registration results is missing, 3 points if error metrics are not displayed, and 2 points if the workflow doesn't allow for refinement iterations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the LiDAR-to-LiDAR calibration system properly implemented?",
+      "description": "Evaluate the LiDAR-to-LiDAR calibration module, including point cloud loading and visualization, feature extraction for alignment, ICP or NDT algorithm implementation, and transformation validation. Check for interactive adjustment capabilities, multi-view visualization (top-down, side views), and quantitative alignment metrics. Deduct 5 points if point cloud visualization lacks proper controls (zoom, rotation, translation), 3 points if automatic alignment algorithms are missing, and 2 points if alignment quality metrics are not provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid image inputs, corrupt point cloud data, calibration failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the calibration experience (e.g., 1. Real-time calibration quality visualization 2. Automatic calibration target detection 3. Calibration history comparison 4. AR visualization of sensor alignment). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar calibration algorithms 2. Function modules unrelated to sensor calibration 3. Fancy visualization effects that adversely impact performance or usability. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core calibration functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calibration algorithms/UI/data processing layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for technical applications 2) Proper layout spacing with clear separation between visualization and control areas 3) Professional font system with clear labeling of technical parameters. Deduct 3 points for cluttered calibration controls, 5 points for poor contrast that makes data hard to read, and 5 points for inconsistent layout across different calibration pages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive for technical users?",
+      "description": "Judge whether the interface provides appropriate interaction for sensor calibration: 1) Clear visual feedback during calibration steps 2) Intuitive controls for point selection and adjustment 3) Responsive visualization updates after parameter changes. Deduct 5 points for calibration operations without visual feedback, 3 points for laggy point cloud rendering during interaction, and 5 points for unintuitive calibration workflow that would confuse technical users. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

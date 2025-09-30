@@ -1,0 +1,68 @@
+{
+  "index": 789,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display. Create a program for flower petals falling on a computer desktop.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the flower petal animation system properly implemented?",
+      "description": "Review whether the code accurately implements the flower petal floating physics with realistic gravity, wind effects, and natural randomization of movement paths. Check for proper use of requestAnimationFrame or similar timing mechanisms. Score 0 if no animation is implemented, 5 if basic falling animation exists, and 10 if petals exhibit natural, varied falling patterns with proper physics simulation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the implementation support desktop integration?",
+      "description": "Evaluate if the code creates a transparent overlay that properly integrates with the desktop environment (using Electron, browser features in kiosk mode, or appropriate system APIs). Check if it allows normal desktop usage while petals are falling. Deduct 5 points if it only works in a browser window, and 3 points if it interferes with normal desktop operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there proper petal customization and variety?",
+      "description": "Assess whether the code allows for multiple petal types, colors, sizes, and shapes. Examine if it includes at least 3 different flower types with appropriate seasonal variations. Score 0 if there's only one type of petal, 5 if there are a few variations, and 10 if there's extensive customization with realistic petal rendering using SVG or Canvas.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the program have resource management and performance optimization?",
+      "description": "Check if the code implements object pooling, proper garbage collection, and throttling mechanisms to prevent memory leaks and CPU overuse. Verify that it scales appropriately based on screen size and system capabilities. Deduct 5 points if performance degrades over time, and 3 points if it doesn't adjust for system load. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resize, background/foreground transitions, different screen resolutions, etc.) and provide graceful error handling. Code with strong robustness should adapt to various environments without breaking, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive petals that respond to mouse movements 2. Day/night cycle or weather effects 3. Seasonal variations or holiday themes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation calculations that could be optimized 2. Feature modules unrelated to petal animation (e.g., unnecessary UI controls) 3. Effects that harm performance without adding value (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering/physics/configuration layers), code organization, and implementation efficiency. Deduct 5 points if global variables are excessively used; deduct 5 points if the code lacks comments or documentation; deduct 5 points if the implementation uses inefficient algorithms or approaches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional standards?",
+      "description": "Evaluate whether the petal designs are visually appealing: 1) Natural-looking shapes and textures 2) Appropriate transparency and shading effects 3) Subtle color variations within each petal type. Deduct 3 points for unrealistic petal shapes, 5 points for flat or cartoonish representations lacking detail, and 5 points for unnatural colors or textures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and natural-looking?",
+      "description": "Judge whether the animations conform to real-world physics: 1) Smooth frame rate (≥ 30fps) 2) Natural oscillation and rotation during falling 3) Realistic acceleration and wind effects. Deduct 5 points for jerky animations, 3 points for unnatural movement patterns, and 5 points for uniform/robotic petal behavior lacking variation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1466,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide code that is executable and displayable. Program a Solitaire card game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Solitaire game logic fully implemented?",
+      "description": "Review whether the code accurately implements the classic Solitaire rules including proper foundation building (Ace to King in same suit), tableau movement (descending order with alternating colors), and stock/waste pile management. Score 0 if core game mechanics are missing, 5 if basic card movement is implemented but with rule errors, and 10 if all Solitaire rules are properly enforced with win condition detection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the card deck manipulation system well-designed?",
+      "description": "Check the implementation of card dealing, flipping, and movement between different game areas (tableau, foundations, stock, and waste). Proper card flipping animation should be included, and the waste-to-stock recycling mechanism should be implemented. Deduct 5 points if cards cannot be properly moved between all required areas, 3 points if the recycling mechanism is missing, and 2 points if card flipping is not visually indicated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game's move validation and undo functionality implemented?",
+      "description": "Evaluate whether the code includes proper move validation to prevent illegal moves and an undo system that allows players to reverse their actions. Check for multiple undo levels and proper state management. Deduct 5 points if move validation is incomplete, 5 points if undo functionality is missing, and 3 points if the undo system can only revert a single move. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state persistence and scoring system implemented?",
+      "description": "Check if the game includes a way to save and restore games (local storage), and if it implements a proper scoring system (time-based, move-based, or traditional Solitaire scoring). Deduct 5 points if game saving is not implemented, 3 points if loading saved games doesn't restore the exact state, and 2 points if scoring is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, illegal drag-and-drop attempts, browser refresh, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automated smart move suggestions 2. Multiple card themes/designs 3. Statistics tracking for games played/won). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple card movement systems) 2. Function modules unrelated to Solitaire (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the card design and layout follow professional standards: 1) Clear card visibility (appropriate size and contrast) 2) Proper spacing between tableau columns 3) Professional color scheme for the game board (felt green or other suitable background). Deduct 3 points for cramped card layout, 5 points for poor card readability, and 5 points for unprofessional visual elements like pixelated card images. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the card movements and interactions conform to user expectations: 1) Responsive drag-and-drop mechanics with visual feedback 2) Smooth card flipping animations (150-300ms) 3) Clear indication of valid drop targets. Deduct 5 points for laggy card movement, 3 points for missing drag-and-drop visual feedback, and 5 points for confusing or inconsistent interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

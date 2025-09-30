@@ -1,0 +1,68 @@
+{
+  "index": 1440,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Following the method you just provided, please give the complete code, including HTML, JS, and CSS. Also, enrich the game plot based on \"Harry Potter and the Chamber of Secrets\" to create multiple endings.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the game plot based on 'Harry Potter and the Chamber of Secrets' properly implemented?",
+      "description": "Evaluate whether the code successfully integrates storytelling elements from 'Harry Potter and the Chamber of Secrets' with multiple branching narratives leading to different endings. Check if key plot points (Basilisk, Tom Riddle's diary, etc.) are present. Score 0 if the Harry Potter theme is merely cosmetic, 5 if basic plot elements exist but without meaningful choices, and 10 if multiple coherent endings are implemented that reflect player decisions throughout the game.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are multiple endings properly implemented with different gameplay paths?",
+      "description": "Review whether the game provides genuinely different endings based on player choices rather than superficial text changes. Examine the code for branching logic structures, state tracking variables, and distinct story outcomes. Deduct 5 points if fewer than 3 meaningful endings exist, 3 points if the endings don't significantly differ in narrative consequences. The full score is 10 points if the game includes at least 4 distinct endings with appropriate build-up through gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management system comprehensive?",
+      "description": "Check whether the code implements a robust state management system that tracks player progress, choices, inventory items, and storyline variables. The system should allow for saving/loading game state and persistently track critical narrative decisions. Deduct 5 points if state is tracked using only global variables without proper encapsulation, 3 points if there's no save/load functionality, and 3 points if the game state can easily become inconsistent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interface thematically consistent with Harry Potter?",
+      "description": "Evaluate whether the UI elements (buttons, backgrounds, fonts, etc.) match the aesthetic of the wizarding world. Check for appropriate typography (gothic or serif fonts), color schemes (Hogwarts house colors), and thematic imagery (wands, magical elements). Deduct 5 points for generic UI with no Harry Potter theming, 3 points for inconsistent theming, and 2 points for overuse of copyrighted imagery. Full score is 10 points for an immersive, cohesive Harry Potter experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, browser compatibility issues, unexpected user behaviors) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Ambient magical sound effects that change with narrative 2. Wand-casting mechanics using mouse gestures 3. Interactive magical items with physics). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text display methods coexisting) 2. Function modules unrelated to the Harry Potter theme or storytelling (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core narrative functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/story content layers), maintainability of narrative branching, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the story content is hardcoded throughout the JavaScript rather than stored in structured data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during scene transitions, and 5 points for hard-to-find key narrative choices or interaction elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Adventure",
+  "difficulty": "easy"
+}

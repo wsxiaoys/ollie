@@ -1,0 +1,68 @@
+{
+  "index": 475,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the generated code is executable for demonstration. Develop a network audio sampler that supports loading multiple drum kit sound samples (in WAV format), triggering playback through a virtual MIDI keyboard or computer keyboard, with adjustable volume, pan, and playback rate for each sample.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio sample loading and management system fully implemented?",
+      "description": "Review whether the code accurately implements WAV file loading through Web Audio API, includes proper audio buffer management, and supports multiple drum kit samples with preloading mechanisms. Check if sample metadata (duration, sample rate, channels) is correctly parsed and displayed. Score 0 if basic audio loading fails, 5 if only single sample loading works, and 10 if multiple drum kits with batch loading and error handling are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dual input system (virtual MIDI keyboard + computer keyboard) properly implemented?",
+      "description": "Evaluate whether both virtual MIDI keyboard interface and computer keyboard mapping are functional with proper event handling. Check for MIDI device detection, key velocity sensitivity, and keyboard layout mapping (QWERTY to drum pads). Deduct 5 points if MIDI input is missing, 3 points if keyboard events have conflicts or delays. Virtual keyboard should provide visual feedback on key press. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the real-time audio parameter controls (volume, pan, playback rate) accurately implemented?",
+      "description": "Check whether each sample has independent volume control (0-100%), stereo panning (-100% to +100%), and playback rate adjustment (0.5x to 2.0x) with real-time audio processing. Verify that parameter changes are reflected immediately without audio glitches. Deduct 5 points if any parameter control is missing, 3 points if audio artifacts occur during parameter changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio engine architecture and performance optimization properly designed?",
+      "description": "Evaluate whether the Web Audio API implementation uses proper audio context management, buffer pooling for simultaneous playback, and low-latency audio processing. Check for polyphonic playback support (multiple samples playing simultaneously) and proper audio node connections. Deduct 5 points if audio latency exceeds 50ms, 3 points if polyphonic playback causes performance issues, 5 points if audio context is not properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported audio formats, MIDI device disconnection, audio context suspension, file loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time waveform visualization 2. Recording and export functionality 3. Built-in metronome with tempo sync 4. Sample reverse/loop modes 5. Audio effects like reverb/delay). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio loading methods coexisting) 2. Function modules unrelated to audio sampling (e.g., built-in video player) 3. Fancy effects that affect audio performance (e.g., heavy 3D visualizations blocking audio thread). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core audio functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio engine/UI/MIDI layers), proper error handling, and build process organization. Deduct 5 points if global audio context pollution is found or audio processing patterns are not properly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if audio resources are not properly cleaned up. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional audio software design standards?",
+      "description": "Evaluate whether the overall design follows professional audio software principles: 1) Clear visual hierarchy for mixer-style controls 2) Consistent knob/fader designs with proper scaling 3) High contrast for better studio visibility (dark theme preferred) 4) Drum pad layout following standard drum kit positioning. Deduct 3 points for each unclear control element, 5 points for unprofessional color schemes, and 5 points for confusing control layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the audio-visual feedback smooth and responsive?",
+      "description": "Judge whether the interactive feedback meets professional audio standards: 1) Visual trigger response ≤ 20ms for drum pad hits 2) Audio latency ≤ 50ms from input to output 3) Smooth parameter control updates without visual stuttering 4) Clear visual indicators for active samples and parameter states. Deduct 5 points for each delayed audio response, 3 points for laggy visual feedback, and 5 points for unclear audio status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

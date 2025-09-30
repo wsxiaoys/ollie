@@ -1,0 +1,68 @@
+{
+  "index": 318,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. How do I use VS Code and XAMPP panel to create a website for entering information, creating a personal information form that includes name, class, gender, age, student ID, and then store this information in a database so that teachers can access it through an IP address?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the complete website form structure implemented correctly?",
+      "description": "Check if the HTML/CSS form includes all required fields (name, class, gender, age, student ID) with proper validation attributes. Form should have clear labels, appropriate input types (text for name, number for age, radio/select for gender), and submission controls. Deduct 3 points if any field is missing, 2 points for improper input validation, and 5 points if the form lacks a proper submission mechanism. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the database design and connection properly implemented?",
+      "description": "Evaluate the MySQL database schema creation with appropriate field types (VARCHAR for names, INT for age/ID), constraints (PRIMARY KEY, NOT NULL), and indexes. Check if PHP includes proper database connection parameters and error handling. Deduct 5 points if the schema lacks proper constraints, 3 points if connection strings contain hardcoded credentials without config files, and 5 points if there's no error handling for failed connections. Full score is 15 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is data processing and storage correctly implemented?",
+      "description": "Review the server-side PHP code that processes form submissions. Code should validate input data, sanitize against SQL injection, and properly insert records into the database. Verify that feedback is provided to users after submission. Deduct 5 points for missing input validation, 10 points if SQL injection protection is absent, and 3 points if user feedback is missing. Full score is 15 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the teacher access interface functional and secure?",
+      "description": "Check if the teacher access portal includes authentication (username/password), secure session management, and effective data display functionality. The interface should allow sorting/filtering student records and include pagination for large datasets. Deduct 10 points if authentication is missing, 5 points for unsecured sessions, and 3 points if data viewing features are limited. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as duplicate submissions, invalid data entries, database connection failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time form validation with visual feedback 2. Export functionality to CSV/Excel 3. Dashboard with visual statistics for teachers). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation logics) 2. Function modules unrelated to the student information system 3. Fancy effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating database/logic/view layers), code organization (proper directory structure for XAMPP deployment), and maintainability (comments, consistent naming). Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if deployment instructions for XAMPP are unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for form fields. Deduct 5 points for each operation without feedback, 3 points for jarring page refreshes, and 5 points for confusing navigation between student and teacher interfaces. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

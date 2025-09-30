@@ -1,0 +1,68 @@
+{
+  "index": 1629,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure the code you generate is executable for display. Based on all the data in the table, create a dynamic comprehensive data dashboard with charts and visualizations, outputting the content in .html format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are all appropriate chart types selected based on the data characteristics?",
+      "description": "Evaluate whether the most suitable chart types are chosen based on data attributes and relationships (e.g., line charts for trends, bar charts for comparisons, pie charts for proportions, heatmaps for correlation). Deduct 3 points for each inappropriate chart selection that obscures rather than clarifies data insights. Award 10 points for perfect chart selection with clear rationale, 5 points for adequate but not optimal choices, 0 points if charts actively misrepresent data.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dashboard layout logically organized with proper information hierarchy?",
+      "description": "Check whether the dashboard follows a strategic layout with clear information hierarchy, placing critical KPIs prominently while maintaining logical grouping of related metrics. Examine if the dashboard uses grid systems for alignment and if it implements responsive design principles. Award 10 points for excellent organization with clear visual hierarchy, 5 points if layout is functional but sub-optimal, 0 points if chaotic arrangement impedes data interpretation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are interactive filtering and drill-down capabilities implemented effectively?",
+      "description": "Assess implementation of user controls (filters, sliders, date pickers) that allow exploration of different data segments and time periods. Verify that interactions provide meaningful context changes and cross-filtering between charts. Award full 10 points if comprehensive interactive elements are implemented with smooth state transitions, 5 points for basic filtering only, 0 points if no interactivity exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data loading, processing, and rendering optimized?",
+      "description": "Evaluate how efficiently the dashboard handles data - check for appropriate data transformation methods, lazy loading strategies for large datasets, and caching mechanisms. Examine if charts render progressively and if performance degrades with increasing data volume. Deduct 3 points for each second of initial load time beyond 3 seconds, 5 points if rendering flickers during interactions. Award 10 points for seamless performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases (empty datasets, null values, outliers, browser compatibility issues) and provides graceful error handling with user-friendly messages. Code with strong robustness should prevent dashboard crashes even with unexpected inputs. Award 10 points for comprehensive error handling with recovery mechanisms, 5 points for basic error checks, 0 points if dashboard breaks easily.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Intelligent insight generation highlighting anomalies 2. Custom theme switching with saved preferences 3. Dashboard state sharing via URL parameters). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate visualizations showing the same insights 2. Excessive decorative elements that don't convey information 3. Heavy animations or effects that impact performance or distract from data comprehension. Deduct 3 points for each redundancy found, and directly deduct 10 points if core visualization clarity is compromised by unnecessary elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data processing logic from visualization rendering), code reusability for chart components, and appropriate use of visualization libraries. Deduct 5 points if global variables are overused; deduct 5 points if there's significant code duplication across chart creation functions; deduct 5 points if there's no error handling for data loading failures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dashboard follows modern design principles: 1) Consistent color palette with clear data encoding 2) Proper white space and alignment (8px grid system) 3) Typography hierarchy with readable font sizes (≥14px for data points). Deduct 3 points for each inconsistent design element, 5 points for poor accessibility (e.g., low contrast), 5 points for overlapping elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether user interactions feel natural and responsive: 1) Chart transitions under 300ms 2) Hovering tooltips appear within 100ms 3) Filter applications reflect immediately with appropriate loading indicators for longer operations. Deduct 5 points for each interaction that lacks visual feedback, 3 points for jerky animations, 5 points for confusing interaction patterns that don't follow standard dashboard conventions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

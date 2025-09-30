@@ -1,0 +1,68 @@
+{
+  "index": 807,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. For the analysis of K-line wave cycles for each stock in Shanghai and Shenzhen markets, combined with the K-line wave analysis of both markets' overall trends, determine the one-week trend direction. Display individual stock price movements with dotted line code, and edit the code to show buy/sell points with alerts based on predicted price movements.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "K-line data structure implementation and retrieval",
+      "description": "Evaluate whether the code properly defines K-line data structures (OHLCV - Open, High, Low, Close, Volume) with proper typing and efficient retrieval mechanisms. Check if the code fetches real-time or historical data from Shanghai/Shenzhen markets through appropriate APIs with error handling. Score 0 if K-line data structure is missing, 5 if basic structures exist but lack error handling, 10 if comprehensive implementation with efficient retrieval and proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Wave cycle detection algorithm implementation",
+      "description": "Review the implementation of technical indicators used for wave analysis (e.g., Moving Averages, Bollinger Bands, MACD, KDJ, Fibonacci retracements). Check if the code includes at least three different technical indicators and implements proper pattern recognition algorithms. Deduct 5 points if only basic MA crossover is implemented, 3 points if trend strength validation is missing. The full score requires detection of Elliott Waves or similar complex patterns with accuracy validation mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Market-wide trend correlation analysis",
+      "description": "Assess whether the code correlates individual stock movements with market-wide indices to predict trend direction. Check if it includes Shanghai Composite Index and Shenzhen Component Index data with proper weighting algorithms, sector rotation analysis, and market breadth indicators. Deduct 5 points if only one market index is analyzed, 3 points if sector correlation is missing, and 5 points if there's no volatility comparison between individual stocks and the broader market.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Trend prediction and visualization with dotted line",
+      "description": "Evaluate the implementation of trend prediction for the one-week forecast with proper backtesting mechanisms. Review the dotted line visualization that represents predicted price movements, including proper styling, differentiation from historical data, and confidence intervals. Score 0 if prediction visualization is missing, 5 if basic prediction exists without confidence intervals, 10 if comprehensive visualization with multiple scenarios (bullish/bearish/neutral) and probability indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data points, market holidays, sudden volatility spikes, API failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time alert notification system 2. Multi-timeframe analysis (daily/weekly/monthly comparisons) 3. Volume profile analysis 4. Sentiment analysis integration from news sources). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation of similar technical indicators (e.g., multiple moving average calculations with similar periods) 2. Function modules unrelated to stock analysis (e.g., cryptocurrency data) 3. Fancy visual effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data fetching/analysis/visualization layers), caching strategies for performance, and proper documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no optimization for handling large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional financial analysis standards?",
+      "description": "Evaluate whether the visualization follows financial charting best practices: 1) Professional color scheme (green/red for price movements, neutrals for background) 2) Clear labeling of axes and indicators 3) Proper scaling that prevents visual distortion of trends 4) Clean, uncluttered layout with information hierarchy. Deduct 3 points for each misleading visual element, 5 points for color schemes that make pattern recognition difficult, and 5 points for overlapping elements that obscure important data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the buy/sell alert system effective and user-friendly?",
+      "description": "Judge whether the alert system meets these requirements: 1) Clear visual differentiation between buy/sell signals 2) Configurable alert thresholds 3) False positive minimization through confirmation patterns 4) Alert history tracking. Deduct 5 points if alerts don't include confidence levels, 3 points if alert conditions aren't clearly documented, and 5 points if there's no mechanism to validate alert accuracy against actual market movements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Predictive Modeling",
+  "difficulty": "hard"
+}

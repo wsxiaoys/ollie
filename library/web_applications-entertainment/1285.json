@@ -1,0 +1,68 @@
+{
+  "index": 1285,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and displayable. Create a web-based intelligent music player that can automatically add playlists for different times and play the scheduled music when the time arrives. Please provide detailed implementation process and complete code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core music playback system fully implemented?",
+      "description": "Review whether the code accurately implements HTML5 Audio API or Web Audio API for music playback, including play/pause, volume control, progress tracking, and playlist management. Check if it supports multiple audio formats (MP3, WAV, OGG) and includes proper audio loading states. Score 0 if basic playback is not functional, 5 if only simple play/pause works, and 10 if all core audio features including seamless track transitions are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the intelligent scheduling system properly designed?",
+      "description": "Evaluate whether the time-based scheduling mechanism uses accurate timing APIs (setInterval/setTimeout or Web Workers for precision). Check if it includes timezone handling, schedule conflict resolution, and persistent storage of scheduled playlists. Deduct 5 points if scheduling accuracy exceeds ±30 seconds, 3 points if timezone issues aren't handled, and 5 points if schedules don't persist after browser refresh. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the automatic playlist generation algorithm effective?",
+      "description": "Check whether the system implements intelligent playlist creation based on time context (morning, afternoon, evening, night) with appropriate music categorization logic. Evaluate if it includes music metadata analysis, mood-based selection, or learning from user preferences. Deduct 5 points if playlists are randomly generated without context awareness, 3 points if music categorization is overly simplistic. Full score requires sophisticated algorithmic playlist generation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete music library management system constructed?",
+      "description": "Review whether the code includes comprehensive music library features: file upload/import, metadata editing, search/filter functionality, and playlist organization. Check for drag-and-drop support, bulk operations, and music file validation. Deduct 5 points if file management is basic, 3 points if search functionality is missing, and 5 points if no bulk operations are supported. Give 10 points if fully implemented with advanced library management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted audio files, network interruption, invalid time inputs, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Audio visualization/spectrum analyzer 2. Smart crossfade between tracks 3. Voice control integration 4. Sleep timer with fade-out 5. Social sharing of playlists). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio players coexisting) 2. Function modules unrelated to music playing (e.g., built-in games or social media feeds) 3. Fancy effects that affect audio performance (e.g., heavy visual effects during playback). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core music functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio engine/UI/scheduling/storage layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern music player design principles: 1) Harmonious color matching with proper contrast for readability 2) Intuitive music controls layout (standard play/pause/skip positioning) 3) Professional typography for song titles and metadata (body font size ≥ 14px, line height over 1.5 times) 4) Proper album artwork display. Deduct 3 points for each crowded visual element, 5 points for poor color contrast affecting usability, and 5 points for chaotic music information layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to music player UX standards: 1) Audio control feedback delay ≤ 100ms 2) Progress bar scrubbing is responsive and accurate 3) Volume slider transitions are smooth 4) Track switching animations are seamless 5) Schedule notifications are non-intrusive. Deduct 5 points for each laggy audio control response, 3 points for jerky progress bar interactions, and 5 points for disruptive notification behavior. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Entertainment",
+  "difficulty": "hard"
+}

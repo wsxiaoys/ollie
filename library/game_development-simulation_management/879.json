@@ -1,0 +1,68 @@
+{
+  "index": 879,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the code you generate is executable for demonstration. Help me create a traffic light game using web technologies. When opened, it shows an interface where clicking the plus button allows you to create new traffic lights, including pedestrian signals, road traffic lights, and various arrow-style traffic lights, etc. Please develop this into a playable game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the traffic light creation system fully implemented?",
+      "description": "Review whether the code implements a flexible traffic light creation system. Check if users can add different types of traffic lights (standard road lights, pedestrian signals, arrow lights) through the plus button interface. Score 0 if creation functionality is missing, 5 if only one type of traffic light can be created, and 10 if multiple customizable traffic light types are implemented with proper visual differentiation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the traffic light state management system properly implemented?",
+      "description": "Evaluate whether the code includes a proper state management system for traffic lights (red-yellow-green cycles, pedestrian wait-walk states, arrow signals). Check for timing mechanisms, state transitions, and realistic traffic light behavior. Deduct 5 points if lights don't follow real-world timing patterns, 3 points if state transitions lack animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game component implemented with proper interaction logic?",
+      "description": "Check if the implementation includes actual game mechanics (such as scoring, challenges, timing constraints or traffic management scenarios). Verify if win/loss conditions exist and whether player actions have meaningful consequences. Score 0 if no game elements exist, 5 if basic interactivity without objectives is present, 10 if complete game mechanics with clear objectives are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the traffic coordination system implemented?",
+      "description": "Assess whether multiple traffic lights can coordinate with each other (e.g., intersection management, sequential timing, conflicting traffic prevention). Check if the game implements realistic traffic flow patterns. Deduct 5 points if lights operate independently without coordination, 3 points if coordination exists but with unrealistic patterns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, adding too many lights, improper user interactions) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Day-night cycle affecting visibility 2. Weather conditions impacting traffic 3. Vehicle/pedestrian animations responding to signals). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar traffic light controls 2. Function modules unrelated to traffic management 3. Fancy effects that affect performance (e.g., unnecessary particle effects or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating traffic light logic/view/controller layers), object-oriented principles for traffic light entities, and code maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if event handling is poorly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Realistic traffic light rendering with proper proportions and colors 2) Proper layout spacing for controls and game elements 3) Professional UI for game controls and feedback. Deduct 3 points for each visually inaccurate traffic light element, 5 points for poor control placement, and 5 points for chaotic visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Traffic light transitions occur with appropriate timing and animations 2) Light state changes are clearly visible with proper visual feedback 3) UI controls respond promptly to user input. Deduct 5 points for abrupt light transitions without animations, 3 points for delayed response to user clicks, and 5 points for confusing or inconsistent traffic light behavior. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "medium"
+}

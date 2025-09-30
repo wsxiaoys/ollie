@@ -1,0 +1,68 @@
+{
+  "index": 1005,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. Disregard sections 4.4 and 4.5, and write out the software page display based on the following content:\n\n1) Video Detection Demonstration\n1. Click the open video icon to choose a video for detection, and the detection results will be displayed automatically. Clicking this button again will close the video.\n2. After opening the video, click \"Draw Line Segment\" and use the left mouse button to click two points on the displayed interface to draw a line segment for counting objects crossing the line.\n3. After completing the two points, click the \"Complete Drawing\" button to enable bi-directional counting and statistics of objects crossing the line in the video.\nNote: The \"Detection Duration\" displayed on the interface indicates the length of video time that has been detected [related to detection speed], not the actual elapsed time.\n\n(2) Camera Detection Demonstration\n1. Click the open camera icon to activate the camera for real-time detection. Clicking this button again will close the camera.\n2. After opening the camera, click \"Draw Line Segment\" and use the left mouse button to click two points on the displayed interface to draw a line segment for counting objects crossing the line.\n3. After completing the two points, click the \"Complete Drawing\" button to enable bi-directional counting and statistics of objects crossing the line in the video.\nNote: The \"Detection Duration\" displayed on the interface indicates the length of video time that has been detected [related to detection speed], not the actual elapsed time.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video detection function fully implemented?",
+      "description": "Review whether the code correctly implements video file selection, loading, and automatic detection. Check if the video playback controls work properly and if the detection results are displayed in real-time. Score 0 if the video detection is not implemented, 5 if basic video loading works but detection has issues, and 10 if video detection functions flawlessly with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the camera detection function properly implemented?",
+      "description": "Evaluate if the code successfully accesses the device camera, handles permissions correctly, and processes the camera feed for detection. Check whether the camera can be turned on/off as specified and if detection works in real-time. Deduct 5 points if camera permissions are not properly handled, and 3 points if there are performance issues with real-time detection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the line segment drawing functionality implemented correctly?",
+      "description": "Check if users can draw a line segment by clicking two points on the interface, and if the 'Draw Line Segment' and 'Complete Drawing' buttons work as specified. Verify that the line remains visible after drawing and maintains its position during video playback. Deduct 5 points if the drawing mechanism is buggy, and 3 points if the visual feedback is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the object crossing detection and bi-directional counting implemented accurately?",
+      "description": "Verify if the code correctly detects and counts objects crossing the drawn line in both directions. Check the accuracy of the counting algorithm (intersection detection) and whether the statistics are updated in real-time. Score 0 if counting is not implemented, 5 if basic counting works but has accuracy issues, and 10 if bi-directional counting is fully functional with high precision.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid video files, camera access denial, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Object type filtering 2. Heatmap visualization of crossing patterns 3. Exportable detection statistics with timestamps). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to draw detection lines) 2. Function modules unrelated to video/camera detection (e.g., unnecessary settings pages) 3. Fancy effects that affect detection performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core detection functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating detection logic/UI/data processing layers), code reusability between video and camera detection modules, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no performance optimization for real-time detection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clear visual indicators for detection results and statistics. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for unclear visualization of detection results. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Detection results appear without noticeable delay 2) Line drawing feedback is immediate and precise 3) Clear visual indicators when objects cross the line. Deduct 5 points for laggy detection visualization, 3 points for imprecise drawing feedback, and 5 points for unclear crossing indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

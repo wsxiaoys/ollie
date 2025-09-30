@@ -1,0 +1,68 @@
+{
+  "index": 659,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Please write code to implement a software development documentation management system where developers can upload and manage API documentation, technical specifications, system design documents, etc. The system should support online Markdown editing, automatic generation of API interface documentation, and provide version management and change history tracking. Administrators should be able to assign project access permissions and manage team members.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Markdown editing system fully implemented?",
+      "description": "Examine whether the code provides a complete Markdown editor with real-time preview, syntax highlighting, keyboard shortcuts, and image embedding. Check if the editor includes specialized technical documentation features like code block syntax highlighting, table formatting, and mathematical formula support. Score 0 if basic editor functions are missing, 5 if only basic Markdown is supported, and 10 if it includes advanced technical documentation features.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the API documentation auto-generation feature properly implemented?",
+      "description": "Verify if the system can parse code from common languages (Java, JavaScript, Python, etc.) to extract API definitions, parameters, and return types. Check whether it generates standardized documentation formats (OpenAPI/Swagger, JSDoc, etc.). Deduct 5 points if only one language is supported, 3 points if the generated documentation lacks examples, and 2 points if schema validation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the version control system meet professional requirements?",
+      "description": "Assess if the version management includes document branching, conflict resolution, difference comparison visualization, and automatic merge suggestions. Check if it supports reverting to previous versions and maintains a complete audit trail. Deduct 5 points if branching is not supported, 3 points if visual diff is missing, and 3 points if there's no conflict resolution mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the permission and access control system comprehensive?",
+      "description": "Evaluate whether the system implements role-based access control (RBAC) with granular permissions at project, document, and section levels. Check if it includes approval workflows, temporary access grants, and audit logging of permission changes. Deduct 5 points if only basic role assignments exist, 3 points if permission inheritance is not implemented, and 3 points if there's no audit trail for access changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as concurrent editing conflicts, network interruption during document saving, invalid Markdown syntax, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted documentation generation 2. Interactive API testing within documentation 3. Automatic code sample generation 4. Knowledge graph of document relationships). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar functions (e.g., multiple document parsers doing the same thing) 2. Function modules unrelated to documentation management (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., excessive animations in the documentation UI). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor/storage/permission layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Editor response delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback for saving/publishing operations. Deduct 5 points for each operation without feedback, 3 points for sluggish editing experience with large documents, and 5 points for confusing navigation between document sections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

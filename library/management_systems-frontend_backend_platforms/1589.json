@@ -1,0 +1,68 @@
+{
+  "index": 1589,
+  "question": "You are a coding expert. Please utilize your professional knowledge to generate accurate and professional responses. Ensure the code you generate is executable for demonstration. Create three interfaces: one for login, one for registration, and one for a list view.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the login interface properly implemented?",
+      "description": "Review whether the login interface includes all necessary elements: username/email field, password field with masking, remember me option, forgot password link, and submit button. Check for client-side validation of inputs (format checking, required fields). Verify that the interface handles authentication errors gracefully with appropriate user feedback. Score 0 if missing core elements, 5 if basic implementation only, 10 if fully implemented with validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the registration form complete and secure?",
+      "description": "Evaluate whether the registration form includes all standard fields (username, email, password, confirm password), implements proper client-side validation (password strength requirements, email format validation, matching passwords), and provides clear feedback for validation errors. Check for terms of service agreement, privacy policy acknowledgment, and CAPTCHA/anti-bot measures. Deduct 3 points for each missing validation feature, 5 points if password security measures are inadequate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the list view functional and well-designed?",
+      "description": "Assess whether the list view properly displays data with consistent formatting, includes essential features like sorting, filtering, and pagination, and handles both empty states and data loading states. Check if the list items have appropriate actions (view details, edit, delete). Deduct 3 points if pagination is missing, 3 points if sorting/filtering is absent, and 4 points if the empty/loading states aren't handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is navigation between interfaces smooth and intuitive?",
+      "description": "Check whether users can navigate seamlessly between login, registration, and list views. Verify the presence of navigation elements (buttons, links) in logical positions, consistent navigation patterns, and proper state management when switching views. Inspect for breadcrumbs or other orientation indicators. Deduct 3 points for each disconnected interface, 5 points for confusing navigation paths. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, network issues, authentication failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like form validation errors, session timeouts, and unexpected server responses. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Social login integration 2. Dark/light mode toggle 3. Responsive design for mobile devices 4. Animations for transitions between views). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation systems) 2. Function modules unrelated to the core interfaces (e.g., unnecessary sidebars or widgets) 3. Fancy effects that affect performance (e.g., heavy animations or unnecessary API calls). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, services, and utilities), component reusability, and code organization. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no build process or dependency management is evident. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded form field, 5 points for inconsistent styling across interfaces, and 5 points for poor alignment of elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear focus states for form inputs and buttons. Deduct 5 points for forms without submission feedback, 3 points for jarring transitions between interfaces, and 5 points for inaccessible interface elements (poor tab navigation, missing focus indicators). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

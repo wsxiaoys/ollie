@@ -1,0 +1,68 @@
+{
+  "index": 1088,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Please provide code for a line chart comparing each team's weekly training duration and win rate.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data visualization implementation complete?",
+      "description": "Review whether the code accurately implements a line chart with clear data representation of both weekly training duration and win rate for each team. Score 0 if the visualization is not implemented, 5 if only one metric is displayed or multiple metrics are poorly differentiated, and 10 if both metrics are properly visualized with clear distinction between teams.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dual-axis representation handled correctly?",
+      "description": "Evaluate whether the code properly implements a dual-axis system (one for training duration in hours and one for win rate in percentage) with appropriate scales for each metric. Deduct 5 points if axes are missing labels or units, 3 points if scales are inappropriate for the data ranges, and 5 points if a dual-axis system is not implemented at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is proper data handling and preprocessing implemented?",
+      "description": "Check whether the code includes mechanisms for data input, validation, and preprocessing (handling missing values, data normalization if needed). Score 10 points if there's robust data handling with error checking, 5 points if basic data processing exists but lacks validation, and 0 points if data is hardcoded without any processing logic.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive features incorporated in the visualization?",
+      "description": "Assess whether the code includes interactive elements like tooltips showing exact values, ability to toggle teams' visibility, zoom/pan functionality, or highlighting data points on hover. Award 2.5 points for each meaningful interactive feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as varying data sizes, missing data points, extremely high/low values, browser resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated transitions when data updates 2. Smart insights highlighting significant trends or correlations 3. Customizable color schemes or themes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple tooltip systems) 2. Function modules unrelated to the line chart comparison (e.g., unrelated animations) 3. Fancy effects that affect performance (e.g., excessive animations or gradients). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/interaction layers), reusability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the chart design follows modern data visualization principles: 1) Harmonious color scheme that differentiates teams clearly 2) Proper use of space with sufficient margins and padding 3) Professional typography with readable labels and legends. Deduct 3 points for cluttered visualizations, 5 points for poor color choices that hinder data interpretation, and 5 points for illegible text or overlapping elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the chart responsive and cross-browser compatible?",
+      "description": "Judge whether the chart adapts to different screen sizes and browsers: 1) Responsive design that adapts to container width 2) Proper handling of touch interactions for mobile devices 3) Cross-browser compatibility with major browsers. Deduct 5 points for fixed-size charts that don't adapt to containers, 5 points for lack of mobile considerations, and 3 points for browser-specific issues. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

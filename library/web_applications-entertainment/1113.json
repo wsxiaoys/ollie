@@ -1,0 +1,68 @@
+{
+  "index": 1113,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. Please help me design a local music page using Vue 3, with a card-based layout and modern, minimalist, and aesthetically pleasing UI. Also explain what features it includes.\n\n```vue\n<template>\n  <div>\n    <h1>Local Music</h1>\n  </div>\n</template>\n\n<script setup lang=\"ts\">\n\n</script>\n\n<style scoped>\n\n</style>",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the card-based layout fully implemented?",
+      "description": "Evaluate whether the code implements a proper card-based layout for displaying music items with appropriate spacing, shadows, and responsive design. Check if the cards have proper hover effects, click interactions, and consistent sizing. Score 0 if there's no card implementation at all, 5 if basic card structure exists but lacks visual refinement, and 10 if a complete, polished card system is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are music playback controls implemented?",
+      "description": "Review the implementation of essential music player controls (play, pause, skip, volume, progress bar). Check if the audio is managed properly with Vue refs and if the UI state reflects playback status accurately. Deduct 3 points if progress tracking is missing, 3 points if volume control is absent, and 4 points if play/pause functionality is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is local file access and handling implemented?",
+      "description": "Assess how the application handles local file access, including file selection, metadata extraction (artist, album, duration), and storage of user preferences. Check for file type validation and error handling when dealing with unsupported formats. Award 10 points for complete implementation with proper error handling, 5 points if basic file selection works but lacks metadata extraction, 0 points if local file access is not implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the music library management system implemented?",
+      "description": "Evaluate whether the code includes features for organizing music (playlists, favorites, sorting, filtering, search). Check if state management is properly implemented using Vue's reactivity system. Deduct 3 points if sorting/filtering is missing, 3 points if search functionality is absent, and 4 points if there's no playlist management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted audio files, browser storage limitations, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Audio visualization 2. Lyrics synchronization 3. Audio equalizer 4. Sleep timer). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple volume control mechanisms) 2. Function modules unrelated to music playback (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations that impact playback). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue 3 Composition API usage, component structure, TypeScript type safety, and proper event handling. Check for proper separation of concerns and reusable components. Deduct 5 points if prop drilling is used instead of provide/inject or proper state management; deduct 3 points if TypeScript types are missing or incorrect; deduct 2 points if component cohesion is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern, minimalist UI principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for currently playing tracks. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Entertainment",
+  "difficulty": "medium"
+}

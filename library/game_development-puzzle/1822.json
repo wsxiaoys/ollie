@@ -1,0 +1,68 @@
+{
+  "index": 1822,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure the code you provide is executable and ready for demonstration. Write code for a web-based Minesweeper game that resembles the style of Windows Minesweeper.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Minesweeper game logic fully implemented?",
+      "description": "Check if the code correctly implements the essential Minesweeper mechanics: random mine placement, adjacent mine counting, cell revealing logic, and win/loss conditions. Score 0 if core game logic is missing, 5 points if basic functionality works but has flaws (e.g., incorrect adjacent mine counting), 10 points if all standard Minesweeper rules are properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the game match the Windows Minesweeper visual style?",
+      "description": "Evaluate how closely the implementation resembles the classic Windows Minesweeper aesthetic, including the iconic beveled button appearance, number coloring (1=blue, 2=green, etc.), mine and flag icons, and the classic smiley face status button. Deduct 2 points for each major visual element that doesn't match the Windows style. Award 10 points for a near-perfect match.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are all standard Minesweeper interactions implemented?",
+      "description": "Check for left-click to reveal cells, right-click to flag/mark cells, and chord clicking (pressing both buttons on a numbered cell to reveal adjacent cells). Also verify the first-click safety mechanism (first click should never be a mine). Deduct 3 points for each missing interaction. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game customizable with different difficulty levels?",
+      "description": "Verify if the game offers standard difficulty options (Beginner: 9×9 grid with 10 mines, Intermediate: 16×16 grid with 40 mines, Expert: 30×16 grid with 99 mines) or a custom mode allowing players to set board dimensions and mine count. Deduct 5 points if only one difficulty is available, 3 points if some standard options are missing. Award full 10 points for comprehensive difficulty options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases such as rapid clicking, invalid inputs, browser resizing, and prevents game state corruption. Code with strong robustness should effectively handle these scenarios and prevent crashes. Give 10 points if highly robust, 5 points if average, and 0 points if edge cases cause the game to break.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for creative enhancements that improve upon the classic game (e.g., 1. Animation when revealing multiple cells 2. Game statistics tracking 3. Adaptive mobile/touch support 4. Dark/light theme options 5. Save game functionality). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check for: 1. Unnecessary game mechanics not in original Minesweeper 2. Overly complex UI elements that distract from gameplay 3. Performance-heavy features (e.g., excessive animations) that impact responsiveness. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with core gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code architecture (separation of game logic/UI/event handling), maintainability, and performance optimization. Deduct 3 points if global variables are overused; deduct 3 points if there's significant code duplication; deduct 4 points if the application has noticeable performance issues with larger board sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows consistent design principles: 1) Clean grid layout with appropriate cell sizing 2) Clear visual distinction between revealed/unrevealed cells 3) Proper spacing and alignment of all elements. Deduct 3 points for each inconsistent visual element, 5 points for poor readability of numbers or icons, and 5 points for improper scaling on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game provides appropriate feedback: 1) Immediate visual response to clicks (≤ 100ms) 2) Smooth transitions when revealing cells 3) Clear indicators for game state (playing/won/lost). Deduct 3 points for each click without proper feedback, 5 points for noticeable lag when revealing multiple cells, and 3 points for unclear game state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "easy"
+}

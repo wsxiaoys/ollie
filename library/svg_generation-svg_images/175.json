@@ -1,0 +1,68 @@
+{
+  "index": 175,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate can be executed and displayed. Please help me implement this SVG image using code: Pour food or drink from a teapot, pitcher, gravy boat, cup, container, or bowl.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the pouring animation implemented with proper physics simulation?",
+      "description": "Evaluate if the SVG code properly implements liquid flow physics with gravity effects, accelerating flow at the beginning and natural tapering at the end. Verify if the liquid's path follows a realistic parabolic curve. Score 0 if no animation is implemented, 5 if basic animation exists but lacks physics accuracy, and 10 if the liquid flow exhibits realistic physics behavior with proper timing and natural motion.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the container (teapot, pitcher, etc.) properly designed and animated during pouring?",
+      "description": "Check if the container is well-designed with appropriate proportions and if it rotates naturally during the pouring action. The container should gradually tilt and maintain proper perspective throughout the animation. Deduct 5 points if the container doesn't rotate realistically, 3 points if perspective is inconsistent, and 2 points if the container design is too simplistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the receiving vessel implemented and does it show liquid accumulation?",
+      "description": "Verify if there's a receiving container (cup, bowl, etc.) and whether it shows liquid accumulation as it fills up. The liquid level should rise proportionally to the amount poured. Score 0 if no receiving vessel exists, 5 if it exists but doesn't show accumulation, and 10 if it shows proper liquid level rise with appropriate visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are liquid properties visually represented?",
+      "description": "Assess if the SVG implementation shows appropriate liquid properties like viscosity, color, opacity, and possible splashing effects. Different liquids (water, milk, gravy) should have distinct visual characteristics. Deduct 3 points if liquid transparency is missing, 4 points if viscosity isn't represented visually, and 3 points if there's no distinction between different possible liquids. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, SVG support problems, animation timing edge cases) and provide fallback strategies. Code with strong robustness should be able to effectively handle different viewport sizes and scaling. Give 10 points if fully robust with error handling, 5 points if average robustness with some edge cases unhandled, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Steam rising from hot liquids 2. Sound effects synchronized with pouring 3. Interactive elements allowing users to control the pouring angle 4. Ripple effects in the receiving container). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant graphical elements that don't contribute to the pouring visualization 2. Unnecessary animation loops or effects that distract from the main action 3. Over-complex code that could be simplified without losing functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core animation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular organization (such as separating container definitions, animation logic, and event handlers), use of SVG best practices, and code readability. Deduct 5 points if global variable pollution is found; deduct 5 points if there's excessive code duplication; deduct 5 points if SVG elements lack proper naming or organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color palette appropriate for the liquid and containers 2) Proper proportions and visual hierarchy 3) Attention to details like shadows, reflections, or highlights that enhance realism. Deduct 3 points for unrealistic proportions, 5 points for poor color choices, and 5 points for lack of visual polish or finishing touches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation timing feels natural and intuitive: 1) Smooth transitions between animation states 2) Appropriate easing functions for the pouring motion 3) Consistent frame rate without stuttering. Deduct 5 points for jerky animations, 3 points for unrealistic timing (too fast or too slow), and 5 points for missing transition states between animation phases. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

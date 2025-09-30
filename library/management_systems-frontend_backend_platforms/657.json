@@ -1,0 +1,68 @@
+{
+  "index": 657,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate, expert responses. Pay attention to ensuring that the generated code is executable for demonstration. Create an academic conference submission system that supports PDF paper uploads and automatically checks format standards (pages, font, margins). Provide double-blind review mode (automatically removing author information) and support submission progress tracking on PC/mobile devices. Include plagiarism detection status indicators (integrated with Turnitin).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the PDF upload and format validation system fully implemented?",
+      "description": "Review whether the code implements a complete PDF upload system with format validation functionalities including page count verification, font detection, and margin measurement. Score 0 if uploading is not implemented, 5 if only basic PDF uploading works without validation, and 10 if all format validations are correctly implemented with appropriate error handling and user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the double-blind review mode properly implemented?",
+      "description": "Evaluate whether the system can automatically detect and remove author information from submitted PDFs and metadata. Check for watermarking or other techniques to track submissions anonymously. Deduct 5 points if author information is only removed from metadata but not from the PDF content, and 3 points if the anonymization process is not reversible for administrators. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the submission tracking functionality cross-platform compatible?",
+      "description": "Check whether the tracking system works seamlessly on both PC and mobile devices with responsive design principles. Verify if real-time status updates are implemented and if the interface adapts appropriately to different screen sizes. Deduct 3 points for non-responsive designs, 5 points if mobile experience is significantly degraded, and 5 points if real-time updates require manual refresh. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Turnitin plagiarism detection integration implemented effectively?",
+      "description": "Assess whether the code includes proper API integration with Turnitin or similar plagiarism detection services, with appropriate status indicators and result visualization. Check for proper error handling if the service is unavailable and queueing mechanisms for large volumes. Deduct 5 points if only mock integration is provided, and 3 points if results are not clearly visualized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted PDFs, network interruptions, session timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based format suggestion engine 2. Automated citation validation 3. Interactive submission workflow with progress visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file validation systems coexisting) 2. Function modules unrelated to academic submission (e.g., extensive social sharing features) 3. Fancy effects that affect performance (e.g., heavy animations on status pages). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating storage/validation/UI layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching appropriate for academic contexts (professional, understated palette) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for inappropriate color combinations, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload feedback with clear progress indicators 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for multi-step submission process. Deduct 5 points for each operation without feedback, 3 points for jarring state transitions, and 5 points for confusing navigation in the submission workflow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

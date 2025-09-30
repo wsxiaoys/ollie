@@ -1,0 +1,68 @@
+{
+  "index": 110,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration.\nPlease help me implement the following requirements using code. Create an SVG that shows a line trending upward with added trend data.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG implementation with an upward trending line complete?",
+      "description": "Verify that the code creates a valid SVG element with proper viewport dimensions and namespace. The line should be clearly visible, have appropriate coordinates showing an upward trend, and include proper styling. Score 0 if no SVG is implemented, 5 if basic SVG with line exists but has issues, and 10 if the implementation is complete with proper scaling and positioning.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are data points accurately represented on the trend line?",
+      "description": "Check whether the code includes a data structure (array, object) that holds the trend data points and if these points are correctly mapped to SVG coordinates. The implementation should use appropriate scaling to fit the data within the SVG viewport. Deduct 5 points if data mapping is incorrect, 3 points if scaling is improper. Full score requires precise point plotting with appropriate data-to-pixel conversion.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are axes (X and Y) properly implemented with labels and scale?",
+      "description": "Evaluate if the SVG includes X and Y axes with appropriate ticks, labels, and scale indicators. The axes should help interpret the trend data. Deduct 5 points if axes are missing, 3 points if they exist but lack proper scaling or labels. Give 10 points if axes are fully implemented with clear, properly positioned labels and appropriate scaling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are additional trend visualization features implemented?",
+      "description": "Check for supplementary trend indicators such as trend slope calculation, moving averages, trend projection, or confidence intervals. Score 0 if no additional trend features exist, 5 if basic trend indicators are present, and 10 if comprehensive trend analysis features are implemented that enhance data interpretation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle various data scenarios (empty data sets, single data point, negative values, extremely large values) and browser compatibility issues. Code with strong robustness should include error handling and fallbacks. Give 10 points if all edge cases are handled, 5 points if only some are addressed, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive tooltips on hover 2. Animated trend line rendering 3. Responsive design that adjusts to container size). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization functions 2. Function modules unrelated to trend visualization 3. Fancy effects that affect performance or clarity of the trend display. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/rendering/interaction), reusability of components, and code maintainability. Deduct 5 points if global variables are overused; deduct 5 points if the code is not organized into logical functions; deduct 5 points if there's no separation between data and presentation logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional data visualization standards?",
+      "description": "Evaluate whether the visualization follows best practices: 1) Appropriate color selection for trend line and background contrast 2) Proper use of whitespace around the chart 3) Professional typography for labels and titles. Deduct 3 points for cluttered visual elements, 5 points for poor color choices that hinder readability, and 5 points for improper data-ink ratio. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and user-friendly?",
+      "description": "Judge whether any interactive elements enhance the trend visualization: 1) Smooth transitions when data updates 2) Clear feedback on user interactions 3) Appropriate zoom/pan capabilities if implemented. Deduct 5 points for each interaction without feedback, 3 points for laggy animations, and 5 points for confusing or unintuitive interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 864,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to provide executable and demonstrable code whenever possible. As a technical professional, write a complete version of a knowledge base management system for personal use.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core knowledge base storage and retrieval system fully implemented?",
+      "description": "Review whether the code implements a proper data structure for knowledge storage (e.g., relational database, document storage, graph database) with CRUD operations. Check if the code includes proper indexing for efficient knowledge retrieval and supports both structured and unstructured data. Score 0 if core storage functionality is missing, 5 if basic storage is implemented but lacks advanced retrieval, and 10 if the system includes comprehensive storage with efficient indexing and search capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the knowledge organization and categorization system properly designed?",
+      "description": "Evaluate whether the code implements hierarchical categorization, tagging system, and relationship mapping between knowledge items. Check if it supports metadata management, custom taxonomies, and dynamic reorganization of knowledge. Deduct 5 points if the system doesn't support flexible categorization, 3 points if it lacks relationship management, and 2 points if it doesn't handle metadata effectively. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the search and filtering functionality comprehensive?",
+      "description": "Assess whether the system implements full-text search with ranking algorithms, supports advanced filtering options (date range, category, tags, etc.), and includes features like fuzzy search, synonym support, and search history. Deduct 5 points if only basic string matching is implemented, 3 points if advanced search options are missing, and 2 points if the search lacks performance optimization. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the system include user-friendly content creation and editing tools?",
+      "description": "Check whether the code provides a rich text editor with formatting options, supports multimedia content embedding, offers version history and rollback functionality, and includes draft saving. Score 0 if editing capabilities are minimal, 5 if basic editing is supported without versioning or media handling, and 10 if comprehensive editing tools with versioning and media support are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, database connection failures, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include input validation, error handling, and data integrity checks. Give 10 points if robustness is comprehensive, 5 points if basic error handling exists, and 0 points if exceptions are not handled properly.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered content suggestions 2. Knowledge graph visualization 3. Spaced repetition learning system 4. Automatic content summarization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search engines coexisting) 2. Function modules unrelated to knowledge management (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/business logic/view layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling or searching, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

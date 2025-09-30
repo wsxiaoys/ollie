@@ -1,0 +1,68 @@
+{
+  "index": 1209,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Write a WeChat Mini Program using JavaScript for campus second-hand trading.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core functionality for second-hand trading fully implemented?",
+      "description": "Review whether the code accurately implements essential trading features: product listing, search functionality, transaction processing, and user authentication. Score 0 if core features are missing, 5 if only basic listing is implemented, and 10 if the complete transaction flow (listing, browsing, negotiation, payment mechanism) is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WeChat Mini Program structure properly constructed?",
+      "description": "Check if the code follows WeChat Mini Program architecture with app.js, app.json, app.wxss correctly configured, and proper page directory structure. Examine if lifecycle hooks are properly utilized (onLoad, onShow, etc.) and if global configuration is appropriately set. Deduct 5 points if core Mini Program components (like wx:for, wx:if) are missing or misused, and 3 points if page routing is improperly handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is user authentication and profile management implemented?",
+      "description": "Evaluate whether the code includes WeChat login integration, user profile creation/editing, and proper session management using wx.login() and getUserProfile(). Check if university verification mechanism exists to ensure campus-only trading. Deduct 5 points if authentication is insecure, and 3 points if profile management is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are messaging and notification systems properly implemented?",
+      "description": "Assess whether the code includes real-time messaging between buyers and sellers, notification system for price updates or new messages, and transaction status updates. Check if message persistence is implemented. Deduct 5 points if real-time messaging is missing, and 3 points if notifications aren't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, invalid input, image upload failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should implement error boundaries and precise error messages, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR preview of products 2. Item condition verification system 3. Campus delivery integration 4. Price trend analytics). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple product listing methods) 2. Function modules unrelated to campus trading (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/API layers), component reusability, and consistent coding standards. Deduct 5 points if global state management is chaotic; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no error logging mechanism exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design principles: 1) Consistent with WeChat UI style 2) Proper layout spacing (element spacing follows WeChat's guidelines) 3) Professional typography (following WeChat's font hierarchy). Deduct 3 points for each UI component that breaks WeChat's design language, 5 points for cluttered layouts, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to WeChat Mini Program standards: 1) Page transitions are smooth and consistent 2) Loading states are properly indicated 3) Form interactions provide immediate feedback. Deduct 5 points for each operation without feedback, 3 points for jerky animations, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

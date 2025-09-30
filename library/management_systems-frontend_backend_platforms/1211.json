@@ -1,0 +1,68 @@
+{
+  "index": 1211,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Completely replicate Element Plus based on Vue3 and TypeScript, without depending on any third-party libraries.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is there a complete implementation of the core Element Plus component structure?",
+      "description": "Review whether the code accurately implements the core components of Element Plus including Button, Form, Table, Dialog, Notification, etc. Score 0 if less than 10 basic components are implemented, 5 if at least 20 components with basic functionality are implemented, and 10 if more than 30 components with full functionality matching Element Plus specifications are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue3 Composition API correctly utilized?",
+      "description": "Evaluate whether the implementation properly leverages Vue3's Composition API features (ref, reactive, computed, watch, etc.) and lifecycle hooks. Deduct 5 points if still primarily using Options API, 3 points if Composition API is used but with anti-patterns (such as reactive wrapping of already reactive objects). Check if proper component setup() patterns and <script setup> syntax is utilized where appropriate.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is TypeScript properly implemented throughout the codebase?",
+      "description": "Assess the TypeScript implementation quality including proper interfaces, types, generics, and type guards. Check for strict typing with proper definition files. Deduct 5 points if any component lacks type definitions, 3 points if type 'any' is overused, and 5 points if TypeScript configurations lack strictness. Full score requires comprehensive typing system similar to original Element Plus.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a comprehensive theming and customization system?",
+      "description": "Check if the implementation includes Element Plus's CSS variable-based theming system, allowing for global theme configuration and component-level customization. Verify if SCSS/CSS preprocessing is handled correctly for theming. Deduct 5 points if the theme system is missing, 3 points if it's implemented but not configurable at runtime, and 2 points if it doesn't support dark mode.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid props, edge cases in component states, error boundaries, etc.) and provide friendly error handling. Check if components gracefully handle unexpected input types, empty states, and overflowing content. Deduct 3 points for each critical robustness issue found (maximum 10 points deduction).",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features beyond Element Plus functionality that enhance the experience (e.g., 1. Advanced state persistence 2. Enhanced accessibility beyond original implementation 3. Performance optimizations like virtual scrolling). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple popup mechanisms coexisting) 2. Function modules unrelated to UI components (e.g., built-in state management) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating component logic/view/utils), test coverage, and build process. Check if components are properly decoupled and follow a consistent file structure. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no proper build configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the component styling exactly matches Element Plus specifications: 1) Consistent spacing and sizing systems 2) Correct color palette implementation 3) Typography system matches Element Plus. Compare screenshots of rendered components with original Element Plus. Deduct 3 points for each visually inconsistent component, 5 points for incorrect spacing systems, and 5 points for mismatched color variables. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether interactive components match Element Plus behavior: 1) Transitions/animations match duration and easing of originals 2) Hover/focus states properly implemented 3) Mobile touch interactions properly supported. Deduct 5 points for each animation that differs significantly from Element Plus, 3 points for missing interactive states, and 5 points for components that don't work properly on touch devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

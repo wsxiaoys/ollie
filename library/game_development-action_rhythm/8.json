@@ -1,0 +1,68 @@
+{
+  "index": 8,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes.\n\nPlease use HTML and JavaScript to implement \"Pixel Dance!\", an interactive rhythm and music-based game. The game provides a stage where characters dance to music. Players need to follow arrow prompts displayed at the bottom of the screen to control and complete correct dance moves. The game's objective is to accurately complete a series of actions according to the rhythm to achieve the highest score.\n\n### Gameplay\n- **Follow Instructions**: Follow the arrow directions shown on screen, input all direction keys and press the space bar at the right moment.\n- **Rhythm Matching**: Synchronize with the background music's rhythm to complete dance moves.\n\n### Game Features\n- **Visual Effects**: Dynamic pixel art style and visual effects.\n- **Music Interaction**: Gameplay closely integrated with musical rhythm.\n\n### Game Tips\n- **Pay Attention to Rhythm**: Closely follow the music rhythm and screen instructions to ensure accuracy of movements.\n- **Reaction Speed**: Quickly respond to screen instructions to improve scoring rate.\n\n### Summary\nThis game combines music, dance, and pixel art to provide players with a challenging and entertaining gaming experience. Please implement the game and include comments in the code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core rhythm-based input system fully implemented?",
+      "description": "Evaluate whether the code implements a rhythm-based input system that accurately detects key presses (arrow keys and space bar) synchronized with music beats. Check for timing windows that categorize inputs as 'Perfect', 'Good', or 'Miss'. Score 0 if input detection is missing, 5 if basic key detection exists without timing precision, and 10 if the system includes accurate beat synchronization with visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the music synchronization mechanism properly implemented?",
+      "description": "Check whether arrow prompts are correctly synchronized with the music beats, including proper preloading of audio assets and precise timing calculations. Verify that the game has a calibration system or offset adjustment to account for audio latency. Deduct 3 points if synchronization drifts over time, 5 points if there's no preloading mechanism for audio, and 3 points if there's no way to handle audio latency. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dance animation system responsive and visually satisfying?",
+      "description": "Assess whether character animations transition smoothly in response to player inputs, with different animations for successful vs. failed moves. Evaluate the pixel art quality and whether animations match the rhythm. Deduct 5 points if animations are jerky or delayed, 3 points if there's no visual difference between successful/failed moves, and 2 points if animations don't match the music's rhythm. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the scoring and feedback system comprehensive?",
+      "description": "Evaluate whether the game provides clear scoring feedback (Perfect/Good/Miss indicators), maintains combo counters, and calculates final scores based on accuracy and combo chains. Check if there's appropriate visual and audio feedback for different quality inputs. Deduct 3 points if visual feedback is delayed, 3 points if the combo system is missing, and 4 points if there's no end-game score summary. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as audio loading failures, unsupported browsers, unexpected key presses, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom difficulty settings 2. Ability to import custom songs/charts 3. Multiplayer functionality 4. Performance replay features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple input detection systems) 2. Function modules unrelated to rhythm gaming (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/audio handling/input detection), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the pixel art style is consistent and polished: 1) Proper color palette suitable for pixel art (limited colors per element) 2) Consistent pixel sizing (no mixed resolutions) 3) Clear UI elements that don't obstruct gameplay. Deduct 3 points for inconsistent pixel art style, 3 points for poor contrast between UI and game elements, and 4 points for cluttered or confusing interface layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game's performance meets rhythm game requirements: 1) Input lag under 50ms 2) Stable frame rate (minimum 60fps) 3) Smooth transitions between dance moves. Deduct 5 points for noticeable input delay, 3 points for frame rate drops during complex animations, and 2 points for jarring transitions between animations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

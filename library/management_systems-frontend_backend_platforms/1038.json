@@ -1,0 +1,68 @@
+{
+  "index": 1038,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code generated is executable for display.\n\nMy Coupons - Display a list of coupons I've redeemed with points, showing coupon type, quantity, usage rules, validity period, status, and other information.\n\nConsumption - When I make a purchase, the order page automatically displays available coupons that I can choose to use or not use. When selected, the amount is automatically deducted.\n\nCoupon Usage List - Display a list of coupon usage, including information such as time of use, merchant, original amount, actual payment amount, and discount amount.\n\nDivide into 6 parts",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the coupon listing interface fully implemented?",
+      "description": "Review whether the code properly implements a scrollable coupon list with clear visual categorization. Check if each coupon properly displays: type (discount/cash/free shipping), quantity, usage rules (minimum spend, restrictions), validity period (with expiring soon indicators), and status (valid/expired/used). Score 0 if core coupon display is missing, 5 if basic display without filtering/sorting is implemented, 10 if comprehensive with search/filter/sort capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the coupon selection mechanism during purchase properly implemented?",
+      "description": "Evaluate the automatic coupon detection and application system during checkout. The system should: identify eligible coupons based on cart contents, display available coupons clearly with expected discount amounts, allow toggling selection with immediate price updates, and handle complex cases like coupon stacking rules or exclusivity. Deduct 5 points if automatic eligibility detection is missing, 3 points if real-time price updates aren't implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the coupon usage history display complete and detailed?",
+      "description": "Check if the usage history includes: timestamps of redemption/usage, merchant information, original order amount, discount applied, and final payment amount. The list should support filtering (by date range, merchant, status) and provide usage analytics/statistics. Deduct 5 points if only basic information is shown without filtering capabilities, 3 points if the display lacks transaction details. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the six required sections properly structured and interconnected?",
+      "description": "Verify that the implementation correctly divides functionality into the specified 6 parts with clear separation of concerns: 1) Coupon listing 2) Redemption mechanism 3) Checkout integration 4) Usage history 5) Eligibility engine 6) Data management layer. Evaluate navigation between sections and ensure data consistency across components. Deduct 3 points per missing or improperly implemented section. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as expired coupons, network errors during redemption, overlapping coupon rules, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Expiry notifications with calendar integration 2. Visual savings tracker over time 3. Smart coupon recommendation based on shopping habits). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple coupon validation logics coexisting) 2. Function modules unrelated to coupon management (e.g., a built-in currency converter) 3. Fancy effects that affect performance (e.g., excessive animations when selecting coupons). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating coupon data models/views/controllers), unit test coverage (especially for discount calculation logic), and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance when selecting coupons. Deduct 5 points for each operation without feedback, 3 points for visual after-images during list scrolling, and 5 points for hard-to-find coupon selection controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

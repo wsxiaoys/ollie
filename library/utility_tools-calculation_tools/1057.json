@@ -1,0 +1,68 @@
+{
+  "index": 1057,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Based on the student's actual needs and preferences in a self-directed learning context, provide me with code for setting up a timer function.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Timer Interface Implementation",
+      "description": "Review whether the code accurately implements the core timer functionality with proper display of hours, minutes, and seconds. Check if the timer shows correct numerical values and updates in real-time.Score 0 if the timer doesn't work at all, 5 if it only shows basic counting without proper formatting, 10 if it fully implements a professional time display with proper formatting and precision.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Timer Controls Functionality",
+      "description": "Evaluate if the code includes complete control functions: start, pause, reset, and possibly lap/split times. Test edge cases like rapid clicking of controls and verify proper state management between different control actions.Deduct 3 points if any basic control is missing, 2 points if controls don't handle edge cases, and 3 points if state transitions between controls are buggy. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Timer Accuracy and Performance",
+      "description": "Assess the timer's accuracy over time and its performance impact. Check if the implementation uses efficient methods like requestAnimationFrame or setInterval with drift compensation instead of naive setTimeout chains.Deduct 5 points for timer drift exceeding 1 second per minute of running time, 3 points for inefficient implementation causing performance issues, 2 points if the timer fails after extended periods. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Configuration Options and Flexibility",
+      "description": "Check if the timer allows customization like countdown mode, different time formats (12/24-hour), alert/notification features, or custom interval settings for specialized timing needs in self-directed learning contexts.Award 2 points for each well-implemented configuration option (countdown ability, formats, alerts, intervals, etc.) up to a maximum of 10 points. Score 0 if no customization is available.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser tab switching, sleep mode, input validation, etc.) and provide recovery mechanisms. Test with browser refresh scenarios and system sleep/wake cycles.Code with strong robustness handling all edge cases gets 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes features that enhance self-directed learning (e.g., 1. Pomodoro technique integration 2. Learning session tracking/statistics 3. Focus mode with website blocking 4. Voice commands for hands-free control).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check for three types of redundancy: 1. Multiple implementations of the same timing logic 2. Unnecessary features unrelated to timing functionality 3. Excessive animations or effects that impact performance or distract from learning.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core timing functions are negatively affected by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Code Engineering Quality",
+      "description": "Review modular design (separating timer logic from UI), code organization, naming conventions, and potential for extension. Check for proper error handling and cleanup to prevent memory leaks.Deduct 5 points if global state pollution exists; deduct 3 points if code reusability is poor; deduct 2 points if variable naming is unclear or inconsistent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Visual Design",
+      "description": "Evaluate whether the timer follows good design principles: 1) Clear readable typography (especially for time display) 2) Proper contrast between elements 3) Intuitive layout with sufficient spacing 4) Responsive design for different screen sizes.Deduct 3 points for poor readability of time display, 3 points for confusing layout, 2 points for non-responsive design, and 2 points for inadequate visual hierarchy. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction Experience",
+      "description": "Judge whether the timer provides good interaction feedback: 1) Visual/audio cues when timer starts/stops/completes 2) Accessible controls with keyboard shortcuts 3) Smooth transitions between timer states 4) Intuitive controls that match user expectations.Deduct 3 points for missing feedback on timer state changes, 2 points for inaccessible controls, 3 points for jarring visual transitions, and 2 points for counterintuitive control placement. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "easy"
+}

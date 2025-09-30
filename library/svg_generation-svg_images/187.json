@@ -1,0 +1,68 @@
+{
+  "index": 187,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable and can be displayed.\nPlease help me implement the following requirement using SVG code: create a scene of \"me drinking with a cup at a bar.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic bar scene properly rendered?",
+      "description": "Check if the SVG properly creates a recognizable bar environment with correct perspective, depth, and lighting. Elements should include a bar counter, bar stools, shelves with bottles, and appropriate background details that establish the setting. Scoring: 0 points if the scene is unidentifiable as a bar; 5 points if basic elements exist but lack detail; 10 points for a comprehensive and detailed bar setting.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the character representation accurate and detailed?",
+      "description": "Evaluate the character ('me') representation including body proportions, posture (sitting position should be natural), facial features, and expression. The character should be properly positioned at the bar. Deduct 3 points if proportions are significantly off; deduct 3 points if the posture looks unnatural; deduct 2 points if facial details are missing or poorly executed; deduct 2 points if the character placement doesn't integrate well with the scene.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the cup/glass properly designed and positioned?",
+      "description": "Assess the drink container design (glass type appropriate for a bar setting), positioning in the character's hand, and details like liquid content, ice, garnish, etc. The character should be in a drinking pose or motion. Deduct 3 points if the glass design is too simplistic; deduct 3 points if the hand-glass interaction looks unnatural; deduct 2 points if liquid details are missing; deduct 2 points if the drinking action isn't clearly depicted.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SVG implementation technically correct?",
+      "description": "Review the technical aspects of SVG implementation, including proper structure, appropriate use of SVG elements (path, rect, circle, etc.), correct attributes, and syntactical correctness. Check for proper viewBox setting, grouping of related elements (<g> tags), and use of reusable components like definitions (<defs>). Deduct 5 points for incorrect SVG syntax; deduct 3 points for improper viewBox; deduct 2 points for inefficient element usage.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle different viewport sizes through responsive design techniques (preserveAspectRatio attribute, percentage-based positioning, etc.). Check if the SVG scales properly without distortion. Deduct 5 points if the image severely distorts when resized; deduct 3 points if elements overlap incorrectly when viewed at different sizes; deduct 2 points if text becomes illegible when scaled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the SVG includes surprise features that enhance the experience (e.g., 1. Animation of drinking motion 2. Interactive elements that respond to user input 3. Gradient lighting effects that create atmosphere 4. Creative use of filters or masks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate SVG elements that serve the same purpose 2. Excessive detail that doesn't contribute to the scene but increases file size 3. Unnecessary animations or effects that distract from the main subject. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core elements are obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular organization (such as grouping related elements), code readability (meaningful ids/classes, comments for complex paths), and optimization (reduced path points, proper use of transforms instead of absolute coordinates). Deduct 5 points if the code lacks organization; deduct 3 points if paths are unnecessarily complex; deduct 2 points if the code uses absolute positioning when transforms would be more efficient.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color palette with appropriate contrast 2) Proper composition and balance of elements 3) Consistent style throughout (not mixing different visual styles). Deduct 3 points for clashing colors or poor contrast; deduct 3 points for awkward composition; deduct 4 points for inconsistent stylistic approaches.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the visual storytelling effective?",
+      "description": "Judge whether the scene successfully communicates the narrative of 'drinking at a bar' through visual cues, character expression, environmental details, and composition. The scene should feel authentic and convey mood/atmosphere. Deduct 3 points if the activity is ambiguous; deduct 4 points if the emotional tone/atmosphere is missing; deduct 3 points if contextual details that would enhance the storytelling are absent.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

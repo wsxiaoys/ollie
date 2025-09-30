@@ -1,0 +1,68 @@
+{
+  "index": 937,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Be sure to make the generated code executable for demonstration purposes. Design a mobile app for the Android system that functions as a novel reader, retrieving book content in JSON format from specific URLs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core novel reading functionality fully implemented?",
+      "description": "Review whether the code accurately implements the book content retrieval mechanism from JSON APIs, including parsing, caching, and displaying formatted text content. Check for proper handling of different chapter navigation, bookmarks, and reading progress tracking. Score 0 if core reading functionality is missing, 5 if basic reading is implemented but lacks navigation features, and 10 if all essential reader functions are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the JSON data handling correctly implemented?",
+      "description": "Evaluate the JSON parsing mechanism, including error handling for malformed data, empty responses, or unexpected content structure. Check for proper model classes representing book and chapter data. Verify that JSON parsing is performed off the main thread to prevent UI freezes. Deduct 5 points if no error handling exists, 3 points if parsing blocks the UI thread, and 2 points if model classes are poorly designed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the network communication layer properly designed?",
+      "description": "Check whether the app implements proper HTTP client (Retrofit/Volley/OkHttp), handles network timeouts, implements retry mechanisms, and displays appropriate loading/error states. Verify implementation of network state monitoring and offline mode. Deduct 5 points if no network error handling exists, 3 points if no caching strategy is implemented, and 3 points if offline mode is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Android-specific architecture and lifecycle management implemented correctly?",
+      "description": "Assess whether the code follows Android architectural patterns (MVVM/MVP/MVI), handles configuration changes properly, manages Activity/Fragment lifecycles, and implements proper state preservation. Check for implementation of ViewModels, LiveData/StateFlow, and proper navigation components. Deduct 5 points for not following architecture patterns, 3 points for lifecycle leaks, and 3 points for improper state management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, out-of-memory issues, device rotation, background process killing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the reading experience (e.g., 1. Text-to-speech integration 2. Customizable reading themes/fonts 3. Reading statistics and analytics 4. Social sharing capabilities 5. Annotation and highlighting). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text parsing engines) 2. Function modules unrelated to novel reading (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations during page turns). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data access layers), unit test coverage, and build process automation. Examine proper dependency injection usage, static analysis tools integration, and code documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if build variants (debug/release) are not properly configured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet modern Android UI standards?",
+      "description": "Evaluate whether the UI follows Material Design principles: 1) Proper implementation of components (RecyclerView, ConstraintLayout, etc.) 2) Support for both light/dark themes 3) Responsive layouts for different screen sizes 4) Proper touch target sizes (min 48dp) 5) Accessibility compliance. Deduct 2 points for each UI guideline violation, 3 points for non-responsive layouts, and 3 points for accessibility issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and battery-efficient?",
+      "description": "Judge whether the app performs well on mobile devices: 1) Smooth scrolling without frame drops 2) Efficient battery usage (no continuous background processes) 3) Fast app startup time (under 2 seconds) 4) Proper handling of system resources. Deduct 3 points for janky scrolling, 3 points for excessive battery drain, 2 points for slow startup, and 2 points for memory leaks. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

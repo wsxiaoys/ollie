@@ -1,0 +1,68 @@
+{
+  "index": 1625,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that any code you generate is executable for demonstration. Source code for automatic score calculation in webpage exams.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core score calculation algorithm correctly implemented?",
+      "description": "Review whether the algorithm accurately calculates scores based on exam inputs, handles various question types (multiple-choice, fill-in-the-blank, essay), and applies appropriate weighting. Check for edge cases like partial credit. Score 0 if the core calculation is incorrect, 5 if basic calculation works but lacks handling of complex question types, and 10 if all question types and scoring scenarios are handled accurately.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the input validation and error handling robust?",
+      "description": "Evaluate how the code validates user inputs, prevents submission of incomplete answers, and handles edge cases (blank answers, malformed inputs, etc.). Check for defensive programming techniques like form validation, input sanitization, and graceful error handling. Deduct 5 points if basic validation is missing, 3 points if error messages aren't user-friendly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the score persistence and reporting system implemented?",
+      "description": "Check whether the code includes mechanisms to store scores (localStorage, database integration, etc.), generate reports, and provide analytics. Verify if historical scores are accessible and if comparative analysis features are available. Deduct 5 points if scores aren't persistent across page reloads, 3 points if reporting functionality is limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the exam timing and auto-submission functionality properly implemented?",
+      "description": "Assess whether the code handles exam time limits, provides countdown timers, sends warnings when time is running low, and auto-submits when time expires. Check if the timer persists across page reloads. Deduct 5 points for no auto-submission, 3 points for timer inaccuracies, 2 points if time warnings are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid inputs, browser crashes, network issues) and provide friendly error prompts or recovery mechanisms. Test for race conditions in timing and submission functions. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time score feedback 2. Anti-cheating mechanisms 3. Personalized performance analytics). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation methods for the same score 2. Unnecessary animations or effects that distract from the exam experience 3. Heavy libraries included but barely used. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of UI/scoring logic/data handling), code reusability, and presence of automated tests. Evaluate code structure, naming conventions, and comments. Deduct 5 points if global variables are overused; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the exam UI follows modern design principles: 1) Clean layout with clear question grouping 2) Proper visual hierarchy for questions vs. answers 3) Accessible design with sufficient contrast and readable fonts. Deduct 3 points for cluttered question layout, 5 points for poor readability, and 5 points for confusing navigation between questions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the exam interaction conforms to user expectations: 1) Question navigation is intuitive 2) Answer submission provides immediate feedback 3) Score calculation and display is transparent. Deduct 5 points for laggy response when selecting answers, 3 points for confusing submission process, and 5 points for unclear scoring feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

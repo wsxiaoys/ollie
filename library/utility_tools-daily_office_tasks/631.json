@@ -1,0 +1,68 @@
+{
+  "index": 631,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Develop code for a screenshot tool that allows users to capture browser areas through simple button triggers, supporting three modes: selected area, current visible window, and entire webpage. Users should be able to perform simple edits on the screenshots (such as adding text, drawing boxes, marking with arrows). Finally, users should be able to save the screenshot as an image format and download it quickly.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the screenshot capture functionality fully implemented?",
+      "description": "Review whether the code accurately implements all three required screenshot modes (selected area, current visible window, and entire webpage). Check if the selection mechanism for the 'selected area' mode allows for precise rectangular selections with visual feedback. Score 0 if no capture functionality works, 5 if only some modes are implemented, and 10 if all three modes work correctly with proper user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "How well is the screenshot editing functionality implemented?",
+      "description": "Evaluate the implementation of the editing tools (text addition, rectangle drawing, and arrow marking). Check if the text tool supports font customization, if rectangle drawing allows for different colors/sizes, and if arrow markers can be properly positioned and oriented. Deduct 3 points if any required tool is missing, 2 points if a tool lacks essential customization options, and 5 points if the edit interface is not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the image saving and downloading feature properly implemented?",
+      "description": "Check if the screenshot can be saved in common image formats (PNG/JPG) and if the download functionality works correctly. Verify that the download process initiates promptly, uses appropriate file naming conventions, and preserves image quality. Deduct 5 points if only one format is supported, 3 points if the download process is overly complicated, and 7 points if downloaded images show quality degradation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "How well does the tool handle browser compatibility and permissions?",
+      "description": "Assess whether the code properly handles browser permissions for screen capture and considers compatibility across major browsers. Check if appropriate fallbacks or guidance is provided when permissions are denied or features are unsupported. Deduct 5 points if the tool only works in one specific browser, 3 points if permission handling is inadequate, and 5 points if there's no error handling for unsupported scenarios. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission denials, failed captures, memory constraints with large screenshots, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. OCR text recognition in screenshots 2. Auto-blur detection for sensitive information 3. Cloud storage integration 4. One-click sharing options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same capture) 2. Function modules unrelated to screenshot capture and editing (e.g., built-in image gallery) 3. Fancy effects that affect performance (e.g., unnecessary animations during capture). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating capture/editing/storage logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when initiating screenshot capture 2) Transition animations when switching between capture and edit modes (300-500ms) 3) Clear highlighting of active editing tools. Deduct 5 points for each operation without feedback, 3 points for laggy selection highlighting, and 5 points for hard-to-find editing controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

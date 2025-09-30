@@ -1,0 +1,68 @@
+{
+  "index": 1713,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the code you generate is executable for demonstration. Help me write a small checkout system for a fresh food supermarket, and explain how to use it.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core checkout functionality properly implemented?",
+      "description": "Review whether the code accurately implements essential checkout features including product scanning/input, price calculation, discount application, and receipt generation. Check if the system can handle different product types (weighted vs. unit items). Score 0 if core functionality is missing, 5 if basic checkout works but has limitations, 10 if fully functional with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the product inventory management system implemented?",
+      "description": "Evaluate whether the code includes a proper inventory system that tracks product details (name, price, stock level, category, etc.) and updates inventory after checkout. Check for CRUD operations for managing products. Deduct 5 points if there's no stock tracking, 3 points if product data structure is inadequate. Full score requires persistent storage implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are discount and promotion mechanisms implemented?",
+      "description": "Check if the system supports various discount types (percentage, fixed amount, buy-X-get-Y, etc.) and can apply them correctly during checkout. Verify if promotions can be time-limited and combined according to rules. Deduct 5 points if only basic discounts are implemented, 3 points if discount conflict resolution is missing. Full score requires flexible promotion rule configuration.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interface intuitive and functional for supermarket staff?",
+      "description": "Assess if the interface provides clear visual feedback during checkout, allows quick product lookup/scanning, and presents relevant information in a logical layout. Check if common supermarket operations like price overrides and quantity adjustments are easily accessible. Deduct 5 points for confusing navigation, 3 points for poor information hierarchy, and 5 points for missing critical interface elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (e.g., invalid product codes, network issues during checkout, payment processing errors) and provides friendly error messages or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time inventory analytics 2. Customer loyalty program integration 3. Mobile receipt options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple price calculation methods) 2. Function modules unrelated to checkout (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/data layers), unit test coverage, and potential for scalability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if error handling is inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern POS system principles: 1) Clean and high-contrast UI suitable for retail environments 2) Proper layout with logical grouping of related functions 3) Consistent visual language across all screens. Deduct 3 points for each cluttered screen, 5 points for poor readability under various lighting conditions, and 5 points for inconsistent interface elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and efficient for high-volume checkout?",
+      "description": "Judge whether the system optimizes for checkout speed: 1) Fast response time (≤ 100ms) for scanning/entry 2) Minimal steps for common operations 3) Keyboard shortcuts for frequently used functions. Deduct 5 points for each operation requiring more than 3 clicks/steps, 3 points for lack of input validation feedback, and 5 points if the system slows down with larger transactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

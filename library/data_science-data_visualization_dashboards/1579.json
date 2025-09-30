@@ -1,0 +1,68 @@
+{
+  "index": 1579,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Based on the character relationships in the novel \"Water Margin\" (also known as \"Outlaws of the Marsh\"), please generate code for a character relationship diagram.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the character relationship graph data structure well-designed?",
+      "description": "Evaluate whether the code properly represents the complex character relationships from 'Water Margin' using an appropriate graph data structure. Check if nodes represent characters with proper attributes (e.g., name, rank, skills) and edges represent different relationship types (e.g., brotherhood, mentorship, rivalry, family). Score 0 if no clear data structure is defined, 5 if only basic node-edge relationships exist, and 10 if rich relationship types with attributes are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the visualization accurately represent the 'Water Margin' character relationships?",
+      "description": "Assess whether the visualization includes the main characters (at least the 36 heavenly spirits and 72 earthly fiends) and their key relationships. Check if the visualization distinguishes between different types of relationships through visual cues (colors, line styles, etc.). Deduct 5 points if fewer than 30 key characters are included, 3 points if relationship types aren't visually distinct, and 2 points if historically inaccurate relationships are depicted.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are interactive features implemented for exploring the character network?",
+      "description": "Verify if the visualization includes interactive features like zooming, panning, highlighting connections on hover, filtering by relationship type, or character search. Score 0 if no interactivity exists, 5 if only basic hover/click interactions are implemented, and 10 if multiple advanced interactive features are available for deep exploration of the character network.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the layout algorithm appropriate for displaying complex character networks?",
+      "description": "Examine whether the code implements an appropriate layout algorithm (force-directed, hierarchical, etc.) that effectively visualizes the complex network without excessive edge crossings or node overlaps. Check if the layout considers character groupings (e.g., Liangshan bandits, imperial officials). Deduct 5 points if the visualization is cluttered with many crossing edges, and 3 points if no consideration is given to logical character groupings.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as missing character data, connection errors, browser compatibility issues, or varying screen sizes. Code with strong robustness should include error handling, responsive design principles, and graceful degradation. Give 10 points for comprehensive error handling and responsiveness, 5 points for average robustness, and 0 points if errors break the visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Historical context annotations 2. Character story snippets on interaction 3. Timeline view of character appearances 4. Filtering by story arcs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization techniques 2. Unnecessary features unrelated to character relationships 3. Fancy effects that affect performance without adding informational value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core visualization functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data processing, visualization logic, and UI controls), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between data and visualization layers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization follows modern design principles: 1) Harmonious color scheme appropriate for the historical theme 2) Proper layout with clear node labels and legible text 3) Balanced visual hierarchy emphasizing important characters/relationships. Deduct 3 points for cluttered node arrangements, 5 points for poor color choices that make relationships hard to distinguish, and 5 points for illegible character names or information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects enhance understanding of the complex network: 1) Smooth transitions when filtering or rearranging nodes 2) Appropriate animation speed (300-500ms) for state changes 3) Responsive feedback when interacting with characters. Deduct 5 points for jerky animations during network exploration, 3 points for delayed response (>200ms) to user interactions, and 5 points for animations that obscure the understanding of relationships. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

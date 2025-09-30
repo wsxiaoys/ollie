@@ -1,0 +1,68 @@
+{
+  "index": 182,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure to ensure that the code you generate is executable. Please help me implement this SVG image using code: a close up of a red and white BMC logo.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG code for the BMC logo accurate and working?",
+      "description": "Check if the SVG code properly renders the BMC (Bicycle Manufacturing Company) logo with its distinctive red and white color scheme. The logo should be recognizable as the BMC brand mark with accurate proportions and shapes. Score 0 if the logo is unrecognizable, 5 if it's recognizable but with significant distortions, and 10 if it closely resembles the official BMC logo.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the red and white color scheme correctly implemented?",
+      "description": "Verify that the code uses the correct red color (#E30613 or similar) for the BMC logo and implements a proper contrast with white elements. Check if the colors match BMC's brand identity. Deduct 5 points if wrong shades are used, 3 points if the contrast is poor, and 10 points if colors don't match the BMC brand at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the SVG implementation use proper vector paths?",
+      "description": "Examine whether the SVG uses proper path elements (<path>) with optimized d-attribute values or appropriate basic shapes (<rect>, <circle>, etc.) instead of bitmap approaches. Ensure the paths are constructed efficiently without unnecessary points. Deduct 5 points for unnecessarily complex paths, 3 points for unoptimized curves, and give 0 points if bitmap approaches are used instead of vectors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the close-up view appropriately implemented?",
+      "description": "Evaluate if the code implements a proper close-up view of the logo, focusing on details while maintaining clarity and proportions. The viewBox attribute should be set correctly to frame the close-up area. Deduct 5 points if the viewBox is improperly set, 3 points if the close-up effect is poorly executed, and 10 points if no close-up effect is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles potential display issues across browsers and devices, includes fallback options, and properly sets width/height or preserveAspectRatio attributes. Code with strong robustness should work consistently across platforms, giving 10 points. If the robustness is average with minor display inconsistencies, give 5 points, and if serious rendering problems exist, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the logo visualization (e.g., 1. Subtle animations when hovering 2. Responsive scaling techniques 3. Interactive elements that highlight parts of the logo). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary elements or groups that complicate the SVG structure 2. Decorative elements not part of the original BMC logo 3. Excessive filters or effects that increase rendering load without benefit. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with the core logo rendering.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modularity (such as proper grouping with <g> elements), element naming (with meaningful id/class attributes), and optimization for file size. Deduct 5 points if there's no logical structure to the SVG elements; deduct 5 points if the code is excessively verbose or poorly formatted; deduct 5 points if there are no comments for complex parts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual implementation meet professional design standards?",
+      "description": "Evaluate whether the SVG adheres to professional design principles: 1) Precise alignment of elements 2) Clean edges without artifacts 3) Proper scaling at different sizes without distortion. Deduct 3 points for each misaligned element, 5 points for jagged edges or rendering artifacts, and 5 points for improper scaling behavior. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the SVG accessible and optimized for different contexts?",
+      "description": "Judge whether the SVG implementation includes: 1) Proper ARIA attributes for accessibility 2) Title and description elements 3) Optimization for both light and dark backgrounds. Deduct 5 points for missing accessibility features, 3 points for poor background adaptation, and 5 points if the SVG doesn't include proper metadata. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Icons/Logos",
+  "difficulty": "medium"
+}

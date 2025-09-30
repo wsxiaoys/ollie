@@ -1,0 +1,68 @@
+{
+  "index": 18,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes.\n\nPlease implement a Crossy Road game using HTML and JavaScript.\n\n### Gameplay\n- **Movement Control**: Use keyboard or on-screen buttons to control character movement in four directions.\n- **Avoid Obstacles**: Dodge oncoming vehicles and other obstacles.\n\n### Game Features\n- **3D Graphics**: Use the three.js library to create an engaging 3D environment.\n- **Increasing Difficulty**: As the player progresses, the speed and frequency of obstacles increase.\n\n### Game Tips\n- **Predict Routes**: Observe and predict vehicle travel paths to make movement decisions in advance.\n- **Patient Waiting**: When necessary, wait for safe crossing opportunities.\n\n### Summary\n\"Crossy Road with threejs\" is a 3D road-crossing game based on three.js. Players control a small animal, moving quickly and strategically to avoid vehicles with the goal of crossing roads as much as possible. This game provides an exciting gaming experience suitable for players who enjoy testing their reaction speed and strategic planning abilities. Please include some comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Crossy Road gameplay mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the essential gameplay mechanics: character movement in four directions, obstacle avoidance, and game progression logic. Check if keyboard controls and optional on-screen buttons are functional.Score 0 if core movement and collision detection are not implemented, 5 if basic movement works but collision is unreliable, 10 if movement is smooth with proper collision detection and game progression logic is complete.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 3D environment properly created using three.js?",
+      "description": "Evaluate the implementation of 3D graphics using three.js. Check for proper scene setup, camera positioning, lighting, and rendering. Assess whether the 3D environment effectively mimics the Crossy Road aesthetic with proper geometry, materials, and textures.Score 0 if three.js is not implemented or severely broken, 5 if basic 3D rendering works but lacks visual polish or proper camera work, 10 if the 3D environment is well-constructed with appropriate lighting, textures, and camera angles.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the difficulty progression implemented?",
+      "description": "Check whether the game implements increasing difficulty as the player progresses. This should include faster vehicles, more frequent obstacles, or decreased spacing between safe zones. Verify that the difficulty curve is balanced and not overly punishing.Score 0 if no difficulty progression exists, 5 if basic difficulty increase is present but poorly balanced, 10 if well-implemented difficulty scaling that creates appropriate challenge over time.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the obstacle generation and movement systems effectively implemented?",
+      "description": "Assess the code for vehicle/obstacle generation, movement patterns, and variety. Check if obstacles move at different speeds, come from different directions, and create interesting gameplay scenarios. Evaluate the randomness and predictability balance.Score 0 if obstacles are static or non-existent, 5 if basic movement patterns exist but lack variety, 10 if obstacles have diverse, interesting patterns that create genuine strategic challenges.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input sequences, browser resizing, focus loss, performance degradation) and provide friendly error prompts or recovery mechanisms. Check for proper event handling and cleanup.Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Character customization 2. Special power-ups 3. Environmental effects like day/night cycles 4. Persistent high scores).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions 2. Function modules unrelated to the Crossy Road game 3. Fancy effects that affect performance (e.g., unnecessary particle systems or post-processing).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, and maintainability. Check for proper use of three.js best practices and game development patterns.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code is difficult to understand or poorly commented despite the requirement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching 2) Proper UI layout 3) Clean game HUD that doesn't interfere with gameplay visibility. Check if the visual style is consistent with the Crossy Road aesthetic.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic UI layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game performance optimized and responsive?",
+      "description": "Judge whether the game runs smoothly: 1) Maintains consistent frame rate (ideally 60fps) 2) Proper memory management 3) Efficient use of three.js features without unnecessary calculations. Check for input responsiveness and game feel.Deduct 5 points for noticeable frame drops during normal gameplay, 3 points for input lag over 100ms, and 5 points for memory leaks or growing performance issues over time. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

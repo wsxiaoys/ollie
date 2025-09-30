@@ -1,0 +1,68 @@
+{
+  "index": 438,
+  "question": "You are a Code Expert\n\n## Andrej Karpathy's Minimalist Note-taking Method\n### How to Manage All Non-Project Notes Using a Single File\n\n**Design Style:**\n- **Visual Style:** Soft Technology\n- **Emotional Tone:** Warm and Friendly\n- **Target Audience:** Young Demographics\n- **Brand Personality:** Futuristic Tech Feel\n\n**Visual Elements and Layout:**\n- **Rounded Card Layout:** Use large rounded corner cards as information containers, colored in mint green, light gray, and champagne gold accents to create a friendly, approachable feel.\n- **Soft Color System:** Primarily using mint green, light gray, champagne gold and other soft tones, avoiding strong visual stimulation.\n- **Minimalist White Space Design:** Ample white space enhances readability and reduces visual fatigue.\n- **Subtle Shadow Depth:** Subtle shadow effects give the interface a slight three-dimensional feel without overemphasis.\n- **Functional Aestheticism:** Design serves function, with no superfluous decorative elements.\n- **Grid-based Layout:** Cards arranged on a clear grid system to maintain overall sense of order.\n- **Gradient Accents:** Soft gradients used as backgrounds in parts of the interface, such as transitions from mint green to light gray, enhancing the modern feel.\n\n**Typography Style:**\n- **Data Highlighting:** Key numerical information uses extra-large font size and bold treatment, e.g., \"12,002\", \"20x\".\n- **Clear Hierarchical Typography:** Titles, explanatory text, data, and annotations distinguished by clear font size hierarchy (Headings 80-160px, Subheadings 48-80px, Body Text 32-48px, Supporting Information 24-32px).\n- **Simple Sans-serif Fonts:** All text uses modern, clean sans-serif fonts for improved readability.\n- **Consistent Text Alignment:** Maintaining unified left alignment or center alignment within cards.\n- **Color-coded Important Terms:** Using high-contrast colors like blue to mark important terms such as \"tweets\" and \"threads\".\n- **Breathing Space:** Ample spacing between text blocks creates \"breathing\" room.\n- **Special Brand Name Treatment:** Product names like \"alohi\", \"deel.\" use special fonts or styles to strengthen brand recognition.\n\n**Visual Element Style:**\n- **Subtle Icon System:** Using simple linear or filled icons, appropriately sized without overwhelming the content.\n- **Progress Visualization:** Semi-transparent circular charts + subtle gradient fills intuitively display progress, such as annual completion percentage.\n- **Color-coded Information:** Different cards use different colors for quick distinction between functional modules.\n- **Brand Identity Integration:** Product logos naturally integrated into the interface, such as \"alohi's\" circular logo.\n- **Profile Picture Elements:** Appropriate use of circular avatars adds humanizing qualities, such as on customer recommendation cards.\n- **Geometric Decorations:** Simple geometric shapes used as background decorations, such as semi-transparent circles.\n- **Component Consistency:** Buttons, labels, tabs and other elements maintain a unified style, enhancing systematic feel.\n\n**Design Principle Guidance:**\n- **Visual Hierarchy:** Headings (80-160px) > Subheadings (48-80px) > Body Text (32-48px) > Supporting Information (24-32px).\n- **Color Scheme:** Using mint green, light gray, and champagne gold as the three main color tones, ensuring contrast meets WCAG 2.1 standards.\n- **White Space Art:** Strategic use of negative space creates elegant visual balance.\n- **Font Selection:** Recommended use of two complementary modern, clean sans-serif fonts, ensuring both readability and aesthetics.\n\nFrontend implementation required",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is Karpathy's single-file note-taking methodology accurately implemented?",
+      "description": "Review whether the code correctly implements the core concept of managing all non-project notes in a single file structure. Check if features include: unified note entry/editing, hierarchical tag system, search functionality, and note linking mechanisms. Score 0 if the single-file concept is not implemented, 5 if only basic note management exists, and 10 if the complete minimalist methodology with advanced search and organization is fully realized.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the visual design strictly follow the 'Soft Technology' aesthetic requirements?",
+      "description": "Evaluate whether the interface adheres to the specified design system: mint green/light gray/champagne gold color palette, rounded card layouts with subtle shadows, and gradient accents. Check color contrast ratios meet WCAG 2.1 standards. Deduct 3 points for each color deviation from the specified palette, 5 points if rounded corners are not consistently applied, and 3 points if gradient implementations are jarring or excessive. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the typography hierarchy system properly implemented according to specifications?",
+      "description": "Verify that font sizing follows the exact hierarchy: Headings (80-160px), Subheadings (48-80px), Body Text (32-48px), Supporting Information (24-32px). Check for consistent sans-serif font usage, appropriate line spacing (≥1.5x), and proper text alignment. Deduct 5 points if the hierarchy is not maintained, 3 points for inconsistent font choices, and 2 points for inadequate text spacing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the visual elements and layout components accurately executed?",
+      "description": "Assess implementation of: grid-based card layout, subtle shadow depth effects, minimalist white space design, progress visualization elements, and icon system consistency. Check if geometric decorations and brand identity elements are properly integrated. Deduct 3 points for each missing visual component, 5 points if the grid system is not properly implemented, and 3 points if white space ratios are inadequate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases effectively?",
+      "description": "Evaluate whether the code can handle common abnormal situations such as: large note files, special characters in content, browser compatibility issues, data corruption recovery, and performance degradation with extensive notes. Code with strong robustness should effectively handle these edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance the note-taking experience?",
+      "description": "Check whether the code includes valuable enhancements such as: 1. Smart auto-tagging based on content analysis 2. Real-time collaboration features 3. Export functionality with formatting preservation 4. Keyboard shortcut customization 5. Dark/light theme toggle matching the soft technology aesthetic. Add 2-3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features that violate the minimalist principle?",
+      "description": "Strictly check for three types of redundancy: 1. Redundant UI components that clutter the interface 2. Features unrelated to note-taking (e.g., built-in games, social media integration) 3. Excessive animations or effects that contradict the 'soft technology' aesthetic. Deduct 3 points for each redundancy found, and directly deduct 10 points if core minimalist principles are violated by feature bloat.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate professional engineering quality?",
+      "description": "Review modular architecture (separation of data layer/view layer/utility functions), code organization, component reusability, and performance optimization. Deduct 5 points if global state is poorly managed or no design patterns are used; deduct 5 points if code duplication exceeds 25%; deduct 3 points if no build optimization is implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet the specified professional visual standards?",
+      "description": "Evaluate adherence to the design specification: 1) Exact color palette implementation (mint green, light gray, champagne gold) 2) Proper spacing following 8px grid principles 3) Consistent rounded corner radius across all cards 4) Appropriate contrast ratios for accessibility. Deduct 3 points for each spacing inconsistency, 5 points for color palette deviations, and 5 points for poor visual hierarchy. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the interactions smooth and aligned with the 'warm and friendly' user experience?",
+      "description": "Judge whether dynamic effects create the intended emotional response: 1) Hover states with subtle transitions (200-300ms) 2) Click feedback that feels responsive (≤100ms) 3) Smooth card animations when adding/editing notes 4) Intuitive navigation flow that supports the single-file methodology. Deduct 5 points for each interaction without proper feedback, 3 points for jarring transitions, and 5 points if key functions lack discoverability. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

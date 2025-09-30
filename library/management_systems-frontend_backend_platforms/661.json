@@ -1,0 +1,68 @@
+{
+  "index": 661,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. Implement a laboratory instrument management system where users can search for instruments through the frontend, view detailed parameters, and check current status (available, occupied, under maintenance). Administrators have the authority to add new instruments, update instrument information, and manage maintenance records.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete instrument search system implemented?",
+      "description": "Review whether the code implements comprehensive search functionality with multiple filters (e.g., by type, availability, location), auto-complete suggestions, and relevance sorting. Score 0 if no search is implemented, 5 if only basic keyword search exists, and 10 if advanced search with filters and sorting is fully implemented with proper indexing for performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the instrument detail view system properly implemented?",
+      "description": "Check whether detailed instrument information displays are implemented, including technical specifications, images, documentation links, usage history, and current status indicators. The parameters should be organized in collapsible sections with proper data validation. Score 0 if missing, 5 if basic information display only, and 10 if comprehensive with interactive elements and proper data formatting.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the instrument status management system complete?",
+      "description": "Evaluate whether the system properly tracks and displays instrument status (available, occupied, under maintenance), includes status change timestamps, responsible personnel information, and estimated availability times. The status change mechanism should include appropriate validation and notification workflows. Deduct 5 points if history tracking is missing, and 3 points if status updates lack audit trails.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the administrator management interface fully functional?",
+      "description": "Assess whether the admin panel includes all required functionality: adding new instruments, updating information, managing maintenance records, and generating reports. Check for proper form validation, image uploads, and audit logging of all administrative actions. Deduct 5 points if batch operations are missing, and 3 points if the interface lacks confirmation dialogs for critical operations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid inputs, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should have proper exception handling, input validation, and data consistency checks. Give 10 points for comprehensive error handling, 5 points for basic validation, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time equipment status visualization with floor maps 2. QR code generation for physical instrument tagging 3. Maintenance prediction algorithms based on usage patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit the same information) 2. Function modules unrelated to instrument management (e.g., built-in chat that could be handled by external systems) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data access/business logic/presentation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

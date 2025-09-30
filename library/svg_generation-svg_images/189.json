@@ -1,0 +1,68 @@
+{
+  "index": 189,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for display whenever possible.\n Please help me implement the following requirement using code. Create an SVG that shows: leaves falling from a plant in autumn.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG plant structure properly implemented?",
+      "description": "Evaluate whether the SVG includes a well-structured plant/tree with defined trunk, branches, and leaves. Check if proper SVG elements (paths, groups, etc.) are used with appropriate attributes. Score 0 if no plant structure exists, 5 if basic structure is present but lacks detail, and 10 if the plant is well-designed with realistic proportions and natural appearance.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the leaf falling animation correctly implemented?",
+      "description": "Check if leaves detach from the plant and fall with realistic physics using SVG animations or JavaScript. Evaluate the motion path (should be curved/swaying rather than straight down), timing variations between leaves, and rotation effects. Deduct 5 points if leaves fall in identical patterns, and 3 points if the animation timing is unnatural. Full score requires varied, natural-looking falling patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are autumn-appropriate visual elements included?",
+      "description": "Assess whether the implementation includes autumn-specific visual elements: appropriate color palette (oranges, reds, yellows, browns), gradual color changes in leaves, and seasonal atmosphere. Check if leaves change color before falling. Deduct 5 points if colors don't reflect autumn, and 3 points if there's no color transition. The full score requires a convincing autumn aesthetic.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there interactivity or environmental effects?",
+      "description": "Review whether the implementation includes interactive elements (e.g., wind effect on hover, clicking to shake the tree) or environmental effects (e.g., gentle breeze causing occasional leaf falls, day/night cycle). Deduct 5 points if no interactivity exists and 3 points if interaction is minimal. Give 10 points for well-implemented interactivity that enhances the autumn experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common issues (browser compatibility, viewport resizing, performance optimization for animation). Code with strong robustness should adapt to different screen sizes, maintain performance with many animated elements, and use requestAnimationFrame for smooth animations. Give 10 points for excellent robustness, 5 for average, and 0 if major issues exist.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather effects like rain or wind 2. Sound effects synchronized with falling leaves 3. Seasonal progression from summer to winter). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation loops or event handlers 2. Elements unrelated to the autumn plant theme 3. Heavy effects that affect performance (e.g., too many particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating drawing, animation, and interaction logic), code reusability (e.g., functions to generate multiple leaves), and optimization techniques. Deduct 5 points if global variables pollute the namespace; deduct 5 points if there's high code duplication; deduct 5 points if no performance considerations exist for animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design follows good principles: 1) Harmonious color palette appropriate for autumn 2) Balanced composition with proper negative space 3) Attention to detail in leaf shapes and plant structure. Deduct 3 points for visually jarring elements, 5 points for unrealistic proportions, and 5 points for poor composition. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and visually pleasing?",
+      "description": "Judge whether the animations follow natural principles: 1) Easing functions for realistic acceleration 2) Varied timing across different leaves 3) Smooth performance even with many elements. Deduct 5 points for jerky animations, 3 points for unrealistic movement patterns, and 5 points for performance issues with multiple leaves. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

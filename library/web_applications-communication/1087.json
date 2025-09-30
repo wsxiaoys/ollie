@@ -1,0 +1,68 @@
+{
+  "index": 1087,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Write an online chat tool similar to WeChat that supports one-to-one and one-to-many conversations, and includes an administrative backend.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic chat functionality fully implemented?",
+      "description": "Review whether the code accurately implements core chat features including message sending/receiving, chat history loading, and read status tracking. Check if the messaging system handles text messages, emojis, and media attachments. Score 0 if messaging doesn't work, 5 if only basic text messaging is implemented, and 10 if all expected chat features (including typing indicators and read receipts) are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are one-to-one and group chat features properly implemented?",
+      "description": "Evaluate whether the code properly handles both private and group conversations with appropriate data structures and UI differentiation. Check if group chats include member management, admin controls, and proper message broadcasting. Deduct 5 points if group chat lacks member management features, 3 points if chat history doesn't properly separate by conversation type. Full score requires both chat types to be fully functional with proper conversation switching.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the administrative backend complete and functional?",
+      "description": "Assess whether the admin panel includes user management (add/edit/delete/ban), content moderation tools, analytics dashboard, and system configuration options. Check for role-based access control and audit logging. Deduct 5 points if user management is incomplete, 3 points if content moderation tools are missing, and 5 points if there's no proper authentication for admin access. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is real-time communication properly implemented?",
+      "description": "Check whether the code implements WebSockets or a similar technology for real-time message delivery with proper connection management. Evaluate if the implementation includes connection state handling, reconnection logic, and message queuing during disconnections. Deduct 5 points if there's no offline message handling, 3 points if there's no typing indicator, and 5 points if message delivery isn't truly real-time. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, server errors, invalid inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper error handling, input validation, and recovery mechanisms, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. End-to-end encryption 2. Interactive message reactions 3. Smart message prioritization 4. AI chatbot integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems coexisting) 2. Function modules unrelated to messaging (e.g., complex games embedded in chat) 3. Fancy effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data layers), code reusability, documentation, and testing coverage. Deduct 5 points if global state management is messy or architectural patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no tests or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern messaging app principles: 1) Clean and consistent chat bubbles 2) Clear visual hierarchy between conversations and messages 3) Professional typography and spacing (message text ≥ 14px, adequate whitespace). Deduct 3 points for cluttered conversation lists, 5 points for poor contrast or readability issues, and 5 points for inconsistent visual styling between screens. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user expectations for a modern chat application: 1) Message sending feedback ≤ 100ms 2) Smooth scrolling through chat history 3) Intuitive navigation between conversations. Deduct 5 points for laggy message sending, 3 points for jerky animations during conversation switching, and 5 points for unintuitive navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

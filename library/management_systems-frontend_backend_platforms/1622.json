@@ -1,0 +1,68 @@
+{
+  "index": 1622,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the code you generate executable for demonstration purposes. How do I write a simple web-based information management system?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core CRUD functionality fully implemented?",
+      "description": "Review whether the code implements all four basic operations (Create, Read, Update, Delete) for managing information entities. Check if form validation exists for data entry, and if data retrieval supports filtering and sorting. Score 0 if core operations are missing, 5 if basic operations exist without validation, and 10 if all operations are implemented with proper validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is there a proper database integration or data persistence mechanism?",
+      "description": "Evaluate whether the code includes database connectivity (SQL or NoSQL) or alternative data persistence methods (like localStorage for demo purposes). Check for prepared statements or ORM to prevent SQL injection. Deduct 5 points if data persistence is completely missing, 3 points if it's implemented but without security considerations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there user authentication and authorization functionality?",
+      "description": "Check if the system implements user login/registration with proper password hashing, session management, and role-based access control. Examine whether different user roles have appropriate access restrictions. Deduct 5 points if authentication is missing, 3 points if it exists but with security flaws (like plaintext passwords). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the application architecture well-structured?",
+      "description": "Assess if the code follows a clear architectural pattern (MVC, MVVM, etc.) with separation of concerns. Look for proper modularization between data access, business logic, and presentation layers. Deduct 5 points for monolithic code without layer separation, 3 points if some structure exists but with significant coupling issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common abnormal situations (invalid inputs, server errors, network issues, etc.) and provides friendly error messages. Check for input sanitization to prevent XSS attacks. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time data visualization 2. Export functionality to PDF/Excel 3. Dark mode toggle 4. Responsive design for mobile compatibility). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same search) 2. Function modules unrelated to information management (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (file/folder structure), naming conventions, commenting practices, and reusability. Check for dependency management and build process. Deduct 5 points if global variables are overused; deduct 5 points if the code lacks comments or has poor naming; deduct 5 points if there's no clear build/deployment strategy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Consistent color scheme (no more than 3 primary colors) 2) Proper white space and layout (following grid systems) 3) Typography hierarchy (clear difference between headings, body text). Deduct 3 points for cluttered layouts, 5 points for inconsistent styling across pages, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user experience intuitive and efficient?",
+      "description": "Judge whether the system prioritizes usability: 1) Navigation is clear and consistent 2) Forms have proper validation with instant feedback 3) Loading states are indicated 4) Confirmation is required for destructive actions. Deduct 5 points for confusing navigation, 3 points for missing feedback on user actions, and 5 points for workflows that require excessive clicks. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

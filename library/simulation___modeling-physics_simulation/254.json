@@ -1,0 +1,68 @@
+{
+  "index": 254,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Write a frontend program that simulates the movement of celestial bodies in the solar system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Review whether the code correctly implements gravitational physics with Newton's law of universal gravitation (F = G * (m1 * m2) / r²) or an appropriate approximation. Check if orbital mechanics are applied with proper initial velocities to maintain stable orbits. Score 0 if planets move in arbitrary paths, 5 if basic circular orbits are implemented, and 10 if elliptical orbits with proper Keplerian physics are modeled.",
+      "description": "Review whether the code correctly implements gravitational physics with Newton's law of universal gravitation (F = G * (m1 * m2) / r²) or an appropriate approximation. Check if orbital mechanics are applied with proper initial velocities to maintain stable orbits. Score 0 if planets move in arbitrary paths, 5 if basic circular orbits are implemented, and 10 if elliptical orbits with proper Keplerian physics are modeled.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Evaluate the completeness of the simulation: At minimum, the Sun, terrestrial planets (Mercury, Venus, Earth, Mars) and gas giants (Jupiter, Saturn, Uranus, Neptune) should be present. Deduct 1 point for each missing major planet. Add 2 points if the simulation includes the Earth's moon, 2 points for other significant moons (e.g., Jupiter's Galilean moons), and 1 point for appropriate asteroid belt representation. The full score is 10 points.",
+      "description": "Evaluate the completeness of the simulation: At minimum, the Sun, terrestrial planets (Mercury, Venus, Earth, Mars) and gas giants (Jupiter, Saturn, Uranus, Neptune) should be present. Deduct 1 point for each missing major planet. Add 2 points if the simulation includes the Earth's moon, 2 points for other significant moons (e.g., Jupiter's Galilean moons), and 1 point for appropriate asteroid belt representation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Check whether the visualization maintains proportional relationships (size of planets, orbital distances) or provides a clear scaling mechanism if using non-linear scaling. Evaluate if planets are visually distinguishable with appropriate textures/colors. Deduct 5 points if planetary sizes are grossly disproportionate without explanation, 3 points if orbital distances are misleading, and 2 points if planets lack visual differentiation. The full score is 10 points.",
+      "description": "Check whether the visualization maintains proportional relationships (size of planets, orbital distances) or provides a clear scaling mechanism if using non-linear scaling. Evaluate if planets are visually distinguishable with appropriate textures/colors. Deduct 5 points if planetary sizes are grossly disproportionate without explanation, 3 points if orbital distances are misleading, and 2 points if planets lack visual differentiation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Assess whether the code implements user interaction controls such as zoom in/out, rotation of view angle, speed control, and the ability to focus on specific celestial bodies. Deduct 3 points if zooming is missing, 3 points if rotation control is absent, 2 points if simulation speed cannot be adjusted, and 2 points if there is no way to track/focus on specific planets. The full score is 10 points.",
+      "description": "Assess whether the code implements user interaction controls such as zoom in/out, rotation of view angle, speed control, and the ability to focus on specific celestial bodies. Deduct 3 points if zooming is missing, 3 points if rotation control is absent, 2 points if simulation speed cannot be adjusted, and 2 points if there is no way to track/focus on specific planets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Evaluate whether the code can handle common abnormal situations (such as window resizing, rendering performance issues, or user interaction edge cases) and provide graceful degradation. Code with strong robustness should maintain stable frame rates even with many bodies, giving 10 points. If performance degrades significantly with increased complexity, give 5 points, and if the simulation breaks under normal usage, give 0 points.",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, rendering performance issues, or user interaction edge cases) and provide graceful degradation. Code with strong robustness should maintain stable frame rates even with many bodies, giving 10 points. If performance degrades significantly with increased complexity, give 5 points, and if the simulation breaks under normal usage, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic lighting and shadow effects 2. Planetary rotation and axial tilt 3. Time-based events like comets or meteor showers 4. Educational information display about selected celestial bodies). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic lighting and shadow effects 2. Planetary rotation and axial tilt 3. Time-based events like comets or meteor showers 4. Educational information display about selected celestial bodies). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Strictly check three types of redundancy: 1. Redundant calculations that could be optimized (e.g., recalculating constants each frame) 2. Function modules unrelated to the solar system (e.g., unrelated UI elements) 3. Excessive visual effects that affect performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation is interfered with by redundant code.",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations that could be optimized (e.g., recalculating constants each frame) 2. Function modules unrelated to the solar system (e.g., unrelated UI elements) 3. Excessive visual effects that affect performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Review modular design (such as separating physics calculation/rendering/user interaction layers), appropriate use of requestAnimationFrame, and optimization techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization is implemented for the animation loop. The full score is 10 points.",
+      "description": "Review modular design (such as separating physics calculation/rendering/user interaction layers), appropriate use of requestAnimationFrame, and optimization techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization is implemented for the animation loop. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Evaluate whether the visualization follows modern design principles: 1) Appropriate color scheme for space environment (dark background with contrasting celestial bodies) 2) Clean UI controls that don't obstruct the visualization 3) Informative labels and overlays that enhance understanding without cluttering the view. Deduct 3 points for each visual element that creates confusion, 5 points for poor color contrast making planets hard to see, and 5 points for overlapping/unreadable UI elements. The full score is 10 points.",
+      "description": "Evaluate whether the visualization follows modern design principles: 1) Appropriate color scheme for space environment (dark background with contrasting celestial bodies) 2) Clean UI controls that don't obstruct the visualization 3) Informative labels and overlays that enhance understanding without cluttering the view. Deduct 3 points for each visual element that creates confusion, 5 points for poor color contrast making planets hard to see, and 5 points for overlapping/unreadable UI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Judge whether the animation and interactive elements conform to human perception characteristics: 1) Stable framerate of at least 30fps 2) Smooth camera transitions when changing focus 3) Responsive controls with immediate visual feedback. Deduct 5 points if animation stutters regularly, 3 points for jarring camera movements when switching views, and 5 points if interactive elements have noticeable input lag. The full score is 10 points.",
+      "description": "Judge whether the animation and interactive elements conform to human perception characteristics: 1) Stable framerate of at least 30fps 2) Smooth camera transitions when changing focus 3) Responsive controls with immediate visual feedback. Deduct 5 points if animation stutters regularly, 3 points for jarring camera movements when switching views, and 5 points if interactive elements have noticeable input lag. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "easy"
+}

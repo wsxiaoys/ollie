@@ -1,0 +1,68 @@
+{
+  "index": 224,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Write a front-end program that simulates the operation of the solar system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic celestial model correctly implemented?",
+      "description": "Check if the code accurately implements the essential celestial bodies (Sun, planets, at least major moons) with correct relative sizes. Review whether orbital mechanics are scientifically accurate (elliptical orbits with proper eccentricities, realistic orbital periods and distances). Score 0 if only primitive shapes without proper orbital mechanics, 5 if basic circular orbits implemented, and 10 if elliptical orbits with proper astronomical parameters are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 3D rendering or 2D visualization properly executed?",
+      "description": "Evaluate whether the implementation uses appropriate rendering technologies (Canvas, WebGL, SVG, or Three.js). Check if the rendering pipeline properly handles depth, lighting (with sun as light source), and perspective. Deduct 5 points if the visualization is only 2D when 3D representation would be more appropriate, 3 points if lighting effects are missing, and 2 points if texture mapping of celestial bodies is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the simulation include time control mechanisms?",
+      "description": "Assess whether the code implements time acceleration/deceleration controls, pause/resume functionality, and date/time display. Verify that celestial movements correctly adjust to time changes. Deduct 5 points if time controls are missing, 3 points if the simulation doesn't maintain astronomical accuracy at different time scales, and 2 points if there's no visual indication of the current simulation time/date. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an interactive camera system or viewing controls?",
+      "description": "Check whether the code implements features like zooming, panning, rotating view, and focusing on specific celestial bodies. Test if the camera transitions are smooth and intuitive. Deduct 5 points if basic navigation controls are missing, 3 points if transitions between views are jarring or disorienting, and 2 points if there's no option to focus on specific celestial bodies. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, WebGL context loss, performance throttling on lower-end devices). Code should include fallback mechanisms or graceful degradation. Strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Comet/asteroid visualization 2. Space mission trajectories 3. Astronomical events simulation like eclipses 4. Realistic star background with constellations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation of astronomical positions that could be optimized 2. Feature modules unrelated to solar system simulation (e.g., unrelated UI elements) 3. Excessive effects that affect performance (e.g., unnecessary particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating astronomical calculations/rendering/UI controls), performance optimization techniques, and code reusability. Deduct 5 points if global state pollution is found or appropriate design patterns aren't used; deduct 5 points if the rendering loop isn't optimized for performance; deduct 5 points if astronomical calculations aren't properly separated from rendering code. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern astronomical visualization principles: 1) Appropriate color scheme for space environment and celestial bodies 2) Clear visual distinction between UI controls and the simulation area 3) Professional labeling system for celestial bodies with appropriate typography. Deduct 3 points for cluttered controls, 5 points for unrealistic or scientifically inaccurate visual representation, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the simulation maintains consistent frame rates (ideally 60fps) and whether interactions feel responsive: 1) Smooth orbital animations without stuttering 2) Responsive camera controls with appropriate inertia/damping 3) Clear visual feedback for user interactions. Deduct 5 points for frame rate drops below 30fps on modern hardware, 3 points for laggy input response, and 5 points for lack of visual feedback when interacting with the simulation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

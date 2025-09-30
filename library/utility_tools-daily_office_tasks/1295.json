@@ -1,0 +1,68 @@
+{
+  "index": 1295,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable and ready for demonstration. Write a download component in Vue 2 that receives a src property. When its icon is clicked, it should open a new window and download the file. Implement the download functionality using an a tag.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 2 component structure correctly implemented?",
+      "description": "Review whether the code follows Vue 2 component specifications with proper props definition, template structure, and component registration. Check if the 'src' prop is correctly defined with appropriate type validation and default values. Score 0 if basic Vue component structure is missing, 5 if component is defined but lacks proper prop validation, and 10 if all Vue 2 best practices are followed including proper prop types, validators, and component naming conventions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the download functionality properly implemented using anchor tag?",
+      "description": "Evaluate whether the download mechanism correctly uses HTML anchor tag with 'href' and 'download' attributes. Check if the component handles different file types, cross-origin scenarios, and fallback mechanisms for unsupported browsers. Deduct 5 points if download attribute is missing, 3 points if cross-origin downloads aren't handled, and 2 points if file extension detection is not implemented. Full score requires proper URL validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the new window opening mechanism work correctly?",
+      "description": "Check whether the component properly opens files in new windows using window.open() or target='_blank' attributes. Verify popup blocker handling, window focus management, and proper cleanup of opened windows. Deduct 5 points if popup blockers aren't handled, 3 points if window references aren't properly managed, and 2 points if the new window doesn't have appropriate dimensions or positioning.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the icon click interaction properly implemented?",
+      "description": "Assess whether the icon click event is correctly bound with proper event handling, loading states, and user feedback. Check if the component provides visual feedback during download initiation and handles multiple rapid clicks appropriately. Deduct 5 points if click events aren't properly bound, 3 points if no loading state is shown, and 2 points if rapid clicking causes multiple downloads without prevention.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid URLs, network failures, missing files, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like malformed URLs, CORS issues, and unsupported file types, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Download progress indication 2. File type icon detection 3. Download history tracking 4. Batch download support 5. Custom download naming). Add 2 points for each practical innovative feature implemented (maximum 10 points). Features should be genuinely useful and not just decorative.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple download methods coexisting unnecessarily) 2. Function modules unrelated to downloading (e.g., built-in file preview, unnecessary animations) 3. Over-engineered solutions for simple requirements. Deduct 3 points for each redundancy found, and directly deduct 10 points if core download functionality is compromised by unnecessary complexity.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component structure, prop validation, event handling patterns, and Vue 2 best practices compliance. Check for proper component lifecycle usage, memory leak prevention, and reusability. Deduct 5 points if Vue reactivity is misused or component lifecycle isn't properly managed; deduct 3 points if props aren't validated; deduct 2 points if event listeners aren't cleaned up. Full score requires excellent separation of concerns and maintainable code structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the download icon and component styling follows modern design principles: 1) Appropriate icon choice and sizing (minimum 24px for touch targets) 2) Proper hover and active states 3) Consistent spacing and alignment 4) Accessible color contrast ratios (minimum 4.5:1). Deduct 3 points for each poor visual design choice, 5 points for unclear iconography, and 3 points for missing interaction states. Full score requires professional, intuitive visual design.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the download interaction conforms to user experience standards: 1) Click feedback delay ≤ 100ms 2) Smooth hover transitions (200-300ms) 3) Clear loading indicators during download initiation 4) Appropriate cursor changes and visual feedback. Deduct 5 points for each missing interaction feedback, 3 points for laggy hover effects, and 5 points for confusing or missing download status indicators. Full score requires polished, responsive user interactions.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 760,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable. Please write a piece of code that can run in a web browser to help elementary school students memorize English words. The textbook used is the Shaanlu version (starting from third grade). The program should allow testing by grade level and semester, include multiple-choice questions where students select English words based on Chinese prompts, or allow typing/spelling words when given Chinese meanings.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the word database and grade-level classification system properly implemented?",
+      "description": "Review whether the code includes a comprehensive vocabulary database for Shaanlu textbook (grades 3-6, two semesters each), with proper data structure design for word storage including Chinese meanings, pronunciations, and difficulty levels. Check if the grade/semester filtering mechanism is accurately implemented. Score 0 if no structured word database exists, 5 if only basic word lists are present without proper classification, and 10 if complete grade-semester hierarchy with accurate Shaanlu vocabulary is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are multiple testing modes (multiple-choice and spelling input) fully functional?",
+      "description": "Evaluate whether both testing modes are properly implemented: 1) Multiple-choice questions with Chinese prompts requiring English word selection 2) Spelling input mode where students type English words based on Chinese meanings. Check answer validation logic, randomization of options, and proper scoring mechanisms. Deduct 5 points if only one mode is implemented, 3 points if answer validation is incomplete. Full score requires both modes working seamlessly with accurate feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the progress tracking and learning analytics system designed effectively?",
+      "description": "Check whether the system tracks student performance including correct/incorrect answers, learning progress per grade level, weak word identification, and study recommendations. Evaluate if local storage or session management is used to maintain learning history. Deduct 5 points if no progress tracking exists, 3 points if only basic scoring is implemented without detailed analytics. Full implementation should include performance dashboards and adaptive difficulty adjustment.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are age-appropriate learning features and gamification elements integrated?",
+      "description": "Assess whether the application includes elementary school-friendly features such as encouraging feedback messages, achievement badges, streak counters, or simple reward systems. Check if the difficulty progression is suitable for young learners and includes hints or learning aids. Score 0 if the interface is purely functional without educational psychology considerations, 5 if basic encouragement features exist, and 10 if comprehensive gamification enhances learning motivation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases appropriately?",
+      "description": "Evaluate whether the code can handle common issues such as empty inputs, special characters in spelling mode, browser compatibility problems, data loading failures, and user operation errors. The application should provide clear error messages and graceful degradation. Code with strong robustness should effectively handle these edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative educational features that enhance learning experience?",
+      "description": "Check whether the code includes creative features that boost learning effectiveness (e.g., 1. Audio pronunciation playback 2. Visual word association images 3. Spaced repetition algorithm 4. Parent/teacher progress reports 5. Offline mode capability). Add 2-3 points for each practical innovative feature implemented with a maximum of 10 points. Features must be functional, not just decorative.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or inappropriate features for the target audience?",
+      "description": "Strictly check for three types of issues: 1) Redundant implementation of similar functions (e.g., multiple scoring systems) 2) Features inappropriate for elementary students (e.g., complex statistical charts, advanced settings) 3) Distracting elements that hinder learning focus (e.g., excessive animations, irrelevant games). Deduct 3 points for each redundancy found, and directly deduct 10 points if core learning functions are compromised by unnecessary features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate good engineering quality and maintainability?",
+      "description": "Review modular design separating data management, UI components, and testing logic. Check for proper code organization, reasonable variable naming, and scalability for adding new vocabulary sets. Deduct 5 points if global state pollution is found or no clear separation of concerns; deduct 5 points if code duplication rate exceeds 30%; deduct 3 points if the codebase is not easily extensible for additional features. Full score requires clean, well-structured code.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet child-friendly and educational standards?",
+      "description": "Evaluate whether the visual design is appropriate for elementary students: 1) Bright, cheerful color scheme without being overwhelming 2) Large, easily readable fonts (minimum 16px for children) 3) Clear visual hierarchy with intuitive navigation 4) Adequate spacing between interactive elements (minimum 44px touch targets). Deduct 3 points for each cluttered interface element, 5 points for poor color contrast or readability issues, and 5 points for confusing navigation that children cannot easily understand.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are interactions smooth, responsive, and provide immediate educational feedback?",
+      "description": "Judge whether the interactive experience meets educational software standards: 1) Immediate feedback on answer correctness (≤200ms response time) 2) Smooth transitions between questions without jarring effects 3) Clear visual indicators for correct/incorrect answers 4) Encouraging animations and sounds appropriate for children. Deduct 5 points for delayed feedback that disrupts learning flow, 3 points for missing visual confirmation of user actions, and 5 points for interactions that are difficult for children to understand or execute.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

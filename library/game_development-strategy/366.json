@@ -1,0 +1,68 @@
+{
+  "index": 366,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Please use HTML code to help me create a Sichuan Mahjong mini-game. The game should include rules for \"chi\" (eating), \"peng\" (claiming), and \"gang\" (kong). Make it visually appealing and provide the complete code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Core Mahjong Game Mechanics Implementation",
+      "description": "Evaluate whether the code accurately implements the core mechanics of Sichuan Mahjong including tile representation, distribution, and gameplay rules.Score 0 if basic tile representation is missing, 5 points if basic gameplay is implemented but with incomplete rules, 10 points if the code fully implements all Sichuan Mahjong rules including correct tile sets (characters, dots, bamboos, dragons, winds), proper shuffling, wall building, and drawing mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "'Chi', 'Peng', and 'Gang' Action Implementation",
+      "description": "Check if the special Mahjong actions are correctly implemented with proper validation logic.Deduct 3 points if any of the three actions (chi, peng, gang) is missing; deduct 2 points if the validation logic for these actions is incorrect; deduct 2 points if the concealed kong (an gang) vs. exposed kong (ming gang) distinction is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Hand Evaluation and Scoring System",
+      "description": "Assess whether the code implements a proper Sichuan Mahjong scoring system with pattern recognition.Score 0 if there's no winning condition checking, 5 points if basic winning combinations are implemented but without proper point calculation, 10 points if the code fully implements Sichuan Mahjong's unique scoring patterns, fan (doubles) calculation, and accurate point distribution among players.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Game Flow and Turn Management",
+      "description": "Evaluate whether the game properly manages player turns, action priorities, and the overall game flow.Score 0 if turn management is not implemented, 5 points if basic turns exist but without proper action priorities (e.g., peng/gang taking precedence over drawing), 10 points if the code correctly implements the complete Mahjong turn cycle including proper timing windows for claiming discarded tiles and managing interruptions to the normal flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, illegal actions, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive tutorials for beginners 2. Game history replay 3. AI opponents with different difficulty levels 4. Custom tile themes).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to calculate the same score) 2. Function modules unrelated to Sichuan Mahjong (e.g., a built-in unrelated mini-game) 3. Fancy effects that affect performance (e.g., excessive animations when revealing tiles).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, and maintainability.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game logic and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design effectively represents Mahjong tiles with appropriate Chinese styling while maintaining modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (clear differentiation between players' hands, discards, and game information) 3) Professional font system (clear character rendering, especially for Chinese characters).Deduct 3 points for poorly rendered tiles, 5 points for a glaring color combination, and 5 points for chaotic layout that makes it difficult to understand the game state. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions feel natural and responsive: 1) Clear visual indication of available actions (chi/peng/gang/hu) 2) Smooth animations when tiles are moved or revealed 3) Intuitive UI for selecting tiles and performing actions.Deduct 5 points for operations without feedback, 3 points for sluggish animations, and 5 points for confusing UI that makes it difficult to understand available actions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

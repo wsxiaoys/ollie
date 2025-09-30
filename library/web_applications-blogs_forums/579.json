@@ -1,0 +1,68 @@
+{
+  "index": 579,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Design a blog recommendation system that displays a list of related recommended blogs at the bottom of the blog detail page. The blog recommendations should be based on article tags and content relevance.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the recommendation algorithm implementation complete?",
+      "description": "Review whether the code implements content-based filtering or collaborative filtering algorithms for blog recommendations. Check if the solution handles tag matching, content similarity analysis (TF-IDF, cosine similarity, etc.), and appropriate weighting mechanisms. Score 0 if no recommendation logic exists, 5 if only basic tag matching is implemented, and 10 if a sophisticated hybrid recommendation system is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data model design appropriate for blog recommendations?",
+      "description": "Evaluate whether the data structures effectively represent blogs, tags, users, and their relationships. Check for efficient indexing of tags and content for quick similarity calculations. Deduct 5 points if the data model doesn't support efficient queries for recommendations, and 3 points if relationship mappings between blogs are not properly defined. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the recommendation display UI implementation complete?",
+      "description": "Check if the UI component for displaying recommended blogs at the bottom of the detail page is fully implemented. Assess whether it includes blog thumbnails, titles, brief descriptions, relevance indicators, and proper styling. Deduct 5 points if the UI is incomplete or poorly integrated with the blog detail page. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a mechanism for updating recommendations based on user behavior?",
+      "description": "Evaluate whether the system incorporates user behavior tracking (clicks, time spent, bookmarks) to refine future recommendations. Check for implementation of feedback loops, recommendation performance metrics, and A/B testing capabilities. Score 0 if no user behavior tracking exists, 5 if basic click tracking is implemented, and 10 if a comprehensive user behavior analysis system is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing tags, empty content, no matching recommendations, or system overload) and provide fallback recommendations or friendly error handling. Code with strong robustness should handle edge cases like new blogs with no historical data. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the recommendation experience (e.g., 1. Visual relevance indicators showing why an article was recommended 2. Personalized recommendation explanations 3. Interactive filtering of recommendations by tag). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar recommendation algorithms 2. Feature modules unrelated to blog recommendations (e.g., unnecessary social media integrations) 3. Performance-heavy features that don't enhance recommendation quality (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core recommendation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of recommendation engine, data layer, and presentation components), unit test coverage for recommendation algorithms, and performance optimizations for recommendation calculations. Deduct 5 points if global state pollution is found or if the recommendation logic is tightly coupled with UI; deduct 5 points if the code duplication rate is too high; deduct 5 points if no caching mechanism exists for frequently requested recommendations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the recommendation UI follows modern design principles: 1) Clear visual separation from the main blog content 2) Consistent card-based design for recommended items 3) Professional typography with proper hierarchy (title, excerpt, metadata). Deduct 3 points for each visual inconsistency with the main blog design, 5 points for poor information hierarchy, and 5 points for overwhelming number of recommendations without proper pagination. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the recommendation interaction conforms to user expectations: 1) Lazy-loading of recommendations without affecting main content load time 2) Smooth transitions when filtering or changing recommendation categories 3) Clear feedback when a user clicks on a recommendation. Deduct 5 points for recommendations that delay page load, 3 points for jerky loading transitions, and 5 points for non-responsive recommendation UI elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Blogs/Forums",
+  "difficulty": "hard"
+}

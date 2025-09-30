@@ -1,0 +1,68 @@
+{
+  "index": 633,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable whenever possible. Create a video screenshot tool that allows users to upload videos and select screenshot points on a timeline. After taking screenshots, users should be able to perform simple edits (such as cropping, adding text) and export the screenshots as image files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and playback functionality fully implemented?",
+      "description": "Review whether the code implements proper video file upload handling, format validation (common formats like MP4, WebM, MOV), and smooth playback controls. Check for error handling during uploads (file size limits, format restrictions). Score 0 if video upload/playback is not implemented, 5 if only basic functionality works, and 10 if it includes advanced features like buffering indicators and adaptive playback quality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the timeline screenshot selection mechanism properly implemented?",
+      "description": "Evaluate the implementation of timeline navigation, timestamp marking, and frame-precise screenshot capture. Check if the timeline shows proper video duration, allows precise seeking, and provides visual feedback when screenshot points are selected. Deduct 5 points if the timeline lacks proper time markers, 3 points if screenshot preview is missing, and 3 points if the selected frame differs from the actual screenshot. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the screenshot editing capabilities comprehensive and functional?",
+      "description": "Assess the implementation of editing features such as cropping, resizing, text annotation, and basic shape drawing. Check if the cropping tool provides proper handles and aspect ratio options, and if text editing includes font selection, size adjustment, and positioning. Deduct 5 points if cropping functionality is buggy, 3 points if text positioning is imprecise, and 2 points if undo/redo functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the screenshot export functionality properly implemented?",
+      "description": "Check whether the code provides options for exporting screenshots in common formats (PNG, JPG, etc.), with configurable quality settings and appropriate file naming. Verify that the export process includes proper progress indication and error handling. Deduct 5 points if only one format is supported, 3 points if quality settings are missing, and 2 points if the export process lacks proper feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, browser compatibility issues, memory constraints with large videos, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch screenshot mode at regular intervals 2. Automatic scene detection for suggested screenshots 3. Instagram-style filters for screenshots 4. OCR text recognition from video frames). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cropping methods) 2. Function modules unrelated to video screenshot (e.g., a built-in music player) 3. Fancy effects that affect performance (e.g., excessive animations or filters that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/UI/export modules), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Video scrubbing responds within 100ms 2) Screenshot capture and editing state transitions occur within 300-500ms 3) Clear visual feedback during processing operations. Deduct 5 points for each operation without feedback, 3 points for laggy timeline scrubbing, and 5 points for confusing editing tool state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "hard"
+}

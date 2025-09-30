@@ -1,0 +1,68 @@
+{
+  "index": 1250,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Create a web version of an app using Vue2 framework with a homepage, orders, and personal center at the bottom of the page. Use Vue + Element UI for frontend and Spring Boot for backend technology.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue2 application structure properly implemented?",
+      "description": "Check if the code follows Vue2 best practices with proper component organization, Vue Router configuration, and project structure. The app should have a clear separation of views for homepage, orders, and personal center. Evaluate the use of Vuex or other state management patterns. Score 0 if basic Vue2 structure is missing, 5 if basic structure exists but with organizational issues, 10 if professionally structured with proper component hierarchy and lifecycle management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the bottom navigation bar correctly implemented with Element UI?",
+      "description": "Verify if the bottom navigation bar is properly implemented using Element UI components, with correct routing between homepage, orders, and personal center. The navigation should include appropriate icons, active state indicators, and smooth transitions. Check if the component is responsive and fixed to the bottom across all pages. Deduct 5 points if the navigation is not fixed to the bottom, 3 points if transitions are missing or jarring, and 3 points if the active state is not visually clear.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the three main views (homepage, orders, personal center) adequately implemented?",
+      "description": "Evaluate the completeness of each required view. Homepage should display relevant content (products, promotions, etc.), Orders page should show order listings with status and details, and Personal Center should include user info and settings. Each view should have proper layout and functionalities relevant to its purpose. Score 0 if any view is missing, 5 if views exist but with minimal functionality, and 10 if all views are comprehensive with appropriate features.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Spring Boot backend architecture properly designed?",
+      "description": "Examine the Spring Boot backend code for proper MVC architecture, RESTful API endpoints (especially for user, orders, and product data), data models, and service layers. Check for proper dependency injection, exception handling, and request validation. Deduct 5 points if REST conventions are not followed, 5 points if proper separation of concerns is missing, and 3 points if data validation is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid input data, authentication failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper try-catch blocks, form validations, loading states, and error boundaries. Give 10 points for comprehensive error handling, 5 points for average implementation, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Pull-to-refresh with skeleton loading 2. Offline data persistence 3. Transitions between pages 4. Virtual scrolling for long lists). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple routing systems coexisting) 2. Function modules unrelated to the core app requirements (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., heavy background processes). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/components/views), component reusability, naming conventions, and build process configuration. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper linting rules or code formatting are not established. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent Element UI theme usage 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for inconsistent Element UI usage, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear loading states during data fetching. Deduct 5 points for operations without feedback, 3 points for jarring transitions between views, and 5 points for missing loading indicators during API calls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "easy"
+}

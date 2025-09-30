@@ -1,0 +1,68 @@
+{
+  "index": 1665,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Create a sailing mini-game using HTML5, using character symbols to replace graphic resources.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the sailing game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements sailing physics through HTML5 Canvas/JavaScript, including wind direction effects on boat movement, sail angle adjustments, and realistic boat dynamics (acceleration, deceleration, turning). Check if character symbols effectively represent boat, wind indicators, and environmental elements. Score 0 if core sailing mechanics are missing, 5 if only basic movement is implemented, and 10 if realistic sailing physics with wind interaction are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game environment and navigation system properly designed?",
+      "description": "Evaluate whether the game includes a proper maritime environment with boundaries, obstacles (islands, rocks), and navigation elements using character symbols. Check for wind visualization, compass/direction indicators, and collision detection with environmental elements. Deduct 5 points if environmental boundaries are not implemented, and 3 points if wind direction indicators are unclear or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game objectives and progression mechanics implemented?",
+      "description": "Check whether the game includes clear objectives (racing checkpoints, cargo delivery, treasure hunting, etc.) and scoring/timing systems. Evaluate if there are multiple difficulty levels or progressive challenges. Deduct 5 points if no clear win/lose conditions exist, and 3 points if scoring mechanism is missing. Assess whether the game provides meaningful progression and replayability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the character symbol representation system well-designed and intuitive?",
+      "description": "Evaluate whether character symbols are used creatively and intuitively to represent game elements (boat: ⛵ or ^, waves: ~, wind: →, islands: ●, etc.). Check if symbols are consistent, visually distinguishable, and scale appropriately. Review if there's a legend or help system explaining symbol meanings. Deduct 5 points if symbols are confusing or inconsistent, and 3 points if scaling issues affect readability. Give 10 points if symbols create a cohesive and intuitive visual system.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds movement, invalid input, browser compatibility issues, canvas rendering errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like window resizing, keyboard/mouse input validation, and game state corruption. Give 10 points for comprehensive error handling, 5 points for basic exception handling, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the sailing experience (e.g., 1. Weather system affecting gameplay 2. Realistic tide effects 3. Multi-boat AI opponents 4. Sound effects using Web Audio API 5. Procedurally generated maps). Evaluate creativity in using character symbols for advanced visual effects or animations. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to sailing gameplay (e.g., built-in calculator) 3. Overly complex character symbol animations that affect performance or readability. Deduct 3 points for each redundancy found, and directly deduct 10 points if core sailing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic/rendering/input handling), code organization, and HTML5 best practices. Check for proper Canvas usage, efficient rendering loops, and memory management. Deduct 5 points if global state pollution is found or no design patterns are used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no optimization for animation frames or Canvas performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards despite using character symbols?",
+      "description": "Evaluate whether the overall design creates a cohesive visual experience: 1) Harmonious color scheme for background and text 2) Proper spacing and layout organization 3) Readable font system with appropriate sizing for game UI elements 4) Effective use of character symbols to create visual hierarchy. Deduct 3 points for each cluttered visual element, 5 points for poor color contrast affecting readability, and 5 points for chaotic symbol arrangement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the gameplay interaction smooth and responsive?",
+      "description": "Judge whether the game controls and feedback conform to gaming standards: 1) Input response delay ≤ 100ms 2) Smooth animation transitions for boat movement 3) Clear visual feedback for user actions 4) Intuitive control scheme (keyboard/mouse). Deduct 5 points for each unresponsive control, 3 points for choppy animations or poor frame rates, and 5 points for unclear control instructions or feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

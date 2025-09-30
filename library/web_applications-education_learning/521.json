@@ -1,0 +1,68 @@
+{
+  "index": 521,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create an online music theory learning website with introduction pages covering theoretical knowledge of scales, chords, etc. Provide audio examples so users can listen to different scales and chords. Users should be able to practice simple chord combinations, and the website should be able to determine if users' combinations are correct.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core music theory content fully implemented?",
+      "description": "Review whether the code accurately implements the foundational music theory content, including scales (major, minor, modal), chords (triads, sevenths, extensions), and progressions. Score 0 if no theory content is implemented, 5 if only basic definitions are provided without examples, and 10 if comprehensive explanations with visual representations (staff notation, keyboard diagrams) are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio playback system functional?",
+      "description": "Evaluate whether the website includes a proper audio system that allows users to listen to scales, chords, and progressions. Check if the implementation uses Web Audio API or a similar technology with proper sound quality. Deduct 5 points if only pre-recorded samples are used without dynamic generation capability, and 3 points if there's noticeable latency (>200ms) between user action and sound playback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the interactive chord practice feature properly implemented?",
+      "description": "Assess whether users can practice combining chords, with proper validation of correctness according to music theory rules. Check if the system provides feedback on chord progressions, highlighting errors or suggesting improvements. Deduct 5 points if the validation logic has errors in music theory principles, and 3 points if the feedback is not specific enough to help users learn. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the music visualization component implemented effectively?",
+      "description": "Check whether the code includes visual representations of musical concepts (such as piano keyboard, guitar fretboard, or musical notation). The visualization should be interactive and synchronized with the audio. Deduct 5 points if the visualization is static, 3 points if it doesn't accurately represent the audio being played, and 5 points if it's not responsive across different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported browsers, audio playback issues, user input errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Real-time audio visualization 2. AI-powered chord suggestion system 3. Interactive progression builder with historical examples). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio engines coexisting) 2. Function modules unrelated to music theory learning (e.g., a full social media system) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core learning functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio engine/theory content/user interface layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Audio playback starts within 100ms of user input 2) Visual feedback is synchronized with audio within 50ms 3) Clear visual guidance for interactive elements. Deduct 5 points for each operation without feedback, 3 points for significant audio-visual desynchronization, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

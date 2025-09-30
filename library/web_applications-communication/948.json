@@ -1,0 +1,68 @@
+{
+  "index": 948,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Develop a video chat system using uniapp+socket.io-client+webrtc.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WebRTC video chat core functionality correctly implemented?",
+      "description": "Verify if the code implements WebRTC peer connection setup, including SDP offer/answer exchange and ICE candidate handling. Check if video/audio tracks are properly captured and added to peer connections. Score 0 if basic WebRTC connectivity isn't implemented, 5 if only one-way communication works, and 10 if full bidirectional audio/video streaming is functional with proper media constraints.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Socket.io signaling server integration complete?",
+      "description": "Evaluate if the Socket.io client is properly integrated with UniApp for signaling purposes. Check if event listeners for 'connect', 'disconnect', and custom signaling events are implemented. Verify error handling for connection failures and reconnection logic. Deduct 5 points if there's no room/session management, and 3 points if connection state handling is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the UniApp implementation handle cross-platform compatibility?",
+      "description": "Assess if the code addresses platform-specific differences (iOS, Android, H5) for camera/microphone permissions and WebRTC APIs. Check for conditional compilation (#ifdef APP-PLUS) and platform detection. Verify if the app properly falls back when certain features are unavailable on specific platforms. Score 0 if platforms are hardcoded, 5 if major platforms work with glitches, and 10 if seamless cross-platform operation is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is media device handling properly implemented?",
+      "description": "Evaluate if the code includes functionality for device enumeration, selection between front/rear cameras, microphone selection, and audio output device switching. Check if the implementation handles device changes during a call (e.g., headphone connection/disconnection). Score 0 if device handling is missing, 5 if basic camera toggling works, and 10 if comprehensive media device management is implemented with user-friendly controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common WebRTC failure scenarios (ICE connection failures, media permission denials, network transitions) and provides recovery mechanisms. Check for proper cleanup when calls end or errors occur. Deduct 5 points if network changes (WiFi to cellular) break connections without recovery, and 3 points if permission denials aren't gracefully handled with user guidance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Background blur/virtual backgrounds 2. Screen sharing capability 3. Recording functionality 4. Real-time chat messaging alongside video 5. Bandwidth adaptation for poor connections). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Multiple implementations of the same functionality (e.g., different WebRTC connection methods coexisting) 2. Feature implementations unrelated to video chat (e.g., unnecessary social features) 3. Heavy visual effects that degrade performance (e.g., complex animations during calls). Deduct 3 points for each redundancy found, and directly deduct 10 points if core video chat functions are compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of signaling, media handling, and UI components), proper state management, and error handling. Check for memory leak prevention, especially regarding WebRTC objects and event listeners. Deduct 5 points if global state is used excessively; deduct 3 points if error handling is sparse; deduct 5 points if WebRTC resources aren't properly disposed of when calls end. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the video chat UI follows modern design principles: 1) Clear call controls with proper spacing and touch targets (≥44px) 2) Logical placement of self-view vs. remote video 3) Visual indicators for connection state, mute status, and camera status. Deduct 3 points for overlapping UI elements, 5 points for controls that obscure important video content, and 5 points for missing visual feedback on call status. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the call experience meets user expectations: 1) Call setup time under 3 seconds 2) Smooth transitions when switching camera or toggling mute 3) Clear visual and audio indicators for connection quality issues. Deduct 5 points if there's no loading state during call initialization, 3 points for jarring transitions when toggling features, and 5 points if the app fails to provide feedback during connection attempts. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

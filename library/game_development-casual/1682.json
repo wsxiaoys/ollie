@@ -1,0 +1,68 @@
+{
+  "index": 1682,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration. Generate 50 geographical riddles (such as \"Double city overlapping clouds, mountains moving within the city\" - answer: Chongqing, a Chinese city); ② Based on this, develop a web-based geographical riddle guessing game (it should prompt success if guessed correctly, and error if guessed incorrectly).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Quality and diversity of geographical riddles",
+      "description": "Evaluate whether the code generates 50 high-quality geographical riddles that are clever, diverse, and culturally representative. Riddles should include locations from different continents, countries, cities, landmarks, and natural features. Each riddle should be unique, meaningful, and provide sufficient clues for solving while maintaining an appropriate difficulty level.Score 0 if fewer than 30 riddles are provided, 5 if 50 riddles are provided but lack diversity or quality, and 10 if all 50 riddles are high-quality, diverse, and geographically representative.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Implementation of riddle generation mechanism",
+      "description": "Check whether the code properly implements the riddle generation system, including storage (array, database, or JSON structure) and selection mechanisms. The implementation should allow for random selection, tracking of used riddles, and potential difficulty progression.Deduct 5 points if riddles are hardcoded without proper data structure, 3 points if there's no randomization mechanism, and 3 points if there's no tracking of used/unused riddles. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Answer validation functionality",
+      "description": "Review the implementation of the answer validation system. It should properly compare user input with correct answers, handle case sensitivity, partial matches, synonyms, or alternative names for locations. Advanced implementations might include fuzzy matching or handling of common misspellings.Deduct 5 points if only exact case-sensitive matching is implemented, 3 points if there's no feedback mechanism for near-misses, and 2 points if validation doesn't handle common answer variations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Game flow and user interaction design",
+      "description": "Assess whether the game has a complete flow including introduction, riddle presentation, answer input, feedback, score tracking, and game completion. Check for clear instructions, intuitive navigation, and appropriate transitions between game states.Deduct 3 points for each missing game state (intro, gameplay, feedback, completion), 2 points if there's no restart option, and 5 points if the overall flow is confusing or broken. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty inputs, special characters in answers, rapid clicking, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases.Give 10 points if exceptions are well-handled with user-friendly messages, 5 points if basic error handling exists but some edge cases are unaddressed, and 0 points if no exception handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Difficulty levels 2. Hints system 3. Map visualization of answers 4. Learning mode with geographical information 5. Multiplayer capability).Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation methods) 2. Function modules unrelated to geographical riddles 3. Fancy effects that affect performance (e.g., excessive animations).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), code organization, naming conventions, and maintainability. Check for proper commenting and documentation.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if comments and documentation are insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Thematic elements that reinforce the geographical nature of the game.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance 4) Appropriate feedback for correct and incorrect answers.Deduct 5 points for each operation without feedback, 3 points for visual after-images during transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

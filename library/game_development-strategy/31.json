@@ -1,0 +1,68 @@
+{
+  "index": 31,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable.\n\nPlease use HTML and JavaScript to implement a multiplayer cooperative mode.\n\n**Task**: Implement a multiplayer cooperative mode allowing multiple players to complete tasks together.\n\n**Hint**: You can use network communication to synchronize actions between players and design levels suitable for multiplayer cooperation.\n\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multiplayer cooperative foundation implemented?",
+      "description": "Review whether the code establishes the core multiplayer structure through HTML/JavaScript, including player representation, shared game state, and basic interaction mechanisms. Score 0 if multiplayer functionality is absent, 5 if only basic player representation exists, and 10 if the system properly manages multiple simultaneous players with distinct roles or capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the network communication for player synchronization implemented?",
+      "description": "Check if the code includes WebSocket/WebRTC implementation with proper state synchronization between players. Look for connection handling, data serialization, and conflict resolution. Deduct 5 points if there's no reconnection mechanism, 3 points if latency handling is missing, and 5 points if the synchronization is one-way only. Full score requires bidirectional real-time updates with error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are cooperative gameplay mechanics implemented?",
+      "description": "Evaluate whether the code implements true cooperative mechanics requiring multiple players working together (e.g., one player holding a door while another passes through, players combining abilities, or shared resource management). Score 0 if no cooperative mechanics exist, 5 if basic interactions between players are possible, and 10 if the gameplay genuinely requires coordination and cannot be completed alone.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is level design or task structure suitable for multiplayer cooperation?",
+      "description": "Assess whether the implemented levels/tasks are specifically designed for multiplayer interaction with clear cooperative objectives. Check for player-specific roles, complementary abilities, or puzzles requiring multiple participants. Deduct 5 points if levels can be completed solo, 3 points if cooperative elements feel artificially inserted. The full score requires thoughtfully designed challenges that naturally encourage teamwork.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, network interruption, player joining/leaving mid-game, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the cooperative experience (e.g., 1. Real-time voice/text chat integration 2. Dynamic difficulty scaling based on player count 3. Asymmetric player roles with unique interfaces). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple communication channels doing the same thing) 2. Function modules unrelated to multiplayer cooperation (e.g., complex single-player features) 3. Fancy effects that affect performance for all connected players. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core multiplayer functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/network layers), code comments as requested in the requirements, and maintainable architecture. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if code comments are missing or unhelpful. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clear visual distinction between different players and their actions. Deduct 3 points for each confusing player representation, 5 points for unclear action feedback, and 5 points for interfaces that don't clearly communicate cooperative requirements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the multiplayer interaction smooth and responsive?",
+      "description": "Judge whether the multiplayer experience is fluid and responsive: 1) Player actions visible to others within 200ms 2) Clear visual/audio cues when coordination is required or achieved 3) Graceful handling of network hiccups without disrupting gameplay flow. Deduct 5 points for laggy interactions, 3 points for missing cooperative success feedback, and 5 points for coordination mechanics that feel unresponsive. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

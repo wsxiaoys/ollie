@@ -1,0 +1,68 @@
+{
+  "index": 919,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Clicking \"Submit Feedback\" will open a new page for writing feedback; change \"Feedback Notification\" to \"Historical Feedback\"; delete all content below \"Try to create a feedback box below\" and replace it with \"Resolved Feedback List\" for display, clicking on any specific feedback item will take you to the detailed feedback page; please provide me with all the code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the feedback form submission system fully implemented?",
+      "description": "Review whether the code accurately implements a complete feedback form with proper validation, submission handling, and page navigation. Check if clicking 'Submit Feedback' correctly opens a new page with a functional feedback form including input fields, validation logic, and submission processing. Score 0 if no form implementation exists, 5 if only basic form structure is present without validation, and 10 if complete form with validation, error handling, and successful submission flow is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dynamic content replacement functionality correctly implemented?",
+      "description": "Evaluate whether the code successfully changes 'Feedback Notification' to 'Historical Feedback' and replaces content below 'Try to create a feedback box below' with 'Resolved Feedback List'. Check if the DOM manipulation is clean and doesn't cause layout issues. Deduct 5 points if text replacement is incomplete, 3 points if DOM manipulation causes visual glitches, and 5 points if the replacement doesn't maintain proper styling consistency. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the feedback list display and navigation system properly constructed?",
+      "description": "Check whether the code implements a functional feedback list that displays feedback items correctly and provides clickable navigation to detailed feedback pages. Evaluate if the list items are properly structured, clickable, and lead to appropriate detail pages. Deduct 5 points if list items are not properly formatted, 5 points if click navigation doesn't work, and 3 points if the detail page structure is missing or incomplete. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete page routing and state management implemented?",
+      "description": "Assess whether the code includes proper page routing between the main page, feedback submission page, and feedback detail pages. Check if state management maintains data consistency across page transitions and if browser navigation (back/forward) works correctly. Deduct 5 points if routing is implemented but buggy, 5 points if state is lost during navigation, and 3 points if browser navigation doesn't work properly. Give 10 points if fully implemented with smooth transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid form input, missing data, navigation errors, DOM manipulation failures, etc.) and provide friendly error messages or recovery mechanisms. Code with strong robustness should effectively handle edge cases like empty submissions, malformed data, and failed page transitions. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance user experience?",
+      "description": "Check whether the code includes valuable enhancements such as: 1) Auto-save draft functionality for feedback forms 2) Search/filter capability for feedback lists 3) Real-time form validation with helpful hints 4) Smooth page transitions with loading states 5) Responsive design adaptations. Add 2-3 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary features?",
+      "description": "Strictly identify three types of redundancy: 1) Duplicate functionality implementations (e.g., multiple form validation methods) 2) Features unrelated to the feedback system (e.g., embedded games or unrelated widgets) 3) Over-engineered effects that don't serve the core purpose (e.g., excessive animations that slow down interactions). Deduct 3 points for each redundancy found, and deduct 10 points if redundant code interferes with core functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate good engineering practices?",
+      "description": "Review code organization, modularity (separation of HTML structure, CSS styling, and JavaScript logic), proper naming conventions, and maintainability. Check for clean separation of concerns, reusable components, and consistent coding patterns. Deduct 5 points for poor code organization or heavy coupling; deduct 5 points if code duplication exceeds 30%; deduct 5 points for inconsistent naming or lack of proper code structure. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional visual standards?",
+      "description": "Evaluate whether the overall design follows modern UI principles: 1) Consistent color scheme with appropriate contrast ratios 2) Proper typography hierarchy and readability (font sizes ≥ 14px, adequate line spacing) 3) Balanced layout with appropriate whitespace and element spacing 4) Clear visual hierarchy and information organization. Deduct 3 points for each visual inconsistency, 5 points for poor color choices affecting readability, and 5 points for cluttered or unprofessional layout. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the interactions smooth and provide clear user feedback?",
+      "description": "Assess whether user interactions provide immediate and clear feedback: 1) Button clicks show visual response within 100ms 2) Form submissions provide loading states and success/error feedback 3) Page transitions are smooth and indicate progress 4) Hover states and focus indicators are clearly visible 5) Navigation is intuitive and predictable. Deduct 5 points for each interaction lacking proper feedback, 3 points for slow response times, and 5 points for confusing navigation patterns. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

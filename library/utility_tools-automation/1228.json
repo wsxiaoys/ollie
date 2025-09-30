@@ -1,0 +1,68 @@
+{
+  "index": 1228,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code can be executed and displayed when possible.\n\n1. Design a double-pinyin input method\n2. For consonants (initials), use the first letter of the pinyin, except for zero initial which uses 'o' or 'O'\n3. For vowels (finals), map them to single keys, but don't use i, I, u, U, v, or V as mapping keys\n4. Each two letters (consonant key + vowel mapping key) can form a pinyin syllable\n5. After inputting letters consecutively, the system should automatically recognize, split into pairs, and parse the pinyin\n6. When inputting an odd number of letters, the vowel candidate list should show options, such as \"an.a\" indicating that pressing 'a' would select the vowel \"an\" to form a pinyin syllable with the previous letter\n7. Update the Chinese character candidate list based on the pinyin parsed from the paired letters, with numbers to select candidate characters\n8. Present the input letters, vowel candidate prompts, and character candidate list in an interface similar to Sogou Input Method",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the double-pinyin mapping schema fully implemented?",
+      "description": "Check whether the code implements a complete double-pinyin mapping schema that correctly maps consonants to their first letter and vowels to single keys (excluding i, I, u, U, v, V). Verify that all Mandarin syllables are covered, including special cases like zero initial using 'o' or 'O'. Score 0 if the mapping is incomplete, 5 if basic mapping is implemented but with inconsistencies, and 10 if the mapping is complete and follows all specified rules.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the system correctly parse consecutive letter inputs into pinyin syllables?",
+      "description": "Evaluate if the code can automatically recognize and split consecutive letter inputs into pairs of consonant+vowel to form valid pinyin syllables. Test with various input sequences including edge cases (e.g., multiple syllables, syllables with different tone marks). Deduct 5 points if the parsing logic fails on complex inputs, and 3 points if it doesn't handle special cases. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the vowel candidate list correctly implemented for odd number of inputs?",
+      "description": "Check whether the system displays appropriate vowel candidates when an odd number of letters is input (e.g., 'an.a' indicating that pressing 'a' would select 'an'). Verify that the display format is clear and follows the format in the requirement. Deduct 5 points if the vowel candidate list is incomplete or inaccurate, and 3 points if the display format is confusing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the system update the Chinese character candidate list based on parsed pinyin?",
+      "description": "Evaluate if the code correctly updates the Chinese character candidate list based on the parsed pinyin and allows selecting candidates with numbers. Test with various pinyin combinations, including common and rare characters. Deduct 5 points if the candidate generation is incomplete or inaccurate, and 3 points if the number selection mechanism is not implemented properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input combinations, edge cases like repeated consonants, or invalid pinyin sequences) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Fuzzy pinyin matching 2. User-customizable mapping schema 3. Learning from user habits to prioritize frequent characters). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple pinyin parsing algorithms coexisting) 2. Function modules unrelated to input method (e.g., a built-in dictionary lookup) 3. Fancy effects that affect performance (e.g., excessive animations during character selection). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating mapping logic/UI/character database), unit test coverage, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between the core logic and the UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the input method interface follows modern design principles similar to Sogou Input Method: 1) Clean and unobtrusive input area 2) Clear distinction between input letters, vowel candidates, and character candidates 3) Professional typography with appropriate font sizes for different elements. Deduct 3 points for each cluttered UI element, 5 points for poor visual hierarchy, and 5 points for inconsistent styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the typing experience smooth and responsive?",
+      "description": "Judge whether the input method provides a smooth typing experience: 1) Input latency ≤ 50ms 2) Fast candidate list updates 3) Intuitive selection mechanism with clear visual feedback. Deduct 5 points for noticeable input lag, 3 points for jerky candidate list updates, and 5 points for confusing selection mechanisms. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

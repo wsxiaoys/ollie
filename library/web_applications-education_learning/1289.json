@@ -1,0 +1,68 @@
+{
+  "index": 1289,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. I am a teacher, please help me write an HTML program that can create a classroom seating chart, divided into 4 groups based on performance levels: Excellent, Good, Satisfactory, and Unsatisfactory. Each group has two rows, with 10 people on the right side, and 12 people each in the other three groups.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the classroom seating chart correctly implemented with the required group structure?",
+      "description": "Examine if the code creates a classroom layout with 4 distinct performance groups (Excellent, Good, Satisfactory, Unsatisfactory), where Excellent has 10 students (two rows of 5), and the other three groups have 12 students each (two rows of 6), totaling 46 students. Check if groups are visually distinct. Score 0 if structure is incorrect, 5 if basic structure exists but with count/arrangement errors, 10 if perfectly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the code implement performance level differentiation?",
+      "description": "Evaluate whether students in different performance levels are clearly distinguished visually (through colors, borders, icons, or labels). Check if the performance level grouping is easily identifiable. Deduct 5 points if the visual distinction between groups is minimal or confusing, and 3 points if the performance level indicators are not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the student identification system well-implemented?",
+      "description": "Assess whether each seat has a unique identifier or student representation. Check if the identifiers are easily readable, whether there's a way to add student names or IDs, and whether the student data structure is well-designed. Deduct 5 points if students cannot be uniquely identified, and 3 points if the identification system is rudimentary. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an interactive component for managing the seating arrangement?",
+      "description": "Verify if the code includes features for interactivity, such as drag-and-drop functionality to rearrange seats, editing student information, swapping seats, or saving/loading configurations. Deduct 5 points if there's no interactivity at all, 3 points if interactivity is limited to basic functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, missing student data, improper user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Attendance tracking functionality 2. Performance statistics visualization 3. Randomized seating generator). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit student information) 2. Function modules unrelated to seating charts (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/control layers), code organization, and reusable components. Deduct 5 points if global variable pollution is found or if proper event handling is absent; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if CSS/HTML/JS are not properly separated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast manipulation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

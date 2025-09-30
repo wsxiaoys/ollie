@@ -1,0 +1,68 @@
+{
+  "index": 1173,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Design a healthcare big data dashboard using Vue and ECharts, with visual displays including key indicators, line charts, column charts, pie charts, etc. The displayed data should include outpatient and emergency visits, inpatient admissions, surgical procedures, medical business income, proportion of discharged patients undergoing surgery, tertiary and quaternary surgical volume, bed utilization rate, average outpatient medication cost, average inpatient medication cost, average length of stay, outpatient and emergency visits at main and branch hospitals, etc. Ensure the page layout and formatting are well-optimized.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue framework architecture properly implemented with component modularity?",
+      "description": "Review whether the code correctly uses Vue 3 composition API or Vue 2 options API with proper component structure. Check if dashboard components are properly modularized (header, sidebar, chart containers, data panels). Verify proper use of Vue reactivity system for data binding and state management (Vuex/Pinia). Score 0 if basic Vue structure is missing, 5 if only basic components exist without proper data flow, and 10 if full Vue ecosystem is properly implemented with reactive data management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are ECharts visualizations comprehensively implemented for all required healthcare metrics?",
+      "description": "Evaluate whether all specified chart types are implemented: line charts (for trends like visits over time), column charts (for comparative data), pie charts (for proportional data like surgery types), and key indicator cards. Check if charts display all required healthcare data: outpatient/emergency visits, inpatient admissions, surgical procedures, medical income, bed utilization rates, medication costs, length of stay, etc. Deduct 5 points if more than 3 required metrics are missing, 3 points for each chart type not implemented. Full score requires all 10+ healthcare indicators properly visualized.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data structure design and mock data realistic for healthcare scenarios?",
+      "description": "Check whether the data structure accurately reflects real healthcare data patterns with proper data types, ranges, and relationships. Verify mock data includes realistic values (e.g., bed utilization 70-95%, average stay 3-15 days, surgery ratios 15-40%). Evaluate data update mechanisms and whether charts respond to data changes. Deduct 5 points if data structure is overly simplified, 3 points if mock data values are unrealistic, 5 points if no data update mechanism exists. Full implementation should include time-series data and proper data relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the dashboard layout and responsive design professionally executed?",
+      "description": "Assess whether the dashboard uses a professional grid layout system (12-column or CSS Grid) with proper responsive breakpoints. Check if the layout adapts to different screen sizes (desktop, tablet, mobile) while maintaining chart readability. Verify proper use of Vue layout components and CSS frameworks. Deduct 5 points if layout breaks on mobile devices, 3 points if charts don't resize properly, 5 points if no responsive design is implemented. Full score requires seamless multi-device compatibility.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust with proper error handling and edge cases?",
+      "description": "Evaluate whether the code can handle common abnormal situations (API failures, empty data sets, chart rendering errors, browser compatibility issues) and provide friendly error prompts or fallback mechanisms. Check for proper try-catch blocks, loading states, and graceful degradation. Code with strong robustness should handle data loading failures, chart initialization errors, and provide meaningful user feedback. Give 10 points if fully implemented, 5 points if basic error handling exists, 0 points if no exception handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance the healthcare dashboard experience?",
+      "description": "Check whether the code includes valuable features beyond basic requirements (e.g., 1. Interactive drill-down capabilities for detailed metrics 2. Real-time data refresh with WebSocket connections 3. Export functionality for reports 4. Advanced filtering and date range selection 5. Comparative analysis tools 6. Alert thresholds for critical metrics). Add 2 points for each practical innovative feature implemented (maximum 10 points). Features must be healthcare-specific and add genuine value.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features or unnecessary complexity?",
+      "description": "Strictly check three types of redundancy: 1. Redundant chart implementations (e.g., multiple similar line chart components) 2. Unnecessary UI libraries or plugins that don't add value 3. Over-engineered animations or effects that slow down dashboard performance 4. Duplicate data processing logic. Deduct 3 points for each redundancy found, and directly deduct 10 points if core dashboard functionality is negatively impacted by redundant code or excessive dependencies.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate high engineering quality and best practices?",
+      "description": "Review Vue component composition, proper separation of concerns (components/services/utilities), code organization, and build configuration. Check for proper use of Vue lifecycle hooks, computed properties, and watchers. Evaluate code reusability and maintainability. Deduct 5 points if components are not properly separated or props/events are misused; deduct 3 points if no build optimization (like code splitting) is implemented; deduct 5 points if coding standards are inconsistent. Full score requires professional-grade Vue architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet healthcare dashboard professional standards?",
+      "description": "Evaluate whether the design follows healthcare dashboard conventions: 1) Medical-appropriate color scheme (blues, greens, clean whites) avoiding alarming colors except for alerts 2) Proper information hierarchy with clear section divisions 3) Consistent spacing using 8px grid system 4) Professional typography (minimum 14px for data labels, proper contrast ratios for accessibility) 5) Clean, clinical aesthetic appropriate for medical professionals. Deduct 3 points for each cramped visual section, 5 points for inappropriate color choices, 5 points for poor information hierarchy.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the interactive elements smooth with appropriate healthcare workflow considerations?",
+      "description": "Judge whether interactions are optimized for healthcare professionals: 1) Chart hover effects display detailed medical data within 100ms 2) Smooth transitions between different time periods or data views (300-500ms) 3) Clear visual feedback for all interactive elements 4) Intuitive navigation that supports quick data analysis workflows 5) Proper loading states for data-heavy operations. Deduct 5 points for each unresponsive interaction, 3 points for confusing navigation patterns, 5 points if critical data is hard to access quickly.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

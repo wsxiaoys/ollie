@@ -1,0 +1,68 @@
+{
+  "index": 1157,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for display. Please use JavaScript+CSS+HTML to help me implement the following requirements:\n\n1. The system generates a rectangle that can be resized by dragging to change its length and width.\n2. When a student selects one edge of the rectangle and clicks the \"Rotate\" button, the rectangle rotates around the line containing that edge for one complete revolution, generating a cylinder model.\n3. When a student clicks the \"Reset\" button, the display returns to the initial rectangle. Students can change the rectangle's length or width, or select a different edge for rotation to observe the corresponding cylinder that is generated.\n4. When a student clicks the \"Cut\" button, the cylinder is cut along any generatrix, opening the lateral surface of the cylinder and laying it flat on a plane, with an animation effect.\n5. When a student clicks the \"Pen\" button, they can annotate letters on the cylinder or rectangle.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the interactive resizable rectangle fully implemented?",
+      "description": "Review whether the code correctly implements a rectangle that can be resized by dragging its edges or corners. The implementation should include handle points for resizing, visual feedback during the dragging operation, and smooth size updates. Score 0 if resizing functionality is missing, 5 if basic resizing is implemented but with usability issues, and 10 if resizing works smoothly with proper constraints and visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cylinder rotation functionality properly implemented?",
+      "description": "Check if the code properly implements the rotation of the rectangle around a selected edge to form a cylinder. This should include: edge selection mechanism, 3D transformation using CSS or a library like Three.js, complete 360-degree rotation animation, and proper perspective rendering. Deduct 5 points if the rotation is not around the selected edge, 3 points if the animation is not smooth, and 2 points if the 3D perspective is incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the reset functionality restore the original state?",
+      "description": "Evaluate if clicking the 'Reset' button correctly returns the display to the initial rectangle state. The system should maintain the original dimensions or reset to default values, clear any annotations, and cancel any in-progress transformations. Check if students can modify the rectangle after reset and repeat the cylinder generation process. Deduct 5 points if the reset is incomplete, 3 points if previous state information influences the reset state. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the cylinder cutting and unfolding animation properly implemented?",
+      "description": "Assess if the 'Cut' button functionality correctly simulates cutting the cylinder along a generatrix and unfolding it onto a plane. The animation should be mathematically accurate (rectangle width = cylinder circumference, height = cylinder height), include proper transition phases, and demonstrate the relationship between 3D and 2D forms. Deduct 5 points if the mathematical relationship is incorrect, 3 points if the animation lacks intermediate steps, and 2 points if the final unfolded state is not properly aligned. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid sequential clicks on different buttons, browser resizing, invalid user inputs on dimensions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Measurement tools showing dimensions 2. Different texture options for the cylinder 3. View angle controls for better 3D observation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to reset the view) 2. Function modules unrelated to the geometric transformation task (e.g., unnecessary media players) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating geometric logic/view/interaction layers), code organization, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code contains performance bottlenecks that cause noticeable lag during animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the annotation functionality well-implemented?",
+      "description": "Judge whether the 'Pen' button enables effective annotation on both rectangle and cylinder. Check for: 1) Smooth drawing experience with proper event handling 2) Annotations that maintain position relevance when switching between 2D and 3D views 3) Clear visual rendering of annotations with appropriate styling. Deduct 5 points if annotations disappear during transformations, 3 points if the drawing experience is laggy or imprecise, and 5 points if annotations don't properly adhere to the surface in 3D view. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Mathematical Abstraction",
+  "difficulty": "hard"
+}

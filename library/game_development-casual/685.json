@@ -1,0 +1,68 @@
+{
+  "index": 685,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. Please develop a marble elimination game where colored marbles are fired from the top of the screen. The player controls the firing angle and color to hit and eliminate marbles of the same color. When three or more marbles of the same color connect, they are eliminated, scoring points and adding time. If the marbles pile up to the bottom of the screen, display \"Game Over!\" Provide \"Start\" and \"Reset\" functions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core marble elimination gameplay correctly implemented?",
+      "description": "Review whether the code accurately implements the marble shooting mechanics, color matching logic, and elimination detection. Check if the player can control the firing angle and if the color selection mechanism is implemented. Score 0 if core gameplay is missing, 5 if basic shooting works but with flaws in color matching, and 10 if all elimination mechanics work flawlessly including proper physics for marble movement.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the marble collision and connection detection properly implemented?",
+      "description": "Evaluate the accuracy of collision detection between marbles and whether the code correctly identifies when three or more same-colored marbles connect. Check if the algorithm efficiently detects connections in all directions (horizontal, vertical, diagonal). Deduct 5 points if the detection has edge cases where connections are missed, 3 points if there's noticeable lag during collision processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the scoring system and timer functionality complete?",
+      "description": "Check if the game properly awards points when marbles are eliminated and if extra time is added. Verify if the scoring scales appropriately based on the number of marbles eliminated simultaneously. Assess whether the timer countdown is smoothly implemented and visually clear. Deduct 5 points if the scoring system is basic/static, 3 points if the timer doesn't integrate with gameplay events. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the game states (Start, Reset, Game Over) correctly managed?",
+      "description": "Verify that the game provides functional Start and Reset buttons, and whether the Game Over detection works when marbles reach the bottom of the screen. Check if state transitions are handled cleanly without bugs or glitches. Deduct 5 points if the Reset function doesn't properly reinitialize all game elements, 3 points if Game Over detection has inconsistencies. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid-fire inputs, unexpected user actions, window resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special power-up marbles with unique effects 2. Combo system for consecutive eliminations 3. Particle effects for marble explosions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle the same game mechanic) 2. Function modules unrelated to the marble game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/physics layers), variable naming conventions, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between game mechanics and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color scheme that doesn't interfere with marble colors 2) Clear visual indication of score, time remaining, and game controls 3) Professional typography for UI elements. Deduct 3 points for cluttered UI elements, 5 points for poor color contrast making gameplay difficult, and 5 points for confusing or hard-to-read game information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations and controls feel responsive: 1) Immediate feedback when shooting marbles 2) Smooth animations for marble movement and eliminations 3) Satisfying visual/audio feedback for successful combinations. Deduct 5 points for input lag when aiming or shooting, 3 points for stuttering animations during elimination sequences, and 5 points for confusing visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

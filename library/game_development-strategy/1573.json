@@ -1,0 +1,68 @@
+{
+  "index": 1573,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. Create a visualization of Chinese chess (Xiangqi) using Python language.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Chinese chess (Xiangqi) board correctly implemented?",
+      "description": "Verify if the code correctly implements the 9x10 board with river in the middle, palace areas, and proper piece starting positions according to official Xiangqi rules. Check if the coordinate system is properly established. Score 0 if the board is incorrectly structured, 5 if basic structure is present but with minor inaccuracies, and 10 if perfectly implemented with proper board markings and proportions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all Chinese chess pieces properly represented with correct movement rules?",
+      "description": "Evaluate if all 7 types of pieces (General, Advisor, Elephant, Horse, Chariot, Cannon, and Soldier) are implemented with their correct movement patterns and restrictions. Each piece should follow Chinese chess rules, including the river crossing rules for soldiers and palace confinement for generals and advisors. Deduct 1.5 points for each piece type with incorrect movement rules. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game logic fully implemented with proper turn-taking and victory conditions?",
+      "description": "Review if the code includes complete game rules including turn alternation, check detection, checkmate detection, and stalemate scenarios. Check if special rules like the 'flying general' illegal move and perpetual check restrictions are handled. Score 0 if basic game flow is missing, 5 if only simple turn-taking is implemented without check/checkmate detection, and 10 if all official Xiangqi rules are properly enforced.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the visualization clear, culturally appropriate and interactive?",
+      "description": "Assess if the visualization uses traditional Chinese chess piece representations (either Chinese characters or symbolic representations), appropriate colors (traditionally red vs. black), and allows for clear piece differentiation. Check if the user can interact with the board through intuitive mouse or keyboard commands. Deduct 3 points if pieces are difficult to distinguish, 3 points if interaction is unintuitive, and 4 points if the visual style doesn't reflect Chinese chess traditions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as illegal moves, improper input, out-of-bounds selections, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move suggestions 2. Game recording and replay functionality 3. Different visual themes 4. AI opponent with difficulty levels). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to select pieces) 2. Function modules unrelated to Chinese chess (e.g., unnecessary animations) 3. Overly complex code that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic from visualization), code organization, documentation, and maintainability. Assess if proper Python conventions are followed, including naming conventions, docstrings, and type hints. Deduct 5 points if global state pollution is found; deduct 3 points if the code lacks comments/documentation; deduct 3 points if the code has poor organization with no clear separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization follows good design principles: 1) Consistent visual style 2) Proper contrast between pieces and board 3) Clear indication of selected pieces and valid moves 4) Appropriate board proportions. Deduct 3 points for poor color contrast making pieces hard to read, 3 points for inconsistent styling, and 4 points for cluttered or confusing layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the program performs efficiently and responds quickly: 1) Piece movement is smooth with appropriate visual feedback 2) Selection/deselection actions are responsive 3) The game maintains consistent performance throughout gameplay. Deduct 3 points for laggy animations, 3 points for delayed response to user input, and 4 points for performance degradation during prolonged play. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

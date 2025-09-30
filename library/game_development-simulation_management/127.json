@@ -1,0 +1,68 @@
+{
+  "index": 127,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a Weather Effects and Dynamic Environment system.\n\n**Task**: Implement a weather effects system where different weather conditions (such as storms, dense fog) will affect character movement, vision, or abilities.\n\n**Hint**: You can simulate the impact of weather on the game by changing scene lighting, wind speed, slippery surfaces, etc.\n\nPlease include comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core weather effect system fully implemented?",
+      "description": "Review whether the code accurately creates different weather conditions (rain, snow, fog, etc.) using HTML5 Canvas or WebGL. Check if each weather type has unique visual representations. Score 0 if no weather effects are implemented, 5 if only basic effects (like simple rain) exist, and 10 if there are at least 4 distinct weather types with proper particle systems and physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dynamic environment interaction implemented?",
+      "description": "Evaluate whether weather effects actually impact the environment/character in meaningful ways (slippery surfaces during rain, reduced visibility in fog, slowed movement in snow, etc.). Check if these interactions are properly calculated and applied to movement mechanics. Score 0 if no interaction exists, 5 if basic interactions are present but inconsistent, and 10 if weather comprehensively affects multiple game aspects with appropriate physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the weather transition system implemented?",
+      "description": "Assess whether the code implements smooth transitions between different weather states rather than abrupt changes. Check for gradual parameter modifications (opacity, intensity, particle count) and appropriate easing functions. Deduct 5 points if transitions are absent, 3 points if transitions exist but are visually jarring. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the environmental elements responsive to weather?",
+      "description": "Examine if the implementation includes responsive environmental elements (trees swaying in wind, puddles forming in rain, fog affecting light sources). Check for physics-based responses and not just visual overlays. Score 0 if environment is static regardless of weather, 5 if simple responses exist, and 10 if the environment has complex, physically-accurate reactions to weather conditions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid weather changes, extreme parameter values, browser compatibility issues, etc.) and provide fallback mechanisms. Code with strong robustness should maintain performance under stress and gracefully degrade on weaker devices, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic sound effects that change with weather intensity 2. Weather affecting lighting and shadows realistically 3. Interactive elements like user-controlled weather manipulation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar effects (e.g., multiple rain systems running simultaneously) 2. Function modules unrelated to weather effects (e.g., unnecessary game mechanics) 3. Excessive effects that affect performance (e.g., too many particles causing lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating weather systems, environmental responses, and rendering), code reusability, and performance optimization. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations are implemented (like particle pooling or LOD). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual effects follow modern graphics principles: 1) Appropriate particle density and distribution 2) Realistic color grading for different weather conditions 3) Proper depth and parallax effects. Deduct 3 points for unrealistic weather visualization, 5 points for poor particle system implementation (uniform/unnatural distribution), and 5 points for inconsistent lighting across weather types. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the weather effects maintain consistent framerates (minimum 30fps): 1) No stuttering during weather transitions 2) Efficient particle management 3) Proper use of hardware acceleration. Deduct 5 points for noticeable fps drops during heavy effects, 3 points for delayed environmental responses to weather changes, and 5 points for particle systems that don't scale based on device capabilities. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "easy"
+}

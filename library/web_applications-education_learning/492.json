@@ -1,0 +1,68 @@
+{
+  "index": 492,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Build an English dictation system. After the user clicks to play an audio, they need to manually input the phrase or sentence word by word based on what they hear. The system detects spelling or grammar errors, displays the correct example sentence alongside the user's errors, and provides correction suggestions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio playback system properly implemented?",
+      "description": "Review whether the code implements proper audio controls using HTML5 Audio API or Web Audio API. Check if it includes play/pause functionality, replay options, and speed control for different learning levels. Score 0 if audio playback is not implemented, 5 if basic playback exists but lacks controls, and 10 if the implementation includes advanced features like speed adjustment, section repeat, and proper error handling when audio fails to load.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the text input and comparison system accurately implemented?",
+      "description": "Evaluate the system's ability to capture user input in real-time, compare it against the correct text, and identify errors. Check whether it properly handles capitalization, punctuation, spacing, and special characters. Deduct 3 points if it doesn't handle capitalization properly, 3 points if punctuation comparison is flawed, and 5 points if the comparison algorithm produces false positives/negatives. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the error detection and correction suggestion system comprehensive?",
+      "description": "Check if the system identifies spelling errors, grammatical mistakes, and word choice issues. Evaluate whether the correction suggestions are relevant and helpful. The system should differentiate between minor typos and significant errors. Deduct 5 points if only basic spell checking exists without grammar checking, 3 points if suggestions are generic rather than contextual, and 5 points if the system fails to provide explanations for corrections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a comprehensive dictionary/database with example sentences?",
+      "description": "Review the implementation of the word database or API integration. Assess whether the system contains or accesses a robust dictionary of words with example sentences, pronunciations, and definitions. Check if the database includes various difficulty levels and topics. Deduct 5 points if the dictionary is limited (fewer than 1000 words), 3 points if example sentences are missing, and 5 points if the system doesn't categorize words by difficulty level. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, audio loading failures, server connection issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Voice recognition for spoken practice 2. Personalized difficulty adjustment based on user performance 3. Visual representation of progress over time 4. Gamification elements like streaks or achievements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple spell-checkers running simultaneously) 2. Function modules unrelated to language learning (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations during typing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio handling/text processing/UI display layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Audio playback response delay ≤ 100ms 2) Error highlighting appears within 300ms of submission 3) Clear visual guidance between different learning stages. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between dictation states, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

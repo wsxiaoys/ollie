@@ -1,0 +1,68 @@
+{
+  "index": 113,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Please help me implement this SVG image using code. The metal oil barrel contains petroleum.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the oil barrel visualization accurately implemented?",
+      "description": "Check if the SVG code properly renders a recognizable metal oil barrel with appropriate proportions (typical 55-gallon drum proportions of approximately 23\" diameter × 34\" height). The barrel should include key visual elements such as rim reinforcements at the top and bottom, side vertical ribbing if applicable, and proper cylindrical perspective. Score 0 if the barrel is unrecognizable, 5 if it's basic but identifiable, and 10 if it's detailed and realistic.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the petroleum representation meet visual accuracy?",
+      "description": "Evaluate whether the petroleum inside the barrel is visually represented with appropriate coloring (dark brown to black), possible shine or reflection effects, and any visible level indicators. If applicable, check if the filling level is visible through an open top or semi-transparent representation. Deduct 5 points if petroleum is missing entirely, 3 points if the coloring is incorrect (e.g., bright colors not resembling petroleum), and 2 points if there's no distinction between the barrel and its contents.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are material properties correctly represented?",
+      "description": "Assess if the metallic properties of the barrel are effectively conveyed through SVG techniques such as gradients, highlights, or shading that suggest a metal surface. Check for reflective properties, appropriate metal texture or pattern, and depth perception. For the petroleum, evaluate if its liquid properties are suggested through appropriate visual cues. Deduct 5 points for flat, non-metallic appearance and 5 points for petroleum lacking liquid visual characteristics.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SVG implementation technically efficient?",
+      "description": "Review the SVG code structure for proper use of SVG elements (paths, circles, rects, etc.), appropriate grouping (<g> elements), reuse of components where applicable, and optimal path definitions. Check if the implementation uses appropriate SVG features like gradients, patterns, or filters for visual effects rather than numerous overlapping elements. Deduct 5 points for excessive path points or shapes that could be simplified, and 5 points for missing SVG-specific optimizations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code uses proper SVG structure with correct namespaces, viewBox attributes, and element positioning. Check if the implementation works across different viewports and scales appropriately. The robust code should handle various display scenarios without breaking the visual representation. Give 10 points for highly robust code that scales well, 5 points for code that works in limited scenarios, and 0 points if the SVG implementation has fundamental structural issues.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation effects like liquid sloshing 2. Interactive elements that respond to user actions 3. Advanced SVG filters for realistic metal textures). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements performing the same visual function 2. Unnecessary nested groups or transforms that complicate the structure 3. Overly complex effects that don't contribute to the oil barrel visualization. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular structure (such as separating barrel, petroleum, and effects into logical groups), code reusability, and naming conventions. Deduct 5 points if global attributes are scattered rather than consolidated; deduct 5 points if there's significant repeated code that could be templated; deduct 5 points if element IDs/classes are missing or poorly named. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Appropriate color palette that realistically represents metal and petroleum 2) Proper use of negative space within the SVG canvas 3) Professional proportions and perspective. Deduct 3 points for each unrealistic visual element, 5 points for implausible color combinations, and 5 points for perspective errors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless (if implemented)?",
+      "description": "Judge whether any included animations or interactions (if present) enhance the visualization: 1) Smooth transitions or effects with appropriate timing 2) Performance-optimized animations that don't cause rendering issues 3) Purposeful interactions that add value to the visualization. Deduct 5 points for each jerky animation, 3 points for purely decorative interactions that don't enhance understanding, and 5 points for interactions that interfere with the main visualization. If no animations/interactions are implemented, evaluate whether static visual cues effectively suggest the material properties and contents. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

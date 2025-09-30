@@ -1,0 +1,68 @@
+{
+  "index": 381,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable and functional. Design a website with 5 or more pages that includes login functionality, registration functionality, and a carousel/slider. You are free to add other features as you see fit. Use JavaScript for the design.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-page website structure properly implemented?",
+      "description": "Check whether 5 or more distinct pages are implemented with proper navigation structure. Each page should have a unique purpose and content. Verify that pages are properly linked with navigation elements (navbar, menu, footer links). Score 0 if fewer than 5 pages are implemented, 5 if the required number of pages exists but with structural issues, and 10 if the pages are well-organized with clear navigation paths and semantic HTML structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the login functionality fully implemented?",
+      "description": "Evaluate if the login system includes form validation, proper error handling, and secure authentication practices. Check for input validation (email format, required fields), error messages, remember me functionality, and session management. Deduct 3 points if validation is incomplete, 3 points if error handling is missing or unclear, and 5 points if session management is not implemented. Award full points only if the login connects to a backend or simulates user authentication with local storage.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the registration functionality properly designed?",
+      "description": "Assess the registration system for comprehensive form validation, password strength requirements, duplicate username/email checking, and confirmation mechanisms. Verify that the registration form includes proper client-side validation (password format, email validation, required fields) and provides clear feedback. Deduct 3 points for missing field validation, 3 points for lack of password strength indicators, and 4 points if there's no confirmation step or success feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the carousel/slider component fully functional?",
+      "description": "Review the carousel implementation for smooth transitions, responsive design, proper controls (next/prev buttons, indicators), and automatic rotation functionality. Check whether it handles different image sizes appropriately and works across various viewport sizes. Deduct 3 points if navigation controls are missing, 3 points if automatic rotation is not implemented, 2 points if it's not responsive, and 2 points if transitions are not smooth. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form input errors, invalid URLs, API failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark mode toggle 2. Dynamic content loading 3. Interactive form components 4. User preference storage 5. Animated page transitions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation systems coexisting) 2. Function modules unrelated to the requirements 3. Fancy effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, services, and utilities), code organization (proper file structure), and reuse of common components. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if there's no separation of concerns between HTML, CSS, and JavaScript. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent design language across all pages. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance 4) Fully responsive design that works on different screen sizes. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 267,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Take care to ensure the generated code is executable. Using Cocos 3.8.2, create a vertical ScrollView to display items, with customerName using customerItemPrefab and project using projectItemPrefab, with all items supporting click functionality. Please refer to the following JSON:\n\n```\n{\n    \"code\": 0,\n    \"msg\": null,\n    \"data\": [\n        {\n            \"customerId\": \"2\",\n            \"customerName\": \"Shanghai Nuclear Engineering Research and Design Institute Co., Ltd.\",\n            \"projects\": [\n                {\n                    \"projectId\": \"914468469536329728\",\n                    \"projectName\": \"Integrated Small Reactor Control Rod Drive Line Performance Test\"\n                }\n            ]\n        },\n        {\n            \"customerId\": \"3\",\n            \"customerName\": \"CGN Engineering Co., Ltd.\",\n            \"projects\": [\n                {\n                    \"projectId\": \"873153510613585920\",\n                    \"projectName\": \"Lianjiang Nuclear Power Project Phase I Unit 4 Reactor Internals 5\"\n                },\n                {\n                    \"projectId\": \"884559337463353344\",\n                    \"projectName\": \"Lufeng Nuclear Power Plant Unit 5 Reactor Internals\"\n                },\n                {\n                    \"projectId\": \"873153510592614400\",\n                    \"projectName\": \"Lianjiang Nuclear Power Project Phase I Unit 4 Reactor Internals 4\"\n                },\n                {\n                    \"projectId\": \"917907373564235776\",\n                    \"projectName\": \"Fangchenggang Unit 5 Reactor Internals\"\n                },\n                {\n                    \"projectId\": \"884560018756734976\",\n                    \"projectName\": \"Lufeng Nuclear Power Plant Unit 6 Reactor Internals\"\n                },\n                {\n                    \"projectId\": \"876391299413053440\",\n                    \"projectName\": \"Taipingling Unit 3 CRDM\"\n                },\n                {\n                    \"projectId\": \"954752623586709504\",\n                    \"projectName\": \"Ningde Unit 5 Reactor Internals\"\n                }\n            ]\n        },\n        {\n            \"customerId\": \"898905938222780416\",\n            \"customerName\": \"C5 Test Customer\",\n            \"projects\": [\n                {\n                    \"projectId\": \"898906689154191360\",\n                    \"projectName\": \"C5 Project Name test\"\n                }\n            ]\n        }\n    ],\n    \"ok\": true\n}\n```\n\nPlease provide specific TypeScript implementation code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the ScrollView component implementation complete?",
+      "description": "Check if the ScrollView component is properly implemented with vertical scrolling enabled. The component should handle content larger than the viewport, implement proper scrolling physics (momentum, elasticity), and manage scroll events correctly. Score 0 if ScrollView is not implemented at all, 5 if basic scrolling works but with issues, and 10 if it's fully implemented with proper physics and event handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the prefab instances correctly instantiated and configured?",
+      "description": "Verify if customerItemPrefab and projectItemPrefab are correctly loaded, instantiated, and configured based on the JSON data. Check if the prefabs are dynamically created for each item in the data structure. Deduct 5 points if only one type of prefab is implemented correctly, and 3 points if the prefab instantiation has performance issues (e.g., no pooling for large lists). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the hierarchical data display structure implemented correctly?",
+      "description": "Evaluate if the nested structure of customers and their projects is properly displayed in the ScrollView, maintaining the hierarchical relationship. Check if projects are visually grouped under their respective customers. Deduct 5 points if the hierarchy is not visually clear, and 7 points if projects are not properly associated with their customers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the click functionality fully implemented for all items?",
+      "description": "Check if both customer and project items have functioning click handlers that correctly identify which item was clicked. Events should include appropriate data (customerId, projectId) and follow Cocos event system best practices. Deduct 5 points if only one type of item is clickable, and 7 points if click detection areas are imprecise or if event propagation is incorrectly handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty data arrays, missing properties, incorrect data types, dynamic content changes, etc.) and provide appropriate error handling. Code with strong robustness should be able to effectively handle edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated expand/collapse for projects 2. Search/filter functionality 3. Custom scrollbar with preview hints). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scroll management systems) 2. Function modules unrelated to the ScrollView (e.g., unnecessary analytics) 3. Fancy effects that affect performance (e.g., excessive particle effects on scroll). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), typing quality (proper TypeScript interfaces/types), component reusability, and adherence to Cocos best practices. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if Cocos component lifecycle methods are misused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual implementation follows modern UI design principles: 1) Consistent styling between customer and project items 2) Proper padding and margins (element spacing follows the 8px multiple principle) 3) Clear visual hierarchy between customers and their projects. Deduct 3 points for each visual inconsistency, 5 points for poor contrast that affects readability, and 5 points for improper text truncation on long names. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the ScrollView performance optimized?",
+      "description": "Judge whether the implementation follows performance best practices: 1) Item recycling/virtualization for long lists 2) Proper handling of item visibility 3) Efficient update mechanisms when data changes. Deduct 5 points for visible performance degradation with many items, 3 points for unnecessary redraws during scrolling, and 5 points for memory leaks from improper node management. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

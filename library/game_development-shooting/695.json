@@ -1,0 +1,68 @@
+{
+  "index": 695,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Create a roguelike shooting game where after each room is cleared, the player gets to choose one ability upgrade from three options (such as ricochet, penetration, splitting, etc.). Use seed-based random generation for levels to ensure reproducibility. Implement a combination skill system: when specific ability combinations are activated, they trigger hidden effects (for example, freezing + explosion = expanded ice blast area). Use local storage to save the best completion records.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the roguelike shooting game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements player movement, shooting mechanics with collision detection, enemy AI behavior, and room-clearing objectives through HTML5 Canvas/JavaScript. Must include projectile physics, hit detection, health systems, and proper game state transitions between rooms. Score 0 if core shooting mechanics are missing, 5 if only basic movement and shooting exist, and 10 if all combat systems including enemy variety and balanced difficulty progression are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the ability upgrade system with three-choice selection properly implemented?",
+      "description": "Check whether the game presents exactly three ability options after each room completion, including visual presentation of upgrade cards/panels with clear descriptions. Verify implementation of various abilities (ricochet, penetration, splitting, etc.) with proper visual and mechanical effects. Must include upgrade application logic and UI feedback. Deduct 5 points if upgrade selection interface is poorly designed, 3 points if ability effects are not visually represented. Full score requires at least 6 different upgrade types with distinct mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is seed-based random generation implemented with reproducibility guarantee?",
+      "description": "Evaluate whether the level generation uses a proper seed-based random number generator that produces identical room layouts, enemy placements, and upgrade sequences when using the same seed. Check if seed can be manually input for testing and if the generation algorithm creates varied, balanced room layouts. Deduct 5 points if randomization is not seed-based, 3 points if reproducibility is inconsistent. Requires demonstration of identical runs with same seed.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the combination skill system with hidden effects fully designed and functional?",
+      "description": "Check whether the code implements a robust combination detection system that triggers special effects when specific ability pairs/sets are acquired (e.g., freezing + explosion = ice blast). Must include visual indicators for active combinations, enhanced effects animation, and clear feedback when combinations activate. Deduct 5 points if fewer than 3 combinations exist, 3 points if combination effects are not visually distinct from base abilities. Full score requires at least 5 meaningful combinations with balanced gameplay impact.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, browser tab switching, invalid localStorage data, canvas rendering errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases including game state corruption and performance degradation. Give 10 points if fully robust, 5 points if average robustness, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the roguelike experience (e.g., 1. Procedural soundtrack that adapts to player progress 2. Screen shake and particle effects synchronized with weapon impacts 3. Mini-map with fog-of-war exploration 4. Weapon trail effects that visualize upgrade combinations). Add 3 points for each practical innovative feature implemented (maximum 10 points). Features must demonstrably improve gameplay experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems coexisting) 2. Function modules unrelated to roguelike gameplay (e.g., built-in social sharing) 3. Excessive visual effects that impact game performance (e.g., overuse of particle systems causing frame drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if core gameplay is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game engine/entities/upgrade system/rendering layers), proper class inheritance for game objects, and clean separation of concerns. Deduct 5 points if global state pollution is found or object-oriented principles are ignored; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if no clear architecture pattern is followed. Full score requires clean, maintainable code structure with proper abstraction layers.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the game UI follows modern game design principles: 1) Coherent art style with consistent pixel density and color palette 2) Clear visual hierarchy with readable fonts (minimum 12px for UI text) 3) Intuitive iconography for abilities and game elements 4) Proper contrast ratios for accessibility. Deduct 3 points for each unclear UI element, 5 points for inconsistent visual style, and 5 points for poor readability. Screenshots must demonstrate professional visual polish.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive for gaming?",
+      "description": "Judge whether the game maintains smooth 60fps performance with responsive controls: 1) Input lag ≤ 16ms for movement and shooting 2) Smooth animation transitions for ability effects and UI changes 3) Clear visual feedback for all player actions 4) Consistent frame timing during intense combat scenarios. Deduct 5 points for each noticeable performance hiccup, 3 points for delayed input response, and 5 points for animation stuttering. Must demonstrate smooth gameplay through video or interactive testing.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

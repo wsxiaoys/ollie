@@ -1,0 +1,68 @@
+{
+  "index": 232,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. React 16.8 using StreamSaver to download videos.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the React 16.8+ integration properly implemented?",
+      "description": "Review whether the code uses React hooks correctly (useState, useEffect, useRef) and follows React 16.8+ best practices. Check that functional components are properly structured with appropriate dependency arrays in useEffect hooks to prevent memory leaks. Score 0 if hooks are misused, 5 if basic implementation is correct but with minor issues, and 10 if the implementation follows all React best practices including proper cleanup functions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the StreamSaver library correctly implemented for video downloads?",
+      "description": "Evaluate if the StreamSaver library is properly imported, configured, and utilized. Check for correct stream handling, proper MIME types for video, and browser compatibility considerations. Deduct 5 points if the implementation doesn't handle different video formats, and 3 points if it lacks error handling for streams. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the video download functionality complete and user-friendly?",
+      "description": "Check if the code includes progress indicators, file name customization, download cancellation options, and visual feedback during download. Verify that the implementation handles both small and large video files efficiently. Deduct 3 points if progress indication is missing, 5 points if there's no error handling for failed downloads, and 2 points if file naming is not user-configurable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are browser compatibility issues and polyfills properly addressed?",
+      "description": "Assess whether the code accounts for browser differences in StreamSaver support, implements necessary polyfills, and provides fallback mechanisms for unsupported browsers. Verify detection of browser capabilities and graceful degradation. Deduct 5 points if polyfills are missing for major browsers, and 5 points if no fallback mechanism exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, file system permission issues, large file handling, memory limitations, etc.) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should handle these edge cases effectively, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Video preview before download 2. Batch downloading capability 3. Download speed throttling for bandwidth management). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar download functions 2. Function modules unrelated to video downloading (e.g., unrelated media processing) 3. Heavy dependencies that could be avoided with simpler implementations. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of download logic from UI components), proper state management, code reusability, and maintainability. Deduct 5 points if global state is overused when component state would suffice; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper error boundaries aren't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI design follows modern principles: 1) Clear and accessible download buttons (minimum touch target 44×44px) 2) Informative download status indicators 3) Consistent styling with the rest of the application. Deduct 3 points for unclear call-to-action elements, 5 points for insufficient download status feedback, and 5 points for accessibility issues (e.g., poor contrast ratios). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the download experience conforms to user expectations: 1) Download initiation within 100ms of user action 2) Smooth progress indication without UI freezing 3) Clear completion notification with next steps. Deduct 5 points if the UI freezes during download operations, 3 points for jarring transitions between download states, and 5 points for missing feedback when downloads complete or fail. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Batch Processing",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 268,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable. You are a senior PHP development engineer, helping me develop a \"Planet Cloud Jump System.\" This system needs to include the following features:\n\n1. **User-related functions:**\n   - User registration and login (supporting phone number registration and email/username registration and login).\n   - User identity verification (personal and business verification).\n   - User center: supports password recovery and profile modification.\n\n2. **Short link generation and redirection function:**\nThe main domain is only used for configuration, redirects mainly rely on the domain pool\n   - Users can generate short links, and the system maps short links to long links.\n   - Targeted redirection based on user devices (Android, iOS, PC/Mac):\n     - Android devices redirect to configured \"android_redirect\" links.\n     - iOS devices redirect to configured \"ios_redirect\" links.\n     - Other devices redirect to configured \"pc_redirect\" links.\n   - Redirect to specific regional links based on user location (obtained via IP, such as Hebei Province, Henan Province, etc.). If there is no matching region rule, redirect to the default \"region_redirect\" link.\n   - If a device or region is restricted, redirect to a custom prompt page (block_pages).\n   - Custom redirection page when opened in WeChat\n   - Custom redirection when opened in QQ\n   - Must have strong protection against Tencent detection and blocking, maintain good camouflage, prevent domains from being blocked by Tencent\n\n3. **Backend management system:**\n   - Admin dashboard (admin_dashboard.php) containing multiple modules:\n     - User management: view, search, delete or disable users.\n     - Device redirection rule management: add, edit, delete device redirection rules (device_redirects table).\n     - Region redirection rule management: add, edit, delete region redirection rules (region_redirects table).\n     - Short link management: view, edit, delete short links (links table).\n     - Prompt page management: upload and edit prompt pages (block_pages table).\n     - IP blacklist management: add, delete, view blacklisted IPs (ip_blacklist table).\n     - Statistical data and access logs: display access logs, device distribution, region distribution, redirection success rates, etc.\n     - System configuration management: set global configurations, such as default redirection links, payment interface configuration, etc.\n\n4. **Payment function:**\n   - Integrate EasyPay, supporting users to purchase short link redirection services.\n   - Purchase records are saved in the purchases table.\n\n5. **Database installer:**\n   - An install.php file for automatically creating databases, all required table structures, and generating the config/config.php file.\n   - Must be easy to install, as it will be given to others like beginners who only need to upload the program to install it.\n\n6. **Logging system:**\n   - Record system logs to the logs/system.log file.\n\nPlease generate complete code, including all PHP files, frontend HTML/CSS/JS files, and database SQL table creation statements, with the following directory structure (please strictly follow this directory structure when generating files):\nDue to the large amount of code, please do not generate simplified versions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the User System properly implemented?",
+      "description": "Review the implementation of user registration, login, verification, and user center functionality.Award 0 points if core user functions are missing, 5 points if basic functionality exists but has security issues, 10 points for complete implementation with proper security measures (password hashing, session protection, input validation).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "How complete is the Short Link System implementation?",
+      "description": "Evaluate the short link generation and sophisticated redirection logic based on multiple conditions.Award 0 points if redirection logic is incomplete, 5 points if basic redirection works but lacks sophisticated detection evasion, 10 points for complete implementation with all conditional redirects and Tencent anti-detection measures.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Admin Dashboard system fully functional?",
+      "description": "Review the backend admin system's modules and management capabilities.Award 0 points if dashboard is incomplete, 5 points if basic functionality exists but lacks advanced features or security, 10 points for comprehensive implementation with all required modules, proper access controls, and data visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "How well is the Payment System integrated?",
+      "description": "Evaluate the EasyPay integration and purchase record management.Award 0 points if payment system is missing, 5 points if basic payment flow exists but lacks transaction security or error handling, 10 points for complete implementation with secure API integration, proper transaction logging, and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations and provide appropriate error handling.Award 0 points if no exception handling exists, 5 points for basic error handling but lacking comprehensive protection, 10 points for robust implementation with thorough error handling, security measures, and graceful recovery mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience beyond requirements.Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check for redundancy in code and functionality.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization, architecture, and engineering practices.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if build/deployment process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate the design quality of user interfaces.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics.Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

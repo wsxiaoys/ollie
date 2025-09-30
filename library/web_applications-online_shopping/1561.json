@@ -1,0 +1,68 @@
+{
+  "index": 1561,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide can be executed properly. Help me create a comprehensive snack menu mini-program that includes food delivery service and delivery time options.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the snack menu display system fully implemented?",
+      "description": "Review whether the code accurately implements the menu display with proper categorization (appetizers, main dishes, desserts, drinks), item details (name, price, description, image), and filtering/sorting capabilities. Score 0 if the core display logic is missing, 5 if only basic listing is implemented, and 10 if comprehensive menu features including search/filter/categorization are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the food ordering and checkout process complete?",
+      "description": "Check whether the implementation includes item selection, quantity modification, shopping cart management, and a smooth checkout flow. The system should handle order validation, pricing calculation (including taxes and fees), and provide order summaries. Deduct 5 points if the cart functionality is incomplete, and 3 points if order modification capabilities are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the delivery service system properly designed?",
+      "description": "Evaluate whether the code implements address input/validation, delivery radius checking, delivery fee calculation based on distance, and estimated arrival time calculation. Deduct 5 points if address validation is missing, and 3 points if dynamic delivery time estimation based on distance and current load isn't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the delivery time selection and scheduling mechanism implemented?",
+      "description": "Check whether the code provides time slot selection for scheduled deliveries, handles peak hour limitations, displays available/unavailable time slots, and implements order queueing logic. Deduct 5 points if time conflict resolution is not implemented, and 3 points if there's no handling of restaurant capacity constraints. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incomplete user input, network failures, payment processing errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time order tracking on a map 2. Dietary preference filtering (vegetarian, gluten-free, etc.) 3. Customizable items with price adjustments). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add items to cart) 2. Function modules unrelated to food ordering (e.g., a built-in news feed) 3. Fancy effects that affect performance (e.g., excessive animations when scrolling through menu). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating menu/cart/checkout/delivery logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling through the menu, and 5 points for hard-to-find key function buttons (like checkout or add to cart). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

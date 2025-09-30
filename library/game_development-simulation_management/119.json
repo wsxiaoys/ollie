@@ -1,0 +1,68 @@
+{
+  "index": 119,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and ready for display.\n\nPlease use HTML and JavaScript to implement a simulation game: Dynamic Weather and Environmental Impact\n**Task**: Implement a dynamic weather system where different weather conditions affect the game environment and player operations.\n**Hint**: You can adjust scene parameters to simulate how weather affects resource production or character behavior.\n\nCreate the game, and include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Weather System Implementation",
+      "description": "Evaluate whether the code implements a comprehensive and dynamic weather system with multiple weather states (rain, snow, sun, wind, etc.) and smooth transitions between them.Score 0 if weather system is absent, 5 if only basic weather states without transitions are implemented, 10 if the system includes at least 5 distinct weather conditions with smooth transition animations and appropriate visual/audio feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Environmental Impact Mechanics",
+      "description": "Check if weather conditions meaningfully impact the game environment (vegetation growth, water levels, terrain conditions, etc.) with visible and logical consequences.Deduct 5 points if weather has no visible impact on environment. Deduct 3 points if the impacts are purely cosmetic without gameplay effects. Full score if at least 3 environmental elements dynamically respond to changing weather conditions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Player Interaction With Weather",
+      "description": "Assess whether weather conditions affect player operations/actions in meaningful ways (movement speed, ability effectiveness, resource gathering rates, etc.).Score 0 if no player-weather interaction exists, 5 if only simple speed/visibility effects are implemented, 10 if weather creates strategic gameplay choices and adaptive player behaviors.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Weather Prediction and Control Mechanisms",
+      "description": "Evaluate whether the simulation includes weather forecasting, seasonal patterns, or player-influenced weather control mechanisms.Deduct 5 points if weather changes randomly without patterns. Deduct 3 points if no forecasting UI elements exist. Full score for implemented seasonal cycles with predictable patterns and optional player interaction to influence weather.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid weather transitions, extreme conditions, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather-based event triggers 2. Dynamic soundtrack that changes with weather 3. Weather history tracking and statistics).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar weather effects 2. Function modules unrelated to weather/environment simulation 3. Fancy effects that affect performance without adding value to simulation.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular design (such as separating weather system/environment/UI layers), code organization, and implementation efficiency.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no optimization for weather particle rendering is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Visual Design Quality",
+      "description": "Evaluate whether the weather effects and environmental changes follow modern design principles: 1) Realistic visual representation 2) Proper use of animations and transitions 3) Clear visual distinction between weather states.Deduct 3 points for each unconvincing weather effect, 5 points for jarring transitions between weather states, and 5 points for unclear visual feedback of environmental impacts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Performance and Optimization",
+      "description": "Judge whether the weather simulation performs efficiently: 1) Maintains 60 FPS during weather transitions 2) Optimizes particle systems and environmental effects 3) Implements appropriate level-of-detail for different device capabilities.Deduct 5 points for noticeable frame drops during weather changes, 3 points for inefficient rendering techniques, and 5 points for lack of optimization options for lower-end devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "easy"
+}

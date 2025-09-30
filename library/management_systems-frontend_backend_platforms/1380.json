@@ -1,0 +1,68 @@
+{
+  "index": 1380,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable. Provide functionality for manual data entry of electricity consumption original data for various companies in 2022 and 2023. Data entry items include electricity consumption category, equipment code, equipment name, energy consumption amount, workload, unit consumption, electricity consumption month, and other information. Features include adding, modifying, editing, deleting, importing, and exporting electricity consumption data.\n\nBased on manually entered or imported electricity consumption data, automatically calculate the per-container energy consumption for standard containers and natural containers for equipment in the corresponding month.\n\nUpgrade the front-end from Vue 2.0 to Vue 3.0, and migrate the functionality to the Yuheng development framework. Adjust function components and styles to adapt to the new framework, and switch the usage methods of common entity classes and utility classes to ensure comprehensive adjustment and adaptation of code functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "1. Is the electricity consumption data entry functionality fully implemented?",
+      "description": "Review whether the code accurately implements all required data entry fields (electricity consumption category, equipment code, equipment name, energy consumption amount, workload, unit consumption, electricity consumption month, etc.) with proper validation. Check if the form layout is responsive and user-friendly.Score 0 if core data entry fields are missing, 5 if basic fields are implemented without validation, and 10 if all fields are implemented with proper validation, formatting, and user guidance.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "2. Are all CRUD operations properly implemented for electricity consumption data?",
+      "description": "Evaluate the implementation of adding, modifying, editing, deleting, importing, and exporting electricity consumption data. Check for proper state management, error handling, and user feedback during these operations.Deduct 2 points for each missing operation. Deduct 1 point for each operation lacking proper error handling or user feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "3. Is the automatic calculation of per-container energy consumption correctly implemented?",
+      "description": "Check if the code correctly calculates the per-container energy consumption for both standard containers and natural containers based on the entered data. Verify calculation logic, formula implementation, and dynamic updates when source data changes.Deduct 5 points if either standard container or natural container calculations are missing or incorrect. Deduct 3 points if calculations don't update dynamically. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "4. Has the migration from Vue 2.0 to Vue 3.0 been properly executed?",
+      "description": "Evaluate whether the code correctly implements Vue 3 Composition API instead of Options API, replaces Vue 2 specific features with Vue 3 equivalents, and properly handles migration of global plugins and components. Check for the use of script setup, Teleport, Fragments and other Vue 3 features.Deduct 3 points if reactive state management isn't using Vue 3 patterns, 3 points if lifecycle hooks aren't properly migrated, 2 points if template syntax isn't updated, and 2 points if Vue 3 specific features aren't leveraged. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "5. Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data input, network interruption, empty data sets, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "6. Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time data visualization 2. Smart data validation and suggestions 3. Keyboard shortcuts for power users 4. Batch processing operations).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "7. Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple data validation methods) 2. Function modules unrelated to electricity consumption data management 3. Fancy effects that affect performance (e.g., unnecessary animations).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "8. Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data management/UI components/business logic), unit test coverage, and adherence to Yuheng development framework standards. Check for proper TypeScript usage, component reusability, and maintainable code structure.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if Yuheng framework standards aren't followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "9. Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times).Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "10. Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for electricity data entry flows.Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast form navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1500,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the code you generate is executable for demonstration. Implement 3D charts and maps using Vue2 and ECharts.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D chart implementation complete?",
+      "description": "Review whether the code accurately implements 3D visualization features using ECharts GL. Check for proper configuration of coordinate systems (grid3D, globe, geo3D), camera positioning, and light sources. Score 0 if no 3D charts are implemented, 5 if only basic 3D bar/scatter charts are created, and 10 if multiple sophisticated 3D chart types are implemented with customized visual effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the 3D maps properly implemented?",
+      "description": "Evaluate the implementation of 3D maps using ECharts. Check for correct GeoJSON data loading, proper map projection selection, interactive features (zooming, panning, tooltips), and geographic data visualization (heat maps, scatter points, lines). Deduct 5 points if maps lack interactivity, 3 points if geographic data is not properly bound. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Vue2 integration with ECharts properly implemented?",
+      "description": "Examine whether the code follows Vue2 best practices when integrating ECharts. Check for proper component design, reactive data handling, lifecycle hooks management (especially resize events), and Vue props/events integration. Deduct 5 points if ECharts instances aren't properly disposed on component destruction, 3 points if resize listeners are missing, and 5 points if reactive data updates don't reflect in the charts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is performance optimization incorporated for large datasets?",
+      "description": "Check whether the implementation includes optimizations for handling large datasets in 3D visualizations. Look for techniques such as data downsampling, progressive rendering, WebGL utilization, off-screen rendering, and proper memory management. Deduct 5 points if rendering noticeably lags with >1000 data points, 3 points if no throttling is implemented for intensive operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, invalid configurations, browser compatibility issues, WebGL not supported). Code with strong robustness should provide graceful fallbacks and helpful error messages. Give 10 points for comprehensive error handling with fallbacks, 5 points for basic error checking, and 0 points if exceptions are not handled at all.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visualization experience (e.g., 1. Custom shader effects 2. Interactive data exploration tools 3. Animation sequences that reveal data insights 4. Cross-chart linking/brushing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate visualization components showing the same data 2. Excessive decorative elements that don't convey information 3. Heavy effects that degrade performance without adding analytical value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core visualization functionality is compromised by superfluous code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component architecture (separation of data processing/visualization logic), reusability of chart components, and maintainability. Deduct 5 points if chart options are hardcoded instead of parameterized; deduct 5 points if there's significant code duplication across chart components; deduct 5 points if there's no abstraction for common functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization design follows data visualization principles: 1) Appropriate color schemes for data types (sequential, diverging, categorical) 2) Clear visual hierarchy with proper emphasis on important data 3) Intuitive legends and axes that aid interpretation. Deduct 3 points for poor color choices that hinder data interpretation, 5 points for cluttered visualizations, and 5 points for misleading visual encodings. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interactive experience smooth and intuitive?",
+      "description": "Judge whether the interactive features enhance data exploration: 1) Responsive rotation/zoom/pan controls for 3D visualization 2) Tooltips appear within 100ms of hovering 3) Selection states clearly indicated 4) Smooth transitions between data views (300-500ms). Deduct 5 points for laggy 3D interactions, 3 points for missing visual feedback during interactions, and 5 points for confusing or unintuitive control schemes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

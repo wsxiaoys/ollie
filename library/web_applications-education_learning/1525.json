@@ -1,0 +1,68 @@
+{
+  "index": 1525,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Please help create a quiz training software for the Chemistry Academic Level Qualification Examination (Academic Assessment) for first-year high school students in Zhejiang Province, focusing on multiple-choice questions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core quiz functionality implemented effectively?",
+      "description": "Review whether the code accurately implements the multiple-choice question system for Chemistry, including question presentation, answer selection, and result evaluation. Check if questions are correctly structured with chemistry-specific content (e.g., chemical formulas, reactions, principles). Score 0 if core functionality is missing, 5 if basic quiz features exist but lack chemistry specificity, and 10 if the system fully accommodates chemistry content with proper formatting.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the question database comprehensive and relevant to the Chemistry Academic Level Qualification Examination?",
+      "description": "Evaluate whether the implemented question database covers key topics from the Zhejiang Province first-year high school chemistry curriculum (e.g., atomic structure, periodic table, chemical bonds, basic reactions). Check for question variety and difficulty levels that match academic assessment standards. Deduct 5 points if topics are too generic, 5 points if content doesn't align with curriculum requirements, and 3 points if question variety is insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the application include performance analysis and learning progress tracking?",
+      "description": "Check for implementation of statistical analysis of student performance, including tracking correct/incorrect answers, time spent, difficulty assessment, and identifying knowledge gaps. Evaluate whether the system provides detailed feedback with explanations for wrong answers and suggests areas for improvement. Deduct 5 points if only basic scoring exists without analysis, and 3 points if feedback lacks educational value. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an adaptive learning mechanism implemented?",
+      "description": "Assess whether the application adapts question difficulty based on user performance, implements spaced repetition for previously missed questions, and personalizes the learning path. Check if the algorithm effectively identifies and prioritizes weak areas. Deduct 5 points if questions appear randomly without adaptation, 3 points if the system lacks personalization features, and 3 points if there's no mechanism to reinforce difficult concepts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, submission errors, data loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like disconnections during quiz submission or corrupted question data. Give 10 points if exception handling is comprehensive, 5 points if basic error handling exists, and 0 points if exceptions are unmanaged.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance learning (e.g., 1. Interactive molecular visualization for chemistry concepts 2. Voice-enabled question reading for accessibility 3. Chemistry formula editor/validator 4. AR-based molecular structure visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems operating in parallel) 2. Function modules unrelated to chemistry learning (e.g., games not tied to educational content) 3. Fancy effects that affect performance (e.g., unnecessary animations slowing question loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating question data/UI/logic layers), unit test coverage, and build process automation. Check if chemistry-specific content rendering (formulas, equations) is properly abstracted. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern educational software principles: 1) Harmonious color matching appropriate for extended study sessions (no more than 3 primary colors) 2) Proper layout spacing with clear question/answer distinction 3) Professional font system with proper rendering of chemistry notations and formulas (subscripts, superscripts, special symbols). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for poorly rendered chemical formulas. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interface interactions support effective learning: 1) Question navigation response time ≤ 100ms 2) Clear visual feedback for answer selection 3) Smooth transitions between questions without disrupting concentration. Deduct 5 points for each operation without feedback, 3 points for laggy transitions between questions, and 5 points for confusing navigation that could disrupt the learning flow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

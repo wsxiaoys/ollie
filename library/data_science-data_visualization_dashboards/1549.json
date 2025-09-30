@@ -1,0 +1,68 @@
+{
+  "index": 1549,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the generated code is executable for demonstration. How can we implement a visualization of SELinux policies? Requirements: Develop a graphical or web interface tool that allows system administrators and security engineers to intuitively manage SELinux policies.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SELinux policy visualization core functionality implemented?",
+      "description": "Review whether the code effectively visualizes SELinux policies through a graphical interface, including correct representation of subjects (processes), objects (files, sockets, etc.), and their relationships (permissions). Score 0 if visualization is missing, 5 if only basic policy elements are shown, and 10 if the visualization includes comprehensive policy mapping with context relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are SELinux policy editing capabilities implemented?",
+      "description": "Check whether the interface allows for creating, modifying, and deleting SELinux policies. Verify if it handles policy syntax validation, provides instant feedback on policy changes, and includes a mechanism to test policies before applying them. Score 0 if editing functionality is absent, 5 if basic editing without validation is present, and 10 if complete editing with validation and testing capabilities are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the policy analysis and impact assessment feature implemented?",
+      "description": "Evaluate whether the tool can analyze existing policies, detect conflicts, identify potential security gaps, and simulate the impact of policy changes before deployment. Check if visualizations show policy interdependencies and highlight potential issues. Score 0 if no analysis exists, 5 if basic conflict detection is implemented, and 10 if comprehensive analysis with impact simulation is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is integration with the SELinux system properly implemented?",
+      "description": "Assess whether the tool correctly interfaces with the underlying SELinux subsystem, properly reads and writes policy files, executes SELinux commands with appropriate privileges, and handles SELinux alerts/logs. Score 0 if there's no system integration, 5 if basic read-only capabilities exist, and 10 if full bidirectional integration with proper privilege handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission denied, malformed policy files, system command failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time policy violation monitoring, 2. Machine learning-based policy recommendations, 3. Interactive policy exploration through graph navigation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same policy operation) 2. Function modules unrelated to SELinux policy management (e.g., general system configuration tools) 3. Fancy effects that affect performance (e.g., unnecessary animations in a security tool). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating SELinux interaction/visualization/editing layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for security-critical operations. Deduct 5 points for each operation without feedback, 3 points for visual after-images during graph navigation, and 5 points for hard-to-find key policy management functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "hard"
+}

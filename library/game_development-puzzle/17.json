@@ -1,0 +1,68 @@
+{
+  "index": 17,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and displayable.\n\nPlease use HTML and JavaScript to implement a:\n\n### Gameplay\n1. **Choose Cube Level**: Players can select 2x2, 3x3, 4x4, or 5x5 Rubik's cubes.\n2. **Manipulate the Cube**: Rotate different layers of the cube using mouse controls.\n3. **Complete Restoration**: The goal is to unify the colors of all faces, with each face having a single color.\n\n### Game Features\n- **Highly Interactive**: Using Three.js technology, the game provides smooth 3D visual effects and a highly interactive user experience.\n- **Multiple Levels**: Offers different difficulty levels suitable for players of varying skill levels.\n- **Educational Value**: Exercises players' spatial imagination and logical thinking abilities.\n\n### Game Tips\n- **Learn Basic Formulas**: Understand and master some basic cube restoration formulas, such as top layer cross, corner block permutation, etc.\n- **Simple to Complex**: Beginners can start with lower-order cubes and gradually transition to higher-order cubes to progressively improve solving techniques.\n- **Practice Observation Skills**: When manipulating the cube, pay attention to color distribution and layer relationships to improve restoration efficiency.\n\n### Summary\n\"The Cube\" is not only a highly entertaining digital game but also an educational tool beneficial for mental development. It's suitable for players of all ages, whether cube enthusiasts or those seeking a challenge.\n\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Rubik's Cube core structure properly implemented?",
+      "description": "Review whether the code accurately implements the Rubik's Cube data structure through Three.js, correctly representing the cube's internal state with appropriate face/cubelet relationships. Check if the code maintains proper geometry for each cube level (2x2, 3x3, 4x4, 5x5) with accurate mapping of colors to faces.Score 0 if the core structure is missing, 5 if only basic representation exists, 10 if all cube levels are properly implemented with correct internal state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cube rotation mechanism fully functional?",
+      "description": "Evaluate whether the code properly handles layer rotation mechanics, including face turns, middle layer rotations, and whole cube rotation. Check for quaternion-based rotation calculations, proper animation transitions between states, and maintenance of cube integrity during rotations.Score 0 if rotation is not implemented, 5 points for basic single-face rotations, 10 points for complete implementation including complex rotation patterns and animation transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the different cube levels (2x2 to 5x5) properly implemented?",
+      "description": "Check if the code dynamically generates and handles different cube sizes from 2x2 to 5x5, with appropriate scaling, positioning, and rotation mechanics for each level. Verify that the complexity scales appropriately with cube size.Deduct 2.5 points for each missing or incomplete cube level. Give full 10 points only if all four cube levels function correctly with appropriate mechanics for each.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the solved-state detection mechanism implemented?",
+      "description": "Assess whether the code includes a system to detect when the cube is solved (all faces have uniform colors). Check for efficient algorithms that verify the solved state after each move without excessive performance impact.Score 0 if no detection exists, 5 points if basic detection is implemented with flaws, and 10 points for complete, efficient implementation with appropriate user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid mouse movements, browser resize events, performance limitations on different devices) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Cube solving algorithms visualization 2. Move history with undo/redo 3. Pattern generation for practice 4. Timer and move counter statistics).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple rotation handling systems) 2. Function modules unrelated to the Rubik's cube (e.g., unnecessary game elements) 3. Fancy effects that affect performance (e.g., excessive particle effects).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating cube logic/rendering/interaction layers), code organization, and optimization techniques. Check for proper use of Three.js best practices and efficient rendering approaches.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if rendering optimization techniques are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (beyond just the cube colors) 2) Proper layout spacing for UI controls 3) Professional font system for instructions and UI elements.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the 3D interactions conform to human perception characteristics: 1) Cube rotation responsiveness ≤ 100ms 2) Smooth animation transitions between 300-500ms 3) Intuitive mouse/touch controls for cube manipulation.Deduct 5 points for each operation without feedback, 3 points for jerky animations during rotations, and 5 points for unintuitive or hard-to-discover interaction controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

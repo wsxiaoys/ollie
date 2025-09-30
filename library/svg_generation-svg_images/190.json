@@ -1,0 +1,68 @@
+{
+  "index": 190,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes.\nPlease help me implement the following requirement using code, specifically with SVG code: create a bicycle, which is the smallest transportation tool.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the bicycle structure completely implemented in SVG?",
+      "description": "Evaluate whether the SVG code accurately implements all essential parts of a bicycle: frame (including top tube, down tube, seat tube, seat stays, chain stays), wheels (with spokes and hubs), handlebar, seat, pedals, and chain. Score 0 if more than two essential components are missing, 5 if only one component is missing or poorly implemented, and 10 if all components are properly structured with appropriate proportions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the geometric proportions and measurements realistic?",
+      "description": "Check whether the bicycle's proportions follow real-world bicycle geometry: wheels should be of equal size, the frame should form proper triangles for structural integrity, and components should have realistic dimensions relative to each other. Deduct 3 points if the wheels are disproportionate, 3 points if the frame geometry is structurally unsound, and 4 points if overall proportions make the bicycle appear unrealistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the SVG implementation technically sound?",
+      "description": "Review whether the SVG code uses appropriate elements for different parts (circles for wheels, paths for frame, etc.), utilizes grouping (<g>) for related elements, implements proper coordinate systems, and employs SVG-specific attributes effectively. Score 10 for exemplary implementation with optimized path commands and transforms, 5 for functional but unoptimized implementation, and 0 for implementation with significant technical flaws.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the bicycle include any interactive or animated elements?",
+      "description": "Assess whether the implementation includes animations or interactivity such as rotating wheels, moving pedals, turning handlebars, or user-triggered movements. Award 10 points for fully implemented, smooth animations that simulate actual bicycle mechanics, 5 points for basic animations that lack physical accuracy, and 0 points if no animations or interactivity are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle viewing across different browsers and screen sizes through responsive design techniques like viewBox attributes, percentage-based dimensions, or media queries. Check for defensive coding practices like avoiding hard-coded absolute positions. Score 10 for fully responsive implementations that work across all modern browsers, 5 for partially responsive implementations, and 0 if the design breaks easily on different screen sizes.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Color customization options 2. Realistic lighting and shadows 3. Physics-based animation of the bicycle in motion). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate element definitions that could be reused 2. Unnecessarily complex paths that could be simplified 3. Decorative elements that significantly increase file size without adding value to the bicycle representation. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code significantly impacts performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modularity (such as separating different bicycle components into reusable groups), code organization, proper naming conventions, and efficient path definitions. Deduct 5 points if SVG elements lack meaningful IDs or classes; deduct 3 points if the code lacks comments for complex sections; deduct 2 points if the SVG structure doesn't follow logical grouping. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design follows professional principles: 1) Appropriate use of color (harmonious, with good contrast) 2) Clean, polished appearance with attention to detail (like rounded corners where appropriate) 3) Visual balance and proper proportions. Deduct 3 points for clashing colors, 4 points for rough or jagged edges where smoothness is expected, and 3 points for poor visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether any animations or interactive elements feel natural: 1) Appropriate easing functions for moving parts 2) Realistic physics in wheel rotation and chain movement 3) Smooth transitions between states. Deduct 4 points for jarring or unrealistic animations, 3 points for inconsistent movement speeds, and 3 points for animation timing that doesn't match real bicycle mechanics. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 824,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and demonstrable. Create a web application code that simulates Genshin Impact's gacha system, resembling the in-game wishing interface, complete with animations and character images.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the gacha core mechanism accurately implemented?",
+      "description": "Review whether the code correctly implements the gacha probability system with proper rarity distribution (5-star ~0.6%, 4-star ~5.1%, 3-star ~94.3%), pity system (hard pity at 90 pulls for 5-star, 10 pulls for 4-star), and soft pity mechanism (increased rates after 74 pulls). Score 0 if basic probability is missing, 5 if only simple random is implemented, and 10 if all gacha mechanics including guaranteed systems are fully accurate.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the wishing interface animation system complete?",
+      "description": "Check whether the implementation includes authentic gacha animations: shooting star effects, character reveal animations, rarity-based lighting effects (golden for 5-star, purple for 4-star), and smooth transition sequences. Evaluate if the animation timing matches the original game experience (3-5 seconds per pull). Deduct 5 points if animations are choppy or missing, 3 points if color schemes don't match rarity standards. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the character/weapon database and display system properly designed?",
+      "description": "Evaluate whether the system includes a comprehensive database of characters and weapons with proper categorization, rarity classification, and detailed information display. Check if character portraits, weapon images, and descriptions are properly integrated. Deduct 5 points if image loading is slow or broken, 3 points if character information is incomplete or inaccurate. Full score requires proper data structure and seamless asset management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the banner system and wish history tracking implemented?",
+      "description": "Check whether the code includes multiple banner types (character event, weapon event, standard), proper banner rotation mechanism, and comprehensive wish history tracking with detailed statistics. Evaluate if pity counters are accurately maintained across different banner types. Deduct 5 points if banner switching is not functional, 3 points if history data is not persistent. Full score requires complete banner management system.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid user inputs, animation interruptions, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like rapid clicking during animations or browser refresh during pulls, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the gacha experience (e.g., 1. Constellation/refinement tracking system 2. Pull prediction and statistics dashboard 3. Custom banner creation tools 4. Social sharing of rare pulls 5. Achievement system for milestones). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple random number generators) 2. Function modules unrelated to gacha simulation (e.g., built-in chat system) 3. Excessive visual effects that impact performance (e.g., overly complex particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if core gacha functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating gacha logic/UI components/data management), proper state management, and code organization. Deduct 5 points if global state pollution is found or no design patterns are used; deduct 5 points if code duplication rate is too high (over 30%); deduct 3 points if asset loading is not optimized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows Genshin Impact's visual style: 1) Authentic color palette matching the game's theme 2) Proper spacing and layout following game UI conventions 3) Appropriate typography and iconography 4) Consistent visual hierarchy. Deduct 3 points for each element that breaks visual consistency, 5 points for poor color harmony that doesn't match the game aesthetic, and 5 points for cluttered layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the gacha interactions feel authentic and responsive: 1) Wish button response time ≤ 100ms 2) Animation sequences flow naturally without stuttering 3) Smooth transitions between different UI states 4) Proper audio-visual feedback synchronization 5) Intuitive navigation and controls. Deduct 5 points for each laggy animation, 3 points for missing interaction feedback, and 5 points for confusing user flow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

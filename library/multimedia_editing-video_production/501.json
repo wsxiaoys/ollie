@@ -1,0 +1,68 @@
+{
+  "index": 501,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the generated code is executable for demonstration. Implement an audio-video synchronization tool that allows users to upload video and audio files, adjust the starting point of audio playback to synchronize with the video, and finally merge them to generate a new video that supports downloading.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload and validation system properly implemented?",
+      "description": "Check whether the code implements a robust file upload mechanism with proper MIME type validation for video and audio files. Verify that it handles common video formats (MP4, WebM, MOV) and audio formats (MP3, WAV, AAC). Deduct 5 points if file size limitations are missing, 3 points if MIME validation is incomplete, and 5 points if there's no feedback during upload progress. Score 10 points for complete implementation with error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio-video playback preview functionality working correctly?",
+      "description": "Assess whether the code implements proper HTML5 media elements or custom players for both video and audio preview. Check if the playback controls are intuitive and if time displays are accurate. Verify that preview works across major browsers. Score 0 if preview functionality is missing, 5 if basic playback works but has synchronization issues, and 10 if preview provides frame-accurate visualization with proper time indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio synchronization adjustment mechanism implemented effectively?",
+      "description": "Review whether the code provides precise controls to adjust audio timing relative to video (frame-level accuracy). Check if the interface includes millisecond-level input options, visual waveform representation, or keyframe markers. Verify that changes in synchronization are immediately reflected in preview. Deduct 5 points if synchronization granularity exceeds 100ms, 3 points if no visual feedback is provided. Score 10 points for implementation with frame-accurate controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the final audio-video merging and download functionality implemented?",
+      "description": "Evaluate whether the code implements proper video processing using WebAssembly, server-side processing, or browser APIs (like MediaRecorder) for merging audio and video. Check if the solution handles different codecs and if progress indicators are provided during processing. Verify download functionality with proper file naming. Score 0 if merging is not implemented, 5 if basic merging works but quality is compromised, and 10 if high-quality output with proper metadata is produced.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incompatible file formats, processing failures, browser inconsistencies, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like interrupted uploads, memory limitations, and codec compatibility issues. Score 10 points if all exceptions are properly handled with recovery options, 5 points if basic error handling exists, and 0 points if exceptions crash the application.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automatic audio beat detection for synchronization suggestions 2. Visual waveform representation aligned with video timeline 3. Batch processing multiple audio tracks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing libraries loaded) 2. Function modules unrelated to audio-video synchronization (e.g., unnecessary social sharing buttons) 3. Fancy effects that affect performance (e.g., excessive animations that slow down processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating media handling/UI/processing logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

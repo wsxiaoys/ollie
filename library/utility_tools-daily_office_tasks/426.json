@@ -1,0 +1,68 @@
+{
+  "index": 426,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable whenever possible. Create an online ANSI decoder tool written in HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the ANSI escape sequence parsing engine fully implemented?",
+      "description": "Review whether the code accurately implements ANSI escape sequence parsing through JavaScript, including color codes (3/4-bit, 8-bit, 24-bit RGB), text formatting (bold, italic, underline, strikethrough), cursor positioning, and screen clearing commands. Score 0 if core parsing logic is missing, 5 if only basic color codes are supported, and 10 if comprehensive ANSI standards (including SGR, cursor control, and erase sequences) are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time decoding and rendering functionality implemented?",
+      "description": "Check whether the tool provides real-time input processing with immediate visual output rendering. Evaluate if the rendering engine correctly converts ANSI sequences to HTML/CSS equivalents with proper color mapping and text styling. Deduct 5 points if rendering has noticeable lag (>200ms), 3 points if color accuracy is poor, and 5 points if malformed sequences crash the parser. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is comprehensive input/output handling designed with format support?",
+      "description": "Evaluate whether the tool supports multiple input methods (text paste, file upload, drag-and-drop) and output formats (HTML export, plain text, image capture). Check if proper encoding handling (UTF-8, ASCII) is implemented and if large file processing is optimized. Deduct 5 points if file upload is missing, 3 points if no export functionality, and 5 points if encoding issues cause corruption. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interface intuitive with proper control features?",
+      "description": "Check whether the interface includes essential controls like clear/reset buttons, theme switching (dark/light mode), font size adjustment, and preview pane resizing. Evaluate if proper input validation and user guidance are provided. Deduct 5 points if basic controls are missing, 3 points if no responsive design, and 5 points if accessibility features are absent. Give 10 points if fully implemented with keyboard shortcuts.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed ANSI sequences, oversized input, memory leaks from continuous processing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like nested sequences and incomplete escape codes, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Syntax highlighting for ANSI codes in input 2. Animated sequence demonstration mode 3. Color palette extraction from decoded content 4. Sequence builder/generator tool). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar parsing functions (e.g., multiple color conversion methods) 2. Function modules unrelated to ANSI decoding (e.g., built-in text editor with spell check) 3. Fancy effects that affect performance (e.g., rainbow animations during processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if core decoding functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating parser/renderer/UI layers), proper error handling, and code organization. Deduct 5 points if global state pollution is found or no clear separation of concerns; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no input sanitization or XSS protection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with proper contrast ratios 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography (monospace fonts for code, readable sizes ≥ 14px). Deduct 3 points for each crowded visual element, 5 points for poor color contrast affecting readability, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Input response delay ≤ 100ms 2) Smooth scrolling and resizing animations 3) Clear visual feedback for all interactions 4) Proper loading states for file processing. Deduct 5 points for each operation without feedback, 3 points for janky animations during large content processing, and 5 points for unclear UI states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

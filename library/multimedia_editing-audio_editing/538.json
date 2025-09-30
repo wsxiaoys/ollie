@@ -1,0 +1,68 @@
+{
+  "index": 538,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Implement an audio format conversion tool that allows users to upload audio files and select a target audio format (such as mp3, wav, ogg). After conversion is complete, the user should be able to download the file in the target format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio file upload and format detection functionality fully implemented?",
+      "description": "Review whether the code implements secure file upload with proper validation, supports multiple audio formats (mp3, wav, ogg, flac, aac), includes file size limits, MIME type verification, and audio metadata extraction. Score 0 if basic upload is missing, 5 if only simple upload without validation, and 10 if comprehensive upload with security checks and format detection is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio format conversion engine properly implemented?",
+      "description": "Check whether the conversion system uses appropriate audio processing libraries (FFmpeg, Web Audio API, or similar), supports bidirectional conversion between major formats, maintains audio quality settings, and handles sample rate/bitrate adjustments. Deduct 5 points if conversion quality is poor, 3 points if limited format support. Full score requires robust conversion with quality preservation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time conversion progress tracking and status management implemented?",
+      "description": "Evaluate whether the system provides real-time conversion progress updates, estimated time remaining, proper status indicators (queued/processing/completed/failed), and handles concurrent conversion requests efficiently. Deduct 5 points if no progress indication, 3 points if status updates are inaccurate or delayed. Requires seamless user feedback throughout the process.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the converted file download and management system complete?",
+      "description": "Check whether the code includes secure file download mechanisms, temporary file cleanup, download history tracking, and proper file naming conventions. Must handle large file downloads with resume capability and automatic cleanup of expired conversions. Deduct 5 points if no cleanup mechanism, 3 points if download security is compromised. Full implementation requires complete file lifecycle management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted audio files, unsupported formats, network interruption, conversion failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Audio preview before/after conversion 2. Batch conversion capabilities 3. Audio quality comparison tools 4. Format recommendation based on use case 5. Cloud storage integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple upload handlers coexisting) 2. Function modules unrelated to audio conversion (e.g., built-in video editor) 3. Fancy effects that affect performance (e.g., complex animations during conversion). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating upload/conversion/download layers), unit test coverage, error handling, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for upload/convert/download workflow. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) File upload feedback delay ≤ 100ms 2) Conversion progress updates every 500ms or less 3) Smooth transition animations between states (300-500ms duration) 4) Clear visual focus guidance through the conversion workflow 5) Responsive drag-and-drop interactions. Deduct 5 points for each operation without feedback, 3 points for visual after-images during file operations, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1461,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration purposes. Help me write a Super Mario code that I can run on a web page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Mario character movement system implemented?",
+      "description": "Review whether the code accurately implements Mario's movement physics including running, jumping, and momentum. Check for collision detection with platforms, enemies, and items. Score 0 if core movement is missing, 5 if basic movement exists but lacks physics accuracy, and 10 if the movement feels authentic to the original game.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the essential game mechanics fully implemented?",
+      "description": "Evaluate implementation of core Super Mario mechanics: power-ups (mushroom, fire flower), enemy interactions, coin collection, block breaking, and level completion conditions. Deduct 3 points if power-ups are missing, 3 points if enemy interactions are incomplete, and 2 points if coin/scoring system is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is a complete, playable level constructed?",
+      "description": "Check whether the code creates at least one complete, playable level with start and end points, appropriate enemy placement, platforms, and collectibles. Score 0 if there's only a test environment, 5 if there's a basic but incomplete level, and 10 if there's a well-designed, balanced level that captures the Super Mario feel.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game's visual representation authentic to Super Mario?",
+      "description": "Assess whether the visual elements (sprites, animations, backgrounds) accurately represent the Super Mario aesthetic. Check for sprite animations (walking, jumping, state changes), background parallax effects, and visual feedback. Deduct 3 points for missing animations, 4 points for poor sprite quality, and 3 points for inconsistent visual style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, browser resizing, frame rate fluctuations, etc.) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Level editor 2. Custom character skins 3. Modern visual effects while preserving retro gameplay). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the Mario game (e.g., unnecessary social media integrations) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game logic and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the UI elements (score display, lives, timer, menus) are well-integrated into the game world without breaking immersion. Check for: 1) Clean HUD design that doesn't obstruct gameplay 2) Intuitive controls with visual feedback 3) Proportional sizing of game elements. Deduct 3 points for obtrusive UI elements, 5 points for confusing control schemes, and 5 points for inconsistent visual scale. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game controls and animations feel responsive: 1) Input lag under 50ms 2) Consistent frame rate (minimum 30 FPS) 3) Smooth transitions between animations and game states. Deduct 5 points for perceptible input delay, 3 points for frame rate drops during normal gameplay, and 5 points for jerky animations or transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

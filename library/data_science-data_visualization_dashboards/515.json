@@ -1,0 +1,68 @@
+{
+  "index": 515,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable whenever possible. Develop a CDN distribution monitoring tool that checks website access speed and availability across different global regions. Display loading times and error rates for various regions on a map, with support for setting detection frequency and alert conditions. Provide historical data comparison and trend analysis, as well as CDN node switching recommendations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the global CDN monitoring system fully implemented?",
+      "description": "Review whether the code implements a comprehensive global CDN monitoring system with multiple geographic test points, parallel request handling, and proper timeout management. Check if it supports various HTTP methods and header configurations for accurate simulation of real user requests. Score 0 if the core monitoring functionality is missing, 5 if only basic single-region monitoring is implemented, and 10 if it includes at least 8 global regions with configurable test parameters.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the map visualization properly implemented?",
+      "description": "Evaluate whether the code implements an interactive map (using libraries like Leaflet, Mapbox, or D3.js) that accurately displays global CDN performance metrics. Check if the map includes color-coded performance indicators, proper tooltips showing detailed metrics, and responsive design that works across different screen sizes. Deduct 5 points if the map lacks interactive elements, 3 points if region identification is unclear, and 3 points if performance data is not visually distinguished (e.g., through color gradients or sized markers). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the detection frequency and alert mechanisms properly implemented?",
+      "description": "Check if the code provides configurable monitoring intervals (from seconds to days) with proper throttling to prevent API abuse. Verify that the alert system includes threshold configuration, multiple notification channels (email, SMS, webhook), and alert escalation logic. Deduct 5 points if the monitoring frequency is hardcoded, 3 points if alerts lack severity levels, and 5 points if there's no mechanism to prevent alert storms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the historical data comparison and trend analysis feature implemented?",
+      "description": "Review whether the solution includes data persistence (database or structured file storage), time-series visualization (charts showing performance trends), and statistical analysis functions (calculating percentiles, detecting anomalies). Check if it supports comparing current performance against historical baselines and can identify seasonal patterns. Deduct 5 points if data retention is limited to less than 7 days, 3 points if trend visualization is missing, and 3 points if there's no anomaly detection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API rate limiting, network timeouts, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper error handling when testing endpoints are unavailable or return unexpected responses. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time protocol performance comparison (HTTP/1.1 vs HTTP/2 vs HTTP/3) 2. Synthetic transaction monitoring beyond simple pings 3. AI-powered prediction of potential CDN issues). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar monitoring functions (e.g., multiple HTTP client libraries doing the same job) 2. Function modules unrelated to CDN monitoring (e.g., a built-in weather widget) 3. Fancy effects that affect performance (e.g., excessive animations that consume CPU). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating monitoring logic/visualization/data storage layers), unit test coverage, and build process automation. Check if the code follows proper architecture patterns for monitoring applications (e.g., observer pattern, pub/sub for alerts). Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional monitoring dashboard standards?",
+      "description": "Evaluate whether the dashboard design follows monitoring-specific design principles: 1) Appropriate use of color for severity indication (red for critical, yellow for warnings, etc.) 2) Clear information hierarchy with most important metrics prominently displayed 3) Proper density of information without overwhelming the user. Deduct 3 points for each confusing visual element, 5 points for misleading color usage (e.g., using red for normal status), and 5 points for cluttered dashboards that hinder quick issue identification. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and informative for monitoring purposes?",
+      "description": "Judge whether the interactive elements serve monitoring needs: 1) Quick filters to isolate problem regions/nodes 2) Drill-down capabilities from overview to detailed metrics 3) Clear visual indications when data is being refreshed or is stale. Deduct 5 points for missing real-time update indicators, 3 points for unclear data timestamp information, and 5 points for interactions that interrupt the monitoring workflow (e.g., modal dialogs that block the view of critical alerts). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "hard"
+}

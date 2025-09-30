@@ -1,0 +1,68 @@
+{
+  "index": 1293,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. You are a web design master, please help me design a webpage for batch converting EML format files to PDF format files and downloading them in a package. The webpage interface should have a girlish feel and be in HTML format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload mechanism fully implemented?",
+      "description": "Review whether the code implements a robust file upload mechanism that can handle multiple EML files, with proper validation for file types, file size limits, and visual feedback on upload progress. Score 0 if the upload functionality is not implemented, 5 if basic file upload exists without validation, and 10 if it includes drag-and-drop support, multiple file selection, and proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the EML to PDF conversion functionality properly implemented?",
+      "description": "Check whether the code includes a working client-side or server-side mechanism to convert EML files to PDF format. Evaluate if it correctly parses and renders EML headers, body text, formatting, and attachments in the resulting PDFs. Deduct 5 points if attachments are not handled, 3 points if HTML emails render poorly, and 5 points if the conversion fails on complex EML structures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the batch processing system designed effectively?",
+      "description": "Evaluate whether the code can process multiple files in parallel or sequentially with proper progress tracking. Look for features like a processing queue, pause/resume functionality, and handling of failed conversions. Deduct 5 points if there's no batch progress indication, 3 points if the system processes only one file at a time without queuing, and 5 points if it lacks error recovery for failed conversions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the download package mechanism correctly implemented?",
+      "description": "Check if the code properly creates and offers a packaged download (ZIP) of all converted PDF files, with appropriate naming conventions and metadata preservation. Evaluate whether it handles large file sizes with streaming or chunking. Deduct 5 points if there's no bulk download option, 3 points if file names are not preserved properly, and 5 points if the system fails to handle downloads over 100MB effectively. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupt EML files, browser limitations, memory constraints, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Preview of converted PDFs before download 2. Customizable PDF templates or styling options 3. Automatic email content extraction and organization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple conversion libraries loaded) 2. Function modules unrelated to EML-to-PDF conversion (e.g., unnecessary social media integrations) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/conversion logic/file handling layers), error handling quality, and build process optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not optimized for web performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet the 'girlish feel' requirement and professional design standards?",
+      "description": "Evaluate whether the design successfully incorporates a 'girlish feel' while maintaining professional functionality: 1) Appropriate color palette (soft pastels, pinks, purples) 2) Feminine design elements (rounded corners, decorative icons, delicate typography) 3) Professional layout (clear hierarchy, proper spacing, responsive design). Deduct 3 points for masculine or overly corporate visual elements, 5 points for a design that sacrifices usability for aesthetics, and 5 points for inconsistent application of the 'girlish' theme. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload and conversion status feedback is clear and immediate 2) Transitions and animations enhance rather than hinder the user experience 3) Clear visual guidance through the conversion and download process. Deduct 5 points for each operation without feedback, 3 points for jarring or intrusive animations, and 5 points for confusing navigation or workflow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Batch Processing",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1653,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable whenever possible. I need to implement an AI conversation page using Vue, which should support WeChat Work login integration and API requests to a Spring Boot backend. How can this be implemented? Please provide detailed code and explanations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue.js project structure properly organized?",
+      "description": "Evaluate whether the code follows Vue.js best practices with a clear separation of components, views, services, and store modules. Check for proper use of Vue CLI scaffolding, clear folder structure (src/components, src/views, src/services, src/store), and appropriate naming conventions. Score 0 if the structure is chaotic, 5 if basic organization exists, and 10 if it follows industry-standard project architecture with reusable components.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WeChat Work login integration implemented correctly?",
+      "description": "Review the implementation of WeChat Work SDK integration, including proper OAuth flow, QR code authentication, handling of callback URLs, token storage, and refresh mechanisms. Check for proper error handling during login failures. Deduct 5 points if the login flow is incomplete, 3 points if security best practices are not followed (such as insecure token storage), and 3 points if the integration lacks proper session management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the AI conversation interface properly implemented?",
+      "description": "Assess whether the conversation UI includes essential features: message history display, input area with submit functionality, loading indicators, and proper message formatting (user vs AI messages). Check for proper handling of conversation state, including message threading and context preservation. Deduct 5 points if the basic chat interface is missing key components, 3 points if message history isn't preserved properly, and 3 points if the UI doesn't clearly distinguish between user and AI messages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Spring Boot API integration complete and secure?",
+      "description": "Evaluate the implementation of API services for communicating with the Spring Boot backend, including proper authentication header handling, request/response interceptors, error handling, and retry mechanisms. Check for proper data transformation between frontend and backend. Deduct 5 points for missing authentication, 3 points for inadequate error handling, and 3 points for lack of request cancellation or duplicate request prevention. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruptions, authentication errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time typing indicators 2. Message read receipts 3. Voice input capability 4. Markdown rendering for AI responses 5. Message reactions). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple HTTP client configurations) 2. Function modules unrelated to the chat application (e.g., unnecessary third-party plugins) 3. Fancy effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/API services/state management), proper use of Vue composition API or options API, proper TypeScript usage if applicable, and test coverage. Deduct 5 points if global state pollution is found or Vue best practices are not followed; deduct 3 points if the code duplication rate is high; deduct 3 points if there are no unit tests. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling through chat history, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

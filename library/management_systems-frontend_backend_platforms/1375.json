@@ -1,0 +1,68 @@
+{
+  "index": 1375,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable. Below are SQL scripts generated based on the entity classes you provided. These scripts will create corresponding database tables, and define field types, primary keys, comments, and other information.\n\n### 1. `chat_record` table\n```sql\nCREATE TABLE `chat_record` (\n  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key ID',\n  `from_user_id` INT(11) NOT NULL COMMENT 'Sender',\n  `to_user_id` INT(11) NOT NULL COMMENT 'Recipient',\n  `status` INT(11) NOT NULL COMMENT '0 Unread 1 Read',\n  `content` VARCHAR(255) NOT NULL COMMENT 'Message content',\n  `create_time` DATETIME NOT NULL COMMENT 'Creation time',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Chat records table';\n```\n\n### 2. `sys_notice` table\n```sql\nCREATE TABLE `sys_notice` (\n  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'Notice ID',\n  `notice_title` VARCHAR(255) NOT NULL COMMENT 'Notice title',\n  `notice_type` INT(11) NOT NULL COMMENT 'Notice type (1 notification 2 announcement)',\n  `notice_content` TEXT NOT NULL COMMENT 'Notice content',\n  `status` INT(11) NOT NULL COMMENT 'Notice status (0 active 1 closed)',\n  `create_time` DATETIME NOT NULL COMMENT 'Creation time',\n  `update_time` DATETIME NOT NULL COMMENT 'Update time',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Notifications and announcements table';\n```\n\n### 3. `sys_user` table\n```sql\nCREATE TABLE `sys_user` (\n  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key ID',\n  `nickname` VARCHAR(255) NOT NULL COMMENT 'Nickname',\n  `avatar` VARCHAR(255) NOT NULL COMMENT 'Avatar',\n  `password` VARCHAR(255) NOT NULL COMMENT 'Password',\n  `mobile` VARCHAR(20) NOT NULL COMMENT 'Phone number',\n  `email` VARCHAR(255) NOT NULL COMMENT 'Email',\n  `role_id` INT(11) NOT NULL COMMENT 'Role',\n  `dept_id` INT(11) NOT NULL COMMENT 'Department ID',\n  `update_time` DATETIME NOT NULL COMMENT 'Modification time',\n  `create_time` DATETIME NOT NULL COMMENT 'Creation time',\n  `locked` INT(11) NOT NULL COMMENT '1 valid 2 invalid',\n  `deleted` INT(11) NOT NULL COMMENT 'Logical deletion 0 normal 1 deleted',\n  `confirm_password` VARCHAR(255) NOT NULL COMMENT 'Confirm password',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Backend admin user table';\n```\n\n### 4. `ticket` table\n```sql\nCREATE TABLE `ticket` (\n  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key ID',\n  `train_number` INT(11) NOT NULL COMMENT 'Train number',\n  `pass_station` VARCHAR(255) NOT NULL COMMENT 'Via stations',\n  `train_number_type` INT(11) NOT NULL COMMENT 'Train type 1 High-speed 2 EMU 3 Direct 4 Express 5 Other',\n  `ticket_number` INT(11) NOT NULL COMMENT 'Number of tickets',\n  `seat_type` INT(11) NOT NULL COMMENT 'Seat type 1 Soft seat 2 Hard seat 3 Sleeper',\n  `status` INT(11) NOT NULL COMMENT '1 Online 2 Offline',\n  `starting_point` VARCHAR(255) NOT NULL COMMENT 'Departure point',\n  `ending_point` VARCHAR(255) NOT NULL COMMENT 'Destination',\n  `price` INT(11) NOT NULL COMMENT 'Price',\n  `starting_time` DATETIME NOT NULL COMMENT 'Departure time',\n  `arriving_time` DATETIME NOT NULL COMMENT 'Arrival time',\n  `create_time` DATETIME NOT NULL COMMENT 'Creation time',\n  `update_time` DATETIME NOT NULL COMMENT 'Update time',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Ticket table';\n```\n\n### 5. `ticket_order` table\n```sql\nCREATE TABLE `ticket_order` (\n  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key ID',\n  `order_id` VARCHAR(255) NOT NULL COMMENT 'Order ID',\n  `user_id` INT(11) NOT NULL COMMENT 'User ID',\n  `ticket_id` INT(11) NOT NULL COMMENT 'Ticket ID',\n  `username` VARCHAR(255) NOT NULL COMMENT 'Username',\n  `id_card` VARCHAR(255) NOT NULL COMMENT 'ID card number',\n  `create_time` DATETIME NOT NULL COMMENT 'Creation time',\n  `update_time` DATETIME NOT NULL COMMENT 'Update time',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Ticket order table';\n```\n\n### 6. `user` table\n```sql\nCREATE TABLE `user` (\n  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key ID',\n  `nickname` VARCHAR(255) NOT NULL COMMENT 'Nickname',\n  `password` VARCHAR(255) NOT NULL COMMENT 'Password',\n  `avatar` VARCHAR(255) NOT NULL COMMENT 'Avatar',\n  `gender` INT(11) NOT NULL COMMENT 'Gender',\n  `mobile` VARCHAR(20) NOT NULL COMMENT 'Phone number',\n  `status` INT(11) NOT NULL COMMENT 'Status 1 Normal 2 Banned',\n  `create_time` DATETIME NOT NULL COMMENT 'Creation time',\n  `update_time` DATETIME NOT NULL COMMENT 'Update time',\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='User table';\n```\n\n### Notes:\n1. **Field types**: Adjust field types according to actual needs, such as the length of `VARCHAR` or the range of `INT`.\n2. **Character set**: Default to `utf8mb4` to support more characters (such as emoji).\n3. **Engine**: Default to `InnoDB` engine, supporting transactions and foreign keys.\n4. **Comments**: Table name and field comments can be adjusted according to actual requirements.\n\nPlease help me generate a ticket management system based on the above table information, using Spring Boot, MyBatis, and templates for the frontend pages.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the database schema design logically sound?",
+      "description": "Review whether the database tables follow normalization principles, have appropriate data types, constraints, and relationships. Check for primary/foreign key definitions, indexes for performance optimization, and proper cascading rules for referential integrity.Deduct 5 points for each missing index on frequently queried fields; 10 points if foreign key constraints are not implemented correctly between related tables (e.g., ticket_order.ticket_id → ticket.id); 5 points for inappropriate data types (e.g., using VARCHAR for numeric values); 3 points for each missing constraint that could lead to data integrity issues. The full score is 15 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Spring Boot project structure properly organized?",
+      "description": "Evaluate if the code follows the standard Spring Boot project structure with clear separation of concerns (Controller, Service, Repository layers). Check for proper package organization, configuration management, and dependency injection patterns.Give full 10 points if the project follows strict layered architecture patterns with proper separation of concerns. Deduct 3 points if controllers contain business logic; 3 points if service layer is bypassed; 2 points if repositories are accessed directly from controllers; 5 points if dependency injection is not used appropriately. Score 0 if the basic MVC pattern is not followed.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the MyBatis integration complete and efficient?",
+      "description": "Check if MyBatis mappers, XML files, and annotations are correctly implemented. Assess if complex queries use efficient SQL, pagination is implemented, and if proper result mapping is configured.Award 10 points for a complete implementation with XML mappers or annotations, properly configured datasource, and transaction management. Deduct 3 points for missing pagination; 3 points for N+1 query issues; 2 points for inefficient SQL queries; 5 points if dynamic SQL is not used where appropriate. Score 0 if basic CRUD operations are not functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the ticket management system's core functionality implemented?",
+      "description": "Review if the system includes essential features: ticket creation/modification, searching/filtering, booking process, order management, and user authentication. Check if business rules like seat availability validation and booking constraints are implemented.Full 15 points for implementing all core ticket management features including search, booking, payment workflow, and order management. Deduct 3 points for each missing major feature; 5 points if ticket availability checking is not implemented; 5 points if the booking process is incomplete; 2 points for each business rule violation. Score 0 if the basic ticket CRUD operations are not functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles exceptions properly, includes input validation, implements transaction management correctly, and provides appropriate error handling and logging.Evaluate whether the code can handle common abnormal situations (such as invalid inputs, duplicate bookings, concurrent modifications) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time seat availability visualization 2. Smart recommendation system 3. Automated notification system for ticket status changes 4. Trip planning assistant).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple booking methods coexisting) 2. Function modules unrelated to ticket management (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., unnecessary animations).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design, code reuse patterns, exception handling strategy, unit test coverage, and build process automation. Check for code comments and documentation.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated; deduct 3 points if documentation is insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the ticket management UI follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear information hierarchy for ticket listings and details.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. Deduct 3 points if ticket information is not clearly presented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the ticket booking flow and management operations conform to user expectations: 1) Responsive feedback for ticket search/booking operations 2) Clear visual indicators for seat availability 3) Intuitive navigation between ticket search, booking, and order management.Deduct 5 points for each operation without feedback, 3 points for slow response times during ticket searches, and 5 points for hard-to-find key booking functions. Deduct 3 points if the booking process requires unnecessary steps. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

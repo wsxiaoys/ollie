@@ -1,0 +1,68 @@
+{
+  "index": 1158,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Implement single sign-on (SSO), page authentication, and automatic login functionality based on Vue Router + Vuex.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SSO authentication system properly implemented?",
+      "description": "Review the implementation of the Single Sign-On system. Check if it includes proper token management (JWT or OAuth), cross-domain authentication handling, and secure communication protocols (HTTPS). Verify if the code includes authentication endpoints integration, token validation logic, and proper error handling for authentication failures. Score 0 if SSO isn't implemented, 5 if basic authentication is present but lacks security features, and 10 if a complete, secure SSO implementation is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue Router authentication guard mechanism comprehensive?",
+      "description": "Evaluate the implementation of route guards (beforeEach, beforeResolve, etc.) to protect routes requiring authentication. Check if the code implements proper redirection logic for unauthenticated access attempts, handles role-based access control, and preserves the original navigation target after successful authentication. The implementation should prevent direct URL access to protected routes. Deduct 5 points if only basic route protection exists without proper redirection, 3 points if role-based permissions are missing. Full score for a complete navigation guard system with proper meta fields in route definitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the automatic login functionality correctly implemented?",
+      "description": "Check if the code implements persistent authentication through secure storage mechanisms (localStorage, cookies with proper flags, etc.). Verify the presence of token refresh logic, automatic login on page reload/revisit, and proper session timeout handling. The implementation should include initial auth state detection on application start. Deduct 5 points if token storage is insecure, 3 points if refresh tokens are not implemented, and 3 points if session expiration handling is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Vuex state management for authentication well-designed?",
+      "description": "Review the Vuex store implementation for authentication. Check if it includes proper authentication state management (user info, token storage, authentication status), dedicated mutations/actions for login/logout operations, and proper error state handling. Verify that the store integrates with the Vue Router for protected route navigation. Deduct 5 points if state management is incomplete, 3 points if authentication actions lack proper error handling, and 3 points if the store doesn't properly persist authentication state. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common authentication edge cases (token expiration during active use, network errors during authentication, concurrent login attempts, etc.) and provide friendly error prompts or recovery mechanisms. Check if error boundaries exist to prevent authentication failures from crashing the application. Code with strong robustness should handle these scenarios elegantly, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the authentication experience (e.g., 1. Biometric authentication integration 2. Progressive authentication levels based on activity sensitivity 3. Transparent background token refresh without disrupting user experience). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant authentication implementations (e.g., multiple token validation methods coexisting) 2. Function modules unrelated to authentication (e.g., excessive analytics in auth flow) 3. Unnecessary state updates that affect performance (e.g., excessive Vuex commits during authentication). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating authentication services/store modules/UI components), unit test coverage for authentication logic, and proper code organization. Deduct 5 points if global state pollution is found or authentication logic is not properly encapsulated; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper security practices for authentication are not followed (e.g., storing sensitive data in plain text). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the authentication UI meet professional design standards?",
+      "description": "Evaluate whether the authentication-related interfaces follow modern design principles: 1) Clean and focused login forms (minimal distractions) 2) Proper visual feedback for authentication states (loading, errors, success) 3) Professional form validation with clear error messages. Deduct 3 points for cluttered authentication forms, 5 points for confusing error messages, and 5 points for inconsistent visual feedback during authentication flows. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the authentication user experience smooth and seamless?",
+      "description": "Judge whether the authentication flow conforms to user expectations: 1) Login process completable within 3 steps maximum 2) Authentication state transitions are visually clear without jarring redirects 3) Appropriate loading indicators during authentication operations. Deduct 5 points for authentication flows requiring excessive steps, 3 points for abrupt page transitions during login/logout, and 5 points for missing feedback during authentication processes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

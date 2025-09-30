@@ -1,0 +1,68 @@
+{
+  "index": 632,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and demonstrable when possible. Please write code to implement a project management system where team members can view a list of all projects on the frontend page, including project name, person in charge, progress, deadline, and other information. Users should be able to create new projects, assign tasks, and update project progress status. Project managers should be able to log into the backend, manage project details, assign tasks to team members, and view the overall progress of projects.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the project list view implementation complete?",
+      "description": "Check whether the frontend properly displays all projects with required information (name, person in charge, progress, deadline). Verify if the list implements sorting/filtering capabilities and responsive design for different screen sizes. Score 0 if the project list is missing, 5 if it's basic without sorting/filtering, and 10 if fully implemented with advanced features like pagination and search functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the project creation and task assignment functionality implemented properly?",
+      "description": "Evaluate whether users can create new projects with all required fields and assign tasks to team members. Check for form validation, error handling, and user feedback. Deduct 5 points if creation lacks validation, 3 points if task assignment is missing, and 5 points if there's no confirmation or success feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the progress tracking and status update system functional?",
+      "description": "Assess if the system allows for updating project progress status with appropriate visualizations (progress bars, charts, etc.). Verify if status changes are persistent and if there's history tracking. Give 10 points if fully implemented with real-time updates and visualization, 5 points if basic functionality exists but lacks visualization, 0 points if missing entirely.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the admin/manager backend complete with proper authorization?",
+      "description": "Verify if the backend includes authentication, role-based access control, and proper security measures. Check if project managers can manage project details and have access to comprehensive dashboards. Deduct 5 points if authentication is missing/weak, 3 points for incomplete dashboards, and 5 points if role separation is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, server errors, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaboration tools 2. Automated deadline reminders 3. Intelligent task prioritization 4. Performance analytics dashboards). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to update tasks) 2. Function modules unrelated to project management (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating frontend/backend concerns, using components/services architecture), unit test coverage, and build process automation. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between business logic and UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for important actions. Deduct 5 points for each operation without feedback, 3 points for sluggish transitions when updating project statuses, and 5 points if critical actions (like saving changes) lack clear confirmation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

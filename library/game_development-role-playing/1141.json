@@ -1,0 +1,68 @@
+{
+  "index": 1141,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Pay attention to ensure that the generated code is executable for demonstration. Firstly, comment on each line. Secondly, look for examples from Honkai: Star Rail where critical damage is displayed as 200%, 150%, etc. Finally, for normal attacks, skills, etc., show what attribute multipliers are used without providing specific values.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the code provided with comprehensive line-by-line comments?",
+      "description": "Review whether each line of code includes meaningful comments that explain the purpose, logic, or functionality. Comments should be clear, concise, and add value beyond what is obvious from the code itself. Evaluate whether comments follow consistent formatting and explain complex algorithms or decision points. Score 0 if no comments are present, 5 if comments are sparse or superficial, and 10 if comments are comprehensive and insightful.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the code accurately implement critical damage visualization systems similar to Honkai: Star Rail?",
+      "description": "Check if the implementation correctly displays critical damage percentages (200%, 150%, etc.) in a visually distinct way. The visualization should include: 1) Different text color/size for critical hits 2) Animated effects that scale with critical damage multiplier 3) Appropriate timing for displaying the percentage. Deduct 3 points if critical values don't match the game reference, 5 points if animations are missing, and 3 points if critical hit indicators are not visually prominent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the attribute multiplier system for different attack types properly implemented?",
+      "description": "Evaluate whether the code correctly implements different attribute multipliers for normal attacks, skills, and ultimates without hardcoding specific values. Check if the system: 1) Uses a flexible formula system that can draw from character stats 2) Separates base damage calculation from multiplier application 3) Handles special conditions like elemental weaknesses. Deduct 5 points if multipliers are hardcoded, 3 points if attack type differentiation is missing, and 5 points if the damage calculation pipeline is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include a proper damage calculation system that integrates with the visualization?",
+      "description": "Assess whether the code connects the damage calculation system with the visualization components. Look for: 1) Event-based architecture for damage events 2) Proper separation between calculation logic and display logic 3) Performance optimization for multiple simultaneous damage numbers. Deduct 3 points if calculation and visualization are tightly coupled, 5 points if the system doesn't scale well with multiple damage instances, and 3 points if performance issues are evident. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as null inputs, division by zero, unexpected data types, animation timing conflicts, etc.) and provide graceful fallbacks or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Damage type-specific visual effects 2. Contextual damage indicators based on hit locations 3. Responsive audio cues for critical hits). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation functions 2. Feature creep beyond damage calculation/visualization (e.g., unnecessary inventory systems) 3. Overly complex effects that affect performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating damage calculation/visualization/animation layers), potential for unit testing, and maintainability. Deduct 5 points if global state pollution is found or proper design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code isn't organized into logical classes or modules. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design follows modern game UI principles: 1) Harmonious color matching for damage numbers (critical vs. normal) 2) Proper layout and positioning of damage indicators 3) Professional typography with appropriate size and readability. Deduct 3 points for each visual crowding issue, 5 points for poor color contrast or illegibility, and 5 points for inconsistent visual style compared to the reference game. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation effects conform to game feedback characteristics: 1) Damage number appearance timing is appropriate 2) Animation duration controlled for readability without blocking gameplay 3) Clear visual hierarchy between normal and critical damage. Deduct 5 points for jerky animations, 3 points for overlapping damage numbers that cause readability issues, and 5 points for animations that distract from core gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "hard"
+}

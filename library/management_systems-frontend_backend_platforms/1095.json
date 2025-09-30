@@ -1,0 +1,68 @@
+{
+  "index": 1095,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. Help me write a hyperlink page for accessing different system addresses, which needs to be published through Windows IIS (so please tell me the detailed publishing method). The page should be titled \"Housing and Construction Business Group Pre-sales Demonstration Address Collection\" and present system names, descriptions, and addresses in list format. The page should allow manual maintenance of system names, addresses, and descriptions. Please implement this page with code, enabling me to maintain system information and publish it myself. Add a search box, and at the bottom, include a fixed line of text that is not affected by scrolling: Copyright: Guangdong Nanfang Digital Technology Co., Ltd.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic HTML structure properly implemented for an IIS-hosted page?",
+      "description": "Check if the code includes a complete HTML structure with proper DOCTYPE, meta tags (including charset and viewport), title element set to 'Housing and Construction Business Group Pre-sales Demonstration Address Collection', and appropriate CSS/JS references. Verify that file extensions are compatible with IIS (.html, .aspx, etc.). Score 0 if the structure is incomplete, 5 if basic structure exists but lacks important meta tags, and 10 if fully implemented with proper IIS considerations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the system address listing functionality fully implemented?",
+      "description": "Evaluate whether the code correctly implements the core functionality to display system names, descriptions, and addresses in a structured list format. Check if the list is properly styled, organized, and renders correctly. Score 5 if only basic unstyled listing is implemented, 8 if the listing has proper styling but lacks organization, and 10 if the implementation includes proper sectioning, styling, and visual hierarchy that enhances readability.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the manual maintenance functionality properly implemented?",
+      "description": "Assess whether the code provides a complete interface for adding, editing, and deleting system information (names, addresses, descriptions). Check for form validation, data persistence mechanism (localStorage, server-side storage, etc.), and intuitive editing UI. Score 0 if maintenance functionality is missing, 5 if basic functionality exists but lacks validation or proper UI, and 10 if full CRUD operations with validation and user-friendly interface are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the search box functionality correctly implemented?",
+      "description": "Verify that the search functionality works as expected - filtering systems by name, description, or address in real-time or upon submission. Check if the search is case-insensitive, handles partial matches, and provides appropriate feedback when no results are found. Score 0 if search is missing, 5 if basic search exists but has limitations, and 10 if search is fully functional with filtering options and proper user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty data, malformed inputs, storage limitations) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should prevent XSS attacks when displaying user-entered content. Score 10 points for comprehensive error handling, 5 points for partial handling of edge cases, and 0 points if critical exceptions aren't addressed.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Export functionality to CSV/PDF 2. Dark/light mode toggle 3. Responsive design for mobile access). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search methods) 2. Function modules unrelated to address listing (e.g., unnecessary widgets) 3. Fancy effects that affect performance (e.g., heavy animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code organization, and maintainability. Check for proper comments, consistent naming conventions, and separation of concerns. Deduct 5 points if global variables are excessively used; deduct 5 points if the code has high duplication; deduct 5 points if CSS, HTML, and JS are mixed without clear separation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are IIS deployment instructions clear and accurate?",
+      "description": "Assess whether the provided IIS publishing method is detailed, accurate, and complete. Instructions should include file placement, IIS configuration, permissions setup, and any required Windows configurations. Score 0 if instructions are missing, 5 if basic instructions are provided but lack important details, and 10 if comprehensive step-by-step instructions with screenshots or diagrams are included to ensure successful deployment even by someone unfamiliar with IIS.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1361,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Create a new code that follows this process: first let the user upload a binary image, identify the contours in the image, then estimate the depth of each layer, and fill different refractive textures for layers with different depths.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image upload and processing mechanism fully implemented?",
+      "description": "Evaluate whether the code implements a complete image upload functionality, including file input validation (checking if it's a valid binary image), preview capability, and proper error handling for corrupted or invalid files. Check if the image is properly loaded for processing with appropriate resolution/size handling. Score 0 if image upload is not implemented, 5 if basic upload exists but with limitations, 10 if fully implemented with comprehensive error handling and preview functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the contour detection algorithm correctly implemented?",
+      "description": "Review the contour detection implementation. Check if appropriate edge detection algorithms (e.g., Canny edge detector, Sobel operator) are used before contour extraction. Verify if the contours are properly identified and stored as vector paths or coordinate sets. Examine if the code handles various image conditions (high contrast, low contrast, noise). Deduct 5 points if only basic edge detection is implemented without proper contour extraction, 3 points if noise handling is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the depth estimation logic properly implemented?",
+      "description": "Assess the depth estimation algorithm for nested contours. Check if the code correctly identifies hierarchical relationships between contours and assigns appropriate depth values. Verify if the depth estimation accounts for contour size, position, and nesting level. The algorithm should handle complex cases like islands (contours within contours). Deduct 5 points if the depth estimation is simplistic (e.g., only counting nesting levels), 3 points if it doesn't handle special cases like disconnected contours. Score 10 if the depth estimation is comprehensive and accurate.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the refractive textures appropriately applied to different depth layers?",
+      "description": "Evaluate how refractive textures are applied based on estimated depths. Check if the code includes a variety of realistic refractive materials (e.g., glass, water, crystal) with physically plausible parameters. Verify if the texturing accounts for depth relationships between layers with appropriate visual outcomes. Deduct 5 points if only basic color filling is used instead of true refractive effects, 3 points if the refraction parameters aren't depth-dependent. Score 10 if the implementation includes advanced features like environment mapping or realistic light interaction.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as processing very large images, images with no clear contours, unexpected user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive adjustment of depth perception 2. Multiple refraction styles/presets 3. Real-time preview of changes 4. Export capabilities to 3D formats). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar image processing functions (e.g., multiple edge detection algorithms running in sequence) 2. Function modules unrelated to the core task (e.g., unnecessary image filters) 3. Computationally expensive effects that significantly slow processing without proportional quality improvement. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/image processing/rendering layers), algorithm efficiency for large images, and memory management. Deduct 5 points if global state pollution is found or appropriate design patterns are not used; deduct 5 points if the image processing pipeline isn't optimized for performance; deduct 5 points if memory leaks might occur with large images. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall UI design follows modern design principles: 1) Harmonious color scheme that doesn't distract from the image processing results 2) Proper layout with clear separation between controls and preview area 3) Professional visualization of depth layers with appropriate legends. Deduct 3 points for cluttered controls, 5 points for poor visual representation of depth layers, and 5 points for inadequate feedback during processing steps. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactive elements provide appropriate feedback: 1) Visual indication during image processing with progress feedback 2) Smooth transitions when switching between original image, contour view, and final result 3) Interactive elements for adjusting depth estimation or refraction parameters with immediate visual feedback. Deduct 5 points for lack of processing indicators on large images, 3 points for jarring transitions between views, and 5 points for sluggish response when adjusting parameters. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

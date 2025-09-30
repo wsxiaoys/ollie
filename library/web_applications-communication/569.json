@@ -1,0 +1,68 @@
+{
+  "index": 569,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that any code you generate is executable. Design an online meeting room application that supports video and audio calls. Users can turn on/off their camera and microphone, and view video streams of other participants. Include a chat window for sending text messages.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video call functionality fully implemented?",
+      "description": "Review whether the code implements WebRTC for peer-to-peer video connections with proper signaling, ICE candidate exchange, and SDP negotiation. Check for camera access using getUserMedia API and whether video streams are properly rendered. Score 0 if video functionality is missing, 5 if basic implementation exists but with limitations, and 10 if fully featured with fallback mechanisms and quality controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio call functionality properly implemented?",
+      "description": "Evaluate the audio implementation including microphone access, audio level visualization, noise suppression, and echo cancellation features. Check for mute/unmute toggle functionality and whether audio state is properly synchronized across participants. Deduct 5 points if audio processing features are missing, and 3 points if there's no audio fallback mechanism when video fails. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the participant management system complete?",
+      "description": "Assess whether the code includes user presence detection, participant lists with status indicators, room joining/leaving protocols, and host controls (if applicable). Check for proper handling of participants unexpectedly disconnecting and reconnection logic. Deduct 5 points for missing presence update mechanisms, and 3 points if there's no visual indication of who is speaking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the chat functionality comprehensive and integrated with the call experience?",
+      "description": "Review the implementation of the text chat system including message formatting, timestamp display, read receipts, and message persistence. Check whether chat is properly synchronized with the call experience (notifications during calls, history preservation). Deduct 5 points if message synchronization is unreliable, and 3 points if chat history isn't preserved across reconnections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission denials, device switching, network fluctuations, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Background blur/replacement 2. Real-time transcription 3. Recording functionality 4. Screen sharing with annotation tools 5. Breakout room support). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to mute/unmute) 2. Function modules unrelated to video conferencing (e.g., a built-in game) 3. Fancy effects that affect performance and bandwidth (e.g., unnecessary animations during critical communications). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating media handling/UI/networking layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Control response delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual indicators for mute/unmute, video on/off states. Deduct 5 points for each operation without feedback, 3 points for jarring transitions when participants join/leave, and 5 points for confusing or inconsistent UI controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 409,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Implement PDF file preview functionality in a Vue 3 and Vant project.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the PDF preview core functionality fully implemented?",
+      "description": "Evaluate whether the implementation uses appropriate PDF rendering libraries (like PDF.js) with proper integration into Vue 3. Check if the PDF document loads correctly, pages render with proper quality, and zoom controls work. Score 0 if the core rendering is not implemented, 5 if only basic preview is available without navigation controls, and 10 if full PDF viewing capabilities are implemented including page navigation, zooming, and rotation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Vue 3 integration correctly implemented?",
+      "description": "Verify that the PDF viewer properly utilizes Vue 3's Composition API, reactive state management, and lifecycle hooks. Check for proper component structure, ref/reactive usage, and setup() function implementation. Deduct 5 points if the implementation uses outdated patterns from Vue 2, 3 points if reactivity isn't properly utilized for PDF state management, and 2 points if proper error boundaries are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Vant UI properly integrated with the PDF viewer?",
+      "description": "Assess whether Vant UI components are correctly used for the PDF viewer interface (e.g., buttons, loaders, icons, dialogs). Check if the implementation follows Vant design principles and responsive behaviors on mobile devices. Deduct 5 points if custom components are used where appropriate Vant components exist, 3 points if Vant theming isn't consistently applied, and 3 points if mobile adaptations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are PDF loading states and error handling properly implemented?",
+      "description": "Check if the implementation handles different loading states (loading, success, error) with appropriate UI feedback using Vant components like Toast, Dialog, or Loading. Verify that network errors, invalid PDFs, and other edge cases are gracefully handled with user-friendly messages. Deduct 4 points for missing loading indicators, 4 points for inadequate error handling, and 2 points for missing retry mechanisms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (large PDF files, slow networks, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Text search and highlighting 2. PDF annotation capabilities 3. Thumbnail navigation panel 4. Night mode for reading). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple PDF rendering engines used simultaneously) 2. Function modules unrelated to PDF preview (e.g., built-in document editor) 3. Unnecessary animations or effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of PDF rendering logic from UI components), configuration options, memory management, and resource disposal. Deduct 3 points if global state pollution is found; deduct 3 points if the PDF viewer doesn't properly clean up resources when unmounted; deduct 4 points if configuration options aren't abstracted properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the PDF viewer UI follows modern mobile design principles: 1) Consistent with Vant design language 2) Proper layout spacing for touch interactions (controls minimum 44px height) 3) Professional typography for PDF content display. Deduct 3 points for cluttered controls, 4 points for inconsistent design with the rest of the Vant application, and 3 points for poor readability of PDF content. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the PDF interactions conform to mobile touch behavior: 1) Smooth pinch-to-zoom 2) Responsive page navigation without jank 3) Clear loading progress indicators and transitions. Deduct 3 points for laggy page rendering, 3 points for unresponsive zoom controls, and 4 points for jarring page transitions or rendering artifacts. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

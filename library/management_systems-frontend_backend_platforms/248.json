@@ -1,0 +1,68 @@
+{
+  "index": 248,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code examples when possible. Electron+Vue2.0 local application sending network requests",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Electron setup properly configured for Vue 2.0 integration?",
+      "description": "Review whether the project structure correctly integrates Vue 2.0 within Electron with proper main and renderer process separation. Check if background.js (main process) and Vue app initialization are correctly linked. Score 0 if no proper integration exists, 5 if basic setup is implemented but with architectural flaws, and 10 if the integration follows Electron best practices with clear process separation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are network requests implemented with appropriate libraries and error handling?",
+      "description": "Evaluate the network request implementation (Axios, Fetch API, or Electron's net module). Check for proper timeout configurations, retry mechanisms, and comprehensive error handling. Deduct 3 points if CORS handling is missing for external APIs, 3 points if no request/response interceptors are implemented, and 5 points if error states aren't properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there proper main and renderer process communication for network operations?",
+      "description": "Check if the application uses appropriate IPC channels (ipcMain/ipcRenderer) for network-related operations that should be in the main process. Evaluate if proper security measures are in place when handling external data. Deduct 5 points if all network requests are made directly from the renderer process without security considerations, and 3 points if IPC communication lacks error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are offline capabilities and connection management implemented?",
+      "description": "Review whether the code handles network connectivity issues, includes offline detection, and implements data caching mechanisms. Check for online/offline event listeners and graceful degradation strategies. Deduct 5 points if no offline detection exists, 3 points if request queueing for offline mode is missing, and 3 points if no visual indicators for connection status are provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, malformed responses, certificate issues, network timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smart request throttling/batching 2. Background synchronization with system tray notifications 3. Visual network activity monitor). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Multiple HTTP client implementations coexisting without clear purpose 2. Unnecessary polling when WebSockets would be more appropriate 3. Excessive logging that impacts performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API services/business logic/UI components), unit test coverage for network operations, and proper environment configuration for development vs production. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no environment-based API configuration exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Loading states for network operations appear within 300ms 2) Progress indicators for long-running requests 3) Smooth transitions for data updates after requests complete. Deduct 5 points for each operation without loading feedback, 3 points for jumpy layouts during data loading/updating, and 5 points for blocked UI during network operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

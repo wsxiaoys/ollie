@@ -1,0 +1,68 @@
+{
+  "index": 1069,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that any code you provide is executable. Create a demonstration diagram of a contract approval process for an architectural design project based on vue-flow.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core contract approval process flow correctly implemented with vue-flow?",
+      "description": "Check whether the code correctly implements the architectural contract approval process using vue-flow, including proper node types (start, approval steps, decision points, end), directed edges with correct flow direction, and appropriate edge styles. Score 0 if vue-flow is not implemented at all, 5 if only basic nodes and edges are present without proper flow logic, and 10 if the complete architectural design approval process is accurately represented with appropriate node types and logical flow connections.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the approval stages for the architectural design project properly defined?",
+      "description": "Evaluate whether the demonstration includes all essential stages of an architectural design contract approval process (e.g., initial submission, preliminary review, technical evaluation, financial assessment, final approval, etc.). Deduct 2 points for each missing critical stage. Check if conditional paths and decision points are correctly implemented (e.g., reject/revise/approve branches). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the vue-flow interaction functionality properly implemented?",
+      "description": "Verify if essential vue-flow interactions are implemented, including: node dragging, connection creation/deletion, panning/zooming, node selection, and mini-map (if applicable). Test if custom interactions relevant to contract approval (like approval action buttons, status changes, document attachment) are functional. Deduct 2 points for each missing core interaction feature. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the demonstration include appropriate data models for architectural contracts?",
+      "description": "Check if the code implements proper data structures for architectural contract entities, including contract metadata (parties involved, project details, financial terms), approval history, current status tracking, and document references. Examine if state management is implemented correctly. Deduct 3 points if the data model is incomplete, 5 points if data persistence is missing, and 2 points if state updates don't trigger appropriate UI changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid node connections, concurrent editing conflicts, network interruptions, loading large diagrams) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaboration functionality 2. Approval timeline visualization 3. Document preview integration 4. Automated notifications for stakeholders). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to approve a contract) 2. Function modules unrelated to architectural contract approval (e.g., built-in chat that's not for approval communication) 3. Fancy effects that affect performance (e.g., excessive animations that slow down diagram rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating flow logic/UI components/data services), component reusability, and build process optimization. Deduct 5 points if global state pollution is found or proper Vue composition API/options API patterns are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not optimized for vue-flow integration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for a professional architectural contract system (using color coding for approval states) 2) Proper layout spacing with clear visual hierarchy between the flow diagram and supporting UI elements 3) Professional font system appropriate for technical documentation. Deduct 3 points for each crowded visual element, 5 points for unclear node status indicators, and 5 points for poor readability of critical contract information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Node dragging and connecting feels responsive (≤ 100ms feedback) 2) Transition animations for approval status changes are meaningful and appropriately timed (300-500ms) 3) Clear visual feedback for user actions like approvals/rejections. Deduct 5 points for laggy diagram manipulation, 3 points for confusing transition effects between approval states, and 5 points for unclear visual feedback when interacting with critical approval functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Mermaid Flowcharts-Logic Flowcharts",
+  "difficulty": "easy"
+}

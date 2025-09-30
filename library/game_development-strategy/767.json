@@ -1,0 +1,68 @@
+{
+  "index": 767,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be demonstrated. Help me write code for a Gomoku (Five in a Row) mini-game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Gomoku game core logic fully implemented?",
+      "description": "Review whether the code accurately implements the 15x15 or 19x19 board coordinate system through HTML/JavaScript, and whether it includes win condition detection (five consecutive stones in horizontal, vertical, or diagonal directions), forbidden move validation for black pieces (double-three, double-four, overline rules), and turn-based gameplay mechanics. Score 0 if the core game logic is not implemented, 5 if only basic stone placement and simple win detection are implemented, and 10 if all standard Gomoku rules including forbidden moves are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the interactive board interface properly designed?",
+      "description": "Check whether the game board provides clear visual feedback for stone placement, including hover effects on intersection points, clear distinction between black and white stones, and proper board grid rendering. Evaluate if the board supports both mouse click and touch interactions. Deduct 5 points if stone placement feedback is unclear, and 3 points if the board intersection detection is imprecise (stones not aligning properly with grid points). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is comprehensive game state management implemented?",
+      "description": "Evaluate whether the code includes complete game state tracking such as move history, undo/redo functionality, game reset capability, and current player indication. Check if the game can detect and handle game-ending conditions (win, draw, resignation). Deduct 5 points if move history is not maintained, and 3 points if game state transitions are not properly managed. Give 10 points if all state management features are fully implemented including save/load game functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are AI opponent capabilities or multiplayer features provided?",
+      "description": "Check whether the code includes either a functional AI opponent with reasonable difficulty levels (using algorithms like minimax, alpha-beta pruning, or pattern recognition) or local multiplayer functionality. For AI implementation, evaluate move quality and response time. For multiplayer, check turn management and game synchronization. Deduct 5 points if AI makes obviously poor moves or if multiplayer turn switching is buggy. Give 10 points for well-implemented AI or smooth multiplayer experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as clicking outside the board, rapid consecutive clicks, invalid moves, browser refresh during gameplay, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should prevent illegal moves and maintain game integrity under various user interactions, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the gaming experience (e.g., 1. Move suggestion system with strength indicators 2. Game replay with animated move sequence 3. Multiple board themes or stone styles 4. Sound effects for stone placement 5. Statistical analysis of winning patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple win detection algorithms coexisting) 2. Function modules unrelated to Gomoku (e.g., built-in calculator or weather widget) 3. Overly complex animations that affect game responsiveness (e.g., elaborate stone-dropping physics). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core gameplay is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/UI rendering/event handling), code organization and readability, and proper use of design patterns. Deduct 5 points if global state pollution is found or if code is poorly structured; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if variable naming is inconsistent or functions are overly complex. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Harmonious color scheme with clear contrast between board and stones 2) Proper proportions with board taking appropriate screen space 3) Clean typography for game information display 4) Consistent visual hierarchy for buttons and controls. Deduct 3 points for each cluttered visual element, 5 points for poor color contrast making gameplay difficult, and 5 points for inconsistent or unprofessional styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the gameplay interaction smooth and intuitive?",
+      "description": "Judge whether the game interactions conform to user expectations: 1) Stone placement response time ≤ 100ms 2) Smooth hover effects and visual feedback 3) Clear indication of whose turn it is 4) Intuitive button placement and game controls 5) Responsive design that works on different screen sizes. Deduct 5 points for each unresponsive interaction, 3 points for confusing UI elements, and 5 points for poor mobile compatibility. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "easy"
+}

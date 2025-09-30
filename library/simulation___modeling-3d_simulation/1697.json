@@ -1,0 +1,68 @@
+{
+  "index": 1697,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code when possible. How can I integrate indoor 3D models with pathfinding to develop indoor path planning code for a UniApp mini-program?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D model loading and rendering system properly implemented?",
+      "description": "Evaluate whether the code efficiently loads and renders 3D models using appropriate frameworks (Three.js, Babylon.js) compatible with UniApp. Check for proper model optimization techniques (LOD, texture compression, geometry instancing). Score 0 if no 3D rendering code is provided, 5 if basic rendering is implemented without optimization, and 10 if fully optimized rendering with proper memory management is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the pathfinding algorithm implementation complete and efficient?",
+      "description": "Review the implementation of pathfinding algorithms (A*, Dijkstra, NavMesh). Assess whether the algorithm handles indoor constraints (walls, doors, stairs) correctly. Verify performance optimization such as spatial indexing for large environments. Deduct 3 points if only basic algorithms are implemented without spatial optimization, 5 points if the algorithm doesn't handle multi-level navigation (stairs/elevators), and 2 points if no performance benchmarks are provided. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a proper integration between 3D models and navigation data?",
+      "description": "Check whether the code includes a system to extract or map navigation data from 3D models or integrate external navigation meshes. Evaluate if the system handles model coordinate systems properly and includes a mechanism to update navigation data when the model changes. Deduct 5 points if manual mapping is required, 3 points if there's no update mechanism, and 5 points if coordinate transformations are incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the UniApp integration handled correctly for cross-platform compatibility?",
+      "description": "Assess whether the code properly uses UniApp APIs and follows its lifecycle management. Check if the implementation handles platform differences (iOS/Android/H5) and uses appropriate rendering contexts. Deduct 5 points if WebView performance is not optimized, 3 points if platform-specific code is not separated appropriately, and 5 points if the solution doesn't work on all major platforms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as model loading failures, navigation errors, memory constraints on mobile devices, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time rerouting when obstacles appear 2. AR visualization of paths 3. Indoor positioning integration 4. Voice guidance for navigation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar functions (e.g., multiple pathfinding algorithms without clear purpose) 2. Function modules unrelated to indoor navigation (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating 3D rendering/navigation/UI layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated for UniApp. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clear visualization of 3D space with proper lighting and materials 2) Intuitive path representation (contrasting colors, proper width) 3) UI elements that don't obstruct the 3D view but remain accessible. Deduct 3 points for cluttered navigation indicators, 5 points for poor contrast between paths and environment, and 5 points for UI elements that obscure important parts of the navigation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and performance-optimized?",
+      "description": "Judge whether the application maintains good performance on mobile devices: 1) Stable 30+ FPS during navigation 2) Responsive controls with touch feedback ≤ 100ms 3) Efficient memory usage (under 300MB) for 3D models. Deduct 5 points for frame drops during camera movement, 3 points for navigation calculation delays over 500ms, and 5 points for memory leaks during extended usage. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "hard"
+}

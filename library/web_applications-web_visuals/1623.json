@@ -1,0 +1,68 @@
+{
+  "index": 1623,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure any code you generate can be executed and displayed. Use dev to create a bouncing heart.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the bouncing heart animation fully implemented?",
+      "description": "Examine if the code correctly implements a heart-shaped object with bouncing physics. Check if the heart shape is accurately drawn using path commands or SVG elements. Deduct 5 points if the shape isn't clearly heart-like. Give 0 points if there's no bouncing animation, 5 points if basic movement exists, and 10 points if the heart shows realistic physics with proper acceleration/deceleration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the heart bounce with realistic physics?",
+      "description": "Evaluate the physics implementation of the bouncing effect. Look for gravity simulation, proper velocity changes on bounce, and natural movement patterns. A high-quality implementation would include elastic deformation on impact, momentum conservation, and possibly damping effects. Deduct 3 points if gravity feels unnatural, 3 points if the bounce lacks realistic rebound, and 5 points if there's no collision detection with boundaries. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the animation smooth and performant?",
+      "description": "Check if the animation runs at 60fps without jank or stuttering. Examine whether the implementation uses requestAnimationFrame() instead of setInterval/setTimeout for better performance. Consider whether the rendering approach is optimized (Canvas/SVG/CSS). Deduct 5 points for visible stuttering during animation, 3 points for inefficient animation loops, and 5 points if performance degrades over time. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the heart visually appealing?",
+      "description": "Assess the visual quality of the heart. Check for smooth curves, appropriate coloring/shading, and whether any visual enhancements (gradients, shadows, etc.) are implemented tastefully. A great implementation might include pulsing effects, particle trails, or creative styling. Deduct 5 points for jagged edges or crude shape implementation, 3 points for plain/flat appearance without any styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, browser tab switching, device rotation, etc.) and maintain the animation state correctly. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. User interaction with the heart 2. Multiple hearts with different behaviors 3. Special effects like trails or particle emissions on bounce). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation loops or duplicate render functions 2. Unnecessary complex calculations that could be simplified 3. Excessive effects that impact performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core animation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of concerns between animation, rendering, and physics), naming conventions, and reusability. Deduct 5 points if animation logic is mixed with rendering code; deduct 3 points if variable/function names are unclear; deduct 5 points if the code can't be easily adapted for different scenarios. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the implementation meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern visual principles: 1) Appropriate use of color for the heart (not garish) 2) Good proportions and symmetry in the heart shape 3) Professional integration with the page (no awkward overlaps or positioning). Deduct 3 points for poor color choices, 5 points for asymmetrical or poorly proportioned hearts, and 5 points for hearts that don't integrate well with the page layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction responsive and user-friendly?",
+      "description": "Judge whether any user interactions (if implemented) are intuitive and responsive: 1) Click/touch responses within 100ms 2) Clear visual feedback for interactions 3) Intuitive controls if the heart can be manipulated. Deduct 5 points for delayed response to user input, 3 points for confusing interaction patterns, and 5 points for complete lack of interaction when interaction would enhance the experience. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

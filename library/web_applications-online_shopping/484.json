@@ -1,0 +1,68 @@
+{
+  "index": 484,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure the generated code is executable and can be demonstrated.\n\n## Role\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code that is fully annotated with simple, easy-to-understand language. Don't output anything else.\n\n## Output Rules\n1. You should always generate complete, runnable project code. Please ensure the project is complete and executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Before final output, carefully review and check all code to evaluate its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n## Project Requirements Description\nPlease create an online furniture shopping website. The homepage should have different furniture style display areas, such as modern minimalist, European classical, etc. Clicking on a style should lead to the corresponding style's furniture list page. Each furniture item on the list page should have a 3D model display button, which when clicked opens a new window to view the complete 3D model of the furniture. The product details page should include furniture dimension measurement diagrams and placement suggestions. The shopping cart page should support grouping by product category, making it convenient for users to view different categories of products. During checkout, users can use coupons, entering a coupon code to calculate the actual payment amount.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the furniture style categorization system well-implemented?",
+      "description": "Check if the code properly implements furniture style categories (modern minimalist, European classical, etc.) with appropriate data structures and navigation. The homepage should display these categories clearly with visual differentiation, and the routing system should correctly navigate to the corresponding style list pages. Evaluate if the category system is extensible for future additions.0 points if styles are hardcoded without proper data structures; 5 points if basic categories exist but lack visual differentiation; 10 points for a complete implementation with proper data modeling, visual distinction, and smooth navigation between homepage and style pages.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 3D furniture model viewer functionality properly implemented?",
+      "description": "Examine the implementation of the 3D model viewer feature. Check if it uses appropriate libraries (Three.js, Babylon.js, etc.), loads models efficiently, provides proper camera controls (zoom, pan, rotate), and renders models with correct materials and lighting. The viewer should open in a modal/new window as specified and maintain performance across different devices.0 points if 3D viewing is missing; 3 points if basic viewing exists but lacks proper controls; 7 points if viewing works with basic controls but has performance issues; 10 points for complete implementation with optimized loading, intuitive controls, and responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are furniture dimension measurements and placement suggestions implemented?",
+      "description": "Verify if product detail pages include interactive dimension diagrams with clear measurements and scale indicators. Check for placement suggestion visualizations that show the furniture in context (room layouts, etc.). These should be more than static images - they should provide real value through interactivity or detailed visualization.0 points if measurements/suggestions are missing; 5 points if basic static diagrams exist; 8 points if diagrams are detailed but not interactive; 10 points for complete implementation with interactive dimensions and contextual placement suggestions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the shopping cart category grouping functionality implemented?",
+      "description": "Evaluate the shopping cart's implementation of category grouping. Verify if products are correctly categorized and grouped in the cart view, with appropriate visual separation, category headers, and the ability to collapse/expand groups. Check if the cart maintains these groupings after page refreshes through proper state management.0 points if grouping is absent; 5 points if basic grouping exists but lacks visual clarity or has usability issues; 10 points for complete implementation with clear visual hierarchy, proper state management, and smooth interactions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, invalid user input, API failures, 3D model loading errors) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should implement proper input validation, error boundaries, and graceful fallbacks.0 points if no exception handling exists; 5 points if basic error handling is present but inconsistent across components; 10 points for comprehensive error handling with user-friendly recovery mechanisms throughout the application.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR viewing to place furniture in user's room 2. Color/material customization for furniture 3. Room planning tool 4. Social sharing with 3D previews).Add 3 points for each practical innovative feature implemented (maximum 10 points). Features must be fully functional and add genuine value to the user experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart systems coexisting) 2. Function modules unrelated to furniture shopping (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations or particle effects that slow page loading).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, business logic, and data services), component reusability, state management approach, and build process automation. Evaluate code organization, naming conventions, and documentation quality.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Harmonious color matching appropriate for furniture retail 2) Proper layout spacing with adequate white space 3) Professional typography system 4) High-quality product imagery and visualization.Deduct 3 points for each crowded visual element, 5 points for inappropriate color schemes that don't match furniture styles, and 5 points for inconsistent layout patterns across pages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to high-quality e-commerce interactions: 1) Cart updates with visual feedback under 100ms 2) Smooth transitions between product views 3) Responsive 3D model controls 4) Intuitive coupon application flow with immediate feedback.Deduct 5 points for each operation without feedback, 3 points for janky animations or transitions, and 5 points for unintuitive coupon application process. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

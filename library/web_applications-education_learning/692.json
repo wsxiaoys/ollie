@@ -1,0 +1,68 @@
+{
+  "index": 692,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration.\n\n## Role\nYou are an experienced code expert. I am providing you with a software development requirement description, and you are required to generate project code according to these requirements. Strictly follow the rules to help users generate complete project code that is fully commented in simple, easy-to-understand language, without outputting anything else.\n\n## Output Rules\n1. You should always generate complete, runnable project code. Please ensure the project is complete and executable\n2. Ensure all code files you output are complete, without omitting any code\n3. Before presenting the final output, carefully review and check all code to evaluate its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n## Project Requirement Description\nDevelop an online literature reading and annotation platform that displays literary works in text form. Users should be able to annotate the text, save those annotations, and have access to a search function that can search for keywords within the works.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the text display system properly implemented?",
+      "description": "Evaluate if the code correctly implements a readable text display system with proper formatting for literature works. Check if the text is properly paginated, has adjustable font size, and maintains proper line spacing and paragraph breaks. The system should handle different text formats (plain text, markdown, etc.) and maintain proper text flow. Score 0 if text display is not implemented, 5 if basic text display is present but lacks formatting options, and 10 if the system provides a complete, polished reading experience with responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the annotation functionality comprehensive?",
+      "description": "Check if users can select text and add annotations, with appropriate UI for annotation creation, editing, and deletion. Annotations should be persistent, visually distinguished in the text (e.g., highlighting), and contain metadata (timestamp, user ID). The system should handle overlapping annotations and provide visual cues when hovering over annotated text. Deduct 5 points if annotations aren't persistent across sessions, 3 points if editing capabilities are missing, and 2 points if there's no visual indication of annotations in the text. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the search functionality effective and optimized?",
+      "description": "Evaluate if the search system can quickly locate keywords within literary works with proper indexing. Check for features like highlighting search results, pagination of results, search history, and advanced search options (case sensitivity, whole word matching, etc.). The search should be performant even with large texts. Deduct 5 points if search is not optimized for large documents, 3 points if highlighted results navigation is missing, and 2 points if there's no search history. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user data management system properly implemented?",
+      "description": "Assess if the platform properly manages user data including reading progress, annotations, preferences, and bookmarks. Check for proper authentication, data persistence across sessions, and secure storage mechanisms. The system should sync user data reliably and handle multi-device access. Deduct 5 points if reading progress isn't saved automatically, 3 points if user preferences aren't persistent, and 5 points if there's no mechanism to export or back up annotations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed text input, network interruption during saving, concurrent annotation edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the reading experience (e.g., 1. Text-to-speech capability 2. Social sharing of annotations 3. Reading statistics and insights 4. Custom themes or night mode). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search implementations coexisting) 2. Function modules unrelated to literature reading or annotation (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that disrupt reading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating text processing/annotation/user management layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for extended reading (neutral backgrounds, proper contrast) 2) Proper layout spacing (white space around text margins, comfortable line height) 3) Professional typography (readable font choice, appropriate font size hierarchy, line length of 50-75 characters). Deduct 3 points for each readability issue, 5 points for poor contrast that strains eyes, and 5 points for cramped text layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Annotation creation appears instantly when text is selected 2) Search results highlight with subtle animations (300-500ms) 3) Clear visual feedback when saving annotations or changing settings. Deduct 5 points for delayed text selection response, 3 points for jarring transitions between pages, and 5 points for missing loading indicators during search operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

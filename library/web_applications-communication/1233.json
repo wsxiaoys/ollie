@@ -1,0 +1,68 @@
+{
+  "index": 1233,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure to ensure that the code you generate is executable for demonstration purposes. Create QML code that mimics the PC version of WeChat Work interface.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the main UI layout of WeChat Work accurately implemented?",
+      "description": "Review whether the QML code accurately implements the three-panel layout structure of PC WeChat Work (left sidebar for menu navigation, middle panel for contact/chat list, right panel for conversation details). Score 0 if the basic layout structure is missing, 5 if only partial layout is implemented, and 10 if the layout closely resembles the authentic WeChat Work interface with proper sizing and proportions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the core navigation elements properly implemented?",
+      "description": "Evaluate the implementation of key navigation elements including: chat/contacts/workspace tabs in the sidebar, search functionality, and user profile section. Each missing element costs 2 points. The navigation should be interactive with proper state changes on selection. Deduct 5 points if navigation state management is not implemented correctly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the chat conversation interface fully functional?",
+      "description": "Check whether the chat panel includes message bubbles with different styles for sent/received messages, timestamp display, avatar integration, and message status indicators. Examine if the input area contains text input field, emoji selector, file attachment, and send button. Score 0 if the chat interface is missing, 5 if it's basic without styling, and 10 if it closely resembles WeChat Work's chat UI with all components.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are contacts and organizational structure components implemented?",
+      "description": "Assess whether the code implements the contacts view with organizational structure hierarchy, contact search, contact cards with avatars, names and titles. Check if the department tree structure is properly represented. Deduct 3 points for missing search functionality, 3 points for missing organizational hierarchy, and 4 points for incomplete contact card information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty states, error handling, resizing windows, etc.) and provide appropriate visual feedback. Code with strong robustness should gracefully handle edge cases like empty chat history or contact list. Give 10 points if comprehensive error handling is implemented, 5 points if basic error handling exists, and 0 points if no exception handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark mode implementation 2. Custom themes 3. Animated transitions 4. Message reaction features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar UI components (e.g., multiple message bubble implementations) 2. Function modules unrelated to WeChat Work (e.g., unrelated tools or games) 3. Fancy effects that affect performance (e.g., unnecessary animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, models, and controllers), code reusability, property bindings usage, and QML best practices. Deduct 5 points if global properties are overused; deduct 5 points if there's excessive code duplication; deduct 5 points if the code structure doesn't follow QML conventions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design matches WeChat Work's aesthetic: 1) Correct color scheme (primary green, white/light gray backgrounds, proper contrast) 2) Proper layout spacing and alignment 3) Appropriate font usage (consistent sizes and weights). Deduct 3 points for each major visual deviation from WeChat Work's design language, 5 points for inconsistent color usage, and 5 points for poor spacing or alignment issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the QML animations and transitions provide a smooth user experience: 1) Button hover/press states 2) Smooth panel transitions 3) Loading states where appropriate 4) Scrolling behavior in lists. Deduct 3 points for each missing interaction feedback, 5 points for choppy animations, and 5 points for unresponsive UI elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 388,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Create a calculator using VS Form.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic calculator functionality fully implemented?",
+      "description": "Verify if the calculator implements all basic operations (addition, subtraction, multiplication, division) correctly. Check if the calculation logic handles operator precedence properly. Score 0 if operations are missing, 5 if basic operations work but have precedence issues, and 10 if all operations work correctly with proper precedence handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are advanced calculator features implemented?",
+      "description": "Evaluate whether the calculator includes advanced features like parentheses support, memory functions (MC, MR, MS, M+, M-), percentage calculations, square/square root, and backspace functionality. Award 2 points for each well-implemented feature group, up to a maximum of 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is proper Windows Forms UI design implemented?",
+      "description": "Check if the calculator uses appropriate Windows Forms controls (Buttons, TextBox/Label for display). Verify if the layout uses proper container controls (TableLayoutPanel, FlowLayoutPanel) for organized button arrangement. Deduct 5 points if controls are inappropriately used, 3 points if the layout is disorganized. Give 10 points for professional-looking UI with proper control usage.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the input handling comprehensive?",
+      "description": "Assess if the code handles both button clicks and keyboard input. Check if it properly manages decimal point input, prevents multiple decimal points, handles display overflow, and manages input validation. Deduct 3 points for each missing input handling aspect. Award 10 points if all input scenarios are properly handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (division by zero, overflow/underflow, invalid operations) and provides friendly error messages. Check if exceptions are properly caught and handled. Code with strong robustness should effectively handle these cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Look for surprise features that enhance the experience (e.g., 1. Scientific calculation mode 2. History of calculations 3. Customizable themes/appearance 4. Converter functionality). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple calculation engines) 2. Function modules unrelated to calculator functionality 3. Fancy effects that affect performance unnecessarily. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation logic from UI), appropriate use of event handlers, proper variable naming conventions, and code comments. Deduct 3 points if global variables are overused; deduct 3 points if the code lacks comments; deduct 4 points if the code structure is monolithic with no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the calculator follows modern design principles: 1) Consistent button sizing and spacing 2) Clear visual hierarchy between display and buttons 3) Professional color scheme appropriate for a calculator 4) Proper form sizing and resizing behavior. Deduct 2.5 points for each design issue found. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and intuitive?",
+      "description": "Judge whether the interaction follows standard calculator behavior: 1) Clear visual feedback when buttons are pressed 2) Proper focus management 3) Intuitive handling of operation sequences 4) Clear display formatting of numbers with thousands separators or scientific notation when needed. Deduct 2.5 points for each interaction issue found. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "medium"
+}

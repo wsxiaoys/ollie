@@ -1,0 +1,68 @@
+{
+  "index": 1296,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Don't use any formal syntax - just present it in the most intuitive way:\n\n[Visitor access][Register/Login]\n[User Management]\n[Create Enterprise]\n    [Enterprise Verification]\n[Post Updates]\n   [Information Display]\n    [Publish Job Listings]\n   [Resume Submission]\n    [Intelligent Recommendations]\n   [Career Analysis]\n    [Two-way Matching] includes only these features",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the visitor access and authentication system properly implemented?",
+      "description": "Check whether the code implements a robust visitor access system with proper authentication flow (register/login). Verify if it includes secure password handling with hashing, form validation with appropriate error messages, and session management with JWT or similar tokens. Score 0 if authentication is missing, 5 if basic implementation exists, and 10 if complete with security best practices (CSRF protection, rate limiting, etc.).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user management system comprehensive?",
+      "description": "Evaluate the user management functionality for both job seekers and enterprise users. Check if it includes profile creation, role-based permissions, account settings management, and data privacy controls. Verify if users can update their information, manage notification preferences, and control data sharing. Deduct 5 points if key management features are missing, 3 points if permission controls are inadequate.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the enterprise creation and verification process well-designed?",
+      "description": "Review the enterprise creation workflow and verification system. Check if it includes company profile creation, document upload for verification, admin approval interface, and status tracking. Verify if the system handles edge cases such as verification rejection, resubmission process, and expiration handling. Score 0 if verification logic is absent, 5 if basic implementation exists, and 10 if comprehensive with fraud prevention measures.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the core job marketplace features well-implemented?",
+      "description": "Assess the implementation of key job marketplace features: posting updates, information display, job listings, resume submission, intelligent recommendations, career analysis, and two-way matching. Check if the code properly integrates these components into a cohesive system with appropriate data flow. Deduct 3 points for each missing core feature, and 5 points if the features exist but don't interact properly with each other.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, server errors, concurrent user actions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered job matching algorithm 2. Interactive career path visualization 3. Automated resume quality scoring). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user profile systems coexisting) 2. Function modules unrelated to job marketplace (e.g., a built-in game system) 3. Fancy effects that affect performance (e.g., excessive animations on critical pages). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/UI/API layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

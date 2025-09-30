@@ -1,0 +1,68 @@
+{
+  "index": 144,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be displayed properly.\nPlease help me implement the following requirement using code, creating a: Trifold brochure map using SVG code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG trifold brochure map structure correctly implemented?",
+      "description": "Check if the SVG code properly defines a trifold brochure layout with three equal panels that can fold correctly. Verify that the viewBox and dimensions are appropriate for a standard brochure format (typically 11x8.5 inches when unfolded). Score 0 if the structure doesn't represent a trifold format, 5 if basic panels are defined but with incorrect proportions, and 10 if the structure is properly implemented with correct proportions and fold lines.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the map visualization contain necessary geographical elements?",
+      "description": "Evaluate whether the SVG includes essential map elements: landmasses, roads/paths, points of interest, water bodies, and landmarks. Check that these elements are implemented using appropriate SVG elements (paths for roads, polygons for areas, etc.). Deduct 2 points for each missing essential map element. The map should be geographically coherent and accurate for its purpose. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the brochure content organized logically across the three panels?",
+      "description": "Assess whether the content flows logically across the three panels, with appropriate content hierarchy. The first panel should typically contain introductory information, the inner panels should contain the main map content, and the back panel should contain additional information or details. Deduct 5 points if the content organization is confusing or illogical, and 3 points if panel transitions are abrupt or inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive elements and map features properly implemented?",
+      "description": "Check for interactive features like hoverable/clickable points of interest, zoomable areas, or toggleable map layers using SVG and JavaScript. Evaluate whether these interactions enhance the user experience and are implemented smoothly. Score 0 if no interactivity exists, 5 if basic hover/click events are implemented, and 10 if comprehensive, intuitive interactions are implemented with appropriate visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG code can handle different viewing environments (browsers, screen sizes) and includes fallbacks or responsive design. Check for proper namespace declarations, valid SVG syntax, and appropriate element IDs/classes. Code with strong robustness should adapt to different viewing contexts without breaking. Give 10 points if the SVG is fully responsive and cross-browser compatible, 5 points if there are minor issues, and 0 points if the SVG only works in specific conditions.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated route highlighting 2. Interactive location finder 3. Fold animation simulation 4. Multi-language support with symbol legend). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements or groups that overlap unnecessarily 2. Excessive detail in areas that will be too small to see clearly 3. Decorative elements that obstruct important map information. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core map functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the structure of the SVG code, including proper grouping (<g> elements), efficient use of symbols and reusable components, and appropriate naming conventions. Check for optimization techniques like path simplification and appropriate use of SVG filters. Deduct 5 points if there's significant code redundancy; deduct 5 points if the SVG structure is disorganized or lacks comments; deduct 5 points if the file size is unnecessarily large due to poor optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the brochure design follows cartographic and print design principles: 1) Appropriate color scheme for map features (distinguishable yet harmonious) 2) Clear typographic hierarchy (readable font sizes, proper contrast) 3) Professional legend and scale design 4) Well-designed margins and bleed areas for printing. Deduct 3 points for each illegible text element, 5 points for poor color choices that affect map readability, and 5 points for layout issues that would affect printing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether any dynamic effects in the SVG map (animations, transitions, interactive elements) perform well: 1) Animations are purposeful and not distracting 2) Interactive elements provide immediate visual feedback 3) Transitions are smooth and meaningful. Deduct 5 points for laggy animations, 3 points for inconsistent interaction patterns, and 5 points for animations that interfere with understanding the map. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

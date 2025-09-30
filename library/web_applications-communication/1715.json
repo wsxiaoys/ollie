@@ -1,0 +1,68 @@
+{
+  "index": 1715,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. The login interface employs a dynamic form validation mechanism, supporting both username/password login and mobile phone verification code login modes, with built-in CAPTCHA to prevent brute force attacks. Design the HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are both login modes fully implemented?",
+      "description": "Review whether the code implements both username/password and mobile verification code login modes with smooth toggle functionality. The toggle should preserve entered data when switching modes. Score 0 if only one mode is implemented, 5 if both modes exist but switching causes data loss, and 10 if both modes function seamlessly with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the form validation mechanism comprehensive?",
+      "description": "Evaluate the validation logic for all input fields: username format validation, password strength requirements, mobile number formatting, and verification code length checking. Real-time validation with clear visual feedback is required. Deduct 2 points for each field missing validation, 3 points if validation only happens on submission rather than in real-time, and 5 points if error messages are generic rather than specific to the error type.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the CAPTCHA mechanism properly implemented?",
+      "description": "Check if the CAPTCHA implementation includes auto-refresh functionality, accessibility considerations (audio alternative), and proper integration with form submission validation. The CAPTCHA should appear after failed attempts and include anti-automation measures. Deduct 5 points if CAPTCHA is purely decorative without validation logic, and 3 points if it lacks refresh capabilities. Give 10 points for a complete implementation with security considerations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the mobile verification code delivery system implemented securely?",
+      "description": "Verify that the code includes rate limiting for SMS requests, countdown timer between requests (typically 60 seconds), proper mobile number validation before sending, and visual feedback during the waiting period. Deduct 5 points if rate limiting is absent, 3 points if there's no countdown timer, and 3 points if the mobile validation occurs only after sending rather than before.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network delays, invalid inputs, session timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Password strength visual indicator 2. Social login integration 3. Dark/light mode toggle 4. Persistent login option with security warning). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant validation logic (e.g., multiple password validation functions) 2. Function modules unrelated to login (e.g., newsletter signup within login form) 3. Excessive animations or effects that affect loading performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of validation logic, UI components, and event handling), code reusability, and maintainability. Deduct 5 points if global variables are excessively used; deduct 5 points if the code contains hardcoded values instead of constants; deduct 5 points if there's significant code duplication. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the login form follows modern design principles: 1) Consistent input field styling with clear focus states 2) Proper spacing between form elements (8px grid system) 3) Professional typography with adequate contrast for accessibility. Deduct 3 points for inconsistent styling between input fields, 5 points for poor visual hierarchy (unclear what action to take), and 5 points for inadequate responsive design considerations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the form interactions feel natural: 1) Immediate visual feedback on input validation (≤100ms) 2) Smooth transitions between login modes (300-500ms) 3) Appropriate loading indicators during submission. Deduct 5 points for lack of submission state indication, 3 points for jarring mode transitions, and 5 points for delayed validation feedback causing user confusion. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

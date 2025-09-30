@@ -1,0 +1,68 @@
+{
+  "index": 89,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable when possible.\n\nPlease implement a strategy game using HTML and JavaScript: Multiple Factions and Diplomatic System\n\n**Task**: Design a multi-faction system where players can engage in diplomacy, form alliances or wage war with other factions. Different diplomatic strategies will influence the game's outcome.\n\n**Hint**: You can use a diplomatic relations table to manage relationships between factions and adjust AI behavior based on player decisions.\n\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-faction system fully implemented?",
+      "description": "Review whether the code accurately implements distinct factions with unique attributes (resources, strengths, territories). Check if each faction has its own AI behavior patterns and strategic tendencies. Score 0 if factions are merely cosmetic, 5 if basic faction differences exist but lack strategic depth, and 10 if factions have meaningful gameplay differences with unique mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the diplomatic relations system properly implemented?",
+      "description": "Evaluate whether the code implements a comprehensive diplomatic relations table that tracks relationships between all factions. Check for multiple relationship states (alliance, peace, tension, war, etc.) and proper transitioning mechanisms between states. Deduct 5 points if relationships are binary (ally/enemy only), 3 points if relationship changes lack proper conditions or consequences. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are diplomatic actions and negotiations implemented?",
+      "description": "Check whether the code includes a range of diplomatic actions (trade agreements, alliances, non-aggression pacts, ultimatums, etc.) and a negotiation system where factions can propose and respond to diplomatic offers. Deduct 5 points if diplomatic actions are limited to basic declarations, 3 points if negotiations lack counteroffer capabilities. Score 10 points if the system includes complex diplomatic chains and conditional agreements.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the AI behavior properly responsive to diplomatic relationships?",
+      "description": "Assess whether the AI adapts its behavior based on diplomatic status and player decisions. The AI should consider diplomatic relationships when making strategic decisions about resource allocation, military movements, and diplomatic initiatives. Deduct 5 points if AI ignores relationships in decision-making, 3 points if AI responses are predictable or lack strategic depth. Give 10 points for sophisticated AI that considers complex diplomatic webs and adapts to changing circumstances.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid diplomatic actions, conflicting AI decisions, edge case diplomatic scenarios, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic reputation system that affects diplomatic options 2. Historical grudges/favors that persist across game sessions 3. Secret diplomatic channels with concealed information). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar diplomatic actions (e.g., multiple alliance formation mechanisms) 2. Function modules unrelated to diplomacy or strategy (e.g., unnecessary minigames) 3. Fancy effects that affect performance (e.g., excessive animations when forming alliances). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating diplomacy logic/visualization/AI decision-making layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors per faction, with clear faction identification) 2) Proper layout spacing (diplomatic interface elements follow the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded diplomatic menu, 5 points for confusing faction visual indicators, and 5 points for chaotic diplomatic status representation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the diplomatic interaction smooth and intuitive?",
+      "description": "Judge whether the diplomatic system is intuitive to use and provides clear feedback: 1) Diplomatic action feedback delay ≤ 100ms 2) Clear visual representation of diplomatic status changes 3) Intuitive pathways for proposing and responding to diplomatic offers. Deduct 5 points for each diplomatic action without clear feedback, 3 points for confusing relationship status indicators, and 5 points for diplomatic options that are difficult to discover. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

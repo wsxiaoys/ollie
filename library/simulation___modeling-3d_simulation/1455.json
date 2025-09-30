@@ -1,0 +1,68 @@
+{
+  "index": 1455,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. How can I create a Python program for 3D visualization of robotic arm movements, where the arm data is received through network transmission?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the robotic arm 3D model correctly implemented?",
+      "description": "Review whether the code implements an accurate 3D model of a robotic arm with proper joints, segments, and movement constraints. The model should include proper hierarchical structure (base, joints, links, end-effector) with appropriate degrees of freedom for each joint. Score 0 if the model is not implemented, 5 if only basic structure exists, and 10 if a complete, anatomically correct robotic arm with configurable parameters is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the network data reception mechanism properly designed?",
+      "description": "Evaluate the implementation of network communication for receiving robotic arm data. Check for proper socket programming, protocol handling (TCP/UDP), error handling, reconnection logic, and data buffer management. Verify if the code handles connection timeouts, packet loss, and data integrity validation. Deduct 5 points if no error handling exists, 3 points if reconnection logic is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data parsing and transformation pipeline correctly implemented?",
+      "description": "Check if the received network data is properly parsed, validated, and transformed into the appropriate coordinate system for 3D visualization. Look for coordinate system transformations (e.g., from robot coordinate system to world coordinate system), unit conversions, and proper handling of different data formats (JSON, binary, custom protocols). Deduct 5 points if coordinate transformations are incorrect or missing, 3 points if data validation is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the 3D visualization framework properly utilized?",
+      "description": "Assess the implementation of the 3D visualization using appropriate Python libraries (e.g., VTK, PyOpenGL, Matplotlib, PyVista, Mayavi). Check if the code properly initializes the 3D environment, handles camera positioning, implements lighting, and renders the robotic arm in real-time. Deduct 5 points if the visualization is static only, 3 points if performance optimization for real-time rendering is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed network data, connection loss, memory constraints, hardware limitations) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collision detection 2. Path planning visualization 3. Interactive manipulation through UI 4. Recording and playback of movements 5. Multiple visualization perspectives). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple visualization methods running simultaneously) 2. Function modules unrelated to robotic arm visualization (e.g., unnecessary image processing) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating network, data processing, and visualization components), unit test coverage, and appropriate documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there is no error logging or debugging functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization interface follows professional design principles: 1) Consistent color scheme for different robot components 2) Clear labeling of axes, joints, and controls 3) Proper use of lighting and shadows for depth perception 4) Appropriate camera angles and zoom levels. Deduct 3 points for cluttered visualization, 5 points for poor color choices affecting readability, and 5 points for difficult navigation controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the dynamic visualization performs well: 1) Smooth animation of robotic movements (≥30 FPS) 2) Responsive UI controls with feedback ≤150ms 3) Efficient handling of complex movements without lag. Deduct 5 points if the visualization stutters during complex movements, 3 points if there's significant delay between network data reception and visualization update, and 5 points if user interactions feel unresponsive. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "medium"
+}

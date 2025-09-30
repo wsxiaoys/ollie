@@ -1,0 +1,68 @@
+{
+  "index": 356,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display purposes. Identify the content in the file, and based on the English words and translations, create an HTML page for word flashcards to assist with vocabulary memorization.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic flashcard structure implemented correctly?",
+      "description": "Check if the HTML structure includes front and back sides of flashcards with proper vocabulary display. Look for word/translation pairs being properly separated and styled. Score 0 if basic card structure is missing, 5 if basic structure exists but lacks proper separation of front/back sides, and 10 if flashcards properly display both words and translations with clear visual distinction.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is there a working flashcard flip mechanism?",
+      "description": "Evaluate if the code includes JavaScript functionality to flip cards and reveal translations. The mechanism should respond to user interaction (click/tap) with smooth transitions. Deduct 5 points if the flip occurs without animation, 3 points if the flip is not optimized for mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a vocabulary management system?",
+      "description": "Assess if the code provides methods to add, edit, remove, or organize vocabulary items. Look for data structures that properly store word pairs and allow for persistence (localStorage or similar). Deduct 5 points if there's no way to add new words, 3 points if editing existing items isn't supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are there learning optimization features implemented?",
+      "description": "Check for features that enhance learning effectiveness such as spaced repetition algorithms, difficulty tracking, progress visualization, or review scheduling. Score 0 if no learning features exist, 5 if basic revisiting mechanism is present, 10 if a comprehensive learning system that adapts to user progress is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty vocabulary list, invalid inputs, connection issues for online dictionaries) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Audio pronunciation integration 2. Images associated with vocabulary 3. Quiz mode or gamification elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to display definitions) 2. Function modules unrelated to vocabulary learning (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/data management/user interaction), code reuse, and maintainability. Deduct 5 points if global variables are overused; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between data and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Card flip animation between 300-500ms 2) Clear visual cues for interactive elements 3) Consistent feedback for user actions. Deduct 5 points for each operation without feedback, 3 points for jumpy animations, and 5 points for hard-to-recognize interactive elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1449,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. I want to create a four-player Fighting Landlord (Dou Dizhu) game that incorporates elements of Guandan and Shengji card games.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Card game rules implementation completeness",
+      "description": "Review whether the code accurately implements the core rules of Fighting Landlord with elements from Guandan and Shengji. Check for correct card distribution (17 cards for farmers, 20 for landlord), proper card ranking, valid card combinations (singles, pairs, triplets, etc.), and special rule integrations from Guandan and Shengji (like upgrading cards or bomb mechanisms). Score 0 if basic card game mechanics are missing, 5 if only Fighting Landlord rules are implemented, and 10 if all three game elements are successfully integrated.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Four-player adaptation and turn management",
+      "description": "Evaluate the adaptation of traditionally three-player Fighting Landlord to four players. Check for proper team formation (2v2 or 1v3), balanced gameplay adjustments, and smooth turn transitions. Review the bidding mechanism for landlord selection and whether the code handles proper turn order with visual indicators. Deduct 5 points if the four-player adaptation creates gameplay imbalance, and 3 points if turn management lacks clarity. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Card play validation and combination detection",
+      "description": "Assess whether the code correctly validates all possible card plays and detects valid card combinations across all three game types. Check if the system properly identifies straights, full houses, airplane combinations, bombs, and special combinations from Guandan/Shengji. Test edge cases such as joker combinations and multi-deck scenarios. Deduct 5 points if validation fails for complex combinations and 3 points if special rule validations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Game state management and scoring system",
+      "description": "Review the implementation of game state tracking (dealing, bidding, playing, ending phases), multi-round persistence, and the scoring system that incorporates elements from all three games. Check if the code maintains player statistics and handles game progression logically. Verify if the scoring system accounts for bombs, spring scenarios, and special combinations. Deduct 5 points if state transitions are buggy and 3 points if the scoring system doesn't reflect all game elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as disconnections during play, invalid card selections, timeout scenarios, etc.) and provide friendly error prompts or recovery mechanisms. Test edge cases like simultaneous actions or rapid-fire inputs. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty AI opponents 2. Replay system with annotation 3. Custom rule configuration to balance the three game types 4. Voice commands for card play). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Feature redundancy and optimization",
+      "description": "Strictly check three types of redundancy: 1. Overlapping card validation logics that could be consolidated 2. Unnecessary features unrelated to the card games (e.g., excessive mini-games) 3. Performance-heavy animations that affect gameplay responsiveness. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core card game functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Code engineering quality",
+      "description": "Review modular design (such as separating card game logic/UI/networking layers), reusable components for cards, and clear class hierarchies for game rules. Check for unit tests covering edge cases in card combinations. Deduct 5 points if global state management is messy; deduct 5 points if similar card validation logic is duplicated; deduct 5 points if the code lacks documentation for the complex rule integrations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Card game interface design",
+      "description": "Evaluate whether the card game UI follows professional design principles: 1) Clear visual distinction between the three integrated game types 2) Properly sized and easily recognizable cards (even when many are displayed) 3) Distinct player areas with status indicators. Deduct 3 points for cluttered card arrangements, 5 points for unclear card hierarchies, and 5 points for confusing game phase transitions. Check if animations for card dealing and playing feel natural. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Player interaction and feedback",
+      "description": "Judge whether the player interactions are intuitive and responsive: 1) Card selection feedback ≤ 100ms 2) Clear validation indicators for legal/illegal card plays 3) Visible countdown timers for turns. Check if multiplayer actions are clearly communicated to all players. Deduct 5 points for delayed feedback on card selections, 3 points for unclear indicators of whose turn it is, and 5 points if valid card combinations aren't visually suggested to help players. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

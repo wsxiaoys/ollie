@@ -1,0 +1,68 @@
+{
+  "index": 553,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration. Please implement an online examination system where administrators can create exams, add question banks (multiple choice, true/false, fill-in-the-blank), set exam times and scoring rules; teachers can schedule exams for specific classes, view exam results and statistical analysis; students can take exams within the specified time, with the system automatically timing, submitting when time expires, and displaying scores and error analysis after the exam ends. The system should also support automatic grading and score export functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the exam creation and question bank management fully implemented?",
+      "description": "Review whether administrators can create exams with various question types (multiple choice, true/false, fill-in-the-blank), set up customizable question banks, define exam durations, and establish scoring rules. Score 0 if the admin interface is missing, 5 if only basic question creation is implemented without proper validation, and 10 if the complete exam management system includes question versioning, categorization by difficulty, and dynamic scoring rules.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the teacher management functions properly implemented?",
+      "description": "Evaluate the implementation of teacher-specific features including exam scheduling for specific classes, viewing detailed exam results, and accessing comprehensive statistical analysis tools. Check if data visualization for performance metrics is included. Deduct 3 points if class management is incomplete, 4 points if statistical analysis lacks depth (no distribution charts or performance trends), and 5 points if there's no batch operation capability for managing multiple exams/classes. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the student exam-taking experience complete and reliable?",
+      "description": "Assess whether the student interface allows seamless exam participation with proper timing mechanisms, auto-save functionality, and prevention of unauthorized navigation/cheating. Check if the system enforces automatic submission when time expires and provides comprehensive score display with detailed error analysis. Deduct 5 points if anti-cheating measures are absent, 3 points if auto-save isn't implemented, and 5 points if error analysis is superficial. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the automatic grading system accurate and comprehensive?",
+      "description": "Verify if the system can automatically grade different question types accurately, handle partial credits for complex questions, and efficiently export scores in various formats (CSV, Excel, PDF). Test if the grading algorithm correctly processes edge cases like partially correct answers. Deduct 5 points if only basic scoring is implemented without handling edge cases, 3 points if export functionality is limited, and 5 points if there's no provision for manual overrides by teachers. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common abnormal situations (e.g., network interruptions during exams, concurrent access issues, browser crashes, invalid inputs) and provides appropriate recovery mechanisms. Test edge cases like exam submission in the last second or multiple login attempts. Deduct 3 points for each unhandled critical issue. Code with strong robustness that gracefully handles these situations earns 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered question generation 2. Plagiarism detection algorithms 3. Adaptive difficulty based on student performance 4. Integrated video proctoring). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to create the same type of question) 2. Function modules unrelated to an examination system (e.g., social networking features) 3. Fancy effects that affect performance (e.g., unnecessary animations during crucial exam-taking). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of core exam logic, user interfaces, authentication systems), test coverage for critical paths (especially exam submission and grading), and database schema optimization. Deduct 3 points if global state management is messy, 3 points if no data validation exists between layers, 2 points if the code duplication rate exceeds 20%, and 2 points if there's no error logging system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows education software design principles: 1) Clear visual hierarchy distinguishing between admin, teacher, and student views 2) Consistent color schemes with appropriate contrast for extended reading 3) Intuitive navigation especially for time-sensitive exam interfaces 4) Responsive design for various device sizes. Deduct 2.5 points for each major design inconsistency, 5 points for accessibility issues (small text, poor contrast), and 3 points for cluttered exam interfaces. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the system interactions prioritize exam integrity: 1) Question transitions load under 200ms 2) Auto-save indicators provide clear feedback 3) Time remaining notifications are prominent without being distracting 4) Submission process confirms actions to prevent accidental data loss. Deduct 3 points for laggy question navigation, 3 points for unclear submission status, 2 points for distracting animations during exams, and 2 points for confusing error messages. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1074,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration. Help me create a project using Tauri, React, Shadcn, and Tailwind.css with auto-update functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Tauri application architecture correctly implemented?",
+      "description": "Review whether the code properly configures Tauri with React integration, including correct tauri.conf.json setup, proper Rust backend commands, and IPC (Inter-Process Communication) between frontend and backend. Check if the build process generates functional native executables for target platforms. Score 0 if Tauri core functionality is missing, 5 if basic setup exists but lacks proper IPC, and 10 if fully functional with secure command invocations and proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the React + Shadcn + Tailwind integration properly configured?",
+      "description": "Evaluate whether React components utilize Shadcn UI components effectively with proper Tailwind CSS styling. Check for correct package.json dependencies, proper component imports, and theme configuration. Verify that Tailwind classes are purged correctly and Shadcn components render with consistent styling. Deduct 3 points if component library integration is incomplete, 5 points if styling conflicts exist, and 2 points if build optimization is missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the auto-update functionality fully implemented and secure?",
+      "description": "Check whether the auto-update mechanism includes proper version checking, secure download verification (signature validation), and graceful update installation. Evaluate if the updater handles network failures, provides user notifications, and supports rollback mechanisms. Verify that update endpoints are configured correctly and SSL/TLS is enforced. Deduct 5 points if signature verification is missing, 3 points if no fallback mechanism exists, and 5 points if update UI feedback is inadequate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the project structure and configuration management comprehensive?",
+      "description": "Assess whether the project includes proper environment configuration, build scripts for multiple platforms, and deployment workflows. Check for proper TypeScript configuration, ESLint/Prettier setup, and development/production environment separation. Verify that all necessary configuration files (vite.config.js, tailwind.config.js, components.json) are properly set up. Deduct 3 points for missing TypeScript support, 4 points for inadequate build configuration, and 3 points for missing development tooling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures during updates, file system permissions errors, invalid user input, and Tauri API failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper error boundaries, async error handling, and graceful degradation. Give 10 points if fully implemented, 5 points if basic error handling exists, and 0 points if no exception handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the Tauri application experience (e.g., 1. System tray integration with context menus 2. Native notifications and system integration 3. Custom window controls and themes 4. Local database integration 5. Cross-platform native file handling). Add 2-3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management solutions coexisting) 2. Unnecessary dependencies that bloat the bundle size 3. Over-engineered components that don't utilize Tauri's native capabilities effectively. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code significantly impacts application performance or bundle size.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (proper separation of Tauri commands, React components, and utility functions), TypeScript type safety, and automated build processes. Check for proper component composition, custom hooks usage, and build optimization. Deduct 5 points if TypeScript types are poorly defined; deduct 5 points if component architecture is monolithic; deduct 5 points if build process lacks platform-specific optimizations. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the UI follows modern design principles using Shadcn components effectively: 1) Consistent design system with proper Tailwind utility usage 2) Proper spacing using Tailwind's spacing scale 3) Accessible color contrast ratios and focus states 4) Responsive design that works across different screen sizes. Deduct 3 points for inconsistent component usage, 5 points for poor color accessibility, and 5 points for non-responsive layouts. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the native desktop interaction smooth and intuitive?",
+      "description": "Judge whether the desktop application provides native-like user experience: 1) Proper window management and native controls 2) Keyboard shortcuts and accessibility support 3) Smooth transitions utilizing Tauri's performance benefits 4) Native context menus and system integration. Deduct 5 points for web-like behavior that doesn't leverage native capabilities, 3 points for poor keyboard navigation, and 5 points for lack of system integration features. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

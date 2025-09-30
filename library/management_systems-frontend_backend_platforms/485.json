@@ -1,0 +1,68 @@
+{
+  "index": 485,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Please implement a data center server management system where employees can view the real-time operating status of company servers (CPU usage, memory usage, etc.) through a front-end page; administrators can log into the backend system to manually update server information, display historical performance logs of servers, and mark server health status.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the real-time server monitoring dashboard successfully implemented?",
+      "description": "Evaluate whether the front-end visualization properly displays real-time metrics (CPU usage, memory usage, etc.) with appropriate charts and gauges. Check if WebSocket or polling mechanism is implemented for real-time updates. Score 0 if no visualization exists, 5 if only basic static displays are implemented, and 10 if the dashboard shows comprehensive real-time metrics with appropriate refresh mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the admin management backend system fully functional?",
+      "description": "Review whether the admin panel includes secure authentication, server information update forms, and proper validation. Check for CRUD operations on server entries and whether the UI provides clear feedback after operations. Score 3 points for basic authentication, 3 points for complete server management forms, and 4 points for proper validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the historical performance logging and visualization implemented?",
+      "description": "Check if the system stores and displays historical performance data with time-series charts. Evaluate whether filtering by date ranges, server IDs, and metric types is supported. Verify if data aggregation for different time periods (hourly, daily, weekly) is implemented. Score 0 if missing, 5 for basic logs without visualization, and 10 for comprehensive historical data analysis with interactive charts.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the server health status marking and alerting system functioning?",
+      "description": "Review if admins can mark server health statuses (healthy, warning, critical) and if the system has automated threshold-based alerts. Check if notifications are delivered through the UI and possibly email/SMS. Score 3 points for manual status marking, 4 points for threshold configuration, and 3 points for a functional alert delivery system.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases such as server disconnection, data inconsistencies, permission errors, and network issues. Check for proper error boundaries in the UI and graceful degradation. Score 10 points for comprehensive error handling, 5 points for basic error messages, and 0 points if exceptions aren't handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for unique features such as: 1) Predictive analytics for server failures 2) Automated resource optimization suggestions 3) Interactive server topology map 4) Customizable dashboards for different roles. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1) Multiple implementations of the same monitoring functionality 2) Unnecessary data processing that impacts performance 3) Overly complex visualizations that don't add practical value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core monitoring functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of data fetching, state management, and UI components), code reusability, and maintainability. Check for consistent error handling patterns and appropriate use of design patterns. Deduct 5 points if global state is poorly managed; deduct 5 points if code duplication exceeds 30%; deduct 5 points if there's no separation between UI and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dashboard follows data visualization best practices: 1) Consistent color coding for status indicators 2) Proper information hierarchy with critical metrics prominently displayed 3) Responsive layout that works on different screen sizes. Deduct 3 points for misleading visualizations, 5 points for poor information density (too cluttered or too sparse), and 5 points for inaccessible color schemes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the system provides smooth user experience: 1) Immediate feedback for admin actions 2) Smooth transitions when switching between views 3) Loading states for asynchronous operations. Deduct 5 points for operations without visual feedback, 3 points for jerky transitions between dashboard states, and 5 points for UI freezes during data processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

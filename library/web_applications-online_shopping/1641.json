@@ -1,0 +1,68 @@
+{
+  "index": 1641,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Help me write a fast food ordering system based on WeChat Mini Program, similar to the style of \"Little Vegetable Garden.\" Please include the source code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core ordering flow implemented completely?",
+      "description": "Review whether the code implements a complete ordering flow (browsing menu, adding to cart, checkout, payment). Check if it includes necessary features like item customization (e.g., spice level, size options), quantity adjustment, and order summary. Score 0 if the core ordering flow is missing, 5 if only basic item selection is implemented, and 10 if the complete flow with customization options is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Mini Program structure properly implemented?",
+      "description": "Evaluate whether the code follows WeChat Mini Program architecture with proper page structure, app.json configuration, and utilizes Mini Program components (e.g., swiper, picker, navigator). Check for proper use of the lifecycle methods and page routing. Deduct 3 points if global configuration is incorrect, 4 points if native components are not used appropriately, and 5 points if the project structure doesn't follow Mini Program conventions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user management and authentication system implemented?",
+      "description": "Check if the code includes WeChat authentication integration, user profile management, and authorization handling using wx.login() and open APIs. Verify proper storage of user session data and token management. Deduct 5 points if there's no login mechanism, 3 points if user authorization lacks error handling, and 3 points if user data persistence is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the payment integration properly implemented for the Mini Program?",
+      "description": "Assess whether the code includes WeChat Payment API integration with proper order creation, signed package preparation, and payment result handling. Check for payment callback processing and order status updates. Deduct 5 points if the payment API integration is missing, 3 points if security measures for payment are inadequate, and 3 points if order synchronization after payment is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, payment failures, API timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Food recommendation system based on order history 2. Real-time order preparation status 3. Loyalty points system with mini-games). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart manipulation methods) 2. Function modules unrelated to food ordering (e.g., excessive social features) 3. Fancy effects that affect performance (e.g., complex animations that slow down the ordering process). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/UI/logic layers), component reusability, and proper use of MVVM pattern for Mini Program. Deduct 5 points if global state management is chaotic; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if custom components aren't properly encapsulated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards similar to 'Little Vegetable Garden'?",
+      "description": "Evaluate whether the UI design follows the fresh, simple style of 'Little Vegetable Garden' with: 1) A cohesive green and white color scheme with accent colors 2) Clean card-based layout with appropriate whitespace 3) Consistent typography and iconography. Deduct 3 points for inconsistent visual elements, 5 points for cluttered layouts, and 5 points for designs that don't match the referenced style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and optimized for mobile touch?",
+      "description": "Judge whether the interactions are optimized for touch controls: 1) Touch targets are at least 44×44px 2) Swipe gestures for common actions like removing cart items 3) Proper feedback for all interactions within 100ms. Deduct 5 points for small, hard-to-tap elements; 3 points for missing visual feedback on interactions; and 5 points for jerky animations or transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

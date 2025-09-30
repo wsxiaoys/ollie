@@ -1,0 +1,68 @@
+{
+  "index": 1547,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring that the generated code is executable for demonstration. I want to make a scrollbar idle game using HTML. Could you provide me with an example?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core scrollbar game mechanic properly implemented?",
+      "description": "Evaluate whether the code implements the fundamental idle game mechanics tied to scrollbar interaction. Check if the scrolling action properly generates resources/points and if the core game loop functions correctly. Score 0 if scrolling doesn't trigger any game mechanics, 5 if basic resource generation exists but lacks progression, and 10 if scrolling mechanics are fully implemented with appropriate resource accumulation rates.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are idle progression mechanics implemented?",
+      "description": "Check if the game properly implements idle mechanics that allow progress even when the player is not actively scrolling. Verify if there's an automated resource generation system, upgrades that enhance idle production, and if the game state persists when not actively played. Deduct 5 points if there's no idle progression at all, and 3 points if idle mechanics exist but are poorly balanced. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a comprehensive upgrade system?",
+      "description": "Assess whether the code includes a well-designed upgrade system that offers meaningful progression. Check for various upgrade types (e.g., click multipliers, automatic generators, special abilities), proper cost scaling, and visual feedback when purchasing upgrades. Score 0 if no upgrade system exists, 5 if only basic upgrades are available, and 10 if there's a diverse and balanced upgrade tree with multiple paths for progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a save/load system for game persistence?",
+      "description": "Evaluate whether the game properly saves and loads progress using localStorage or another persistence method. Check if the game state is preserved between browser sessions, if there's auto-save functionality, and if the save system handles different game versions. Deduct 5 points if saving is manual only, 3 points if there's no export/import save feature, and give 0 points if there's no save system at all. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid scrolling, browser resizing, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual feedback during scrolling 2. Achievement system 3. Random events triggered by scrolling patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to track scrolling) 2. Function modules unrelated to the idle game concept 3. Fancy effects that affect performance (e.g., excessive animations that slow down the game). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/persistence layers), consistent naming conventions, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game mechanics and UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clear visual hierarchy for game elements (resources, upgrades, progress indicators). Deduct 3 points for cluttered UI elements, 5 points for poor color contrast or readability issues, and 5 points for inconsistent visual styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the scrollbar interaction and game feedback conform to human perception characteristics: 1) Visual feedback appears within 100ms of scrolling 2) Smooth animations for resource accumulation 3) Clear visual cues for affordable upgrades. Deduct 5 points for laggy scrolling responses, 3 points for jarring or missing transition effects, and 5 points for confusing or unclear game state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

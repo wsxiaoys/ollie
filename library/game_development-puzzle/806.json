@@ -1,0 +1,68 @@
+{
+  "index": 806,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create a WeChat mini-program for playing Tetris.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Tetris game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the Tetris grid system, piece rotation, collision detection, line clearing, and scoring mechanisms. Score 0 if the core gameplay logic is incomplete, 5 if basic piece movement and rotation are implemented, and 10 if all standard Tetris rules (including wall kicks, lock delay, and next piece preview) are properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WeChat mini-program structure properly set up?",
+      "description": "Check whether the project follows the standard WeChat mini-program structure with proper app.json, page configuration, and component organization. Verify that the code uses WXML, WXSS, and JS correctly according to WeChat platform guidelines. Deduct 5 points if the project structure is incomplete, 3 points if platform-specific APIs are misused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation handle touch/gesture controls effectively?",
+      "description": "Evaluate whether the game implements intuitive touch controls for the WeChat mini-program environment (swipe, tap, hold gestures) with proper sensitivity adjustment. Touch areas should be appropriately sized (at least 44x44px). Deduct 5 points for poor touch responsiveness, 3 points for unintuitive controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the WeChat mini-program lifecycle and state management properly handled?",
+      "description": "Check whether the code properly handles the mini-program lifecycle events (onLoad, onShow, onHide, etc.) and game state persistence. The game should be able to pause when switching to background and resume correctly. Deduct 5 points if game state is lost when switching between mini-program pages, and 3 points if the game doesn't handle system events properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. WeChat friend challenges 2. Custom themes or skins 3. Achievement system integrated with WeChat social features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same action) 2. Function modules unrelated to Tetris gameplay (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), proper use of WeChat framework features, and code maintainability. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if WeChat mini-program best practices are not followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, sufficient contrast against background). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for designs that don't conform to WeChat's visual language. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Game piece movement is smooth without frame drops 2) Touch response delay ≤ 100ms 3) Clear visual feedback for all user actions. Deduct 5 points for each operation without feedback, 3 points for laggy animations, and 5 points for unresponsive controls during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

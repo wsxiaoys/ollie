@@ -1,0 +1,68 @@
+{
+  "index": 424,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Write a piece of HTML frontend code that simulates the Earth-Moon orbital system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Earth-Moon orbital system accurately implemented?",
+      "description": "Review whether the code accurately implements the Earth-Moon orbital system physics, including proper orbital mechanics (elliptical orbit), correct proportional sizes (Earth diameter ≈ 3.7x Moon's), and realistic orbital period ratio. Score 0 if the basic orbital system is not implemented, 5 if only basic circular motion is implemented, and 10 if the simulation includes proper elliptical orbit with accurate parameters.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are celestial bodies accurately represented?",
+      "description": "Check whether the Earth and Moon are visually represented with accurate proportions, textures, and features (Earth with atmosphere/continents, Moon with craters/maria). Evaluate if the relative sizes match astronomical data (Moon ≈ 27% of Earth's diameter). Deduct 3 points if proportions are significantly off, 3 points if textures are missing or unrealistic, and 4 points if key visual features are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the simulation interactive and controllable?",
+      "description": "Evaluate whether the simulation provides user interaction options such as speed control, zoom in/out functionality, rotation angle adjustment, or pause/resume capabilities. Check if orbital parameters can be modified through UI controls. Deduct 3 points for each missing core control, and 2 points if the controls are implemented but not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are additional astronomical phenomena incorporated?",
+      "description": "Review whether the implementation includes additional astronomical phenomena such as day/night cycle, lunar phases, solar illumination effects, proper shadow casting, or Earth's axial tilt. Deduct 2 points for each missing major phenomenon, with particular emphasis on lunar phases and shadow mechanics. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, device orientation changes, touch input vs. mouse input, etc.) and provide fallback mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Informational overlays with astronomical data 2. Historical moon landing site markers 3. Time-lapse controls showing orbital patterns over time). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations that could be optimized (e.g., recalculating constant values in animation loops) 2. Function modules unrelated to the Earth-Moon system (e.g., unrelated planetary objects) 3. Fancy effects that affect performance (e.g., excessive particle systems or shader effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics calculations, rendering, and UI controls), code organization, and performance optimization techniques (such as RequestAnimationFrame usage, asset optimization). Deduct 5 points if global variable pollution is found; deduct 5 points if the animation performance is poor (< 30 FPS on standard hardware); deduct 5 points if the code lacks comments or clear structure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Appropriate background (dark theme for space context) 2) Proper layout with clear focus on the orbital system 3) Professional labeling and information display (if any). Deduct 3 points for visually distracting elements, 5 points for poor color choices that reduce visibility of celestial bodies, and 5 points for cluttered or illegible UI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and scientifically accurate?",
+      "description": "Judge whether the animation conforms to both technical and scientific standards: 1) Consistent frame rate (≥ 60 FPS) 2) Smooth transitions and movements 3) Accurate representation of orbital mechanics including speed variations at different orbital positions. Deduct 3 points for jerky animations, 4 points for scientifically inaccurate motion patterns, and 3 points for visual glitches during animation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

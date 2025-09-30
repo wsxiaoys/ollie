@@ -1,0 +1,68 @@
+{
+  "index": 833,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create a dashboard visualization using Python showing search volume, new product percentage, and review count percentage for sock products on Amazon US site based on real data.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data acquisition and processing pipeline properly implemented?",
+      "description": "Review whether the code includes proper methods for acquiring Amazon product data (web scraping, API usage, or sample dataset loading), preprocessing steps (cleaning, normalization), and data validation. Score 0 if there is no data acquisition logic, 5 if basic data loading is implemented but with minimal preprocessing, and 10 if there is a complete ETL pipeline with error handling and data validation steps.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dashboard visualization comprehensive and well-structured?",
+      "description": "Evaluate if the dashboard includes all three required metrics (search volume, new product percentage, review count percentage) with appropriate visualization types for each (e.g., line charts for trends, bar charts for comparisons, pie charts for percentages). Check if the visualizations have proper titles, labels, and legends. Deduct 3 points for each missing metric, 2 points for inappropriate chart selection, and 2 points for missing critical elements like legends or axes labels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the visualization provide interactive features?",
+      "description": "Check whether the dashboard includes interactive elements such as filters, tooltips, hover effects, drill-down capabilities, or time range selectors. Evaluate the effectiveness of these interactions for exploring the sock product data. Award 0 points for static visualizations with no interactivity, 5 points for basic hover tooltips or simple filters, and 10 points for comprehensive interactive features with smooth transitions that enhance data exploration.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data insight extraction and presentation implemented?",
+      "description": "Assess if the code includes analytical capabilities to extract meaningful insights from the sock product data, such as trend identification, outlier detection, correlation analysis, or seasonal patterns. Check if insights are presented alongside visualizations through annotations, highlights, or summary text. Award 10 points for sophisticated analysis with clear insight presentation, 5 points for basic trend identification, and 0 points if no analytical components are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, outliers, connection issues, invalid inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time data updates 2. Predictive analytics for sock trends 3. Competitive analysis across different sock categories). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant visualization of similar metrics (e.g., multiple charts showing the same data) 2. Function modules unrelated to sock product analysis (e.g., irrelevant product categories) 3. Fancy effects that affect performance (e.g., unnecessary animations or 3D effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/interaction layers), function documentation, and code maintainability. Deduct 5 points if global variables are overused or design patterns are not applied; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern dashboard design principles: 1) Harmonious color palette suitable for data visualization (contrasting but not jarring) 2) Proper layout with information hierarchy (most important metrics prominent) 3) Professional typography (readable fonts, consistent styling). Deduct 3 points for each cluttered chart area, 5 points for poor color choices that hinder data interpretation, and 5 points for inconsistent styling across visualizations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dashboard performance optimized?",
+      "description": "Judge whether the visualization is optimized for performance: 1) Data loading and chart rendering time ≤ 3 seconds 2) Smooth transitions for interactive elements 3) Efficient data handling for large datasets. Deduct 5 points for slow loading times (>5 seconds), 3 points for laggy interactions, and 5 points for memory leaks or browser freezing with larger datasets. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

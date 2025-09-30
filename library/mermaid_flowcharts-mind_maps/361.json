@@ -1,0 +1,68 @@
+{
+  "index": 361,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Generate frontend code for implementing a mind map using Vue2 and G6.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core mind map data structure properly implemented?",
+      "description": "Evaluate whether the code defines a proper hierarchical data structure for the mind map, including nodes and edges with appropriate attributes. Check if it handles parent-child relationships, node positions, and visual properties. Give 0 points if the data structure is missing, 5 points if it's basic but functional, and 10 points if it's comprehensive with support for rich metadata.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the G6 graph initialization and configuration properly implemented?",
+      "description": "Check if G6 is correctly initialized with proper container, plugins, and configurations. Evaluate whether the code sets appropriate behaviors (drag, zoom, click), node/edge styles, and layout algorithms. Deduct 3 points if basic configuration is missing, 5 points if interaction modes are incomplete, and 2 points if performance optimizations are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the core mind map operations implemented?",
+      "description": "Review whether essential operations are implemented: adding nodes, deleting nodes, editing node content, collapsing/expanding branches, and reorganizing the hierarchy. Score 0 if these core functions are missing, 5 if only basic operations work, and 10 if all operations are implemented with proper event handling and state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Vue2 integration with G6 properly implemented?",
+      "description": "Evaluate the integration between Vue2 reactive system and G6 rendering. Check for proper component lifecycle management, reactive data flow, and event handling between Vue and G6. Deduct 5 points if G6 instances aren't properly disposed on component destruction, 3 points if reactivity is broken, and 3 points if Vue events don't properly trigger G6 updates. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data structures, operation errors, rendering failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automatic layout optimization 2. Keyboard shortcuts for quick operations 3. Custom node themes 4. Export/import functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same action) 2. Function modules unrelated to mind mapping (e.g., built-in calculators or unrelated widgets) 3. Fancy effects that affect performance (e.g., excessive animations that slow down interaction). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating graph logic/UI components/data management), component reusability, and code maintainability. Deduct 5 points if global state management is messy or Vue best practices aren't followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns between G6 rendering and Vue component logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the mind map follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors for nodes) 2) Proper layout spacing (consistent node distances and hierarchy indentation) 3) Professional typography (readable font sizes and weights for different hierarchy levels). Deduct 3 points for each visual inconsistency, 5 points for poor color contrast, and 5 points for cluttered node arrangements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the mind map interactions feel natural: 1) Node dragging responds immediately 2) Expand/collapse animations are smooth and under 300ms 3) Zooming and panning work intuitively. Deduct 5 points for laggy node creation/deletion, 3 points for jerky animations during rearrangement, and 5 points for unresponsive editing interactions. Check if the mind map properly renders and updates even with large datasets. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Mermaid Flowcharts-Mind Maps",
+  "difficulty": "medium"
+}

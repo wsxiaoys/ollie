@@ -1,0 +1,68 @@
+{
+  "index": 1244,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you create is executable for demonstration. Write code for a WeChat Mini Program with one button to import images and another button to generate pixel art.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Mini Program structure correctly implemented?",
+      "description": "Review whether the code includes the essential WeChat Mini Program files (app.js, app.json, app.wxss) and page structure (WXML, WXSS, JS). Check if the project configuration is properly set up with required permissions for image access. Score 0 if the basic structure is missing, 5 if partially implemented, 10 if complete with proper configuration and permissions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image import functionality fully implemented?",
+      "description": "Evaluate whether the code uses wx.chooseImage or wx.chooseMedia APIs correctly to access device gallery or camera. Check for proper handling of file types (jpg, png, etc.), image size limits, and preview functionality. Deduct 3 points if only basic import works without validation, 5 points if there's no error handling for failed imports or oversized images. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the pixel art generation algorithm implemented effectively?",
+      "description": "Analyze whether the code implements a proper pixelation algorithm (e.g., canvas-based sampling, color quantization) rather than simple resizing. Check if the pixel density/resolution is configurable. Deduct 5 points if the algorithm produces low-quality results, 3 points if performance is poor for larger images. Score 10 if it includes advanced features like color palette customization or dithering options.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interface for controlling pixel art parameters well-designed?",
+      "description": "Check whether the code provides UI controls to adjust pixelation parameters (e.g., pixel size, color depth, style). Score 0 if no controls exist, 5 if basic sliders/inputs are implemented but lack visual feedback, and 10 if comprehensive controls with real-time preview functionality are available.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as image loading failures, memory constraints on large images, user cancellation of import) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple pixelation styles/filters 2. Social sharing integration with customized templates 3. Animation of the pixelation process). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image processing libraries doing the same thing) 2. Function modules unrelated to the pixel art generator (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/file handling), proper commenting, and performance optimization. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no performance optimizations for processing large images. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design principles: 1) Consistent with WeChat visual language 2) Proper layout spacing and component sizing 3) Professional typography and visual hierarchy. Deduct 3 points for each UI element that doesn't follow WeChat guidelines, 5 points for poor contrast or accessibility issues, and 5 points for inconsistent styling across screens. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the app responds quickly and provides appropriate feedback: 1) Loading indicators during image processing 2) Smooth transitions between states 3) Proper touch target sizes for buttons. Deduct 5 points for operations that block the UI thread, 3 points for lack of progress indicators during long operations, and 5 points for unresponsive UI elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

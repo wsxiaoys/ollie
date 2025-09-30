@@ -1,0 +1,68 @@
+{
+  "index": 463,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration.\n\n## Role\nYou are an experienced code expert. Given a software development requirement description, you are asked to generate project code based on the requirements. Strictly follow the rules to help users generate complete project code with simple and understandable comments, without outputting anything else.\n\n## Output Rules\n1. You will always generate complete, runnable project code; please ensure the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot execute or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n## Project Requirements Description\nDesign a creative writing assistance platform to help users overcome writer's block. Provide a random writing prompt generator that includes elements such as characters, settings, conflicts, etc. Create a timed writing mode where users need to complete a certain word count within a specific time. Implement a library of writing templates that include structural guidance for different genres. Add a vocabulary recommendation feature that suggests relevant words based on the user's existing text. Provide simple text analysis tools displaying statistics such as frequency of common words, sentence length variations, etc. Support saving works and exporting to different formats.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the random writing prompt generator fully implemented?",
+      "description": "Evaluate whether the code implements a robust prompt generator that includes diverse elements (characters, settings, conflicts, genres, etc.). Check if the prompts are random but coherent, with sufficient variety to prevent repetition. The generator should allow for customization of prompt types and complexity.0 points if missing completely, 5 points if only basic random selection without proper categories, 10 points for a complete implementation with diverse elements and combinations that feel natural and inspiring.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the timed writing mode functionality complete?",
+      "description": "Check if the code implements a timer system with configurable duration, word count targets, and proper progress tracking. Verify if it handles start/pause/resume states correctly, provides appropriate notifications (approaching deadline, completion), and accurately tracks writing metrics during the session.Deduct 3 points if timer controls are missing, 3 points if word count tracking is inaccurate, 4 points if progress visualization is absent. Full 10 points requires proper time management, word goal tracking, and user feedback systems.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are writing templates properly implemented?",
+      "description": "Assess if the code includes a diverse library of writing templates for different genres (fiction, non-fiction, poetry, etc.) with clear structural guidance. Templates should be organized by category, include explanatory notes, and allow for customization.0 points if templates are missing, 5 points if only basic templates without proper structure or guidance, 10 points for comprehensive implementation with multiple genres, detailed structural guidance, and customization options.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the vocabulary recommendation feature effective?",
+      "description": "Evaluate the vocabulary suggestion algorithm that analyzes user text and recommends relevant words. Check if it considers context, offers synonyms/antonyms, suggests more vivid alternatives, and avoids repetitive suggestions. The feature should enhance the writing without disrupting flow.Deduct 5 points if recommendations are random rather than context-based, 3 points if the feature causes performance issues with longer texts, 3 points if the suggestions lack variety or relevance. 10 points for a smart, context-aware system with diverse, helpful recommendations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as large text inputs, browser refreshes, connection issues, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper form validation, data persistence during unexpected events, and graceful error handling.Code with strong robustness should effectively handle edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted plot development suggestions 2. Mood-based writing environment customization 3. Collaborative writing functionality 4. Voice-to-text for hands-free ideation).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text analysis algorithms doing the same thing) 2. Function modules unrelated to writing assistance (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations during typing).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating UI/logic/data persistence), code organization, maintainability, and build process automation. Check for proper state management, component reusability, and consistent coding standards.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching that creates a conducive writing environment 2) Proper layout spacing with clear content hierarchy 3) Professional font system appropriate for reading and writing (readable fonts, proper contrast). Check if the interface minimizes distractions while writing.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback when typing 2) Smooth transitions between writing modes 3) Non-intrusive notifications for timer events or suggestions. Evaluate if the platform feels responsive and intuitive during extended writing sessions.Deduct 5 points for each operation without feedback, 3 points for laggy text input or stuttering during scrolling, and 5 points if core writing functions (text editing, formatting) aren't immediately accessible. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

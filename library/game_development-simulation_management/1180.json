@@ -1,0 +1,68 @@
+{
+  "index": 1180,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code where possible. Design a web-based mini-game, an electronic pet raising game.\n\nPlayers can choose pets shaped like kittens, puppies, ponies, etc. Once a pet is selected, players cannot choose another one.\n\nThe pet can run, jump, lie down, and sleep on the screen.\n\nThe pet has a hunger bar with 100 points, which decreases by 1 point every half hour. The bar has different colors for each 30% segment.\n\nWhen the hunger bar is completely depleted, the pet will die and cannot be revived.\n\nProvide three types of food for players to feed their pets, which can increase the hunger bar by 5%, 10%, and 15% respectively.\n\nProvide three types of toys for players to interact with their pets. Each toy can decrease the pet's hunger bar by 5%, 10%, and 15% respectively.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the pet creation and selection system fully implemented?",
+      "description": "Check if the code allows players to select from different pet types (kittens, puppies, ponies) with distinct visual representations. Verify that once a pet is selected, the selection cannot be changed. Evaluate if pet selection is properly persisted in local storage or a database, and if the UI clearly indicates the selection is permanent.10 points maximum. Deduct 5 points if pet selection isn't permanent. Deduct 3 points if fewer than 3 pet types are implemented. Deduct 2 points if pet selection isn't visually intuitive or lacks confirmation dialog. Score 0 if pet selection system is missing entirely.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all pet animations and behaviors correctly implemented?",
+      "description": "Evaluate whether the required pet behaviors (running, jumping, lying down, sleeping) are implemented with smooth animations and clear visual distinction. Check if animations transition naturally between states and if they respond to player interactions or environmental changes appropriately.15 points maximum. Award 3-4 points for each well-implemented animation (running, jumping, lying down, sleeping). Deduct 3 points if animations are jerky or unnatural. Deduct 5 points if animations don't properly represent the intended behavior. Score 0 if animations are missing entirely.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the hunger system properly implemented with visual indicators?",
+      "description": "Check if the hunger bar starts at 100 points, decreases at the specified rate (1 point every half hour), and changes colors for each 30% segment. Verify that the game correctly detects when hunger reaches zero and implements the death state properly. Validate that hunger persists between sessions.15 points maximum. Deduct 5 points if hunger doesn't decrease at the specified rate. Deduct 3 points if color segments aren't implemented. Deduct 5 points if death state isn't properly handled. Deduct 3 points if hunger doesn't persist between sessions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the feeding and toy interaction systems complete?",
+      "description": "Evaluate whether the three types of food and three types of toys are visually distinct and whether they affect the hunger bar by the specified percentages. Check if the feeding/play animations are satisfying and if there are appropriate cooldown mechanisms to prevent spam.10 points maximum. Deduct 2 points for each missing food or toy type. Deduct 3 points if hunger effects don't match specifications. Deduct 2 points if feeding/playing lacks appropriate animations or feedback. Score 0 if systems are completely missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser refreshes, interruptions, inconsistent timing intervals, etc.) and provide friendly error prompts or recovery mechanisms. Verify that game state is properly saved and restored.10 points maximum. If the robustness is strong with proper error handling and state management, give 10 points. If the robustness is average with some error handling, give 5 points. If no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather effects influencing pet behavior 2. Day/night cycle affecting sleep patterns 3. Pet personality traits that evolve over time 4. Social sharing features).10 points maximum. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple hunger tracking mechanisms) 2. Function modules unrelated to pet raising (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary 3D renders or particle effects).10 points maximum. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view layers), unit test coverage, and build process automation. Check for proper use of design patterns, code organization, and maintainability.10 points maximum. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Appropriate pet design that feels cohesive with the UI.10 points maximum. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. Deduct 3 points if the pet designs clash with the UI style.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance 4) Pet responds naturally to interactions.10 points maximum. Deduct 5 points for each operation without feedback, 3 points for visual after-images during animations, and 5 points for hard-to-find key function buttons. Deduct 3 points if pet interactions feel delayed or unnatural.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "medium"
+}

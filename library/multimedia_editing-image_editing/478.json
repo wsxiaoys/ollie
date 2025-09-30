@@ -1,0 +1,68 @@
+{
+  "index": 478,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable for demonstration. Implement an image annotation tool where users can upload images, drag to draw rectangular annotation boxes at specified positions on the image, and write descriptive text for each annotation box. Finally, users should be able to save both the image and annotation information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image upload functionality properly implemented?",
+      "description": "Check if the code implements file input for image selection, handles various image formats (JPG, PNG, GIF, etc.), performs client-side validation for file types and size limits, and displays proper feedback during the upload process. Also verify if the uploaded image is rendered correctly with proper aspect ratio preservation. Score 0 if image upload is not implemented, 5 if basic upload exists but lacks validation, and 10 if all features including error handling are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the rectangular annotation drawing functionality complete?",
+      "description": "Review if the code accurately implements mouse/touch event handling for drawing rectangular boxes (mousedown, mousemove, mouseup or equivalent touch events), includes visual feedback during drawing, maintains proper coordinate calculation relative to the image (not the viewport), and handles edge cases like drawing outside image boundaries. Deduct 5 points if coordinates are incorrectly calculated, 3 points if visual feedback during drawing is missing, and 5 points if annotation persistence between sessions is not handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the annotation text input system well-designed?",
+      "description": "Evaluate whether the code provides a text input mechanism for each annotation box, maintains association between text and specific boxes, includes validation for text input (e.g., character limits, required fields), and handles text positioning relative to boxes appropriately. Check if the system allows editing existing annotations. Score 0 if text annotation is missing, 5 if basic implementation exists but lacks editing capability, and 10 if the system is complete with validation and good UX.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the save functionality comprehensive?",
+      "description": "Check if the code implements proper saving of both image and annotation data, exports in a standard format (JSON, XML, or custom format with documentation), includes metadata like timestamps and image details, and provides clear feedback during the save process. Verify if the saved data structure is well-organized for potential future import. Deduct 5 points if only partial data is saved, 3 points if the format is not standardized, and 5 points if no feedback is provided during saving. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as uploading invalid files, browser resizing, rapid consecutive actions, network issues during save operations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Annotation templates or presets 2. Keyboard shortcuts for efficient annotation 3. Zooming and panning capabilities for precise annotations 4. Annotation categories with color coding). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple drawing mechanisms that overlap) 2. Function modules unrelated to image annotation (e.g., built-in filters or effects not needed for annotation) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the annotation process). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating annotation logic/UI rendering/data management layers), code organization, reusable components, and maintenance considerations. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if event handling creates memory leaks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with clear distinction between UI elements and annotation elements 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system for annotation labels (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual indication of active/selected annotations. Deduct 3 points for each crowded visual element, 5 points for poor contrast between annotations and image, and 5 points for chaotic tool arrangement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when drawing boxes 2) Smooth dragging experience without lag 3) Clear visual indication when hovering over interactive elements 4) Intuitive resizing and repositioning of existing annotation boxes. Deduct 5 points for each operation without feedback, 3 points for jittery drawing experience, and 5 points for unintuitive annotation selection mechanics. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "easy"
+}

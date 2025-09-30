@@ -1,0 +1,68 @@
+{
+  "index": 1476,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable when possible. Help me implement a high-performance canvas-based rich text editor using TypeScript class style.\n\nThe editor should have the following features: support for multiple lines, text selection, font styles (bold, italic, underline, strikethrough), font size and color, text alignment (left, center, right, justified), line height and letter spacing, superscript and subscript, lists (ordered and unordered), indentation and spacing, support for multi-step undo and redo operations, support for copy, cut and paste (including pasting content from Word, websites and other sources while clearing redundant formatting), and data saved in JSON format that is space-efficient.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the canvas-based text rendering system fully implemented?",
+      "description": "Review whether the code correctly implements a canvas-based text rendering engine that handles font metrics, text measurement, and proper text layout. Check if it correctly renders different styles (bold, italic, underline, strikethrough) with proper weight and appearance. Score 0 if core text rendering is missing, 5 if basic rendering works but with visual glitches, and 10 if text renders accurately with all required styles.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is text selection functionality properly implemented?",
+      "description": "Evaluate the text selection mechanism. It should include: 1) Proper highlighting of selected text 2) Accurate cursor positioning 3) Word/paragraph selection with double/triple clicks 4) Keyboard navigation with modifiers (Shift+arrows). Deduct 3 points if selection highlighting has rendering issues, 3 points if keyboard selection is missing, and 4 points if selection across styling boundaries fails. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are all required text styling features implemented?",
+      "description": "Check for complete implementation of: font styles (bold, italic, underline, strikethrough), font size/color, text alignment (left, center, right, justified), line height, letter spacing, superscript/subscript, and lists (ordered/unordered). For each missing feature deduct 1 point. For features with partial implementation (e.g., works visually but not in the data model), deduct 0.5 points. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the undo/redo system and clipboard functionality complete?",
+      "description": "Examine the implementation of multi-step undo/redo operations and clipboard functions. Check that operations are properly batched for logical editing actions. For clipboard, verify proper handling of internal copying/pasting and external content with format cleaning (from Word, websites). Deduct 3 points for missing undo/redo, 3 points for basic clipboard issues, and 4 points if format cleaning from external sources is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (very long text, unusual Unicode characters, rapid input, large paste operations, etc.) and provide appropriate error handling or recovery mechanisms. Code with strong robustness should handle these edge cases effectively, giving 10 points. If the robustness is average, give 5 points, and if edge cases crash the editor, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaboration capability 2. Auto-save with version history 3. Markdown shortcuts 4. Performance optimizations for large documents). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple selection models) 2. Feature modules unrelated to rich text editing (e.g., built-in image editing) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review TypeScript class design (proper use of interfaces, access modifiers, generics), modular architecture (separation of rendering/model/controller), code reusability, and test coverage. Deduct 3 points if TypeScript features are underutilized; deduct 3 points if the architecture lacks clear separation of concerns; deduct 4 points if there's significant code duplication or poor maintainability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the editor interface meet professional design standards?",
+      "description": "Evaluate whether the editor follows modern design principles: 1) Clean, distraction-free editing area 2) Proper spacing between lines and paragraphs 3) Consistent cursor behavior and selection highlighting 4) Appropriate toolbar layout with clear iconography. Deduct 3 points for poor visual hierarchy, 3 points for inconsistent styling, and 4 points for cluttered interface elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the editor performance optimized?",
+      "description": "Judge the performance characteristics: 1) Input latency ≤ 16ms (60fps) 2) Efficient canvas redrawing strategies (partial updates vs. full redraws) 3) Memory management for large documents 4) JSON serialization efficiency. Deduct 3 points if typing shows noticeable lag, 3 points if scrolling large documents is jerky, and 4 points if memory usage grows uncontrollably with document size. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1195,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. Write a piece of code for a song request app. The main interface has the title \"Home\" at the top, and is divided into four areas below: the first area is for requesting songs, the second area is for singing, the third area is similar to a social feed where you can post songs you've sung, and the fourth area is a personal profile page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the song request functionality fully implemented?",
+      "description": "Review whether the code implements a complete song request system including search functionality, song selection, and queue management. Check if the interface allows filtering songs by genre, artist, or popularity. The implementation should handle API calls to music databases and include loading states. Score 0 if song request is missing, 5 if basic functionality exists but lacks search filters or queue management, 10 if the system is comprehensive with all expected features.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the singing area properly developed?",
+      "description": "Evaluate whether the singing interface includes essential features like lyrics display with timing synchronization, audio playback controls, recording capability, and post-recording options (save, share, discard). Check if the interface handles different screen sizes appropriately and maintains proper audio synchronization. Deduct 5 points if recording functionality is missing, 3 points if there's no lyrics synchronization. Award full 10 points only if all components work together seamlessly.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the social feed implementation complete?",
+      "description": "Check whether the social feed includes core functionality for displaying user-posted songs with appropriate metadata (user, song title, timestamp), interaction features (like, comment, share), infinite scrolling or pagination, and content filtering options. Ensure data loading is optimized and includes skeleton states. Deduct 3 points for missing interaction features, 3 points for poor feed performance, and 4 points if content filtering is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the profile page properly implemented?",
+      "description": "Assess whether the profile page displays user information (avatar, username, bio), statistics (songs sung, followers/following counts), activity history, and settings/customization options. Check if the implementation includes responsive design for different device sizes and proper state management for authenticated/unauthenticated views. Deduct 3 points for missing user statistics, 3 points for absent activity history, and 4 points if profile customization options are not available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code includes error handling for API failures, input validation, empty states (no search results, empty feed), and offline functionality. Code should gracefully handle edge cases such as long song titles, missing profile images, or failed uploads. Award 10 points for comprehensive error handling with user-friendly messages, 5 points for basic error checks without recovery mechanisms, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Voice-activated song search 2. Live collaborative singing rooms 3. AI-generated song recommendations based on singing style 4. Vocal range analysis and matching). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicated navigation components or overlapping gestures 2. Unnecessary animations that slow down the app experience 3. Feature bloat unrelated to the core music/social experience (e.g., embedded games, weather widgets). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component architecture (separation of UI/logic), state management approach, code reusability across the four main sections, and performance optimizations. Deduct 5 points for global state pollution or prop drilling issues; deduct 3 points if the rendering optimization is poor (unnecessary re-renders); deduct 2 points if there's no code splitting for the four main sections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern app design principles: 1) Consistent color scheme across all four areas 2) Typography hierarchy that prioritizes readability 3) Proper use of whitespace and content density 4) Clear visual distinction between the four main areas. Deduct 3 points for inconsistent styling between sections, 4 points for cluttered layouts, and 3 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the navigation and transition between areas smooth and intuitive?",
+      "description": "Judge the app's navigation system: 1) Clear, persistent access to all four main areas 2) Smooth transitions between sections (≤ 300ms) 3) Proper loading states during content fetching 4) Navigation state preservation when switching between areas. Deduct 3 points for jarring transitions, 3 points for confusing navigation patterns, and 4 points if the current section isn't clearly indicated. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

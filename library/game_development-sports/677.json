@@ -1,0 +1,68 @@
+{
+  "index": 677,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Implement an archery scoring system. Use device gyroscope to control aiming (via DeviceOrientation API), simulate drawing the bow through mouse movement speed, and display bowstring vibration effects. Arrow flight should be affected by wind forces (random vectors). After hitting the target center, show slow-motion replay. The scoring calculation needs to consider arrow compression effects (handling overlap in adjacent scoring zones).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the gyroscope aiming control system fully implemented?",
+      "description": "Review whether the code accurately implements DeviceOrientation API integration for aiming control, including gyroscope data filtering, calibration mechanism, and smooth aiming cursor movement. Check if proper permission handling and fallback mechanisms are provided for devices without gyroscope support. Score 0 if gyroscope control is not implemented, 5 if only basic orientation detection works, and 10 if full gyroscope aiming with calibration and smooth filtering is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the bow drawing and bowstring vibration system properly simulated?",
+      "description": "Evaluate whether the mouse movement speed detection accurately simulates bow drawing mechanics, including draw strength calculation, release timing detection, and realistic bowstring vibration effects using canvas/WebGL animations. Check if the bowstring tension visualization responds correctly to drawing speed and provides haptic-like feedback. Deduct 5 points if vibration effects are missing, and 3 points if draw strength calculation is inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the arrow flight physics and wind simulation realistic?",
+      "description": "Check whether the arrow trajectory calculation includes proper physics simulation with gravity, air resistance, and random wind vector effects. Evaluate if wind visualization (particles, indicators) is present and if the flight path realistically responds to environmental factors. Deduct 5 points if wind effects are static or unrealistic, and 3 points if trajectory physics don't account for arrow mass and velocity degradation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the scoring system with compression effects and slow-motion replay implemented?",
+      "description": "Review whether the scoring calculation properly handles arrow compression effects when arrows land in adjacent scoring zones, including overlap detection algorithms and zone boundary calculations. Check if slow-motion replay is triggered on target center hits with smooth animation interpolation. Deduct 5 points if compression effects are not calculated, and 3 points if slow-motion replay is choppy or missing. Give 10 points if fully implemented with accurate scoring logic.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as device orientation permission denial, mouse movement edge cases, canvas rendering failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle gyroscope unavailability, extreme mouse speeds, and rendering performance issues, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the archery experience (e.g., 1. Realistic arrow fletching rotation during flight 2. Dynamic target distance adjustment 3. Weather effects affecting gameplay 4. Achievement system with combo scoring 5. Multiplayer tournament mode). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple wind calculation systems coexisting) 2. Function modules unrelated to archery (e.g., built-in social media sharing) 3. Fancy effects that affect performance (e.g., excessive particle systems during arrow flight). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core archery mechanics are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/rendering/input handling layers), performance optimization for real-time rendering, and proper event handling architecture. Deduct 5 points if global state pollution is found or physics calculations are not optimized; deduct 5 points if the code lacks proper separation of concerns; deduct 5 points if memory leaks are detected in animation loops. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the archery game design follows modern UI principles: 1) Realistic target and environment textures with proper lighting 2) Clear aiming reticle with appropriate contrast 3) Professional HUD elements (score display, wind indicator, power meter) with readable typography. Deduct 3 points for each poorly designed UI element, 5 points for unrealistic 3D models or textures, and 5 points for cluttered or hard-to-read scoring displays. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the real-time interactions conform to gaming standards: 1) Gyroscope response delay ≤ 50ms for precise aiming 2) Bow drawing animation at consistent 60fps 3) Arrow flight trajectory rendered smoothly without stuttering 4) Slow-motion replay transitions seamlessly. Deduct 5 points for each laggy interaction, 3 points for frame drops during arrow flight, and 5 points for unresponsive gyroscope controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Sports",
+  "difficulty": "hard"
+}

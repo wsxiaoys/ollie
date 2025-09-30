@@ -1,0 +1,68 @@
+{
+  "index": 1779,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Could you help me design a small cat character, similar to the scenario in the \"Moon Rabbit Adventure\" game, that comes online once every 15 minutes to collect bamboo? I need this programming work right now.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the cat character design visually appealing and well-implemented?",
+      "description": "Evaluate whether the cat character has a distinct visual style with proper proportions, colors, and details. Check if the design is implemented using appropriate HTML5 Canvas or SVG techniques with clean path definitions or sprite sheets. Award 10 points for a professional-looking character with smooth outlines and thoughtful design; 5 points for a basic but functional design; 0 points if the character is poorly defined or visually unappealing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 15-minute timing mechanism correctly implemented?",
+      "description": "Examine the code that handles the periodic appearance of the cat character. Verify if it uses proper JavaScript timing functions (setTimeout, setInterval) or more modern approaches like requestAnimationFrame with timestamp tracking. Check for proper clearance of timers to prevent memory leaks. The timing should be accurate within 1-2 seconds. Deduct 5 points if the timing is inconsistent, 3 points if it doesn't handle browser tab inactivity correctly, and give 0 points if the timing mechanism is missing or fundamentally flawed.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the bamboo collection animation and logic properly implemented?",
+      "description": "Review the animation sequence and interaction logic for the bamboo collection process. Check if there are smooth transitions between states (approaching, collecting, leaving) with appropriate easing functions. Verify that the collection logic tracks bamboo counts correctly and provides visual feedback. Award 10 points for polished animations with proper state management; 5 points for functional but basic implementation; 0 points if the collection process is broken or missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state persistence properly handled?",
+      "description": "Assess how the code manages game state persistence between sessions. Check if localStorage/sessionStorage is used appropriately to save bamboo counts, cat appearance times, and other relevant data. Verify that the state restoration works correctly when the page is reloaded. Deduct 5 points if the state is only partially saved, 3 points if there's no validation of stored data, and give 0 points if persistence is completely missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, unexpected user interactions, or resource loading failures). Code with strong robustness should include error handling, fallback mechanisms, and graceful degradation. Give 10 points for comprehensive error handling and defensive coding; 5 points for basic error checks; 0 points if critical errors aren't handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic cat behaviors based on time of day 2. Weather effects influencing the cat's appearance 3. Sound effects for interaction feedback). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation loops or timing mechanisms 2. Unnecessary visual elements unrelated to the cat's bamboo collection 3. Overly complex code that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating animation logic/rendering/state management), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for the cat and bamboo elements 2) Proper layout spacing for game elements 3) Appropriate use of visual hierarchy. Deduct 3 points for each visually jarring element, 5 points for poor color choices that affect readability, and 5 points for cluttered or confusing visual layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animations and interactions conform to human perception characteristics: 1) Responsive cat movements 2) Smooth transitions between animation states 3) Clear visual feedback for user interactions. Deduct 5 points for jerky animations, 3 points for inconsistent movement speeds, and 5 points for abrupt transitions between states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

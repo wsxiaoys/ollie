@@ -1,0 +1,68 @@
+{
+  "index": 105,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable whenever possible.\nPlease help me implement this SVG image using code. A black and white silhouette of a man serving a ball in a game of tennis, holding a racquet in his hand.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG structure correctly implemented?",
+      "description": "Check whether the code includes proper SVG declarations with correct namespace, viewBox settings, and appropriate canvas dimensions. The SVG should use the standard xmlns attribute and have reasonable width/height attributes or viewBox dimensions. Deduct 5 points if namespaces are missing, 3 points if viewBox is improperly set, and 5 points if dimensions make the image difficult to view or scale. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the tennis player silhouette accurately represented?",
+      "description": "Evaluate how well the code creates a recognizable silhouette of a tennis player in a serving position. The figure should clearly show a person with arms extended holding a racquet in a serving pose. Deduct 5 points if the posture is anatomically incorrect, 7 points if the silhouette is not recognizable as a tennis player, and 3 points if proportions are significantly distorted. Score 0 if the silhouette is completely missing. The full score is 15 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the tennis racquet properly depicted in the player's hand?",
+      "description": "Review whether the tennis racquet is correctly positioned in the player's hand and has appropriate proportions. The racquet should be distinguishable with a handle and frame. Deduct 5 points if the racquet shape is unrealistic, 3 points if the position relative to the hand is incorrect, and 7 points if the racquet is missing or unrecognizable. The full score is 15 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the black and white silhouette effect properly implemented?",
+      "description": "Assess whether the code correctly implements a true silhouette effect with clean black fill and no unnecessary borders or gradients. The SVG should use appropriate fill attributes to create a solid black figure against a white/transparent background. Deduct 5 points for using gray instead of black, 3 points for adding unnecessary strokes, and 5 points if multiple colors are used instead of a true silhouette. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG implementation handles browser compatibility issues and includes fallback options. Deduct 3 points if browser-specific attributes are used without fallbacks, 5 points if the SVG doesn't include appropriate role or aria attributes for accessibility, and 5 points if there's no alternate content or title for screen readers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Subtle animation of the serve motion 2. Interactive elements that respond to user input 3. Clean scaling without pixelation at different sizes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary path points or shapes that add complexity without visual benefit 2. Excessive grouping elements (<g>) that don't serve a purpose 3. Unnecessarily complex gradient or filter effects that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if core silhouette clarity is compromised by redundant code. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (such as meaningful element IDs, proper indentation, and logical grouping), optimization techniques (path simplification, appropriate decimal precision), and maintainability. Deduct 5 points if paths are excessively complex when simpler alternatives exist; deduct 3 points if precision is too high (causing bloated file size) or too low (causing visual artifacts); deduct 2 points if there's no logical organization of SVG elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the silhouette meet professional design standards?",
+      "description": "Evaluate whether the design follows modern SVG best practices: 1) Clean path definitions without unnecessary points 2) Proper use of basic shapes where appropriate rather than complex paths 3) Balanced visual weight and proportions. Deduct 3 points for jagged edges or non-smooth curves, 5 points for anatomically incorrect body proportions, and 5 points for poor negative space usage or awkward composition. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the SVG implementation optimized and efficient?",
+      "description": "Judge whether the SVG code is optimized for performance and file size: 1) Minimal use of unnecessary decimal places in coordinates 2) Use of appropriate SVG elements (basic shapes vs. paths) 3) Clean, minifiable code structure. Deduct 3 points for excessive precision in coordinates, 3 points for using paths where basic shapes would suffice, and 4 points for unnecessarily complex grouping or transformation matrices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

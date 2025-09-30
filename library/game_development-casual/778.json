@@ -1,0 +1,68 @@
+{
+  "index": 778,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Keyboard Practice Master\n\nYou are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable. Help me create a webpage for computer keyboard typing practice, focusing on letter typing. Letters appear randomly - you get 1 point for typing correctly, lose 1 point for mistakes. When the score exceeds 26 points, provide positive feedback and reset the score to zero. The page should be double-clickable to run.\n\nRequirements:\n- The webpage background should feature a realistic virtual keyboard\n- Letters should appear at the corresponding positions on the keyboard\n- Include keyboard typing sounds when keys are pressed\n- The page should be simple with a \"Score Board\" at the top to record practice scores\n- Display \"Keyboard Practice Master\" prominently in large text at the top",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the virtual keyboard rendering and letter positioning system fully implemented?",
+      "description": "Review whether the code accurately renders a realistic virtual keyboard layout through HTML/CSS, and whether letters appear at the correct corresponding key positions. Check if the keyboard layout follows standard QWERTY arrangement with proper key sizing and spacing. Score 0 if the keyboard is not visually realistic or letters don't appear at correct positions, 5 if only basic keyboard is shown without proper letter positioning, and 10 if a fully realistic keyboard with accurate letter positioning is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the typing detection and scoring mechanism accurately implemented?",
+      "description": "Evaluate whether the code correctly detects keyboard input, validates correct/incorrect typing, and implements the scoring system (+1 for correct, -1 for mistakes). Check if the system properly handles the 26-point threshold with positive feedback and score reset. Deduct 5 points if input detection is unreliable, 3 points if scoring logic has bugs, and 5 points if the feedback mechanism doesn't work properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the random letter generation and display system properly designed?",
+      "description": "Check whether the random letter generation uses proper randomization algorithms and displays letters clearly at corresponding keyboard positions. Evaluate if the letter appearance timing and visibility are appropriate for typing practice. Deduct 5 points if randomization is not truly random or biased, 3 points if letter display timing is inappropriate, and 5 points if letters are not clearly visible or positioned incorrectly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio feedback system (keyboard sounds) completely integrated?",
+      "description": "Verify whether keyboard typing sounds are properly implemented and triggered on key presses. Check if audio files are optimized for web delivery and don't cause performance issues. Evaluate if sound timing matches visual feedback. Deduct 5 points if sounds don't play consistently, 3 points if audio latency is noticeable, and 5 points if sounds interfere with performance or user experience. Give 10 points if fully implemented with smooth audio feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid key pressing, invalid key inputs, audio loading failures, browser compatibility issues, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should effectively handle edge cases and maintain functionality across different browsers. Give 10 points for excellent robustness, 5 points for average handling, and 0 points if no exception handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance the typing practice experience?",
+      "description": "Check whether the code includes valuable features that improve the learning experience (e.g., 1. WPM (Words Per Minute) calculation 2. Typing accuracy percentage display 3. Visual key press animations 4. Progress tracking over time 5. Difficulty level adjustments). Add 2-3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features that detract from the core functionality?",
+      "description": "Strictly check for three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems) 2. Features unrelated to typing practice (e.g., built-in games or social media integration) 3. Excessive animations that distract from typing focus. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with core typing practice functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate proper engineering quality and structure?",
+      "description": "Review modular design (separation of game logic, audio handling, UI components), code organization, and maintainability. Check for proper event handling, memory leak prevention, and resource management. Deduct 5 points if global state pollution is found or poor separation of concerns; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if audio resources are not properly managed or cause memory leaks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional visual standards for educational tools?",
+      "description": "Evaluate whether the design follows modern UI principles: 1) Clear visual hierarchy with prominent title and scoreboard 2) Keyboard design that closely resembles real keyboards 3) Appropriate color contrast for letter visibility 4) Clean, distraction-free layout that focuses attention on typing practice. Deduct 3 points for poor visual hierarchy, 5 points for unrealistic keyboard appearance, 5 points for poor color choices that affect readability, and 3 points for cluttered layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the interactive responses smooth and educationally effective?",
+      "description": "Judge whether the interactive feedback supports effective learning: 1) Immediate visual feedback when keys are pressed (≤100ms) 2) Clear indication of correct/incorrect typing 3) Smooth transitions and animations that don't distract from typing 4) Responsive keyboard highlighting that guides user attention. Deduct 5 points for delayed feedback, 3 points for unclear success/error indicators, 5 points for distracting animations, and 3 points for poor visual guidance. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

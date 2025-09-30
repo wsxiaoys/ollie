@@ -1,0 +1,68 @@
+{
+  "index": 1171,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Based on Zhihui Jun's robotic arm software as a blueprint, please help me write a visualization software suitable for the Perlant 1510a robotic arm.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the robotic arm visualization model accurately implemented?",
+      "description": "Evaluate whether the 3D model of the Perlant 1510a robotic arm is correctly implemented with proper joint hierarchies, proportions, and movement limitations. Check if the model includes all necessary parts (base, links, joints, end effector) with appropriate degrees of freedom. Score 0 if no model is implemented, 5 if a basic model is present but with inaccuracies, and 10 if the model accurately represents the Perlant 1510a specifications.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the inverse kinematics system properly implemented?",
+      "description": "Verify the implementation of the inverse kinematics algorithm for controlling the robotic arm. Check if the code handles singularities, joint limits, and unreachable positions. The algorithm should efficiently calculate joint angles for a given end effector position. Deduct 5 points if the IK solver has accuracy issues, 3 points if edge cases are not handled, and 5 points if performance is poor for real-time visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the trajectory planning and simulation feature complete?",
+      "description": "Assess whether the software includes trajectory planning capabilities that generate smooth paths between points while respecting velocity and acceleration limits. Check if the simulation can display movement in real-time or at adjustable speeds. Verify that the visualization shows the arm's position at each step of a planned movement sequence. Deduct 5 points if trajectory planning is basic without acceleration profiles, and 8 points if only point-to-point movement without path planning is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a comprehensive control interface for manual manipulation?",
+      "description": "Evaluate the user interface for manually controlling the robotic arm, including joint-by-joint control and end effector positioning. Check for visualization feedback when commands are executed, and whether the interface allows for incremental movements and precise positioning. Deduct 3 points if the interface is not intuitive, 5 points if it lacks visual feedback, and 7 points if it doesn't support both joint space and task space control. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds movements, impossible arm configurations, communication errors with hardware, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Collision detection and avoidance 2. Path recording and playback with optimization 3. Real-time performance metrics for arm movements 4. Digital twin capabilities with hardware synchronization). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple trajectory planners with overlapping functionality) 2. Function modules unrelated to robotic arm control (e.g., unnecessary data visualization tools) 3. Fancy effects that affect performance (e.g., excessive particle effects or unrealistic lighting). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating kinematics/visualization/control logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with industrial design sensibilities 2) Proper layout spacing with clear separation between control panels and visualization area 3) Professional technical visual elements (grid lines, measurement indicators, coordinate axes). Deduct 3 points for each crowded visual element, 5 points for poorly contrasting colors that hinder visibility, and 5 points for chaotic panel layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the 3D rendering and interaction smooth and responsive?",
+      "description": "Judge whether the 3D visualization performs efficiently: 1) Camera controls respond within 100ms 2) Arm movement animations update at minimum 30fps 3) UI controls provide immediate visual feedback. Deduct 5 points for laggy rendering during arm movement, 3 points for jerky camera controls, and 5 points for poor perspective that makes spatial relationships difficult to understand. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

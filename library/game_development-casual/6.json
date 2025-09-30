@@ -1,0 +1,68 @@
+{
+  "index": 6,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Try to ensure the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement 'SkiFree', a skiing simulation game based on JavaScript and canvas. Players need to control the skier on the slope to avoid obstacles such as trees and rocks, while collecting flags to increase their score.\n\n### Gameplay\n- **Control the skier**: Use keyboard arrow keys to move the skier left and right.\n- **Avoid obstacles and collect flags**: Dodge obstacles and collect as many flags as possible to increase your score.\n\n### Game Features\n- **Retro pixel style**: The game adopts a retro pixel art style, recalling the feeling of classic games.\n- **Simple and intuitive**: Easy to operate and get started, suitable for players of all ages.\n\n### Game Tips\n- **Anticipate paths**: Predict and adjust your skiing route in advance to avoid obstacles.\n- **Maintain for long periods**: Keep playing for longer periods to accumulate higher scores.\n\n### Summary\nThis game provides a fast-paced and exciting gaming experience through its simple yet fun gameplay, perfect for players seeking brief entertainment. Please include comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the skiing game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements skier movement control through keyboard arrow keys, collision detection with obstacles (trees, rocks), flag collection mechanics, and score calculation system. Score 0 if core skiing mechanics are missing, 5 if only basic movement is implemented, and 10 if all gameplay elements including physics-based skiing simulation are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the canvas rendering and game loop properly implemented?",
+      "description": "Check whether the HTML5 Canvas implementation includes proper game loop with requestAnimationFrame, efficient rendering pipeline, and sprite management system. Evaluate scrolling background mechanics and object spawning algorithms. Deduct 5 points if frame rate drops below 30fps, and 3 points if rendering artifacts or flickering occurs. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are obstacle generation and collision systems accurately designed?",
+      "description": "Evaluate whether the obstacle generation uses proper randomization algorithms to create realistic skiing terrain with trees and rocks. Check collision detection accuracy using bounding box or pixel-perfect methods. Deduct 5 points if collision detection has false positives/negatives, and 3 points if obstacle distribution feels unnatural or repetitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the retro pixel art style and visual consistency maintained?",
+      "description": "Check whether the code implements authentic retro pixel art aesthetics with proper sprite scaling, pixelated graphics without anti-aliasing, and consistent 8-bit/16-bit color palette. Evaluate whether visual elements match classic SkiFree appearance. Deduct 5 points if modern graphics break retro immersion, and 3 points if inconsistent pixel density is used. Give 10 points if authentic retro style is maintained throughout.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid key presses, canvas resize events, browser tab switching, memory leaks from game objects) and provide graceful error handling. Code with strong robustness should effectively manage edge cases and resource cleanup, giving 10 points. If robustness is average, give 5 points, and if no exception handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance gameplay?",
+      "description": "Check whether the code includes engaging features that improve the classic SkiFree experience (e.g., 1. Progressive difficulty scaling 2. Power-ups or special items 3. Particle effects for snow trails 4. Sound effects and background music 5. High score persistence). Add 2 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Over-engineered systems not suitable for a simple skiing game 2. Duplicate input handling or rendering logic 3. Excessive visual effects that compromise the retro aesthetic or performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core skiing gameplay is hindered by unnecessary complexity.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic, rendering, input handling), code organization with proper commenting for developer understanding, and clean architecture patterns. Deduct 5 points if global state pollution or poor separation of concerns is found; deduct 3 points if insufficient code comments hinder understanding; deduct 2 points if inconsistent naming conventions are used. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet retro gaming standards?",
+      "description": "Evaluate whether the visual design authentically recreates retro gaming aesthetics: 1) Appropriate pixel art scaling without blurring 2) Classic color palette reminiscent of early computer games 3) Proper UI elements for score display and game status 4) Authentic retro typography. Deduct 3 points for each modern design element that breaks immersion, 5 points for inappropriate scaling, and 2 points for inconsistent retro styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the gameplay interaction responsive and intuitive?",
+      "description": "Judge whether the skiing controls feel natural and responsive: 1) Keyboard input response delay ≤ 50ms for skiing games 2) Smooth skier movement with appropriate physics 3) Clear visual feedback for collisions and flag collection 4) Intuitive game start/restart mechanisms. Deduct 5 points for each unresponsive control, 3 points for laggy movement, and 2 points for unclear game state feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

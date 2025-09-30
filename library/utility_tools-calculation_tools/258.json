@@ -1,0 +1,68 @@
+{
+  "index": 258,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be careful to ensure the generated code is executable for demonstration. Create an HTML using Mapbox that can import KML files, with map switching functionality to toggle between satellite imagery, road networks, etc. Add annotation capabilities and measurement functions for distance and area.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Mapbox integration properly implemented?",
+      "description": "Check whether the Mapbox API is correctly initialized with proper authentication, fallback handling for API limits, and error management. The map container should be responsive with proper viewport settings. Score 0 if Mapbox is not properly initialized, 5 if basic integration exists but lacks error handling, and 10 if fully implemented with proper error handling and responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the KML file import functionality work correctly?",
+      "description": "Evaluate the KML parsing and rendering implementation. Check for proper file validation, error handling during parsing, and efficient rendering of complex KML structures (including multigeometry, extended data, and styles). Test with different KML file sizes and complexities. Deduct 5 points if only simple KML elements are supported, 3 points if parsing errors aren't handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the map layer switching function complete?",
+      "description": "Verify that the implementation includes multiple map styles (satellite, streets, terrain, etc.) with smooth transitions between them. The UI should clearly indicate the current map style. Check that custom layers persist across style changes, and the system handles style loading failures gracefully. Deduct 5 points if transitions are jarring, 3 points if fewer than 3 map styles are available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the annotation and measurement tools fully functional?",
+      "description": "Examine whether the implementation includes both distance and area measurement tools with clear UI controls. Check for proper unit display (meters/kilometers, square meters/hectares), interactive editing capabilities, and persistence of measurements. Annotations should support multiple geometry types (points, lines, polygons) with customizable styles. Deduct 5 points if either measurement type is missing, 3 points if unit conversion is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid KML files, API errors, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. KML data statistics visualization 2. Automated geolocation clustering 3. 3D terrain visualization integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple conversion utilities for the same purpose) 2. Function modules unrelated to mapping (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down map rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating map rendering/data handling/UI components), event handling patterns, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between data and presentation layers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic UI controls that obstruct map visibility. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Map interaction responsiveness ≤ 100ms 2) Smooth zoom and pan operations without jankiness 3) Clear visual feedback for tool selection and operation. Deduct 5 points for jerky map movements, 3 points for delayed feedback when drawing measurements, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "medium"
+}

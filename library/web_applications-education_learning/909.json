@@ -1,0 +1,68 @@
+{
+  "index": 909,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and specialized responses. Make sure the generated code is executable for demonstration purposes. I'm using a Vue 3 project where users edit SQL queries and the query results are rendered on the page. SQL Beautify can enhance the appearance. Please help me implement this functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SQL editor implementation complete?",
+      "description": "Review whether the code implements a fully functional SQL editor using Vue 3, with features like syntax highlighting, auto-completion, and line numbering. Check if it uses appropriate libraries (like CodeMirror, Monaco Editor, or Ace Editor) and if proper event bindings are established. Score 0 if there's no editor implementation, 5 if basic editing is supported but advanced features are missing, 10 if the editor is complete with all expected features.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is SQL beautification properly implemented?",
+      "description": "Evaluate the SQL beautification functionality. It should format queries with consistent indentation, proper keyword capitalization, and aligned clauses. Check if it handles complex queries with subqueries, CTEs, and various SQL dialects. Deduct 5 points if beautification only works for basic queries, 3 points if it doesn't preserve comments or special syntax. Give full points only if the beautification is configurable and preserves all SQL semantics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the SQL execution and results rendering complete?",
+      "description": "Check if the code handles SQL query execution through appropriate API calls and displays results in a well-structured table or visualization. Verify if it includes loading states, proper error handling, and can handle different result types (empty sets, large datasets, various data types). Score 3 if only basic query results are shown, 7 if pagination or sorting is included, 10 if the implementation includes advanced features like filtering and column customization.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the integration with Vue 3 reactive system properly done?",
+      "description": "Assess whether the code properly leverages Vue 3's composition API, reactive references, computed properties, and watch functions. Check for proper component organization, state management, and lifecycle hooks usage. Deduct 3 points for each anti-pattern (like direct DOM manipulation), 5 points if reactivity is broken in key features, and 5 points if the component structure is poorly organized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid SQL syntax, API request failures, long-running queries, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Query history with local storage 2. Visual query builder alongside text editor 3. Query execution plan visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple SQL parsing libraries) 2. Function modules unrelated to SQL editing/execution (e.g., unrelated charts or widgets) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating SQL processing logic/UI components/API services), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

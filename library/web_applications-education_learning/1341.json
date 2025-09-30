@@ -1,0 +1,68 @@
+{
+  "index": 1341,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and displayable. Please write a classroom roll call program in HTML language, which includes features such as flashing name display, roll call, and \"next\" function.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic roll call function fully implemented?",
+      "description": "Review whether the code implements the core roll call functionality, including student name storage, random selection, and display mechanism. Score 0 if the roll call system is not implemented, 5 if only basic name display is available, and 10 if complete with student management and random selection algorithms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the flashing name display feature properly implemented?",
+      "description": "Check if the code includes a visually engaging flashing effect for displaying selected names. Evaluate the animation timing (should be between 200-600ms for optimal visibility), contrast ratio (minimum 4.5:1 for accessibility), and whether it gracefully handles different name lengths. Score 3 points for basic animation, 7 points for proper timing and accessibility, and 10 points for fully optimized implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the 'next' function properly implemented?",
+      "description": "Assess whether the 'next' function correctly selects a new student without repetition until all students have been called. Check if it has proper state management to track called students, handles edge cases (empty list, last student), and provides clear feedback when the list is exhausted. Deduct 5 points if it allows immediate repetitions, 3 points if it lacks proper completion indication.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is class roster management functionality included?",
+      "description": "Evaluate whether the program allows adding, editing, and removing students from the roll call list. Check if it includes data persistence (localStorage or similar), input validation, and duplicate prevention. Score 3 points for basic list editing, 7 points for validation and proper UI integration, 10 points for complete management with persistence.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty roster, rapid clicking, browser refresh, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Attendance tracking statistics 2. Customizable roll call animations/sounds 3. Timer for student response). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to select students) 2. Function modules unrelated to roll call (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data layers), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast clicking, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

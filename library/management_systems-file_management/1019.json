@@ -1,0 +1,68 @@
+{
+  "index": 1019,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. I want to create a small program:\n\n1. General functionality: Read PDF literature, identify, and summarize\n2. Specific implementation: PDF literature can be categorized through research direction keywords, arranged chronologically, by directional differentiation, research institutions, journals, and other categories in a tree structure (this functionality is key)\n3. When there are many documents, use keywords for selection. The homepage displays keywords, with different sizes representing the quantity of related literature, and different colors and words representing different categories of articles. Clicking on a keyword displays a small tree that can be zoomed in and out to view the scope of literature, somewhat like Apple's classification bar - just a few icons before clicking, but displaying all icons after clicking\n4. Please provide HTML, CSS, and JavaScript code for mobile devices",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "PDF Reading and Text Extraction Functionality",
+      "description": "Check if the code implements a working PDF parsing mechanism that can extract text content from uploaded PDF files.0 points if PDF reading is not implemented, 5 points if basic text extraction works but with structure/formatting issues, 10 points if text extraction is robust and preserves document structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Literature Summarization and Keyword Extraction",
+      "description": "Evaluate the text analysis capability to identify key information and generate meaningful summaries from academic PDFs.0 points if summarization is absent, 3 points if only basic metadata extraction exists, 7 points if keyword extraction works but summarization is weak, 10 points if both keyword extraction and summarization are robust.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Hierarchical Tree Structure Implementation",
+      "description": "Assess the tree structure implementation for organizing literature by various categories as specified.0 points if tree structure is missing, 5 points if basic tree exists but lacks proper categorization options, 8 points if tree has multiple classification schemes but lacks smooth interaction, 10 points if fully functional with all required categorization options.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Keyword Cloud Visualization",
+      "description": "Evaluate the implementation of the keyword cloud on the homepage that represents literature quantity through variable sizing.0 points if keyword cloud is absent, 5 points if basic cloud exists but lacks proper sizing/coloring, 8 points if sizing and coloring work but transitions are clunky, 10 points if the visualization is complete with smooth interactions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations and provide friendly error prompts or recovery mechanisms.0 points if no exception handling exists, 5 points if basic error handling is implemented but recovery mechanisms are missing, 10 points if comprehensive error handling with user-friendly recovery options is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience beyond the core requirements.Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check for unnecessary implementations that complicate the code or user experience.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Code Engineering Quality",
+      "description": "Review the overall code architecture, organization, and best practices implementation.Deduct 5 points if global state management is messy; deduct 5 points if code duplication rate is high; deduct 5 points if mobile-specific optimizations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Mobile UI Design Quality",
+      "description": "Assess whether the interface follows professional mobile design principles and is optimized for smaller screens.Deduct 3 points for each non-touch-friendly element, 5 points for non-responsive layouts, and 5 points for text that's too small to read on mobile. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction and Performance",
+      "description": "Judge whether the dynamic effects and performance are optimized for mobile devices.Deduct 5 points for noticeable lag during interactions, 3 points for rendering issues during transitions, and 5 points for memory issues with multiple documents. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 796,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure to provide executable code when possible. I want to create a word connection game where I upload words and then play the game based on those words. What information do I need to provide you with?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the word upload and management system fully implemented?",
+      "description": "Review whether the code includes a complete word upload interface (file upload/manual input), word validation (duplicate checking, format verification), and word library management functionality. Check if it supports multiple file formats (txt/csv/json) and includes word preprocessing (trimming, case normalization). Score 0 if basic upload is missing, 5 if only simple upload is implemented, and 10 if comprehensive word management with validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the word connection game logic correctly implemented?",
+      "description": "Evaluate whether the core game mechanics are properly implemented: word chain validation (last letter of previous word matches first letter of next word), used word tracking, valid word verification against the uploaded dictionary, and game state management (current player, remaining words, score calculation). Deduct 5 points if connection rules are incomplete, 3 points if word validation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game interface intuitive and functional?",
+      "description": "Check whether the game interface includes essential elements: current word display, input field with auto-suggestions, word history panel, remaining word count, timer/scoring system, and clear game status indicators. The interface should provide real-time feedback for valid/invalid connections. Deduct 5 points if key interface elements are missing, 3 points if user feedback is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are advanced game features and modes implemented?",
+      "description": "Assess whether the code includes enhanced gameplay features: difficulty levels (word length restrictions, category filtering), multiplayer support, hint system, word definitions/meanings display, game statistics tracking, and customizable game rules (time limits, scoring systems). Give 10 points if multiple advanced features are implemented, 5 points for basic enhancements, 0 points if only core functionality exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid file uploads, empty word lists, invalid user input, network interruptions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered word suggestions 2. Word etymology/definition integration 3. Social sharing of game results 4. Voice input support 5. Themed word categories with visual elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple word validation logics coexisting) 2. Function modules unrelated to word games (e.g., built-in social media integration) 3. Fancy effects that affect performance (e.g., excessive animations during word input). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/UI/data management layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for word lists and game elements. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Input validation feedback delay ≤ 100ms 2) Word transition animations controlled between 300-500ms 3) Clear visual focus guidance for active input fields 4) Smooth word list scrolling and filtering. Deduct 5 points for each operation without feedback, 3 points for visual lag during word input, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 602,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Design a currency exchange rate calculator that allows users to input an amount and currency, then displays real-time conversion results based on their selected target currency, and supports querying historical exchange rate records by date.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core currency conversion functionality fully implemented?",
+      "description": "Review whether the code implements accurate currency conversion with real-time exchange rates fetching. Check if the application properly handles currency input, selection, and result display with appropriate decimal precision. Score 0 if core conversion is missing, 5 if basic conversion exists without real-time rates, and 10 if fully implemented with accurate exchange rate API integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the historical exchange rate querying feature implemented?",
+      "description": "Evaluate whether users can select specific dates and retrieve historical exchange rates. Check if the application includes date validation, proper handling of non-trading days, and visualization of historical data (tables or charts). Deduct 5 points if only current-day lookups are possible, and 3 points if date selection exists but validation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the exchange rate data source properly implemented and managed?",
+      "description": "Check whether the application connects to a reliable exchange rate API, implements proper error handling for API failures, and includes a fallback mechanism (like cached rates). Verify if rate updates occur at appropriate intervals without excessive API calls. Deduct 5 points for missing API error handling, 3 points for no caching strategy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are currency selection and input validation properly implemented?",
+      "description": "Review whether the application provides a comprehensive list of currencies with appropriate symbols/codes, implements input validation for amounts (preventing negative values, non-numeric inputs), and handles currency selection changes correctly. Deduct 3 points for missing validation, 4 points for incomplete currency options, and 3 points for improper handling of selection changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruption, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Currency trend visualization 2. Favorite currency pairs saving 3. Rate alerts/notifications when thresholds are met). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple API calls for the same data) 2. Function modules unrelated to currency exchange (e.g., unnecessary weather widgets) 3. Fancy effects that affect performance (e.g., excessive animations during simple conversions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API services/UI components/state management), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Currency selection and conversion calculation response ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback when rates update or calculations complete. Deduct 5 points for each operation without feedback, 3 points for laggy responses during currency switching, and 5 points for confusing interaction flows. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "easy"
+}

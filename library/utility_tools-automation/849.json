@@ -1,0 +1,68 @@
+{
+  "index": 849,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. Implement a solution in React+TSS to export multiple HTML codes to PDF, setting an HTML template for the PDF while preserving CSS styles. The method should allow HTML with different parameters but the same framework to use the same export method. Do not use canvas drawing. Use jspdf - please provide a demo.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the PDF export functionality correctly implemented with jsPDF?",
+      "description": "Evaluate whether the solution correctly uses jsPDF library for HTML-to-PDF conversion without relying on canvas drawing. Check if the implementation includes proper initialization of jsPDF, handles page breaks appropriately, and correctly renders HTML content to PDF. Score 0 if jsPDF is not implemented, 5 if basic implementation exists but with limitations, and 10 if full HTML-to-PDF conversion works smoothly.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is CSS style preservation properly handled in the PDF export?",
+      "description": "Verify that the solution correctly preserves CSS styles when exporting HTML to PDF. Check if it handles complex CSS properties (flexbox, grid, media queries, etc.), custom fonts, and responsive designs. Deduct 3 points if basic styles are preserved but complex layouts break, 5 points if fonts or specific CSS properties aren't supported, and 10 points if no CSS preservation is implemented. Full score of 10 requires demonstration of preserving various CSS properties.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the HTML templating system flexible and reusable?",
+      "description": "Assess whether the solution implements a flexible HTML template system that can be used with different parameters. Check if the template system allows for dynamic content insertion, conditional rendering, and maintains the same structure across different data inputs. Deduct 3 points if templates are hardcoded, 5 points if templates have limited customization capability, and 8 points if templates cannot handle different data structures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the solution provide a unified export method for different HTML content?",
+      "description": "Examine if the implementation offers a single, unified export method that works effectively with different HTML content but the same framework. Check for parameterization, abstraction level, and reusability of the export function. Deduct 3 points if separate export methods are needed for different HTML structures, 5 points if significant code modification is needed between exports, and 8 points if the method doesn't handle edge cases like large content or special characters. Full score requires a robust, unified export approach.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed HTML, excessive content length, special characters, image loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Preview functionality before export 2. Progress indicator during PDF generation 3. Batch export capability 4. Custom header/footer options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple PDF generation methods coexisting) 2. Function modules unrelated to PDF export (e.g., unnecessary image processing) 3. Fancy effects that affect performance (e.g., excessive animations during export). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating PDF generation logic/template rendering/styling), TypeScript type safety, and React best practices. Deduct 5 points if global state pollution is found or TypeScript types are poorly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if React hooks are improperly used causing performance issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Export operation feedback ≤ 500ms 2) Loading indicators for lengthy operations 3) Clear visual guidance for export process. Deduct 5 points for each operation without feedback, 3 points for unresponsive UI during PDF generation, and 5 points for hard-to-find export function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 505,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Please design a school academic administration system that includes modules for student information management, teacher information management, course management, and grade management. The system should support functions like student course selection, teacher scheduling, grade entry and inquiry. Administrators should be able to set semester information, import student lists, assign homeroom teachers, etc. The system should also provide grade analysis functions, including class rankings, average score statistics, pass rate calculations, etc., and support generating various academic reports.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the student information management module fully implemented?",
+      "description": "Review whether the code includes comprehensive student data models (with fields like student ID, name, gender, class, admission date, contact information) and CRUD operations. Check if the module supports batch imports, advanced search filtering, and student status tracking (active, graduated, suspended). Score 0 if basic student information storage is missing, 5 if only basic CRUD operations are implemented, and 10 if the module includes comprehensive student lifecycle management with data validation and privacy controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the teacher information management and scheduling system properly implemented?",
+      "description": "Evaluate whether the code implements teacher profiles (including ID, name, department, qualifications, teaching subjects) and scheduling functionality. Check if the system handles teacher availability constraints, workload balancing, and conflict detection when assigning classes. Deduct 3 points if teacher qualification verification is missing, 3 points if scheduling conflicts aren't automatically detected, and 4 points if workload reports are not available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the course management system complete and flexible?",
+      "description": "Assess whether the code implements a robust course catalog with prerequisites, credit hours, classroom assignments, and enrollment caps. Check if the system handles course dependencies, scheduling across multiple semesters, and supports different course types (required/elective). Deduct 3 points if prerequisite checking is missing, 3 points if time conflict resolution isn't implemented, and 4 points if the system doesn't support curriculum planning across academic years. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the grade management and analysis functions comprehensive?",
+      "description": "Review whether the code implements grade entry, verification workflows, and analysis tools. Check if the system calculates GPA, class rankings, grade distributions, and historical performance trends. Verify if it handles different grading schemes (percentage, letter grades, pass/fail). Deduct 3 points if grade verification workflows are missing, 3 points if analytical reports lack visualization, and 4 points if the system doesn't support customizable grading schemes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as duplicate entries, invalid inputs, concurrent data modifications, system crashes) and provide friendly error prompts or recovery mechanisms. Check for input validation, error handling, transaction management, and data integrity constraints. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered early warning system for at-risk students 2. Mobile app integration for real-time notifications 3. Interactive academic progress dashboards 4. Predictive analytics for course planning). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user management systems coexisting) 2. Function modules unrelated to academic administration (e.g., a built-in social networking platform) 3. Fancy effects that affect performance (e.g., unnecessary animations in data entry forms). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review architectural patterns (such as MVC, layered architecture), code organization, database normalization, and security implementation. Check for proper authentication, authorization, audit logging, and input sanitization. Deduct 3 points if secure coding practices are missing; deduct 4 points if the database schema is poorly designed with redundancies; deduct 3 points if there's no separation between business logic and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent UI components across modules 2) Clear visual hierarchy and information architecture 3) Responsive design for different devices 4) Accessible design for users with disabilities. Deduct 3 points for inconsistent UI elements, 3 points for poor information organization, 2 points for non-responsive layouts, and 2 points for accessibility issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the system architecture scalable and maintainable?",
+      "description": "Judge whether the system architecture can handle growing data volumes and user numbers: 1) Database indexing and query optimization 2) Caching strategies for frequently accessed data 3) Modular design allowing feature extensions 4) API design for potential integrations. Deduct 3 points for lack of performance optimization, 3 points for monolithic architecture difficult to extend, 2 points for missing documentation, and 2 points for absence of testing frameworks. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

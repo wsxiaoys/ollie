@@ -1,0 +1,68 @@
+{
+  "index": 1275,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create a project with a theme of \"Ancient Chinese Natural Science Appreciation Platform,\" which should include a backend management system, login system, and content collected by crawling Baidu. The directory should be categorized using a Chinese map image style.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Ancient Chinese Natural Science Appreciation Platform fully implemented?",
+      "description": "Evaluate whether the code implements a complete platform structure with frontend visualization, content display, and navigation functionality. Check if the platform has clear sections for different scientific achievements categorized by periods, fields, or figures. Score 0 if only basic HTML structure exists, 5 if there's a functional but basic platform, and 10 if the platform is comprehensive with rich content organization and display features.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Chinese map image-style directory categorization implemented effectively?",
+      "description": "Assess whether the code implements an interactive Chinese map visualization that serves as the main navigation directory. Check if regions are properly mapped to content categories, with clear visual distinction, hover effects, and proper geographical accuracy. Deduct 5 points if the map is static/non-interactive, 3 points if regional divisions are inaccurate, and 3 points if content categories don't logically align with geographical regions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the backend management system properly implemented?",
+      "description": "Review the backend code for content management functionality, including CRUD operations for scientific content, user management, and system settings. Check for proper API design, database schema, and admin dashboard implementation. Deduct 5 points if content management features are missing, 3 points if there's no user role system, and 3 points if there's no content approval workflow. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the login system secure and complete?",
+      "description": "Examine the authentication implementation for security best practices, including password hashing, session management, CSRF protection, and user role authorization. Review if there are features for registration, password recovery, and account management. Deduct 5 points for missing encryption/hashing, 3 points for lack of session timeout handling, and 5 points for no input validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid inputs, unauthorized access attempts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper error handling, input validation, and defensive programming techniques, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive timeline visualization of scientific developments 2. AR/VR demonstrations of ancient inventions 3. Side-by-side comparison of ancient and modern scientific principles). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple content management systems) 2. Function modules unrelated to ancient Chinese science (e.g., modern Western science sections) 3. Fancy effects that affect performance (e.g., excessive animations on educational content). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating presentation/business logic/data access layers), unit test coverage, and build process automation. Evaluate the web crawler implementation for efficiency and respect for target site policies. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows both modern and traditional Chinese aesthetic principles: 1) Harmonious color matching (using traditional Chinese color palettes) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (appropriate use of Chinese calligraphy fonts for headings, readable fonts for content). Deduct 3 points for each crowded visual element, 5 points for inappropriate color combinations, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance when navigating the map interface. Assess the performance impact of crawled content display and map rendering. Deduct 5 points for each operation without feedback, 3 points for visual after-images during map navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

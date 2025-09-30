@@ -1,0 +1,68 @@
+{
+  "index": 1007,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable for demonstration. E-commerce product detail page HTML5 dynamic template.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the product display system fully implemented?",
+      "description": "Review whether the code accurately implements product image gallery with zoom functionality, product information display, variant selection (size/color), and price calculation through HTML/JavaScript. Check if it includes image lazy loading, thumbnail navigation, and 360-degree view support. Score 0 if core product display is missing, 5 if only basic image display is implemented, and 10 if all e-commerce product features are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the shopping cart and purchase flow implemented?",
+      "description": "Check whether the implementation includes add-to-cart functionality, quantity adjustment, cart persistence (localStorage/sessionStorage), and checkout process simulation. Verify if inventory validation, price calculation with discounts, and shipping cost calculation are handled. Deduct 5 points if cart state management is missing, and 3 points if quantity validation is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dynamic content loading and template system designed?",
+      "description": "Evaluate whether the template system supports dynamic product data injection, variant switching without page reload, and asynchronous content loading. Check if it includes template inheritance, component reusability, and data binding mechanisms. Deduct 5 points if template rendering causes layout shifts, and 3 points if dynamic updates are not smooth. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete e-commerce interaction lifecycle constructed?",
+      "description": "Check whether the code includes complete user interaction flows: product browsing, variant selection, reviews display, related products recommendation, and wishlist functionality. Verify if breadcrumb navigation, product comparison, and social sharing features are implemented. Deduct 5 points if user session management is missing, and 3 points if accessibility features are not included. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing product images, invalid variant selections, network failures, malformed data, etc.) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should gracefully handle API failures, image loading errors, and invalid user inputs, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the shopping experience (e.g., 1. AR/VR product preview 2. Real-time stock countdown 3. Interactive size guide 4. Voice search capability 5. Smart product recommendations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image gallery implementations) 2. Function modules unrelated to e-commerce (e.g., built-in games or unnecessary animations) 3. Excessive decorative effects that impact performance (e.g., heavy particle effects or auto-playing videos). Deduct 3 points for each redundancy found, and directly deduct 10 points if core shopping functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating product data/UI components/business logic), code organization with proper file structure, and reusable component architecture. Deduct 5 points if global state pollution is found or component coupling is too tight; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no build optimization or minification is considered. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional e-commerce design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce principles: 1) Professional color scheme with proper brand consistency 2) Clear visual hierarchy with proper spacing (8px grid system) 3) Readable typography (body text ≥ 14px, proper contrast ratios) 4) Consistent button styles and hover states. Deduct 3 points for each cluttered section, 5 points for poor color choices that affect readability, and 5 points for inconsistent design patterns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to e-commerce user expectations: 1) Image transitions and zoom effects ≤ 300ms 2) Cart updates with immediate visual feedback 3) Smooth variant switching without layout jumps 4) Loading states for all async operations 5) Touch-friendly interactions for mobile. Deduct 5 points for each interaction without proper feedback, 3 points for janky animations or layout shifts, and 5 points for poor mobile responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

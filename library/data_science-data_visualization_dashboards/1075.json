@@ -1,0 +1,68 @@
+{
+  "index": 1075,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Help me draw a GitHub calendar heatmap using Vue and D3.js.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the GitHub calendar heatmap visualization correctly implemented?",
+      "description": "Review whether the code accurately implements the GitHub-style calendar heatmap visualization using D3.js. Check if it includes proper day-by-day grid layout, color intensity mapping based on contribution counts, and correct date handling. Score 0 if the heatmap is not implemented, 5 if basic visualization is present but with structural issues, and 10 if the implementation closely resembles GitHub's calendar appearance with correct date alignment and week/month indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Vue integration properly implemented?",
+      "description": "Evaluate whether D3.js is correctly integrated with Vue.js framework. Check if the implementation uses Vue's reactivity system for data binding, proper lifecycle hooks for D3 rendering, and component-based architecture. Deduct 5 points if D3 manipulates the DOM directly bypassing Vue's virtual DOM, 3 points if Vue reactivity is not leveraged for data changes. The full score is 10 points if D3 and Vue are seamlessly integrated with proper data flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data handling functionality complete?",
+      "description": "Check whether the code includes proper data processing for the heatmap, including data format transformation, date parsing, contribution count aggregation, and color scale mapping. Deduct 5 points if data normalization is missing, 3 points if date handling is incorrect. Give 10 points if the implementation includes flexible data input formats and proper edge case handling (sparse data, empty periods, etc.).",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive features implemented?",
+      "description": "Assess whether the heatmap includes GitHub-like interactive features such as tooltips showing exact contribution counts and dates on hover, highlighting of selected days/weeks, and possibly filtering options. Score 0 if no interactivity is implemented, 5 if only basic tooltips exist, and 10 if comprehensive interactive features are present with smooth transitions and responsive behavior.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data formats, missing data points, boundary dates, different time zones, etc.) and provide graceful fallbacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Customizable color schemes 2. Animation of data changes 3. Contribution trend analysis visualization 4. Comparative view between different time periods). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization functionality 2. Unnecessary dependencies or libraries 3. Over-engineered features that complicate the code without adding value to the heatmap visualization. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functionality is impaired by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating visualization logic/data processing/UI components), reusability of the heatmap component, and code maintainability. Deduct 5 points if global state is used inappropriately; deduct 5 points if the code has high coupling between D3 and Vue; deduct 5 points if there's no clear separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the heatmap design follows modern visualization principles: 1) Appropriate color scale that effectively communicates intensity 2) Proper grid layout with consistent spacing 3) Clear typography for labels and tooltips (month names, day indicators). Deduct 3 points for poor color contrast, 5 points for inconsistent grid sizing, and 5 points for illegible or misaligned labels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the dynamic effects conform to user expectations: 1) Tooltip appearance within 100ms of hover 2) Smooth transitions when data changes 3) Responsive layout that adapts to different screen sizes. Deduct 5 points for noticeable lag during interactions, 3 points for jarring or missing transitions, and 5 points for broken layouts on window resize. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "hard"
+}

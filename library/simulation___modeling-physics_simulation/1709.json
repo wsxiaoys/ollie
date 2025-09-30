@@ -1,0 +1,68 @@
+{
+  "index": 1709,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the code you generate is executable and displayable. Create a web page file demonstrating Brownian motion.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Brownian motion correctly implemented according to mathematical principles?",
+      "description": "Examine whether the code implements true Brownian motion with proper stochastic processes and random walk principles. The implementation should use correct mathematical formulas for random displacement. Score 0 if the motion is just random movement without proper Brownian characteristics, 5 if basic Brownian motion is implemented, and 10 if it includes refinements like proper scaling factors and time-step adjustments.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are particle dynamics and visualization properly rendered?",
+      "description": "Check whether particles display smooth motion with proper frame rate (≥30fps), whether collisions with boundaries are handled correctly, and if the visualization clearly shows the random nature of Brownian motion. Deduct 3 points if motion appears jerky, 3 points if boundary collisions are improperly handled, and 4 points if the visualization fails to clearly demonstrate the principle. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are interactive controls for simulation parameters provided?",
+      "description": "Evaluate whether users can adjust key parameters such as number of particles, temperature (affecting motion intensity), particle size, and viscosity. Give 2 points for each well-implemented control up to a maximum of 10 points. Controls should provide immediate visual feedback when adjusted.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an educational explanation or visualization of the physics involved?",
+      "description": "Assess whether the implementation includes explanatory elements about Brownian motion physics, such as trajectory tracking, motion heat maps, statistical distribution graphs of particle displacement, or textual explanations. Award up to 10 points based on the depth and clarity of the educational components.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, extreme parameter inputs, performance degradation with many particles, etc.) and provide graceful fallbacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple visualization modes 2. Particle interaction physics 3. Data export for analysis). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation loops 2. Function modules unrelated to Brownian motion 3. Fancy effects that affect performance without contributing to the demonstration. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/visualization/user interface), performance optimization techniques (like requestAnimationFrame usage, canvas vs. DOM rendering choices), and code maintainability. Deduct 5 points if global state pollution is found; deduct 3 points if the animation loop is inefficiently implemented; deduct 5 points if the code has poor organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation performance and interactivity meet high standards: 1) Consistent frame rate without drops 2) Smooth parameter adjustment effects 3) Responsive design that works across devices. Deduct 5 points if the animation stutters frequently, 3 points if controls have noticeable lag, and 5 points if the visualization breaks on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "easy"
+}

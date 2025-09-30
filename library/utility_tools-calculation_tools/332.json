@@ -1,0 +1,68 @@
+{
+  "index": 332,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you provide is executable for demonstration. Implement an indented tree layout algorithm using JavaScript and Canvas.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the tree layout algorithm correctly implemented?",
+      "description": "Evaluate whether the algorithm correctly positions tree nodes with proper indentation levels. Check if it handles parent-child relationships correctly, maintains proper horizontal spacing between sibling nodes, and ensures vertical spacing between different tree levels. Score 0 if the algorithm fails to create a basic tree structure, 5 if it creates a basic structure with minor positioning issues, and 10 if it implements a complete indented tree layout with proper spacing and alignment.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Canvas rendering implemented properly?",
+      "description": "Assess the Canvas API implementation for rendering the tree. Check if it correctly draws nodes (rectangles/circles), connection lines between parent-child nodes, and handles text rendering within nodes. Verify proper use of context methods like beginPath(), stroke(), fill(), etc. Score 0 if Canvas rendering is missing or fundamentally broken, 5 if basic rendering exists with minor visual glitches, and 10 if rendering is complete with clean visuals and proper Canvas state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation handle varied tree data structures?",
+      "description": "Check if the implementation can process different tree data formats (nested objects, adjacency lists, etc.) and tree sizes. Verify if it can handle edge cases such as single-node trees, deeply nested trees, and unbalanced trees with varying numbers of children. Score 0 if only one specific format is supported with no flexibility, 5 if it handles common formats but has limitations, and 10 if it's adaptable to multiple data structures with comprehensive edge case handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are there performance optimizations for large trees?",
+      "description": "Evaluate whether the implementation includes optimizations for handling large trees, such as viewport culling (only rendering visible nodes), level-of-detail rendering, or efficient node positioning algorithms. Check for evidence of time complexity analysis or benchmarking. Deduct 5 points if rendering becomes noticeably slow with more than 100 nodes, and 3 points if there's no consideration for performance with large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, missing node properties, circular references in the tree, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive node expansion/collapse 2. Node search/filtering capabilities 3. Zoom and pan functionality 4. Animated transitions when rearranging nodes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations in the layout algorithm 2. Unnecessary re-rendering of the entire tree when only portions change 3. Fancy effects that affect performance without adding value to the tree visualization. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating layout algorithm, rendering logic, and data management), code reusability, and adherence to design patterns. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between core algorithms and rendering code. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual representation meet professional visualization standards?",
+      "description": "Evaluate whether the tree visualization follows data visualization principles: 1) Clear node differentiation and hierarchy representation 2) Appropriate use of color for encoding information (not merely decorative) 3) Sufficient contrast between nodes and background. Deduct 3 points for cluttered layouts, 5 points for poor visual hierarchy, and 5 points for illegible node text or unclear relationship lines. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction with the tree visualization intuitive and responsive?",
+      "description": "Judge whether the interaction mechanisms (if implemented) conform to user expectations: 1) Click/hover feedback delay ≤ 100ms 2) Smooth animations for expanding/collapsing nodes (duration between 200-400ms) 3) Intuitive controls for any pan/zoom functionality. Deduct 5 points for each interaction without feedback, 3 points for choppy animations, and 5 points for non-intuitive interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "medium"
+}

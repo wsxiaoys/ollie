@@ -1,0 +1,68 @@
+{
+  "index": 647,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Equipment Borrowing Management System\n\nYou are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration.\n\nDevelop an electronic device borrowing management system for company employees to borrow shared equipment such as laptops, projectors, cameras, etc. The system requires user login functionality where regular employees can view available equipment lists, submit borrowing requests (specifying time period and purpose), and return equipment. Administrators (username: admin, password: 123456) can approve borrowing requests, add or remove equipment, view borrowing history, and mark equipment status (available, borrowed, under maintenance). The system should automatically send reminders about equipment return dates and track usage rates and borrowing frequency for each type of equipment.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user authentication system properly implemented?",
+      "description": "Evaluate whether the code implements secure user authentication with role-based access control (regular employees vs. administrators). Check if login validation includes input sanitation, password hashing, and session management. Score 0 if authentication is missing, 5 if basic login exists without security features, and 10 if it includes proper authentication with role separation and security measures.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the equipment management functionality complete?",
+      "description": "Review the implementation of equipment management features, including listing, adding, removing, and updating equipment status (available, borrowed, under maintenance). Check if each equipment item has proper attributes (ID, name, type, status, description, etc.). Deduct 3 points if equipment categorization is missing, 5 points if equipment status tracking is incomplete, and 3 points if equipment details are insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the borrowing request system fully functional?",
+      "description": "Examine whether the code implements a complete borrowing workflow including request submission (with time period and purpose), approval process, and return handling. Check if the system validates borrowing dates, prevents conflicts, and handles edge cases like early returns or extensions. Score 0 if the core borrowing process is incomplete, 5 if basic functionality exists without validation, and 10 if the complete workflow with all validations is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the notification and reminder system implemented?",
+      "description": "Assess whether the system includes automated reminders for return dates. Check if notifications are properly scheduled and delivered through appropriate channels (in-app, email, etc.). Verify if the system handles overdue items with escalation procedures. Deduct 5 points if reminders are missing, 3 points if notification delivery is unreliable, and 3 points if overdue handling is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as concurrent borrowing requests for the same equipment, network issues during submission, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Equipment usage analytics/visualizations 2. QR code generation for quick equipment check-in/check-out 3. Integration with calendar for scheduling). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to update equipment status) 2. Function modules unrelated to equipment management (e.g., a complex chat system) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/service/presentation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "medium"
+}

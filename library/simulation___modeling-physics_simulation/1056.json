@@ -1,0 +1,68 @@
+{
+  "index": 1056,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Create a BS (Browser-Server) architecture code where the backend uses NS3 for simulation, and the frontend displays the simulation results and status, including the spatiotemporal positions of nodes, connection relationships, topology, traffic flow, packet loss rate, etc.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the NS3 simulation environment properly configured and integrated?",
+      "description": "Review whether the code correctly sets up NS3, defines simulation parameters, and implements simulation scenarios. Check if the code includes proper node configuration, mobility models, network protocols, and channel characteristics. Score 0 if NS3 integration is missing, 5 if basic simulation is implemented without customization, and 10 if a comprehensive simulation environment is configured with appropriate parameters for the networking scenario.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is there an effective data extraction and processing mechanism from NS3?",
+      "description": "Evaluate how simulation data is captured, processed, and prepared for transmission to the frontend. Check for implementations of trace sources, callbacks, or logging mechanisms to collect data about node positions, connections, packet flows, and network statistics. Deduct 5 points if only basic position data is captured, 3 points if statistical aggregation is missing, and 2 points if the data format is inefficient for transmission. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a well-designed communication interface between backend and frontend?",
+      "description": "Check the implementation of the server-side API endpoint architecture. Assess whether WebSockets are used for real-time data transmission or if REST APIs are properly designed for data queries. Examine if the communication protocol handles data serialization efficiently. Deduct 5 points if only one-way communication is implemented, 3 points if data compression is missing for large datasets, and 5 points if there's no error handling for communication failures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the visualization accurately represent network topology and dynamics?",
+      "description": "Evaluate the visual representation of network elements (nodes, links, packets) and whether it correctly reflects the simulation data. Check if the visualization updates in real-time or near real-time to show dynamic changes in the network. Deduct 5 points if node positions are inaccurate, 3 points if connection states aren't visually distinguishable, and 5 points if packet flows aren't animated. Give 10 points for comprehensive visualization that clearly represents all network aspects.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as simulation crashes, connection interruptions, malformed data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. User-configurable simulation parameters through the UI 2. Multi-view perspectives of the network 3. Time-lapse replay of simulation history 4. Comparative visualization of multiple simulation runs). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant data processing pipelines that could be streamlined 2. Visualization elements that don't contribute to network understanding 3. Computationally expensive features that don't add value to the simulation analysis. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating simulation logic/visualization/data processing layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for network elements (distinguishable but cohesive) 2) Proper layout spacing for controls and visualization 3) Professional font system for labels and statistics. Deduct 3 points for each crowded visual element, 5 points for indistinguishable network components, and 5 points for chaotic data presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interface allows intuitive interaction with the simulation: 1) Pan/zoom/selection response within 100ms 2) Smooth transitions when updating network state 3) Clear visual indicators for simulation status and progress. Deduct 5 points for each operation without feedback, 3 points for laggy visualization during simulation updates, and 5 points for difficult navigation between different visualization aspects. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

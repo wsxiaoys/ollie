@@ -1,0 +1,68 @@
+{
+  "index": 1370,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code when possible. Help me write a web-based novel reading project using Vue and its ecosystem, including home page, bookstore, summer vacation, and my profile pages.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue.js project structure correctly implemented?",
+      "description": "Review whether the code properly structures a Vue application with appropriate component hierarchy, Vue Router configuration, and state management (Vuex/Pinia). Score 0 if core Vue setup is missing, 5 if basic structure exists but lacks organization, and 10 if follows Vue best practices with proper separation of concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the home page functionality complete?",
+      "description": "Evaluate whether the home page includes necessary features: featured novels carousel, reading recommendations, categorized novel listings, and search functionality. Deduct 3 points if responsive design is missing, 3 points for missing search, and 2 points for poor content organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the bookstore implementation comprehensive?",
+      "description": "Check whether the bookstore page includes novel filtering by genre/popularity/rating, pagination, novel detail cards with cover images, and sorting options. Deduct 3 points if filtering is missing, 2 points if pagination isn't implemented, and 3 points if novel previews lack essential metadata. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the summer vacation and profile pages properly implemented?",
+      "description": "Assess whether the summer vacation page features seasonal reading lists, special offers, and themed collections; and whether the profile page includes user settings, reading history, bookmarks, and personalization options. Deduct 3 points for each major missing component per page, with particular attention to reading progress tracking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, missing data, slow network connections, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Night reading mode with customizable typography 2. Audio narration integration 3. Social reading features like annotations or comments). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management approaches mixed) 2. Function modules unrelated to novel reading (e.g., unnecessary gaming elements) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/components/views), component reusability, code maintainability, and build process configuration. Deduct 5 points if global state pollution is found or Vue composition API/options API are inconsistently mixed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process lacks optimization for production. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for extended reading (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography system (body font size ≥ 16px, line height over 1.5 times for reading comfort). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Page transitions feel natural with content persistence where appropriate 2) Loading states for asynchronous operations 3) Clear navigation and reading position indicators. Deduct 5 points for jarring page transitions, 3 points for missing loading indicators during data fetching, and 5 points for difficult navigation between book sections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

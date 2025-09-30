@@ -1,0 +1,68 @@
+{
+  "index": 387,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. How to display unstructured .vtk models in Three.js? Please provide code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "1. Is the VTK file loading mechanism properly implemented?",
+      "description": "Evaluate whether the code correctly implements a loading mechanism for .vtk files. Check if it handles different VTK formats (ASCII/binary), supports various VTK datasets (structured/unstructured), and provides proper error handling during file parsing. Score 0 if no loading mechanism exists, 5 if only basic ASCII VTK is supported, and 10 if comprehensive VTK format support is implemented with robust error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "2. Is the conversion from VTK to Three.js geometry properly implemented?",
+      "description": "Assess whether the code correctly transforms VTK geometric elements (points, cells) into appropriate Three.js geometries. Check if it handles different cell types (tetrahedra, hexahedra, etc.) and properly constructs faces/edges. Verify if attributes like normals and colors are preserved. Score 0 if no conversion exists, 5 if only basic conversions are implemented, and 10 if all common VTK element types are properly converted with attribute preservation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "3. Does the code handle unstructured grid visualization specifically?",
+      "description": "Check whether the code specifically addresses the challenges of unstructured grids in VTK. Verify if it properly handles the irregular topology, performs efficient triangulation for visualization, and maintains topological relationships. Deduct 5 points if the implementation only handles structured grids, and 3 points if the unstructured visualization is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "4. Are visualization controls and interactions implemented?",
+      "description": "Evaluate if the code provides essential visualization controls (rotation, pan, zoom) and additional interactions like section cutting, clipping planes, or picking. Check if camera controls are smooth and intuitive. Deduct 5 points if basic controls are missing, and 3 points if advanced interactions are absent. Give 10 points if comprehensive interaction features are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "5. Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed VTK files, memory limitations with large models, WebGL context loss, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "6. Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. On-the-fly scalar field visualization 2. Cross-section analysis tools 3. Dynamic mesh refinement). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "7. Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant data processing steps that could be optimized 2. Visualization features unrelated to VTK model display 3. Fancy effects that affect rendering performance unnecessarily. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "8. Does the code have engineering quality?",
+      "description": "Review modular design (such as separating VTK parsing/geometry conversion/rendering), code reusability, and memory management for large models. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no attention is paid to memory optimization for large meshes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "9. Does the interface vision meet professional visualization standards?",
+      "description": "Evaluate whether the visualization follows scientific visualization principles: 1) Appropriate color maps for scalar data 2) Clear distinction between model components 3) Professional lighting setup that enhances geometric perception. Deduct 3 points for poor color choices that obscure data patterns, 5 points for inadequate lighting that flattens 3D perception, and 5 points for cluttered visual presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "10. Is the rendering performance optimized?",
+      "description": "Judge whether the rendering is optimized for performance: 1) Appropriate use of BufferGeometry for large meshes 2) Level-of-detail techniques for complex models 3) Efficient shader usage. Deduct 5 points for each performance bottleneck (frame rate below 30fps for moderate-sized models), 3 points for missing optimizations with large datasets, and 5 points if memory leaks occur during model switching. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "medium"
+}

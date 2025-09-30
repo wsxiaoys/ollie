@@ -1,0 +1,68 @@
+{
+  "index": 257,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. You are a team of software programming masters working together on this project.\n\nUsing the Streamlit framework, build a user-friendly OCR application that can recognize various mathematical content symbols and formulas, including geometric patterns, and then have AI solve the mathematical problems through a web UI program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the OCR functionality for mathematical content properly implemented?",
+      "description": "Evaluate whether the code implements OCR capabilities specifically optimized for mathematical notation (including operators, fractions, exponents, integrals, etc.). Check if it uses appropriate libraries like Tesseract with math-specific training data or specialized math OCR solutions like Mathpix. Score 0 if no OCR is implemented, 5 if basic text OCR is implemented without math optimization, and 10 if it handles complex mathematical notations effectively.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the application recognize and process geometric patterns?",
+      "description": "Review whether the code includes computer vision capabilities to identify geometric shapes (circles, triangles, rectangles, etc.) and convert them to mathematical representations. Check if it implements contour detection, shape recognition algorithms, and geometric property extraction. Score 0 if geometric pattern recognition is absent, 5 if only basic shapes are detected without proper mathematical interpretation, and 10 if it can identify complex geometric configurations with proper mathematical analysis.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the AI problem-solving component effectively implemented?",
+      "description": "Assess whether the code connects to an appropriate AI model (like OpenAI API, local mathematical solver, etc.) and properly structures the recognized mathematical problems for solving. Check if the system can handle various types of math problems (algebraic equations, calculus, geometry). Deduct 5 points if the AI component only works for limited problem types, and 3 points if it doesn't provide step-by-step solutions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Streamlit UI functionality complete and user-friendly?",
+      "description": "Evaluate whether the Streamlit interface implements all necessary components: image upload, OCR result display, problem formulation confirmation, solution display, and error handling. Check if the UI flow is logical and intuitive. Deduct 5 points if critical components are missing, and 3 points if the UI flow is confusing or requires unnecessary steps. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unclear images, unrecognizable mathematical symbols, invalid inputs, network interruptions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time formula rendering as LaTeX 2. Image preprocessing options to improve OCR accuracy 3. History of solved problems with export functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant preprocessing steps that don't improve OCR accuracy 2. Function modules unrelated to mathematical OCR or problem-solving 3. Excessive UI components that complicate the user experience. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating OCR/AI solving/view layers), error handling, logging, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if configuration isn't properly externalized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Processing feedback indicates activity during OCR and AI solving 2) Transition animations for state changes are controlled between 300-500ms 3) Clear visual focus guidance between steps. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between application states, and 5 points for confusing workflow progression. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

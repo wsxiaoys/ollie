@@ -1,0 +1,68 @@
+{
+  "index": 666,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the code generated is executable for demonstration.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You should always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements include external API access or need to use user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nDevelop an image matting tool where users can select areas to keep in an image by brushing with the mouse. Areas not selected will be made transparent, and users can export images with transparent backgrounds.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic image loading and display functionality implemented?",
+      "description": "Check whether the code properly implements image loading from local files or URLs, and displays the image on the canvas. Verify if the canvas sizing is appropriate (adjusts to image dimensions or provides scrolling for large images), and if the image loading includes proper error handling. The code should include loading indicators and fallback mechanisms for failed loads.Score 0 if image loading is not implemented, 5 if basic loading works but lacks error handling, 10 if fully implemented with responsive sizing and comprehensive error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the brush selection tool fully implemented?",
+      "description": "Evaluate the brush tool implementation, including adjustable brush size, smooth path drawing, and precise pixel selection. The brush should have configurable hardness/softness edges and provide visual feedback during operation. Check if the code uses efficient algorithms for path interpolation between mouse/touch points to ensure smooth selection even with rapid movements.Deduct 3 points if the brush size cannot be adjusted, 3 points if path interpolation is jerky or imprecise, and 4 points if there's no visual feedback during selection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the image matting algorithm properly implemented?",
+      "description": "Verify if the matting algorithm correctly separates foreground from background based on user selections. The algorithm should handle edge detection, anti-aliasing at boundaries, and preserve semi-transparent pixels appropriately. Check whether the implementation includes refinement options for edge quality, and if it can process complex image features like hair or fuzzy edges.Score 0 if matting is not implemented, 5 if basic binary matting works but produces jagged edges, 8 if it handles semi-transparent regions adequately, and 10 if it includes edge refinement capabilities and handles complex boundaries well.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the transparent background export functionality working correctly?",
+      "description": "Check if the code provides functionality to export the matted image with a transparent background in appropriate formats (PNG with alpha channel). Verify if multiple export options are available (resolution, quality settings) and if the export process includes proper error handling. The export function should also provide a preview of the final result before saving.Deduct 5 points if PNG with transparency is not supported, 3 points if export options are limited, and 2 points if there's no preview functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as oversized images, unsupported formats, memory constraints with large canvases, etc.) and provide friendly error prompts or recovery mechanisms. Check if the application implements auto-save or history tracking to prevent data loss during unexpected issues.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smart selection tools similar to 'magic wand', 2. Batch processing capability, 3. Background replacement options, 4. Integration with common image filters, 5. Undo/redo functionality with visual history).Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple canvas manipulation methods that do the same thing) 2. Function modules unrelated to image matting (e.g., a built-in media player) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the UI).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, image processing logic, and file handling), unit test coverage, and build process automation. Check for appropriate use of design patterns, code commenting, and proper error handling strategies.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall UI design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional tool organization (grouped by function and frequency of use) 4) Visual cues for active tools and modes.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic tool layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Brush follows cursor without perceptible lag (≤ 16ms) 2) Preview updates occur within 100ms of user action 3) Progress indicators for operations taking >500ms 4) Smooth transitions between different UI states.Deduct 5 points for each operation without feedback, 3 points for noticeable lag during brush operations, and 5 points for processing operations that block the UI thread. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

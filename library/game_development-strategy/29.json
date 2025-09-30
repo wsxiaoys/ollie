@@ -1,0 +1,68 @@
+{
+  "index": 29,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable.\n\nPlease use HTML and JavaScript to implement a card/board game: Custom Rules and Game Board Generation\n**Task**: Implement a custom rule-based game board generation system that allows players to customize game rules and initial layouts.\n**Tip**: You can provide a rule editor and generate new game boards based on player settings.\nPlease include comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Custom Rules Implementation",
+      "description": "Does the code implement a robust custom rules framework that allows players to define their own game mechanics?Check if the implementation includes a rule definition system with variables, conditions, and actions. Rules should be modifiable through a user interface and properly validated. Score 0 if no rule customization exists, 5 if only basic predefined rules can be toggled, and 10 if players can create complex custom rules with conditionals and effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Game Board Generation System",
+      "description": "Is the board generation system flexible and responsive to rule changes?Evaluate whether the board generation algorithm can produce different board layouts based on rule parameters. Check if the system supports variable board sizes, shapes (rectangular, hexagonal, etc.), and cell types. Deduct 5 points if the generator only creates fixed layouts, 3 points if it lacks visual validation of rule conflicts. Full score requires procedural generation with constraint satisfaction.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Rule Editor Design",
+      "description": "Is the rule editor intuitive and comprehensive?Analyze the rule editor's design for usability and completeness. A good editor should allow for visual rule creation (drag-and-drop or guided wizards), provide real-time validation feedback, and include a library of rule templates/examples. Deduct 5 points if the editor uses only raw text input without validation, 3 points if it lacks undo/redo functionality, and 5 points if there's no way to save/load rule sets.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Initial Layout Customization",
+      "description": "Does the system allow for flexible initial board state customization?Check whether players can customize the initial placement of game elements, save layouts as templates, and share configurations with others. The system should validate that initial states comply with the defined rules. Score 0 if no initial layout customization exists, 5 if only predefined layouts are available, and 10 if there's comprehensive placement customization with rule validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Is the code capable of handling various edge cases and invalid inputs?Evaluate whether the code includes error handling for incorrect rule definitions, incompatible rule combinations, and unexpected user interactions. Check for input validation, graceful failure modes, and descriptive error messages. Deduct 5 points if invalid rules can crash the application, 3 points if user feedback for errors is unclear, and 5 points if there's no protection against infinite loops in rule processing.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Are there any eye-catching innovative features that enhance the experience?Look for unique features such as: 1) AI assistance in rule creation 2) Rule simulation/testing tools 3) Community rule-sharing platform 4) Visual rule impact preview. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Code Redundancy and Efficiency",
+      "description": "Are there any redundant or inefficient implementations?Check for: 1) Duplicate rule processing logic 2) Unnecessary re-rendering of the game board 3) Inefficient data structures for rule evaluation 4) Performance-heavy animations or effects that slow down rule application. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core rule processing is negatively affected by bloated code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Does the code follow good engineering principles?Review the separation of concerns (rule definition, board generation, UI), code modularity, and use of appropriate design patterns. Check for proper documentation (especially for the rule definition API) and test coverage of critical rule processing functions. Deduct 5 points for global state mismanagement, 5 points if the code coupling is high (>70% interdependency), and 5 points if there are no unit tests for rule validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Quality",
+      "description": "Does the interface meet professional design standards?Evaluate the visual design based on: 1) Clear separation between rule editor and game board areas 2) Consistent visual language for game elements 3) Accessible control schemes with keyboard shortcuts 4) Responsive layout that works on different screen sizes. Deduct 3 points for confusing navigation, 5 points for poor information hierarchy, and 5 points for inconsistent styling between the rule editor and game board.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction Feedback and Usability",
+      "description": "Is the interaction feedback clear and the system easy to use?Judge whether the system provides clear feedback for rule application, board generation, and user interactions. Check for: 1) Visual cues when rules are triggered 2) Smooth transitions when the board changes 3) Progressive disclosure of complex rule options 4) Undo/redo functionality for rule changes. Deduct 5 points for lack of visual feedback during rule processing, 3 points for confusing rule conflict indicators, and 5 points if the system doesn't guide new users through the rule creation process.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

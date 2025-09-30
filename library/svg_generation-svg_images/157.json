@@ -1,0 +1,68 @@
+{
+  "index": 157,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable and can be displayed. Please help me implement this SVG image using code: a close up of a cloud with rain coming out of it.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the cloud shape well-implemented in SVG?",
+      "description": "Check whether the code accurately implements a recognizable cloud shape using SVG path elements or basic shapes (circles, ellipses) with appropriate overlapping. Score 0 if no cloud shape is present, 5 if a basic cloud outline exists, and 10 if the cloud has natural-looking curves with appropriate depth/dimension effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the rain effect properly implemented?",
+      "description": "Evaluate whether the rain drops are correctly rendered, either as SVG lines, paths, or animated elements coming from the bottom of the cloud. Look for variations in drop size/length for realism. Score 0 if no rain is implemented, 5 if basic static rain exists, and 10 if the rain has natural variation and proper positioning relative to the cloud.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation include animations?",
+      "description": "Check whether the code includes SVG animations (SMIL) or CSS/JavaScript animations for the rain drops to create movement. Assess if the animation timing and easing functions create a realistic rain effect. Deduct 5 points if animations are jerky or unrealistic, and 3 points if animation performance is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the close-up perspective properly implemented?",
+      "description": "Evaluate whether the SVG implementation properly conveys a 'close up' view of the cloud as requested, with appropriate detail and focus. The cloud should dominate the viewbox appropriately. Deduct 5 points if the cloud appears too small or distant, and 3 points if the perspective doesn't convey a close-up impression. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code uses best practices for SVG implementation, including proper viewBox sizing, appropriate use of groups (<g>), and fallback provisions. Code with strong robustness should be responsive to different viewport sizes and browser support. Give 10 points for excellent implementation, 5 points for average implementation, and 0 points if SVG best practices are ignored.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Lightning effects 2. Wind movement 3. Interactive elements that respond to user input). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements or attributes that serve the same purpose 2. Over-complicated paths that could be simplified 3. Unnecessary scripts or styles that don't contribute to the core visualization. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code significantly increases file size or reduces performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code structure (such as separating presentation/behavior), use of reusable components, and appropriate commenting. Deduct 5 points if styles are inconsistently applied; deduct 5 points if the code is excessively verbose or lacks organization; deduct 5 points if there's no commenting for complex sections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Appropriate color choices for cloud and rain (realistic or stylistically coherent) 2) Balanced visual weight and composition 3) Good use of gradients or shading for depth. Deduct 3 points for unrealistic or clashing colors, 5 points for flat, unconvincing cloud rendering, and 5 points for poor spatial relationship between cloud and rain. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether any dynamic effects (animations, transitions, interactions) conform to natural weather behavior: 1) Rain falls at a natural speed 2) Any transitions or animations feel physical and weight-appropriate 3) Cloud movement (if implemented) appears natural. Deduct 5 points for unnatural movement speeds, 3 points for jerky animations, and 5 points for animations that break the illusion of weather. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

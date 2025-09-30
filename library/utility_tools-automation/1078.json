@@ -1,0 +1,68 @@
+{
+  "index": 1078,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate, professional responses. Be careful to ensure that any code you generate is executable. I want to build a multi-window framework in TypeScript, without using Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the multi-window framework implement a complete window management system?",
+      "description": "Review whether the code implements the basic components of a window system: window creation, positioning, resizing, maximizing, minimizing, closing, and z-index management. Score 0 if window creation and manipulation are not implemented, 5 if only basic operations are available, and 10 if all standard window behaviors (including snapping, restoring state) are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is window state management properly implemented?",
+      "description": "Evaluate the implementation of window state tracking and persistence. Check for a centralized state management system that handles window positions, sizes, visibility, focus state, and stacking order. Look for proper event handling and state transitions. Deduct 3 points if window states are not properly persisted, 3 points if focus management is incorrect, and 4 points if state transitions are buggy or inconsistent.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the framework provide flexible content rendering and communication between windows?",
+      "description": "Check if the framework allows dynamic content loading within windows and implements inter-window communication. Test if windows can exchange messages, share data, or access common services. Award full points if both iframe support and a messaging API are implemented with proper type safety. Deduct 5 points if windows are isolated with no communication mechanism, and 3 points if the communication is poorly typed or unreliable.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the TypeScript implementation well-typed and does it leverage TypeScript's features effectively?",
+      "description": "Review the TypeScript implementation for proper typing, interfaces/types for window configurations, proper use of generics, and type safety across the framework. Evaluate if the code leverages TypeScript features like discriminated unions, mapped types, or conditional types where appropriate. Deduct 5 points for any use of 'any' type, 3 points for insufficient interfaces/types, and 2 points for not using TypeScript features that would improve the code.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid window configurations, DOM manipulation errors, event race conditions, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should prevent window states from becoming corrupted and handle edge cases like rapid window operations or browser limitations. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if exceptions are not managed.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Window grouping or tabbing 2. Window templates with predefined behaviors 3. Animated transitions between window states 4. Window theming system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functionality (e.g., multiple window management systems) 2. Unnecessary abstractions that complicate the codebase 3. Performance-heavy features that aren't essential to window management (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core window functions are negatively impacted by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating core functionality, UI rendering, event handling), test coverage, and build process. Check for proper dependency management, code organization, and documentation. Deduct 5 points if global state is poorly managed; deduct 5 points if code duplication rate is high (over 30%); deduct 5 points if there's no build configuration or it's inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the window design follows modern UI principles: 1) Consistent window chrome design (title bars, borders, controls) 2) Proper spacing and alignment of window elements 3) Professional and accessible controls with proper sizing and hover states. Deduct 3 points for inconsistent window styling, 5 points for poor accessibility in window controls, and 5 points for awkward or unnatural window behaviors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the window interaction smooth and responsive?",
+      "description": "Judge whether window operations feel natural and responsive: 1) Window creation/closing animations under 300ms 2) Dragging/resizing with no perceptible lag 3) Proper cursor feedback during window operations. Deduct 5 points for jittery window movement, 3 points for slow or delayed responses to user input, and 5 points for any operation that freezes the UI for more than 100ms. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

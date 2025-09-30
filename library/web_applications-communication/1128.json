@@ -1,0 +1,68 @@
+{
+  "index": 1128,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to ensure that the code you generate is executable and can be demonstrated. Implement a WeChat chat effect using Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core WeChat chat interface structure fully implemented?",
+      "description": "Review whether the Vue components accurately reproduce WeChat's chat interface layout, including message list, input area, header navigation, and contact list. Check if the message bubble design matches WeChat's visual style (left/right alignment, different colors for sent/received messages, timestamps, read status indicators). Score 0 if basic chat interface is missing, 5 if only simple message display is implemented, and 10 if all WeChat-style interface elements are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the Vue-based message interaction features properly implemented?",
+      "description": "Evaluate whether Vue's reactive data binding correctly handles real-time message updates, message sending/receiving animations, scroll-to-bottom behavior, and message status changes. Check if Vue lifecycle hooks are properly used for component mounting and data initialization. Deduct 5 points if message list doesn't auto-scroll, and 3 points if Vue reactivity issues cause UI lag. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the message data management and persistence mechanism designed correctly?",
+      "description": "Check whether Vuex or Vue 3 Composition API is used for state management, and if message history is properly stored (localStorage/sessionStorage). Evaluate if the data structure supports different message types (text, images, emojis, voice messages). Deduct 5 points if no state management pattern is used, and 3 points if message persistence is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are WeChat-specific interactive features implemented comprehensively?",
+      "description": "Verify if the code includes WeChat-characteristic features such as emoji picker, voice message recording simulation, image preview, message forwarding, and long-press context menus. Check if typing indicators, message read receipts, and contact online status are implemented. Deduct 5 points if emoji support is missing, and 3 points if no multimedia message handling exists. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty message input, network simulation errors, large message volumes, component unmounting, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like message sending failures and component lifecycle issues, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the WeChat-like experience (e.g., 1. Message search functionality 2. Chat theme switching 3. Message encryption simulation 4. Group chat avatars 5. Voice-to-text conversion mock). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple message sending methods coexisting) 2. Function modules unrelated to WeChat chat (e.g., built-in games or shopping features) 3. Overly complex animations that affect performance (e.g., excessive particle effects on message sending). Deduct 3 points for each redundancy found, and directly deduct 10 points if core chat functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue component modularization (separating chat components, message components, input components), proper use of Vue best practices (props validation, event handling, computed properties), and code organization. Deduct 5 points if global state pollution is found or Vue patterns are misused; deduct 5 points if component coupling is too high; deduct 5 points if no proper component hierarchy exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design accurately replicate WeChat's visual standards?",
+      "description": "Evaluate whether the design faithfully reproduces WeChat's visual identity: 1) Correct color scheme (WeChat green #07C160, proper gray tones) 2) Accurate spacing and typography matching WeChat's design 3) Proper message bubble styling and avatar placement 4) Consistent iconography and visual hierarchy. Deduct 3 points for each visual inconsistency with WeChat's design, 5 points for incorrect color usage, and 5 points for poor layout resemblance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the chat interactions smooth and WeChat-authentic?",
+      "description": "Judge whether the interaction patterns match WeChat's behavior: 1) Message sending animation and feedback ≤ 100ms 2) Smooth scrolling and message transitions 3) Proper keyboard handling and input focus 4) Authentic touch interactions and gesture responses. Deduct 5 points for each sluggish interaction, 3 points for unnatural animation timing, and 5 points for poor input responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

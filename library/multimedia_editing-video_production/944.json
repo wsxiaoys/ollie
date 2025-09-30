@@ -1,0 +1,68 @@
+{
+  "index": 944,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable. Create a webpage code that supports uploading videos and adding digital watermarks to videos.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload functionality fully implemented?",
+      "description": "Check if the code provides a complete video upload solution including file selection, validation, progress indication and error handling. The implementation should handle various video formats (MP4, WebM, MOV, AVI) and validate file size. Score 0 if upload functionality is missing, 5 if only basic upload is implemented without validation, and 10 if it includes comprehensive validation, progress tracking and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the digital watermark application functionality properly implemented?",
+      "description": "Evaluate if the code successfully applies watermarks to videos. It should support text watermarks (with customizable font, size, color, opacity) and image watermarks (with position control, scaling and opacity adjustment). Check if the watermark preview is available before processing. Deduct 5 points if only one type of watermark is supported, and 3 points if customization options are limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the video processing mechanism efficient and properly implemented?",
+      "description": "Assess the video processing implementation. The code should use efficient methods like HTML5 Canvas, WebAssembly or Web Workers to handle video frames without freezing the UI. Check if it supports batch processing and provides processing status feedback. Deduct 5 points if processing is done entirely on the main thread causing UI blocks, 3 points if there's no optimization for large files. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the watermarked video preview and download functionality implemented?",
+      "description": "Check if users can preview the watermarked video before downloading and if download functionality is properly implemented. The preview should be responsive and the download should retain original video quality while including the watermark. The code should support different output formats and quality settings. Deduct 5 points if preview is missing, 3 points if download options are limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported file formats, browser compatibility issues, memory limitations, processing errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time watermark positioning using drag-and-drop 2. Animated watermarks support 3. Watermark templates gallery 4. Batch processing with different watermarks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video processing libraries loaded) 2. Function modules unrelated to watermarking (e.g., a built-in social sharing system) 3. Fancy effects that affect performance (e.g., unnecessary animations during processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/processing logic/file handling), error handling coverage, and resource management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if memory leaks could occur during video processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload and processing feedback is clear and timely 2) Transition animation duration controlled between 300-500ms 3) Clear visual indication of processing stages. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between processing steps, and 5 points for confusing workflow that doesn't guide users through the watermarking process. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "medium"
+}

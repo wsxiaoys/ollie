@@ -1,0 +1,68 @@
+{
+  "index": 943,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable and can be demonstrated. Help me create runnable code for drafting a new graphic message for a WeChat Official Account.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Official Account graphics message structure properly implemented?",
+      "description": "Review whether the code accurately implements the complete structure required for WeChat Official Account graphic messages, including title, author, cover image, digest, and content body. Verify if proper character limits are respected (title ≤64 characters, digest ≤120 characters). Score 0 if the basic structure is missing, 5 if only partial elements are implemented, and 10 if all required elements with proper validation are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the rich text editor implementation complete and functional?",
+      "description": "Check if the code implements a working rich text editor with essential formatting capabilities (bold, italic, paragraph styles, image insertion, links) matching WeChat's supported features. Verify if the editor properly sanitizes HTML to comply with WeChat's restrictions. Deduct 5 points if basic formatting is missing, and 3 points if the preview doesn't match actual WeChat rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the image upload and processing functionality implemented correctly?",
+      "description": "Evaluate if the code handles image uploads with proper validation (file size ≤2MB, formats limited to jpg/png/gif), includes image compression/cropping tools, and manages the cover image aspect ratio (recommended 1.91:1). Check if image preview matches WeChat's display requirements. Deduct 5 points if image validation is missing, and 3 points if optimization tools are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the code include WeChat API integration for publishing?",
+      "description": "Verify if the code includes proper integration with WeChat's official API for draft creation and publishing, including authentication handling and error management. Check if the implementation includes validation against WeChat's content policies and submission flow. Deduct 5 points if API integration is superficial without error handling, and 8 points if authentication flow is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures during uploads, API timeouts, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Template library with customizable styles 2. AI-assisted content suggestion 3. Mobile preview simulation 4. Scheduled publishing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image upload methods) 2. Function modules unrelated to WeChat graphic message creation (e.g., unnecessary social media sharing) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/API layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat's design principles: 1) Consistent color scheme with WeChat's brand guidelines 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for inconsistent styling with WeChat, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during content editing, and 5 points for hard-to-find key function buttons like 'Save' or 'Publish'. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 284,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. How can one write an electronic signature plugin using canvas?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core signature capture mechanism fully implemented?",
+      "description": "Check if the code implements proper mouse/touch event handling for signature capture, including start, move, and end events. Verify smooth line drawing with proper point interpolation instead of just connecting dots. 10 points for complete implementation with pressure sensitivity support, 5 points for basic implementation, 0 points if core functionality is missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the canvas properly initialized and configured?",
+      "description": "Evaluate if the canvas is properly initialized with correct dimensions, resolution handling for different devices (using device pixel ratio), and appropriate line styles (width, color, cap style). Check if the canvas has proper clearing mechanisms and initial state. 10 points for perfect configuration with responsive sizing, 5 points if basic configuration only, 0 points for improper setup.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are signature export options comprehensive?",
+      "description": "Review whether the plugin provides multiple export formats (PNG, JPEG, SVG, base64 encoding) with configurable options like background transparency, quality settings, and dimension control. Check if data URL generation works correctly. 10 points if all major formats with options are supported, 5 points for basic export, 0 points if export is not implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete signature validation system?",
+      "description": "Assess if the plugin includes signature validation features such as minimum stroke count, drawing area coverage percentage, or time-based validity checks. Verify if appropriate feedback is provided when signatures don't meet requirements. 10 points for comprehensive validation system, 5 points for basic checks, 0 points if validation is missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, touch/mouse event differences, canvas context loss recovery, etc.) and provide fallbacks or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Line smoothing algorithms 2. Undo/redo functionality 3. Signature replay/animation capability 4. Automatic signature positioning/scaling). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event listeners or drawing functions 2. Unnecessary canvas redraws that affect performance 3. Over-complicated algorithms for simple tasks. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/UI/data processing layers), encapsulation as a proper plugin/component, and configuration options. Deduct 5 points if global namespace pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the plugin lacks proper documentation or API reference. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the signature pad design follows modern interface principles: 1) Clean, bordered signature area with visual feedback 2) Clear indication of active state and boundaries 3) Professional styling consistent with form elements. Deduct 3 points for poor visual indication of the signature area, 5 points for inconsistent styling with surrounding form elements, and 5 points for lack of visual feedback during signing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the drawing experience feels natural and responsive: 1) Line rendering delay ≤ 16ms (60fps) 2) No visible lag between pen/mouse movement and line appearance 3) Proper handling of fast movements without skipping. Deduct 5 points for noticeable lag during drawing, 3 points for stroke discontinuity during fast movements, and 5 points for poor mobile touch experience. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "medium"
+}

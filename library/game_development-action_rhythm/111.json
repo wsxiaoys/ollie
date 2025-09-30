@@ -1,0 +1,68 @@
+{
+  "index": 111,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a platform jumping game where players need to jump and climb to pass through levels while avoiding traps. Set up jumping and climbing controls, and design various platforms and traps. Please include comments in your code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core platform jumping mechanic fully implemented?",
+      "description": "Review whether the code accurately implements jumping physics with gravity simulation, variable jump height based on button press duration, and proper collision detection with platforms. Score 0 if basic jumping is missing, 5 if only basic jumping is implemented without physics refinement, and 10 if jumping feels responsive with polished physics (e.g., terminal velocity, jump buffering, coyote time).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the climbing mechanic properly implemented?",
+      "description": "Check whether the climbing mechanics include proper collision detection with climbable surfaces, smooth transitions between climbing and jumping states, and appropriate control limitations while climbing. Score 0 if climbing is not implemented, 5 if basic climbing exists but feels clunky or has collision issues, and 10 if climbing is smooth with proper animation transitions and intuitive controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are various platforms and traps designed and functional?",
+      "description": "Evaluate the diversity and functionality of platforms (static, moving, disappearing, bouncy) and traps (spikes, falling objects, timing-based hazards). Deduct 3 points if fewer than 3 platform types are implemented, 5 points if traps have no visual warning indicators, and 3 points if collision detection with hazards is inconsistent. Score 10 if at least 5 different interactive platform/trap types are implemented with clear visual distinction.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is level design and progression implemented?",
+      "description": "Check whether the game includes multiple levels with increasing difficulty, clear objectives for level completion, and smooth transitions between levels. Score 0 if only a single static level exists, 5 if multiple levels exist but lack progression in difficulty or design variety, and 10 if the game has thoughtful level progression with checkpoint systems and escalating challenges.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, framerate fluctuations, boundary conditions at level edges, etc.) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups with special abilities 2. Environmental interactions like destructible objects 3. Dynamic camera effects that respond to gameplay 4. Particle effects for movement feedback). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems coexisting) 2. Function modules unrelated to platform jumping gameplay (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/physics/rendering layers), code readability through comments as requested, and maintainable structure. Deduct 5 points if global state pollution is found; deduct 5 points if the code lacks the requested comments explaining the implementation; deduct 5 points if there's significant code duplication instead of reusable functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the game follows professional game design principles: 1) Clear visual hierarchy between background, platforms, hazards and player character 2) Consistent art style throughout elements 3) Proper use of visual feedback for player actions (jumping, landing, taking damage). Deduct 3 points for poor contrast between interactive and non-interactive elements, 5 points for inconsistent visual style, and 5 points for lack of feedback animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game controls feel responsive and smooth: 1) Input response time ≤ 50ms 2) Consistent framerate with no stuttering during animations 3) Appropriate game speed and character movement velocity. Deduct 5 points for input lag, 3 points for jerky animations during transitions, and 5 points for inconsistent game speed affecting gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

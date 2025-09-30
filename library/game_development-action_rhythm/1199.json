@@ -1,0 +1,68 @@
+{
+  "index": 1199,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the generated code is executable for display. Create a Snake game program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Snake game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the game grid system, snake movement logic, food generation, collision detection (wall/self), and score calculation. Check if the snake grows correctly after eating food and if the game ends properly on collision. Score 0 if core game loop is missing, 5 if only basic movement is implemented, and 10 if all classic Snake game rules are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the control system responsive and intuitive?",
+      "description": "Evaluate whether keyboard controls (arrow keys/WASD) are properly implemented with direction change validation (preventing reverse direction causing instant death). Check for smooth input handling without lag or missed keystrokes during rapid direction changes. Deduct 5 points if input buffering is missing, and 3 points if there's noticeable input delay. Full score requires flawless control responsiveness.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game timing and difficulty progression well-designed?",
+      "description": "Check if the game uses consistent frame rate or timer-based movement, and whether speed increases appropriately as score grows. Evaluate if the difficulty curve is balanced and engaging. Deduct 5 points if movement is inconsistent or jerky, 3 points if speed progression is too aggressive or absent. Requires smooth 60fps performance and logical difficulty scaling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are game states and lifecycle properly managed?",
+      "description": "Verify implementation of complete game states: start screen, active gameplay, pause functionality, game over screen, and restart capability. Check for proper state transitions and memory cleanup. Deduct 5 points if pause/resume is missing, 3 points if game over handling is incomplete, and 5 points if memory leaks occur during state transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and error-resistant?",
+      "description": "Evaluate whether the code can handle edge cases (rapid key presses, browser focus loss, window resize, etc.) and provides appropriate error handling. Code should gracefully handle unexpected situations without crashing or corrupting game state. Give 10 points for comprehensive error handling, 5 points for basic robustness, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance gameplay?",
+      "description": "Check for creative enhancements beyond basic Snake gameplay (e.g., 1. Power-ups or special food types 2. High score persistence 3. Multiple game modes 4. Sound effects and visual feedback 5. Mobile touch controls). Add 2-3 points for each well-implemented feature that genuinely improves user experience (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary features?",
+      "description": "Identify three types of redundancy: 1. Duplicate game logic or rendering code 2. Unrelated functionality (e.g., built-in calculator) 3. Performance-heavy effects that don't add value (e.g., complex particle systems). Deduct 3 points for each redundancy found, and deduct 10 points if redundant code interferes with core game performance or clarity.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate good engineering practices?",
+      "description": "Review code organization, separation of concerns (game logic/rendering/input), consistent naming conventions, and appropriate use of modern JavaScript features. Deduct 5 points for poor code structure or excessive global variables; deduct 5 points for high code duplication (>30%); deduct 3 points for inconsistent coding style. Full score requires clean, maintainable architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet modern UI/UX standards?",
+      "description": "Evaluate visual presentation quality: 1) Clean, readable game board with clear contrast 2) Consistent color scheme (snake, food, background) with no more than 4 primary colors 3) Proper proportions and spacing 4) Clear score display and UI elements. Deduct 3 points for poor color choices, 5 points for cluttered layout, and 5 points for hard-to-read text or game elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are animations and visual feedback smooth and polished?",
+      "description": "Judge visual smoothness and user feedback: 1) Snake movement should be fluid without stuttering 2) Visual feedback for food consumption and score changes 3) Smooth game state transitions 4) Consistent frame rate during gameplay. Deduct 5 points for choppy animations, 3 points for missing visual feedback on key actions, and 5 points for inconsistent or jarring visual transitions.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

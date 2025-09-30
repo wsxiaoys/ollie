@@ -1,0 +1,68 @@
+{
+  "index": 928,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable for demonstration. How would you create code for effects like in games where a character disappears and a scene appears after a mouse click?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the character transition effect properly implemented?",
+      "description": "Review whether the code implements a smooth transition effect for the character's disappearance. Check for fade-out animations, opacity transitions, or other visual effects that make the character disappear naturally rather than abruptly. Score 0 if no transition effect is implemented, 5 if basic disappearance is achieved, and 10 if the transition includes polished animations like dissolve, particle effects, or custom easing functions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the scene appearance transition properly implemented?",
+      "description": "Evaluate the scene appearance mechanism after the character disappears. Look for proper scene loading, fade-in effects, and smooth transitions. The code should demonstrate techniques like preloading, cross-fading between scenes, or progressive reveal. Deduct 5 points if the scene appears abruptly without animation, and 3 points if the transition is basic but lacks polish. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the click event handling properly implemented?",
+      "description": "Check if the click event is correctly captured and processed to trigger the transition. The implementation should include event listeners with proper scope, preventing event bubbling issues, and handling multiple clicks gracefully (preventing users from triggering the transition multiple times). Deduct 5 points if click handling is basic without safeguards, and 3 points if edge cases like rapid clicking aren't addressed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is asset preloading/management handled effectively?",
+      "description": "Assess whether the code properly handles loading and management of visual assets required for both character and scene. Look for techniques like image preloading, texture atlases, or resource management systems. Code should avoid visible loading delays during the transition. Deduct 5 points if assets are loaded only when needed causing delays, and 3 points if loading indicators are missing. Give 10 points if asset management is comprehensive with loading optimization.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing assets, browser incompatibilities, performance issues on slower devices, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive elements during the transition 2. Sound effects synchronized with visual changes 3. Responsive design adaptation for different screen sizes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant transition effects that overlap or conflict 2. Unnecessary DOM manipulations that could be handled more efficiently 3. Excessive animations that affect performance or distract from the main transition. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating animation logic from event handling and scene management), potential for reusability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Visual consistency between character and scene elements 2) Proper use of visual hierarchy to guide attention 3) Appropriate use of color, contrast, and space to create mood and atmosphere. Deduct 3 points for each visual inconsistency, 5 points for clashing visual elements, and 5 points for poor composition that disrupts the transition effect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback after click (≤ 100ms) 2) Natural-feeling transition timing (neither too fast nor too slow) 3) Proper use of easing functions for organic movement. Deduct 5 points for jerky animations, 3 points for frame rate drops during transitions, and 5 points for awkward timing that breaks immersion. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Adventure",
+  "difficulty": "easy"
+}

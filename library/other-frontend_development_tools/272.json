@@ -1,0 +1,68 @@
+{
+  "index": 272,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code examples whenever possible. I am referring to AI-integrated frontend development scaffolding tools like Vue and React.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the AI integration framework clearly defined and properly implemented?",
+      "description": "Check if the code defines a clear integration pattern for AI services with frontend frameworks. Score 0 if no integration architecture is defined, 5 if basic API calls are implemented without proper state management, and 10 if a comprehensive pattern (e.g., middleware, hooks, composables) is established that handles API calls, response processing, error states and loading indicators. The integration should follow the idiomatic patterns of the chosen framework (Vue/React).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the AI service connections properly abstracted and reusable?",
+      "description": "Evaluate if the code properly abstracts AI service connections through service layers or custom hooks/composables. The abstraction should handle authentication, rate limiting, request formatting, and response normalization. Deduct 3 points if authentication is hardcoded, 3 points if there's no error handling strategy, and 2 points if response parsing is inconsistent. The implementation should enable reusability across components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the scaffolding include proper state management for AI operations?",
+      "description": "Review the state management implementation for AI operations, checking for proper handling of loading states, error states, partial results, and caching strategies. For Vue, look for Pinia/Vuex integration or composable patterns; for React, check for Context API, Redux, or custom hooks. Deduct 3 points if loading states are missing, 3 points for inadequate error handling, and 4 points if no caching/memoization strategy exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a comprehensive set of AI-enhanced UI components?",
+      "description": "Assess the implementation of AI-enhanced UI components such as predictive inputs, content generation tools, recommendation systems, or intelligent forms. Score 0 if no AI-enhanced components exist, 5 if basic components are implemented but lack customization options, and 10 if the code includes a diverse set of polished, reusable AI components with proper documentation and examples. Components should follow the design system of the chosen framework.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, rate limiting, token expiration, malformed AI responses, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time feedback during AI generation 2. Explainable AI visualizations 3. Progressive AI enhancement based on user interaction patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar AI integrations (e.g., multiple implementations of the same capability) 2. Function modules unrelated to the core AI integration (e.g., unnecessary analytics) 3. Heavyweight dependencies that could affect performance (e.g., including full ML libraries in the frontend). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating AI service/UI components/application logic), unit test coverage for AI integrations, and build process optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process doesn't handle AI service environment variables securely. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the AI-integrated components follow modern design principles: 1) Consistent visual language with the rest of the application 2) Clear indication of AI-generated vs. user content 3) Professional loading and error states for AI operations. Deduct 3 points for inconsistent AI component styling, 5 points for confusing AI-generated content presentation, and 5 points for jarring transitions between AI and non-AI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction with AI features smooth and seamless?",
+      "description": "Judge whether the AI interaction patterns conform to human perception characteristics: 1) Progressive feedback during long-running AI operations 2) Appropriate throttling/debouncing of AI requests 3) Clear visual indication of when AI is processing input. Deduct 5 points for each AI operation without feedback, 3 points for jarring UI updates when AI responses arrive, and 5 points for AI features that block the UI thread. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Frontend Development Tools",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 597,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Network Device Monitoring System\n\nYou are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\nDevelop a network device monitoring system that can monitor the status of network devices such as routers and switches within the company. The system needs to implement administrator login (username: admin, password: 123456), allow adding devices (device name, IP address, model, location), view real-time device status (online/offline), and set alarm thresholds. The system should have a dashboard page that graphically displays the network topology structure, identifies device status with different colors, and supports clicking on devices to view details.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the administrator login system fully implemented?",
+      "description": "Review whether the login mechanism includes proper authentication, session management, and security measures. The system must validate credentials (admin/123456), implement timeout mechanisms, and protect against common attacks. Score 0 if authentication is missing, 5 if basic login works without security measures, and 10 if fully implemented with proper security considerations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the device management functionality complete?",
+      "description": "Check whether the system allows adding, editing, and removing network devices with all required parameters (device name, IP address, model, location). Verify that the implementation includes data validation, duplicate checking, and proper storage mechanisms. Deduct 3 points if any required field is missing, 3 points if validation is inadequate, and 4 points if CRUD operations are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time device status monitoring implemented effectively?",
+      "description": "Evaluate whether the system actually implements real-time monitoring of device status (online/offline) using appropriate protocols (ICMP, SNMP, etc.). Check for polling mechanisms, timeout handling, and status change notifications. Score 0 if no actual monitoring occurs, 5 if basic polling exists but lacks reliability features, and 10 if fully implemented with proper error handling and real-time updates.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the alarm threshold configuration system properly designed?",
+      "description": "Review the alarm threshold configuration system for completeness. It should allow setting thresholds for multiple metrics (response time, packet loss, bandwidth utilization, etc.), support notification mechanisms, and provide alert history. Deduct 3 points if threshold types are limited, 3 points if notification options are missing, and 4 points if the system lacks alert history or management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network timeouts, device unavailability, invalid inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive failure analysis 2. Automated network mapping 3. Performance trend visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple status checking mechanisms) 2. Function modules unrelated to network monitoring (e.g., a weather widget) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating monitoring logic/view/data layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the network topology visualization meet professional standards?",
+      "description": "Evaluate whether the topology visualization follows professional design principles: 1) Interactive graph rendering with appropriate layout algorithms 2) Clear visual differentiation of device types and statuses 3) Responsive scaling and navigation features. Deduct 3 points for static/non-interactive visualization, 4 points for poor visual hierarchy, and 3 points for inability to handle complex topologies. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dashboard UI and interaction design effective?",
+      "description": "Judge whether the dashboard design meets professional standards: 1) Logical information hierarchy with key metrics prominently displayed 2) Appropriate use of color coding for status indication 3) Intuitive device selection and detail viewing. Deduct 3 points for cluttered layouts, 3 points for ineffective color usage, and 4 points for poor interactive elements that hinder usability. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

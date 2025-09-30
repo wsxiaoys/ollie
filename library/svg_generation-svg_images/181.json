@@ -1,0 +1,68 @@
+{
+  "index": 181,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display whenever possible. Please help me implement the following requirement using SVG code: create a crossroads intersection.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic structure of the crossroads intersection correctly implemented with SVG?",
+      "description": "Check if the SVG code properly defines the viewBox, dimensions, and namespace. Verify that the crossroads layout includes two perpendicular roads meeting at a central intersection point. Score 0 if there's no visible intersection, 5 if the basic structure exists but has alignment issues, and 10 if the roads are properly aligned and proportioned.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the road elements accurately drawn with appropriate styling?",
+      "description": "Evaluate whether the roads are drawn with proper width, color, and border styling. Road markings should include center lines, stop lines, and lane dividers where appropriate. Deduct 3 points if road widths are inconsistent, 3 points if essential markings are missing, and 4 points if the styling lacks realism or professional appearance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are traffic elements (signals, signs, pedestrian crossings) included and properly positioned?",
+      "description": "Check if the intersection includes traffic lights, road signs, and pedestrian crosswalks in appropriate positions. Score 0 if these elements are completely missing, 5 if only some basic elements are present but poorly positioned, and 10 if the intersection has a complete set of traffic elements positioned according to standard traffic engineering practices.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the SVG implementation use groups and reusable components efficiently?",
+      "description": "Analyze if the implementation uses <g> elements to group related items, and whether it creates reusable components (like traffic lights or road markings) that can be used multiple times. Deduct 5 points if no grouping is used, and 5 points if the code has significant redundancy instead of creating reusable components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle different viewport sizes, browser compatibility issues, and avoid rendering artifacts. Code with strong robustness should use relative positioning where appropriate and include fallbacks or error handling. Give 10 points for robust implementation, 5 points for average robustness, and 0 points if the SVG is likely to break under common viewing conditions.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the SVG includes surprise features that enhance the visualization (e.g., 1. Animated traffic lights 2. Moving vehicles or pedestrians 3. Day/night mode toggle 4. Interactive elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements that could be simplified 2. Elements unrelated to a crossroads intersection (e.g., buildings that distract from the main subject) 3. Overly complex effects that affect performance (e.g., excessive filter effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core representation is obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (such as logical grouping of SVG elements), naming conventions for IDs and classes, and appropriate comments. Deduct 5 points if element IDs/classes are unclear or inconsistent; deduct 5 points if the code structure is chaotic; deduct 5 points if there are no comments explaining complex parts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual representation meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors for road elements) 2) Proper proportioning of elements 3) Clean visual hierarchy with important elements standing out. Deduct 3 points for each visual imbalance, 5 points for garish color combinations, and 5 points for unclear visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the SVG optimized for performance and accessibility?",
+      "description": "Judge whether the SVG is optimized: 1) File size is reasonable with no unnecessary decimal points in coordinates 2) Proper ARIA attributes for accessibility 3) Appropriate title and desc elements. Deduct 5 points for bloated code with redundant precision, 3 points for missing accessibility features, and 5 points if the SVG isn't properly structured for screen readers. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1532,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and can be demonstrated. Could you implement a Fengchao (Smart Locker) system using JavaScript?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Fengchao (Smart Locker) system functionality implemented?",
+      "description": "Check whether the code properly implements the basic smart locker functionality including locker initialization, package placement, user authentication, and package retrieval. Score 0 if the core system logic is missing, 5 if only basic operations are implemented without proper state management, and 10 if the complete locker management system with proper state transitions is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user authentication and access control system properly implemented?",
+      "description": "Evaluate the authentication mechanisms (QR codes, PIN codes, mobile verification) and the security measures implemented. Check for input validation, secure token generation, and proper authentication flow. Deduct 5 points if authentication is simplistic or trivial, 3 points if validation logic is incomplete. Look for proper encryption of sensitive data and timeout mechanisms for authentication attempts. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the locker status management and reservation system designed effectively?",
+      "description": "Review how the system manages locker statuses (empty, occupied, reserved, maintenance) and the reservation logic. Check for race conditions handling, timeout mechanisms for unclaimed packages, and proper notification systems. Deduct 5 points if status transitions are incomplete, 3 points if reservation conflicts aren't handled. Give 10 points if the system includes comprehensive status management with proper error recovery.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a well-designed admin interface and monitoring system?",
+      "description": "Assess whether the code includes admin functionality for system monitoring, manual interventions, usage statistics, and maintenance operations. Check for dashboard visualization capabilities and alert mechanisms for system issues. Deduct 5 points if admin features are minimal, 3 points if monitoring capabilities are limited. Award 10 points for comprehensive admin features with detailed reporting.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, power outages, hardware malfunctions, invalid inputs, etc.) and provide graceful degradation or recovery mechanisms. Code with strong robustness should include error logging, retry mechanisms, and data persistence. Give 10 points if these are well implemented, 5 points if robustness is average, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive locker assignment based on package size 2. Integration with delivery tracking APIs 3. Smart notifications with estimated arrival times 4. Contactless biometric authentication). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication systems that serve the same purpose) 2. Function modules unrelated to smart lockers (e.g., unrelated social networking features) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the core functionality). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/data access layers), unit test coverage, and build process automation. Inspect for design patterns appropriate for IoT/embedded systems. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if error handling is inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the user interface follows modern kiosk/touchscreen design principles: 1) High contrast for visibility in various lighting conditions 2) Large touch targets (at least 44x44px) 3) Clear instruction text (concise language, legible fonts). Deduct 3 points for each accessibility issue, 5 points for confusing navigation flows, and 5 points for information overload on screens. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interaction flow is intuitive and efficient: 1) Complete package deposit/retrieval in under 30 seconds 2) Clear progress indicators for multi-step processes 3) Immediate visual/audio feedback for user actions. Deduct 5 points for each unclear state transition, 3 points for slow response times (over 500ms), and 5 points for confusing error messages. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

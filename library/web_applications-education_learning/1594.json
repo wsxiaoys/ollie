@@ -1,0 +1,68 @@
+{
+  "index": 1594,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Help me create an HTML file containing all of Su Shi's poems with a traditional Chinese style background, including a table of contents, navigation for previous/next poems, pinyin for each poem, and automatic system reading functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the collection of Su Shi's poems comprehensive and accurately presented?",
+      "description": "Check whether the code includes a substantial collection of Su Shi's poems (at least 50 representative works) with accurate text, titles, and dates. Each poem should include the original Chinese text without errors. Deduct 5 points if fewer than 30 poems are included, 3 points for any textual errors found in poems, and 2 points if historical context or composition dates are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the pinyin annotation correctly implemented for each poem?",
+      "description": "Evaluate whether the pinyin is accurately displayed for each Chinese character in the poems, with proper tone marks and syllable separation. Check for a toggle mechanism to show/hide pinyin. Deduct 5 points if pinyin has systematic tone mark errors, 3 points if syllable separation is incorrect, and 5 points if pinyin is hardcoded rather than generated programmatically. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the auto-reading functionality properly implemented?",
+      "description": "Review the implementation of the text-to-speech feature for reading poems aloud. It should use Web Speech API or a similar technology, offer speed/voice controls, and provide visual highlighting of the current line being read. Deduct 5 points if there's no synchronization between audio and visual text, 3 points if voice controls are missing, and 2 points if the pronunciation of classical Chinese is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the navigation system functional and user-friendly?",
+      "description": "Assess the implementation of the table of contents and previous/next poem navigation. The TOC should be organized by categories (e.g., by theme, chronology) with smooth scrolling. Navigation should preserve reading position. Deduct 3 points for lack of category organization in the TOC, 3 points if navigation doesn't maintain scroll position, and 4 points if there's no visual indication of the current poem in the TOC. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, text-to-speech API failures, large content loading) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive calligraphy display 2. Historical context visualization 3. Poem interpretation toggle). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio control systems) 2. Function modules unrelated to poem presentation (e.g., unrelated games) 3. Fancy effects that affect performance (e.g., excessive animations that slow page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), resource loading optimization, and code maintenance quality. Deduct 5 points if global state pollution is found; deduct 3 points if poem data isn't properly separated from presentation logic; deduct 2 points if the code has poor commenting or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet traditional Chinese aesthetic standards?",
+      "description": "Evaluate whether the design authentically reflects traditional Chinese aesthetics: 1) Appropriate use of traditional elements (brushwork textures, scroll patterns) 2) Harmonious color palette aligned with classical Chinese painting (black, red seals, parchment yellow) 3) Proper typography using appropriate font families for classical Chinese. Deduct 3 points for anachronistic design elements, 4 points for inappropriate modern styling, and 3 points for poor readability of poem text. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to the elegance of classical Chinese scrolls: 1) Smooth scroll transitions mimicking physical scroll unrolling 2) Gentle fade-ins for poem content 3) Subtle visual feedback for interactive elements. Deduct 3 points for jarring transitions between poems, 3 points for laggy scroll performance, and 4 points if the text-to-speech highlighting creates visual disruption. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1408,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Be sure that the code you generate is executable for demonstration purposes. Write a drawing board in JavaScript that offers features like pens, brushes, erasers, etc., and where each pixel in the image can be magnified to a 3x3 pixel grid.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core drawing functionality fully implemented?",
+      "description": "Review whether the code accurately implements basic drawing tools through HTML Canvas/JavaScript: pen, brush, and eraser with different sizes and opacity. Check if the drawing engine correctly captures user input events (mouse/touch) and renders strokes with proper anti-aliasing. Score 0 if core drawing functionality is absent, 5 if only basic drawing is implemented, and 10 if multiple tools with adjustable parameters are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the pixel magnification feature correctly implemented?",
+      "description": "Evaluate the implementation of the 3x3 pixel grid magnification. Check if the code properly handles the translation between normal view and magnified view, maintains pixel data consistency, and updates the magnified view in real-time as the user draws. Verify if the magnification logic works correctly without artifacts or performance issues. Deduct 5 points if magnification is inconsistent, and 3 points if there's noticeable lag during magnified drawing operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are drawing state management and history operations implemented?",
+      "description": "Check if the drawing board implements undo/redo functionality with a proper history stack. Verify if the state management handles complex operations like brush strokes, eraser use, and color changes correctly. Ensure the history mechanism is memory-efficient (using incremental changes rather than full canvas snapshots). Deduct 5 points if undo/redo is limited to only a few steps, and 3 points if certain operations can't be undone. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is a comprehensive toolset provided with proper UI controls?",
+      "description": "Evaluate the range of drawing tools offered beyond basic requirements. Check for color pickers, brush size selectors, opacity controls, shape tools, fill tools, and other creative options. Examine if the UI controls are intuitive and properly integrated with the canvas functionality. Deduct 2 points for each essential missing tool (color picker, size selector, etc.), and give full points only if the toolset is comprehensive and well-organized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds drawing, rapid tool switching, browser resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle edge cases like drawing outside canvas boundaries and prevent memory leaks, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Layer system for complex drawings 2. Export/import functionality with multiple formats 3. Custom brushes or pattern stamps 4. Symmetry drawing modes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple color picker implementations) 2. Function modules unrelated to drawing (e.g., unrelated animations) 3. Fancy effects that affect drawing performance (e.g., unnecessary visual effects during drawing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/UI/state management), code reusability, and event handling patterns. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between UI events and drawing logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for the UI (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional tool organization (grouped by function, with clear visual hierarchy). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic tool arrangement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the drawing interaction smooth and responsive?",
+      "description": "Judge whether the drawing experience conforms to human expectations: 1) Drawing latency ≤ 16ms (60fps) 2) Smooth brush strokes without jitter 3) Responsive tool switching without delay. Deduct 5 points for noticeable lag during drawing, 3 points for stroke jitter or inconsistencies, and 5 points for delayed response when switching between tools or canvas modes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

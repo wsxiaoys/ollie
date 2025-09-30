@@ -1,0 +1,68 @@
+{
+  "index": 980,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Help me create a Nightingale monitoring dashboard for Docker containers. I need to include memory, CPU, and network usage metrics.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Docker container metrics collection mechanism fully implemented?",
+      "description": "Review whether the code implements a robust metrics collection system for Docker containers, including the use of appropriate APIs (e.g., Docker API, cAdvisor) for gathering memory, CPU, and network metrics. Score 0 if no metrics collection is implemented, 5 if only basic metrics are collected without proper error handling, and 10 if comprehensive metrics collection with proper error handling and abstraction is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all required metrics (memory, CPU, network usage) properly captured and processed?",
+      "description": "Check whether the code captures all the required metrics: memory usage (used, available, percentage), CPU usage (user space, kernel space, overall percentage), and network metrics (bytes in/out, packets in/out, errors). Deduct 3 points for each missing metric category. The metrics should be properly normalized and processed before visualization. Deduct 2 points if the metrics are not normalized or pre-processed appropriately.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Nightingale dashboard visualization properly implemented?",
+      "description": "Evaluate whether the dashboard implementation follows Nightingale visualization standards, including proper chart types for different metrics (line charts for time-series data, bar charts for comparative data, etc.). Check if the implementation includes interactive elements like tooltips, zoom functionality, and proper legends. Score 0 if visualization is missing, 5 if basic visualization without interactivity is implemented, and 10 if a fully interactive dashboard is created.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is a real-time data refresh mechanism implemented?",
+      "description": "Assess whether the code includes a proper real-time or near real-time data refresh mechanism for the dashboard. Check if WebSockets or polling intervals are implemented appropriately with configurable refresh rates. Deduct 5 points if there's no refresh mechanism, and 3 points if the refresh mechanism is inefficient or lacks configuration options. Give 10 points for an optimized real-time update system with fallback options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as Docker daemon unavailability, network interruption, container termination, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Anomaly detection with alerts 2. Historical data comparison 3. Container health scoring). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to calculate the same metric) 2. Function modules unrelated to container monitoring (e.g., user management that's not tied to dashboard access) 3. Fancy effects that affect performance (e.g., excessive animations or 3D visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data collection/processing/visualization layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for interactive elements. Deduct 5 points for each operation without feedback, 3 points for visual after-images during graph updates, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

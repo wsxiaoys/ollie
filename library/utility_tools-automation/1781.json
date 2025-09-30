@@ -1,0 +1,68 @@
+{
+  "index": 1781,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. I need your help to write an HTML application that implements the following functions:\n\nRemind to clock in 5 minutes before work starts on each working day (excluding public holidays). Remind to clock out and sign in for overtime at 18:01. Remind to sign out from overtime at 20:31.\n\nThe screen must remain locked until the clock-in/out is completed. Each time someone clocks in or out, they will receive an encouraging message to provide emotional value.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the timed reminder functionality properly implemented?",
+      "description": "Evaluate whether the code correctly implements timed reminders that trigger at the specified times (5 minutes before work starts, 18:01 for clock-out/overtime sign-in, and 20:31 for overtime sign-out). Check if the application correctly excludes weekends and public holidays from the reminder schedule. Deduct 5 points if any of the reminder times are incorrectly implemented, and 5 points if the holiday exclusion logic is missing or flawed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the screen locking mechanism implemented effectively?",
+      "description": "Check if the application implements a screen locking mechanism that prevents access until clock-in/out is completed. Verify that the lock cannot be easily bypassed and persists until the required action is taken. Deduct 5 points if the lock can be bypassed, 3 points if the lock doesn't persist properly, and 2 points if the lock doesn't provide clear instructions on how to unlock. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are emotional value messages implemented with the clock-in/out system?",
+      "description": "Evaluate whether encouraging messages are displayed after each clock-in/out action. Check for variety in messaging (at least 5 different messages), contextual relevance (morning messages differ from evening ones), and positive emotional tone. Deduct 3 points if messages lack variety, 3 points if they're not context-aware, and 4 points if no messages appear at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the clock-in/out tracking system properly implemented?",
+      "description": "Assess whether the application correctly tracks and records clock-in/out events, including regular work hours and overtime. Check for proper data persistence (local storage at minimum), timestamp accuracy, and the ability to view history. Deduct 5 points if data isn't persisted between sessions, 3 points if timestamps are inaccurate, and 2 points if there's no history view. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser notifications being blocked, system time discrepancies, offline usage, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Statistical visualization of work patterns 2. Personalized motivation system based on user preferences 3. Integration with ambient notifications like subtle screen color changes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems doing the same thing) 2. Function modules unrelated to attendance tracking (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data persistence layers), unit test coverage, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear organization or commenting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Notification visibility and prominence when triggered 2) Transition animation duration controlled between 300-500ms when locking/unlocking screen 3) Clear visual feedback for successful clock-in/out actions. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between states, and 5 points for notifications that are easy to miss. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "easy"
+}

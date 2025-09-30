@@ -1,0 +1,68 @@
+{
+  "index": 626,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. Implement a timeline-based audio editor where users can add, move, and delete audio clips on a timeline, adjust the playback position and duration of each clip, and finally export the edited audio.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core timeline-based audio editor interface implemented?",
+      "description": "Evaluate whether the code provides a complete visual timeline interface with proper time scale representation, audio track visualization, and cursor positioning. Check if the timeline shows waveform representations of audio clips and supports zooming in/out of the timeline view. Score 0 if the timeline visualization is missing, 5 if basic timeline is implemented without waveforms, and 10 if the timeline is fully featured with proper visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the audio clip manipulation operations fully functional?",
+      "description": "Check whether users can add audio clips to the timeline, move them by drag-and-drop, delete selected clips, and trim clip boundaries. Verify that the code handles overlapping clips appropriately (either with layering or automatic spacing). Deduct 3 points if any of these basic operations is missing, and 2 points if the operations lack visual feedback during manipulation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is audio playback with timeline synchronization implemented?",
+      "description": "Verify that the code includes a functional playback mechanism that plays audio clips according to their timeline positions, with a moving playhead indicator showing the current playback position. Check if playback controls (play, pause, stop) are implemented and work correctly with the timeline. Deduct 5 points if playback doesn't sync with the visual timeline, and 3 points if seeking functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation support audio export functionality?",
+      "description": "Evaluate if the code provides a mechanism to export the final edited audio, including proper mixing of overlapping clips, handling of gaps in the timeline, and export format options (e.g., WAV, MP3). Check if the export process shows progress feedback and handles errors gracefully. Score 0 if export functionality is missing, 5 if basic export is implemented without format options or proper mixing, and 10 if complete export functionality is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid audio files, browser incompatibilities, memory limitations with large files, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time audio effects processing 2. Keyboard shortcuts for efficient editing 3. Automated beat detection for clip alignment 4. Multi-track mixing controls). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing libraries used for the same purpose) 2. Function modules unrelated to audio editing (e.g., a built-in video player when not needed) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/UI/data management layers), unit test coverage, and build process automation. Check for proper use of Web Audio API or similar technologies. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Check specifically for smooth waveform scrolling and responsive clip manipulation. Deduct 5 points for each operation without feedback, 3 points for laggy timeline scrolling, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

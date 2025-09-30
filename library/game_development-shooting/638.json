@@ -1,0 +1,68 @@
+{
+  "index": 638,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable when possible. Please develop a sandbox-style shooting game editor. Players can design their own shooting levels in the editor, place enemies, obstacles, and props, and set level objectives. After completing the editing, they can test and share their game. The editor supports drag-and-drop operations, property adjustments, and level saving functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the shooting game editor's core functionality fully implemented?",
+      "description": "Review whether the code implements a complete canvas-based editor with drag-and-drop functionality for game elements (enemies, obstacles, props). Check if the editor includes a coordinate system, element selection, movement, and resizing capabilities. Score 0 if the core editor functionality is missing, 5 if only basic placement is implemented, and 10 if the editor offers comprehensive design capabilities including layers, grouping, and alignment tools.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the property adjustment features comprehensive and intuitive?",
+      "description": "Evaluate the property panel implementation that allows customization of game elements. Check if properties include basic attributes (position, size, appearance) and behavior parameters (enemy movement patterns, health points, damage values, collision responses). Deduct 3 points if visual feedback is missing when adjusting properties, 3 points if common properties require manual input rather than sliders/dropdowns, and 5 points if behavior scripting/configuration is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the level testing functionality properly implemented?",
+      "description": "Assess whether the editor includes a robust play-test mode that accurately simulates gameplay without requiring export. Check for seamless switching between edit and play modes, real-time debugging tools, and the ability to pause/resume testing. Deduct 5 points if the game physics in test mode differs from final export, 3 points if there's no visual feedback for collisions/interactions during testing, and 5 points if performance diagnostics are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are level saving and sharing mechanisms well-designed?",
+      "description": "Review the implementation of level persistence and sharing functionality. Check if levels are properly serialized/deserialized, whether the code includes versioning support for backward compatibility, and if export options include shareable formats. Deduct 5 points if there's no auto-save feature, 3 points if sharing requires manual file handling, and 5 points if imported levels lose custom properties. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid drag operations, corrupt level files, browser crashes, memory leaks with large levels, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted level balancing 2. Community template library integration 3. Real-time collaborative editing 4. Visual scripting system for complex behaviors). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple undo systems coexisting) 2. Function modules unrelated to the shooting game editor (e.g., built-in image editor when simple property controls would suffice) 3. Fancy effects that affect performance (e.g., excessive particle effects in the editor interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor/game logic/rendering layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Drag-and-drop operations feel natural with appropriate snapping and visual feedback 2) Transition animations controlled between 300-500ms 3) Clear visual hierarchy and focus guidance. Deduct 5 points for each operation without feedback, 3 points for laggy performance during element manipulation, and 5 points for unintuitive UI workflows. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

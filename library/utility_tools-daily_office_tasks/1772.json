@@ -1,0 +1,68 @@
+{
+  "index": 1772,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. I need to process date range selection. Please generate complete code that I can directly copy and paste. Thank you!",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the date range selection UI properly implemented?",
+      "description": "Review whether the code implements a complete date range selection interface with start and end date inputs, a calendar picker, and clear visual indicators of the selected range. Score 0 if there's no visual representation, 5 points if basic input fields are provided without a calendar, and 10 points if a full interactive calendar with range highlighting is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the date validation logic comprehensive?",
+      "description": "Check if the code includes validation for: invalid dates (e.g., February 30), ensuring end date is after start date, handling different date formats, timezone considerations, and preventing selection of invalid ranges (e.g., weekends/holidays if specified). Deduct 2 points for each missing validation aspect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation handle date manipulation properly?",
+      "description": "Evaluate whether the code correctly handles date operations like calculating days between dates, adding/subtracting days, formatting dates in different locales, and handling edge cases (leap years, month transitions, etc.). Deduct 3 points if date arithmetic is incorrect, 3 points if formatting is inconsistent, and 4 points if timezone issues are ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are convenient selection shortcuts implemented?",
+      "description": "Assess whether the code includes practical shortcuts like 'Today', 'Last 7 days', 'Last month', 'Year to date', etc. Also check for intuitive navigation between months/years and range preview functionality. Award 3 points for basic navigation, 3 points for predefined ranges, and 4 points for intelligent defaults and range preview. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user inputs, browser compatibility issues, edge date cases like leap years) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual heatmap of date selection frequency 2. Intelligent range suggestions based on context 3. Keyboard navigation support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of date handling logic (e.g., multiple date parsing mechanisms) 2. Functionality unrelated to date selection (e.g., unnecessary animations) 3. Overcomplicated UI that affects usability. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating date logic/UI components/event handling), appropriate use of libraries vs. custom code, and adherence to best practices. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if browser compatibility is not considered. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the date selection UI follows modern design principles: 1) Clear visual hierarchy between inputs and calendar 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Appropriate color contrast for selected dates and ranges. Deduct 3 points for cluttered calendar layout, 5 points for poor contrast that affects readability, and 5 points for inconsistent styling between date components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the date selection interactions conform to human perception characteristics: 1) Immediate feedback when dates are selected 2) Smooth transitions when navigating between months/years 3) Clear visual cues for valid/invalid selections. Deduct 5 points for laggy calendar rendering, 3 points for jumpy month transitions, and 5 points for unclear selected state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

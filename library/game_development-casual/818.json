@@ -1,0 +1,68 @@
+{
+  "index": 818,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Create a whack-a-mole style game where the opening animation shows Nezha saying to a marmot \"Still eating? I'm coming for you!\" Then the game begins with Nezha using his Fire-tipped Spear to hit marmots that try to steal food from a bowl. Players earn points for each marmot they hit. Include different difficulty levels. The animation style should be simple and cute anime-style characters.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the whack-a-mole core game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the whack-a-mole gameplay through HTML/JavaScript, including marmot spawn/hide timing control, hit detection system, and scoring mechanism. Check if marmots appear randomly from different holes with proper timing intervals. Score 0 if core game loop is missing, 5 if only basic spawn/hide is implemented, and 10 if complete hit detection, scoring, and game state management are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Nezha character animation and Fire-tipped Spear interaction properly implemented?",
+      "description": "Evaluate whether Nezha character responds correctly to player clicks/taps with Fire-tipped Spear striking animation. Check if the spear animation aligns with hit detection timing and provides visual feedback for successful/missed hits. Deduct 5 points if spear animation is not synchronized with hit events, 3 points if Nezha character lacks proper attack animations. Full score requires smooth character animation with proper weapon mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the opening animation sequence with dialogue fully implemented?",
+      "description": "Check whether the opening animation includes Nezha character saying 'Still eating? I'm coming for you!' to a marmot character with proper dialogue display and character animations. Evaluate if the transition from opening sequence to gameplay is smooth. Deduct 5 points if dialogue is missing or poorly timed, 3 points if character animations during dialogue are static. Full score requires animated characters with speech bubbles/text and smooth scene transition.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are multiple difficulty levels properly designed and implemented?",
+      "description": "Evaluate whether the game includes different difficulty settings that meaningfully affect gameplay (spawn rate, marmot visibility duration, point values, etc.). Check if difficulty progression is balanced and provides appropriate challenge scaling. Deduct 5 points if only superficial difficulty changes exist, 3 points if difficulty balance is poor. Full score requires at least 3 distinct difficulty levels with proper game parameter adjustments.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, game state errors, animation interruptions, etc.) and provide friendly error handling. Code with strong robustness should effectively manage edge cases like simultaneous hits, animation conflicts, and state management issues. Give 10 points for comprehensive error handling, 5 points for basic robustness, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance gameplay?",
+      "description": "Check whether the code includes engaging features beyond basic whack-a-mole mechanics (e.g., 1. Special marmot types with different point values 2. Power-up effects for Nezha's spear 3. Combo scoring system 4. Food bowl depletion mechanic). Add 3 points for each well-implemented innovative feature that enhances the core gameplay experience (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation systems or duplicate game logic 2. Features unrelated to whack-a-mole gameplay (e.g., unrelated mini-games) 3. Overly complex visual effects that impact performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with core game functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic, animation, UI, and audio systems), code organization, and maintainability. Deduct 5 points if global state pollution is found or proper separation of concerns is missing; deduct 5 points if code duplication rate is excessive (over 30%); deduct 3 points if animation frame management is inefficient. Full score requires clean architecture with proper module separation.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design achieve cute anime-style aesthetics?",
+      "description": "Evaluate whether the character designs and visual elements successfully create a simple, cute anime aesthetic: 1) Consistent art style for Nezha and marmot characters 2) Appropriate color palette that conveys playful mood 3) Clean, readable UI elements that complement the anime theme. Deduct 5 points for inconsistent art style, 3 points for poor character design quality, and 5 points if the overall aesthetic doesn't match cute anime requirements. Screenshots must demonstrate cohesive visual theme.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game interaction smooth and responsive?",
+      "description": "Judge whether the game interactions feel natural and responsive: 1) Click/tap response time ≤ 100ms for hit detection 2) Marmot spawn/hide animations are smooth (60fps preferred) 3) Clear visual feedback for all player actions 4) Consistent frame rate during gameplay. Deduct 5 points for each laggy interaction, 3 points for choppy animations, and 5 points if hit feedback is unclear or delayed. Screenshots should show smooth animation sequences.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 448,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Help me write a simple software code for a meeting schedule recording reminder system that allows users to input schedule arrangements and dates. When the reminder button is clicked, on the corresponding date, the interface will automatically open QQ Music to play \"Today Is a Good Day.\" When the stop button is clicked, QQ Music will exit and the music will stop playing.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the meeting schedule input and storage system fully implemented?",
+      "description": "Review whether the code accurately implements schedule input functionality through HTML forms/JavaScript, including date picker, time selector, and schedule description fields. Check if data validation is implemented (date format, required fields, conflict detection). Score 0 if basic input functionality is missing, 5 if only simple input is implemented without validation, and 10 if complete input system with validation and local storage is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the reminder scheduling and timing mechanism properly implemented?",
+      "description": "Check whether the reminder system uses appropriate timing mechanisms (setTimeout/setInterval) to monitor scheduled dates and times. Evaluate if the system can handle multiple concurrent reminders and accurately trigger at specified times. Deduct 5 points if timing accuracy is poor (>30 seconds deviation), and 3 points if background timing doesn't work when browser tab is inactive. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the QQ Music integration and external application control implemented?",
+      "description": "Evaluate whether the system successfully integrates with QQ Music application launch functionality. Check if the code uses appropriate methods (shell commands, registry, or protocol handlers) to open and close QQ Music. Verify if the specific song 'Today Is a Good Day' can be automatically played. Deduct 5 points if only basic app launch is implemented without specific song control, and 3 points if the stop functionality doesn't properly terminate the music application.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete reminder lifecycle and state management constructed?",
+      "description": "Check whether the code includes complete reminder lifecycle management, including reminder creation, modification, deletion, and completion marking. Evaluate if the system maintains proper state tracking for active/inactive reminders and handles reminder history. Deduct 5 points if reminder persistence is not implemented, and 3 points if there's no mechanism to handle missed or expired reminders. Give 10 points if fully implemented with comprehensive state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid date input, system permission denial for external app launch, missing QQ Music installation, etc.) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the user experience (e.g., 1. Custom ringtone selection 2. Snooze functionality 3. Meeting category classification 4. Calendar view integration 5. Notification sound volume control). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timer mechanisms coexisting) 2. Function modules unrelated to meeting reminders (e.g., built-in games or weather widgets) 3. Overly complex animations that affect performance (e.g., excessive visual effects during reminder triggers). Deduct 3 points for each redundancy found, and directly deduct 10 points if core reminder functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data management/UI/reminder logic layers), code organization, and error handling implementation. Deduct 5 points if global state pollution is found or proper separation of concerns is not implemented; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no configuration management is implemented for external application paths. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the overall design follows modern UI/UX principles: 1) Harmonious color scheme suitable for productivity tools (no more than 3 primary colors) 2) Proper layout spacing with clear visual hierarchy (element spacing follows 8px grid system) 3) Professional typography (body font size ≥ 14px, line height ≥ 1.5). Deduct 3 points for each cluttered visual element, 5 points for poor color contrast affecting readability, and 5 points for inconsistent layout structure. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and intuitive?",
+      "description": "Judge whether the interaction design follows usability principles: 1) Form input feedback delay ≤ 100ms 2) Smooth transitions between different views (300-500ms duration) 3) Clear visual feedback for reminder states and actions 4) Intuitive button placement and labeling. Deduct 5 points for each operation lacking immediate feedback, 3 points for confusing navigation flow, and 5 points for poorly positioned critical function buttons (reminder/stop). Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "medium"
+}

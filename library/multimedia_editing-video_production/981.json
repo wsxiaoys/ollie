@@ -1,0 +1,68 @@
+{
+  "index": 981,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Can you help me generate code for a web-based video editing tool?\n\nHTML web version\nFunctional requirements:\n- Ability to upload videos\n- Automatic video editing\n- Save videos\n- Text-to-speech with popular streamer voices\n- Automatic subtitle extraction",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and processing functionality fully implemented?",
+      "description": "Review whether the code implements multi-format video upload (MP4, AVI, MOV, WebM) with proper file validation, progress tracking, and preview generation. Check if video metadata extraction (duration, resolution, codec) is included and if chunked upload for large files is supported. Score 0 if basic upload is missing, 5 if only simple upload works, and 10 if all formats are supported with robust error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automatic video editing engine properly implemented?",
+      "description": "Evaluate whether the automatic editing includes intelligent scene detection, transition effects, and timeline management. Check if the system can perform cuts, trims, and arrange clips automatically based on content analysis. Must include video rendering pipeline and export functionality. Deduct 5 points if no timeline visualization, 3 points if rendering is unstable. Full score requires AI-powered editing suggestions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the text-to-speech with voice cloning accurately implemented?",
+      "description": "Check whether the TTS system includes multiple voice models, proper audio synthesis, and voice quality controls. Evaluate if popular streamer voice simulation is implemented with acceptable quality (>80% similarity). Must include audio waveform visualization and timing synchronization with video. Deduct 5 points if voice quality is poor, 3 points if no voice selection options.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the automatic subtitle extraction and synchronization system complete?",
+      "description": "Review whether the subtitle system uses speech recognition APIs (Web Speech API or external services) with accurate timing synchronization. Check if subtitle editing, styling (fonts, colors, positioning), and export formats (SRT, VTT) are supported. Must include real-time preview and manual correction capabilities. Deduct 5 points if timing is off by >500ms, 3 points if no styling options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (large file uploads, unsupported formats, network interruption, memory limitations, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases with graceful degradation, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered thumbnail generation 2. Real-time collaboration editing 3. Social media format optimization 4. Background music auto-sync 5. Voice emotion detection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video players coexisting) 2. Function modules unrelated to video editing (e.g., built-in games or social features) 3. Performance-heavy effects that don't add value (e.g., excessive animations during rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating video processing/UI/storage layers), proper error handling, and performance optimization. Check for memory management during video processing and proper cleanup of resources. Deduct 5 points if global state pollution or poor separation of concerns; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if no performance optimization for large video files. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the video editing interface follows professional video editing software standards: 1) Clear timeline visualization with proper scaling 2) Intuitive tool placement and iconography 3) Proper contrast ratios for video preview 4) Consistent spacing following 8px grid system 5) Professional color scheme suitable for long editing sessions. Deduct 3 points for each cluttered UI element, 5 points for poor video preview quality, and 5 points for confusing navigation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether video editing interactions are responsive and professional: 1) Video scrubbing responds within 100ms 2) Timeline drag-and-drop operations are smooth 3) Preview playback has no stuttering 4) Export progress is clearly indicated 5) Tool switching provides immediate feedback. Deduct 5 points for each laggy interaction, 3 points for unclear loading states, and 5 points for missing keyboard shortcuts for common operations. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

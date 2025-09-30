@@ -1,0 +1,68 @@
+{
+  "index": 880,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Write a perfectly functioning Sokoban game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Sokoban game core mechanics fully implemented?",
+      "description": "Check whether the code implements all core game mechanics: player movement (up/down/left/right), box pushing, collision detection with walls, valid win condition checking. Score 0 if movement isn't implemented, 5 if only basic movement works without proper collision handling, and 10 if all core mechanics function perfectly including undoing moves.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the level design and loading mechanisms properly implemented?",
+      "description": "Evaluate whether the game includes a level system with multiple puzzles, level loading mechanism, and proper level representation (using arrays or matrices). Check if the game correctly renders different elements (walls, boxes, goals, player). Deduct 3 points if only one hardcoded level exists, 5 points if level design is flawed (e.g., unsolvable puzzles), and 3 points if there's no level completion tracking.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management well-designed?",
+      "description": "Check if the code properly manages game states including player position, box positions, goal positions, move history for undo functionality, and level completion detection. Deduct 5 points if there's no move history tracking, 3 points if the win condition check is faulty, and 5 points if state reset between levels is buggy.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game include essential quality-of-life features?",
+      "description": "Evaluate if the implementation includes: move counter, undo functionality, level reset, level selection, and game completion tracking. Deduct 2 points for each missing feature. Check if the game saves progress between sessions (local storage); deduct 3 points if missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, edge cases in level design, browser resize events) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move optimization suggestions 2. Automatic puzzle solver 3. Custom level editor 4. Score/time tracking system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement handling logics coexisting) 2. Function modules unrelated to Sokoban (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations slowing gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if variable/function naming is unclear or inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Clear visual distinction between game elements (walls, boxes, goals, player) 2) Proper layout and proportions (grid cells properly sized and aligned) 3) Professional visual feedback for interactions (movement, successful/unsuccessful pushes). Deduct 3 points for unclear visual distinctions, 5 points for inconsistent or cluttered layout, and 5 points for lack of visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game controls and animations conform to human perception characteristics: 1) Input response delay ≤ 100ms 2) Smooth movement animations (if implemented) 3) Clear visual and audio feedback for actions. Deduct 5 points for laggy movement, 3 points for jarring transitions between actions, and 5 points for confusing or missing feedback when attempting invalid moves. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

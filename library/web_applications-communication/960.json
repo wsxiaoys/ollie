@@ -1,0 +1,68 @@
+{
+  "index": 960,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration when possible. Create an aesthetically pleasing login page with a reasonable layout.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the login form functionality fully implemented?",
+      "description": "Evaluate whether the code includes all essential login form elements (username/email field, password field, submit button) and implements basic form validation. Score 0 if form elements are missing, 5 if basic elements exist without validation, and 10 if complete with client-side validation (including input format checking, required field validation, and error display).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the password security properly addressed?",
+      "description": "Check whether the code implements password field masking, password strength indicators, and security features like CSRF protection. Deduct 3 points if password masking is missing, 4 points if there's no password strength indicator, and 3 points if there's no option to show/hide password. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are alternative login methods and account recovery options provided?",
+      "description": "Review whether the page includes social login options (OAuth integration), 'forgot password' functionality, and 'remember me' option. Deduct 3 points for each missing feature. Additionally, check if there's a sign-up link for new users. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the form submission and response handling properly implemented?",
+      "description": "Evaluate whether the code includes proper form submission handling, loading states during submission, and appropriate feedback after submission (success/error messages). Deduct 5 points if there's no visual feedback during submission, and 5 points if error handling is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, failed submissions, browser compatibility issues) and provide friendly error prompts. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated transitions 2. Dark/light mode toggle 3. Locale/language selection 4. Accessibility features beyond standard). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant form validation code 2. Unnecessary scripts or stylesheets 3. Fancy effects that affect performance (e.g., excessive animations or high-resource background effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core login functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of HTML, CSS, and JavaScript), code organization, and maintainability. Deduct 5 points if inline styles are overused; deduct 3 points if JavaScript is not separated from HTML; deduct 2 points if there's no responsive design for different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for form fields. Deduct 5 points for each operation without feedback, 3 points for jarring transitions, and 5 points for poor keyboard navigation support. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

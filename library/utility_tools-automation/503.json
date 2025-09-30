@@ -1,0 +1,68 @@
+{
+  "index": 503,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration purposes. Develop a cloud-based clipboard synchronization tool that supports real-time synchronization across devices, content format preservation (text/images/rich text), encrypted transmission, history rollback, and quick content retrieval functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-device clipboard synchronization system fully implemented?",
+      "description": "Review whether the code correctly implements real-time clipboard synchronization across different devices. Check if it uses WebSockets or Server-Sent Events for real-time updates, has proper connection management, and handles device authentication. Score 0 if synchronization is not implemented, 5 if basic text synchronization works but with delays (>1s), and 10 if synchronization is real-time (<500ms) across all devices with proper conflict resolution.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the solution support all required content formats?",
+      "description": "Evaluate support for multiple content types: plain text, rich text (HTML/markdown), and images. Check if the code properly handles encoding/decoding, maintains formatting integrity during transfer, and correctly renders all content types on the receiving end. Deduct 3 points if a required format is missing, 2 points if image compression significantly degrades quality, and 2 points if rich text formatting is lost during synchronization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the encrypted transmission properly implemented?",
+      "description": "Examine the encryption implementation for both data in transit and at rest. Check for use of industry-standard encryption (TLS for transmission, AES for storage), secure key management, and end-to-end encryption. Deduct 5 points if only basic HTTPS is used without additional encryption layers, 3 points if encryption keys are stored insecurely, and 5 points if sensitive data is transmitted or stored in plaintext. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the history and rollback mechanisms fully functional?",
+      "description": "Verify the implementation of clipboard history tracking, storage efficiency, and the ability to restore previous clipboard states. Check if the code maintains a proper version history with timestamps, allows browsing through past entries, and supports one-click restoration of previous clipboard content. Deduct 3 points if history is limited to text-only, 3 points if the rollback mechanism is unreliable, and 5 points if there's no way to manage history storage size. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network disconnections, synchronization failures, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle offline operation modes with data queuing for sync. Give 10 points for comprehensive error handling and recovery, 5 points for basic error handling, and 0 points if exceptions cause the system to fail.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smart content categorization 2. OCR for images with text 3. Context-aware suggestions 4. Cross-platform browser extensions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple storage mechanisms without clear purpose) 2. Function modules unrelated to clipboard synchronization (e.g., built-in messaging system) 3. Resource-intensive features that affect performance (e.g., unnecessary background processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating sync logic/UI/storage layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Clipboard paste operation completes in ≤ 100ms 2) Visual feedback for synchronization status 3) Clear indication of encrypted vs. unencrypted content. Deduct 5 points for each operation without feedback, 3 points for laggy performance during large content synchronization, and 5 points for confusing UI that doesn't clearly show sync status. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

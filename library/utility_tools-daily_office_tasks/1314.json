@@ -1,0 +1,68 @@
+{
+  "index": 1314,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate, professional responses. Make sure that the code you generate is executable for demonstration purposes. Use HTML/CSS to convert Word document content into a webpage with identical formatting.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the document structure parsing and conversion fully implemented?",
+      "description": "Review whether the code accurately parses Word document structure (headings, paragraphs, lists, tables) and converts them to corresponding HTML semantic elements. Check if it supports nested structures like multi-level lists and complex table layouts. Score 0 if basic document parsing is missing, 5 if only simple text and paragraphs are converted, and 10 if complex document structures including tables, lists, and headers are fully supported.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the text formatting preservation accurate?",
+      "description": "Evaluate whether text formatting (bold, italic, underline, font family, font size, text color, background color, strikethrough) is accurately converted from Word to CSS. Check if character-level formatting within paragraphs is maintained. Deduct 3 points for each major formatting type that's not preserved. Deduct 5 points if inline formatting is lost. Full score requires pixel-perfect text formatting reproduction.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the layout and spacing faithfully reproduced?",
+      "description": "Check whether page margins, paragraph spacing, line height, indentation, and alignment are accurately converted to CSS. Evaluate if the webpage layout matches the Word document's visual spacing. Deduct 5 points if paragraph spacing differs significantly, 3 points if margins are incorrect, and 5 points if text alignment is not preserved. Full score requires exact layout reproduction.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are media elements and special content properly handled?",
+      "description": "Assess whether images, embedded objects, hyperlinks, and special characters are correctly extracted and displayed in HTML. Check if image positioning, sizing, and text wrapping are maintained. Deduct 5 points if images are not displayed, 3 points if hyperlinks are broken, and 5 points if special formatting like text boxes or shapes are missing. Full score requires complete media element preservation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted Word files, unsupported formatting, missing fonts, large file sizes, etc.) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive table of contents navigation 2. Side-by-side comparison with original document 3. Responsive design for mobile viewing 4. Print-optimized CSS). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar conversion functions (e.g., multiple CSS generation methods coexisting) 2. Function modules unrelated to document conversion (e.g., built-in text editor) 3. Excessive visual effects that don't improve readability. Deduct 3 points for each redundancy found, and directly deduct 10 points if core conversion functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating parsing logic/CSS generation/HTML rendering), code organization, and error handling structure. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if parsing logic is tightly coupled with presentation logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the converted webpage maintains professional document appearance: 1) Consistent typography hierarchy 2) Proper whitespace and reading flow 3) Cross-browser font rendering compatibility 4) Print-friendly styling. Deduct 3 points for each typography inconsistency, 5 points for poor readability due to spacing issues, and 5 points if the webpage looks significantly different from the original document. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the rendering performance optimized and scalable?",
+      "description": "Judge whether the conversion handles large documents efficiently: 1) CSS optimization to avoid redundant styles 2) Proper HTML structure without excessive nesting 3) Efficient handling of complex tables and lists 4) Reasonable loading time for large documents. Deduct 5 points for each performance bottleneck, 3 points for bloated CSS output, and 5 points if the page becomes unresponsive with complex documents. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

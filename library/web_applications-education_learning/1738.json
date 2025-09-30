@@ -1,0 +1,68 @@
+{
+  "index": 1738,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Design a webpage for my class schedule.\n\nRequirements: Courses should be draggable to corresponding time slots. If a time slot already contains a course, the existing course should be replaced.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the drag-and-drop functionality for courses fully implemented?",
+      "description": "Review whether the code accurately implements drag-and-drop interactions through HTML/JavaScript, including drag start/end events, visual feedback during dragging, and proper drop zone detection. Check if courses can be successfully moved from source to target time slots with smooth visual transitions. Score 0 if drag-and-drop is not implemented, 5 if only basic dragging works without proper drop handling, and 10 if all drag-and-drop interactions are fully functional with visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the time slot replacement logic correctly implemented?",
+      "description": "Evaluate whether the replacement mechanism works correctly when dropping a course onto an occupied time slot. The existing course should be properly replaced without causing data loss or visual glitches. Check if the DOM updates correctly and state management handles replacements properly. Deduct 5 points if replacement causes visual artifacts, and 3 points if state inconsistencies occur. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the class schedule structure and layout properly designed?",
+      "description": "Check whether the schedule grid structure uses proper HTML semantic elements (table or CSS grid) with clear time slots and day columns. Evaluate if the layout is responsive and maintains proper proportions across different screen sizes. The schedule should display weekdays, time periods, and provide clear visual boundaries for each slot. Deduct 5 points if the grid structure is poorly implemented, and 3 points if responsiveness is lacking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is comprehensive course data management implemented?",
+      "description": "Review whether the code includes proper course data structure with essential information (course name, instructor, duration, etc.) and provides mechanisms for adding, editing, or removing courses. Check if course data persists correctly during drag operations and maintains data integrity. Deduct 5 points if course data structure is incomplete, and 3 points if data persistence is not handled properly. Give 10 points if fully implemented with robust data management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid drop targets, rapid consecutive drags, browser compatibility issues, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should effectively handle edge cases like dragging outside valid zones or handling touch events on mobile devices. Give 10 points for excellent robustness, 5 points for average handling, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance user experience?",
+      "description": "Check whether the code includes thoughtful features that improve usability (e.g., 1. Auto-save schedule changes to localStorage 2. Color-coding courses by subject/priority 3. Time conflict warnings 4. Schedule export functionality 5. Undo/redo operations). Add 2-3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple drag handlers for the same functionality) 2. Function modules unrelated to schedule management (e.g., built-in calculator or weather widget) 3. Overly complex animations that affect drag performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core schedule functionality is compromised by unnecessary features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating drag logic, schedule rendering, and data management), code organization, and maintainability. Check for proper event listener management, memory leak prevention, and clean separation of concerns. Deduct 5 points if global state pollution is found or no design patterns are used; deduct 5 points if code duplication rate is high (over 30%); deduct 3 points if event listeners are not properly cleaned up. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the schedule design follows modern UI principles: 1) Clear visual hierarchy with proper contrast between time slots and courses 2) Consistent spacing following 8px grid system 3) Professional typography (readable font sizes ≥ 12px for course text) 4) Intuitive color scheme distinguishing different course types. Deduct 3 points for each cramped visual element, 5 points for poor color contrast affecting readability, and 5 points for inconsistent styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the drag interactions smooth and intuitive?",
+      "description": "Judge whether drag interactions provide excellent user feedback: 1) Immediate visual response on drag start (≤50ms) 2) Clear drop zone highlighting during drag-over 3) Smooth animation transitions (200-300ms) 4) Proper cursor changes and visual cues 5) Touch device compatibility. Deduct 5 points for each missing interaction feedback, 3 points for choppy animations during dragging, and 5 points if drag operations feel unresponsive or confusing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1291,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for display. Program to draw the Olympic rings",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the implementation of the Olympic rings accurate?",
+      "description": "Check whether the code correctly implements the five Olympic rings with standard colors (blue, yellow, black, green, and red) in the proper interlocking arrangement. The rings should be in the correct order from left to right: blue, yellow (behind), black, green (behind), and red. Proper spacing and alignment should be observed. Score 0 if rings are missing or incorrectly colored, 5 if basic implementation exists but with minor errors, 10 if perfectly implemented according to official specifications.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the precise dimensions and proportions maintained?",
+      "description": "Evaluate whether the code uses the correct proportions for the Olympic rings. According to official specifications, each ring should be of equal size, with proper spacing between rings (1/3 of ring diameter). The thickness of each ring should be 1/6 of the internal diameter. Deduct 3 points if proportions are incorrect, 3 points if spacing is wrong, and 4 points if the rings don't follow the official layout pattern. Full score for pixel-perfect implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the implementation responsive?",
+      "description": "Check whether the Olympic rings display properly across different screen sizes. The implementation should maintain proper proportions regardless of viewport dimensions. Deduct 5 points if the rings don't scale appropriately on different screen sizes; deduct another 5 points if the layout breaks on mobile devices. Give 10 points if the implementation maintains proper spacing and proportions across all common device dimensions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation use appropriate rendering technology?",
+      "description": "Assess whether the chosen rendering approach (SVG, Canvas, CSS, etc.) is appropriate for the task. SVG would be ideal for the Olympic rings as a vectorized image. Deduct 3 points if using bitmap-based approaches that pixelate when scaled; deduct 5 points if the implementation causes excessive DOM elements or performance issues. Give 10 points for an efficient, scalable implementation using appropriate web technologies.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, rendering failures, etc.) and provide fallbacks when necessary. Code with strong robustness should work across different browsers and handle edge cases. Give 10 points if the implementation works flawlessly across all major browsers, 5 points if minor compatibility issues exist, and 0 points if major rendering problems occur in common browsers.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smooth animation of the rings appearing 2. Interactive elements when hovering/clicking rings 3. Dynamic color transitions or effects that maintain brand integrity). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant code for creating similar shapes 2. Unnecessary visual effects that distract from the Olympic rings 3. Excessive animation or interaction that compromises the official representation. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core presentation is negatively affected by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/configuration/interactions), reusability of components, and clean coding practices. Deduct 5 points if global variables are unnecessarily used; deduct 5 points if the code is not structured with proper functions or classes; deduct 5 points if hard-coded values are used instead of configurable parameters. The full score is 10 points for clean, maintainable, and well-organized code.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Olympic rings rendering follows professional design principles: 1) Accurate official Olympic colors (correct RGB/hex values) 2) Proper ring spacing and alignment 3) Clean presentation without distracting elements. Deduct 3 points for each visual inaccuracy, 5 points for incorrect color values, and 5 points for poor layout or spacing. The full score is 10 points for a visually perfect implementation matching official IOC standards.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether any included dynamic effects (animations, transitions, interactive elements) conform to human perception characteristics: 1) Smooth rendering without jank or frame drops 2) Appropriate animation timing if implemented 3) Proper visual feedback for any interactive elements. Deduct 5 points for jerky animations, 3 points for inappropriate timing of visual effects, and 5 points for confusing or misleading interactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

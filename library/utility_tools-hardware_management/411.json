@@ -1,0 +1,68 @@
+{
+  "index": 411,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable whenever possible. On a Linux system, write a Java GUI Swing demo that can capture real-time video streams from Hikvision SDK and display them on a JPanel. Note that Hikvision SDK on Linux does not support direct rendering of video to AWT or Swing components.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Hikvision SDK integration correctly implemented?",
+      "description": "Review whether the code accurately integrates with Hikvision SDK using JNA or JNI, with proper library loading, initialization, and error handling. Check if native method calls are correctly wrapped, and if the SDK initialization sequence is followed according to Hikvision documentation. Score 0 if there's no integration, 5 if basic integration exists but with errors, 10 if fully implemented with comprehensive error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the video capture and frame extraction mechanism properly implemented?",
+      "description": "Evaluate whether the code properly implements the capture mechanism, including device discovery, connection establishment, stream selection, and frame extraction. Since direct rendering isn't supported, check if there's a proper buffer system to handle the frames from the SDK. Deduct 5 points if device discovery is missing, 3 points if stream selection options aren't provided, and 3 points if frame extraction has performance issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there an effective mechanism to convert SDK frames to Java-compatible images?",
+      "description": "Check if the implementation contains an efficient conversion mechanism from native Hikvision frame buffers to Java BufferedImage or compatible formats. Look for optimization techniques like direct buffer access, minimal copying, and possibly native accelerated conversion. Deduct 5 points if conversion causes significant frame drops, 3 points if memory usage grows uncontrollably, and 5 points if there's no color space handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the JPanel display implementation optimized for real-time video?",
+      "description": "Assess whether the JPanel display uses double-buffering, proper threading model, and optimized repainting strategies. Since direct rendering isn't supported, check if the solution uses efficient approaches like SwingWorker, Timer, or separate rendering threads. Deduct 5 points if the UI freezes during video playback, 3 points if frame tearing is visible, and 5 points if CPU usage is unnecessarily high. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as camera disconnection, SDK initialization failures, memory overflow, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multi-camera view management 2. Recording capability with compression options 3. Motion detection overlay 4. Frame analysis tools). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant thread creation for similar tasks 2. Unnecessary image conversions or buffer copies 3. Feature implementations unrelated to video display that may impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core video display functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating SDK interaction/frame processing/UI layers), proper resource management (especially native resources), and error logging. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if resources aren't properly released; deduct 5 points if there's no proper logging for debugging. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean video display area without unnecessary decorations 2) Proper control panel layout with intuitive grouping 3) Consistent sizing and spacing of UI elements. Deduct 3 points for each crowded visual element, 5 points for poor contrast that affects visibility, and 5 points for chaotic control layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) UI responsiveness during video playback 2) Smooth transitions when changing cameras or settings 3) Clear visual feedback for operation states. Deduct 5 points for UI freezing during operations, 3 points for delayed visual feedback, and 5 points for hard-to-find essential controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Hardware Management",
+  "difficulty": "hard"
+}

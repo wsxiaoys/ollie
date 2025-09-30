@@ -1,0 +1,68 @@
+{
+  "index": 1536,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Could you write a React page that renders a Jupyter notebook page?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic Jupyter notebook structure properly implemented in React?",
+      "description": "Check if the code implements the core Jupyter notebook components: cells (code, markdown), cell execution counter, toolbar, and menu bar. Score 0 if essential components are missing, 5 if basic components are present but lack proper styling or hierarchy, and 10 if the structure closely resembles an actual Jupyter notebook with proper component organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the different cell types (code, markdown, raw) properly implemented with correct rendering?",
+      "description": "Evaluate whether the code implements different cell types with appropriate editors and renderers. Code cells should have syntax highlighting, markdown cells should render formatted text, and there should be UI to switch between cell types. Deduct 3 points if syntax highlighting is missing, 4 points if markdown rendering is incorrect, and 5 points if cell type switching is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a working code execution simulation mechanism?",
+      "description": "Check if the React implementation includes a mechanism to simulate code execution (even if through mock data or simple JavaScript evaluation). The implementation should show execution status (running/completed), display output (text, graphs, tables), and handle execution errors. Deduct 5 points if execution status indicators are missing, and 5 points if output rendering is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are cell manipulation functions (add, delete, move, run) implemented?",
+      "description": "Verify if the implementation includes common cell operations like adding new cells, deleting cells, moving cells up/down, and running cells individually or in sequence. Each missing function deducts 2.5 points. Check if keyboard shortcuts are implemented for these operations (an additional 2.5 points for complete shortcuts). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (such as invalid cell content, long outputs, rendering errors) and provides appropriate error handling. Code with strong robustness should effectively handle these edge cases, giving 10 points. If error handling is basic, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaboration simulation 2. Dark/light theme switching 3. Cell folding/collapsing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to execute code) 2. Function modules unrelated to Jupyter notebooks (e.g., unrelated dashboard elements) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component structure (proper separation of concerns), state management approach, use of React hooks and patterns, and code reusability. Deduct 5 points if global state is poorly managed; deduct 3 points if React anti-patterns are found; deduct 2 points if there's significant code duplication. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows Jupyter's familiar interface standards while maintaining modern UI principles: 1) Proper color scheme matching Jupyter's palette 2) Clear visual hierarchy with consistent spacing 3) Appropriate typography (code vs. text differentiation). Deduct 3 points for each significant deviation from Jupyter's recognizable interface, 4 points for poor visual hierarchy, and 3 points for inconsistent typography. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions match the expected Jupyter experience: 1) Smooth cell focus transitions 2) Appropriate feedback when executing code 3) Intuitive keyboard navigation between cells. Deduct 3 points for laggy cell transitions, 4 points for missing execution feedback, and 3 points for unintuitive keyboard navigation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

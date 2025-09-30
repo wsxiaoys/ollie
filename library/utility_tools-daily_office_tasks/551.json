@@ -1,0 +1,68 @@
+{
+  "index": 551,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code in your demonstrations. Implement a smart spreadsheet tool that supports CRUD operations on data, cell merging, formula calculations (basic mathematical functions, statistical functions, etc.), data sorting and filtering, and the ability to generate simple charts (bar charts, line charts, pie charts), with support for importing and exporting table data in Excel format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the CRUD functionality for the spreadsheet fully implemented?",
+      "description": "Evaluate whether the code implements complete Create, Read, Update, and Delete operations for cells and rows/columns. Check if cell selection (single, range, multi-selection), editing (inline and formula bar), and data validation are properly implemented. Score 0 if core CRUD operations are missing, 5 if basic operations are present but lack advanced features, and 10 if all operations including keyboard navigation and shortcuts are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are cell merging and formatting capabilities properly implemented?",
+      "description": "Check if the code supports merging/unmerging cells with proper content handling, and if basic formatting options (font styles, colors, borders, alignment, etc.) are available. Verify that merged cells maintain their integrity when sorting or when rows/columns are inserted/deleted. Deduct 5 points if merged cells show rendering issues, 3 points if formatting options are limited, and 2 points if undo/redo for these operations is not supported. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the formula calculation system work correctly?",
+      "description": "Verify the implementation of formula evaluation engine that should support basic math operations (+, -, *, /), statistical functions (SUM, AVERAGE, COUNT, MIN, MAX), logical functions (IF), and cell references. Test for circular reference detection and error handling. Deduct 3 points if advanced functions are missing, 5 points if cell references don't update properly when rows/columns change, and 5 points if formula recalculation is not automatic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are data sorting and filtering functionalities effective?",
+      "description": "Evaluate the implementation of multi-column sorting (ascending/descending) and filtering capabilities based on various criteria (text, numbers, dates). Check if sorting/filtering maintains the integrity of formulas and merged cells. Deduct 5 points if only basic single-column sorting is available, 3 points if custom filtering options are missing, and 3 points if the UI doesn't provide visual feedback for active filters. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid formulas, out-of-bounds references, data type mismatches, large datasets) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-formatting of recognized data types 2. Smart column width adjustment 3. Template gallery for common spreadsheet layouts 4. Conditional formatting with data visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple sorting mechanisms coexisting) 2. Function modules unrelated to spreadsheet functionality (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive rendering of inactive cells). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data model/view/controller layers), unit test coverage, and performance optimization for large datasets. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no optimizations for handling large spreadsheets (virtual scrolling, lazy loading). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional spreadsheet design standards?",
+      "description": "Evaluate whether the UI follows industry-standard spreadsheet interfaces: 1) Clear grid lines and cell indicators 2) Intuitive formula bar and cell reference visualization 3) Professional toolbar layout with logical grouping of functions. Deduct 3 points for non-standard cell navigation, 5 points for confusing formula editing interface, and 5 points for poorly organized toolbars/menus. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the charting features and import/export capabilities comprehensive?",
+      "description": "Judge whether the implementation includes: 1) Multiple chart types (bar, line, pie) with proper data mapping 2) Chart customization options (titles, legends, colors) 3) Excel-compatible import/export functionality. Deduct 5 points if charts don't update dynamically with data changes, 3 points for limited chart customization, and 5 points if import/export fails to preserve formulas or formatting. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

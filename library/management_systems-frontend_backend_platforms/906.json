@@ -1,0 +1,68 @@
+{
+  "index": 906,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and displayable. Use Bootstrap, Vue.js, or a combination of both to build an asset management system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the asset management core functionality fully implemented?",
+      "description": "Review whether the code accurately implements comprehensive asset management features including asset creation, editing, deletion, categorization, and search functionality. Check if asset metadata management (name, description, tags, creation date, file size, etc.) is properly handled. Score 0 if core CRUD operations are missing, 5 if only basic operations are implemented, and 10 if full asset lifecycle management with advanced filtering and bulk operations are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data management and persistence layer properly architected?",
+      "description": "Evaluate whether the system implements proper data persistence with appropriate storage solutions (localStorage, IndexedDB, or backend API integration). Check if data validation, error handling for data operations, and state management (Vuex/Pinia) are correctly implemented. Deduct 5 points if data validation is insufficient, 3 points if no backup/recovery mechanism exists. Full score requires robust data integrity and proper state synchronization.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the component architecture well-structured and reusable?",
+      "description": "Assess whether Vue.js components follow proper composition patterns with clear separation of concerns. Check if components are properly structured with props/events, utilize composition API effectively, and implement proper component lifecycle management. Deduct 5 points if components are tightly coupled, 3 points if props validation is missing. Requires modular, maintainable component hierarchy with proper data flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user workflow and navigation system intuitive and complete?",
+      "description": "Evaluate whether the system provides logical user workflows for asset management tasks. Check if navigation is intuitive with proper routing (Vue Router), breadcrumbs, and user guidance. Assessment includes workflow efficiency, task completion paths, and user onboarding elements. Deduct 5 points if navigation is confusing, 3 points if no loading states or progress indicators exist. Full score requires seamless user experience with clear action paths.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases effectively?",
+      "description": "Evaluate whether the code can handle common abnormal situations (network failures, invalid file uploads, permission errors, large dataset rendering, etc.) and provides meaningful error messages and recovery mechanisms. Robust code should gracefully handle edge cases with proper error boundaries and fallback UI states. Give 10 points if fully implemented, 5 points if partially handled, 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance user productivity?",
+      "description": "Check whether the code includes valuable productivity features such as: 1) Advanced search with filters and sorting 2) Batch operations and bulk editing 3) Asset preview and thumbnail generation 4) Export/import functionality 5) Dashboard analytics or reporting. Add 2-3 points for each well-implemented innovative feature that genuinely improves user experience (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary implementations?",
+      "description": "Strictly identify three types of redundancy: 1) Duplicate functionality implementations (multiple similar components doing the same task) 2) Features unrelated to asset management (unnecessary third-party integrations) 3) Over-engineered solutions that complicate simple tasks. Deduct 3 points for each redundancy found, and deduct 10 points if redundant code significantly impacts core functionality performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate professional engineering standards?",
+      "description": "Review code organization, Vue.js best practices implementation, proper use of Bootstrap utilities, component composition patterns, and build configuration. Check for proper linting, consistent coding style, appropriate use of TypeScript (if used), and proper dependency management. Deduct 5 points for poor code organization, 3 points for inconsistent naming conventions, 2 points for missing development tooling setup.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the UI design meet modern web application standards?",
+      "description": "Evaluate visual design quality using Bootstrap components effectively: 1) Consistent color scheme and proper contrast ratios 2) Responsive grid layout that works across devices 3) Proper typography hierarchy and spacing (following Bootstrap's spacing utilities) 4) Effective use of Bootstrap components without over-customization. Deduct 3 points for inconsistent spacing, 5 points for poor responsive behavior, 5 points for accessibility violations or poor color choices.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are interactions smooth with proper feedback and performance?",
+      "description": "Assess interaction quality and performance: 1) Vue.js transitions and animations are smooth (300-500ms duration) 2) Immediate visual feedback for user actions 3) Proper loading states and skeleton screens 4) Efficient rendering for large asset lists (virtual scrolling if needed) 5) Responsive touch interactions. Deduct 5 points for laggy interactions, 3 points for missing loading indicators, 5 points for poor performance with large datasets.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

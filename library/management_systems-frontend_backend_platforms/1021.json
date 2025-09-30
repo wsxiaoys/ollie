@@ -1,0 +1,68 @@
+{
+  "index": 1021,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Generate code for a conference room usage registration system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the conference room registration system's core functionality fully implemented?",
+      "description": "Review whether the code accurately implements the core registration system including room listing, booking creation, modification and cancellation. Check if it handles time slot management with conflict detection. Score 0 if the core booking logic is missing, 5 if only basic room listing and booking is implemented, and 10 if all features including conflict resolution, recurring bookings, and approval workflows are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user authentication and authorization system properly implemented?",
+      "description": "Evaluate whether the system implements proper user authentication (login/logout) and role-based authorization (admin, manager, regular user). Check if permissions are correctly enforced for creating, viewing, modifying, and canceling reservations. Deduct 5 points if authentication is missing, 3 points if role-based permissions are not implemented. Full score requires secure password handling and session management.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence layer well-designed with appropriate validation?",
+      "description": "Check whether the system uses a proper database design with normalized tables for rooms, users, bookings, and potentially equipment. Validate that data integrity constraints are enforced (foreign keys, unique constraints, etc.). Examine if input validation is comprehensive. Deduct 5 points for poor schema design, 3 points for missing validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are notifications and reminders functionality implemented?",
+      "description": "Assess whether the system provides automated notifications for booking confirmations, reminders before meetings, and changes/cancellations. Check for both email and in-app notification capabilities. Deduct 5 points if notifications are entirely missing, 3 points if they're incomplete or unreliable. Give 10 points if notifications are customizable and include multiple channels.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as concurrent booking requests, invalid inputs, server errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Room utilization analytics 2. Integration with calendar systems 3. QR code check-in/verification 4. Equipment reservation alongside room booking). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple booking creation pathways with different logic) 2. Function modules unrelated to room booking (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating controllers/services/repositories), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

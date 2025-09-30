@@ -1,0 +1,68 @@
+{
+  "index": 1458,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and demonstrable when possible. Build a basic architecture for a question-and-answer system in UniApp based on Vue 3.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the UniApp Q&A system architecture properly defined?",
+      "description": "Evaluate whether the architecture includes necessary layers (presentation, business logic, data) and follows UniApp's cross-platform requirements. Check for proper configuration of pages.json, manifest.json, and App.vue. Score 0 if no architecture is defined, 5 if basic structure exists but lacks clear organization, 10 if a complete architecture with proper component hierarchy is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Vue 3 composition API utilized effectively?",
+      "description": "Assess whether the code leverages Vue 3's composition API features (setup(), ref(), reactive(), computed(), watch(), lifecycle hooks). Check for proper state management and reactivity patterns. Deduct 5 points if using Options API instead of Composition API, 3 points if reactivity system is improperly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Q&A functionality fully implemented?",
+      "description": "Review if the system includes essential Q&A features: question submission, answer display, search, sorting/filtering, and user interaction components. Check if the data flow for questions and answers is properly handled. Score 0 if core Q&A functions are missing, 5 if basic functionality exists but lacks comprehensive features, 10 if a complete Q&A system is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is UniApp's cross-platform capability properly configured?",
+      "description": "Evaluate if the code accounts for different platforms (WeChat Mini Program, H5, App) through conditional compilation (#ifdef), platform-specific CSS, and proper use of UniApp components. Check if manifest.json contains appropriate platform configurations. Deduct 5 points if platform-specific handling is missing, 3 points if only partial platform adaptations are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid inputs, missing data) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time notifications 2. Voice-to-text input for questions 3. AI-powered question recommendations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management solutions coexisting) 2. Function modules unrelated to Q&A (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/services/stores), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

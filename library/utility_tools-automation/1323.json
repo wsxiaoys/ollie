@@ -1,0 +1,68 @@
+{
+  "index": 1323,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to make the code you generate executable for demonstration. Vue3 webpack complete process",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 project initialization and webpack configuration fully implemented?",
+      "description": "Review whether the code accurately sets up a Vue3 project with webpack, including proper configuration files (webpack.config.js), development and production modes, and essential loaders. Score 0 if the basic webpack configuration is missing, 5 if only basic configuration is implemented, and 10 if it includes optimized configurations for both development and production environments.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the Vue3 core features properly integrated with webpack?",
+      "description": "Check whether the configuration properly handles Vue3's Composition API, Single File Components (.vue files), and script setup syntax. The webpack configuration should include vue-loader with proper options. Deduct 5 points if SFC handling is incorrectly configured, and 3 points if Composition API features aren't supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is asset handling and optimization properly implemented?",
+      "description": "Evaluate whether the webpack configuration includes proper loaders and plugins for different asset types (CSS, SCSS, images, fonts, etc.), along with optimization strategies like minification, code splitting, and tree shaking. Deduct 5 points if asset loaders are missing or misconfigured, and 3 points if no optimization techniques are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the development environment properly configured?",
+      "description": "Check whether the code includes proper development tools like webpack-dev-server with hot module replacement, source maps for debugging, and environment variables management. Deduct 5 points if hot reloading isn't implemented, and 3 points if proper debugging tools are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common build errors (such as import errors, syntax errors in Vue files, etc.) and provide friendly error messages or recovery mechanisms. Code with strong robustness should include proper error plugins and fallbacks, giving 10 points. If the robustness is average, give 5 points, and if no error handling is implemented, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the development experience (e.g., 1. Build analytics visualization 2. Custom webpack plugins for Vue-specific optimizations 3. Automatic component documentation generation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant webpack plugins performing similar tasks 2. Unnecessary transpilation steps or polyfills 3. Over-engineered configurations that add complexity without benefits. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core build process is slowed down significantly by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular configuration design (separating webpack configs by environment), proper dependency management (dev vs. prod dependencies), and build process automation. Deduct 5 points if configurations are not modularized; deduct 5 points if there's excessive duplication between configs; deduct 5 points if the build process isn't properly scripted in package.json. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the project structure follow Vue3 best practices?",
+      "description": "Evaluate whether the project structure follows modern Vue3 standards: 1) Proper separation of components, composables, and views 2) Consistent naming conventions for files and directories 3) Clear organization of assets and styles. Deduct 3 points for unclear component organization, 5 points for mixing concerns (like API calls in components), and 5 points for inconsistent file structures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the build performance and output optimized?",
+      "description": "Judge whether the build process is optimized for performance: 1) Proper code splitting and lazy loading 2) Cache optimization with contenthash 3) Minimized bundle size with tree shaking and proper external dependencies. Deduct 5 points for missing code splitting, 3 points for inefficient caching strategies, and 5 points for bloated bundle sizes without optimization. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

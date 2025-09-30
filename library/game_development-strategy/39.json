@@ -1,0 +1,68 @@
+{
+  "index": 39,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the generated code is executable for demonstration.\n\nPlease implement an Ancient Civilization game using HTML and JavaScript where players need to rebuild an ancient city. \nHint: Implement city planning and civilization development.\n\nInclude some comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the city planning system fully implemented?",
+      "description": "Review whether the code accurately implements a grid-based city planning system through HTML/JavaScript, including building placement mechanics, terrain constraints, and zoning functionality (residential, commercial, industrial areas). Score 0 if core city building mechanics are missing, 5 if only basic building placement is implemented, and 10 if comprehensive city planning with zoning restrictions and adjacency bonuses is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the civilization development progression system implemented?",
+      "description": "Check whether the game includes a complete civilization advancement system with technology trees, resource management (food, materials, population), and era progression. Evaluate if research mechanics, resource production chains, and population growth are properly simulated. Deduct 5 points if resource balancing is missing, and 3 points if technology prerequisites are not enforced. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the ancient city rebuilding mechanic designed with historical authenticity?",
+      "description": "Evaluate whether the rebuilding system reflects authentic ancient civilization elements including appropriate building types (temples, markets, granaries, walls), historical resource constraints, and period-accurate visual design. Check if the game includes realistic construction timelines and resource requirements. Deduct 5 points if buildings lack historical context, and 3 points if the rebuilding progression feels anachronistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete game state management and save system constructed?",
+      "description": "Check whether the code includes comprehensive game state persistence, including city layout serialization, civilization progress tracking, and local storage integration. Evaluate if the game can resume from saved states and handle multiple save slots. Deduct 5 points if game state serialization is not implemented, and 3 points if the save/load mechanism is unreliable. Give 10 points if fully implemented with robust state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid building placements, resource shortage scenarios, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the ancient civilization experience (e.g., 1. Dynamic weather affecting city development 2. Historical events and random challenges 3. Archaeological discovery mini-games 4. Trade route establishment with other civilizations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple resource calculation systems coexisting) 2. Function modules unrelated to ancient civilization building (e.g., modern technology elements) 3. Overly complex animations that affect gameplay performance (e.g., excessive particle effects for construction). Deduct 3 points for each redundancy found, and directly deduct 10 points if core city-building functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/UI management layers), code organization with proper commenting as requested, and maintainable architecture. Deduct 5 points if global state pollution is found or object-oriented principles are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if insufficient commenting makes the code hard to understand for other developers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards with ancient civilization theming?",
+      "description": "Evaluate whether the overall design follows ancient civilization aesthetics: 1) Appropriate color palette evoking ancient times (earth tones, stone textures) 2) Proper layout spacing with clear building grid visualization 3) Thematic UI elements that match the ancient setting. Deduct 3 points for each anachronistic visual element, 5 points for color schemes that break immersion, and 5 points for UI elements that don't match the ancient theme. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless for city building?",
+      "description": "Judge whether the city building interactions conform to user expectations: 1) Building placement feedback with hover previews 2) Smooth camera/viewport controls for city navigation 3) Clear visual indicators for buildable areas and resource flows 4) Responsive building construction animations. Deduct 5 points for each building action without proper feedback, 3 points for laggy city navigation, and 5 points for unclear building placement indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

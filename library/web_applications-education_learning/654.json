@@ -1,0 +1,68 @@
+{
+  "index": 654,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. ======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, executable project code, ensuring the project is fully functional\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nBuild an interactive geometric proof system where users can draw geometric figures on a canvas and add known conditions (such as angle values, equal sides, etc.). The system automatically generates a proof step tree based on the input conditions. Users can click on each step to view detailed derivation explanations. Provide a \"Verify\" button to check if the proof process is complete.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the interactive canvas drawing functionality fully implemented?",
+      "description": "Review whether the code implements a responsive canvas drawing system that allows users to create accurate geometric shapes (points, lines, circles, polygons). Check for snap-to-grid functionality, object selection, and manipulation tools. Score 0 if drawing functionality is missing, 5 if basic shapes are supported but lack precision tools, and 10 if the system includes advanced features like constraint-based drawing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are geometric condition inputs properly implemented?",
+      "description": "Evaluate the implementation of UI components that allow users to add geometric conditions (angle measures, side lengths, parallel/perpendicular relationships, etc.). Check if the code validates input conditions for consistency and provides clear visual indicators for applied conditions. Deduct 5 points if only basic conditions are supported, 3 points if condition validation is missing, and 3 points if visual indicators are unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the proof step tree generation algorithm implemented correctly?",
+      "description": "Analyze the algorithm that generates the proof step tree based on geometric axioms and theorems. Check for logical completeness, handling of multiple possible proof paths, and proper implementation of geometric reasoning. Score 0 if the algorithm is missing, 5 if it only supports basic proofs with limited theorem application, and 10 if it can handle complex proofs with multiple theorem applications and branching logic.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the interactive proof exploration functionality implemented?",
+      "description": "Check if users can click on proof steps to view detailed explanations and visualizations. Evaluate whether the code highlights relevant elements in the geometric figure when a step is selected, and whether step explanations include the theorems applied and logical justifications. Deduct 5 points if step highlighting is missing, and 3 points if explanations lack detail or theorem references. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid geometric constructions, contradictory conditions, incomplete proofs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation of proof steps 2. Alternative proof path suggestions 3. Theorem library with visual examples). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add the same condition) 2. Function modules unrelated to geometric proofs (e.g., unnecessary tools or decorations) 3. Fancy effects that affect performance (e.g., excessive animations or visual effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating geometric model/rendering/proof logic layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast drawing operations, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

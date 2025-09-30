@@ -1,0 +1,68 @@
+{
+  "index": 1231,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. I want to implement the enterprise side functionality of a recruitment website using Vue3+JS.\n\nThe functions include: account/password login, WeChat QR code login; enterprise registration, viewing and editing enterprise information; job posting, job details, job editing, viewing applicant lists for positions, processing applications (marking as unsuitable, passing initial screening, etc.), viewing applicant details, online resume preview, message notifications, personal settings, etc.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Authentication System Implementation",
+      "description": "Evaluate the implementation of multiple authentication methods including account/password and WeChat QR code login.Check if the code includes secure password validation (hashing, salting), JWT token management, and WeChat OAuth integration. Verify that session timeout handling and refresh token mechanisms are implemented. Deduct 5 points if secure storage practices are missing; deduct 3 points if no remember-me functionality exists; deduct 5 points if CSRF protection is absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Enterprise Registration and Profile Management",
+      "description": "Assess the completeness of enterprise registration and profile management functionality.Verify if the code includes form validation for business registration (checking business license format, duplicate prevention), profile editing capabilities with proper state management, and data validation. Check if file uploading for business credentials is implemented securely. Deduct 5 points if validation is incomplete; deduct 3 points if changes aren't confirmed before submission; deduct 5 points if there's no separation between viewing and editing modes.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Job Management System",
+      "description": "Review the implementation of job posting, editing, and management functionalities.Assess whether the code implements comprehensive job CRUD operations, including draft saving, validation rules for job descriptions, salary ranges, and required fields. Check if there are preview capabilities before publishing. Deduct 5 points for missing job status tracking (active/inactive/expired); deduct 3 points if job templates or duplication features are absent; deduct 5 points if job search/filter capabilities are missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Applicant Processing Workflow",
+      "description": "Evaluate the applicant tracking system and processing workflow.Check if the code implements a complete applicant lifecycle (new, screened, interviewed, rejected, hired) with appropriate state transitions and permissions. Verify that batch operations for applications are supported and that interview scheduling integrations are available. Deduct 5 points if filtering/sorting of applicants is missing; deduct 3 points if there's no communication history tracking; deduct 5 points if application stage tracking visualizations are absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations and provide friendly error handling.Assess error boundary implementations, loading states for asynchronous operations, and form validation feedback. Code with strong robustness should handle network failures, input validation, and state recovery. Deduct 5 points for missing global error handlers; deduct 3 points for inadequate loading indicators; deduct 5 points for absent retry mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check for eye-catching features that enhance the recruitment experience.Look for features like AI-assisted candidate matching, automated screening tools, integrated video interviews, calendar integrations, or analytics dashboards. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Feature Redundancy",
+      "description": "Identify unnecessary or redundant implementations.Check for 1. Duplicate implementations of similar functions (e.g., multiple notification systems) 2. Features unrelated to recruitment (e.g., social networking tools) 3. Over-engineered components that impact performance. Deduct 3 points for each redundancy found; deduct 10 points directly if core recruitment functions are compromised by bloated code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review the architecture and code organization of the Vue3 application.Evaluate component structure (atomic design principles), state management implementation (Vuex/Pinia), API service layer isolation, and Vue composition API usage. Deduct 5 points for global state mismanagement; deduct 3 points for excessive component coupling; deduct 5 points for inadequate code splitting or lazy loading; deduct 3 points for missing TypeScript interfaces (if TypeScript is used).",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Standards",
+      "description": "Assess if the UI adheres to professional design standards.Evaluate component consistency, responsive design implementation, accessibility compliance (WCAG), and design system adherence. Deduct 3 points for inconsistent form elements; deduct 5 points for non-responsive layouts; deduct 3 points for poor color contrast ratios; deduct 5 points for inaccessible interactive elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction Smoothness",
+      "description": "Judge the quality of dynamic interactions and user experience.Verify Vue transitions for page/component changes, loading skeletons, form feedback timing, and navigation patterns. Deduct 5 points for jarring page transitions; deduct 3 points for missing loading states; deduct 5 points for unresponsive UI during data operations; deduct 3 points for confusing information architecture.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

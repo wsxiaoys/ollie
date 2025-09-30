@@ -1,0 +1,68 @@
+{
+  "index": 612,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Build an automated deployment dashboard that displays deployment status, version history, build logs and other information for frontend projects, with support for manually triggering builds and monitoring automated deployment workflows.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the deployment status monitoring system fully implemented?",
+      "description": "Review whether the code accurately implements real-time deployment status tracking through REST APIs or WebSocket connections, including pipeline stages (building, testing, deploying), progress indicators, and status change notifications. Score 0 if core status monitoring is not implemented, 5 if only basic status display is available, and 10 if comprehensive multi-stage status tracking with real-time updates is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the version history and build logs management implemented?",
+      "description": "Check whether the implementation includes complete version history tracking with commit information, deployment timestamps, and searchable/filterable build logs with syntax highlighting. Requires pagination for large datasets and log streaming capabilities. Deduct 5 points if log search functionality is missing, and 3 points if version comparison features are not handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the manual build trigger mechanism designed with proper workflow integration?",
+      "description": "Evaluate whether the manual trigger system includes parameter input validation, branch/tag selection, environment targeting, and proper authentication/authorization. Must integrate with CI/CD platforms (Jenkins, GitLab CI, GitHub Actions) with proper API error handling. Deduct 5 points if parameter validation is insufficient. Check whether rollback functionality is implemented for failed deployments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the automated workflow monitoring and alerting system constructed?",
+      "description": "Check whether the code includes comprehensive workflow monitoring with webhook integration, failure detection, notification systems (email, Slack, etc.), and deployment metrics tracking. Deduct 5 points if automated alert configuration is not implemented, and 3 points if performance metrics collection is missing. Give 10 points if fully implemented with customizable alert rules.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API timeouts, authentication failures, network interruptions, malformed CI/CD responses, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include retry logic, graceful degradation, and proper error boundaries, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the deployment experience (e.g., 1. Visual deployment pipeline diagrams 2. Performance impact analysis between versions 3. Automated rollback triggers based on error rates 4. Integration with monitoring tools like Grafana). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple API polling mechanisms coexisting) 2. Function modules unrelated to deployment management (e.g., built-in code editor) 3. Excessive UI animations that affect dashboard performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core deployment functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API services/state management/UI components), TypeScript usage, error handling patterns, and configuration management. Deduct 5 points if API credentials are hardcoded or environment configuration is missing; deduct 5 points if the code lacks proper async/await error handling; deduct 5 points if no build optimization or bundling strategy is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional dashboard design standards?",
+      "description": "Evaluate whether the dashboard design follows enterprise UI principles: 1) Information hierarchy with proper data visualization (charts, progress bars, status indicators) 2) Consistent spacing and grid system 3) Professional color coding for status states (green/red/yellow for success/error/pending). Deduct 3 points for each cluttered data presentation, 5 points for poor color contrast affecting readability, and 5 points for inconsistent component styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the real-time data interaction smooth and responsive?",
+      "description": "Judge whether the dashboard updates conform to real-time monitoring standards: 1) Status updates with minimal delay (≤ 2 seconds) 2) Smooth data refresh without UI flickering 3) Proper loading states and skeleton screens during data fetching 4) Efficient WebSocket or polling implementation. Deduct 5 points for each delayed status update, 3 points for UI jumping during refreshes, and 5 points for missing loading indicators on critical actions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

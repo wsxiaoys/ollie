@@ -1,0 +1,68 @@
+{
+  "index": 700,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Write code for a WeChat login that allows users to view medical knowledge after logging in. Please write each file in detail.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat OAuth login flow properly implemented?",
+      "description": "Evaluate whether the code implements the complete WeChat OAuth 2.0 authentication flow, including redirecting to WeChat authorization page, handling callback with auth code, exchanging code for access token, and retrieving user information. Score 0 if the flow is incomplete, 5 if basic login works but lacks proper error handling, and 10 if it's fully implemented with proper state management and CSRF protection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is secure session management implemented for authenticated users?",
+      "description": "Check whether the code securely manages user sessions after successful WeChat authentication. This includes generating secure session tokens, implementing proper cookie settings (httpOnly, secure, SameSite), session expiration handling, and protection against session fixation attacks. Deduct 5 points if session tokens are not securely generated, 3 points if cookies lack security attributes, and 3 points if there's no session expiration mechanism.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the medical knowledge content system properly implemented?",
+      "description": "Review whether the code includes a structured system for managing and displaying medical knowledge content. This should include content categorization, search functionality, and proper content rendering with medical terminology support. Deduct 5 points if content is hardcoded rather than dynamically loaded, 3 points if search functionality is missing, and 5 points if there's no proper categorization system.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper authentication and authorization for accessing medical content?",
+      "description": "Evaluate if the system properly restricts access to medical knowledge based on user authentication status. Check for middleware that verifies user sessions before serving protected content and redirects unauthenticated users to the login flow. Deduct 5 points if authentication checks are inconsistent across routes, 5 points if there are ways to bypass authentication, and 3 points if the login state persistence is not properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as WeChat API failures, network interruptions, invalid responses, timeouts) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Personalized content recommendations based on browsing history 2. Medical terminology tooltip explanations 3. Offline access capability for previously viewed content). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication methods without clear purpose) 2. Function modules unrelated to medical knowledge or authentication (e.g., unrelated social features) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating auth logic/content management/frontend layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design standards: 1) Harmonious color matching aligned with medical themes (professional blues/greens, not jarring colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for inappropriate color schemes for medical content, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Login process feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for important medical information. Deduct 5 points for each operation without feedback, 3 points for visual after-images during content navigation, and 5 points for hard-to-find key medical content sections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

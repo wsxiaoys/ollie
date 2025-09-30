@@ -1,0 +1,68 @@
+{
+  "index": 1338,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Frontend: Vue 2 with Element UI library. Backend: FastAPI with Tortoise ORM. I need sample code to implement dashboard functionality with ECharts. Please provide comprehensive examples with full features.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 2 dashboard architecture correctly structured?",
+      "description": "Check whether the code follows Vue 2 best practices with proper component hierarchy, Vuex state management, and Element UI integration. Review the main layout structure, navigation system, and responsive design implementation. Score 0 if basic Vue setup is missing, 5 if implemented but with architectural flaws, and 10 if properly organized with clear component responsibilities and efficient prop/event handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the ECharts integration comprehensive and well-implemented?",
+      "description": "Evaluate the ECharts implementation quality: proper initialization, responsive resizing, theme customization, and dataset binding. Check if advanced features like tooltip customization, animation controls, and interaction events are handled. Deduct 3 points if charts are not responsive, 4 points if data updates don't animate properly, and 5 points if ECharts instances aren't properly disposed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the FastAPI backend implementation complete and RESTful?",
+      "description": "Assess if the FastAPI implementation includes proper route definitions, request validation, error handling, and documentation (via Swagger UI). Check for appropriate status codes, pagination handling, and security measures. Deduct 3 points if OpenAPI documentation is missing, 3 points if input validation is incomplete, and 4 points if error handling is insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Tortoise ORM integration correct with proper data models and relationships?",
+      "description": "Review the Tortoise ORM model definitions, relationships, migration setup, and query optimizations. Check for proper schema design, indexing strategies, and transaction handling. Deduct 3 points if models lack validation, 4 points if relationships are improperly defined, and 3 points if migrations are not handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid inputs, API errors, chart rendering issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time data updates without page refresh 2. Interactive drill-down capabilities in charts 3. Dark/light theme switching 4. Dashboard layout customization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple chart wrapper components with overlapping functionality) 2. Function modules unrelated to dashboard visualization (e.g., unnecessary media players) 3. Fancy effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data services/UI components/state management), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern dashboard design principles: 1) Harmonious color matching (no more than 3 primary colors plus accent colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Information hierarchy with clear visual priority. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic chart layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Chart loading and interactions respond within 300ms 2) Transition animations controlled between 300-500ms 3) Clear visual feedback for user actions 4) Smooth data refreshing without jarring UI shifts. Deduct 5 points for each operation without feedback, 3 points for choppy animations during chart transitions, and 5 points for confusing or inconsistent interactive behaviors. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

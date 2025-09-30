@@ -1,0 +1,68 @@
+{
+  "index": 343,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration. Help me create an interactive HTML page for classroom group scoring. I will provide a student list, and teachers can directly award points to groups or individual students during class, with all points summed into group totals. The page should also include a random student selection function. The interface should be clean and visually appealing. Please generate the code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the student data management system properly implemented?",
+      "description": "Check whether the code provides a complete student and group data structure with proper initialization, validation, and management functions. The system should allow adding/editing students and groups, and properly validate inputs (no duplicate IDs, proper name formatting, etc.). Score 0 if the core data structure is not implemented, 5 if basic student/group data is managed without validation, and 10 if it includes complete data management with validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the point awarding functionality completely implemented?",
+      "description": "Evaluate whether the code allows teachers to award points to both individual students and groups with proper validation. Points awarded must be properly calculated and reflected in real-time in both individual and group totals. Check for features like point history tracking, ability to modify/remove incorrect point entries, and customizable point increments. Deduct 5 points if individual/group scoring is missing, 3 points if real-time updates are not implemented, and 2 points if there's no validation for point values (e.g., negative points, non-numeric inputs).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the random student selection feature effectively implemented?",
+      "description": "Assess the random selection algorithm for fairness and functionality. The feature should allow selecting random students with options for filtering (e.g., by group, by participation history). Check if the system visually highlights the selected student and provides options to exclude previously selected students. Deduct 3 points if the randomization is predictable/biased, 3 points if there's no visual indication of selection, and 4 points if filtering options are missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the visualization of group scoring and statistics properly implemented?",
+      "description": "Review whether the code includes clear visual representation of point totals for both groups and individuals. Look for features like sorting capabilities, visual indicators for highest/lowest scores, progress bars or charts showing comparative performance, and filtering options. Deduct 3 points for missing group comparisons, 3 points if individual contributions within groups aren't visible, and 4 points if there are no visual indicators beyond plain numbers.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty student lists, incorrect data formats, browser refresh, accidental user errors) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include form validation, data persistence across sessions, and graceful error handling. Give 10 points for comprehensive error handling and recovery, 5 points for basic validation only, and 0 points if errors crash the application.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the classroom experience (e.g., 1. Animated celebrations when awarding points 2. Sound effects for random selection 3. Achievement badges for groups reaching certain thresholds 4. Dark/light mode toggle 5. Exportable reports of class participation). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to award points that conflict) 2. Function modules unrelated to classroom scoring (e.g., a built-in game unrelated to the main purpose) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code organization, and maintainability. Check for proper use of JavaScript patterns, CSS organization, and HTML semantics. Deduct 3 points if global variables are overused or if there's no separation of concerns; deduct 3 points if the code duplication rate is high; deduct 4 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for classroom use (avoiding overly distracting colors) 2) Proper layout spacing with clear hierarchy 3) Professional font system with good readability (especially important for classroom visibility). Deduct 3 points for cluttered interface elements, 3 points for poor color contrast affecting readability, and 4 points for inconsistent design elements across the application. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive for classroom use?",
+      "description": "Judge whether the interface is optimized for quick teacher interaction during class: 1) Quick access to common functions without deep menu navigation 2) Responsive controls that work on various devices (for mobile classroom use) 3) Clear visual feedback when points are awarded. Deduct 3 points if awarding points requires more than 2 clicks, 3 points if the interface isn't responsive for different screen sizes, and 4 points if there's no immediate visual feedback when actions are performed. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

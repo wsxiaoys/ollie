@@ -1,0 +1,68 @@
+{
+  "index": 814,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, expert responses. Make sure any code you generate is executable for demonstration. Give me code for a homemade 3D game similar to Minecraft.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D rendering system correctly implemented?",
+      "description": "Evaluate whether the code properly implements WebGL/Three.js for 3D rendering with proper perspective camera setup, viewport management, and frustum culling. Check if shaders are efficiently written for voxel rendering. Score 0 if no 3D rendering is implemented, 5 if basic rendering exists but with performance issues, and 10 if it implements efficient rendering with LOD (Level of Detail) systems.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is procedural terrain generation implemented?",
+      "description": "Assess whether the code implements noise algorithms (Perlin/Simplex) for terrain generation with proper biome differentiation. Check if chunk loading/unloading is implemented with efficient memory management. Deduct 5 points if terrain is static or pre-defined, 3 points if generation lacks variety, and 2 points if chunk boundaries are visible. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the game implement block interaction and physics?",
+      "description": "Review whether the code handles block placement, destruction, and interaction with realistic collision detection and response. Verify that ray casting for block selection works correctly. Check if physics simulation includes gravity, fluid dynamics, and entity collision. Score 0 if no interaction exists, 5 if basic interaction without physics, and 10 if full physics with realistic behaviors are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is world persistence and save system properly designed?",
+      "description": "Evaluate whether the game implements world serialization, efficient storage of modified blocks, and chunk data compression. Check if the save/load system maintains world state including player position, inventory, and modified terrain. Deduct 5 points if saving is manual-only, 3 points if world state is partially lost, and 2 points if saving causes performance freezes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as asset loading failures, memory constraints, WebGL context loss, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather system 2. Advanced crafting mechanics 3. Custom shader effects for water/lighting). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple inventory systems coexisting) 2. Function modules unrelated to the core gameplay (e.g., an overly complex menu system) 3. Fancy effects that affect performance (e.g., unnecessary particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering/game logic/input handling), component architecture, and performant memory management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no optimization techniques are implemented for the rendering pipeline. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the UI design follows modern game principles: 1) Unobtrusive HUD elements 2) Clear inventory and crafting interfaces 3) Proper feedback for player actions (block selection highlighting, breaking animation). Deduct 3 points for each cluttered UI element, 5 points for inconsistent visual style, and 5 points for poor visibility of critical information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game maintains consistent FPS (ideally 60+) with smooth camera movement and block interaction. Check if the game implements: 1) Responsive controls (≤50ms input lag) 2) Smooth transitions when crossing chunk boundaries 3) Proper animation for block breaking/placing. Deduct 5 points for each noticeable stutter during gameplay, 3 points for delayed input response, and 5 points for jerky camera movement. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "hard"
+}

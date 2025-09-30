@@ -1,0 +1,68 @@
+{
+  "index": 1418,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure the generated code is executable for demonstration. Management units can use this section to promote high-quality projects and manage financial institutions participating in investment and financing, ensuring that investment and financing work proceeds efficiently and in an orderly manner. Specific functions should include financial institution management information, project financing service classification, project financing information inquiry, and project financing promotion.\n\n2.4. Project Financing Promotion\nManagement units can recommend quality projects to financial institutions within the system, and financial institutions can directly approach these projects.\n\nBased on the above requirements, please generate a project financing recommendation function using Vue2 and Element UI pages.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the project financing recommendation interface fully implemented?",
+      "description": "Review whether the code accurately implements all required components using Vue2 and Element UI, including project listing, filtering mechanism, recommendation modal, and financial institution selection. Score 0 if core functionality is missing, 5 if basic functionality is implemented without proper interaction, and 10 if the entire recommendation workflow is complete with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all the required data models and CRUD operations properly implemented?",
+      "description": "Check whether the code includes proper data structures for projects, financial institutions, and recommendation relationships. Verify if CRUD operations (Create, Read, Update, Delete) for recommendations are implemented with proper validation. Score 0 if data models are missing, 5 if basic models exist but lack complete operations, and 10 if all models and operations are fully implemented with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the project filtering and search functionality well-designed?",
+      "description": "Evaluate whether the implementation includes comprehensive filtering options (by industry, investment size, region, etc.) and an efficient search mechanism. The search should be responsive (under 300ms) with debounce handling. Deduct 3 points if advanced filtering is missing, 3 points if search performance is poor, and 4 points if there's no visual feedback during searching operations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a well-designed recommendation workflow with status tracking?",
+      "description": "Check if the recommendation system includes status tracking (pending, viewed, interested, declined), notification mechanisms, and follow-up functionality. Recommendation history should be accessible and visualized. Deduct 3 points for missing status tracking, 4 points for lack of notification system, and 3 points if recommendation history isn't properly organized and accessible.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid input, server errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based matching algorithm for project-institution compatibility 2. Interactive analytics dashboard showing recommendation patterns 3. Automated follow-up scheduling system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to filter projects) 2. Function modules unrelated to financing recommendations (e.g., a built-in chat system when notifications would suffice) 3. Fancy effects that affect performance (e.g., complex animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, services, and state management), Vue best practices (proper use of props, computed properties, watchers), and build process automation. Deduct 5 points if global state pollution is found or Vue patterns are misused; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Element UI implementation follows modern design principles: 1) Consistent use of Element UI components without visual conflicts 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography and data visualization. Deduct 3 points for inconsistent component usage, 5 points for poor information hierarchy, and 5 points for cluttered layouts with improper alignment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback for recommendation actions. Deduct 5 points for operations without feedback, 3 points for janky transitions, and 5 points for unintuitive recommendation workflows that require excessive clicks. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

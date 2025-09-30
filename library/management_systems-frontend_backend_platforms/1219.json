@@ -1,0 +1,68 @@
+{
+  "index": 1219,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Be sure to ensure that any code you generate is executable for demonstration. Create a basic settings page for me based on shadcn UI in Next.js.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the shadcn UI integration properly implemented?",
+      "description": "Verify that shadcn UI components are correctly imported and used according to the documentation. Check if the necessary installation steps (via CLI or manual setup) are completed. Score 0 if shadcn UI is not used, 5 if components are imported but with configuration errors, and 10 for proper implementation with correct theming configuration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the settings page structure appropriate for Next.js architecture?",
+      "description": "Assess whether the code follows Next.js best practices: proper file structure (app/ or pages/ directory), correct usage of client/server components, and appropriate routing. Check if Server Components and Client Components are segregated correctly with 'use client' directives where needed. Deduct 5 points if the implementation doesn't follow Next.js 13+ conventions, and 3 points if metadata or layout files are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the settings page include essential configuration sections?",
+      "description": "Evaluate if the settings page includes standard sections like Profile, Account, Appearance, Notifications, and Security. Each section should have appropriate form controls matching their purpose (e.g., toggles for notifications, color pickers for themes). Score 2 points for each well-implemented section, with a maximum of 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is form state management properly implemented?",
+      "description": "Check if the code uses appropriate form state management (React Hook Form, Formik, or native form controls) with proper validation. Verify that form submissions handle loading states and error handling. Score 0 if there's no form state management, 5 if basic implementation exists but lacks validation or error handling, and 10 if comprehensive implementation with validation, error states, and proper submission handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form validation errors, network failures during submission, unexpected input values, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Live preview of settings changes 2. User preference persistence with localStorage/cookies 3. Keyboard shortcut navigation between settings sections). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar controls (e.g., multiple theme switchers) 2. Function modules unrelated to settings (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core settings functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/logic/state management), component reusability, and code organization. Deduct 5 points if global state is used inappropriately; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent use of shadcn UI's design language 2) Proper layout spacing and component hierarchy 3) Professional typographic system with appropriate heading sizes and readable body text. Deduct 3 points for each inconsistent UI element, 5 points for poorly structured navigation, and 5 points for chaotic form layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback on form interactions 2) Smooth transitions between settings sections 3) Clear visual indicators for active states. Deduct 5 points for each operation without feedback, 3 points for jarring transitions, and 5 points for confusing navigation mechanisms. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

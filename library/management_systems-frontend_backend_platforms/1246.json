@@ -1,0 +1,68 @@
+{
+  "index": 1246,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. This involves coding with the common structure of a Vue 3 project using Electron combined with better-sqlite3 and knex, also utilizing Pinia.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 3 core architecture correctly implemented?",
+      "description": "Review whether the code accurately implements Vue 3 composition API features, including setup(), reactive state management, computed properties, and lifecycle hooks. Evaluate the proper use of ref(), reactive(), computed(), and watch(). Score 0 if Vue 3 specific features are not utilized, 5 if basic implementation exists but with optimization issues, and 10 if all Vue 3 best practices are followed with proper component organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Electron integration properly configured and implemented?",
+      "description": "Check if the Electron main and renderer processes are correctly set up with proper IPC communication between them. Evaluate security considerations like contextIsolation and nodeIntegration settings. Verify that file system access, native dialogs, and window management are correctly implemented. Deduct 5 points if process separation is poor, 3 points if security best practices are ignored, and 2 points if native OS integration is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is SQLite database integration with better-sqlite3 and knex properly implemented?",
+      "description": "Evaluate whether database connections, migrations, and queries are properly implemented using better-sqlite3 and knex. Check for transaction support, proper error handling, and connection pool management. Assess if query builders are used instead of raw SQL where appropriate. Deduct 5 points if no migrations exist, 3 points if transactions are not used for critical operations, and 5 points if SQL injection vulnerabilities exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is Pinia state management effectively implemented?",
+      "description": "Analyze if Pinia stores are properly structured with state, getters, and actions. Check for proper store modularization, composition, and persistence handling. Evaluate if stores interact correctly with Vue components and avoid anti-patterns. Deduct 3 points if store composition is missing, 5 points if state mutations occur outside actions, and 5 points if stores are overly complex or redundant. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as database connection failures, IPC errors, file system permission issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Cross-platform file drag-and-drop support 2. Automatic database backup and version control 3. Live data synchronization between multiple app instances). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management solutions coexisting) 2. Function modules unrelated to the core application (e.g., unused libraries) 3. Fancy effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/UI components/data access layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated or lacks proper configuration for Electron. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Database operations don't block the UI thread 3) Clear visual loading states during async operations. Deduct 5 points for each operation without feedback, 3 points for UI freezes during database operations, and 5 points for missing transitions between major view changes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

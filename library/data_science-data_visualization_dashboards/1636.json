@@ -1,0 +1,68 @@
+{
+  "index": 1636,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Generate a word cloud presented in HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the word cloud generation algorithm properly implemented?",
+      "description": "Check whether the code implements a proper word cloud layout algorithm (e.g., spiraling placement, force-directed layout, or D3.js-based implementation). Full score requires handling of word frequency calculation, size scaling based on frequency, and collision detection between words. Score 0 if no proper algorithm is implemented, 5 if basic functionality is present but with limitations, and 10 if a robust algorithm with optimized placement is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is text input and processing implemented correctly?",
+      "description": "Evaluate text processing capabilities including tokenization, stopword removal, and frequency counting. The implementation should support various input methods (direct text entry, file upload, or API integration). Deduct 5 points if stopwords are not handled, 3 points if only basic tokenization is present. Give 10 points if advanced text processing with language detection and appropriate stemming/lemmatization is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are customization options for the word cloud provided?",
+      "description": "Check for user customization features such as color schemes, font options, layout shapes, minimum/maximum font size, rotation options, and word filtering. Deduct 2 points for each missing core customization option. Award full 10 points only if at least 5 customization options are available with real-time preview functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the word cloud responsive and interactive?",
+      "description": "Assess whether the word cloud includes interactive features (hover effects, click actions, zooming) and responsiveness across different screen sizes. Deduct 5 points if the visualization breaks on mobile devices, 3 points if hover/click interactions are missing. Full score requires fluid responsiveness and meaningful interactions (e.g., displaying frequency data on hover, filtering on click).",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases (empty input, extremely large texts, single word inputs, special characters, etc.) and provides appropriate error handling with user-friendly messages. Code with strong robustness should gracefully handle these conditions without crashing. Give 10 points for comprehensive error handling, 5 points for basic error checking, and 0 points if errors cause the visualization to fail.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for surprise features that enhance the experience (e.g., 1. Animation of word cloud formation 2. Theme-based color schemes 3. Ability to export as SVG/PNG 4. Integration with sentiment analysis). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text processing methods) 2. Function modules unrelated to word cloud visualization (e.g., unnecessary media players) 3. Fancy effects that affect performance (e.g., excessive animations that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of text processing, layout algorithm, and rendering), code reusability, and performance optimization. Deduct 5 points if global variables are overused; deduct 5 points if the code has high complexity with no documentation; deduct 5 points if memory management is poor for large texts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching in the word cloud (no more than 3 primary colors unless justified by theme) 2) Proper use of white space around the visualization 3) Professional font selection that ensures readability. Deduct 3 points for poor color contrast, 5 points for cluttered layout, and 5 points for illegible text due to size or font choices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Rendering performance with large word sets (should complete in under 3 seconds) 2) Smooth transitions when applying filters or changing visualization options 3) Clear visual feedback for interactive elements. Deduct 5 points for each interaction that causes visible lag, 3 points for abrupt transitions, and 5 points for unresponsive UI elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

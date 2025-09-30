@@ -1,0 +1,68 @@
+{
+  "index": 1035,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration purposes. Write a program for a match-three puzzle game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core match-three game logic fully implemented?",
+      "description": "Review whether the code accurately implements the match detection algorithm, board generation with guaranteed matches, piece swapping mechanics, and cascading effects when matches are cleared. Score 0 if the core game logic is missing, 5 if only basic matching is implemented without cascades, and 10 if the game includes proper matching, cascading, and board refilling mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game board rendering and user interaction properly implemented?",
+      "description": "Evaluate whether the game board is correctly rendered with a grid system, pieces have distinct visual appearances, and user interactions (selection, swapping) are intuitive and responsive. Check for proper highlighting of selected pieces and visual feedback for valid/invalid moves. Deduct 3 points if selection feedback is missing, 3 points if swap animations are absent, and 4 points if the board rendering has alignment issues.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are game mechanics like scoring system and level progression implemented?",
+      "description": "Check if the game includes a scoring system that rewards larger matches and cascades, tracks player progress, implements level difficulty progression (increasing targets, decreasing moves/time), and provides clear win/lose conditions. Score 0 if scoring is absent, 5 if basic scoring exists without progression, and 10 if full scoring with level progression is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are special game elements and power-ups included?",
+      "description": "Assess whether the game includes special pieces created from larger matches (4+ pieces), power-ups with unique effects (row/column clearers, bombs, etc.), and obstacle tiles that add strategic depth. Score 3 points for basic special pieces, 3 points for power-up implementation, and 4 points for strategic obstacle integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as no possible matches, invalid moves, rapid user inputs, and browser resizing. Code with strong robustness should gracefully recover from these scenarios, providing board reshuffling when no matches are possible and blocking input during animations. Give 10 points for comprehensive edge case handling, 5 points for basic error prevention, and 0 points if critical edge cases are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Unique match patterns beyond straight lines 2. Physics-based falling animations 3. Theme customization options 4. Accessibility features like colorblind mode). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to detect matches) 2. Function modules unrelated to match-three gameplay (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), proper object-oriented or component-based architecture, and performance optimization techniques. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations exist for large board sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Harmonious color palette that enhances gem visibility 2) Clear visual hierarchy with emphasized game elements 3) Consistent style for UI components (buttons, panels, score displays). Deduct 3 points for poor color contrast between pieces, 5 points for cluttered UI, and 3 points for inconsistent button styling or poorly readable text. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations follow satisfying principles: 1) Piece swapping completes within 200-300ms 2) Match clearing and cascading have sequential timing with proper pacing 3) Smooth transitions between game states (level start/end, special effects). Deduct 4 points for jerky animations, 3 points for overlapping animations that cause visual confusion, and 3 points for missing transition effects between game states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

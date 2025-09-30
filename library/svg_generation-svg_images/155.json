@@ -1,0 +1,68 @@
+{
+  "index": 155,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate can be executed and displayed.\nPlease help me implement the following requirements using code. The requirement is to create a pie chart close-up with a circle in the middle using SVG code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG pie chart structure correctly implemented?",
+      "description": "Review whether the code uses proper SVG path elements to create pie chart segments with accurate mathematical calculations for arc coordinates. Check if the viewBox is properly set and if the pie segments are generated using correct trigonometric functions (sin/cos) for start and end angles. Score 0 if basic pie structure is missing, 5 if segments are present but mathematically incorrect, and 10 if all pie segments are accurately calculated and properly rendered.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the center circle (donut hole) properly implemented?",
+      "description": "Evaluate whether the center circle is correctly positioned and sized to create the donut effect. Check if the inner circle uses appropriate SVG circle element or path mask, and whether the proportions between outer radius and inner radius follow good design principles (typically 0.4-0.6 ratio). Deduct 5 points if the center circle is off-center, 3 points if proportions are visually unbalanced. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the mathematical calculations for arc paths accurate?",
+      "description": "Check whether the SVG path 'd' attributes use correct arc commands (A or a) with proper parameters including radius, x-axis-rotation, large-arc-flag, and sweep-flag. Verify that cumulative angle calculations prevent gaps or overlaps between segments. Deduct 5 points if segments have visible gaps, 3 points if arc parameters are suboptimal but functional, 2 points for minor mathematical inaccuracies. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data visualization logic properly structured?",
+      "description": "Evaluate whether the code includes proper data input handling, percentage calculations, and segment generation logic. Check if the implementation supports dynamic data updates and maintains data integrity. Deduct 5 points if hardcoded values are used without data abstraction, 3 points if percentage calculations are inaccurate, 2 points if data structure is poorly organized. Give 10 points if fully dynamic and well-structured.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data inputs, zero values, negative numbers, or sum not equal to 100%) and provide appropriate fallback mechanisms. Code with strong robustness should validate input data and handle edge cases gracefully, giving 10 points. If the robustness is average, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance the visualization?",
+      "description": "Check whether the code includes valuable enhancements (e.g., 1. Interactive hover effects with data labels 2. Smooth animation transitions 3. Legend integration 4. Accessibility features like ARIA labels). Add 3 points for each practical innovative feature implemented (maximum 10 points). Features must be functional and add genuine value to the user experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar drawing functions (e.g., multiple path generation methods) 2. Unnecessary complex animations that don't add value 3. Overly complicated mathematical calculations when simpler solutions exist. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code significantly impacts performance or readability.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of data, calculation, and rendering logic), naming conventions, and reusability. Deduct 5 points if global variables are overused or functions are not properly separated; deduct 5 points if code duplication rate is high (over 30%); deduct 3 points if variable/function names are unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional standards?",
+      "description": "Evaluate whether the pie chart follows data visualization best practices: 1) Harmonious color palette with sufficient contrast 2) Proper segment spacing and stroke width 3) Readable proportions and clear visual hierarchy 4) Professional typography if labels are included. Deduct 3 points for poor color choices, 5 points for unclear visual proportions, and 5 points for unprofessional overall appearance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the SVG rendering optimized and accessible?",
+      "description": "Judge whether the SVG code is optimized for performance and accessibility: 1) Minimal DOM elements and efficient path usage 2) Proper semantic structure with titles and descriptions 3) Scalable vector graphics that maintain quality at different sizes 4) Screen reader compatibility. Deduct 5 points for performance issues, 3 points for accessibility violations, and 2 points for poor scalability. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

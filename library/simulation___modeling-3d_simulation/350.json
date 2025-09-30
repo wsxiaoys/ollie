@@ -1,0 +1,68 @@
+{
+  "index": 350,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration purposes. Create an HTML simulation of a light show at Shanghai's Bund.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the simulation accurately representing Shanghai's Bund cityscape?",
+      "description": "Evaluate whether the HTML/CSS implementation properly recreates the iconic Bund skyline with recognizable landmarks (Oriental Pearl Tower, Shanghai Tower, Jin Mao Tower, etc.). Score 0 if no recognizable elements exist, 5 if basic skyline is implemented, and 10 if detailed architectural features of the Bund are accurately represented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the light show animation system fully implemented?",
+      "description": "Review whether the code implements dynamic lighting effects using CSS animations, Canvas API, or WebGL. Check for color transitions, movement patterns, and synchronization mechanisms. Score 0 if no animation exists, 5 if basic animations are implemented, and 10 if the solution includes complex, synchronized light patterns similar to real Bund light shows.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a day/night cycle or time-based lighting variation?",
+      "description": "Check if the simulation includes transitioning between daytime and nighttime views or allows users to select different timing states. Evaluate whether ambient lighting changes realistically and if the reflection on the Huangpu River is properly implemented. Deduct 5 points if transitions are abrupt, and 3 points if reflections are missing or unrealistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there interactive control for the light show?",
+      "description": "Evaluate whether users can interact with the light show (e.g., start/stop, change colors, speed, patterns, or trigger special effects). Deduct 5 points if basic controls are missing, and 3 points if the control panel is not intuitive. Give 10 points if the interface provides comprehensive yet user-friendly controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resize, different screen sizes, slower devices, etc.) and provide fallbacks or adaptive designs. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather effects like rain or snow 2. Audio synchronization with light patterns 3. Virtual tourists/camera shots). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar effects (e.g., multiple animation systems running simultaneously) 2. Function modules unrelated to the Bund light show 3. Excessive effects that cause performance issues. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering logic/animation effects/user interface), performance optimization techniques, and code organization. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no performance considerations for animation rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Realistic or stylized but consistent visual style 2) Proper contrast between buildings and lights 3) Attention to detail in architectural elements and lighting effects. Deduct 3 points for each visual inconsistency, 5 points for unrealistic lighting physics, and 5 points for poor composition of the scene. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the performance optimization properly implemented?",
+      "description": "Judge whether the implementation considers performance: 1) Using requestAnimationFrame for smooth animations 2) Implementing hardware acceleration where appropriate 3) Managing memory for long-running animations. Deduct 5 points for frame rates below 30fps on standard devices, 3 points for memory leaks during long sessions, and 5 points for noticeable jank during complex light sequences. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "hard"
+}

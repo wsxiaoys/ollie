@@ -1,0 +1,68 @@
+{
+  "index": 698,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Insurance Company Customer Service System Design\n\nYou are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the code you generate is executable for demonstration.\n\nAn insurance company customer service contact center needs to build an online customer service system with the following requirements:\n- Access to the online customer service portal through the official WeChat mini program\n- 24-hour interaction with a chatbot once entered\n- The chatbot can be integrated with third-party applications\n- Visitors can choose whether to transfer to human agents for continued service\n\nPlease design a set of runnable code based on the above requirements.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Mini Program integration properly implemented?",
+      "description": "Check if the code includes proper integration with WeChat Mini Program API, including authentication, user session management, and navigation to the customer service portal. Verify if the Mini Program project structure follows WeChat development specifications with proper app.json, app.js, and page configurations.0 points if no WeChat Mini Program code is provided, 5 points if basic structure exists but lacks proper API integration, 10 points if fully implemented with proper authentication flow and complete navigation to customer service.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 24-hour chatbot interaction system properly designed?",
+      "description": "Evaluate if the chatbot system is designed to handle continuous 24-hour operation with proper session management, conversation state persistence, and error recovery. Check if the system includes time-zone handling for global accessibility and has mechanisms to maintain context across extended conversations.0 points if no chatbot implementation is provided, 5 points if basic chatbot exists but lacks 24-hour operational capabilities, 10 points if the solution fully addresses 24-hour availability with proper session persistence and recovery mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the third-party integration capability implemented?",
+      "description": "Assess if the code provides flexible APIs or interfaces for third-party application integration. This should include webhook support, authentication mechanisms for external systems, standardized data exchange formats, and proper documentation for integration points.0 points if no integration capabilities exist, 5 points if basic API endpoints are defined but lack security or flexibility features, 10 points if comprehensive integration solutions are provided with proper security, documentation and example implementations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the human agent transfer mechanism properly designed?",
+      "description": "Examine if the system implements a smooth transfer mechanism from chatbot to human agents. Check for presence of agent availability tracking, queue management, conversation context preservation during transfer, and notification systems for both users and agents.0 points if no transfer mechanism exists, 5 points if basic transfer functionality is implemented but lacks queue management or context preservation, 10 points if comprehensive transfer system is provided with proper handling of edge cases like agent unavailability.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, API failures, invalid inputs, etc.) and provide friendly error prompts or recovery mechanisms. Check for presence of exception handling, input validation, and graceful degradation patterns.0 points if no exception handling exists, 5 points if basic error handling is implemented but lacks recovery mechanisms, 10 points if comprehensive error handling with proper user feedback and recovery paths is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Sentiment analysis to detect customer frustration 2. Automatic insurance policy recommendation based on conversation context 3. Voice/video chat capabilities 4. Multi-language support).Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementations of similar functions 2. Function modules unrelated to insurance customer service 3. Overly complex UI elements or processes that complicate the user experience.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI, business logic, and data layers), code reusability, naming conventions, and documentation quality. Check for presence of unit tests, configuration management, and deployment considerations.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no documentation or comments are provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI design follows WeChat Mini Program design guidelines and insurance industry best practices: 1) Consistent with WeChat design language 2) Professional color scheme appropriate for financial services 3) Clear information hierarchy and readability 4) Accessible design for all users.Deduct 3 points for each inconsistency with WeChat design guidelines, 5 points for inappropriate color schemes that don't convey trust and professionalism, and 5 points for poor information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and user-focused?",
+      "description": "Judge whether the customer journey is intuitive and efficient: 1) Clear indicators when chatting with bot vs. human 2) Smooth transitions between different conversation states 3) Appropriate loading states and feedback 4) Easy access to common insurance queries or functions.Deduct 5 points for missing user feedback during operations, 3 points for confusing navigation between bot and human service, and 5 points for excessive steps to complete common customer service tasks. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

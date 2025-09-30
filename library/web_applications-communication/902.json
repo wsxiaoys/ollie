@@ -1,0 +1,68 @@
+{
+  "index": 902,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable and can be displayed. Now, as a Uni-app development expert, I want to implement Tencent UI-less integration with the following features: message list (fetching, automatic updates) + chat detail page + sending messages. Please help me implement the relevant code and provide corresponding explanations for each step.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the message list implementation complete?",
+      "description": "Evaluate if the code properly initializes Tencent UI-less SDK, configures message list retrieval with pagination, implements pull-to-refresh, and handles message list rendering. Check if message types (text, image, voice, etc.) are correctly displayed with appropriate timestamps. Score 0 if SDK initialization is missing, 5 if basic message display is implemented but lacks automatic updates, and 10 if complete with real-time message notifications and background polling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automatic message update mechanism implemented effectively?",
+      "description": "Check if the code includes proper event listeners for new messages, implements optimized background polling (interval ≥30s), and uses WebSocket or long polling for real-time updates. Verify if the code handles message status updates (sent, delivered, read) and updates the UI accordingly. Deduct 5 points if real-time updates are missing, 3 points if message status tracking is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the chat detail page fully functional?",
+      "description": "Review whether the chat detail implementation includes message history loading with proper pagination, message bubble UI components, timestamp grouping, and avatar display. Check if the page handles different message types correctly and supports message status indicators. Deduct 5 points if history loading is implemented without proper pagination, 3 points if bubble UI is inconsistent across message types. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the message sending functionality complete?",
+      "description": "Evaluate if the code implements sending different message types (text, image, voice, etc.), handles sending status (pending, sent, failed), provides retry mechanisms, and implements proper error handling. Check if media attachments are handled with compression and progress indicators. Deduct 5 points if only text messages are supported, 3 points if error handling is incomplete, and 5 points if there's no retry mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, SDK initialization failure, permission denials, message sending failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Message draft auto-saving 2. Custom emoji support 3. In-chat translation features 4. Read status indicators with timestamps). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SDK initializations or listeners 2. Unnecessary re-renders or data fetching 3. Overly complex UI components that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/network layers), proper component organization, and adherence to Uni-app best practices. Deduct 5 points if global state is mismanaged; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no proper error logging or monitoring. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern chat app principles: 1) Consistent message bubble styling with clear sender differentiation 2) Proper layout spacing for messages and input area 3) Professional typography with readable message text (≥14px, proper contrast). Deduct 3 points for each crowded visual element, 5 points for inconsistent bubble designs, and 5 points for poor message readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to chat app expectations: 1) Message sending feedback delay ≤100ms 2) Smooth scrolling in message history 3) Responsive input area that adjusts to keyboard visibility 4) Proper loading states during message fetching. Deduct 5 points for laggy scrolling, 3 points for input area jumping during typing, and 5 points for missing loading indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

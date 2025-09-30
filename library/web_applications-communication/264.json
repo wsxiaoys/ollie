@@ -1,0 +1,68 @@
+{
+  "index": 264,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. React implementation: Create an autocomplete text box",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the autocomplete core functionality fully implemented?",
+      "description": "Review whether the React component accurately implements real-time search filtering, keyboard navigation (up/down arrows, Enter to select, Escape to close), and click selection. The component should handle input changes with proper debouncing (200-300ms) and display filtered results dynamically. Score 0 if basic autocomplete logic is missing, 5 if only basic filtering works, and 10 if all core interactions including keyboard navigation are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data handling and performance optimization properly implemented?",
+      "description": "Check whether the implementation includes efficient data filtering algorithms, proper use of React hooks (useState, useEffect, useMemo), and performance optimizations like debouncing/throttling for API calls. Evaluate if large datasets are handled efficiently without UI blocking. Deduct 5 points if no debouncing is implemented, 3 points if unnecessary re-renders occur, and 2 points if filtering algorithm is inefficient. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the component state management and lifecycle properly designed?",
+      "description": "Evaluate whether the React component properly manages internal state (input value, dropdown visibility, selected index, filtered options) and handles component lifecycle events correctly. Check for proper cleanup of event listeners and timers. The component should handle edge cases like empty results, loading states, and error handling. Deduct 5 points if state management is chaotic, 3 points if memory leaks exist due to improper cleanup. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the component accessibility and usability standards compliant?",
+      "description": "Check whether the autocomplete component implements proper ARIA attributes (aria-expanded, aria-activedescendant, role='combobox'), supports screen readers, and follows accessibility guidelines. The component should be keyboard-navigable and provide clear focus indicators. Deduct 5 points if ARIA attributes are missing, 3 points if keyboard navigation is incomplete, and 2 points if focus management is poor. Give 10 points if fully accessible.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty input, special characters, network failures for async data, rapid typing, component unmounting during async operations) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Highlighting matched text portions 2. Recent searches memory 3. Category grouping of results 4. Custom result templates 5. Multi-select capability). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple filtering logics coexisting) 2. Function modules unrelated to autocomplete (e.g., built-in form validation) 3. Fancy effects that affect performance (e.g., complex animations on every keystroke). Deduct 3 points for each redundancy found, and directly deduct 10 points if core autocomplete functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review React component structure (proper component composition, custom hooks usage, props interface design), TypeScript integration if applicable, and code organization. Deduct 5 points if component is not properly decomposed or design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 3 points if props are not properly typed or documented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the autocomplete design follows modern UI principles: 1) Harmonious color matching with proper contrast ratios 2) Consistent spacing and alignment (following 8px grid system) 3) Professional typography (readable font sizes ≥ 14px, proper line heights) 4) Clear visual hierarchy between input and dropdown. Deduct 3 points for each crowded visual element, 5 points for poor color contrast, and 5 points for inconsistent styling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the autocomplete interactions conform to user expectations: 1) Instant visual feedback on input changes 2) Smooth dropdown animations (200-300ms duration) 3) Clear hover and focus states 4) Responsive selection feedback. Deduct 5 points for each interaction without proper feedback, 3 points for jarring animations or layout shifts, and 5 points if dropdown positioning is inconsistent or cuts off. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

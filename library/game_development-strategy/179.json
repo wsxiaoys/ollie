@@ -1,0 +1,68 @@
+{
+  "index": 179,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Be sure to ensure that the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a resource management game where **Task**: Design a resource management system in which players need to collect and manage resources to build and upgrade buildings. **Hint**: Set up resource points where players can gather or trade resources, and use these resources for construction or upgrades.\n\nInclude comments in your code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the resource collection system fully implemented?",
+      "description": "Review whether the code accurately implements resource gathering mechanics (clicking on resource points, automatic collection over time, etc.) and resource storage/inventory system. Score 0 if resource collection is not implemented, 5 if only basic collection is implemented without variety, and 10 if the system includes multiple resource types with different collection methods and rates.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the building construction and upgrade system functional?",
+      "description": "Evaluate if the code includes a complete building system with construction prerequisites, resource costs, construction time, and meaningful upgrades. Check if buildings have different tiers/levels and if upgrades provide tangible benefits. Deduct 5 points if buildings don't have multiple upgrade levels, and 3 points if upgrades don't affect gameplay. Give 10 points for a comprehensive system with meaningful progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the resource trading or economy system implemented?",
+      "description": "Check if there's a mechanism for trading resources (market, exchange rates, NPC traders) or some form of economic gameplay. Evaluate whether the economy is balanced with appropriate resource values and exchange rates. Deduct 5 points if trading is one-dimensional, and 3 points if there's no price fluctuation or strategic depth. Full score for a dynamic economy with meaningful player decisions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete game progression and goal system?",
+      "description": "Assess whether the game has clear objectives, progression milestones, and win conditions (or endless play with increasing challenges). Check for tutorial elements, achievement systems, or quest/mission structure. Deduct 5 points if the game lacks direction, and 3 points if progression is linear with no strategic choices. Give 10 points for well-defined goals with multiple paths to success.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid resource counts, impossible building placements, race conditions in resource gathering, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic resource visualization 2. Weather/season effects on resource generation 3. Interactive tutorial system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple resource collection logics coexisting) 2. Function modules unrelated to resource management (e.g., a built-in unrelated mini-game) 3. Fancy effects that affect performance (e.g., excessive particle animations for simple actions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/resource management layers), code organization, and proper use of JavaScript patterns. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's insufficient code commenting as requested in the requirements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching that represents different resources distinctly 2) Proper layout spacing between resource counters, buildings, and action buttons 3) Clear visual hierarchy highlighting important game elements. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic resource/building displays. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Resource collection feedback is immediate (≤ 100ms) 2) Building construction/upgrade animations have appropriate duration 3) Resource counters update smoothly rather than jumping. Deduct 5 points for each operation without feedback, 3 points for laggy animations during resource transactions, and 5 points for unintuitive building placement controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "easy"
+}

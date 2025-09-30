@@ -1,0 +1,68 @@
+{
+  "index": 1239,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Based on the security checklist SCL, create a webpage that includes all content and has the functionality to convert to Word.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the security checklist (SCL) content fully implemented in the webpage?",
+      "description": "Review whether the HTML structure properly organizes and presents all sections of the security checklist with appropriate headers, lists, and formatting. Score 0 if the checklist content is incomplete, 5 if basic content is present but poorly structured, and 10 if the full security checklist is comprehensively implemented with proper semantic HTML elements (like <section>, <h1>-<h6>, <ul>/<ol>, etc.).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Word conversion functionality properly implemented?",
+      "description": "Evaluate the implementation of the Word document export feature. Check if the code uses appropriate libraries (like docx.js, html-to-docx, or similar) with proper error handling. The exported Word document should maintain the structure, formatting, and completeness of the original checklist. Deduct 5 points if the export works but loses formatting, 3 points if it has compatibility issues with different browsers, and 3 points if it doesn't provide progress feedback during export operations. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data structure of the security checklist properly organized?",
+      "description": "Assess how the security checklist data is structured in the code. Check if it uses appropriate data structures (arrays, objects) that facilitate filtering, sorting, and categorization of security items. The implementation should demonstrate separation of data and presentation concerns. Deduct 5 points if the data is hardcoded directly in the HTML rather than stored in JavaScript variables/objects, 3 points if the structure doesn't allow for easy modification or extension of the checklist. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are there search, filter, or navigation features to enhance usability of the security checklist?",
+      "description": "Check whether the webpage includes practical features to improve checklist usability such as search functionality, category filters, or quick navigation tools. Also verify if the implementation includes checklist item state management (marking items as complete/incomplete). Score 3 points for basic search implementation, 3 points for filtering capabilities, 2 points for navigation aids, and 2 points for checklist item state tracking. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, network interruptions during export, unexpected user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark mode toggle 2. Automatic saving of checklist progress 3. Security score visualization 4. Export to multiple formats beyond Word). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple export mechanisms doing the same thing) 2. Function modules unrelated to security checklist (e.g., unrelated analytics) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/export functionality), code organization, and implementation patterns. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling or input validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback (especially for the export button), 3 points for visual after-images during interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 978,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable for demonstration. Help me generate code for a tank battle game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the tank battle core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements tank movement control (WASD/arrow keys), rotation mechanics, firing system with projectile physics, and collision detection between tanks, bullets, and obstacles. Score 0 if basic tank control is missing, 5 if only movement is implemented without proper physics, and 10 if all mechanics including realistic tank physics (acceleration/deceleration) and accurate hit detection are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the battlefield environment and combat system complete?",
+      "description": "Check whether the implementation includes a proper battlefield map with destructible/indestructible obstacles, spawn points, health system, ammunition management, and scoring mechanism. Evaluate if power-ups, different weapon types, or terrain effects are included. Deduct 5 points if health/damage system is missing, 3 points if no environmental interactions exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the multiplayer or AI opponent system properly designed?",
+      "description": "Evaluate whether the game supports multiple players (local or network) or includes AI opponents with reasonable difficulty levels. For multiplayer, check if player identification, turn management, and fair gameplay mechanics are implemented. For AI, assess if the bot behavior includes pathfinding, strategic targeting, and adaptive difficulty. Deduct 5 points if only single-player mode exists without opponents, 3 points if AI behavior is too simplistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete game state management and progression system constructed?",
+      "description": "Check whether the code includes comprehensive game lifecycle management: game start/pause/restart, win/lose conditions, score tracking, level progression, and game session persistence. Deduct 5 points if game state transitions are not properly handled, 3 points if no victory conditions are defined, and 2 points if restart functionality is missing. Give 10 points if fully implemented with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds movement, rapid key presses, collision edge cases, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the gaming experience (e.g., 1. Particle effects for explosions 2. Mini-map radar system 3. Weapon upgrade system 4. Environmental destruction 5. Replay system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems coexisting) 2. Function modules unrelated to tank battles (e.g., built-in social media integration) 3. Excessive visual effects that hurt performance (e.g., too many simultaneous particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core gameplay is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, and maintainability. Deduct 5 points if global state pollution is found or proper object-oriented design is not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if performance optimization is not considered (e.g., inefficient rendering loops). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Harmonious color scheme appropriate for military theme 2) Clear HUD elements (health bars, ammo counters, mini-map) with proper contrast 3) Consistent visual style and readable fonts (UI text ≥ 12px). Deduct 3 points for each cluttered UI element, 5 points for poor color contrast affecting gameplay, and 5 points for inconsistent visual design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions conform to gaming standards: 1) Input response delay ≤ 50ms for competitive gameplay 2) Smooth animation transitions for tank movement and turret rotation 3) Clear visual feedback for hits, damage, and game events 4) Consistent frame rate (ideally 60fps). Deduct 5 points for each laggy interaction, 3 points for stuttering animations, and 5 points for unclear visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 498,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. ======== Role ========\nYou are an experienced code expert. You have been given a software development requirement description and are required to generate project code according to these requirements. Strictly follow the rules to help users generate complete project code that is fully annotated with simple, easy-to-understand language, without outputting anything else.\n\n======== Output Rules ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirement involves external API access or needs to use user data (images, videos, audio, etc.), please provide mock data\n\n======== Project Requirements ========\nPlease write code to implement a logistics management system where administrators can track cargo transportation status, manage transport vehicles and driver information; customers can log in to view their cargo status and transportation logs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core logistics tracking system properly implemented?",
+      "description": "Evaluate whether the code correctly implements cargo tracking functionality with features like real-time status updates, location tracking, and delivery milestone recording. Check if the system maintains a complete audit trail of all cargo movements and status changes.Award 0 points if cargo tracking is missing, 5 points if basic tracking exists but lacks real-time capabilities, 10 points if the implementation includes comprehensive tracking with timestamps, location data, and status history.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the vehicle and driver management system complete?",
+      "description": "Review whether the system allows for comprehensive management of transport vehicles (registration, maintenance schedules, availability status) and driver information (profiles, licenses, schedules, performance metrics). Check if there are functions for assigning vehicles to drivers and routes.Award 0 points if these management functions are absent, 5 points if only basic CRUD operations are implemented, 10 points if the system includes comprehensive management with scheduling, availability tracking, and assignment algorithms.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user authentication and role-based access control implemented?",
+      "description": "Check whether the system properly implements separate authentication flows for administrators and customers, with appropriate role-based access control. Verify if security measures like password hashing, session management, and protection against common attacks are implemented.Award 0 points if authentication is missing, 5 points if basic login exists but lacks proper role separation or security measures, 10 points if the system implements comprehensive and secure authentication with proper access control.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the customer interface for tracking cargo implemented?",
+      "description": "Evaluate if customers can log in to view their cargo status with features like historical transportation logs, current location, estimated delivery times, and notification capabilities. Check if the interface is user-friendly and provides clear visualization of cargo movements.Award 0 points if customer tracking interface is absent, 5 points if basic viewing exists but lacks interactive features, 10 points if the implementation includes comprehensive tracking visualization, search functionality, and notification systems.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, database connection failures, authentication errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases.Award 10 points for comprehensive error handling and recovery mechanisms, 5 points for average robustness with some error handling, 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive ETAs using historical data 2. Mobile-responsive design with push notifications 3. Interactive maps showing cargo routes 4. Weather integration showing potential delivery delays).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to update cargo status) 2. Function modules unrelated to logistics management (e.g., built-in games or unnecessary social features) 3. Fancy effects that affect performance (e.g., heavy animations that slow page loading).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/data access layers), unit test coverage, and build process automation. Check for use of design patterns, code reusability, and maintainability.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Intuitive navigation and information hierarchy.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance 4) Intuitive data visualization for logistics information.Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling or transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

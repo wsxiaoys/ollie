@@ -1,0 +1,68 @@
+{
+  "index": 1805,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Ensure that the generated code is executable for display. Help me write a web page code that can compare multiple sets of numbers, list the frequency of each number in order with color markers, and include a function to shuffle the numbers and then reorder them.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the number comparison system fully implemented?",
+      "description": "Evaluate whether the code provides a complete mechanism to input and compare multiple sets of numbers. Check if it allows users to input/define multiple datasets or import data from external sources. Score 0 if comparison functionality is missing, 5 if basic comparison is implemented but with limitations, and 10 if the system handles arbitrary numbers of datasets with proper validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the frequency calculation and ordering function implemented correctly?",
+      "description": "Examine the algorithm that calculates the frequency of each number and orders them. Verify the algorithm's correctness through edge cases (empty arrays, duplicate values, very large/small numbers). Deduct 3 points if the frequency calculation is incorrect, 4 points if ordering doesn't work properly, and 3 points if edge cases aren't handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are color markers implemented effectively for visual representation?",
+      "description": "Assess the color marker implementation for representing frequencies. Evaluate whether the color scheme is visually informative (e.g., heat map style), accessible (sufficient contrast ratio ≥4.5:1), and properly conveys data intensity. Deduct 5 points if colors don't correlate with frequency values, 3 points if the color scheme is confusing or inaccessible, and 2 points if there's no legend explaining the color mapping. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the shuffle and reorder functionality implemented effectively?",
+      "description": "Review the shuffle algorithm implementation (preferably Fisher-Yates or equivalent) and the reordering mechanism. Verify that shuffling is truly random and the reordering process works consistently. Check for animation transitions between states. Deduct 4 points for biased shuffle algorithms, 3 points for inconsistent reordering, and 3 points if there's no visual feedback during state transitions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as non-numeric inputs, extremely large datasets, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive visualization options 2. Data export/import capabilities 3. Statistical analysis of number patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple sorting algorithms) 2. Function modules unrelated to number comparison (e.g., unrelated data visualization) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating logic/view layers), code organization, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no performance considerations for large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors plus their shades) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual lag during data reordering, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Statistical Analysis",
+  "difficulty": "easy"
+}

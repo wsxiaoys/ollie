@@ -1,0 +1,68 @@
+{
+  "index": 965,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Generate sales forecasts in a tabular format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the forecasting algorithm properly implemented?",
+      "description": "Evaluate whether the code implements a statistically sound forecasting method (e.g., time series analysis, regression, exponential smoothing, ARIMA). Check if the algorithm handles seasonality, trends, and cyclical patterns. Score 0 if no forecasting logic exists, 5 if only basic linear projection is implemented, and 10 if multiple sophisticated forecasting methods are available with accuracy metrics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data processing pipeline robust?",
+      "description": "Review whether the code includes proper data cleaning, normalization, and transformation steps. Check for handling of missing values, outliers, and data type conversions. Verify if the code can process different input data formats (CSV, Excel, JSON, etc.). Deduct 5 points if missing value handling is omitted, 3 points if outlier detection is absent. Full score for comprehensive preprocessing with validation steps.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the tabular output format well-implemented?",
+      "description": "Assess if the table has proper headers, consistent formatting of numbers (decimal places, thousands separators), appropriate column widths, and clear labeling. Check if the table includes important metrics like forecast values, confidence intervals, and percentage changes. Deduct 5 points if the table lacks proper formatting, 3 points if it's missing essential sales metrics.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are visualization components included to complement tabular data?",
+      "description": "Check if the code generates complementary visual representations (charts, graphs) that enhance understanding of the forecasts. Evaluate whether appropriate chart types are used (line charts for trends, bar charts for comparisons). Deduct 5 points if no visualizations are provided, 3 points if visualizations lack interactivity or legends.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed input data, unexpected data types, edge cases) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive filtering of forecast periods 2. Auto-recommendation of best forecasting method based on data characteristics 3. Exportable reports with findings). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar forecasting algorithms 2. Function modules unrelated to sales forecasting (e.g., unnecessary marketing analysis) 3. Complex visualizations that don't add analytical value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/modeling/visualization layers), documentation quality, and maintainability. Deduct 5 points if global variables are overused; deduct 5 points if the code lacks comments or documentation; deduct 5 points if the code structure makes it difficult to extend or modify. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the table design meet professional standards?",
+      "description": "Evaluate whether the table follows professional design principles: 1) Consistent typography (font size, weight for different data categories) 2) Proper use of borders, spacing, and alignment 3) Clear visual hierarchy between headers, data, and totals. Deduct 3 points for inconsistent formatting, 5 points for poor information hierarchy, and 5 points for cluttered layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction intuitive and responsive?",
+      "description": "Judge whether the interface provides intuitive controls for adjusting forecast parameters and viewing results: 1) Clear input mechanisms for date ranges and variables 2) Responsive updates when parameters change 3) Informative tooltips or context information. Deduct 5 points if parameters cannot be adjusted, 3 points for slow response times, and 5 points if the interaction flow is confusing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Predictive Modeling",
+  "difficulty": "medium"
+}

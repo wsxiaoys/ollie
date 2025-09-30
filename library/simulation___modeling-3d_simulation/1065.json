@@ -1,0 +1,68 @@
+{
+  "index": 1065,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to generate executable code for demonstration. Help me create a program for a NURBS curve in a three-dimensional graph, which should display both the NURBS curve and its control points, then visualize this program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the NURBS curve implementation mathematically correct?",
+      "description": "Review whether the code accurately implements the NURBS curve mathematical formulation, including basis functions, knot vectors, weights, and proper parameterization. Score 0 if the core NURBS formula is incorrect, 5 if basic B-spline functionality is implemented but weights aren't properly handled, and 10 if the implementation fully supports rational curves with mathematically sound calculations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 3D visualization of the NURBS curve properly implemented?",
+      "description": "Check whether the visualization correctly renders the NURBS curve in 3D space with appropriate resolution (enough points to make the curve appear smooth). The curve should be continuously rendered without visual artifacts or gaps. Deduct 5 points for discontinuities in the curve, 3 points for insufficient sampling causing a 'jagged' appearance, and 2 points if curve extremities are improperly handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are control points properly visualized and interactive?",
+      "description": "Evaluate whether control points are clearly visible as distinct markers in the 3D space, with appropriate size and contrast against the curve. Check for interactive features such as hovering effects, selection capability, or dragging functionality to modify curve shape. Deduct 5 points if control points lack visual distinction, 5 points if no interaction with control points is possible, and 2 points if the control polygon (lines connecting control points) is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the relationship between control points and the resulting curve visually clear?",
+      "description": "Assess whether the program visually demonstrates the influence of control points on the curve shape, potentially through real-time updates when points are moved or through visual cues like control polygons or influence regions. Deduct 5 points if changes to control points don't update the curve in real-time, and 3 points if the visual connection between points and curve isn't intuitive. Give 10 points if the relationship is immediately clear and educational.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as coincident control points, extreme weight values, or high-degree curves without crashing. Test boundary conditions like minimum number of control points for the specified degree. Code with strong robustness should gracefully handle these cases with appropriate error messages or constraints. Give 10 points for comprehensive error handling, 5 points for basic validation only, and 0 points if the code fails under common edge cases.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic knot insertion/removal visualization 2. Degree elevation demonstration 3. Surface generation from multiple curves 4. Curvature visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation of basis functions when they could be cached 2. Visualization features unrelated to NURBS demonstration (e.g., unrelated 3D models) 3. Fancy effects that affect performance without educational benefit. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separate modules for math, visualization, interaction), appropriate commenting, and efficient algorithms (e.g., de Boor algorithm for evaluation). Deduct 5 points if global state is overused; deduct 5 points if the NURBS evaluation algorithm is inefficient (e.g., naive implementation instead of optimized recursive approaches); deduct 5 points if mathematical operations aren't numerically stable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the 3D visualization follows professional design principles: 1) Appropriate color contrast between curve, control points, and background 2) Clear labeling of axes and UI elements 3) Professional camera controls (pan/zoom/rotate). Deduct 3 points for poor color choices that make elements hard to distinguish, 5 points for missing or confusing navigation controls, and 5 points for cluttered UI that obscures the mathematical visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects support understanding of NURBS: 1) Control point manipulation has immediate visual feedback 2) Camera/view manipulation is smooth and intuitive 3) Curve recomputation after parameter changes occurs within 100ms. Deduct 5 points for laggy response when manipulating control points, 3 points for jerky animation during camera movement, and 5 points if curve parameter adjustments (degree, knot insertions) don't provide clear visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "easy"
+}

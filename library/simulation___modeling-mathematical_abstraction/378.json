@@ -1,0 +1,68 @@
+{
+  "index": 378,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring that the generated code is executable for demonstration. Use Node.js in WebStorm to implement a graphic showing the intersection/blending of a square and a circle.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the geometric representation of both shapes implemented correctly?",
+      "description": "Review whether the code accurately defines and renders both the square and circle with proper parameters (coordinates, dimensions, radius). The square should have consistent side lengths, and the circle should be mathematically accurate. Score 0 if shapes are incorrectly implemented, 5 if basic shapes are drawn but with minor inaccuracies, and 10 if both shapes are perfectly implemented with proper mathematical properties.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the intersection/blending calculation algorithm implemented correctly?",
+      "description": "Check whether the code accurately calculates the intersection between the square and circle using proper mathematical formulas. The intersection should be precisely determined with appropriate geometric calculations (distance checks, boundary evaluations). Deduct 5 points if the algorithm only approximates the intersection, 3 points if edge cases aren't handled (e.g., tangent points, complete overlap). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the visual representation of the intersection/blending rendered properly?",
+      "description": "Evaluate how the intersection/blending is visually displayed. The overlapping area should be clearly distinguishable from the non-overlapping parts with appropriate visual treatment (different color, opacity, or pattern). Deduct 5 points if the intersection area is not visually distinct, and 3 points if the blending effect lacks visual clarity. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation provide interactive capabilities?",
+      "description": "Assess whether the code allows users to interact with the shapes (e.g., moving shapes, resizing, changing parameters). Check for event listeners that enable drag-and-drop functionality or parameter adjustments. Deduct 3 points if only basic interactions are implemented, 5 points if interactions are limited to only one shape, and 5 points if real-time intersection updates are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, edge cases in shape positioning, rendering issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple blending modes like SVG's 'multiply', 'screen', etc. 2. Mathematical formulas display alongside visualization 3. Animation showing how intersection changes with movement). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations or rendering passes that affect performance 2. Unnecessary complexity in algorithms where simpler solutions exist 3. Extraneous visual elements unrelated to the geometric intersection task. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating rendering logic from calculation logic), proper variable naming, code comments, and application of appropriate design patterns. Deduct 5 points if global variables are overused; deduct 5 points if the code is not organized into logical functions or classes; deduct 5 points if documentation is missing for complex algorithms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clean and minimal UI that doesn't distract from the geometric visualization. Deduct 3 points for each visually distracting element, 5 points for poor color choices that make intersection difficult to see, and 5 points for cluttered controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the rendering and calculation performance meets standards: 1) Rendering updates occur at 60fps without visible lag 2) Intersection calculations complete within 16ms to maintain smooth framerate 3) Shape manipulations respond instantly to user input. Deduct 5 points for noticeable lag during interaction, 3 points for jerky animations, and 5 points for calculation delays that affect user experience. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Mathematical Abstraction",
+  "difficulty": "easy"
+}

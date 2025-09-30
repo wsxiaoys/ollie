@@ -1,0 +1,68 @@
+{
+  "index": 1815,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. Please build a responsive HTML webpage index.html for me with the following requirements: Simplified Chinese language, UTF-8 encoding; tree-like navigation with unlimited levels; includes title and paragraphs; contains images and videos; has a contact form (webmail is sufficient); footer with copyright section. Thank you very much!",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the tree-like navigation with unlimited levels fully implemented?",
+      "description": "Review whether the code accurately implements a multi-level tree navigation structure through HTML/CSS/JavaScript, including expandable/collapsible functionality, proper nesting hierarchy, and smooth navigation transitions. Check if the navigation supports unlimited depth levels with proper indentation and visual hierarchy indicators. Score 0 if only flat navigation is provided, 5 if basic 2-3 level navigation is implemented, and 10 if true unlimited level tree navigation with full interactive features is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the responsive design implementation comprehensive?",
+      "description": "Evaluate whether the webpage implements proper responsive design using CSS media queries, flexible grid systems, and adaptive components. Check breakpoints for mobile (≤768px), tablet (769px-1024px), and desktop (≥1025px) devices. The tree navigation should collapse to mobile-friendly format, images/videos should scale appropriately, and the contact form should remain usable across all devices. Deduct 5 points if navigation breaks on mobile, 3 points if media elements don't scale properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the multimedia elements (images and videos) properly integrated and optimized?",
+      "description": "Check whether images and videos are properly embedded with appropriate formats, alt attributes, and responsive scaling. Evaluate loading optimization techniques such as lazy loading, proper aspect ratio maintenance, and fallback mechanisms. Videos should have controls, proper encoding, and mobile compatibility. Deduct 5 points if images lack alt attributes or proper scaling, 3 points if videos don't work on mobile devices, and 2 points if no loading optimization is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the contact form functional and properly validated?",
+      "description": "Assess whether the contact form includes proper field validation (email format, required fields), appropriate input types, and user feedback mechanisms. The form should handle submission gracefully with proper error messages and success notifications. Check for accessibility features like proper labels and ARIA attributes. Deduct 5 points if validation is missing or incomplete, 3 points if accessibility features are absent, and 2 points if form submission handling is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as broken image links, failed video loading, form submission errors, navigation overflow, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like extremely deep navigation levels, long content text, and various screen sizes. Give 10 points if fully robust, 5 points if average robustness, and 0 points if no exception handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance user experience (e.g., 1. Smooth scroll navigation with section highlighting 2. Search functionality within the tree navigation 3. Breadcrumb trail for deep navigation 4. Dark/light theme toggle 5. Progressive web app features). Add 2-3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple navigation systems coexisting) 2. Function modules unrelated to the webpage purpose (e.g., built-in games or unnecessary widgets) 3. Excessive animations that affect performance or usability. Deduct 3 points for each redundancy found, and directly deduct 10 points if core navigation or content display functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of HTML structure, CSS styling, and JavaScript functionality), semantic HTML usage, and maintainable code structure. Check for proper commenting, consistent naming conventions, and modular CSS/JS organization. Deduct 5 points if inline styles are extensively used instead of external CSS; deduct 5 points if JavaScript is not properly organized or lacks comments; deduct 3 points if HTML semantic elements are not utilized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional visual standards?",
+      "description": "Evaluate whether the overall design follows modern web design principles: 1) Harmonious color scheme with proper contrast ratios (WCAG AA compliance) 2) Consistent typography hierarchy with readable font sizes (≥16px for body text) 3) Proper whitespace and visual breathing room 4) Professional layout with clear visual hierarchy. Deduct 3 points for each visual inconsistency, 5 points for poor color contrast or readability issues, and 5 points for cluttered or unprofessional layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and intuitive?",
+      "description": "Judge whether interactive elements provide appropriate feedback and follow UX best practices: 1) Navigation hover/focus states with clear visual feedback 2) Tree navigation expand/collapse animations ≤ 300ms 3) Form field focus states and validation feedback 4) Smooth scrolling and page transitions 5) Clear visual indicators for clickable elements. Deduct 5 points for each interaction without proper feedback, 3 points for slow or jarring animations, and 5 points for unclear interactive elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

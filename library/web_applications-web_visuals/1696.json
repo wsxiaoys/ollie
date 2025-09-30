@@ -1,0 +1,68 @@
+{
+  "index": 1696,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Develop a 3D map using Amap API with Vue 3, draw custom building blocks, and use MVT polyhedrons.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Amap API integration correctly implemented?",
+      "description": "Review whether the code properly initializes the Amap instance with appropriate API keys, correctly loads the required plugins, and handles map lifecycle events. Check if the map container is properly configured with correct dimensions and initial view settings (center coordinates, zoom level). Score 0 if the map fails to initialize, 5 if basic initialization works but missing error handling, and 10 if fully implemented with proper error handling and loading states.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are custom building blocks properly implemented?",
+      "description": "Evaluate whether custom building geometries are correctly constructed using Amap's polygon/polyline APIs or custom WebGL rendering. Check if the buildings have proper height extrusion, accurate geographic positioning, and appropriate texturing. Deduct 5 points if buildings lack proper height data, 3 points if texture mapping is incorrect, and 2 points if building footprints don't match geographic data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the MVT (Mapbox Vector Tiles) polyhedron rendering implemented correctly?",
+      "description": "Check if the code properly loads and renders MVT data, correctly interprets vector tile protocols, and efficiently renders polyhedrons based on tile data. Verify tile loading optimization techniques like caching and level-of-detail management. Deduct 5 points if rendering artifacts occur at tile edges, 3 points if tile loading is inefficient, and 5 points if the MVT protocol implementation is incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is Vue 3 integration properly implemented with reactive map components?",
+      "description": "Assess whether the code uses Vue 3's Composition API effectively for map component state management, properly handles component lifecycle with map instance creation/destruction, and implements reactive data binding between UI controls and map state. Deduct 5 points for improper component lifecycle management, 3 points for non-reactive map controls, and 5 points for memory leaks in component cleanup. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API loading failures, network interruptions, invalid geographic data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should implement proper try-catch blocks around API calls, handle promise rejections, and provide fallback rendering. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom shader effects for buildings 2. Dynamic time-of-day lighting 3. Interactive building selection with information panels). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant map initialization or multiple conflicting map instances 2. Unnecessary libraries that increase bundle size without adding functionality 3. Overuse of 3D effects that hinder performance or usability. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core map functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating map configuration/layer management/data fetching logic), reusable component structure, and build process optimization. Deduct 5 points if global state management is poorly implemented; deduct 5 points if there's significant code duplication across components; deduct 5 points if the component hierarchy doesn't follow Vue best practices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the map visualization follows modern cartographic design principles: 1) Balanced visual hierarchy between basemap and custom elements 2) Appropriate color schemes that maintain readability of map features 3) Proper labeling and symbology that scales with zoom levels. Deduct 3 points for cluttered map elements, 5 points for poor color contrast affecting readability, and 5 points for inconsistent styling between map elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the map interactions meet performance standards: 1) Map pan/zoom responds within 60ms 2) Building selection/hover feedback within 100ms 3) Smooth frame rate (>30fps) during 3D navigation. Deduct 5 points for jerky camera movements, 3 points for delayed tile loading causing visual gaps, and 5 points for unresponsive UI controls during map rendering. Verify if level-of-detail adjustments occur smoothly during zoom operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

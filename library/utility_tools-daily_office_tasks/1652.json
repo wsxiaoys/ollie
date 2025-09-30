@@ -1,0 +1,68 @@
+{
+  "index": 1652,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Help me write a clock-in page using uni-app vue2.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the uni-app clock-in core functionality fully implemented?",
+      "description": "Review whether the code accurately implements clock-in/clock-out functionality through uni-app framework, including time recording, attendance status management, and local storage persistence. Score 0 if core clock-in logic is not implemented, 5 if only basic time recording is present, and 10 if complete attendance tracking with validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue2 component architecture properly structured?",
+      "description": "Check whether the Vue2 implementation follows proper component lifecycle management, data binding, and state management patterns. Evaluate if uni-app specific APIs (uni.getLocation, uni.getStorage, etc.) are correctly integrated. Deduct 5 points if component communication is poorly implemented, and 3 points if lifecycle hooks are misused. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are location-based attendance and data persistence implemented?",
+      "description": "Evaluate whether the system includes GPS location verification for clock-in validity, local data storage using uni.setStorage, and offline capability. Check if attendance records are properly structured and retrievable. Deduct 5 points if location services are not integrated, 3 points if data persistence is unreliable. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is comprehensive attendance management and history tracking constructed?",
+      "description": "Check whether the code includes complete attendance lifecycle management, including daily/weekly/monthly attendance summaries, history viewing, and statistical analysis. Deduct 5 points if attendance history is not properly displayed, and 3 points if statistical calculations are missing. Give 10 points if fully implemented with export functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as GPS failure, storage quota exceeded, network interruption, permission denial, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Facial recognition for identity verification 2. Automatic work schedule detection 3. Team attendance leaderboard 4. Weather-based attendance reminders). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple time calculation methods coexisting) 2. Function modules unrelated to attendance (e.g., built-in games or social features) 3. Fancy effects that affect performance (e.g., heavy animation libraries). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/components/utils), proper use of uni-app conventions, and code organization. Deduct 5 points if global state pollution is found or Vue2 best practices are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if uni-app specific optimizations are ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Harmonious color matching suitable for work environment (no more than 3 primary colors) 2) Proper layout spacing following mobile design guidelines (touch targets ≥ 44px) 3) Professional typography system (body font size ≥ 14px for mobile readability). Deduct 3 points for each crowded visual element, 5 points for unprofessional color schemes, and 5 points for poor mobile layout adaptation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to mobile interaction patterns: 1) Touch feedback delay ≤ 100ms 2) Page transition animations optimized for mobile performance 3) Clear visual hierarchy and navigation flow 4) Proper handling of mobile-specific interactions (swipe, pull-to-refresh). Deduct 5 points for each operation without proper mobile feedback, 3 points for laggy animations on mid-range devices, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

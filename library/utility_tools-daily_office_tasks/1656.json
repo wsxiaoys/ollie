@@ -1,0 +1,68 @@
+{
+  "index": 1656,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and functional. Add lunar holidays and integrate them to create a perpetual calendar code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the perpetual calendar core functionality fully implemented?",
+      "description": "Review whether the code accurately implements a perpetual calendar system that displays dates correctly across all years (past and future). Check that it properly handles leap years, month lengths, and weekday calculations. Score 0 if the core calendar logic is incorrect, 5 if basic functionality works but with edge case errors, and 10 if the calendar works flawlessly for any arbitrary date.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the lunar holiday integration complete and accurate?",
+      "description": "Evaluate the implementation of lunar holiday calculations. The code should accurately convert between Gregorian and lunar calendars and correctly identify lunar holidays. Verify the accuracy of the lunar date algorithm across different years. Deduct 5 points if the lunar calendar conversion has inaccuracies, 3 points if only major lunar holidays are included, and 2 points if regional lunar holidays are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the solar (Gregorian) holidays properly implemented?",
+      "description": "Check whether the code includes major international and regional solar holidays, with proper handling of holidays that fall on specific weekdays (like 'First Monday of September'). Verify that the code handles holidays that change dates annually. Deduct 3 points if only fixed-date holidays are supported, 2 points if movable holidays are missing, and 5 points if holiday categorization is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a comprehensive date navigation and search system?",
+      "description": "Assess the calendar's navigation capabilities, including the ability to jump between years/months, search for specific dates or holidays, and bookmark significant dates. Verify that users can easily find dates of interest through intuitive controls. Deduct 5 points if year/month navigation is cumbersome, 3 points if holiday search functionality is missing, and 2 points if there's no direct date input option. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid dates, out-of-range years, unsupported locales, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multi-cultural calendar systems integration 2. Historical event integration for significant dates 3. Personalized reminder system for recurring events). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of date calculation algorithms 2. Function modules unrelated to calendar functionality (e.g., non-date-related widgets) 3. Unnecessarily complex visualizations that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calendar logic/view/data layers), unit test coverage for date calculations, and appropriate data structures for holiday storage. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between the calendar engine and the UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern calendar design principles: 1) Clear visual hierarchy between months, weeks, and days 2) Proper differentiation of weekdays, weekends, and holidays 3) Professional color-coding system for different types of holidays. Deduct 3 points for cluttered date displays, 5 points for poor holiday highlighting, and 5 points for inconsistent date cell sizing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the calendar interactions conform to user expectations: 1) Month/year switching transitions under 300ms 2) Immediate visual feedback when selecting dates 3) Smooth hover states for interactive elements. Deduct 5 points for laggy month transitions, 3 points for delayed holiday information display, and 5 points for unresponsive date selection. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

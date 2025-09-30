@@ -1,0 +1,68 @@
+{
+  "index": 1097,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Create a ping pong score counter in HTML that can run on mobile devices.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the ping pong score counter functionality fully implemented?",
+      "description": "Check if the code accurately implements the basic score counting mechanism, including incrementing scores for each player, correctly identifying the serving player, and handling game points according to standard ping pong rules (first to 11 with 2-point lead). Score 0 if the core functionality is missing, 5 if only basic scoring is implemented, and 10 if it includes game/match logic with proper rules enforcement.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mobile device compatibility properly implemented?",
+      "description": "Evaluate whether the code includes mobile-specific features like responsive design (using viewport meta tags, media queries, flexible units), touch event handling (touchstart/touchend instead of just click events), and prevents zooming/scrolling issues during play. Deduct 3 points if responsive design is missing, 4 points if touch events aren't properly implemented, and 3 points if mobile gestures aren't prevented when needed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the interface provide clear visual feedback for score changes?",
+      "description": "Check if score increments are visually acknowledged through animations, color changes, or other feedback mechanisms. The current server should be clearly indicated and switch automatically according to the rules. Deduct 5 points if score changes have no visual feedback, 3 points if the serving player isn't clearly indicated, and 2 points if there's no visual difference between regular points and game points. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there state persistence or match history functionality?",
+      "description": "Evaluate whether the application can save the current state (using localStorage/sessionStorage), allow for game resets without page reload, and potentially track match history. Deduct 5 points if there's no way to persist state between page refreshes, 3 points if the reset functionality requires page reload, and 2 points if there's no match history tracking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid consecutive tapping, device rotation, browser back navigation, accidentally closing the browser, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Sound effects for points/games 2. Vibration feedback on mobile 3. Voice announcements of scores 4. Customizable player names). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems coexisting) 2. Function modules unrelated to ping pong scoring (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down score updates). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/state management), code maintainability, and performance optimization. Deduct 5 points if global state pollution is found; deduct 3 points if the code duplication rate is too high; deduct 2 points if event listeners aren't properly managed (potential memory leaks). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Score update feedback delay ≤ 100ms 2) Button touch area ≥ 44x44px for easy tapping 3) Clear visual distinction between interactive and non-interactive elements. Deduct 5 points for each operation without feedback, 3 points for laggy animations, and 5 points for hard-to-tap buttons on mobile. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

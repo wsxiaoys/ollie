@@ -1,0 +1,68 @@
+{
+  "index": 188,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Word Guessing Game\n\n### Gameplay\n1. **Choose a Letter**: Players select a letter to try to fill in the blanks of the word.\n2. **Feedback**: If the selected letter exists in the word, it will be displayed in the correct position; if it doesn't exist, the letter will be marked as incorrect and appear in the list below.\n3. **Guess the Word**: Through continuous testing and elimination of letters, players try to guess the complete word.\n\n### Game Features\n- **Logic and Memory**: The game not only tests players' logical thinking abilities but also requires good memory to recall which letters have already been tried.\n- **Learn New Vocabulary**: By constantly guessing different words, players can learn and memorize new vocabulary.\n- **Suitable for All Ages**: This game has no age restrictions; people of all ages can learn new words and test their memory through this format.\n\n### Game Tips\n- **Frequent Letters First**: First try using the most frequently occurring letters in English, such as E, A, R, etc.\n- **Start from Parts of Speech**: Based on the length of the word and known letters, predict the possible part of speech, such as verb, noun, etc.\n- **Pay Attention to Letter Combinations**: Consider common letter combinations like \"CH\", \"ST\", etc., which can help quickly narrow down the word range.\n\n### Summary\n\"Word Guessing Game\" is an educational and challenging game suitable for players who want to improve their vocabulary and logical thinking skills. This game format is simple but can effectively exercise the brain, making it suitable as a learning tool or recreational game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the game correctly implement the core word guessing mechanics?",
+      "description": "Check whether the code provides a complete word guessing system with proper word selection, letter validation, and state management. Look for proper initialization of a hidden word, tracking of guessed letters, and validation of player inputs. Score 0 if basic mechanics are missing, 5 if implementation is basic but functional, and 10 if the system properly handles all core gameplay elements with clean state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game's visual feedback and UI implementation complete?",
+      "description": "Evaluate if the game provides clear visual representation of the word being guessed (blanks/letters), already guessed letters (both correct and incorrect), and remaining attempts. Check if the UI updates appropriately after each guess. Score 0 if visual representation is missing, 5 if basic display is implemented but lacking polish, and 10 if the UI clearly communicates game state with proper styling and responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the game include a diverse and appropriate word database?",
+      "description": "Verify if the game includes a sufficiently large and varied word database, or implements functionality to fetch words from an external source. Check if words are categorized by difficulty levels or themes. Deduct 5 points if the game has fewer than 20 words, 3 points if words lack variety in length and difficulty. Award full 10 points for implementations with robust word databases or API integrations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the educational aspects of the game implemented?",
+      "description": "Assess whether the game includes educational features like word definitions, usage examples, or learning aids. Check if there's a system to track player vocabulary progress or word learning history. Score 0 if no educational elements exist, 5 if basic learning features are present, and 10 if comprehensive educational tools are integrated that align with the game's learning objectives.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, repeated letter guesses, special characters, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Hint system with intelligent suggestions 2. Word difficulty prediction 3. Statistics tracking and achievements 4. Multiplayer or competitive modes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to check letter validity) 2. Function modules unrelated to word guessing (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that distract from gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for letter selection. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "easy"
+}

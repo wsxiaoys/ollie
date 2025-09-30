@@ -1,0 +1,68 @@
+{
+  "index": 1450,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Implement, using HTML with Opencv.js, a method to set polygon coordinates on an image and extract text from within the selected polygon area.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the polygon coordinate selection system properly implemented?",
+      "description": "Check if the HTML interface allows users to create and modify polygon vertices on the image. The implementation should include point creation on click, vertex dragging, and completion of the polygon. Score 0 if no polygon creation exists, 5 if only basic point placement is implemented, and 10 if a complete, interactive polygon drawing system with editing capabilities is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image loading and display functionality robust?",
+      "description": "Evaluate whether the code properly handles image loading, including error handling for invalid images, support for different image formats (JPEG, PNG, etc.), and responsive sizing that maintains aspect ratio. The image should be properly displayed as a canvas element for OpenCV.js processing. Deduct 5 points if there's no image validation, 3 points if responsive sizing is missing, and 2 points if the canvas setup is incorrect. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the OpenCV.js integration correctly implemented?",
+      "description": "Assess the initialization of OpenCV.js, proper usage of cv.Mat objects, and memory management with .delete() calls to prevent leaks. Check for proper module loading detection and fallback mechanisms if OpenCV fails to load. Deduct 5 points for missing memory management, 5 points for no OpenCV loading verification, and 3 points for inefficient usage of OpenCV objects. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the text extraction from the polygon region correctly implemented?",
+      "description": "Verify that the code correctly masks the image using the defined polygon, applies appropriate preprocessing (like grayscale conversion, thresholding, noise removal) before OCR, and extracts text from only within the polygon. Check for OCR library integration (like Tesseract.js). Deduct 5 points if the masking is incorrect, 5 points if no preprocessing is applied, and 5 points if OCR integration is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid polygon shapes, extremely small polygons, images that fail to load, or browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-adjustment of polygon for better text recognition 2. Multiple polygon support with labeling 3. Text extraction result highlighting on the original image). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar image processing functions 2. Unnecessary UI elements unrelated to the polygon creation and text extraction task 3. Heavy computational methods that slow down browser performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/image processing/OCR logic), error handling, and code comments. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no meaningful comments explaining complex OpenCV operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean and intuitive UI for polygon creation 2) Proper layout spacing between controls and the image canvas 3) Professional visual feedback when selecting points and creating polygons. Deduct 3 points for each crowded visual element, 5 points for poorly contrasting colors making polygon points hard to see, and 5 points for chaotic button/control layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when placing polygon points 2) Smooth polygon dragging and reshaping 3) Clear indication when the polygon is complete and ready for text extraction. Deduct 5 points for each operation without feedback, 3 points for laggy polygon manipulation, and 5 points for confusing interaction patterns that don't follow standard conventions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Machine Learning",
+  "difficulty": "hard"
+}

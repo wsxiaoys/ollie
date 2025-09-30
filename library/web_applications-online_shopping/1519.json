@@ -1,0 +1,68 @@
+{
+  "index": 1519,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Write a WeChat mall application that includes sign-in rewards, lottery rewards, product categorization, in-store redemption, express delivery options, and directly applicable frontend and backend code. Also provide clear installation and practical usage instructions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat mall core e-commerce system fully implemented?",
+      "description": "Review whether the code accurately implements product management (CRUD operations), shopping cart functionality, order processing workflow, and payment integration through frontend/backend architecture. Check if product categorization with filtering/search is properly implemented, and whether inventory management is included. Score 0 if core shopping features are missing, 5 if only basic product display is implemented, and 10 if complete e-commerce workflow including payment processing is fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the gamification features (sign-in rewards and lottery system) properly integrated?",
+      "description": "Evaluate whether sign-in reward system includes consecutive day tracking, reward escalation logic, and anti-cheating mechanisms. Check if lottery system implements fair probability distribution, prize inventory management, and user participation limits. Deduct 5 points if reward algorithms are exploitable, 3 points if user progress tracking is inaccurate. Verify integration with user points/credits system and reward redemption flow. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dual fulfillment system (in-store redemption + express delivery) architected correctly?",
+      "description": "Check whether the system properly handles two distinct fulfillment workflows: in-store pickup with QR code generation/scanning and express delivery with shipping integration. Evaluate if inventory is properly allocated between channels, location-based store selection is implemented, and delivery tracking is functional. Deduct 5 points if inventory conflicts between channels exist, 3 points if store location services are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is WeChat ecosystem integration and user authentication properly implemented?",
+      "description": "Assess whether WeChat OAuth integration is correctly implemented for user login, WeChat Pay integration is functional, and WeChat sharing capabilities are included. Check if WeChat Mini Program APIs are properly utilized and user session management follows WeChat guidelines. Deduct 5 points if WeChat Pay integration is missing or non-functional, 3 points if user authentication flow has security vulnerabilities. Verify social sharing and Mini Program compliance. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as payment failures, network interruptions, inventory conflicts, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like concurrent user actions, session timeouts, and API failures, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the mall experience (e.g., 1. AI-powered product recommendations 2. Social sharing with referral rewards 3. Live streaming integration 4. AR product preview 5. Voice search functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple payment processing logics coexisting) 2. Function modules unrelated to mall operations (e.g., built-in games unrelated to rewards) 3. Fancy effects that affect performance (e.g., excessive animations during checkout). Deduct 3 points for each redundancy found, and directly deduct 10 points if core mall functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating business logic/API/database layers), database schema design, API documentation, and deployment configuration. Deduct 5 points if database relationships are poorly designed or lack proper indexing; deduct 5 points if APIs lack proper validation or documentation; deduct 5 points if no environment configuration management exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional e-commerce design standards?",
+      "description": "Evaluate whether the mall design follows modern e-commerce UI principles: 1) Product imagery with consistent aspect ratios and quality 2) Clear pricing display with proper currency formatting 3) Intuitive navigation with breadcrumbs 4) Mobile-responsive design optimized for WeChat browser. Deduct 3 points for each poorly designed product card, 5 points for confusing checkout flow, and 5 points for non-mobile-optimized layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the shopping interaction smooth and conversion-optimized?",
+      "description": "Judge whether the shopping experience follows e-commerce best practices: 1) Add-to-cart feedback ≤ 200ms 2) Smooth checkout flow with progress indicators 3) Clear call-to-action buttons with proper sizing for mobile 4) Loading states for all async operations. Deduct 5 points for each step in checkout without clear progress indication, 3 points for slow cart updates, and 5 points for hard-to-tap buttons on mobile. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

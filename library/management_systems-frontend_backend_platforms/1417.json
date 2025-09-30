@@ -1,0 +1,68 @@
+{
+  "index": 1417,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Database Management System with Multiple Database Support\n\nYou are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and demonstrable whenever possible. Create a database management system using Java for the backend and Vue for the frontend that supports CRUD operations on databases. The system should support multiple database types including MySQL, Oracle, MongoDB, and Doris. Each database type can have multiple database instances. The interface should allow switching between databases to perform CRUD operations and executing queries across multiple databases. Please provide sample code for such a project.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-database architecture properly implemented?",
+      "description": "Evaluate whether the system correctly implements an abstraction layer that can handle multiple database types (MySQL, Oracle, MongoDB, Doris). Check if the code includes proper connection management, interface adapters for each database type, and appropriate design patterns (like Factory, Adapter, or Strategy). Score 0 if only a single database type is supported, 5 if multiple databases are supported but with code duplication or tight coupling, 10 if a clean abstraction with proper inheritance or composition is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are database CRUD operations implemented completely across all database types?",
+      "description": "Review whether the code properly implements Create, Read, Update, and Delete operations for all required database types, handling the syntactical and structural differences between SQL databases (MySQL, Oracle) and NoSQL/analytical databases (MongoDB, Doris). Check for appropriate query builders or ORM implementations. Deduct 3 points for each database type with incomplete operations, and 5 points if transactions are not properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the database instance management system properly implemented?",
+      "description": "Check if the system allows adding, configuring, connecting to, and removing multiple instances of each database type. Verify if connection pooling is implemented, credentials are securely stored, and connection status monitoring is available. Deduct 3 points if connection pooling is missing, 3 points if configuration management is incomplete, and 4 points if dynamic instance management is not supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is cross-database query functionality implemented?",
+      "description": "Evaluate whether the code supports executing queries across multiple databases, handling data transformation, result merging, and potential schema differences. Check if it includes proper query routing, distributed transaction management, and error handling for partial failures. Deduct 5 points if only sequential queries are supported without integration, 3 points if data transformation is incomplete, and 2 points if result presentation is not unified. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as connection failures, query timeouts, syntax errors in user input, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include connection retry logic, query timeout handling, and user input validation. Give 10 points if all these are well-implemented, 5 points if only basic error handling exists, and 0 points if exceptions are not properly handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual query builder 2. Real-time database performance monitoring 3. Schema comparison tools 4. Query optimization suggestions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant database access layers or duplicate connection management 2. Unnecessary middleware or libraries that add complexity without clear benefits 3. Overlapping functionality between frontend and backend validation. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core database functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating database access/business logic/presentation layers), unit test coverage for critical database operations, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Vue frontend follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional visualization of database schema and query results. Deduct 3 points for cluttered database navigation elements, 5 points for poorly formatted query results display, and 5 points for inconsistent form design across different database operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the Vue frontend implements responsive interactions: 1) Query execution feedback with loading indicators ≤ 100ms 2) Smooth database switching without page reloads 3) Efficient large result set pagination and virtualization. Deduct 5 points for operations without visual feedback, 3 points for noticeable lag when switching between database types, and 5 points for poor handling of large query results. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

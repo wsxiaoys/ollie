@@ -1,0 +1,68 @@
+{
+  "index": 1203,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when presented. Please help me create an offline web page for a vocabulary-based English word pairing Tetris game, with a creamy white background for the webpage.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Tetris gameplay mechanism fully implemented?",
+      "description": "Evaluate whether the game implements the fundamental Tetris mechanics: block generation, movement (left, right, down), rotation, line clearing, and increasing difficulty over time. The English word pairing aspect should be integrated into the gameplay (e.g., matching words with definitions or synonyms). Score 0 if core mechanics are missing, 5 if basic mechanics work but word pairing is poorly integrated, 10 if both Tetris mechanics and word pairing work seamlessly together.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the vocabulary system properly designed and implemented?",
+      "description": "Check whether the code includes a robust vocabulary system with a varied word database, proper word-pairing logic (matching words with synonyms, antonyms, or definitions), and appropriate difficulty progression. Deduct 5 points if the vocabulary is too limited (<50 words), 3 points if the pairing logic is overly simplistic, and 2 points if there's no difficulty adjustment based on player performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management properly implemented?",
+      "description": "Assess whether the game includes proper state management for game initialization, gameplay, pausing, game over, score tracking, and high score storage (using localStorage). Check for clean state transitions and appropriate UI updates. Deduct 3 points for each missing state feature, and 5 points if the state management causes gameplay bugs. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the offline functionality properly implemented?",
+      "description": "Evaluate whether the game truly works offline using appropriate techniques (e.g., localStorage for saving game data, static asset bundling). Check if the application includes proper offline detection and user notification. Deduct 5 points if offline storage isn't implemented, 3 points if the game doesn't handle reconnection gracefully, and 2 points if there's no offline indicator. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user input, browser compatibility issues, varying screen sizes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Spaced repetition system for vocabulary learning 2. Voice pronunciation for English words 3. Visual hints for word associations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems overlapping) 2. Function modules unrelated to the Tetris vocabulary game (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data management layers), code organization, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no consideration for performance optimization for smooth gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Creamy white background as specified, with harmonious complementary colors 2) Clear visual distinction between Tetris blocks and word elements 3) Professional typography with readable text (game text ≥ 14px, sufficient contrast with background). Deduct 3 points for each cluttered UI element, 5 points for poor color combinations that strain the eyes, and 5 points for text that's difficult to read during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions feel responsive and intuitive: 1) Block movement responds within 100ms 2) Keyboard controls are intuitive with alternative touch controls for mobile 3) Clear visual and audio feedback for successful word pairing. Deduct 5 points for laggy block movement, 3 points for confusing control scheme, and 5 points for unclear feedback when words are paired correctly/incorrectly. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

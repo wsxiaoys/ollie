@@ -1,0 +1,68 @@
+{
+  "index": 776,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Be sure to ensure that the code you generate is executable when possible. Hello, I want to create a recipe search system, designing the frontend, backend, and algorithmic models. For the algorithmic models, I'm using Python and already have mature model code. Now I need your help designing the frontend and backend code, with requirements for rapid development and Java as the backend language.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the recipe search frontend interface well designed?",
+      "description": "Review whether the frontend code implements an intuitive and user-friendly interface with proper search inputs, filters (ingredient, cuisine type, preparation time, etc.), and result display. Check for responsive design that works across devices. Score 0 if the interface is not implemented, 5 if only basic search functionality exists, and 10 if the interface includes advanced filtering, auto-suggestions, and a visually appealing recipe card display.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Java backend architecture properly implemented?",
+      "description": "Evaluate the backend architecture for proper API design, RESTful principles, dependency injection, and service layer organization. Check if proper design patterns are used and if the code follows Java best practices. Deduct 5 points if there's no clear separation of concerns, 3 points if error handling is missing, and 3 points if data validation is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the recipe search algorithm effectively integrated with the backend?",
+      "description": "Check whether the Python algorithmic model is properly integrated with the Java backend (using technologies like REST API, gRPC, or JNI). Verify the integration implementation includes proper serialization/deserialization, error handling, and efficient data transfer. Deduct 5 points if integration is unreliable or inefficient, 3 points if there's no caching mechanism for frequently accessed recipes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data persistence layer properly designed?",
+      "description": "Evaluate the database schema design for recipe storage, user preferences, and search history. Check for proper indexing to support fast searches, ORM implementation, and query optimization. Deduct 5 points if there's no consideration for recipe metadata (like ingredients, nutritional info), 3 points if there's no transaction management, and 3 points if there's no database migration strategy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid search inputs, API failures, algorithm exceptions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Personalized recipe recommendations 2. Nutritional analysis visualization 3. Interactive cooking steps with timers). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search implementations) 2. Function modules unrelated to recipe search (e.g., a built-in weather widget) 3. Fancy effects that affect performance (e.g., excessive animations during recipe display). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Search results appear within 300ms 2) Recipe card animations controlled between 300-500ms 3) Clear visual feedback during search operations. Deduct 5 points for each operation without feedback, 3 points for visual stuttering during search result loading, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

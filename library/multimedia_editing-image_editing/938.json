@@ -1,0 +1,68 @@
+{
+  "index": 938,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and can be demonstrated. Write an image editor using canvas + JavaScript, providing the following features:\n\n1. A button to open PNG, BMP, and JPG images\n\n2. The canvas size is temporarily fixed at 800x800. When an image is loaded, the initial display state shows only the 800x800 portion starting from the top-left corner (0,0) of the image. For images smaller than 800x800, the canvas displays a gray background in areas where the image doesn't reach. For images larger than 800x800, the canvas provides sliders to help users navigate to different positions within the image.\n\n3. Image zoom in/out functionality: When an image is successfully loaded, users can zoom in/out using the mouse wheel. During zooming, the canvas size remains fixed at 800x800, but the portion of the image displayed in the canvas area changes. If zoomed in, ensure that the maximum zoom limit displays one pixel of the image as 3x3 pixels on the canvas.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image loading functionality properly implemented?",
+      "description": "Review whether the code correctly implements file input for PNG, BMP, and JPG formats, handles file loading events, and properly displays the image on canvas. Check if file type validation is performed and appropriate error handling exists for unsupported formats or corrupted files.0 points if image loading fails completely, 5 points if basic loading works but lacks error handling, 10 points if all formats load correctly with proper error messages.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the canvas initialization and image rendering implemented correctly?",
+      "description": "Verify that the canvas is properly initialized with 800x800 dimensions, the context is correctly set up, and the initial image rendering displays the top-left (0,0) portion correctly. Check if gray background is properly rendered for images smaller than canvas dimensions.Deduct 5 points if canvas initialization is incorrect, 3 points if the initial rendering position is wrong, and 3 points if small images don't show proper gray background. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the sliders for large images implemented and functioning properly?",
+      "description": "Evaluate whether horizontal and vertical sliders appear for images larger than 800x800, and if they correctly control the viewport position on the image. Check if sliders are proportionally sized based on the image-to-canvas ratio and if scrolling is smooth and responsive.Deduct 4 points if sliders don't appear for large images, 3 points if slider positioning is inaccurate, and 3 points if scrolling performance is poor. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the zoom functionality working correctly with mouse wheel events?",
+      "description": "Check if mouse wheel events are properly captured and translated to zoom operations on the image. Verify that zooming maintains the point under the cursor as the focal point, respects the maximum zoom limit (1px of image = 3x3px on canvas), and preserves image quality during zoom operations.0 points if zooming doesn't work, 5 points if basic zooming works but without focal point preservation, 10 points if zooming is fully implemented with all requirements met.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases such as very large images, unsupported file types, rapid zoom operations, and browser compatibility issues. Check if there's proper error handling for failed image loading, browser canvas limitations, and memory management for large images.Give 10 points for strong robustness handling all edge cases, 5 points for average robustness with some edge cases handled, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for additional useful features beyond requirements, such as: 1. Image rotation tools 2. Basic filters (brightness/contrast/saturation) 3. Crop functionality 4. Undo/redo capability 5. Image export in different formats/sizes.Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check for three types of redundancy: 1. Redundant canvas redraws that affect performance 2. Unnecessary event listeners or duplicate zoom/pan code paths 3. Overly complex implementations that could be simplified. Check if any code interferes with core image editing functionality.Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular organization (separation of concerns between image loading, rendering, UI controls), code reusability, proper variable/function naming, and maintainability. Check for memory leaks when loading multiple large images.Deduct 5 points for global state pollution or lack of design patterns, 5 points for code duplication rate over 30%, 5 points if memory management is poor. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Clean, minimal control panel layout 2) Proper spacing between controls 3) Consistent button styling and visual feedback 4) Clear visual indicators for zoom level and canvas boundaries.Deduct 3 points for each crowded visual element, 5 points for inconsistent control styling, and 5 points for poor visual feedback during operations. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether image rendering and manipulation have acceptable performance: 1) Smooth zooming without visible lag 2) Responsive slider movement for large images 3) Immediate visual feedback when loading images 4) No freezing during image operations.Deduct 5 points for each operation with noticeable lag, 3 points for visual artifacts during zooming/panning, and 5 points for sluggish response on larger images. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "easy"
+}

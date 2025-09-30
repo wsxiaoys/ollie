@@ -1,0 +1,68 @@
+{
+  "index": 423,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Create a complete HTML5 game code that includes virtual joystick controls, mobile system, NPC combat, vehicle driving and mission systems, with some NPCs owning vehicles that we can steal, and featuring a large map.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the virtual joystick control system properly implemented?",
+      "description": "Examine whether the virtual joystick provides smooth, responsive touch controls with proper event handling, tactile feedback, and customizable sensitivity. Check if it handles multi-touch events, provides visual feedback, and adapts to different screen sizes. Score 0 if joystick controls are missing, 5 if basic implementation exists but lacks responsiveness or visual feedback, and 10 if fully implemented with configurable deadzones and multi-directional input support.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mobile-friendly architecture properly designed and implemented?",
+      "description": "Evaluate if the code uses responsive design principles, optimizes for mobile performance (e.g., texture compression, asset loading strategies), implements proper touch events handling, and includes mobile-specific features like device orientation controls. Deduct 5 points if mobile detection and adaptation are missing, and 3 points if performance optimizations for mobile devices are inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the NPC combat system fully functional?",
+      "description": "Analyze if NPCs have proper AI behaviors (pathfinding, aggression ranges, combat tactics), health/damage systems, and provide appropriate challenge levels. Check for combat mechanics like hitboxes, weapon systems, and damage indicators. Deduct 5 points if NPCs lack basic AI behaviors, 3 points if combat interactions are buggy or incomplete. Give 10 points for a complete system with varied NPC types and combat behaviors.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the vehicle system and theft mechanic completely implemented?",
+      "description": "Check if vehicles have realistic physics (acceleration, braking, steering), collision detection, enter/exit animations, and if NPCs can own and drive vehicles. Validate if the player can approach NPC vehicles, steal them through appropriate mechanics, and if NPCs respond accordingly. Deduct 5 points if vehicle physics are unrealistic, and 5 points if the stealing mechanic is missing or poorly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as touch event errors, device orientation issues, resource loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather systems affecting gameplay 2. In-game economy with shops/upgrades 3. Day/night cycle with different NPC behaviors). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple control systems that conflict) 2. Function modules unrelated to the core gameplay (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down mobile devices). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input systems), proper use of design patterns, code organization, and asset management. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper asset preloading and caching strategies are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the UI follows modern game design principles: 1) Clear, non-intrusive HUD elements 2) Proper scaling across different device sizes 3) Consistent visual language and readable text (minimum 16px on mobile). Deduct 3 points for cluttered UI elements, 5 points for poor visibility during gameplay, and 5 points for inconsistent UI styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game maintains consistent performance: 1) Minimum 30 FPS during gameplay 2) Loading times under 5 seconds for scene transitions 3) Responsive controls with input lag under 100ms. Deduct 5 points for frequent frame drops, 3 points for janky animations, and 5 points for unresponsive controls during intense gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

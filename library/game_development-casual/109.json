@@ -1,0 +1,68 @@
+{
+  "index": 109,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes.\n\nPlease implement an environment sound effects and background music system using HTML and JavaScript.\n\n**Task**: Add environmental sound effects and background music to the game to enrich the atmosphere, and dynamically adjust sound effects according to different scenes.\n\n**Hint**: You can use sound effect triggers to control sound playback, and switch background music based on scene changes.\n\nPlease include some comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio loading and playback system fully implemented?",
+      "description": "Evaluate whether the code implements robust audio resource loading with preloading strategy, error handling for failed audio loads, and proper memory management. Check if the implementation includes both HTML5 Audio API and Web Audio API fallback options. Score 0 if core audio playback is missing, 5 if only basic playback is implemented without error handling, and 10 if it includes comprehensive audio resource management with loading indicators and fallback mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the environmental sound effects system properly implemented?",
+      "description": "Check whether the code implements a variety of environmental sound effects with proper trigger mechanisms based on user actions or environmental conditions. Evaluate if effects use spatial audio positioning, have appropriate volume levels, and include randomization for natural variation. Deduct 3 points if spatial audio is missing, 3 points if sound variety is limited (less than 3 effect types), and 5 points if trigger mechanisms are simplistic or hardcoded. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the background music system with scene-based transitions implemented?",
+      "description": "Review whether the code implements background music that changes based on game scenes/contexts with smooth crossfading transitions. Check if volume normalization is handled across different tracks, and if looping is properly implemented without audible gaps. Deduct 4 points if transitions are abrupt without crossfading, 3 points if music doesn't adapt to different scenes, and 5 points if looping implementation has gaps or glitches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the system provide audio controls and user preferences?",
+      "description": "Assess whether the implementation includes user controls for master volume, separate controls for music/effects volumes, mute options, and persistence of audio preferences. Check if the UI for these controls is accessible and intuitive. Score 0 if no audio controls exist, 5 if basic controls exist but lack persistence or separate volume controls, and 10 if comprehensive controls with preference saving are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser audio restrictions, autoplay policy limitations, unsupported audio formats, and mobile device constraints). Code with strong robustness should detect browser capabilities, provide fallbacks, and gracefully handle initialization failures with user prompts. Give 10 points for comprehensive error handling, 5 points for basic error checks, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the audio experience (e.g., 1. Procedural/dynamic audio generation 2. Audio visualization components 3. Context-aware adaptive mixing 4. Custom audio filters based on environment). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Multiple audio implementations doing the same thing 2. Unnecessarily complex audio processing that impacts performance 3. Audio features that don't contribute to the environment/atmosphere. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio manager/sound effects/music modules), abstraction level, code reusability, and documentation quality. Assess if the code follows an organized pattern like the audio manager pattern. Deduct 5 points if global audio state is poorly managed; deduct 5 points if the code has high duplication; deduct 5 points if comments are inadequate or misleading. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Is the audio interface intuitive and responsive?",
+      "description": "Evaluate whether audio controls follow modern UI principles: 1) Clear visual feedback when sounds play 2) Intuitive volume sliders with appropriate ranges 3) Consistent positioning of audio controls. Deduct 3 points for missing visual feedback, 5 points for confusing control layout, and 5 points for non-responsive audio interfaces. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the audio processing optimized for performance?",
+      "description": "Judge whether the audio system is optimized: 1) Efficient audio buffer management 2) Proper resource disposal when sounds are no longer needed 3) Audio throttling for multiple simultaneous sounds 4) Mobile-friendly implementation with battery considerations. Deduct 5 points for memory leaks in audio handling, 3 points for performance drops during multiple sound playback, and 5 points for excessive CPU/battery usage. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

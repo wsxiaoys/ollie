@@ -1,0 +1,68 @@
+{
+  "index": 1093,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Write a 64 hexagrams divination application in pure HTML, with two buttons on the interface: \"Start Shaking\" and \"Stop\". When \"Start Shaking\" is pressed, the names of the 64 hexagrams will start scrolling. When the \"Stop\" button is pressed, it will randomly display one hexagram name and show its corresponding divination text.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 64 hexagrams system completely and accurately implemented?",
+      "description": "Review whether all 64 hexagrams from the I Ching are correctly included with accurate names and corresponding divination texts. Check if hexagram data structure includes proper Chinese names, pinyin, and authentic interpretations. Score 0 if less than 50 hexagrams are included, 5 points if hexagrams are complete but texts are inaccurate or overly simplified, and 10 points if all 64 hexagrams with authentic divination content are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the hexagram scrolling animation mechanism properly implemented?",
+      "description": "Evaluate whether the 'Start Shaking' function creates a smooth, continuous scrolling effect that cycles through hexagram names at an appropriate speed (recommended 50-100ms intervals). Check if the animation uses requestAnimationFrame or setInterval effectively, and whether the scrolling creates a realistic divination atmosphere. Deduct 5 points if scrolling is choppy or too fast/slow, 3 points if animation doesn't loop properly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the random selection algorithm fair and the stop mechanism responsive?",
+      "description": "Check whether the 'Stop' button immediately halts scrolling and uses a proper random number generator (Math.random()) to ensure each hexagram has equal probability of selection. Verify that the stopping mechanism is instantaneous without delay and that the final result appears to be truly random across multiple tests. Deduct 5 points if randomization is biased, 3 points if stop response is delayed. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the divination result display comprehensive and well-formatted?",
+      "description": "Assess whether the selected hexagram displays complete information including hexagram name, traditional symbol representation, and detailed divination interpretation text. Check if the result presentation is clear, readable, and maintains cultural authenticity. Deduct 5 points if only hexagram name is shown without interpretation, 3 points if formatting is poor or text is truncated. Give 10 points if comprehensive hexagram information is elegantly presented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid button clicking, browser compatibility issues, missing hexagram data, etc.) and provide stable performance. Code with strong robustness should prevent double-clicking issues, handle edge cases gracefully, and maintain consistent behavior across different browsers. Give 10 points for excellent robustness, 5 points for average handling, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance the divination experience?",
+      "description": "Check whether the code includes thoughtful features that improve user engagement (e.g., 1. Traditional I Ching hexagram symbols display 2. Sound effects for authentic divination atmosphere 3. Divination history tracking 4. Hexagram interpretation with classical references). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple random generators) 2. Function modules unrelated to I Ching divination (e.g., unrelated games or calculators) 3. Excessive animations that distract from the spiritual nature of divination. Deduct 3 points for each redundancy found, and directly deduct 10 points if core divination functions are interfered with by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of hexagram data, UI logic, and animation control), maintainability, and clean structure. Deduct 5 points if global variables are overused or code structure is chaotic; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if hexagram data is hardcoded without proper data structure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design reflect appropriate cultural aesthetics and professional standards?",
+      "description": "Evaluate whether the design respects traditional Chinese aesthetics while maintaining modern usability: 1) Color scheme appropriate for spiritual/cultural context (earth tones, traditional colors) 2) Typography that honors the cultural significance (proper font choices for Chinese characters) 3) Layout that creates a contemplative atmosphere. Deduct 5 points for inappropriate modern flashy colors, 3 points for poor Chinese character rendering, and 5 points for cluttered layout that disrupts the meditative experience. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction intuitive and the divination flow seamless?",
+      "description": "Judge whether the divination process feels natural and engaging: 1) Button states clearly indicate when shaking is active 2) Scrolling speed creates anticipation without being tedious 3) Result presentation feels ceremonial and significant 4) Clear visual feedback for all user actions. Deduct 5 points for confusing button states, 3 points for poor timing in the divination sequence, and 5 points for anticlimactic result presentation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 683,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Please develop an online file upload and download management system where users can upload files through a front-end interface, with support for displaying current upload progress and file size. Administrators should be able to view all uploaded files through a back-end interface, with functionality for file downloading and deletion.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload functionality fully implemented?",
+      "description": "Evaluate whether the code correctly implements file selection, validation, and upload to server. Check for multiple file upload support, file type restrictions, file size limits, and proper error handling when uploads fail. Score 0 if core upload functionality is missing, 5 if basic upload works but lacks validation, 10 if all features including proper validation and error handling are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the progress tracking feature properly implemented?",
+      "description": "Check if the upload progress is accurately displayed with real-time updates. Verify implementation of progress bar or percentage indicators that update dynamically using XHR/Fetch with progress events. Assess if the system shows current upload speed and estimated time remaining. Deduct 5 points if progress updates aren't real-time, 3 points if speed/time estimates are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the file download functionality correctly implemented?",
+      "description": "Review whether users can download files with proper content disposition headers, correct MIME types, and optional download progress indicators. Check if large file downloads are handled efficiently (streaming vs. full memory load). Deduct 5 points if downloads lack proper headers or MIME types, 5 points if large files cause memory issues. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the admin management interface comprehensive and secure?",
+      "description": "Evaluate if the admin interface provides complete file management capabilities including listing, sorting, searching, downloading, and deletion. Check for proper authentication and authorization mechanisms to protect the admin functions. Deduct 5 points if search/sort functionality is missing, 5 points if authentication is weak or absent, 3 points if bulk operations aren't supported. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, server errors, invalid file types, oversized files, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Drag-and-drop upload support 2. Image/document previews 3. Client-side file compression 4. Resumable uploads for large files 5. Dark/light mode toggle). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload handlers) 2. Function modules unrelated to file management (e.g., unnecessary analytics) 3. Fancy effects that affect performance (e.g., excessive animations on file listings). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/API services/state management), error handling patterns, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper security measures for file uploads are missing (like sanitization). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional file listing and preview design (clear hierarchical information display). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic file listing layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload button and drag area clearly visible 2) File status changes (queued, uploading, complete, error) with clear visual feedback 3) Smooth transitions between upload states with appropriate animations (300-500ms). Deduct 5 points for each operation without feedback, 3 points for jarring transitions between states, and 5 points for confusing status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 779,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Design a set of frontend pages for plant protection software.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core plant monitoring UI fully implemented?",
+      "description": "Review whether the code accurately implements the plant monitoring dashboard with visualization of plant health metrics, disease identification areas, and treatment tracking. Score 0 if the core UI components are missing, 5 if basic plant status display is implemented, and 10 if comprehensive monitoring with interactive elements is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the plant disease identification feature implemented?",
+      "description": "Check whether the interface includes image upload/camera functionality for plant analysis, visual indicators for identified issues, and proper display of diagnosis results. Deduct 5 points if image processing capabilities are missing, and 3 points if the result presentation is poorly designed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are treatment recommendations and scheduling functionalities provided?",
+      "description": "Evaluate whether the interface provides contextual treatment recommendations based on identified issues, includes a calendar/scheduling system for treatment planning, and offers notification capabilities. Deduct 5 points if recommendations are static rather than contextual, and 3 points if scheduling features are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is a complete plant data management system implemented?",
+      "description": "Check whether the code includes comprehensive plant inventory management, historical data tracking with visualizations (growth charts, treatment history), and data export/sharing capabilities. Deduct 5 points if historical tracking is missing, and 3 points if data manipulation features are incomplete. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as image upload failures, offline usage, form validation, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR visualization for plant inspection 2. Voice-guided treatment instructions 3. Plant health prediction algorithms with visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image viewers) 2. Function modules unrelated to plant protection (e.g., a built-in generic calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations slowing down critical functions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/data services/state management), component reusability, and responsive design implementation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the interface is not responsive across different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows modern agricultural/scientific software principles: 1) Professional color scheme appropriate for plant monitoring (green/earth tones with clear alerting colors) 2) Proper data visualization hierarchy (critical alerts prominent, routine data accessible but not overwhelming) 3) Professional typography system (clear labeling, readable data points, consistent headings). Deduct 3 points for each cluttered screen, 5 points for inappropriate color schemes that hinder plant issue identification, and 5 points for confusing information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects enhance plant monitoring workflows: 1) Fast-loading disease identification results (≤2 seconds feedback) 2) Smooth transitions between plant records (300-500ms) 3) Intuitive treatment scheduling interactions. Deduct 5 points for each critical operation lacking loading indicators, 3 points for jarring transitions between key screens, and 5 points for unintuitive plant selection or navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

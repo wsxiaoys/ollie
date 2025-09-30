@@ -1,0 +1,68 @@
+{
+  "index": 660,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable if possible. Please write code to implement a legal document management system where lawyers can upload, categorize, and retrieve various legal documents. The system should support document template generation, key clause extraction, full-text search, and document comparison functions. The system needs to provide strict access control, record document operation logs, and include features for document expiration reminders and automatic archiving.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the document upload and storage functionality properly implemented?",
+      "description": "Review whether the code implements secure file uploading with proper validation (file type, size limitations, virus scanning), storage with encryption at rest, and appropriate file organization. Check for metadata extraction upon upload to facilitate categorization. Score 0 if no upload functionality exists, 5 if basic upload exists without security measures, and 10 if comprehensive secure upload with metadata extraction is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the document categorization and retrieval system properly designed?",
+      "description": "Evaluate the taxonomy implementation for legal document categorization (by practice area, document type, client, status, etc.). Check if the retrieval system supports multiple access patterns (hierarchical navigation, filtering, sorting). Deduct 5 points if categorization is limited to basic folders, 3 points if dynamic taxonomy generation is missing, and 2 points if bulk categorization operations aren't supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the document template generation and key clause extraction features functioning correctly?",
+      "description": "Check if the template system can dynamically generate documents with variable substitution, conditional sections, and proper formatting. For clause extraction, verify NLP/ML techniques for identifying important legal clauses with proper highlighting and cross-referencing capabilities. Score 0 if neither feature exists, 5 if only basic templating exists without clause extraction, and 10 if both are fully implemented with advanced capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "How effective is the full-text search and document comparison implementation?",
+      "description": "Assess the search engine implementation (indexing strategy, query optimization, relevance ranking) and verify search features like fuzzy matching, Boolean operators, and faceted search. For document comparison, check for efficient diff algorithms, visual highlighting of differences, and version history tracking. Deduct 5 points if search lacks advanced operators, 3 points if comparison doesn't handle complex document structures, and 2 points if performance degrades with large documents. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as duplicate uploads, corrupt files, search with no results, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted document summarization 2. Legal risk analysis based on document content 3. Client collaboration portals 4. Integration with court e-filing systems). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search engines running in parallel) 2. Function modules unrelated to legal document management (e.g., built-in social media features) 3. Fancy effects that affect performance (e.g., excessive animations in a professional legal tool). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating document processing/user management/security layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern legal software design principles: 1) Professional color scheme appropriate for legal context 2) Clean document preview and editing interfaces 3) Logical workflow organization with proper information hierarchy. Deduct 3 points for cluttered interfaces, 5 points for inconsistent design elements, and 5 points for poor readability of legal documents. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the security implementation comprehensive?",
+      "description": "Judge whether the system implements: 1) Role-based access control with fine-grained permissions 2) Comprehensive audit logging of all document operations 3) Document expiration and archiving automation 4) Data encryption both in transit and at rest. Deduct 5 points if access controls are simplistic, 3 points if audit logs are incomplete, 5 points if document lifecycle management is missing, and 5 points for inadequate encryption implementation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

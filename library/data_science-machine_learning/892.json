@@ -1,0 +1,68 @@
+{
+  "index": 892,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that any code you generate is executable for demonstration purposes. Please help me design a PyQt interface for a brain tumor system based on YOLOv8 deep learning detection.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "YOLOv8 integration completeness",
+      "description": "Evaluate how completely the YOLOv8 detection model is integrated into the PyQt application. Check if the code properly loads pretrained models, handles image preprocessing, and implements proper inference pipelines for brain tumor detection.Score 0 if YOLOv8 is not integrated at all, 5 if basic integration exists but lacks optimization, and 10 if the implementation includes proper model loading, inference pipeline, confidence thresholds, and NMS settings specific to medical imaging contexts.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Medical image handling capabilities",
+      "description": "Assess whether the application correctly handles medical imaging formats (DICOM, NIfTI) with proper metadata preservation. Check if it includes necessary preprocessing specific to brain MRI/CT scans (normalization, windowing) and supports different cross-sectional views.Deduct 3 points if standard medical formats aren't supported, 3 points if metadata isn't preserved, and 4 points if brain-specific preprocessing is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Visualization of detection results",
+      "description": "Evaluate how tumor detection results are visualized. Check if the interface includes proper bounding box overlays, segmentation masks, confidence scores, and multi-slice viewing capabilities for 3D data.Score 0 if visualization is absent, 5 if basic bounding boxes are implemented, and 10 if the system provides comprehensive visualization with color-coded overlays, adjustable transparency, and measurement tools for clinical assessment.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Clinical workflow integration",
+      "description": "Assess whether the PyQt interface supports a complete clinical workflow including patient data management, scan history, reporting capabilities, and integration points with hospital systems.Deduct 3 points if patient management is missing, 3 points if reporting functionality is absent, and 4 points if the system lacks interoperability features (DICOM networking, HL7). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted images, model loading failures, memory limitations with large datasets) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative features that are eye-catching",
+      "description": "Check whether the code includes surprise features that enhance the clinical experience (e.g., 1. Real-time volumetric measurements 2. Automatic report generation with findings 3. Comparative analysis between scans 4. Growth trajectory prediction).Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant features",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar functions (e.g., multiple image loading pipelines) 2. Function modules unrelated to tumor detection (e.g., generic image editing tools) 3. Fancy effects that affect performance or clinical accuracy.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core medical functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering quality",
+      "description": "Review modular design (such as separating medical processing/UI/model inference layers), unit test coverage (especially for critical detection algorithms), and build process automation.Deduct 3 points if global state pollution is found; deduct 3 points if the code duplication rate is too high (over 30%); deduct 4 points if there are no validations for medical data integrity. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface vision meets clinical standards",
+      "description": "Evaluate whether the interface follows clinical software design principles: 1) High contrast for tumor visualization 2) Consistent layout optimized for radiology workflows 3) Clear distinction between diagnostic and administrative features 4) Accessibility considerations for hospital environments.Deduct 3 points for poor tumor visibility, 3 points for workflow inefficiencies requiring excessive clicks, and 4 points for interfaces that don't follow medical software conventions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Dynamic interaction smoothness",
+      "description": "Judge whether the PyQt interface provides smooth interactions essential for clinical use: 1) Responsive zooming/panning of medical images ≤ 100ms 2) Background processing for heavy computations 3) Progress indicators for long-running operations 4) Responsive UI during model inference.Deduct 3 points for each laggy operation when handling medical images, 3 points for UI freezing during detection, and 4 points if the interface becomes unresponsive with larger datasets. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Machine Learning",
+  "difficulty": "hard"
+}

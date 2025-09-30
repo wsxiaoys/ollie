@@ -1,0 +1,68 @@
+{
+  "index": 1029,
+  "question": "You are a coding expert, please use your professional knowledge to generate accurate and professional responses. Take care to ensure the code you generate is executable. I specialize in automated printing. Please help me develop a simple yet sophisticated unmanned printing system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core printing functionality properly implemented?",
+      "description": "Review whether the code accurately implements essential printing functions: queue management, document processing pipeline, and printer communication protocols (such as IPP, CUPS, or direct driver integration). Score 0 if core printing logic is missing, 5 if basic printing is implemented without proper error handling, and 10 if the system includes comprehensive printing capabilities with status monitoring.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automated workflow management system complete?",
+      "description": "Check if the code implements a complete workflow from file submission to final printing, including file validation, preprocessing (format conversion if needed), print job scheduling, and post-processing notifications. Deduct 3 points if file validation is inadequate, 3 points if job prioritization is missing, and 4 points if there's no completion notification system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user interface for self-service printing intuitive and accessible?",
+      "description": "Evaluate whether the interface provides clear step-by-step guidance for users, supports multiple file upload methods, offers preview functionality, and includes payment processing if required. Deduct 3 points for confusing navigation, 3 points for limited file format support, and 4 points if the preview functionality is missing or inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a comprehensive error handling and recovery system?",
+      "description": "Assess whether the code includes robust error detection for common printing issues (paper jams, low toner, connectivity problems), provides clear user notifications, and implements recovery procedures. Deduct 3 points if error detection is limited, 3 points if notifications are unclear, and 4 points if recovery procedures are inadequate or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as unexpected file formats, large print jobs, concurrent user requests, power outages, and network interruptions. Code with strong robustness should gracefully handle these scenarios with appropriate logging and recovery mechanisms, giving 10 points. If the robustness is average, give 5 points, and if no exception handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Mobile app integration with QR code submission 2. AI-based document optimization for print quality 3. Smart resource estimation before printing 4. Print job analytics dashboard). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file processing pipelines) 2. Function modules unrelated to printing (e.g., unnecessary multimedia features) 3. Fancy effects that affect system performance (e.g., excessive animations in the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/printer communication layers), unit test coverage, and deployment automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if configuration management is poor with hardcoded values. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Response time for user actions ≤ 100ms 2) Clear progress indicators for printing operations 3) Intuitive status updates and feedback. Deduct 5 points for each operation without feedback, 3 points for confusing state transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

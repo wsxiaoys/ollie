@@ -1,0 +1,68 @@
+{
+  "index": 549,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Please implement an online image tagging and classification tool where users can upload images and add custom tags and categories to each image. The tool should support multi-level classification, tag search and filtering, and provide a visual gallery displaying all categorized and tagged images.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image upload and processing functionality properly implemented?",
+      "description": "Check if the code implements a complete image upload system with proper file validation, size restrictions, format checking, and error handling. Verify if images are properly stored and retrieved. Score 0 if image upload is not implemented, 5 if basic upload exists but lacks validation or error handling, and 10 if the implementation includes comprehensive validation, preview functionality, and robust error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the tagging system fully functional?",
+      "description": "Evaluate whether the tagging system allows users to add, edit, and delete custom tags for images. Check if tags can be applied to multiple images and if the interface provides an intuitive way to manage tags. Deduct 3 points if tag editing is not supported, 3 points if batch tagging is missing, and 4 points if there's no tag suggestion or autocompletion feature. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the multi-level classification system implemented correctly?",
+      "description": "Review whether the code supports creating hierarchical categories (e.g., Nature > Landscapes > Mountains) with proper parent-child relationships. Check if images can be assigned to multiple categories at different levels. Deduct 5 points if only single-level categories are supported, 3 points if category reorganization (moving subcategories) is not possible, and 2 points if visual hierarchy indication is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the search and filtering functionality comprehensive?",
+      "description": "Assess whether the tool offers advanced search capabilities including tag-based filtering, category filtering, combined filters, and sorting options. Check if the search is performant with large datasets. Score 0 if search is not implemented, 5 if only basic tag search exists, and 10 if the implementation includes real-time search, multiple filter combinations, and relevance sorting.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid image formats, network interruptions, large file uploads, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted auto-tagging 2. Image similarity detection 3. Tag cloud visualization 4. Drag-and-drop organization). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add the same tag) 2. Function modules unrelated to image tagging (e.g., a built-in audio player) 3. Fancy effects that affect performance (e.g., excessive animations when browsing images). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data management/UI/image processing layers), code reusability, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 20%); deduct 2 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional image gallery layout (consistent thumbnails, proper grid/masonry layout). Deduct 3 points for inconsistent thumbnail sizes, 4 points for poor visual hierarchy in the tagging interface, and 3 points for chaotic category display. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Image loading employs lazy loading and/or progressive rendering 2) Tag filtering produces immediate visual feedback 3) Gallery transitions are smooth when switching categories. Deduct 4 points for laggy image loading, 3 points for unresponsive filtering, and 3 points for abrupt category transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

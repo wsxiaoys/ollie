@@ -1,0 +1,68 @@
+{
+  "index": 547,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. ======== ROLE ========\nYou are an experienced code expert. I am providing you with a software development requirement description and asking you to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You will always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Before final output, carefully review all code and evaluate its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements include external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nCreate a frontend video color adjustment application where users can upload videos, adjust video brightness, contrast, and saturation, preview the adjusted video in real-time, and finally save the adjusted video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Video Upload and Processing Implementation",
+      "description": "Check whether the code correctly implements video file upload functionality, including file selection, format validation, and initial processing.0 points if no upload functionality is implemented, 5 points if basic file selection is available but lacks format validation, 10 points if complete upload functionality with proper format validation, error handling, and loading indicators is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Color Adjustment Features Implementation",
+      "description": "Evaluate whether the brightness, contrast, and saturation adjustment features are properly implemented with appropriate range controls and real-time application.Deduct 3 points for each missing adjustment feature. Deduct 2 points if adjustment ranges are inappropriate (too extreme or too limited). Deduct 2 points if adjustments don't apply in real-time. Full score is 10 points if all three adjustments work properly with appropriate ranges and real-time feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Real-time Video Preview Functionality",
+      "description": "Assess the implementation of real-time preview that shows color adjustments as they are applied, including preview performance and accuracy.0 points if no preview is available, 5 points if preview exists but has significant lag (>300ms) or inaccuracies in displaying adjustments, 10 points if preview is smooth (<100ms response) and accurately reflects all color adjustments.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Video Saving and Export Capabilities",
+      "description": "Check whether the code includes functionality to save the edited video with applied color adjustments, including format options and quality settings.0 points if saving functionality is not implemented, 5 points if basic saving is available but lacks format/quality options or progress indicators, 10 points if complete saving functionality with format options, quality settings, and progress indication is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported formats, large file sizes, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Preset color filters, 2. History/undo functionality, 3. Split-screen before/after comparison, 4. Batch processing).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video processing libraries used together) 2. Function modules unrelated to video editing (e.g., a built-in social sharing system) 3. Fancy effects that affect performance (e.g., excessive animations).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular design (such as separating video processing/UI/state management), code structure, performance optimization techniques, and memory management.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization is implemented for video processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Quality",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional controls for video editing (sliders with appropriate precision and visual feedback).Deduct 3 points for each poorly designed control element, 5 points for a cluttered or confusing interface layout, and 5 points for inconsistent styling across the application. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Performance and Responsiveness",
+      "description": "Judge whether the application performs efficiently: 1) Video processing operations complete within reasonable time (<500ms for preview updates) 2) UI remains responsive during video processing 3) Efficient memory usage to prevent browser crashes with large videos.Deduct 5 points if adjustments take >1s to reflect in the preview, 5 points if the UI freezes during processing, and 5 points if there's no implementation of memory management for large videos. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "easy"
+}

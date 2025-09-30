@@ -1,0 +1,68 @@
+{
+  "index": 1571,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration purposes. Create the programming for a game of \"Fight the Landlord\" (Chinese poker).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core card game logic fully implemented?",
+      "description": "Review whether the code accurately implements the 'Fight the Landlord' card rules, including proper card representation, card combinations validation (singles, pairs, triples, straights, etc.), and winning condition detection. Score 0 if core game mechanics are missing, 5 if basic card play is implemented but with rule gaps, and 10 if all game rules are complete and accurate.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the player roles and bidding phase properly handled?",
+      "description": "Evaluate the implementation of the landlord selection process, including bidding mechanism, role assignment (landlord vs farmers), and the proper handling of the three extra cards for the landlord. Deduct 5 points if bidding is not implemented, 3 points if the role assignment is incomplete, and 2 points if the extra cards mechanism is incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the turn-based gameplay properly implemented?",
+      "description": "Check whether the code enforces correct turn order, validates if a player's move is legal based on previous plays (card combinations must beat previous plays or start a new combination), and properly handles passing. Deduct 5 points for incorrect turn management, 3 points for faulty play validation logic, and 2 points for improper pass handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete AI opponent implementation?",
+      "description": "Assess whether computer players can make strategic decisions based on card combinations in their hands, understand the game state, and execute competitive play strategies. Basic AI should at least play valid cards; intermediate AI should recognize optimal plays; advanced AI should employ strategic thinking. Score 3 for basic, 7 for intermediate, and 10 for advanced AI implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid card selections, incorrect turn operations, edge case card combinations) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Card combination suggestion system 2. Game history recording with replay 3. Dynamic difficulty adjustment for AI 4. Multiplayer online capabilities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple card validation systems) 2. Function modules unrelated to the card game (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/player input layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional card visualization (clear suit and rank display, intuitive selection mechanism). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for unclear card representation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Card selection feedback delay ≤ 100ms 2) Card dealing and movement animations controlled between 300-500ms 3) Clear visual indication of whose turn it is and what cards were played last. Deduct 5 points for each operation without feedback, 3 points for choppy card animations, and 5 points for unclear turn indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

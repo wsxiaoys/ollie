@@ -1,0 +1,68 @@
+{
+  "index": 705,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. Please write a uni APP program that serves as a simple browser. By default, it will access https://m4zadtoh.rth1.xyz/. Navigating from this page will enter a new layout. Please refer to this article: https://uniapp.dcloud.net.cn/component/web-view.html",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic WebView browser functionality fully implemented?",
+      "description": "Review whether the code correctly implements the uni-app WebView component to load the default URL (https://m4zadtoh.rth1.xyz/). Check if the WebView is properly configured with essential properties like src, @message, and @error. Score 0 if the WebView is not implemented, 5 if basic loading works but lacks proper configuration, and 10 if fully implemented with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is navigation history management implemented properly?",
+      "description": "Evaluate if the code includes complete navigation capabilities with back/forward functionality, URL history tracking, and proper handling of the Android back button. Check for implementation of onNavigationBarButtonTap for iOS navigation. Deduct 5 points if history management is missing, 3 points if Android back button handling is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the URL address bar with refresh functionality implemented?",
+      "description": "Check if the code provides a functional URL address bar allowing users to enter and navigate to new URLs. Verify if a refresh button is implemented to reload the current page. Score 0 if neither feature is implemented, 5 if only one is present, and 10 if both are fully functional with proper UI feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is communication between WebView and the app implemented?",
+      "description": "Examine if the code properly implements JS-Native communication using the uni.webView.postMessage and @message event methods as per documentation. Check if the app can receive messages from loaded web pages and send messages back. Deduct 5 points if one-way communication is missing, and 3 points if error handling for messages is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid URLs, loading errors, network interruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Bookmark management 2. Night mode for web content 3. Ad-blocking capability 4. Screenshot or content sharing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple URL parsing methods) 2. Function modules unrelated to browser functionality 3. Fancy effects that affect performance (e.g., excessive animations during page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/controller/service layers), component reusability, and configuration management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if platform-specific adaptations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast loading, and 5 points for hard-to-find navigation controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

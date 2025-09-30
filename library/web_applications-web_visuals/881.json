@@ -1,0 +1,68 @@
+{
+  "index": 881,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Create a panoramic photo project using the Vue3 and Three.js technology stack.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Three.js panoramic rendering core fully implemented?",
+      "description": "Review whether the code correctly implements panoramic image mapping using Three.js SphereGeometry or BoxGeometry, including proper texture loading, UV mapping, and camera controls for 360-degree viewing. Score 0 if basic panoramic display is not working, 5 if only static panoramic view is implemented, and 10 if full interactive panoramic rendering with proper geometry and materials is完整implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue3 integration architecture properly designed?",
+      "description": "Check whether the Vue3 Composition API is correctly integrated with Three.js lifecycle, including proper reactive state management, component mounting/unmounting handling, and memory cleanup. Evaluate if ref/reactive are used appropriately for Three.js objects. Deduct 5 points if memory leaks are present, and 3 points if Vue reactivity conflicts with Three.js rendering loop. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are interactive controls and navigation mechanisms implemented?",
+      "description": "Evaluate whether mouse/touch controls for panoramic navigation are smooth and intuitive, including orbit controls, zoom functionality, and mobile device support. Check if control sensitivity is adjustable and if there are proper boundaries to prevent disorientation. Deduct 5 points if mobile touch controls are missing, and 3 points if zoom limits are not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the panoramic asset loading and optimization system complete?",
+      "description": "Check whether the code includes efficient image loading with progress indicators, supports multiple panoramic formats (equirectangular, cube maps), and implements proper error handling for failed loads. Evaluate if image preprocessing and compression are considered. Deduct 5 points if no loading states are shown, and 3 points if large images cause performance issues. Give 10 points if fully optimized with lazy loading and multiple format support.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as WebGL compatibility issues, image loading failures, browser resize events, device orientation changes, etc.) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance the panoramic experience?",
+      "description": "Check whether the code includes advanced features that elevate the user experience (e.g., 1. Hotspot annotations with interactive tooltips 2. Multiple panoramic scene transitions 3. Mini-map navigation 4. VR mode compatibility 5. Auto-rotation with pause on interaction). Add 2-3 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features or unnecessary complexity?",
+      "description": "Strictly check three types of redundancy: 1. Redundant Three.js scene/renderer instances 2. Unnecessary Vue components that don't contribute to panoramic functionality 3. Over-engineered animations or effects that impact performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core panoramic functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate high engineering quality?",
+      "description": "Review modular architecture (separating Three.js logic, Vue components, and utility functions), TypeScript usage for better type safety, and proper build configuration. Deduct 5 points if global state pollution is found or if Three.js objects are not properly disposed; deduct 5 points if code organization is poor with high coupling; deduct 5 points if build process lacks optimization for 3D assets. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional visual standards?",
+      "description": "Evaluate whether the UI overlay design follows modern principles: 1) Clean control interface that doesn't obstruct the panoramic view 2) Intuitive iconography for navigation controls 3) Proper contrast and visibility across different panoramic backgrounds 4) Responsive design for various screen sizes. Deduct 3 points for each poorly designed control element, 5 points for controls that interfere with panoramic viewing, and 5 points for poor mobile responsiveness. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the panoramic interactions smooth and performant?",
+      "description": "Judge whether the panoramic navigation meets performance standards: 1) Smooth 60fps rendering during navigation 2) Responsive controls with <50ms input delay 3) Smooth transitions between different viewing angles 4) Proper performance on mobile devices. Deduct 5 points for each noticeable frame drop during interaction, 3 points for laggy controls, and 5 points if mobile performance is significantly degraded. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1152,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable and demonstrable. Independently conceptualize and develop a \"Virtual Smart Home Control System.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the smart home device control system fully implemented?",
+      "description": "Review whether the code accurately implements device management through HTML/JavaScript, including support for multiple device types (lighting, temperature control, security systems, appliances). Check if real-time device status monitoring, remote control commands, and device grouping/scene management are included. Score 0 if core device interaction is not implemented, 5 if only basic on/off control is provided, and 10 if comprehensive device ecosystem with status feedback and automation rules is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time data synchronization and IoT communication implemented?",
+      "description": "Check whether the WebSocket/MQTT implementation includes device heartbeat monitoring, command acknowledgment mechanisms, and automatic retry on communication failure. Real-time sensor data streaming and bidirectional device communication are required. Deduct 5 points if message queuing is missing, and 3 points if device offline detection is not handled properly. Evaluate integration with common IoT protocols (HTTP REST, CoAP, or simulated APIs). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dashboard visualization and control interface professionally designed?",
+      "description": "Evaluate whether the dashboard uses modern data visualization techniques with real-time charts, device status widgets, and intuitive control panels. Check for responsive layout supporting both desktop and mobile interfaces. Require implementation of customizable dashboard layouts and widget arrangements. Deduct 5 points if data visualization is static or poorly designed, 3 points if mobile responsiveness is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the automation and scheduling system comprehensively constructed?",
+      "description": "Check whether the code includes intelligent automation features such as time-based scheduling, condition-triggered scenes, and rule-based device interactions. Verify implementation of scene presets, energy management optimization, and user behavior learning capabilities. Deduct 5 points if only basic timer functions are provided, and 3 points if scene management lacks flexibility. Give 10 points if advanced automation with multiple trigger conditions and complex rule chains is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as device offline scenarios, network interruption, invalid sensor readings, concurrent user operations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include graceful degradation, retry mechanisms, and comprehensive error handling, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the smart home experience (e.g., 1. Voice control integration 2. AI-powered energy optimization suggestions 3. Predictive maintenance alerts 4. Augmented reality device placement guide 5. Integration with weather APIs for automatic adjustments). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar control functions (e.g., multiple device management interfaces) 2. Function modules unrelated to smart home control (e.g., built-in games or social features) 3. Overly complex animations that impact dashboard performance (e.g., excessive particle effects on device status changes). Deduct 3 points for each redundancy found, and directly deduct 10 points if core smart home functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating device management/UI components/communication layers), configuration management, and deployment considerations. Deduct 5 points if global state pollution is found or proper state management patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if configuration is hardcoded without environment-based settings. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the smart home interface follows modern design principles: 1) Consistent design system with appropriate color palette for device status indication 2) Proper information hierarchy with clear device grouping and status visibility 3) Professional typography with readable font sizes (≥14px) and appropriate contrast ratios 4) Intuitive iconography for different device types. Deduct 3 points for each confusing UI element, 5 points for poor color accessibility, and 5 points for cluttered layout affecting usability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the control interactions conform to smart home UX expectations: 1) Device control response time ≤ 200ms with visual feedback 2) Smooth transitions between dashboard views (300-500ms) 3) Clear loading states for device commands 4) Intuitive gesture support for mobile devices 5) Real-time status updates without page refresh. Deduct 5 points for each unresponsive control action, 3 points for jarring transitions, and 5 points for unclear device status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

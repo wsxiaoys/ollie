@@ -1,0 +1,68 @@
+{
+  "index": 1456,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. Background: A food delivery robot car project with an architecture consisting of: Frontend using uniapp vue3 js, API using Django, database using Django's built-in sqlite, service using MQTT, and ROS1. Your task is to implement functionality through MQTT, JS, ROS1, and ROS-JS that enables remote control of the robot car through a tablet mini-program using a joystick controller.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the MQTT communication system properly implemented?",
+      "description": "Evaluate whether the MQTT implementation includes proper topic design, QoS levels configuration, retained message handling, and client identification. Check for proper handling of connection states, disconnection events, and reconnection logic. The system should implement a proper publish-subscribe pattern with appropriate topic filtering.Score 0 if MQTT is not implemented, 5 if basic MQTT communication is established but lacks robust handling, and 10 if it includes comprehensive topic hierarchy design, proper QoS configuration (QoS 1 or 2 for critical controls), error handling, and connection state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the joystick controller interface correctly implemented?",
+      "description": "Review the implementation of the joystick controller UI component in uniapp/vue3. Check whether it captures all necessary inputs (directional movement, speed control), has proper touch/drag event handling, provides visual feedback, and handles multi-touch scenarios. Verify the controller includes proper deadzone handling and input normalization.Score 0 if the joystick is not implemented, 5 if basic joystick functionality exists but lacks precision controls or visual feedback, and 10 if the joystick includes proper event handling, visual feedback, configurable sensitivity, deadzone handling, and graceful degradation for different screen sizes.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the ROS1 integration with MQTT correctly implemented?",
+      "description": "Examine whether the code properly bridges MQTT messages to ROS topics/services and vice versa. Check if ROS nodes are correctly initialized, if message types match between systems, and if transformations between JSON and ROS message formats are handled accurately. Verify that the system handles ROS connection issues gracefully.Score 0 if ROS integration is missing, 5 if basic bridging exists but without error handling or type validation, and 10 if there's complete bidirectional communication with proper message type handling, parameter validation, and error recovery mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the ROS-JS bridge properly implemented for real-time control?",
+      "description": "Assess whether the ROS-JS bridge properly handles websocket connections, manages connection lifecycle, provides proper security measures, and ensures minimal latency for robot control. Check if the implementation includes throttling mechanisms to prevent command flooding and handles network interruptions gracefully.Score 0 if the ROS-JS bridge is not implemented, 5 if a basic bridge exists but with noticeable latency (>200ms) or reliability issues, and 10 if the implementation ensures low-latency communication (<100ms), handles connection issues gracefully, and includes proper security measures and command throttling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (network interruptions, sensor failures, invalid user inputs, etc.) and provides graceful degradation or recovery mechanisms. Check for proper error logging, user notification, and fallback controls.Give 0 points if exceptions are not handled, 5 points if basic error handling exists but recovery is manual, and 10 points if comprehensive error handling with automatic recovery mechanisms is implemented for all critical components.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual trajectory planning 2. Real-time obstacle avoidance visualization 3. Configurable autonomous behaviors 4. Telemetry dashboard with robot status).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple control schemes overlapping) 2. Function modules unrelated to robot control (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., heavy animations that impact control responsiveness).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of UI/control logic/communication layers), code reusability, documentation quality, and maintainability. Check for proper version control practices, testing coverage, and build process automation.Deduct 3 points if global state pollution is found; deduct 3 points if design patterns are not properly used; deduct 2 points if code duplication rate is over 30%; deduct 2 points if documentation is insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the tablet mini-program UI follows modern design principles: 1) Harmonious color matching appropriate for robot control interface 2) Proper layout with clear hierarchy of controls 3) Appropriate visual feedback for control states 4) Responsive design that works across tablet orientations.Deduct 3 points for poor control placement or sizing, 3 points for confusing visual hierarchy, 2 points for lack of visual feedback on actions, and 2 points for poor responsiveness across orientations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the control system responsive with appropriate latency management?",
+      "description": "Judge whether the control system provides immediate feedback and handles latency appropriately: 1) Command execution delay ≤ 200ms 2) Visual feedback of command receipt within 50ms 3) Proper handling of command queuing during network instability 4) Appropriate emergency stop functionality.Deduct 3 points if command feedback exceeds 200ms, 3 points for lack of visual command acknowledgment, 2 points for poor network instability handling, and 2 points for inadequate emergency controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

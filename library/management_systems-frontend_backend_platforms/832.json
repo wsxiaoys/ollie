@@ -1,0 +1,68 @@
+{
+  "index": 832,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Help me write a system code for a tutoring center that includes an attendance system, a work progress tracking system, a system for organizing incorrect answers and notes, and a section for teacher comments and specialized feedback.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the attendance system fully implemented?",
+      "description": "Review whether the code implements a comprehensive attendance tracking system including check-in/check-out functionality, absence tracking, tardiness recording, and attendance reporting. Check if it has user authentication to prevent fraudulent check-ins. Score 0 if attendance tracking is missing, 5 if basic attendance is implemented without validation, and 10 if it includes all features with proper authentication and reporting capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the work progress tracking system properly designed?",
+      "description": "Evaluate whether the system tracks student progress effectively with features like milestone tracking, assignment completion status, time spent on tasks, and progress visualization. Check if it includes progress metrics and comparison against goals. Deduct 3 points if it lacks visual progress indicators, 4 points if historical data tracking is missing, and 5 points if it doesn't support custom progress goals. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the incorrect answers and notes organization system comprehensive?",
+      "description": "Check if the system properly categorizes and stores incorrect answers with associated notes, includes tagging or classification by topic/difficulty, and provides effective search/retrieval mechanisms. Verify if it supports various media types for explanations (text, images, audio). Deduct 5 points if categorization is missing, 3 points if search functionality is inadequate, and 5 points if it doesn't connect errors to learning resources. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the teacher feedback and comments system sufficiently detailed?",
+      "description": "Assess whether the system allows teachers to provide structured feedback, includes templated and customized comment options, supports attachment of resources, and offers a mechanism for tracking feedback implementation. Check if students can respond to feedback creating a dialogue. Deduct 3 points if feedback templates are missing, 4 points if there's no way to track if students reviewed feedback, and 4 points if the system doesn't support multimedia feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (invalid inputs, duplicate entries, concurrent access, etc.) and provides appropriate error handling with user-friendly messages. Check for data validation, transaction handling for database operations, and defense against common security vulnerabilities. Deduct 3 points for each unhandled critical error scenario, 5 points if input validation is inconsistent or weak, and 5 points if there's no graceful error recovery. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes unexpected valuable features such as: 1) AI-powered personalized learning path suggestions based on error patterns, 2) Gamification elements to improve student engagement, 3) Automated progress insights and recommendation engine, 4) Integration with external learning resources, 5) Mobile-friendly interfaces with notifications. Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1) Multiple implementations of similar functionality (e.g., different attendance tracking methods that serve the same purpose), 2) Features unrelated to tutoring center management (e.g., complex social networking capabilities), 3) Overengineered components that add complexity without proportional value. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with core functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the architecture (MVC/MVVM patterns), code organization, naming conventions, and test coverage. Check for proper separation of concerns, dependency injection, and database abstraction. Evaluate documentation quality and maintainability. Deduct 3 points for poor naming conventions, 3 points for excessive coupling between components, 3 points for inadequate documentation, and 4 points if testing is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Consistent color scheme with appropriate contrast ratios, 2) Intuitive navigation and information hierarchy, 3) Responsive design that works across devices, 4) Accessibility compliance. Deduct 3 points for inconsistent styling, 3 points for poor information architecture, 2 points for non-responsive elements, and 3 points for accessibility failures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the system provides appropriate feedback for user actions, maintains state consistency during operations, and offers intuitive workflows. Check if form submissions show loading states, operations have confirmation dialogs when appropriate, and users receive clear notifications about system status changes. Deduct 3 points for delayed feedback (>300ms), 3 points for confusing navigation flows, 2 points for missing confirmation on critical actions, and 3 points for inadequate error state handling. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 234,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for display. Create a webpage showing the moon's phase changes from the first to the thirtieth day of the lunar calendar.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the lunar phase simulation scientifically accurate?",
+      "description": "Check whether the code correctly represents the lunar phases according to astronomical principles (waxing crescent, first quarter, waxing gibbous, full moon, waning gibbous, third quarter, waning crescent, new moon). Review whether the calculation takes into account the 29.53-day lunar cycle rather than simply using a 30-day calendar. Score 0 if phases are incorrect, 5 if basic phases are present but with inaccuracies, and 10 if astronomically accurate with proper illumination angles.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the day-by-day phase transition visualization implemented?",
+      "description": "Evaluate whether the code provides a clear visual representation for all 30 days of the lunar calendar, with proper transitions between phases. Check if the illumination percentage matches the day number in the lunar cycle. Deduct 5 points if transitions are abrupt, 3 points if illumination angles are inconsistent, and 2 points if the shape of the moon is distorted. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there an interactive component allowing users to navigate between different days?",
+      "description": "Check whether users can interact with the visualization to select specific lunar days or navigate through the cycle (such as sliders, clickable days, or animation controls). Score 0 if no interaction exists, 5 if basic navigation is implemented but clunky, and 10 if smooth, intuitive navigation with immediate visual feedback is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is additional contextual information about lunar phases provided?",
+      "description": "Assess whether the code includes educational elements about each lunar phase (names, characteristics, cultural significance, or astronomical explanations). Score 0 if no information is provided, 5 if basic labels are present, and 10 if comprehensive information that enhances user understanding is integrated seamlessly with the visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, browser compatibility issues, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time comparisons with current lunar phase 2. Realistic lunar surface textures with shadows 3. Regional visibility indicators based on geography). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations or rendering logic that could be optimized 2. Function modules unrelated to lunar phases (e.g., unnecessary weather information) 3. Fancy effects that affect performance (e.g., excessive animations that distract from the lunar phase visualization). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization is obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating astronomical calculations/visualization/user interface layers), code reusability, and implementation efficiency. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the animation performance is poor (below 30 fps). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (appropriate night sky or space theme without being garish) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a distracting color scheme that diminishes the moon visualization, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click/selection feedback delay ≤ 100ms 2) Phase transition animations controlled between 300-500ms for smooth blending 3) Clear visual cues for current day selection. Deduct 5 points for each operation without feedback, 3 points for jerky animations during phase transitions, and 5 points for confusing navigation between lunar days. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

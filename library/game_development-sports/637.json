@@ -1,0 +1,68 @@
+{
+  "index": 637,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and displayable. \n\n## Role\nYou are an experienced code expert. You are provided with a software development requirement description, and you are required to generate project code based on this requirement. Strictly follow the rules to help users generate complete project code that is fully commented in simple and easy-to-understand language. Don't output anything else.\n\n## Output Rules\n1. You always generate complete, runnable project code. Please ensure the project is complete and executable.\n2. Ensure all code files you output are complete, don't omit any code.\n3. Carefully review and check all code before final output, evaluate its executability. If the code cannot be executed or contains errors, it needs to be regenerated.\n4. If the requirement involves external API access or needs to use user data (images, videos, audio, etc.), please provide simulated data.\n\n## Project Requirement Description\nImplement an equestrian show jumping game. The screen shows an equestrian arena with multiple obstacles (such as rails, water pits, etc.) and a rider with a horse. The player controls the direction of the horse through keyboard arrow keys and makes the horse jump by pressing the space bar. When the horse hits an obstacle, points are deducted based on the collision (e.g., knocking down a rail). When the horse successfully passes all obstacles and reaches the finish line, the game ends and displays the final score. The game needs to display the equestrian arena, obstacles, rider and horse, as well as the horse's movement and jumping animations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core equestrian game mechanic fully implemented?",
+      "description": "Review whether the code accurately implements horse movement controls using keyboard arrow keys and jumping with space bar. Check if the movement physics are realistic (acceleration, deceleration, turning radius) and if the jumping mechanism includes proper timing elements (approach speed affects jump height/distance). Score 0 if basic controls are missing, 5 if only rudimentary movement is implemented, and 10 if movement feels natural with appropriate physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the obstacle system properly designed and implemented?",
+      "description": "Evaluate if the game includes diverse obstacles (rails, water pits, walls, etc.) with proper collision detection. Check if obstacles have different properties (height, width, penalty values) and if collision detection is precise (distinguishing between clean jumps, rail knocks, or complete failures). Obstacles should be properly positioned in the arena to create a challenging course. Deduct 5 points if collision detection is unreliable, 3 points if obstacles lack variety, and 3 points if obstacle properties don't affect gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the scoring system complete and appropriate?",
+      "description": "Verify that the game implements a proper scoring system that deducts points based on specific collision types (e.g., -4 for knocking down a rail, -10 for refusing a jump). Check if the game tracks completion time and incorporates it into the final score. The scoring should follow equestrian show jumping rules. Deduct 5 points if the scoring system doesn't reflect different obstacle interactions, 3 points if time isn't factored into scoring, and 5 points if penalties aren't displayed during gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the horse and rider animations properly implemented?",
+      "description": "Assess whether the code includes smooth animations for walking, trotting, cantering, jumping, turning, and collision responses. The horse's movement should transition naturally between states, and the rider should maintain proper posture during jumps. Examine if sprites or 3D models are properly synchronized. Score 0 if animations are missing, 5 if only basic animations exist, and 10 if animations are fluid and contextually appropriate for all actions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid key presses, boundary conditions, collisions from unexpected angles, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather effects that impact gameplay 2. Customizable horse and rider appearances 3. Replay system with multiple camera angles). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems coexisting) 2. Function modules unrelated to equestrian show jumping (e.g., a built-in music mixer) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching representing an authentic equestrian arena 2) Proper layout spacing for UI elements (score display, timer, instruction prompts) 3) Professional font system with clearly visible text during gameplay. Deduct 3 points for each crowded visual element, 5 points for unrealistic or jarring visual representations of the arena/obstacles, and 5 points for poorly positioned UI elements that obstruct gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Input response delay ≤ 100ms 2) Smooth frame rate (minimum 30 FPS) 3) Clear visual feedback for jumps, collisions, and scoring events. Deduct 5 points for each action without proper feedback, 3 points for stuttering animations during complex movements, and 5 points for confusing visual cues that don't clearly indicate jump timing or obstacle positions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Sports",
+  "difficulty": "hard"
+}

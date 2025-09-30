@@ -1,0 +1,68 @@
+{
+  "index": 1221,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional replies. Make sure any code you generate is executable and functional. Help me write a small stock selection program with the condition: stocks that have broken through their yearly moving average within the last 7 days.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the stock data source integration properly implemented?",
+      "description": "Check if the code includes reliable API connections (Yahoo Finance, Alpha Vantage, etc.) with proper error handling. Verify if the data fetching includes necessary authentication, rate limiting management, and handling of network failures. Score 0 if no data source is specified, 5 if basic APIs are used without error handling, 10 if comprehensive data retrieval with fallback mechanisms is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the yearly moving average calculation correct?",
+      "description": "Verify the yearly moving average calculation methodology (standard 250 or 252 trading days). Check if the formula properly handles weekends/holidays and data gaps. Ensure the calculation doesn't suffer from look-ahead bias. Score 0 if calculation is mathematically incorrect, 5 if basic calculation is present but edge cases aren't handled, 10 if implementation is statistically sound.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the breakthrough detection algorithm properly implemented?",
+      "description": "Assess the breakthrough definition - verify if the code checks both price crossing above the moving average and the timing within the 7-day window. Check if the algorithm handles false signals (e.g., requiring confirmation over multiple periods). Deduct 5 points if the algorithm doesn't handle price gaps, and 3 points if it doesn't account for volatility. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the program include adequate screening parameters and filters?",
+      "description": "Evaluate if the program allows filtering by market capitalization, sector, trading volume, or other relevant metrics beyond just the moving average breakthrough. Check if parameters are configurable by users. Score 3 points for each useful filter implemented (volume threshold, sector selection, volatility filter), up to 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data points, API failures, invalid inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visualization of breakthrough patterns 2. Historical backtest capabilities 3. Alert system for new breakthroughs 4. Integration with fundamental data). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar screening methods 2. Function modules unrelated to stock selection 3. Computationally expensive operations that don't contribute to the core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data retrieval/analysis/presentation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for stock charts (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Data refresh/update delay ≤ 500ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus on breakthrough stocks. Deduct 5 points for each operation without feedback, 3 points for visual after-images during rapid data updates, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Statistical Analysis",
+  "difficulty": "medium"
+}

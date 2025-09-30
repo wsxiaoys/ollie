@@ -1,0 +1,68 @@
+{
+  "index": 412,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Please create a 30-minute countdown timer webpage and output it in HTML format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core countdown timer functionality fully implemented?",
+      "description": "Review whether the code accurately implements a 30-minute countdown timer with proper time calculations. Check for accurate second-by-second countdown, correct time formatting (MM:SS), and proper termination when reaching zero. Score 0 if the timer doesn't work at all, 5 if it has minor time calculation errors, and 10 if it precisely counts down from 30 minutes to zero.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are essential timer controls implemented?",
+      "description": "Evaluate whether the timer includes necessary control functions such as start, pause, resume, and reset. Each function should work correctly without glitches. Deduct 3 points if any single control is missing, and 5 points if controls are present but malfunction. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is visual feedback provided during countdown?",
+      "description": "Check whether the timer provides visual feedback during the countdown process. This could include changing colors as time decreases, progress indicators, or visual cues when reaching specific time thresholds (e.g., last 5 minutes, last minute). Deduct 5 points if no visual feedback exists beyond the numbers changing, give 5 points for basic visual feedback, and 10 points for comprehensive visual indicators that enhance user awareness of time progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there audio/visual notification when the timer ends?",
+      "description": "Evaluate whether the timer provides clear indication when it reaches zero. This should include visual alerts (color change, animation) and ideally audio notification. Give 3 points for basic visual indication, 7 points for enhanced visual effects, and 10 full points if both visual and audio notifications are implemented professionally.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid button clicking, browser tab switching/background processing, or page refresh) and provide recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Customizable time presets 2. Theme switching 3. Session counting or history 4. Pomodoro-style functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timer engines running simultaneously) 2. Function modules unrelated to a countdown timer (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the page). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating timer logic/view/control layers), code organization, and maintainability. Deduct 5 points if global variables are excessively used or if the code structure is chaotic; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling or if the code is poorly commented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (timer digits clearly visible from distance, appropriate contrast). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for poor readability of the timer digits. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Button click feedback delay ≤ 100ms 2) Smooth second/minute transitions 3) Clear visual focus on the current time remaining. Deduct 5 points for each operation without feedback, 3 points for jerky time transitions, and 5 points for hard-to-find control buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "easy"
+}

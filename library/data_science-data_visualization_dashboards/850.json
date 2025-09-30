@@ -1,0 +1,68 @@
+{
+  "index": 850,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Create a comprehensive dashboard for drowning victim behavior description data, which should include a comparison of data between witnesses, rescuers, and drowning victims, visualization design, and detailed data presentation. Output in HTML format to ensure it's executable.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the dashboard data structure and model properly implemented?",
+      "description": "Review whether the code correctly implements data models for the three subject types (witnesses, rescuers, and drowning victims). Check if the data structure allows for comparison across these groups. The implementation should include data normalization and proper typing. Score 0 if data models are missing, 5 if basic models exist but lack comparative capabilities, and 10 if comprehensive models with comparison functionality are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are appropriate visualization components selected and implemented?",
+      "description": "Evaluate the selection and implementation of visualization components (charts, graphs, heatmaps, etc.) for drowning behavior data. Components should match the data type being displayed (e.g., timeline charts for temporal data, spatial visualizations for location data). Deduct 5 points if visualizations are inappropriate for the data type, 3 points if they lack interactivity. The visualizations must effectively communicate differences between the three stakeholder groups. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the comparative analysis functionality comprehensive?",
+      "description": "Check whether the dashboard effectively enables comparison between witness, rescuer, and victim data. Look for side-by-side visualizations, differential metrics, and highlighting of discrepancies. The system should provide both quantitative and qualitative comparison mechanisms. Deduct 5 points if comparison is limited to basic metrics, and 8 points if no meaningful comparison functionality exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the dashboard implement effective filtering and drill-down capabilities?",
+      "description": "Assess whether the code includes robust filtering mechanisms that allow users to focus on specific aspects of drowning behavior data. Check for time-based filters, demographic filters, environmental condition filters, and the ability to drill down into specific incidents. The implementation should maintain context during exploration. Deduct 5 points if filtering is basic, and 8 points if drill-down capabilities are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data fields, malformed data, empty datasets, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Machine learning-based pattern detection in drowning behavior 2. Augmented reality visualization of drowning scenarios 3. Multi-language support for international incident comparison). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualizations (e.g., multiple similar charts showing the same data) 2. Function modules unrelated to drowning behavior analysis (e.g., weather forecasting) 3. Fancy effects that affect performance (e.g., excessive animations that distract from data interpretation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/UI layers), reusable components, and responsive design implementation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the dashboard is not responsive across device sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for data visualization (consideration for colorblind users) 2) Proper layout spacing with clear information hierarchy 3) Professional typography system (clear labels, legible data points, consistent styling). Deduct 3 points for each cluttered visualization, 5 points for poor color choices that hinder data interpretation, and 5 points for inconsistent layout that disrupts the analytical flow. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Data filtering response time ≤ 200ms 2) Smooth transitions between different views/filters 3) Clear visual feedback for user interactions with data points. Deduct 5 points for laggy transitions between visualization states, 3 points for lack of hover/selection states on interactive elements, and 5 points for unintuitive navigation between dashboard sections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 710,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that the code you generate is functional and can be executed. Build a 5-in-1 payment system frontend template in doce language for: 1. Meituan / 2. JD / 3. Pinduoduo / 4. DiDi / 5. Ctrip, each template should have its own dedicated title name.\n\nThis system is based on a semi-finished product that has been further developed and fixed. Many versions in the market have detail issues, but I have fixed many of these details. Mine is the only version on the market with these fixes. If anyone disagrees, they can compare their site with mine - I can definitely identify many problems!\n\n|  Payment Status | Order Cancellation | Order Delivery |\n| Order Expiration | Payment Success | Jump to Official Page |",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are all 5 payment templates properly implemented with accurate branding?",
+      "description": "Verify if each template (Meituan, JD, Pinduoduo, DiDi, Ctrip) is implemented with correct brand-specific color schemes, logos, and styling. Each template should have its own dedicated title name clearly indicated. Deduct 5 points for each missing platform, 3 points for incorrect brand styling on any platform, and 2 points for missing or incorrect title names. The full score is 20 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the code implement all the required payment status features?",
+      "description": "Check whether the code includes proper implementation of all required payment statuses: Payment Status display, Order Cancellation, Order Delivery, Order Expiration, Payment Success, and Jump to Official Page functionality. Each feature should have corresponding UI elements and event handlers. Deduct 3 points for each missing feature, and 2 points for partially implemented features. The full score is 20 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the payment status transitions properly handled?",
+      "description": "Evaluate how the system handles state transitions between different payment statuses. Check if there's a clear state management system, proper event listeners for status changes, and smooth visual transitions between states. Look for appropriate loading indicators, success/failure animations, and confirmation dialogs. Deduct 5 points if state management is missing, 3 points if transitions are abrupt or unclear, and 3 points if user feedback on state changes is insufficient. The full score is 15 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the code include the claimed fixes for common issues?",
+      "description": "Analyze whether the code includes specific fixes that address common problems in other implementations. Look for comments or implementation details that demonstrate deliberate improvements over standard templates, such as enhanced error handling, better responsiveness, optimization for edge cases, or improved security measures. At least 5 distinct fixes should be identifiable. Deduct 2 points for each missing fix. The full score is 15 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, payment failures, timeout scenarios, invalid inputs) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated payment success/failure indicators 2. Smart order status tracking 3. Customizable payment preferences). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple payment confirmation dialogs) 2. Function modules unrelated to payment (e.g., a built-in game while waiting) 3. Fancy effects that affect performance (e.g., excessive animations during payment processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating payment logic/view/network layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between UI components and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching that matches brand guidelines 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance during payment flow. Deduct 5 points for each operation without feedback, 3 points for visual after-images during transitions, and 5 points for hard-to-find key payment buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

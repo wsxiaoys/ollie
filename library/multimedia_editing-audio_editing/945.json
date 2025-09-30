@@ -1,0 +1,68 @@
+{
+  "index": 945,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure that the code you generate is executable for demonstration purposes. Using Python and the Kivy framework, write a streaming media player.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the media playback core functionality fully implemented?",
+      "description": "Review whether the code accurately implements media file loading, playback control (play/pause/stop), seek functionality, and volume control through Python/Kivy. Must include support for common media formats (MP4, MP3, AVI, etc.) and proper error handling for unsupported formats. Score 0 if core playback is not implemented, 5 if only basic play/pause works, and 10 if all standard media controls are fully functional with format validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the streaming media handling properly implemented?",
+      "description": "Check whether the implementation includes proper streaming protocols (HTTP, RTSP, HLS) support, buffering mechanisms, and adaptive bitrate handling. Must handle network interruptions gracefully with buffer status indicators. Deduct 5 points if no buffering strategy is implemented, 3 points if stream reconnection fails, and 5 points if no adaptive quality control exists. Full score requires seamless streaming with buffer management.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the playlist and queue management system designed?",
+      "description": "Evaluate whether the player includes playlist creation, file queue management, shuffle/repeat modes, and next/previous track navigation. Should support drag-and-drop reordering and persistent playlist storage. Deduct 5 points if no playlist functionality exists, 3 points if queue operations are buggy, and 2 points if no persistence mechanism is provided. Full implementation requires complete playlist ecosystem.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are media metadata and visualization features constructed?",
+      "description": "Check whether the code includes media metadata extraction (title, artist, duration, thumbnails), progress bar with timestamp display, and audio visualization elements. Must show current playback position with seekable timeline. Deduct 5 points if no metadata display exists, 3 points if progress tracking is inaccurate, and 2 points if no visual feedback for media information is provided. Full score requires rich media information display.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted media files, network timeouts, unsupported codecs, file permission errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time audio spectrum analyzer 2. Custom equalizer with presets 3. Picture-in-picture mode 4. Subtitle support with multiple languages 5. Casting/AirPlay functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple volume control mechanisms) 2. Function modules unrelated to media playback (e.g., built-in games or calculators) 3. Performance-heavy effects that don't add value (e.g., excessive animations during video playback). Deduct 3 points for each redundancy found, and directly deduct 10 points if core media functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating media engine/UI/network layers), proper Kivy widget usage, and code organization. Deduct 5 points if global state pollution is found or MVC pattern is not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if Kivy best practices are ignored (improper widget lifecycle management). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional media player design standards?",
+      "description": "Evaluate whether the overall design follows modern media player principles: 1) Dark theme compatibility for video viewing 2) Intuitive control layout with proper spacing (minimum 44px touch targets) 3) Clear visual hierarchy for media information display 4) Responsive design for different screen sizes. Deduct 3 points for each poorly positioned control element, 5 points for illegible text on video backgrounds, and 5 points for cluttered interface layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the media control interaction smooth and responsive?",
+      "description": "Judge whether the media controls provide immediate feedback: 1) Play/pause response ≤ 200ms 2) Seek operations reflect immediately in timeline 3) Volume changes provide audio feedback 4) Loading states are clearly indicated 5) Touch gestures work smoothly. Deduct 5 points for each unresponsive control, 3 points for laggy seek operations, and 5 points for missing loading indicators during buffering. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

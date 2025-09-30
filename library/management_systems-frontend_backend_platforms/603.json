@@ -1,0 +1,68 @@
+{
+  "index": 603,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Ensure the generated code is executable for demonstration. Please develop a company announcement management system. Administrators can publish announcements, set publishing and expiration times, and all logged-in users can browse existing announcements, while expired announcements should not be visible.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the announcement CRUD system fully implemented?",
+      "description": "Review whether the code accurately implements complete announcement management operations through proper backend APIs and frontend interfaces, including create, read, update, delete functionalities with proper form validation and data persistence. Score 0 if core CRUD operations are missing, 5 if only basic create/read is implemented, and 10 if all operations including batch management and rich text editing are fully supported.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the time-based visibility control mechanism properly implemented?",
+      "description": "Check whether the system correctly handles announcement publishing time, expiration time, and automatic visibility switching. Verify timezone handling, server-client time synchronization, and background scheduled tasks for expiration processing. Deduct 5 points if timezone conversion is missing, and 3 points if expired announcements still appear in listings. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user authentication and role-based access control system designed?",
+      "description": "Evaluate whether the system implements proper user authentication (login/logout), session management, and role differentiation between administrators and regular users. Check for proper permission validation on both frontend and backend. Deduct 5 points if frontend-only permission control is used, and 3 points if session timeout handling is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the announcement browsing and filtering functionality comprehensive?",
+      "description": "Check whether the code includes complete announcement browsing features such as pagination, search functionality, category filtering, sorting options (by date, priority), and responsive display. Deduct 5 points if pagination is not implemented, and 3 points if search functionality is missing. Give 10 points if advanced filtering and sorting are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid date inputs, network interruption, unauthorized access attempts, database connection failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time notification system for new announcements 2. Rich text editor with media embedding 3. Announcement read status tracking 4. Email/SMS notification integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple date picker components) 2. Function modules unrelated to announcement management (e.g., built-in chat system) 3. Fancy effects that affect performance (e.g., excessive animations on announcement cards). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/presentation/data layers), proper database schema design, API documentation, and error logging mechanisms. Deduct 5 points if SQL injection vulnerabilities are found or input sanitization is missing; deduct 5 points if the code lacks proper commenting and documentation; deduct 5 points if no logging system is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with proper contrast ratios for accessibility 2) Consistent layout spacing following grid systems 3) Professional typography hierarchy with readable font sizes (≥ 14px for body text). Deduct 3 points for each crowded interface section, 5 points for poor color accessibility, and 5 points for inconsistent visual elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user experience standards: 1) Form submission feedback with loading states 2) Smooth transitions between different views (300-500ms duration) 3) Clear visual hierarchy and focus management 4) Responsive design across different screen sizes. Deduct 5 points for each operation without proper feedback, 3 points for jarring transitions, and 5 points for poor mobile responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

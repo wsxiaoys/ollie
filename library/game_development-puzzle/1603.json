@@ -1,0 +1,68 @@
+{
+  "index": 1603,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, expert responses. Be sure to provide executable code whenever possible. Create a program for Tetris.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Tetris core game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the Tetris game grid system, piece generation (all 7 standard Tetriminos: I, O, T, S, Z, J, L), piece rotation with proper collision detection, line clearing logic, and gravity mechanics. Score 0 if core mechanics are missing, 5 if only basic piece movement is implemented, and 10 if all standard Tetris rules including wall kicks and T-spins are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the piece movement and control system responsive and accurate?",
+      "description": "Check whether the input handling includes smooth left/right movement, soft drop, hard drop, and rotation controls with proper key repeat rates. Evaluate if the movement follows standard Tetris timing (soft drop should be faster than gravity, hard drop should be instant). Deduct 5 points if input lag exceeds 50ms, and 3 points if diagonal movement or ghost piece preview is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the scoring and level progression system implemented correctly?",
+      "description": "Evaluate whether the scoring system follows standard Tetris scoring rules (single/double/triple/Tetris line clears with appropriate point values), includes level progression that increases game speed, and tracks statistics like lines cleared and total score. Deduct 5 points if scoring doesn't scale with level multipliers. Check if game over conditions are properly detected and handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management and data persistence properly structured?",
+      "description": "Check whether the code includes proper game state management for pause/resume functionality, high score persistence (localStorage or similar), and game reset capabilities. Evaluate if the game loop is properly implemented with consistent timing. Deduct 5 points if game state is not properly saved, and 3 points if the game loop has timing inconsistencies or frame rate issues. Give 10 points if fully implemented with smooth state transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid key presses, browser window resize, invalid game states, boundary conditions) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should prevent pieces from moving outside the game area, handle edge cases in rotation, and gracefully manage unexpected inputs, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Next piece preview and hold functionality 2. Particle effects for line clears 3. Sound effects and music 4. Mobile touch controls 5. Custom themes or skins). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection methods coexisting) 2. Function modules unrelated to Tetris gameplay (e.g., built-in social media integration) 3. Overly complex visual effects that impact performance (e.g., 3D transformations on every frame). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core game performance is affected by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), proper object-oriented or functional programming patterns, and clean code structure. Deduct 5 points if global state pollution is found or proper design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if functions are overly complex (>50 lines) without proper decomposition. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Clear game area boundaries with proper contrast 2) Readable score/level display with appropriate font sizing 3) Intuitive color coding for different Tetriminos 4) Proper spacing and alignment of UI elements. Deduct 3 points for each unclear visual element, 5 points for poor color contrast affecting gameplay, and 5 points for cluttered or confusing layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations and transitions conform to smooth gameplay expectations: 1) Piece movement animations should be fluid at 60fps 2) Line clear animations should be satisfying but not disruptive 3) Visual feedback for piece placement and rotation should be immediate 4) Game over transition should be clear and smooth. Deduct 5 points for each choppy animation, 3 points for missing visual feedback on important actions, and 5 points for frame rate drops below 30fps during normal gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1509,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible.\n\nBased on the CREATE TABLE `tb_mon_assessment_score` (\n  `N_PK_ID` bigint NOT NULL COMMENT 'Primary Key ID',\n  `C_TEAM_CODE` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Team Code',\n  `C_SALSE_CODE` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Salesperson Code',\n  `C_LEADER_CODE` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Team Leader',\n  `C_DEPT_CODE` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Affiliated Organization',\n  `C_ASSESSMENT` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Assessment Month',\n  `N_ASSESSMENT_SCORE` decimal(24,2) DEFAULT NULL COMMENT 'Assessment Score',\n  `C_REMARK` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT 'Core Work This Week',\n  `C_DEL_FLAG` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Delete Flag 1=Deleted, 0=Not Deleted',\n  `C_CRTR_CODE` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Creator',\n  `D_CRTR_TIME` datetime DEFAULT NULL COMMENT 'Creation Time',\n  `C_UPTR_CODE` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Updater',\n  `D_UPTR_TIME` datetime DEFAULT NULL COMMENT 'Update Time',\n  PRIMARY KEY (`N_PK_ID`) USING BTREE\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='Monthly Assessment Score Table';\n\nSearch Criteria:\n- Salesperson's Organization | Dropdown | Optional\n- Affiliated Team | Dropdown | Optional  \n- Salesperson | Dropdown | Optional\n- Month | Date control, range, yyyy-MM | Optional\n\nQuery List:\n- Salesperson | Auto-populated\n- Affiliated Team | Auto-populated\n- Team Leader | Auto-populated\n- Affiliated Organization | Auto-populated\n- Assessment Month | Auto-populated\n- Assessment Score | Auto-populated\n- Import Time | Auto-populated\n- Operations\n\nOperations:\n- Modify | Modify assessment score in the current list. Assessment score can only be a positive integer greater than 0. Cannot be modified if it crosses months compared to import time.\n- Delete | Cannot be modified if it crosses months compared to import time.\n\nButtons:\n- Search | Button\n- Reset | Button\n- Import | Button | Verify salesperson information, month, and assessment score during import. Generate according to previous format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the database interaction layer fully implemented?",
+      "description": "Review whether the code correctly implements CRUD operations for the tb_mon_assessment_score table, including proper SQL query construction, parameter binding, and connection management. Check if all table fields are properly mapped and handled. Score 0 if basic database operations are missing, 5 if only basic queries are implemented without proper error handling, and 10 if all operations including complex filtering and pagination are fully implemented with proper transaction management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the search criteria and filtering functions properly implemented?",
+      "description": "Evaluate whether all four search criteria (Organization dropdown, Team dropdown, Salesperson dropdown, Month date range) are correctly implemented with proper data validation and SQL query construction. Check if dropdowns are populated from related tables and if the month range picker works correctly with yyyy-MM format. Deduct 3 points for each missing or malfunctioning search criterion. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the business logic validations correctly enforced?",
+      "description": "Check whether the code implements critical business rules: 1) Assessment score validation (positive integer > 0) 2) Cross-month modification restrictions based on import time 3) Data import validation for salesperson, month, and score. Review if proper error messages are displayed when validation fails. Deduct 5 points if cross-month validation is missing, 3 points if score validation is incomplete, and 2 points for each missing import validation rule. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data import functionality robust and complete?",
+      "description": "Evaluate whether the import feature includes file format validation, data parsing, duplicate checking, batch processing, and rollback mechanisms on failure. Check if the system properly validates salesperson existence, month format, and score values during import. Deduct 5 points if batch processing is not implemented, 3 points if validation feedback is unclear, and 2 points if rollback mechanism is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as database connection failures, invalid input data, file upload errors, concurrent access issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance user experience?",
+      "description": "Check whether the code includes practical features that improve usability (e.g., 1. Bulk operations for multiple records 2. Export functionality with custom filters 3. Real-time validation feedback 4. Auto-save draft functionality 5. Advanced search with multi-criteria combinations). Add 2 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation logics for the same field) 2. Function modules unrelated to assessment management (e.g., built-in calculators or unrelated widgets) 3. Over-engineered features that don't add business value (e.g., complex animations on data grids). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data access layer/business logic/presentation layer), proper error handling, logging mechanisms, and code maintainability. Deduct 5 points if there's tight coupling between layers or no separation of concerns; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if proper logging and monitoring are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional management system standards?",
+      "description": "Evaluate whether the UI follows enterprise application design principles: 1) Consistent color scheme suitable for business environment 2) Proper data grid layout with clear column headers and sorting indicators 3) Professional form design with clear labels and validation feedback 4) Intuitive navigation and operation buttons placement. Deduct 3 points for each poorly designed form element, 5 points for unprofessional color choices, and 3 points for unclear data presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and intuitive?",
+      "description": "Judge whether the system interactions are optimized for business users: 1) Quick response to search and filter operations (≤ 2 seconds for typical queries) 2) Clear feedback for all operations including success/error states 3) Intuitive workflow from search to edit to save 4) Proper loading states and progress indicators. Deduct 5 points for each operation without clear feedback, 3 points for slow response times, and 5 points for confusing operation workflows. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

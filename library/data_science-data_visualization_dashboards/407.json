@@ -1,0 +1,68 @@
+{
+  "index": 407,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the code generated is executable and can be displayed.\n\n```python\nfrom flask import app, jsonify\nfrom pyspark import SparkConf\nfrom pyspark.sql.session import SparkSession\n\nsparkconf = SparkConf() \\\n    .setMaster(\"local[*]\") \\\n    .setAppName(\"MartialArtsProfessional\") \\\n    .set(\"hive.metastore.uris\", \"thrift://node1:9083\") \\\n    .set(\"spark.sql.warehouse.dir\", \"hdfs://node1:8020/user/hive/warehouse\") \\\n    .set(\"hive.metastore.schema.verification\", \"true\") \\\n    .set(\"hive.metastore.schema.version.record\", \"true\") \\\n    .set(\"spark.sql.hive.convertMetastoreOrc\", \"false\") \\\n    .set(\"spark.sql.shuffle.partitions\", \"8\")\n\nspark = SparkSession.Builder() \\\n    .config(conf=sparkconf) \\\n    .enableHiveSupport() \\\n    .getOrCreate()\nspark.sql(\"select * from ads_medical_system.department_analysis\").show()\n\n\n@app.route(\"/department\", methods=[\"GET\"])\ndef department_analysis():\n    '''\n    Department analysis\n    '''\n    df = spark.sql(\"select department,total_visits from ads_medical_system.department_analysis\")\n    return jsonify(df.collect())\n\n\n@app.route(\"/avg_fee\", methods=[\"GET\"])\ndef avg_fee_analysis():\n    '''\n    Average fee analysis\n    '''\n    df = spark.sql(\"select department,avg_fee from ads_medical_system.department_analysis\")\n    return jsonify(df.collect())\n\n\n@app.route(\"/avg_workday_fee\", methods=[\"GET\"])\ndef avg_workday_fee_analysis():\n    '''\n    Average workday fee analysis\n    '''\n    df = spark.sql(\"select department,avg_workday_fee from ads_medical_system.department_analysis\")\n    return jsonify(df.collect())\n\n\n@app.route(\"/avg_holiday_fee\", methods=[\"GET\"])\ndef avg_holiday_fee_analysis():\n    '''\n    Average holiday fee analysis\n    '''\n    df = spark.sql(\"select department,avg_holiday_fee from ads_medical_system.department_analysis\")\n    return jsonify(df.collect())\n\n\n@app.route(\"/visit_rank\", methods=[\"GET\"])\ndef visit_rank_analysis():\n    '''\n    Visit volume ranking\n    '''\n    df = spark.sql(\"select department,visit_rank from ads_medical_system.department_analysis\")\n    return jsonify(df.collect())\n\n@app.router(\"/unique_patients\", methods=[\"GET\"])\ndef unique_patients_analysis():\n    '''\n    Unique patient count analysis\n    '''\n    df = spark.sql(\"select department,unique_patients from ads_medical_system.department_analysis\")\n    return jsonify(df.collect())\n\n\n@app.router(\"/most_common_test\", methods=[\"GET\"])\ndef most_common_test_analysis():\n    '''\n    Most common examination items\n    '''\n    df = spark.sql(\"select most_common_test,avg_holiday_fee from ads_medical_system.department_analysis\")\n    return jsonify(df.collect())\n\n@app.router(\"/age\", methods=[\"GET\"])\ndef age():\n    df=spark.sql(\"select age,count(1) as result from dim_medical_system.dim_patient\")\n    return jsonify(df.collect())\n```\n\nUsing these interfaces, create a visually stunning medical visualization dashboard with HTML. The frontend code should run normally. Please provide complete code for each chart in a single HTML file.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the medical dashboard visualization fully implemented?",
+      "description": "Review whether the code creates a comprehensive dashboard that visualizes all the available API endpoints: department analysis, average fees (regular, workday, holiday), visit rankings, unique patients, common tests, and age distribution. Score 0 if visualization is missing, 5 if only basic charts are implemented, and 10 if all endpoints are visualized with appropriate chart types (bar charts, line charts, pie charts, etc.) for each data type.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is data fetching and integration properly implemented?",
+      "description": "Check whether the frontend properly handles API requests to all 8 endpoints, including error handling for failed requests, loading states, and data transformation before visualization. Verify that the code correctly parses the JSON responses from Flask endpoints. Deduct 3 points for each missing endpoint integration, and 5 points if there's no error handling or loading indicators. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dashboard layout and organization properly structured?",
+      "description": "Evaluate whether the dashboard follows best practices in information architecture: logical grouping of related metrics (e.g., fee-related charts together), hierarchical information display (overview first, details on demand), and responsive design principles. Deduct 5 points if charts are randomly placed without logical organization, and 5 points if the layout breaks on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive features implemented to enhance data exploration?",
+      "description": "Assess whether the dashboard includes interactive elements such as filtering capabilities, drill-down options, tooltips for detailed information, zoom functionality for dense visualizations, and cross-filtering between charts. Give 2 points for each well-implemented interactive feature up to a maximum of 10 points. Score 0 if no interactive features are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, empty data responses, unexpected data formats, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-refreshing data 2. Export functionality for reports 3. Custom theming options 4. User-configurable dashboard layout). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualizations (e.g., multiple charts showing the same data) 2. Visualization elements unrelated to medical data (e.g., irrelevant animations) 3. Fancy effects that affect performance (e.g., heavy animations causing lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data fetching/processing/visualization logic), code reusability for chart generation, and proper script organization. Deduct 5 points if global variable pollution is found; deduct 5 points if there's significant code duplication across chart implementations; deduct 5 points if there's no separation between data processing and visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for medical context (calming blues/greens, clear contrast for data) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for inappropriate color schemes for medical data, and 5 points for chaotic chart arrangement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Chart loading and transitions complete within 500ms 2) Interactive feedback delay ≤ 100ms 3) Clear visual cues for interactive elements. Deduct 5 points for sluggish chart rendering, 3 points for delayed interaction feedback, and 5 points for hidden or unclear interactive controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

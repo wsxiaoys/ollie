@@ -1,0 +1,68 @@
+{
+  "index": 235,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure the code you generate is executable for demonstration purposes. Implement curve drawing using ol.js.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a basic OpenLayers map initialization implemented correctly?",
+      "description": "Review whether the code properly initializes the OpenLayers (ol.js) map with appropriate configuration for projection, view settings, and base layers. Check if the map renders correctly with proper center coordinates and zoom level. Score 0 if map initialization is missing, 5 if basic initialization exists but with configuration issues, and 10 if fully implemented with proper configuration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are curve drawing functionalities properly implemented?",
+      "description": "Evaluate whether the code successfully implements curve drawing capabilities using ol.js. Check for support of different curve types (Bezier, spline, arc, etc.) and proper use of ol.geom classes. Review if control points are properly handled. Score 0 if no curve implementation exists, 5 if only basic single-type curves are supported, and 10 if multiple curve types are implemented with appropriate control point handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is interactive curve creation/editing functionality implemented?",
+      "description": "Check if the code allows users to interactively create and edit curves by adding/dragging control points. Evaluate whether proper event handling (click, drag, mouseover) is implemented for curve manipulation. Score 0 if no interaction exists, 5 if basic point-adding functionality exists but lacks editing capabilities, and 10 if comprehensive curve creation and editing is implemented with proper event handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is curve styling properly implemented with customization options?",
+      "description": "Review whether the code provides options for styling curves (color, width, dash pattern, etc.) using ol.style classes. Check if the styling can be dynamically changed and if there are reasonable defaults. Score 0 if no styling is implemented, 5 if basic styling exists but lacks customization, and 10 if comprehensive styling options are available with appropriate defaults and dynamic updating.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input coordinates, edge cases like overlapping control points, browser resize events, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Curve animation along a path 2. Real-time curve measurements 3. Curve snapping to features 4. Curve interpolation options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar curve algorithms 2. Function modules unrelated to curve drawing/mapping 3. Fancy effects that affect map performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating curve logic, drawing utilities, and UI components), proper code organization, and performant implementation patterns. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there is no separation between curve calculation logic and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional mapping application standards?",
+      "description": "Evaluate whether the overall design follows mapping UI principles: 1) Appropriate positioning of controls (zoom, pan, curve tools) 2) Clear visual differentiation between different curve types 3) Professional map styling with appropriate contrast to drawn curves. Deduct 3 points for poorly positioned controls, 5 points for indistinguishable curve types, and 5 points for poor contrast between curves and basemap. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the curve drawing interaction smooth and intuitive?",
+      "description": "Judge whether the curve drawing interactions conform to user expectations: 1) Immediate visual feedback during drawing/editing 2) Smooth curve rendering without jitter during manipulation 3) Intuitive control point interaction. Deduct 5 points for laggy curve updates, 3 points for unclear control point visualizations, and 5 points for unintuitive curve manipulation mechanics. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 395,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code examples whenever possible. How can Vue 3 code be used to implement a local application of DeepSeek that doesn't require an internet connection?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 3 application structure properly implemented?",
+      "description": "Check if the code includes proper Vue 3 setup with Composition API, properly structured components, and correct use of Vue 3 features (ref, reactive, computed, watch, etc.). Deduct 3 points if using Options API without justification, 5 points if Vue 2 patterns are mixed in, and 5 points if component architecture is monolithic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the offline capability implemented correctly?",
+      "description": "Evaluate whether the code implements Service Workers for offline cache, properly manages offline assets, and uses IndexedDB or localStorage for data persistence. Check if the application works completely offline after initial load. Deduct 5 points if Service Worker is missing, 3 points if offline state handling is incomplete, and 5 points if there are network dependencies not properly cached. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the local DeepSeek model integration properly implemented?",
+      "description": "Review whether the code correctly integrates a local DeepSeek model using WebAssembly, TensorFlow.js, or ONNX Runtime. Check if model loading, initialization, and inference are handled efficiently. Deduct 5 points if model initialization fails, 5 points if memory management is poor, and 3 points if the model size is not optimized for web use. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the application state management implemented effectively?",
+      "description": "Assess whether the code uses appropriate state management (Pinia, Vuex, or built-in Composition API) for handling the application state, model parameters, inference results, and user interactions. Deduct 3 points for global state pollution, 5 points for missing reactivity in critical paths, and 5 points for state inconsistencies. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as model loading failures, out-of-memory errors, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Progressive model loading 2. Export/import of conversation history 3. Customizable model parameters 4. Voice input/output integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar functions 2. Function modules unrelated to DeepSeek's core functionality 3. Fancy effects that affect performance and model inference speed. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/model inference/data management layers), unit test coverage, and build process optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not optimized for offline use. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during model inference, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

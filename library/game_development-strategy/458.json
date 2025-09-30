@@ -1,0 +1,68 @@
+{
+  "index": 458,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code when possible. Help me write a game using HTML with the following requirements:\n\n1. Use Canvas to draw the game screen\n2. Two factions (green/blue vs orange/pink)\n3. Different classes (warrior/archer) with different attributes\n4. Automatic pathfinding and attack logic\n5. Simple collision detection\n6. Skill cooldown system\n7. Basic sound effect support\n8. Add character animation system\n9. Add more game balancing mechanisms\n10. Add equipment system\n11. Add more visual effects (particle effects, lighting, etc.)",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the game implementation with Canvas complete and optimized?",
+      "description": "Review the Canvas initialization, game loop implementation, and rendering optimizations. Check whether the code efficiently uses requestAnimationFrame, implements proper canvas clearing/redrawing strategies, and handles canvas resize events. Score 0 if Canvas is not used at all, 5 if basic rendering is implemented with poor performance, and 10 if the implementation includes advanced techniques like layer management, off-screen canvas for complex elements, and maintains 60 FPS.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the two factions properly implemented with distinct visual and behavioral differences?",
+      "description": "Evaluate whether the green/blue and orange/pink factions have clearly differentiated visual designs, team-based logic, and balanced capabilities. Check for team identification systems (colors, emblems), team-specific bonuses/abilities, and proper team-based collision detection. Deduct 5 points if factions are only visually different without gameplay distinctions, and 3 points if team balance issues are obvious. Full score of 10 if factions are well-designed with unique characteristics and strategic depth.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "How well are the different character classes implemented?",
+      "description": "Assess the implementation of warrior/archer classes and their attributes. Check for proper class inheritance structure, unique attributes per class (health, damage, range, speed), and class-specific behaviors. Verify that warriors have appropriate melee combat mechanics while archers have proper range attack systems. Score 0 if classes don't exist or are purely cosmetic, 5 if basic class differences exist but lack depth, and 10 if classes have meaningful gameplay differences, proper balancing, and unique abilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "How sophisticated is the pathfinding and attack logic?",
+      "description": "Evaluate the implementation of pathfinding algorithms (A*, Dijkstra's, etc.) and combat logic. Check for obstacle avoidance, dynamic path recalculation, target selection intelligence, and attack range considerations. Verify that units properly navigate complex environments and engage enemies according to their class capabilities. Deduct 5 points if pathfinding frequently fails on basic obstacles, 3 points if attack logic doesn't consider proper range/angle. Full score requires efficient pathfinding implementation with minimal computational overhead.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, animation errors, resource loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects 2. Advanced AI behaviors like flanking or unit cooperation 3. Interactive environment elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the core game requirements (e.g., unnecessary social features) 3. Visual effects that severely impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or proper design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if game assets and code are not properly separated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Consistent faction color schemes and visual language 2) Non-intrusive HUD elements with proper information hierarchy 3) Clear visual feedback for player actions and game events. Deduct 3 points for cluttered UI elements, 5 points for poorly contrasting text or indicators, and 5 points for inconsistent visual style between game elements and UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game experience polished with proper feedback systems?",
+      "description": "Judge whether the game provides appropriate feedback through animations, sound effects, and visual indicators: 1) Character animations that clearly indicate their state 2) Sound effects that match actions and provide gameplay information 3) Visual effects for skills, damage, and game events that enhance understanding. Deduct 5 points for missing animation states, 3 points for poorly implemented sound systems, and 5 points for visual effects that obscure gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1136,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Implement a 2D grid map system on UGUI with a size of 100*100.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 2D grid map system core implementation complete?",
+      "description": "Review whether the code accurately implements a 100x100 grid system using UGUI components (GridLayoutGroup or custom implementation). Check if the grid cells are properly instantiated, positioned, and managed through efficient methods to avoid performance issues with 10,000 elements. Score 0 if no grid implementation exists, 5 if only basic grid layout is created without proper cell management, and 10 if the implementation includes efficient cell pooling or virtualization techniques for the large grid.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the grid cell data structure implementation effective?",
+      "description": "Evaluate if the code includes a proper data structure for managing 10,000 grid cells with clear separation between data models and visual representation. Check if it uses a 2D array, dictionary, or other appropriate collection to manage cell states. Deduct 5 points if no dedicated data structure exists, and 3 points if the implementation doesn't account for sparse data optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the grid visualization and rendering optimized?",
+      "description": "Check if the rendering approach employs virtualization or object pooling techniques necessary for a 100x100 grid (10,000 cells). Look for implementations like only rendering visible cells in the viewport, recycling UI elements, or using texture-based optimizations. Deduct 10 points if all 10,000 cells are instantiated at once with no optimization, 5 points if basic culling exists but frame rate drops are evident in scrolling/zooming operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the grid system provide necessary interaction capabilities?",
+      "description": "Evaluate whether the grid system supports core interactions: 1) Cell selection 2) Navigation/scrolling across the large grid 3) Zooming in/out functionality. Check for proper event handling that works efficiently across all 10,000 potential cells. Deduct 3 points for each missing interaction feature, and 5 points if the interaction handlers cause significant performance issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as different screen resolutions, dynamic resizing, fast scrolling edge cases, out-of-bounds access) and provide friendly error handling. Code with strong robustness should maintain performance even when rapidly manipulating the grid. Give 10 points for comprehensive error handling and graceful degradation, 5 points if only basic error checks exist, and 0 points if no exception handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Heat map visualization mode 2. A* pathfinding demonstration 3. Custom themes/skins for grid cells 4. Mini-map navigation for the large grid). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations that could be cached (e.g., repeatedly calculating grid positions) 2. Unnecessary component additions that affect performance (e.g., adding colliders to each cell) 3. Overly complex visual effects that aren't needed for a grid system (e.g., cell rotation animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core grid functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating grid data/view/controller layers), proper UGUI optimization practices, and adherence to Unity coding standards. Deduct 5 points if global variables are overused; deduct 5 points if there's no separation between grid logic and presentation; deduct 5 points if inefficient UI update patterns are used (e.g., frequent GetComponent calls). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the grid design follows Unity UI best practices: 1) Proper anchoring and layout considerations for different screen sizes 2) Consistent cell sizing and spacing 3) Visual hierarchy that clearly distinguishes grid from UI controls. Deduct 3 points for misaligned grid cells, 5 points for visual inconsistencies across the grid, and 5 points for poor contrast making grid elements difficult to distinguish. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the performance optimized for the large grid size?",
+      "description": "Judge whether the implementation can maintain at least 30fps on a mid-range device with the full 100x100 grid: 1) Frame rate consistency during scrolling 2) Memory usage optimization 3) Efficient update loops without excessive GC allocations. Deduct 5 points for each noticeable performance drop during grid operations, 3 points for excessive memory usage, and 5 points for frame freezes during grid manipulation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

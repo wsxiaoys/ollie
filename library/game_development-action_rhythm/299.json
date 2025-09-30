@@ -1,0 +1,68 @@
+{
+  "index": 299,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure the code you provide is executable and ready to demonstrate. Write a complete Pacman web game using HTML, CSS, and JavaScript.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Pacman gameplay mechanics fully implemented?",
+      "description": "Review whether the code correctly implements the classic Pacman mechanics: pac-dots collection, ghost AI behaviors (chase, scatter, frightened modes), power pellets that make ghosts vulnerable, player movement in four directions, and collision detection. Score 0 if core mechanics are absent, 5 if basic movement and pac-dot collection work but ghost AI is simplistic, 10 if all classic mechanics are faithfully implemented including proper ghost personalities and mode switching.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game board and level design properly implemented?",
+      "description": "Check whether the game has a well-structured maze with walls, paths, pac-dots, power pellets, and ghost home areas. Evaluate if the collision detection with walls works accurately, if the level design is playable, and if the game includes multiple levels or difficulty progression. Deduct 5 points if the maze doesn't match classic Pacman layouts, 3 points if collision detection is buggy, and 2 points if there's no level progression. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management and scoring system complete?",
+      "description": "Evaluate if the game properly manages states (start screen, active game, pause, game over, level completion) and includes accurate scoring (points for eating pac-dots, power pellets, vulnerable ghosts with increasing values for consecutive ghosts). Check if it tracks lives, high scores, and bonus fruit appearances. Deduct 5 points for incomplete state management, 3 points for inaccurate scoring system, and 2 points if high score persistence is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the animations and visual effects authentic to the Pacman experience?",
+      "description": "Assess whether the game includes classic Pacman animations: Pacman's mouth opening/closing while moving, ghost animations (including eyes that indicate direction), ghost vulnerability state with flashing before recovery, death animation, level introduction sequences, and fruit appearances. Deduct 3 points for each missing key animation and 5 points if animations significantly impact gameplay performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, browser resizing, timing issues, frame rate drops) and provide friendly error recovery. Code with strong robustness should maintain consistent gameplay experience across different devices and browsers. Give 10 points for excellent error handling and performance optimization, 5 points for average robustness with minor issues, and 0 points if game frequently breaks under normal usage conditions.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom level editor 2. Modern visual effects while maintaining classic gameplay 3. Adjustable difficulty settings 4. Mobile-friendly controls). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement control systems) 2. Function modules unrelated to Pacman gameplay (e.g., unnecessary mini-games) 3. Visual effects that affect performance without enhancing the core experience. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, reuse of common functions, and performance optimization. Deduct 5 points if global variable pollution is excessive; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design balances authenticity to classic Pacman with modern web standards: 1) Appropriate color scheme maintaining the classic look 2) Clean, readable UI elements for score, lives, and messages 3) Responsive layout that works across different screen sizes. Deduct 3 points for each usability issue, 5 points for significant departure from recognizable Pacman aesthetics without justification, and 5 points for non-responsive design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the player control experience smooth and responsive?",
+      "description": "Judge whether the control system provides a satisfying experience: 1) Input response time ≤ 50ms 2) Support for both keyboard and touch controls on appropriate devices 3) Predictable and consistent movement behavior. Deduct 5 points for perceivable input lag, 3 points for missing alternative control schemes, and 5 points if the movement feels erratic or unpredictable. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

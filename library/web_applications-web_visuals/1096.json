@@ -1,0 +1,68 @@
+{
+  "index": 1096,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Use React to build a single-page application.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete React single-page application structure implemented?",
+      "description": "Check if the code includes essential React application components: entry point (index.js/tsx), App component, routing system, and proper component hierarchy. Verify that create-react-app or another modern React setup is properly configured. Score 0 if only fragments are provided without a proper structure, 5 if basic structure exists but lacks organization, and 10 if a complete, well-organized SPA structure is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the application implement proper routing and navigation?",
+      "description": "Evaluate if React Router (or equivalent) is properly implemented with multiple routes, navigation components, and guards for protected routes if applicable. Check for URL parameter handling and proper history management. Deduct 3 points if only basic routing exists without nested routes, 5 points if there's no 404 handling, and 3 points if navigation state isn't preserved between rerenders. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is state management implemented effectively?",
+      "description": "Assess state management approach (useState, useReducer, Redux, Context API, etc.). Verify that global and component state are appropriately separated, and state updates don't cause unnecessary re-renders. Deduct 5 points for prop drilling beyond 3 levels, 3 points for inefficient state updates causing performance issues, and 5 points if no centralized state management is used when clearly needed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are React hooks used correctly and optimally?",
+      "description": "Check for proper implementation of React hooks (useState, useEffect, useCallback, useMemo, useRef, etc.) and adherence to the Rules of Hooks. Watch for dependency arrays in useEffect and memoization hooks. Deduct 3 points for each hook rule violation, 5 points for memory leaks in useEffect, and 5 points for excessive re-renders due to improper hook usage. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, invalid user inputs, loading states, etc.) and provide friendly error boundaries or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Performance optimizations like virtualized lists 2. Accessibility features beyond basic ARIA 3. Progressive Web App capabilities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management solutions coexisting) 2. Function modules unrelated to core requirements 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component structure (atomic design principles, reusability), code splitting implementation, and build process optimization. Deduct 5 points if components exceed 300 lines; deduct 3 points if prop types or TypeScript types are missing; deduct 5 points if no code splitting is implemented for larger bundles. Check for ESLint/Prettier configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent component styling (e.g., using styled-components, CSS modules, or a UI library) 2) Proper responsive design with media queries or fluid layouts 3) Professional typography system with proper hierarchy. Deduct 3 points for inconsistent styling between components, 5 points for non-responsive layouts, and 5 points for accessibility issues (contrast, focus indicators). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Loading states for asynchronous operations 2) Smooth transitions between routes with proper animations 3) Form validation with immediate feedback. Deduct 5 points for missing loading indicators, 3 points for jarring page transitions, and 5 points for delayed user feedback after actions. Check for optimization techniques like debouncing for search inputs. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

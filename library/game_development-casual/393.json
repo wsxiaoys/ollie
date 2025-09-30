@@ -1,0 +1,68 @@
+{
+  "index": 393,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Be sure to ensure that the generated code is executable for display. Help me create a claw machine (crane game) frontend game, which should be a directly runnable HTML version. The page should have a cute and rounded appearance, and include baby dragons, QQ figurines, and Mickey Mouse.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core claw machine gameplay mechanic fully implemented?",
+      "description": "Check whether the code implements the three main phases of claw machine gameplay: positioning, dropping, and grabbing. The claw should move horizontally in both X and Y axes, drop vertically when triggered, close to grab items, and retract. Verify that the claw movement has appropriate physics (acceleration/deceleration). Score 0 if core interaction logic is missing, 5 if only basic movement exists without proper physics, and 10 if all mechanics are properly implemented with realistic physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the specified prize items (baby dragons, QQ figurines, Mickey Mouse) properly implemented?",
+      "description": "Evaluate whether the code includes all three required prize types with distinct visual appearances. Each prize type should have proper collision detection with the claw and realistic physics when being grabbed or dropped. The prizes should be randomly distributed in the machine at the start. Deduct 3 points if any prize type is missing, 3 points if the prize physics are unrealistic, and 2 points if there's no variety in each prize type (e.g., different colors or sizes).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game container (claw machine cabinet) visually implemented with proper perspective?",
+      "description": "Check if the claw machine cabinet is properly rendered with a 3D-like perspective or isometric view that allows players to clearly see the prizes and claw positions. The machine should have transparent walls and a visible prize collection chute. Deduct 5 points if the perspective makes gameplay difficult, 3 points if the machine lacks depth perception, and 3 points if the collection mechanism isn't visually represented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game include proper controls and feedback mechanisms?",
+      "description": "Evaluate if the game provides intuitive controls (keyboard arrows or buttons) for claw movement and a clear button for dropping the claw. Check for visual and audio feedback during gameplay (button highlights, claw movement sounds, prize capture sounds). Deduct 3 points for unintuitive controls, 3 points for missing visual feedback, and 4 points for lack of audio feedback indicating success or failure.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, browser resizing, touch vs. mouse input differences) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Prize rarity system with special effects for rare items 2. Skill-based claw strength adjustment 3. Combo system for grabbing multiple items). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple control systems overlapping) 2. Function modules unrelated to the claw machine (e.g., a built-in unrelated mini-game) 3. Fancy effects that affect performance (e.g., excessive particle effects causing lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/physics layers), organized asset management, and code readability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if assets are not properly organized or optimized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet the 'cute and rounded' aesthetic requirement?",
+      "description": "Evaluate whether the design follows the requested cute aesthetic: 1) Rounded corners on UI elements (≥8px radius) 2) Pastel or bright, cheerful color palette 3) Cartoonish, child-friendly visual elements with proper proportions. Deduct 3 points for each angular/harsh visual element, 5 points for dull or inappropriate color schemes, and 5 points for realistic/non-cute styling that contradicts requirements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Claw movement responds within 100ms of input 2) Grabbing animations feel weighted and natural 3) Transition effects between game states are smooth. Deduct 5 points for laggy claw movement, 3 points for jerky prize physics, and 5 points for abrupt state transitions without proper animation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1635,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and presentable when possible. Functional goal: Implement a mobile H5 application based on Fabric.js JSON data for template replacement. Users only need to upload images, text, prices, and other content, and use Fabric.js to generate images for user download. The application should include canvas controls such as layer adjustment, font color, etc.\n\nTechnology stack: Vue3 + wot-design-uni component library.\nSpecial requirements: Mobile adaptation, embedded in a mini program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Fabric.js template replacement system fully implemented?",
+      "description": "Review whether the code accurately implements the Fabric.js template system with proper loading/parsing of JSON templates and handling of object replacements (images, text, prices). Score 0 if the core template replacement is not implemented, 5 if basic replacement works but has limitations, and 10 if the system handles all replacement types with proper validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the canvas editing controls comprehensive and functional?",
+      "description": "Evaluate the implementation of canvas controls including layer adjustment, font styling (color, size, family), object positioning, scaling, and rotation. Deduct 2 points for each missing essential control (layer management, text editing, image manipulation). The implementation should use Fabric.js APIs correctly and maintain object states properly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the mobile adaptation properly implemented?",
+      "description": "Check whether the application is properly adapted for mobile devices with responsive canvas sizing, touch interactions (pinch zoom, drag, etc.), and appropriate UI scaling. Verify that the canvas maintains proper aspect ratios across different screen sizes. Deduct 5 points if the canvas is not responsive, 3 points if touch gestures are not properly handled. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the mini-program embedding integration fully functional?",
+      "description": "Assess the integration with mini-program environments, including proper handling of context, lifecycle hooks, and platform-specific APIs. Check if the application handles permissions correctly (file system access, image picking) and manages state persistence within the mini-program context. Deduct 5 points if platform-specific adaptations are missing, 3 points if there are compatibility issues. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid JSON templates, failed image loading, network interruptions, memory constraints on mobile devices) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview while editing 2. One-click social sharing with custom thumbnails 3. Smart object alignment guides). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image upload methods coexisting) 2. Function modules unrelated to the template editing (e.g., unnecessary animations) 3. Resource-heavy features that affect mobile performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating Fabric.js canvas logic from Vue components), component reusability, and build process optimization for mini-program environments. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code doesn't follow Vue 3 composition API best practices; deduct 5 points if there's no performance optimization for mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows the wot-design-uni design system consistently: 1) Proper component usage without custom overrides that break design consistency 2) Mobile-first layout with appropriate touch targets (minimum 44×44px) 3) Professional typography system respecting the component library's defaults. Deduct 3 points for each UI inconsistency, 5 points for poor information hierarchy, and 5 points for illegible text on mobile screens. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects are optimized for mobile: 1) Canvas rendering maintains 60fps during manipulation 2) Image loading and processing includes loading states and optimization 3) Clear visual indicators during export/download process. Deduct 5 points for each interaction with noticeable lag, 3 points for missing loading indicators, and 5 points for unresponsive UI during heavy operations like image processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

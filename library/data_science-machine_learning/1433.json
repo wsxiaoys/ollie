@@ -1,0 +1,68 @@
+{
+  "index": 1433,
+  "question": "You are a code expert. Please use your professional expertise to generate accurate, professional responses. Be sure to provide executable code when possible. I want to develop my own text-to-image generation tool. What do I need to prepare? Please describe in detail, and ideally help me write some code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the text-to-image generation model selection and integration properly implemented?",
+      "description": "Check whether the code includes proper selection and integration of text-to-image models (such as Stable Diffusion, DALL-E, or Midjourney-like architectures). Assess if the code provides clear instructions for model download/installation, API integration, or local deployment. Score 0 if no specific model implementation is provided, 5 if only basic API calls are implemented, and 10 if there's comprehensive model integration with parameter tuning options.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the necessary dependencies and environment setup clearly specified?",
+      "description": "Evaluate whether the code includes complete environment setup instructions (Python version, GPU requirements, CUDA compatibility, memory needs) and dependency management (requirements.txt, Docker configuration, or virtual environment setup). Deduct 5 points if hardware requirements are not specified, 3 points if dependency versions are ambiguous. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the prompt engineering functionality implemented with appropriate controls?",
+      "description": "Assess whether the code implements prompt engineering capabilities, including prompt templates, modifier keywords, negative prompting, and weight/emphasis controls. Check if the system allows users to save, edit, and reuse successful prompts. Score 0 if basic text input only, 5 if simple prompt mechanisms exist, and 10 if advanced prompt engineering with guidance is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a comprehensive user interface for image generation and management?",
+      "description": "Verify that the code implements a functional UI (web-based, desktop application, or CLI) with proper image generation controls, preview functionality, batch processing capability, and history/gallery management. Deduct 5 points if the UI lacks image manipulation features, 3 points if generation parameters cannot be adjusted intuitively, and 5 points if the gallery/history management is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common failure scenarios (GPU memory errors, API rate limits, network interruptions, invalid prompts) and provides appropriate error handling with user-friendly messages. Code should include timeout handling, retry logic, and graceful degradation. Give 10 points for comprehensive error handling, 5 points for basic error catching, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Image interpolation between prompts 2. Automatic prompt improvement suggestions 3. Style transfer capabilities 4. Integration with external content APIs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant model implementations that serve the same purpose 2. Unnecessary preprocessing steps that don't improve output quality 3. Over-complicated UI elements that obscure core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating model interaction, UI, prompt processing, and image handling), configuration management, and scalability considerations. Deduct 5 points for global state pollution or monolithic architecture; deduct 5 points if the code lacks abstraction layers or has high coupling; deduct 5 points if configuration requires code changes rather than external files. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI design follows modern principles: 1) Clean layout with logical grouping of controls 2) Proper visual hierarchy highlighting important features 3) Consistent styling throughout the application 4) Responsive design accommodating different screen sizes. Deduct 3 points for cluttered interfaces, 5 points for inconsistent styling, and 5 points for poor accessibility features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the performance optimization adequately addressed?",
+      "description": "Judge whether the code implements performance optimizations: 1) Efficient model loading and caching 2) Batch processing capabilities 3) Resource management (memory usage, concurrent generations) 4) Progress indicators for long-running operations. Deduct 5 points for each missing optimization strategy, 3 points for not handling large image generations efficiently, and 5 points for lack of resource monitoring. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Machine Learning",
+  "difficulty": "hard"
+}

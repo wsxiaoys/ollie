@@ -1,0 +1,68 @@
+{
+  "index": 1608,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable and demonstrable. Help me write a software for analyzing grain and oil futures on a six-month cycle that can obtain real-time trading information and policies for domestic grain and oil products. The data should be sourced from the National Grain Trade Center and GrainOil Duoduo. Ideally, it should integrate with AI large models. Please write all the code for the entire project.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data acquisition system fully implemented?",
+      "description": "Review whether the code accurately implements web scraping or API integration with the National Grain Trade Center and GrainOil Duoduo. Check for proper authentication handling, rate limiting, error handling during data fetching, and data storage mechanisms. Score 0 if no data acquisition is implemented, 5 if only basic scraping without error handling is present, and 10 if robust data acquisition with fallback mechanisms and comprehensive error handling is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the six-month cycle futures analysis functionality properly implemented?",
+      "description": "Evaluate whether the code includes time series analysis algorithms appropriate for six-month cycle futures analysis (e.g., seasonal decomposition, cyclical pattern detection, trend analysis). Check for implementation of statistical methods like moving averages, ARIMA models, or other forecasting techniques. Deduct 5 points if only basic charting without actual cycle analysis is implemented, and 3 points if the analysis lacks statistical validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time trading information processing implemented?",
+      "description": "Check whether the code includes functionality to process and update real-time trading data, including websocket connections or frequent API polling, data transformation pipelines, and real-time visualization updates. Verify if price alerts, threshold notifications, or other real-time features are included. Deduct 5 points if data refresh rate is inadequate for trading decisions (>1 minute delay), and 5 points if there's no mechanism to handle network interruptions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the policy analysis integration with AI large models implemented?",
+      "description": "Assess whether the code effectively integrates with AI large models (e.g., GPT, BERT) for policy analysis, including proper API usage, prompt engineering for financial analysis, and context handling. Check if results from AI models are properly integrated into the analysis workflow. Deduct 5 points if AI integration is superficial with no domain-specific tuning, and 5 points if there's no evaluation mechanism for AI-generated insights. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, API changes, malformed data, missing values in time series) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-driven anomaly detection for market movements 2. Natural language query interface for market data 3. Custom alert system with multiple notification channels). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar analysis functions (e.g., multiple trend detection algorithms without clear purpose) 2. Function modules unrelated to futures analysis (e.g., general financial calculators not specific to grain/oil) 3. Fancy visualizations that affect performance without adding analytical value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data acquisition/analysis/visualization layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional financial software standards?",
+      "description": "Evaluate whether the overall design follows professional financial software design principles: 1) Color scheme appropriate for financial data (clear differentiation between positive/negative trends, alerts) 2) Proper layout of multiple data panels without overwhelming the user 3) Professional typography for financial data presentation (clear hierarchy, readable numbers). Deduct 3 points for each crowded dashboard panel, 5 points for confusing trend visualization color schemes, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive for trading analysis?",
+      "description": "Judge whether the dynamic effects support effective financial analysis: 1) Chart interaction response ≤ 200ms 2) Smooth transitions between different timeframes and analysis views 3) Intuitive filtering and comparison tools. Deduct 5 points if data filtering causes significant lag, 3 points for jumpy transitions between analysis views, and 5 points for hidden or complex access to critical trading information. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Predictive Modeling",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1215,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate can be executed and displayed. User registration and login system using HTML/CSS/Node.js/MariaDB.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user registration form properly implemented?",
+      "description": "Check whether the registration form includes essential fields (username, email, password, confirm password), client-side validation (input format, password strength), and clear error messages. Form should prevent submission with invalid data. Score 0 if basic form elements are missing, 5 if validation is incomplete, and 10 if all validations with proper UX feedback are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the login system securely implemented?",
+      "description": "Evaluate whether the login system implements security best practices: password hashing (using bcrypt or similar), CSRF protection, rate limiting for failed attempts, and secure session management. Deduct 5 points if passwords are stored in plaintext, 3 points if there's no protection against brute force attacks, and 3 points if sessions are improperly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the database connection and query handling properly implemented?",
+      "description": "Review the MariaDB connection setup, prepared statements usage to prevent SQL injection, proper error handling, and connection pooling for performance. Check if database operations are properly isolated in a data access layer. Deduct 5 points if SQL injection vulnerabilities exist, 3 points for improper error handling, and 3 points for lack of connection management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Node.js server architecture well-structured?",
+      "description": "Examine if the Node.js application follows proper MVC or similar architecture, uses middleware effectively (for authentication, logging, error handling), implements RESTful API patterns, and has proper route organization. Deduct 5 points for monolithic code without separation of concerns, 3 points for improper error handling, and 3 points for lack of middleware usage. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, database connection errors, authentication failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Two-factor authentication 2. Social login integration 3. Password recovery system 4. Remember me functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication logics coexisting) 2. Function modules unrelated to user authentication (e.g., unnecessary analytics) 3. Fancy effects that affect performance (e.g., heavy animations on login page). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating routes/controllers/models), unit test coverage, error logging, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if environment variables are not properly used for configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Success/error notification duration controlled between 3-5 seconds 3) Clear visual focus guidance for form fields. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between login and registration views, and 5 points for hard-to-find password recovery or form submission buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

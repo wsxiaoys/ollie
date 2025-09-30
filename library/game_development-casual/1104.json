@@ -1,0 +1,68 @@
+{
+  "index": 1104,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. I want to recreate a 3D Pinball Space Cadet game using Cocos engine version 3.85 with Java language. Please write a complete code including all functional modules. Since I'm a beginner, please provide step-by-step instructions in a very detailed manner on how to set up and add the code. I have already installed COCOS and VISUAL STUDIO CODE software.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Pinball game physics system properly implemented?",
+      "description": "Review whether the code accurately implements the pinball physics including collision detection, realistic ball movement, flipper mechanics, and spring launcher physics. Check if the physical properties like gravity, elasticity, friction, and momentum are correctly configured. Score 0 if core physics is missing, 5 if basic collisions work but lack realism, and 10 if physics closely resembles the original Space Cadet game.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all the essential game elements of Space Cadet Pinball recreated?",
+      "description": "Evaluate if all key components are implemented: flippers (2 main ones), bumpers, targets, ramps, drop targets, multiball mechanism, plunger, and the specific Space Cadet themed elements like launch ramp and wormholes. Each missing major element deducts 2 points. The game should visually resemble the original Space Cadet design. Score 10 if all elements are present with correct functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the scoring system and mission progression implemented?",
+      "description": "Check if the code includes the Space Cadet mission system (cadet, commander, captain ranks), bonus multipliers, multiball triggers, and accurate point allocation. Review if mission states are properly tracked and if visual/audio feedback is provided when missions are activated or completed. Score 0 if scoring is basic, 5 if some missions exist but lack progression, 10 if the full mission hierarchy is implemented similar to the original game.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Cocos 3D environment properly configured and optimized?",
+      "description": "Assess whether the code properly utilizes Cocos 3.85 features for 3D rendering, including proper camera setup, lighting, materials, and optimization techniques. Check if the implementation follows Cocos best practices for scene management and 3D object manipulation. Deduct 3 points for inefficient rendering approaches, 4 points if camera angles are poorly implemented, and 3 points if lighting doesn't match the original game's atmosphere.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as frame rate drops, physics edge cases, unexpected input sequences, etc.) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, scoring 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom table editor 2. Online leaderboards 3. Alternative camera views 4. Physics parameter customization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple physics systems coexisting) 2. Function modules unrelated to pinball (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics/game logic/view layers), class inheritance structure, unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design faithfully recreates the Space Cadet aesthetic while following modern principles: 1) Accurate visual representation of the original table 2) Proper UI layout for scores and game status 3) Professional font system matching the Space Cadet style. Deduct 3 points for each visual element that doesn't match the original game, 5 points for poor quality textures, and 5 points for inaccurate table layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game mechanics meet player expectations: 1) Flipper response time ≤ 50ms from button press 2) Consistent 60 FPS performance 3) Accurate ball physics without clipping or stuttering. Deduct 5 points for each 100ms of input lag, 3 points for frame drops below 30 FPS, and 5 points if ball physics behaves unrealistically during fast movement. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

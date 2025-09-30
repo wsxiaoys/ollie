@@ -1,0 +1,68 @@
+{
+  "index": 1189,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display purposes. Create a preview webpage for Font Awesome, displaying each icon.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Font Awesome preview core functionality implemented?",
+      "description": "Review whether the code accurately implements a catalog of Font Awesome icons that displays all available icons. Check if icons are properly loaded and rendered using the Font Awesome library. Score 0 if icons are not displayed at all, 5 if only basic display is implemented, and 10 if a complete, categorized display is implemented with proper naming convention for each icon.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the icon search functionality implemented?",
+      "description": "Evaluate whether the implementation includes a search mechanism that allows users to filter icons by name, category, or tags. Check if the search is responsive (updates results as the user types) and has error handling for no results. Deduct 5 points if search is missing, 3 points if it's basic without real-time filtering, and 2 points if it lacks visual feedback when no results are found. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the icon preview interaction properly designed?",
+      "description": "Assess whether the code includes interactive preview functionality such as hovering effects, click-to-copy functionality for icon names/classes, and the ability to view icons at different sizes or styles (solid, regular, brands, etc.). Deduct 5 points if there's no interaction with icons, 3 points if only basic hover effects exist, and 2 points if copy functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is proper categorization and pagination implemented?",
+      "description": "Check whether icons are organized by categories (such as 'business', 'communication', etc.) with appropriate pagination or infinite scrolling to handle the large number of Font Awesome icons. Deduct 5 points if categorization is missing, 3 points if pagination/infinite scrolling is not implemented for large icon sets, and 2 points if the category navigation is not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as Font Awesome CDN loading failures, missing icon references, browser compatibility issues) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Color customization for icons 2. Export options for selected icons 3. Icon comparison or favorites system 4. Animation previews for animated icons). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant loading of Font Awesome resources (multiple versions or duplicate imports) 2. Feature modules unrelated to icon preview (e.g., a built-in calendar) 3. Heavy visual effects that affect performance (e.g., excessive animations when scrolling through icons). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/rendering/interaction logic), caching strategy for icons, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations exist for rendering hundreds of icons. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching that highlights icons without overwhelming them 2) Proper layout spacing with consistent grid or flexbox alignment 3) Professional typography that doesn't compete with icon display. Deduct 3 points for each crowded visual element, 5 points for a color scheme that makes icons hard to distinguish, and 5 points for inconsistent spacing between icon elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Quick icon loading with appropriate placeholders 2) Smooth filtering transitions when searching or changing categories 3) Responsive layout that adapts to different screen sizes. Deduct 5 points for noticeable lag when loading large icon sets, 3 points for jarring transitions between views, and 5 points for poor mobile responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

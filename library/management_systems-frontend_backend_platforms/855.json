@@ -1,0 +1,68 @@
+{
+  "index": 855,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable and demonstrable. Write a hair salon membership management system that includes recharging functions, entryway, and regular membership management system features.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the membership management core system fully implemented?",
+      "description": "Review whether the code implements essential membership management features including member registration, profile management, membership levels, and status tracking. Score 0 if the core system is not implemented, 5 if only basic member data storage is available, and 10 if comprehensive membership lifecycle management (registration, upgrades, expiration handling) is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the recharging function complete and secure?",
+      "description": "Evaluate if the recharging system includes multiple payment methods, transaction records, balance history, secure payment processing with validation, and proper receipt generation. Deduct 5 points if transaction logging is missing, 3 points if payment validation is weak, and 2 points if no receipt system exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the entryway/check-in system properly implemented?",
+      "description": "Check if the system includes member check-in functionality, visitor tracking, appointment verification, and integration with the main system. Deduct 3 points if no real-time validation of membership status occurs at check-in, 3 points if visitor tracking is absent, and 4 points if the entryway system doesn't integrate with the appointment system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are salon-specific features and service management implemented?",
+      "description": "Verify whether the system includes salon-specific features such as service catalog, stylist scheduling, appointment booking, service history tracking, and product sales integration. Score 0 if salon operations are not implemented, 5 if only basic appointment booking exists, and 10 if comprehensive salon management features are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, payment failures, duplicate check-ins, concurrent transactions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Intelligent appointment recommendations based on history 2. Personalized discount system 3. Client retention analytics 4. Integrated loyalty program with point redemption). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user authentication systems) 2. Function modules unrelated to salon management (e.g., general social networking features) 3. Fancy effects that affect performance (e.g., excessive animations in core transaction flows). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/data access layers), unit test coverage, and security best practices. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if input sanitization is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (preferably using salon-appropriate colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear dashboard views with key metrics. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Check-in/payment processing feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for new customers vs. staff interfaces. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

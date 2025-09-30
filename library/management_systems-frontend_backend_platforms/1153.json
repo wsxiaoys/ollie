@@ -1,0 +1,68 @@
+{
+  "index": 1153,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable and functional. Create an online approval workflow management system for an office platform using front-end technologies, with support for custom form templates. Build the interactive interface using HTML, CSS, and JavaScript. On the approval workflow page, users should be able to design form templates themselves to meet diverse approval requirements. Display approval process progress in real-time, enabling monitoring and management of each approval stage. When new approval data is generated, the system status should update in real-time, dynamically changing the color or style of approval nodes to visually reflect the progress of the approval process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the custom form template builder fully implemented?",
+      "description": "Check whether the code implements a complete form template builder that allows users to drag-and-drop form elements, customize field types (text, numbers, dates, dropdowns, etc.), set validations, and save templates. Score 0 if the builder is not implemented, 5 if only basic field addition is possible, and 10 if the full WYSIWYG editor with preview functionality is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the workflow designer component functional?",
+      "description": "Evaluate whether the code provides a visual workflow designer that allows users to define approval steps, assign approvers/roles, create conditional branches, and set up parallel/sequential approvals. Check if it includes features like timeout settings and escalation rules. Deduct 3 points if the workflow lacks conditional logic, 4 points if it doesn't support parallel approvals, and 3 points if there's no way to visualize the complete workflow. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the real-time approval progress visualization implemented?",
+      "description": "Review whether the code implements visual representation of approval workflows with clear node statuses (pending, approved, rejected, in progress) using appropriate color coding and iconography. Check if the visualization updates in real-time without page refresh. Deduct 5 points if the visualization is static (requires refresh), and 5 points if status changes aren't visually distinct. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data synchronization mechanism robust?",
+      "description": "Assess whether the system uses WebSockets, Server-Sent Events, or long polling to achieve real-time updates. Check for optimistic UI updates with server validation, conflict resolution mechanisms, and offline support with data reconciliation. Deduct 4 points if updates require manual refresh, 3 points if there's no conflict resolution, and 3 points if there's no offline functionality. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (invalid form submissions, network failures, concurrent edits, etc.) and provides appropriate error handling and user feedback. Check for form validation, data persistence during browser crashes, and session handling. Deduct 3 points for missing input validation, 4 points for poor error handling, and 3 points for lack of data recovery mechanisms. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-suggested approval paths based on form content 2. Mobile-responsive design with push notifications 3. Analytics dashboard for approval metrics 4. Document attachment and version control). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementation of similar functions (e.g., multiple notification systems) 2. Function modules unrelated to approval workflows (e.g., a built-in chat system) 3. Excessive animations or effects that impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular architecture (separation of form builder, workflow engine, and UI components), code reusability, and maintainability. Check for proper state management patterns, component-based design, and clean interfaces between modules. Deduct 3 points for global state pollution, 4 points if there's significant code duplication, and 3 points if there's tight coupling between unrelated components. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Consistent color scheme that differentiates workflow states clearly 2) Intuitive layout with proper hierarchical information display 3) Responsive design that works across devices. Deduct 3 points for inconsistent styling, 3 points for poor information hierarchy, and 4 points for non-responsive layouts that break on different screen sizes. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions feel natural and responsive: 1) Form elements respond immediately to user input 2) Workflow node transitions are animated smoothly (200-400ms) 3) Status changes provide visual feedback 4) Drag-and-drop operations have appropriate physics. Deduct 2.5 points for each interaction issue: laggy form inputs, abrupt state changes, missing hover states, or confusing action feedback. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

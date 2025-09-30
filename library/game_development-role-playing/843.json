@@ -1,0 +1,68 @@
+{
+  "index": 843,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration when possible. I want to create a \"Legends of the Condor Heroes\" game (based on Jin Yong's novels). Please list the detailed steps and provide the complete code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core RPG game system fully implemented?",
+      "description": "Review whether the code accurately implements character attributes (internal energy, martial arts skills, reputation), combat mechanics (turn-based or real-time), skill progression system, and inventory management. Check if martial arts learning mechanics and internal energy cultivation are properly designed. Score 0 if core RPG mechanics are missing, 5 if only basic character stats are implemented, and 10 if complete RPG systems including martial arts mastery and character progression are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the storyline and quest system properly structured?",
+      "description": "Evaluate whether the game includes a coherent narrative structure with branching storylines, character interactions, and quest mechanics that reflect the novel's plot elements. Check for dialogue systems, NPC interactions, and story progression triggers. Deduct 5 points if quest logic is incomplete, 3 points if character relationships are not tracked. Full score requires implemented story branching based on player choices with proper save/load functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game world and map exploration mechanics implemented?",
+      "description": "Check whether the code includes a navigable game world with locations from the novel (such as Peach Blossom Island, Mount Hua), movement mechanics, and exploration features. Evaluate if the map system allows for fast travel, location discovery, and proper scene transitions. Deduct 5 points if world navigation is limited to static screens, 3 points if location-specific events are not implemented. Full score requires dynamic world exploration with interactive environments.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the martial arts combat system authentic and engaging?",
+      "description": "Assess whether the combat system captures the essence of wuxia martial arts with techniques like the Eighteen Dragon-Subduing Palms, Nine Yin Manual skills, and weapon-based combat. Check for combat animations, skill combinations, and strategic depth. Deduct 5 points if combat lacks martial arts authenticity, 3 points if special techniques are not differentiated. Full score requires implemented signature moves with visual effects and tactical combat mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user input, save file corruption, memory leaks during long gameplay sessions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance the gaming experience?",
+      "description": "Check whether the code includes creative features that elevate the game beyond basic RPG mechanics (e.g., 1. Dynamic weather affecting martial arts effectiveness 2. Relationship system with multiple romance options 3. Mini-games for internal energy cultivation 4. Achievement system for martial arts mastery). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple inventory systems) 2. Features unrelated to wuxia/RPG gameplay (e.g., modern elements that break immersion) 3. Performance-heavy effects that don't add value (e.g., excessive particle systems during normal gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if core game functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic/rendering/audio/input systems), proper asset management, and scalable architecture. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if the project structure is not organized for maintainability. Full score requires clean separation of concerns and professional code organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design capture the wuxia aesthetic?",
+      "description": "Evaluate whether the visual design reflects ancient Chinese aesthetics appropriate for the setting: 1) Traditional color palette (earth tones, imperial colors) 2) Typography using appropriate fonts for the period 3) UI elements styled as scrolls, jade, or traditional materials 4) Consistent visual theme throughout. Deduct 3 points for each modern UI element that breaks immersion, 5 points for inappropriate color schemes, and 5 points for inconsistent visual style. Full score requires authentic period-appropriate design.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game interaction smooth and intuitive?",
+      "description": "Judge whether the game controls and interactions feel natural for the RPG genre: 1) Responsive character movement and menu navigation 2) Intuitive combat controls with clear feedback 3) Smooth transitions between game states (exploration, combat, dialogue) 4) Clear visual indicators for interactive elements. Deduct 5 points for each unresponsive interaction, 3 points for confusing navigation, and 5 points for unclear game state feedback. Full score requires polished, intuitive gameplay experience.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "hard"
+}

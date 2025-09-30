@@ -1,0 +1,68 @@
+{
+  "index": 1358,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Requirement: React, support for custom templates, with JSON output.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the React component structure properly implemented?",
+      "description": "Review whether the code establishes a clean component hierarchy with proper separation of concerns. Check for functional components using hooks (useState, useEffect, useMemo, etc.) instead of class components where appropriate. Assess if props are properly typed and documented. Score 0 if component structure is missing or severely flawed, 5 if basic components exist but with structural issues, and 10 if components follow React best practices with clear hierarchies and proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the template customization system fully functional?",
+      "description": "Evaluate whether the code implements a flexible template system that allows users to define, save, and apply custom templates. Check for template component inheritance, slot mechanisms, or higher-order components that facilitate customization. Verify if the system includes template selection UI, preview capabilities, and the ability to modify template properties. Deduct 5 points if templates cannot be saved or reused, and 3 points if customization options are too limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the JSON output functionality correctly implemented?",
+      "description": "Assess whether the code properly serializes data to JSON format, validates JSON structure before output, and handles edge cases like circular references. Check if the JSON output is properly formatted, includes necessary metadata, and can be parsed back into the application. Deduct 5 points if JSON validation is missing, and 3 points if the output format is inconsistent. Verify that complex data types are correctly serialized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is state management appropriate for the application scale?",
+      "description": "Examine whether the state management solution (Context API, Redux, Recoil, etc.) matches the application's complexity. For simpler applications, local state should be sufficient; more complex ones should utilize global state management. Check for proper state normalization, immutability practices, and performance optimizations like memoization. Deduct 5 points if global state is overused for simple scenarios, and 3 points if state updates cause unnecessary re-renders. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network errors, failed template loading, etc.) and provide friendly error boundaries or recovery mechanisms. Code with strong robustness should include proper error handling, input validation, and fallback UI components. Give 10 points for comprehensive error handling strategies, 5 points if basic error handling exists but with gaps, and 0 points if exceptions are not handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Live template preview with real-time updates 2. AI-assisted template generation 3. Collaborative template editing 4. Version control for templates). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant state management solutions coexisting 2. Unnecessary re-rendering of components 3. Over-engineered features that complicate the application without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core template and JSON functionality are obscured by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, custom hooks, and business logic), test coverage, and build process optimization. Deduct 5 points if component responsibilities are unclear; deduct 5 points if the codebase lacks unit tests or testing utilities; deduct 5 points if no performance optimizations are implemented (such as code splitting, lazy loading). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern React UI principles: 1) Consistent component styling (preferably using CSS-in-JS or CSS Modules) 2) Responsive design that works across device sizes 3) Accessible UI with proper ARIA attributes and keyboard navigation. Deduct 3 points for inconsistent styling, 5 points for non-responsive layouts, and 5 points for accessibility violations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the React application provides smooth user interactions: 1) Immediate feedback for user actions 2) Smooth transitions between states using animations or micro-interactions 3) Optimized rendering performance with no jank. Deduct 5 points for laggy UI updates, 3 points for missing loading states during asynchronous operations, and 5 points for form submissions without validation feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "easy"
+}

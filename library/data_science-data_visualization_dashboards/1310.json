@@ -1,0 +1,68 @@
+{
+  "index": 1310,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Help me create a comprehensive analysis report based on the table data, including visualization design and data presentation. Output in HTML format, ensuring the file is executable.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data parsing and analysis correctly implemented?",
+      "description": "Check whether the code properly handles data input, processes raw data, and performs appropriate statistical analysis. Evaluate if the code handles different data formats (CSV, JSON, etc.) and performs data cleaning operations like handling missing values, outliers, and type conversions. Score 0 if no data processing is implemented, 5 if basic parsing is present but with flaws, and 10 if comprehensive data analysis including validation and error handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are appropriate visualization libraries and techniques utilized?",
+      "description": "Evaluate the choice and implementation of visualization libraries (D3.js, Chart.js, Plotly, etc.). Check whether the code leverages library capabilities effectively and uses appropriate chart types for the specific data characteristics. Deduct 3 points if inappropriate chart types are used, 5 points if visualizations are static when interactivity would be beneficial, and 2 points if there's no responsive design implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the report provide comprehensive data insights?",
+      "description": "Review whether the analysis report includes essential statistics (mean, median, variance, etc.), identifies trends, correlations, and anomalies in the data. Check if comparative analysis is included where appropriate. Score 3 points for basic summary statistics, add 3 points for trend analysis, add 2 points for correlation analysis, and 2 points for anomaly detection. Deduct 5 points if critical insights are missing given the data context.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the visualization design effectively communicating data stories?",
+      "description": "Assess whether the visualizations follow data storytelling principles, with an appropriate narrative flow from simple to complex insights. Check if visualizations include proper titles, axis labels, legends, and annotations to explain key findings. Deduct 3 points if there's no clear narrative structure, 3 points for missing context or explanations, and 4 points if visualizations fail to highlight key insights. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed data, browser compatibility issues, responsive layout problems, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive filtering mechanisms 2. Animated transitions between views 3. Drill-down capabilities 4. Custom tooltips with rich information). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant visualization of the same data points 2. Unnecessary UI elements that don't contribute to data understanding 3. Heavy animations or effects that distract from data insights. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/UI layers), code reusability, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if there are no performance considerations for large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color palette suitable for data visualization (accessible, distinguishable, and following convention where appropriate) 2) Proper layout spacing with appropriate white space 3) Professional typography (readable font size ≥ 14px, proper hierarchy). Deduct 3 points for each accessibility issue, 5 points for poor color choices that make data hard to interpret, and 2 points for cluttered layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction design user-friendly and helpful?",
+      "description": "Judge whether the interactive elements enhance data exploration: 1) Intuitive controls with clear affordances 2) Responsive feedback within 100ms 3) Helpful tooltips and annotations 4) Smooth transitions when data or views change. Deduct 3 points for each confusing interaction pattern, 2 points for missing tooltips on complex visualizations, and 5 points if filter controls are implemented but don't update visualizations properly. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

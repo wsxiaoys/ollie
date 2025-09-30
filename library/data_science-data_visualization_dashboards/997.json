@@ -1,0 +1,68 @@
+{
+  "index": 997,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Please create a complete code segment for visualizing trajectories, including the data reading portion, so I can try it out.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the trajectory data reading implementation correct and flexible?",
+      "description": "Check whether the code provides robust methods for reading trajectory data from common formats (CSV, JSON, etc.) and handles different data structures appropriately. Score 0 if no data reading is implemented, 5 if only basic file loading is included, and 10 if it supports multiple data formats with error handling and validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the trajectory visualization core rendering complete?",
+      "description": "Evaluate whether the visualization leverages appropriate technology (Canvas, SVG, WebGL, etc.) based on the data scale. Check if it properly implements features like path drawing, data point plotting, and coordinate mapping. Deduct 5 points if the visualization is static only, 3 points if there are rendering artifacts. Score 10 if the visualization is smooth with proper scaling and coordination transformations.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are interactive elements properly implemented?",
+      "description": "Review whether the code includes essential interactive features like zooming, panning, selection of specific trajectories, and time-based filtering/playback. Deduct 5 points if basic interactions are missing, 3 points if interactions have noticeable lag. Give 10 points if all interactions feel responsive and intuitive.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there appropriate temporal representation in the visualization?",
+      "description": "Assess if the code handles the temporal aspect of trajectory data effectively, including features like timeline controls, color/opacity gradient for time progression, or animation capabilities. Score 0 if time is not represented, 5 if basic time representation exists but isn't interactive, and 10 if comprehensive temporal navigation and visualization are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed data, empty datasets, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time statistical analysis of trajectories 2. Pattern recognition for similar paths 3. Heat map overlay of trajectory densities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization methods 2. Function modules unrelated to trajectory visualization (e.g., unnecessary UI elements) 3. Fancy effects that affect performance (e.g., excessive animations or effects that obscure the data). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/interaction layers), code reusability, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations are implemented for large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional data visualization standards?",
+      "description": "Evaluate whether the visualization follows effective data visualization principles: 1) Appropriate color schemes for data clarity 2) Clear visual hierarchy with proper labels and legends 3) Balanced information density without chart junk. Deduct 3 points for poor color choices that hinder data interpretation, 5 points for missing essential contextual elements (axes, legends, etc.), and 5 points for cluttered visuals that obscure the data narrative. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the visualization responsive and performant?",
+      "description": "Judge whether the implementation maintains smooth performance across different data loads: 1) Renders trajectories with minimal latency 2) Efficiently handles large datasets with appropriate optimizations (data sampling, WebWorkers, etc.) 3) Adapts gracefully to different screen sizes. Deduct 5 points for noticeable lag with moderate data sizes, 3 points for poor mobile/responsive behavior, and 5 points if the visualization breaks under larger datasets. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

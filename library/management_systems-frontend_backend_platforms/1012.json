@@ -1,0 +1,68 @@
+{
+  "index": 1012,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable and demonstrable. Build a complete project using Next.js/Vite that includes SSR+TypeScript+micro-frontend architecture.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Next.js/Vite project structure properly implemented with SSR support?",
+      "description": "Review whether the code correctly configures Next.js or Vite with SSR capabilities. Check for proper configuration files (next.config.js or vite.config.ts), server-side entry points, and hydration mechanisms. Score 0 if SSR is not implemented, 5 if basic SSR is configured but with hydration issues, and 10 if full SSR implementation with proper data fetching methods (getServerSideProps/getStaticProps for Next.js or equivalent patterns in Vite) is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is TypeScript properly integrated throughout the project?",
+      "description": "Evaluate TypeScript configuration quality including tsconfig.json settings, strict mode usage, and proper type definitions. Check for type safety in component props, API responses, state management, and micro-frontend interfaces. Deduct 3 points for missing or incomplete type definitions, 3 points for any 'any' type usage without justification, and 4 points if TypeScript is only superficially implemented without leveraging its benefits for code safety. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the micro-frontend architecture correctly implemented?",
+      "description": "Assess if the code properly implements micro-frontend patterns with clear module federation, independent deployability, and proper runtime integration. Check for container/host application configuration, remote/child applications structure, and shared dependency management. Deduct 5 points if micro-frontends cannot be developed independently, 3 points for poor boundary definition between micro-frontends, and 5 points if shared state management or styling is inconsistent. Give 10 points for a complete implementation with proper isolation and integration strategies.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are communication patterns between micro-frontends robust?",
+      "description": "Evaluate the implementation of communication mechanisms between micro-frontends. Look for event-based communication systems, shared API interfaces, proper state propagation, and error handling between boundaries. Score 0 if no communication mechanism exists, 5 if basic communication exists but lacks error handling or type safety, and 10 if comprehensive, type-safe communication with fallback mechanisms is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as SSR/CSR mismatch, module loading failures, network interruptions, etc.) and provide friendly error boundaries or recovery mechanisms. Code with strong robustness should implement error boundaries at micro-frontend boundaries, handle hydration errors, and manage asynchronous loading states. Give 10 points for comprehensive error handling, 5 points if only basic error handling exists, and 0 points if exceptions are unmanaged.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Progressive bundle loading with prioritization 2. Microfrontend-aware dev tools or visualization 3. Automatic state persistence across microfrontends). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementations across micro-frontends that could be shared 2. Unused libraries or dependencies increasing bundle size 3. Over-engineered solutions where simpler approaches would suffice. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core architecture is compromised by redundant implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review build pipeline configuration, code splitting strategies, modular design, and testing frameworks integration. Check for CI/CD setup, proper webpack/rollup/turbopack configurations for microfrontends, and performance optimization techniques. Deduct 5 points for missing build optimizations, 3 points for inadequate testing setup, and 2 points for poor documentation of the architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design system is consistent across micro-frontends: 1) Unified component library usage 2) Consistent theming implementation (CSS variables or styled-system) 3) Responsive design patterns applied uniformly. Deduct 3 points for each inconsistency between micro-frontends, 5 points for conflicting design patterns, and 5 points for accessibility issues (WCAG compliance failures). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the performance optimization comprehensive?",
+      "description": "Judge whether the performance considerations address micro-frontend specific challenges: 1) Bundle size optimization and code splitting 2) Shared runtime dependencies management 3) Loading sequence optimization and critical path rendering. Deduct 3 points for each microfrontend exceeding 200KB initial load, 5 points for render-blocking resources, and 5 points if Core Web Vitals metrics (LCP, FID, CLS) aren't explicitly addressed in the implementation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

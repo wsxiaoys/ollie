@@ -1,0 +1,68 @@
+{
+  "index": 211,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Write a frontend program that simulates the solar system. Make it visually appealing without using any external resources.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the solar system model accurately implemented?",
+      "description": "Review whether the code accurately implements the celestial bodies of our solar system (Sun, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune) with proper relative sizes and positions. Check if orbital mechanics are reasonably simulated with proper planet rotation and revolution speeds. Score 0 if fewer than 5 planets are implemented, 5 if basic planets with inaccurate proportions are shown, and 10 if all planets with relatively accurate size ratios and orbital characteristics are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the rendering technology appropriate and efficient?",
+      "description": "Evaluate the chosen rendering approach (Canvas 2D, WebGL, SVG, etc.) and its appropriateness for a solar system visualization. Check for smooth animation (consistently above 30fps), proper layering of celestial objects, and efficient redraw mechanisms. Deduct 5 points for significant frame drops during animation, 3 points if the rendering technique limits visual quality unnecessarily, and 2 points if there are no optimizations for different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the planetary orbits and movements physically plausible?",
+      "description": "Check if the planets follow elliptical orbits, maintain proper orbital periods relative to each other (e.g., Jupiter taking longer than Earth), and if rotation mechanics are included. Evaluate whether Kepler's laws are at least approximated. Deduct 5 points if orbits are perfectly circular with no eccentricity, 3 points if orbital speeds are uniform rather than varying by distance, and 3 points if axial tilts are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the visualization include interactive features?",
+      "description": "Assess whether the simulation allows user interaction such as zooming, panning, changing simulation speed, or focusing on specific planets. Check for information displays when hovering/clicking on celestial bodies. Deduct 3 points for each missing core interactive feature (zoom/pan/speed control), and 5 points if there is no way to get information about the planets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, browser compatibility issues, varying device performance) and provide graceful degradation if needed. Code with strong robustness should maintain functionality across browsers and prevent common errors. Give 10 points for comprehensive error handling and browser compatibility, 5 points for average robustness with some edge cases addressed, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic lighting and shadow effects 2. Comet or asteroid belt inclusion 3. Space background with stars and nebulae 4. Planet texture details or atmospheric effects). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations that could be optimized 2. Unnecessary visual elements that distract from the solar system focus 3. Fancy effects that negatively impact performance without adding educational or visual value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation is notably slowed by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics calculation/rendering/interaction layers), code organization, and maintainability. Deduct 5 points if global state is overused or object-oriented principles are ignored; deduct 3 points if the code lacks comments explaining complex astronomical calculations; deduct 2 points if variable/function naming is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows astronomical visualization standards: 1) Appropriate color scheme representing celestial bodies accurately 2) Clean layout with clear focus on the solar system 3) Professional typography for any labels or information displays. Deduct 3 points for each inaccurate planetary representation, 4 points for poor contrast making planets hard to distinguish, and 3 points for cluttered UI elements obscuring the visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and visually appealing?",
+      "description": "Judge whether the planetary movements and visual effects create a pleasing and educational experience: 1) Smooth orbital transitions without jitter 2) Proper animation timing that balances between educational value and visual interest 3) Appropriate visual indicators for scale and distance. Deduct 4 points for jerky animations, 3 points for unrealistic motion that creates visual confusion, and 3 points for lack of visual cues that help understand the scale of the solar system. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 98,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes.\nPlease help me implement this SVG image using code: the Microsoft Edge logo.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG structure of the Microsoft Edge logo correctly implemented?",
+      "description": "Check if the SVG element has appropriate viewport dimensions, viewBox attribute, and proper namespace declarations. Verify that the basic structural elements needed for the Edge logo (the circular wave/swirl shape) are present. Score 0 if the SVG structure is missing or fundamentally incorrect, 5 if basic structure exists but with significant errors, and 10 if properly implemented with correct attributes and structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the logo accurately represent Microsoft Edge's current visual identity?",
+      "description": "Evaluate if the logo matches the current Microsoft Edge logo design (blue-green gradient circular wave). Compare the shape accuracy against the official logo. Check for proper curvature of the wave elements. Deduct 3 points for minor shape inaccuracies, 5 points for significant shape distortions, and 7 points if the logo resembles an outdated version. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the correct color gradients implemented?",
+      "description": "Verify if the logo uses the official Microsoft Edge color scheme with proper gradients (transitioning from blue to teal/cyan). Check if the SVG implements proper <linearGradient> or <radialGradient> elements with correct color stops. Score 0 if solid colors are used instead of gradients, 5 if gradients are implemented but with incorrect colors, and 10 if both gradient type and colors accurately match the official logo.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the code optimized for SVG rendering?",
+      "description": "Examine if the SVG uses the most appropriate elements (paths, circles, etc.) for each part of the logo. Check for optimization techniques like path simplification, appropriate precision in coordinates (not excessive decimal places), and minimal use of redundant elements. Score 10 if fully optimized, 5 if partially optimized with some inefficiencies, and 3 if clearly unoptimized with redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, scaling problems, or viewBox rendering errors). Code with strong robustness should include fallback options or handle edge cases. Give 10 points for implementation with cross-browser compatibility considerations and proper error handling, 5 points for average robustness, and 0 points if obvious compatibility issues exist.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visualization (e.g., 1. Subtle animations when hovering 2. Responsive scaling based on container size 3. Interactive elements within the logo). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements or attributes that don't contribute to the final rendering 2. Unnecessary nested groups or transforms that complicate the structure 3. Excessive styling that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visual elements are obscured by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (such as logical grouping of SVG elements), meaningful naming of IDs and classes, and proper comments for complex path data or calculations. Deduct 5 points if elements lack descriptive IDs or classes; deduct 5 points if the code structure is chaotic with no logical grouping; deduct 5 points if there are no comments explaining complex path data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the SVG rendering meet professional design standards?",
+      "description": "Evaluate whether the SVG output follows professional design principles: 1) Crisp edges without pixelation at various zoom levels 2) Proper proportions matching the official logo 3) Correct alignment of all elements. Deduct 3 points for each visual artifact or rendering issue, 5 points for noticeable proportional errors, and 5 points for misalignment of key elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the SVG properly scalable without quality loss?",
+      "description": "Judge whether the SVG properly scales across different display sizes and resolutions: 1) Maintains crisp edges when scaled up 2) Preserves all details when scaled down 3) Responds appropriately to container constraints. Deduct 5 points if the logo blurs or pixelates at larger sizes, 3 points if small details are lost at smaller sizes, and 5 points if the aspect ratio distorts during scaling. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Icons/Logos",
+  "difficulty": "medium"
+}

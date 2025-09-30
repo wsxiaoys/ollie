@@ -1,0 +1,68 @@
+{
+  "index": 559,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you provide is executable when possible. Create an online folder and file management tool where users can create folders, upload files, rename, move, and delete files, with support for a tree-view interface to display the file structure.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file and folder management system fully implemented?",
+      "description": "Review whether the code accurately implements core file operations including create folder, upload files, rename, move, and delete functionality. Check if the implementation includes proper file validation (size limits, type restrictions), progress tracking for uploads, and batch operations support. Score 0 if core CRUD operations are missing, 5 if only basic create/delete is implemented, and 10 if all file management operations are fully functional with proper validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the tree-view interface properly implemented and interactive?",
+      "description": "Evaluate whether the tree structure visualization includes expandable/collapsible nodes, drag-and-drop functionality for moving files, context menus for operations, and proper visual hierarchy. Check if the tree updates dynamically when operations are performed and maintains state consistency. Deduct 5 points if drag-and-drop is missing, 3 points if tree state doesn't sync with operations, and 3 points if visual hierarchy is unclear. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the backend storage and API architecture properly designed?",
+      "description": "Check whether the backend implements RESTful APIs for file operations, proper file storage mechanism (local/cloud), database schema for file metadata, and security measures for file access. Evaluate if the API handles concurrent operations, file versioning, and maintains data integrity. Deduct 5 points if API endpoints are incomplete, 3 points if no security validation exists, and 5 points if concurrent operation conflicts are not handled. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is real-time synchronization and state management implemented?",
+      "description": "Assess whether the system implements real-time updates across multiple sessions, proper state management for file operations, and conflict resolution for simultaneous edits. Check if WebSocket or similar technology is used for live updates and if the system maintains consistency between frontend display and backend state. Deduct 5 points if no real-time sync exists, 3 points if state conflicts occur, and 5 points if multiple user operations cause data corruption. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as large file uploads, network interruption, invalid file types, storage quota exceeded, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. File preview functionality with thumbnails 2. Advanced search and filtering capabilities 3. File sharing with permission management 4. Breadcrumb navigation with quick access 5. Keyboard shortcuts for power users). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload mechanisms coexisting) 2. Function modules unrelated to file management (e.g., built-in text editor, media player) 3. Excessive visual effects that impact performance (e.g., heavy animations during file operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core file management functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file operations/UI components/API layers), proper error handling, code organization, and scalability considerations. Deduct 5 points if global state pollution is found or component architecture is poorly structured; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper separation of concerns exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the file manager design follows modern design principles: 1) Consistent iconography and visual language 2) Proper spacing and grid system (8px multiples) 3) Clear file type differentiation through icons/colors 4) Professional typography hierarchy. Deduct 3 points for each unclear visual element, 5 points for inconsistent design patterns, and 5 points for poor file/folder distinction. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the file operations provide immediate feedback: 1) File upload progress indicators and status feedback 2) Smooth tree expansion/collapse animations (200-400ms) 3) Drag-and-drop visual feedback and drop zones 4) Loading states for file operations 5) Hover effects and selection states. Deduct 5 points for each operation without visual feedback, 3 points for laggy interactions during file operations, and 5 points if drag-and-drop lacks proper visual cues. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

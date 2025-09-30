@@ -1,0 +1,68 @@
+{
+  "index": 481,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the code generated is executable for demonstration.\n\n## Role ##\nYou are an experienced code expert. You are now provided with a software development requirement description, and you are asked to generate project code based on this requirement. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand language comments, and don't output anything else.\n\n## Output Rules ##\n1. You will always generate complete runnable project code. Please ensure that the project is complete and executable\n2. Ensure that all code files you output are complete, without omitting any code\n3. Carefully review and check all code before the final output to evaluate its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide mock data\n\n## Project Requirements Description ##\nPlease develop a timeline-based audio annotation tool suitable for music teachers, audio editors, or collaborators. Users can upload audio files, then add text comments, voice annotations, or graphical markers at specific points on the timeline. Other users can view these annotations, add replies, forming a conversation. The system should support filtering by annotation type, exporting annotation summaries, and automatically pausing and displaying annotations at the corresponding position during audio playback.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio upload and playback functionality fully implemented?",
+      "description": "Review whether the code accurately implements audio file upload handling, proper playback controls (play/pause/seek), and waveform visualization. Check if the audio player supports various formats (MP3, WAV, OGG) and handles edge cases like large files and invalid formats.0 points if audio upload/playback is missing, 5 points if basic functionality works but with limitations, 10 points for a complete implementation with format support, error handling, and responsive waveform visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the timeline-based annotation system properly implemented?",
+      "description": "Examine the implementation of adding, editing, and displaying annotations at specific time points on the timeline. Check if the system supports all required annotation types (text comments, voice annotations, graphical markers) with precise time positioning. Verify that annotations are visually distinguishable on the timeline.0 points if annotations cannot be added to timeline points, 5 points if only basic text annotations are supported, 10 points for full implementation of all annotation types with accurate time positioning and visual representation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the collaborative annotation functionality implemented?",
+      "description": "Assess whether users can view others' annotations and add replies, forming conversation threads. Check if the system properly manages user identification, permissions, and real-time or asynchronous updates. Verify that threaded discussions are properly organized and displayed.0 points if collaboration features are missing, 5 points if basic viewing/replying works but lacks organization, 10 points for complete implementation with proper threading, user identification, and update mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the advanced annotation features implemented?",
+      "description": "Evaluate the implementation of filtering by annotation type, exporting annotation summaries, and automatic pausing/displaying annotations during playback. Check if these features are intuitive and functional. Verify that exported summaries contain all relevant information.Deduct 3 points if filtering is missing, 3 points if export functionality is incomplete, and 4 points if the automatic pause/display feature doesn't work properly. Full score is 10 points for complete implementation of all advanced features.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported file formats, network interruptions, concurrent editing conflicts) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases.10 points for comprehensive error handling covering all key user flows, 5 points for average robustness with some gaps, 0 points if critical error scenarios are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based automatic transcription, 2. Customizable keyboard shortcuts, 3. Export to common formats like PDF/CSV, 4. Visual heat map showing annotation density across timeline).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple annotation systems), 2. Function modules unrelated to audio annotation (e.g., unrelated social features), 3. Fancy effects that affect performance (e.g., heavy animations that slow down timeline navigation).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/annotation logic/view layers), unit test coverage, and build process automation. Check for proper state management, clean code practices, and documentation.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual distinction between timeline, audio controls, and annotation panel.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Timeline scrubbing feels responsive (≤ 100ms delay) 2) Annotation placement is precise and intuitive 3) Playback transitions are smooth 4) Annotation filtering updates display immediately 5) Audio playback synchronizes perfectly with visual timeline position.Deduct 5 points for each operation without feedback, 3 points for laggy timeline navigation, and 5 points for hard-to-use annotation placement. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

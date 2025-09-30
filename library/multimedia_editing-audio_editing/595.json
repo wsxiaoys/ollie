@@ -1,0 +1,68 @@
+{
+  "index": 595,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Implement a front-end page for audio trimming and tagging, where users can upload audio files, perform trimming operations, add tags to the trimmed audio segments, preview and download audio with tag information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio upload functionality properly implemented?",
+      "description": "Evaluate whether the code implements a complete audio file upload mechanism that supports common audio formats (MP3, WAV, AAC, etc.), validates file sizes (limiting to reasonable sizes like 50MB), and provides proper user feedback during the upload process. Deduct 5 points if format validation is missing, 3 points if error handling for corrupt files is absent, and 2 points if upload progress indication is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio waveform visualization and playback system fully functional?",
+      "description": "Check if the code properly renders an interactive audio waveform visualization using Canvas/WebAudio API that accurately represents the audio data, allows for playback control (play/pause/stop), and includes visual indicators for the current playback position. Score 0 if visualization is missing, 5 points if basic waveform is displayed without interactive features, and 10 points if the visualization is fully interactive with accurate representation of the audio amplitude.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio trimming functionality complete and accurate?",
+      "description": "Assess whether the trimming interface allows precise selection of start and end points with visual markers/handles, provides real-time preview of the selected segment, and includes zooming capabilities for fine-grained control. Deduct 5 points if trimming is imprecise (lacking millisecond accuracy), 3 points if zooming functionality is missing, and 2 points if visual indicators for trim points are unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the tagging system comprehensive and user-friendly?",
+      "description": "Evaluate if the tagging system allows users to add, edit, and delete tags for audio segments with proper metadata (tag name, timestamp, descriptions), supports categorization of tags, and provides a visual representation of tags on the waveform timeline. Deduct 3 points if tag editing is limited, 4 points if visual representation on the timeline is missing, and 3 points if tag search/filtering capabilities are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported audio formats, browser compatibility issues, memory limitations with large files, network interruptions during upload/download) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted auto-tagging 2. Voice activity detection for automatic segment identification 3. Keyboard shortcuts for efficient editing 4. Audio effects/filters for enhanced playback). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing libraries used for the same purpose) 2. Function modules unrelated to audio editing (e.g., excessive social sharing options) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the audio processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing logic/UI components/state management), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Audio scrubbing responds within 100ms 2) Waveform zooming/panning animations are fluid (60fps) 3) Clear visual feedback when adding/editing tags. Deduct 5 points for each operation without feedback, 3 points for laggy waveform rendering during interaction, and 5 points if important audio controls are difficult to locate. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

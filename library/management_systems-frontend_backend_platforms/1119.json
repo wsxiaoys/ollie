@@ -1,0 +1,68 @@
+{
+  "index": 1119,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. Develop a web page that allows users to upload videos and images, edit text, and distribute content to other computers on the same local area network. Please list each step in detail and provide the script code required for each implementation step.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload system correctly implemented?",
+      "description": "Evaluate whether the code includes proper HTML5 file input controls with multiple file selection capabilities, file type validation (MIME type checking for images/videos), and progress indicators during upload. Check if client-side validation prevents exceeding maximum file sizes. Deduct 5 points if only basic file selection is implemented without validation, 3 points if progress indicators are missing, and 3 points if there's no handling for large files. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the media preview functionality properly implemented?",
+      "description": "Verify that uploaded images can be displayed with proper scaling/cropping options, and videos have functional preview with basic playback controls. Check if the implementation handles various image formats (JPEG, PNG, GIF, WebP) and video codecs (MP4, WebM). Deduct 3 points if preview is basic without editing capabilities, 5 points if video previews don't work across browsers, and 2 points if there's no thumbnail generation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the text editing capability comprehensive?",
+      "description": "Assess whether the text editor includes rich text formatting (bold, italic, lists, headings), text styling options (font, size, color), and proper content layout controls. Verify that the editor handles text alongside uploaded media elements. Score 0 if only plain text input is available, 5 if basic formatting exists without media integration, and 10 if there's a complete WYSIWYG editor with media placement capabilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the local network content distribution mechanism implemented?",
+      "description": "Review the implementation of local network discovery and content sharing. Check if WebRTC, WebSockets or similar technologies are used for peer-to-peer communication, or if a lightweight server solution is implemented. Evaluate network discovery methods (like mDNS, SSDP or manual IP input). Deduct 5 points if only the server code exists without client discovery, 3 points if security measures are absent, and 3 points if distribution is one-way only without acknowledgment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as upload failures, network interruption, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaborative editing 2. Automatic media optimization 3. Offline mode with synchronization when reconnected). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload methods coexisting) 2. Function modules unrelated to content sharing (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/network/storage layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

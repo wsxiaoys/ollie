@@ -1,0 +1,68 @@
+{
+  "index": 642,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Ensure that the generated code is executable for demonstration. Create a Karaoke lyrics synchronization tool where users can upload audio files and LRC lyrics files to achieve synchronized display of lyrics with the audio timeline (with word-by-word highlighting). The tool should support adjusting lyrics timing offset and exporting the modified LRC files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload and audio playback functionality fully implemented?",
+      "description": "Evaluate whether the code implements file uploading for both audio and LRC files with proper MIME type validation. Check if the audio player includes essential controls (play, pause, seek) and event listeners. Score 0 if file upload is not implemented, 5 if basic upload without validation exists, and 10 if complete with error handling and format support for multiple audio formats (MP3, WAV, OGG).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the LRC file parsing and timeline synchronization accurately implemented?",
+      "description": "Review whether the code correctly parses LRC file format (both standard timestamps and enhanced format with word timing). Verify that the synchronization mechanism matches lyrics to the current audio timestamp with precision (should be within 50ms accuracy). Deduct 5 points if only line-level synchronization is implemented, not word-level highlighting. Deduct 3 points if the parser doesn't handle special formats or extended LRC tags.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the lyrics timing offset adjustment feature properly implemented?",
+      "description": "Check if the tool provides an interface for users to adjust the timing offset of lyrics (both globally and for specific lines if needed). Evaluate whether the offset changes are applied in real-time to the displayed lyrics without requiring a page reload. Deduct 5 points if only global offset is available without fine-tuning capabilities, and 3 points if adjustments don't show immediate visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the modified LRC file export functionality working correctly?",
+      "description": "Verify that users can export the adjusted LRC file with all timing modifications properly saved. Check if the exported file maintains the original format while incorporating the timing changes. The export should include a download option with the proper file extension and MIME type. Deduct 5 points if the export doesn't preserve all metadata from the original LRC file, and 3 points if the download mechanism isn't user-friendly.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed LRC files, audio format incompatibility, browser API limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Waveform visualization of audio 2. Auto-scrolling with smooth animation 3. Multiple theme options for lyrics display 4. Batch processing of multiple files). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timing calculation methods coexisting) 2. Function modules unrelated to lyrics synchronization (e.g., a built-in music equalizer) 3. Fancy effects that affect performance (e.g., excessive animations for lyrics transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio handling/lyrics processing/UI components), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (lyrics font size ≥ 16px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Current lyric highlighting transition ≤ 100ms 2) Smooth scrolling animation for lyrics advancement 3) Clear visual indication of active line and upcoming lyrics. Deduct 5 points for jerky lyrics transitions, 3 points for lagging synchronization between audio and lyrics, and 5 points for unintuitive UI controls for timing adjustment. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

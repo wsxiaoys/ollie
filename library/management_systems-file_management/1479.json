@@ -1,0 +1,68 @@
+{
+  "index": 1479,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable when possible.\n\nPrescription | Introduction | Formula | Preparation Method | Functions and Indications | Usage and Dosage | Reference\n--- | --- | --- | --- | --- | --- | ---\nAi'ai Pill | [Formula] White ginger (stir-fried with salt, wine or rice vinegar) 8 qian, Cyperus rotundus (soaked in urine, fried) 1 liang, Corydalis yanhusuo (fried) 8 qian, genuine Donkey-hide gelatin (fried into pearls) 1... | White ginger (stir-fried with salt, wine or rice vinegar) 8 qian, Cyperus rotundus (soaked in urine, fried) 1 liang, Corydalis yanhusuo (fried) 8 qian, genuine Donkey-hide gelatin (fried into pearls) 1... | Grind into powder, mix with wine paste to form pills the size of Chinese parasol tree seeds. | Metrorrhagia, especially effective for elderly women. | 30 pills per dose, taken on empty stomach with salted wine or salt water. | \"Yi Tong\" Volume 84\nAsafoetida and Galangal Pill | [Formula] Green tangerine peel 3 liang, Aged tangerine peel 2 liang, Galangal 2 liang, Red beans 2 liang, Cinnamon (coarse skin removed) 1 liang, Amomum (peel removed) 2 liang, Eupatorium (roasted) 2... | Green tangerine peel 3 liang, Aged tangerine peel 2 liang, Galangal 2 liang, Red beans 2 liang, Cinnamon (coarse skin removed) 1 liang, Amomum (peel removed) 2 liang, Eupatorium (roasted) 2... | Grind into fine powder and mix evenly, form pills with flour paste the size of mung beans. | Long-term use greatly nourishes spleen and stomach, clears stomach emptiness, improves appetite, eliminates cold dampness, strengthens and warms the body. Treats weakness in the three abdominal regions, accumulated cold in middle energizer, weak spleen digestion, slow digestion of food and drinks... | 50 pills per dose, taken with mild ginger soup, anytime, twice daily. | \"Hong's Collected Verified Prescriptions\" quoted from Shangguan Zhubo's prescription\nAsafoetida Pill | Index \"Asafoetida Pill\" in \"Revised Yan's Life-saving Formulas\", \"Asafoetida Pill\" in \"Danxi's Methods of Mental Cultivation\" Volume 3, \"Asafoetida Pill\" in \"Danxi's Methods of Mental Cultivation\" Volume 3... | Costus root (uncooked) and Areca nut 15g each, Pepper and Asafoetida (dissolved in vinegar, added gradually) 7.5g each | Grind into fine powder, mix with Asafoetida paste and glutinous rice to form pills the size of Chinese parasol tree seeds. | Qi accumulation, meat accumulation, abdominal distention with lumps and pain. May cause pain in the sides and ribs, or pain extending to the back, and loss of appetite. | 40 pills per dose, anytime, taken with fresh ginger and tangerine peel soup. | \"Revised Yan's Life-saving Formulas\"\nI want to create a table similar to this",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the table structure properly implemented?",
+      "description": "Review whether the HTML code correctly implements a responsive data table with appropriate structure (thead, tbody), proper column alignment, and mobile compatibility. Check if the table headers are properly defined and if the data rows maintain consistent formatting. Score 0 if the table is not implemented at all, 5 if basic structure exists but has significant layout issues, and 10 if the table is fully structured with proper semantic markup.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data organization and display complete?",
+      "description": "Evaluate whether all seven columns (Prescription, Introduction, Formula, Preparation Method, Functions and Indications, Usage and Dosage, Reference) are properly implemented and populated with sample data. Each column should display the content with appropriate formatting and text wrapping. Deduct 2 points for each missing column or severely malformatted column. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are sorting and filtering capabilities implemented?",
+      "description": "Check if the implementation includes functionality for users to sort the table by different columns (e.g., alphabetically by prescription name) and filter content (e.g., search for specific herbs or indications). Deduct 5 points if sorting is missing, 5 points if filtering/search is absent, and 3 points if these features are implemented but perform poorly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there pagination or efficient handling of large datasets?",
+      "description": "Assess whether the code includes mechanisms for handling potentially large datasets, such as pagination, virtualization, or lazy loading. The implementation should maintain performance even with hundreds of prescription entries. Deduct 5 points if no pagination/virtualization exists, 3 points if it exists but has performance issues with large datasets, and 2 points if the pagination controls are not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data fields, extremely long text content, special characters in prescription names, etc.) and provide appropriate fallbacks or error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Expandable rows for detailed information 2. Interactive herb glossary with tooltips 3. Unit conversion for traditional measurements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple sorting mechanisms coexisting) 2. Function modules unrelated to the prescription table (e.g., unrelated widgets) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code reusability, and appropriate use of libraries or frameworks. Deduct 5 points if global variable pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no consideration is given to performance optimization for large data sets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern table design principles: 1) Appropriate use of borders, dividers and whitespace 2) Consistent typography with readable font sizes (≥ 14px for body text) 3) Visual hierarchy that distinguishes headers from data. Deduct 3 points for cluttered cell formatting, 5 points for poor contrast making text difficult to read, and 5 points for inconsistent column widths or poorly aligned content. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions conform to user expectations: 1) Responsive sorting/filtering with visual feedback ≤ 200ms 2) Smooth transitions when showing/hiding content 3) Hover states and clear actionable elements. Deduct 5 points for each operation without feedback, 3 points for laggy interactions when handling large data sets, and 5 points for unintuitive interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "medium"
+}

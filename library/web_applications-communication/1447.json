@@ -1,0 +1,68 @@
+{
+  "index": 1447,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and demonstrable. Please build an IM client using Rust and Nuxt - a PC client specifically. No need to build the server side. I need to run this client on Windows.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Rust-Nuxt integration architecture properly implemented?",
+      "description": "Evaluate whether the code establishes a robust architecture that bridges Rust backend logic with Nuxt frontend. Look for proper use of FFI (Foreign Function Interface) patterns like tauri, napi-rs, or rust-webpack. Score 0 if there's no integration between Rust and Nuxt, 5 points if basic integration exists but with architectural flaws, 10 points for a clean, maintainable architecture with proper separation of concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the IM core functionality implemented in Rust?",
+      "description": "Check whether essential IM features (message handling, connection management, encryption) are implemented in Rust. The Rust code should handle networking, security protocols, and persistent storage. Deduct 5 points if network connection management is missing, 3 points if encryption is absent, and 2 points if offline message handling is not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Nuxt UI implementation complete with necessary IM components?",
+      "description": "Assess whether the Nuxt frontend includes all necessary IM UI components: chat list, conversation view, message composition area, contact management, and notification system. Score 0 if major components are missing, 5 points if basic functionality exists but lacks polish, 10 points for a comprehensive implementation with proper component hierarchy and state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is Windows compatibility ensured for distribution and execution?",
+      "description": "Verify that the application can be built for and run on Windows systems. Check for proper build configuration (static linking of C/C++ dependencies), Windows-specific path handling, and system integration features like startup, notifications, and taskbar integration. Deduct 5 points if the build process isn't automated for Windows, 3 points if Windows-specific features aren't handled properly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common IM-specific abnormal situations (network instability, malformed messages, authentication failures) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle connection drops, message failures, and user errors. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. End-to-end encryption with key verification 2. Custom message formatting with Markdown 3. Voice/video message support 4. Smart notification management based on user activity). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle the same message type) 2. Function modules unrelated to IM functionality (e.g., built-in games not related to messaging) 3. Fancy effects that affect performance (e.g., excessive animations or effects that slow down message display). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating network/UI/persistence layers), test coverage (unit tests for Rust, component tests for Nuxt), and build process automation. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate exceeds 30%; deduct 5 points if the build process isn't properly automated with cross-platform support. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern messaging app design principles: 1) Consistent color scheme with clear read/unread states 2) Proper message bubble spacing and alignment 3) Professional typography hierarchy for messages vs. metadata. Deduct 3 points for cluttered conversation views, 5 points for poor information hierarchy, and 5 points for inconsistent visual language between different sections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the IM-specific interactions meet user expectations: 1) Message send/receive feedback under 100ms 2) Smooth scrolling through message history 3) Real-time typing indicators and read receipts 4) Seamless state transitions between online/offline modes. Deduct 5 points for laggy message rendering, 3 points for jerky scrolling, and 5 points for unclear connection status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

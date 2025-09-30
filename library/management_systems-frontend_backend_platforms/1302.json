@@ -1,0 +1,68 @@
+{
+  "index": 1302,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration. Create a Laboratory Information Management System suitable for wastewater treatment plant laboratories using Vue, Express, and MySQL. The system should include user login with role-based permissions, water quality testing, personnel management, equipment management, and reagent management.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user authentication and role-based access control system properly implemented?",
+      "description": "Evaluate whether the code implements JWT/session-based authentication with proper encryption, role-based permission control (admin, lab technician, manager roles), and secure login flows including password hashing and token expiration. Check for password policy enforcement. Score 0 if authentication is missing, 5 if basic authentication exists but lacks proper role-based controls, and 10 if a complete, secure authentication system with fine-grained permissions is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the water quality testing module comprehensive for wastewater treatment needs?",
+      "description": "Verify if the system handles essential wastewater parameters (pH, BOD, COD, TSS, nitrogen, phosphorus, metals), supports customizable test methods with validation rules, maintains testing workflow (sampling → testing → verification → reporting), and includes statistical analysis capabilities. Deduct 3 points if regulatory compliance tracking is missing, 3 points if quality control standards aren't implemented, and 2 points if trend analysis visualization is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the laboratory resource management modules complete and integrated?",
+      "description": "Assess whether the system properly implements personnel management (certification tracking, scheduling), equipment management (calibration records, maintenance schedules), and reagent management (inventory, expiration tracking, reorder points). Check for traceability between resources and tests. Deduct 3 points for each major module not implemented or poorly integrated. Give 10 points only if all three systems work cohesively with automated notifications and cross-module dependencies.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data handling architecture appropriate for laboratory workflows?",
+      "description": "Evaluate if the system implements proper data validation (with field-specific rules for lab parameters), audit trails for regulatory compliance, data versioning for test results, and comprehensive reporting capabilities. Verify database schema design with appropriate relationships and constraints. Deduct 5 points if data integrity controls are weak, 3 points if the reporting system is limited, and 5 points if there's no audit logging. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect parameter inputs, database connection failures, concurrent user operations, etc.) and provide friendly error prompts or recovery mechanisms. Check for input sanitization to prevent SQL injection and XSS attacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the laboratory experience (e.g., 1. Automated regulatory compliance reporting 2. Machine learning for anomaly detection in test results 3. Mobile-responsive interface for field sampling 4. QR code integration for equipment/reagent tracking). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user management interfaces) 2. Function modules unrelated to laboratory management (e.g., a built-in game for staff) 3. Overly complex features that affect performance (e.g., unnecessary real-time updates for static data). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue component architecture, Express API organization, database schema design, and test coverage. Check for proper separation of concerns between frontend and backend. Deduct 5 points if global state management is chaotic; deduct 3 points if API endpoints aren't RESTful or lack consistent error handling; deduct 5 points if there's significant code duplication; deduct 2 points if the build/deployment process isn't automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional laboratory standards?",
+      "description": "Evaluate whether the design follows laboratory-appropriate principles: 1) Clean, clinical color scheme with clear hierarchy 2) Consistent data visualization for measurements 3) Intuitive navigation between related laboratory functions 4) Appropriate data density for scientific information. Deduct 3 points for visual elements that hinder data clarity, 5 points for interfaces that don't prioritize critical laboratory information, and 5 points for designs that would be difficult to use in a lab environment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the system optimized for laboratory workflow efficiency?",
+      "description": "Judge whether the interface supports efficient laboratory operations: 1) Minimal clicks for routine tasks (≤3 clicks) 2) Batch operations for common procedures 3) Quick access to related information (reagents needed for tests, equipment calibration status) 4) Keyboard shortcuts for data entry. Deduct 3 points for each workflow bottleneck identified, 5 points if navigation between related functions is cumbersome, and 5 points if the system would slow down rather than enhance laboratory productivity. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

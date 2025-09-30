@@ -1,0 +1,68 @@
+{
+  "index": 1127,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Write a game code where the gameplay is similar to the card game \"Legend of the Three Kingdoms\" (Sanguosha).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core card game system fully implemented?",
+      "description": "Review whether the code accurately implements the fundamental mechanics of Sanguosha, including proper card definitions (Basic, Strategy, Equipment), character abilities, and the turn-based gameplay flow. Score 0 if core mechanisms are missing, 5 if only basic card interactions are implemented, and 10 if special character abilities and complex card interactions (like chain reactions) are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the phase-based turn mechanics correctly implemented?",
+      "description": "Check if the code properly implements Sanguosha's distinct turn phases (Draw, Play, Discard), with phase-specific validations and event triggers. Verify that abilities that activate in specific phases function correctly. Deduct 3 points if phase transitions lack proper event handling, 5 points if certain phases are missing or incorrectly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the health and damage system appropriately designed?",
+      "description": "Evaluate if the health system correctly handles damage allocation, armor effects, character-specific health values, and dying/elimination conditions. Check for proper implementation of Wine effects on damage, Peach healing, and special abilities that alter damage (like Zhang Fei's). Deduct 5 points if wine/peach effects are missing, and 3 points if character-specific health modifications aren't handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game handle character abilities and card effects correctly?",
+      "description": "Assess whether the code implements distinct character abilities (passive and active) and handles special card effects with proper timing triggers. Check for implementation of key cards like Duel, Barbarian Invasion, etc. Deduct 5 points if abilities lack proper activation conditions, and 3 points if card resolving order isn't handled correctly. Full score is 10 points for comprehensive implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, network interruption, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI opponents with different difficulty levels 2. Customizable card decks and house rules 3. Animation and sound effects for critical actions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple damage calculation systems coexisting) 2. Function modules unrelated to Sanguosha (e.g., a built-in currency system) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching reflecting the Three Kingdoms theme 2) Proper layout spacing for cards, characters, and action buttons 3) Professional font system with readable card text and clear status indicators. Deduct 3 points for each cluttered game element, 5 points for poor thematic design integration, and 5 points for illegible card information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Card selection and targeting response ≤ 100ms 2) Card animation duration controlled between 300-500ms 3) Clear visual indicators for game state and available actions. Deduct 5 points for each operation without feedback, 3 points for laggy card movements, and 5 points for unclear turn progression indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

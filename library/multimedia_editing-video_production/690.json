@@ -1,0 +1,68 @@
+{
+  "index": 690,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Develop a Picture-in-Picture video effect editor that allows users to upload one main video and multiple auxiliary videos, displaying the auxiliary videos as picture-in-picture on the main video. Users can adjust the size, position, border, and shape (such as circle, oval, etc.) of the picture-in-picture, and set entrance and exit animation effects. Support simultaneous display of multiple picture-in-picture elements with timeline control, suitable for creating reaction videos, commentary videos, and educational demonstrations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and management system implemented correctly?",
+      "description": "Check if the code allows users to upload one main video and multiple auxiliary videos with proper file validation (checking formats like MP4, WebM, AVI, etc.) and error handling. The system should manage these videos efficiently with preview functionality before adding them to the editor. Score 0 if video upload is not implemented, 5 if only basic uploads work without validation, and 10 if complete video management with previews and format validation is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Picture-in-Picture (PiP) positioning and sizing functionality complete?",
+      "description": "Evaluate whether the code provides comprehensive controls for manipulating PiP videos, including precise positioning (x/y coordinates or grid snapping), resizing with aspect ratio preservation, z-index control for overlapping PiPs, and responsive behavior across different screen sizes. Deduct 3 points if position control is limited to predefined spots, 3 points if resizing doesn't maintain aspect ratio, and 4 points if z-index management is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are PiP customization options fully implemented?",
+      "description": "Review whether users can customize the PiP appearance through border styles (width, color, pattern), shape masking (rectangle, circle, oval, custom shapes), opacity controls, and filters (brightness, contrast, saturation). Score 3 points for basic border controls, 3 points for shape masking implementation, 2 points for opacity/transparency features, and 2 points for video filters. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the timeline control and animation system properly implemented?",
+      "description": "Assess if the code implements a functional timeline that allows users to control when PiP elements appear and disappear, with precise timing controls (down to millisecond accuracy). Check for entrance/exit animation capabilities (fade, slide, zoom, etc.) with customizable duration and easing functions. Deduct 5 points if timeline scrubbing precision is poor, 3 points if animation options are limited to fewer than 5 types, and 2 points if animation easing controls are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as video format incompatibility, browser memory constraints, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Check for browser compatibility across major browsers (Chrome, Firefox, Safari, Edge). Deduct 3 points for each major browser incompatibility, 4 points if error handling is inadequate, and 3 points if the application crashes when videos fail to load. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted PiP positioning 2. Audio ducking when multiple videos play simultaneously 3. Motion tracking to move PiP with content 4. Templates for common PiP layouts). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video players with different APIs) 2. Function modules unrelated to video editing (e.g., a built-in social network) 3. Fancy effects that affect performance (e.g., excessive background animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/UI/state management layers), unit test coverage, and build process automation. Check for the use of appropriate design patterns, memory management for video assets, and performance optimization techniques. Deduct 3 points if global state pollution is found, 4 points if video memory isn't properly managed, and 3 points if the rendering pipeline isn't optimized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern editor design principles: 1) Clear separation between preview area, timeline, and controls 2) Consistent icon system and color scheme 3) Responsive layout that adapts to different screen sizes 4) High contrast between interactive elements and background. Deduct 3 points for cluttered workspace design, 3 points for inconsistent iconography, and 4 points for poor visual hierarchy of editing tools. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to video editing expectations: 1) Real-time preview updates when modifying PiP parameters 2) Smooth timeline scrubbing without frame drops 3) Responsive drag-and-drop for PiP positioning 4) Clear visual feedback during rendering operations. Deduct 3 points for laggy preview updates, 3 points for jerky timeline scrubbing, and 4 points if export/rendering progress indicators are missing or inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

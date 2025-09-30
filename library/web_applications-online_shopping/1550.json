@@ -1,0 +1,68 @@
+{
+  "index": 1550,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the generated code is executable when demonstrated. Well, let me explain my requirements: my WeChat Mini Program needs to have functionality for collecting coupons, payment capabilities, and the ability to view products. Can you help me write this kind of code? And could you tell me where to modify the relevant code?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the coupon collection functionality fully implemented?",
+      "description": "Evaluate whether the code includes a complete coupon system with collection, storage, and usage mechanisms. Check for 1) Coupon listings page, 2) Collection interaction, 3) Coupon detail view, 4) Storage in user account, and 5) Expiration management. Score 0 if core coupon functionality is missing, 5 if basic collection is implemented without management features, and 10 if the full coupon lifecycle is managed.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the payment capability properly integrated?",
+      "description": "Review the implementation of the WeChat payment API, including 1) Pre-payment order creation, 2) Payment signature verification, 3) Payment callback handling, 4) Order status management, and 5) Payment error handling. Ensure the code includes proper security measures like signature validation. Deduct 5 points if the payment flow is incomplete, 3 points if error handling is missing, and 5 points if security validations are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the product display functionality comprehensive?",
+      "description": "Check whether the product display includes 1) List and grid views, 2) Product detail pages with complete information (images, price, description, specifications), 3) Category filtering, 4) Search functionality, and 5) Product recommendation. Evaluate if the display adapts to different screen sizes. Deduct 2 points for each missing core feature and 5 points if responsive design is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the code follow WeChat Mini Program development standards?",
+      "description": "Assess whether the code follows official WeChat Mini Program development patterns and best practices, including correct use of 1) Page lifecycle hooks, 2) Component system, 3) WXML/WXSS conventions, 4) App configuration, and 5) API usage. Deduct 3 points for each significant deviation from standards. Give 0 points if the code isn't specifically adapted for Mini Program environment, 5 points for basic compliance, and 10 points for full adherence to best practices.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, payment failures, API timeout, invalid coupon usage, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR product preview 2. Social sharing with custom cards 3. Gamified coupon collection 4. Smart product recommendations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple product listing methods) 2. Function modules unrelated to the core requirements (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., complex animations on product pages). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/API layers), code organization patterns, and maintenance considerations. Deduct 5 points if global state management is chaotic; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear folder structure or naming convention. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design guidelines: 1) Consistent with WeChat's visual language 2) Proper layout spacing (element spacing follows Mini Program conventions) 3) Professional typography (readable font sizes, proper contrast). Deduct 3 points for each inconsistency with WeChat's design language, 5 points for cluttered layouts, and 5 points for poor readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to Mini Program user expectations: 1) Response to taps within 100ms 2) Smooth transitions between pages 3) Clear loading states for network operations 4) Intuitive gesture support. Deduct 5 points for each operation without feedback, 3 points for janky animations, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

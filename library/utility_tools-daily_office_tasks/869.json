@@ -1,0 +1,68 @@
+{
+  "index": 869,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Design a to-do reminder interface that includes processing time limits.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core to-do reminder functionality fully implemented?",
+      "description": "Check if the code implements the essential features of a to-do list: adding tasks, marking them as complete, deleting tasks, and setting time limits/deadlines. Score 0 if the core functions are missing, 5 if only basic functionality exists, and 10 if all core features with proper state management are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the time limit functionality properly implemented?",
+      "description": "Verify that the time limit feature includes deadline setting, visual countdown indicators, overdue status handling, and reminders. Deduct 3 points if deadline validation is missing, 3 points if there's no visual differentiation between upcoming, urgent and overdue tasks, and 4 points if notification/reminder functionality is absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence mechanism implemented?",
+      "description": "Evaluate whether the application saves to-do items between sessions (using localStorage, IndexedDB, or other storage methods). Check if it handles storage errors gracefully and includes data validation before storage. Deduct 5 points if no persistence is implemented, 3 points if data validation is missing, 2 points if there's no error handling for storage operations. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is filtering and sorting functionality provided?",
+      "description": "Check whether the interface allows users to filter tasks by status (completed/pending), sort by priority or deadline, and supports search functionality. Deduct 3 points if filtering is missing, 3 points if sorting options are limited, and 4 points if there's no search capability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid date inputs, duplicate tasks, browser storage limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Task prioritization with visual indicators 2. Recurring task support 3. Drag-and-drop task organization 4. Progress tracking for complex tasks). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple task updating mechanisms) 2. Function modules unrelated to to-do management (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating task data/view/controller layers), event delegation patterns, and code reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if there's no code organization or commenting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for task priority and deadlines. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for time-sensitive tasks. Deduct 5 points for each operation without feedback, 3 points for jarring transitions when manipulating tasks, and 5 points for confusing interactions when setting time limits. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 315,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and functional. For Vue 3 + TypeScript: implement functionality to save the page content as PDF and download it when clicking a button on the page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 3 + TypeScript PDF export functionality correctly implemented?",
+      "description": "Check if the code correctly uses Vue 3 composition API with TypeScript for PDF generation. The implementation should include proper type definitions, reactive state management, and proper component structure. Score 0 if the core functionality is missing, 5 if basic functionality exists but with TypeScript errors, and 10 if fully typed and following Vue 3 best practices.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is HTML-to-PDF conversion handled properly?",
+      "description": "Evaluate the PDF generation approach - whether using libraries like jsPDF, html2canvas, or pdfmake. Check if the solution handles CSS styling, fonts, and layouts properly when converting to PDF. Deduct 5 points if text formatting is lost, 3 points if images aren't properly included, and 2 points if page breaks aren't handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the download mechanism implemented correctly?",
+      "description": "Check if the code properly creates a downloadable file with appropriate MIME type, generates a Blob or File object, and uses browser APIs (like URL.createObjectURL) to trigger downloads. Verify proper file naming with .pdf extension and cleanup of temporary objects. Deduct 5 points if the download doesn't work in major browsers, 3 points if filename handling is incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are progress indicators and error handling implemented?",
+      "description": "Check if the code includes loading states during PDF generation (which can be resource-intensive), error catching for failed conversions, and user feedback mechanisms. Score 10 points if it has comprehensive loading indicators, graceful error handling with user-friendly messages, and recovery options. Deduct 5 points if loading states are missing, 5 points if error handling is absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as large content, content with special characters, network interruptions during downloads, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Preview before download 2. PDF customization options like headers/footers 3. Page size/orientation selection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar PDF generation methods 2. Unnecessary external dependencies when browser APIs would suffice 3. Over-engineered solutions for simple requirements. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components from PDF generation logic), proper TypeScript typing, and component reusability. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high; deduct 5 points if TypeScript types are ignored with 'any' types. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the PDF export button/UI follows modern design principles: 1) Clear button state (normal/loading/disabled) 2) Proper placement in the UI hierarchy 3) Consistent with Vue design patterns (like Vuetify or Element Plus if used). Deduct 3 points for confusing button placement, 5 points for inconsistent styling with the rest of the app, and 5 points for poor accessibility features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the PDF generation process provides good UX: 1) Clear indication when generation starts 2) Progress feedback for large documents 3) Smooth transition between generation and download. Deduct 5 points for freezing UI during generation, 3 points for abrupt transitions, and 5 points for lack of feedback when the process is complete. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

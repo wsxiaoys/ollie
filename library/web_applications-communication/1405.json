@@ -1,0 +1,68 @@
+{
+  "index": 1405,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable when possible. Using Vue3, Pinia, and token authentication, generate code for a login module.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 Composition API implementation complete and standardized?",
+      "description": "Review whether the code correctly uses Vue3 Composition API features including setup(), ref/reactive state management, computed properties, and lifecycle hooks. Check if the component structure follows Vue3 best practices with proper template syntax, event handling, and form binding. Score 0 if using Options API or Vue2 syntax, 5 if basic Composition API is used but lacks proper reactivity patterns, and 10 if fully leveraging Vue3's advanced features with proper TypeScript support.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Pinia store architecture properly designed and implemented?",
+      "description": "Evaluate whether Pinia store is correctly configured with proper state management, actions, and getters. Check if the authentication state is properly managed with user data, login status, and token storage. Verify if store actions handle async operations correctly with proper error handling. Deduct 5 points if store mutations are used instead of actions, 3 points if state persistence is not implemented, and 2 points if store modularity is poor. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the token authentication mechanism secure and comprehensive?",
+      "description": "Check whether the token authentication includes secure token storage (preferably httpOnly cookies or secure localStorage), automatic token refresh logic, and proper header injection for API requests. Verify if JWT token validation, expiration handling, and logout token cleanup are implemented. Deduct 5 points if tokens are stored in plain localStorage without encryption, 3 points if no refresh token mechanism exists, and 5 points if no token expiration validation is present. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete login workflow with route protection implemented?",
+      "description": "Evaluate whether the code includes comprehensive login flow with form validation, API integration, loading states, and route guards. Check if protected routes redirect to login page and successful login redirects to intended destination. Verify if 'remember me' functionality and auto-login on page refresh are implemented. Deduct 5 points if no route protection exists, 3 points if form validation is incomplete, and 2 points if loading states are missing. Give 10 points if fully implemented with proper UX flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust with comprehensive error handling?",
+      "description": "Evaluate whether the code can handle common scenarios such as network failures, invalid credentials, server errors, token expiration, and malformed responses. Check if user-friendly error messages are displayed and proper fallback mechanisms exist. Code with strong robustness should gracefully handle edge cases like concurrent login attempts and session conflicts, giving 10 points. If robustness is average, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance user experience?",
+      "description": "Check whether the code includes advanced features that improve login experience (e.g., 1. Biometric authentication support 2. Social login integration 3. Progressive form validation with real-time feedback 4. Adaptive security measures based on login patterns 5. Multi-factor authentication). Add 2-3 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary implementations?",
+      "description": "Strictly check for three types of redundancy: 1. Duplicate authentication logic across components 2. Unnecessary third-party libraries for simple operations 3. Over-engineered validation that impacts performance 4. Redundant API calls or excessive state watchers. Deduct 3 points for each redundancy found, and directly deduct 10 points if core login functionality is compromised by unnecessary complexity.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate high engineering quality standards?",
+      "description": "Review component modularity, separation of concerns (auth logic, UI components, API services), TypeScript usage, and code organization. Check for proper composable functions, reusable utilities, and clean architecture patterns. Deduct 5 points if authentication logic is mixed with UI components; deduct 3 points if no TypeScript definitions exist; deduct 5 points if code lacks proper commenting and documentation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the login interface meet modern design and accessibility standards?",
+      "description": "Evaluate whether the login form follows contemporary UI/UX principles: 1) Clean, minimal design with proper visual hierarchy 2) Accessible form labels and ARIA attributes 3) Responsive design for mobile devices 4) Professional color scheme and typography 5) Proper spacing and alignment. Deduct 3 points for poor mobile responsiveness, 5 points for accessibility violations, and 3 points for unprofessional visual appearance. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the interactions smooth with proper feedback mechanisms?",
+      "description": "Judge whether the login interactions provide immediate and clear feedback: 1) Form validation feedback appears within 200ms 2) Loading states during authentication with progress indicators 3) Smooth transitions between login states 4) Clear success/error message presentation 5) Keyboard navigation support. Deduct 5 points for missing loading indicators, 3 points for delayed validation feedback, and 5 points for poor keyboard accessibility. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

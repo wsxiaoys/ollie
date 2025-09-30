@@ -1,0 +1,68 @@
+{
+  "index": 1678,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. Help me create a fun number connection game from 1 to 1000, where all points are marked, and when connected in numerical order, they form an animal image. The game should include 100 different animal shapes to choose from, with all code integrated into a single webpage.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core numerical connection game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the connection of points from 1 to 1000 in numerical order. Check if the points are properly marked with numbers, if the game validates correct connections, and if there's visual feedback when points are connected. Score 0 if the core connection logic is not implemented, 5 if only basic connections work, and 10 if fully implemented with validation and visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are 100 different animal shapes properly implemented and selectable?",
+      "description": "Evaluate whether the code genuinely includes 100 different animal shapes with distinct point distributions. Check if each animal is uniquely identifiable and if the selection mechanism works properly. Deduct 1 point for every 10 animals missing from the required 100. Deduct 5 points if the animals are too similar or indistinguishable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the coordinate system and point distribution implementation effective?",
+      "description": "Check if the points are distributed in a way that clearly forms the animal shape when connected. Points should be positioned strategically to make the animal recognizable during gameplay. Evaluate if the 1000 points are distributed with appropriate density (not too sparse in important details, not too dense in simple areas). Deduct 5 points if animal shapes are unrecognizable, and 3 points if point density is poorly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game progression and user interface properly designed?",
+      "description": "Assess whether the game provides clear guidance on which number to connect next, progress tracking, completion indication, and reset functionality. Check if the interface allows for easy navigation between different animal options. Deduct 3 points if the next number to connect isn't clearly indicated, 3 points if progress isn't tracked, and 4 points if there's no completion feedback or reset option. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect connections, rapid clicking, resizing the browser window, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Progressive difficulty levels 2. Timed challenges 3. Partial image reveals as hints 4. Animation when completing an animal). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to select animals) 2. Function modules unrelated to the number connection game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down point connections). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), code organization, and performance optimization for handling 1000 points. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if rendering optimization is poor (slow performance with 1000 points). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Point connection feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual guidance for the next number. Deduct 5 points if connecting points lacks feedback, 3 points for laggy animations when many points are connected, and 5 points for unclear number identification. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

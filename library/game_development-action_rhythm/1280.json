@@ -1,0 +1,68 @@
+{
+  "index": 1280,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration purposes. I'd like to develop \"Fish at Work Smash: The Boss-Crushing Plan\" using the WeChat Developer Tools. Please rewrite a complete, executable solution and framework.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat mini-program game framework fully implemented?",
+      "description": "Review whether the code correctly implements WeChat mini-program game framework using wx.createCanvas() and game loop management. Check if it includes proper scene management, game object lifecycle, collision detection system, and physics engine integration. Score 0 if core game framework is missing, 5 if only basic canvas rendering is implemented, and 10 if complete game framework with optimized performance is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 'Boss-Crushing' gameplay mechanics properly designed?",
+      "description": "Evaluate whether the game implements engaging boss battle mechanics including boss AI behavior patterns, progressive difficulty scaling, combo systems, and reward mechanisms. Check for proper game balance, multiple boss types, and satisfying destruction effects. Deduct 5 points if boss AI is too simplistic, 3 points if difficulty progression is poorly balanced. Full score requires sophisticated gameplay mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are WeChat-specific APIs and social features integrated?",
+      "description": "Check whether the code utilizes WeChat mini-program specific APIs like wx.getUserInfo(), wx.shareAppMessage(), leaderboard integration, and friend ranking systems. Evaluate if social sharing features, achievement systems, and WeChat payment integration (if applicable) are properly implemented. Deduct 5 points if social features are missing, 3 points if sharing functionality is incomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game data persistence and progression system complete?",
+      "description": "Review whether the code includes comprehensive save/load functionality using wx.setStorageSync(), player progression tracking, achievement unlocking, and cloud save synchronization. Check for proper data validation, backup mechanisms, and cross-device continuity. Deduct 5 points if local storage is not implemented, 3 points if cloud sync is missing, and 2 points if data corruption handling is inadequate.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles WeChat platform constraints?",
+      "description": "Evaluate whether the code can handle WeChat mini-program specific limitations (memory constraints, file size limits, API rate limiting) and provides appropriate error handling for network failures, permission denials, and platform-specific edge cases. Code should gracefully degrade when WeChat services are unavailable. Give 10 points if fully robust, 5 points if average handling, 0 points if no platform-specific error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance the 'fish at work' theme?",
+      "description": "Check whether the code includes creative features that cleverly incorporate the 'slacking at work' concept (e.g., boss proximity detection using device sensors, stealth mode with quick alt-tab functionality, work-themed power-ups, office environment integration). Add 3 points for each well-implemented thematic feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features or bloated implementations?",
+      "description": "Strictly examine three types of redundancy: 1) Duplicate game logic implementations 2) Features unrelated to the core boss-crushing gameplay 3) Performance-heavy effects that exceed WeChat mini-program optimization guidelines. Deduct 3 points for each redundancy found, and directly deduct 10 points if core gameplay is hindered by unnecessary complexity.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code meet WeChat mini-program engineering standards?",
+      "description": "Review modular architecture following WeChat mini-program best practices, proper use of Component and Page lifecycle methods, optimized subpackage loading, and adherence to WeChat审核 guidelines. Deduct 5 points if global state is poorly managed; deduct 5 points if code structure doesn't follow WeChat conventions; deduct 5 points if performance optimization is inadequate (>2MB package size, >500ms loading time).",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design follow WeChat Design Guidelines and mobile gaming standards?",
+      "description": "Evaluate whether the UI/UX design adheres to WeChat Design Language: 1) Appropriate use of WeChat's recommended color palette and typography 2) Touch-friendly interface elements (minimum 44px touch targets) 3) Proper adaptation for different screen densities and WeChat's navigation bar. Deduct 3 points for each non-compliant interface element, 5 points for poor mobile adaptation, and 5 points for inconsistent visual hierarchy.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the game interactions optimized for mobile touch and WeChat environment?",
+      "description": "Judge whether the game controls are optimized for mobile touch interaction within WeChat: 1) Touch response time ≤80ms for game actions 2) Gesture recognition accuracy >95% 3) Proper haptic feedback integration 4) Seamless transition between WeChat UI and game interface. Deduct 5 points for each unresponsive control, 3 points for poor gesture recognition, and 5 points for jarring WeChat integration issues.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

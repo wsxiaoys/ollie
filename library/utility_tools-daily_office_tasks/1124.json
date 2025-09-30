@@ -1,0 +1,68 @@
+{
+  "index": 1124,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Write a mini-program that can generate surveys.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the survey creation functionality completely implemented?",
+      "description": "Review whether the code accurately implements a survey creation system that allows users to define questions, answer options, and survey structure. Score 0 if core survey building functionality is not implemented, 5 if only basic question types are supported (e.g., multiple choice only), and 10 if multiple question types (multiple choice, short answer, rating scales, etc.) are fully supported with proper validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the survey response collection and storage mechanism properly implemented?",
+      "description": "Check whether the implementation includes methods to collect user responses, validate input data, and store responses securely. Examine if there's proper handling of different data types based on question types. Deduct 5 points if validation is missing, 3 points if data persistence is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the program include survey management features?",
+      "description": "Evaluate if the code provides functionality to manage surveys (create, edit, delete, publish/unpublish) and includes survey lifecycle management. Check if there's a way to track survey completion status and results. Deduct 5 points if editing capabilities are missing, and 3 points if there's no survey status management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a results analysis or reporting component?",
+      "description": "Check if the code includes features for analyzing survey results, such as data visualization, summary statistics, or export capabilities. Assess whether users can easily understand the gathered data. Deduct 5 points if no visualization is included, 3 points if only raw data is shown without analysis. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, server errors, data validation issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Logic branching based on responses 2. Survey templates library 3. Real-time collaboration on survey creation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to create the same question type) 2. Function modules unrelated to surveys (e.g., a built-in calendar unrelated to survey scheduling) 3. Fancy effects that affect performance (e.g., excessive animations when switching between questions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating survey model/view/controller layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

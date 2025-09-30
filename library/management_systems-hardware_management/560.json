@@ -1,0 +1,68 @@
+{
+  "index": 560,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the code executable whenever possible. Please write code to implement a backup strategy management system where IT administrators can create and manage different backup policies, and users can automatically upload backups of specified folders according to these policies. The system should provide status monitoring and logging functions for backup tasks, and support data recovery. Administrators should be able to assign backup policies to different users and generate backup usage reports.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the backup policy management system fully implemented?",
+      "description": "Review whether the code implements a complete policy management system where administrators can create, edit, delete, and view backup policies with parameters like frequency, retention period, and storage targets. Check if policies can be assigned to specific users or groups. Score 0 if the policy management functionality is missing, 5 if basic CRUD operations are implemented but lack advanced features, and 10 if the system includes comprehensive policy management with validation and conflict detection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automated backup mechanism properly implemented?",
+      "description": "Evaluate the implementation of the automated backup functionality. Check if the code includes scheduling mechanisms (cron jobs, task schedulers), file monitoring for changes, incremental/differential backup options, and compression algorithms. Verify that backups can be triggered automatically according to defined policies. Deduct 3 points if scheduling is manual only, 3 points if only full backups are supported, and 3 points if there's no compression or encryption. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the monitoring and logging system comprehensive?",
+      "description": "Assess whether the code implements detailed logging and monitoring for backup operations, including success/failure status, progress tracking, error handling, and notification mechanisms. Check for real-time monitoring dashboards, alert configurations, and audit trails. Deduct 3 points if there's no real-time status updates, 3 points if error notifications are missing, and 3 points if historical logs cannot be queried or filtered. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data recovery functionality effective?",
+      "description": "Examine the data recovery implementation, including point-in-time recovery options, file-level and system-level restore capabilities, and restoration testing mechanisms. Check if the recovery process handles corrupted backups and provides clear progress indicators. Deduct 3 points if only full restores are supported (no granular recovery), 3 points if versioning is limited/missing, and 3 points if there's no verification of restored data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, disk full events, permission issues, corrupted files, etc.) and provide friendly error prompts or recovery mechanisms. Check if background processes can resume interrupted backups. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered backup optimization suggestions 2. Cloud storage integration with automatic provider selection 3. Self-healing backup verification). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple backup engines running in parallel) 2. Function modules unrelated to backup management (e.g., a built-in email client) 3. Fancy effects that affect performance (e.g., excessive animations in the dashboard). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating policy management/backup execution/reporting layers), unit test coverage, and build process automation. Check for appropriate design patterns, error handling, and dependency management. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check if dashboard visualizations are clear and informative. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic dashboard layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Progress indicators for long-running operations 3) Clear visual guidance for critical actions like recovery processes. Assess responsiveness during large backup operations. Deduct 5 points for operations without feedback, 3 points for freezing UIs during backup processes, and 5 points for confusing navigation between system components. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

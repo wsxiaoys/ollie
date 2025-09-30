@@ -1,0 +1,68 @@
+{
+  "index": 1457,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable for demonstration. I am an electrical engineer who wants to create an interface for a vacuum oven with baking/heating functionality using Kunlun Tongtai TPC1031K. The requirements are that it should be able to store records and retrieve vacuum curves and temperature curves.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the vacuum oven control interface fully implemented?",
+      "description": "Review whether the code accurately implements core control elements for the TPC1031K interface including temperature setting, vacuum level monitoring, and real-time status display. Score 0 if the core control functions are missing, 5 if basic controls are implemented but lack precision controls, and 10 if all essential vacuum oven functions (temperature range validation, vacuum threshold alerts, safety interlocks) are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data recording and storage functionality complete?",
+      "description": "Check whether the implementation includes proper data logging mechanisms for both vacuum curves and temperature curves with appropriate sampling rates (at least once per minute for critical processes). Verify if the code properly handles data persistence through power cycles. Deduct 5 points if there's no data backup mechanism, and 3 points if the sampling rate is insufficient for process monitoring. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the curve visualization system properly implemented?",
+      "description": "Evaluate whether the code includes proper data visualization components for both temperature and vacuum curves with appropriate scaling, units, and time axis representation. Check if the visualization allows for zooming, comparison of multiple records, and export capabilities. Deduct 5 points if the visualization doesn't support multiple time scales, and 3 points if important visual markers (setpoints, thresholds) are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the integration with TPC1031K controller properly implemented?",
+      "description": "Assess whether the code correctly interfaces with the Kunlun Tongtai TPC1031K controller using the appropriate communication protocol. Check for proper error handling during communication failures, command verification, and parameter validation. Deduct 5 points if the communication protocol is incorrect, 5 points if error handling is inadequate, and 3 points if parameter validation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as sensor failures, communication interruptions, power fluctuations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should implement watchdog timers and graceful degradation. If the robustness is comprehensive, give 10 points. If basic error handling exists but lacks recovery mechanisms, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive maintenance alerts based on performance patterns 2. Remote monitoring capabilities 3. Process recipe management with version control). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple temperature conversion utilities) 2. Function modules unrelated to vacuum oven control (e.g., unnecessary multimedia features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down critical monitoring). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating hardware interfaces/business logic/visualization layers), error logging mechanisms, and configuration management. Deduct 5 points if global state pollution is found or industrial design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no configuration separation for different deployment environments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet industrial control standards?",
+      "description": "Evaluate whether the overall design follows industrial HMI principles: 1) High contrast display suitable for industrial environments 2) Proper alarm color coding (red for critical, yellow for warning) 3) Adequate touch target sizes (≥ 15mm) for operator use with gloves. Deduct 3 points for each ergonomic issue, 5 points for non-standard alarm colors, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the system response time appropriate for industrial control?",
+      "description": "Judge whether the performance meets industrial requirements: 1) Critical alarm response ≤ 500ms 2) UI refresh rate appropriate for process monitoring (≥ 1Hz for temperature, ≥ 2Hz for vacuum) 3) Command execution confirmation within 1 second. Deduct 5 points for each critical control with delayed feedback, 3 points for laggy visualization during normal operation, and 5 points for unresponsive emergency controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

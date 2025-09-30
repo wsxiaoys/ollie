@@ -1,0 +1,68 @@
+{
+  "index": 952,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable and demonstrable. React Native FlashList for chat application.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the FlashList implementation optimized for chat performance?",
+      "description": "Review whether the code properly implements FlashList with optimized rendering for chat messages, including virtualization settings (estimatedItemSize, overrideItemLayout), proper key extraction, and message rendering optimization. Check for memory leak prevention with useCallback for handlers and memoization of item renderers. Score 0 if basic FlashList is not implemented, 5 if implemented with default settings, and 10 if fully optimized with performance considerations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are chat-specific UI components properly implemented?",
+      "description": "Evaluate whether the code includes essential chat UI components such as message bubbles with proper styling for sent/received messages, timestamps, read receipts, user avatars, and media previews. Check for proper text overflow handling, emoji support, and URL detection/preview. Deduct 3 points if message types aren't differentiated, 3 points if timestamps/read receipts are missing, and 4 points if media handling is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the message loading and pagination mechanism effectively implemented?",
+      "description": "Check whether the code implements efficient pagination with onEndReached handler, proper loading states, and scroll position maintenance when new messages are added or history is loaded. Verify implementation of bi-directional loading (newer messages at bottom, older at top). Deduct 5 points if pagination is not implemented, 3 points for missing loading indicators, and 3 points if scroll position jumps during new message arrival. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are chat-specific interactions and animations properly handled?",
+      "description": "Assess whether the code includes smooth scrolling to bottom, typing indicators, pull-to-refresh functionality, and appropriate animations for new messages. Check for message action handlers (long press for options), swipe actions, and reply-to functionality. Deduct 3 points for each missing core interaction, and award full 10 points only if animations are performant (verified using Flipper or performance metrics).",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty message lists, network failures, malformed message data, extremely long messages, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Message reactions with animations 2. Voice message visualization 3. Contextual smart replies 4. In-chat media gallery). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant re-renders causing performance issues 2. Unnecessary wrapper components adding to the component tree 3. Heavy animations or effects that affect scrolling performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core messaging functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating message rendering/state management/network layers), component reusability, and appropriate use of React hooks. Deduct 5 points if prop drilling is excessive instead of using Context; deduct 5 points if components have mixed responsibilities; deduct 5 points if there's no error boundary implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern chat UI principles: 1) Clear visual distinction between sent and received messages 2) Proper whitespace around messages (following 8px principle) 3) Readable typography (minimum 14px, contrast ratio ≥4.5:1). Deduct 3 points for each accessibility issue, 5 points for inconsistent bubble styling, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the chat interactions conform to user expectations: 1) Message send feedback ≤ 100ms 2) Smooth scroll performance (60fps) 3) Keyboard appearance doesn't disrupt visible messages. Deduct 5 points for frame drops during scrolling, 3 points for layout shifts when keyboard appears/disappears, and 5 points for input field that doesn't adjust properly with keyboard. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

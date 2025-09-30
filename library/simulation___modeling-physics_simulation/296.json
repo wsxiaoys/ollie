@@ -1,0 +1,68 @@
+{
+  "index": 296,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration. Write HTML code that simulates the movement of celestial bodies in the solar system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the solar system model accurately implemented?",
+      "description": "Check if the code correctly represents the relative positions, sizes, and orbits of the major celestial bodies (Sun, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune). Evaluate if orbital mechanics are simulated with reasonable accuracy (elliptical orbits, relative distances). Score 0 if fewer than 5 celestial bodies are implemented, 5 if basic circular orbits are present, and 10 if accurate elliptical orbits with proper inclinations are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the celestial body movement animations smooth and physically accurate?",
+      "description": "Evaluate if the animation uses requestAnimationFrame or similar techniques for smooth rendering. Check if the orbital periods maintain proper relative timing (e.g., Earth's year vs. Mars' 1.88 Earth years). Verify if the rotation of planets on their axes is implemented. Deduct 5 points if animation is jerky (< 30fps), 3 points if orbital periods are randomly assigned rather than proportionally accurate, and 5 points if there's no planetary rotation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the visualization scalable and responsive?",
+      "description": "Test if the solar system visualization adapts to different screen sizes and device orientations. Verify if proper scaling is implemented (the real solar system has vast empty spaces that need smart scaling). Check if a responsive design approach is used with relative units or viewport units. Deduct 5 points if the visualization breaks on mobile screens, 3 points if planets become too small to see on certain devices, and 5 points if no scaling mechanism exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive elements implemented to enhance user experience?",
+      "description": "Assess if the code includes user controls like zoom, pause/play, speed adjustment, or ability to focus on specific planets. Check if tooltips or information panels are available when hovering/clicking on celestial bodies. Deduct 3 points for each missing core interaction (zoom, pause/play, speed control), and award full points only if at least 3 different meaningful interactions are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resize, browser compatibility issues, varying performance capabilities). Check for presence of error handling, graceful degradation, and performance optimizations. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic textures for celestial bodies 2. Comet or asteroid belt visualization 3. Day/night cycle on Earth 4. Moon phases or satellite systems for planets). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation functions 2. Unnecessary elements unrelated to celestial mechanics (e.g., irrelevant UI elements) 3. Heavy visual effects that severely affect performance (e.g., excessive particle systems that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering logic/physics calculations/user interface), code reusability (e.g., using a single celestial body class for all planets), and proper variable/function naming. Deduct 5 points if global variable pollution is found; deduct 5 points if the code duplication rate is too high (similar code blocks repeated for each planet); deduct 5 points if hardcoded magic numbers are used instead of constants or configuration objects. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color scheme with appropriate contrast between space and celestial bodies 2) Proper proportional representation (while acknowledging artistic license for visibility) 3) Clean interface elements that don't obstruct the visualization. Deduct 3 points for each visual element with poor contrast, 5 points for unrealistic or jarring colors that don't mimic actual celestial bodies, and 5 points for cluttered controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Smooth transitions when changing view or focus 2) Intuitive controls that respond within 100ms 3) Clear visual feedback when interacting with celestial bodies. Deduct 5 points for each operation without feedback, 3 points for stuttering animations during interactions, and 5 points for disorienting camera movements or transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

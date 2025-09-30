@@ -1,0 +1,68 @@
+{
+  "index": 198,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Please help me implement this SVG image using code. Rocket ship.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the rocket ship SVG fully implemented with proper shape elements?",
+      "description": "Review whether the code accurately implements the rocket ship using appropriate SVG elements (path, rect, circle, etc.). Check if the essential components of a rocket are present (body, fins, windows, nose cone). Score 0 if missing essential elements, 5 if basic shapes are present but lack detail, and 10 if the rocket is complete with proper proportions and details.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the SVG code structured with proper namespaces and viewBox?",
+      "description": "Evaluate whether the SVG includes proper XML namespaces, a well-defined viewBox attribute that frames the rocket appropriately, and preserveAspectRatio for responsive display. Deduct 3 points if SVG namespace is missing, 3 points for improper viewBox dimensions, and 4 points if responsive scaling isn't considered. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation use appropriate coloring and gradient techniques?",
+      "description": "Check if the rocket utilizes proper SVG color attributes, gradients (linear or radial) for realistic effects, and appropriate opacity where needed. Deduct 3 points for flat coloring without gradients, 3 points for unrealistic/inappropriate color choices, and 4 points if no attempt at shading or dimension is made. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are there animations or interactive elements that enhance the rocket visualization?",
+      "description": "Review if the implementation includes animations (like rocket launch, flame effects) using SMIL or CSS/JavaScript animations. Check for interactive elements (hover effects, clickable parts). Score 0 if no animation/interaction exists, 5 if basic animations are implemented, and 10 if comprehensive animations with user interaction are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases like browser compatibility issues, graceful fallbacks for unsupported features, and proper error handling. Code with strong robustness should include comments for complex sections and use defensive programming techniques. Give 10 points for comprehensive robustness, 5 points for average attention to these issues, and 0 points if completely neglected.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Rocket launch sequence with animation 2. Interactive control panel for the rocket 3. Particle effects for exhaust). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate definitions of the same elements or styles 2. Unnecessary complexity in path definitions that could be simplified 3. Unused elements or attributes that add to file size without visual impact. Deduct 3 points for each redundancy found, and directly deduct 10 points if core elements are obscured by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (grouping related elements with <g> tags), reuse of elements through <defs> and <use>, and appropriate commenting. Deduct 5 points if elements aren't logically grouped; deduct 5 points if there's significant repetition that could be solved with definitions; deduct 5 points if the code is unreadable without comments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional illustration standards?",
+      "description": "Evaluate whether the rocket design follows professional illustration principles: 1) Proper perspective and proportion 2) Attention to detail in components 3) Visual balance and focal points. Deduct 3 points for perspective inconsistencies, 5 points for disproportionate elements, and 5 points for lack of visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the final output optimized for performance and accessibility?",
+      "description": "Judge whether the SVG is optimized: 1) Minimized path data points 2) Appropriate use of primitives over complex paths when possible 3) Inclusion of ARIA attributes for accessibility. Deduct 3 points for unoptimized paths, 3 points for excessive use of groups or transforms that could be simplified, and 4 points for completely neglecting accessibility. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

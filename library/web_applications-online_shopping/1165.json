@@ -1,0 +1,68 @@
+{
+  "index": 1165,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. I am a programming novice and need to create a WeChat mini-program for online shopping. The content should include a changeable avatar at the top of the screen, the online store name below the avatar, and navigation options and product names further down.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat mini-program structure and configuration correctly implemented?",
+      "description": "Review whether the code includes proper app.json configuration with required pages, window settings, and tabBar navigation. Check if app.js contains valid lifecycle methods and global data management. Verify pages structure follows WeChat mini-program standards with .wxml, .wxss, .js, and .json files. Score 0 if basic mini-program structure is missing, 5 if only partial configuration is present, and 10 if complete standard structure is implemented with proper manifest configuration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the avatar change functionality fully operational?",
+      "description": "Check whether the avatar change feature uses wx.chooseImage or wx.chooseMedia API correctly, includes image upload handling, and provides fallback for different image formats. Verify if the code handles image compression, local storage persistence, and error scenarios. Deduct 5 points if no image selection API is implemented, 3 points if image persistence is missing, and 2 points if error handling is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the navigation and product display components properly structured?",
+      "description": "Evaluate whether the navigation uses proper WeChat components (navigator, tabbar, or custom navigation) and product list implements scroll-view or list rendering with wx:for. Check if data binding follows MVVM pattern and includes proper event handling for user interactions. Deduct 5 points if navigation doesn't follow WeChat UI guidelines, 3 points if product list lacks proper data binding, and 2 points if click events are not properly handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the shopping cart and order management system implemented?",
+      "description": "Check whether the code includes add-to-cart functionality, cart item management, quantity adjustment, and basic order processing. Verify if local storage (wx.setStorageSync) is used for cart persistence and if the shopping flow is complete from product selection to order confirmation. Deduct 5 points if cart functionality is missing, 3 points if data persistence is not implemented, and 2 points if order flow is incomplete. Give 10 points if fully functional shopping system is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, API errors, image loading failures, storage quota exceeded, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include try-catch blocks, loading states, and graceful degradation, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance user experience?",
+      "description": "Check whether the code includes practical enhancements such as: 1. Product search and filtering 2. Favorites/wishlist functionality 3. User reviews and ratings 4. Share to WeChat moments 5. Scan QR code for products 6. Location-based store recommendations. Add 2 points for each well-implemented innovative feature (maximum 10 points). Features must be functional, not just UI mockups.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart storage methods coexisting) 2. Function modules unrelated to shopping (e.g., built-in games or entertainment features) 3. Overly complex animations that affect mini-program performance (e.g., heavy 3D effects or excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if core shopping functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating components, utils, and services), proper use of WeChat mini-program best practices, and code organization. Check for component reusability, proper data flow management, and adherence to WeChat development guidelines. Deduct 5 points if global data pollution is found or components are not properly encapsulated; deduct 3 points if code duplication rate is high; deduct 2 points if WeChat-specific optimizations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet WeChat mini-program design standards?",
+      "description": "Evaluate whether the design follows WeChat Design Guidelines: 1) Consistent with WeChat native UI components and color scheme 2) Proper use of rpx units for responsive design 3) Clear visual hierarchy with appropriate spacing (following 8rpx grid system) 4) Readable typography (minimum 28rpx for body text) 5) Proper use of WeChat official icons. Deduct 3 points for each design inconsistency, 5 points for poor responsive behavior, and 2 points for accessibility issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction smooth and follows WeChat mini-program UX patterns?",
+      "description": "Judge whether interactions conform to WeChat mini-program standards: 1) Proper loading states and feedback (wx.showLoading, wx.showToast) 2) Smooth page transitions and navigation 3) Touch-friendly interactive elements (minimum 88rpx touch targets) 4) Proper use of WeChat native interactions (pull-to-refresh, reach-bottom loading). Deduct 5 points for each missing feedback mechanism, 3 points for slow or janky animations, and 2 points for poor touch responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "easy"
+}

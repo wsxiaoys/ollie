@@ -1,0 +1,68 @@
+{
+  "index": 1108,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Write a tool that can view \"major disasters that happened on this day in history\", in HTML format, for mobile devices.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core functionality of displaying 'major disasters on this day in history' implemented?",
+      "description": "Check whether the code properly fetches and displays historical disaster data for the current date. It should include the date handling logic, data retrieval mechanism, and proper rendering. Score 0 if the core functionality is missing, 5 if basic implementation exists but with limitations, and 10 if it comprehensively shows disasters with proper date formatting and details.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is there an appropriate data source or API integration?",
+      "description": "Evaluate whether the implementation uses a reliable data source or API to fetch historical disaster information. Check if the API calls are properly structured with error handling, rate limiting consideration, and fallback mechanisms. Deduct 5 points if no proper data source is used (e.g., hardcoded sample data), and 3 points if the API integration lacks error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the mobile-specific design properly implemented?",
+      "description": "Assess whether the implementation follows mobile-first design principles, including responsive layouts, appropriate touch targets (minimum 44x44px), mobile-friendly navigation, and proper viewport settings. Check for media queries handling different screen sizes. Deduct 5 points if the interface is not optimized for mobile viewing, and 3 points if touch interactions are not properly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include date navigation or filtering capabilities?",
+      "description": "Check if users can navigate through different dates or filter disasters by type/severity/location. Evaluate if the date selection is intuitive (calendar picker, swipe gestures, etc.) and whether filter options are properly implemented. Deduct 5 points if date navigation is absent, and 3 points if the filtering system is limited or unintuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, API errors, invalid dates, empty result sets, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive timeline visualization 2. Disaster location mapping 3. Related historical context information 4. Categorization by disaster type with visual indicators). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple date pickers) 2. Function modules unrelated to historical disasters (e.g., weather forecasts) 3. Fancy effects that affect performance (e.g., unnecessary animations or high-resolution images). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data fetching/processing/rendering), code maintainability, and performance optimization. Deduct 5 points if global variables are overused; deduct 5 points if the code has high complexity or poor organization; deduct 5 points if performance optimizations are missing (e.g., no caching of previously viewed dates). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Harmonious color matching (appropriate for the serious subject matter) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography (readable font sizes ≥ 16px, sufficient contrast). Deduct 3 points for each cluttered section, 5 points for inappropriate color schemes (e.g., festive colors for disaster content), and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to mobile interaction patterns: 1) Touch feedback delay ≤ 100ms 2) Smooth scrolling through disaster entries 3) Intuitive gestures for date navigation if implemented. Deduct 5 points for laggy scrolling, 3 points for delayed touch responses, and 5 points for unintuitive interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

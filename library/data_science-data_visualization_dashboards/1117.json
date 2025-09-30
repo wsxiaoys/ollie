@@ -1,0 +1,68 @@
+{
+  "index": 1117,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Air Quality Real-time Monitoring System\n\n1. Air Quality Real-time Monitoring\nDisplay online air quality monitoring data through charts, including hourly data and daily cumulative data for various cities and monitoring stations.\n\n2. Air Quality Ranking Display\nThe system ranks cities nationwide using AQI/composite index as evaluation criteria, displaying daily, monthly cumulative, and annual cumulative rankings for 74 cities, 168 cities, 337 cities, and various cities/counties in the Fenwei Plain. This helps users understand regional air quality conditions and their rankings among major cities nationwide.\n\n3. City Comparison Analysis Display\nSummarizes and displays analysis results for cities within a region. The system supports selecting any number of cities of interest to view trends in their hourly, daily, monthly, and annual data.\n\n4. Historical Data Query Display\nConsolidates historical monitoring data for cities, districts, counties, and monitoring stations within a region. Provides query functionality based on conditions (including city selection and date selection) for various pollutant values (AQI, PM2.5, PM10, O3, NO2, SO2, CO), pollution levels, and primary pollutants. Supports data export.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the real-time air quality monitoring visualization fully implemented?",
+      "description": "Review whether the code implements comprehensive chart visualizations for both hourly and daily cumulative air quality data across multiple cities and monitoring stations. Charts should include time series data, appropriate scales, legends, and tooltips. Score 0 if core visualization is missing, 5 if basic charts are implemented without real-time updates, and 10 if fully implemented with dynamic data refreshing (≤60s intervals) and smooth transitions between data points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the air quality ranking display system properly implemented?",
+      "description": "Evaluate whether the code properly implements ranking visualizations for all required city groupings (74 cities, 168 cities, 337 cities, Fenwei Plain cities/counties) with correct sorting based on AQI/composite index. Check if daily, monthly, and annual cumulative ranking views are available with appropriate UI controls to switch between them. Deduct 3 points if any city grouping is missing, 2 points if ranking calculation is incorrect, and 3 points if visual representation lacks clarity (e.g., no color coding for pollution levels).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the city comparison analysis functionality complete?",
+      "description": "Assess whether the code implements multi-city selection and comparison features, allowing users to select any number of cities and view comparative trends across different time periods (hourly, daily, monthly, annual). Check if the visualization uses appropriate chart types for comparison (line charts, bar charts, or radar charts), includes proper legends to distinguish cities, and allows for easy addition/removal of cities from comparison. Deduct 5 points if multi-city selection is limited or broken, and 5 points if time period switching is not implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the historical data query system fully functional?",
+      "description": "Verify whether the code implements a comprehensive query interface for historical data that includes all filtering capabilities (city selection, date range selection, pollutant selection) and displays all required metrics (AQI, PM2.5, PM10, O3, NO2, SO2, CO, pollution levels, primary pollutants). Check if query results are properly visualized and if data export functionality is implemented. Deduct 3 points for each missing filter type, 3 points for missing export functionality, and 4 points if query performance is poor (>2s response time for typical queries).",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data points, API failures, network interruptions, invalid user inputs) and provide friendly error prompts or recovery mechanisms. Check for proper loading states, error boundaries, and fallback content. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based pollution forecasting 2. Geospatial heatmap visualizations 3. Air quality alerts/notifications 4. Custom dashboard creation for users). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualizations (e.g., multiple chart libraries used for the same purpose) 2. Function modules unrelated to air quality monitoring (e.g., unrelated weather features) 3. Fancy effects that affect performance (e.g., excessive animations or 3D effects that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data fetching/processing/visualization layers), component reusability, state management approach, and performance optimization techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations (like virtualization for large data sets, memoization, or lazy loading) are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (using appropriate color schemes for air quality levels following standards like US EPA or China MEE) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for misleading color representation of pollution levels, and 5 points for chaotic dashboard layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Filter application response time ≤ 300ms 2) Chart transition animations controlled between 300-500ms 3) Clear visual indicators for selected cities/time periods. Deduct 5 points for each major interaction without feedback, 3 points for jerky transitions between data views, and 5 points for hard-to-find filtering controls or comparison tools. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "hard"
+}

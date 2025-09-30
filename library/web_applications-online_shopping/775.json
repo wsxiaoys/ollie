@@ -1,0 +1,68 @@
+{
+  "index": 775,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Can you create a web-based program for tracking express deliveries?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the express delivery tracking core functionality fully implemented?",
+      "description": "Review whether the code accurately implements tracking number input/validation, delivery status display, and real-time progress updates through HTML/JavaScript. Should include package status parsing (shipped, in-transit, out-for-delivery, delivered), timeline visualization, and estimated delivery time calculation. Score 0 if core tracking logic is not implemented, 5 if only basic status display is available, and 10 if comprehensive tracking with detailed progress indicators is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the multi-carrier API integration properly implemented?",
+      "description": "Check whether the system integrates with multiple shipping carriers (FedEx, UPS, DHL, USPS, etc.) through their respective APIs, includes proper API key management, rate limiting, and error handling for failed requests. Should support automatic carrier detection from tracking numbers. Deduct 5 points if only one carrier is supported, 3 points if API error handling is missing, and 2 points if rate limiting is not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time notification and tracking history management designed?",
+      "description": "Evaluate whether the system provides real-time notifications (email/SMS/push) for status changes, implements tracking history storage with timestamps, and offers package comparison features. Should include notification preferences and delivery alerts. Deduct 5 points if no notification system exists, 3 points if tracking history is not persistent, and 2 points if notification preferences are not customizable. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is comprehensive package management and user experience constructed?",
+      "description": "Check whether the code includes complete package lifecycle management, including saved tracking lists, delivery address management, package categorization, and export functionality. Should support bulk tracking operations and delivery scheduling. Deduct 5 points if package persistence is not implemented, 3 points if bulk operations are missing, and 2 points if no export/sharing functionality exists. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid tracking numbers, API timeouts, network interruption, malformed carrier responses, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle API failures, provide offline caching, and show meaningful error messages, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the tracking experience (e.g., 1. Interactive delivery map with real-time location 2. Delivery time prediction using ML 3. Package photo confirmation 4. Delivery attempt scheduling 5. Carbon footprint tracking). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar tracking functions (e.g., multiple API call mechanisms coexisting) 2. Function modules unrelated to delivery tracking (e.g., built-in shopping features) 3. Fancy effects that affect performance (e.g., excessive animations on tracking updates). Deduct 3 points for each redundancy found, and directly deduct 10 points if core tracking functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating API handlers/UI components/data models), proper error handling, configuration management, and code organization. Deduct 5 points if API keys are hardcoded or global state pollution is found; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no proper separation of concerns exists. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the tracking interface follows modern design principles: 1) Clear visual hierarchy for tracking information 2) Consistent color coding for delivery statuses 3) Proper spacing and typography (body font ≥ 14px, line height > 1.5x) 4) Mobile-responsive design. Deduct 3 points for each cluttered tracking display, 5 points for poor status color differentiation, and 5 points for non-responsive layout. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether tracking interactions conform to user expectations: 1) Tracking number input with instant validation feedback 2) Smooth loading states during API calls (≤ 2s perceived wait) 3) Clear visual feedback for tracking updates 4) Intuitive navigation between multiple packages. Deduct 5 points for each operation without loading feedback, 3 points for jarring transitions during status updates, and 5 points for confusing tracking information layout. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

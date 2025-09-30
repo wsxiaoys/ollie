@@ -1,0 +1,68 @@
+{
+  "index": 702,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code if possible. Please provide frontend code for a flash sale interface of an e-commerce system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the flash sale countdown timer functionality fully implemented?",
+      "description": "Review whether the code accurately implements a countdown timer showing hours, minutes, and seconds until the flash sale starts/ends. Check if it handles time zones correctly, updates in real-time (not just on page load), and has visual cues when time is running low. Score 0 if no timer exists, 5 if basic functionality exists but has timezone issues, and 10 if fully implemented with edge cases handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the product inventory management system properly implemented?",
+      "description": "Evaluate whether the code includes real-time inventory tracking, stock reservation during checkout, and clear visual indicators when products are running low or sold out. Check for race condition handling and inventory locks. Deduct 5 points if no real-time stock updates are implemented, and 3 points if there's no visual feedback for low stock. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the high-concurrency user experience optimized?",
+      "description": "Check whether the interface implements queuing systems, throttling mechanisms, or other techniques to handle high traffic. Look for loading states, disabled buttons during processing, and clear feedback on user position in queue. Deduct 5 points if the UI freezes during operations, 5 points if no concurrent access handling exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the mobile responsiveness and cross-device compatibility implemented?",
+      "description": "Evaluate whether the flash sale interface adapts properly to different screen sizes using responsive design techniques. Check if touch interactions are properly handled for mobile users, and if critical elements (add to cart, buy now) are easily accessible on small screens. Deduct 5 points for each major breakpoint (mobile, tablet, desktop) that doesn't display properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network delays, failed API calls, partial data loading, etc.) and provide friendly error prompts or recovery mechanisms. Look for error boundaries, fallback UI components, and proper loading states. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Live purchase counter showing real-time popularity 2. Social sharing with dynamic discount incentives 3. Interactive product image zoom/360° view). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple add-to-cart mechanisms) 2. Function modules unrelated to flash sales (e.g., excessive product comparison tools) 3. Fancy effects that affect performance (e.g., heavy animations that slow page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component modularization (such as separating UI components, state management, and API services), code reusability, and performance optimizations. Deduct 5 points if global state management is chaotic or prop drilling is excessive; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations (lazy loading, memoization, etc.) are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional e-commerce design standards?",
+      "description": "Evaluate whether the overall design follows e-commerce best practices: 1) Clear product highlight and discount visualization (original vs. sale price) 2) Proper hierarchy with primary CTAs standing out 3) Professional typography system that emphasizes key information (price, discount, time remaining). Deduct 3 points for each confusing product card layout, 5 points for unclear price/discount display, and 5 points for hard-to-find purchase buttons. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user expectations in e-commerce: 1) Add-to-cart feedback delay ≤ 100ms 2) Smooth transitions when products sell out or prices update 3) Clear loading states during operations. Deduct 5 points for each operation without feedback, 3 points for jarring UI updates when inventory changes, and 5 points for confusing checkout flow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

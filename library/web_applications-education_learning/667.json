@@ -1,0 +1,68 @@
+{
+  "index": 667,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the generated code is executable for demonstration. Design a learning partner matching system that intelligently pairs users based on their learning goals, interests, and time schedules. Users can browse matching results and send invitations for collaborative learning. The system should record users' pairing history and feedback to optimize the matching algorithm.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user profile and preference system fully implemented?",
+      "description": "Review whether the code includes comprehensive user profiles with learning goals, interests, skill levels, time availability, and preferred learning styles. Check if users can update their preferences and if the system stores this information persistently. Score 0 if basic user data collection is missing, 5 if only basic fields are implemented, and 10 if the profile system is comprehensive with validation and privacy controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the matching algorithm properly designed and implemented?",
+      "description": "Evaluate the matching algorithm's sophistication - check if it considers multiple factors (learning goals, interests, schedule compatibility, skill level) with appropriate weighting. The algorithm should use more than simple filtering and include some form of scoring or ranking. Deduct 5 points if compatibility calculation is too simplistic, and 3 points if there's no consideration for complementary skills. Score 10 if the algorithm includes machine learning components or adaptive weighting based on past matches.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the invitation and communication system functional?",
+      "description": "Check whether the system includes ways for users to browse potential matches, send invitations, accept/decline requests, and initiate communication. Verify if invitation status tracking is implemented and whether notifications are provided. Deduct 5 points if the invitation flow is incomplete, and 3 points if there's no way to message or communicate with potential partners. Give 10 points if real-time notifications and multiple communication channels are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the feedback and algorithm optimization system implemented?",
+      "description": "Assess if the code includes mechanisms to collect user feedback after pairing experiences and whether this data is used to refine future matches. Check if there's a system for rating partnerships and providing structured feedback. Deduct 5 points if feedback collection is missing, and 3 points if collected data isn't fed back into the matching algorithm. Award 10 points if the system includes comprehensive analytics and demonstrably improves matches over time.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (mismatched preferences, no available matches, users in different time zones, etc.) and provides appropriate error handling. Check for input validation, security measures against data tampering, and graceful failure modes. Give 10 points if the code handles most edge cases elegantly, 5 points for average robustness with some unhandled exceptions, and 0 points if critical paths lack error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-suggested learning activities, 2. Gamification elements for consistent participation, 3. Integration with calendar systems for scheduling). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar user matching approaches 2. Function modules unrelated to learning partnerships (e.g., extensive social media features) 3. Resource-intensive features that affect core functionality (e.g., unnecessary animations or media). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review separation of concerns (user management, matching algorithm, communication system), code reusability, and testing provisions. Check for proper database design with normalization, API documentation, and security best practices. Deduct 5 points for global variable abuse, 5 points for repeated code blocks that could be functions, and 5 points for unsecured user data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Clean user profiles with appropriate information hierarchy 2) Intuitive matching results display with clear call-to-actions 3) Consistent visual language across the platform. Deduct 3 points for cluttered match displays, 5 points for poor information architecture that makes navigation difficult, and 5 points for inconsistent UI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the user flows are intuitive: 1) Setting up profiles and preferences feels streamlined 2) Discovering and connecting with potential partners requires minimal steps 3) Navigation between different system sections is coherent. Deduct 5 points for confusing user journeys, 3 points for slow or unresponsive interfaces during matching processes, and 5 points for inadequate feedback when actions are completed. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

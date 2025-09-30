@@ -1,0 +1,68 @@
+{
+  "index": 950,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Create an HTML-based airplane battle game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanics fully implemented?",
+      "description": "Evaluate whether the code implements the essential airplane battle game mechanics: player movement, enemy spawning, bullet firing, collision detection, and scoring system. Score 0 if the core interaction logic is missing, 5 if only basic movement and shooting are implemented, and 10 if all essential battle mechanics (including enemy AI patterns and power-ups) are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game loop and rendering system properly designed?",
+      "description": "Check whether the game implements a proper game loop using requestAnimationFrame or similar technique, with separate update and render cycles. Verify that sprite rendering is optimized (using canvas or efficient DOM manipulation). Deduct 5 points if the game has performance issues above 30 FPS, 3 points if animation is jerky, and 3 points if there's no frame rate management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game controls responsive and intuitive?",
+      "description": "Assess whether the game provides responsive controls (keyboard/touch/mouse) with proper event handling and input buffering. Test if the player airplane responds within 50ms of input, and if there are alternative control schemes for different devices. Deduct 5 points if controls feel laggy, and 5 points if the game isn't playable across different input methods. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete game progression system?",
+      "description": "Review whether the game includes a progression system with increasing difficulty levels, waves of enemies, boss battles, and game states (start screen, gameplay, game over, pause). Check for score persistence and level advancement logic. Deduct 5 points if difficulty never increases, 3 points if there's no pause functionality, and 5 points if game state transitions are abrupt or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, focus loss, unexpected user input, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special weapons or power-ups 2. Dynamic weather effects 3. Procedurally generated enemy patterns 4. Interactive background elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the airplane battle game (e.g., an unnecessary settings menu with too many options) 3. Fancy effects that affect performance (e.g., excessive particle effects that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game entity classes, rendering engine, input handling), code organization, and maintainability. Deduct 5 points if global state pollution is found or if proper object-oriented/functional patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game logic and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Consistent visual style and theme 2) Clear visual hierarchy with important elements (player health, score) easily visible 3) Proper contrast between game elements and background 4) Readable text elements even during intense gameplay. Deduct 3 points for each cluttered UI element, 5 points for poor contrast making gameplay difficult, and 5 points for inconsistent visual style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to game feel principles: 1) Visual feedback for all player actions (shooting, taking damage, power-ups) 2) Enemy destruction animations and effects 3) Screen shake and other juice elements for impactful moments 4) Smooth transitions between game states. Deduct 5 points for each action without feedback, 3 points for jarring or missing transitions, and 5 points for confusing visual feedback during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "medium"
+}

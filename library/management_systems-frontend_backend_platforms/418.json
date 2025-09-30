@@ -1,0 +1,68 @@
+{
+  "index": 418,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration. I am refining my master's thesis, which mainly focuses on: exploring user needs through multiple dimensions and designing responses accordingly. The primary method involves analyzing user interview records and online review data using text data analysis to understand users' basic requirements for customized furniture, and on this basis, conducting research on both structural and aesthetic aspects of customized furniture configuration design. For the structural module configuration of customized furniture, association rule mining algorithms are used to deeply extract component association rules from the company's historical sales records, thereby building a rule base for customized furniture component configuration and forming customized furniture configuration modules categorized by functionality. For the aesthetic configuration design of customized furniture, eye-tracking experiments are conducted to study users' intuitive search mechanisms when observing customized furniture in both single-element stimuli and composite scene stimuli, and to classify users according to their subjective style preferences and objective visual preferences. Finally, combining the results of structural and aesthetic configuration design research, a recommendation system for customized furniture configuration design is built based on a rule engine. Currently, I have reached the system-building stage and plan to present it as a WeChat Mini Program. I have already registered with APPAid. As I have no coding background, I need specific and detailed implementation guidance from the beginning. My current plan for the Mini Program consists of eight steps: 1. User selects the required cabinet function, including wardrobe, entrance cabinet, sideboard, bookcase, storage cabinet, and display cabinet. 2. User selects the number of cabinet units needed: 1, 2, 3, or 4 units. 3. User selects the structural form for each unit, which are pre-established 3D models. 4. Multiple units are combined to display the result. 5. User selects preferred styles, with options including natural, bright, minimalist, vintage, warm, comfortable, and modern, and can select two. 6. Based on the selected styles, recommend colors or textures for the cabinet and map them to the 3D model. 7. Display the result with 3D rotation interaction capability. 8. If unsatisfied, allow further customization of colors and textures.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the cabinet function selection module fully implemented?",
+      "description": "Review whether the code accurately implements the cabinet function selection system (wardrobe, entrance cabinet, sideboard, bookcase, storage cabinet, and display cabinet) with clear visual differentiation and proper descriptions. Check if the selection mechanism includes proper state management and validation.Score 0 if the cabinet function selection is not implemented, 5 if only basic selection without descriptions or visual previews is implemented, and 10 if comprehensive selection with visual previews, descriptions, and smooth transitions is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the unit number and structural form selection fully functional?",
+      "description": "Evaluate whether the code properly implements the unit number selection (1-4 units) and structural form selection for each unit with appropriate validation. Check if pre-established 3D models are properly loaded and displayed for different structural forms, and whether the selection interface is intuitive.Score 0 if the unit selection is missing, 5 if basic selection is implemented but lacks visual feedback or has rendering issues, and 10 if the selection process is smooth with proper validation, visual feedback, and efficient 3D model loading.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the multi-unit combination display system properly implemented?",
+      "description": "Check whether the code correctly implements the combination of multiple unit selections into a cohesive display. Verify that the 3D models are properly aligned, scaled, and rendered together, and that the combined view maintains proper perspective and lighting consistency.Score 0 if multi-unit combination is not implemented, 5 if basic combination is implemented but with alignment/scaling issues or rendering artifacts, and 10 if seamless combination with proper alignment, consistent lighting, and optimized rendering is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the style selection and texture mapping system functional?",
+      "description": "Review whether the code implements the style selection system (natural, bright, minimalist, vintage, warm, comfortable, modern) with proper multi-selection capability (2 styles max). Check if the recommendation engine correctly maps selected styles to appropriate colors/textures and applies them to the 3D models with proper material rendering.Score 0 if style selection and texture mapping are not implemented, 5 if basic selection exists but recommendation or texture mapping is flawed, and 10 if comprehensive style selection with accurate recommendations and high-quality texture mapping is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions during 3D model loading, invalid user selections, WebGL context loss, device compatibility issues) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR room preview of the furniture 2. User-friendly measurement guidance 3. Social sharing capabilities with personalized configurations 4. Cost estimation based on selected components).Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple style selection methods coexisting) 2. Function modules unrelated to furniture customization (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., unnecessary particle effects).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating 3D rendering/business logic/UI layers), asset loading optimization, and WeChat Mini Program best practices adherence. Examine 3D model optimization techniques and rendering performance.Deduct 3 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 4 points if 3D assets are not optimized for mobile rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching aligned with furniture design aesthetics 2) Proper layout spacing following WeChat Mini Program design guidelines 3) Professional font system suitable for furniture customization context.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the 3D interaction smooth and responsive?",
+      "description": "Judge whether the 3D model rotation and customization interactions conform to user expectations: 1) Rotation gestures respond within 50ms 2) Texture/color changes render within 200ms 3) Clear visual feedback during all interactions 4) Proper optimization for mobile devices.Deduct 3 points for each interaction without proper feedback, 5 points for noticeable frame rate drops during interaction, and 5 points for unintuitive 3D manipulation controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

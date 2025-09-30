@@ -1,0 +1,68 @@
+{
+  "index": 1427,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. I want to use Vuetify components to implement a diary software for Windows. It should be able to record daily moods, thoughts, etc.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core diary functionality fully implemented?",
+      "description": "Review whether the code accurately implements essential diary features: entry creation, editing, deletion, and viewing. Check if date-based organization is implemented, and if entries can store mood and thought data separately. Score 0 if basic CRUD operations are missing, 5 if basic operations exist but lack organization features, and 10 if all core diary functions are completely implemented with proper data validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vuetify implementation correctly utilized?",
+      "description": "Evaluate whether the code properly incorporates Vuetify components (v-card, v-text-field, v-date-picker, etc.) following Vue best practices. Check if the component hierarchy makes sense and if Vuetify's grid system is used for responsive layouts. Deduct 3 points if Vuetify's theming is not utilized, 5 points if components are used incorrectly or inconsistently, and 5 points if the responsive design is broken. Give full score if Vuetify is leveraged comprehensively and correctly.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Windows-specific functionality properly implemented?",
+      "description": "Check whether the code includes Windows-specific features like local file system integration, desktop notifications, start-up configuration, and Windows UI/UX patterns. Verify if Electron or similar technology is used for Windows desktop integration. Deduct 5 points if there's no way to save data locally, 5 points if Windows-native features are absent, and 3 points if the app doesn't follow Windows design guidelines. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the mood tracking and visualization feature effectively implemented?",
+      "description": "Assess whether the code includes mood tracking functionality with appropriate UI elements (e.g., emoji selectors, mood sliders) and visualization components (charts/graphs) to display mood trends over time. Check if mood data is properly stored and can be filtered/searched. Deduct 5 points if visualization is missing, 3 points if mood tracking is too simplistic, and 3 points if historical mood data analysis is not available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as data corruption, offline usage, unexpected input, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered mood analysis 2. Automated tagging system 3. Customizable templates for different entry types 4. Media attachment support for photos/audio). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to save entries) 2. Function modules unrelated to diary keeping (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the application). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/UI/service layers), state management implementation, and build process configuration. Deduct 5 points if global state pollution is found or Vue composition API/Options API is used inconsistently; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no build configuration for Windows packaging (using electron-builder or similar). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (following Vuetify's material design palette) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for diary entry and navigation. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

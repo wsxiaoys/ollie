@@ -1,0 +1,68 @@
+{
+  "index": 830,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable for demonstration purposes. Build a page recruitment software where job positions are updated in real-time.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the real-time job position update system fully implemented?",
+      "description": "Review whether the code implements WebSocket or Server-Sent Events for real-time job position updates. Check if the system handles new job postings, position modifications, and removals properly. Score 0 if real-time functionality is not implemented, 5 if basic polling is used instead of true real-time solutions, and 10 if a complete real-time system with proper event handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the job listing display and filtering functionality complete?",
+      "description": "Evaluate whether the code provides comprehensive job listing features including sorting (by date, relevance, salary), filtering (by industry, location, experience level, etc.), and pagination. Deduct 3 points if sorting options are limited, 3 points if filtering is basic or missing key filters, and 4 points if pagination is absent or poorly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the job search functionality effectively implemented?",
+      "description": "Check if the search feature includes full-text search, keyword highlighting, autocomplete suggestions, and search history. Assess if the search algorithm handles typos and provides relevant results. Deduct 3 points if autocomplete is missing, 3 points if the search doesn't handle partial matches or typos, and 4 points if search results aren't properly ranked by relevance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete user account and job application system?",
+      "description": "Review whether the code includes user registration/login, profile management, resume upload/management, application tracking, and saved job functionality. Deduct 3 points if authentication is basic or insecure, 3 points if profile/resume management is limited, and 4 points if the application tracking system is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, server errors, invalid inputs, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper input validation, error boundary implementation, and offline capabilities. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if exceptions are not handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered job matching 2. Interactive salary comparison tools 3. Company culture insights visualization 4. Interview preparation resources). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems) 2. Function modules unrelated to recruitment (e.g., a news feed unrelated to jobs) 3. Fancy effects that affect performance (e.g., excessive animations that slow page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/UI/service layers), component reusability, state management implementation, and build process optimization. Deduct 3 points if global state management is poorly implemented, 3 points if code reusability is low with high duplication, and 4 points if the build process lacks optimization for performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern recruitment platform principles: 1) Clean, professional color scheme appropriate for job searching 2) Consistent spacing and alignment throughout 3) Typography hierarchy that enhances readability of job listings. Deduct 3 points for cluttered job cards, 3 points for inconsistent button styles/behaviors, and 4 points for poor information hierarchy that makes scanning jobs difficult. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) New job notifications appear without disrupting user flow 2) Job application process feels seamless with appropriate feedback 3) Filtering/sorting actions update results with minimal perceived delay. Deduct 3 points for jarring transitions between pages, 3 points for lack of loading states during data fetching, and 4 points for unresponsive interface elements during real-time updates. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

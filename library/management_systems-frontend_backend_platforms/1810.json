@@ -1,0 +1,68 @@
+{
+  "index": 1810,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Could you create an HTML implementation of a standard flight operation guide that facilitates adding backups, searching, easy reference, and special notifications for specific requirements?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core flight operation guide structure properly implemented?",
+      "description": "Review whether the HTML implementation correctly organizes flight operation procedures into logical sections (pre-flight, in-flight, post-flight) with proper hierarchical structure. Check if the content is properly structured using semantic HTML (headings, sections, lists) and if it follows aviation industry standards for organizing procedural information. Score 0 if no logical structure exists, 5 if basic organization is present, and 10 if the structure follows industry standards with complete procedural categorization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the backup functionality fully implemented?",
+      "description": "Evaluate the mechanism for creating, storing, and retrieving backups of the flight operation guide. Check if the implementation includes local storage options (localStorage, IndexedDB), cloud synchronization capabilities, and version control features. Deduct 5 points if the backup feature lacks data persistence beyond the current session, 3 points if it doesn't include timestamp/versioning, and 2 points if there's no way to compare or restore previous versions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "How effective is the search functionality?",
+      "description": "Assess the search implementation for the flight operation guide. Check for features like real-time filtering, keyword highlighting, search history, and advanced search options (category filtering, date ranges, etc.). The search should handle case sensitivity, partial matches, and provide relevant sorting of results. Deduct 5 points if search doesn't filter content in real-time, 3 points if it lacks highlighting of results, and 2 points if it doesn't support partial word matching. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the special notifications system adequately implemented?",
+      "description": "Review the notification system for alerting users about critical updates, changes to procedures, or emergency protocols. Check if the notifications are prioritized by urgency, if they persist until acknowledged, and if they can be triggered by specific conditions. Deduct 5 points if notifications aren't visually distinct based on priority levels, 3 points if there's no acknowledgment tracking, and 2 points if the system lacks notification history. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as offline usage, browser crashes, invalid user input, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark mode for night operations 2. Text-to-speech reading of procedures 3. Integration with weather APIs for real-time conditions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search methods that do the same thing) 2. Function modules unrelated to flight operations (e.g., unnecessary entertainment features) 3. Fancy effects that affect performance (e.g., intensive animations that slow down critical operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), cross-browser compatibility, responsive design for different devices used in cockpits, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code isn't responsive for different screen sizes; deduct 5 points if the application isn't performant with large amounts of procedural data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional aviation standards?",
+      "description": "Evaluate whether the overall design follows aviation industry UI principles: 1) High contrast for readability in various lighting conditions 2) Consistent color coding for different procedure types/priorities 3) Professional typography with appropriate sizing for in-flight reading (min 16px). Deduct 3 points for each readability issue, 5 points for inconsistent color systems that could cause confusion, and 5 points for cluttered interfaces that hinder quick information access. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and optimized for operational use?",
+      "description": "Judge whether the interaction design prioritizes operational efficiency: 1) Minimal clicks to access critical information (≤ 3 clicks) 2) Quick-access shortcuts for emergency procedures 3) Touch-friendly targets (min 44px) for tablet use in cockpit environments. Deduct 5 points for each critical function requiring excessive navigation, 3 points for interactions lacking visual/tactile feedback, and 5 points for non-intuitive gesture implementations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

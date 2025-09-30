@@ -1,0 +1,68 @@
+{
+  "index": 1027,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable for demonstration. Help me write a web-based vocabulary learning program that allows importing words from external sources, with a beautiful and eye-catching interface.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the word importing mechanism fully implemented?",
+      "description": "Review whether the code properly implements mechanisms for importing vocabulary from multiple external sources (e.g., file upload, API integration, copy-paste). Check if it handles different formats (CSV, TXT, JSON) and provides validation for imported data. Score 0 if importing is not implemented, 5 if only basic single-format importing exists, and 10 if comprehensive multi-source importing with validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the vocabulary storage and management system well-designed?",
+      "description": "Evaluate the data structure design for vocabulary storage. Check if it includes proper organization (categories, tags, difficulty levels), search functionality, sorting options, and persistent storage (localStorage, IndexedDB). Deduct 3 points if there's no search function, 3 points if persistent storage is missing, and 4 points if the data structure doesn't support word categorization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are effective learning methods and review algorithms implemented?",
+      "description": "Check if the application implements spaced repetition algorithms (like Leitner system or SuperMemo), progress tracking, and adaptive learning paths. Assess if the review schedules adjust based on user performance. Deduct 5 points if no spaced repetition is implemented, 3 points if progress tracking is missing, and 2 points if there's no adaptivity in the learning sequence. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interaction for vocabulary learning engaging?",
+      "description": "Evaluate whether the code includes multiple learning modes (e.g., flashcards, quizzes, matching games) and provides meaningful feedback for learners. Check if different memory reinforcement techniques are used and if there's variety in the practice methods. Score 0 if only basic word display exists, 5 if there's one interactive mode with feedback, and 10 if multiple engaging learning methods are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid imports, browser storage limitations, network issues during API calls, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Visual mnemonics for vocabulary 2. Audio pronunciation integration 3. Gamification elements with rewards/streaks 4. Social sharing of progress). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple overlapping storage mechanisms) 2. Function modules unrelated to vocabulary learning 3. Fancy effects that affect loading performance and distract from learning. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), component reusability, and code maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling or input validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Typography hierarchy (clear distinction between headings and content). Deduct 3 points for each cluttered section, 5 points for inconsistent design patterns, and 5 points for poor responsiveness on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback for learning progress. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between learning activities, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1593,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display. Based on the following data: \"There are 748 users in total. 407 users who visited last year did not visit this year; among these 407 people, 129 made purchases last year and 278 did not make any purchases. 341 people visited this year; among these 341 people, 24 made purchases last year, 139 have never made a purchase, and 178 made purchases recently. Overall purchase frequency: 417 people made 0 purchases, 197 people made 1 purchase, 60 people made 2 purchases, 59 people made 3 to 8 purchases, and 15 people made 9 or more purchases.\" Please create a comprehensive data dashboard for the smart restaurant industry, with visualization design and data presentation, output in HTML format, ensuring the file is executable.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data analysis and calculation accuracy verified?",
+      "description": "Review whether the code accurately processes the given statistical data (748 total users, visit patterns, purchase behaviors). Check if all numerical relationships are correctly calculated and cross-validated (e.g., 407 non-visitors + 341 visitors = 748, purchase frequency totals match user counts). Score 0 if basic data parsing is incorrect, 5 if minor calculation discrepancies exist, and 10 if all data relationships are mathematically consistent and verifiable.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are multiple professional visualization charts implemented effectively?",
+      "description": "Evaluate whether the dashboard includes diverse and appropriate chart types for restaurant analytics: user segmentation (pie/donut charts), purchase behavior flow (sankey/funnel), time-based trends (line/area charts), and distribution analysis (histograms/heatmaps). Each chart must use proper data binding and interactive legends. Deduct 3 points for each inappropriate chart type selection, 5 points if charts lack proper data labels or scales. Full score requires 5+ distinct visualization types.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dashboard interactivity and filtering system comprehensive?",
+      "description": "Check whether the dashboard provides professional-grade interactive features: cross-chart filtering, drill-down capabilities, date range selectors, user segment toggles, and real-time data updates. Interactive elements should support brush selection, hover tooltips with detailed metrics, and synchronized highlighting across multiple charts. Deduct 5 points if filtering doesn't work across all charts, 3 points for missing hover interactions, 5 points if no drill-down functionality exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are restaurant industry KPIs and insights properly integrated?",
+      "description": "Assess whether the dashboard includes restaurant-specific metrics and actionable insights: customer lifetime value calculations, retention rate analysis, purchase frequency segmentation, churn risk indicators, and revenue impact projections. Must include calculated metrics like repeat customer rate, average order patterns, and seasonal trend indicators. Deduct 5 points if generic metrics are used instead of restaurant-specific KPIs, 5 points if no predictive or actionable insights are provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and error-handling comprehensive?",
+      "description": "Evaluate whether the code can handle edge cases like missing data points, invalid user inputs, chart rendering failures, and browser compatibility issues. Should include data validation, graceful degradation for unsupported features, and meaningful error messages. Code should handle scenarios like zero-value datasets, extreme outliers, and dynamic data updates without breaking. Give 10 points for comprehensive error handling, 5 points for basic validation, 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative dashboard features that enhance business value?",
+      "description": "Check for advanced features that distinguish this from basic dashboards: predictive analytics overlays, automated insight generation, comparative benchmarking, export functionality with custom reports, mobile-responsive design, or real-time collaboration features. Each innovative feature should provide tangible business value for restaurant decision-making. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or irrelevant dashboard elements?",
+      "description": "Strictly identify three types of redundancy: 1. Duplicate visualizations showing identical data patterns 2. Non-essential decorative elements that don't support decision-making 3. Over-complicated animations or transitions that slow down analysis workflow. Dashboard should maintain focus on actionable restaurant insights without visual clutter. Deduct 3 points for each redundant element found, and directly deduct 10 points if core analytical functions are hindered by unnecessary features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate professional engineering standards?",
+      "description": "Review code architecture including separation of data processing, visualization rendering, and interaction handling. Check for modular JavaScript structure, proper use of visualization libraries (D3.js, Chart.js, etc.), performance optimization for large datasets, and maintainable CSS organization. Deduct 5 points for monolithic code structure, 5 points for inefficient DOM manipulation, 5 points for missing performance optimizations in data processing. Full score requires clean, scalable code architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional dashboard standards?",
+      "description": "Evaluate adherence to dashboard design principles: 1) Consistent color scheme with semantic meaning (success/warning/danger states) 2) Proper information hierarchy with clear visual grouping 3) Professional typography with readable font sizes (≥12px for data labels, ≥14px for body text) 4) Adequate whitespace and grid alignment. Deduct 3 points for each visual inconsistency, 5 points for poor color contrast or accessibility issues, 5 points for cluttered layout that impedes data comprehension.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are interactions smooth with optimal user experience flow?",
+      "description": "Judge whether dashboard interactions follow UX best practices: 1) Chart transitions and updates complete within 300-800ms 2) Loading states for data processing operations 3) Intuitive navigation between different analytical views 4) Clear visual feedback for all interactive elements 5) Responsive behavior across different screen sizes. Deduct 5 points for each laggy interaction, 3 points for missing loading indicators, 5 points for non-intuitive user flow that requires explanation.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

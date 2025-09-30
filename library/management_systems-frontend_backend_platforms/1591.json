@@ -1,0 +1,68 @@
+{
+  "index": 1591,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Make sure the code you provide is executable for demonstration purposes. For a vehicle management system with functionalities like license plate recognition, parking fee management, and vehicle entry/exit table display, as a front-end engineer who only knows Vue, how should I write the code?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the license plate recognition system fully implemented?",
+      "description": "Review whether the code accurately implements license plate recognition functionality through Vue.js, including image upload/capture interface, OCR integration or simulation, and real-time recognition feedback. Check if it handles various license plate formats (different regions/countries) and provides confidence scoring. Score 0 if no recognition logic is implemented, 5 if only basic image upload is provided, and 10 if complete recognition with validation and error handling is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the parking fee management system comprehensively designed?",
+      "description": "Evaluate whether the Vue implementation includes complete fee calculation logic with configurable rate structures (hourly/daily/monthly), automatic time tracking from entry to exit, discount/promotion handling, and payment integration or simulation. Check for proper data validation and fee adjustment capabilities. Deduct 5 points if time calculation is inaccurate, 3 points if no payment workflow is provided. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the vehicle entry/exit table display properly implemented with real-time updates?",
+      "description": "Check whether the Vue components provide comprehensive vehicle tracking with sortable/filterable tables, real-time status updates, search functionality by license plate/time/status, and proper pagination for large datasets. Evaluate if the data structure supports CRUD operations and maintains state consistency. Deduct 5 points if table performance degrades with >100 records, 3 points if search/filter functions are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete vehicle management workflow integrated?",
+      "description": "Assess whether the code provides end-to-end workflow integration from vehicle entry (license plate scan) → parking space assignment → fee calculation → exit processing → receipt generation. Check for proper state management using Vuex/Pinia, component communication, and data persistence simulation. Deduct 5 points if workflow breaks between modules, 3 points if state management is inconsistent. Give 10 points if fully integrated with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid license plates, network failures, concurrent operations, invalid time ranges, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like duplicate entries, system crashes, and data corruption. Give 10 points if fully robust, 5 points if average robustness, and 0 points if no exception handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the vehicle management experience (e.g., 1. Real-time parking space availability visualization 2. Automated notification system for overstay 3. Analytics dashboard with usage patterns 4. Mobile-responsive design with QR code integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple fee calculation methods coexisting) 2. Function modules unrelated to vehicle management (e.g., built-in weather widget) 3. Fancy effects that affect performance (e.g., excessive animations on table updates). Deduct 3 points for each redundancy found, and directly deduct 10 points if core vehicle management functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue.js best practices including proper component composition, composables usage, TypeScript integration, and build process optimization. Check for proper separation of concerns (components/services/stores), code reusability, and maintainability. Deduct 5 points if global state pollution is found or Vue patterns are misused; deduct 5 points if component coupling is too high; deduct 5 points if no build optimization is implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent iconography for vehicle management actions. Deduct 3 points for each crowded visual element, 5 points for glaring color combinations, and 5 points for chaotic data table layouts. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Table loading/filtering transition animations controlled between 300-500ms 3) Clear visual focus guidance for license plate input and fee calculations 4) Smooth real-time updates without jarring refreshes. Deduct 5 points for each operation without feedback, 3 points for visual glitches during data updates, and 5 points for hard-to-find critical management functions. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 68,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and displayable.\n\nPlease use HTML and JavaScript to implement a Role-Playing Game (RPG): Equipment and Attribute System.\n\n**Task**: Design an equipment system where players can change equipment, with different equipment affecting character attributes and abilities.\n\n**Hint**: You can create an attribute system and adjust attribute values based on equipment.\n\nFor the game, include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the equipment system fully implemented?",
+      "description": "Review whether the code implements a complete equipment system including equipment slots (weapons, armor, accessories, etc.), equipment properties (stats, effects), and the ability to equip/unequip items. Score 0 if there is no equipment system, 5 if only basic equipment slots are implemented, and 10 if there's a complete system with diverse equipment types and properties.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the attribute system properly implemented and integrated with equipment?",
+      "description": "Check if the code creates a robust character attribute system (strength, agility, intelligence, etc.) and properly calculates how equipment modifies these attributes. Deduct 5 points if equipment doesn't affect attributes, 3 points if attribute calculations contain errors, and 2 points if attribute updates don't trigger visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation include equipment comparison and inventory management?",
+      "description": "Evaluate whether players can compare equipment stats before equipping and if there's an inventory system to manage unequipped items. Score 3 points for basic item comparison, 4 points for visual comparison indicators, and 3 points for a functional inventory with sorting/filtering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a visual representation of equipped items on the character?",
+      "description": "Assess whether equipped items are visually represented on the character model or through icons/indicators. Award 5 points for basic visual indicators showing equipped gear, 3 additional points if equipment changes character appearance, and 2 more points if there are equip/unequip animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as equipping incompatible items, inventory management edge cases, invalid attribute values, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Equipment set bonuses 2. Equipment durability/repair system 3. Equipment enhancement/upgrading). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to calculate the same attribute bonus) 2. Function modules unrelated to equipment/attributes (e.g., an unrelated mini-game) 3. Fancy effects that affect performance (e.g., unnecessary particle effects when equipping items). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating equipment logic/attribute calculation/UI layers), code organization, and commenting quality as requested in the task. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comprehensive comments are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback when equipping/unequipping items or when attributes change. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 76,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible.\n\nPlease use HTML and JavaScript to implement a sports game: Spectators and Atmosphere Creation\n\n**Task**: Design a spectator system where audiences react and cheer in different game scenarios to enhance the game atmosphere.\n\n**Hint**: You can use simple animations and sound effects to simulate audience reactions.\n\nPlease create the game and include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the spectator system fully implemented?",
+      "description": "Review whether the code implements a dynamic spectator system with varied reactions to different game events. Score 0 if spectators are just static images, 5 if basic crowd animations exist but with limited variety, and 10 if spectators show contextually appropriate reactions to multiple game scenarios (e.g., cheering for goals, disappointed reactions for misses, wave animations during slow moments).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audience reaction system event-driven?",
+      "description": "Check if the audience reactions are properly triggered by game events through an event system. The implementation should include event listeners for game scenarios, randomized reaction selection based on event type, and smooth transitions between different crowd states. Deduct 5 points if reactions are hard-coded/timed rather than event-driven, and 3 points if there's no variation in reactions to similar events. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the sound effect system comprehensive?",
+      "description": "Evaluate whether appropriate sound effects are implemented for crowd reactions (cheers, gasps, applause, boos, chants, etc.) with volume control and proper audio layering. Assess if sounds match the visual reactions and game context. Deduct 5 points if sound effects don't vary by event intensity, 3 points if there's no volume control based on event importance, and 5 points if there are no sounds at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the atmosphere creation system scalable?",
+      "description": "Analyze whether the code implements a scalable system that can adjust crowd density, reaction intensity, and home/away fan distribution. Check for parameters that control crowd bias, crowd size, enthusiasm levels, and noise levels. Deduct 5 points if the system has fixed crowd settings, 3 points if it lacks home/away fan distinction, and 3 points if crowd enthusiasm doesn't change throughout the game. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid-fire events, audio playback issues, browser compatibility issues, etc.) and provide fallback mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather affecting crowd appearance/behavior 2. Crowd-initiated Mexican waves or chants 3. Fan rivalries visualized in different sections). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar crowd reactions (e.g., multiple cheer animations triggered by the same event) 2. Function modules unrelated to spectator atmosphere (e.g., unnecessary game mechanics) 3. Fancy effects that affect performance (e.g., too many individual spectator animations running simultaneously). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating crowd logic/view/audio systems), cohesive organization of related functionality, and performance optimization for animations and sound. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations are implemented for large crowds. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Realistic or stylistically consistent crowd rendering 2) Proper visual hierarchy between game action and spectators 3) Appropriate use of color to distinguish fan sections or reactions. Deduct 3 points for each visual inconsistency in crowd appearance, 5 points for spectator visuals that distract from main gameplay, and 5 points for unrealistic or jarring crowd positioning. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the spectator animations and transitions conform to human perception characteristics: 1) Natural crowd movement patterns (not robotic synchronization) 2) Gradual build-up and fade of crowd reactions 3) Varied timing of individual spectator reactions within a group. Deduct 5 points for unnatural synchronized movements, 3 points for abrupt transitions between crowd states, and 5 points for animations that freeze or stutter during high activity. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Sports",
+  "difficulty": "medium"
+}

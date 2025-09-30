@@ -1,0 +1,68 @@
+{
+  "index": 1813,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable for demonstration. Please help me create a web-based match-3 game that includes input with English and Chinese translations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core match-3 game logic fully implemented?",
+      "description": "Review whether the code accurately implements the match-3 mechanics including tile swapping, pattern detection (horizontal and vertical matches of 3+ same tiles), and cascading effects when matches are removed. Score 0 if the core matching logic is missing, 5 if only basic matching works, and 10 if advanced mechanics like special tile creation after 4+ matches and cascading matches are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the game board generation and randomization properly implemented?",
+      "description": "Check whether the code implements a balanced board generation algorithm that ensures the initial board has no pre-existing matches and guarantees solvable states throughout gameplay. Deduct 5 points if the board generation doesn't prevent initial matches, and 5 points if the algorithm doesn't ensure solvable states after matches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the bilingual (English-Chinese) translation system fully integrated?",
+      "description": "Evaluate whether the code implements a complete language switching system between English and Chinese that covers all UI elements, game instructions, and in-game messages. Check if proper localization techniques (like language resource files or objects) are used rather than hardcoded strings. Deduct 5 points if only partial content is translated, and 3 points if the translation implementation is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game scoring and progression system properly designed?",
+      "description": "Review whether the game includes a well-designed scoring system (with multipliers for combos/cascades), level progression with increasing difficulty, and persistent state management. Deduct 3 points if combo scoring is missing, 4 points if difficulty progression isn't implemented, and 3 points if there's no game state persistence. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, edge cases in pattern detection, rapid user inputs, browser compatibility issues) and provide friendly error handling. Code with strong robustness should prevent board deadlocks and handle window resizing. Give 10 points for comprehensive exception handling, 5 points for average robustness, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special power-up tiles with unique animations 2. Themed visual/audio effects based on matched item types 3. Daily challenges or puzzle modes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event handlers or duplicate game state tracking 2. Excessive animations or effects that don't contribute to core gameplay 3. Unnecessary complexity in the language switching system. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of game logic from UI rendering, language handling in a separate module), naming conventions consistency, and code reusability. Deduct 5 points for global variable abuse; deduct 3 points for inconsistent coding style between game modules and language handling; deduct 2 points if the code lacks comments for complex algorithms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the match-3 grid has clear visual distinction between tile types, proper spacing, and aesthetically pleasing animations. Check if the bilingual UI accommodates both language character sets without layout breaking. Deduct 3 points for poor tile visibility, 4 points for cramped or inconsistent layout between languages, and 3 points for jarring color schemes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game has responsive controls (≤100ms feedback for tile selections), smooth animations for tile swapping/matching/falling (300-500ms duration), and clear visual/audio feedback for matches and language switching. Deduct 4 points for laggy animations, 3 points for missing feedback on successful/unsuccessful moves, and 3 points for abrupt or jarring language transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

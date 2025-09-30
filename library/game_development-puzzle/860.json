@@ -1,0 +1,68 @@
+{
+  "index": 860,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Help me write a code for Spider Solitaire that can be directly saved in a document and be ready to run.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Spider Solitaire game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the standard Spider Solitaire rules with card stacking sequences (King to Ace), moving complete sequences, and the ability to deal new cards when all columns have at least one card. Score 0 if core game mechanics are missing, 5 if basic card movement is implemented but with rule errors, and 10 if all standard rules are correctly implemented including different difficulty levels (1, 2, or 4 suits).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the card deal and deck management properly implemented?",
+      "description": "Check if the game correctly initializes with 10 columns of cards (with appropriate face-up/face-down distribution), handles the stock pile (5 additional deals of 10 cards each), and maintains proper game state between deals. Verify that cards can only be dealt when all columns have at least one card. Deduct 3 points if the initial deal is incorrect, 4 points if the stock pile management has errors, and 5 points if card dealing conditions aren't properly checked. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the card sequence completion and removal logic correct?",
+      "description": "Evaluate whether the code correctly identifies and handles completed sequences (King to Ace of the same suit) and automatically removes them from the tableau to the foundation. Check for proper validation of sequence completeness before removal and appropriate visual feedback. Deduct 5 points if completed sequences aren't detected properly, 3 points if removal animation is missing, and 5 points if the foundation display is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the move validation and undo functionality implemented?",
+      "description": "Check if the game validates all card moves according to Spider Solitaire rules (cards can only be placed on cards of next-higher rank regardless of suit, only sequences of same suit can be moved as a unit). Verify that an undo system tracks all moves and allows reversing actions. Deduct 5 points if move validation has errors, 3 points if undo functionality is limited or buggy, and 5 points if the game allows illegal moves. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user clicks, attempting illegal moves, edge cases in game state) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-complete functionality when game is solvable 2. Hint system that suggests possible moves 3. Statistics tracking for wins/losses/time 4. Different card themes/backgrounds). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple card movement logics) 2. Function modules unrelated to Spider Solitaire (e.g., embedded mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game's visual design follows modern design principles: 1) Card design clarity and readability 2) Proper layout spacing between columns and cards 3) Professional color scheme with good contrast. Deduct 3 points for cluttered visuals, 5 points for poor card visibility or distinguishability, and 5 points for chaotic tableau layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the card interactions conform to user expectations: 1) Responsive drag-and-drop implementation 2) Clear visual feedback for valid/invalid moves 3) Smooth card dealing and sequence completion animations. Deduct 5 points for laggy card movement, 3 points for missing visual feedback during interactions, and 5 points for confusing or unintuitive controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

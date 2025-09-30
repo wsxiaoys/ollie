@@ -1,0 +1,68 @@
+{
+  "index": 297,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Develop a web-based audio and video conferencing software using LiveKit with Vue 3.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the LiveKit integration properly implemented?",
+      "description": "Review whether the code correctly implements LiveKit SDK integration with Vue 3, including proper initialization, room connection, token handling, and participant management. Score 0 if LiveKit is not implemented at all, 5 if basic connection is established but with issues, and 10 if the integration follows LiveKit best practices with proper error handling and configuration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is real-time audio/video communication functionality complete?",
+      "description": "Check whether the application implements core audio/video features: audio/video toggling, device selection, participant grid view, screen sharing, and audio level indicators. Deduct 2 points for each missing core feature. Evaluate if the application handles camera/microphone permissions properly and provides fallback mechanisms when devices are unavailable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Vue 3 architecture properly implemented?",
+      "description": "Evaluate whether the code leverages Vue 3's Composition API effectively, using reactive state management, computed properties, and lifecycle hooks appropriately. Check for proper component structure, state isolation, and event handling patterns. Deduct 5 points if using outdated Vue 2 patterns, 3 points if component composition is chaotic, and 5 points if reactive primitives are misused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are advanced LiveKit features implemented?",
+      "description": "Assess implementation of advanced LiveKit features such as: adaptive streaming quality based on network conditions, simulcast support, connection quality indicators, server-side recording options, and breakout room functionality. Award 2 points for each advanced feature properly implemented (maximum 10 points). Implementation should follow LiveKit's recommended architectural patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, device permission denials, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI background noise suppression 2. Virtual backgrounds with blur option 3. Real-time transcription or translation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle participant state) 2. Function modules unrelated to conferencing (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., unnecessary animations that impact video quality). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/API layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1146,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. We need a complete hotel booking functionality page for WeChat Mini Program, including the js, wxss, and wxml files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the hotel booking core functionality implemented completely?",
+      "description": "Review whether the code accurately implements the core booking flow including hotel search, room selection, date picker, guest information form, and payment interface. Check if all required input validations are in place. Score 0 if the core booking flow is missing, 5 if only partial functionality is implemented, and 10 if the complete end-to-end booking process is implemented with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the WeChat Mini Program specific APIs utilized correctly?",
+      "description": "Evaluate the usage of WeChat-specific APIs such as wx.request for data fetching, wx.navigateTo for navigation, wx.showToast for notifications, and wx.login for authentication. Verify integration with WeChat payment APIs if applicable. Deduct 3 points if essential WeChat APIs are not used, 5 points if they're used incorrectly, and 10 points if all necessary WeChat APIs are properly implemented and error-handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the MVVM architecture properly implemented with proper data binding?",
+      "description": "Check whether the code follows WeChat Mini Program's MVVM pattern with proper separation of view (wxml), styling (wxss), and logic (js). Verify that data binding, event handling, and conditional rendering are implemented correctly. Deduct 5 points if the separation is poor, 3 points if data binding is inconsistent, and give 10 points if the architecture is clean with proper data flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the required UI components for hotel booking implemented?",
+      "description": "Verify implementation of essential components: date picker with availability display, room type selector with images, amenities list, pricing breakdown, guest information form, and booking confirmation page. Evaluate how these components interact. Give 3 points for basic implementation, 7 points for functional but basic UI, and 10 points for comprehensive components with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid inputs, payment failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time room availability indicators 2. Dynamic pricing based on dates 3. Integration with map to show hotel location 4. Room comparison tool). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple date selection methods) 2. Function modules unrelated to hotel booking (e.g., an unnecessary social sharing feature) 3. Fancy effects that affect performance (e.g., excessive animations when scrolling through hotel options). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, API calls, and business logic), component reusability, and naming conventions. Deduct 5 points if global state management is messy or nonexistent; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling for API calls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design guidelines: 1) Consistent with WeChat's visual style (proper padding/margins, standard button styles) 2) Proper layout spacing (following the grid system) 3) Professional typography (readable font sizes, proper hierarchy). Deduct 3 points for each UI element that doesn't follow WeChat guidelines, 5 points for inconsistent styling across pages, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions conform to WeChat Mini Program standards: 1) Appropriate loading states during API calls 2) Smooth transitions between pages 3) Responsive touch feedback on interactive elements. Deduct 5 points for missing loading indicators, 3 points for jarring page transitions, and 5 points for unresponsive or confusing UI elements. Check if the app handles orientation changes and different screen sizes properly. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 669,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration. Please develop a video interactive Q&A creation tool that allows educators to upload instructional videos and insert interactive questions (such as single-choice, multiple-choice, fill-in-the-blank, etc.) at specific time points in the video. When learners watch to the corresponding time point, the video will automatically pause, display the question, and continue playing after the answer is provided. The system needs to collect data on learners' responses and generate learning reports. It should support question bank management and random question selection functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video player integration and control fully implemented?",
+      "description": "Evaluate whether the code properly integrates a video player with full control capabilities (play, pause, seek, volume) and implements precise timing mechanisms to pause at question points. Score 0 if no functional video player exists, 5 if basic video playback works but has timing accuracy issues (>500ms error), and 10 if the integration is seamless with frame-accurate question triggering (<100ms error).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the interactive question system properly implemented?",
+      "description": "Check if the code supports all required question types (single-choice, multiple-choice, fill-in-the-blank) with proper validation, feedback mechanisms, and timed insertion. Deduct 3 points if any question type is missing, 2 points for each type that lacks proper validation, and 3 points if question timing insertion is imprecise or buggy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the educator interface for content creation comprehensive?",
+      "description": "Assess whether educators can efficiently upload videos, create questions with a rich editor, set timing points via visual timeline, preview the learner experience, and manage existing content. Deduct 2 points if video upload lacks progress indicators or format validation, 3 points if the question editor is too basic (lacking formatting options or media insertion), 3 points if timeline manipulation is not intuitive, and 2 points if preview functionality is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the data collection and learning report generation features complete?",
+      "description": "Evaluate the implementation of response tracking, analytics generation, and visualization of learning outcomes. Check for per-question statistics, per-student performance tracking, and trend analysis capabilities. Deduct 3 points if raw data is stored without proper aggregation, 3 points if visualization is missing or poorly implemented, 2 points if export options are limited, and 2 points if historical comparison features are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as video playback errors, network interruptions, partial answers, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based question generation from video content 2. Heat maps showing where students struggle most 3. Adaptive difficulty based on student performance). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar functions (e.g., multiple video control mechanisms) 2. Function modules unrelated to the core educational purpose (e.g., complex social features) 3. Fancy effects that affect performance (e.g., excessive animations that distract from learning). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video player/question logic/analytics layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Question appearance transitions are smooth without jarring the learning experience 2) Video pauses and resumes without visual artifacts 3) Clear visual focus guidance when questions appear. Deduct 5 points for each operation without feedback, 3 points for laggy transitions between video and questions, and 5 points for confusing UI state changes when answering questions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

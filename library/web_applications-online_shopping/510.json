@@ -1,0 +1,68 @@
+{
+  "index": 510,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. Please write code to implement a hotel room reservation system frontend where users can input check-in and check-out dates, and the system will display available room types (standard room, deluxe suite, etc.) and their corresponding prices in real-time. After selecting a room type, users can submit reservation information including the guest's name, contact information, etc.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the date selection functionality properly implemented?",
+      "description": "Check if the date picker allows users to select check-in and check-out dates with proper validation (check-out must be after check-in, no past dates allowed, etc.). Verify if the date range selection updates the room availability and pricing in real-time. Score 0 if date selection is missing, 5 if basic implementation exists but lacks validation, and 10 if fully implemented with all validations and real-time updates.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the room type display and selection system complete?",
+      "description": "Evaluate whether the code properly displays different room types with their descriptions, amenities, pricing, and availability based on the selected dates. Check if users can select room types and if the selection is visually indicated. Deduct 5 points if room descriptions are missing, 3 points if price calculation doesn't account for stay duration, and 3 points if availability status is not clearly indicated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the guest information form comprehensive and validated?",
+      "description": "Review whether the reservation form includes all necessary fields (name, email, phone, special requests, etc.) with proper validation. Check if form validation provides user-friendly error messages and prevents submission of invalid data. Deduct 3 points for each missing essential field, 5 points for weak or missing input validation, and 3 points for poor error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the reservation submission and confirmation process implemented?",
+      "description": "Check if the system properly handles the reservation submission process, including data validation, submission feedback, and confirmation display. Verify if a confirmation number or summary is provided after successful submission. Deduct 5 points if there's no submission feedback, 5 points if reservation summary is missing, and 3 points if there's no way to modify a reservation before final submission. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network issues during submission, invalid data inputs, concurrent reservations for the same room, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Room comparison tool 2. Price history graph showing rate fluctuations 3. Interactive room preview/virtual tour). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple calendar implementations) 2. Function modules unrelated to hotel reservation (e.g., a built-in currency converter) 3. Fancy effects that affect performance (e.g., excessive animations when scrolling through rooms). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/state management/form validation logic), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's poor component organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback when changing dates or room selection 2) Smooth transitions between reservation steps 3) Clear visual indications for selected options and available/unavailable rooms. Deduct 5 points for each operation without feedback, 3 points for laggy transitions, and 5 points for confusing navigation between steps. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

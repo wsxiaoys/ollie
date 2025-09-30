@@ -1,0 +1,68 @@
+{
+  "index": 732,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. Generate HTML code in Xiaohongshu (Little Red Book) style, where the retrieved code format should be image code (not text or requiring image link replacement), so I can directly take screenshots and post to Xiaohongshu. The retrieved code format should be image code (not text or requiring image link replacement), so I can directly take screenshots and post to Xiaohongshu.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HTML structure properly implemented in Xiaohongshu style?",
+      "description": "Evaluate if the HTML structure follows Xiaohongshu's characteristic layout with card-based design, proper use of divs for content blocks, and appropriate heading hierarchy. Check if it includes essential Xiaohongshu UI elements like the avatar circle, like/comment buttons, and hashtag styling. Score 0 if the structure doesn't resemble Xiaohongshu at all, 5 if basic elements are present but poorly organized, and 10 if the structure precisely mirrors Xiaohongshu's format.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the code include appropriate image implementation for screenshots?",
+      "description": "Check whether images are properly implemented as embedded data URLs or base64 encoded strings instead of external URLs. Verify that no image requires manual link replacement. Images should render directly when the HTML is loaded. Score 0 if images are implemented as external links requiring replacement, 5 if images are implemented but with poor optimization, and 10 if all images are perfectly embedded for direct screenshot capability.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Xiaohongshu visual styling accurately reproduced?",
+      "description": "Evaluate if the CSS accurately reproduces Xiaohongshu's distinctive visual style, including the characteristic color palette (red brand color #FF2442), rounded corners (8-12px), shadow effects, font choices, and content spacing. Score 0 if styling doesn't match Xiaohongshu, 5 if basic styling is similar but lacks precision, and 10 if the styling is indistinguishable from the actual Xiaohongshu app.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive elements properly implemented for demonstration purposes?",
+      "description": "Assess if the code includes Xiaohongshu-specific interactions like double-tap to like, horizontal scroll galleries, expandable text sections, and floating action buttons. Check if these are implemented with appropriate JavaScript that works in a standalone HTML file. Deduct 3 points if essential interactions are missing, 5 points if interactions are buggy, and award full 10 points for perfectly implemented interactions that mirror the Xiaohongshu experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as image loading failures, responsive layout breakpoints, touch vs. mouse interactions, etc.) and provide fallbacks or graceful degradation. Code with strong robustness should work across different browsers and viewports, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated like button effects 2. Simulated comment typing animation 3. Parallax scrolling for images). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant styling with overlapping CSS rules 2. Function modules unrelated to Xiaohongshu's core experience 3. Fancy effects that affect performance (e.g., excessive animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating structure/style/behavior), code reusability, and performance optimization. Deduct 5 points if global style pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations are implemented (such as image optimization, animation throttling). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet Xiaohongshu's aesthetic standards?",
+      "description": "Evaluate whether the overall design follows Xiaohongshu's distinct aesthetic principles: 1) Warm, vibrant color scheme dominated by reds and pinks 2) Clean white space with proper content density 3) Typography that balances readability with stylistic flair (proper use of weights and sizes). Deduct 3 points for each misaligned visual element, 5 points for incorrect brand colors, and 5 points for improper content proportions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile responsiveness properly implemented?",
+      "description": "Judge whether the design adapts properly to mobile viewports: 1) Proper meta viewport tag implementation 2) Fluid layouts that adjust to different screen sizes 3) Touch-friendly tap targets (minimum 44×44px). Deduct 5 points for horizontal scrollbars on mobile, 3 points for overlapping elements at certain breakpoints, and 5 points for text that becomes illegible at mobile sizes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

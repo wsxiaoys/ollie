@@ -1,0 +1,68 @@
+{
+  "index": 1501,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable when possible. Write a Four Pillars (BaZi) charting software that only displays the Four Pillars and Decennial Cycles.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Four Pillars (BaZi) chart calculation correctly implemented?",
+      "description": "Check whether the code accurately calculates the Four Pillars (year, month, day, hour) based on date and time input. Verify that the Heavenly Stems and Earthly Branches are correctly assigned according to traditional Chinese calendar calculations. Score 0 if core calculation logic is missing, 5 if basic pillar formation exists with minor errors, and 10 if calculations fully comply with traditional BaZi principles including solar calendar adjustments.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the Decennial Cycles (Luck Pillars) correctly calculated?",
+      "description": "Evaluate whether the code properly determines the Decennial Cycles (Da Yun) based on the Four Pillars chart. Check for accurate implementation of starting age calculation, cycle transitions, and proper sequencing of Heavenly Stems and Earthly Branches in the luck pillars. Deduct 5 points if the starting point of luck pillars is incorrect, 3 points if the cycle progression direction (forward/reverse based on gender) is wrong. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the software handle various calendar systems and time conversions properly?",
+      "description": "Verify that the software can convert between solar (Gregorian) and lunar calendars accurately, handling leap months and time zone differences correctly. Check if the software properly accounts for historical calendar changes and different date formats. Deduct 5 points if lunar-solar conversion has errors, 3 points if time zone handling is missing, and 2 points if historical dates (before 1900) are not supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the visual representation of the Four Pillars chart clear and traditional?",
+      "description": "Assess whether the chart follows traditional BaZi visualization standards with clear distinction between Heavenly Stems and Earthly Branches. Check if Chinese characters are properly displayed with their corresponding elements (Five Elements) appropriately color-coded. Deduct 3 points if elements aren't color-coded, 5 points if the traditional layout isn't followed, and 2 points if the relationship between pillars isn't visually clear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid dates, future dates, dates before the supported calendar system, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual representation of the Five Elements balance 2. Interactive element clash/combination highlights 3. Simplified explanations of chart significance). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Features beyond the scope of Four Pillars and Decennial Cycles (e.g., detailed fortune interpretation) 2. Unnecessary calculation methods that complicate the codebase 3. Fancy effects that affect performance without adding value to the core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation logic/view/data models), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles while respecting traditional BaZi aesthetics: 1) Harmonious color matching (using traditional Five Elements colors appropriately) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (clear rendering of both Chinese characters and numerals). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance when switching between chart views or date inputs. Deduct 5 points for each operation without feedback, 3 points for visual after-images during transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Astrology/Divination Software",
+  "difficulty": "hard"
+}

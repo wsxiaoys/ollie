@@ -1,0 +1,68 @@
+{
+  "index": 867,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make any code you provide executable. Help me write code for a single-player Texas Hold'em poker game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Texas Hold'em game logic fully implemented?",
+      "description": "Review whether the code accurately implements the complete poker hand evaluation system, betting rounds (pre-flop, flop, turn, river), and proper hand ranking determination. Score 0 if core game logic is missing, 5 if basic hand evaluation exists but with errors, and 10 if all poker rules are correctly implemented including tie-breakers and special hand combinations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the player interaction system properly implemented?",
+      "description": "Check if the game allows for all standard Texas Hold'em player actions (fold, check, call, raise, all-in) with appropriate validation of each action based on the current game state. Verify that the player can only perform legal actions at each stage. Deduct 5 points if action validation is missing, 3 points if the betting system doesn't enforce proper limits. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the AI opponent behavior realistic and challenging?",
+      "description": "Evaluate if the computer opponent uses strategic decision-making rather than purely random choices. Check for different difficulty levels, bluffing mechanics, and adaptation to the player's style. Deduct 5 points if the AI makes obviously poor decisions, 3 points if it lacks any strategic variation. Look for evidence of probability-based decision making. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management comprehensive?",
+      "description": "Verify if the code properly manages the complete game lifecycle including dealing cards, transitioning between betting rounds, pot management, and determining winners. Check if game history is tracked for reviewing past hands. Deduct 5 points if state transitions are inconsistent, 3 points if pot calculation errors exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as all-in situations, side pots, insufficient funds, and invalid user inputs. Code with strong robustness should gracefully handle these scenarios with appropriate error messages or recovery mechanisms. Give 10 points if thoroughly implemented, 5 points if basic error handling exists, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Odds calculator during gameplay 2. Player statistics tracking 3. Customizable AI personalities 4. Hand strength visualizer). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple card evaluation algorithms) 2. Function modules unrelated to poker (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/card evaluation), proper class design, and maintainable code organization. Deduct 5 points if global state pollution is found or object-oriented principles are violated; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the card display, table layout, and player information follow professional poker game conventions: 1) Clear card visibility and distinction 2) Intuitive chip representation and bet sizing 3) Appropriate use of poker terminology and symbols. Deduct 3 points for cluttered layouts, 5 points for unclear card representations, and 5 points for confusing betting interfaces. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game flow and animations enhance the poker experience: 1) Card dealing animations under 500ms 2) Clear betting round transitions 3) Highlighted winning hands and pot distribution. Deduct 5 points for abrupt state changes without feedback, 3 points for unclear turn indicators, and 5 points for confusing or missing end-of-hand resolution displays. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

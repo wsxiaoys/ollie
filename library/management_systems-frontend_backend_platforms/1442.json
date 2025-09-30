@@ -1,0 +1,68 @@
+{
+  "index": 1442,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Write an ATM user interface that implements complete functionality including user login, deposits and withdrawals, balance inquiries, receipt printing, etc., using front-end technologies.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the login and authentication system fully implemented?",
+      "description": "Review whether the code properly implements user authentication with proper input validation, secure handling of credentials, and session management. Check if there are measures against brute force attacks (like account lockout) and if proper error messages are displayed without revealing sensitive information. Score 0 if authentication is missing, 5 if basic authentication is implemented without security measures, and 10 if comprehensive secure authentication is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the core ATM operations (deposit, withdrawal, balance inquiry) fully functional?",
+      "description": "Evaluate whether all core banking operations work correctly. Verify that deposits and withdrawals properly update the account balance with validation checks (e.g., preventing negative balances, checking for valid input amounts). Check if balance inquiries accurately display current balances. Deduct 3 points for each core operation that's missing or dysfunctional, and 2 points for each operation with validation issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the receipt generation and printing functionality implemented?",
+      "description": "Check if the system properly formats transaction receipts with all required information (transaction type, amount, timestamp, remaining balance, transaction ID). Verify if there are options to print, email, or decline receipts. Assess whether the print formatting would work on actual receipt paper dimensions. Score 0 if receipts are missing, 5 if basic receipt information is available but lacks formatting or printing options, and 10 if comprehensive receipt functionality is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper transaction history and account management?",
+      "description": "Review whether the interface allows users to view transaction history with filtering options, manage account settings, change PIN/password, or configure preferences. Check if transactions are properly recorded with timestamps and unique identifiers. Deduct 3 points if transaction history is missing, 3 points if account management features are absent, and 2 points if history data is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect PIN entries, insufficient funds, network failure, service timeouts, card reading errors, etc.) and provide friendly error prompts or recovery mechanisms. Check if the system has proper timeout functionality for security. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Biometric authentication options 2. Quick withdrawal presets 3. Dark mode/accessibility features 4. Interactive voice guidance 5. Currency conversion calculator). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to check balance) 2. Function modules unrelated to banking (e.g., games or entertainment features) 3. Fancy effects that affect performance or usability (e.g., excessive animations that slow down transactions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data layers), input validation, security measures, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if security best practices are not followed (e.g., storing sensitive data in localStorage). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern ATM interface principles: 1) Clear visual hierarchy with important functions prominently displayed 2) Consistent and appropriately sized touch targets (at least 44×44px) 3) High contrast for readability in various lighting conditions 4) Clear typography with legible font sizes (at least 16px). Deduct 3 points for each usability issue, 5 points for poor contrast or readability problems, and 5 points for inconsistent layouts between screens. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and user-friendly?",
+      "description": "Judge whether the interface conforms to ATM usability standards: 1) Clear timeouts with warnings before session expiration 2) Logical flow between screens with proper back/cancel options 3) Loading indicators for processes that take time 4) Confirmation screens for critical actions like withdrawals. Deduct 5 points for missing timeout functionality, 3 points for lack of confirmation screens, and 5 points for confusing navigation or workflow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

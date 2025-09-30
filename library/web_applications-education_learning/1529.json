@@ -1,0 +1,68 @@
+{
+  "index": 1529,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Now, if we're developing a webpage using Vue combined with MathLive for web-only applications...",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue + MathLive integration properly implemented?",
+      "description": "Review whether the code correctly integrates MathLive with Vue using proper component wrapping or directives. Check for proper initialization, event handling, and data binding between Vue's reactive system and MathLive's editor. Score 0 if integration is missing, 5 if basic implementation exists but with reactivity issues, 10 if seamlessly integrated with proper Vue lifecycle management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the math input handling complete?",
+      "description": "Evaluate the implementation of math input functionality including keyboard shortcuts, special character input, LaTeX parsing, and formula validation. Check for support of common mathematical notations (fractions, integrals, matrices, etc.). Deduct 5 points if complex mathematical structures are unsupported, 3 points if keyboard shortcuts are incomplete. Full score requires comprehensive math input capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the MathLive configuration options properly utilized?",
+      "description": "Assess whether the code leverages MathLive's configuration options effectively (virtual keyboards, styling, fonts, locale settings, etc.). Check for customization that enhances user experience while maintaining accessibility. Deduct 3 points for each missing essential configuration (keyboard layout, styling, locale support). Give 10 points only if configuration is comprehensive and well-documented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper ARIA and accessibility implementation?",
+      "description": "Check whether the implementation includes proper screen reader support, keyboard navigation, and ARIA attributes for math content. Verify that mathematical expressions are accessible to assistive technologies. Deduct 5 points if ARIA attributes are missing, 3 points if keyboard navigation is incomplete, and 5 points if screen reader testing wasn't considered. Full score requires comprehensive accessibility implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid LaTeX input, browser compatibility issues, network interruption during resource loading, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview of rendered expressions 2. Formula history with undo/redo 3. Auto-completion for mathematical symbols 4. Formula templates library). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant initialization of MathLive instances 2. Function modules unrelated to math editing (e.g., overengineered features) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down math rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component architecture (such as separating UI/logic/state management), test coverage, and build process integration. Deduct 5 points if global state is used inappropriately; deduct 5 points if the code has high duplication; deduct 5 points if Vue best practices (computed properties, watchers, etc.) are not followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for the math editor 2) Proper layout spacing around mathematical expressions 3) Professional typesetting of mathematical content. Deduct 3 points for each poorly spaced element, 5 points for inconsistent styling between UI and math content, and 5 points for poor mathematical typesetting quality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate rendering of math input ≤ 100ms 2) Smooth cursor movement in complex expressions 3) Clear visual feedback during editing operations. Deduct 5 points for each noticeable lag during formula editing, 3 points for flickering during formula updates, and 5 points for confusing cursor behavior in complex expressions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

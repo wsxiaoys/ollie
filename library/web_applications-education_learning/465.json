@@ -1,0 +1,68 @@
+{
+  "index": 465,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration whenever possible. What is the brachistochrone curve? Please create a frontend program to demonstrate this concept to children.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the brachistochrone curve concept accurately explained?",
+      "description": "Check if the response provides a clear, accurate explanation of the brachistochrone curve (cycloid shape), its mathematical properties, and its historical significance (Johann Bernoulli's problem). The explanation should be scientifically correct while being accessible to children. Deduct 5 points if the explanation contains mathematical errors, 3 points if key properties are missing, and 2 points if historical context is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the visualization of the brachistochrone curve properly implemented?",
+      "description": "Evaluate if the code correctly renders a cycloid curve using proper mathematical formulas. Check if the visualization demonstrates that a ball rolling down this curve reaches the bottom faster than other paths. The implementation must use parametric equations for the cycloid (x = r(t - sin(t)), y = r(1 - cos(t))). Deduct 5 points if the curve is incorrectly drawn, 5 points if the physics simulation is inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there an interactive comparison between different paths?",
+      "description": "Check if the program allows comparison between at least three different paths (straight line, curved line, and brachistochrone). The simulation should clearly demonstrate that the brachistochrone path is the fastest despite appearing longer. Assess whether users can trigger the comparison simulation and if timing measurements are shown. Deduct 5 points if only two paths are compared, 5 points if no timing comparison is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the physics simulation accurate and educational?",
+      "description": "Verify that the physics engine correctly simulates gravity, acceleration, and motion. Check if the simulation properly accounts for conservation of energy and if the motion appears natural. The implementation should include acceleration calculations based on path slope. Deduct 5 points for unrealistic movement, 3 points for incorrect acceleration behavior, and 2 points if energy conservation is violated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, different screen sizes, browser compatibility issues, etc.) and provide graceful degradation. Code with strong robustness should be able to effectively handle edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Interactive parameter adjustment 2. Real-time path editing 3. Age-appropriate explanations with animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple physics engines coexisting) 2. Function modules unrelated to the brachistochrone concept 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core educational functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics/rendering/UI layers), code readability, and appropriate commenting for educational purposes. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks meaningful comments for understanding. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet child-friendly design standards?",
+      "description": "Evaluate whether the design is appropriate for children: 1) Age-appropriate color scheme with high contrast 2) Larger interactive elements suitable for younger users 3) Clear visual instructions with minimal text dependency. Deduct 3 points for each small, hard-to-click element, 5 points for text-heavy explanations unsuitable for children, and 5 points for visually confusing layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and engaging for children?",
+      "description": "Judge whether the interactive elements are designed for children's cognitive abilities: 1) Immediate visual feedback for interactions 2) Simplified controls with clear cause-effect relationships 3) Engaging animations that reinforce the concept being taught. Deduct 5 points for each complex interaction requiring advanced motor skills, 3 points for delayed feedback that might confuse children, and 5 points for interactions that don't contribute to understanding the brachistochrone concept. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

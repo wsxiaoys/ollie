@@ -1,0 +1,68 @@
+{
+  "index": 1300,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code can be executed and displayed. Help me create a backend management template using React 18, Ant Design, Design Pro, and Redux.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the React 18 framework architecture properly implemented?",
+      "description": "Review whether the code correctly utilizes React 18's new features including Concurrent Features, Automatic Batching, and Suspense for data fetching. Check if the project structure follows modern React patterns with proper component composition and hooks usage. Score 0 if using outdated React patterns, 5 if basic React 18 setup without new features, and 10 if fully leveraging React 18's capabilities including Concurrent Rendering and new APIs.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Ant Design integration comprehensive and theme-consistent?",
+      "description": "Evaluate whether Ant Design components are properly integrated with consistent theming, proper ConfigProvider setup, and customized design tokens. Check if the implementation includes responsive design, proper form validation, and accessibility features. Deduct 5 points if default styling is used without customization, 3 points if responsive breakpoints are not handled properly. Full score requires complete theme customization and component optimization.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Ant Design Pro template structure and routing implemented correctly?",
+      "description": "Check whether the code implements proper ProLayout, route configuration with menu generation, and authentication guards. Evaluate if breadcrumb navigation, multi-tab support, and permission-based menu rendering are included. Deduct 5 points if basic layout structure is missing, 3 points if route guards are not implemented. Full score requires complete admin template features including settings drawer and layout customization.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is Redux state management architecture robust and scalable?",
+      "description": "Assess whether Redux implementation follows modern patterns with Redux Toolkit, proper slice organization, and async thunk handling. Check if middleware setup includes proper debugging tools, persistence layer, and normalized state structure. Deduct 5 points if using legacy Redux patterns, 3 points if state normalization is poor. Full score requires RTK Query integration, proper error handling, and optimistic updates.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and error-resilient?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruption, invalid user inputs, route errors, etc.) and provide friendly error boundaries and recovery mechanisms. Code with strong robustness should include proper loading states, error boundaries, and graceful degradation, giving 10 points. If the robustness is average, give 5 points, and if no error handling is implemented, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative backend management features that enhance productivity?",
+      "description": "Check whether the code includes valuable features that improve admin efficiency (e.g., 1. Advanced data table with virtual scrolling 2. Real-time dashboard with WebSocket updates 3. Drag-and-drop form builder 4. Advanced search with filters 5. Bulk operations with progress tracking). Add 2 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary implementations?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate component implementations (e.g., multiple table components with similar functionality) 2. Unused dependencies or features unrelated to backend management 3. Over-engineered solutions that complicate simple tasks. Deduct 3 points for each redundancy found, and directly deduct 10 points if core admin functionalities are hindered by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate high engineering standards?",
+      "description": "Review modular architecture (proper separation of components, services, and utilities), TypeScript usage, testing implementation, and build optimization. Deduct 5 points if TypeScript types are poorly defined or any type is overused; deduct 5 points if no testing strategy is implemented; deduct 5 points if build optimization and code splitting are not configured. Full score requires comprehensive engineering practices.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional admin dashboard standards?",
+      "description": "Evaluate whether the design follows modern admin interface principles: 1) Consistent color scheme with proper contrast ratios 2) Logical information hierarchy and spacing (following 8px grid system) 3) Professional typography with readable font sizes (≥14px for body text, proper line heights). Deduct 3 points for each cluttered interface section, 5 points for poor color contrast or accessibility issues, and 5 points for inconsistent spacing or typography. Full score requires polished, professional appearance.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are interactions smooth with appropriate feedback mechanisms?",
+      "description": "Judge whether the user interactions provide appropriate feedback: 1) Button clicks and form submissions have immediate visual feedback ≤100ms 2) Loading states and transitions are smooth (300-500ms duration) 3) Navigation and state changes provide clear visual cues. Deduct 5 points for each interaction without proper feedback, 3 points for jerky animations or transitions, and 5 points for unclear navigation flow. Full score requires seamless, intuitive user experience.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

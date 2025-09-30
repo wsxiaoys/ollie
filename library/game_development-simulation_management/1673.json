@@ -1,0 +1,68 @@
+{
+  "index": 1673,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and can be displayed. Please help me create a simulation farm game similar to QQ Farm, using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic farm layout and grid system fully implemented?",
+      "description": "Review whether the code creates a proper HTML grid system for the farm plot layout. Check if the farm area has clearly defined planting grids, property boundaries, and proper DOM structure. Score 0 if there's no grid system, 5 if there's a basic layout without proper cell management, and 10 if the grid system supports proper plot state management with visual indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the core farming mechanics implemented?",
+      "description": "Evaluate whether essential farming mechanics are present: planting seeds, watering, growth stages, harvesting crops, and storage system. Deduct 3 points if any of these core mechanics are missing. Deduct additional 2 points if the crop lifecycle is too simplified (less than 3 stages). Give full 10 points only if the system includes time-based growth with visual state changes.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a proper game economy system?",
+      "description": "Check if the game includes a functional economy with currency, purchasing seeds/items, selling harvested crops, and price variations. Deduct 3 points if there's no purchasing system, 3 points if selling harvested goods isn't implemented, and 4 points if there's no currency display or economic balance. Full score requires a complete economic loop with visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there player progression and achievement system?",
+      "description": "Assess whether the game has player progression elements like leveling up, unlocking new crops/items, achievements, or farm expansion capabilities. Deduct 3 points for each missing progression component. The system should include visual indicators of progress and clear reward structures. Full score requires at least 3 different progression mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid actions, rapid clicking, out-of-sequence operations) and provides friendly error handling. Code with strong robustness should prevent crop state corruption and maintain game consistency. Give 10 points for comprehensive error handling, 5 points for basic validations, and 0 points if the game breaks easily.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather system affecting crops 2. Seasonal events/themes 3. Pest management system 4. Farm decoration options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple crop growth systems) 2. Function modules unrelated to farming (e.g., a built-in unrelated mini-game) 3. Fancy effects that affect performance (e.g., excessive animations slowing gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of game logic/view/data management), code organization, and maintainability. Deduct 5 points if global state pollution is found or proper design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear structure for adding new features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the farm visualizations follow good design principles: 1) Consistent and theme-appropriate visual style 2) Clear visual distinction between interactive and decorative elements 3) Proper visual hierarchy with important game elements prominent. Deduct 3 points for inconsistent visual styles, 5 points for unclear interactive elements, and 5 points for cluttered or visually confusing layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether interactions like planting, harvesting, and purchasing have appropriate feedback: 1) Visual/audio feedback for actions 2) Smooth transitions between game states 3) Intuitive controls with hover effects or tooltips. Deduct 5 points for actions without feedback, 3 points for jarring visual transitions, and 5 points for confusing or hidden controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 962,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Be sure to produce executable code whenever possible. Design a webpage using Node.js that displays weather data from the Amap (Gaode) API, along with AQI (Air Quality Index) data retrieved from two different APIs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Amap (Gaode) API integration correctly implemented?",
+      "description": "Review whether the code properly integrates Amap weather API with correct authentication, parameter handling, and data parsing. Check if the API key is properly configured, request parameters include necessary fields (city, extensions, output format), and response data is correctly parsed and validated. Score 0 if API integration is non-functional, 5 if basic weather data is retrieved but with errors, and 10 if complete weather information is accurately fetched with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are dual AQI data sources successfully integrated and compared?",
+      "description": "Evaluate whether the code successfully retrieves AQI data from two different APIs (such as Amap and another provider like Waqi or government APIs), implements proper data synchronization, and handles potential discrepancies between sources. Check for concurrent API calls, data normalization, and fallback mechanisms. Deduct 5 points if only one AQI source works, 3 points if data comparison logic is missing, and 2 points if no fallback mechanism exists. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Node.js backend architecture properly structured?",
+      "description": "Check whether the Node.js server implements proper routing structure, middleware for error handling, API rate limiting, and caching mechanisms. Evaluate if the server uses appropriate frameworks (Express.js), implements CORS handling, and has proper separation of concerns. Deduct 5 points if no caching strategy is implemented, 3 points if rate limiting is missing, and 2 points if error middleware is absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is real-time data updating and state management implemented?",
+      "description": "Assess whether the system implements automatic data refresh mechanisms, handles API rate limits intelligently, and maintains data consistency across multiple API sources. Check for implementation of polling strategies, WebSocket connections for real-time updates, or scheduled data fetching. Deduct 5 points if no auto-refresh mechanism exists, 3 points if rate limiting is not respected, and 2 points if stale data issues are not addressed. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network timeouts, invalid responses, rate limit exceeded, malformed data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include try-catch blocks, input validation, graceful degradation, and user-friendly error messages. Give 10 points if fully robust, 5 points if average robustness, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the user experience (e.g., 1. Weather forecast visualization charts 2. Historical weather data comparison 3. Location-based weather alerts 4. Weather data export functionality 5. Interactive weather maps). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple weather data fetching mechanisms) 2. Function modules unrelated to weather display (e.g., built-in games or unrelated widgets) 3. Excessive animations or effects that impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core weather functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API services, data processing, and presentation layers), configuration management, logging implementation, and deployment readiness. Deduct 5 points if environment variables are not used for API keys; deduct 5 points if no logging mechanism exists; deduct 5 points if code structure is monolithic without proper separation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the weather data display follows modern design principles: 1) Harmonious color scheme suitable for weather themes 2) Proper information hierarchy with clear data visualization 3) Professional typography (readable font sizes ≥ 14px, appropriate line spacing) 4) Responsive design for different screen sizes. Deduct 3 points for each cluttered visual element, 5 points for poor color contrast affecting readability, and 5 points for chaotic data layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the weather data interactions provide good user experience: 1) Data loading states with appropriate spinners or skeletons 2) Smooth transitions between different weather views 3) Responsive interactions ≤ 100ms 4) Clear visual feedback for user actions 5) Intuitive navigation between weather information sections. Deduct 5 points for each missing loading state, 3 points for jarring transitions, and 5 points for unclear data presentation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 228,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Pay attention to ensuring that the code you generate is executable for demonstration. How to download a PDF file and open it using canvas in Vue 2.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the PDF file download functionality properly implemented?",
+      "description": "Review whether the code correctly implements PDF file download using appropriate methods (fetch/axios/XMLHttpRequest) with proper headers and response type handling. Check if progress tracking, error handling for network failures, and CORS handling are included. Score 0 if download fails completely, 5 if basic download works but lacks error handling, and 10 if includes progress tracking, proper headers (Content-Type: application/pdf), and comprehensive error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the PDF rendering on Canvas correctly implemented?",
+      "description": "Evaluate whether PDF.js library is properly integrated and configured to render PDF content on HTML5 Canvas element. Check if the implementation includes proper page scaling, quality settings (devicePixelRatio consideration), and viewport configuration. Deduct 5 points if rendering quality is poor or pixelated, 3 points if scaling doesn't work properly. Full score requires crisp rendering with proper DPI handling and responsive scaling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Vue 2 integration and component lifecycle properly managed?",
+      "description": "Check whether the implementation properly utilizes Vue 2 lifecycle hooks (mounted, beforeDestroy), reactive data properties, and component methods. Evaluate if PDF loading states are properly managed with Vue's reactivity system and if canvas references are correctly handled. Deduct 5 points if lifecycle management is missing, 3 points if reactivity is not properly utilized. Full score requires proper integration with Vue 2 patterns and state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are advanced PDF interaction features implemented?",
+      "description": "Assess whether the implementation includes essential PDF interaction features such as page navigation (next/previous), zoom controls (zoom in/out/fit), page number display, and multi-page support. Check if bookmark/outline navigation is available for complex PDFs. Deduct 5 points if only single page display is supported, 3 points if zoom functionality is missing. Full score requires comprehensive PDF navigation and interaction capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases properly?",
+      "description": "Evaluate whether the code can handle common problematic scenarios (corrupted PDF files, network timeouts, large file sizes, unsupported PDF versions, mobile device limitations). Code should provide meaningful error messages and graceful degradation. Strong robustness with comprehensive error handling gets 10 points, basic error handling gets 5 points, no exception handling gets 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance PDF viewing experience?",
+      "description": "Check whether the code includes valuable enhancement features (e.g., 1. Text selection and search functionality 2. Annotation tools or highlighting 3. Thumbnail preview sidebar 4. Full-screen mode 5. Print functionality). Add 2-3 points for each well-implemented innovative feature that adds real value to the PDF viewing experience (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary implementations?",
+      "description": "Strictly identify three types of redundancy: 1. Multiple PDF rendering libraries loaded simultaneously 2. Unnecessary file conversion processes 3. Overly complex animations that impact PDF rendering performance 4. Duplicate canvas elements or rendering loops. Deduct 3 points for each redundancy found, and deduct 10 points if redundant code significantly impacts core PDF functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate good engineering practices?",
+      "description": "Review component modularity (separation of PDF service, canvas renderer, UI controls), proper async/await usage, memory management (canvas cleanup, PDF document disposal), and Vue 2 best practices. Deduct 5 points if memory leaks are present or improper async handling; deduct 5 points if code organization is poor; deduct 5 points if no error boundaries or loading states. Full score requires clean architecture and proper resource management.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the PDF viewer interface meet professional design standards?",
+      "description": "Evaluate whether the PDF viewer UI follows modern design principles: 1) Clean toolbar design with intuitive icons 2) Proper contrast for PDF content readability 3) Responsive layout that works on different screen sizes 4) Loading states and progress indicators. Deduct 3 points for cluttered UI elements, 5 points for poor readability or contrast issues, and 5 points for non-responsive design that breaks on mobile devices.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are PDF interactions smooth and provide immediate feedback?",
+      "description": "Judge whether PDF operations provide smooth user experience: 1) Page transitions without flickering 2) Zoom operations with smooth scaling (≤300ms) 3) Loading indicators during PDF processing 4) Responsive controls with immediate visual feedback (≤100ms). Deduct 5 points for each laggy operation, 3 points for missing loading states, and 5 points for unresponsive or hard-to-find navigation controls.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

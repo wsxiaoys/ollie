@@ -1,0 +1,68 @@
+{
+  "index": 990,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the generated code is executable for demonstration. I now have radar point cloud data and several corresponding photos. Could you write code that would render and reconstruct this into a three-dimensional scene?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the point cloud data processing pipeline fully implemented?",
+      "description": "Review whether the code accurately implements data parsing, filtering, and preprocessing of radar point cloud data. Score 0 if there's no implementation for handling raw point cloud data, 5 if basic parsing is implemented but lacks noise filtering and outlier removal, and 10 if the code includes comprehensive point cloud processing with normalization, downsampling, and statistical outlier removal techniques.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image-to-point cloud registration process properly implemented?",
+      "description": "Evaluate whether the code implements camera calibration and fusion of 2D images with 3D point cloud data. Check if transformation matrices are properly calculated and applied. Deduct 5 points if camera intrinsic parameters are hardcoded without calibration options, 3 points if the registration process lacks error metrics. The registration should handle multiple viewpoints correctly and provide visual validation of the alignment quality.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the 3D scene reconstruction algorithm effectively implemented?",
+      "description": "Check whether the code implements appropriate scene reconstruction techniques such as SLAM, Structure from Motion, or other 3D reconstruction methods. Score 0 if no reconstruction logic exists, 5 if a basic reconstruction is implemented but lacks texture mapping or surface refinement, and 10 if the implementation includes advanced features like mesh generation, texture mapping, and surface optimization algorithms.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the 3D visualization component comprehensive and interactive?",
+      "description": "Assess whether the visualization supports essential features like camera controls (orbit, pan, zoom), point/mesh rendering options, color mapping from images to points/meshes, and interactive selection of regions. Deduct 5 points if the visualization lacks navigation controls, 3 points if color mapping from photos is not implemented, and 5 points if there's no interactive element to explore the scene.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted point cloud data, misaligned images, memory limitations with large datasets, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time point cloud segmentation 2. Automatic semantic labeling of objects in the scene 3. AR/VR export capabilities 4. Temporal tracking of dynamic objects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar rendering pipelines 2. Function modules unrelated to 3D reconstruction (e.g., unrelated image processing tools) 3. Computationally expensive visualizations that don't contribute to understanding the scene. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/reconstruction/visualization layers), unit test coverage, and scalability for large datasets. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no consideration for performance optimization with large point clouds. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional visualization standards?",
+      "description": "Evaluate whether the 3D scene visualization follows modern design principles: 1) Appropriate color mapping for point cloud data (scientific colormaps for depth/intensity) 2) Clear distinction between rendered points/meshes and UI elements 3) Professional camera controls with visual cues. Deduct 3 points for poor color representation of data, 5 points for cluttered interface elements overlapping with the 3D view, and 5 points for lack of spatial references (grid, axes). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the 3D interaction conforms to expected behavior: 1) Responsive navigation of the 3D scene (< 60ms latency) 2) Smooth transitions when switching between views 3) Progressive loading for large point clouds to maintain framerate. Deduct 5 points for jerky rotations or movements, 3 points if the scene becomes unresponsive with moderate-sized point clouds, and 5 points if there's no visual feedback during long processing operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 345,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code in your demonstrations. Create a simple backend interface based on tea culture.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the backend API architecture fully implemented?",
+      "description": "Review whether the code accurately implements a RESTful or GraphQL API structure with proper routing, controller logic, and HTTP method handling specific to tea culture domains. Score 0 if no API endpoints are implemented, 5 if basic CRUD operations are present but lack proper organization, and 10 if the architecture follows best practices with clear separation of concerns and tea-specific domain modeling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the tea culture domain model properly designed?",
+      "description": "Evaluate if the data models properly represent tea culture concepts (tea types, origins, brewing methods, etc.) with appropriate relationships and attributes. Check for proper schema design with validation rules. Deduct 5 points if critical tea attributes are missing, 3 points if relationship modeling is flawed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the database integration implemented correctly?",
+      "description": "Check whether the code includes database connection setup, proper ORM/query builder usage, and data persistence mechanisms. Assess if tea-related queries are optimized and if database transactions are used where appropriate. Deduct 5 points for hardcoded credentials, 3 points for missing indexing on frequently queried tea properties. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are API authentication and security measures implemented?",
+      "description": "Evaluate if the backend implements proper authentication/authorization mechanisms (JWT, OAuth, etc.), input validation, and protection against common vulnerabilities (SQL injection, XSS, etc.). Deduct 5 points if authentication is missing, 3 points if input sanitization is inadequate, and 5 points if no rate limiting is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, database connection failures, authentication errors, etc.) and provide appropriate error responses with status codes. Code with strong robustness should include try-catch blocks, input validation, and graceful error handling, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Tea recommendation algorithm 2. Brewing timer calculations based on tea type 3. Seasonal tea availability). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication systems) 2. Function modules unrelated to tea culture (e.g., general blog functionality) 3. Over-engineered components that add complexity without value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating controller/service/data access layers), test coverage, and deployment configurations. Deduct 5 points if global state is mismanaged; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error logging mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Is the API documentation comprehensive and clear?",
+      "description": "Evaluate whether the API is well-documented using standards like OpenAPI/Swagger, with clear endpoint descriptions, request/response examples specific to tea culture domains. Deduct 3 points for missing parameter descriptions, 5 points for lack of response schemas, and 5 points for no usage examples. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the API performance optimized?",
+      "description": "Judge whether performance considerations are implemented: 1) Response caching for tea catalog data 2) Query optimization for tea searches 3) Pagination for large result sets. Deduct 5 points for missing caching strategy, 3 points for unoptimized database queries, and 5 points for returning excessive data in responses. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1469,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration purposes. I now want to create a user live streaming viewing page. The backend uses HLS to send the streaming content, and Socket.io to transmit real-time information during the broadcast. For the entire page, I would like to have a viewing area, a danmaku (bullet comment) area, and user information in the top right corner.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HLS video streaming implementation complete?",
+      "description": "Evaluate whether the code correctly implements HLS streaming using appropriate libraries (hls.js, video.js, etc.). Check for essential features like adaptive bitrate switching, buffer management, and error recovery. Score 0 if streaming is not implemented, 5 if only basic playback works, and 10 if it includes quality selection, automatic fallback mechanisms, and proper event handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Socket.io real-time communication properly integrated?",
+      "description": "Check if Socket.io is correctly implemented for real-time updates including connection management, event handling, and reconnection strategies. Verify whether proper namespaces/rooms are used for efficient message routing, and if acknowledgments are used for critical operations. Deduct 5 points if reconnection logic is missing, and 3 points if there's no error handling for socket events. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the danmaku (bullet comment) system fully functional?",
+      "description": "Assess the danmaku implementation for performance optimization (using requestAnimationFrame, canvas-based rendering or DOM pooling), collision detection, configurable display parameters (speed, opacity, size), and comment filtering capabilities. Deduct 5 points if comments overlap excessively, 3 points if there's no performance optimization for large volume of comments, and 2 points if customization options are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is user information and interaction design comprehensive?",
+      "description": "Evaluate the user information panel for essential elements (username, avatar, viewer count, follow button) and interactive capabilities (subscribing, gifting, reporting). Check whether the user can minimize/maximize the panel and if viewer statistics update in real-time. Deduct 3 points for each missing critical user interaction element, and 5 points if real-time updates of viewer metrics are absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, video loading failure, socket disconnections, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Picture-in-picture mode 2. Interactive effects for special donations/gifts 3. AI-powered comment moderation 4. Virtual gifts with animated effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video players initialized) 2. Function modules unrelated to streaming (e.g., unnecessary social media widgets) 3. Fancy effects that affect performance (e.g., excessive animations that impact streaming performance). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video playback/danmaku/socket communication layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

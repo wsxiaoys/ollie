@@ -1,0 +1,68 @@
+{
+  "index": 403,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Write a frontend program that simulates celestial body movements.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the celestial body physics simulation accurate?",
+      "description": "Evaluate whether the code correctly implements gravitational physics equations (F = G*m1*m2/r^2), orbital mechanics, and proper scaling of celestial parameters. Check if the simulation handles velocity vectors, acceleration calculations, and position updates using appropriate numerical integration methods (Euler, Verlet, or Runge-Kutta). Score 0 if basic physics are missing, 5 if only simple circular orbits are implemented, and 10 if it includes realistic gravitational interactions between multiple bodies.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the visual rendering system well-implemented?",
+      "description": "Review the rendering approach (Canvas 2D, WebGL, SVG, or Three.js) and assess whether it effectively displays celestial bodies with appropriate textures, lighting effects, and perspective. Check for proper scaling between bodies, visual cues for distance/size relationships, and smooth frame transitions. Deduct 3 points if rendering is basic without textures, 5 points if performance issues occur with more than 5 bodies, and 8 points if the visual representation is scientifically inaccurate. Full score for photorealistic rendering with optimized performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user interaction system comprehensive?",
+      "description": "Assess the implementation of controls for manipulating the simulation (pause/play, speed adjustment, zoom in/out, rotation/panning). Check for features like clicking on bodies for information, dragging to adjust orbits, or adding new celestial objects. Deduct 3 points for each missing core interaction, 5 points if view manipulation is absent, and 3 points if the interface doesn't provide feedback during interactions. Full score requires intuitive controls with responsive feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the time control and simulation scaling implemented?",
+      "description": "Evaluate whether the code includes time scaling functionality (accelerating/decelerating simulation), time-step consistency regardless of frame rate, and prevention of calculation errors at high speeds. Check for a frame-rate independent physics calculation and proper handling of the animation loop. Deduct 5 points if time scaling is absent, 3 points if physics breaks at high speeds, and 3 points if the simulation doesn't maintain consistent calculations across different devices. Full score requires sophisticated time controls with delta-time implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as browser resizing, device rotation, touch events on mobile, and performance degradation with many bodies. Check for proper error handling, memory management (avoiding WebGL context loss), and graceful degradation on less powerful devices. Code with strong robustness should handle all these scenarios, giving 10 points. If robustness is average with some edge cases handled, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic lighting and shadow effects 2. Trail visualization for orbital paths 3. Real-time data visualization of orbital parameters 4. Realistic star field background with actual constellations). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation systems (e.g., multiple physics engines running simultaneously) 2. Feature modules unrelated to celestial simulation (e.g., a built-in music player) 3. Excessive effects that severely impact performance (e.g., particle systems for every minor interaction). Deduct 3 points for each redundancy found, and directly deduct 10 points if core simulation accuracy is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of physics engine, rendering system, and UI controls), code reusability (object-oriented design for celestial bodies), and performance optimizations (request animation frame usage, object pooling, GPU acceleration). Deduct 3 points if global state is overused, 3 points if there's significant code duplication, 2 points if no comments or documentation exist, and 2 points if browser compatibility is not considered. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern astronomy visualization principles: 1) Scientific color schemes for celestial bodies 2) Clear contrast between bodies and background 3) Proportional representation or clear indication when scales are modified 4) Clean UI controls that don't obstruct the simulation. Deduct 3 points for inaccurate celestial colors/textures, 3 points for cluttered controls, and 4 points for poor visibility of important elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation maintains 60fps performance on standard hardware, transitions between zoom levels are smooth, and interactive manipulations (dragging bodies, adjusting orbits) provide immediate visual feedback. Deduct 3 points for each jerky transition, 3 points for delayed response to user input, 2 points for missing visual cues during interactions, and 2 points if the simulation slows noticeably with moderate complexity. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

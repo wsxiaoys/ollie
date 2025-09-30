@@ -1,0 +1,68 @@
+{
+  "index": 69,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and demonstrable.\n\nPlease use HTML and JavaScript to implement an animation transition: enable character animation switching between different states, such as walking, running, jumping, and other different actions.\n[CHAT_SEP]Please optimize the above game response and add some comments in the code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the character animation system properly implemented?",
+      "description": "Check if the code implements the core animation system with state management for different character actions (walking, running, jumping). Evaluate the state machine architecture, handling transitions between animation states cleanly. Score 0 if no state transitions exist, 5 if only basic transitions are implemented, and 10 if all specified actions with seamless transitions are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is sprite sheet or animation framework implementation correct?",
+      "description": "Review the implementation of sprite animation technique (whether using sprite sheets, CSS animations, or canvas-based animation). Check for proper frame sequencing, timing control, and animation loops. Deduct 5 points if animation frames are incorrectly sequenced, 3 points if timing control is inconsistent. Full score requires proper sprite resource management and optimization.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the animation transitions smooth and natural?",
+      "description": "Evaluate the transition logic between different animation states (e.g., walking to running, running to jumping). Check for interpolation techniques, easing functions, and blending between animations. Deduct 5 points for abrupt transitions, 3 points for inconsistent animation speeds. 10 points for natural, realistic transitions that follow physical movement principles.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is user input handling implemented correctly for animation control?",
+      "description": "Examine if the code includes proper event listeners for keyboard/mouse/touch input to trigger different animation states. Check if there's debouncing for rapid input changes and proper handling of simultaneous inputs. Deduct 5 points if input lag exceeds 100ms, 3 points if certain input combinations cause animation glitches. Full score requires responsive and intuitive controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases like rapid state transitions, browser compatibility issues, and resource loading failures. Code with strong robustness should implement error boundaries and fallback animations. Deduct 5 points for each unhandled edge case. Give 10 points if all common exceptions are properly managed with graceful fallbacks.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Particle effects during transitions 2. Dynamic camera following 3. Interactive environment reactions to movement). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation loops or duplicate frame calculations 2. Unnecessary rendering cycles that affect performance 3. Overlapping event listeners causing multiple triggers. Deduct 3 points for each redundancy found, and directly deduct 10 points if core animation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating animation logic, rendering, and input handling), code reusability, and performance optimization. Deduct 5 points if animation and business logic are tightly coupled; deduct 5 points if requestAnimationFrame is not properly implemented; deduct 5 points if there's no performance consideration for mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the character and animation design follows good visual principles: 1) Consistent art style and proportions 2) Clear silhouette during different actions 3) Appropriate use of color to indicate different states. Deduct 3 points for inconsistent art style, 5 points for unclear visual feedback during state changes, and 5 points for poor contrast against backgrounds. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation performance optimized?",
+      "description": "Judge whether the animations run smoothly at 60fps: 1) Proper use of GPU acceleration techniques 2) Efficient DOM manipulation or Canvas drawing 3) Asset preloading and memory management. Deduct 5 points for frame drops below 45fps on standard devices, 3 points for memory leaks during long animation sequences, and 5 points for not implementing any performance optimization techniques. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

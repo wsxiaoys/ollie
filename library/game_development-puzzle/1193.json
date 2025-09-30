@@ -1,0 +1,68 @@
+{
+  "index": 1193,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration purposes. Use JavaScript and canvas to implement a complete match-3 puzzle game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the match-3 core game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the match-3 puzzle logic through JavaScript/Canvas, including gem grid generation, match detection (horizontal/vertical 3+ matches), cascading elimination, and gravity-based gem falling. Score 0 if core matching logic is missing, 5 if only basic 3-match detection exists, and 10 if advanced combos (L-shape, T-shape, 4+ matches) and special gems are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the interactive control system responsive and intuitive?",
+      "description": "Check whether mouse/touch input handling includes accurate gem selection, drag-and-drop swapping, swap validation (only adjacent gems), and illegal move rejection with visual feedback. Deduct 5 points if swap animations are missing, 3 points if touch responsiveness is poor (>150ms delay), and 2 points if visual feedback for invalid moves is absent. Full score requires smooth gesture recognition.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game progression and scoring system complete?",
+      "description": "Evaluate whether the scoring system includes combo multipliers, cascade bonuses, level progression with increasing difficulty, and objective-based gameplay (score targets, limited moves, or time constraints). Deduct 5 points if no level progression exists, 3 points if scoring lacks combo rewards, and 2 points if no clear win/lose conditions are defined. Full implementation should include multiple game modes.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are visual effects and animations polished and engaging?",
+      "description": "Check whether the code includes smooth gem elimination animations, particle effects for matches, screen shake for large combos, and satisfying visual feedback. Animations should use easing functions and proper timing (200-400ms for swaps, 300-600ms for eliminations). Deduct 5 points if animations are choppy or missing, 3 points if no particle effects exist, and 2 points if visual hierarchy is unclear during gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, boundary detection errors, invalid gem states, canvas rendering failures, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should effectively prevent game state corruption and handle edge cases gracefully, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance gameplay?",
+      "description": "Check whether the code includes compelling features that elevate the experience (e.g., 1. Power-up gems with special abilities 2. Daily challenges or puzzle modes 3. Hint system for possible moves 4. Undo functionality 5. Save/load game state). Add 2-3 points for each well-implemented innovative feature (maximum 10 points). Features must be functional, not just cosmetic.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features or performance issues?",
+      "description": "Strictly check three types of problems: 1. Redundant implementation of similar functions (e.g., multiple animation systems coexisting) 2. Unnecessary features unrelated to match-3 gameplay 3. Performance-heavy effects that cause frame drops (excessive particles, inefficient canvas clearing). Deduct 3 points for each redundancy found, and directly deduct 10 points if core gameplay is affected by performance issues or bloated code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic, rendering, input handling), clean code structure, and performance optimization (efficient canvas operations, object pooling for particles). Deduct 5 points if code structure is monolithic or poorly organized; deduct 3 points if canvas operations are inefficient (unnecessary redraws); deduct 2 points if no comments or documentation exist. Full score requires professional code organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional game UI standards?",
+      "description": "Evaluate whether the visual design follows modern game UI principles: 1) Cohesive color palette with proper contrast for gameplay clarity 2) Consistent gem designs that are easily distinguishable 3) Clear UI hierarchy with readable fonts (≥16px for game text) 4) Proper spacing and alignment of game elements. Deduct 3 points for each unclear visual element, 5 points for poor color accessibility, and 5 points for cluttered interface design. Full score requires polished, professional appearance.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game interaction smooth and responsive?",
+      "description": "Judge whether the interactive experience meets gaming standards: 1) Input response time ≤ 100ms 2) Animation frame rate consistently above 30fps 3) Smooth gem movement with proper easing 4) Clear visual feedback for all user actions 5) Intuitive game flow without confusing states. Deduct 5 points for each laggy interaction, 3 points for inconsistent frame rates, and 5 points for unclear or missing user feedback. Full score requires console-quality smoothness.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

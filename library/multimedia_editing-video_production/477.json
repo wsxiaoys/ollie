@@ -1,0 +1,68 @@
+{
+  "index": 477,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. Create a video trimming and splicing tool that allows users to upload multiple video clips, trim each video clip, then combine the trimmed video clips in a user-specified order to create a new video, and finally export the spliced video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload functionality properly implemented?",
+      "description": "Check if the code implements a robust video upload system that supports multiple file formats (MP4, WebM, MOV, etc.), handles large file uploads with chunking, shows clear progress indicators, and validates video files before processing. Deduct 5 points if there's no format validation, 3 points if progress indicators are missing, and 5 points if there's no error handling for upload failures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the video trimming functionality complete and accurate?",
+      "description": "Evaluate if the trimming interface provides frame-accurate in/out point selection, real-time preview of trimmed sections, and maintains original video quality. Check if the code handles keyframes correctly to prevent corrupt exports. Score 0 if trimming is not implemented, 5 if basic trimming exists but lacks precision or preview, and 10 if the implementation is complete with frame-accurate controls and real-time feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the video sequencing/splicing mechanism properly implemented?",
+      "description": "Examine whether the code allows users to rearrange trimmed clips in a timeline, preview the sequence before final export, and maintains video and audio synchronization across splices. Check for transition handling between clips. Deduct 5 points if reordering functionality is missing, 3 points if preview before export isn't available, and 5 points if audio-video synchronization issues exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video export functionality robust and complete?",
+      "description": "Assess if the export system offers quality/format options, provides clear progress indicators, handles errors gracefully, and successfully combines all clips without quality loss. The code should use efficient rendering approaches (e.g., WebAssembly for client-side or proper server rendering). Score 10 points for complete implementation with multiple export options, 5 for basic export with limited options, and 0 if export functionality is broken or missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported codecs, corrupted video files, browser compatibility issues, memory constraints, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted smart trimming 2. Automated scene detection 3. Basic color correction/filters 4. Audio normalization across clips). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video player implementations) 2. Function modules unrelated to video trimming/splicing (e.g., a built-in image editor) 3. Fancy effects that affect performance (e.g., heavy animations during processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/UI/state management layers), memory management (especially for video data), and asynchronous processing patterns. Deduct 5 points if global state pollution is found; deduct 5 points if video processing is not handled in background threads or workers; deduct 5 points if memory leaks occur when handling multiple videos. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the video editor UI follows professional design principles: 1) Clear timeline representation with visible trim handles 2) Intuitive drag-and-drop for reordering 3) Professional scrubbing and preview controls 4) Responsive layout that works across device sizes. Deduct 3 points for confusing trimming controls, 5 points for unintuitive timeline representation, and 5 points for poor preview functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the video editing experience feels responsive: 1) Timeline scrubbing is fluid without noticeable lag 2) Trim point adjustment has immediate visual feedback 3) Preview generation occurs within acceptable timeframes 4) Export progress is clearly communicated. Deduct 5 points for laggy timeline performance, 3 points for delayed feedback when trimming, and 5 points for confusing export status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

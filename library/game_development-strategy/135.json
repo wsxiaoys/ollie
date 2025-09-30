@@ -1,0 +1,68 @@
+{
+  "index": 135,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a card/board game: multiplayer battles with network synchronization.\n\n**Task**: Implement a multiplayer battle system where players can compete with other players in real-time via network, with synchronized game states.\n\n**Hint**: You can use network synchronization technology to maintain consistency of the game state and handle network latency.\n\nImplement the game and include some comments in the code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multiplayer battle system core logic fully implemented?",
+      "description": "Review whether the code accurately implements the battle mechanics through HTML/JavaScript, including turn management, player actions, win/loss conditions, and game rule enforcement. Check if battle state transitions are properly handled and if all game actions are validated. Score 0 if core battle logic is missing, 5 if only basic turn-based mechanics are implemented, and 10 if complete battle system with all rules and edge cases are covered.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the network synchronization mechanism properly implemented?",
+      "description": "Evaluate whether the network synchronization uses WebSocket or similar real-time communication protocol with proper message serialization/deserialization. Check for conflict resolution mechanisms when simultaneous actions occur, and whether the system handles out-of-order message delivery. Deduct 5 points if no conflict resolution exists, 3 points if message ordering is not guaranteed. Full score requires robust synchronization with state consistency verification.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is network latency compensation and prediction implemented?",
+      "description": "Check whether the system implements client-side prediction, lag compensation, and rollback mechanisms to handle network delays. Evaluate if the system provides smooth user experience despite network latency through techniques like input buffering or interpolation. Deduct 5 points if no latency compensation exists, 3 points if prediction accuracy is poor. Full score requires sophisticated latency handling with seamless user experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the multiplayer session management complete?",
+      "description": "Assess whether the code includes comprehensive session management: player matchmaking, room creation/joining, player disconnection handling, and game state persistence. Check for reconnection capabilities and spectator support. Deduct 5 points if session persistence is missing, 3 points if disconnection recovery is incomplete. Give 10 points if full session lifecycle is managed with graceful error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, invalid player inputs, server timeouts, concurrent action conflicts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases and maintain game integrity under stress conditions. Give 10 points for excellent error handling, 5 points for basic exception handling, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance gameplay?",
+      "description": "Check whether the code includes compelling features that improve user experience (e.g., 1. Real-time spectator mode with commentary 2. Replay system with action timeline 3. Advanced matchmaking with skill ratings 4. In-game communication tools). Add 3 points for each well-implemented innovative feature that adds genuine value to the multiplayer experience (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate network communication logic or redundant synchronization mechanisms 2. Unnecessary UI components unrelated to core gameplay 3. Performance-heavy visual effects that don't contribute to user experience. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with core multiplayer functionality or network performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular architecture (separation of game logic, network layer, UI components), code organization, and maintainability. Check for proper error logging, configuration management, and scalability considerations. Deduct 5 points if network and game logic are tightly coupled; deduct 5 points if code duplication exceeds 25%; deduct 5 points if no separation of concerns exists. Full score requires clean architecture with proper abstraction layers.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional gaming standards?",
+      "description": "Evaluate whether the UI follows modern game interface principles: 1) Clear visual hierarchy with consistent color scheme (max 4 primary colors) 2) Intuitive layout with proper spacing (elements follow 8px grid system) 3) Readable typography (game text ≥ 14px, UI elements ≥ 12px, line height ≥ 1.4). Deduct 3 points for cluttered interface elements, 5 points for poor color contrast or readability issues, and 5 points for confusing navigation or information architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the real-time interactions smooth and responsive?",
+      "description": "Judge whether multiplayer interactions meet real-time gaming standards: 1) Input response time ≤ 50ms for local actions 2) Network action feedback within 200ms 3) Smooth animation transitions (200-400ms duration) 4) Clear visual indicators for multiplayer state changes. Deduct 5 points for each unresponsive interaction, 3 points for laggy animations during network updates, and 5 points if multiplayer state changes lack visual feedback.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

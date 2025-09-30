@@ -1,0 +1,68 @@
+{
+  "index": 715,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. Regarding an electron+vue dual-window program:\n1. Ensure the main window can send messages to the second window.\n2. Ensure it can run on Windows 7.\n3. Ensure secure communication between the main thread and renderer thread.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the dual-window implementation in Electron correctly structured?",
+      "description": "Examine if the code properly creates and manages two separate BrowserWindow instances. Check that window creation includes proper configuration options (width, height, webPreferences, etc.). Verify that both windows load the appropriate Vue components/pages. Score 0 if only one window is implemented, 5 if basic window creation exists but lacks proper configuration, and 10 if dual windows are fully implemented with appropriate lifecycle management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is cross-window communication properly implemented?",
+      "description": "Verify that the main window can send messages to the second window using appropriate IPC mechanisms. Check for implementation of either BrowserWindow.webContents.send() or ipcRenderer/webContents communication patterns. Ensure messages are properly formatted and include error handling. Deduct 5 points if communication is one-way only, 3 points if message acknowledgment is missing, and 2 points if error handling is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is Windows 7 compatibility ensured?",
+      "description": "Check if the code specifies an Electron version compatible with Windows 7 (typically Electron ≤12). Verify that no APIs or features exclusive to newer OS versions are used. Check for proper polyfills and fallbacks. Look for explicit testing configurations for Windows 7. Deduct 5 points if incompatible Electron version is specified, 3 points if Windows 7-incompatible APIs are used without fallbacks, and 5 points if no compatibility considerations exist at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the IPC security implementation robust?",
+      "description": "Evaluate if the code implements secure communication between main and renderer processes. Check for proper use of contextIsolation, nodeIntegration (set to false), preload scripts with exposed APIs, and message validation. Verify data sanitization before processing. Score 0 if security basics are ignored, 5 if basic security measures exist but with vulnerabilities, and 10 if comprehensive security practices are implemented including input validation and context isolation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window closure during communication, IPC message timeout, process crashes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Window state persistence between sessions 2. Customizable IPC timeout handling 3. Drag-and-drop between windows 4. Automatic window arrangement). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar IPC functions 2. Unnecessary window creation/management code 3. Excessive event listeners or communication channels that could lead to memory leaks. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating window management, IPC handling, and Vue components), unit test coverage for IPC messages, and build process automation for both development and production. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) IPC response time ≤ 100ms 2) Window opening/closing animations controlled between 300-500ms 3) Clear visual feedback for cross-window operations. Deduct 5 points for each operation without feedback, 3 points for laggy window transitions, and 5 points for unclear indication of which window has focus. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

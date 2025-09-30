@@ -1,0 +1,68 @@
+{
+  "index": 557,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Implement a distributed computing client that can receive computation tasks assigned by the server, execute calculations in the browser, and return the results. The system should support task pausing and resumption, display computation progress and resource usage. The system needs to be able to distribute workload among multiple clients and handle client disconnection scenarios.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the distributed computing client core functionality fully implemented?",
+      "description": "Review whether the code implements the core functionality to receive tasks from the server, process them, and return results. Check if WebWorkers are used for CPU-intensive tasks to prevent UI blocking. Score 0 if basic task processing is missing, 5 if only simple task execution is implemented, and 10 if it handles complex computation scenarios with proper threading model.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the task pausing and resumption mechanism properly implemented?",
+      "description": "Evaluate whether the code includes robust mechanisms for pausing ongoing computations and resuming them from the saved state. Check if computation state serialization is implemented correctly. Deduct 5 points if only simple task termination (not true pausing) is implemented, and 3 points if the resumption doesn't properly restore previous state. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the progress and resource usage monitoring system comprehensive?",
+      "description": "Check if the implementation includes real-time progress tracking (percentage completion, estimated time remaining) and system resource monitoring (CPU usage, memory consumption, network bandwidth). Deduct 3 points if progress tracking is inaccurate, 4 points if resource usage statistics are missing, and 5 points if the metrics aren't visualized effectively. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the client disconnection handling mechanism robust?",
+      "description": "Assess whether the code includes a comprehensive strategy for handling client disconnections (such as local task caching, reconnection attempts, progress persistence). Check if the system can redistribute incomplete tasks to other clients. Deduct 5 points if work is completely lost upon disconnection, and 3 points if reconnection doesn't restore previous context. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as computation errors, browser crashes, invalid task data, network instability) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smart prioritization of tasks based on client capabilities 2. P2P task sharing between clients 3. Dynamic throttling based on device thermal conditions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple task scheduling algorithms running in parallel) 2. Function modules unrelated to distributed computing (e.g., unrelated analytics) 3. Fancy effects that affect performance (e.g., excessive animations that consume CPU). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating computation logic/UI/network layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional data visualization for computation metrics (appropriate charts and graphs). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for illegible metrics displays. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Real-time UI updates don't interfere with computation 2) Task status changes have clear visual transitions 3) Resource usage metrics update smoothly without flickering. Deduct 5 points for each operation without feedback, 3 points for UI freezes during heavy computation, and 5 points for confusing state transitions between computation phases. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

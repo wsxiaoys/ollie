@@ -1,0 +1,68 @@
+{
+  "index": 1627,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure the generated code is executable for demonstration. Help create an AI quantitative trading product in the digital currency field that integrates multi-factor models, basic trading indicators, risk control mechanisms, position management, data statistics, and dashboard functionality. The requirements are a monthly return of 15% with risk lower than 5%. Please provide complete executable code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-factor model for crypto trading fully implemented?",
+      "description": "Review whether the code implements comprehensive multi-factor analysis, including at minimum: momentum factors, value factors, sentiment analysis, and on-chain metrics. Score 0 if no factors are implemented, 5 if only basic factors (like simple moving averages) are used, and 10 if the model incorporates at least 4 distinct factor categories with proper normalization and weighting mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are standard trading indicators and their integration implemented?",
+      "description": "Evaluate the implementation of at least 5 essential trading indicators (e.g., MACD, RSI, Bollinger Bands, OBV, Stochastic) and how they're combined into trading signals. Verify that the indicators are properly parameterized and that signal conflicts are resolved through a clear decision framework. Deduct 2 points for each missing core indicator, and 3 points if there's no signal aggregation logic.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the risk control mechanism robust and comprehensive?",
+      "description": "Check if the system includes stop-loss mechanisms, volatility-based position sizing, drawdown controls, and market regime detection. The code must implement at least two layers of risk control (trade level and portfolio level) with clear risk metrics calculation (VaR, maximum drawdown). Deduct 5 points if there's no volatility adjustment logic, and 3 points if maximum loss limits aren't enforced. Full score requires all these elements plus backtesting of the risk controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is position management and sizing algorithm implemented?",
+      "description": "Assess whether the code handles dynamic position sizing based on account equity, market conditions, and signal strength. Check for implementation of Kelly criterion or similar mathematical position sizing, diversification logic across multiple assets, and correlation-aware allocation. Deduct 5 points if position sizing is static, 3 points if rebalancing logic is missing, and 2 points if there's no consideration for trading costs in the position calculations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as market data gaps, API failures, extreme volatility events, etc.) and provide error handling or recovery mechanisms. Code with strong robustness should include retry mechanisms, data validation, exception handling for API calls, and graceful degradation in adverse conditions. If robust error handling exists across all modules, give 10 points. If error handling is inconsistent, give 5 points. If critical operations lack error handling, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the system (e.g., 1. Auto-adaptation to market regimes 2. Machine learning for parameter optimization 3. Sentiment analysis from social media integration 4. Advanced order execution algorithms). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple position sizing algorithms running in parallel) 2. Function modules unrelated to trading (e.g., unnecessary data visualization) 3. Computationally expensive operations that don't contribute to performance (e.g., excessive resampling of data). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data acquisition/signal generation/execution/risk management layers), unit test coverage, and configuration management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no configuration separation from the code. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the dashboard and visualization meet professional standards?",
+      "description": "Evaluate whether the trading dashboard follows financial visualization best practices: 1) Clear performance metrics display (CAGR, Sharpe ratio, drawdown) 2) Proper equity curve and drawdown visualization 3) Trade distribution analysis 4) Risk exposure charts. Deduct 3 points for each missing critical visualization, 5 points for misleading performance representation, and 5 points for poor data-to-ink ratio. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Does the system meet the performance requirements?",
+      "description": "Judge whether the backtesting results demonstrate the required 15% monthly return with risk under 5%. Check if the performance is consistent across different market conditions and time periods. Deduct 5 points if backtesting doesn't include transaction costs and slippage, 3 points if there's no out-of-sample testing, and 5 points if the Sharpe ratio is below 2.0. The full score is 10 points if all requirements are met with convincing statistical significance.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Machine Learning",
+  "difficulty": "hard"
+}

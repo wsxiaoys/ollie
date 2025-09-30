@@ -1,0 +1,68 @@
+{
+  "index": 1444,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration whenever possible. Help me create an investment project economic evaluation system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core financial calculation system properly implemented?",
+      "description": "Check whether the code accurately implements essential financial metrics (NPV, IRR, ROI, payback period, etc.) with correct mathematical formulas. Score 0 if core financial calculations are missing, 5 if basic calculations exist but contain formula errors, and 10 if all calculations are accurate with proper edge case handling (e.g., negative cash flows, irregular periods).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the investment project data modeling comprehensive?",
+      "description": "Evaluate if the code includes a complete data model for investment projects with appropriate entities (project details, cash flow projections, financing sources, risk factors, etc.). Deduct 3 points if key financial parameters are missing, 3 points if there's no provision for different investment types, and 4 points if time-value adjustments (inflation, discounting) aren't supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are sensitivity and risk analysis functions implemented?",
+      "description": "Check whether the system can perform sensitivity analysis on key parameters and quantify risk factors (e.g., Monte Carlo simulation, scenario analysis). Deduct 5 points if sensitivity analysis is missing, 3 points if risk quantification methods are absent, and 2 points if there's no visualization of risk distribution. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the comparative analysis system functional?",
+      "description": "Assess whether the code enables direct comparison between multiple investment options, including ranking mechanisms, standardized metrics, and weighted multi-criteria decision support. Deduct 4 points if no direct comparison visualization exists, 3 points if the comparison lacks normalization for different project scales, and 3 points if there's no support for custom evaluation criteria. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, missing data, calculation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include input validation, error handling for financial edge cases (like division by zero in calculations), and data integrity checks. Give 10 points for comprehensive error handling, 5 points for partial implementation, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time market data integration 2. AI-powered investment recommendations 3. Automated report generation with executive summaries 4. Industry benchmarking). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar calculations (e.g., multiple NPV calculation methods) 2. Function modules unrelated to investment evaluation (e.g., accounting features that should be in a separate system) 3. Overly complex visualizations that obscure financial insights. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation logic/view/data layers), unit test coverage especially for financial calculations, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional financial software standards?",
+      "description": "Evaluate whether the design follows professional financial software principles: 1) Clean, business-appropriate color scheme (preferably with white background and accent colors for highlighting) 2) Well-organized data tables and charts with proper spacing 3) Clear visual hierarchy for financial metrics (primary KPIs emphasized). Deduct 3 points for cluttered financial dashboards, 5 points for poor data visualization choices, and 5 points for inconsistent financial terminology. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the data visualization effective and insightful?",
+      "description": "Judge whether the financial visualizations follow best practices: 1) Appropriate chart types for different financial metrics (e.g., cash flow waterfall charts, IRR comparison bar charts) 2) Interactive elements allowing drill-down into calculation details 3) Clear labeling of financial data with proper units and time periods. Deduct 5 points for misleading visualizations, 3 points for poor choice of chart types, and 5 points for missing critical financial context in charts. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

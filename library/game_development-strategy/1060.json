@@ -1,0 +1,68 @@
+{
+  "index": 1060,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Help me create a beautiful, interactive web page for a garbage sorting mini-game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core garbage sorting game mechanism fully implemented?",
+      "description": "Check if the code implements the complete game logic including: item classification into correct categories (recyclable, hazardous, kitchen waste, other waste), scoring system, and validation of correct/incorrect sorting. Score 0 if core sorting mechanics are missing, 5 if basic sorting is implemented but lacks comprehensive validation, 10 if the system handles all waste types with proper feedback and scoring.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the drag-and-drop interaction properly implemented?",
+      "description": "Evaluate the implementation of the drag-and-drop functionality: verify if items can be smoothly dragged, if the hitbox detection works accurately when dropping items into bins, and if there's appropriate visual feedback during the dragging process. Deduct 5 points if mobile touch events aren't supported, 3 points if accessibility features are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a complete game progression structure?",
+      "description": "Assess if the game has a proper structure with levels of increasing difficulty, clear goals, progress tracking, and performance metrics (time, accuracy, score). Check if there's a tutorial/onboarding experience for new players. Deduct 5 points if the difficulty curve is missing, 3 points if there's no feedback on player progress. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the educational content about garbage sorting accurate and complete?",
+      "description": "Review whether the game provides accurate information about different waste categories, sorting guidelines, and environmental impact. Check if it includes tooltips, explanations for incorrect sorting, or educational facts. Deduct 5 points if information is inaccurate, 3 points if explanations for sorting decisions are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect user inputs, browser compatibility issues, performance on different devices) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time environmental impact calculation 2. Leaderboard with social sharing 3. Animated educational sequences about waste processing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems) 2. Function modules unrelated to garbage sorting (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between game assets and logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (environmental theme with consistent palette) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when items are sorted correctly/incorrectly 2) Smooth animations for dragging/dropping waste items 3) Clear visual cues for interactive elements. Deduct 5 points for each operation without feedback, 3 points for jerky animations, and 5 points for confusing interaction design. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

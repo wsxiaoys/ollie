@@ -1,0 +1,68 @@
+{
+  "index": 964,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Create a WeChat Mini Program with one large framework containing three smaller frameworks. The first framework includes a profile picture and nickname. The second framework contains three small icons: Received, To Be Received, and All Orders. The third framework includes Personal Information, Shipping Address, and Feedback.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the three-framework structure correctly implemented?",
+      "description": "Verify if the code establishes a clear layout with one large container framework properly divided into three distinct sections with appropriate styling and responsive behavior. Check if the frameworks are built using appropriate WXML structure with proper styling. Score 0 if the three-framework structure is missing, 5 if implemented with basic styling, 10 if fully responsive with proper hierarchical relationship.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the first framework with profile picture and nickname properly implemented?",
+      "description": "Examine if the profile section includes proper image component for avatar display with appropriate sizing and borders, nickname text with proper styling, and user information retrieval from WeChat APIs (wx.getUserInfo or equivalent). Check if the avatar handles loading errors and defaults. Deduct 3 points if avatar placeholder is missing, 3 points if the nickname styling is inadequate, and 4 points if no WeChat API integration is attempted. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the second framework with three order status icons properly implemented?",
+      "description": "Evaluate if the order status section includes three well-defined, equally-spaced icons with appropriate labels (Received, To Be Received, All Orders), proper visual indication of current selection status, and navigation functionality. Check if the icons have proper tap event bindings to navigate to respective order lists. Score 0 if icons are missing, 5 if basic implementation without proper event handling, 10 if fully functional with appropriate visual feedback on tap.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the third framework with user functions properly implemented?",
+      "description": "Check if the user function framework properly implements Personal Information, Shipping Address, and Feedback options with appropriate icons, text labels, and navigation indicators (like right arrows). Verify if each option has event bindings to navigate to respective pages. Deduct 3 points for each missing function, 2 points if navigation indicators are absent, and 2 points if the styling is inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing user information, permission denials, network issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom animations for transitions 2. Dynamic theme customization 3. Smart recommendations based on order history). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to access the same page) 2. Function modules unrelated to user profile (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data layers), component reusability, and proper use of WeChat Mini Program lifecycle methods. Deduct 5 points if global state management is chaotic or missing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if app.json and page.json configurations are improper. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design principles: 1) Consistent with WeChat's visual language 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography (font sizes between 12-20px, appropriate line height). Deduct 3 points for each inconsistent visual element, 5 points for non-WeChat style UI components, and 5 points for chaotic information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to WeChat Mini Program standards: 1) Click feedback delay ≤ 100ms 2) Transition animations controlled between 200-400ms 3) Clear visual state changes for interactive elements. Deduct 5 points for each interaction without feedback, 3 points for janky animations, and 5 points for unintuitive navigation flows. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 591,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure to ensure that the code you generate is executable and displayable. Develop code for an online shoe shopping website with a user personal center page that displays basic user information and order history. The product listing should support filtering by shoe size, and users should be able to submit after-sales service requests for purchased shoe products through a submission form on the after-sales service request page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the product listing and filtering system fully implemented?",
+      "description": "Review whether the code accurately implements product display through HTML/JavaScript, including dynamic loading of shoe products, real-time filtering by shoe size, and proper pagination. Check if the filtering system supports multiple criteria (size, brand, price range) with smooth interaction. Score 0 if the core product display is not implemented, 5 if only basic product listing is shown, and 10 if complete filtering with size selection and real-time updates is fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user personal center and order management system implemented?",
+      "description": "Check whether the personal center includes comprehensive user profile display (avatar, personal info, account settings) and complete order history with proper status tracking. Evaluate if order details show purchase date, product images, sizes, prices, and order status. Deduct 5 points if order history lacks pagination or sorting, and 3 points if user information editing is not functional. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the after-sales service request system properly designed and functional?",
+      "description": "Evaluate whether the after-sales form includes all necessary fields (order number, product selection, issue type, description, file upload for evidence). Check if form validation prevents invalid submissions and provides clear feedback. Review if the system links requests to specific purchased products. Deduct 5 points if form validation is incomplete, and 3 points if the request tracking mechanism is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete e-commerce workflow and data persistence constructed?",
+      "description": "Check whether the code includes complete shopping workflow from browsing to purchase completion, user authentication system, shopping cart functionality, and proper data storage/retrieval mechanisms. Evaluate session management and user state persistence across pages. Deduct 5 points if shopping cart is not implemented, and 3 points if user session management is missing. Give 10 points if fully implemented with proper data flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user input, network failures, empty product lists, missing user data, form submission errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like expired sessions, invalid product IDs, and network timeouts, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the shopping experience (e.g., 1. Virtual shoe try-on visualization 2. Size recommendation based on foot measurements 3. Wishlist with price drop notifications 4. Product comparison tool 5. Customer review system with photo uploads). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple filtering mechanisms coexisting) 2. Function modules unrelated to shoe shopping (e.g., built-in games or social media feeds) 3. Excessive animations that affect page performance (e.g., complex 3D product rotations without optimization). Deduct 3 points for each redundancy found, and directly deduct 10 points if core shopping functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating product catalog/user management/order processing components), proper MVC or component architecture, and clean code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between frontend and backend logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional e-commerce standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Professional color scheme suitable for fashion retail (no more than 3 primary colors) 2) Proper grid layout with consistent spacing (element spacing follows 8px multiple principle) 3) Clear product imagery with proper aspect ratios 4) Professional typography (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each poorly displayed product image, 5 points for unprofessional color combinations, and 5 points for cluttered layout affecting shopping experience. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the shopping interaction smooth and user-friendly?",
+      "description": "Judge whether the interactive elements conform to e-commerce UX standards: 1) Product filtering response time ≤ 200ms 2) Smooth hover effects on product cards 3) Clear call-to-action buttons with proper feedback 4) Intuitive navigation between pages 5) Form submission with loading states. Deduct 5 points for each unresponsive interaction, 3 points for confusing navigation flow, and 5 points for missing feedback on critical actions like form submissions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

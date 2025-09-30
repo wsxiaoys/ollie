@@ -1,0 +1,68 @@
+{
+  "index": 1609,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable when possible. I want to develop a game similar to Minecraft, but simpler. Please help me develop it with the following requirements: 1. The game should be a web-based 3D game; 2. In this game, players can freely build things using cubes similar to those in Minecraft; 3. Players should be able to select colors for the cubes.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "3D World Rendering Implementation",
+      "description": "Evaluate whether the code properly implements a 3D environment using WebGL/Three.js or similar technology with proper perspective, lighting, and scene management.Score 0 if there's no 3D environment, 5 if there's basic rendering without proper lighting/shadowing, and 10 if the 3D world is fully implemented with proper depth perception, lighting effects, and optimization for web performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Cube Creation & Manipulation System",
+      "description": "Check if the code enables players to add, remove, and manipulate cubes in 3D space with appropriate collision detection.Score 0 if cube placement is not implemented, 5 if basic cube adding/removing is available but lacks precision controls, and 10 if the system provides intuitive placement with snapping, rotation options, and collision prevention.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Color Selection & Customization",
+      "description": "Evaluate the implementation of color selection for cubes, including the UI for color picking and application to cubes.Score 0 if color selection is missing, 5 if only basic predefined colors are available, and 10 if there's a full color picker with RGB/HSL controls, color history, and the ability to save favorite colors.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Player Movement & Camera Controls",
+      "description": "Assess the implementation of player movement in the 3D environment and camera controls for different perspectives.Deduct 3 points if WASD/arrow key navigation is missing, 3 points if camera rotation is not smooth, 5 points if first-person and third-person views aren't toggleable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, WebGL support detection, input validation, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Texture system for cubes 2. Save/load functionality 3. Physics interactions between cubes).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions 2. Function modules unrelated to the building game 3. Fancy effects that affect performance.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular design (such as separating game logic/rendering/UI layers), code organization, and performance optimization.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations are implemented for 3D rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Harmonious color matching 2) Proper layout spacing 3) Unobtrusive controls that don't block the 3D view.Deduct 3 points for each crowded UI element, 5 points for controls that obstruct gameplay, and 5 points for chaotic HUD layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Performance & Optimization",
+      "description": "Judge whether the game runs smoothly with increasing numbers of cubes: 1) Maintains 30+ FPS with 1000+ cubes 2) Implements LOD (Level of Detail) for distant objects 3) Uses efficient data structures for cube storage.Deduct 5 points if FPS drops below 30 with moderate cube count, 3 points if there's no chunk-based rendering for large worlds, and 5 points if memory usage grows linearly with world size without optimization. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "medium"
+}

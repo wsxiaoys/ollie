@@ -1,0 +1,68 @@
+{
+  "index": 1200,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. I need to design a WeChat-like chat interface. Please help me write a page component using element-plus and Vue 3.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic UI structure of a WeChat-like chat interface implemented?",
+      "description": "Review whether the code properly implements the essential UI components of a chat interface using Element Plus and Vue 3: contact list sidebar, chat area with message bubbles, input area with send button, and header with user information. Score 0 if basic structure is missing, 5 if only partial components are implemented, and 10 if all core components with proper layout are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the message display functionality properly implemented?",
+      "description": "Check if the code correctly handles different message types (text, image, voice, etc.), renders them appropriately with sender/recipient distinction, displays timestamps, and supports message status indicators (sent, delivered, read). Deduct 3 points if message styling lacks sender distinction, 4 points if timestamps are missing, and 5 points if different message types aren't properly supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the input functionality with sending mechanism implemented?",
+      "description": "Verify that the chat input area includes text input with proper validation, send button functionality, emoji picker integration, and file attachment options. Check for event handling (Enter key to send, Shift+Enter for new line). Deduct 3 points for missing emoji support, 4 points for lack of input validation, and 5 points if file attachment isn't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the contact management and conversation switching implemented?",
+      "description": "Evaluate if the code properly implements contact list display, conversation switching logic, unread message counters, contact search functionality, and persistence of chat history when switching conversations. Deduct 3 points if search functionality is missing, 4 points if unread counters aren't implemented, and 5 points if chat history doesn't persist between conversation switches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty messages, failed message delivery, network errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Message reactions 2. Voice messages with waveform visualization 3. Read receipts with timestamps 4. Typing indicators). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple message sending methods coexisting) 2. Function modules unrelated to chat (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, state management, and service layers), proper use of Vue 3 Composition API, reusable components, and proper integration with Element Plus. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if Vue 3 features aren't properly leveraged. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat-like design principles: 1) Consistent color scheme with WeChat's green accent 2) Proper layout spacing (chat bubbles aligned appropriately, proper padding) 3) Professional typography system (readable font sizes, appropriate line heights). Deduct 3 points for each misaligned visual element, 5 points for inconsistent styling with WeChat, and 5 points for poor readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to chat application expectations: 1) Message sending feedback delay ≤ 100ms 2) Smooth scrolling in message history 3) Proper transitions when switching conversations. Deduct 5 points for each operation without feedback, 3 points for jerky scrolling, and 5 points for abrupt conversation transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 390,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure the generated code is executable when possible.\n\n## Generate a Dungeon Roguelike Game\n\n1. The main background should be a purple striped dungeon style\n2. The main interface should display \"Stinky Fish vs Rat Battle\" (as the main title) with a subtitle below showing \"🐭💗🐟\" and a \"Start Game\" button\n3. When clicking start, a caption appears introducing \"The stinky fish and rat fell into the sewer while fighting...\", with a \"Next\" button that transitions to the battle scene\n4. The battle scene is an adaptive rectangle frame with 2px distance from the screen edge, with rounded corners. Inside is an ocean scene composed of emoji 🌊\n5. The main characters are 🐟 and 🐭 at the bottom of the battle scene. Enemies appear at the top, represented by all possible monster/ugly animal emojis, with enemy types determined by available emojis\n6. There are 50 different battle cards with unique mechanisms. Each card can be upgraded to level 6. At level 6, fusion cards are unlocked. Max level cards can only be used for fusion and won't appear again. Fusion cards are only generated once, and won't appear again after selection\n7. A backpack button allows players to check their stats, selected cards and their levels\n8. A battle report box in the lower left corner, and a \"Challenge Next Level\" button appears after victory. Levels are endless. Every two levels, enemy stats increase by 10%. The protagonist recovers health after each level\n9. Clicking the protagonist 5 times activates God Mode, displaying a popup (God Backpack) with unlimited selectable cards (with a close button) and floating text \"The rat ate the stinky fish and evolved abilities\" that lasts for 3 seconds\n10. Base stats for both protagonist and enemies: Health 100, Attack 100, Defense 100, Critical Rate 5%, Critical Damage 50%, with 0 damage for each element (Wood, Fire, Water, Earth, Metal). Card skills can increase these stats\n11. For example, selecting a fire skill will display the corresponding attack effect\n12. All attacks, victories, and deaths have corresponding animations\n13. The UI is Instagram style with dungeon elements, cute enough that girls would like it\n14. Every 10 levels, a boss appears with stats 10% higher than the player but no skills. All player cards have skills, with attack power bonuses ranging from 100% to 150%. Examples include attacks that cost health, apply burning effects, or heal. Remember to maintain balance when designing these cards",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the main dungeon-style UI properly implemented?",
+      "description": "Check if the UI correctly implements the purple striped dungeon style with Instagram-inspired elements while maintaining cute aesthetics. The main title 'Stinky Fish vs Rat Battle' with the '🐭💗🐟' subtitle should be prominently displayed. UI elements should have consistent styling, proper spacing, and dungeon-themed decorative elements. Deduct 5 points if the purple striped background is missing, 3 points if the Instagram style is not evident, and 5 points if the UI lacks the cute aesthetics that would appeal to the target audience.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the game flow transitions and narrative elements complete?",
+      "description": "Evaluate whether the code properly implements the starting sequence with the 'Start Game' button, the transition caption ('The stinky fish and rat fell into the sewer while fighting...'), and the 'Next' button that leads to the battle scene. Each transition should have appropriate animations. Check if the narrative elements are displayed with proper timing and if they can be skipped after being read. Deduct 5 points if any transition is missing, 3 points if animations are abrupt or missing, and 3 points if text appears/disappears without proper timing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the battle scene correctly implemented with all required elements?",
+      "description": "Verify that the battle scene is an adaptive rectangle frame with exactly 2px distance from the screen edge, rounded corners, and contains an ocean scene composed of emoji 🌊. The main characters (🐟 and 🐭) should be positioned at the bottom, while enemies (various monster/ugly animal emojis) appear at the top. Check if the battle report box is present in the lower left corner and if the 'Challenge Next Level' button appears after victory. Deduct 5 points if the adaptive frame isn't properly implemented, 3 points if character positioning is incorrect, and 5 points if the ocean scene lacks visual coherence.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the card system fully implemented with progression mechanics?",
+      "description": "Assess if all 50 battle cards are implemented with unique mechanisms and proper upgrade paths (up to level 6). Check if fusion cards are unlocked at level 6, if max level cards are removed from selection, and if fusion cards only appear once. The backpack feature should allow players to check their stats and card collection/levels. Deduct 5 points if fewer than 50 distinct cards exist, 3 points if the fusion system doesn't work correctly, 5 points if card progression doesn't persist between battles, and 3 points if the backpack functionality is incomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, resizing the window, network interruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Additional visual effects for special attacks 2. Easter eggs beyond the God Mode 3. Dynamic difficulty adjustment based on player performance). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple different healing mechanisms that functionally do the same thing) 2. Function modules unrelated to the game's core mechanics (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controllers), state management patterns, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if game assets are not properly managed or loaded efficiently. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (consistent with the purple dungeon theme without clashing colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game balance and progression system well-designed?",
+      "description": "Analyze if the game provides a balanced experience with the specified stats system (Health, Attack, Defense, Critical Rate, Critical Damage, and elemental damages). Check if enemy progression (10% increase every two levels) creates an appropriate difficulty curve. Evaluate if the card skill power bonuses (100% to 150%) are balanced and if the God Mode feature doesn't completely break the game. Deduct 5 points if enemy scaling creates impossible situations, 3 points if card skills are poorly balanced, and 3 points if the progression system lacks meaningful choices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "hard"
+}

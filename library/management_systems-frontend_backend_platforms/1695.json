@@ -1,0 +1,68 @@
+{
+  "index": 1695,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Main Interface Design\n\n## Account Overview:\nDisplays key information including current account equity, available margin, floating profit/loss, etc.\n\n## Manual Operation Area:\nIncludes buy and sell buttons, position closing options, and features for setting stop-loss and take-profit points.\n\n## Parameter Configuration Area:\nAllows users to set parameters such as the percentage of funds used for each trade, initial position size, etc.\n\n## Daily Profit/Loss Chart:\nGraphically displays daily profit and loss information.\n\n## 2. Functional Modules\n\n### 2.1 Account Equity Monitoring\n- Use AccountEquity() to retrieve account equity.\n- Regularly refresh (e.g., every minute) and update on the interface.\n\n### 2.2 Automatic Position Size Adjustment\n- Users input specific equity-to-position size ratios in the parameter configuration area (e.g., $300 corresponds to 0.01 lot).\n- Calculate appropriate lot size based on current account equity and set ratios, applying this calculation when opening new orders.\n\n### 2.3 Manual Order Placement and Closure\n- Provide intuitive interface for users to select currency pair, lot size, stop-loss/take-profit levels before clicking \"Buy\" or \"Sell\" to place orders.\n- Display a list of all open positions, allowing users to close positions directly by clicking on the corresponding order.\n\n### 2.4 Daily Profit/Loss Statistics\n- Record total daily profit/loss at the end of each day (determined by server time).\n- Use chart libraries (such as standard chart functions in MQL4) to draw daily profit/loss graphs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the trading interface dashboard fully implemented?",
+      "description": "Review whether the code accurately implements all four main interface sections: Account Overview (displaying current equity, available margin, floating P&L), Manual Operation Area (buy/sell buttons, position closing, stop-loss/take-profit settings), Parameter Configuration Area (fund percentage settings, initial position size), and Daily P&L Chart (graphical display). Score 0 if core dashboard components are missing, 5 if only basic account display is implemented, and 10 if all interface sections are fully functional with real-time data updates.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the account equity monitoring and automatic position size adjustment system properly implemented?",
+      "description": "Check whether the AccountEquity() function is correctly integrated with regular refresh mechanisms (every minute updates), and verify if the automatic position size calculation based on equity-to-lot ratios is accurately implemented. The system should dynamically calculate appropriate lot sizes based on current account equity and user-defined ratios (e.g., $300 = 0.01 lot). Deduct 5 points if real-time monitoring is missing, and 3 points if position size calculations are inaccurate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the manual trading functionality and order management system complete?",
+      "description": "Evaluate whether the manual order placement system includes intuitive currency pair selection, lot size input, stop-loss/take-profit level settings, and functional buy/sell execution. Verify if the open positions list displays all active orders with direct closing capabilities. The system should handle order validation and execution feedback. Deduct 5 points if order placement lacks proper validation, and 3 points if position management interface is incomplete. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the daily profit/loss statistics and charting system properly constructed?",
+      "description": "Check whether the code includes complete daily P&L recording mechanism based on server time, with proper data storage and retrieval. Verify if chart libraries (MQL4 standard chart functions or equivalent) are correctly implemented to visualize daily profit/loss trends. The system should maintain historical data and provide clear graphical representation. Deduct 5 points if data persistence is not implemented, and 3 points if charting functionality is missing. Give 10 points if fully implemented with historical data management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common trading platform exceptions (such as connection failures, invalid order parameters, insufficient margin, market closure, etc.) and provide appropriate error handling or recovery mechanisms. Code with strong robustness should effectively handle these edge cases and provide clear user feedback, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance trading experience?",
+      "description": "Check whether the code includes valuable features that improve trading efficiency (e.g., 1. Risk management alerts and notifications 2. Trading performance analytics and insights 3. Customizable dashboard layouts 4. Advanced order types like trailing stops). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar trading functions (e.g., multiple order placement logics coexisting) 2. Function modules unrelated to trading operations (e.g., built-in games or entertainment features) 3. Excessive visual effects that affect trading performance (e.g., complex animations during critical operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core trading functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating trading logic/UI/data management layers), error handling coverage, and code maintainability. Deduct 5 points if global state pollution is found or proper design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if the architecture is not scalable for future trading features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the trading interface design meet professional financial software standards?",
+      "description": "Evaluate whether the overall design follows professional trading platform principles: 1) Clear information hierarchy with critical trading data prominently displayed 2) Consistent color coding for profit (green) and loss (red) indicators 3) Professional typography with readable font sizes (≥12px for numbers, ≥14px for text) 4) Proper spacing and alignment following grid systems. Deduct 3 points for each confusing visual element, 5 points for unprofessional color schemes, and 5 points for cluttered layout that hinders trading decisions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the trading interaction smooth and responsive?",
+      "description": "Judge whether the trading operations meet professional standards: 1) Order execution feedback ≤ 50ms 2) Real-time data updates without lag 3) Clear confirmation dialogs for critical actions (order placement/closure) 4) Intuitive navigation between different trading functions. Deduct 5 points for each operation without immediate feedback, 3 points for delayed data updates that could affect trading decisions, and 5 points for unclear or hard-to-access critical trading functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 619,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration. Please build an inventory management system. Merchants can add new products through the front-end interface, edit product information (name, price, inventory quantity, etc.), and set low inventory alert functions (displaying warnings when inventory falls below a threshold).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the product CRUD functionality fully implemented?",
+      "description": "Review whether the code accurately implements all Create, Read, Update, and Delete operations for products. Check if the form validation includes required fields (name, price, quantity), data type validation (price as number), and constraint checks (non-negative values for price and quantity). Score 0 if core CRUD operations are missing, 5 if basic operations are implemented without proper validation, and 10 if all operations are implemented with comprehensive validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the inventory alert system properly implemented?",
+      "description": "Evaluate whether merchants can set custom threshold values for low inventory alerts. Check if the system provides visual indicators (color coding, icons) when inventory falls below thresholds, and if notifications are displayed in an appropriate manner (not blocking normal operation). Deduct 5 points if threshold configuration is missing, 3 points if visual indicators aren't clear, and 2 points if there's no way to manage/dismiss alerts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence mechanism properly designed?",
+      "description": "Check whether the application implements proper data storage (local storage, IndexedDB, or backend database) with error handling for storage failures. Verify if data synchronization occurs at appropriate times (after edits, periodically) and if there's data loss protection when the browser unexpectedly closes. Deduct 5 points for lack of persistence, 3 points for insufficient error handling, and 2 points for missing optimization strategies (like batch updates). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the inventory history and tracking system implemented?",
+      "description": "Verify if the system tracks inventory changes with timestamps and user information. Check for features like inventory audit trails, change history visualization, and inventory trend analysis. The system should allow filtering/sorting of history records. Deduct 3 points if timestamp tracking is missing, 3 points if there's no way to view history, and 4 points if the history doesn't capture all relevant events (additions, edits, threshold changes). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network failures, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should prevent data corruption and have proper exception handling throughout the application. Give 10 points for comprehensive error handling, 5 points for basic validation only, and 0 points if errors cause the application to crash.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Barcode/QR code scanning for quick product lookup 2. Export/import functionality for bulk operations 3. Dashboard with inventory analytics 4. Image management for products). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit the same data) 2. Function modules unrelated to inventory management (e.g., built-in games or media players) 3. Fancy effects that affect performance (e.g., excessive animations or 3D effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data models/UI components/services), code organization, naming conventions, and reusability. Deduct 5 points if global state management is poorly implemented; deduct 3 points if there's significant code duplication; deduct 2 points if naming conventions are inconsistent or unclear. Check for appropriate comments and documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern inventory management design principles: 1) Clean data display with proper table/grid layouts 2) Consistent color coding for inventory status (low/normal/excess) 3) Professional forms with clear labels and validation feedback. Deduct 3 points for cluttered information display, 4 points for poor information hierarchy, and 3 points for inconsistent styling across the application. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions serve business efficiency: 1) Quick-edit capabilities without excessive page reloads 2) Bulk operations for managing multiple products 3) Responsive filtering and searching with < 200ms response time. Deduct 4 points for requiring multiple clicks for common tasks, 3 points for sluggish responses in data operations, and 3 points for lack of keyboard shortcuts or efficiency features. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

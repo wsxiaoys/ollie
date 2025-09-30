@@ -1,0 +1,68 @@
+{
+  "index": 277,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create a front-end gas comprehensive management system solution using Vite, Vue 3, TypeScript, Pinia, Axios, Element Plus, OpenLayers, Tianditu (Chinese map service), and Tailwind CSS.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core gas management system functionality implemented?",
+      "description": "Review whether the code implements essential gas management features including gas source tracking, pipeline management, leak detection, and monitoring dashboards. Score 0 if core features are missing, 5 if basic features are implemented without integration, and 10 if all essential features are fully integrated with real-time data visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the OpenLayers map integration with Tianditu properly implemented?",
+      "description": "Evaluate the integration of OpenLayers with Tianditu map service, including proper API key usage, coordinate system configuration (CGCS2000), layer management, and custom overlay implementation for gas infrastructure. Deduct 3 points if map initialization fails, 3 points for incorrect projection setup, and 4 points if custom gas infrastructure overlays are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Vue 3 + TypeScript implementation properly utilizing composition API and type safety?",
+      "description": "Check if the code leverages Vue 3's Composition API with proper TypeScript interfaces/types for all components, stores, and services. Score 0 if TypeScript is barely used, 5 if basic typing exists but with 'any' types, and 10 if comprehensive type definitions are present with proper interfaces for all data structures and strict typing throughout the application.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is Pinia used effectively for state management with proper store design?",
+      "description": "Assess whether Pinia stores are properly organized following domain-driven design principles (e.g., separate stores for map state, gas sources, user info, etc.), include proper actions/getters, and implement persistence where needed. Deduct 3 points for global state pollution, 3 points for missing TypeScript interfaces, and 4 points if stores don't handle loading states or errors properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, map loading errors, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include error boundaries, fallback UI components, and comprehensive input validation. Give 10 points for comprehensive error handling, 5 points for average implementation, and 0 points if exceptions are not handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time gas leak prediction algorithms 2. AR visualization for field technicians 3. Automated reporting with data visualization 4. Intelligent alerts with severity classification). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple map instances for the same view) 2. Function modules unrelated to gas management (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations on critical monitoring screens). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/services/components/stores), unit test coverage with Vitest or Jest, proper Vite configuration, and build process automation. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not optimized for production. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Element Plus implementation and Tailwind CSS usage follow modern design principles: 1) Consistent theme customization (no default Element Plus theme mixed with custom styles) 2) Proper responsive layout using Tailwind's grid system 3) Professional data visualization components with appropriate color schemes for gas monitoring. Deduct 3 points for inconsistent component styling, 5 points for non-responsive layouts, and 5 points for poor data visualization design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Map interactions respond within 100ms 2) Data filtering and searching provides immediate visual feedback 3) Critical alerts have appropriate animation attention mechanisms. Deduct 5 points for each operation without feedback, 3 points for laggy map interactions, and 5 points for missing loading states during data fetching operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

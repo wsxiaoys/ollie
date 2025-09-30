@@ -1,0 +1,68 @@
+{
+  "index": 852,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration. Please help me write a game similar to Temple Run, but make the protagonist in the story a beautiful young girl.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core endless running game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the endless running system through HTML5 Canvas/WebGL, including continuous terrain generation, character automatic forward movement, left-right lane switching, jumping/sliding mechanics, and collision detection with obstacles. Score 0 if core running mechanics are missing, 5 if only basic movement is implemented, and 10 if all Temple Run-style mechanics (lane switching, jumping, sliding, turning) are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dynamic obstacle generation and collision system properly designed?",
+      "description": "Check whether the obstacle generation system includes procedural generation algorithms, progressive difficulty scaling, and multiple obstacle types (barriers, gaps, moving obstacles). Evaluate collision detection accuracy and response mechanisms. Deduct 5 points if collision boundaries are imprecise, and 3 points if obstacle variety is insufficient. Requires smooth difficulty progression and fair collision feedback. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the 3D environment rendering and camera system optimized?",
+      "description": "Evaluate whether the 3D rendering system uses efficient techniques like frustum culling, level-of-detail (LOD) management, and texture atlasing. Check if the third-person camera smoothly follows the character with appropriate motion blur and depth of field effects. Deduct 5 points if frame rate drops below 30fps on average devices, and 3 points if camera movement causes motion sickness. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the character animation and control system polished?",
+      "description": "Check whether the beautiful girl protagonist has smooth animation transitions between running, jumping, sliding, and turning states. Evaluate character model quality, facial expressions, and clothing physics. Review input responsiveness for touch/keyboard controls with appropriate animation blending. Deduct 5 points if animations are choppy or unnatural, and 3 points if character design lacks visual appeal. Give 10 points if fully polished.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input sequences, memory overflow from endless generation, device rotation, focus loss/resume, etc.) and provide graceful degradation or recovery mechanisms. Code with strong robustness should maintain stable performance during extended gameplay sessions, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance gameplay experience?",
+      "description": "Check whether the code includes engaging features beyond basic Temple Run mechanics (e.g., 1. Power-up collection system with visual effects 2. Character customization options 3. Environmental theme variations 4. Social sharing of high scores 5. Gesture-based special moves). Add 2-3 points for each well-implemented innovative feature that adds meaningful gameplay value (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features that impact performance?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate rendering pipelines or animation systems 2. Unnecessary high-resolution assets that don't improve visual quality 3. Complex particle effects that cause frame drops without adding significant value. Deduct 3 points for each performance-impacting redundancy found, and directly deduct 10 points if core gameplay is compromised by unnecessary features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate solid engineering architecture?",
+      "description": "Review modular separation of concerns (rendering engine, game logic, input handling, asset management), efficient memory management for endless generation, and proper asset loading strategies. Deduct 5 points if memory leaks are detected or if the architecture doesn't scale well; deduct 5 points if code organization is poor with high coupling; deduct 5 points if no performance monitoring or optimization strategies are evident. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design achieve professional mobile game standards?",
+      "description": "Evaluate whether the overall aesthetic follows modern mobile game design: 1) Cohesive art style with consistent lighting and color palette 2) Clear UI elements with appropriate sizing for touch interaction (minimum 44px touch targets) 3) High-quality character design that fits the Temple Run aesthetic while being distinctive. Deduct 3 points for inconsistent visual style, 5 points for poor character model quality, and 5 points for cluttered or hard-to-read UI elements. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the gameplay interaction fluid and responsive?",
+      "description": "Judge whether the control system provides immediate feedback: 1) Touch/swipe response time ≤ 50ms for mobile-optimized gameplay 2) Smooth animation transitions without stuttering during rapid input sequences 3) Clear visual and audio feedback for all player actions 4) Intuitive gesture recognition for lane switching and jumping/sliding. Deduct 5 points for each unresponsive control interaction, 3 points for delayed visual feedback, and 5 points if gesture recognition fails frequently. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

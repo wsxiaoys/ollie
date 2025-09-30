@@ -1,0 +1,68 @@
+{
+  "index": 359,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Write a frontend program that simulates the motion of the solar system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the solar system model astronomically accurate?",
+      "description": "Check whether the code correctly implements planetary orbits with proper relative sizes, distances, and orbital periods. Review if planetary motion follows Kepler's laws with elliptical orbits. Score 0 if planets are randomly positioned, 5 if relative sizes and orbits are approximated, and 10 if the simulation includes accurate orbital mechanics including eccentricity and inclination.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are celestial body movements properly animated?",
+      "description": "Evaluate the animation implementation for planetary rotation and revolution. Check if requestAnimationFrame is used for smooth animation instead of setInterval/setTimeout. Verify that the animation maintains consistent speed regardless of device performance. Deduct 5 points if animation is jerky on standard hardware, 3 points if the animation loop isn't optimized for performance. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the visualization dimensionally appropriate?",
+      "description": "Assess whether the visualization effectively handles the vast scale differences in the solar system through techniques like logarithmic scaling or interactive zooming. Check if the simulation offers multiple viewing perspectives (heliocentric vs. geocentric). Deduct 5 points if scale representation is misleading, 3 points if only a single fixed perspective is available. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include interactive features?",
+      "description": "Review whether the simulation offers user controls like speed adjustment, camera angle changes, focus tracking of specific planets, and information display on hover/click. Deduct 5 points if basic time controls (pause/play/speed) are missing, 3 points if camera manipulation is limited. Give 10 points if the simulation is fully interactive with multiple control options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resize, device rotation, performance throttling, etc.) and provide graceful degradation for older browsers. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Comet/asteroid visualization 2. Space mission trajectories 3. Realistic lighting and shadow effects 4. Astronomical event simulation like eclipses). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation of orbital positions 2. Feature modules unrelated to solar system simulation (e.g., unnecessary UI elements) 3. Fancy effects that affect performance without educational value (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/rendering/UI controllers), appropriate use of design patterns, and performance optimization techniques. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is high; deduct 5 points if no optimization is implemented for complex rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Appropriate color scheme for space visualization (dark background, contrasting planet colors) 2) Clean UI layout for controls and information displays 3) Professional typography and labeling system. Deduct 3 points for each cluttered visual element, 5 points for poor visibility of celestial bodies, and 5 points for chaotic information display. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user expectations: 1) Responsive zoom and pan controls 2) Smooth transitions when changing focus between planets 3) Intuitive time control interface. Deduct 5 points for laggy interaction, 3 points for confusing navigation controls, and 5 points for disorienting camera movements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

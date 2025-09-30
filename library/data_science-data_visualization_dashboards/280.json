@@ -1,0 +1,68 @@
+{
+  "index": 280,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Create a line chart in Vue 3 using TypeScript syntax with ECharts, implemented through a remote request, and include search functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 3 + TypeScript integration properly implemented?",
+      "description": "Check whether the code uses Vue 3 composition API with proper TypeScript type definitions. Verify that components, props, emits, and refs all have proper typing. Deduct 5 points if TypeScript interfaces are missing for data structures, 3 points if any 'any' types are used unnecessarily, and 5 points if there are TypeScript compilation errors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is ECharts correctly integrated and initialized in the Vue 3 component?",
+      "description": "Evaluate whether ECharts is properly imported and initialized using Vue lifecycle hooks (onMounted, onUnmounted, etc.). Check for proper chart instance management, responsive resizing handling, and memory leak prevention. Deduct 5 points if the chart is not properly destroyed on component unmount, 3 points if window resize events aren't handled, and 3 points if chart options are not typed correctly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the remote data fetching mechanism implemented correctly?",
+      "description": "Review if the code implements proper API calls with error handling and loading states. Check for the use of Axios/Fetch with proper request configurations, response type validation, and retry mechanisms. Deduct 5 points if there's no loading indicator during data fetching, 5 points if error handling is inadequate, and 3 points if there's no request timeout or cancellation on component unmount. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the search functionality complete and effective?",
+      "description": "Assess whether the search function includes debounce/throttle mechanisms, proper validation, and clear feedback to users. Check if searching updates the chart dynamically and if the UI provides clear indications of current search state. Deduct 5 points if search has no input validation, 3 points if there's no debounce implementation for performance, and 5 points if search results don't properly update the chart visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases such as empty data sets, API errors, invalid search inputs, and window resize events. Code with strong robustness should gracefully handle these scenarios with appropriate user feedback. Deduct 3 points for each unhandled edge case, with a maximum deduction of 10 points. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the implementation includes additional valuable features beyond the basic requirements (e.g., 1. Advanced filtering options 2. Data export functionality 3. Dynamic theme switching 4. Interactive tooltips with rich content). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant state management 2. Duplicate data processing functions 3. Unnecessary wrapper components that add complexity without value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functionality is obscured by redundant code. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component organization, type definitions, code reusability, and separation of concerns. Check if the code follows Vue 3 best practices and clean code principles. Deduct 3 points if components exceed 300 lines, 3 points if business logic isn't separated from the UI layer, and 4 points if there's no proper error boundary implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the chart design follows data visualization best practices: 1) Clear axes with proper labels 2) Appropriate use of colors (color-blind friendly) 3) Proper spacing and sizing of chart elements 4) Responsive design across different screen sizes. Deduct 3 points for cluttered visualizations, 3 points for poor color choices, and 4 points for illegible text or overlapping elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether interactions with the chart and search functionality feel responsive and intuitive: 1) Chart animations are smooth (≤500ms) 2) Search results update without jarring UI shifts 3) Loading states are clearly communicated. Deduct 3 points for laggy chart updates, 3 points for abrupt visual changes, and 4 points for confusing interaction patterns that don't follow standard UX conventions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

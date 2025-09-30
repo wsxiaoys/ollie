@@ -1,0 +1,68 @@
+{
+  "index": 80,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible.\nPlease help me implement the following requirements using code. Create an SVG visualization of a network graph showing different types of information connections.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG network graph structure properly implemented?",
+      "description": "Check if the code correctly implements nodes and edges using SVG elements. Nodes should have proper sizing and positioning, and edges should connect nodes accurately with the correct path calculations. Score 0 if the graph is not visualized at all, 5 if basic nodes and edges are drawn but with positioning issues, and 10 if all elements are perfectly positioned with proper sizing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are different types of information connections visually distinguished?",
+      "description": "Evaluate if the code implements visual differentiation between connection types (e.g., through color coding, line styles, thickness, or icons). Different connection types should be clearly distinguishable and include a legend or visual cues. Deduct 5 points if only one visual attribute is used for differentiation, and 3 points if the differentiation is not intuitive. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the graph interactive with user-friendly features?",
+      "description": "Check for interactive features such as node dragging, zooming, panning, highlighting connected nodes on hover/click, and tooltips showing additional information. Score 0 if no interaction is implemented, 5 if only basic interactions exist, and 10 if comprehensive interactions enhance user understanding of the network.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include data handling and dynamic rendering?",
+      "description": "Assess if the code handles external data input (JSON/CSV), allows for dynamic updates when data changes, and properly manages the rendering process. Check for data binding patterns and efficient DOM manipulation. Deduct 5 points if static data is hardcoded, and 3 points if the rendering process is inefficient. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, malformed input, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Force-directed layout with physics simulation 2. Advanced filtering capabilities 3. Network metrics visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization functions 2. Function modules unrelated to network visualization 3. Fancy effects that affect performance (e.g., excessive animations or unnecessary visual elements). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/rendering/interaction layers), reusable components, and clean coding practices. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization follows information design principles: 1) Clear visual hierarchy between nodes and edges 2) Appropriate use of color (colorblind-friendly, meaningful encoding) 3) Balanced visual density (avoiding hairball effect in dense networks). Deduct 3 points for cluttered visualization, 5 points for poor color choices that hinder readability, and 5 points for lack of visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the dynamic effects enhance network understanding: 1) Smooth transitions during layout changes (≤ 500ms) 2) Responsive feedback on user interactions (≤ 100ms) 3) Appropriate animation timing for state changes. Deduct 5 points for laggy rendering with large networks, 3 points for jerky animations, and 5 points for interaction delays that hinder exploration. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

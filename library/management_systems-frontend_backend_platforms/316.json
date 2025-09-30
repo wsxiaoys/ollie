@@ -1,0 +1,68 @@
+{
+  "index": 316,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the code you generate is executable and displayable. Create a department structure using a WinForm TreeView for me.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the TreeView implementation complete?",
+      "description": "Evaluate whether the code properly initializes a TreeView control, adds nodes representing department hierarchy, and implements basic functionality. Check if the nodes are properly structured (parent-child relationships), named, and if icons are used to distinguish different node types. Score 0 if TreeView is not implemented, 5 if basic implementation exists, 10 if fully featured with proper structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is department data management properly implemented?",
+      "description": "Check whether the code includes proper data structures for departments (classes/objects), methods for adding/removing/editing departments, and maintains the hierarchical relationships correctly. Deduct 5 points if only hard-coded department structure exists, 3 points if modification operations are incomplete. Full score requires a complete data model with CRUD operations.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are event handlers for TreeView interactions implemented?",
+      "description": "Verify if the code handles user interactions such as node expansion/collapse, selection change, right-click context menus, and drag-and-drop operations if needed. Deduct 3 points for each missing core interaction handler. The implementation should include proper event wiring and handlers that perform appropriate actions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is node manipulation functionality included?",
+      "description": "Assess whether users can add new departments, delete existing ones, rename departments, and move departments (restructuring). Check for keyboard shortcuts support, confirmation dialogs for destructive actions, and proper UI feedback. Give 10 points for complete implementation, 5 for partial functionality, 0 if completely missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty department names, duplicate nodes, invalid operations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Search functionality for departments 2. Export/import of department structure 3. Visual indicators of department size/employee count). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add departments) 2. Function modules unrelated to department management (e.g., built-in calculators) 3. Fancy effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI logic from business logic), proper naming conventions, commenting, error handling, and code organization. Deduct 5 points if global variables are overused; deduct 5 points if the code is not properly organized into methods/classes; deduct 5 points if naming conventions are inconsistent or unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern Windows Forms design principles: 1) Consistent control spacing and alignment 2) Proper form sizing and resizing behavior 3) Professional use of fonts, colors and icons. Deduct 3 points for each misaligned element, 5 points for non-resizable interface with truncated content, and 5 points for unclear visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and intuitive?",
+      "description": "Judge whether the interaction design conforms to Windows application standards: 1) Standard keyboard shortcuts (Del for delete, F2 for rename, etc.) 2) Intuitive drag-and-drop behavior 3) Appropriate visual feedback for actions. Deduct 5 points for missing standard shortcuts, 3 points for unintuitive interaction patterns, and 5 points for lack of visual feedback during operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

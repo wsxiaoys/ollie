@@ -1,0 +1,68 @@
+{
+  "index": 355,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Help me create a multi-functional image creation tool webpage that doesn't require login. Please provide a specific product solution.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic image creation functionality fully implemented?",
+      "description": "Review whether the code implements core drawing capabilities through HTML5 Canvas/SVG, including basic tools (pen, shapes, text, eraser), color selection, and layer management. Score 0 if the core drawing functionality is missing, 5 if only basic tools are implemented, and 10 if comprehensive drawing features with proper event handling are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the implementation include advanced image editing features?",
+      "description": "Check for implementation of advanced features like filters, transformations (resize, rotate, crop), blend modes, and image adjustment controls (brightness, contrast, saturation). Deduct 3 points if only basic transformations exist, 5 points if filters are missing, and 7 points if no image adjustments are available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a mechanism for saving/exporting created images?",
+      "description": "Evaluate whether the tool provides options to export in different formats (PNG, JPEG, SVG), with customizable quality settings and dimensions. Check if temporary local storage is implemented for auto-saving work. Deduct 5 points if only one export format is supported, and 8 points if no export functionality exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the image creation tool usable without login requirements?",
+      "description": "Verify that all functionality works without authentication while still preserving user work through local storage or temporary session mechanisms. Check if the implementation uses browser storage APIs appropriately. Deduct 10 points if any core functionality requires authentication, 5 points if local storage is not utilized for preserving work. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid image uploads, browser compatibility issues, memory limitations with large canvases, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted drawing tools 2. Community template gallery without login 3. One-click image enhancement algorithms). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple color picker systems) 2. Function modules unrelated to image creation (e.g., a news feed) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the drawing experience). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/UI/storage layers), component reusability, and build process optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not optimized for performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional tool organization (grouped by function with clear visual hierarchy). Deduct 3 points for cluttered toolbars, 5 points for poor color contrast affecting usability, and 5 points for inconsistent icon styles. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the drawing interactions conform to human perception characteristics: 1) No lag between input and drawing (≤ 20ms) 2) Smooth canvas zooming/panning 3) Intuitive tool selection and parameter adjustment. Deduct 5 points for noticeable drawing lag, 3 points for jerky canvas manipulation, and 5 points for confusing tool interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1650,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Course Manager System (Essential for Students)\n\n## 1. Course Assistant\n- 📅 **Smart Schedule Import**\n  - Support for photo recognition of class schedules/Excel import\n  - Automatic synchronization to phone calendar\n  - Vibration reminder 15 minutes before class\n- 🧭 **Classroom Navigation System**\n  - AR live navigation (guides classroom direction through phone camera)\n  - 3D floor plans of academic buildings\n  - Congestion alerts (predicts crowded hallway periods based on historical data)\n\n## 2. Learning Assistant (Efficiency Booster)\n- 📸 **Homework Smart Recognition**\n  - Photo scanning of paper homework questions\n  - Automatic categorization and organization of wrong answers (supports PDF export)\n  - Integration with question bank APIs to display similar question types and analyses\n- 📊 **Grade Analyzer**\n  - Line graphs showing grade trends\n  - Radar charts analyzing strengths and weaknesses in different subjects\n  - GPA prediction calculator",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Smart Schedule Import system fully implemented?",
+      "description": "Review whether the code implements photo recognition of class schedules using OCR technology (such as Tesseract.js or cloud OCR APIs), Excel file parsing capabilities, and automatic calendar synchronization. Check if the schedule parsing accuracy handles various formats of timetables and converts them to structured data. Score 0 if OCR functionality is missing, 5 if only basic schedule display is implemented, and 10 if full recognition with high accuracy (>85%) and calendar integration are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the AR Classroom Navigation System properly developed?",
+      "description": "Evaluate whether the AR navigation uses device camera API with real-time rendering, implements 3D floor plan visualization (WebGL/Three.js), and includes congestion prediction algorithms based on historical data analysis. Check if the AR overlay accurately displays directional indicators and building layouts. Deduct 5 points if AR camera integration is missing, 3 points if 3D rendering performance is poor (<30fps), and 2 points if congestion prediction lacks data visualization. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Homework Smart Recognition feature comprehensively implemented?",
+      "description": "Check whether the system includes image preprocessing, OCR text extraction, mathematical formula recognition, automatic categorization algorithms, and PDF export functionality. Verify integration with external question bank APIs and similarity matching algorithms. Score 0 if no image recognition is implemented, 5 if only basic text OCR works, 8 if mathematical formula recognition is included, and 10 if complete workflow with API integration and export features are functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Grade Analyzer with visualization charts fully constructed?",
+      "description": "Evaluate whether the code implements interactive line charts for grade trends, radar charts for subject analysis, and GPA prediction algorithms using statistical models. Check if charts are responsive and use appropriate visualization libraries (Chart.js/D3.js). Verify calculation accuracy of GPA predictions and trend analysis. Deduct 5 points if charts are static, 3 points if GPA calculations are incorrect, and 2 points if data visualization lacks interactivity. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as camera permission denial, OCR recognition failures, network interruption, invalid schedule formats, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the student experience (e.g., 1. Voice-activated schedule queries 2. Study habit analytics with recommendations 3. Collaborative study group formation 4. Integration with learning management systems 5. Offline mode with local data sync). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple schedule parsers coexisting) 2. Function modules unrelated to course management (e.g., built-in games or social media features) 3. Fancy effects that affect performance (e.g., excessive AR animations or complex 3D models). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core academic functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating OCR processing/data management/UI layers), error handling for API integrations, and mobile optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if mobile responsiveness is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile-first design principles: 1) Student-friendly color scheme (no more than 3 primary colors, high contrast for readability) 2) Proper touch-friendly spacing (minimum 44px touch targets, 8px grid system) 3) Educational typography (body font size ≥ 16px for mobile, line height over 1.4 times). Deduct 3 points for each cramped interface element, 5 points for poor color accessibility, and 5 points for illegible text on mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to student usage patterns: 1) Camera/OCR processing feedback with loading indicators 2) Chart animations duration controlled between 300-800ms 3) Clear navigation between different modules with breadcrumbs 4) Smooth AR rendering without jitter. Deduct 5 points for each operation without loading feedback, 3 points for laggy camera preview, 3 points for confusing navigation flow, and 2 points for choppy chart animations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

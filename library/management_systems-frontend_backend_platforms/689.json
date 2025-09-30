@@ -1,0 +1,68 @@
+{
+  "index": 689,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes.\n\n======== ROLE ========\nYou are an experienced code expert. I will provide you with a software development requirement description, and you should generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with clear and simple annotations, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot execute or contains errors, regenerate it\n4. If the requirements include external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nDevelop a residential community file management system for a property management company. Property staff can upload community-related files (such as announcements, maintenance records) through the frontend page, and homeowners can log in to view these files. The system should provide a file commenting feature, allowing homeowners to comment on files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the complete file management system architecture implemented?",
+      "description": "Review whether the code establishes a full-stack architecture for file management, including upload/download functionality, file storage mechanisms, proper permissions control, and file metadata management. Score 0 if only partial components are implemented, 5 if basic functionality exists but lacks proper integration, and 10 if the system includes proper database schema, API endpoints, frontend-backend integration, and storage solutions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user authentication and role-based access control system implemented?",
+      "description": "Check if the code implements separate authentication workflows for property staff and homeowners with appropriate role-based permissions. Property staff should have upload privileges while homeowners have view-only access. Examine if the authentication system includes secure password handling, session management, and token validation. Deduct 5 points if authorization checks are missing, 3 points if role separation is incomplete, and 2 points if session handling is insecure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the file upload and management functionality complete?",
+      "description": "Evaluate whether the code includes proper file upload mechanisms with validation (file type restrictions, size limits), categorization capabilities, version control, and search functionality. Check if property staff can properly categorize uploads as announcements, maintenance records, etc. Deduct 3 points if file validation is missing, 3 points if categorization is not implemented, and 4 points if search functionality is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the commenting system fully functional?",
+      "description": "Assess if the code implements a complete commenting system allowing homeowners to add, view, edit, and delete comments on files. Check if the system includes timestamps, user identification, and potentially nested replies. Evaluate if comment notifications are provided to relevant parties. Deduct 3 points if edit/delete functionality is missing, 3 points if user identification is inadequate, and 4 points if the system doesn't handle comment displays properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid file types, network interruption, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time notification system for new uploads 2. Document preview functionality 3. Mobile responsiveness with offline access capability). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload methods with overlapping functionality) 2. Function modules unrelated to community management (e.g., a built-in game section) 3. Fancy effects that affect performance (e.g., excessive animations when browsing files). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data access/business logic/presentation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

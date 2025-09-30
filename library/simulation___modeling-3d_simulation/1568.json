@@ -1,0 +1,68 @@
+{
+  "index": 1568,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable.\n\n```javascript\n@wraps(animate_nodal_solution)\ndef animate_nodal_displacement(self, *args, **kwargs):\n    \"\"\"wraps animate_nodal_solution\"\"\"\n    return self.animate_nodal_solution(*args, **kwargs)\n\ndef animate_nodal_solution(\n    self,\n    rnum,\n    comp=\"norm\",\n    node_components=None,\n    element_components=None,\n    sel_type_all=True,\n    add_text=True,\n    displacement_factor=0.1,\n    n_frames=100,\n    loop=True,\n    movie_filename=None,\n    progress_bar=True,\n    **kwargs,\n):\n    \"\"\"Animate nodal solution.\n\n    Assumes nodal solution is a displacement array from a modal or static\n    solution.\n\n    rnum : int or list\n        Cumulative result number with zero based indexing, or a\n        list containing (step, substep) of the requested result.\n\n    comp : str, default: \"norm\"\n        Scalar component to display.  Options are ``'x'``,\n        ``'y'``, ``'z'``, and ``'norm'``, and ``None``.\n\n    node_components : list, optional\n        Accepts either a string or a list strings of node\n        components to plot.  For example:\n        ``['MY_COMPONENT', 'MY_OTHER_COMPONENT]``\n\n    element_components : list, optional\n        Accepts either a string or a list strings of element\n        components to plot.  For example:\n        ``['MY_COMPONENT', 'MY_OTHER_COMPONENT]``\n\n    sel_type_all : bool, optional\n        If node_components is specified, plots those elements\n        containing all nodes of the component.  Default ``True``.\n\n    add_text : bool, optional\n        Adds information about the result.\n\n    displacement_factor : float, optional\n        Increases or decreases displacement by a factor.\n\n    n_frames : int, optional\n        Number of \"frames\" between each full cycle.\n\n    loop : bool, optional\n        Loop the animation.  Default ``True``.  Disable this to\n        animate once and close.  Automatically disabled when\n        ``off_screen=True`` and ``movie_filename`` is set.\n\n    movie_filename : str, pathlib.Path, optional\n        Filename of the movie to open.  Filename should end in\n        ``'mp4'``, but other filetypes may be supported like\n        ``\"gif\"``.  See ``imagio.get_writer``.  A single loop of\n        the mode will be recorded.\n\n    progress_bar : bool, default: True\n        Displays a progress bar when generating a movie while\n        ``off_screen=True``.\n\n    kwargs : optional keyword arguments\n        See :func:`pyvista.plot` for additional keyword arguments.\n\n    Examples\n    --------\n    Animate the first result interactively.\n\n    >>> rst.animate_nodal_solution(0)\n\n    Animate second result while displaying the x scalars\n    without looping\n\n    >>> rst.animate_nodal_solution(1, comp='x', loop=False)\n\n    Animate the second result and save as a movie.\n\n    >>> rst.animate_nodal_solution(0, movie_filename='disp.mp4')\n\n    Animate the second result and save as a movie in the background.\n\n    >>> rst.animate_nodal_solution(0, movie_filename='disp.mp4', off_screen=True)\n\n    Disable plotting within the notebook.\n\n    >>> rst.animate_nodal_solution(0, notebook=False)\n\n    \"\"\"\n```\n\nThis is the source code of animate_nodal_displacement in pyansys. Please rewrite this code using Vue's vtk.js to implement the same functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue/vtk.js implementation of animate_nodal_solution complete?",
+      "description": "Review whether the code accurately translates the PyANSYS animation functionality to Vue/vtk.js. Check for correct handling of displacement visualization, component selection (x, y, z, norm), and proper animation cycle implementation. Verify the displacement factor parameter is properly applied to exaggerate/diminish the visualization.Score 0 if core functionality is missing, 5 if basic animation works but lacks component selection, 10 if fully implemented with all parameter options.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the result selection and processing correctly implemented?",
+      "description": "Evaluate the handling of 'rnum' parameter (result number or step/substep list) in the Vue/vtk.js version. Check if the code properly extracts and processes nodal solution data from selected results, including proper data mapping for visualization. The implementation must handle both single result numbers and step/substep pairs.Deduct 5 points if only single result numbers are supported, 3 points if data mapping is incorrect, and 5 points if the extraction logic is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are node and element component selection capabilities implemented?",
+      "description": "Check if the code correctly implements the node_components and element_components parameters, allowing users to select specific components for visualization. Verify that sel_type_all parameter works as expected for element selection based on node components.Deduct 5 points if component selection is missing, 3 points if sel_type_all logic is incorrect, and 2 points if the component filtering is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the animation control system effectively translated from PyANSYS to Vue/vtk.js?",
+      "description": "Verify the implementation of animation parameters (n_frames, loop, movie_filename). Check if the animation correctly cycles through frames with proper timing, respects the loop parameter, and supports exporting to video files where applicable in the Vue ecosystem.Deduct 4 points if frame control is missing, 3 points if looping doesn't work correctly, and 3 points if video export capabilities are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, invalid parameters, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Check for proper validation of input parameters and graceful degradation when features are unavailable.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive scalar selection during animation 2. Real-time statistics of displacement values 3. Animation speed control). Look for features that go beyond the original PyANSYS implementation while maintaining compatibility.Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple animation loops) 2. Function modules unrelated to visualization (e.g., unnecessary UI elements) 3. Fancy effects that affect performance (e.g., excessive WebGL effects that slow rendering). Assess if the code maintains focus on core functionality.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue component design (such as separating visualization logic/UI controls/data processing), test coverage, and build process integration. Check for proper use of Vue reactivity system, component lifecycle hooks, and vtk.js best practices. Examine code organization and maintainability.Deduct 5 points if global state pollution is found or Vue design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process integration is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visualization interface follows modern design principles: 1) Harmonious color mapping for scalar visualization 2) Proper layout of controls and viewport 3) Clear labeling and information presentation. Check if the add_text parameter is properly implemented to show result information.Deduct 3 points for each crowded visual element, 5 points for poor color mapping choices, and 5 points for chaotic control layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Responsive UI controls 2) Smooth animation transitions 3) Proper frame rate during animation. Check if the progress_bar parameter is properly implemented and provides useful feedback during processing or export operations.Deduct 5 points for each operation without feedback, 3 points for stuttering during animation, and 5 points for hard-to-use animation controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "hard"
+}

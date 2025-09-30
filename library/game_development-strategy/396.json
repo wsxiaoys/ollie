@@ -1,0 +1,68 @@
+{
+  "index": 396,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Develop a post-apocalyptic game using Vue3 and TypeScript with main gameplay elements including survival, searching/scavenging, combat, base building, quests, and companions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core survival game system fully implemented?",
+      "description": "Review whether the code accurately implements essential survival mechanics using Vue3 and TypeScript (hunger/thirst/health stats, day-night cycle, environmental hazards). Score 0 if core survival mechanics are missing, 5 if basic stats are implemented but lack dynamic environmental interactions, and 10 if the survival system is comprehensive with meaningful player choices and consequences.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the scavenging and inventory management system properly designed?",
+      "description": "Check if the code includes a robust inventory system with TypeScript interfaces for items, weight/space constraints, and procedurally generated loot tables. Examine whether scavenging locations are diverse with risk-reward mechanics. Deduct 5 points if items lack properties or categorization, 3 points if inventory UI is unintuitive, and 3 points if the scavenging system lacks variety or challenge. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the combat system engaging and balanced?",
+      "description": "Evaluate whether the combat system uses TypeScript classes for weapons with distinct properties, includes both melee and ranged options, and features enemy AI with varying difficulty. Check for Vue reactive health/damage systems and visual combat feedback. Score 3 points for basic attack implementation, 7 points for a complete combat system with multiple weapons, and 10 points for a polished system with strategic depth and balanced progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the base building functionality interactive and meaningful?",
+      "description": "Assess whether the Vue components for base building include placement validation, resource requirements, functional buildings that affect gameplay, and upgrade paths. Check if TypeScript interfaces enforce building prerequisites and constraints. Deduct 5 points if building placement is buggy, 5 points if buildings don't meaningfully impact gameplay, and 3 points if there's no defensive value to constructions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, async operation failures, state inconsistencies, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper TypeScript typing, null checks, and Vue error boundaries. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather affecting gameplay 2. Faction system with reputation mechanics 3. Procedurally generated storylines). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple inventory systems coexisting) 2. Function modules unrelated to post-apocalyptic survival (e.g., a built-in mini-game that breaks immersion) 3. Overengineered components that affect performance (e.g., unnecessary re-renders in Vue components). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue3 composition API usage, TypeScript typing strictness, state management practices, and component reusability. Check for proper separation of concerns between game logic and UI. Deduct 5 points if global state is handled poorly outside a proper store; deduct 5 points if TypeScript types are missing or incorrect; deduct 5 points if Vue components are overly coupled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows post-apocalyptic aesthetics while maintaining usability: 1) Thematic color palette that conveys the setting 2) Proper HUD layout with critical survival information easily visible 3) Clear visual hierarchy distinguishing interactive elements from decorative ones. Deduct 3 points for each cluttered UI section, 5 points for inconsistent visual language, and 5 points for poor readability of critical information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game's Vue transitions and animations enhance the experience: 1) Immediate feedback for player actions (≤100ms) 2) Smooth transitions between game states 3) Proper loading indicators for longer operations. Deduct 5 points for each interaction without feedback, 3 points for jarring transitions between game screens, and 5 points for performance issues during complex interactions (like combat or base building). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

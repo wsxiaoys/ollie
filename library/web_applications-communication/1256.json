@@ -1,0 +1,68 @@
+{
+  "index": 1256,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable for demonstration purposes. Help me write a \"SDU COMPUEX Shandong University Digital Technology Club Activity Record Sheet\" for a \"Network Repair System Development\" project. The background is Shandong University. The Network Repair System Development is based on Python FastAPI+Vue3, supporting repair requests from multiple campuses, with real-time responses and email notifications.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Python FastAPI backend implementation complete?",
+      "description": "Review whether the code properly implements RESTful API endpoints using FastAPI, including authentication, error handling, and middleware for cross-campus repair requests. Check if proper dependency injection, request validation, and response models are implemented. Score 0 if core API endpoints are missing, 5 if basic endpoints are implemented but lack proper validation/error handling, and 10 if the implementation is complete with documentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue3 frontend implementation complete?",
+      "description": "Evaluate whether the Vue3 frontend includes all necessary components for the repair system (request form, status tracking, admin dashboard), uses Composition API or Options API consistently, and implements proper state management (Vuex/Pinia). Deduct 3 points if responsive design is missing, 3 points if component reusability is poor, and 4 points if proper form validation is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the real-time notification system properly implemented?",
+      "description": "Check if the system implements WebSockets or Server-Sent Events for real-time status updates, and verify if the email notification system uses proper templates and error handling. Deduct 5 points if the notification system doesn't handle connection drops, 3 points if email templates are hardcoded without variables, and 2 points if notification preferences aren't configurable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the multi-campus support architecture properly designed?",
+      "description": "Assess whether the system implements proper data segregation for multiple campuses, includes campus-specific configurations, and handles cross-campus reporting/analytics. Deduct 4 points if campus data isn't properly isolated, 3 points if the system lacks campus-specific customization, and 3 points if cross-campus analytics are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network failures, database connection issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered categorization of repair requests 2. Interactive heatmap of repair locations 3. Priority calculation based on historical patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems doing the same thing) 2. Function modules unrelated to network repair (e.g., a built-in weather widget) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/data layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors, preferably using Shandong University's brand colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

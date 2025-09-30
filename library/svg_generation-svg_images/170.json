@@ -1,0 +1,68 @@
+{
+  "index": 170,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display whenever possible.\n\nPlease help me implement this SVG image using code. A vector illustration of a wristwatch with a yellow face and a blue band.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG wristwatch structure properly implemented?",
+      "description": "Check if the code properly defines the SVG structure with appropriate viewBox, dimensions, and namespaces. The SVG should use proper grouping (<g>) for logical components (watch face, band, clock hands, etc.). Deduct 5 points if basic SVG structure is missing, 3 points if grouping is illogical. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the watch face meet the yellow color requirement?",
+      "description": "Verify that the watch face is properly colored yellow as specified. The yellow should be an appropriate shade (not too pale or too neon) for a watch face. Check if gradients or subtle variations are used to enhance visual appeal. Deduct 5 points if the face is not yellow, 3 points if the yellow is inappropriate for a watch face. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the watch band properly implemented with blue color?",
+      "description": "Examine if the watch band is properly rendered in blue with appropriate segments (upper and lower straps). The band should have proper proportions relative to the watch face and realistic strap details. Deduct 5 points if the band is not blue, 3 points if the band lacks realistic detail, 2 points if proportions are unrealistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are watch details accurately represented?",
+      "description": "Evaluate if essential watch components are present: clock hands (hour, minute, second), time markers/numbers, crown/buttons, and realistic watch bezel. Each missing component deducts 2 points, poorly implemented components deduct 1 point each. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code is properly structured with no hardcoded values that affect scalability. SVG should scale properly without distortion at different sizes. Proper use of viewBox, preserveAspectRatio, and responsive techniques should be implemented. Deduct 5 points for non-scaling SVG, 3 points for hardcoded dimensions throughout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated clock hands showing real time 2. Interactive elements like hovering effects 3. Realistic shadows/reflections on the watch face). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary nested groups or elements 2. Duplicated paths or shapes that could be reused with transforms 3. Overly complex paths where simpler geometric elements would suffice. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code causes rendering issues or excessive file size. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular structure, appropriate naming of elements (with id/class attributes), optimization for file size, and adherence to SVG best practices. Deduct 3 points if elements lack descriptive identifiers; deduct 4 points if SVG could be significantly optimized; deduct 3 points if inline styles are used instead of CSS. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the watch design follows professional design principles: 1) Proper proportions matching real wristwatches 2) Appropriate level of detail (not too simplified, not unnecessarily complex) 3) Proper use of colors with appropriate contrast between elements. Deduct 3 points for unrealistic proportions, 3 points for inappropriate detail level, and 4 points for poor color application or contrast. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "If animations are implemented (like moving clock hands or hover effects), judge whether they conform to smooth standards: 1) Smooth transitions without jumps 2) Appropriate animation timing 3) Purposeful animations that enhance rather than distract. Deduct 4 points for jerky/broken animations, 3 points for poorly timed animations, 3 points for distracting or unnecessary animations. If no animations are implemented but could reasonably be expected, deduct 5 points. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

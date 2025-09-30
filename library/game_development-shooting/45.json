@@ -1,0 +1,68 @@
+{
+  "index": 45,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the generated code is executable.\n\nPlease use HTML and JavaScript to implement a:\n### Game Mechanics\n1. **Shooting and Reloading**: Players need to timely shoot zombies and replenish ammunition.\n3. **Multi-level Design**: The game includes multiple levels, each with different challenges and zombie types.\n\n### Game Features\n- **Rich Graphics and Animations**: Using HTML5 and SCSS to create smooth animations and detailed graphic effects.\n- **Intense Gaming Experience**: Fast-paced game design, combined with sound effects and visual effects, creates a tense and exciting gaming experience.\n\n### Game Tips\n- **Ammunition Replenishment**: Pay attention to timely replenishment of ammunition.\n- **Precise Aiming**: Improve aiming accuracy to effectively increase kill efficiency and survival rate.\n\n### Summary\n\"Zombie Mayhem\" is a challenging shooting game that provides players with a tense and fun gaming experience through its rich level design and engaging game mechanics. Create the game and include some comments in the code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core shooting and reloading mechanic fully implemented?",
+      "description": "Verify if the code implements shooting mechanics (point-and-click or keyboard controls), hit detection, damage calculation, and ammunition management. Check if reloading is properly implemented with appropriate cooldowns and visual/audio feedback.0 points if core gameplay is missing, 5 points if basic shooting works without proper reloading, 10 points if the shooting system is complete with ammo tracking, reloading animations, and hit feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the zombie AI behavior and variety implemented?",
+      "description": "Evaluate the implementation of zombie movement patterns, attack behaviors, and variety of zombie types. Check for different zombie classes with unique attributes (speed, health, damage, special abilities).0 points if zombies don't move or interact, 5 points for basic movement and single zombie type, 10 points for multiple zombie types with distinct behaviors and attack patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the multi-level design system implemented?",
+      "description": "Assess if the game includes multiple levels with increasing difficulty, different zombie spawning patterns, and level progression logic. Check for level-specific challenges, environments, or mechanics.0 points if only one static level exists, 5 points if multiple levels exist but lack variety, 10 points for a complete level system with unique challenges per level and proper difficulty scaling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the graphics and animations rich and smooth?",
+      "description": "Evaluate the quality of visual elements including zombie animations, shooting effects, blood splatter, environment details, and UI animations. Check if CSS/SCSS animations are used effectively for smooth transitions.Deduct 3 points for static/missing player animations, 3 points for missing zombie animations, 2 points for lack of environmental details, and 2 points for missing shooting/impact effects. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (browser compatibility issues, irregular screen sizes, rapid input sequences, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment based on player performance 2. Unique power-ups or weapons 3. Environmental interactions or destructible elements).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions 2. Function modules unrelated to the zombie shooting theme 3. Fancy effects that affect performance without adding gameplay value.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, commenting quality, and maintainability. Check for proper object-oriented or functional programming principles.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high; deduct 5 points if the code lacks proper comments as requested. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Clear health/ammo indicators 2) Intuitive controls and feedback 3) Readable text during gameplay 4) Consistent visual style throughout.Deduct 3 points for cluttered UI elements, 3 points for inconsistent visual styling, 2 points for poor readability during gameplay, and 2 points for unintuitive control indicators. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the gaming experience intense and engaging?",
+      "description": "Judge whether the game provides a tense and exciting experience through: 1) Appropriate difficulty progression 2) Sound effects for shooting, zombie groans, and environmental ambiance 3) Visual feedback for hits, damage, and critical events 4) Game pacing that creates tension.Deduct 3 points for missing sound effects, 3 points for lack of visual feedback on important actions, 2 points for poor game pacing, and 2 points for unbalanced difficulty. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "medium"
+}

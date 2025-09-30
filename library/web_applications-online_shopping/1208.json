@@ -1,0 +1,68 @@
+{
+  "index": 1208,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Create a WeChat Mini Program about shawls and fur products similar to the Dior WeChat Mini Program. I'm using the WeChat Developer Tools.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Mini Program registration and configuration properly implemented?",
+      "description": "Evaluate whether the code includes complete WeChat Mini Program registration in app.js, proper configuration in app.json (including pages array, window settings, tabBar if applicable), and correct project.config.json settings. Check if global styles are defined in app.wxss. Score 0 if core configuration files are missing, 5 if basic configuration is present but incomplete, and 10 if all required configurations are properly implemented with appropriate permissions for network requests.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the application implement a complete product showcase system?",
+      "description": "Check if the code includes comprehensive product display pages with proper information architecture (categories, collections, product details). Evaluate whether the product listings include high-quality image display with lazy loading, detailed product information (materials, dimensions, pricing), and multi-angle product viewing. Deduct 5 points if the product structure is illogical, 3 points if image optimization is missing, and 3 points if luxury product details (material origin, craftsmanship) are inadequate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the shopping experience and cart functionality properly implemented?",
+      "description": "Assess whether the code implements a complete shopping journey including add-to-cart, cart management, checkout process, and order confirmation. Check for features like quantity adjustment, product removal, price calculation, and persistent cart storage. Review if product variants (colors, sizes) are handled correctly. Deduct 5 points if the cart doesn't persist between sessions, 3 points if variant selection is buggy, and 5 points if the checkout flow is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the luxury brand visual identity and premium UX maintained throughout the Mini Program?",
+      "description": "Evaluate if the code creates a premium experience similar to Dior with high-quality product imagery, brand-consistent typography, custom animations for transitions, and refined micro-interactions. Check if the implementation includes parallax scrolling, fade-in effects for product listings, and elegant loading states. Deduct 5 points for generic templates without brand customization, 3 points for missing luxury-level animations, and 5 points for poor visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common exceptions (network errors, empty states, loading states, permission denials, etc.) and provides appropriate feedback mechanisms. Check if there are fallbacks for failed image loading and retry mechanisms for API failures. Test edge cases like adding out-of-stock items or submitting incomplete forms. Code with strong robustness should handle these scenarios elegantly, giving 10 points. If robustness is average, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the luxury shopping experience (e.g., 1. Virtual try-on for shawls using AR 2. Material texture visualization through 3D rendering 3. Personalized styling recommendations 4. Interactive product storytelling). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple product filtering systems coexisting) 2. Function modules unrelated to luxury fashion retail (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down browsing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core shopping functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the modular design (such as separating UI/business logic using MVVM pattern), component reusability, and code organization. Check if the code follows WeChat Mini Program best practices using proper Custom Components. Deduct 5 points if global state management is chaotic; deduct 5 points if the code duplication rate is high (over 30%); deduct 5 points if there's no clear separation between presentation and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional luxury brand design standards?",
+      "description": "Evaluate whether the overall design follows luxury design principles: 1) Refined color palette (primarily neutral colors with subtle accents) 2) Generous whitespace (minimum 16px margins, elegant typography with proper line height ≥1.6) 3) High-resolution imagery without pixelation 4) Subtle micro-animations that enhance perceived value. Deduct 3 points for each crowded visual element, 5 points for inappropriate color combinations, and 5 points for poor typography implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects provide a premium feel: 1) Immediate tap feedback (≤100ms) 2) Smooth scrolling without jank (60fps) 3) Elegant transitions between pages (300-500ms duration) 4) Tactile feedback aligned with luxury experience. Deduct 5 points for each laggy interaction, 3 points for abrupt transitions, and 5 points for non-intuitive navigation patterns. Check specifically for smooth image gallery swiping and elegant animation when adding products to cart. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

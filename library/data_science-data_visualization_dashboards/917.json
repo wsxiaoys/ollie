@@ -1,0 +1,68 @@
+{
+  "index": 917,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Create a visualization that draws candlestick charts and labels patterns, strokes, segments, pivots, buy/sell points, and resistance levels.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the candlestick chart visualization properly implemented?",
+      "description": "Review whether the code accurately renders candlestick charts with correct OHLC (Open, High, Low, Close) data representation. Check if the candlesticks properly show bullish (typically green/white) and bearish (typically red/black) price movements. Score 0 if the basic candlestick rendering is missing, 5 if only basic candlesticks are displayed without proper styling, and 10 if candlesticks are fully implemented with proper color coding and proportional scaling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are chart patterns properly identified and labeled?",
+      "description": "Evaluate how well the code identifies and labels common chart patterns (e.g., head and shoulders, double tops/bottoms, triangles, flags). Check if the pattern recognition algorithm uses proper technical analysis principles rather than simplistic shape matching. Deduct 5 points if pattern detection is rudimentary, 3 points if the visual labeling is unclear, and give full marks if patterns are correctly identified with confidence levels and clear visual indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the strokes, segments, and pivots correctly identified and visualized?",
+      "description": "Check whether the code identifies price movements as strokes (directional price movements), segments (collections of strokes), and pivots (significant reversal points). The visualization should clearly differentiate between these elements with distinct visual styling. Deduct 5 points if the algorithm doesn't properly identify swing highs/lows, 5 points if the visual representation is confusing, and give full points if both the algorithm and visualization are technically accurate.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are buy/sell signals and resistance/support levels clearly marked?",
+      "description": "Examine if the code implements algorithms to identify potential buy/sell signals based on technical analysis principles and marks support/resistance levels. The visualization should prominently highlight these critical trading points. Deduct 5 points if the signals aren't based on established technical indicators, 3 points if they lack visual prominence, and give full marks if signals include both entry and exit points with risk management annotations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data points, outliers, different data formats, or zoom levels) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive tooltips showing pattern confidence levels 2. Ability to toggle between different timeframes 3. Visual backtesting of identified patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar indicators (e.g., multiple versions of the same resistance level detection) 2. Function modules unrelated to technical analysis (e.g., unnecessary animations) 3. Elements that clutter the visualization and reduce clarity. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/user interaction layers), reusability of components, and performance optimization for large datasets. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the visualization performs poorly with larger datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows financial visualization best practices: 1) Appropriate color scheme for financial data (distinguishing up/down movements) 2) Clear grid lines and axis labeling 3) Proper information hierarchy with the most important data being most visually prominent. Deduct 3 points for each crowded visual element, 5 points for poor color choices that hinder data interpretation, and 5 points for chaotic pattern/indicator labeling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the chart provides essential interactive capabilities: 1) Smooth zooming and panning without visual lag 2) Responsive tooltips appearing within 100ms 3) Clear visual feedback when hovering over significant elements like patterns or signals. Deduct 5 points if zooming/panning is jerky, 3 points if tooltips are delayed or poorly positioned, and 5 points if the visualization lacks basic interactivity expected in modern financial charts. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

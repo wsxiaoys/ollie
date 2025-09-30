@@ -1,0 +1,68 @@
+{
+  "index": 1267,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that any code you generate is executable. Write a computer program that records to-do items, with requirements including category management, date setting, and automatic reminders.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core to-do item management system fully implemented?",
+      "description": "Review whether the code accurately implements CRUD operations for to-do items (create, read, update, delete). Check if each to-do item contains essential properties like title, description, status, and if the system supports filtering and sorting. Score 0 if core operations are missing, 5 if basic operations are implemented, and 10 if advanced features like bulk operations and undo functionality are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the category management system properly designed?",
+      "description": "Evaluate whether the code implements a robust category system that allows users to create, edit, delete categories and assign to-do items to multiple categories. Check for category hierarchy support and category-based filtering/sorting. Deduct 3 points if categories are hardcoded, 5 points if items can only belong to one category, and 5 points if category operations aren't persistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the date setting and deadline functionality properly implemented?",
+      "description": "Check if the program allows setting dates for to-do items with proper date validation, timezone handling, and recurring tasks support. Verify if the interface includes a date picker or similar intuitive input method. Deduct 3 points if date validation is missing, 3 points if timezone issues exist, and 5 points if recurring tasks aren't supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the automatic reminder system effectively implemented?",
+      "description": "Assess whether the code includes a functioning reminder system that can trigger notifications based on due dates. Check for customizable reminder settings (e.g., time before deadline), notification methods (e.g., pop-up, email), and background process handling. Deduct 5 points if reminders don't work when the app is closed, 3 points if customization options are limited, and 5 points if notifications aren't properly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network issues for cloud sync, database corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Natural language processing for quick entry 2. Smart prioritization based on user patterns 3. Integration with calendar systems or third-party apps). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple date handling methods) 2. Function modules unrelated to to-do management (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data model/view/controller layers), unit test coverage, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling or logging system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Smooth transitions when adding/completing tasks 3) Clear visual focus guidance for priority items. Deduct 5 points for each operation without feedback, 3 points for laggy animations during list scrolling, and 5 points for unintuitive navigation between different views (categories, calendar, etc.). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

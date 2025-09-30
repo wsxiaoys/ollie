@@ -1,0 +1,68 @@
+{
+  "index": 1371,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the code you provide is executable and properly displayed. I want to create a word-matching elimination game (like a memory game) for English vocabulary, as a web application. How should I provide instructions to you?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the word-matching game core mechanism fully implemented?",
+      "description": "Review whether the code accurately implements the card flip system through HTML/JavaScript, including card randomization, matching logic validation, and scoring system. Check if the game includes proper card state management (hidden/revealed/matched) and win condition detection. Score 0 if the core matching logic is not implemented, 5 if only basic card flipping is implemented, and 10 if complete matching rules with scoring system are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the English vocabulary learning system effectively integrated?",
+      "description": "Evaluate whether the implementation includes a comprehensive vocabulary management system with word-definition pairing, pronunciation support (audio playback), and difficulty level categorization. Check for vocabulary progress tracking and adaptive learning features. Deduct 5 points if pronunciation is missing, 3 points if no difficulty progression exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game progression and level system properly designed?",
+      "description": "Assess whether the code implements multiple difficulty levels, progressive vocabulary sets, and achievement/scoring systems. Verify the presence of timer functionality, streak counting, and performance analytics. Deduct 5 points if no level progression exists, 3 points if scoring system is incomplete. Check for save/load game progress functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete game state management and data persistence constructed?",
+      "description": "Check whether the code includes comprehensive game state management with local storage for vocabulary progress, user preferences, and game statistics. Evaluate the implementation of game pause/resume, vocabulary set customization, and performance tracking over time. Deduct 5 points if data persistence is not implemented, 3 points if user progress tracking is missing. Give 10 points if fully implemented with robust data management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid vocabulary data, audio loading failures, localStorage limitations, rapid clicking, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Voice recognition for pronunciation practice 2. Adaptive difficulty based on performance 3. Social sharing of achievements 4. Custom vocabulary import 5. Multi-language support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems coexisting) 2. Function modules unrelated to vocabulary learning (e.g., built-in social media integration) 3. Fancy effects that affect learning focus (e.g., distracting particle animations during gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core learning functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/vocabulary management/UI rendering layers), component reusability, and code organization. Deduct 5 points if global state pollution is found or MVC/MVP patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no configuration management exists for vocabulary sets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern educational app design principles: 1) Harmonious color matching suitable for learning (no more than 3 primary colors, high contrast for readability) 2) Proper card layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography system (body font size ≥ 16px for accessibility, line height over 1.4 times). Deduct 3 points for each cluttered visual element, 5 points for color combinations that strain the eyes, and 5 points for poor card arrangement that affects gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to educational game standards: 1) Card flip animation duration controlled between 250-400ms 2) Click feedback delay ≤ 80ms for responsive feel 3) Clear visual feedback for correct/incorrect matches 4) Smooth transitions between game states. Deduct 5 points for each interaction without proper feedback, 3 points for jarring animation transitions, and 5 points if card flip animations interfere with gameplay rhythm. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

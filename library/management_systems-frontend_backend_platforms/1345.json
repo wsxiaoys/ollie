@@ -1,0 +1,68 @@
+{
+  "index": 1345,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. Help me write a locally launched computer application including both frontend and backend, implementing the following lottery logic: from numbers 1-200, draw two numbers from each group of ten, for a total of forty \"general benefit\" prizes, and additionally draw three third-place prizes, two second-place prizes, and one first-place prize.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Lottery Core Algorithm Implementation",
+      "description": "Evaluate the implementation of the core lottery drawing algorithm that correctly selects numbers according to the specified requirements: 40 'general benefit' prizes (two from each group of ten numbers 1-200), plus 3 third-place prizes, 2 second-place prizes, and 1 first-place prize.Check if the algorithm correctly implements: 1) Selection of exactly 2 numbers from each decade (1-10, 11-20, etc.) 2) No duplicates across all prize tiers 3) Clear distinction between general and special prizes. Score 0 if the core algorithm is missing, 5 if partially implemented with errors, and 10 if fully implemented with proper validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Frontend-Backend Integration",
+      "description": "Assess how well the frontend and backend components communicate and work together to provide a seamless lottery application.Check for: 1) Proper API endpoints for lottery operations 2) Appropriate data transfer format (JSON/XML) 3) Error handling for failed requests 4) Loading states during backend operations. Deduct 3 points for missing error handling, 3 points for no loading indicators, and 4 points if the integration is completely broken or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Local Application Deployment",
+      "description": "Evaluate how easily the application can be launched locally with clear setup instructions.Check if the solution includes: 1) Clear setup instructions 2) Dependency management (package.json, requirements.txt, etc.) 3) Configuration options for local environment 4) Single command startup process. Deduct 2 points for each missing component. Award full 10 points only if a novice developer could set up and run the application within 10 minutes.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Lottery Result Visualization",
+      "description": "Evaluate the visual presentation of the lottery results, including how clearly different prize tiers are displayed and distinguished.Check whether: 1) Results clearly distinguish between prize categories 2) Visual hierarchy emphasizes higher-value prizes 3) Animation or visual effects enhance the drawing experience 4) Results are easily readable and accessible. Deduct 2 points for each missing aspect. Give 10 points only if the visualization is both functional and engaging.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations and provide friendly error prompts or recovery mechanisms.Evaluate whether the code can handle: 1) Invalid inputs 2) Random number generation edge cases 3) User interaction errors 4) Server/client connection issues. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the lottery experience.Check for features like: 1) Draw history tracking 2) Statistical analysis of past draws 3) Personalized 'lucky number' recommendations 4) Visual/audio feedback during drawing process. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check for unnecessary or redundant features that complicate the codebase without adding value.Check for three types of redundancy: 1) Multiple implementations of similar functions 2) Unrelated features that distract from the lottery purpose 3) Over-engineered solutions for simple requirements. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review code architecture, testing, and build processes for professional engineering standards.Review for: 1) Modular design separating lottery logic/UI/data layers 2) Unit test coverage of critical functions 3) Build process automation 4) Clean code principles. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Quality",
+      "description": "Evaluate whether the overall UI design follows modern design principles and provides a professional look.Evaluate whether the design follows: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "User Interaction Quality",
+      "description": "Judge whether the dynamic effects and user interactions are smooth, intuitive, and provide appropriate feedback.Judge whether interactions: 1) Provide feedback within 100ms of user actions 2) Include appropriate animations for lottery drawing (300-500ms duration) 3) Guide user focus to important elements 4) Make the lottery drawing process exciting. Deduct 5 points for each operation without feedback, 3 points for visual after-images during animations, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

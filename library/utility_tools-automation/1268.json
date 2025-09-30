@@ -1,0 +1,68 @@
+{
+  "index": 1268,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable if possible. Context: Food delivery robot project architecture: Frontend using uniapp vue3 js, API: Django, database: Django's built-in SQLite, MQTT service, ROS1. Requirements: Phone remote control sends MQTT messages, MQTT to JS, JS sends ROSJS to the robot's ROS1. Functionality needed: A mini-program compatible with both tablets and phones featuring smooth joystick controls for the robot vehicle.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the joystick control interface fully implemented?",
+      "description": "Review whether the code accurately implements a touchscreen joystick with HTML5/JavaScript, including touch event handling, movement range limitations, auto-centering, and haptic feedback. Score 0 if the core interaction is missing, 5 if basic movement is implemented but lacks responsive design, and 10 if the joystick works flawlessly across different screen sizes with proper touch and drag events.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the MQTT communication layer properly implemented?",
+      "description": "Check if the code includes MQTT client implementation with proper connection handling, topic subscription/publishing, QoS settings, and reconnection mechanisms. Verify that MQTT messages are properly formatted for robot control commands (velocity, direction, etc.). Deduct 5 points if there's no reconnection handling, 3 points if there's no connection status indication, and 3 points if message encoding/serialization is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the ROSJS bridge implementation complete?",
+      "description": "Evaluate whether the code properly implements roslibjs to communicate with ROS1, including WebSocket connection setup, topic publishing/subscription handling, service calls, and action client implementations. Check for proper error handling when ROS connection fails. Deduct 5 points if the implementation lacks connection state management, 3 points if it doesn't handle message type conversions properly, and 3 points if it doesn't include fallback mechanisms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Django API and database integration effectively designed?",
+      "description": "Assess whether the Django backend properly integrates with the frontend, including RESTful API endpoints for robot status/control, authentication mechanisms, and database models for storing robot states, user preferences, and operational logs. Check if the API includes proper validation, rate limiting, and error responses. Deduct 5 points if there's no authentication, 3 points if database models are poorly designed, and 3 points if the API lacks comprehensive documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, MQTT broker unavailability, ROS disconnection, device orientation changes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual robot path preview 2. Battery level indicators with predictive alerts 3. Obstacle detection visualization 4. Motion gesture controls as joystick alternatives). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar control mechanisms (e.g., multiple joystick libraries combined) 2. Function modules unrelated to robot control (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations that impact responsiveness). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating control logic/UI/communication layers), unit test coverage, and build process automation. Examine uniapp component organization, Vue3 composition API usage, and code splitting strategies. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Adaptive layouts for both tablet and phone form factors. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for failing to properly adapt between tablet and phone layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Joystick control latency ≤ 50ms 2) Robot response visualization updates at ≥30fps 3) Clear visual feedback for connection status changes. Measure actual touch-to-movement latency in the control system. Deduct 5 points for each operation without feedback, 3 points for joystick stuttering during fast movements, and 5 points for control commands that execute with >200ms delay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

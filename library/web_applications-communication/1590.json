@@ -1,0 +1,68 @@
+{
+  "index": 1590,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Create a file download interface using Vue2 with ElementUI and Flask.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue2 front-end file download interface fully implemented?",
+      "description": "Review whether the code includes proper Vue2 components with ElementUI integration for file selection, download progress tracking, and file handling. Check for proper event handling, data binding, and computed properties. Score 0 if the core Vue2 structure is missing, 5 if basic components are implemented but missing key features, and 10 if the implementation includes file list display, filtering, and robust download functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Flask backend API properly implemented?",
+      "description": "Evaluate whether the Flask API includes routes for file listing, downloading, and proper HTTP responses with appropriate status codes and headers (especially Content-Disposition, Content-Type). Check for proper file path handling, security measures against path traversal attacks, and streaming for large files. Deduct 5 points if security measures are missing, and 3 points if streaming for large files is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the communication between Vue2 and Flask properly implemented?",
+      "description": "Check whether the code uses Axios or Fetch API correctly with proper error handling, request/response interceptors, and download progress tracking. Assess whether appropriate HTTP methods are used (GET for listing, GET with proper parameters or POST for downloading). Deduct 5 points if error handling is inadequate, 3 points if download progress tracking is missing. Give 10 points for complete implementation with proper CORS handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the file download functionality feature-complete?",
+      "description": "Verify whether the implementation includes essential file download features: file size display, mime-type identification, download progress indication, pause/resume capability (if applicable), and batch download functionality. Check for proper handling of various file types. Deduct 5 points if key features are missing, 3 points if the user experience during download is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid file paths, file access permissions, network interruption, large file downloads, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Preview for common file types 2. MD5/SHA verification for downloads 3. Download speed limiting options 4. Drag-and-drop interface for file organization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple download methods coexisting) 2. Function modules unrelated to file downloading (e.g., a built-in media player) 3. Fancy effects that affect performance (e.g., excessive animations during downloads). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, API services, and utility functions), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for download buttons and progress indicators. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling of file lists, and 5 points for hard-to-find download buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

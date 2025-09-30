@@ -1,0 +1,68 @@
+{
+  "index": 1144,
+  "question": "You are a coding expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code in your demonstration. Write an HTML page that can parse mathematical formulas using the marked library.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic HTML structure properly implemented?",
+      "description": "Check if the HTML page has proper DOCTYPE, head, body sections, responsive meta tags, and appropriate CSS styling. Verify if there's proper semantic structure (headers, main content, etc.). Deduct 3 points if doctype/meta tags are missing, 3 points for improper semantic structure, and 2 points for lack of responsive design considerations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the marked library correctly integrated?",
+      "description": "Evaluate if the marked library is properly imported (via CDN or npm), initialized with appropriate configuration, and called correctly in the code. Check if the latest stable version is used and if there are fallback mechanisms. Deduct 5 points if the library is not properly loaded, 3 points if an outdated version is used without justification, and 2 points if there's no error handling for library loading failures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is mathematical formula parsing functionality implemented?",
+      "description": "Verify that the code integrates a math rendering library (like MathJax or KaTeX) alongside marked for formula rendering. Check if both inline formulas (e.g., $y=x^2$) and block formulas (e.g., $$\\int_0^\\infty e^{-x^2} dx = \\frac{\\sqrt{\\pi}}{2}$$) are supported. Deduct 5 points if only one formula type is supported, 8 points if formula rendering is broken/incomplete, and 10 points if math formula parsing is completely missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a proper user interface for input and rendering?",
+      "description": "Assess if the page provides text input areas for entering markdown with math formulas and separate display areas for rendered output. Check if there's real-time preview or an explicit render button with proper event handling. Deduct 3 points for lack of clear input/output separation, 3 points for missing real-time/button-triggered rendering, and 4 points if the interface is not intuitive or lacks proper labels/instructions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid LaTeX syntax, script injection attempts, or rendering errors) and provide friendly error messages. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Formula syntax highlighting 2. Export to PDF/image options 3. Formula templates or quick insertion buttons 4. Dark/light mode toggle). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple markdown parsers running simultaneously) 2. Function modules unrelated to formula parsing (e.g., unnecessary media players) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating parsing logic/view/event handlers), code organization, and maintainability. Deduct 5 points if global state pollution is found or if proper design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments for complex logic sections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Rendering feedback delay ≤ 200ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback during formula processing. Deduct 5 points for each operation without feedback, 3 points for noticeable lag during real-time rendering, and 5 points for confusing or misleading interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

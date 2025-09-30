@@ -1,0 +1,68 @@
+{
+  "index": 1167,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and specialized responses. Make sure that the code you generate is executable and ready for demonstration. Help me create a small internal tool that can collect weekly reports submitted by everyone and compile them into a final consolidated document.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the report collection system's core functionality implemented?",
+      "description": "Review whether the code implements the essential features for report collection: form submission, data validation, and storage mechanism. Check if the system allows users to submit reports with necessary fields (name, date, content, etc.). Score 0 if collection functionality is missing, 5 if basic submission works but lacks validation, 10 if complete with proper validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the report consolidation feature properly implemented?",
+      "description": "Evaluate whether the code can effectively aggregate individual reports into a consolidated document. Check if it sorts by department/date, removes duplicates, and maintains proper formatting. Deduct 5 points if consolidation is manual rather than automated, 3 points if formatting is inconsistent. Full score requires intelligent merging with categorization capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence mechanism appropriate?",
+      "description": "Check whether the tool implements suitable data storage for reports (database, file system, etc.). Assess if it includes backup functionality and can handle concurrent access. Deduct 5 points if data is only stored in memory without persistence, 3 points if there's no backup mechanism. Give 10 points for complete implementation with transaction support and data integrity checks.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user authentication and permission system implemented?",
+      "description": "Review whether the tool implements user roles (e.g., submitters, reviewers, administrators) with appropriate access controls. Check if it provides different views/capabilities based on user roles. Score 0 if authentication is missing, 5 if basic login exists but lacks proper role-based permissions, 10 if complete with secure session management and fine-grained access control.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, server errors, concurrent submissions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automated report summarization using NLP 2. Interactive charts/visualizations of report metrics 3. Customizable templates for different departments). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple save mechanisms coexisting) 2. Function modules unrelated to report collection (e.g., a built-in calendar unrelated to deadlines) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/business/presentation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

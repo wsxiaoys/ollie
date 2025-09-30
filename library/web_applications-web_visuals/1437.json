@@ -1,0 +1,68 @@
+{
+  "index": 1437,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. HTML code to simulate iPhone interface for viewing images or videos - source code",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the simulated iPhone interface accurately mimic the real iOS design?",
+      "description": "Evaluate if the interface includes key iPhone elements (status bar, home indicator, correct screen dimensions). Check if it uses accurate iOS design system (SF Pro font, iOS color palette, correct corner radius). Score 0 if it looks nothing like iOS, 5 if it has basic resemblance, 10 if it's nearly indistinguishable from real iOS.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image/video viewing functionality properly implemented?",
+      "description": "Check if the code provides smooth viewing experience with proper loading states and error handling. Evaluate support for both images and videos with appropriate format compatibility (JPEG, PNG, MP4, WebM). Test for zoom/pinch functionality and rotation support. Deduct 5 points if missing video support, 3 points if missing zoom functionality, 5 points if lacking proper media controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are iOS-specific gestures and interactions implemented?",
+      "description": "Review implementation of standard iOS photo/video viewing gestures: pinch-to-zoom, swipe-to-dismiss, double-tap to zoom in/out, swipe between media items. Test for smooth animations with proper physics (deceleration, bounce effects). Score 0 if no gesture support, 5 if basic gestures work, 10 if all gestures work with proper iOS-like physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the media gallery functionality robust and complete?",
+      "description": "Evaluate if the code includes gallery view with thumbnails, transitions between gallery/detail views, proper handling of portrait/landscape orientations. Check if it includes media metadata display, sharing options, and deletion functionality. Deduct 3 points for missing transitions, 3 points for poor orientation support, 4 points for missing metadata/actions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as broken image links, unsupported media formats, network issues during loading, touch events on non-touchscreen devices). Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Live Photo support with force touch simulation 2. Memory-efficient lazy loading of high-resolution images 3. Custom filters or editing tools 4. Intelligent face detection for improved cropping). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image loading libraries coexisting) 2. Function modules unrelated to image/video viewing (e.g., unnecessary social media integration) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data layers), code reusability, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no performance optimizations for image/video loading. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows iOS design principles: 1) Consistent color matching with iOS system colors 2) Proper layout spacing according to iOS guidelines 3) Correct typography using SF Pro font family. Deduct 3 points for each non-iOS visual element, 5 points for incorrect color schemes, and 5 points for improper spacing or font usage. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to iOS interaction patterns: 1) Response to touch within 100ms 2) Smooth animations at 60fps 3) Proper haptic feedback simulation 4) Spring animations for bounces and transitions. Deduct 5 points for janky scrolling/zooming, 3 points for non-standard transition animations, and 5 points for significant UI freezing during operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

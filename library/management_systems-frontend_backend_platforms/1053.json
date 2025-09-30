@@ -1,0 +1,68 @@
+{
+  "index": 1053,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. I want to create a front-end interface for an energy system monitoring platform.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the energy system monitoring dashboard layout properly implemented?",
+      "description": "Review whether the code implements a comprehensive dashboard layout with key energy monitoring sections (overview panel, detailed metrics, historical data, alerts). Check for responsive design that adapts to different screen sizes. Score 0 if no dashboard structure exists, 5 if only basic layout is implemented, and 10 if the layout includes all necessary monitoring components with proper hierarchy and organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are real-time data visualization components correctly implemented?",
+      "description": "Evaluate the implementation of dynamic charts (line graphs, gauges, heat maps) for energy metrics. Charts should update in real-time with proper animations for transitions. Verify that data binding mechanisms are implemented for live updates. Deduct 5 points if visualizations are static only, 3 points if real-time updates are missing. Full score requires at least 3 different visualization types with proper legends and tooltips.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a comprehensive system for alerts and anomaly detection?",
+      "description": "Check for implementation of visual alert indicators, notification system, and threshold configuration. The alert system should include different severity levels with appropriate visual cues (colors, icons). Evaluate whether anomaly detection logic is implemented to highlight unusual energy consumption patterns. Deduct 5 points if alerts are visual-only without interaction, and 5 points if threshold configuration is missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete energy data comparison and analysis module?",
+      "description": "Review whether the code implements features for comparing historical vs. current energy usage, cross-system component comparison, and trend analysis. Check for filtering capabilities by time range and system components. Deduct 5 points if only basic comparisons are available, 5 points if advanced analytics features (forecasting, pattern detection) are missing. Full score requires interactive comparison tools with exportable reports.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as data loading failures, empty datasets, sensor malfunction indicators, network interruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive maintenance alerts using data patterns 2. Energy efficiency recommendations based on usage 3. Custom dashboard configuration for different user roles). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar data displays (e.g., multiple charts showing the same information) 2. Function modules unrelated to energy monitoring (e.g., unnecessary administrative tools) 3. Fancy effects that affect performance (e.g., excessive animations that impact dashboard responsiveness). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core monitoring functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data fetching/visualization/alert logic layers), component reusability, and code organization. Deduct 5 points if global state management is chaotic or proper design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between UI components and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching appropriate for monitoring systems (limited use of bright colors reserved for alerts) 2) Proper layout spacing with clear information hierarchy 3) Professional typography system with good readability for data-heavy displays. Deduct 3 points for each cluttered dashboard section, 5 points for poor color coding that makes data interpretation difficult, and 5 points for inconsistent styling across the interface. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Data updates occur without disrupting user focus 2) Transition animations for chart updates are under 300ms 3) Interactive elements provide clear feedback on hover/click/selection. Deduct 5 points for data refreshes that interrupt user workflow, 3 points for laggy interactions when filtering large datasets, and 5 points if important alerts lack appropriate attention-grabbing mechanisms. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

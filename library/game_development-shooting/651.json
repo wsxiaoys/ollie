@@ -1,0 +1,68 @@
+{
+  "index": 651,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You will always generate complete, runnable project code, please ensure the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluate its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or require user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nPlease create a 3D shooting game (using Three.js). The player pilots a spaceship in a space scene, using WASD to control movement and mouse to control shooting direction. Score points by destroying randomly generated asteroids, and lose shield value when hit by asteroids. Requirements: 1. Third-person camera following the player 2. Shield impact effects 3. Asteroid fragmentation effects 4. Dynamic lighting changes.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D space environment fully implemented with Three.js?",
+      "description": "Check if the code correctly sets up a Three.js environment with proper scene initialization, WebGL renderer configuration, lighting, and a space-themed skybox or background. The environment should include stars or other space elements to create immersion. Score 0 if Three.js is not properly initialized, 5 if basic scene setup is present but lacks space elements, and 10 if the environment is complete with proper optimization techniques (such as frustum culling).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the spaceship player control system effectively implemented?",
+      "description": "Evaluate if WASD keyboard controls for movement and mouse for direction/shooting are properly implemented with smooth motion physics. Check for inertia simulation, acceleration/deceleration effects, and collision boundaries. Score 0 if controls are missing, 5 if basic movement works but feels rigid or unnatural, and 10 if controls are responsive with proper physics implementation including velocity damping and rotation smoothing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the third-person camera system properly implemented?",
+      "description": "Check if the third-person camera follows the player spaceship with appropriate smoothing and maintains proper framing. Verify camera collision avoidance, FOV settings, and whether it provides good visibility for gameplay. Score 0 if third-person camera is not implemented, 5 if basic following exists but has issues (jitter, poor positioning, clipping), and 10 if camera movement is smooth with proper lag, damping, and perspective adjustments.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the asteroid generation and destruction mechanics fully functional?",
+      "description": "Review if asteroids are randomly generated with varying sizes, rotations, and velocities. Check for proper collision detection with projectiles, score incrementing, and asteroid fragmentation effects. Score 0 if asteroid system is missing, 5 if basic asteroids exist but lack variety or proper collision detection, and 10 if the system includes procedural asteroid generation with realistic physics and proper optimization for multiple objects.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, focus loss, excessive game objects, performance degradation on different devices, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Procedural asteroid generation with unique shapes 2. Particle-based weapon effects 3. Dynamic soundtrack that responds to gameplay intensity). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the space shooter (e.g., unnecessary UI elements) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game mechanics/rendering/input handling), object-oriented structure, and event-driven architecture. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if asset loading and scene management are not handled efficiently. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional gaming standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Consistent art style with appropriate textures and models 2) Clear visual feedback for player actions and damage 3) Professional UI elements (score display, shield indicator, game over screen). Deduct 3 points for each inconsistent visual element, 5 points for poor texture quality or improper lighting, and 5 points for confusing or cluttered UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to gaming standards: 1) Consistent frame rate above 30 FPS 2) Responsive controls with under 100ms input lag 3) Smooth transitions for shield impacts and asteroid destruction effects 4) Dynamic lighting changes that enhance gameplay without causing visual confusion. Deduct 5 points for frame drops during normal gameplay, 3 points for delayed visual feedback, and 5 points for effects that obscure important gameplay elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "medium"
+}

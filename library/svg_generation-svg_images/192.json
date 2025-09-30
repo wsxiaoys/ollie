@@ -1,0 +1,68 @@
+{
+  "index": 192,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and specialized responses. Make sure the code you generate is executable and can be properly displayed. Please help me implement this SVG image using code: a close up of a pie chart with a number of CPUs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG pie chart structure correctly implemented?",
+      "description": "Review whether the code accurately implements pie chart segments using SVG path elements or arc commands, with proper mathematical calculations for angles and coordinates. Check if CPU data is correctly converted to proportional segments. Score 0 if basic pie structure is missing, 5 if only simple segments are created without proper proportions, and 10 if all mathematical calculations are accurate with properly rendered pie segments.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are CPU-specific visual elements and labeling properly displayed?",
+      "description": "Evaluate whether the implementation includes CPU-related visual indicators such as processor labels, core counts, usage percentages, or performance metrics. Check if text labels are positioned correctly relative to pie segments and remain readable. Deduct 5 points if labels overlap or are misaligned, and 3 points if CPU-specific terminology is missing or inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the close-up detail visualization effectively rendered?",
+      "description": "Check whether the 'close-up' aspect is achieved through appropriate SVG viewBox settings, zoom effects, or detailed segment rendering. Evaluate if fine details like borders, gradients, or texture patterns enhance the close-up appearance. Deduct 5 points if the visualization lacks detail depth, and 3 points if the close-up effect is not convincing or professional-looking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is interactive functionality and data binding implemented?",
+      "description": "Assess whether the code includes interactive features such as hover effects, click handlers, tooltips showing CPU details, or dynamic data updates. Check if the pie chart can respond to user interactions and display additional CPU information. Deduct 5 points if no interactivity is provided, and 3 points if interactions are buggy or non-responsive. Give 10 points if fully interactive with smooth user experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data inputs, zero values, missing CPU data, browser compatibility issues, etc.) and provide friendly error handling or fallback mechanisms. Code with strong robustness should effectively handle edge cases like empty datasets or extreme values, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes impressive features that enhance the visualization experience (e.g., 1. Animated segment transitions 2. Real-time CPU monitoring integration 3. 3D visual effects 4. Comparative CPU performance overlays 5. Export functionality for charts). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar chart functions (e.g., multiple rendering methods coexisting) 2. Function modules unrelated to CPU pie charts (e.g., unrelated data visualization types) 3. Excessive visual effects that impact performance (e.g., overly complex animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core visualization functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/rendering/interaction layers), code reusability, and maintainability standards. Deduct 5 points if global variable pollution is found or proper SVG organization is lacking; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if the code structure is not scalable for different datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern data visualization principles: 1) Harmonious color palette suitable for CPU data representation 2) Proper proportional spacing and segment separation 3) Professional typography for labels and legends (font size ≥ 12px for SVG text, proper contrast ratios). Deduct 3 points for each visually crowded element, 5 points for poor color accessibility or contrast, and 5 points for illegible text or confusing layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user experience standards: 1) Hover feedback appears within ≤ 100ms 2) Transition animations for segment highlighting controlled between 200-400ms 3) Clear visual focus indicators for interactive elements. Deduct 5 points for each interaction without proper feedback, 3 points for jerky or laggy animations, and 5 points for unclear interactive affordances. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

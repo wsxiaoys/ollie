@@ -1,0 +1,68 @@
+{
+  "index": 524,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure the code you generate is functional and executable. Implement a multiplayer online shooting game where players connect via WebSocket and can see other players' positions and actions in real-time. Each player controls a character and can shoot bullets to attack other players. Players who are hit temporarily lose their ability to move. The first player to reach a specified number of kills wins the game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multiplayer shooting game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements player movement controls, shooting mechanics with bullet physics, collision detection between bullets and players, hit registration system, and kill/death tracking. Score 0 if core shooting interaction is not implemented, 5 if only basic movement and shooting exist without proper collision detection, and 10 if all shooting game mechanics including hit effects, temporary paralysis, and kill counting are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is real-time multiplayer synchronization properly implemented?",
+      "description": "Check whether WebSocket implementation includes real-time position synchronization, action broadcasting, and state consistency across all clients. Evaluate if player movements, shooting actions, and game events are synchronized with minimal latency (<100ms). Deduct 5 points if interpolation/extrapolation for smooth movement is missing, and 3 points if bullet trajectories are not properly synchronized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the server-side game state management and anti-cheat system designed?",
+      "description": "Evaluate whether server-side authoritative validation is implemented for player actions, hit detection, and game state updates. Check if the system prevents common cheats like speed hacking, teleportation, or invalid shots. Server must validate all client actions and reject invalid ones. Deduct 5 points if client-side validation is trusted without server verification, and 5 points if no rate limiting for actions exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is complete game session and lobby management constructed?",
+      "description": "Check whether the code includes game room creation/joining, player matchmaking, game start/end conditions, winner determination, and post-game statistics. Evaluate if disconnection handling allows players to rejoin ongoing games and if spectator mode is available. Deduct 5 points if game session persistence is not implemented, and 3 points if no reconnection mechanism exists. Give 10 points if fully implemented with proper lobby system.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, invalid user input, WebSocket connection drops, concurrent player actions, etc.) and provide appropriate error handling or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like simultaneous shots, player disconnections mid-game, and invalid movement commands, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes engaging features that enhance gameplay experience (e.g., 1. Power-ups or special weapons 2. Mini-map showing player positions 3. Kill streak bonuses 4. Spectator mode with replay functionality 5. Real-time leaderboard). Add 3 points for each practical innovative feature implemented that adds genuine value to the gaming experience (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to shooting gameplay (e.g., built-in chat system when not specified) 3. Excessive visual effects that impact performance (e.g., complex particle systems for every bullet). Deduct 3 points for each redundancy found, and directly deduct 10 points if core shooting mechanics are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic/rendering/network layers), proper event handling architecture, and code organization. Deduct 5 points if global state pollution is found or no clear separation of concerns exists; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no proper error logging or debugging capabilities are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the game interface follows modern game UI principles: 1) Clear visual hierarchy with HUD elements (health, ammo, kills) 2) Intuitive control indicators and crosshair design 3) Consistent color scheme that doesn't interfere with gameplay visibility 4) Proper contrast for game elements against background. Deduct 3 points for each cluttered UI element, 5 points for poor color choices that affect gameplay, and 5 points for missing essential HUD components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether game interactions meet real-time gaming standards: 1) Input response delay ≤ 50ms for movement and shooting 2) Smooth character movement without stuttering 3) Clear visual feedback for hits, deaths, and game events 4) Consistent frame rate during intense gameplay. Deduct 5 points for each laggy interaction, 3 points for missing hit feedback effects, and 5 points for poor movement interpolation causing jerky motion. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

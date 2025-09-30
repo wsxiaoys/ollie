@@ -1,0 +1,68 @@
+{
+  "index": 982,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable for demonstration purposes. Please design a survey system based on Vue + ElementUI + Express.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue front-end architecture properly implemented?",
+      "description": "Evaluate if the code follows Vue best practices with proper component structure, Vuex state management, Vue Router configuration, and lifecycle hooks usage. Check for single-file components with clear separation of template, script, and style. Score 0 if only basic Vue syntax is used without architecture, 5 if basic component structure exists but lacks proper state management, and 10 if a complete Vue architecture with proper data flow is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the ElementUI integration complete and appropriate?",
+      "description": "Assess whether ElementUI components are correctly imported and used following library guidelines. Check for proper form validation using ElementUI's built-in validators, responsive layouts using its grid system, and theme customization. Deduct 5 points for global import instead of on-demand loading (affecting performance), 3 points for inconsistent ElementUI styling overrides, and 3 points for not utilizing ElementUI's form validation capabilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Express backend implementation comprehensive?",
+      "description": "Review the Express server implementation including middleware usage (cors, body-parser, etc.), RESTful API design, error handling middleware, and database integration. Check for proper route organization and controller separation. Deduct 5 points if authentication middleware is missing, 3 points if error handling is incomplete, and 5 points if API endpoints don't follow RESTful principles. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete survey creation and response workflow?",
+      "description": "Evaluate whether the system implements a full survey lifecycle: creation, distribution, response collection, and result analysis. Check for features like different question types (multiple choice, rating scales, open-ended questions), skip logic, and survey analytics. Score 0 if only basic form creation exists, 5 if survey creation and collection are implemented but lack analytics, and 10 if the complete workflow including visualization of results is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, form validation failures, server unavailability, etc.) and provide friendly error prompts or recovery mechanisms. Check for input sanitization to prevent XSS attacks and proper handling of concurrent submissions. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaborative survey editing 2. Survey result visualization with charts 3. Survey templates and branching logic 4. Export to multiple formats like PDF/Excel). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple form validation systems coexisting) 2. Function modules unrelated to surveys (e.g., a built-in file manager) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API calls/UI components/business logic), test coverage, and build process automation. Check for proper use of environment variables, code linting, and security best practices. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors beyond ElementUI's theme) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional form layouts with proper labels and help text. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic form layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for multi-step forms. Deduct 5 points for each operation without loading states, 3 points for jarring transitions between survey pages, and 5 points for confusing navigation in multi-page surveys. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

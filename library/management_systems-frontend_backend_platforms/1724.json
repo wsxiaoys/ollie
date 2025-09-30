@@ -1,0 +1,68 @@
+{
+  "index": 1724,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Help me create a WeChat Mini Program for warehouse inventory management. The main functions include: initial data setup, creating orders for incoming and outgoing inventory, inventory registration, and inventory queries. Sorry, also need financial management.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic warehouse inventory management system implemented?",
+      "description": "Evaluate if the code correctly implements the core Mini Program structure with App.json, App.wxss, and essential pages. Check whether the inventory database schema properly includes essential fields like product ID, name, quantity, location, unit price, and timestamps. Review if the system handles multiple warehouses and inventory categorization. Score 0 if core structures are missing, 5 if basic inventory tracking is implemented, and 10 if complete warehouse management functionality is included with proper data relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the incoming and outgoing inventory order operations fully functional?",
+      "description": "Check whether the code implements complete order workflows for both receiving and shipping inventory. Verify that the system captures essential order details (order number, date, supplier/customer, products with quantities, prices) and properly updates inventory quantities. Validate that the system handles partial orders, returns, and maintains order history. Deduct 5 points if transaction logs are not implemented, and 3 points if order verification workflows are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the inventory registration and query system effective?",
+      "description": "Evaluate if the code provides proper inventory registration functionality with barcode/QR code scanning capabilities, batch operations, and validation checks. Check if the query system offers flexible search by multiple parameters (product name, code, category, warehouse location) with sorting and filtering options. Verify that inventory alerts for low stock and expiration dates are implemented. Deduct 5 points if mobile-optimized scanning is missing, and 3 points if advanced search capabilities are limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the financial management module properly integrated with inventory operations?",
+      "description": "Review whether the code implements financial tracking that links directly to inventory transactions, including cost calculations (FIFO/LIFO/average), profit margins, invoice generation, and payment tracking. Check if the system generates financial reports (profit/loss, inventory valuation) with visualization components. Deduct 5 points if cost basis tracking is inconsistent, and 3 points if financial reporting lacks visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases in Mini Program environments (such as offline usage, network instability, concurrent modifications, etc.) and provides appropriate error handling and data validation. Check for input sanitization, transaction rollbacks on failure, and data consistency mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered inventory prediction 2. Voice command inventory operations 3. Augmented reality for warehouse navigation 4. Automated supplier reordering). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to register inventory) 2. Function modules unrelated to warehouse management (e.g., a built-in game) 3. Fancy effects that affect performance on low-end devices common for warehouse staff. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/UI/API layers), use of WeChat Mini Program best practices (proper use of components, API calls), error logging, and comprehensive comments. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if unit tests are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows WeChat Mini Program design guidelines: 1) Consistent with WeChat visual language 2) Proper use of WeChat components 3) Responsive layout that works on various screen sizes 4) Appropriate use of white space and typography. Deduct 3 points for each non-standard component implementation, 5 points for inconsistent navigation patterns, and 5 points for poor readability of critical inventory data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and optimized for warehouse scenarios?",
+      "description": "Judge whether the app is optimized for real warehouse usage: 1) Fast barcode scanning response (≤ 500ms) 2) Single-handed operation possible for key functions 3) Minimal steps for frequent tasks 4) Works in poor connectivity conditions. Deduct 5 points if scanning operations take too many steps, 3 points for non-intuitive inventory adjustment gestures, and 5 points if offline capability is missing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

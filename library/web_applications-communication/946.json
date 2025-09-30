@@ -1,0 +1,68 @@
+{
+  "index": 946,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Actually, WebSocket might be a bit challenging, so let's do this instead: Imagine a forum with multiple users where each user can post messages. Please design a simple website without using a database.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the forum post creation and display system fully implemented?",
+      "description": "Review whether the code accurately implements a basic forum structure with post creation, display, and management through HTML/JavaScript. Check if posts have essential attributes (author, timestamp, content, title). Score 0 if the core functionality is missing, 5 if only basic post display is implemented, and 10 if full post creation, display, and management are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the multi-user functionality implemented?",
+      "description": "Check whether the implementation includes user registration/login mechanisms, user-specific content displays, and proper session management (using localStorage/sessionStorage in absence of a database). Verify if users can be distinguished and their posts are properly attributed. Score 0 if no user management exists, 5 if basic username identification is implemented, and 10 if complete user profiles and session management are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence approach well-designed without using a database?",
+      "description": "Evaluate how the code handles data persistence using client-side storage (localStorage/sessionStorage/IndexedDB). Check for proper data structuring, handling of storage limits, and potential data loss prevention. Deduct 5 points if no data persistence exists, 3 points if data can be lost on browser refresh. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the forum interaction model complete?",
+      "description": "Check whether core forum functionalities are implemented: post creation/editing/deletion, sorting/filtering of posts, comment threading (if applicable), and notification of new posts. Deduct 3 points for each missing core functionality, and 5 points if the interaction flow is cumbersome or unintuitive. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (empty posts, very long content, special characters in inputs, concurrent users making changes, storage limit exceeded, etc.) and provide friendly error handling. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Rich text editing 2. Post tagging system 3. Real-time content preview 4. Responsive design for mobile). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple post creation methods) 2. Function modules unrelated to forum functionality (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of UI/data/event handling layers), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling or logging mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual indication for post creation success/failure. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between forum sections, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

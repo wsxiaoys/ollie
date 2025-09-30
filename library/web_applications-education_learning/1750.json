@@ -1,0 +1,68 @@
+{
+  "index": 1750,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to create executable code for demonstration purposes whenever possible. I need to create a fish recognition webpage that is optimized only for mobile devices. It should include three bottom tabs: Recognition, Records, and Personal Center. Please provide appropriate HTML code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the fish recognition feature fully implemented?",
+      "description": "Review whether the code effectively implements the fish recognition functionality through appropriate HTML, CSS, and JavaScript. Check for proper image upload capabilities, camera access for taking fish photos, and integration with recognition API or algorithm. Score 0 if no recognition elements are present, 5 if basic image upload is implemented but without processing logic, and 10 if complete end-to-end recognition with visual feedback is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the tab navigation system properly implemented for mobile?",
+      "description": "Check whether the three-tab system (Recognition, Records, Personal Center) is properly implemented with appropriate mobile touch interactions, active state indicators, and smooth transitions between tabs. The tabs should be positioned at the bottom as specified, with proper sizing for mobile touch targets (minimum 44x44px). Deduct 5 points if tabs don't maintain state across content changes, 3 points if transition animations are missing, and 2 points if active states are not visually distinct. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the records/history management properly designed?",
+      "description": "Evaluate if the Records tab properly displays previous recognition results with timestamps, images, and identification details. Check for implementation of data persistence (localStorage, IndexedDB, or server-side storage), sorting/filtering capabilities, and the ability to view detailed information for each record. Deduct 5 points if no persistence mechanism exists, 3 points if sorting/filtering is absent, and 2 points if detailed view functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the personal center functionality properly implemented?",
+      "description": "Assess whether the Personal Center tab includes essential user management features such as profile settings, preferences, login/logout functionality, and possibly achievements or statistics related to fish recognition history. Verify if user data is properly managed and persisted. Deduct 3 points if profile customization is missing, 4 points if authentication features are absent, and 3 points if there's no integration with the recognition history. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as image upload failures, recognition API errors, offline usage, or unexpected user inputs) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR fish identification overlay 2. Social sharing with animated previews 3. Gamification elements for frequent recognition). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image processing methods coexisting) 2. Function modules unrelated to fish recognition (e.g., a built-in game) 3. Fancy effects that affect mobile performance (e.g., heavy animations on low-end devices). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating recognition logic/view/data layers), responsive design implementation, and mobile optimization techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if performance optimization for mobile devices is missing (e.g., no image compression before upload). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional mobile design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Touch-friendly elements (minimum tap target size of 44x44px) 2) Proper layout spacing for mobile (safe areas accounting for notches and home indicators) 3) Mobile-optimized typography (readable font sizes, minimum 16px for body text). Deduct 3 points for non-touch-friendly elements, 5 points for layouts that extend into unsafe areas, and 5 points for text that requires zooming to read. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile interaction smooth and optimized?",
+      "description": "Judge whether the mobile interactions are optimized for touch devices: 1) Fast tap response ≤ 100ms 2) Proper keyboard handling for form inputs 3) Support for mobile gestures (swipe between tabs, pinch-zoom for fish images). Deduct 5 points for each operation without feedback, 3 points for keyboard issues that obscure the interface, and 5 points for missing essential mobile gestures. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

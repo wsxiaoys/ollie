@@ -1,0 +1,68 @@
+{
+  "index": 1534,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Help me create a webpage that can interact with a locally deployed DeepSeek model.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the API connectivity implementation complete?",
+      "description": "Check whether the code correctly implements API calls to the DeepSeek model, including proper request formatting, response handling, and error management. Score 0 if no API connection is implemented, 5 if basic connectivity exists but lacks error handling, and 10 if comprehensive API integration with proper timeout handling, retries, and error states is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the frontend interface provide comprehensive interaction with the DeepSeek model?",
+      "description": "Evaluate whether the interface allows users to send various types of prompts/queries to the model and displays responses appropriately. Check for input validation, support for different query types (text completion, question answering, etc.), and proper display of model outputs with appropriate formatting. Deduct 3 points if only basic text input/output is supported without formatting options, 5 points if there's no way to customize model parameters, and 2 points if response streaming is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there proper request state management and loading indicators?",
+      "description": "Check if the implementation includes proper state management for API requests (idle, loading, success, error states) and provides appropriate visual feedback to users. Evaluate whether loading indicators are present during model processing, whether timeouts are handled gracefully, and if users can cancel ongoing requests. Deduct 5 points if no loading indicators exist, 3 points if request cancellation is not possible, and 2 points if error states are not properly communicated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a conversation history or context management system?",
+      "description": "Assess whether the implementation maintains conversation history and manages context for ongoing interactions with the model. Check if previous exchanges are displayed, if context is preserved between requests, and if users can review or reference past interactions. Deduct 5 points if no history is maintained, 3 points if history exists but cannot be managed (cleared/exported), and 2 points if context between messages is not preserved. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API timeouts, network failures, malformed responses, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Syntax highlighting for code responses 2. Voice input/output capabilities 3. Response visualization tools 4. Message templates or shortcuts). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to send the same type of request) 2. Function modules unrelated to the DeepSeek model interaction (e.g., unrelated analytics) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API logic/UI components/state management), code organization, and potential for maintenance and extension. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between presentation and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

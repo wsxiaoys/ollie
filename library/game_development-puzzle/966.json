@@ -1,0 +1,68 @@
+{
+  "index": 966,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that any code you generate is executable. Based on existing matching games in the market, help me design a similar matching game where players can eliminate identical icons by clicking on them. Please provide the game code that runs as a mouse-operated application rather than a command-line program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core matching mechanism properly implemented?",
+      "description": "Check whether the code implements a complete matching mechanism that allows players to select and eliminate identical icons. The matching logic should include: detection of identical icons, removal animation, and score calculation. Score 0 if the core matching logic is missing, 5 if only basic matching is implemented without proper validation, and 10 if the solution includes comprehensive matching rules with edge cases handling (such as no more possible matches detection).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game board generation and management implemented correctly?",
+      "description": "Evaluate if the game dynamically generates a proper grid of icons with sufficient variety while ensuring the game is solvable. Check if the board is refilled correctly after eliminations and whether the code ensures there are always possible matches available. Deduct 5 points if the board generation doesn't guarantee solvable states, 3 points if refilling mechanism is flawed, and 2 points if icon variety is too limited. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the mouse interaction controls intuitive and responsive?",
+      "description": "Since the game is specifically required to be mouse-operated, examine if click/hover events are properly implemented, with clear visual feedback on selection and matching. Check for smooth highlighting of selected icons and intuitive error feedback for invalid moves. Deduct 5 points if there are click response delays (>100ms), 3 points if visual feedback is unclear, and 5 points if the mouse interaction isn't intuitive. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management comprehensive?",
+      "description": "Check if the code implements proper game state management including start/pause/restart/end game states, score tracking, timer functionality (if applicable), and level progression. Examine if game data persists between sessions using local storage. Deduct 5 points if critical game states are missing, 3 points if score tracking is implemented poorly, and 2 points if there's no session persistence. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid multiple clicks, browser resize events, or unexpected user interactions) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special combo elimination mechanics 2. Power-ups or special tiles 3. Adaptive difficulty level based on player performance). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to restart the game) 2. Function modules unrelated to matching games (e.g., an unnecessary login system) 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/UI layers), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (clear grid structure with consistent margins) 3) Professional font system (readable score displays, clear instructions). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic UI layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animations and transitions enhance gameplay: 1) Icon selection feedback is immediate (≤ 50ms) 2) Matching elimination animations are satisfying but quick (200-400ms) 3) Board refill animations are smooth and logical. Deduct 5 points for static gameplay without animations, 3 points for animations that hinder gameplay speed, and 5 points for confusing visual effects that don't clearly communicate game state. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

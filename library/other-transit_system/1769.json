@@ -1,0 +1,68 @@
+{
+  "index": 1769,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you create is executable for display. Create a front-end page for a public transit system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the transit map visualization properly implemented?",
+      "description": "Review whether the code implements a clear and accurate transit map using HTML/SVG/Canvas, with proper representation of routes, stations, and transfer points. Score 0 if no map is implemented, 5 if a basic static map is provided, and 10 if an interactive map with zoom/pan functionality is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the route planning and search functionality complete?",
+      "description": "Evaluate whether users can search for routes between stations with options for fastest/shortest routes, departure times, and transit preferences. Check if the algorithm accounts for transfer times and service frequencies. Deduct 5 points if only basic point-to-point routing exists, 3 points if time-based planning is missing. Give 10 points if advanced features like multi-criteria optimization are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time transit information handling implemented?",
+      "description": "Check whether the code implements mechanisms for displaying real-time arrival/departure information, service disruptions, and delays. Verify if data refresh mechanisms and API integration points exist. Score 0 if no real-time features exist, 5 if basic updates are implemented, and 10 if comprehensive real-time functionality with fallback mechanisms is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the responsive design properly implemented for multiple devices?",
+      "description": "Assess whether the transit page adapts appropriately to different screen sizes (desktop, tablet, mobile) using responsive design techniques. Check for media queries, flexible layouts, and touch-friendly controls on mobile. Deduct 5 points if the layout breaks on certain devices, and 3 points if mobile-specific optimizations are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid user inputs, missing transit data, API errors) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Augmented reality station finder 2. Personalized travel statistics/carbon footprint 3. Accessibility features for visually impaired users). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple map libraries loaded) 2. Function modules unrelated to public transit (e.g., weather forecasts unrelated to travel) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow page loading). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, data services, and state management), code organization, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization techniques are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern transit UI principles: 1) Clear visual hierarchy highlighting important information 2) Proper color coding for different transit lines 3) Typography that ensures readability of schedules and station names (minimum 14px font). Deduct 3 points for cluttered information display, 5 points for poor color contrast affecting readability, and 5 points for inconsistent design elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Route selection feedback delay ≤ 100ms 2) Smooth transitions when switching between views 3) Clear loading indicators for data retrieval operations. Deduct 5 points for each operation without feedback, 3 points for janky animations, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Transit System",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 644,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Design a geometric calculation tool that supports common plane figures (circle, triangle, rectangle, regular polygon, etc.) and solid figures (sphere, cylinder, cone, prism, etc.) for calculating area, perimeter, volume and surface area. Users can select the type of shape, input necessary parameters (such as side length, radius, height, etc.), and obtain calculation results. The tool needs to provide interactive graphical preview that updates the shape diagram in real time based on user input and labels key dimensions. It should also provide options to show or hide calculation formulas.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are all required geometric figures and their calculations properly implemented?",
+      "description": "Evaluate whether the code accurately implements calculation functions for all required plane figures (circle, triangle, rectangle, regular polygon) and solid figures (sphere, cylinder, cone, prism). Score 0 if fewer than 50% of requested shapes are implemented, 5 if basic shapes are implemented but with limited functionality, and 10 if all shapes are implemented with complete calculation logic for area, perimeter, volume, and surface area as applicable.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the parameter input system comprehensive and validated?",
+      "description": "Check whether the input system allows users to specify all necessary parameters for each shape (side lengths, radius, height, etc.) with appropriate constraints and validations. Deduct 3 points if input validation is missing, 3 points if negative or invalid values are allowed, and 2 points if unit selection is not available. Give 10 points if the input system is robust, validates all inputs, provides clear error messages, and includes appropriate units.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the interactive graphical preview functionality properly implemented?",
+      "description": "Assess whether the tool provides real-time visual updates of shapes based on user input. The preview should accurately represent proportions and dimensions. Deduct 5 points if the visualization doesn't update in real-time, 3 points if dimensions aren't labeled, and 5 points if the graphical representation is inaccurate or misleading. Full score requires SVG or Canvas-based responsive diagrams that precisely reflect input parameters.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the tool provide formula visibility options as requested?",
+      "description": "Evaluate whether users can show/hide calculation formulas for each shape. The formulas should be mathematically correct and presented in a readable format (e.g., MathJax/LaTeX or clear text formatting). Deduct 5 points if formulas cannot be toggled on/off, 3 points if formulas are incorrect, and 3 points if formula presentation is poorly formatted or difficult to read. Full score requires elegant formula display with proper mathematical notation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, edge cases like zero dimensions, floating-point precision issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. 3D rotation for solid figures 2. Exporting calculations as PDF/image 3. Comparison mode for multiple shapes 4. Animation showing volume filling or area coverage). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar calculations (e.g., multiple area calculation methods for the same shape) 2. Function modules unrelated to geometric calculation (e.g., unnecessary animations) 3. Fancy effects that affect performance or usability. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation logic/visualization/UI layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or appropriate design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between calculation logic and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Input feedback delay ≤ 100ms 2) Visual updates occur promptly after parameter changes 3) Clear visual focus guidance between input and output elements. Deduct 5 points for each operation without feedback, 3 points for laggy visualization updates, and 5 points for confusing interaction patterns or hard-to-find controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "medium"
+}

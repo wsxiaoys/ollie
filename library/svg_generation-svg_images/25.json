@@ -1,0 +1,68 @@
+{
+  "index": 25,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible.\nPlease help me implement this SVG image using code. A close up of a person holding a cell phone in their hand.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG structure correctly implemented?",
+      "description": "Check if the code includes proper SVG namespace, viewBox dimensions, and appropriate canvas size. The SVG should have clear width/height attributes or style properties. Deduct 5 points if the SVG namespace is missing, 3 points for inappropriate viewBox dimensions, and 2 points for missing responsive design considerations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the human hand accurately rendered?",
+      "description": "Evaluate the anatomical accuracy of the hand including proper finger proportions, natural finger positioning for holding a phone, and realistic skin contours. Check for correct use of path elements or complex shapes to form the hand. Score 10 points for realistic hand representation with proper shading and detail, 5 points for basic but identifiable hand structure, 0 points if the hand appears anatomically incorrect or unrecognizable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the cell phone realistically depicted?",
+      "description": "Analyze whether the cell phone has realistic dimensions proportional to the hand, proper screen-to-body ratio, and recognizable modern smartphone features (camera, buttons, etc.). Deduct 3 points if the phone lacks detail, 4 points if proportions are unrealistic, and 3 points if the phone doesn't appear to be properly held. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the interaction points between hand and phone accurately represented?",
+      "description": "Check if the finger positions naturally wrap around the phone with proper contact points and if the grip looks secure and realistic. Examine if z-index and layering are handled correctly where fingers overlap the phone. Score 0 points if fingers appear to pass through the phone, 5 points for basic contact representation, 10 points for realistic gripping with proper pressure points and natural finger positioning. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle different viewports and scaling without distortion. Check if appropriate groups (<g> elements) are used for logical organization of elements and if the code includes appropriate comments for complex paths. Deduct 3 points for each brittle implementation that breaks on resizing, 2 points for poor code organization, and 2 points for lack of documentation on complex elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the image (e.g., 1. Screen content on the phone 2. Subtle animations like finger movements or screen interactions 3. Gradient lighting effects or shadows). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Overlapping paths or shapes that add unnecessary complexity 2. Elements unrelated to the hand-holding-phone focus (e.g., excessive background detail) 3. Overly complex filters or effects that impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with the core visual representation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as using reusable components for fingers or phone elements), variable naming conventions, and optimization techniques (like path simplification). Deduct 5 points if inline styles are overused instead of CSS classes; deduct 3 points if there's excessive path data that could be simplified; deduct 2 points if there's no clear organization of SVG elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Realistic color usage for skin tones and phone materials 2) Proper use of gradients and shadows for depth 3) Attention to detail in proportions and perspective. Deduct 3 points for unrealistic coloring, 3 points for flat appearance without depth, and 4 points for perspective inconsistencies. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the rendering visually refined and detailed?",
+      "description": "Judge the level of visual refinement: 1) Fine details like finger creases, knuckle definition 2) Phone details like buttons, screen bezels, or camera lenses 3) Appropriate use of SVG filters for shadows or highlights. Deduct 3 points for each major area lacking appropriate detail, 2 points for missing subtle visual cues that would enhance realism, and 5 points if the overall image appears too simplistic. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

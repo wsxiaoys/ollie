@@ -1,0 +1,68 @@
+{
+  "index": 1659,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable when possible. Vue3 TS Pinia nested routing backend-returned menu",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 3 setup with TypeScript correctly implemented?",
+      "description": "Assess if the Vue 3 application is properly initialized with TypeScript support. Check for proper tsconfig.json configuration, correct component typing (defineComponent, defineProps, defineEmits with proper types), and appropriate type declarations. Score 0 if TypeScript is not properly integrated, 5 if basic TypeScript is used but with any/unknown types, and 10 if strict type checking is enabled with comprehensive custom types and interfaces.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Pinia state management effectively implemented?",
+      "description": "Evaluate the Pinia store implementation for menu state management. Check for proper store definition with typed state, getters, and actions. Verify if the store correctly handles menu data persistence, loading states, and error handling. Deduct 5 points if the store doesn't use TypeScript interfaces, 3 points if actions don't handle async operations properly, and 2 points if getters lack memoization where appropriate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the nested routing system correctly implemented?",
+      "description": "Examine the Vue Router configuration for handling nested routes dynamically generated from backend menu data. Check for proper route transformation logic, lazy-loading implementation, route guards for authentication, and correct handling of route parameters. Deduct 5 points if the dynamic route generation doesn't handle nested children properly, 3 points if route meta information is missing, and 2 points if navigation guards aren't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the backend menu integration properly implemented?",
+      "description": "Review the API integration for fetching menu data from the backend. Check for proper HTTP client setup (Axios/Fetch), typed response handling, error handling with retry mechanisms, data transformation to match front-end requirements, and caching strategies. Deduct 3 points for missing error handling, 3 points for improper response typing, and 4 points for lacking interceptors or request/response transformation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as backend API failures, malformed menu data, permission changes during runtime, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Menu item drag-and-drop reordering 2. Progressive loading for large menu structures 3. Smart breadcrumb navigation with history 4. Contextual menu adaptation based on user behavior). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple menu state tracking mechanisms coexisting) 2. Function modules unrelated to menu and routing (e.g., built-in analytics that should be separated) 3. Over-engineered solutions that impact performance (e.g., excessive recursive menu processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/store/components/types), unit test coverage for critical menu transformation logic, and build process optimization. Deduct 5 points if global state pollution is found or composition API isn't used effectively; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no code splitting for routes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the menu UI follows modern design principles: 1) Harmonious color matching for active/hover/default states 2) Proper menu item spacing and hierarchy visualization 3) Consistent typography system for menu items with proper truncation. Deduct 3 points for inconsistent menu item styling, 5 points for poor visual hierarchy indication, and 5 points for menu components that don't adapt to different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the menu interactions conform to user expectations: 1) Menu expansion/collapse animations under 300ms 2) Smooth route transitions with proper loading indicators 3) Visual feedback for menu interaction states. Deduct 5 points for menu items without hover/active states, 3 points for jarring page transitions between routes, and 5 points for menu interactions that cause layout shifts. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

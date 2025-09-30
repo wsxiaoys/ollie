@@ -1,0 +1,68 @@
+{
+  "index": 1132,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable for demonstration purposes. I need to implement online text preview and online editing, as well as code highlighting.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the text editor component properly implemented?",
+      "description": "Review whether the code implements a functional text editor with basic operations (cursor movement, text selection, copy/paste, undo/redo). Score 0 if the core editor functionality is not implemented, 5 if only basic text input works, and 10 if all standard editing features are fully implemented with keyboard shortcuts.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is code syntax highlighting correctly implemented?",
+      "description": "Evaluate if the syntax highlighting supports multiple programming languages, accurately identifies language tokens (keywords, strings, comments, etc.), and renders them with appropriate colors. Deduct 5 points if only one language is supported, 3 points if token recognition has significant errors, and 2 points if the highlighting has performance issues with large files. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the preview functionality properly synchronized with the editor?",
+      "description": "Check if the preview updates in real-time as text is edited, handles different content types appropriately (Markdown, HTML, code, etc.), and maintains scroll position synchronization between editor and preview panes. Deduct 5 points if the preview lags significantly behind edits, 3 points for incorrect rendering of content types, and 3 points if scroll synchronization is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the online collaboration or saving mechanism implemented?",
+      "description": "Assess whether the code includes functionality for saving content online, sharing edited content, or real-time collaboration features. Check for autosave functionality, version history, and collaboration indicators. Deduct 5 points if there's no persistence mechanism, 3 points if changes can be lost during page refresh, and 3 points if there's no way to share content with others. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as large file uploads, network interruption, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based code suggestions 2. Multiple theme support 3. Integrated documentation lookup). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text parsing libraries) 2. Function modules unrelated to text editing (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., overly complex UI transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor logic/view/data layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern code editor principles: 1) Appropriate contrast between text and background 2) Clear distinction between editor and preview areas 3) Professional font selection (monospace for code, appropriate font sizes). Deduct 3 points for poor readability, 5 points for confusing layout or unclear visual hierarchy, and 5 points for inadequate visual feedback during interactions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Text input response ≤ 50ms 2) Highlighting updates within 100ms 3) Preview updates within 300ms. Deduct 5 points for noticeable input lag, 3 points for jarring transitions between editing and previewing, and 5 points for UI freezing during processing of large files. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

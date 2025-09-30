@@ -1,0 +1,68 @@
+{
+  "index": 38,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for display.\n\nPlease use HTML and JavaScript to implement an action game - rhythm game: Musical rhythm and key response\n\n**Task**: Design a rhythm game system where players need to press corresponding keys according to the music rhythm to score points.\n\n**Hint**: You can use audio analysis or time nodes to synchronize key inputs with music rhythm.\n\nPlease create the game and add some comments in the code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the rhythm game core mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the key note system through HTML/JavaScript, including note generation, timing detection, and scoring calculation. Check if there's proper synchronization between the music and falling notes. Score 0 if the core mechanics are missing, 5 if basic note detection works but with timing issues, and 10 if the system has precise timing windows with appropriate visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio synchronization mechanism properly designed?",
+      "description": "Evaluate whether the game implements proper audio synchronization using either audio analysis (frequency/beat detection) or predefined time nodes. Check for audio calibration options to handle different devices/browsers. Deduct 5 points if there's noticeable lag between audio and visuals, 3 points if there's no calibration system, and 2 points if the synchronization degrades over time. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is a comprehensive scoring system implemented?",
+      "description": "Check whether the code includes a multi-tier scoring system (Perfect/Great/Good/Miss) with appropriate timing windows, combo multipliers, and visual/audio feedback for each tier. Evaluate if the scoring algorithm rewards consistency and includes features like combo breaks and recovery. Deduct 5 points if only binary hit/miss detection exists, and 3 points if combo tracking is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete song/level management system?",
+      "description": "Review if the code includes functionality for multiple songs/difficulty levels with different note patterns. Check if there's a difficulty rating system, song selection interface, and progression tracking (high scores, grade rankings). Deduct 5 points if only a single song is supported, 3 points if difficulty options are missing, and 2 points if there's no score persistence. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as audio loading failures, browser audio API limitations, irregular key presses, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment 2. Custom beatmap creator 3. Visual effects synchronized with music intensity). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant input detection logic (e.g., multiple keyboard event listeners with overlapping functionality) 2. Function modules unrelated to rhythm gameplay (e.g., unnecessary mini-games) 3. Excessive visual effects that cause performance issues on regular devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio handling, note generation, input detection, and rendering), code readability (including the requested developer comments), and performance optimization. Deduct 5 points if global variable abuse is found; deduct 5 points if the code lacks meaningful comments as requested; deduct 5 points if there are performance bottlenecks causing frame drops. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Clear note highway with distinct lane separation 2) High contrast between notes and background for visibility 3) Coherent color scheme that matches the musical theme. Deduct 3 points for each hard-to-see element, 5 points for cluttered UI that obscures gameplay, and 5 points for inconsistent visual style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game's response and animations conform to rhythm game standards: 1) Input lag ≤ 50ms for responsive feel 2) Smooth note movement at minimum 60fps 3) Clear hit/miss feedback with appropriate duration. Deduct 5 points for each noticeable input delay, 3 points for jerky note movement, and 5 points for confusing or missing hit feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

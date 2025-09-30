@@ -1,0 +1,68 @@
+{
+  "index": 1425,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and can be demonstrated. Please help me write a text flipping function using React and Ant Design UI.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the text flipping function core implementation complete?",
+      "description": "Examine whether the React component properly implements text flipping animation with appropriate state management. Check if it handles different text types (single/multi-line), allows configuration of flipping direction (horizontal/vertical), and maintains text readability during animation. Score 0 if core flipping functionality is missing, 5 for basic implementation, 10 if fully configurable with multiple animation options.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Ant Design UI properly integrated?",
+      "description": "Verify that the implementation correctly uses Ant Design components following their API specifications rather than just basic HTML elements. Check if proper Ant Design theming is applied, component props are used correctly, and the solution follows Ant Design's design principles. Deduct 5 points if Ant Design is barely used, 3 points if used incorrectly or inconsistently. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the component flexible and customizable?",
+      "description": "Evaluate if the component accepts customization props for animation speed, timing functions, delay, text content, styles, and integration with other Ant Design components. Check if it exposes appropriate callback events (onFlipStart, onFlipComplete). Deduct 3 points for each missing essential customization option. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is accessibility properly implemented?",
+      "description": "Check if the text flipping animation is accessible - including proper ARIA attributes, keyboard navigability, respecting reduced motion preferences, and maintaining text contrast during animation. The component should work with screen readers and include proper focus management. Deduct 3 points for each accessibility issue found. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty text, extremely long text, rapid state changes, etc.) and provide friendly error handling or fallback mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. 3D perspective flipping effects 2. Ability to flip only portions of text or characters sequentially 3. Integration with React transitions/motion libraries like react-spring). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant state management (e.g., duplicate state for the same functionality) 2. Unnecessary re-renders caused by implementation issues 3. Fancy effects that affect performance without adding value to the text flipping functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component structure (separation of concerns, proper hooks usage), TypeScript/PropTypes usage, and code organization. Deduct 5 points if props are not properly typed or documented; deduct 5 points if there are useState/useEffect anti-patterns; deduct 5 points if the component structure violates React best practices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the flipping animation follows modern design principles: 1) Smooth transitions with appropriate easing functions 2) Maintains visual hierarchy during animation 3) Follows Ant Design's aesthetic guidelines. Deduct 3 points for jarring or disruptive animations, 5 points for animations that make text difficult to read, and 5 points for designs that clash with Ant Design's visual language. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation performs well: 1) Animation runs at 60fps without frame drops 2) Transition duration is appropriate (300-500ms) 3) Animation doesn't cause layout shifts or reflows. Deduct 5 points for each noticeable performance issue, 3 points for animations that feel too fast or too slow, and 5 points for animations that cause visual glitches or browser rendering issues. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

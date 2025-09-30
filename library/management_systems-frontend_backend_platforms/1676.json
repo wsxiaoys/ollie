@@ -1,0 +1,68 @@
+{
+  "index": 1676,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration purposes. Create a smart project management table according to the requirements, which should include project name, department, task status, start time, deadline, completion time, automatic project progress calculation, as well as automatic generation of Gantt charts and other visualizations. It should also be able to link to project-related files in Excel, Word, and PDF formats. If possible, it would be best if the system could automatically input imported table data.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the project management table structure fully implemented?",
+      "description": "Review whether the code includes all required fields (project name, department, task status, start time, deadline, completion time) and implements proper data validation and formatting. Check if the table structure allows for hierarchical task organization (tasks, subtasks) and proper data handling. Score 0 if core fields are missing, 5 if basic structure is implemented but lacks validation, and 10 if all fields are properly implemented with appropriate validation and formatting.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automatic project progress calculation functionality implemented correctly?",
+      "description": "Evaluate whether the code accurately calculates project progress based on task completion status and time parameters. Check if the calculation logic handles edge cases (e.g., overdue tasks, early completion) and properly aggregates subtask progress into parent task progress. Deduct 3 points if calculation doesn't consider task dependencies, 5 points if it doesn't handle subtask aggregation correctly, and 3 points if visual progress indicators (progress bars) are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the Gantt chart and other visualizations properly implemented?",
+      "description": "Assess whether the visualizations are dynamically generated from the project data with correct time scale representation. Check if the Gantt chart includes critical path highlighting, dependency arrows, milestone markers, and proper color coding for status. Verify that visualizations are responsive and interactive (e.g., hover tooltips, zoom capability). Deduct 5 points if the chart lacks interactive features, 3 points if it doesn't handle task dependencies visually, and 5 points if the time scale is not properly formatted. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the file linking functionality implemented and working correctly?",
+      "description": "Check if the code implements the ability to link to Excel, Word, and PDF files with proper file validation. Verify that file links are properly stored, displayed, and accessible. Test if file preview/thumbnail generation is implemented where appropriate. Deduct 3 points if any file type is not supported, 5 points if the linking mechanism doesn't include validation or security checks, and 3 points if there's no visual indication of linked files in the interface. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid date inputs, file access errors, concurrent edits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered deadline recommendations 2. Automated status updates based on linked document changes 3. Team workload balancing visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple progress calculation methods coexisting) 2. Function modules unrelated to project management (e.g., a built-in calculator unrelated to project metrics) 3. Fancy effects that affect performance (e.g., excessive animations that slow down table rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data model/view/controller layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the automatic data import functionality properly implemented?",
+      "description": "Judge whether the code implements robust data import mechanisms for external table data (e.g., CSV, Excel, database connections). Assess if the import process includes data validation, mapping to internal schema, error handling, and provides clear feedback on import status. Deduct 5 points for missing validation during import, 3 points for poor error handling, and 5 points if the import UI lacks proper guidance or progress indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

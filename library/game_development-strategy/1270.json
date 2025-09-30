@@ -1,0 +1,68 @@
+{
+  "index": 1270,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable and demonstrable. Help me create a Chinese chess mini game that follows the standard Chinese chess board layout and gameplay rules.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Chinese chess board layout implemented correctly?",
+      "description": "Check whether the code accurately implements the standard 9x10 Chinese chess board with properly placed pieces (1 general/marshal, 2 advisors, 2 elephants, 2 horses, 2 chariots, 2 cannons, 5 soldiers/pawns per side). Verify river demarcation and palace areas (3x3 squares). Score 0 if the board layout is incorrect, 5 if basic layout exists but with minor placement errors, and 10 if perfectly implemented with accurate positions and traditional notation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the Chinese chess movement rules correctly implemented?",
+      "description": "Review whether the code implements all piece movement rules correctly (general's confinement to palace, advisors' diagonal movement within palace, elephants' can't cross river, horses' leg obstruction, chariots' straight line movement, cannons' jump-capture mechanism, soldiers' forward/lateral movement rules after crossing river). Score 3 for basic movement, 7 for most rules implemented correctly, and 10 if all nuanced rules including illegal moves prevention are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game winning condition properly implemented?",
+      "description": "Evaluate the implementation of checkmate detection, general face-to-face rule, and stalemate conditions. Check if the code correctly identifies when a player's general is in check, checkmate, or when generals directly face each other (illegal). Deduct 5 points if check detection is missing, 3 points if the general face-to-face rule is not enforced. Full score requires proper game-ending logic with appropriate win/loss/draw states.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are special gameplay features of Chinese chess implemented?",
+      "description": "Verify if the code includes perpetual check detection, rule of repetitive positions, piece capture visualization, move history notation (traditional Chinese chess notation or modern coordinate system), and possibly time control mechanisms. Award 2 points for each properly implemented feature, with a maximum of 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, invalid moves, multiple clicks on same square, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move suggestions/hints 2. Move replay functionality 3. Different piece styles/themes 4. Sound effects for moves/captures). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple move validation logics coexisting) 2. Function modules unrelated to Chinese chess (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive graphical elements). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, variable naming, and code reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows traditional Chinese chess aesthetics while maintaining modern usability: 1) Proper piece representation (clear distinction between red and black sides) 2) Appropriate board design with visible grid 3) Clear visual indicators for selected pieces and valid moves. Deduct 3 points for unclear piece designs, 5 points for poor readability of the board, and 5 points for lack of visual feedback during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions conform to user expectations: 1) Piece selection and movement feels natural 2) Move animations (if implemented) are smooth and not distracting 3) Clear visual feedback for illegal moves, checks, and game end conditions. Deduct 5 points for laggy piece movement, 3 points for confusing selection mechanics, and 5 points for missing feedback on important game states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

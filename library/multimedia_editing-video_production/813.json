@@ -1,0 +1,68 @@
+{
+  "index": 813,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring that the code you generate can be executed and displayed. Design a video player that supports software playback of all formats.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video player's core functionality fully implemented?",
+      "description": "Review whether the code accurately implements the core video playing capabilities through HTML5 video API or custom implementations. Check support for multiple codecs (H.264, VP9, AV1, HEVC), container formats (MP4, WebM, MKV, AVI), and streaming protocols (HLS, DASH, RTMP). Score 0 if basic playback isn't working, 5 if only common formats work, 10 if comprehensive format support is implemented with proper fallback mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is codec and format detection properly implemented?",
+      "description": "Evaluate the player's ability to detect and handle various video formats automatically. Check for proper MIME type detection, codec identification, and dynamic loading of necessary decoders. Deduct 5 points if format detection requires manual input, 3 points if some major formats aren't properly detected. The player should intelligently select the best available codec based on browser support and provide clear error messages when a format is unsupported.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the player include essential playback controls and features?",
+      "description": "Check for implementation of standard controls (play/pause, volume, seek, fullscreen), along with advanced features like playback speed adjustment, subtitles/captions support (SRT, VTT, ASS formats), and quality selection. Verify that keyboard shortcuts work properly. Deduct 2 points for each missing essential control and 1 point for each missing advanced feature. Full score requires picture-in-picture support and custom keyboard mapping.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an adaptive streaming implementation?",
+      "description": "Evaluate the player's ability to dynamically adjust quality based on network conditions. Check for implementation of ABR (Adaptive Bitrate) algorithms, buffer management, and bandwidth estimation. Verify the player can smoothly switch between quality levels without interruption. Deduct 5 points if adaptive streaming is missing, 3 points if the implementation doesn't handle network fluctuations well. Full score requires preloading strategies and intelligent quality selection based on device capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted video files, network interruption, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered content analysis for smart thumbnails 2. Advanced audio normalization 3. Frame-accurate editing capabilities 4. Social sharing with timestamp links). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple volume control mechanisms coexisting) 2. Function modules unrelated to video playback (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations that impact playback). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating player core/UI/plugin systems), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Controls appear/disappear within 100ms 2) Hover effects respond instantly 3) Seeking and volume changes reflect immediately in UI. Deduct 5 points for each operation without feedback, 3 points for laggy transitions when controls appear/disappear, and 5 points for controls that obstruct video content unnecessarily. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "medium"
+}

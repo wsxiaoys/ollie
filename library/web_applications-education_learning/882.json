@@ -1,0 +1,68 @@
+{
+  "index": 882,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that the code you generate is executable for display. Create a Qingdao subway map of all lines using Vue2 and Canvas, making special markings for transfer stations. The map should be zoomable and scalable, with a background image that can also be zoomed and scaled. Place it in a container that is 1006px high and 500px wide.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the complete Qingdao subway map implemented with accurate line representation?",
+      "description": "Review whether the code accurately implements all subway lines in Qingdao with correct routes, station names, and line colors. Verify that the data structure properly represents the network topology. Score 0 if only partial lines are implemented, 5 if all lines are present but with minor inaccuracies, and 10 if the complete subway network is precisely rendered with proper geographical relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are transfer stations properly highlighted and differentiated?",
+      "description": "Check whether transfer stations are visually distinguished from regular stations (e.g., different shapes, sizes, colors, or special markers). Verify that the code handles the logic for identifying intersecting lines and appropriately renders these transfer points. Deduct 5 points if transfer stations aren't visually differentiated, 3 points if the differentiation is subtle or inconsistent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the zoom and scale functionality properly implemented?",
+      "description": "Evaluate if the Vue2/Canvas implementation includes smooth zooming and scaling capabilities with proper event handling. Check for pinch-to-zoom support on touch devices, mouse wheel zoom for desktop, and intuitive scale controls. Deduct 5 points if zooming causes rendering artifacts, 3 points if zoom levels are limited or jerky. The code should maintain proper aspect ratios during scaling and preserve station relative positions. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the background image handling correct with zoom/scale synchronization?",
+      "description": "Verify that the background image scales and zooms in sync with the subway map overlay. Check if the image resolution adapts appropriately to different zoom levels without pixelation or blurring. Deduct 5 points if background-map synchronization is inconsistent during zoom operations, 3 points if image quality degrades significantly at higher zoom levels. Check that the background handles the required 1006px by 500px container constraints. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, browser compatibility issues, window resizing, touch/mouse input variations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Station information popups on hover/click 2. Animated train movements along routes 3. Interactive path finding between stations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple zoom implementations coexisting) 2. Function modules unrelated to subway visualization (e.g., a built-in weather widget) 3. Fancy effects that affect performance (e.g., unnecessary animations or visual effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue2 component architecture (such as separating map rendering/controls/data management), modular organization, and proper use of Vue lifecycle methods. Deduct 5 points if global state pollution is found or Vue best practices are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if canvas drawing operations are not optimized or if rendering performance suffers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the subway map visualization follows transit map design principles: 1) Clear line distinction with appropriate color coding 2) Proper station labeling with legible typography (minimum 12px font size) 3) Professional layout with balanced station spacing and line angles (preferring 45° or 90° angles). Deduct 3 points for cluttered station labels, 5 points for poor color choices making lines difficult to distinguish, and 5 points for chaotic line routing that doesn't resemble standard transit map conventions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the map interactions conform to user expectations: 1) Responsive zoom controls with <100ms feedback 2) Smooth pan/drag operations without jitter 3) Appropriate animation durations (200-400ms) for transitions. Deduct 5 points for each operation with noticeable lag, 3 points for jerky animations during interactions, and 5 points for controls that are difficult to discover or use. Test if the map behaves correctly within the specified 1006px × 500px container across different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

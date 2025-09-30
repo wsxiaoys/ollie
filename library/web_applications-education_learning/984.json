@@ -1,0 +1,68 @@
+{
+  "index": 984,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Help me write code for a travel guide that includes weather information, integrates with Amap (Gaode Maps), and ultimately generates a travel guide map.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the weather information API integration fully implemented?",
+      "description": "Review whether the code accurately integrates a weather API (like OpenWeatherMap, DarkSky, or WeatherAPI), includes proper error handling, caching for performance optimization, and displays comprehensive weather information (temperature, precipitation, forecast for multiple days). Score 0 if there's no API integration, 5 if only basic current weather is shown, and 10 if a comprehensive weather forecast with historical patterns and travel recommendations based on weather conditions is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Amap (Gaode Maps) integration complete and properly implemented?",
+      "description": "Check whether the code correctly implements Amap JS API with proper authentication, map initialization, and marker management. Verify that the map provides essential functions like zooming, panning, and location search. Deduct 5 points if the map lacks responsive design for different screen sizes, 3 points if proper error handling for API failures is missing, and 2 points if the map styling doesn't match the overall application design. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the travel guide provide route planning and navigation features?",
+      "description": "Evaluate whether the code implements route planning between multiple points of interest, with options for different transportation methods (walking, driving, public transport). Check if the implementation includes estimated travel time, distance calculation, and turn-by-turn directions. Deduct 5 points if only simple point-to-point routing exists, 3 points if alternative routes aren't provided, and 2 points if the route visualization is poor. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are points of interest (POIs) and attraction information properly implemented?",
+      "description": "Review if the code includes a comprehensive system for displaying POIs on the map with detailed information about attractions, restaurants, hotels, etc. Check for features like filtering POIs by category, displaying ratings/reviews, operating hours, and contact information. Deduct 3 points if POI data is hardcoded rather than fetched from an API, 4 points if POI details lack depth, and 3 points if there's no way to search or filter POIs. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruption, geolocation permission denials, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Augmented reality view of destinations 2. Personalized recommendations based on user preferences 3. Social sharing with custom travel guides 4. Offline map functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple map providers coexisting) 2. Function modules unrelated to travel guides (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down map rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API services/UI components/state management), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design standards: 1) Harmonious color matching that represents travel themes (no more than 3 primary colors) 2) Proper layout spacing (map should be prominent but not overwhelming) 3) Professional typography system (legible even in outdoor lighting conditions). Deduct 3 points for cluttered UI elements, 5 points for poor contrast making text unreadable on map, and 5 points for non-responsive design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Map interaction response ≤ 100ms 2) Smooth transitions when switching between map/list/detail views 3) Clear visual indicators for loading states and interactive elements. Deduct 5 points for laggy map scrolling/zooming, 3 points for jarring transitions between views, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

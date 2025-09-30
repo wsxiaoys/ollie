@@ -1,0 +1,68 @@
+{
+  "index": 1701,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code generated is executable for display purposes. Please use HTML and Chart.js to help me create a comparison table showing Shanxi Province's GDP, Shanxi Province's GDP growth rate, and the national GDP growth rate from 2010-2024 based on data compiled from the National Bureau of Statistics and Shanxi Provincial Statistical Yearbook (Note: 2023-2024 are predicted values). Note: Both sets of data should be presented in a single table.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data visualization properly implemented with Chart.js?",
+      "description": "Evaluate whether the Chart.js library is correctly imported, initialized, and configured. Check if appropriate chart types are selected for GDP values (bar chart) and growth rates (line chart). The chart should use the mixed chart type capability of Chart.js to display both values simultaneously. Deduct 5 points if library integration is incorrect, 3 points if chart types are inappropriate for the data types, and 5 points if the mixed chart functionality isn't utilized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the complete dataset for Shanxi and national GDP accurately represented?",
+      "description": "Verify that the code includes all required data points from 2010-2024 (including predicted values for 2023-2024). The data should include Shanxi Province's GDP absolute values, Shanxi Province's GDP growth rates, and national GDP growth rates. All 15 years must be represented with clear labeling of predicted values. Deduct 5 points for incomplete data, 3 points if predicted values aren't clearly distinguished, and 5 points if any data category is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the visualization include appropriate labels, legends, and annotations?",
+      "description": "Check if the chart includes proper title, axis labels (years on x-axis, GDP values on primary y-axis, growth rates on secondary y-axis), and a legend clearly identifying each data series. The visualization should also include annotations indicating predicted values for 2023-2024. Deduct 3 points for missing title, 2 points for unclear or missing axis labels, 2 points for missing legend, and 3 points if predictions aren't annotated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the chart responsive and properly scaled for different displays?",
+      "description": "Evaluate if the chart implements responsive design principles using Chart.js options like 'responsive: true' and 'maintainAspectRatio'. Test if the visualization adapts to different screen sizes without distortion or overflow. Proper scaling of y-axes is required to accommodate both the GDP values and percentage growth rates. Deduct 5 points if no responsiveness is implemented, 3 points if the chart overflows on mobile screens, and 2 points if axes scaling creates visual confusion. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as data loading errors, missing values, browser compatibility issues) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should include error handling for Chart.js initialization and data processing. Give 10 points if fully implemented with try-catch blocks and data validation, 5 points if basic error handling is present, and 0 points if exceptions are not handled at all.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive tooltips with additional economic context 2. Toggle functionality to show/hide specific data series 3. Animation effects for data presentation 4. Trend line or correlation analysis). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization functions 2. Unrelated data or chart elements that don't contribute to the GDP comparison 3. Excessive decorative elements that distract from the data presentation. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization is obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing, chart configuration, and rendering logic), code organization, and maintainability. Deduct 5 points if global variables are excessively used; deduct 5 points if the code structure is monolithic with no separation of concerns; deduct 5 points if hardcoded values are used instead of configuration options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the chart design follows data visualization best practices: 1) Professional color scheme with sufficient contrast between data series 2) Proper spacing and layout with clear visual hierarchy 3) Appropriate font choices and sizing for readability. Deduct 3 points for poor color choices that make data series indistinguishable, 5 points for cluttered layout with overlapping elements, and 5 points for illegible text or numbers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the chart provides appropriate interactive features: 1) Responsive hover tooltips showing precise data values 2) Smooth animations when initializing or updating the chart 3) Intuitive controls if interactive elements are included. Deduct 5 points for missing tooltips on data points, 3 points for jerky or distracting animations, and 5 points for interactive elements that lack visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

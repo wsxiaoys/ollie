@@ -1,0 +1,68 @@
+{
+  "index": 835,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Design a main interface for a higher mathematics grade information management system after student login, including functions such as grade inquiry, grade analysis, information notifications, and comparison with previous grades.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the student login system fully implemented?",
+      "description": "Examine whether the code implements secure user authentication with proper session management, input validation, and protection against common security threats (like SQL injection, XSS). Check if it includes password hashing, CSRF protection, and proper error handling. Score 0 if authentication is missing, 5 if basic login exists with security flaws, and 10 if a complete, secure authentication system is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the grade inquiry feature complete and user-friendly?",
+      "description": "Verify if the grade inquiry system provides comprehensive views (by subject, semester, academic year), allows filtering/sorting, and includes detailed grade breakdown. Check for data visualization elements that enhance readability. Deduct 5 points if only basic listing is available without filtering options; deduct 3 points if there's no visual representation of grades. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the grade analysis functionality provide meaningful insights?",
+      "description": "Evaluate whether the analysis includes statistical measures (mean, median, standard deviation), percentile rankings, performance trends over time, and subject-specific analytics. Check for comparative analysis against class/department averages. Deduct 5 points if only basic statistics are shown; deduct 5 points if visualizations (charts, graphs) are missing or poorly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the notification system properly implemented with comparison features?",
+      "description": "Assess whether the system includes real-time notifications for new grades, important announcements, and grade changes. Check if the grade comparison feature allows side-by-side analysis between current and previous performance with clear visual indicators for improvement/decline. Deduct 5 points if notifications are static only; deduct 5 points if comparison lacks visual differentiation or trend analysis. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing grade data, network issues, edge cases in calculations, etc.) and provide friendly error messages or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive grade forecasting based on current performance 2. Personalized study recommendations based on weak areas 3. Peer anonymized performance comparison). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to view the same information) 2. Function modules unrelated to grade management (e.g., a built-in general calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data logic/view/controller layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 259,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Implement Teamfight Tactics using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game board and piece placement system implemented?",
+      "description": "Check whether the HTML/CSS/JavaScript code accurately implements the hexagonal game board used in TFT, with correct grid alignment and piece placement. Verify if unit positioning logic is implemented, including bench positions and board positions. Score 0 if the hexagonal board isn't implemented, 5 if only basic positioning exists, and 10 if the complete board with proper unit dragging/positioning is fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the champion/unit system properly implemented?",
+      "description": "Evaluate if the code includes proper representation of champions with their attributes (cost, stars, traits, abilities), and if unit upgrading mechanics (combining 3 identical units) are implemented. Check if unit stats and abilities are displayed when selected. Deduct 3 points if champions lack proper traits/synergies, 5 points if unit upgrading is missing, and 3 points if unit stats display is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are team synergies and trait bonuses implemented?",
+      "description": "Verify whether the code calculates and displays trait synergies based on active units on the board. Check if trait thresholds and corresponding bonuses are implemented correctly and visually indicated. Score 0 if synergies aren't implemented, 5 if basic trait counting exists but without effects, and 10 if complete synergy system with visual indicators and actual gameplay effects is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game economy and shop system implemented?",
+      "description": "Check if the shop system allows purchasing units, refreshing the shop, and if the player economy (gold accumulation, interest system) is implemented. Verify if leveling up mechanics and shop odds based on player level work correctly. Deduct 3 points if gold interest isn't calculated, 5 points if shop probabilities don't change with levels, and 3 points if bench management is problematic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid unit placements, attempting actions without sufficient gold, browser window resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual combat simulations 2. Detailed damage/healing statistics 3. Item combination guide overlays). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to calculate damage) 2. Function modules unrelated to TFT core gameplay (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down unit movement). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data management layers), component reusability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game mechanics and UI rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching that reflects TFT's visual identity 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system with clear readability for unit stats and traits. Deduct 3 points for each crowded visual element, 5 points for inconsistent visual styles, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to game requirements: 1) Responsive drag-and-drop for unit placement (≤ 50ms lag) 2) Clear visual feedback when performing actions (purchasing, combining units, activating synergies) 3) Intuitive UI for shop refreshes and unit management. Deduct 5 points for sluggish drag-and-drop mechanics, 3 points for unclear visual feedback on important actions, and 5 points for unintuitive gameplay controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1580,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Help me write a small program using AHP (Analytic Hierarchy Process) for decision-making.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the AHP core algorithm correctly implemented?",
+      "description": "Examine whether the code correctly implements the key components of AHP: criteria matrix creation, normalization, consistency check (CR < 0.1), and final weight calculation. Check for the presence of eigenvector calculation for weights and proper consistency ratio calculation using Random Index (RI) values. Award 10 points for complete implementation, 5 points if only basic matrix operations are present without consistency checking, 0 points if the core algorithm is missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the pairwise comparison functionality complete?",
+      "description": "Verify if the code includes mechanisms for users to input pairwise comparisons using the standard 1-9 scale. Check if the implementation properly handles reciprocal values (if A is 3 times more important than B, then B must be 1/3 as important as A). Award 10 points for complete implementation with validation, 5 points if only basic input is provided without validation, 0 points if the functionality is missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is a hierarchical structure for criteria and alternatives properly implemented?",
+      "description": "Evaluate whether the code allows for a proper hierarchical structure with main criteria, possible sub-criteria, and alternatives. The program should be able to handle at least one level of sub-criteria. Deduct 5 points if only flat criteria are supported without hierarchy, deduct 3 points if the hierarchy is limited to only two levels. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the program provide comprehensive results and sensitivity analysis?",
+      "description": "Check if the program calculates final alternative rankings and provides some form of sensitivity analysis to understand how changes in judgments affect the final decision. Verify if visualization of results is included (bar charts, tables, etc.). Award 10 points if comprehensive results with sensitivity analysis are present, 5 points for basic results without sensitivity analysis, 0 points if results presentation is minimal or missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common errors (such as invalid inputs, inconsistent judgments, matrix singularity issues) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should validate all user inputs, handle mathematical edge cases, and prevent program crashes. Give 10 points if comprehensive error handling exists, 5 points if basic error handling is present, and 0 points if no error handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive visualization of hierarchy 2. Automated recommendations for inconsistent judgments 3. Export capabilities to PDF/Excel 4. Group decision support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple matrix normalization methods) 2. Function modules unrelated to AHP decision-making 3. Unnecessary complexity that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation logic from UI), code organization, documentation, and potential for reuse. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if documentation is insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the user interface (if included) follows good design principles: 1) Clear organization of input forms 2) Intuitive flow from criteria definition to results 3) Proper use of tables and input controls. Deduct 3 points for each confusing interface element, 5 points for poor organization of the decision hierarchy, and 5 points for unclear results presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction intuitive and helpful?",
+      "description": "Judge whether the program provides clear guidance through the AHP process: 1) Clear instructions for pairwise comparisons 2) Helpful feedback on consistency 3) Understandable presentation of results. Deduct 5 points if users must understand AHP deeply before using the program, 3 points if the comparison process is tedious without shortcuts, and 5 points if results interpretation requires external explanation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Statistical Analysis",
+  "difficulty": "easy"
+}

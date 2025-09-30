@@ -1,0 +1,68 @@
+{
+  "index": 156,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, expert responses. Make sure the generated code is executable.\n# Please implement a Castle Defense game using HTML and JavaScript.\n# Task: Design a castle defense game where players need to defend against enemy attacks and protect the castle.\n# Hint: Implement enemy AI and defense strategies.\n# Include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core castle defense gameplay implemented?",
+      "description": "Review whether the code implements the fundamental elements of a castle defense game: castle structure, enemy spawning system, defensive mechanisms, and win/loss conditions. Score 0 if the core gameplay is missing, 5 if basic elements are present but incomplete, and 10 if the game includes varied enemy types, multiple defense options, and proper game flow with difficulty progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the enemy AI system properly implemented?",
+      "description": "Evaluate the sophistication of the enemy AI. Check for path-finding algorithms, target selection logic, attack patterns, and difficulty scaling. Deduct 5 points if enemies move in predefined patterns only, 3 points if there's no variety in enemy types or behaviors. Give full score if AI includes strategic decision-making, adapts to player actions, and features different enemy types with unique behaviors.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the defense strategies and player interaction mechanisms implemented?",
+      "description": "Check whether the code implements varied defensive options (towers, traps, special abilities) and intuitive player controls. Assess if the placement system works correctly, if upgrade paths exist, and if resource management is implemented. Deduct 4 points if only a single defense type exists, 3 points if placement validation is missing, and 3 points if there's no upgrade system.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game have proper wave management and difficulty progression?",
+      "description": "Evaluate the wave system implementation, including timing mechanisms, enemy variety per wave, increasing difficulty, and wave notification system. Check for a balanced difficulty curve. Deduct 5 points if waves are static with no progression, 3 points if there's no visual indication of incoming waves, and 2 points if difficulty scaling is poorly balanced.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, resource miscalculations, rapid user clicks, game speed variations) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects that impact gameplay 2. Special events or boss battles 3. Interactive environment elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple enemy spawning systems) 2. Function modules unrelated to castle defense (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), code organization, and maintainability. Assess whether the code follows proper object-oriented principles for game entities. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments despite the requirement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game UI follows game design principles: 1) Clear visual hierarchy for game elements 2) Intuitive controls and feedback 3) Readable game information display (health, resources, wave information). Deduct 3 points for cluttered UI elements, 5 points for unclear visual distinction between enemies and defenses, and 5 points for information overload or poorly organized HUD. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game's dynamic effects enhance gameplay: 1) Responsive controls with immediate feedback 2) Smooth animations for tower placement, attacks and enemy movement 3) Clear visual and audio cues for important events (wave start, castle damage). Deduct 5 points for laggy animations, 3 points for missing feedback on player actions, and 5 points for confusing visual effects during intense gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

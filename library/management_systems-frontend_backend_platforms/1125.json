@@ -1,0 +1,68 @@
+{
+  "index": 1125,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable when possible. Provide functionality for manual entry of historical electricity consumption data for various company yards in 2022 and 2023. Input information includes electricity consumption category, equipment code, equipment name, energy consumption, workload, unit consumption, electricity consumption month, and other information. The functionality should include adding, modifying, editing, deleting, importing, and exporting yard electricity consumption data.\n\nThe frontend needs to be upgraded from Vue 2.0 to Vue 3.0, and the functionality migrated to the Yuheng development framework. Adjust functional components and styles to adapt to the new framework, and switch the usage methods of common entity classes and utility classes to ensure comprehensive adjustment and adaptation of code functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the electricity consumption data entry functionality fully implemented?",
+      "description": "Review whether the code implements all required data fields (electricity consumption category, equipment code, equipment name, energy consumption, workload, unit consumption, electricity consumption month, etc.) with appropriate validation. Check for field type enforcement, range validation, and required field handling. Score 0 if core data structures are missing, 5 if basic fields are implemented but lack validation, and 10 if complete with comprehensive validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all CRUD operations properly implemented for yard electricity consumption data?",
+      "description": "Evaluate whether the code properly implements adding, modifying, editing, deleting operations with appropriate state management. Check for optimistic updates, proper error handling during operations, and confirmation dialogs for destructive actions. Deduct 2 points for each missing operation, 3 points if operations don't update the UI appropriately, and 3 points if there's no validation feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data import/export functionality properly implemented?",
+      "description": "Check for robust import/export capabilities including file format support (CSV, Excel), validation of imported data, progress indicators for large datasets, and error reporting. Verify that exported files contain complete and accurate data. Deduct 3 points if import validation is missing, 3 points if export formatting options are limited, and 5 points if large file handling isn't optimized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Has the Vue 2.0 to Vue 3.0 migration been properly executed?",
+      "description": "Evaluate whether the code successfully migrates from Vue 2.0 to 3.0, including: replacing the Options API with Composition API where appropriate, converting event bus patterns to provide/inject or state management, updating lifecycle hooks, and proper handling of reactive state. Deduct 5 points if deprecated Vue 2 syntax is still used, 3 points if reactivity isn't properly implemented with Vue 3 methods, and 5 points if there are console errors related to API incompatibilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid user input, API failures) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smart data entry suggestions based on historical patterns 2. Interactive data visualization for consumption trends 3. Automated data anomaly detection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple data validation logic coexisting) 2. Function modules unrelated to electricity consumption tracking (e.g., unnecessary animations or widgets) 3. Performance-impacting features that don't add value to the core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data models/view components/service layers), unit test coverage, and build process adaptation to the Yuheng framework. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the integration with the Yuheng development framework is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional form design (consistent field widths, clear grouping of related fields). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic form layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback for data operation success/failure. Deduct 5 points for each operation without feedback, 3 points for UI freezing during data processing, and 5 points for confusing navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

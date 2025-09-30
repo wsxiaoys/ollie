@@ -1,0 +1,68 @@
+{
+  "index": 1803,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable for demonstration. Help me create a random name-calling HTML webpage with the following requirements: it should only identify names, include a start button, a pause button, and a reset button. I should be able to upload an xlsx format document which the system can recognize for the name-calling activity. The reset function should be able to loop, and the webpage style should emulate the Apple official website's design.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core name-calling functionality correctly implemented?",
+      "description": "Evaluate whether the code properly implements random name selection from the uploaded list. Check if the randomization algorithm ensures each name has equal probability of being selected and if the system prevents repetition until all names have been called. Score 0 if the core functionality is missing, 5 if basic random selection works but with flaws, 10 if the implementation is complete with proper randomization and non-repetition control.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the Excel (xlsx) file upload and parsing feature work properly?",
+      "description": "Assess the file upload mechanism and xlsx parsing implementation. Check if the code handles different Excel formats, properly extracts name data from various column structures, and provides clear feedback on successful upload. Deduct 5 points if the parser only works with specific Excel structures, 3 points if error handling is missing for malformed files, and 2 points if there's no visual feedback during the upload process. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are all required control buttons (start, pause, reset) implemented with proper functionality?",
+      "description": "Verify that all three buttons (start, pause, reset) are implemented with correct functionality. Start should begin the name-calling process, pause should temporarily halt it while preserving state, and reset should clear the current session and allow restarting. Deduct 3 points for each button with incorrect behavior, 2 points if the buttons lack proper state management (e.g., disabling start when already running). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the looping reset function properly implemented?",
+      "description": "Examine whether the reset function allows for proper looping through all names and restarting the process. Check if the system tracks which names have already been called and can properly reset this tracking. Score 0 if reset doesn't work, 5 if it resets but doesn't properly prepare for a new complete cycle, and 10 if it fully implements the looping functionality with clear state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid file uploads, empty name lists, rapid button clicking, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation effects when displaying selected names 2. Sound effects for selection process 3. Statistics tracking of selected names 4. Custom configuration options for selection speed or display style). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to reset the system) 2. Function modules unrelated to name-calling (e.g., unnecessary analytics) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/file handling components), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation for key functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet Apple's design standards?",
+      "description": "Evaluate whether the design authentically replicates Apple's official website aesthetic: 1) Clean, minimalist design with ample white space 2) San Francisco or similar font family with proper typography hierarchy 3) Subtle shadows and refined animations 4) High-quality imagery and icons. Deduct 3 points for each element that doesn't match Apple's design language, 5 points for inconsistent styling across components, and 5 points for poor responsive design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to Apple's interaction patterns: 1) Subtle animations for state changes 2) Smooth transitions between different states 3) Immediate visual feedback for user actions 4) Accessible interface with proper focus states. Deduct 5 points for choppy animations, 3 points for delayed response to user input, and 5 points for missing transition effects between name selections. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

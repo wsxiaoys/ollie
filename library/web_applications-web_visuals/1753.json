@@ -1,0 +1,68 @@
+{
+  "index": 1753,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you produce is executable for display. Help me create an anime website.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic website structure properly implemented?",
+      "description": "Review whether the HTML5 structure includes semantic tags (header, nav, main, section, footer), proper DOCTYPE declaration, and responsive meta tags. Check if the CSS follows a logical organization (reset/normalize, variables, components, layouts). Score 0 if the structure is chaotic, 5 if basic elements are present but poorly organized, and 10 if the structure is clean, semantic, and follows best practices.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the anime catalog and browsing functionality implemented?",
+      "description": "Evaluate the implementation of the anime catalog with filtering, sorting, and search capabilities. Check if the catalog displays essential information (title, cover image, rating, genres, release year) and provides pagination or infinite scrolling. Deduct 5 points if search functionality is missing, 3 points if filtering is limited, and 2 points if sorting options are inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the anime detail page and media player properly designed?",
+      "description": "Assess the detail page for comprehensive anime information (synopsis, episodes, characters, related anime) and a functional video player with essential controls (play/pause, volume, fullscreen, quality options). Score 0 if the detail page or player is missing, 5 if they exist but lack essential features, and 10 if both are fully featured and well-integrated.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a user system with personalization features?",
+      "description": "Check for user authentication (signup/login), profile management, and personalization features such as watchlists, favorites, and watch history. Evaluate if the system includes recommendation algorithms based on user preferences. Deduct 5 points if authentication is insecure, 3 points if personalization features are missing, and 2 points if recommendations are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as failed API requests, missing images, slow network connections, etc.) and provide friendly error prompts or recovery mechanisms. Check for input validation, error handling for API calls, and fallback content. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark/light theme toggle 2. Seasonal anime calendar visualization 3. Character relationship graphs 4. Episode screenshot previews 5. Voice actor profiles with other works). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple carousel components with different code) 2. Function modules unrelated to anime website (e.g., news ticker unrelated to anime) 3. Fancy effects that affect performance (e.g., excessive parallax effects or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as component-based architecture, separation of concerns), state management implementation, code reusability, and build process. Deduct 5 points if global state is managed poorly; deduct 3 points if components are tightly coupled; deduct 2 points if the code duplication rate is high (over 30%). Check for proper use of async/await or Promises for API calls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows modern anime website aesthetics: 1) Cohesive color scheme aligned with anime themes 2) Proper card layouts with consistent spacing (8px grid system) 3) Typography hierarchy with readable fonts (min 14px for body text) 4) Appropriate use of imagery and thumbnails. Deduct 3 points for cluttered layouts, 4 points for poor visual hierarchy, and 3 points for inconsistent styling across pages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects enhance user experience: 1) Page transitions under 300ms 2) Loading states for async operations 3) Hover/click animations that provide feedback 4) Smooth scrolling behavior 5) Mobile touch gestures support. Deduct 3 points for jarring transitions between pages, 3 points for missing loading indicators, 2 points for unresponsive UI elements, and 2 points for poor mobile interaction design. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

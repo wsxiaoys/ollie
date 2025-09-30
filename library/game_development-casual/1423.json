@@ -1,0 +1,68 @@
+{
+  "index": 1423,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Help me write a Whack-a-Mole mini-game using HTML frontend.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Whack-a-Mole game mechanism fully implemented?",
+      "description": "Check if the code properly implements the core game mechanics: random mole appearance from holes, player clicking/tapping to whack moles, score tracking, and time limit. Score 0 if the basic game loop isn't working, 5 points if only simple functionality exists, and 10 points if the game includes varied mole speeds, proper animation for moles appearing/disappearing, and correct hit detection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game board UI properly designed and rendered?",
+      "description": "Evaluate if the game board has appropriate layout with clearly defined holes for moles, consistent spacing, and responsive design that works on different screen sizes. Deduct 3 points if the mole holes aren't visually distinct, 4 points if the layout breaks on mobile devices, and 3 points if the game area doesn't maintain proper proportions. Full score requires professional-looking holes and moles with visual depth.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the game implement proper scoring and game state management?",
+      "description": "Review the implementation of score tracking, countdown timer, game states (start, playing, game over), and session persistence. Deduct 5 points if score increments don't validate actual hits, 3 points if the timer doesn't accurately control game duration, and 5 points if game states aren't properly managed. Full score requires persistent high scores and clean state transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game include difficulty progression or levels?",
+      "description": "Assess if the game implements increasing difficulty (faster moles, shorter appearance times, fake moles, etc.) either through timed progression or explicit level selection. Score 0 if difficulty remains static, 5 points for basic difficulty increase over time, and 10 points for a sophisticated level system with multiple parameters affecting gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, browser resizing, loss of focus, etc.) and provide friendly error handling. Code with strong robustness should prevent cheating through rapid clicking, handle browser tab switching gracefully, and recover from potential errors. Give 10 points for excellent robustness, 5 points for average handling, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special bonus moles 2. Power-ups or combo systems 3. Visual/audio feedback for successful hits 4. Theme customization options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems coexisting) 2. Function modules unrelated to the Whack-a-Mole game (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive animations slowing down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, and maintainability. Deduct 5 points if global variables are excessively used or proper encapsulation is missing; deduct 5 points if the code duplication rate is too high; deduct 5 points if there's no separation between game logic and DOM manipulation. The full score is 10 points for clean, maintainable code.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click/tap response delay ≤ 100ms 2) Mole animation duration appropriate (200-400ms) 3) Clear visual feedback for hits and misses. Deduct 5 points for laggy animations, 3 points for unclear hit feedback, and 5 points if the game feels unresponsive. The full score is 10 points for a game that feels snappy and satisfying to play.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

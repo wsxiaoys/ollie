@@ -1,0 +1,68 @@
+{
+  "index": 1385,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for display purposes. I want to use Vue to design a frontend page with the following functionalities: displaying news briefings, having an input field for entering URLs, and the ability to search and display news briefings.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue component structure properly designed?",
+      "description": "Review whether the code properly implements Vue's component-based architecture. Check for appropriate component organization (parent-child relationships), proper props passing, and emit event handling. Evaluate the use of Vue lifecycle hooks. Score 0 if components are not used at all, 5 if basic components exist but are poorly organized, and 10 if components follow best practices with clear responsibilities and reusability.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the URL input field properly implemented?",
+      "description": "Check whether the URL input field is properly implemented with validation (checking for valid URL format), error handling, and appropriate user feedback. Verify if v-model is correctly used for two-way binding. Assess if the field includes visual cues for validation states. Deduct 5 points if URL validation is missing, 3 points if there's no error feedback, and 2 points if the input doesn't have proper UI states (focus, error, etc.). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the news briefing display functionality implemented correctly?",
+      "description": "Evaluate if the news briefings are displayed in a structured way with proper list rendering (v-for) and key binding. Check if the displayed content includes essential news elements (title, summary, source, timestamp, etc.). Deduct 5 points if news items lack visual hierarchy, 3 points if there's no loading state or empty state handling, and 2 points if the layout breaks with different content lengths. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the search functionality implemented efficiently?",
+      "description": "Assess whether the search function uses computed properties or watchers appropriately for filtering news. Check for debouncing on user input, case-insensitive search, and ability to search across multiple fields (title, content, etc.). Verify if search results update reactively. Deduct 5 points if search is not optimized and causes performance issues, 3 points if the search lacks features like highlighting matches, and 2 points if there's no indication of search results count. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, invalid URL inputs, empty search results, etc.) and provide friendly error prompts or recovery mechanisms. Check for try-catch blocks around API calls and proper error state management. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. News categorization with visual indicators 2. Reading time estimation 3. Share functionality for individual news items 4. Dark mode support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search methods coexisting) 2. Function modules unrelated to news briefings (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations on news items). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API services, UI components, and state management), use of Vue best practices (Composition API or Options API used consistently), and code organization. Check for proper naming conventions, comments, and TypeScript usage if applicable. Deduct 5 points if global state is mismanaged; deduct 5 points if the code has high duplication; deduct 5 points if there's no separation of concerns (mixing API calls with UI logic). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check for proper responsive design using Vue's responsive classes or media queries. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Loading states for API calls 2) Smooth transitions when filtering/searching news (using Vue transitions) 3) Clear visual feedback for user actions. Check for properly implemented animations that enhance rather than hinder the user experience. Deduct 5 points for missing loading indicators, 3 points for jarring transitions between states, and 5 points for unresponsive UI during data operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Blogs/Forums",
+  "difficulty": "easy"
+}

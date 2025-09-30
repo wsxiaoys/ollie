@@ -1,0 +1,68 @@
+{
+  "index": 84,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Make sure the generated code is executable for demonstration.\nPlease use HTML and JavaScript to implement a Treasure Hunt game.\n**Task**: Design a treasure hunt game where players need to explore and fight to find hidden treasures.\n**Hint**: Set up randomly generated treasure locations and enemies. Players need to defeat enemies and solve puzzles to obtain treasures.\nPlease include comments in your code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game exploration system fully implemented?",
+      "description": "Review whether the code accurately implements map generation with randomized treasure locations. Check if the player movement system works correctly with proper collision detection. Score 0 if the exploration mechanic is missing, 5 if basic movement is implemented but without proper treasure randomization, and 10 if the exploration system is complete with diverse areas and discovery mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the combat system properly implemented?",
+      "description": "Evaluate whether the game includes a functioning combat system where players can engage with enemies. Check if there are different enemy types, health/damage mechanics, and combat animations. Score 0 if combat is absent, 5 if only basic combat is implemented (single enemy type, simple hit mechanics), and 10 if the combat system is comprehensive (multiple enemy types, varied attacks, strategic elements).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are puzzles integrated into the treasure hunting gameplay?",
+      "description": "Check if the code includes puzzle mechanics that players must solve to access treasures. Puzzles should have clear objectives, interactive elements, and validation logic. Score 0 if puzzles are missing, 5 if only basic puzzles exist (e.g., simple key collection), and 10 if multiple diverse puzzle types are implemented with increasing complexity.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the treasure reward system properly implemented?",
+      "description": "Evaluate whether treasures have varied types/rarities and provide meaningful rewards to the player. Check if there's a proper inventory system to track found treasures. Score 0 if treasures are merely decorative or missing, 5 if basic treasure collection exists without variety, and 10 if treasures have diverse properties, rarities, and gameplay effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user inputs, game state errors, or browser inconsistencies) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment based on player performance 2. Procedurally generated maps with seed sharing 3. Environmental interaction beyond basic movement). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement systems coexisting) 2. Function modules unrelated to treasure hunting gameplay (e.g., an unnecessary mini-game) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game states, entity management, rendering, and input handling), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation as requested in the requirements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Consistent visual theme matching the treasure hunt concept 2) Clear HUD elements (health, inventory, map) with proper spacing 3) Readable text with appropriate contrast against backgrounds. Deduct 3 points for each misaligned UI element, 5 points for inconsistent visual style, and 5 points for poor readability or cluttered information display. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game's dynamic effects enhance playability: 1) Responsive controls with < 100ms feedback 2) Smooth animations for movement, combat and treasure discovery 3) Clear visual/audio feedback for important events (enemy encounters, puzzle solving, treasure found). Deduct 5 points for input lag or unresponsive controls, 3 points for jerky animations, and 5 points for lack of feedback when interacting with game elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

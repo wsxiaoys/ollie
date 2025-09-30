@@ -1,0 +1,68 @@
+{
+  "index": 474,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the generated code is executable for demonstration. Develop an experiment report generator with a form input area on the left (for experiment purpose, equipment, procedures, etc.) and real-time report preview on the right. Provide template selection options (Physics/Chemistry/Biology) with different CSS styles applied to each template. Support the insertion of data tables (with dynamic row and column editing) and line charts (generated based on input data). The final report should be exportable as PDF or HTML files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the dual-pane form input and preview system fully implemented?",
+      "description": "Review whether the code accurately implements a split-screen layout with form input area on the left and real-time preview on the right through HTML/CSS/JavaScript. Check if all required form fields (experiment purpose, equipment, procedures, etc.) are present and functional with proper validation. Score 0 if the dual-pane layout is not implemented, 5 if only basic form structure exists without real-time preview, and 10 if complete bidirectional synchronization between input and preview is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the template selection and CSS styling systems properly implemented?",
+      "description": "Evaluate whether the code includes distinct template options for Physics/Chemistry/Biology with unique CSS styling for each template. Check if template switching is seamless and maintains data integrity. Verify that each template has appropriate visual differentiation (color schemes, typography, layout). Deduct 3 points if templates share identical styling, 5 points if template switching causes data loss, and 3 points if CSS styles are not properly encapsulated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dynamic data table functionality fully operational?",
+      "description": "Check whether the data table implementation supports dynamic row and column editing, including add/delete operations, cell editing, and data validation. Evaluate if the table integrates properly with the report preview and maintains data consistency. Deduct 5 points if row/column operations are not supported, 3 points if cell editing is buggy, and 5 points if table data doesn't sync with preview. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the chart generation and PDF/HTML export features complete?",
+      "description": "Assess whether the line chart generation works correctly based on input data, with proper scaling, labeling, and visual representation. Verify that PDF and HTML export functions produce complete, formatted documents that preserve all styling and content. Deduct 5 points if charts don't render correctly, 5 points if export functions are missing or broken, and 3 points if exported files lose formatting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid form input, chart data errors, template switching failures, export errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-save functionality with version history 2. Drag-and-drop image insertion 3. Real-time collaboration features 4. Advanced chart types beyond line charts 5. Custom template creation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple export mechanisms doing the same thing) 2. Function modules unrelated to report generation (e.g., built-in games or social features) 3. Fancy effects that affect performance (e.g., excessive animations during typing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating form handling/preview rendering/export logic), component reusability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code structure is not maintainable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for different templates (no more than 3 primary colors per template) 2) Proper layout spacing with clear visual hierarchy 3) Professional typography system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent form field styling. Deduct 3 points for each crowded visual element, 5 points for poor template differentiation, and 5 points for inconsistent UI components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Real-time preview updates with delay ≤ 200ms 2) Smooth template switching animations 3) Responsive form interactions with immediate feedback 4) Chart rendering performance under different data loads. Deduct 5 points for each laggy interaction, 3 points for jerky animations, and 5 points for unresponsive form elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

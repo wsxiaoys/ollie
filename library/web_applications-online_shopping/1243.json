@@ -1,0 +1,68 @@
+{
+  "index": 1243,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Write code for a visual agriculture e-commerce mini-program with the following requirements: visual agriculture features, two-tier distribution system, shopping mall functionality, and payment capabilities.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the visual agriculture visualization feature properly implemented?",
+      "description": "Check if the code implements interactive visualization of agricultural products (e.g., 3D product viewing, farm-to-table traceability visualization, growth cycle display). Verify if WebGL/Canvas/SVG is properly used for rendering agricultural products with proper lighting and textures. Score 0 if visualization is missing, 5 if only basic static images are used, and 10 if interactive 3D models or dynamic growth visualizations are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the two-tier distribution system fully functional?",
+      "description": "Evaluate the implementation of the two-tier distribution system, including agent registration, commission calculation, tier relationship management, and performance tracking. Check if the code handles commission splits correctly between different tiers, supports invitation mechanisms, and maintains proper relationship trees. Deduct 5 points if commission calculation logic is flawed, and 3 points if the invitation system doesn't persist relationships. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the e-commerce shopping mall functions complete?",
+      "description": "Review the implementation of essential e-commerce features: product listing with filtering/sorting, shopping cart management, order processing, user reviews, and inventory management. Test if the product search works with agricultural-specific parameters (e.g., organic certification, harvest date). Deduct 3 points for each missing core feature. Give 10 points if all features are present with agriculture-specific optimizations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the payment system secure and comprehensive?",
+      "description": "Assess if the payment system includes multiple payment methods appropriate for a mini-program (e.g., WeChat Pay integration, wallet system), implements proper transaction states, and includes security measures like order expiration and payment verification. Check for the presence of digital signatures for transactions and proper error handling for failed payments. Score 0 if payment is non-functional, 5 if basic payment exists but lacks security features, and 10 if comprehensive with proper security implementations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, payment failures, inventory shortages, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR product preview in user's space 2. Seasonal agricultural calendar integration 3. Farm live streaming integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple product display components with similar functionality) 2. Function modules unrelated to agriculture e-commerce (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations on product pages). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/API layers), unit test coverage, and build process optimization for mini-program environment. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no optimizations for mini-program performance constraints are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mini-program design principles: 1) Harmonious color scheme fitting agricultural theme (natural greens, earthy tones) 2) Proper layout adapted for both small screens and larger displays 3) Appropriate typography system for readability (body font size ≥ 14px). Deduct 3 points for each cluttered page section, 5 points for mismatched color themes, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the mini-program interactions conform to mobile UX best practices: 1) Touch response delay ≤ 100ms 2) Smooth transitions between pages and states 3) Clear visual feedback for user actions. Deduct 5 points for each operation without feedback, 3 points for jerky animations, and 5 points for non-standard navigation patterns that create confusion. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

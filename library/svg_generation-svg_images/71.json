@@ -1,0 +1,68 @@
+{
+  "index": 71,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure the code you generate is executable for demonstration. Please help me implement this SVG image using code. A compass helps with wayfinding by giving directions to the location.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic SVG compass structure correctly implemented?",
+      "description": "Check whether the SVG markup includes all essential components of a compass: circular base, cardinal direction indicators (N, S, E, W), and a direction needle. Score 0 if the basic structure is missing, 5 if basic elements are present but incomplete, and 10 if all compass elements are properly structured with appropriate SVG elements (circle, path, text, etc.).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the compass visually accurate and properly positioned?",
+      "description": "Evaluate whether the compass elements maintain proper proportions and positioning (cardinal directions at correct angles, needle properly centered, etc.). Check that the viewBox is properly set. Deduct 5 points if elements are misaligned, 3 points if the proportions are inconsistent, and 5 points if the compass is not properly centered in the viewBox. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the compass needle interactive or animated?",
+      "description": "Assess whether the compass includes interactive features such as rotation on click/drag or automatic animation. Check if the needle movement is smooth and realistic (proper transform origin, transition effects). Deduct 5 points if animation is jerky, 5 points if interaction is unintuitive, and 8 points if the needle doesn't move at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are cardinal and intercardinal directions properly labeled?",
+      "description": "Check whether the compass includes properly positioned text elements for direction labels (N, S, E, W, NE, NW, SE, SW). Evaluate text positioning, font size, and readability. Deduct 3 points for each missing cardinal direction, 2 points for each missing intercardinal direction, and 5 points if text positioning interferes with readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (such as browser resizing, different screen sizes, SVG support checks, etc.) and provide fallbacks or responsive design. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no edge cases are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Geolocation integration to point to actual north, 2. Tilting/3D perspective effects, 3. Realistic materials or lighting effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements or unnecessary groupings, 2. Features unrelated to a compass functionality, 3. Excessive visual effects that impact performance (e.g., unnecessary gradients or filters). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular structure (separation of SVG markup, CSS styling, and JavaScript functionality), code reusability, and maintainability. Deduct 5 points if inline styles are overused without CSS classes; deduct 5 points if JavaScript is not properly separated or organized; deduct 5 points if there's significant code duplication. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the compass design follows modern design principles: 1) Harmonious color scheme with appropriate contrast, 2) Clean visual hierarchy with proper emphasis on important elements, 3) Professional typography for direction labels. Deduct 3 points for poor contrast making elements hard to distinguish, 5 points for clashing colors, and 5 points for cluttered visual design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether any animations or interactions conform to human perception characteristics: 1) Smooth transitions for needle movement (≤ 100ms response time), 2) Appropriate easing functions for realistic motion, 3) Clear visual feedback for user interactions. Deduct 5 points for jerky animations, 3 points for unrealistic motion physics, and 5 points for lack of visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

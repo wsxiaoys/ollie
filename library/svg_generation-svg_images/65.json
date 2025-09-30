@@ -1,0 +1,68 @@
+{
+  "index": 65,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for display when possible.\nPlease help me implement the following requirement using code, specifically with SVG. The requirement is to create: a complex astronaut drawing showing them floating in space, with a slight swaying animation added.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the astronaut figure properly structured in SVG?",
+      "description": "Evaluate whether the astronaut figure is properly implemented using SVG path elements, groups, and shapes. The astronaut should include detailed components such as helmet with visor reflection, spacesuit with proper joints, backpack/life support system, and gloves/boots. Score 0 if the astronaut is overly simplistic (just basic shapes), 5 for moderate detail, and 10 for professional-level SVG structuring with proper layering and proportions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the space environment effectively depicted?",
+      "description": "Check if the space environment includes essential elements like stars (varied sizes/opacities), distant planets or celestial bodies, and possibly subtle nebula effects using gradient fills or filters. Assess if the background creates depth using multiple layers. Deduct 3 points if stars are uniform/unrealistic, 5 points if the environment lacks depth, and 3 points if there's no contrast between foreground and background. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the floating/swaying animation properly implemented?",
+      "description": "Analyze the animation implementation for the floating astronaut. Look for smooth keyframe animations or SMIL animations with proper easing functions. The movement should simulate zero-gravity floating with subtle rotations and translations on multiple axes. Deduct 5 points if the animation is jerky/unnatural, 5 points if it's too simplistic (single-axis movement only), and 3 points if timing functions are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are advanced SVG features properly utilized?",
+      "description": "Evaluate the use of advanced SVG features such as masks, clipping paths, filters (like blur for depth), gradient fills, and proper opacity settings. These should enhance visual quality without causing performance issues. Check for use of <defs> for reusable elements. Deduct 3 points for each advanced feature that could be used but isn't, and 5 points if features are used incorrectly causing visual artifacts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG code is robust with proper viewBox settings, responsive design considerations, and fallback mechanisms. Check for proper handling of aspect ratios and scaling. Code with strong robustness should work across different screen sizes and browsers. Deduct 3 points if the viewBox is improperly set, 3 points if there are no responsiveness considerations, and 4 points if browser compatibility issues exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive elements that respond to user input 2. Subtle particle effects for stars or thrusters 3. Dynamic lighting effects as the astronaut moves 4. Secondary animations like tethering cable or floating equipment). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements or groups that could be simplified or reused 2. Excessive animation loops that affect performance 3. Overly complex effects that don't enhance the visual narrative. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visual elements are obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular organization (such as proper grouping of SVG elements), naming conventions for IDs/classes, and code readability. Deduct 3 points if elements are not logically grouped, 3 points if IDs/classes are poorly named or inconsistent, and 4 points if the code structure is disorganized with no comments or clear pattern. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Color harmony with appropriate use of shadows and highlights 2) Proper proportions and visual balance 3) Attention to detail in the astronaut's equipment and environment. Deduct 3 points for each visual inconsistency, 5 points for poor color choices that diminish realism, and 5 points for anatomical or perspective errors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation performance optimized?",
+      "description": "Judge whether the animation is optimized for performance: 1) Using transform properties rather than changing position attributes 2) Appropriate animation frame rates 3) Proper use of requestAnimationFrame if using JavaScript. Deduct 5 points for animations that cause browser lag, 3 points for inefficient animation methods, and 5 points for unnecessary redraws or layout thrashing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

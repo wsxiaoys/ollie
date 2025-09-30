@@ -1,0 +1,68 @@
+{
+  "index": 582,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code in your examples. Implement a web tool that allows users to record local audio (such as microphone input), with features for recording, pausing, re-recording, and saving as an audio file.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio recording functionality fully implemented?",
+      "description": "Review whether the code accurately implements the core MediaRecorder API with proper event handling for starting, stopping, and capturing audio data. Check if the microphone access permission is properly requested and errors are handled. Score 0 if recording functionality is missing, 5 if basic recording works with issues, and 10 for a complete implementation with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all required recording control features implemented?",
+      "description": "Evaluate whether the code implements all specified features: recording, pausing, re-recording (discarding current recording and starting fresh), and saving as an audio file. Deduct 2.5 points for each missing feature. Check if the state transitions between these operations are handled correctly (e.g., can't pause before recording starts). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio file saving functionality properly implemented?",
+      "description": "Check whether the tool allows users to save recorded audio in common formats (like MP3, WAV, or WebM) with appropriate file naming options. Verify that the implementation uses proper Blob handling and download mechanisms. Deduct 5 points if only one format is supported, 7 points if the download mechanism is flawed, and 10 points if saving functionality is missing completely.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper audio visualization feedback during recording?",
+      "description": "Assess whether the code includes visual feedback during recording (such as audio waveform, volume meter, or recording time display). Check if the AudioContext API is used for visualization. Deduct 5 points if there's no visual feedback, 3 points if the visualization is basic (just a recording indicator), and give full 10 points if there's real-time waveform or frequency visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone permission denial, unsupported browsers, device disconnection during recording, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Audio effects/filters 2. Automatic transcription integration 3. Multiple recording track mixing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to save files) 2. Function modules unrelated to audio recording (e.g., irrelevant media players) 3. Fancy effects that affect performance (e.g., excessive animations that impact recording quality). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/recording logic/file handling), code organization, and error handling. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no proper error handling or console debugging. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Clear visual state changes when recording starts/stops/pauses 3) Intuitive button placement and state indication. Deduct 5 points for each operation without feedback, 3 points for confusing state transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "easy"
+}

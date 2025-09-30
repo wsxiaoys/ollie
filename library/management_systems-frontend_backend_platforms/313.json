@@ -1,0 +1,68 @@
+{
+  "index": 313,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Build a modern test case management platform with these core functions: user system, case management system, and case statistics system. Implement features for adding, modifying, and importing test cases via Excel. Execute test cases and generate execution statistics. Frontend tech stack: Vue.js + Bootstrap, etc. Backend tech stack: Django + Django REST framework, etc. Database: SQLite3, etc. Based on these requirements, what questions and suggestions do you have?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the test case management system architecture properly implemented?",
+      "description": "Review whether the code implements a clear separation of concerns with proper frontend-backend architecture. The frontend should use Vue.js component structure with proper state management, and the backend should follow Django's MVT pattern with REST API endpoints. Score 0 if the architecture is missing or fundamentally flawed, 5 if basic structure exists with some issues, and 10 if the architecture is comprehensive with proper separation of concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user system fully functional?",
+      "description": "Evaluate the implementation of user registration, authentication, authorization, and role management. Check for JWT/session-based authentication, role-based access control, proper password hashing, and account management features. Deduct 3 points if password security is inadequate, 3 points if role-based permissions are missing, and 4 points if authentication tokens aren't properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the case management system comprehensive?",
+      "description": "Assess the implementation of CRUD operations for test cases, including proper data models with relationships, validation logic, and versioning. Check for features like test case categorization, search/filtering, and bulk operations. Deduct 3 points if the data model lacks necessary fields, 3 points if validation is inadequate, and 4 points if searching/filtering capabilities are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the Excel import/export features properly implemented?",
+      "description": "Review the implementation of Excel import/export functionality for test cases. Check for proper file format validation, template handling, error reporting during import, and data integrity checks. Evaluate the UX flow for imports/exports. Deduct 3 points for missing validation, 3 points for inadequate error handling, 2 points for poor UX, and 2 points for missing template functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network issues, database failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper exception handling, input validation, and defensive programming. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if exceptions aren't handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaboration on test cases 2. Test case dependency visualization 3. Automated test execution scheduling 4. AI-assisted test case generation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to export data) 2. Function modules unrelated to test case management (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/view/API layers), unit test coverage, and build process automation. Examine frontend component reusability and backend API documentation. Deduct 3 points if global state management is poorly implemented; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if the build process is not automated; deduct 2 points if API documentation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows modern design principles: 1) Harmonious color matching with Bootstrap theme customization 2) Proper layout spacing and responsive design 3) Professional typography and consistent design language. Deduct 3 points for inconsistent design elements, 3 points for non-responsive layouts, and 4 points for poor information hierarchy and navigation structure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the statistical dashboard comprehensive and insightful?",
+      "description": "Judge the quality of the statistical system implementation: 1) Variety of metrics and KPIs (test coverage, pass/fail rates, execution times) 2) Visual data representations (charts, graphs) 3) Filtering and time-range selection 4) Export capabilities. Deduct 3 points for missing key metrics, 3 points for poor visualization choices, 2 points for limited filtering options, and 2 points for missing export functionality. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

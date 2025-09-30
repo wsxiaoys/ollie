@@ -1,0 +1,68 @@
+{
+  "index": 266,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration. Create a UI project using QT based on Palantir's style with web interface development as the foundation. This project should include Palantir's main elements and facilitate easy modification of styles, language switching between Chinese and English, etc. How can this be implemented? Please provide specific and complete code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Qt UI framework properly set up with web interface integration?",
+      "description": "Evaluate whether the code properly establishes a Qt framework with web capabilities (WebEngineView or equivalent). Check if the bridge between Qt C++ and web components is correctly implemented with proper data binding. Score 0 if there's no integration between Qt and web, 5 if basic integration exists but with limitations, and 10 if there's seamless two-way communication between Qt and web components.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the implementation replicate Palantir's distinctive UI style accurately?",
+      "description": "Verify if the code implements key Palantir UI characteristics: dark theme with accent colors (typically blue/teal), data-dense interfaces, card-based components, and distinctive typography. Score based on completeness: 0 points if no Palantir styling is present, 5 points if basic styling elements are included, 10 points if the UI closely resembles Palantir's professional interface with attention to shadows, borders, and spacing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the style modification system flexible and comprehensive?",
+      "description": "Evaluate if the code includes a robust theming system that allows dynamic style changes. Check for separation of style definitions (CSS/SCSS or Qt style sheets), theme manager implementation, and runtime style switching capability. Deduct 5 points if styles are hardcoded, 3 points if theme changes require application restart. The full score is 10 points for a fully abstracted theming system with hot-swappable styles.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the language switching functionality properly implemented?",
+      "description": "Check if internationalization is correctly implemented with a translation management system supporting at least Chinese and English. The implementation should include translation files/resources, dynamic text replacement mechanism, and proper handling of text expansion/contraction between languages. Deduct 5 points if translations are hardcoded, 3 points if language changes require application restart, and 2 points if right-to-left language support is missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as resource loading failures, network interruption, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated transitions between views 2. Data visualization components 3. Gesture-based interactions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple theme management systems) 2. Function modules unrelated to UI framework (e.g., unnecessary data processing logic) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data layers), class organization, and build process setup. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not properly configured with QMake/CMake. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (consistent with Palantir's palette) 2) Proper layout spacing (element spacing follows consistent principles) 3) Professional font system (appropriate sizing hierarchy, consistent font families). Deduct 3 points for each crowded visual element, 5 points for inconsistent color schemes, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

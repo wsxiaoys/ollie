@@ -1,0 +1,68 @@
+{
+  "index": 871,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. I am a frontend engineer using Vue 3 and Element Plus. As shown in the image, the requirement is to have PDF display on the left side and signature with approval comments on the right side. This involves multiple-page PDF document approval, incorporating signatures and approval comments where the signature is an image and the approval comment is text. After completing the approval, a new PDF needs to be generated. Please think about how to implement this and provide code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the PDF rendering and multi-page display functionality fully implemented?",
+      "description": "Review whether the code accurately implements PDF rendering using libraries like pdf.js or vue-pdf, supports multi-page navigation, zoom controls, and proper viewport handling. Check if page thumbnails, page jumping, and smooth scrolling between pages are implemented. Score 0 if PDF cannot be displayed, 5 if only basic single-page display works, and 10 if full multi-page navigation with zoom and responsive layout is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the signature and approval comment integration system properly implemented?",
+      "description": "Evaluate whether the right panel correctly handles image signature uploads (with format validation for PNG/JPG), text approval comments with rich text editing capabilities, and proper positioning/scaling relative to PDF pages. Check if signature placement, resizing, and comment threading are functional. Deduct 5 points if signature image handling is missing, 3 points if comment positioning is inaccurate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the coordinate mapping and annotation positioning system accurate?",
+      "description": "Check whether the system accurately maps UI coordinates to PDF coordinate system, handles different zoom levels and page rotations correctly, and maintains annotation positions when switching between pages. Evaluate if coordinate transformation handles viewport changes and maintains precision. Deduct 5 points if annotations drift during zoom, 3 points if positioning fails on page rotation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the PDF generation and export functionality complete?",
+      "description": "Assess whether the code implements PDF generation using libraries like jsPDF or PDFLib to merge original PDF with signatures and comments, maintains original document quality, and handles multi-page export correctly. Check if generated PDF preserves all annotations and maintains proper formatting. Deduct 5 points if export quality is degraded, 5 points if annotations are lost during generation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted PDF files, oversized signature images, network interruption during file upload, browser memory limitations with large PDFs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the approval experience (e.g., 1. Batch signature application across multiple pages 2. Approval workflow with multiple reviewers 3. Real-time collaborative editing 4. OCR text recognition for searchable comments 5. Approval history timeline). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant PDF processing libraries or duplicate rendering logic 2. Unnecessary UI components unrelated to PDF approval (e.g., built-in media players, unrelated widgets) 3. Performance-heavy visual effects that slow down PDF rendering (e.g., excessive animations during page transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if core PDF functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue 3 Composition API usage, proper component decomposition (PDF viewer, signature panel, annotation components), TypeScript integration, and Element Plus component optimization. Deduct 5 points if reactive state management is poorly implemented; deduct 5 points if components are not properly separated; deduct 5 points if no build optimization for PDF libraries. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dual-panel layout follows professional document review interfaces: 1) Proper contrast ratio between PDF background and UI elements 2) Clear visual hierarchy with PDF on left and controls on right 3) Consistent Element Plus theme integration with professional color scheme 4) Appropriate spacing following 8px grid system. Deduct 3 points for each cluttered visual element, 5 points for poor contrast affecting PDF readability, and 5 points for inconsistent Element Plus styling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether PDF interactions are responsive and professional: 1) Page transitions under 200ms 2) Smooth zoom operations without lag 3) Real-time signature preview during placement 4) Immediate visual feedback for annotation actions 5) Responsive layout adaptation. Deduct 5 points for each sluggish PDF operation, 3 points for delayed annotation feedback, and 5 points for poor mobile/tablet responsiveness. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "hard"
+}

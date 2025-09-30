@@ -1,0 +1,68 @@
+{
+  "index": 449,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Create HTML code for a blog that includes a homepage, my articles, my photos, my videos, my social circle, login, registration, a personal avatar with follower count, and private messaging functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core blog structure fully implemented?",
+      "description": "Review whether the HTML code properly implements the basic blog structure with semantic HTML5 elements (header, nav, main, section, article, footer). Check for proper page organization including homepage, articles section, photos gallery, videos section, and social circle. Score 0 if most sections are missing, 5 if basic structure exists but lacks organization, and 10 if all required sections are well-structured and semantically correct.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user authentication system properly implemented?",
+      "description": "Evaluate the implementation of login and registration functionality. Check for proper form validation, secure password handling (at least client-side), and appropriate UI feedback. Look for login persistence mechanism (cookies/local storage). Deduct 5 points if form validation is missing, 3 points if there's no user feedback on login/registration actions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user profile and social features implementation complete?",
+      "description": "Check for personal avatar display, follower count functionality, and private messaging system. The profile system should include user information display and editing capabilities. The messaging system should have both inbox and sending capabilities. Deduct 3 points if avatar upload/change functionality is missing, 4 points if follower system is only visual without functionality, and 5 points if messaging is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the media content display (photos and videos) properly implemented?",
+      "description": "Assess the implementation of photo galleries and video display sections. Check for proper image optimization (responsive images, appropriate formats), video embedding or player functionality, and navigation controls for media. Deduct 3 points for non-responsive images, 5 points if video functionality is missing or broken, and 3 points if gallery navigation is poor or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form validation errors, image loading failures, network interruptions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark mode toggle 2. Custom theme options 3. Reading time estimation for articles 4. Interactive comment system with reactions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit profile) 2. Function modules unrelated to blog functionality (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow page load). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating markup/styling/scripting), code organization, and maintainability. Check for proper CSS organization (either in separate files or well-structured in the head), script placement (ideally at the end of body or with defer/async attributes), and proper commenting. Deduct 5 points if inline styles are overused; deduct 3 points if JavaScript is mixed throughout the HTML; deduct 3 points for poor or missing code comments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast navigation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Blogs/Forums",
+  "difficulty": "easy"
+}

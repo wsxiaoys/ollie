@@ -1,0 +1,68 @@
+{
+  "index": 1223,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable when possible. Generate a roll call program in HTML format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HTML document structure properly implemented?",
+      "description": "Check if the code includes a complete HTML5 document structure with <!DOCTYPE html>, <html>, <head>, and <body> tags. The <head> section should include proper meta tags, title, and CSS/JS references. Deduct 5 points if doctype is missing, 3 points for missing meta viewport tag, and 5 points for improper character encoding. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the roll call functionality fully implemented?",
+      "description": "Evaluate if the code includes core roll call features: 1) Adding names to a list, 2) Random selection mechanism, 3) Marking attendance status, and 4) Displaying results. Score 0 if none of these features exist, 5 if only basic name listing is implemented, and 10 if all four functionalities are properly implemented and work together.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there proper data management for the roll call system?",
+      "description": "Review if the program handles the roll call data appropriately, including: 1) Data structure for storing names and attendance status, 2) Persistence mechanism (local storage/session storage), 3) Data validation for inputs. Deduct 3 points if no validation exists, 5 points if there's no data persistence, and 3 points if the data structure is inefficient. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a user-friendly interface for managing attendance?",
+      "description": "Check if the interface includes: 1) Clear attendance status indicators, 2) Search/filter functionality, 3) Sorting options, and 4) Summary statistics (present/absent counts). Score 3 points for basic display only, 7 points for interactive controls without statistics, and 10 points for a complete management interface with all features.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty input, duplicate names, unexpected user actions) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation for random selection process, 2. Voice announcement of selected names, 3. Statistics visualization, 4. Timer for response window). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add names) 2. Function modules unrelated to roll call (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data layers), code organization, and maintainability. Deduct 5 points if global variable pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during interaction, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

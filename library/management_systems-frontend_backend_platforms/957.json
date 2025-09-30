@@ -1,0 +1,68 @@
+{
+  "index": 957,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that the code you generate is executable for demonstration purposes. How can one use DeepSeek to generate a React project based on design specifications?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "DeepSeek integration completeness",
+      "description": "Evaluate whether the code provides a comprehensive approach to integrate DeepSeek for React project generation, including proper API initialization, authentication handling, and response parsing. Check if the implementation includes error handling for API limitations and rate limits. Score 0 if there's no clear DeepSeek integration, 5 for basic implementation without error handling, and 10 for robust integration with complete error recovery mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Design specification translation accuracy",
+      "description": "Assess how effectively the implementation converts design specifications into structured prompts for DeepSeek. Check if it includes methods for parsing various specification formats (Figma links, JSON, text descriptions) and translating them into detailed AI instructions. Deduct 3 points if it only handles one type of specification format, 5 points if the translation lacks detail preservation, and 8 points if there's no validation mechanism to ensure specification accuracy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "React component generation quality",
+      "description": "Review the quality of React components generated through DeepSeek. Examine if the implementation produces modern React practices (hooks, functional components), follows component composition patterns, and maintains proper prop typing. Check for state management integration options. Deduct 3 points if generated components use outdated patterns, 5 points if component architecture is flat without composition, and 5 points if there's no TypeScript/PropTypes support. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Design-to-code pipeline completeness",
+      "description": "Evaluate the end-to-end pipeline from design specification to finished React project. Check if the implementation includes steps for project scaffolding, component generation, styling integration, routing setup, and build configuration. The pipeline should include intermediate validation steps and allow for iterative refinement. Deduct 5 points if the pipeline is linear without feedback loops, and 5 points if it doesn't include build/deployment configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, timeout issues, malformed design specifications, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive design preview before generation 2. Intelligent component naming based on functionality 3. Automatic accessibility compliance checks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Code redundancy assessment",
+      "description": "Strictly check three types of redundancy: 1. Redundant API calls to DeepSeek that could be batched or cached 2. Unnecessary abstraction layers between the application and DeepSeek 3. Inefficient code generation patterns that produce bloated React components. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering quality",
+      "description": "Review modular design (such as separating DeepSeek API interactions/React generation logic/user interface), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "User interface quality",
+      "description": "Evaluate whether any UI for interacting with the DeepSeek-powered generator follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction fluidity",
+      "description": "Judge whether the process of using DeepSeek to generate React projects offers fluid interaction: 1) Processing feedback for long-running operations 2) Incremental component previewing during generation 3) Clear progress indicators for multi-step processes. Deduct 5 points for operations without progress indicators, 3 points for UI freezes during API calls, and 5 points for confusing navigation between steps. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

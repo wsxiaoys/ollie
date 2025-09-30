@@ -1,0 +1,68 @@
+{
+  "index": 1023,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. The system's \"Historical Business\" interface. The function bar at the top supports searching processes through different methods: process name \"supports fuzzy search\"; process code \"does not support fuzzy search\"; creation time \"select start time\"; business type \"select business type\". Below the search bar are two buttons \"Search\" and \"Reset\". At the bottom of the interface is a menu table with columns: \"Process Name\", \"Task Name\", \"Initiator\", \"Handler\", \"Creation Time\", \"End Time\", \"Duration\", and \"Operation (History)\".\nBased on the above description, please help me write a frontend code snippet using Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the search functionality fully implemented?",
+      "description": "Review whether the code accurately implements all search methods: process name (fuzzy search), process code (exact match), creation time (date selection), and business type (dropdown selection). Check if the search logic properly filters data based on these criteria. Score 0 if search functionality is missing, 5 if only basic search is implemented without proper validation, and 10 if all search methods are correctly implemented with appropriate validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the Search and Reset buttons properly implemented?",
+      "description": "Check whether the Search button triggers the correct filtering action with proper loading states and the Reset button clears all filters and restores the original data display. Verify that clicking Search with empty filters shows all records or provides appropriate feedback. Deduct 5 points if the Reset functionality is incomplete, and 3 points if the Search button doesn't handle loading states properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data table implementation complete and correct?",
+      "description": "Evaluate whether all required columns are included in the table: Process Name, Task Name, Initiator, Handler, Creation Time, End Time, Duration, and Operation (History). Check if the table handles empty states, loading states, and pagination properly. Verify that the History operation link/button works correctly. Deduct 3 points for each missing column, 5 points for missing pagination, and 5 points if the table doesn't handle empty or error states. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Vue component structure properly designed?",
+      "description": "Assess whether the code follows Vue best practices with proper component organization, Vue lifecycle hooks usage, computed properties for derived data, and watchers where appropriate. Check for proper prop validation and event handling. Deduct 5 points for global variable abuse, 3 points for monolithic component design without proper separation of concerns, and 5 points for direct DOM manipulation outside Vue's reactive system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, empty search results, invalid input data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Saved search filters 2. Customizable table columns 3. Export functionality for table data). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple filtering logics) 2. Function modules unrelated to the business history interface (e.g., unrelated menus or widgets) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data fetching/UI/business logic), component reusability, and code organization. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling for API calls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast loading/filtering, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

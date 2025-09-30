@@ -1,0 +1,68 @@
+{
+  "index": 970,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the generated code is executable for demonstration. Write a mobile-runnable code for a \"Jump Jump\" game assistant that obtains the character's coordinates, and then extends a line based on press duration to determine jumping distance.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the character coordinate detection system accurately implemented?",
+      "description": "Review whether the code implements precise character position detection through image recognition or screen capture APIs, including pixel analysis algorithms and coordinate calculation logic. Score 0 if coordinate detection is not implemented, 5 if basic position detection works but accuracy is below 90%, and 10 if character coordinates are detected with high precision (>95% accuracy) and include validation mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the press duration measurement and distance calculation mechanism properly functioning?",
+      "description": "Check whether the code accurately measures touch/press duration and converts it to jumping distance using appropriate mathematical models. Evaluate if the timing mechanism handles different touch events correctly and calculates distance with proper scaling. Deduct 5 points if timing accuracy is poor (>50ms deviation), and 3 points if distance calculation lacks calibration options. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the visual trajectory line extension system implemented effectively?",
+      "description": "Evaluate whether the code renders a dynamic trajectory line that extends based on press duration, with real-time visual feedback. Check if the line drawing uses proper graphics APIs (Canvas/SVG) and updates smoothly during interaction. Deduct 5 points if line rendering is choppy or delayed, and 3 points if visual indicators don't match actual calculated distance. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is mobile platform compatibility and touch interaction properly handled?",
+      "description": "Check whether the code is optimized for mobile devices with proper touch event handling, screen size adaptation, and performance optimization. Evaluate if the implementation works across different mobile browsers/platforms and handles device-specific features. Deduct 5 points if touch responsiveness is poor, and 3 points if screen adaptation is inadequate. Give 10 points if fully mobile-optimized.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as screen resolution changes, touch interruptions, coordinate detection failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the gaming experience (e.g., 1. Auto-calibration for different game versions 2. Success rate statistics and learning optimization 3. Trajectory prediction with physics simulation 4. Multi-target detection and selection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple coordinate detection methods running simultaneously) 2. Function modules unrelated to the game assistant (e.g., built-in social features) 3. Fancy effects that affect performance (e.g., complex particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating detection logic/UI/calculation modules), error handling coverage, and mobile optimization practices. Deduct 5 points if global state pollution is found or proper mobile development patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if mobile performance optimization is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet mobile design standards?",
+      "description": "Evaluate whether the mobile interface follows modern mobile design principles: 1) Touch-friendly button sizes (minimum 44px tap targets) 2) Appropriate contrast ratios for outdoor visibility 3) Clear visual hierarchy with proper spacing 4) Responsive design for different screen sizes. Deduct 3 points for each UI element that's hard to interact with on mobile, 5 points for poor readability, and 5 points for non-responsive layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the real-time interaction smooth and responsive?",
+      "description": "Judge whether the real-time feedback meets mobile gaming standards: 1) Touch response delay ≤ 50ms 2) Smooth line extension animation at 60fps 3) Immediate visual feedback for all interactions 4) Stable performance during continuous use. Deduct 5 points for each laggy interaction, 3 points for inconsistent frame rates, and 5 points for delayed coordinate updates. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

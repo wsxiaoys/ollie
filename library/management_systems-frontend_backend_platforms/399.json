@@ -1,0 +1,68 @@
+{
+  "index": 399,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Please use Vue 2 to build a front-end H5 project named \"interview\" and configure it for mobile device adaptation.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete Vue 2 project structure correctly set up?",
+      "description": "Verify if the project includes essential Vue 2 files and directories (main.js, App.vue, components folder, package.json with Vue 2 dependencies). Check if Vue CLI or webpack configuration is properly set up with appropriate loaders. Score 0 if no project structure exists, 5 if basic structure is present but incomplete, 10 if fully configured with proper separation of concerns and directory organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is mobile device adaptation properly implemented?",
+      "description": "Examine if the code includes viewport meta tags, media queries, flexible units (rem/vw/vh), and responsive design principles. Check for device orientation handling and touch event support. Verify implementation of at least one mobile adaptation solution (viewport.js, amfe-flexible, postcss-px-to-viewport). Deduct 5 points if only basic viewport meta tag is used without comprehensive adaptation, 3 points if touch events are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the project named correctly with proper configuration?",
+      "description": "Check if the project is named 'interview' in package.json, manifest files, and build configuration. Verify that the build scripts, output paths, and deployment settings correctly reference this name. Deduct 5 points if the project name is inconsistent across files, 3 points if build configurations don't properly use the name. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are essential mobile H5 features implemented?",
+      "description": "Evaluate if the project includes typical H5 mobile features: pull-to-refresh, infinite scroll, mobile-specific UI components (such as swipe cards, bottom sheets, actionsheets), and smooth transitions. Check for handling of software keyboard issues and iOS/Android differences. Score 0 if no mobile features exist, 5 if basic features are present, 10 if comprehensive mobile optimization is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, API failures, different screen sizes, orientation changes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Skeleton screens during loading 2. Custom animations for transitions 3. Offline capability with service workers). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple HTTP request libraries) 2. Function modules unrelated to the mobile H5 context 3. Fancy effects that affect performance (e.g., excessive animations causing jank). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating components/views/store), code splitting for performance, and build process optimization. Deduct 5 points if global state pollution is found or Vue best practices are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no mobile-specific build optimizations are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle, critical tap targets ≥ 44px) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for layouts that cause horizontal scrolling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to mobile user expectations: 1) Touch feedback delay ≤ 100ms 2) Transition animation duration controlled between 200-300ms 3) Clear visual feedback for all interactions. Deduct 5 points for each operation without feedback, 3 points for janky animations during transitions, and 5 points for non-standard mobile interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

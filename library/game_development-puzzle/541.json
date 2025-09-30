@@ -1,0 +1,68 @@
+{
+  "index": 541,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable and functional.\n\n## Role ##\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code that is fully commented with simple, easy-to-understand language, without outputting anything else.\n\n## Output Rules ##\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure that all code files you output are complete, without omitting any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n## Project Requirements Description ##\nPlease develop a 'Tangram' puzzle game. The game interface is divided into two parts: an area displaying the target shape, and an area where players can manipulate the tangram pieces. The tangram consists of 7 geometric shapes (2 large triangles, 1 medium triangle, 2 small triangles, 1 square, and 1 parallelogram). Players can move each shape by dragging, rotate a shape by clicking on it, and flip a shape by double-clicking it. The goal of the game is to use these 7 shapes to create the target shape. The game should provide multiple target shapes of varying difficulty to choose from, a reset button to restore all shapes to their initial positions, and a hint feature (briefly showing the correct position of one shape). When the player successfully completes the target shape, display a congratulatory message and the time taken.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the tangram puzzle game fully implemented with all 7 geometric shapes?",
+      "description": "Check if the code correctly implements all 7 tangram pieces (2 large triangles, 1 medium triangle, 2 small triangles, 1 square, and 1 parallelogram) with appropriate visual representation. Each shape should have distinct characteristics and proper proportional sizes. Verify that the shapes can be properly rendered on the canvas/display area without visual artifacts. Score 0 if pieces are missing or incorrectly implemented, 5 if basic shapes are implemented but with proportion/rendering issues, and 10 if all shapes are perfectly implemented with proper scaling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all the required manipulation functionalities implemented correctly?",
+      "description": "Evaluate if the code implements all required piece manipulation: dragging (move), clicking (rotate), and double-clicking (flip). Check if event handlers are properly set up for each interaction type and if the geometric transformations are mathematically correct. Test edge cases like rapid consecutive clicks or interactions with partially off-screen pieces. Deduct 3 points if any manipulation feature is missing, 3 points if transformations have mathematical errors, and 2 points if edge cases cause visual glitches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the target shape system implemented with multiple difficulty levels?",
+      "description": "Check if the code includes a variety of target shapes with different difficulty levels. Verify that target shapes are properly displayed and that the system can accurately determine when a player's arrangement matches the target (accounting for reasonable tolerance). Deduct 5 points if fewer than 5 different target shapes are available, 3 points if difficulty progression is not clear, and 5 points if the shape matching algorithm is inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the game's supporting features (reset, hints, completion detection) implemented?",
+      "description": "Evaluate if the code includes a reset function to restore pieces to initial positions, a hint feature that temporarily shows the correct position of one piece, and accurate completion detection with a congratulatory message and time tracking. Deduct 3 points if reset doesn't properly restore all pieces, 3 points if the hint system is ineffective, and 4 points if completion detection is unreliable or time tracking is inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (such as rapid interactions, browser resizing, touch vs. mouse input, etc.) and provide graceful degradation. Code should handle piece overlap conflicts, boundary conditions, and prevent pieces from becoming unusable (e.g., moved off-screen). Deduct 3 points for each unhandled edge case and 5 points if the game becomes unplayable due to common user interactions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation effects when completing a shape 2. Custom tangram piece themes/colors 3. Progressive hint system that becomes less revealing with each use 4. Puzzle creation mode for users to design their own challenges). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to reset the game) 2. Function modules unrelated to the tangram puzzle (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive particle animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, and maintainability. Check if the game uses appropriate data structures for piece management and transformation operations. Deduct 3 points if global state is overused, 3 points if the code duplication rate is high, 2 points if there's poor separation of concerns, and 2 points if variable/function naming is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clear visual distinction between the target area and manipulation area 2) Harmonious color scheme with good contrast between pieces 3) Professional layout with proper spacing between UI elements 4) Responsive design that works on different screen sizes. Deduct 3 points for cluttered interface elements, 3 points for poor color contrast making pieces hard to differentiate, and 4 points for non-responsive layouts that break on different devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Piece movement feels natural and responsive (≤ 100ms lag) 2) Rotation and flipping animations enhance understanding of the transformation 3) Clear visual feedback when pieces are selected or when a puzzle is completed. Deduct 4 points for laggy piece movement, 3 points for abrupt transitions during rotations/flips, and 3 points for lack of visual feedback during interactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

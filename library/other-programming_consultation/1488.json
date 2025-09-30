@@ -1,0 +1,68 @@
+{
+  "index": 1488,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code demonstrations when possible. Offer detailed solutions and code that implement both backend and frontend using Python.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Python backend architecture properly implemented?",
+      "description": "Review whether the code includes a well-structured backend framework (Flask/Django/FastAPI) with proper routing, middleware, database integration, and API endpoints. Check for implementation of authentication, session management, and data validation. Score 0 if no backend framework is used, 5 if basic routing is implemented without proper structure, and 10 if a complete MVC/MVT pattern with proper separation of concerns is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the frontend-backend integration seamless?",
+      "description": "Evaluate whether the Python backend properly serves frontend assets and provides RESTful/GraphQL APIs. Check for proper HTTP status codes, JSON response formatting, CORS handling, and error propagation from backend to frontend. Deduct 5 points if API responses lack proper error handling, 3 points if CORS is not configured, and 2 points if HTTP status codes are inconsistent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence and database integration robust?",
+      "description": "Check whether the Python backend implements proper database operations using ORM (SQLAlchemy/Django ORM) or raw SQL with connection pooling. Evaluate migration scripts, data validation, transaction handling, and backup mechanisms. Deduct 5 points if no ORM is used without justification, 3 points if database connections are not properly managed, and 2 points if no data validation is implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are Python best practices and performance optimizations implemented?",
+      "description": "Assess whether the code follows Python PEP 8 standards, implements proper async/await patterns where needed, uses appropriate data structures, and includes caching mechanisms. Check for memory management, query optimization, and scalability considerations. Deduct 5 points if no async patterns are used for I/O operations, 3 points if inefficient algorithms are used, and 2 points if PEP 8 standards are not followed. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as database connection failures, invalid user input, file system errors, network timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include try-catch blocks, input validation, logging, and graceful degradation. Give 10 points if fully implemented with comprehensive exception handling, 5 points if basic error handling exists, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time data streaming with WebSockets 2. AI-powered recommendations or automation 3. Advanced data visualization with interactive charts 4. Progressive Web App features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication systems coexisting) 2. Function modules unrelated to the core purpose 3. Over-engineered solutions that add unnecessary complexity. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (proper package structure, separation of models/views/controllers), unit test coverage, virtual environment setup, requirements.txt, and deployment configuration. Deduct 5 points if no package structure is implemented; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if no dependency management or testing framework is included. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Responsive design implementation. Deduct 3 points for each crowded visual element, 5 points for glaring color combinations, and 5 points for chaotic text-image layout. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance 4) Loading states for async operations 5) Form validation feedback. Deduct 5 points for each operation without feedback, 3 points for visual after-images during interactions, and 5 points for hard-to-find key function buttons. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Programming Consultation",
+  "difficulty": "medium"
+}

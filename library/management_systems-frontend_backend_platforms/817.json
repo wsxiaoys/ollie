@@ -1,0 +1,68 @@
+{
+  "index": 817,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and demonstrable. Create a website for organizing vehicle and personnel information that provides reminders when information expires and includes search functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data model properly designed for vehicle and personnel information management?",
+      "description": "Evaluate whether the data structures include essential fields for vehicles (registration, insurance, inspection dates) and personnel (license validity, medical certifications, training records). Check if expiration dates are properly typed as Date objects for comparison operations. Score 0 if basic data structures are missing, 5 if only basic properties exist without validation, and 10 if the model is comprehensive with proper typing and validation rules.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the expiration reminder system fully implemented?",
+      "description": "Review the implementation of the reminder system, checking if it includes configurable thresholds (30/60/90 day warnings), multiple notification methods (UI indicators, email alerts, etc.), and priority levels based on expiration proximity. Deduct 5 points if only basic date comparison is implemented without configurable thresholds, deduct 3 points if multiple notification methods are missing. Full score requires a complete notification lifecycle with dismissal and snooze functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the search functionality comprehensive and efficient?",
+      "description": "Assess the search implementation for features like real-time filtering, advanced search criteria (multi-field, range queries for dates), and search result sorting/grouping. Check if the search algorithm uses efficient indexing techniques for large datasets. Score 0 if only basic string matching exists, 5 if there's functional but limited search, and 10 if advanced search with optimized performance is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a reporting system for tracking expiration metrics?",
+      "description": "Examine whether the system includes analytical reporting features showing expiration trends, compliance rates, and upcoming renewal workloads. Check for visual representations (charts/graphs) and data export options. Deduct 5 points if only basic lists are provided without aggregation, deduct 3 points if visual representations are missing. Full score requires comprehensive analytics with interactive visualizations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid date inputs, search with no results, concurrent user updates, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual timeline of upcoming expirations 2. Automated document renewal workflow 3. Integration with vehicle/personnel identity verification services). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search implementations) 2. Function modules unrelated to vehicle/personnel information management 3. Fancy effects that affect performance (e.g., unnecessary animations on critical pages). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data access/business logic/presentation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

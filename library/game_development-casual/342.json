@@ -1,0 +1,68 @@
+{
+  "index": 342,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Create an entertaining and fun KET vocabulary game HTML page for elementary school students that can help children strengthen their memory in word pronunciation and spelling. The requirements are as follows:\n\n1. The page should include learning mode, practice mode, and test mode, incorporating game elements that are highly interactive, entertaining, and challenging.\n2. When the program starts, a popup should prompt the user to load vocabulary words. The user selects a text file containing words saved in TXT format, separated by commas.\n3. After loading the TXT file, the program generates a word card for each word, including a corresponding emoji, phonetic symbol, hidden Chinese explanation (which can be viewed by clicking), and common phrases related to the word.\n4. In learning mode, students study the word cards. Pronunciation should be available in both British and American accents, with adjustable playback speed from 0.5x to 1.5x.\n5. In practice mode, students can practice word spelling, fill-in-the-blank exercises, and dictation to reinforce vocabulary memorization (for spelling practice, the letters of the word can be scrambled, requiring children to click on the letters in the correct order).\n6. In test mode, students take dictation and complete fill-in-the-blank application exercises to check their mastery of vocabulary, avoiding Chinese prompts as much as possible.\n7. Upon successful completion of challenges, encouraging language and fun animations like thumbs-up, fireworks, little stars, rockets, etc. appear. If wrong answers are given, animations like bombs or \"oops\" expressions appear with messages to keep trying.\n7. The layout should be centered, with compatibility considerations to ensure normal use on mobile phones. Words should be displayed in standard print font.\n8. Word information should be configured through a separate JSON file, achieving separation of data and code.\n9. After code generation, review it to ensure all features and buttons are functional without errors.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the vocabulary loading functionality properly implemented?",
+      "description": "Review whether the code correctly implements file loading functionality via a popup dialog, properly handles TXT files with comma-separated words, and successfully converts the input into usable vocabulary data. Score 0 if file loading is completely missing, 5 if basic loading works but lacks error handling, and 10 if the implementation includes proper file type validation, error handling for malformed content, and visual feedback during loading.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all three required modes (learning, practice, test) implemented with the specified features?",
+      "description": "Evaluate the completeness of each mode: Learning mode must include word cards with emoji, phonetic symbols, hidden Chinese explanations, and common phrases. Practice mode must include spelling exercises with scrambled letters, fill-in-the-blank, and dictation. Test mode must include dictation and application exercises without Chinese prompts. Deduct 3 points for each missing feature in any mode. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio pronunciation functionality fully implemented?",
+      "description": "Check if the code implements both British and American accent pronunciations, with adjustable playback speed (0.5x to 1.5x). Verify that the audio control elements are user-friendly and that the implementation handles potential API limitations or errors gracefully. Score 0 if pronunciation features are missing, 5 if only basic functionality without speed control is implemented, and 10 if all requirements are met with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the interactive game elements and animations properly implemented?",
+      "description": "Assess whether the code includes entertaining animations (thumbs-up, fireworks, stars, rockets for success; bombs, 'oops' expressions for failure), and if these animations trigger appropriately based on student performance. Animations should be visually appealing without being distracting. Deduct 3 points if animations are missing for either success or failure cases, and 5 points if animations are implemented but not contextually triggered. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported file formats, malformed vocabulary data, audio loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Spaced repetition algorithm for word review 2. Visual word association aids 3. Progress tracking with achievements/badges 4. Multiplayer competition mode). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio playback mechanisms coexisting) 2. Function modules unrelated to vocabulary learning (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the page). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code reusability, and maintainability. Deduct 5 points if global variable pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if JSON data is hardcoded rather than loaded externally as specified. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet child-friendly and professional design standards?",
+      "description": "Evaluate whether the design is appropriate for elementary school students: 1) Age-appropriate color scheme and visuals 2) Clear, readable print font as specified 3) Proper layout spacing and sizing for young users 4) Centered layout with responsive design for mobile compatibility. Deduct 3 points for each instance of text below 16px, 5 points for non-responsive elements, and 5 points for a cluttered or overwhelming interface. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth, intuitive, and educational?",
+      "description": "Judge whether the interactions are suitable for elementary students: 1) Clear instructions and feedback for each action 2) Age-appropriate difficulty progression 3) Intuitive controls suitable for children's motor skills 4) Educational value maintained throughout gameplay elements. Deduct 5 points for confusing navigation, 3 points for inconsistent interaction patterns, and 5 points for interactions that may frustrate young learners. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

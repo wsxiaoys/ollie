@@ -1,0 +1,68 @@
+{
+  "index": 1811,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable and displayable. Write HTML for a simple forum.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the forum core functionality fully implemented?",
+      "description": "Review whether the code accurately implements essential forum features through HTML/JavaScript, including post creation, reply threading, user authentication, and content display hierarchy. Score 0 if basic CRUD operations are missing, 5 if only basic post/reply is implemented, and 10 if complete forum workflow including nested replies, post categorization, and user profiles are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data persistence and state management properly handled?",
+      "description": "Check whether the implementation includes proper data storage mechanism (localStorage/sessionStorage or backend integration), user session management, and real-time content updates. Deduct 5 points if data persistence is missing, 3 points if user authentication state is not maintained across sessions. Full score requires seamless data flow and state synchronization.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the forum navigation and content organization well-structured?",
+      "description": "Evaluate whether the forum structure includes proper categorization, search functionality, pagination for large content sets, and breadcrumb navigation. Deduct 5 points if content hierarchy is flat without categories, 3 points if search/filter capabilities are missing. Full implementation should include sortable posts, topic tagging, and intuitive navigation patterns.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are user interaction features and moderation tools implemented?",
+      "description": "Check whether the code includes user engagement features like voting/rating systems, user reputation, post editing/deletion capabilities, and basic moderation tools. Deduct 5 points if user roles and permissions are not implemented, 3 points if content moderation features are missing. Full score requires comprehensive user interaction ecosystem.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty inputs, XSS attacks, spam prevention, invalid user operations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include input validation, sanitization, and graceful error handling, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the forum experience (e.g., 1. Real-time typing indicators 2. Rich text editor with media support 3. Thread subscription notifications 4. Dark/light theme toggle 5. Advanced search with filters). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple post creation forms) 2. Function modules unrelated to forum functionality (e.g., built-in games or irrelevant widgets) 3. Excessive animations that impact usability. Deduct 3 points for each redundancy found, and directly deduct 10 points if core forum functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating forum logic/presentation/data layers), semantic HTML structure, and maintainable code organization. Deduct 5 points if HTML structure lacks semantic meaning or accessibility attributes; deduct 5 points if CSS/JS code duplication rate is too high (over 30%); deduct 5 points if no component-based architecture is used. The full score requires clean, maintainable, and scalable code structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional forum standards?",
+      "description": "Evaluate whether the design follows modern forum UI principles: 1) Clear content hierarchy with proper typography (readable font sizes ≥ 14px, appropriate line spacing) 2) Consistent color scheme that enhances readability 3) Proper spacing and alignment following grid principles 4) Mobile-responsive design. Deduct 3 points for poor content readability, 5 points for inconsistent visual design, and 5 points for non-responsive layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user interaction smooth and intuitive?",
+      "description": "Judge whether the forum interactions provide excellent user experience: 1) Immediate feedback for user actions (post submission, voting, etc.) ≤ 100ms 2) Smooth transitions between forum sections 3) Clear visual indicators for new content, user status, and interactive elements 4) Keyboard navigation support. Deduct 5 points for each interaction without proper feedback, 3 points for confusing navigation flow, and 5 points for poor accessibility. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Blogs/Forums",
+  "difficulty": "hard"
+}

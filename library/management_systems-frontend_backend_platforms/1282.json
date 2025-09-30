@@ -1,0 +1,68 @@
+{
+  "index": 1282,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. I need a student information query frontend website (in Python) that displays class information by searching fields like class and name, supporting fuzzy queries. The database fields include name and class.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic student information query function fully implemented?",
+      "description": "Review whether the code properly implements the core query functionality with both name and class search fields. Check if the search logic handles both exact and fuzzy matching. Score 0 if search functionality is not implemented, 5 if only basic exact matching is implemented, and 10 if both fields support comprehensive fuzzy search with proper indexing and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Python web framework implementation appropriate and well-configured?",
+      "description": "Evaluate the choice and implementation of the Python web framework (Flask, Django, etc.). Check for proper routing, request handling, and response formatting. Deduct 3 points if the framework is poorly configured, 3 points if routing is messy, and 4 points if there are security vulnerabilities in the request handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the database interaction properly implemented?",
+      "description": "Assess the database connection, query construction, and data retrieval logic. Check for proper parameterized queries to prevent SQL injection, efficient query design, and appropriate error handling. Deduct 3 points for non-parameterized queries, 3 points for inefficient queries that would scale poorly, and 4 points if connection pooling or resource management is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the search functionality optimized for usability and performance?",
+      "description": "Examine the search implementation for features like result pagination, search highlighting, auto-suggestions, and quick filtering. Check if the search is optimized for performance with proper indexing strategies. Deduct 3 points if pagination is missing, 3 points if search performance is not optimized, and 4 points if the interface lacks user-friendly search features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty search results, malformed queries, database connection issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Export search results to CSV/PDF 2. Data visualization components for class statistics 3. Responsive design that works well on mobile devices). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search implementations) 2. Function modules unrelated to student information query (e.g., unnecessary social media integrations) 3. Fancy effects that affect performance (e.g., heavy animations that slow down search results). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating database access/business logic/view layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if dependency management is poor or configuration is hardcoded. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Search results appear within 500ms 2) Loading indicators for longer operations 3) Clear visual focus guidance for search fields and results. Deduct 5 points for searches without loading indicators, 3 points for jarring page refreshes instead of smooth updates, and 5 points for unintuitive navigation between search and results. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

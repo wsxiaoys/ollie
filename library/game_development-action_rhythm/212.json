@@ -1,0 +1,68 @@
+{
+  "index": 212,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Create an animation code of two little figures fighting - one red figure and one blue figure. Don't use simple blocks to represent the figures; they should have relatively realistic human body shapes with heads, hands, and feet. Both figures should be holding knives. The code should be directly runnable on mobile phones!",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are the human figure representations anatomically reasonable?",
+      "description": "Evaluate whether the figures have realistic human body proportions with clearly defined heads, torsos, arms, legs, and feet. The figures should not be simplistic stick figures or blocks. Check whether the body parts are properly connected and move naturally during the animation. Score 0 if only basic shapes are used, 5 if figures have basic body parts but with unrealistic proportions, and 10 if figures appear realistic with proper anatomical structure.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the knife-holding combat animation properly implemented?",
+      "description": "Review the implementation of weapon holding and combat movements. The knives should be visually distinct objects that remain properly positioned in the figures' hands during movement. Combat animations should include attack motions, defensive postures, and appropriate weapon trajectories. Deduct 5 points if weapons float disconnected from hands, 3 points if combat movements are too simplistic (less than 3 distinct fighting moves). Give 10 points if weapons appear naturally held with realistic combat movements.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is color differentiation and character distinction effective?",
+      "description": "Assess whether the red and blue figures are clearly distinguishable not just by color but also potentially by subtle differences in appearance or fighting style. Color contrast should be sufficient for visibility on various backgrounds. Deduct 3 points if the color difference is the only distinguishing feature, 5 points if the figures are identical apart from color. The full score is 10 points for characters with unique identities beyond color.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the animation optimized for mobile devices?",
+      "description": "Check whether the code is specifically optimized for mobile execution, including touch controls if interactive, responsive design that adapts to different screen sizes, and performance optimization techniques. Verify mobile viewport settings and touch event handling if applicable. Deduct 5 points if no mobile-specific optimizations exist, 3 points if performance issues would occur on mid-range devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser compatibility issues, screen resizing, device rotation, etc.) and provide graceful fallbacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic lighting effects during combat 2. Environmental interactions like surfaces breaking 3. Combat progression with changing fighting styles). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant animation loops or duplicate rendering code 2. Unnecessary features unrelated to the fighting animation (e.g., unrelated background animations) 3. Excessive effects that cause performance issues on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core animation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating animation logic/rendering/control layers), code reusability, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations for animation are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional animation standards?",
+      "description": "Evaluate whether the overall design follows animation principles: 1) Anticipation before movements 2) Proper squash and stretch for impact 3) Professional timing and spacing for realistic motion. Deduct 3 points for each jerky movement, 5 points for unrealistic motion physics, and 5 points for inconsistent animation quality between characters. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and performant?",
+      "description": "Judge whether the animation maintains consistent frame rates on mobile devices: 1) At least 30fps performance on mid-range phones 2) No visual stuttering during complex movements 3) Efficient use of resources (memory/CPU/GPU). Deduct 5 points for each noticeable frame drop, 3 points for jittery transitions between animation sequences, and 5 points if the animation causes significant battery drain. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1490,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. This includes webpage addresses, plugin loading, AI-based code node implementation workflow according to specific goals (task breakdowns including loading, extraction, parsing, storage, etc.), execution and debugging.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the code execution context properly defined and implemented?",
+      "description": "Evaluate whether the code clearly defines its execution environment (browser, Node.js, specific frameworks) with appropriate initialization. Check if dependencies are explicitly declared with version control. Verify if the execution flow is clearly structured with proper entry points. Score 0 if execution context is undefined, 5 if basic context is provided but lacks configuration details, and 10 if comprehensive environment setup with fallback mechanisms is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the AI-based code workflow properly structured with clear task breakdowns?",
+      "description": "Assess whether the code implements a complete AI workflow with clearly defined stages (loading, extraction, parsing, storage). Check if each stage has appropriate error handling and progress monitoring. Validate that the workflow components are loosely coupled for maintainability. Deduct 5 points if key stages are missing, 3 points if the workflow lacks proper transitions between stages, and 2 points if success/failure states aren't clearly defined. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are data loading and extraction mechanisms effectively implemented?",
+      "description": "Review the implementation of data acquisition processes, including external API calls, file system operations, or web scraping techniques. Verify support for different data formats (JSON, CSV, XML) and asynchronous loading patterns. Check for rate limiting, caching, and retry mechanisms. Score 0 if loading functionality is absent, 5 if basic loading exists without optimization, and 10 if comprehensive data acquisition with fallback strategies is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the parsing and storage logic comprehensive and efficient?",
+      "description": "Evaluate data parsing algorithms for accuracy and efficiency. Check for proper data validation, normalization, and transformation processes. Verify if storage mechanisms include appropriate indexing, query optimization, and data persistence strategies. Deduct 5 points if parsing logic contains edge case vulnerabilities, 3 points if storage doesn't implement proper transaction handling, and 2 points if data integrity checks are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common exceptions and edge cases (network failures, malformed inputs, resource limitations) with appropriate error recovery mechanisms. Check for input validation, defensive programming practices, and graceful degradation. Look for diagnostic logging and monitoring capabilities. Deduct 3 points for each unhandled error scenario, 5 points for absence of timeout mechanisms, and 5 points if error messages aren't user-friendly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Adaptive algorithm selection based on data characteristics 2. Progressive loading with visual feedback 3. Context-aware error suggestions). Evaluate implementation quality and practical utility of innovative features. Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementation of similar functionality (e.g., multiple HTTP client wrappers) 2. Unnecessary processing steps that don't contribute to the core workflow 3. Over-engineered solutions for simple problems. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functionality is obscured by unnecessary complexity.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design, separation of concerns, and adherence to design patterns. Check for consistent naming conventions, code documentation, and test coverage. Evaluate configuration management and environment separation. Deduct 5 points if global state is mismanaged, 5 points if the code duplication rate exceeds 30%, and 5 points if there's no automated testing strategy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether any UI components follow modern design principles: 1) Consistent visual hierarchy with proper use of whitespace 2) Responsive design that adapts to different screen sizes 3) Accessibility compliance (WCAG standards, proper contrast ratios, screen reader support). Deduct 3 points for inconsistent visual patterns, 5 points for non-responsive layouts, and 5 points for major accessibility violations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the execution and debugging experience well-designed?",
+      "description": "Judge the quality of runtime feedback and debugging capabilities: 1) Informative progress indicators for long-running operations 2) Meaningful error messages with actionable suggestions 3) Integrated debugging tools or hooks for external monitoring. Deduct 5 points for silent failures without explanation, 3 points for ambiguous progress states, and 5 points for absence of debugging entry points. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Software Development",
+  "difficulty": "medium"
+}

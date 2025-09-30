@@ -1,0 +1,68 @@
+{
+  "index": 535,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure any generated code is executable for demonstration purposes.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code that is fully commented in simple, easy-to-understand language, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, without omitting any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nImplement a video dubbing tool that supports real-time audio recording while playing existing videos, visualizes audio waveforms, allows alignment and adjustment of synchronization between recordings and video, and exports video files with the new audio track.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video playback and control system fully implemented?",
+      "description": "Review whether the code accurately implements video playback controls through HTML5 video API, including play/pause, seek, timeline scrubbing, and frame-accurate positioning. Check if custom video controls are properly styled and responsive. Score 0 if basic video playback is not implemented, 5 if only basic play/pause is available, and 10 if full video control with timeline manipulation and frame-accurate seeking is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time audio recording functionality properly implemented?",
+      "description": "Evaluate whether the WebRTC MediaRecorder API is correctly implemented with proper microphone access permissions, real-time audio capture, and recording state management. Check if the recording can start/stop in sync with video playback and handles different audio formats. Deduct 5 points if permission handling is missing, 3 points if recording quality controls are absent. Full score requires seamless recording with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio waveform visualization accurately rendered?",
+      "description": "Check whether the waveform visualization uses Web Audio API with proper frequency analysis and canvas/SVG rendering. Evaluate if the waveform updates in real-time during recording and displays recorded audio accurately. Deduct 5 points if waveform doesn't sync with audio timeline, 3 points if visual quality is poor or choppy. Requires smooth real-time visualization with proper scaling and time alignment.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio-video synchronization and alignment system complete?",
+      "description": "Evaluate whether the code provides tools for fine-tuning audio-video synchronization, including offset adjustment controls, visual alignment guides, and preview functionality. Check if users can precisely align recorded audio with video timeline through drag-and-drop or numeric input. Deduct 5 points if alignment tools are basic, 3 points if no visual feedback is provided. Full score requires precise synchronization controls with millisecond accuracy.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone access denial, unsupported video formats, memory limitations during long recordings, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time noise reduction during recording 2. Multiple audio track layering 3. Voice activity detection with auto-pause 4. Keyboard shortcuts for precise control 5. Automatic backup of work-in-progress). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing pipelines coexisting) 2. Function modules unrelated to video dubbing (e.g., built-in video editing tools) 3. Fancy effects that affect performance (e.g., excessive visual animations during recording). Deduct 3 points for each redundancy found, and directly deduct 10 points if core dubbing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/video handling/UI layers), proper async/await usage for media operations, and memory management for large files. Deduct 5 points if global state pollution is found or media resources are not properly disposed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper error boundaries exist for media operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern media tool design principles: 1) Professional timeline UI with clear time markers 2) Intuitive waveform visualization colors (contrasting background) 3) Proper control button sizing (minimum 44px touch targets) 4) Consistent spacing following 8px grid system. Deduct 3 points for each crowded control element, 5 points for poor waveform visibility, and 5 points for confusing timeline layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the media interactions conform to professional standards: 1) Video scrubbing responds within 100ms 2) Recording start/stop feedback is immediate 3) Waveform rendering maintains 30fps during playback 4) Synchronization adjustments provide real-time preview. Deduct 5 points for each laggy media operation, 3 points for choppy waveform animation, and 5 points for delayed audio-video sync feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 57,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Please help me implement this SVG image using code. Money is in the form of dollar bills or cash currency.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG dollar bill/cash currency visually accurate and detailed?",
+      "description": "Check if the SVG implementation includes essential visual elements of currency: denomination markings, security features (watermarks, security threads), serial numbers, and proper proportions. Score 0 if basic currency shape is missing, 5 if only basic outline is present, and 10 if detailed elements including textures and security features are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are proper SVG techniques used for currency representation?",
+      "description": "Evaluate whether appropriate SVG elements (<path>, <rect>, <pattern>, <linearGradient>, etc.) are used efficiently for different parts of the currency. Check if complex details use proper techniques like gradient meshes or patterns instead of excessive path elements. Deduct 3 points for inefficient element choices, 4 points for missing essential SVG techniques like gradients for realistic shading, and 5 points if implementation relies solely on basic shapes without proper detail work.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the currency sizing and scaling properly implemented?",
+      "description": "Verify if the SVG uses proper viewBox attributes, preserveAspectRatio settings, and responsive design principles to ensure the currency renders correctly at different sizes. Check if proper width/height attributes or percentages are used. Deduct 5 points if the currency doesn't scale proportionally, and 5 points if viewBox is improperly configured causing display issues at different resolutions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include interactive or animated elements?",
+      "description": "Assess whether the code includes appropriate animations or interactions that enhance the currency visualization (e.g., hover effects showing security features, flip animations to see both sides, counting/stacking animations). Give 0 points for no interactivity, 5 points for basic hover/click effects, and 10 points for smooth, meaningful animations that demonstrate currency properties.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common situations (such as browser compatibility issues, rendering in different contexts, fallback mechanisms). Code with strong robustness should work across modern browsers and include fallback options. Give 10 points for comprehensive fallbacks and browser support, 5 points for average robustness with minor issues, and 0 points if major rendering problems occur across platforms.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visualization (e.g., 1. Realistic paper texture/folding effects 2. Security features that appear under hover 3. Multiple currency types or denominations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visual elements 2. Excessive detail that harms performance 3. Fancy effects that don't contribute to realistic currency representation. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing functions/reusable components), code organization, and maintainability. Deduct 5 points if global variables are overused; deduct 5 points if the code duplication rate is too high; deduct 5 points if there's no structure or commenting for complex drawing functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual representation meet professional design standards?",
+      "description": "Evaluate whether the currency design follows authentic design principles: 1) Accurate color matching to real currency 2) Proper proportions and detail placement 3) Professional typography matching official currency fonts. Deduct 3 points for inaccurate colors, 5 points for unrealistic proportions, and 5 points for poor typography. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the implementation optimized for performance?",
+      "description": "Judge whether the SVG implementation is optimized: 1) Appropriate use of groups (<g>) 2) Efficient path commands 3) Proper use of symbols for repeated elements 4) Reasonable file size for detail level. Deduct 3 points for each inefficient implementation pattern, 5 points for excessive node count causing slow rendering, and 5 points for missing optimization techniques like symbol reuse for repeated elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

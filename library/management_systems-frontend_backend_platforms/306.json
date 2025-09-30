@@ -1,0 +1,68 @@
+{
+  "index": 306,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code where possible. Please help me create a frontend page for a pharmacy store mini-program, which should include user information, a login button, and four order status categories (unpaid, in progress, to be received, and completed). The function menu should include history records, favorites, my customer service, my orders, shipping address, and settings.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user authentication system properly implemented?",
+      "description": "Review whether the code implements a complete user authentication flow including login button functionality, session management, and secure token storage. Check if there's proper handling of authentication states (logged in/out) and user information display. Score 0 if no authentication logic exists, 5 if basic login UI is present without functionality, 10 if a complete secure authentication system is implemented with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the four order status categories fully implemented and visually distinct?",
+      "description": "Verify that all four required order status categories (unpaid, in progress, to be received, and completed) are implemented with clear visual differentiation. Check if the code includes state transitions between categories and proper data binding. Deduct 3 points if any category is missing, 2 points if visual distinction is poor, and 2 points if state transitions are not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the function menu complete with all required features?",
+      "description": "Confirm that all six specified menu items (history records, favorites, my customer service, my orders, shipping address, and settings) are properly implemented with navigation logic. Each missing feature deducts 1.5 points. Check if each menu item has appropriate icons and leads to the correct functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the pharmacy store context appropriately reflected in the design?",
+      "description": "Evaluate whether the implementation correctly reflects the pharmacy context through appropriate terminology, icons, color schemes (medical blues/greens), and pharmacy-specific features like prescription management or medication categories. Deduct 3 points if the design is generic without pharmacy-specific elements, 3 points if inappropriate terminology is used, and 4 points if the context is completely mismatched. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, authentication failures, empty data states, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Medication reminder functionality 2. Prescription scanning capability 3. Health tips integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user profile sections) 2. Function modules unrelated to a pharmacy mini-program (e.g., gaming features) 3. Fancy effects that affect performance (e.g., heavy animations on critical paths). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/data services/state management), code reusability for similar elements (like order cards), and proper naming conventions. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear project structure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

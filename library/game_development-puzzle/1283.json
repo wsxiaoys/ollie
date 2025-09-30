@@ -1,0 +1,68 @@
+{
+  "index": 1283,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring that the code you generate is executable for demonstration. Write code for a Candy Crush-style WeChat Mini Program game, with as much detail as possible, that can be played directly.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanics properly implemented?",
+      "description": "Review whether the code accurately implements the basic Candy Crush mechanics including: 1) Grid generation with randomized candies 2) Swap detection with validation of legal moves 3) Match-3 or more pattern recognition 4) Cascading effect when candies are removed. Score 0 if core mechanics are missing, 5 if basic swapping and matching are implemented, and 10 if all mechanics including cascades and special candy creation are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WeChat Mini Program structure correctly set up?",
+      "description": "Check whether the code follows WeChat Mini Program development standards with proper page structure (WXML/WXSS/JS), correct use of Mini Program APIs, project configuration files (app.json, project.config.json), and lifecycle events handling. Deduct 5 points if the basic structure is incorrect, 3 points if certain important Mini Program APIs are missing, and 5 points if configuration files are not provided or incomplete. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game scoring and level progression systems implemented?",
+      "description": "Evaluate whether the game includes a complete scoring mechanism (points for matches, combos, special candies), level progression (increasing difficulty, targets/goals), and achievement tracking. Deduct 3 points if the scoring is simplistic, 5 points if level progression is missing, and 5 points if there's no win/lose condition. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management and data persistence implemented?",
+      "description": "Check whether the code implements proper game state management (using Mini Program storage APIs), including saving/loading games, tracking player progress, and handling app lifecycle events (background/foreground transitions). Deduct 5 points if state management is rudimentary, 5 points if persistence is missing, and 3 points if app lifecycle isn't properly handled. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, edge cases in the matching algorithm, touchscreen gesture errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special candy combinations with unique effects 2. Social features like sharing scores with friends 3. Daily rewards or challenges). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems) 2. Function modules unrelated to the candy crush game (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the game). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/UI/state management), component reusability, and build process optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if performance optimization for WeChat Mini Program is not considered. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile game design principles: 1) Vibrant but harmonious color palette suitable for a candy-themed game 2) Proper layout with touch-friendly element sizing (buttons at least 44x44px) 3) Professional typography system with clear instructions and scoring display. Deduct 3 points for each crowded visual element, 5 points for a confusing game board layout, and 5 points for inconsistent visual style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception and mobile game standards: 1) Touch response delay ≤ 100ms 2) Candy swap/match animations between 300-500ms 3) Clear visual and audio feedback for matches and special effects. Deduct 5 points for each interaction without feedback, 3 points for jerky animations during cascades, and 5 points if the game feels sluggish on typical mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

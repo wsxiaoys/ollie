@@ -1,0 +1,68 @@
+{
+  "index": 517,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code fully annotated with simple and easy-to-understand language, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nCreate a task allocation and tracking tool where project managers can create tasks, assign them to team members, set deadlines and priorities, and team members can update task status and add notes.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the task management core functionality fully implemented?",
+      "description": "Review whether the code accurately implements task CRUD operations (Create, Read, Update, Delete) with proper data validation, task assignment logic, and status tracking mechanisms. Check if task properties include title, description, assignee, deadline, priority levels, and status transitions. Score 0 if basic task operations are missing, 5 if only simple CRUD is implemented, and 10 if complete task lifecycle management with validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user role management and permission system implemented?",
+      "description": "Evaluate whether the system properly distinguishes between project managers and team members with appropriate permission controls. Check if project managers can create/assign tasks while team members can only update assigned tasks. Verify user authentication, role-based access control, and secure session management. Deduct 5 points if role separation is unclear, and 3 points if permission validation is missing on sensitive operations. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence and state management properly designed?",
+      "description": "Check whether the application uses appropriate data storage mechanisms (localStorage, database integration, or API endpoints) with proper data modeling for tasks, users, and relationships. Evaluate if state management follows consistent patterns and handles concurrent updates correctly. Deduct 5 points if data loss occurs on page refresh, and 3 points if state synchronization issues exist between different views. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the tracking and notification features comprehensively implemented?",
+      "description": "Assess whether the system includes progress tracking dashboards, deadline monitoring, status change notifications, and activity logging. Check if the interface provides clear visual indicators for overdue tasks, progress summaries, and task history. Deduct 5 points if tracking visualization is missing, and 3 points if status updates don't trigger appropriate notifications. Give 10 points if comprehensive tracking with analytics is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases properly?",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid input data, missing user assignments, date validation errors, concurrent modifications, etc.) and provides friendly error messages with recovery mechanisms. Code with strong robustness should effectively validate all user inputs and handle edge cases gracefully, giving 10 points. If robustness is average, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance productivity?",
+      "description": "Check whether the code includes valuable productivity features that go beyond basic requirements (e.g., 1. Drag-and-drop task prioritization 2. Automated deadline reminders 3. Task dependency mapping 4. Time tracking integration 5. Export/import functionality 6. Advanced filtering and search). Add 2 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary features?",
+      "description": "Strictly identify three types of redundancy: 1. Duplicate functionality implementations (e.g., multiple task creation forms) 2. Features unrelated to task management (e.g., built-in games or social media integration) 3. Over-engineered components that impact performance (e.g., excessive animations on data operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with core functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate professional engineering quality?",
+      "description": "Review architectural separation (data layer, business logic, presentation layer), code organization with proper modules/components, consistent naming conventions, and maintainability. Deduct 5 points if global state pollution or poor separation of concerns is found; deduct 5 points if code duplication exceeds 25%; deduct 5 points if no code comments or documentation exists. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional UX/UI standards?",
+      "description": "Evaluate whether the design follows modern interface principles: 1) Consistent color scheme with proper contrast ratios (WCAG AA compliant) 2) Logical information hierarchy with appropriate typography (minimum 14px font size, 1.4+ line height) 3) Intuitive navigation and clear visual grouping of related elements. Deduct 3 points for each accessibility violation, 5 points for poor color choices that strain visibility, and 5 points for cluttered or confusing layout structure. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the interactions smooth and provide excellent user experience?",
+      "description": "Judge whether user interactions follow UX best practices: 1) Immediate visual feedback for all clickable elements (≤ 100ms response) 2) Smooth transitions between states (200-400ms duration) 3) Clear loading states and progress indicators 4) Intuitive keyboard navigation support. Deduct 5 points for each unresponsive interaction, 3 points for jarring visual transitions, and 5 points for confusing navigation flow or hidden critical functions. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

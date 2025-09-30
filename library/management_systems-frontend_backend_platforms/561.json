@@ -1,0 +1,68 @@
+{
+  "index": 561,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Design a personal finance management tool where users can record daily income and expenses, set expense categories, view monthly financial statistics and trend charts. Support importing bank statement CSV files with automatic transaction categorization. Provide a budget setting feature that alerts users when certain expenses approach or exceed their budget. Data should be encrypted and stored locally.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core financial record functionality fully implemented?",
+      "description": "Review whether the code accurately implements income and expense recording capabilities, with proper data structures for financial entries (date, amount, category, description). Score 0 if the core data entry mechanisms are missing, 5 if basic record creation exists but lacks editing/deletion capabilities, and 10 if CRUD operations for financial records are fully implemented with data validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the category management system properly designed?",
+      "description": "Evaluate if the code implements customizable expense/income categories with hierarchical structures (parent/sub-categories). Check for the ability to create, edit, merge, and delete categories while preserving historical data integrity. Score 3 points for basic category creation, 7 points if category management includes data validation and prevents orphaned transactions, and 10 points if it also includes default categories and smart category suggestions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the monthly financial statistics and visualization charts properly implemented?",
+      "description": "Check whether the code generates accurate financial summaries and uses appropriate chart types (pie, bar, line) for different metrics. Charts should be interactive, responsive, and include proper legends and labels. Deduct 5 points if charts lack filtering capabilities, 3 points if they're not interactive, and 3 points if they don't handle edge cases like no data or extreme values. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is CSV import functionality with automatic categorization implemented?",
+      "description": "Assess whether the code can parse different CSV formats from common banks, match transaction descriptions to appropriate categories using pattern matching or machine learning, and handle edge cases like duplicate entries or format errors. Deduct 3 points if only a single bank format is supported, 5 points if automatic categorization isn't implemented, and 5 points if there's no error handling for malformed data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, format errors, duplicate entries, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive analysis for future spending 2. OCR receipt scanning for automatic entry 3. Integration with financial APIs for real-time data). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to calculate the same financial metrics) 2. Function modules unrelated to personal finance (e.g., a built-in currency converter when the app is single-currency) 3. Fancy effects that affect performance (e.g., excessive animations in data visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data models, business logic, visualization layers), encryption implementation for financial data, and local storage architecture. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper data encryption is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for financial data (with consistent accent colors for income/expense) 2) Proper layout spacing (financial information properly grouped with clear visual hierarchy) 3) Professional font system (numerals using monospace fonts, proper currency formatting). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic data presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Budget alerts appear within 100ms of value change 2) Smooth transitions between different financial views 3) Clear visual feedback for financial data entry and confirmation. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between data views, and 5 points for hard-to-find key function buttons like 'add transaction'. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

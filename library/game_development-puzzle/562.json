@@ -1,0 +1,68 @@
+{
+  "index": 562,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on the requirement. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code; please ensure the project is complete and executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nPlease create a shooting game combined with puzzle elements. As players explore the map, they need to shoot specific targets to unlock doors or trigger mechanisms, thus advancing the game process. The game includes puzzle design, target interaction, and logical level layout. Showcase the combination of puzzle-solving and shooting mechanics.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core shooting mechanism fully implemented?",
+      "description": "Review whether the code accurately implements a shooting system with proper collision detection, hit registration, and visual feedback. Check for weapon handling (aiming, firing), projectile physics, and hit effects. Score 0 if shooting mechanics are missing, 5 if basic shooting is implemented but lacks polish, and 10 if the shooting system is complete with visual and audio feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the puzzle elements properly integrated with the shooting mechanics?",
+      "description": "Evaluate how puzzle elements interact with the shooting mechanics. Check if targets need to be hit in specific sequences, patterns, or timing. Puzzle complexity should increase progressively. Deduct 3 points if puzzles are too simple (just shooting static targets), 5 points if there's no variety between puzzles. Full score requires at least 3 distinct puzzle types that meaningfully combine shooting with problem-solving.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a complete level progression system with door unlocking and mechanisms?",
+      "description": "Check whether shooting targets correctly triggers mechanisms (doors opening, platforms moving, etc.). Verify that the cause-effect relationship is clear to players through visual/audio cues. Deduct 5 points if mechanism feedback is delayed/unclear, and 3 points if the progression logic has gaps. Full score requires a complete system where progress is clearly tracked and mechanisms respond instantly to correct solutions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game map/level design conducive to the gameplay concept?",
+      "description": "Evaluate whether the map layout supports both shooting and puzzle-solving, with appropriate spacing, cover elements, and visibility of interactive targets. Check if the level design guides players naturally without explicit instructions. Deduct 5 points for confusing layouts, 3 points for repetitive environments. Full score requires thoughtful level design that creates interesting shooting challenges while making puzzle elements intuitive.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (physics glitches, rapid fire exploits, collision edge cases, etc.) and provides error handling for game-breaking scenarios. Code should gracefully handle player attempts to break puzzle sequences. Deduct 5 points for each unhandled critical path bug, 3 points for minor exploitable mechanics. Full score requires comprehensive edge case handling and prevention of sequence-breaking.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special weapons with unique puzzle-solving properties 2. Environmental interactions beyond simple shooting 3. Dynamic difficulty adjustment based on player performance). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar shooting/puzzle mechanisms 2. Feature bloat unrelated to core gameplay (e.g., complex inventory system in a focused puzzle-shooter) 3. Unnecessarily complex visual effects that detract from gameplay clarity. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are obscured by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of game mechanics, rendering, input handling, etc.), code structure, and potential for extension. Check for proper object-oriented design with clear class responsibilities. Deduct 5 points if global state is overused; deduct 5 points if the code has high coupling between unrelated systems; deduct 5 points if there's no clear separation between game logic and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game UI follows good design principles: 1) Clear distinction between interactive and decorative elements 2) Intuitive indicators for puzzle progress and shooting feedback 3) Consistent visual language throughout the game. Deduct 3 points for cluttered HUD elements, 5 points for unclear puzzle state indicators, and 5 points for illegible text or confusing iconography. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the player feedback system effective and satisfying?",
+      "description": "Judge whether the game provides appropriate feedback for player actions: 1) Immediate visual/audio response to shots 2) Clear indication when puzzle elements are activated 3) Distinctive feedback for correct vs. incorrect solutions. Deduct 5 points for delayed feedback on critical actions, 3 points for ambiguous success/failure indicators, and 5 points for lack of progressive feedback during multi-step puzzles. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

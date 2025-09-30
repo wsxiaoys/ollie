@@ -1,0 +1,68 @@
+{
+  "index": 1196,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable when possible. UniApp lucky draw lottery with marquee animation",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the lucky draw system fully implemented?",
+      "description": "Review whether the code accurately implements a complete lucky draw system including prize pool configuration, drawing logic, probability calculation, and result display. Score 0 if the core functionality is missing, 5 if only basic drawing without probability weighting is implemented, and 10 if it includes configurable probability, anti-cheating validation, and prize inventory management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the marquee animation properly implemented?",
+      "description": "Check if the marquee animation is smooth, performant and visually appealing. The animation should use requestAnimationFrame or CSS animations rather than setTimeout/setInterval for better performance. Verify that the animation has proper easing (acceleration and deceleration), and the stopping mechanism feels natural rather than abrupt. Deduct 5 points if the animation is jerky, 3 points if it lacks proper easing, and 2 points if the stopping doesn't align perfectly with prize slots.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the UniApp cross-platform compatibility ensured?",
+      "description": "Evaluate whether the code uses UniApp's cross-platform APIs correctly and avoids platform-specific implementations where possible. Check for conditional compilation (`#ifdef`) where needed for platform differences. Deduct 3 points if only tested on one platform, 5 points if platform-specific bugs exist, and 7 points if critical features don't work across platforms (WeChat Mini Program, H5, App).",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the draw result handling and user feedback mechanism complete?",
+      "description": "Check if the code includes proper result handling with winning/losing notifications, prize claiming flows, and history records. Verify that animations and sound effects enhance the excitement of the draw. Award full 10 points only if the system includes prize claim verification, result persistence, and engaging feedback. Deduct 5 points if missing history tracking, 3 points if feedback is minimal.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, permission denial, multiple rapid clicks) and provide friendly error prompts or recovery mechanisms. Check for validation of user inputs and draw conditions (e.g., remaining chances). Deduct 3 points for each unhandled edge case, with a minimum score of 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Particle effects for winners 2. Social sharing of results with custom images 3. Mini-games to earn extra draw chances). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar animations 2. Feature modules unrelated to lucky draw (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive particle systems on mobile). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/API calls), proper use of UniApp component system, and adherence to best practices. Check if the code follows a consistent style guide. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling or logging mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for festive/game context 2) Proper layout spacing that follows UniApp's responsive design guidelines 3) Professional typography with appropriate emphasis on prize items. Deduct 3 points for each UI element with poor contrast, 5 points for inconsistent design language, and 5 points for layouts that break on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Responsive touch feedback ≤ 100ms 2) Marquee animation speed variation that builds excitement 3) Clear visual indication of when users can/cannot draw. Deduct 5 points for laggy animations on mid-range devices, 3 points for inconsistent animation timing, and 5 points for confusing interaction states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

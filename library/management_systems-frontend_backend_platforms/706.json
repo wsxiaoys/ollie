@@ -1,0 +1,68 @@
+{
+  "index": 706,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. I need to input product sketches, and I want you to provide a one-stop solution to generate product prototypes, frontend code in Vue, and backend code in Spring Boot (including MySQL database table structure design).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the sketch parsing and analysis system fully implemented?",
+      "description": "Review whether the code accurately implements sketch image upload, parsing, and UI element recognition through computer vision or machine learning algorithms. Check if it can identify common UI components (buttons, input fields, navigation bars, etc.) and extract layout information. Score 0 if no sketch processing is implemented, 5 if only basic image upload is handled, and 10 if comprehensive sketch-to-component mapping with position/size extraction is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue frontend code generation engine properly implemented?",
+      "description": "Evaluate whether the system generates syntactically correct and executable Vue 3 components with proper template structure, reactive data binding, and component lifecycle management. Check if generated code includes proper props, events, and styling. Deduct 5 points if components are not properly structured, 3 points if Vue composition API is not utilized correctly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Spring Boot backend architecture and MySQL integration complete?",
+      "description": "Review whether the generated Spring Boot application includes proper REST API endpoints, service layer architecture, JPA entity mappings, and MySQL database connectivity. Check for proper dependency injection, exception handling, and CRUD operations. Deduct 5 points if database relationships are not properly defined, 3 points if API documentation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the end-to-end prototype generation workflow seamless?",
+      "description": "Assess whether the system provides a complete pipeline from sketch input to deployable prototype, including automatic code compilation, dependency management, and preview functionality. Check if generated frontend and backend can communicate properly through API calls. Deduct 5 points if manual intervention is required for code compilation, 3 points if API integration between frontend and backend is not automated. Give 10 points if fully automated.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid sketch uploads, parsing failures, code generation errors, database connection issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview during sketch analysis 2. Smart component suggestions based on design patterns 3. Automatic responsive design generation 4. Integration with popular UI frameworks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload handlers) 2. Function modules unrelated to prototype generation (e.g., built-in image editing tools) 3. Overly complex AI models that don't improve accuracy significantly. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating sketch processing/code generation/template engines), proper error handling, configuration management, and build automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if environment configuration is hardcoded. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the generated prototypes and the tool's UI follow modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent component styling. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the prototype generation process and resulting prototypes have smooth interactions: 1) Sketch upload and processing feedback ≤ 2 seconds 2) Code generation progress indicators 3) Generated prototype animations between 300-500ms 4) Clear visual focus guidance during the generation workflow. Deduct 5 points for each operation without feedback, 3 points for laggy transitions during code generation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

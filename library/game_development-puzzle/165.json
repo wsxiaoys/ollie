@@ -1,0 +1,68 @@
+{
+  "index": 165,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable if possible.\n\nPlease use HTML and JavaScript to implement a puzzle game: Time Reversal and Space-Time Puzzles\n\n**Task**: Design a time reversal system where players can rewind time to solve space-time puzzles and restore previous states.\n\n**Hint**: You can record scene states and restore these states when time is reversed.\n\nPlease create the game and include comments in the code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Core Time Reversal Mechanism Implementation",
+      "description": "Review how effectively the code implements the fundamental time reversal system through state recording and restoration.Score 0 if no time reversal functionality exists, 5 if only basic state tracking is implemented, and 10 if the system can seamlessly record and restore complex game states including player position, object states, and interactions. Check if the implementation uses an efficient data structure for state storage that balances memory consumption with rewind fidelity.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Space-Time Puzzle Design and Logic",
+      "description": "Evaluate the quality and complexity of the puzzles that utilize the time reversal mechanic.Check whether puzzles are specifically designed to leverage the time reversal mechanic in creative ways. Score 0 if there are no actual puzzles implemented, 5 if puzzles are basic and don't fully utilize the time reversal concept, and 10 if puzzles demonstrate complex cause-and-effect relationships across time that require creative thinking to solve. Puzzle progression should increase in difficulty and introduce new mechanics gradually.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "State Tracking and Restoration System",
+      "description": "Assess the implementation of the game state recording and playback systems.Evaluate how comprehensively game states are tracked and restored. Score 0 if state tracking is missing, 5 if only basic elements (like position) are tracked, and 10 if the system handles complex states including physics interactions, animations, and conditional triggers. Check for optimizations like delta compression or keyframing to reduce memory usage while maintaining accurate state reproduction.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Time Visualization and Player Feedback",
+      "description": "Examine how time manipulation is visually communicated to the player.Review whether the interface clearly indicates the current time state, rewind capacity, and provides clear visual/audio feedback during time manipulation. Score 0 if no visual feedback exists, 5 if basic indicators are present but unclear, and 10 if time manipulation includes intuitive UI elements, smooth visual effects (like color shifts, motion blur, or particle effects), and clear audio cues that enhance player understanding of the time mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations and edge cases.Examine error handling for scenarios like rapid time reversal commands, boundary conditions (beginning/end of time), user operation errors, and memory management during extensive time manipulation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check for unique mechanics that enhance the time manipulation concept.Look for surprise features that enhance the experience (e.g., 1. Partial time reversal affecting only certain objects 2. Time dilation/slow-motion effects 3. Parallel timeline exploration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Feature Efficiency and Relevance",
+      "description": "Check for unnecessary or redundant features that detract from the core experience.Strictly check three types of redundancy: 1. Multiple implementations of similar time manipulation functions 2. Function modules unrelated to the puzzle-solving or time mechanics 3. Visually impressive but performance-heavy effects that don't contribute to gameplay. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Code Engineering Quality",
+      "description": "Review the overall code structure, organization, and implementation quality.Review modular design (separation of time mechanics, puzzle logic, rendering, and input handling), code comments as requested, and pattern usage. Deduct 5 points if global state is poorly managed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comments are missing or insufficient for understanding the time reversal implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design and Visual Clarity",
+      "description": "Evaluate whether the game interface follows professional design principles.Evaluate whether the overall design follows modern design principles: 1) Clear visual distinction between past/present/future states 2) Proper layout spacing with intuitive controls for time manipulation 3) Visual consistency in representing time-affected elements. Deduct 3 points for confusing time state representations, 5 points for unclear puzzle objectives, and 5 points for poor readability of critical game elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction Smoothness and Responsiveness",
+      "description": "Judge the fluidity and responsiveness of time manipulation controls.Judge whether time manipulation feels intuitive and responsive: 1) Immediate feedback when initiating time reversal (≤100ms) 2) Smooth transitions between time states (no visual jarring) 3) Appropriate speed control for time reversal. Deduct 5 points for laggy time manipulation, 3 points for confusing visual transitions during time changes, and 5 points for unintuitive time control mechanisms. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "easy"
+}

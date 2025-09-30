@@ -1,0 +1,68 @@
+{
+  "index": 164,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable.\nPlease implement a Ski Adventure game using HTML and JavaScript.\nTask: Design a skiing game where players slide down a slope and avoid obstacles.\nHint: Implement the physical movement of characters and dynamic changes in scenery.\nPlease include comments in the code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core ski movement physics system implemented correctly?",
+      "description": "Review whether the code accurately implements skiing physics including gravity, momentum, collision detection, and speed control. Check if the character responds to user input with appropriate acceleration/deceleration. Score 0 if the core movement logic is missing, 5 if basic movement exists but physics are unrealistic, and 10 if the skiing mechanics feel natural with proper physics calculations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the obstacle avoidance system comprehensive?",
+      "description": "Evaluate the obstacle system implementation including variety of obstacles (trees, rocks, etc.), proper collision detection with the player, and consequences of collisions (slowing down, game over, etc.). Deduct 5 points if collision detection is inaccurate, 3 points if obstacle variety is limited, and 2 points if collision consequences are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dynamic scenery generation and scroll system effective?",
+      "description": "Check if the game implements infinite or procedural terrain generation with proper scrolling mechanics. Assess whether the scenery changes dynamically (e.g., increasing difficulty, varying landscapes). Deduct 5 points if terrain is static/limited, 3 points if scroll performance is poor (stuttering), and 2 points if there's no variation in scenery. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete game progression and scoring system?",
+      "description": "Evaluate whether the game includes proper scoring mechanics (distance traveled, tricks performed, obstacles avoided), difficulty progression, and game states (start, play, pause, game over). Deduct 3 points if scoring is simplistic, 3 points if difficulty doesn't increase, and 4 points if game state management is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect user input, browser resizing, performance issues on slower devices, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Trick system for jumps and stunts 2. Weather effects that impact gameplay 3. Multiple character options with different abilities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to skiing (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, and whether comprehensive comments are included as requested. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if comments are insufficient or unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching for the ski environment (contrasting player vs obstacles) 2) Clear HUD elements for score, speed, etc. with proper spacing 3) Professional text display for game states and instructions. Deduct 3 points for each cluttered UI element, 5 points for poor color choices making obstacles hard to distinguish, and 2 points for text that's difficult to read during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game performance and animations conform to player expectations: 1) Consistent frame rate (minimum 30fps) 2) Responsive controls with input lag under 100ms 3) Smooth acceleration/deceleration and turning animations. Deduct 4 points for frame rate drops during normal play, 3 points for input lag issues, and 3 points for jerky animations or movement. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

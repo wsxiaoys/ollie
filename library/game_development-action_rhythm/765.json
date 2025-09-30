@@ -1,0 +1,68 @@
+{
+  "index": 765,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Help me create a parkour game where the character is Wong Ka Kui (Beyond's lead vocalist), controlled by the A, W, S, D keys, in HTML format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic parkour game mechanics fully implemented?",
+      "description": "Review whether the code implements core parkour mechanics including: character movement, jumping mechanism, obstacle generation and collision detection. Score 0 if the character cannot move, 5 if only basic left-right movement exists, and 10 if complete parkour mechanics (including jumping, dodging, and progressive difficulty) are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Wong Ka Kui character properly implemented and designed?",
+      "description": "Check whether the Wong Ka Kui character is visually recognizable (either through sprites or CSS design), has appropriate animations for different actions (running, jumping, falling), and maintains the iconic elements associated with the Beyond vocalist. Deduct 5 points if the character lacks recognizable features, 3 points if animations are missing, and 2 points if proportions are significantly distorted. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the A, W, S, D key control system properly implemented?",
+      "description": "Evaluate whether the WASD key controls are responsive (≤100ms delay), intuitive (W for jump, A/D for left/right movement, S for ducking/sliding), and handle edge cases like multiple key presses. Check for keyboard event listeners and proper key mapping. Deduct 5 points if controls are unresponsive or laggy, and 5 points if key combinations aren't handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game environment and obstacle system well-designed?",
+      "description": "Assess whether the game includes varied obstacles that spawn progressively, a scoring system that tracks the player's progress, and background elements that create an engaging parkour environment. Deduct 3 points for monotonous obstacles, 3 points for missing score tracking, and 4 points if the difficulty doesn't increase over time. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid key presses, browser resizing, performance issues on slower devices, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Beyond music integration 2. Special power-ups related to Wong Ka Kui or Beyond 3. Easter eggs from Beyond's music history). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the parkour game (e.g., unnecessary menus or settings) 3. Fancy effects that affect performance (e.g., excessive particles or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, and maintainability. Deduct 5 points if global state pollution is found or if game functions are not encapsulated properly; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout of game elements (score display, character, obstacles) 3) Professional font system for game text (instructions, score, game over). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game's dynamic effects conform to human perception characteristics: 1) Character responds to controls within 100ms 2) Animation transitions are smooth (60fps target) 3) Collision feedback is clear and precise. Deduct 5 points if controls feel unresponsive, 3 points for jerky animations or frame drops, and 5 points for unclear collision boundaries or feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

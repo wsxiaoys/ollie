@@ -1,0 +1,68 @@
+{
+  "index": 1443,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Please help me write a small program that simulates the walking process of passengers from arriving at a station to boarding a vehicle, and outputs the time passengers spend at the station.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the passenger arrival simulation properly implemented?",
+      "description": "Review whether the code accurately implements passenger arrival patterns (random, scheduled, or based on statistical distributions). Check if arrival rates vary by time of day and if the simulation handles peak/off-peak scenarios. Score 0 if arrival logic is missing, 5 if only basic constant arrival rate is implemented, and 10 if realistic arrival patterns with variability are fully modeled.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the station navigation and passenger movement logic complete?",
+      "description": "Evaluate whether the code models passenger movement through the station (entry, ticketing, security, waiting areas, platforms). Check if the model accounts for walking speeds, congestion effects, and path-finding algorithms. Deduct 5 points if spatial modeling is oversimplified, and 3 points if passenger behaviors like stopping at information boards are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the program implement a comprehensive boarding process?",
+      "description": "Check if the code includes queuing strategies, boarding priorities (e.g., elderly, passengers with special needs), and vehicle capacity constraints. Verify if the simulation handles scenarios like full vehicles or missed connections. Score 0 if boarding logic is missing, 5 if only basic boarding is implemented, and 10 if it includes realistic boarding behaviors including priority boarding and capacity management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the time tracking and reporting functionality comprehensive?",
+      "description": "Assess whether the program correctly tracks and reports time metrics (total waiting time, time spent at different station areas, boarding time). Check if the statistics are properly aggregated and if the analysis provides meaningful insights (averages, percentiles, outliers). Deduct 5 points if only total time is reported without breakdowns, and 3 points if time precision is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as extremely high passenger volumes, zero passengers, service disruptions, etc.) and provide appropriate error handling. Code with strong robustness should be able to effectively handle edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the simulation (e.g., 1. Visual real-time station heatmap 2. Predictive analytics for station crowding 3. What-if scenario testing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple time calculation methods) 2. Function modules unrelated to passenger flow simulation (e.g., unnecessary weather simulation) 3. Overly complex algorithms that don't improve accuracy. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core simulation functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating passenger logic/station model/time management/reporting), unit test coverage, and parameter configuration flexibility. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the simulation parameters cannot be easily modified. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visualization (if any) meet professional standards?",
+      "description": "Evaluate whether any visualization components follow good design principles: 1) Clear representation of passenger flow 2) Proper use of color to indicate congestion levels 3) Appropriate labeling and legends. Deduct 3 points for cluttered visuals, 5 points for misleading data representation, and 5 points for poorly scaled graphics. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the simulation output clear, informative and actionable?",
+      "description": "Judge whether the output data and reports provide meaningful insights: 1) Clear statistics on waiting times 2) Identification of bottlenecks in the passenger journey 3) Comparison of actual vs. expected transit times. Deduct 5 points for raw data without analysis, 3 points for missing visualization of key metrics, and 5 points for outputs that don't allow for decision-making improvements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

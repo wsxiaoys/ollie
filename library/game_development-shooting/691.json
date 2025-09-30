@@ -1,0 +1,68 @@
+{
+  "index": 691,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Implement a first-person shooter game where the player controls the view direction with the mouse and fires bullets by clicking. The scene will have both static and dynamic obstacles, with bullets able to penetrate some obstacles. Enemies will appear from random locations and approach the player. The player needs to destroy all enemies to advance to the next level.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the first-person view perspective and mouse control properly implemented?",
+      "description": "Check if the code accurately implements first-person camera mechanics with proper quaternion rotation for smooth view transitions. The mouse should control both horizontal (yaw) and vertical (pitch) camera rotations with configurable sensitivity. Verify that pitch constraints prevent camera flipping (typically -89° to 89° pitch limit). Give 5 points for basic mouse look implementation, 8 points if it includes smooth damping, and 10 points if it also handles edge cases like frame rate independence and has proper constraints.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the shooting mechanism fully functional?",
+      "description": "Evaluate the implementation of bullet firing, including raycasting for hit detection, bullet physics (if applicable), and visual feedback. Check for proper mouse click handling, cooldown/rate of fire implementation, and recoil effects. The shooting should include proper collision detection with different obstacle types. Award 4 points for basic shooting, 7 points if it includes appropriate sound effects and visual feedback, and 10 points if it also handles penetrable vs. non-penetrable obstacles correctly with appropriate physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the obstacle types and bullet penetration mechanics well-implemented?",
+      "description": "Review how different obstacle types are defined and handled. The code should distinguish between penetrable and non-penetrable obstacles, with appropriate visual and physical properties for each. Check if bullet penetration mechanics include factors like material types, thickness, bullet velocity degradation, and potential trajectory changes. Award 10 points if all these aspects are properly implemented, 5 points if only basic penetration is handled, and 0 points if obstacles are not differentiated.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the enemy AI and spawning system properly designed?",
+      "description": "Assess the enemy spawning algorithm (should use proper randomization without unfair clustering), pathfinding implementation (A* or NavMesh), and approach behavior. Enemies should navigate around obstacles intelligently while approaching the player. Verify level progression logic after all enemies are destroyed. Award 3 points for basic spawning, 3 points for proper pathfinding, 2 points for enemy behavior variation, and 2 points for level progression implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid multiple inputs, edge collisions, performance spikes, etc.) and provide graceful error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic lighting effects for gunshots 2. Enemy damage visual feedback system 3. Environmental destruction mechanics 4. Player health regeneration system). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple shooting systems coexisting) 2. Function modules unrelated to FPS gameplay (e.g., unnecessary RPG elements) 3. Fancy effects that affect performance (e.g., excessive particle systems that cause frame drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/input/rendering layers), component organization, and code reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper optimization techniques (object pooling, LOD, etc.) are not implemented for performance-critical sections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the HUD design follows modern FPS design principles: 1) Non-intrusive elements that don't obstruct gameplay visibility 2) Clear ammunition/health indicators positioned in screen corners 3) Subtle hit markers and damage indicators 4) Enemy highlighting that doesn't break immersion. Deduct 3 points for each obstructive UI element, 5 points for visual clutter during intense gameplay, and 5 points for missing critical information (ammo count, health). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to FPS game standards: 1) Input response delay ≤ 50ms for shooting 2) Consistent frame rate above 30 FPS minimum 3) Appropriate weapon recoil and movement animations 4) Smooth enemy death animations without breaking gameplay flow. Deduct 5 points for input lag exceeding 100ms, 3 points for frame drops during normal gameplay, and 5 points for jarring transitions between animations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

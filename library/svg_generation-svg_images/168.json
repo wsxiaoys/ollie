@@ -1,0 +1,68 @@
+{
+  "index": 168,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display when possible. Please help me implement the following requirement using SVG code: create an image of me using binoculars to view and search with lens and zoom functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core SVG binocular image properly implemented?",
+      "description": "Check if the SVG code creates a recognizable human figure using binoculars with proper proportions and visual clarity. The figure should be visually identifiable as a person looking through binoculars. Deduct 5 points if the human silhouette lacks definition, 5 points if the binoculars are not anatomically correct in positioning (should be held at eye level), and 5 points if the overall image lacks proper scaling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the lens/zoom functionality interactive and working?",
+      "description": "Evaluate whether the zoom functionality allows users to simulate looking through binoculars with proper magnification effects. The code should implement at least 2x zoom factor and maintain image clarity during zooming. Deduct 5 points if zooming is static (non-interactive), 3 points if the zoom effect lacks smooth transitions, and 5 points if the lens distortion physics are unrealistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the binocular lens view implementation technically sound?",
+      "description": "Review whether the code implements proper lens visualization with features like circular/oval viewports, potential light reflection, and edge darkening to simulate real binocular optics. Check for proper use of SVG filters (like feGaussianBlur, feComposite) or clip-paths to create authentic lens effects. Deduct 5 points if the lens edges lack proper rendering, 3 points if no light/reflection effects are present, and 5 points if the twin-lens binocular effect is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the search functionality implemented with visual feedback?",
+      "description": "Assess whether the code implements a search mechanism with proper visual indicators (e.g., crosshair, targeting reticle, or focus area) that responds to user interactions. The search area should highlight or otherwise indicate what's being viewed through the binoculars. Deduct 5 points if there's no visual search indicator, 3 points if the search area doesn't provide feedback, and 5 points if the search functionality isn't interactive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, touch vs. mouse input, SVG scaling issues) and provide graceful fallbacks. Code with strong robustness should manage viewport challenges, browser compatibility, and input device variations. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if no error scenarios are addressed.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic lighting effects as the binoculars move 2. Motion blur during rapid panning 3. Lens flare effects when pointed at bright areas 4. Simulated focus adjustment). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visual effects (e.g., multiple zoom methods coexisting) 2. Feature elements unrelated to binoculars or search functionality 3. Excessive effects that affect performance (e.g., unnecessary filter effects that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing/interaction/effects code), code readability, and optimization techniques. Deduct 5 points if global variable pollution is found; deduct 5 points if the code has excessive duplication; deduct 5 points if SVG elements lack proper naming conventions or organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color palette (consistent, with proper contrast) 2) Proper visual hierarchy (primary vs. secondary elements) 3) Professional proportions and alignment. Deduct 3 points for each visual inconsistency, 5 points for poor color choices affecting usability, and 5 points for misaligned or improperly scaled elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Movement response delay ≤ 100ms 2) Smooth binocular panning/zooming animations 3) Clear visual feedback during interactions. Deduct 5 points for laggy zoom transitions, 3 points for jittery movements during panning, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

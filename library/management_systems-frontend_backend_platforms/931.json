@@ -1,0 +1,68 @@
+{
+  "index": 931,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Generate basic code for a WeChat expense tracking mini-program, including a bill recording page and category selection functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the bill recording functionality fully implemented?",
+      "description": "Check if the code implements a complete bill recording system with amount input, date selection, category selection, and note/remarks field. Evaluate whether form validation is properly implemented (e.g., non-empty amount, valid date format). Score 0 if core recording functionality is missing, 5 if basic input is implemented but lacks validation, and 10 if all recording features are properly implemented with appropriate validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the category selection feature properly implemented?",
+      "description": "Evaluate whether the category system includes both income and expense categories with appropriate subcategories (at least 5 expense categories and 3 income categories). Check if the UI provides visual indicators for different categories (icons) and allows for easy selection. Deduct 3 points if categories are hardcoded without customization options, 5 points if the category selection UI is cumbersome, and 3 points if category icons/visual indicators are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is local data persistence implemented for bills?",
+      "description": "Check if the mini-program properly utilizes WeChat's storage APIs (wx.setStorage/wx.getStorage) or cloud database to save and retrieve bill data. Evaluate whether the code handles storage exceptions and implements data backup. Deduct 5 points if bills aren't persisted between app restarts, 3 points if there's no error handling for storage operations, and 3 points if there's no data migration strategy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the mini-program implement basic bill statistics/visualization?",
+      "description": "Evaluate whether the code includes basic statistical features such as daily/monthly/yearly expense summaries, category-based spending breakdowns, or simple charts (pie charts, bar graphs). Deduct 5 points if no statistics are implemented, 3 points if only text-based summaries exist without visualizations, and 2 points if the statistics lack filtering options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network interruption when syncing, storage limits, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Voice input for quick expense recording 2. OCR receipt scanning 3. Budget alerts/notifications 4. Expense sharing with contacts). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add the same type of expense) 2. Function modules unrelated to expense tracking (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the UI). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/data layers), consistent naming conventions, and reusable components. Deduct 5 points if global state is poorly managed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no component isolation between pages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat mini-program design principles: 1) Consistent with WeChat's visual language (font, spacing, colors) 2) Clean and minimal UI with appropriate whitespace 3) Proper use of WeChat UI components rather than custom implementations. Deduct 3 points for each UI element that doesn't match WeChat's style guidelines, 5 points for cluttered screens with poor information hierarchy, and 5 points for non-standard input controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the page transitions and interactions follow WeChat mini-program conventions: 1) Quick response to taps (≤ 100ms) 2) Smooth transitions between pages 3) Appropriate loading indicators for async operations. Deduct 5 points for each operation without feedback, 3 points for jittery animations or transitions, and 5 points for non-intuitive navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

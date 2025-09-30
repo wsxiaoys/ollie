@@ -1,0 +1,68 @@
+{
+  "index": 394,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable for demonstration. Write a frontend program that simulates the orbits of the Earth and Moon.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the celestial mechanics simulation accurately implemented?",
+      "description": "Review whether the code correctly implements orbital physics including gravitational forces, elliptical orbits, and proper scaling. Check if the Earth-Moon system follows realistic orbital parameters (Moon's 27.3-day period, elliptical eccentricity ~0.055, proper distance ratios). Score 0 if basic circular motion is missing, 5 if only simple circular orbits are implemented, and 10 if accurate elliptical orbits with proper physics calculations are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time animation system properly constructed?",
+      "description": "Evaluate whether the animation uses requestAnimationFrame for smooth 60fps rendering, includes time-based calculations rather than frame-based movement, and provides speed controls (pause/play/fast-forward). Check for proper canvas clearing and redrawing optimization. Deduct 5 points if animation stutters or lacks time control, 3 points if performance drops below 30fps during normal operation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are interactive controls and visualization features comprehensive?",
+      "description": "Check whether the interface includes essential controls: zoom in/out, camera following options (Earth-centered, Moon-centered, system view), time acceleration controls, and orbital trail visualization. Evaluate if users can toggle between different viewing modes and adjust simulation parameters. Deduct 5 points if basic zoom/pan is missing, 3 points if no orbital trails are shown. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the coordinate system and scaling mathematically sound?",
+      "description": "Assess whether the code implements proper coordinate transformations, handles astronomical distances with appropriate scaling factors, and maintains proportional relationships between celestial bodies. Check if the simulation accounts for the barycenter concept and relative size representations. Deduct 5 points if scaling is unrealistic, 3 points if coordinate system causes visual artifacts. Give 10 points if mathematically accurate scaling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as extreme zoom levels, rapid time changes, browser window resizing, invalid input parameters, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should effectively handle edge cases and maintain stable performance, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes enhanced features that improve the experience (e.g., 1. Realistic lunar phases visualization 2. Historical date simulation with accurate positions 3. Tidal effects indicator 4. Orbital prediction paths 5. Educational information panels). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple rendering loops coexisting) 2. Function modules unrelated to orbital simulation (e.g., built-in weather widgets) 3. Excessive visual effects that impact performance (e.g., complex particle systems for stars). Deduct 3 points for each redundancy found, and directly deduct 10 points if core simulation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/rendering/UI control layers), proper class/function organization, and code maintainability. Deduct 5 points if global state pollution is found or no clear architecture is used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no separation of concerns between calculation and presentation logic. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Appropriate space-themed color palette (dark backgrounds with contrasting celestial bodies) 2) Proper UI element spacing and layout (controls don't obstruct the main view) 3) Professional typography and iconography (clear labels, intuitive control symbols). Deduct 3 points for each poorly positioned UI element, 5 points for color schemes that reduce visibility, and 5 points for cluttered or confusing interface layout. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactive experience follows usability principles: 1) Mouse/touch controls respond within 100ms 2) Smooth zoom and pan operations without jarring jumps 3) Clear visual feedback for all interactive elements 4) Intuitive gesture controls for navigation. Deduct 5 points for each unresponsive control, 3 points for choppy zoom/pan operations, and 5 points for controls that lack clear visual feedback or are difficult to discover. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

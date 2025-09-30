@@ -1,0 +1,68 @@
+{
+  "index": 1631,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring the code you generate is executable. Help me create a web program that imports tables and can convert them into a language that AI can analyze.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the table import functionality fully implemented?",
+      "description": "Review whether the code implements multiple table import methods (e.g., CSV, Excel, JSON, direct input) and properly handles different file encodings and formats. Score 0 if import functionality is missing, 5 if only basic format support is available, and 10 if comprehensive import options with error handling are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the table parsing and data extraction logic robust?",
+      "description": "Check whether the code correctly parses various table structures, handles headers, detects data types, and manages special characters. Examine if it deals with merged cells, empty values, and inconsistent formats. Deduct 5 points if basic CSV parsing only, 3 points if no data type inference exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the AI-compatible format conversion implemented correctly?",
+      "description": "Evaluate whether the code transforms tabular data into AI-readable formats (e.g., structured JSON, CSV with metadata, labeled datasets). Check for proper schema definition, adherence to common AI input conventions, and inclusion of relevant metadata. Deduct 5 points if the output lacks structure, 3 points if metadata is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a preview and validation system for the conversion?",
+      "description": "Assess if the code includes features to preview data before conversion, validate the transformed output, and provide feedback on potential issues (e.g., missing values, inconsistencies). Examine whether users can adjust settings and see real-time results. Deduct 5 points if preview functionality is absent, 3 points if validation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed tables, excessively large files, network interruptions during upload, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted data cleaning 2. Automatic column type detection and annotation 3. Historical conversion tracking and comparison). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar parsing functions 2. Function modules unrelated to table conversion (e.g., unnecessary animations or widgets) 3. Complex features that affect core performance (e.g., overly sophisticated visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating import/parsing/conversion/UI layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Feedback on file upload/processing ≤ 100ms 2) Progress indicators for lengthy operations 3) Clear visual guidance through the conversion workflow. Deduct 5 points for each operation without feedback, 3 points for lack of progress indication during processing, and 5 points for confusing navigation between import and conversion steps. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Machine Learning",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 771,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Help me create a login page with an image on the left side and login information on the right side, with responsive layout.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic login page structure correctly implemented?",
+      "description": "Review whether the HTML structure properly divides the page into left (image) and right (login form) sections. Check for appropriate semantic tags (header, main, form, etc.) and a logical DOM hierarchy. Score 0 if the basic two-column layout is missing, 5 if the layout exists but has structural issues, and 10 for a clean, semantic implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the responsive layout properly implemented?",
+      "description": "Evaluate if the layout adjusts appropriately across different screen sizes (mobile, tablet, desktop). Check for media queries that transform the side-by-side layout to a stacked layout on smaller screens. Score 0 if no responsive features exist, 5 if basic responsiveness is implemented but with breakpoint issues, and 10 for a fully fluid responsive design with appropriate breakpoints (typically 768px, 992px, 1200px).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the login form complete with proper validation?",
+      "description": "Check if the form includes all necessary elements: username/email field, password field with masking, remember me option, login button, and possibly forgot password/register links. Verify client-side validation for required fields, email format, and password complexity. Deduct 3 points for each missing validation feature, 5 points if the form is incomplete. Full score for comprehensive validation with helpful error messages.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the image implementation optimized?",
+      "description": "Assess if the image is properly implemented with responsive techniques (max-width, object-fit), alternative text for accessibility, and loading optimization (lazy loading, appropriate format like WebP). Check if it maintains proper aspect ratio across screen sizes. Deduct 3 points if the image is not responsive, 3 points for missing alt text, 4 points for unoptimized formats/sizes that would affect page load performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form submission failures, image loading errors, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Password strength indicator 2. Social login options 3. Interactive animations/transitions 4. Dark/light mode toggle). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant CSS rules or JavaScript functions 2. Unnecessary libraries for simple functionality 3. Overly complex animations that affect performance or usability. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of HTML, CSS, and JavaScript), use of CSS methodologies (BEM, SMACSS), code reusability, and browser compatibility. Deduct 5 points for inline styles or scripts; deduct 5 points if the code isn't modular or lacks comments; deduct 5 points if there's no consideration for cross-browser compatibility. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form input feedback (focus states, validation messages) 2) Button hover/active states 3) Form submission feedback. Deduct 5 points for missing input focus states, 3 points for lack of hover effects on clickable elements, and 5 points for no visual feedback during form submission. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

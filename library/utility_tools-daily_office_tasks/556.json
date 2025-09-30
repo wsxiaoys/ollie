@@ -1,0 +1,68 @@
+{
+  "index": 556,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Ensure the code you generate is executable for demonstration. ======== ROLE ========\nYou are an experienced code expert. I am providing you with a software development requirement description and asking you to generate project code according to these requirements. Strictly follow the rules to help users generate complete project code that is fully commented in simple, easy-to-understand language, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Make sure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot run or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nBuild an email template generator where users can design email templates by dragging and dropping components, supporting the addition of text, images, buttons and other elements, with preview and HTML code export functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the drag-and-drop component system fully implemented?",
+      "description": "Review whether the code accurately implements a drag-and-drop interface using HTML5 Drag API or touch events, including component palette, drop zones, visual feedback during dragging, and collision detection. Check if it supports dragging text blocks, image components, button elements, and layout containers. Score 0 if basic drag-drop is not functional, 5 if only simple element dragging works, and 10 if advanced features like nested dropping, snap-to-grid, and multi-selection are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are comprehensive email template components provided?",
+      "description": "Evaluate whether the system includes essential email components: text blocks (with rich text editing), image elements (with upload/URL input), buttons (with customizable styling), dividers, spacers, social media icons, and layout containers (columns, rows). Each component should have configurable properties (fonts, colors, spacing, alignment). Deduct 3 points for each missing essential component type, and 2 points if component property panels lack sufficient customization options. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the real-time preview system accurately implemented?",
+      "description": "Check whether the preview functionality provides accurate email rendering across different email clients (Gmail, Outlook, Apple Mail simulation). The preview should update in real-time as users modify components, support both desktop and mobile views, and handle responsive email layouts correctly. Deduct 5 points if preview doesn't match actual email output, 3 points if mobile responsiveness is missing, and 2 points if preview loading takes over 500ms. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is HTML code export functionality complete and standards-compliant?",
+      "description": "Assess whether the HTML export generates clean, email-client-compatible code using table-based layouts, inline CSS, and proper DOCTYPE declarations. The exported code should include fallbacks for unsupported CSS properties, proper encoding, and be optimized for email delivery. Check if export includes both HTML and plain-text versions. Deduct 5 points if exported HTML fails in major email clients, 3 points if code is not minified/optimized, and 2 points if no plain-text alternative is provided. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid image URLs, oversized file uploads, browser compatibility issues, drag-drop edge cases, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered content suggestions 2. Template version history with branching 3. Collaborative editing with real-time cursors 4. A/B testing template variants 5. Integration with stock photo APIs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image upload handlers coexisting) 2. Function modules unrelated to email design (e.g., a built-in CRM system) 3. Fancy effects that affect performance (e.g., heavy 3D animations on drag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drag-drop logic/component rendering/export functionality), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy between component palette, canvas, and property panels. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic panel layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Drag feedback appears within ≤ 100ms 2) Component transitions controlled between 300-500ms 3) Clear visual indicators for drop zones and selection states 4) Smooth scrolling and panning in the canvas area. Deduct 5 points for each operation without visual feedback, 3 points for jerky drag animations, and 5 points if component selection states are unclear. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 49,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration.\n\nPlease use HTML and JavaScript to implement an in-game economic system.\n\n**Task**: Design an in-game economic system where players can acquire resources or items through trading.\n\n**Hint**: You can create a market interface that allows players to buy and sell items.\n\nPlease include comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core economic system logic fully implemented?",
+      "description": "Review whether the code accurately implements the fundamental economic mechanics including resource generation, item creation, pricing algorithms, and supply-demand calculations through HTML/JavaScript. Check if it includes inventory management, transaction validation, and economic balance mechanisms (such as inflation control, market price fluctuation). Score 0 if the core economic logic is not implemented, 5 if only basic buy/sell functions are implemented, and 10 if a complete economic ecosystem with dynamic pricing is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the market trading interface fully functional?",
+      "description": "Check whether the market interface implementation includes comprehensive trading features: real-time price updates, order book management, transaction history tracking, and search/filter capabilities. Evaluate if it supports different trading modes (instant buy/sell, auction, bidding). Deduct 5 points if transaction confirmation mechanisms are missing, and 3 points if market data visualization is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the resource and inventory management system well-designed?",
+      "description": "Evaluate whether the system implements efficient resource tracking, item categorization, and inventory limitations. Check if it includes resource generation rates, item durability/expiration systems, and storage capacity management. Assess whether the data structure supports scalable item attributes and efficient querying. Deduct 5 points if inventory persistence is not implemented, and 3 points if resource calculation accuracy is compromised. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the economic balance and progression system constructed?",
+      "description": "Check whether the code includes sophisticated economic balance mechanisms such as dynamic pricing based on supply-demand, anti-inflation measures, player progression rewards, and market manipulation prevention. Evaluate if it supports different player economic levels and provides meaningful progression paths. Deduct 5 points if economic simulation lacks depth, and 3 points if progression rewards are not balanced. Give 10 points if a comprehensive economic ecosystem is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid transactions, negative values, concurrent trading conflicts, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like simultaneous purchases of limited items, network interruptions during transactions, and invalid user inputs, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the economic experience (e.g., 1. Real-time market trend analytics and charts 2. AI-powered price prediction suggestions 3. Social trading features like guilds or marketplaces 4. Seasonal economic events or limited-time markets 5. Advanced trading tools like portfolio management). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar economic functions (e.g., multiple pricing calculation methods coexisting) 2. Feature modules unrelated to the economic system (e.g., built-in mini-games) 3. Overly complex animations that affect trading performance (e.g., excessive particle effects on transactions). Deduct 3 points for each redundancy found, and directly deduct 10 points if core economic functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating economic logic/UI/data layers), code documentation quality, and maintainability standards. Evaluate if economic calculations are properly abstracted, if the codebase follows consistent patterns, and if comments adequately explain complex economic algorithms. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if insufficient comments make the economic logic hard to understand. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the economic system UI follows modern design principles: 1) Clear data visualization with appropriate charts and graphs 2) Intuitive market interface layout with proper information hierarchy 3) Professional color coding for different economic states (profit/loss, buy/sell orders) 4) Consistent typography and spacing (element spacing follows 8px multiples, font sizes ≥ 14px). Deduct 3 points for each cluttered data display, 5 points for confusing color schemes that hinder economic decision-making, and 5 points for poor information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the economic system interactions conform to user expectations: 1) Transaction confirmations and price updates with delay ≤ 100ms 2) Smooth transitions between market views (300-500ms) 3) Clear visual feedback for successful/failed transactions 4) Intuitive drag-and-drop for item management 5) Real-time updates without jarring page refreshes. Deduct 5 points for each transaction without proper feedback, 3 points for laggy market data updates, and 5 points for non-intuitive trading interface elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "medium"
+}

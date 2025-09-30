@@ -1,0 +1,68 @@
+{
+  "index": 310,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for display purposes. Please create a Vue desktop application with browser management, plugin management, and settings menu. When clicking on browser management, it should display a paginated view with 10 items per page, showing workid and operation columns. The workid is an auto-incrementing ID starting from 1. Operations include start and stop buttons. Clicking start will launch Chrome.exe from a specified path with startup parameters:\n\n```javascript\nconst args = [\n    `--lang=zh-CN`,\n    `--timezone=${timezone || 'Asia/Hong_Kong'}`,\n    `--fps=${workId}`,\n    // `--window-icon=${iconPath}`,\n];\nconst allExtensions = [...(pluginPaths || [])];\nif (allExtensions.length > 0) {\n    args.push('--load-extension=' + allExtensions.join(','));\n    args.push('--disable-extensions-except=' + allExtensions.join(','));\n}\n```\n(This is what I wrote in JavaScript)",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue desktop application structure correctly implemented?",
+      "description": "Review whether the code properly implements a Vue desktop application with the three required main components: browser management, plugin management, and settings menu. Check if Vue.js framework is correctly set up with proper component structure, routing, and state management. Score 0 if the core structure is missing, 5 if implemented but with architectural issues, and 10 if properly structured with component reusability and clean architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the browser management functionality fully implemented?",
+      "description": "Verify if the browser management component correctly displays a paginated view with 10 items per page, showing workid and operation columns as required. Check if the auto-incrementing workid starting from 1 is properly implemented. Deduct 5 points if pagination is incorrect or missing, 3 points if workid implementation is flawed, and 3 points if the display layout is poorly structured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the start and stop operations correctly implemented in the browser management?",
+      "description": "Evaluate whether clicking the start button properly launches Chrome.exe with the specified parameters (language, timezone, fps, extensions) and whether the stop button correctly terminates the process. Check if the code handles process management properly. Deduct 5 points if Chrome launching fails with specified parameters, 3 points if process termination is not properly handled, and 3 points if error handling for these operations is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the plugin management functionality properly implemented?",
+      "description": "Assess whether the plugin management section allows users to add, view, and manage Chrome extensions that will be used in the '--load-extension' and '--disable-extensions-except' parameters. Check if the UI allows browsing for extension paths and if the selected extensions are properly stored and used when launching Chrome. Deduct 5 points if extension path selection is missing, 3 points if validation is inadequate, and 3 points if the extension list management is poorly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid Chrome paths, missing extensions, process launch failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Browser profile management 2. Extension marketplace integration 3. Performance monitoring dashboard for launched browsers). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to launch browsers) 2. Function modules unrelated to browser management (e.g., built-in games) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/business logic/process management layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

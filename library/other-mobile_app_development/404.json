@@ -1,0 +1,68 @@
+{
+  "index": 404,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Pay attention to ensure that the generated code is executable for demonstration. Add a view to a HarmonyOS page where clicking a button on the view will navigate to another page on the current page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HarmonyOS page structure correctly implemented?",
+      "description": "Review whether the code uses proper HarmonyOS framework structure with correct @Entry and @Component decorators, proper lifecycle methods (aboutToAppear, aboutToDisappear), and follows ArkTS syntax standards. Check if the page implements proper state management using @State, @Prop, or @Link decorators. Score 0 if basic page structure is missing, 5 if only basic structure exists without proper state management, and 10 if complete HarmonyOS page architecture is implemented with proper lifecycle and state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the button component and click event handling properly implemented?",
+      "description": "Evaluate whether the Button component is correctly implemented with proper onClick event handler, includes appropriate button styling and accessibility features. Check if the button follows HarmonyOS design guidelines for touch targets (minimum 44vp) and includes proper visual feedback states. Deduct 5 points if onClick handler is missing or incorrect, 3 points if button accessibility is not implemented, and 2 points if visual feedback states are missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the page navigation mechanism correctly implemented?",
+      "description": "Check whether the navigation uses proper HarmonyOS router mechanism (router.pushUrl or router.replaceUrl), includes correct page routing configuration, and handles navigation parameters properly. Verify if the target page is properly registered in module.json5 and navigation includes proper error handling. Deduct 5 points if router implementation is incorrect, 3 points if page registration is missing, and 2 points if error handling is not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete navigation lifecycle and data passing implemented?",
+      "description": "Evaluate whether the navigation includes proper data passing between pages using router parameters, implements proper page stack management, and includes back navigation handling. Check if the target page can receive and process passed parameters correctly, and if the navigation maintains proper page lifecycle. Deduct 5 points if data passing is not implemented, 3 points if page stack management is incorrect, and 2 points if back navigation is not handled properly. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as navigation failures, invalid parameters, page lifecycle errors, memory leaks, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include try-catch blocks for navigation operations and proper error handling. Give 10 points if fully robust, 5 points if average robustness, and 0 points if no exception handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the HarmonyOS user experience (e.g., 1. Custom page transition animations 2. Gesture-based navigation 3. Dynamic theme adaptation 4. Advanced state preservation during navigation). Add 3 points for each practical innovative feature implemented that leverages HarmonyOS capabilities (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant navigation implementations (e.g., multiple router calls for same action) 2. Unnecessary UI components unrelated to the navigation task 3. Over-complicated animations or effects that don't serve the core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if core navigation functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review HarmonyOS project structure compliance, proper use of ArkTS language features, component modularity, and build configuration. Check if the code follows HarmonyOS coding standards, uses proper import/export statements, and includes appropriate file organization. Deduct 5 points if project structure doesn't follow HarmonyOS standards; deduct 5 points if code organization is poor; deduct 5 points if build configuration is incomplete. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet HarmonyOS design standards?",
+      "description": "Evaluate whether the design follows HarmonyOS design language principles: 1) Proper use of HarmonyOS color system and themes 2) Correct spacing using HarmonyOS grid system (8vp multiples) 3) Appropriate typography following HarmonyOS font specifications 4) Proper component sizing and touch targets (minimum 44vp). Deduct 3 points for each non-compliant visual element, 5 points for inconsistent design language usage, and 5 points for poor accessibility compliance. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions conform to HarmonyOS UX guidelines: 1) Button press feedback ≤ 100ms 2) Page transition animations follow HarmonyOS motion design (300-400ms duration) 3) Proper loading states during navigation 4) Smooth 60fps performance during interactions. Deduct 5 points for each interaction without proper feedback, 3 points for janky animations or transitions, and 5 points for poor performance during navigation. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Mobile App Development",
+  "difficulty": "medium"
+}

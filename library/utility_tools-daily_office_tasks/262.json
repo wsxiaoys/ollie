@@ -1,0 +1,68 @@
+{
+  "index": 262,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable for demonstration purposes. Please write an import and export function with Ant Design Vue, requiring that when the import button is clicked, data from an Excel file will be imported into an <a-table> data table.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the import and export functionality fully implemented?",
+      "description": "Check if the code implements both import and export functions. Import should correctly parse Excel data and populate the table; export should generate a downloadable Excel file from table data. Score 0 if neither function works, 5 if only one direction works correctly, and 10 if bidirectional functionality is complete with proper file handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Excel parsing implementation correct and robust?",
+      "description": "Evaluate if the code uses proper libraries (like SheetJS/xlsx) to handle Excel files. Check if it handles different Excel formats (.xls, .xlsx), sheet selection, handles headers correctly, and supports various data types (text, numbers, dates). Deduct 3 points if only basic data types are supported, 5 points if it fails with large files (>1MB), and 3 points if encoding issues aren't handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Ant Design <a-table> integration properly implemented?",
+      "description": "Check if the table component is correctly initialized with dynamic columns based on imported data, if pagination works, if sorting/filtering is preserved during import/export, and if the table UI updates properly after import. Deduct 5 points if column mapping is hardcoded, 3 points if the table doesn't visually refresh after import, and 5 points if no loading state is displayed during operations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there appropriate user feedback during the import/export process?",
+      "description": "Verify if the code includes loading indicators, progress feedback, success/error notifications, and validation results display. Check if the user is warned about data loss when replacing existing table data. Deduct 5 points if no progress indication exists for large files, 3 points if error messages are generic/unhelpful, and 5 points if validation failures are not clearly highlighted.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid file formats, incomplete data, empty files, special characters in data) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Preview before import 2. Column mapping UI 3. Data validation with highlighting 4. Template download option). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant libraries for the same purpose (e.g., multiple Excel parsing libraries) 2. Function modules unrelated to import/export (e.g., unnecessary filters) 3. Overly complex implementations that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/service layers), error handling patterns, and reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments for complex logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows Ant Design principles: 1) Consistent with Ant Design styles 2) Proper button placement and hierarchy 3) Clear visual feedback for states (idle, loading, success, error). Deduct 3 points for each UI element that breaks from Ant Design guidelines, 5 points for inconsistent visual style, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Clear indication when file selection is in progress 2) Smooth transition when data loads into table 3) Appropriate animation for success/error states. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between states, and 5 points if the import/export buttons are not disabled during processing to prevent multiple submissions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 184,
+  "question": "You are a code expert. Please use your professional knowledge to provide accurate, technical responses. Make sure the code you generate is executable for display purposes. Please help me implement the following requirements using SVG code. The requirement is to create: a detailed black and white outline map of New Zealand.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the New Zealand map outline accurately represented?",
+      "description": "Check if the SVG path accurately depicts New Zealand's shape including North Island, South Island, Stewart Island and other significant islands. The outline should be geographically accurate with proper proportions. Score 3 if only main islands are included, 7 if main islands with proper proportions, and 10 if all significant islands are accurately represented with correct geographical features.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the map properly scaled and positioned within the SVG viewBox?",
+      "description": "Evaluate if the map uses appropriate viewBox dimensions and positioning to display the entire country without unnecessary empty space or cropping. The aspect ratio should match New Zealand's actual geography (roughly 3:10 height to width). Deduct 3 points if there's significant empty space, 5 points if any part of the map is cropped, and 3 points if the aspect ratio is distorted.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are internal geographical features included?",
+      "description": "Check whether important internal geographical features are included, such as major lakes (like Lake Taupo), significant mountain ranges, and regional boundaries. Score 3 if only outlines are present, 7 if major lakes and mountains are included, and 10 if detailed internal geography is represented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the black and white styling appropriately implemented?",
+      "description": "Review the use of stroke and fill attributes to create a clean black and white map. Proper contrast should be maintained with appropriate line weights. Deduct 3 points for inconsistent line weights, 5 points for poor contrast choices, and 2 points for unnecessary color usage.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle browser rendering differences, has appropriate fallbacks, and includes proper SVG namespace declarations. Code with strong robustness should be cross-browser compatible and handle scaling appropriately. Give 10 points for robust implementation, 5 points for average implementation with minor issues, and 0 points if the SVG might fail in common browsers.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Hover effects for regional information 2. Smooth zoom or pan functionality 3. Interactive landmarks or points of interest). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessarily complex path definitions that could be simplified 2. Duplicate path segments or overlapping elements 3. Unused SVG elements or attributes that bloat the code. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core representation is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular structure (e.g., logical grouping of elements), appropriate use of SVG features (like defs, symbols, groups), and code readability. Deduct 5 points if no SVG groups (<g>) are used to organize related elements; deduct 3 points if paths are not optimized; deduct 5 points if the SVG lacks appropriate reusable components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual representation meet professional cartographic standards?",
+      "description": "Evaluate whether the map follows professional cartographic principles: 1) Appropriate level of detail for the intended scale 2) Proper stroke weights that scale with view size 3) Clear visual hierarchy between different types of boundaries and features. Deduct 3 points for inconsistent detail levels, 5 points for poor stroke weight choices, and 5 points for unclear visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the SVG optimized for performance and filesize?",
+      "description": "Judge whether the SVG implementation is efficient: 1) Path data uses appropriate precision without unnecessary decimal places 2) Path commands are optimized (using relative commands where appropriate) 3) No unnecessary nested groups or transformations. Deduct 3 points for excessive path precision, 4 points for unoptimized path commands, and 5 points for unnecessary nesting or transformations that impact performance. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

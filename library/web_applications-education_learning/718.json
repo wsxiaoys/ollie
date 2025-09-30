@@ -1,0 +1,68 @@
+{
+  "index": 718,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Note that the code you generate should be executable when possible.\n{\n  \"data\": [\n    {\n      \"arg_names\": {\n        \"data\": {\n          \"type\": \"dict\"\n        }\n      },\n      \"doc\": \"Economic Operation\\n\\n        Args:\\n            data (dict): data in JSON format\\n\\n        Returns:\\n            Tuple[bool,AnyStr,Dict]: success status, message, economic operation result\\n        \",\n      \"name\": \"economic_operation\"\n    },\n    {\n      \"arg_names\": {\n        \"y_pred\": {\n          \"type\": \"list\"\n        },\n        \"y_true\": {\n          \"type\": \"list\"\n        }\n      },\n      \"doc\": \" Evaluation\\n\\n        Args:\\n            y_pred (list): predicted data\\n            y_true (list): actual data\\n\\n        Returns:\\n            Tuple[bool,str,dict]: success status, message, evaluation result{\\n                \\\"MSE\\\": Mean Square Error,\\n                \\\"RMSE\\\": Root Mean Square Error,\\n                \\\"MAE\\\": Mean Absolute Error,\\n                \\\"R2\\\": R2,\\n                \\\"MEDAE\\\": Median Error\\n            }\\n        \",\n      \"name\": \"evaluate\"\n    },\n    {\n      \"arg_names\": {\n        \"data\": {\n          \"type\": \"dict\"\n        }\n      },\n      \"doc\": \"Get Weather\\n\\n        Args:\\n            data (dict): parameters needed for the weather API\\n\\n        Returns:\\n            Tuple[bool,AnyStr,Dict]: success status, message, weather result\\n        \",\n      \"name\": \"get_weather\"\n    },\n    {\n      \"arg_names\": {\n        \"y_pred\": {\n          \"type\": \"list\"\n        },\n        \"y_true\": {\n          \"type\": \"list\"\n        }\n      },\n      \"doc\": \" Mean Absolute Error\\n\\n        Args:\\n            y_pred (list): predicted data\\n            y_true (list): actual data\\n\\n        Returns:\\n            Tuple[bool,str,float]: success status, message, mean absolute error\\n        \",\n      \"name\": \"mae\"\n    },\n    {\n      \"arg_names\": {\n        \"y_pred\": {\n          \"type\": \"list\"\n        },\n        \"y_true\": {\n          \"type\": \"list\"\n        }\n      },\n      \"doc\": \" Median Error\\n\\n        Args:\\n            y_pred (list[float]): predicted data\\n            y_true (list[float]): actual data\\n\\n        Returns:\\n            Tuple[bool,str,float]: success status, message, median error\\n        \",\n      \"name\": \"medae\"\n    },\n    {\n      \"arg_names\": {\n\n      },\n      \"doc\": \"Get Model Name List\\n\\n        Returns:\\n            Tuple[bool,AnyStr,Dict]: success status, message, model name list\\n        \",\n      \"name\": \"model_names\"\n    },\n    {\n      \"arg_names\": {\n        \"y_pred\": {\n          \"type\": \"list\"\n        },\n        \"y_true\": {\n          \"type\": \"list\"\n        }\n      },\n      \"doc\": \" Mean Square Error\\n\\n        Args:\\n            y_pred (list): predicted data\\n            y_true (list): actual data\\n\\n        Returns:\\n            Tuple[bool,str,float]: success status, message, mean square error\\n        \",\n      \"name\": \"mse\"\n    },\n    {\n      \"arg_names\": {\n        \"data\": {\n          \"type\": \"dict\"\n        },\n        \"model_name\": {\n          \"type\": \"str\"\n        },\n        \"type\": {\n          \"type\": \"str\"\n        }\n      },\n      \"doc\": \" Prediction\\n\\n        Args:\\n            data (dict): data in JSON format\\n            model_name (str): model name\\n            type (str): prediction type\\n\\n        Returns:\\n            Tuple[bool,AnyStr,List]: success status, message, prediction result\\n        \",\n      \"name\": \"predict_model\"\n    },\n    {\n      \"arg_names\": {\n        \"y_pred\": {\n          \"type\": \"list\"\n        },\n        \"y_true\": {\n          \"type\": \"list\"\n        }\n      },\n      \"doc\": \" R2\\n\\n        Args:\\n            y_pred (list): predicted data\\n            y_true (list): actual data\\n\\n        Returns:\\n            Tuple[bool,str,float]: success status, message, R2\\n        \",\n      \"name\": \"r2\"\n    },\n    {\n      \"arg_names\": {\n        \"model_name\": {\n          \"type\": \"str\"\n        }\n      },\n      \"doc\": \"Remove Model\\n\\n        Args:\\n            model_name (str): model name\\n\\n        Returns:\\n            Tuple[bool,AnyStr,None]: success status, message, None\\n        \",\n      \"name\": \"remove_model\"\n    },\n    {\n      \"arg_names\": {\n        \"y_pred\": {\n          \"type\": \"list\"\n        },\n        \"y_true\": {\n          \"type\": \"list\"\n        }\n      },\n      \"doc\": \" Root Mean Square Error\\n\\n        Args:\\n            y_pred (list): predicted data\\n            y_true (list): actual data\\n\\n        Returns:\\n            Tuple[bool,str,float]: success status, message, root mean square error\\n        \",\n      \"name\": \"rmse\"\n    },\n    {\n      \"arg_names\": {\n        \"data\": {\n          \"type\": \"dict\"\n        },\n        \"model_name\": {\n          \"type\": \"str\"\n        },\n        \"type\": {\n          \"default\": \"wind\",\n          \"type\": \"str\"\n        }\n      },\n      \"doc\": \" Train Model\\n\\n        Args:\\n            data (dict): data in JSON format\\n            model_name (str): model name\\n            type (str): training type\\n        Returns:\\n            Tuple[bool,AnyStr,None]: success status, message, None\\n        \",\n      \"name\": \"train_model\"\n    }\n  ],\n  \"is_success\": true,\n  \"msg\": \"success\"\n}\nHTML requests to an API address will retrieve this information. I need to dynamically convert this information into HTML on the webpage. On the left side, there will be a function navigation menu, and on the right side, an introduction to the functions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the API data parsing and dynamic rendering fully implemented?",
+      "description": "Review whether the code accurately parses the JSON API response structure and dynamically generates HTML elements for function names, parameters, documentation, and return types. Check if all function metadata (arg_names, doc, name) is correctly extracted and displayed. Score 0 if basic parsing is missing, 5 if only partial data is rendered, and 10 if all API function information is completely and accurately converted to HTML.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the left navigation menu dynamically generated and interactive?",
+      "description": "Check whether the left-side navigation menu is dynamically populated from the API data with proper categorization (e.g., grouping evaluation functions like mse, rmse, mae together). Verify click handlers, active state management, and smooth scrolling to corresponding sections. Deduct 5 points if navigation lacks categorization, 3 points if active states are not properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the right-side function documentation display comprehensive and well-structured?",
+      "description": "Evaluate whether the right-side content area displays complete function information including formatted documentation, parameter types with syntax highlighting, return value specifications, and usage examples. Check if the content updates dynamically when navigation items are selected. Deduct 5 points if parameter type formatting is missing, 3 points if documentation parsing is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper error handling and API request management?",
+      "description": "Check whether the code includes comprehensive error handling for API requests, JSON parsing failures, network timeouts, and malformed data structures. Verify loading states, retry mechanisms, and graceful degradation when API is unavailable. Deduct 5 points if no loading indicators are present, 3 points if error states are not handled gracefully. Give 10 points if fully robust.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty API responses, malformed JSON, missing function properties, network interruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Search functionality across functions 2. Code example generation for each function 3. Interactive parameter input forms 4. Function usage statistics 5. Export documentation as PDF). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple JSON parsing logics coexisting) 2. Function modules unrelated to API documentation display (e.g., built-in games or unnecessary widgets) 3. Fancy effects that affect performance (e.g., excessive animations or heavy graphics). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API handling/rendering/navigation logic), code organization, and maintainability. Deduct 5 points if global state pollution is found or no separation of concerns; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper async/await patterns are used for API calls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Proper left-right layout with clear visual hierarchy 2) Consistent spacing and typography (navigation items properly spaced, readable font sizes ≥ 14px) 3) Professional color scheme distinguishing navigation, content areas, and code syntax. Deduct 3 points for each cramped visual element, 5 points for poor color contrast, and 5 points for inconsistent layout spacing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Navigation click response ≤ 100ms 2) Smooth content transitions when switching between functions 3) Clear visual feedback for loading states and hover effects 4) Proper scroll behavior and focus management. Deduct 5 points for each laggy interaction, 3 points for missing hover states, and 5 points for poor content transition effects. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1163,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. For the company's annual party, I want to create a web page for a prize drawing.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the prize drawing core functionality fully implemented?",
+      "description": "Review whether the code accurately implements the random selection mechanism, with appropriate randomization algorithms that prevent predictability. Check for proper animation effects during the drawing process. Score 0 if the core drawing function is not implemented, 5 if only basic random selection exists, and 10 if it includes advanced features like customizable drawing rules, weighted probabilities, and exclusion mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the prize pool management system comprehensive?",
+      "description": "Check whether the code allows adding, editing, and removing prizes from the pool. Prize details should include name, image, quantity, and priority/weight. Deduct 5 points if prize editing is not implemented, 3 points if prize quantities are not tracked. Award full points if the system manages prize inventory during draws, preventing the same prize from being drawn when depleted.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are participant management features complete?",
+      "description": "Evaluate whether the system allows importing/exporting participant lists, marking winners, and preventing duplicates. Check for filtering capabilities (such as department-based draws) and participant grouping. Deduct 5 points if basic CRUD operations for participants are missing, 3 points if there's no winner history tracking. The full score requires unique participant identification and duplicate prevention.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the drawing process interactive and visually engaging?",
+      "description": "Assess if the drawing process includes visual animations (like spinning wheels, flipping cards, or slot machine effects) with appropriate sound effects and visual feedback. Deduct 5 points if animations are missing, 3 points if the process lacks suspense-building elements. Full points require a visually impressive animation sequence that builds excitement for an annual party atmosphere.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty participant lists, network issues during data loading, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Confetti animations for winners 2. Dramatic reveal sequences 3. Live result dashboard). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple random selection methods) 2. Function modules unrelated to prize drawing (e.g., unnecessary social media features) 3. Fancy effects that affect performance (e.g., excessive 3D animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/UI/data management), reusability of components, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between presentation and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design is appropriate for a celebratory annual party context: 1) Festive yet professional color scheme 2) Clear hierarchy for prize categories 3) Appropriate use of company branding. Deduct 3 points for each cluttered section, 5 points for inappropriate or inconsistent color schemes, and 5 points for poor readability of prize and winner information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects create excitement while remaining functional: 1) Smooth transitions between different drawing states 2) Appropriate animation duration that builds tension without excessive delays 3) Clear focus on winners when announced. Deduct 5 points for jerky animations, 3 points for excessively long animations that disrupt the flow, and 5 points for confusing user flows during the drawing process. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

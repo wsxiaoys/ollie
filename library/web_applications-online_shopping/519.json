@@ -1,0 +1,68 @@
+{
+  "index": 519,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and displayable. Please design an online furniture shopping platform where users can browse different categories of furniture and use drag-and-drop functionality to place furniture in a virtual room for preview. Users should be able to save their arrangement plans to their personal accounts and share links with others. The shopping cart function should support combined purchases of various furniture items and calculate the total price.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the furniture catalog and browsing system fully implemented?",
+      "description": "Review whether the code properly implements a categorized furniture catalog with filtering and search capabilities. Check if furniture items have detailed product information (dimensions, materials, price, etc.) and high-quality images from multiple angles. Score 0 if the catalog is missing, 5 if only basic listing is implemented, and 10 if the catalog includes advanced filtering, search, and detailed product views.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the drag-and-drop virtual room preview functionality implemented correctly?",
+      "description": "Evaluate the implementation of the drag-and-drop system. Check if furniture items can be accurately positioned in the virtual room, resized proportionally, and rotated. Verify if collision detection is implemented to prevent furniture overlapping. Score 0 if drag-and-drop is not functional, 5 if basic positioning works but lacks rotation/scaling, and 10 if the implementation includes smooth drag-and-drop, proper scaling, rotation, and collision detection with proper z-index handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user account system with saved arrangements implemented?",
+      "description": "Check if the code includes user authentication, personal account management, and the ability to save/load multiple room arrangements. Verify if arrangements are properly persisted to a database and can be restored accurately. Deduct 5 points if the saving mechanism only uses local storage, 3 points if version history is not maintained. Give 10 points if the system includes proper authentication, cloud storage of arrangements, and version history.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the sharing functionality and shopping cart system properly implemented?",
+      "description": "Evaluate if users can share their room arrangements via unique links and if recipients can view and modify the shared arrangements. Check if the shopping cart can add multiple furniture items, calculate the correct total price (including any applicable discounts or taxes), and proceed to checkout. Deduct 5 points if sharing is limited to screenshots, and 3 points if the cart lacks price calculation logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid drag operations, image loading failures, network interruption, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Augmented reality furniture preview 2. AI room layout suggestions 3. Color palette recommendations based on existing furniture). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to save arrangements) 2. Function modules unrelated to furniture shopping (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive 3D animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating product data/UI rendering/drag-drop logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Drag operation response time ≤ 50ms 2) Furniture placement animation duration controlled between 200-400ms 3) Clear visual feedback when items are added to cart or arrangements are saved. Deduct 5 points for laggy drag operations, 3 points for jarring transitions between screens, and 5 points for missing loading indicators during network operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

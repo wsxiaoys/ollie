@@ -1,0 +1,68 @@
+{
+  "index": 1564,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. Write a webpage for dynamic clothing purchases.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the dynamic clothing display system fully implemented?",
+      "description": "Review whether the code implements a responsive clothing display system that shows products dynamically, with proper filtering, sorting, and search capabilities. Score 0 if the core display logic is missing, 5 if only basic display is implemented, and 10 if the system includes advanced features like dynamic filtering, sorting options, and search functionality with autocomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the product interaction and customization functionality complete?",
+      "description": "Evaluate whether users can interact with clothing items (like zoom, rotate, color selection, size selection) and if the system provides visual feedback. Deduct 5 points if interactive elements are missing, 3 points if color/size selection doesn't visually update the product, and 2 points if zoom/detailed view options are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the shopping cart system properly implemented?",
+      "description": "Check whether the shopping cart functionality includes adding/removing items, quantity adjustments, persistent storage (localStorage/sessionStorage), and dynamic cart summary updates. Deduct 3 points if cart persistence is missing, 3 points if quantity modification doesn't update totals in real-time, and 4 points if there's no cart summary display. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the checkout process well-designed and user-friendly?",
+      "description": "Assess if the checkout flow includes form validation, multiple payment options, shipping address management, and order summary before confirmation. Deduct 3 points for missing form validation, 3 points for inadequate payment options, 2 points for no shipping calculation, and 2 points for absence of order confirmation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures during checkout, invalid user inputs, image loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the shopping experience (e.g., 1. Virtual fitting room 2. Outfit combination suggestions 3. Social sharing integration 4. Size recommendation based on user measurements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart storage mechanisms) 2. Function modules unrelated to clothing purchase (e.g., unnecessary games or distracting elements) 3. Fancy effects that affect performance (e.g., excessive animations that slow down browsing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating product display/cart logic/checkout processes), responsiveness for different devices, code maintainability, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the website doesn't adapt to mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional e-commerce design standards?",
+      "description": "Evaluate whether the design follows e-commerce best practices: 1) Clear product presentation with high-quality images 2) Consistent branding and color scheme (no more than 3 primary colors) 3) Professional typography hierarchy (product names, prices, descriptions properly distinguished) 4) Intuitive navigation and categorization. Deduct 3 points for cluttered product displays, 3 points for inconsistent styling, 2 points for poor typography, and 2 points for confusing navigation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the shopping experience feels fluid and responsive: 1) Product filtering/sorting updates in under 500ms 2) Add-to-cart feedback within 100ms 3) Smooth transitions between pages or states 4) Clear loading indicators for async operations. Deduct 3 points for sluggish filtering/sorting, 3 points for delayed cart updates, 2 points for jarring page transitions, and 2 points for missing loading states during API calls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

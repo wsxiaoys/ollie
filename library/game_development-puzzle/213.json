@@ -1,0 +1,68 @@
+{
+  "index": 213,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Help me create an HTML mini-game for a city landmark memory challenge.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the city landmark memory game core mechanics fully implemented?",
+      "description": "Check if the code implements the essential memory game mechanics: landmark cards display, card flipping animation, match detection, and game completion logic. Score 0 if core mechanics are missing, 5 if basic functionality works but with limitations, and 10 if the memory matching system is complete with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the landmark content and representation well-designed?",
+      "description": "Evaluate if the game includes real city landmark images or high-quality illustrations, proper attribution, and informative tooltips/descriptions for educational value. Deduct 3 points if generic images are used, 5 points if landmark information is missing, and 2 points if visual representation is inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the game include difficulty levels and progression?",
+      "description": "Check if the game offers multiple difficulty levels (e.g., number of cards, time limits) and a progression system (e.g., unlocking new landmark sets, increasing complexity). Score 0 if there's only one static difficulty, 5 if basic difficulty options exist, and 10 if the game includes a comprehensive progression system that adapts to player skill.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the scoring and feedback system implemented effectively?",
+      "description": "Assess if the game includes a score tracking system, performance metrics (time, moves, accuracy), and meaningful feedback (animations, sounds, messages). Deduct 3 points if score display is missing, 4 points if there's no feedback for correct/incorrect matches, and 3 points if end-game statistics are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, browser refresh, different screen sizes, touch vs. mouse input) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Geolocation integration to prioritize local landmarks 2. AR view option for landmark cards 3. Social sharing of completion times). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to reset the game) 2. Function modules unrelated to the memory game (e.g., unnecessary mini-games within) 3. Fancy effects that affect performance (e.g., excessive animations that slow down card flipping). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/UI/data), code organization, and performance optimization. Deduct 5 points if global state pollution is found or if there's no separation of concerns; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no performance considerations for image loading and animations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching that complements landmark imagery 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Card flip animations complete within 300ms 2) Match/mismatch feedback appears within 100ms 3) Clear visual indication of clickable elements. Deduct 5 points for each operation without feedback, 3 points for choppy animations during rapid play, and 5 points for confusing interaction states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

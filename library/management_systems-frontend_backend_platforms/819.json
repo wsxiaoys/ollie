@@ -1,0 +1,68 @@
+{
+  "index": 819,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible.\n\n1. **Data Dashboard** (Blue Theme)\n   - User Data: Member growth trends/activity analysis\n   - Revenue Data: Income flow/profit sharing ratio settings\n   - Market Analysis: Monitoring of competitors' activities\n\n2. **Member Management** (Purple Theme)\n   - Complete User List: Supports batch operations (tag grouping/status filtering)\n   - Star Players: Set users as venue ambassadors (displayed in user interface)\n   - Blacklist: Management of rule-violating users\n\n3. **Activity Operations** (Orange Theme)\n   - Activity Publishing: Create matches/training/ticket sales events (automatically synced to user interface)\n   - Activity Calendar: Timeline view of published activities\n   - Feedback Collection: Management of user evaluations after events\n\n4. **Venue Management** (Green Theme)\n   - Real-time Monitoring: Occupancy rate heat map\n   - Equipment Configuration: Hawkeye system/lighting control integration\n   - Dynamic Codes: Generate time-limited venue reservation links\n\n5. **Team Management** (Red Theme)\n   - Coach Profiles: Qualification certification/course scheduling\n   - Authorization System: Set permission levels for coach accounts\n   - Training Schedule: Student registration and progress tracking\n\nRegarding the above categories, the five major modules are a bit too many, so they need to be consolidated.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the consolidated dashboard architecture properly implemented?",
+      "description": "Evaluate whether the code effectively consolidates the five modules into a coherent dashboard system with logical navigation. Check for hierarchical organization, responsive layout, and efficient state management across modules. Score 0 if modules remain completely separate, 5 if basic consolidation exists but with navigation issues, and 10 if modules are seamlessly integrated with consistent theming and cross-module data sharing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the data visualization components professionally implemented?",
+      "description": "Review the implementation of charts and graphs for the Data Dashboard. Check for proper use of D3.js/Chart.js/ECharts libraries, responsive resizing, interactive tooltips, and appropriate visualization types for different data (line charts for trends, pie charts for ratios, etc.). Assess whether visualizations include proper axes, legends, and animations. Score 0 if visualizations are static images, 5 if basic charts exist without interactivity, and 10 if fully interactive, responsively designed visualizations with appropriate data loading states are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the management functionality for users/venues/activities comprehensively implemented?",
+      "description": "Examine the CRUD operations across management modules. Check for filtering capabilities, batch operations, data validation, and proper state updates. Verify implementation of specialized features like tagging users, blacklisting, heat map visualization for venue occupancy, and activity timeline views. Deduct 3 points if basic CRUD is missing, 3 points if filtering/sorting is absent, and 4 points if specialized module features (like venue heat maps or activity calendars) are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the theming system properly implemented with consistent color schemes?",
+      "description": "Evaluate the theming implementation for the specified color schemes (Blue/Purple/Orange/Green/Red). Check for CSS variables or theming system (like styled-components or Material UI theming), proper contrast ratios for accessibility, and consistent application across components. Assess whether theme switching is smoothly implemented when navigating between modules. Deduct 3 points for inconsistent theme application, 3 points for poor contrast/accessibility issues, and 4 points if theme integration across consolidated modules is broken. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty data states, network errors, user input validation, permission handling) and provide friendly error prompts or recovery mechanisms. Check for proper loading states, error boundaries, form validation, and defensive coding practices. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-driven analytics for predicting member trends 2. Natural language generation for automated activity reports 3. Interactive drag-and-drop schedule builder 4. Real-time collaboration features for team management). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar features across modules (e.g., multiple user selection mechanisms) 2. Function modules unrelated to the specified requirements (e.g., unnecessary social networking features) 3. Fancy effects that affect performance (e.g., excessive animations or 3D elements). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/UI/logic layers), state management approach, component reusability, and build process. Check for proper use of design patterns, code organization, and performance optimizations like memoization or virtualized lists for large datasets. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations are implemented for data-heavy views. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching within each theme module with proper color contrast 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Consistent component styling across modules. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic dashboard layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animations for module switching controlled between 300-500ms 3) Clear visual focus guidance for important dashboard metrics and alerts. Check for skeleton screens during data loading, smooth transitions between views, and intuitive navigation between the consolidated modules. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between modules, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

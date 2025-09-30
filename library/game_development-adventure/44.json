@@ -1,0 +1,68 @@
+{
+  "index": 44,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible.\nPlease implement a level switching game using HTML and JavaScript, where the character can enter the next level when reaching a certain position.\nInclude comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game movement system fully implemented?",
+      "description": "Review whether the code implements a complete character movement system with keyboard controls (WASD/arrow keys), collision detection, and proper physics (if applicable). Score 0 if movement is not implemented, 5 if only basic movement is present, and 10 if the movement includes acceleration/deceleration, proper collision handling, and feels responsive.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the level switching mechanism properly implemented?",
+      "description": "Check if the code includes a functional level transition system when the character reaches designated positions. Verify that level boundaries or exit points are clearly defined, the transition is triggered correctly, and the game state is properly preserved/reset between levels. Deduct 5 points if transitions are abrupt with no visual feedback, and 3 points if there are issues with game state persistence between levels.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are multiple game levels designed and implemented?",
+      "description": "Evaluate if the code includes at least 2-3 distinct levels with increasing difficulty or complexity. Each level should have unique layouts, obstacles, or objectives. Score 0 if only one level exists, 5 if multiple levels exist but are too similar, and 10 if levels show thoughtful progression in challenge and design.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the code well-commented with clear explanations?",
+      "description": "Assess if the code includes comprehensive comments explaining the implementation process, important functions, and game mechanics. Comments should cover architectural decisions, not just obvious code operations. Deduct 5 points if only basic/sparse comments exist, and give 0 points if crucial parts of the code remain unexplained.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid keypress combinations, rapid key presses, browser resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Progressive difficulty adjustment 2. Character customization options 3. Interactive environmental elements 4. Scoring/achievement system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement control systems) 2. Function modules unrelated to level-based gameplay 3. Fancy effects that affect performance without adding to gameplay. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code reusability for level creation, and organization of assets. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the game architecture makes adding new levels difficult. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game UI follows modern design principles: 1) Consistent visual theme 2) Clear player character and level exit visibility 3) Proper contrast between gameplay elements and background 4) Appropriate feedback for player actions. Deduct 3 points for poor visual hierarchy, 5 points for confusing game elements, and 5 points for unclear objectives. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions conform to human perception characteristics: 1) Immediate response to player input (≤ 100ms) 2) Smooth animations for character movement and level transitions 3) Clear visual/audio feedback for significant events. Deduct 5 points for input lag, 3 points for choppy animations, and 5 points for confusing or missing feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Adventure",
+  "difficulty": "easy"
+}

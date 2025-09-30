@@ -1,0 +1,68 @@
+{
+  "index": 1745,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Help me design a \"Counter-Strike\" game in HTML format, with health points, explosion effects after death, bullet trails, and character models that look like Steve from \"Minecraft\".",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core FPS gameplay mechanic implemented?",
+      "description": "Evaluate whether the code effectively implements essential first-person shooter mechanics including movement controls (WASD), targeting/aiming with mouse, shooting mechanics with cooldown, and hit detection. Score 0 if core gameplay is missing, 5 if basic movement and shooting exist but lack precision, and 10 if the implementation feels responsive with appropriate physics and hit registration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the health point system properly implemented?",
+      "description": "Check if the health system includes visual indicators, damage calculation logic, and appropriate player feedback. The system should handle different damage types, show visual health status, and implement proper death conditions. Deduct 5 points if health regeneration or damage types are missing, 3 points if visual indicators aren't clear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the explosion effects after death convincing?",
+      "description": "Assess the quality of death animations and explosion effects. Effects should include particle systems, appropriate sound effects, and smooth transition to respawn state. Effects should be visually impressive without impacting performance. Score 10 for full physics-based particle systems with sound, 5 for basic animations, 0 if death effects are missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are bullet trails and shooting mechanics realistic?",
+      "description": "Evaluate if bullet trails use appropriate visual effects (line rendering, particle systems) with correct timing and opacity fade. Check if bullet physics include trajectory calculations, penetration logic, and hit markers. Deduct 3 points if trails don't match weapon types, 5 points if bullet physics are unrealistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as resource loading failures, memory management issues, input conflicts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic lighting effects 2. Weather system affecting gameplay 3. Destructible environment components). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple shooting mechanisms coexisting) 2. Function modules unrelated to FPS gameplay (e.g., a built-in puzzle minigame) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), asset loading optimization, and performance considerations. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if asset loading isn't optimized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the Minecraft-style character design look authentic?",
+      "description": "Evaluate whether the Steve character models follow the authentic Minecraft aesthetic: 1) Proper blocky proportions with 2:1:2 body ratio 2) Pixelated textures without anti-aliasing 3) Appropriate animation that maintains the blocky feel. Deduct 3 points for incorrect proportions, 5 points for non-pixelated textures, and 5 points for animations that break the blocky aesthetic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game performance and responsiveness optimized?",
+      "description": "Judge whether the game maintains responsive performance: 1) Consistent 60 FPS during gameplay 2) Input latency under 50ms 3) Efficient resource management especially during effects. Deduct 5 points for frame drops below 30 FPS, 3 points for noticeable input lag, and 5 points for memory leaks or growing resource consumption. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

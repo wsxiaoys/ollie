@@ -1,0 +1,68 @@
+{
+  "index": 26,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the code you generate is executable and can be displayed.\n\nPlease help me implement the following requirement using SVG code: create a \"Play with Tiles, Play Domino Game\" visualization.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic Domino tile implementation complete?",
+      "description": "Review whether the SVG code accurately represents domino tiles with proper dimensions, dots placement, and dividing line. Each tile should have two sections with dots ranging from 0-6. Score 0 if tiles are not visually identifiable as dominoes, 5 if basic representation is present but with visual imperfections, and 10 if tiles appear professional with proper spacing, proportions, and dot arrangements.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the SVG include a complete set of domino tiles?",
+      "description": "Check if the implementation includes the standard 28 unique domino tiles (from [0,0] to [6,6]). Verify that each tile has a unique visual representation with the correct number of dots on each half. Deduct 5 points if only a subset of tiles is implemented, and 3 points if there are duplicate or incorrect tiles. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the initial game setup and tile arrangement properly implemented?",
+      "description": "Evaluate whether the SVG provides a starting game state with shuffled/randomized tiles and a clear play area. The implementation should include a visible player area and a 'boneyard' (draw pile). Deduct 5 points if tiles aren't shuffled or if the initial state is unclear. Deduct 3 points if the play area isn't visually distinct. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the tile placement and matching logic implemented?",
+      "description": "Check if the SVG implementation includes interactive elements allowing players to place domino tiles according to matching rules (matching numbers connect). The code should validate legal moves and prevent illegal ones. Deduct 5 points if the matching logic is flawed, 3 points if the visual feedback for placement is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid tile placements, edge cases in the game rules, browser resize, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated tile flipping/placement 2. Visual scoring system 3. Multiple game variants like Mexican Train or Block Domino). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to draw tiles) 2. Function modules unrelated to domino gameplay (e.g., unrelated animations) 3. Fancy effects that affect performance (e.g., excessive filters or gradients that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view components), code organization (grouping related SVG elements), and proper use of SVG features (defs for reusable components, groups for logical organization). Deduct 5 points if global variables pollute the namespace; deduct 5 points if there's significant code duplication; deduct 5 points if SVG best practices aren't followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional visual styling (clear borders, consistent tile design, readable game state). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic tile arrangements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click/drag feedback delay ≤ 100ms 2) Tile movement/placement animations controlled between 300-500ms 3) Clear visual feedback when placing tiles. Deduct 5 points for each interaction without feedback, 3 points for jerky animations, and 5 points for confusing or hard-to-find interactive elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

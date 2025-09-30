@@ -1,0 +1,68 @@
+{
+  "index": 687,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration. Design a programming teaching website that provides a code editor with real-time preview functionality. Users can write HTML, CSS, and JavaScript code online and view the running results on the same page in real time. The website needs to offer code highlighting, auto-completion, and syntax checking features. Implement a code saving function that allows users to create projects and return to continue editing at any time. The website should include a series of programming challenges, providing immediate feedback and suggestions for next steps in learning upon completion of each challenge.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the code editor implementation complete?",
+      "description": "Review whether the code implements a fully functional editor with key features: syntax highlighting (proper coloring for HTML, CSS, and JavaScript), auto-completion (suggests tags, properties, or functions), and syntax checking (real-time error detection). Score 0 if none of these features are implemented, 5 if only highlighting is present, and 10 if all three core features are properly implemented with accurate language detection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time preview functionality properly implemented?",
+      "description": "Evaluate the real-time preview mechanism. Check if changes in the editor are reflected in the preview without requiring manual refresh. Verify the preview works for all three languages (HTML structure, CSS styling, and JavaScript functionality). Deduct 3 points if there's a noticeable delay (>1s), 4 points if certain code types don't update properly, and 5 points if manual refresh is required. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the code saving and project management system functional?",
+      "description": "Check if the system allows users to save projects with appropriate metadata (title, description, timestamps), load previously saved projects, and automatically save changes (autosave). Evaluate if the solution includes proper state persistence (localStorage, database, or cloud storage). Deduct 4 points if there's no version history, 3 points if the autosave feature is missing, and 5 points if projects can't be organized or categorized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the programming challenges and learning path features implemented?",
+      "description": "Assess the quality and implementation of programming challenges. Check for: progression system with increasing difficulty, immediate feedback mechanisms that highlight errors or suggest improvements, and next-step learning recommendations. Deduct 4 points if challenges lack clear goals, 3 points if feedback is generic/unhelpful, and 5 points if there's no learning path progression. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid syntax input, network interruption during save, browser compatibility issues) and provide friendly error messages or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple view modes like split/side-by-side/preview only 2. Social sharing of code snippets 3. Themes and personalization options 4. Collaborative editing features). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple code parsing libraries doing the same job) 2. Function modules unrelated to code editing and learning (e.g., a built-in game irrelevant to programming) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the editor). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor/preview/storage components), unit test coverage, and build process optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not optimized for performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (editor and preview panels should have adequate proportions) 3) Professional font system (monospace fonts for code, appropriate contrast). Deduct 3 points for each cramped visual element, 5 points for a glaring color combination, and 5 points for poor visual hierarchy between editor and preview sections. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Typing feedback with no perceptible lag (<50ms) 2) Smooth transitions between different views/panels 3) Clear visual feedback for actions like saving, error detection, or challenge completion. Deduct 5 points for editor lag during typing, 3 points for jarring transitions between editor and preview, and 5 points for confusing or missing action feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

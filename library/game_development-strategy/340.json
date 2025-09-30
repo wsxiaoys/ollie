@@ -1,0 +1,68 @@
+{
+  "index": 340,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Please help me create a Plants vs. Zombies game using HTML, with all code saved in a single HTML file.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanics fully implemented?",
+      "description": "Check if the code implements the core gameplay mechanics of Plants vs. Zombies: plant placement, zombie movement, sun resource collection, and proper collision detection. Score 0 if these fundamentals are missing, 5 if only basic mechanics work, and 10 if it includes special plant abilities (like pea shooters, sunflowers, wall-nuts) and different zombie types with varying behaviors and health values.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game grid system properly implemented?",
+      "description": "Verify the lawn grid implementation (typically 5×9 or similar), whether plants can be placed correctly in grid cells, and if zombies follow proper lane-based movement. Check if the coordinate system handles collisions accurately and if visual elements align with their logical positions. Deduct 5 points if grid alignment is inconsistent, 3 points if placement validation is missing, and give 10 points for a completely functional grid with proper validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the resource management system implemented?",
+      "description": "Evaluate the sun resource collection and spending mechanism, cooldown timers for plant selection, and plant card selection interface. Check if sun drops automatically and/or from sunflowers, if collection requires user interaction, and if resource costs are balanced. Deduct 4 points if sun collection is missing, 3 points if cooldowns aren't implemented, and 3 points if the plant selection UI is non-functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the wave management and game progression implemented?",
+      "description": "Analyze the zombie wave spawning system, difficulty progression, and win/lose conditions. Verify if zombie waves increase in difficulty over time, if there's a proper level end mechanism, and if the game detects when zombies reach the player's house. Deduct 4 points if wave progression is static or missing, 3 points if winning/losing conditions aren't defined, and 3 points if the difficulty never increases.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, browser resizing, extreme game states) and provide friendly error handling. Code with strong robustness should prevent game-breaking exploits like placing plants without sufficient resources or off-grid. Give 10 points for comprehensive error handling, 5 points for basic validations, and 0 points if the game breaks easily.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Level editor 2. Special power-ups or abilities 3. Day/night cycle affecting gameplay). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to PvZ (e.g., unrelated mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/animation layers), code organization, and performance optimization. Deduct 5 points if global state pollution is found or if game objects aren't properly encapsulated; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance considerations are made (e.g., inefficient loops or animations). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design resembles the original PvZ game's aesthetic while maintaining modern design principles: 1) Consistent art style for plants, zombies, and background 2) Proper UI layout with clear plant selection area, sun counter, and game field 3) Appropriate use of color and contrast for gameplay clarity. Deduct 3 points for inconsistent art style, 5 points for cluttered or confusing UI, and 5 points for poor visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations and interactions feel responsive and satisfying: 1) Plants have planting animations 2) Zombies have walking and attack animations 3) Projectiles show smooth movement with collision effects. Deduct 3 points for static or missing plant animations, 3 points for zombie movement without proper animation, and 4 points for absent or glitchy collision feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

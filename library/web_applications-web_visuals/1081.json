@@ -1,0 +1,68 @@
+{
+  "index": 1081,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring that the generated code is executable for demonstration purposes. Create a marquee (text scrolling effect) using nicegui.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic marquee functionality correctly implemented?",
+      "description": "Review whether the code successfully implements text scrolling using NiceGUI components. Check if the text moves continuously from one side to another and wraps around correctly. Score 0 if no scrolling effect is achieved, 5 if basic movement exists but with flaws, and 10 if smooth continuous scrolling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the NiceGUI-specific components and APIs properly utilized?",
+      "description": "Evaluate the appropriate use of NiceGUI's component model, reactive properties, and event handling. Deduct 5 points if using direct DOM manipulation instead of NiceGUI APIs, 3 points if UI updates are implemented inefficiently, and 3 points if not leveraging NiceGUI's built-in capabilities for animations or UI updates. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation provide configuration options?",
+      "description": "Check whether the marquee implementation includes customization options like scrolling speed, direction (left-to-right or right-to-left), pause on hover, text color, background color, and font size. Deduct 2 points for each missing essential option. Give 10 points if all key options are present and functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the marquee component reusable and properly encapsulated?",
+      "description": "Evaluate if the marquee is implemented as a reusable component/class that can be instantiated multiple times on the same page with different content and settings. Check if it's properly encapsulated with clean separation between marquee logic and the main application. Deduct 5 points if the component isn't reusable, and 3 points if the interface is unclear or inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle various edge cases such as empty text, very long text, text with HTML characters, window resizing, and dynamic content updates. Code with strong robustness should handle these edge cases effectively, giving 10 points. If the robustness is average, give 5 points, and if no edge cases are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple marquees synchronization 2. Text effects like fading edges 3. Responsive behavior based on screen size). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation logics 2. Function modules unrelated to marquee functionality 3. Fancy effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code structure, commenting quality, error handling, and adherence to Python/NiceGUI best practices. Deduct 5 points if there's no error handling; deduct 3 points if the code formatting doesn't follow PEP 8 guidelines; deduct 3 points if comments are missing or insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the marquee design follows modern UI principles: 1) Harmonious integration with surrounding UI elements 2) Proper contrast between text and background 3) Smooth animation without visual jitter. Deduct 3 points for poor text readability, 5 points for animation jankiness, and 3 points for inconsistent styling with the rest of the UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the scrolling animation performs well: 1) Consistent and smooth scrolling at the defined speed 2) No performance issues on different screen sizes 3) Proper behavior when tab is inactive and reactivated. Deduct 5 points for jerky animations, 3 points for performance degradation with longer text, and 5 points if the marquee breaks on window resize. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

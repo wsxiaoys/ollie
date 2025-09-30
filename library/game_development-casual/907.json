@@ -1,0 +1,68 @@
+{
+  "index": 907,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Please provide front-end code for a blind box lottery system using uniapp.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the blind box lottery core mechanism fully implemented?",
+      "description": "Review whether the code accurately implements the blind box lottery mechanism, including random selection algorithms, prize pool configuration, probability calculation, and display of lottery results. Score 0 if the core lottery logic is not implemented, 5 if only basic random selection is present, and 10 if a complete weighted probability system with proper prize distribution is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the uniapp cross-platform compatibility addressed?",
+      "description": "Evaluate whether the code properly utilizes uniapp's cross-platform features to ensure the lottery system works across different platforms (WeChat Mini Program, H5, App, etc.). Check for platform-specific API conditional compilation (#ifdef), responsive UI design, and proper use of uniapp components. Deduct 3 points if only one platform is supported, 5 points if platform-specific issues are not handled. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are animation effects for the blind box opening experience implemented?",
+      "description": "Check whether appropriate animations are implemented for the blind box opening process (e.g., shaking, unwrapping, revealing). The animations should enhance user experience and create excitement. Deduct 5 points if animations are missing entirely, 3 points if animations are basic/rudimentary with no transitions, and 2 points if animations lack performance optimization. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a complete state management system for user inventory and prizes?",
+      "description": "Evaluate whether the code includes proper state management for tracking user's obtained items, remaining chances, purchase history, and prize inventory. Check for vuex/pinia integration, local storage persistence, and prize history display. Deduct 3 points if state is not persisted between sessions, 5 points if there's no inventory management, and 5 points if user history tracking is absent. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures during lottery draws, invalid configurations, edge cases in probability calculations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR visualization of prizes 2. Social sharing with custom cards 3. Prize combination collection systems 4. Seasonal/themed blind box designs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple random generators coexisting) 2. Function modules unrelated to lottery (e.g., a built-in news feed) 3. Fancy effects that affect performance (e.g., excessive particle animations that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating lottery logic/UI components/state management), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for the lottery process. Deduct 5 points for each operation without feedback, 3 points for visual stuttering during animations, and 5 points for confusing user flow in the lottery process. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

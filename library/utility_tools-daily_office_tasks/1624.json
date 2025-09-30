@@ -1,0 +1,68 @@
+{
+  "index": 1624,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration purposes.\n{\n  \"SubjectCategories\": \"Economics\",\n  \"category\": [\n    {\n      \"type\": \"Economics\",\n      \"subject\":[\n        \"Economics\",\n        \"Economic Statistics\",\n        \"National Economic Management\",\n        \"Resource and Environmental Economics\",\n        \"Business Economics\",\n        \"Energy Economics\"\n      ]\n    },\n    {\n      \"type\": \"Public Finance\",\n      \"subject\":[\n        \"Public Finance\",\n        \"Taxation\"\n      ]\n    },\n    {\n      \"type\": \"Finance\",\n      \"subject\":[\n        \"Finance\",\n        \"Financial Engineering\",\n        \"Insurance\",\n        \"Investment\",\n        \"Financial Mathematics\",\n        \"Credit Management\",\n        \"Economics and Finance\"\n      ]\n    },\n    {\n      \"type\": \"Economics and Trade\",\n      \"subject\":[\n        \"International Economics and Trade\",\n        \"Trade Economics\"\n      ]\n    }\n  ]\n},\nThis is my discipline's JSON data, and I need to create a selector for it",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the hierarchical selector structure correctly implemented?",
+      "description": "Review whether the code accurately implements a multi-level selector based on the JSON data structure (SubjectCategories -> type -> subject), including proper data parsing, category-subject relationship mapping, and cascading selection logic. Score 0 if the hierarchical structure is not implemented, 5 if only basic two-level selection is implemented, and 10 if the complete three-level cascading selector with proper data binding is fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dynamic data rendering and state management implemented?",
+      "description": "Check whether the selector dynamically renders options based on JSON data with proper state management for selection changes. Evaluate if the component updates child options when parent categories change, maintains selection state consistency, and handles data mutations correctly. Deduct 5 points if state synchronization is missing, and 3 points if data binding is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is comprehensive interaction functionality provided?",
+      "description": "Evaluate whether the selector includes essential features like search/filter functionality, multi-selection support, clear/reset options, and proper validation. Check if users can easily navigate through categories and find specific subjects. Deduct 5 points if search functionality is not implemented, and 3 points if selection validation is missing. Give 10 points if all interactive features are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the component architecture well-structured and reusable?",
+      "description": "Check whether the selector is designed as a reusable component with proper props/configuration options, clean separation of concerns, and ability to handle different JSON data structures. Evaluate if the component can be easily integrated into different contexts and supports customization. Deduct 5 points if the component is not modular, and 3 points if configuration options are limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed JSON data, empty categories, network errors, invalid selections, etc.) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should gracefully handle edge cases like missing data properties or unexpected data types, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the selector includes enhanced user experience features (e.g., 1. Auto-complete with fuzzy matching 2. Recently selected items memory 3. Keyboard navigation support 4. Export selected items functionality 5. Visual grouping with icons). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar selection logic (e.g., multiple dropdown handlers) 2. Function modules unrelated to data selection (e.g., built-in data analytics) 3. Overly complex animations that affect selector performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core selection functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component modularity (separating data logic/view/event handling), proper naming conventions, and code organization. Deduct 5 points if global state pollution is found or proper component patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if the component lacks proper documentation or type definitions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the selector design follows modern UI principles: 1) Consistent visual hierarchy with proper typography 2) Adequate spacing and alignment (following 8px grid system) 3) Professional color scheme with sufficient contrast ratios 4) Clear visual states (hover, active, disabled, selected). Deduct 3 points for each poorly designed visual element, 5 points for accessibility issues, and 5 points for inconsistent styling patterns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the interaction smooth and user-friendly?",
+      "description": "Judge whether the selector provides excellent user experience: 1) Immediate response to user actions (≤ 100ms) 2) Smooth dropdown animations (300-500ms duration) 3) Clear visual feedback for selections 4) Intuitive navigation flow 5) Proper focus management for accessibility. Deduct 5 points for each sluggish interaction, 3 points for confusing navigation patterns, and 5 points for poor keyboard accessibility. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1340,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Now, let's implement specific functionality: for file management, implement current directory display and modification, current directory tree view, and provide file editing, modification, deletion, and download functions. For database management, implement database type selection like MySQL/PostgreSQL, etc., and provide various input fields for database connection. After successful connection, enable database operations. For system shell, implement an interactive command-line terminal that can execute system commands.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file management system fully implemented?",
+      "description": "Review whether the code accurately implements directory navigation, tree view display, and file operations through HTML/JavaScript. Check if it includes file upload/download functionality, file editing capabilities, and proper file type handling (text files, images, etc.). Score 0 if core file operations are not implemented, 5 if only basic file listing is implemented, and 10 if all file management features including editing, deletion, and download are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the database management functionality properly implemented?",
+      "description": "Check whether the database connection system supports multiple database types (MySQL/PostgreSQL/SQLite), implements secure connection parameter handling, and provides query execution capabilities. Evaluate if it includes connection pooling, error handling for failed connections, and proper SQL query interface. Deduct 5 points if connection security is compromised, and 3 points if database type switching is not seamless. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the interactive command-line terminal fully functional?",
+      "description": "Evaluate whether the terminal implementation provides real-time command execution, proper output display, and command history functionality. Check if it handles both synchronous and asynchronous commands correctly, implements command auto-completion, and provides proper error handling for invalid commands. Deduct 5 points if command execution blocks the UI, and 3 points if terminal output formatting is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the system security and permission management properly designed?",
+      "description": "Check whether the code implements proper access control for file operations, secure database credential handling, and command execution restrictions. Evaluate if it includes user authentication, file permission validation, and prevents dangerous command execution. Deduct 5 points if sensitive operations lack authorization checks, and 5 points if database credentials are stored insecurely. Give 10 points if comprehensive security measures are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as file access errors, database connection failures, command execution timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time file preview with syntax highlighting 2. Database query result visualization 3. Terminal command suggestions with AI assistance 4. Integrated file diff viewer). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file deletion methods coexisting) 2. Function modules unrelated to system management (e.g., built-in games or entertainment features) 3. Fancy effects that affect performance (e.g., excessive animations during file operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file management/database/terminal modules), error handling consistency, and configuration management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if configuration is hardcoded without environment variables. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for different modules (no more than 3 primary colors) 2) Proper layout spacing with clear module separation (element spacing follows the 8px multiple principle) 3) Professional font system for code display (monospace fonts for terminal/code, body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) File operation feedback delay ≤ 100ms 2) Database query progress indicators with proper loading states 3) Terminal command execution with real-time output streaming 4) Clear visual focus guidance between different management modules. Deduct 5 points for each operation without feedback, 3 points for blocking UI during long operations, and 5 points for hard-to-find navigation between modules. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

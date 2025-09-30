@@ -1,0 +1,68 @@
+{
+  "index": 194,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Please help me implement the following requirement using code: create a black and white vector image of a microscope using SVG code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the microscope's basic structure accurately represented in SVG?",
+      "description": "Check if the code includes all essential components of a microscope (eyepiece, objective lenses, stage, body tube, base, light source). Score 0 if fewer than 3 components are present, 5 if most components are included but with proportional issues, and 10 if all components are present with proper proportions and accurate representation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the SVG properly utilize vector graphics principles?",
+      "description": "Evaluate whether the implementation uses appropriate SVG elements (path, rect, circle, line) instead of bitmap approaches. Check if the code leverages vector advantages like precise shape definitions and mathematical curves. Deduct 3 points if basic shapes are used when paths would be more appropriate, 5 points if the implementation relies on overly complex paths when simpler elements would suffice, and 5 points if the microscope lacks smooth curves where needed.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the black and white requirement strictly followed?",
+      "description": "Verify that the SVG only uses black, white, and grayscale values (using fill, stroke with appropriate opacity/values). Deduct 5 points for each non-grayscale color used. Check that the creator effectively uses contrasting shades to create visual depth despite the monochrome limitation. Deduct 3 points if the image appears flat due to poor contrast management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are SVG viewBox and dimensions properly configured?",
+      "description": "Check if the SVG has appropriate viewBox settings ensuring the microscope is properly framed and scales correctly. Evaluate whether the coordinate system is efficiently used (not too much empty space, not cropped). Deduct 5 points if scaling issues are present, 5 points if significant parts of the drawing extend outside the viewBox, and 3 points if there's excessive unused space.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code follows SVG best practices (proper element nesting, attribute formatting, namespace declaration). Check if it works across major browsers without rendering issues. Deduct 5 points for browser-specific implementations, 3 points for improper nesting causing z-index issues, and 5 points for missing essential SVG attributes that affect rendering.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visualization (e.g., 1. Light ray effect from the microscope base 2. Detailed lens reflections 3. Interactive elements like hover effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Overlapping shapes that could be simplified 2. Unnecessary grouping of elements 3. Overly detailed components that complicate the SVG without adding visual value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the redundant code significantly increases file size or affects rendering performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (logical grouping of SVG elements), meaningful IDs/classes, and code comments explaining complex paths. Deduct 5 points if SVG elements aren't logically grouped, 3 points if there's no descriptive naming for important elements, and 5 points if complex paths lack explanatory comments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual representation meet professional design standards?",
+      "description": "Evaluate whether the microscope design follows proper visual principles: 1) Accurate proportions between components 2) Proper use of negative space 3) Clean, precise lines with appropriate stroke weights. Deduct 3 points for disproportionate elements, 5 points for inconsistent line weights, and 5 points for poor spatial arrangement of components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the level of detail appropriate and well-balanced?",
+      "description": "Judge whether the microscope has appropriate detail level: 1) Important parts (lenses, focusing knobs) should have higher detail 2) Background elements should be simplified 3) Overall balance between simplicity and detail should be maintained. Deduct 5 points for excessive detail causing visual noise, 5 points for oversimplification of key components, and 3 points for inconsistent detail levels across the drawing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

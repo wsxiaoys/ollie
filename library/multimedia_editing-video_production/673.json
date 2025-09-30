@@ -1,0 +1,68 @@
+{
+  "index": 673,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Implement a video speed curve editor where users can create custom speed curves (normal range 0.1x-4x), set multiple keyframe speed values on a timeline, and generate dynamically variable-speed videos while maintaining the original audio pitch.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the timeline and keyframe system fully implemented?",
+      "description": "Review whether the code accurately implements a timeline interface with keyframe insertion, manipulation, and deletion. Check if users can place keyframes at specific time points and assign speed values (0.1x-4x) to them. Score 0 if the timeline system is not implemented, 5 if basic keyframe placement exists but lacks editing capabilities, and 10 if the system allows complete keyframe management with visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the speed curve interpolation functionality properly implemented?",
+      "description": "Evaluate whether the code implements proper interpolation between keyframes (linear, bezier, etc.) to create smooth speed transitions. Check if the interpolation algorithm correctly calculates intermediate speed values between keyframes. Deduct 5 points if only linear interpolation is available, 3 points if the curve visualization doesn't match actual playback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the video processing engine capable of applying variable speed changes?",
+      "description": "Assess whether the implementation can actually modify video playback speed according to the defined curve. Check if it handles frame rate adjustments, frame dropping/duplication, or time remapping techniques. Deduct 5 points if the solution only supports constant speed segments rather than continuous variable speed, and 3 points if speed transitions cause visual artifacts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is audio pitch preservation implemented correctly?",
+      "description": "Verify if the code includes algorithms for time-stretching audio without pitch shifting (like phase vocoder, WSOLA, or elastique). Check whether the implementation preserves the original audio pitch even when video speed changes. Deduct 5 points if pitch preservation is only partially implemented, 8 points if audio becomes distorted during significant speed changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, out-of-range speed values, keyframe conflicts, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview of speed changes 2. Speed curve templates/presets 3. Export capability with different quality options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple speed calculation algorithms coexisting) 2. Function modules unrelated to video speed editing (e.g., excessive filtering options) 3. Fancy effects that affect performance (e.g., unnecessary animations in the editor). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI logic/video processing/audio processing layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Timeline scrubbing response delay ≤ 100ms 2) Keyframe manipulation with immediate visual feedback 3) Clear visual indication of current playback position and speed. Deduct 5 points for each operation without feedback, 3 points for laggy timeline interactions, and 5 points for unintuitive curve manipulation controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

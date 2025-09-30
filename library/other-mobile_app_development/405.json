@@ -1,0 +1,68 @@
+{
+  "index": 405,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Be sure to ensure that the code you generate is executable for demonstration purposes. Provide an example of using an editor in uniapp, using Vue 3 syntax.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete and functional editor component implemented in UniApp with Vue 3?",
+      "description": "Assess whether the code provides a fully functional editor component that works within the UniApp framework using Vue 3 composition API. Check for essential editor features like text input/output, formatting controls, and cursor management. Score 0 if only boilerplate code is provided, 5 points if basic functionality is implemented but lacks key features, 10 points if the editor is fully functional with all core capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the editor properly integrated with UniApp's cross-platform capabilities?",
+      "description": "Evaluate whether the implementation correctly uses UniApp's APIs and components to ensure cross-platform compatibility (iOS, Android, H5, mini-programs). Check if platform-specific adaptations are handled appropriately. Deduct 3 points if only works on one platform type, deduct 5 points if platform-specific issues aren't addressed at all. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation correctly use Vue 3 composition API features?",
+      "description": "Check if the code properly utilizes Vue 3 composition API (setup(), ref, reactive, computed, watch, lifecycle hooks, etc.) instead of Options API. Assess whether composables are created for reusable functionality. Deduct 5 points if Vue 3 specific features are missing, deduct 3 points if composition API is mixed improperly with Options API. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are editor features like rich text formatting and content management properly implemented?",
+      "description": "Review if the editor includes essential capabilities like text formatting (bold, italic, etc.), media insertion, undo/redo functionality, and content storage/retrieval. Check if the content can be saved and loaded properly. Deduct 3 points for each missing critical feature. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as input errors, content loading failures, memory management) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted text completion 2. Collaborative editing capabilities 3. Custom toolbar extensions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text processing utilities that do the same thing) 2. Function modules unrelated to the editor (e.g., built-in calculators, calendars) 3. Fancy effects that affect performance (e.g., excessive animations that slow down editing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor logic/view/data handling layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the editor UI meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the editor interaction smooth and responsive?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Text input response ≤ 50ms 2) Formatting change transition between 100-300ms 3) Clear visual feedback when applying formatting. Deduct 5 points for each operation without feedback, 3 points for input lag during typing, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Mobile App Development",
+  "difficulty": "easy"
+}

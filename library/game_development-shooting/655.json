@@ -1,0 +1,68 @@
+{
+  "index": 655,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure any code you generate is executable. Develop a terrain destruction shooting game that uses Perlin noise to generate random terrain. When bullets hit the terrain, they should create realistic depressions and deformations, allowing players to destroy enemies behind cover. Implement fluid simulation: breaking water containers should release water that affects the movement speed of both players and enemies. Use WebGL to render advanced terrain effects.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the terrain generation with Perlin noise properly implemented?",
+      "description": "Evaluate whether the code correctly implements Perlin noise to generate random terrain with natural-looking variations. Check if the implementation includes multiple octaves for detail, proper frequency/amplitude settings, and terrain height normalization. Score 0 if Perlin noise is not implemented, 5 if basic implementation exists but lacks parameter tuning, and 10 if the terrain generation produces diverse, natural-looking landscapes with configurable parameters.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the terrain destruction mechanism realistic and effective?",
+      "description": "Review how bullets interact with the terrain. Check if pixel-perfect or physics-based collision detection is implemented, whether destruction creates proper deformations with debris effects, and if the terrain responds dynamically to different projectile types/sizes. Evaluate if the destruction algorithm preserves terrain stability (no floating islands unless intentional). Deduct 5 points if destruction is binary (all-or-nothing) rather than gradual, 3 points if the collision detection is imprecise, and 2 points if there are no visual effects for impact. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the fluid simulation physics accurately implemented?",
+      "description": "Assess if the fluid simulation follows realistic physical principles including pressure distribution, surface tension, and viscosity. Check if water flows naturally downward, pools in depressions, and interacts properly with terrain boundaries. Evaluate if water affects player/enemy movement speed proportionally to depth. Deduct 5 points if the fluid simulation is purely visual without affecting gameplay, 3 points if water behavior is unrealistic, and 5 points if there are no water containers that can be broken. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is WebGL properly utilized for advanced terrain effects?",
+      "description": "Evaluate whether the code leverages WebGL capabilities for rendering terrain with advanced effects such as dynamic lighting, shadows, normal mapping, or ambient occlusion. Check if shaders are used for terrain deformation instead of CPU-based calculations. Deduct 5 points if WebGL implementation is basic without custom shaders, 5 points if performance optimization techniques (like frustum culling or LOD) are missing, and 3 points if lighting effects don't respond to terrain changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as resource loading failures, WebGL context loss, memory overflows with large terrains, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects affecting gameplay 2. Procedural destruction sounds based on material types 3. Interactive terrain tools allowing players to build defenses). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar physics calculations (e.g., multiple gravity systems coexisting) 2. Function modules unrelated to the shooting/destruction gameplay (e.g., unnecessary mini-games) 3. Fancy effects that severely impact performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics/rendering/game logic layers), shader code organization, and asset management system. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if WebGL resources aren't properly managed (shader compilation, texture handling, buffer management). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Harmonious color matching that doesn't interfere with gameplay visibility 2) Proper HUD layout that doesn't obstruct important game elements 3) Professional feedback system for player actions (hit markers, damage indicators). Deduct 3 points for cluttered UI elements, 5 points for visual elements that obscure gameplay, and 5 points for missing crucial feedback during destruction events. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game performance maintains consistent 60 FPS during complex destruction and fluid simulation: 1) Input response delay ≤ 100ms 2) Consistent frame rate during explosions and terrain deformation 3) Smooth transitions between different game states. Deduct 5 points for frame drops below 30 FPS during standard gameplay, 3 points for input lag during intense moments, and 5 points for physics calculation errors causing unnatural behavior. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

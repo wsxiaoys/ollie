@@ -1,0 +1,68 @@
+{
+  "index": 1394,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. For a Vue 3 project, write a canvas flat graphic that transforms into a 2.5D effect after clicking a button.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 2D to 2.5D transformation effect properly implemented?",
+      "description": "Review whether the code accurately implements transformation from a flat 2D shape to a 2.5D perspective view using canvas manipulation and matrix transformations. Score 0 if no transformation is implemented, 5 if there's basic transformation but lacks depth perception, and 10 if the transformation includes proper perspective, shading, and visual depth cues.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue 3 integration well-executed?",
+      "description": "Evaluate whether the code properly leverages Vue 3 features (Composition API, reactive refs, computed properties, lifecycle hooks) to manage the canvas and transformation state. Deduct 3 points if not using Vue 3's reactive system effectively, 3 points if not properly handling component lifecycle, and 3 points if missing proper component structure. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the canvas drawing implementation correct and efficient?",
+      "description": "Check whether the canvas API is used correctly for both 2D and transformed states. Look for proper context management, efficient redrawing strategy, and correct handling of canvas dimensions. Deduct 5 points if using inefficient redraw methods (like clearing the entire canvas unnecessarily), 3 points if canvas dimensions are not responsive, and 3 points if transformations cause visual artifacts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the animation smooth and visually appealing?",
+      "description": "Evaluate whether the transformation between 2D and 2.5D states is animated smoothly. Check for use of requestAnimationFrame, proper easing functions, and consistent frame rates. Deduct 5 points if animation is jerky or has frame drops, 3 points if transition timing is unnatural, and 2 points if visual artifacts appear during animation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, device pixel ratio differences, interaction during animation, etc.) and provide recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. User-controlled camera angle in 2.5D mode 2. Dynamic lighting effects 3. Interactive manipulation of the transformed object). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar drawing functions 2. Function modules unrelated to the 2D-to-2.5D transformation 3. Fancy effects that affect performance without adding value to the core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering logic/transformation logic/interaction handling), reusability of components, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks proper documentation or comments. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for both 2D and 2.5D states 2) Proper layout spacing for controls and canvas 3) Professional transitions between states. Deduct 3 points for each visually unappealing element, 5 points for poorly chosen colors that detract from the effect, and 5 points for chaotic button/control placement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transformation animation duration controlled between 300-800ms 3) Clear visual indication of interactive elements. Deduct 5 points for each operation without feedback, 3 points for laggy response during transformation, and 5 points for confusing or hard-to-find controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

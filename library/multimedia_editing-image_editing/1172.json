@@ -1,0 +1,68 @@
+{
+  "index": 1172,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable and functional. I am a programming beginner, and I want you to help me create a WeChat Mini Program for removing watermarks from platforms like TikTok, Kuaishou, Xiaohongshu, etc. The app should be able to remove watermarks from both photo collections and videos. I am using WeChat Developer Tools. Please tell me which folders to import files into and what code to add to each file. I will send you a rough sketch of the design.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the watermark detection and removal functionality properly implemented?",
+      "description": "Review whether the code correctly implements watermark detection algorithms (using techniques like contour detection, frequency domain filtering, or machine learning models) and properly removes watermarks without degrading original content quality. Score 0 if no implementation, 5 if basic removal for only one platform, and 10 if comprehensive removal for multiple platforms (TikTok, Kuaishou, Xiaohongshu) is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the media processing pipeline properly designed and implemented?",
+      "description": "Evaluate whether the code handles both photo collections and videos correctly, including proper file format detection, preprocessing, processing, and post-processing steps. Check if the implementation uses WeChat Mini Program's native APIs correctly for media processing. Deduct 5 points if video processing is missing, 3 points if photo collection processing is incomplete, and 2 points if format conversion is not handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is URL parsing functionality correctly implemented for different platforms?",
+      "description": "Check if the code can correctly parse URLs from different platforms (TikTok, Kuaishou, Xiaohongshu) to extract the original media content. Verify that the implementation handles different URL formats, shortlinks, and API changes. Deduct 3 points for each major platform not supported, and 2 points if redirect handling is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the WeChat Mini Program project structure correctly organized?",
+      "description": "Assess whether the code follows WeChat Mini Program development standards with correct directory structure (pages, components, utils, etc.), proper configuration files (app.json, project.config.json), and appropriate permission settings. Verify that files are imported into the correct folders as specified. Deduct 5 points for incorrect structure, 3 points for missing critical configurations, 2 points for improper permission settings. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid URLs, network errors, permission denials, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch processing of multiple links 2. Preview before downloading 3. Custom watermark templates detection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple URL parsing methods doing the same thing) 2. Function modules unrelated to watermark removal (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/network layers), component reusability, and code maintainability. Deduct 5 points if global state pollution is found or MVVM patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if error handling is inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design principles: 1) Consistent with WeChat's aesthetic (proper use of WeChat UI components) 2) Proper layout spacing and responsive design 3) Professional typography and visual hierarchy. Deduct 3 points for each inconsistent UI element, 5 points for non-responsive designs, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the app provides appropriate feedback during watermark processing: 1) Clear loading indicators during processing 2) Smooth transitions between states 3) Intuitive user flow from input to output. Deduct 5 points for missing progress indicators during long operations, 3 points for abrupt transitions, and 5 points for confusing navigation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

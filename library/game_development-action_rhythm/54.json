@@ -1,0 +1,68 @@
+{
+  "index": 54,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible.\n\nPlease use HTML and JavaScript to implement an action game - rhythm game: custom music and level generation.\n**Task**: Design a custom music mode that allows players to import their own music and automatically generate levels based on the audio tracks.\n**Hint**: You can use audio analysis tools to extract rhythm information and generate corresponding key press points.\n\nPlease include comments in your code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the music import functionality fully implemented?",
+      "description": "Review whether the code implements file upload capabilities that support common audio formats (MP3, WAV, OGG), and includes proper validation and error handling for file size and format. Score 0 if music import is not implemented, 5 if only basic file upload is available, and 10 if it includes advanced features like progress indicators and drag-and-drop functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the audio analysis system properly implemented?",
+      "description": "Evaluate whether the code uses Web Audio API to analyze the imported audio track, including beat detection, frequency analysis, and amplitude variation. Check if it extracts meaningful rhythm information such as BPM, beat timing, and intensity changes. Deduct 5 points if only basic amplitude analysis is implemented, and 3 points if the analysis doesn't account for different music genres. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the level generation algorithm effective and aligned with the music?",
+      "description": "Check if the algorithm maps audio analysis data to gameplay elements (note placement, timing, patterns) that match the rhythm and intensity of the music. Verify if it creates a balanced difficulty curve and handles transitions between different music sections. Score 0 if level generation is random/unrelated to the music, 5 if it only follows basic beat patterns, and 10 if it creates varied and musically-coherent gameplay experiences.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the gameplay mechanic responsive and synchronized with the music?",
+      "description": "Assess whether the game maintains proper synchronization between visuals, input detection, and audio playback. Check for techniques to minimize audio latency and ensure visual cues appear at the correct time. Deduct 5 points if there's noticeable desynchronization, 3 points if there's no calibration system for different devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported audio formats, processing large files, unexpected user interactions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time visual effects synchronized with music 2. Customizable note appearance and effects 3. Social sharing of created levels). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio analysis methods performing the same task) 2. Function modules unrelated to rhythm gameplay (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive particles that cause frame drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio analysis/game logic/rendering layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Input response delay ≤ 50ms (crucial for a rhythm game) 2) Visual feedback aligned precisely with audio events 3) Consistent frame rate without drops during intensive sections. Deduct 5 points for perceptible input lag, 3 points for misaligned visual/audio elements, and 5 points for frame rate issues during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

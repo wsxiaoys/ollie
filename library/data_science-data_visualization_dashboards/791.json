@@ -1,0 +1,68 @@
+{
+  "index": 791,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Create a four-quadrant diagram and provide me with the code.\n\nSpecific requirements: (1) Establish a \"Four-Quadrant Screening Method\" to build a news material admission matrix based on \"Authenticity Index\" and \"Educational Value Index.\"\n\nFirst Quadrant (High Authenticity + High Educational Value): Materials that conform to facts and have clear educational significance can be directly incorporated into teaching or public communication.\n\nSecond Quadrant (High Authenticity + Low Educational Value): Content that is authentic but lacks educational direction requires adaptation or supplementary background information based on teaching objectives.\n\nThird Quadrant (Low Authenticity + High Educational Value): Contains factual deviations but has educational potential; requires strict verification of authenticity before use.\n\nFourth Quadrant (Low Authenticity + Low Educational Value): Exclude such materials to avoid misinformation and waste of resources.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the four-quadrant diagram correctly implemented with clear axes and quadrant divisions?",
+      "description": "Check if the code correctly implements a coordinate system with X-axis (Authenticity Index) and Y-axis (Educational Value Index) properly labeled, with clear boundaries between the four quadrants. Each quadrant should be visually distinguishable. Score 0 if quadrants are missing or axes are incorrectly labeled, 5 if basic structure exists but with alignment issues, and 10 if perfectly implemented with proper scaling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the four quadrants properly labeled and described according to specifications?",
+      "description": "Verify if each quadrant is correctly labeled (First through Fourth) and includes the specified descriptions (High/Low Authenticity + High/Low Educational Value) along with the appropriate action guidance for each quadrant (e.g., 'directly incorporate', 'requires adaptation', etc.). Deduct 3 points if any quadrant is mislabeled, 5 points if descriptions are incomplete or incorrect, and 10 points if no clear descriptions are provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the visualization include appropriate color coding and visual differentiation?",
+      "description": "Evaluate if the quadrants use appropriate colors to indicate their relative importance/status (e.g., green for first quadrant, red for fourth quadrant) with sufficient contrast for accessibility. Check if color choices help communicate the conceptual differences between quadrants. Deduct 3 points for poor color choices that don't reflect quadrant meaning, 5 points for insufficient contrast making it hard to distinguish quadrants, and 8 points if no meaningful color differentiation exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an interactive component allowing for practical use of the diagram?",
+      "description": "Assess whether the implementation includes practical interactive features such as: ability to plot example news materials onto the diagram, hovering effects that show detailed quadrant information, clickable regions that provide guidance, or ability to adjust threshold values. Score 10 points for comprehensive interactivity, 5 points for basic hover/click functionality, and 0 points for a completely static implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, different screen sizes, touch vs. mouse interaction, etc.) and provide appropriate adaptations or error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Ability to save/export examples 2. Animation showing how content moves between quadrants based on fact-checking 3. Integration with sample data that demonstrates the framework in action). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization functions (e.g., multiple ways to render the same quadrant) 2. Function modules unrelated to the four-quadrant screening method (e.g., unnecessary animations or effects) 3. Fancy effects that affect performance (e.g., excessive transitions or hover effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating visualization logic/data/interaction layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

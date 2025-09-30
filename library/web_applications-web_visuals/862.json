@@ -1,0 +1,68 @@
+{
+  "index": 862,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure to ensure the generated code is executable for demonstration. As a senior full-stack engineer, you need to provide a web editor technical solution.\n\nRequirements:\n1. The uploaded image shows the rough UI effect.\n2. Support dragging, setting, and adding controls/components/images through the web editor to draw the front and back of tombstones.\n3. Support identification of fonts, font sizes, content, coordinates, and other information in the editor.\n4. Frontend uses Vue 3 and Element Plus.\n5. Backend uses Spring Boot, MyBatis Plus, and MySQL.\nPlease provide a runnable code demo.\n\nFirst, please repeat my requirements to confirm that you truly understand my needs. After I reply with confirmation, please provide me with runnable code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the web editor UI fully implemented according to the uploaded image?",
+      "description": "Evaluate whether the implemented UI matches the uploaded reference image. Check for proper layout, color scheme, and overall visual fidelity. The UI should include all main components shown in the reference: toolbar, canvas area, property panel, etc. Score 0 if the UI differs substantially, 5 if it has minor inconsistencies, and 10 if it faithfully represents the reference.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the drag-and-drop functionality for tombstone editor components properly implemented?",
+      "description": "Verify if the code includes a complete drag-and-drop system for placing controls/components/images on both the front and back of tombstones. Check for proper event handling (dragstart, dragover, drop), position calculation, and snapping behaviors. Score 0 if drag-and-drop is missing, 5 if basic functionality exists with limitations, and 10 if it's fully featured with smooth interaction.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the component property controls comprehensive and properly implemented?",
+      "description": "Check if the editor allows identification and modification of all required properties: fonts, font sizes, content, coordinates, etc. The property panel should update dynamically based on selected components and provide appropriate input controls. Score 0 if property controls are missing, 5 if basic properties can be edited but with limitations, and 10 if all required properties are fully editable with validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the front/back tombstone switching mechanism properly implemented?",
+      "description": "Evaluate the implementation of the dual-side editing capability, allowing users to switch between front and back views while maintaining proper state. Check if components placed on each side remain in their correct positions when switching views. Score 0 if switching is not implemented, 5 if it exists but has state persistence issues, and 10 if it works flawlessly with proper state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input values, component overlapping, undo/redo edge cases, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaborative editing 2. AI-assisted layout suggestions 3. Template system for common tombstone designs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple component selection mechanisms) 2. Function modules unrelated to tombstone editing (e.g., an unnecessary social sharing system) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor logic/view/data layers), unit test coverage, and build process automation. Check if Vue 3 Composition API is used effectively. Verify proper integration with Element Plus. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the full-stack integration properly implemented?",
+      "description": "Judge whether the frontend-backend integration is properly implemented: 1) Proper API design with RESTful principles 2) Efficient data exchange between Vue 3 and Spring Boot 3) Well-designed database schema with MyBatis Plus integration. Check if the tombstone designs can be saved to and loaded from the database. Deduct 5 points for missing API documentation, 3 points for inefficient data transfer patterns, and 5 points for poor database design. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

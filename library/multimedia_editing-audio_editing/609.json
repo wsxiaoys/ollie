@@ -1,0 +1,68 @@
+{
+  "index": 609,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. ======== ROLE ========\nYou are an experienced code expert. I am providing you with a software development requirement description and asking you to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and understandable comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, without omitting any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot run or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nDesign a frontend audio watermark creator where users can upload audio files and watermark audio files (or text watermark information). The interface should provide options for watermark placement (beginning, middle, end, etc.) and volume adjustment. After setting these options, users should be able to save the watermarked audio to their local device.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio file upload and processing system fully implemented?",
+      "description": "Review whether the code accurately implements audio file upload functionality through HTML/JavaScript, including file format validation (MP3, WAV, etc.), file size limits, and proper audio parsing using Web Audio API. Check if audio visualization (waveform display) is provided for user feedback. Score 0 if basic upload is not implemented, 5 if only basic file handling exists without audio processing, and 10 if complete audio upload with validation and visualization is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the watermark insertion functionality comprehensively implemented?",
+      "description": "Evaluate whether the code supports both audio watermark and text-to-speech watermark insertion. Check if multiple placement options (beginning, middle, end, custom position) are available with precise timing controls. Verify if volume adjustment for watermarks is implemented with real-time preview. Deduct 5 points if only one watermark type is supported, 3 points if position control is imprecise, and 2 points if volume adjustment lacks real-time feedback. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio processing and mixing engine properly designed?",
+      "description": "Check whether the Web Audio API implementation includes proper audio buffer management, sample rate handling, and channel mixing capabilities. Evaluate if the audio processing maintains original quality while adding watermarks. Verify if the system handles different audio formats and bit rates correctly. Deduct 5 points if audio quality degrades significantly, 3 points if mixing causes distortion, and 2 points if format compatibility issues exist. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio export and download functionality complete?",
+      "description": "Review whether the code provides multiple export formats (MP3, WAV, etc.) with quality options. Check if the download mechanism works across different browsers and handles large file sizes efficiently. Verify if metadata preservation and file naming conventions are implemented. Deduct 5 points if only one export format is available, 3 points if download fails on large files, and 2 points if metadata is lost during export. Give 10 points if fully implemented with multiple format support.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported file formats, memory overflow with large audio files, browser compatibility issues, corrupted audio data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time audio waveform visualization during editing 2. Batch watermarking for multiple files 3. Watermark fade-in/fade-out effects 4. Audio preview with A/B comparison 5. Custom watermark voice synthesis). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing pipelines coexisting) 2. Function modules unrelated to audio watermarking (e.g., built-in music player or audio editor) 3. Fancy effects that affect performance (e.g., complex 3D visualizations that slow down processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core watermarking functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/UI/file handling layers), error handling coverage, and code organization. Deduct 5 points if global state pollution is found or audio processing is not properly encapsulated; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if audio memory management is poor (memory leaks). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for audio editing (no more than 3 primary colors) 2) Proper layout spacing with clear audio controls grouping 3) Professional typography (body font size ≥ 14px, line height over 1.5 times) 4) Intuitive audio timeline and waveform display. Deduct 3 points for each crowded control element, 5 points for poor contrast in waveform visualization, and 5 points for chaotic control layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the audio interface interactions conform to user expectations: 1) Audio playback controls respond within 100ms 2) Smooth waveform scrubbing and timeline navigation 3) Real-time preview of watermark placement without lag 4) Clear visual feedback for processing states (loading, processing, complete). Deduct 5 points for each unresponsive audio control, 3 points for choppy timeline interaction, and 5 points for missing processing state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

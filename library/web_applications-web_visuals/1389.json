@@ -1,0 +1,68 @@
+{
+  "index": 1389,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. For ElementUI, create a navigation page with customized information at the top, a left-side navigation bar, and a dynamic main area on the right.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the ElementUI navigation structure correctly implemented?",
+      "description": "Verify the implementation includes header, left sidebar, and main content area according to ElementUI's container layout principles. Check for proper nesting of el-container, el-header, el-aside, and el-main components. Deduct 5 points if responsive design is missing (mobile adaptation), 5 points if layout breaks at different screen sizes, and full 10 points if layout is properly implemented with responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the top navigation customized with required information?",
+      "description": "Evaluate if the header contains customized information such as logo, application name, user profile, and action buttons. Check for proper alignment (logo left, user info right) and styling consistency. 10 points if fully customized with proper styling, 5 points if basic implementation without attention to detail, 0 points if default/minimal customization.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the left-side navigation bar properly implemented?",
+      "description": "Check if el-menu is correctly configured with nested menu items (using el-submenu and el-menu-item), proper icons, and collapse functionality. Verify if the menu items have appropriate routing capabilities. Deduct 3 points if menu doesn't handle active states, 3 points if collapse functionality is missing, 4 points if submenu structure is incorrectly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the dynamic main area implementation complete?",
+      "description": "Review if the main content area changes dynamically based on navigation selection. Check for vue-router integration, transition effects, and content loading states. Full 10 points requires proper route configuration, component lazy loading, and smooth transitions. Deduct 5 points if dynamic content loading works but lacks transitions, 5 points if router setup is incomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as route errors, component loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Customized theme switching 2. Breadcrumb navigation with history 3. User preference persistence). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple navigation control methods) 2. Function modules unrelated to navigation layout (e.g., embedded mini-games) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating components, styles, and utility functions), component reusability, and proper use of Vue practices. Deduct 5 points if global state management is poorly implemented; deduct 5 points if component composition is inappropriate (too large or too fragmented); deduct 5 points if naming conventions and code structure are inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 727,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Initialize a project and use Node.js to create a file upload interface that supports chunk uploading, with frontend uploaded files stored in the 'file' folder.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file chunking mechanism properly implemented?",
+      "description": "Review whether the code correctly implements file chunking on the client side, including proper slice calculation, chunk size management, and unique identifiers for each chunk. Score 0 if chunking is not implemented, 5 if basic chunking exists but with limitations (e.g., fixed chunk size that doesn't account for file size), and 10 if it implements adaptive chunking with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the file upload interface complete and functional?",
+      "description": "Evaluate whether the upload interface provides necessary features: file selection, progress indication, pause/resume functionality, and clear status messages. Deduct 3 points if progress indication is missing, 3 points if there's no pause/resume capability, and 4 points if error states aren't displayed to users. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the server-side chunk assembly mechanism properly implemented?",
+      "description": "Check if the server code correctly handles receiving chunks, temporary storage, validation (MD5/hash verification), and final assembly into the complete file in the 'file' folder. Deduct 5 points if chunk verification is missing, 3 points if temporary files aren't properly managed, and 5 points if the final assembly process doesn't handle edge cases. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include proper concurrent upload handling?",
+      "description": "Assess whether the code supports simultaneous upload of multiple files and concurrent chunk uploads with proper throttling mechanisms. Score 0 if concurrency isn't supported, 5 if basic concurrency exists but without throttling, and 10 if it implements intelligent throttling based on network conditions and server load.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, browser crashes, duplicate uploads, invalid files, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Drag-and-drop uploading 2. Automatic retry mechanism 3. Client-side file compression 4. Image preview before upload). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file validation methods) 2. Function modules unrelated to file uploading (e.g., unnecessary authentication layers) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating upload logic/UI/server communication), error handling patterns, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if logging and debugging capabilities are insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean and intuitive upload interface 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clear visual feedback during different upload stages. Deduct 3 points for cluttered interface elements, 5 points for confusing status indicators, and 5 points for poor accessibility features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload button response delay ≤ 100ms 2) Smooth progress indicators without jitter 3) Clear visual guidance during chunk uploads. Deduct 5 points for each operation without feedback, 3 points for choppy progress indicators, and 5 points for confusing state transitions between upload phases. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 440,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. Generate an SPFx+Vue project.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SPFx project foundation correctly established?",
+      "description": "Review if the code sets up a proper SPFx project structure with the required configurations (package-solution.json, config folder, etc.). Check if the proper SPFx version is specified and if the gulpfile.js includes all necessary build tasks. Score 0 if no SPFx structure exists, 5 if basic structure exists but with configuration errors, and 10 if a complete and valid SPFx project foundation is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Vue properly integrated into the SPFx framework?",
+      "description": "Evaluate whether the Vue integration follows best practices: 1) Proper webpack configuration for Vue SFC support 2) Vue component registration within SPFx web parts 3) Lifecycle management between SPFx and Vue instances. Deduct 5 points if Vue is loaded as an external script instead of webpack integration, 3 points if prop passing between SPFx and Vue is improperly handled, and 5 points if Vue devtools integration is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the SPFx web part configuration properly implemented?",
+      "description": "Check whether the web part implements property panes correctly, including property types, validation, groups, and custom controls. Verify the manifest.json file properly defines the web part capabilities and permissions. Deduct 3 points for missing localization, 5 points for incorrect property persistence, and 5 points if SharePoint context is not properly utilized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the project demonstrate proper Vue component architecture?",
+      "description": "Assess whether the Vue components follow the single responsibility principle, implement proper parent-child communication (props down, events up), and utilize Vue features appropriately (Vuex for state management, Vue Router if needed, computed properties, watchers, etc.). Deduct 5 points for monolithic components, 3 points for prop drilling beyond 3 levels, and 5 points if component reusability is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors when fetching data from SharePoint, permission issues, browser compatibility problems, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Integration with Microsoft Graph API 2. Responsive design for mobile SharePoint 3. Performance optimizations like code-splitting or lazy loading). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant dependencies not utilized in the project 2. Bloated node_modules with unnecessary packages 3. Inclusion of both Vue 2 and Vue 3 artifacts or multiple state management solutions. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating services/components/models), TypeScript usage (instead of plain JavaScript), and deployment pipeline setup. Deduct 5 points if 'any' type is overused; deduct 5 points if no unit tests are present; deduct 5 points if SharePoint-specific best practices are ignored (like proper API versioning). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows SharePoint/Fluent UI design principles: 1) Consistent use of Office UI Fabric/Fluent UI components 2) Proper theme token usage for colors/spacing 3) Responsive design for different screen sizes. Deduct 3 points for each instance of custom styles contradicting Fluent UI guidelines, 5 points for not respecting user's SharePoint theme settings, and 5 points for accessibility issues (contrast, keyboard navigation). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to SharePoint UX patterns: 1) Loading states for async operations 2) Proper transitions between views/states 3) Optimistic UI updates where appropriate. Deduct 5 points for each operation without loading indicators, 3 points for jarring/abrupt transitions, and 5 points for UI elements that don't react to user interaction within 200ms. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Development Framework Setup",
+  "difficulty": "hard"
+}

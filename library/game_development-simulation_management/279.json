@@ -1,0 +1,68 @@
+{
+  "index": 279,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Class Teacher Simulator\n\n## Basic Mechanisms\n\n1. Time Setting\n\n* Each academic year is divided into spring and fall semesters, with five teaching days per week. The last week of the semester is for exams and parent-teacher conferences.\n* As the head teacher, you have 8 action points to allocate each day (can be increased later based on physical condition). Mandatory action points include morning and evening self-study sessions and teaching your own subject classes.\n\nMorning and evening self-study options: independent study or specific subject study.\n\nTeaching your own subject requires increasing lesson preparation to improve teaching quality.\n\nOther action points can be used for: auditing classes, lesson preparation, discussing class situations with other teachers, grading assignments, etc.\n\nWeekends allow free actions, with Sunday evening mandating class schedule planning. Winter and summer breaks may trigger special events (such as home visit crises, romance storylines, etc.)\n\n2. Main Character and Teacher Attribute Growth\n\nRandomly generated subject teachers with different personalities and attributes trigger different events.\n\n* Intelligence determines lesson preparation efficiency and problem-solving ability.\n* Charisma affects class officer loyalty and parent communication success rate, can be improved through hosting class meetings or participating in public lessons.\n* Subject expertise is locked to your initially chosen teaching subject (e.g., Chinese language teachers have ancient text analysis privileges).\n* Physical strength limits daily action count; continuing work after 1 AM will trigger a blood-coughing event.\n* When health falls below 30, you may collapse at the lectern, forcing a three-day hospitalization and missing critical teaching progress.\n* Emotional intelligence is used to resolve student conflicts; high EQ individuals can unlock the hidden \"Soul Dialogue\" option.\n\n## Class Ecosystem\n\n1. Student Generation System\n\n40 students randomly generated with the following trait combinations:\n\n* Family background: Single-parent families, wealthy second-generation, intellectual families, etc. (over 10 types of family situations).\n* Subject grades: Nine independent values (main subjects fluctuate ±5%, minor subjects ±10%)\n* Charisma and emotional intelligence: Affects students' interpersonal networks, triggering friendship/conflict/romance events\n* Diligence and talent: Affects learning efficiency and subject performance.\n   - Daily adjustments based on personality, mood, class atmosphere, family situation, etc.\n   - Below 40 triggers \"lying flat mode\" (homework completion rate plummets)\n\nAttribute linking formula:\nSingle subject improvement = (Talent×0.3 + Diligence×0.7) × Teacher subject expertise modifier\nPsychological breakdown probability = (Family pressure + Class average pressure) ÷ Student's EQ\n\n2. Class Committee System\n\nAppoint class officers at the beginning of each semester, with options for appointment or class election. Class officers include: class monitor, deputy monitor, study representative, arts and entertainment representative, labor representative, publicity representative, organizational representative, and subject representatives. Different combinations trigger different chain reactions.\n\nFree Day Mechanism\n\n* Saturday-Sunday: Teacher's free actions (consuming physical strength)\n   - Home visits (must match student family type: single-parent families require EQ ≥60)\n   - Self-improvement (library +Intelligence/gym +Health)\n   - Unexpected events (15% probability of events like \"student running away from home\")\n\n* Sunday evening: Mandatory class schedule arrangement\n\nClass Schedule System\n\n* Resource balance:\n   - Main subjects >60% → Triggers \"homework overload protest\" event (next day efficiency -20%)\n   - Interest classes for two consecutive days → Principal's warning about \"not focusing on proper teaching\"\n\n## Events and Choices\n\n1. 40+ Daily Random Events\n\n* Pink envelope: When discovering love letters, choosing \"tear up publicly\" will cause the couple to elope; choosing \"anonymous counseling\" might foster a top student couple.\n* Cheating storm: Catching mass cheating during exam supervision—severe punishment loses the class's red flag award, overlooking it plants landmines for college entrance exams.\n\n2. Competition Arena\n\n* Competition pyramid\n* Basic level: School exams affect class ranking in the grade, monthly tests (affect class ranking and next month's learning efficiency), midterm and final exams (affect ranking, parents' and school leaders' attitudes, overall class atmosphere)\n   - Academic Olympiad competitions\n   - National New Concept Writing Competition\n\n3. Campus Carnival\n\n* Spring Sports Meet:\n   - Hidden attribute \"Sportsmanship\" determines ranking (not purely physical ability)\n\n* New Year's Arts Performance:\n   - Winning brings special funding from the principal\n\n## Endings and Evaluation\n\nCollege Entrance Exam System\n\nFinal results are determined by \"Basic Strength\" (subject values), \"On-site Luck\" (hidden random number), and \"Psychological Pressure Resistance\" (stress value conversion), with possible dramatic reversals like \"God Mode\" (30% overperformance) or \"Ten years of study ruined in one day\" (key subject failure).\n\nCollege Entrance Exam Results Night generates a \"Life Trajectory Map\":\n\n* Worldly Success: Number of students admitted to Tsinghua/Peking University, percentage of top-tier university admissions, competition medals.\n* Hidden Costs: Number of psychologically traumatized students, stifled geniuses, \"defective products\" eliminated by the system.\n* Teacher Evaluation: 57 possible endings from \"Incompetent talent ruining students' futures\" to \"Educational Revolutionary,\" revealing your true educational philosophy.\n\nInterface is code-box style, preserving basic attributes, schedules and time. JavaScript interface with window-like modules. All text and emojis within the code box! Within the code window!! But omitting actual code!!! Only showing the core module text content inside the code box.\n\nSetting is realistic, no fantasy, tech, or supernatural elements allowed in the game. No mysterious events. All character behavior logic matches reality. Game progresses by action points without skipping. Next action only after current action is scheduled.\n\nNow generating main character: Head Teacher Jiang Ruoyao, female, 24, subject expertise in Chinese language. Time: New semester of high school freshman year.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the class teacher simulator core mechanism fully implemented?",
+      "description": "Review whether the code correctly implements the time setting system (semesters, teaching days, action points), teacher attribute growth mechanics, and mandatory vs. optional actions. Score 0 if core game loop is missing, 5 if only basic time management exists, and 10 if all specified mechanisms (morning/evening sessions, subject teaching, action point system with proper constraints) are properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the student generation and attribute system working as specified?",
+      "description": "Evaluate whether the code generates 40 students with all required attributes (family background, subject grades, charisma, EQ, diligence, talent) and properly implements the attribute linking formulas. Check if student attributes dynamically adjust based on events and teacher actions. Deduct 5 points if family background variety is limited, 5 points if subject grade fluctuation is missing, and 3 points if psychological breakdown probability calculation is incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the class committee system and class schedule mechanisms implemented?",
+      "description": "Check if the code includes appointment/election of class officers with proper role definitions and resulting chain reactions. Verify the class schedule system with resource balance constraints and consequences (homework overload protest, principal warnings). Deduct 5 points if appointment/election options are missing, 3 points for missing officer roles, and 5 points if resource balance consequences aren't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are events, competitions, and endings properly implemented?",
+      "description": "Assess whether random events (like pink envelope, cheating storm), competitions (school exams, Olympiads, etc.), and the college entrance exam system with evaluation metrics are implemented. Check for the presence of the \"Life Trajectory Map\" with all specified categories. Deduct 3 points per missing event category, 5 points if competitions lack progressive difficulty, and 5 points if the ending evaluation lacks variety. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid action selections, concurrent events, conflicting schedules, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic relationship networks visualized between students 2. Procedurally generated family visit conversations 3. Tension meter showing class atmosphere). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar event mechanics 2. Function modules unrelated to the educational setting (e.g., fantasy elements explicitly prohibited in requirements) 3. Overly complex systems that don't contribute to the core gameplay. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game state/view/event systems), maintainability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game mechanics and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the code-box style interface follows modern design principles: 1) Clean text formatting and spacing 2) Consistent use of emojis and styling 3) Proper organization of windows and modules within the code box. Deduct 3 points for each inconsistent text styling, 5 points for cluttered information display, and 5 points for poor readability of critical game information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and realistic?",
+      "description": "Judge whether the game progression conforms to specified constraints: 1) Each action properly consumes action points 2) Events trigger based on realistic conditions 3) All character behavior matches real-world logic with no supernatural elements. Deduct 5 points for unrealistic character behavior, 5 points for actions that skip the proper progression system, and 3 points for lacking clear feedback on action results. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Simulation/Management",
+  "difficulty": "easy"
+}

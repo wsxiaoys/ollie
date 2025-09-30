@@ -1,0 +1,68 @@
+{
+  "index": 636,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Implement a password generation and management tool where users can set the password length and include specific character types (such as letters, numbers, special characters) to generate random passwords that meet the requirements. The tool should support saving generated passwords locally and allow editing and deleting operations on the saved passwords.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the password generation functionality fully implemented?",
+      "description": "Review whether the code accurately implements core password generation with customizable options: length selection, character type inclusion (uppercase letters, lowercase letters, numbers, special characters). Score 0 if the core functionality is missing, 5 if only basic generation exists without all options, and 10 if all customization options are fully implemented with proper validation (e.g., minimum length checks, at least one character type selected).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the password strength evaluation implemented?",
+      "description": "Check whether the code includes password strength evaluation using industry standards (entropy calculation, character diversity analysis, common pattern detection). Deduct 3 points if only basic length-based evaluation is used, 5 points if no evaluation exists. Full score requires visual strength indicators (color bars or descriptive text) and specific improvement suggestions for weak passwords.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the password storage and management system properly implemented?",
+      "description": "Evaluate the implementation of password saving, editing, and deleting functionality. Assess whether passwords are stored with associated metadata (website/service name, username, creation date). Deduct 5 points if any core CRUD operation is missing, 3 points if passwords are stored without encryption. The full score requires proper data persistence (localStorage, IndexedDB, or File API) with data integrity checks.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a secure clipboard interaction mechanism?",
+      "description": "Check whether the tool provides convenient copy-to-clipboard functionality with appropriate security measures. Evaluate whether the clipboard content is automatically cleared after a timeout period, and if visual feedback is provided on successful copy. Deduct 5 points if copy functionality is missing, 3 points if no feedback is provided, and 3 points if no auto-clear security feature exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, storage access failures, concurrent operations) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Password history tracking 2. Password expiration notifications 3. Breach detection API integration 4. Master password protection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple storage mechanisms active simultaneously) 2. Function modules unrelated to password management (e.g., built-in calendar) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/storage layers), input validation thoroughness, and code reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments explaining complex logic or security considerations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

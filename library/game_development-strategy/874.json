@@ -1,0 +1,68 @@
+{
+  "index": 874,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the generated code is executable for demonstration. Create a card battle game similar to Hearthstone with the following requirements: players can interact, AI acts automatically, both sides start with non-duplicate card decks, and card deck generation is random. Write a complete code that can be run directly.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core card battle system fully implemented?",
+      "description": "Review whether the code implements the essential card game mechanics including card drawing, mana management, play/attack phases, turn system, and win/loss conditions. Score 0 if core mechanics are missing, 5 points if basic card play is implemented but lacking depth, 10 points if the system resembles Hearthstone's comprehensive battle mechanics including effects like taunt, charge, etc.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the deck generation and card variety implemented properly?",
+      "description": "Check whether the code correctly creates non-duplicate randomized card decks for players as specified. Examine if there's sufficient card variety (at least 15 different card types with varied attributes/effects). Deduct 5 points if randomization is weak or predictable, 3 points if card variety is limited, and 5 points if deck constraints are not properly enforced. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the player interaction system properly implemented?",
+      "description": "Evaluate the quality of player interaction mechanisms. Check if players can select cards, target opponents, use hero powers, and make strategic decisions. Verify that the UI clearly shows valid targets and actions. Deduct 5 points if interaction fails in edge cases (e.g., when no valid targets exist), 3 points if feedback is unclear, and 5 points if core interaction features are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the AI opponent implementation robust?",
+      "description": "Assess the AI's decision-making process. Verify that the AI can make reasonable moves, target selection, and adapt to the game state. Test if the AI avoids obvious mistakes and presents a challenge. Deduct 5 points if the AI makes consistently poor decisions, 3 points if it's too predictable, and 5 points if it freezes or errors in unusual game states. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid card plays, out-of-mana attempts, targeting errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic card effects or animations 2. Deck builder/editor functionality 3. Game history recording 4. Card rarity system with visual indicators). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to calculate damage) 2. Function modules unrelated to card battles (e.g., an unnecessary avatar customization system) 3. Fancy effects that affect performance (e.g., excessive particle effects during card play). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controllers), proper class inheritance for cards with similar effects, and maintainable architecture. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Clear representation of game state (health, mana, cards in hand/deck) 2) Proper layout with cards clearly visible and organized 3) Visual distinction between playable and non-playable cards. Deduct 3 points for cluttered UI elements, 5 points for poor visibility of critical game information, and 5 points for confusing card state indicators. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to card game expectations: 1) Card animations when drawing/playing cards 2) Visual feedback for attacks and damage 3) Clear indications of turn phases and available actions. Deduct 5 points for each interaction without feedback, 3 points for jarring or disruptive animations, and 5 points for unclear turn or phase transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

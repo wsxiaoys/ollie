@@ -1,0 +1,68 @@
+{
+  "index": 564,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Design an audio echo effect processor where users can upload audio files, select echo delay time and intensity, and preview the echo effect in real-time. After editing, users can export the audio file with the echo effect applied.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio file upload and parsing functionality fully implemented?",
+      "description": "Review whether the code correctly implements audio file upload with support for multiple formats (MP3, WAV, FLAC, etc.), includes proper file validation and size limits, and accurately parses audio data using Web Audio API or similar technology. Check if waveform visualization is provided for uploaded audio. Score 0 if basic upload is not working, 5 if only basic upload without validation is implemented, and 10 if comprehensive file handling with format support and validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the echo effect processing algorithm correctly implemented?",
+      "description": "Evaluate whether the echo effect uses proper digital signal processing techniques with configurable delay time (typically 50ms-2000ms range) and intensity/feedback controls (0-100% range). Check if the implementation uses delay buffers, feedback loops, and proper mixing algorithms. Verify that the echo parameters produce audible and mathematically correct results. Deduct 5 points if delay timing is inaccurate, 3 points if intensity control doesn't work properly. Full score requires professional-grade audio processing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time preview functionality implemented with low latency?",
+      "description": "Check whether the system provides real-time audio preview with applied echo effects, maintaining audio latency under 100ms for responsive user experience. Evaluate if the preview updates immediately when parameters change and includes proper audio buffer management. Verify that playback controls (play/pause/seek) work correctly with processed audio. Deduct 5 points if latency exceeds 200ms, 3 points if parameter changes don't update in real-time. Full score requires seamless real-time processing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio export functionality complete with proper encoding?",
+      "description": "Review whether the code includes complete audio export functionality that renders the final processed audio with echo effects applied, supports multiple output formats (WAV, MP3), and maintains original audio quality. Check if the export process handles long audio files efficiently and provides progress indication. Deduct 5 points if export quality is degraded, 3 points if only one format is supported, 5 points if no progress indication for long exports. Full score requires professional export capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted audio files, unsupported formats, memory limitations, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle audio processing errors, file size limitations, and browser audio context issues, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the audio editing experience (e.g., 1. Visual waveform editing with echo visualization 2. Preset echo templates (hall, chamber, canyon effects) 3. Multi-tap delay with rhythm synchronization 4. Spectral analysis visualization during processing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar audio processing functions (e.g., multiple echo algorithms coexisting unnecessarily) 2. Function modules unrelated to audio echo processing (e.g., built-in video player or image editor) 3. Excessive visual effects that impact audio processing performance (e.g., complex 3D visualizations during real-time processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if core audio functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/UI/file handling layers), proper Web Audio API usage patterns, and error handling architecture. Deduct 5 points if global audio context pollution is found or audio processing patterns are not properly implemented; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper audio resource cleanup is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional audio software design standards?",
+      "description": "Evaluate whether the overall design follows professional audio software principles: 1) Professional dark theme suitable for audio work 2) Clear parameter controls with proper labeling (delay time in ms, intensity in %) 3) Intuitive waveform visualization with proper scaling 4) Professional typography for technical values. Deduct 3 points for each poorly designed control element, 5 points for unprofessional color schemes that strain eyes during audio work, and 5 points for confusing parameter layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the audio interaction smooth and responsive?",
+      "description": "Judge whether the audio interface interactions conform to professional audio software standards: 1) Parameter adjustment response time ≤ 50ms for real-time feel 2) Smooth waveform scrubbing and playback control 3) Clear visual feedback for all audio states (loading, processing, playing) 4) Proper audio fade-in/out to prevent clicks and pops. Deduct 5 points for each audio operation without immediate feedback, 3 points for audio artifacts during parameter changes, and 5 points for confusing audio state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

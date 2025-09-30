@@ -1,0 +1,68 @@
+{
+  "index": 1066,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that any code you generate is executable for demonstration. Create an HTML program for arranging examination rooms and generating labels for each student.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core exam room arrangement logic fully implemented?",
+      "description": "Review whether the code accurately implements room allocation algorithms that consider factors like room capacity, examination type/subject, and student distribution. Check if it handles edge cases (e.g., when students exceed available capacity). Score 0 if the core allocation logic is missing, 5 if basic allocation exists but lacks optimization, and 10 if it includes efficient distribution with conflict avoidance.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the student label generation system complete?",
+      "description": "Evaluate whether the label generation includes all necessary student information (ID, name, exam details, room/seat number) with proper formatting and layout. Check if the system allows customization of label templates and supports batch generation. Deduct 3 points if essential information is missing, 5 points if the labels cannot be customized, and 3 points if batch processing is not supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is data input and validation properly implemented?",
+      "description": "Check if the program provides user-friendly interfaces for inputting student data and room information, with appropriate validation mechanisms. Verify if it handles various input formats (manual entry, CSV/Excel import) and validates data integrity. Deduct 5 points if input validation is inadequate, 3 points if only one input method is supported, and 5 points if there's no data sanitization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the output and export functionality comprehensive?",
+      "description": "Assess whether the program provides multiple output formats for room arrangements and student labels (e.g., on-screen display, printable PDF, exportable spreadsheet). Check if pagination and print optimization are implemented for physical printing. Deduct 3 points for each missing export format, 5 points if print optimization is absent, and 5 points if the output cannot be previewed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, browser compatibility issues, print failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time room utilization visualization 2. QR codes on labels for digital verification 3. Automated seating charts with optimal spacing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple sorting mechanisms coexisting) 2. Function modules unrelated to exam arrangement (e.g., a built-in calendar) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/UI rendering/printing functionality), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and accessible?",
+      "description": "Judge whether the interface is intuitive and accessible: 1) Clear navigation between steps 2) Responsive design supporting different devices 3) Accessibility features for users with disabilities. Deduct 5 points for confusing workflow, 3 points for lack of responsiveness, and 5 points for failing basic accessibility standards (contrast, keyboard navigation, screen reader support). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

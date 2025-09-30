@@ -1,0 +1,68 @@
+{
+  "index": 1232,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. Design a Millikan oil drop experiment simulation webpage that allows dynamic changes to the electric field voltage, oil drop height, and oil drop charge; the webpage needs to clearly display the height of two metal plates, with the lower metal plate's height defaulted to 0; the webpage should store multiple experiment records displayed in a list format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core physics simulation of the Millikan oil drop experiment accurately implemented?",
+      "description": "Check whether the code correctly implements the fundamental physics principles of the Millikan oil drop experiment, including the balance between gravitational and electrical forces. Verify that the simulation handles the following equations correctly: F_electric = qE (where q is charge, E is electric field), F_gravity = mg, and whether terminal velocity calculations incorporate air resistance/viscosity. Score 0 if the physics model is incorrect, 5 if basic forces are implemented but with simplifications, and 10 if the complete physics model including air resistance is accurately implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the adjustable parameters (electric field voltage, oil drop height, oil drop charge) properly implemented?",
+      "description": "Evaluate whether the interface provides intuitive controls for adjusting the three key parameters. Check if voltage changes appropriately affect the electric field strength and consequently the oil drop movement. Verify that changing the initial drop height correctly repositions the drop, and that modifying the charge value affects the drop's response to the electric field. Deduct 3 points if any parameter cannot be adjusted, 2 points if adjustments don't immediately reflect in the simulation, and 2 points if parameter ranges are unrealistic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the visualization of the experimental setup correctly displayed?",
+      "description": "Assess whether the webpage clearly shows two metal plates with correct height representation, with the lower plate properly set at height 0. Check if the oil drop is visibly positioned between the plates and its movement is smooth and visually traceable. Verify whether the electric field is visually indicated (e.g., with field lines or color gradients). Deduct 5 points if the metal plates are not clearly defined, 3 points if the relative positioning is incorrect, and 3 points if there's no visual indication of the electric field direction. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the experiment record storage and display functionality fully implemented?",
+      "description": "Check whether the code successfully stores multiple experiment records and displays them in a list format. Verify if each record captures all relevant experimental parameters (voltage, drop charge, initial height) and outcomes (terminal velocity, balance point). Assess whether the records remain available after page refresh using local storage. Deduct 3 points if record persistence isn't implemented, 3 points if the list display is cluttered or hard to read, and 3 points if records lack timestamps or unique identifiers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as extreme parameter inputs, browser compatibility issues, mobile responsiveness) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time data graphing of drop movement 2. Physics calculation formulas displayed alongside simulation 3. Comparison tool between experimental and theoretical values). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to reset the experiment) 2. Function modules unrelated to the Millikan experiment (e.g., unrelated animations or calculators) 3. Fancy effects that affect performance (e.g., unnecessary 3D effects that slow down the simulation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/view/data management layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for the experiment process. Deduct 5 points for each operation without feedback, 3 points for visual jitter during oil drop movement, and 5 points for hard-to-find parameter controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

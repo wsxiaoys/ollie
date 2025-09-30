@@ -1,0 +1,68 @@
+{
+  "index": 30,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Pay attention to ensure that the generated code is executable.\n\nPlease use HTML and JavaScript to implement a friend system.\n\n**Task**: Implement a friend system where players can add friends and play games or battle with them.\n\n**Hint**: Set up a friend list and invitation functionality, allowing players to add friends through usernames or IDs.\nGame, and include some comments in the code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the friend list system fully implemented?",
+      "description": "Check whether the code implements a complete friend list system with data structure design (user profiles with unique IDs), CRUD operations (add, remove, update, search friends), and proper state management. Score 0 if the friend list is not implemented, 5 if only basic display is implemented, and 10 if all features including categorization, online status indicators, and search functionality are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the friend invitation functionality properly implemented?",
+      "description": "Evaluate whether the code includes a complete invitation system with sending invitations, accepting/rejecting mechanisms, notification handling, and validation checks (preventing duplicate invitations, handling expired invitations). Deduct 5 points if there's no confirmation flow, and 3 points if no notification system exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user authentication and identification system implemented?",
+      "description": "Check whether the code implements user authentication (login/registration), unique identification (username/ID system), and proper session management. Assess if there are security measures for friend requests and profile visibility settings. Deduct 5 points if authentication is missing, 3 points if there's no session persistence. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game/battle invitation system properly implemented?",
+      "description": "Evaluate whether the code handles game/battle invitations between friends, including invitation sending, acceptance/rejection flows, and game session creation. Check if there's proper state handling for ongoing games, matchmaking logic, and multiplayer session management. Deduct 5 points if the invitation flow is incomplete, 3 points if there's no game state management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network failures, friend request spam, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time friend activity feed 2. Friend recommendations based on gaming preferences 3. Integrated chat system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple friend-finding mechanisms) 2. Function modules unrelated to the friend system (e.g., unnecessary game features) 3. Fancy effects that affect performance (e.g., excessive animations in the friend list). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data layers), code organization, documentation quality (especially the requested comments for other developers), and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comments are insufficient or unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling of friend lists, and 5 points for hard-to-find key function buttons (like add friend or send invitation). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 782,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Help me develop a homepage using React 18+ and Tailwind CSS.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the React 18+ project setup correctly implemented?",
+      "description": "Evaluate if the code sets up a proper React 18+ project with necessary dependencies, configuration files (package.json, tsconfig.json if TypeScript), and appropriate folder structure. Check if React 18 specific features like createRoot are properly utilized instead of legacy ReactDOM.render. Score 0 if React 18+ is not used, 5 points if basic setup exists but lacks proper configuration, 10 points for a complete and well-structured React 18+ project setup.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Tailwind CSS properly integrated and effectively utilized?",
+      "description": "Verify that Tailwind CSS is correctly installed and configured (tailwind.config.js present with proper settings). Check if the code leverages Tailwind's utility classes appropriately instead of custom CSS, uses responsive design classes (sm:, md:, lg:, etc.), and follows Tailwind best practices. Deduct 5 points if Tailwind is installed but barely used, 3 points if configuration is incomplete, and 2 points if utility classes are used inconsistently. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are homepage components properly structured and organized?",
+      "description": "Assess if the homepage is broken down into logical, reusable components (header, navigation, hero section, features, footer, etc.). Check if components follow single responsibility principle and have clear props interfaces. Deduct 3 points for monolithic components, 3 points for prop drilling issues, and 4 points if components are not properly structured or reusable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the homepage responsive across different device sizes?",
+      "description": "Evaluate if the homepage renders correctly on mobile, tablet, and desktop screens using Tailwind's responsive utilities. Check for appropriate use of flex/grid layouts, proper image handling, and text scaling. Deduct 5 points if the layout breaks on mobile devices, 3 points if tablet view has significant issues, and 2 points for minor responsive problems. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (missing data, loading states, error handling, etc.) and provides appropriate fallbacks. Check for proper form validation if forms exist, and handling of asynchronous operations. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no error handling or loading states exist, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Skeleton loading screens 2. Subtle micro-interactions 3. Dark/light mode toggle 4. Animated page transitions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate component implementations that serve similar purposes 2. Unnecessary third-party libraries for tasks that could be accomplished with React/Tailwind 3. Overengineered solutions for simple problems. Deduct 3 points for each redundancy found, and directly deduct 10 points if core functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (proper file/folder structure), component reusability, clean code practices, and performance optimizations (like React.memo, useMemo, useCallback). Deduct 3 points for global state mismanagement, 3 points for excessive re-renders, 2 points for inconsistent naming conventions, and 2 points for lack of code splitting where appropriate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern web design principles: 1) Consistent color scheme aligned with Tailwind's color palette 2) Proper spacing using Tailwind's spacing utilities 3) Typography hierarchy with appropriate font sizes and weights 4) Visual hierarchy guiding user attention. Deduct 3 points for inconsistent styling, 3 points for poor contrast or accessibility issues, and 4 points for cluttered layouts or unbalanced visual elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether interactive elements provide appropriate feedback: 1) Hover/focus states for clickable elements 2) Smooth transitions for state changes 3) Loading indicators for asynchronous operations 4) Appropriate animations that enhance UX without being distracting. Deduct 3 points for missing interaction states, 3 points for jarring transitions, and 4 points for confusing navigation patterns or interaction flows. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1374,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. I want to create a web-based big data monitoring platform that sources data from Excel spreadsheets stored on my local computer.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Excel data import and parsing functionality",
+      "description": "Review whether the code properly implements Excel file import functionality using appropriate libraries (SheetJS/xlsx, Papa Parse, etc.). Check if the implementation can handle different Excel formats (.xlsx, .csv) and whether it includes robust data validation. Score 0 if file import is not implemented, 5 if only basic parsing without validation is included, and 10 if it handles multiple formats with error handling and validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Data processing and transformation pipeline",
+      "description": "Evaluate the data processing pipeline from raw Excel data to visualization-ready formats. Check for proper data cleaning, normalization, aggregation functions, and handling of missing/invalid values. Deduct 5 points if no data transformation logic exists, 3 points if transformations are inefficient (e.g., multiple iterations over large datasets), and 2 points if edge cases (null values, non-numeric data) are not handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Visualization components and dashboard design",
+      "description": "Check if appropriate visualization libraries (D3.js, Chart.js, Highcharts, etc.) are used to create dynamic, interactive visualizations. Verify if the dashboard includes essential big data visualizations (time series, distributions, correlations, etc.) and allows for custom view configurations. Deduct 5 points if visualizations are static, 3 points if interactivity is limited, and 5 points if the visualizations are not appropriate for the data types. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Real-time monitoring and automatic refresh",
+      "description": "Assess if the platform implements file watching/monitoring to detect changes in source Excel files and provides real-time or scheduled data refresh functionality. Check for WebSocket implementation or polling mechanisms with configurable intervals. Give 0 points if no refresh capability exists, 5 points for basic manual refresh, and 10 points for automatic detection with configurable refresh rates and change highlighting.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted Excel files, network interruption, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-driven anomaly detection in data 2. Natural language queries for data exploration 3. Automated insights generation 4. Custom alert thresholds with notifications). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple data parsing methods coexisting) 2. Function modules unrelated to data monitoring (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down rendering of critical data). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/user interface layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern dashboard design principles: 1) Harmonious color matching optimized for data visualization (no more than 3 primary colors) 2) Proper layout spacing with logical grouping of related metrics 3) Professional typography system (body font size ≥ 14px, clear hierarchy between titles and data). Deduct 3 points for each crowded visual element, 5 points for a color scheme that makes data hard to interpret, and 5 points for chaotic dashboard organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to data dashboard best practices: 1) Filter/selection feedback delay ≤ 100ms 2) Smooth transitions when switching between views or applying filters 3) Clear visual indicators for loading states and data freshness. Deduct 5 points for operations without loading feedback, 3 points for jerky transitions when navigating between views, and 5 points if key metrics or controls are hidden behind unintuitive menus. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

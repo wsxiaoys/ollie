@@ -1,0 +1,68 @@
+{
+  "index": 1210,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and demonstrable. Please write a complete smart locker system for a supermarket and teach me how to use it.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the smart locker hardware simulation system fully implemented?",
+      "description": "Review whether the code accurately simulates locker hardware through HTML/JavaScript, including locker grid layout, electronic lock status indicators, RFID/QR code scanning simulation, and payment terminal integration. Score 0 if core hardware simulation is missing, 5 if only basic locker display is implemented, and 10 if complete hardware interaction simulation including sensors, displays, and payment systems is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user authentication and rental process implemented?",
+      "description": "Check whether the system includes multiple authentication methods (QR code, RFID card, mobile app), rental flow management, and real-time locker availability updates. The system should handle user registration, payment processing, and locker assignment logic. Deduct 5 points if payment integration is missing, and 3 points if user session management is not handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the locker management and monitoring system designed with admin functionality?",
+      "description": "Evaluate whether the admin panel includes real-time locker status monitoring, maintenance alerts, usage analytics, and remote control capabilities. The system should provide occupancy tracking, fault detection, and automated cleaning schedules. Deduct 5 points if real-time monitoring is not implemented, and 3 points if maintenance workflow is missing. Check whether emergency override and bulk operations are available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete rental lifecycle and data persistence constructed?",
+      "description": "Check whether the code includes complete rental lifecycle management, including booking, access, extension, and return processes. Evaluate data persistence for user history, payment records, and system logs. Deduct 5 points if database integration is not implemented, and 3 points if rental history tracking is missing. Give 10 points if complete data management with backup and recovery mechanisms are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as payment failures, hardware malfunctions, network interruptions, invalid access attempts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include retry mechanisms, fallback procedures, and comprehensive error logging, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance user experience (e.g., 1. AI-powered optimal locker recommendation 2. Mobile app integration with push notifications 3. Social sharing of locker locations 4. Predictive maintenance alerts 5. Multi-language support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple payment processing logics coexisting) 2. Function modules unrelated to locker management (e.g., built-in games or social media feeds) 3. Overly complex animations that affect performance (e.g., excessive 3D effects on locker doors). Deduct 3 points for each redundancy found, and directly deduct 10 points if core locker functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating authentication/payment/hardware control layers), database schema design, API structure, and error handling patterns. Deduct 5 points if global state pollution is found or proper MVC/MVP patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no input validation or security measures are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional kiosk standards?",
+      "description": "Evaluate whether the UI design follows kiosk usability principles: 1) High contrast colors suitable for various lighting conditions 2) Large touch targets (minimum 44px) with adequate spacing 3) Clear visual hierarchy with prominent call-to-action buttons 4) Accessibility features for disabled users. Deduct 3 points for each hard-to-read text element, 5 points for poor color contrast ratios, and 5 points for cramped button layouts unsuitable for touch interaction. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user workflow intuitive and efficient?",
+      "description": "Judge whether the user journey is optimized for quick transactions: 1) Rental process completable within 60 seconds 2) Clear progress indicators and next-step guidance 3) Minimal cognitive load with simple instructions 4) Effective error recovery paths. Deduct 5 points for each confusing workflow step, 3 points for missing progress feedback, and 5 points for unclear error messages that don't guide users to resolution. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

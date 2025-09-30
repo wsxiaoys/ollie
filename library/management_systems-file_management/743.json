@@ -1,0 +1,68 @@
+{
+  "index": 743,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Please develop a mini-program that allows users to select photos from an album and upload them to a cloud platform. Provide all files, including cloud functions, along with detailed code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the local photo selection function fully implemented?",
+      "description": "Review whether the code properly implements photo selection from the album, including handling permissions, supporting multiple photo selection, and providing image previews. Check if there are file type and size validations, and if users can deselect/reselect photos. Score 0 if selection functionality is missing, 5 if basic selection works but lacks validations, and 10 if all features including preview and validation are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cloud upload functionality correctly implemented?",
+      "description": "Evaluate the implementation of cloud upload mechanisms, including proper authentication, progress indicators, retry mechanisms for failed uploads, and handling of various network conditions. Check if there's proper error handling for server-side rejections. Deduct 5 points if upload progress isn't shown, 3 points if there's no retry mechanism, and 2 points if network transitions aren't handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the cloud functions properly implemented?",
+      "description": "Check if cloud functions include proper authentication mechanisms, validation of uploaded content, secure storage implementation, and appropriate response handling. Verify if there are security measures against unauthorized access and proper logging. Deduct 5 points for missing authentication, 3 points for insufficient validation, and 2 points for poor error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there appropriate file/image processing implementation?",
+      "description": "Assess whether the code includes image optimization before upload (compression, resizing), support for various image formats, and appropriate metadata handling. Check if there are options for quality selection and if EXIF data is properly preserved or stripped as needed. Deduct 5 points for no image optimization, 3 points for limited format support, and 2 points for poor metadata handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission denials, corrupt files, network interruption, server errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered image categorization 2. Automatic album creation based on content 3. Social sharing integration 4. Background upload capability). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple upload mechanisms) 2. Function modules unrelated to photo uploading (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations during upload). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/upload logic/cloud service layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload button feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback during upload process. Deduct 5 points for each operation without feedback, 3 points for jumpy animations during selection/upload, and 5 points for confusing upload status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "medium"
+}

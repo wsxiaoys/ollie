@@ -1,0 +1,68 @@
+{
+  "index": 658,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable whenever possible. Design an online webpage screenshot tool that, upon inputting a URL, generates a thumbnail screenshot of the corresponding webpage and allows for download and saving.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the URL input and validation system properly implemented?",
+      "description": "Check whether the code includes proper URL validation (valid URL format check, protocol validation, existence verification). Evaluate the error handling for invalid URLs, including appropriate user feedback. Score 0 if URL validation is missing, 5 if basic validation exists but edge cases are not handled, and 10 if comprehensive validation with informative error messages is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the screenshot generation mechanism properly implemented?",
+      "description": "Review the implementation of the screenshot generation process. Check if it uses appropriate methods (server-side rendering, headless browser solutions like Puppeteer, or external API services). Evaluate if the code handles timeouts, large pages, and authentication challenges. Deduct 5 points if there's no error handling for failed screenshot attempts, and 3 points if only a single screenshot method is supported without fallbacks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the thumbnail processing functionality complete?",
+      "description": "Examine if the code includes image processing capabilities for the generated screenshots (resizing, cropping, compression). Check if thumbnail dimensions are configurable and if the aspect ratio is properly maintained. Deduct 5 points if image quality optimization is missing, and 3 points if the code doesn't handle different screen sizes appropriately. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the download and saving mechanism well-implemented?",
+      "description": "Evaluate whether the code provides multiple download format options (PNG, JPEG, PDF), proper file naming conventions, and secure temporary storage. Check if the code includes progress indicators during download and handles potential browser download restrictions. Deduct 5 points if only a single format is supported, and 3 points if the download process lacks user feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, timeouts, CORS issues, pages with anti-scraping measures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch processing multiple URLs 2. Advanced screenshot editing capabilities 3. Screenshot comparison tool 4. Scheduled screenshot capturing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar screenshot functions 2. Function modules unrelated to screenshot generation and processing 3. Fancy effects that affect performance or load time unnecessarily. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/screenshot generation/image processing layers), error handling patterns, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no consideration for resource cleanup or memory management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Appropriate visual hierarchy for the URL input, progress indicators, and download buttons. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Feedback while the screenshot is being generated 2) Progress indicators with accurate estimation 3) Smooth transitions between states (loading, preview, download) 4) Appropriate loading animations. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between states, and 5 points for confusing user flow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Web Scraping",
+  "difficulty": "medium"
+}

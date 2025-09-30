@@ -1,0 +1,68 @@
+{
+  "index": 913,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be demonstrated. Help me create a web mini-game that randomly generates currently trending hit songs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the song generation algorithm properly implemented?",
+      "description": "Evaluate if the code implements a robust random song generation algorithm that can produce varied yet recognizable trending song structures. Check if it incorporates parameters for tempo, key, chord progressions, and melodic patterns found in current hit songs. Score 0 if no generation logic exists, 5 if basic random selection is implemented, and 10 if it includes sophisticated music theory principles with genre variations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the trending song data source integration functional?",
+      "description": "Examine whether the application connects to an external API (like Spotify, Billboard, or LastFM) to retrieve current trending song data, or includes a manually curated database with recent hits. Check if the data is properly refreshed and if song characteristics are extracted correctly. Deduct 5 points if the trending data is outdated or static, and 3 points if the integration is unreliable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio synthesis and playback system well-implemented?",
+      "description": "Assess whether the code utilizes Web Audio API effectively to synthesize and play the generated music. Look for implementation of proper sound generation, effects processing, and mixing. Test if the playback controls (play, pause, stop) work smoothly without audio glitches. Deduct 5 points for poor sound quality, 3 points for playback inconsistencies, and 5 points if volume control is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game include engaging interactive elements?",
+      "description": "Verify if the mini-game incorporates interactive elements that make it engaging as a game rather than just a music generator. This could include features like guessing the original song, rating/scoring system, customization options, or challenges. Deduct 5 points if user interaction is minimal, and 3 points if the gamification elements don't enhance the experience. Give 10 points if the game is genuinely fun and engaging.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, audio playback issues, browser compatibility problems, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visualizing the music with animated elements 2. Social sharing of generated songs with custom album art 3. Voice or instrument recognition to influence generation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio playback systems) 2. Function modules unrelated to music generation or game mechanics (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive particle effects or 3D rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating music generation logic, audio engine, UI components, and game mechanics), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

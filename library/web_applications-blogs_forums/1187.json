@@ -1,0 +1,68 @@
+{
+  "index": 1187,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. I need your help to create a webpage that can run on Linux, similar to a forum style, where users can register and post.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is user registration and authentication functionality implemented?",
+      "description": "Check if the code implements a complete user registration system with input validation, password hashing, and authentication flow. Score 0 if missing entirely, 5 if basic implementation exists but lacks security features, 10 if fully implemented with proper validation, secure password storage (bcrypt/Argon2), and session/token management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is post creation and management functionality implemented?",
+      "description": "Evaluate if users can create, edit, and delete posts with proper authorization checks. Check for rich text support, image uploading capability, and post metadata handling (timestamps, author info). Score 0 if missing, 5 if basic implementation exists but lacks features like rich text or image support, 10 if comprehensively implemented with all features and proper authorization controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the database design and data persistence layer properly implemented?",
+      "description": "Review the database schema design, relationships between users and posts tables, and query optimization. Expect proper normalization, indexes on frequently queried columns, and prepared statements to prevent SQL injection. Deduct 5 points if no database migrations/schema management exists, 3 points if relationships are poorly designed, and 3 points if queries are vulnerable to injection. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the forum optimized for Linux environment deployment?",
+      "description": "Check if the deployment process considers Linux-specific requirements: proper file permissions setup, compatibility with common Linux web servers (Apache/Nginx), environment configuration through .env files or similar, and process management considerations (systemd service files or PM2 config). Deduct 5 points if deployment instructions are missing, 5 points if permissions issues aren't addressed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common abnormal situations (such as form validation failures, database connection issues, rate limiting for registration/login attempts, and XSS/CSRF protection). Code should provide friendly error messages and recovery mechanisms. Score 10 for comprehensive error handling and security measures, 5 for average robustness with some gaps, and 0 if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time notifications for replies 2. Markdown or rich text editor 3. User reputation/karma system 4. Topic categorization and tagging). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple authentication methods without clear purpose) 2. Function modules unrelated to forum functionality (e.g., unnecessary analytics overkill) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (MVC or similar architecture), code reusability, documentation quality, and test coverage. Check for proper separation of concerns between frontend and backend. Deduct 5 points if global state pollution is found; deduct 5 points if code duplication rate is high; deduct 5 points if no automated tests exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows modern forum UI principles: 1) Clean thread listing with clear hierarchy 2) Responsive design that works on mobile and desktop 3) Accessible color contrast (WCAG AA compliance) 4) Consistent typography system. Deduct 3 points for each accessibility issue, 5 points for non-responsive layouts, and 5 points for cluttered information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether interactions meet modern web standards: 1) Form submissions provide immediate feedback 2) Page transitions avoid full reloads when possible (AJAX/SPA approach) 3) Infinite scrolling or pagination for thread lists 4) Optimistic UI updates. Deduct 5 points for jarring page reloads, 3 points for lack of loading indicators, and 5 points for forms that don't preserve data on validation errors. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Blogs/Forums",
+  "difficulty": "medium"
+}

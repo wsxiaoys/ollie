@@ -1,0 +1,68 @@
+{
+  "index": 911,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable whenever possible. This is for an industrial component defect detection system developed with Vue 3.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete defect detection workflow implemented?",
+      "description": "Check whether the code properly implements the entire industrial defect detection pipeline: image acquisition, preprocessing, feature extraction, classification/detection algorithms, and result visualization. Score 0 if the core detection workflow is missing, 5 points if basic detection is implemented but lacks optimization, and 10 points if a comprehensive pipeline with multiple detection techniques is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue 3 implementation technically correct and optimized?",
+      "description": "Evaluate the Vue 3 specific implementation including proper use of Composition API, reactive state management, component design, and Vue lifecycle hooks. Look for proper implementation of <script setup>, ref/reactive usage, and computed properties. Deduct 3 points for each anti-pattern (like not using shallowRef for large objects), 5 points if Suspense is not properly handled for async components, and 3 points if Vue 3 performance features (like v-memo) are not utilized where appropriate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time image processing and analysis functionality implemented?",
+      "description": "Verify if the system can process images in real-time with WebGL/Web Workers to avoid UI blocking, has proper buffering mechanisms, and implements efficient image processing algorithms. Check if WebRTC is used for camera stream handling and if processing pipeline is optimized. Deduct 5 points if processing causes UI freezes, 3 points if image processing is not parallelized, and 3 points if frame rate drops below 15 FPS for standard operations. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the defect analysis and reporting system comprehensive?",
+      "description": "Examine if the system provides detailed defect classifications, statistical analysis, historical comparisons, and exportable reports. Check for visualization of defect patterns over time, severity classification, and integration with industrial standards. Deduct 3 points if reports lack visual data representation, 5 points if historical analysis is missing, and 3 points if export formats are limited (should support at least PDF, CSV, and JSON). Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common industrial environment issues (network instability, hardware failures, image corruption), implements proper error boundaries, and has recovery mechanisms. Code should handle edge cases like varying lighting conditions and unexpected object presentations. Deduct 5 points if critical error handling is missing, 3 points if there's no degraded functionality mode, and 3 points if error logging/reporting is inadequate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the industrial experience (e.g., 1. AI-assisted defect prediction 2. Adaptive learning from operator feedback 3. Real-time defect classification confidence scores 4. Automated camera calibration). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant image processing pipelines that accomplish the same goal 2. Unnecessary UI elements that distract from the main industrial workflow 3. Heavy animations or effects that could impact system performance in an industrial setting. Deduct 3 points for each redundancy found, and directly deduct 10 points if core detection functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the industrial-grade architecture (separation of detection algorithms/UI/data storage), automated testing for vision algorithms accuracy, CI/CD integration, and error telemetry. Deduct 3 points if global state is overused, 3 points if test coverage for critical detection algorithms is below 80%, 2 points if the build process isn't optimized for industrial settings, and 2 points if there's no performance profiling implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet industrial UI/UX standards?",
+      "description": "Evaluate if the UI follows industrial design principles: 1) High contrast for factory environments 2) Touch-friendly targets (≥44px) for gloved operation 3) Clear iconography with text labels 4) Proper information hierarchy for critical alerts. Deduct 3 points for poor visibility under varied lighting, 3 points for controls too small for industrial use, 2 points for poor color coding of defects, and 2 points for cluttered dashboards. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the system performance optimized for industrial requirements?",
+      "description": "Judge whether the system meets industrial performance needs: 1) Initial load time ≤3 seconds 2) Detection pipeline latency ≤200ms 3) Responsive UI even during heavy processing 4) Efficient memory management for extended operation. Deduct 3 points if memory leaks occur during continuous operation, 3 points if the system can't handle industrial camera resolutions at full frame rate, 2 points for inefficient asset loading, and 2 points if there's no performance degradation strategy. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1784,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration purposes. Help me create a backend processing page for a transfer record. The transfer is from Changsha Bank, account name \"Changsha Funding Service Center\", account number 6282*************** to China Agricultural Bank, recipient name \"Li Jianwei\", account number 6228***************, transfer amount 44,000 yuan, transfer time March 7, 2025, 15:30:01, arrival time 1-2 business days, with the note \"Student subsidy\".",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the transfer record display fully implemented?",
+      "description": "Review whether the code accurately displays all required transaction details (sender bank, sender name, sender account, recipient bank, recipient name, recipient account, amount, transfer time, expected arrival time, and note). Score 0 if critical information is missing, 5 if basic display is implemented but lacks formatting, and 10 if all details are properly formatted (e.g., currency formatted as '¥44,000.00', account numbers partially masked).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the backend processing logic properly implemented?",
+      "description": "Check if the code includes proper backend processing logic for transfer records, including data validation, transaction record creation, and handling state transitions. Deduct 5 points if input validation is missing, 3 points if transaction state management is incomplete, and 2 points if logging mechanism is insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a proper receipt/confirmation generation feature?",
+      "description": "Evaluate whether the code implements functionality to generate a transfer receipt or confirmation that can be viewed, printed, or downloaded. Check for features like PDF generation, print-friendly formatting, or save-to-file options. Score 0 if completely missing, 5 if basic receipt is available but lacks formatting, and 10 if a professional receipt with all transaction details and bank identifiers is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is sensitive data properly handled and protected?",
+      "description": "Assess how the code handles sensitive financial information. Check for proper masking of account numbers (showing only last 4 digits), secure storage practices, and protection against data exposure. Deduct 5 points if account numbers are fully exposed, 3 points if masking is inconsistent, and 3 points if there's no distinction between public and sensitive data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as failed transfers, network errors, data inconsistencies) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time transfer status tracking 2. Integration with popular messaging apps for notifications 3. QR code generation for the receipt). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation logics for the same field) 2. Function modules unrelated to transfer records (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), unit test coverage, and error handling. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if error handling is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows financial application design principles: 1) Clean, trust-inspiring color scheme (preferably using bank brand colors) 2) Proper layout spacing with clear visual hierarchy 3) Professional typography (readable font sizes, proper emphasis on important financial information). Deduct 3 points for each crowded visual element, 5 points for unprofessional color combinations, and 5 points for chaotic information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the user interactions are appropriate for a financial application: 1) Confirmation dialogs before critical actions 2) Clear loading states during processing 3) Success/failure notifications with appropriate next steps. Deduct 5 points for missing confirmation on important actions, 3 points for lack of loading indicators, and 5 points for unclear transaction outcome feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

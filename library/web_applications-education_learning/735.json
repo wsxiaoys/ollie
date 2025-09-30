@@ -1,0 +1,68 @@
+{
+  "index": 735,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. I want to implement a side-by-side translation comparison for reading!",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the side-by-side translation comparison layout fully implemented?",
+      "description": "Review whether the code accurately implements a dual-pane layout system through HTML/CSS/JavaScript, including responsive design for different screen sizes, synchronized scrolling between source and target text panels, and proper text alignment mechanisms. Score 0 if basic dual-pane structure is missing, 5 if only static layout is implemented without synchronization, and 10 if includes advanced features like paragraph-level alignment and mobile-responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the text input and processing functionality comprehensive?",
+      "description": "Check whether the implementation supports multiple text input methods (manual input, file upload, URL fetching), proper text parsing and segmentation (sentence/paragraph level), and format preservation. Evaluate if it handles various text formats (plain text, markdown, HTML). Deduct 5 points if file upload is not supported, 3 points if text segmentation is poorly implemented. Full score requires support for at least 3 input methods with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the translation integration and management system robust?",
+      "description": "Evaluate whether the system integrates with translation APIs (Google Translate, DeepL, etc.) or provides manual translation input capabilities. Check if it includes translation caching, batch processing for large texts, and translation quality indicators. Deduct 5 points if no API integration exists, 3 points if caching mechanism is missing. Requires proper API key management and fallback mechanisms for service failures.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the reading assistance and navigation features complete?",
+      "description": "Check whether the code includes comprehensive reading aids such as text highlighting, bookmarking, progress tracking, search functionality across both languages, and export capabilities (PDF, text files). Evaluate if it provides reading statistics and customizable reading preferences. Deduct 5 points if search functionality is missing, 3 points if no progress tracking exists. Give 10 points if includes advanced features like reading speed analysis and custom note-taking.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, large text processing, network interruption, invalid file formats, encoding issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like empty inputs, malformed text, and service timeouts, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the reading experience (e.g., 1. Real-time dictionary lookup on hover 2. AI-powered reading comprehension questions 3. Voice narration for both languages 4. Collaborative annotation system 5. Reading analytics dashboard). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text processors coexisting) 2. Function modules unrelated to translation comparison (e.g., built-in games or social media integration) 3. Fancy effects that affect reading performance (e.g., distracting animations during text display). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core reading functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating translation logic/UI components/data management layers), proper state management, and build process automation. Deduct 5 points if global state pollution is found or component architecture is poorly structured; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper dependency management or build process exists. The full score requires clean architecture with proper separation of concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional reading application standards?",
+      "description": "Evaluate whether the design optimizes reading experience: 1) High contrast text with proper background colors for extended reading 2) Typography system with adjustable font sizes (minimum 14px, maximum 24px) and line heights (1.4-1.8x) 3) Proper spacing between translation panels (minimum 20px gap) 4) Reading-friendly color scheme without eye strain. Deduct 3 points for each readability issue, 5 points for poor contrast ratios, and 5 points for cramped text layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the reading interaction smooth and intuitive?",
+      "description": "Judge whether the reading interactions enhance user experience: 1) Smooth synchronized scrolling between panels with minimal lag (<50ms) 2) Quick text selection and highlighting responses 3) Intuitive navigation controls with keyboard shortcuts support 4) Seamless switching between different view modes. Deduct 5 points for each laggy interaction, 3 points for missing keyboard shortcuts, and 5 points for non-intuitive navigation patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

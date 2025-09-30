@@ -1,0 +1,68 @@
+{
+  "index": 1422,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Take care to ensure the code you produce is executable when displayed. Write a program that can monitor in real-time single transactions equal to 300,000 shares (3,000 lots) on the ChiNext (Growth Enterprise Market) board stocks on mobile phones, excluding ST stocks.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the real-time stock monitoring system properly implemented?",
+      "description": "Review whether the code accurately implements a real-time monitoring system that tracks ChiNext board stocks with transactions of exactly 300,000 shares (3,000 lots), with proper filtering for ST stocks. The implementation should include data retrieval, filtering logic, and appropriate triggers when conditions are met. Score 0 if core monitoring logic is missing, 5 if basic monitoring is implemented but with deficiencies, and 10 if all requirements are fully satisfied with efficient algorithms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data source connection and real-time updates properly handled?",
+      "description": "Check whether the implementation connects to a reliable stock market data feed (like an API from a financial data provider), handles connection management, implements proper polling or WebSocket for real-time updates, and includes error handling for connection issues. Deduct 5 points if data retrieval is not real-time or lacks reliability mechanisms, and 3 points if error handling for network issues is insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the ChiNext board filtering and ST stock exclusion properly implemented?",
+      "description": "Evaluate whether the code correctly identifies ChiNext board stocks (usually by stock code prefix or through API parameters) and properly filters out ST stocks. The implementation should account for changes in stock status and maintain an updated list. Deduct 5 points if the ChiNext filtering is inaccurate, and 5 points if ST stock exclusion logic is missing or flawed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the 300,000 shares (3,000 lots) transaction detection accurate?",
+      "description": "Check if the code precisely detects single transactions equal to exactly 300,000 shares, not aggregated multiple smaller transactions. The implementation should distinguish between normal trading volume and the specific transaction size being monitored. Deduct 5 points if the detection cannot differentiate between single large transactions and accumulated volume, and 5 points if the volume calculation contains errors or ambiguities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as market data delays, API failures, irregular trading hours, trading halts, etc.) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Historical pattern analysis of 300,000-share transactions 2. Auto-correlation with news events when large transactions occur 3. Visual heatmaps of transaction frequency by stock). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems) 2. Function modules unrelated to stock monitoring (e.g., a built-in general news reader) 3. Fancy effects that affect performance (e.g., excessive animations that drain battery). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data retrieval/processing/notification layers), unit test coverage, and mobile-specific optimizations for battery and data usage. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if mobile-specific optimizations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the mobile interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Harmonious color matching suitable for financial applications (no more than 3 primary colors) 2) Proper layout spacing for touch targets (at least 44x44pt) 3) Professional font system (body font size ≥ 16px for readability). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for poorly organized data presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile notification and alert system effective?",
+      "description": "Judge whether the alert system for detected transactions is properly implemented for mobile: 1) Immediate push notifications when transactions are detected 2) Configurable alert sounds/vibrations 3) Background operation capability with battery optimization. Deduct 5 points for notifications with >5 second delay, 3 points for lack of configuration options, and 5 points for excessive battery drain in background mode. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

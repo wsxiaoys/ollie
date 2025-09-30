@@ -1,0 +1,68 @@
+{
+  "index": 491,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. ======== ROLE ========\nYou are an experienced code expert. Given a software development requirement description, you are required to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You should always generate complete, runnable project code. Please ensure the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Before final output, carefully review and check all code to evaluate its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nDevelop a 3D video effect editor where users can add three-dimensional transformation effects (such as rotation, scaling, translation) after uploading videos. Users should be able to adjust 3D parameters and animation curves through visual controllers, preview in real-time, and render the effects to the final exported video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D video transformation system fully implemented?",
+      "description": "Review whether the code accurately implements 3D transformation matrices (rotation, scaling, translation) through WebGL/Three.js, and whether it includes proper video texture mapping and shader implementation. Check if all three transformation types work correctly with mathematical precision. Score 0 if core 3D rendering is not implemented, 5 if only basic transformations work, and 10 if all 3D effects are fully functional with proper matrix calculations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the visual parameter control system implemented?",
+      "description": "Check whether interactive UI controllers (sliders, rotation handles, bezier curve editors) are implemented for adjusting 3D parameters and animation curves. Evaluate if real-time parameter binding works correctly and if the control interface provides intuitive manipulation. Deduct 5 points if animation curve editing is missing, and 3 points if parameter changes don't reflect immediately. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time preview and rendering pipeline designed?",
+      "description": "Evaluate whether the system implements efficient real-time preview using WebGL frame buffers and whether the final rendering pipeline can export processed video. Check if frame-by-frame processing maintains consistent quality and if rendering progress is properly tracked. Deduct 5 points if preview performance drops below 15fps, and 5 points if final export functionality is missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is complete video lifecycle management constructed?",
+      "description": "Check whether the code includes complete video processing workflow: upload handling, format validation, timeline management, effect layering, and export options. Evaluate if multiple video formats are supported and if project state can be saved/loaded. Deduct 5 points if video format compatibility is limited, and 3 points if project persistence is not implemented. Give 10 points if fully implemented with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, memory overflow during processing, GPU compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Motion blur effects for 3D transformations 2. Keyframe-based animation timeline 3. Preset effect templates 4. Multi-layer composition support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar transformation functions (e.g., multiple rotation calculation methods coexisting) 2. Function modules unrelated to video editing (e.g., built-in social sharing features) 3. Fancy effects that affect rendering performance (e.g., unnecessary particle systems during preview). Deduct 3 points for each redundancy found, and directly deduct 10 points if core video processing is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/3D rendering/UI control layers), shader code organization, and build process automation. Deduct 5 points if WebGL context management is poorly handled or memory leaks exist; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process doesn't include shader compilation and asset optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern video editing interface principles: 1) Professional timeline layout with proper track separation 2) Harmonious color scheme suitable for video editing (dark theme preferred) 3) Consistent iconography and button styling 4) Proper control panel organization. Deduct 3 points for each crowded control area, 5 points for poor contrast affecting usability, and 5 points for inconsistent visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the 3D manipulation and preview interactions conform to professional video editing standards: 1) 3D gizmo manipulation response ≤ 50ms 2) Smooth scrubbing through timeline without frame drops 3) Intuitive drag-and-drop for parameter adjustment 4) Clear visual feedback for all operations. Deduct 5 points for each laggy interaction, 3 points for choppy preview playback, and 5 points for unclear operation states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

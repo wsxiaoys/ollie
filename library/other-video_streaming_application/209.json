@@ -1,0 +1,68 @@
+{
+  "index": 209,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. I am developing a WinUI3 application and need to use ffmpeg.autogen to pull RTSP streams and display the video stream on an Image control, without audio. The video delay needs to be strictly controlled, expected to be within 200ms. Please provide a detailed design solution and output the complete code for direct use.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the RTSP stream pulling mechanism correctly implemented?",
+      "description": "Review whether the code correctly initializes ffmpeg.autogen libraries, sets up the RTSP connection with appropriate parameters (TCP transport preferred over UDP for stability), and includes proper error handling for stream connection failures. Check if the code includes low-latency configurations like setting 'rtsp_flags' to 'prefer_tcp' and using 'fflags' with 'nobuffer' and 'flush_packets' options. Score 0 if ffmpeg initialization is missing, 5 if basic RTSP connection works without optimizations, and 10 if all low-latency configurations are properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the video frame processing pipeline optimized for low latency?",
+      "description": "Evaluate if the decoding pipeline minimizes buffering, uses direct memory access when possible, and implements frame skipping for maintaining real-time playback. Check if the solution correctly handles I-frames vs P-frames, avoids unnecessary frame copying, and implements a proper synchronization mechanism. Deduct 5 points if frame buffering exceeds 2 frames, 3 points if frame conversion adds unnecessary overhead, and 2 points if timestamp management is improperly implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is WinUI3 rendering properly integrated with ffmpeg's output?",
+      "description": "Check if the solution properly converts decoded frames to a format compatible with WinUI3's Image control (like SoftwareBitmap or WriteableBitmap), handles UI thread synchronization properly, and optimizes the rendering process. Verify that the solution includes proper disposal of unmanaged resources and doesn't leak memory during frame conversions. Deduct 5 points if UI thread synchronization is incorrect, 3 points if frame conversion is inefficient, and 2 points if memory management is improper. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is latency measurement and control implemented effectively?",
+      "description": "Evaluate if the solution includes accurate methods to measure end-to-end latency, from capture to display, and implements strategies to maintain it under 200ms. Check for frame timestamp comparison, queue management techniques, or adaptive frame dropping algorithms. Deduct 5 points if no latency measurement is implemented, 3 points if measurements are inaccurate, and 2 points if there's no mechanism to maintain latency targets. Give 10 points for a comprehensive solution with adaptive control mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, malformed packets, codec errors, etc.) and provide friendly error prompts or recovery mechanisms. Check if the solution implements connection retry logic, graceful degradation for poor network conditions, and proper cleanup on errors. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time latency display on the UI 2. Network quality indicator 3. Dynamic quality adjustment based on connection speed 4. Multiple stream support with thumbnail previews). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant initialization of ffmpeg components 2. Unnecessary processing steps in the video pipeline that add latency 3. UI elements or threading models that don't contribute to the core functionality or performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating stream acquisition/decoding/rendering layers), error handling coverage, and resource management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper resource disposal is not implemented. Check if the solution follows RAII principles for unmanaged resources. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the WinUI3 interface follows modern design principles: 1) Proper layout using Grid/StackPanel with appropriate margins 2) High-contrast controls for stream control and status indicators 3) Responsive design that handles window resizing gracefully. Deduct 3 points for each poorly implemented UI element, 5 points for inconsistent styling, and 5 points for poor layout adaptation to different window sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the application provides responsive controls: 1) Stream connect/disconnect response ≤ 100ms 2) Clear visual indicators for buffering states 3) Proper error message display with actionable information. Deduct 5 points for operations without feedback, 3 points for UI freezes during stream operations, and 5 points for confusing state representations. Check if the solution implements proper UI thread marshaling to prevent freezing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Video Streaming Application",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1379,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be demonstrated. Create a tower defense mini-game that can run in HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core tower defense gameplay implemented?",
+      "description": "Evaluate whether the game implements essential tower defense mechanics: enemy pathing along a defined route, tower placement system, firing/damage mechanics, wave progression, and win/loss conditions. Score 0 if core mechanics are missing, 5 if basic mechanics work but lack depth, 10 if all expected tower defense mechanics are properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the tower variety and upgrade system functional?",
+      "description": "Check if the game offers multiple tower types with distinct attributes (damage, range, attack speed, special effects) and an upgrade system. Deduct 3 points if fewer than 3 tower types are implemented, 3 points if towers lack meaningful differentiation, and 5 points if the upgrade mechanism is missing or broken. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the enemy wave system properly designed?",
+      "description": "Assess if the game features increasing difficulty through progressive waves with varied enemy types (different speeds, health, resistances). Check if wave timing, spawn rates, and difficulty scaling are balanced. Deduct 5 points if enemy variety is missing, 3 points if difficulty progression is flat, and 3 points if wave announcements/timing are unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the resource/economy system balanced?",
+      "description": "Evaluate the implementation of a resource system (money/currency) that rewards player actions and enables strategic decisions between saving and spending. Check if initial resources, costs, and earning rates create meaningful choices. Deduct 5 points if the economy is easily exploitable, 5 points if resource gain is too slow/fast disrupting game balance, and 3 points if visual feedback for transactions is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, invalid tower placement, browser resizing, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special tower abilities/combos 2. Environmental interactions 3. Dynamic weather effects that impact gameplay 4. Unlockable achievements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple overlapping damage calculation systems) 2. Function modules unrelated to tower defense (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects causing lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game entities, rendering, and game logic), proper encapsulation of game objects, and efficient collision detection algorithms. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game logic and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Consistent visual theme with harmonious color palette 2) Clear distinction between interactive and decorative elements 3) Intuitive tower selection and placement UI 4) Visible status indicators for health, resources, and wave information. Deduct 3 points for cluttered UI, 5 points for illegible text or icons, and 5 points for confusing game state representation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game interactions meet performance standards: 1) Consistent frame rate (min. 30 FPS) 2) Responsive tower placement/selection (≤ 100ms delay) 3) Clear visual feedback for tower attacks, enemy damage, and resource changes 4) Smooth animations for game entities. Deduct 5 points for stuttering gameplay, 3 points for delayed feedback on critical actions, and 5 points for unclear visual indication of game state changes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

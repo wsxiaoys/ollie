@@ -1,0 +1,68 @@
+{
+  "index": 1178,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate can be executed and displayed. Generate a source code for a card-style, left-right distributed waterfall flow mini-program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the waterfall flow layout correctly implemented?",
+      "description": "Review whether the code accurately implements a left-right distributed waterfall layout where cards dynamically fill columns based on height. Check if items are properly assigned to the shortest column first. Score 0 if the layout is not implemented, 5 if it's basic but has alignment issues, and 10 if it handles dynamic content heights perfectly with proper column balancing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the card component properly designed?",
+      "description": "Evaluate the card component structure, including content containers, image handling, text formatting, and responsive design. Check if cards handle various content types (images, text, etc.) with proper aspect ratios and formatting. Deduct 3 points if images aren't optimized, 3 points if text overflow isn't handled, and 3 points if cards lack proper padding/margins. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the infinite scrolling mechanism implemented?",
+      "description": "Check whether the code includes efficient lazy loading with intersection observers or scroll events for continuous content loading. Evaluate if it implements proper thresholds to trigger loading before reaching the bottom and includes loading indicators. Deduct 5 points for missing loading states, 5 points for performance bottlenecks during scrolling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are mini-program specific features properly utilized?",
+      "description": "Assess whether the implementation leverages mini-program specific capabilities (like wx:for, setData optimizations for WeChat, or equivalent for other platforms). Check for platform adaptation code and proper component lifecycle management. Deduct 3 points for each missed optimization opportunity, 5 points if no platform-specific features are used at all. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors when loading images, varying screen sizes, empty data sets, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Card animations on appearance 2. Pull-to-refresh with custom animations 3. Card interaction effects like swipe actions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation of column heights 2. Unnecessary rerendering of the entire waterfall when only appending items 3. Heavy animations that affect scrolling performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core waterfall functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating waterfall layout logic from data fetching and rendering), reusability of components, and code organization. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between business logic and UI components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the card design follows modern design principles: 1) Consistent card styling with proper shadow depth 2) Proper content padding within cards (following the 8px or 16px grid) 3) Balanced negative space between cards. Deduct 3 points for inconsistent card sizes, 5 points for poor typography hierarchy, and 5 points for improper image handling (stretching/distortion). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the scrolling performance and card loading animations conform to standards: 1) Smooth 60fps scrolling without jank 2) Graceful card appearance animations (fade/slide) under 300ms 3) No layout shifts when new content loads. Deduct 5 points for each visible frame drop during scrolling, 3 points for abrupt content appearances, and 5 points for content jumps during loading. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Mini-Program Development",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 831,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable and ready for demonstration. Create a 3D Earth view by loading satellite imagery and Chinese annotation services from Tianditu (China's map service), combined with SuperMap terrain services. Please provide the project structure and related code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D Earth visualization fully implemented?",
+      "description": "Evaluate whether the code accurately implements a 3D Earth globe using WebGL/Three.js, with proper sphere geometry, texture mapping of satellite imagery, and camera controls for rotation/zoom. Check if the Earth has realistic shading, atmosphere effects, and proper geographic coordinate mapping. Score 0 if basic Earth rendering is missing, 5 if only a simple textured sphere is implemented, and 10 if a complete Earth representation with proper lighting and atmosphere is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Tianditu satellite imagery integration properly implemented?",
+      "description": "Check whether the code correctly implements the Tianditu API for satellite imagery, including proper API key authentication, tile loading system, level-of-detail management, and tile caching mechanisms. Verify if the imagery properly wraps around the Earth sphere with correct geographic positioning. Deduct 5 points if imagery appears distorted, 3 points if there's no caching strategy, and 5 points if tile loading doesn't implement progressive resolution. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are Chinese annotation services correctly integrated?",
+      "description": "Evaluate whether the Chinese annotation layer from Tianditu is properly implemented, including city names, geographic features, and administrative boundaries in Chinese language. Check for proper label placement, collision detection, and dynamic visibility based on zoom level. Deduct 5 points if annotations appear at incorrect geographic positions, 3 points if there's no label prioritization system, and 5 points if Chinese characters render incorrectly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SuperMap terrain service integration successful?",
+      "description": "Assess whether the code correctly implements SuperMap terrain services for elevation data, with proper heightmap sampling, terrain mesh generation, and texture blending. Check if the terrain has appropriate detail levels based on viewing distance, and if it correctly aligns with the satellite imagery. Deduct 5 points if terrain appears disconnected from imagery, 3 points if there's no level-of-detail system, and 5 points if elevation data loading doesn't handle errors gracefully. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruptions, unsupported browsers, and WebGL limitations) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should implement retry logic for failed tile loading, graceful degradation for older browsers, and memory management for large datasets. Give 10 points if all major edge cases are handled, 5 points if only basic error handling exists, and 0 points if exceptions are not addressed.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Time-based day/night cycle visualization 2. Weather data overlay 3. Historical imagery comparison 4. Point-of-interest search functionality 5. Flight path animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple Earth rendering engines coexisting) 2. Function modules unrelated to the Earth visualization (e.g., unrelated UI components) 3. Fancy effects that affect performance (e.g., excessive shader effects that cause framerate drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating visualization logic/data loading/UI layers), dependency management, code reusability, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for UI controls that don't interfere with map visualization 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system with proper support for both Latin and Chinese characters (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Earth rotation and zoom response ≤ 60ms for smooth 60fps rendering 2) Tile loading with proper visual feedback during retrieval 3) Smooth level-of-detail transitions without popping artifacts. Deduct 5 points for jerky rotation or zoom, 3 points for visible texture popping during navigation, and 5 points for unresponsive controls during data loading. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "easy"
+}

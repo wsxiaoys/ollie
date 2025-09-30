@@ -1,0 +1,68 @@
+{
+  "index": 94,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Please help me implement this SVG image using code - an Amazon logo with the Amazon logo in the middle.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Amazon logo accurately implemented in SVG?",
+      "description": "Evaluate whether the SVG code correctly reproduces the Amazon logo with its distinctive curved arrow from 'a' to 'z' (representing that Amazon sells everything from A to Z) and the trademark smile. Check if the proportions match the official logo (roughly 2.55:1 width to height ratio). Deduct 5 points if the curved arrow is missing or inaccurate, 5 points if the smile is incorrect, and 3 points if the text is not properly rendered. Score 0 if the logo is unrecognizable as Amazon, 5 if it's recognizable but with significant inaccuracies, and 10 if it closely matches the official logo.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the SVG implementation optimized and clean?",
+      "description": "Check if the SVG uses appropriate elements (paths, groups, etc.) and if the path data is optimized (not unnecessarily complex). Amazon's logo should use smooth Bézier curves for the smile/arrow. Evaluate if the implementation avoids redundant nodes and uses proper grouping of elements. Deduct 5 points if path data is overly complex or inefficient, 3 points if inappropriate SVG elements are used, and 2 points if there's no grouping of related elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the logo properly centered and positioned?",
+      "description": "Verify that the logo is properly centered within the SVG viewport and that the viewBox attribute is properly set to ensure the logo is fully visible and properly scaled. Check if the implementation handles responsiveness correctly. Deduct 5 points if the logo is off-center, 3 points if parts of the logo are cut off due to improper viewBox settings, and 2 points if the SVG doesn't scale properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the Amazon brand colors implemented correctly?",
+      "description": "Check if the implementation uses the correct official Amazon colors: primarily black for the text and orange (#FF9900) for the smile/arrow. Verify that the colors are applied consistently and appropriately to the different parts of the logo. Deduct 5 points for incorrect color values, 3 points for inconsistent color application, and 2 points for unnecessary additional colors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG implementation handles different viewport sizes, browser compatibility issues, and includes fallback options (like title and description attributes for accessibility). Check if the code includes proper namespacing and avoids ID conflicts. Deduct 5 points if the SVG breaks at different sizes, 3 points for missing accessibility attributes, and 2 points for potential ID conflicts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Subtle animations like the smile/arrow pulsing, 2. Interactive elements that respond to hover/click, 3. Creative integration with background elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary graphical elements not part of the Amazon logo 2. Excessive styling that doesn't contribute to the logo's appearance 3. Complicated animations that distract from the logo itself. Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code interferes with the core logo presentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization, documentation (comments explaining complex parts), and whether the implementation follows SVG best practices. Check if the code avoids hard-coded values where possible and uses meaningful names for elements or groups. Deduct 5 points for poor organization or unclear structure, 3 points for lack of documentation, and 2 points for non-semantic element naming. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual output meet professional design standards?",
+      "description": "Evaluate whether the rendered SVG follows logo design principles: 1) Clean edges without pixelation at any zoom level 2) Proper negative space around the logo (padding) 3) Balanced visual weight between text and graphical elements. Deduct 3 points for jaggy edges or pixelation, 4 points for improper spacing or crowding, and 3 points for imbalanced visual elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the implementation accessible and reusable?",
+      "description": "Judge whether the SVG includes ARIA attributes for screen readers, proper title and description elements, and whether it can be easily integrated into different contexts (web pages, documents, etc.). Check if the SVG avoids fixed dimensions that would prevent proper scaling. Deduct 5 points for missing accessibility features, 3 points for implementation that makes reuse difficult, and 2 points for scaling issues. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Icons/Logos",
+  "difficulty": "medium"
+}

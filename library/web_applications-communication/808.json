@@ -1,0 +1,68 @@
+{
+  "index": 808,
+  "question": "You are a code expert, please utilize your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable whenever possible.\n1. Create a system that allows uploading videos and photos, with the ability to add text annotations\n2. Enable sharing of uploaded videos and photos with others, automatically hiding crucial information during the sharing process\n3. Allow multiple users to simultaneously manage uploaded photos and videos, and modify the annotation information",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload system fully implemented?",
+      "description": "Review whether the code accurately implements a robust file upload system that handles both videos and photos. Check for file type validation, size limits, progress indicators, and proper error handling. Score 0 if basic upload functionality is missing, 5 if only basic uploads work without validation, and 10 if it includes comprehensive upload features including chunked uploads for large videos, retry mechanisms, and format conversion capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the text annotation functionality properly implemented?",
+      "description": "Evaluate the annotation system's capabilities for both videos and photos. For videos, check if it supports timeline-based annotations, frame-specific notes, and persistent storage of annotation data. For photos, verify region-based annotations, text formatting options, and proper positioning. Deduct 5 points if annotations cannot be edited after creation, and 3 points if annotation positioning is imprecise. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the content sharing mechanism secure and functional?",
+      "description": "Examine the sharing system for security features including permission controls, link expiration settings, and most importantly, automatic information hiding/redaction capabilities. Verify that sensitive content (faces, license plates, metadata) can be automatically detected and obscured during sharing. Deduct 5 points if sharing lacks permission settings, and 5 points if the automatic information hiding feature is absent or ineffective. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the collaborative management system implemented effectively?",
+      "description": "Assess whether the code implements real-time collaboration features allowing multiple users to simultaneously manage and annotate content. Check for conflict resolution mechanisms, version control of annotations, activity logging, and role-based permissions. Deduct 5 points if the system lacks real-time updates, and 5 points if there's no conflict resolution strategy. Give 10 points if fully implemented with presence indicators showing who is currently editing what.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, concurrent edits, invalid file formats, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted content moderation 2. Automatic transcription for video annotations 3. Advanced search capabilities for annotations 4. Batch editing tools). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple separate annotation systems) 2. Function modules unrelated to the core requirements (e.g., a built-in game or irrelevant social features) 3. Fancy effects that affect performance (e.g., excessive animations that impact responsiveness). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating upload/annotation/sharing logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

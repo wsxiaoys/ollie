@@ -1,0 +1,68 @@
+{
+  "index": 1640,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration. In the username rules, the 5th and 6th digits together represent the class number. For example, 23010102 represents a student from class 01, similarly, 23010201 represents a student from class 02. Please write a template page to view class exam scores and display the class average score. If a student has multiple scores for the same test, only the highest score should be used for calculation. You can name the template yourself, and set the permission so that teachers can view it. The specific organization of the page is up to you.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the exam score viewing template properly implemented?",
+      "description": "Verify that the template correctly displays individual student scores and calculates class averages. The implementation should correctly parse usernames to extract class numbers (5th and 6th digits) and group students accordingly. Check that the highest score is used for calculation when a student has multiple scores for the same test.Score 0 if the core display logic is missing, 5 if basic score display is implemented but without proper class grouping, and 10 if all requirements are fully implemented including proper class extraction from usernames and highest score selection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the username parsing logic correctly implemented?",
+      "description": "Evaluate whether the code correctly extracts the class number from the 5th and 6th digits of usernames (e.g., 23010102 → class 01, 23010201 → class 02). Check if the extraction logic handles edge cases like invalid usernames or missing digits.Deduct 5 points if the extraction logic is incorrect, 3 points if edge cases aren't handled. Full score if the parsing works correctly for all valid inputs and gracefully handles exceptions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the highest score selection algorithm properly implemented?",
+      "description": "Check whether the code correctly identifies and uses only the highest score when a student has multiple scores for the same test. The algorithm should efficiently compare and select maximum values without unnecessary iterations.Deduct 5 points if the algorithm incorrectly selects scores, 3 points if it works but is inefficient. Score 10 if the implementation is both correct and optimized.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is teacher permission control properly implemented?",
+      "description": "Evaluate whether the template includes proper access control mechanisms that restrict viewing to teachers only. This should include authentication checks and appropriate error messages for unauthorized access attempts.Score 0 if no permission control exists, 5 if basic authentication is implemented but with security flaws, and 10 if robust permission controls are implemented with proper session validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, malformed usernames, empty classes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases.Give 10 points if the code handles all common edge cases, 5 points if handling is average, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Sorting/filtering options 2. Visual data representation like charts 3. Export functionality for reports 4. Comparative analysis between classes).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions 2. Function modules unrelated to exam score viewing 3. Fancy effects that affect performance unnecessarily.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code readability, and maintainability. Check for proper commenting, consistent naming conventions, and reusable components.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code is poorly documented or difficult to maintain.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times).Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for interactive elements like sorting buttons or filters.Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

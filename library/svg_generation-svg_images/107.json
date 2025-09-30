@@ -1,0 +1,68 @@
+{
+  "index": 107,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\nPlease help me implement the following requirements using SVG code. The requirement is to create: Design an animated raindrop effect that shows raindrops sliding down glass.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are the basic raindrop elements properly implemented?",
+      "description": "Check whether SVG elements (path, circle, etc.) are correctly used to create realistic raindrop shapes. The raindrops should have proper form with curved paths to simulate water droplets. Deduct 5 points if drops are simple circles without proper water droplet shape; deduct 7 points if no transparency or gradient is applied to create a water-like appearance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the sliding animation properly implemented?",
+      "description": "Evaluate whether the raindrops slide down naturally with physics-like motion (acceleration, slight zigzagging). Check for proper use of SVG animation elements (animate, animateTransform, animateMotion) or JavaScript-based animation. Deduct 5 points if movement is linear without acceleration; deduct 7 points if all raindrops follow exactly the same path without variation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the glass surface effect convincingly represented?",
+      "description": "Review how the code creates a convincing glass surface illusion through appropriate use of filters, gradients, or opacity. The glass should appear as a surface with appropriate reflective properties. Look for blur effects, subtle transparency, or light refraction simulation. Deduct 5 points if there's no attempt to simulate glass; deduct 3 points if the glass effect lacks realism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the raindrop collision and merging behavior implemented?",
+      "description": "Assess whether the implementation includes realistic raindrop interactions such as collision detection, merging of smaller drops into larger ones, or splitting of drops. Deduct 5 points if there's no collision detection between raindrops; deduct 7 points if raindrops pass through each other without interaction. Award full 10 points only if sophisticated merging behavior is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle varying screen sizes, browser compatibility issues, and performance optimization for animation rendering. Look for proper event handling, memory management for continuous animations, and use of requestAnimationFrame for smooth rendering. Deduct 5 points if the animation causes significant performance issues; deduct 3 points if the code lacks resize handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive raindrops that respond to mouse/touch 2. Realistic sound effects synchronized with raindrop movement 3. Dynamic background that changes with rain intensity). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculation of raindrop positions 2. Unnecessary complex filters that impact performance 3. Unused or duplicate SVG definitions that bloat the code. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core raindrop animation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of raindrop creation, animation, and rendering logic), reuse of SVG patterns/symbols, and optimization techniques such as requestAnimationFrame. Deduct 5 points if global variables are excessively used; deduct 5 points if animation logic is not separated from element creation; deduct 5 points if there's no performance optimization for numerous raindrops. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual effect meet professional design standards?",
+      "description": "Evaluate whether the overall design follows realistic water physics: 1) Appropriate transparency for water droplets 2) Natural color variation in drops based on lighting 3) Proper sizing distribution (smaller at top, potentially larger as they merge). Deduct 3 points for unrealistic water coloring, 5 points for uniform drop sizes that don't vary, and 5 points for unnatural movement patterns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation conforms to natural physics: 1) Smooth acceleration as drops slide down 2) Natural deformation of drops during movement 3) Realistic trail/streak effect behind faster-moving drops. Deduct 5 points for rigid movement without organic feel, 3 points for stuttering animation at higher raindrop counts, and 5 points if drop movement doesn't respond to container size changes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

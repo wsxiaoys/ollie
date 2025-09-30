@@ -1,0 +1,68 @@
+{
+  "index": 794,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Pay attention to ensure that the generated code is executable for display. IoT Platform Web Frontend | Vue3 + Element Plus + ECharts (Data Visualization) | Backend Microservice API Layer | Spring Boot + Spring Cloud (API Gateway, Access Control)",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 component architecture properly implemented?",
+      "description": "Examine whether the code follows Vue3 best practices: Composition API usage, reactive state management, lifecycle hooks integration, and proper component composition. Check for single-responsibility components and proper prop validation. Deduct 5 points if useSetup() is missing where beneficial; deduct 5 points if reactive() and ref() are misused; deduct 3 points if component hierarchy is unnecessarily deep (>4 levels). Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Element Plus UI framework implementation optimal?",
+      "description": "Evaluate whether Element Plus components are properly utilized: lazy loading of components, on-demand importing, theme customization, responsive layouts, and proper form validation. Check if UI components match the application's requirements without overengineering. Deduct 5 points for global imports that cause bundle bloat; deduct 3 points for inadequate form validation; deduct 5 points for inconsistent component styling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are ECharts data visualizations effectively implemented?",
+      "description": "Assess whether ECharts visualizations are properly configured: responsive resizing, appropriate chart types for data representation, performance optimization for large datasets, and interactive features. Charts should provide meaningful insights into IoT data. Deduct 5 points if charts are not resizable; deduct 5 points for inappropriate chart types; deduct 3 points for missing tooltips or legends; deduct 5 points if real-time data updates aren't handled efficiently. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the API integration with Spring Boot backend properly implemented?",
+      "description": "Review the frontend-backend integration: proper API call patterns (Axios/Fetch), error handling, authentication token management, and response parsing. Check for RESTful practices and efficient data fetching strategies. Deduct 5 points for missing loading states; deduct 3 points for improper error handling; deduct 5 points for inefficient data fetching (no pagination/caching); deduct 5 points if authentication headers aren't properly managed. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid API responses, data validation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like offline operation modes for IoT platforms. Give 10 points for comprehensive error handling, 5 points for average implementation, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the IoT platform experience (e.g., 1. Predictive analytics visualization 2. Custom dashboard builder 3. Device digital twins with 3D visualization 4. Real-time collaborative monitoring). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple HTTP client wrappers) 2. Function modules unrelated to IoT monitoring (e.g., unnecessary animations) 3. Performance-heavy features that affect responsiveness (e.g., excessive real-time polling without throttling). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of concerns between data, presentation, and business logic), Pinia/Vuex state management patterns, unit test coverage with Vitest/Jest, and build process automation. Deduct 5 points if global state is overused; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if there's no CI/CD configuration. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent color scheme aligned with IoT platform purpose 2) Proper layout spacing (following the 8px grid system) 3) Professional typography system (readable metrics and data fonts). Deduct 3 points for cluttered dashboards, 5 points for color schemes that hinder data interpretation, and 5 points for poor information hierarchy. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user experience standards: 1) Real-time IoT data updates without UI freezing 2) Transition animations for state changes under 300ms 3) Clear visual feedback for user actions. Deduct 5 points for laggy dashboard updates, 3 points for jarring transitions between views, and 5 points for confusing navigation paths. Check for skeleton screens during loading and optimistic UI updates. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

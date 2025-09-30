@@ -1,0 +1,68 @@
+{
+  "index": 489,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be demonstrated. Develop a technical article aggregation platform where users can subscribe to different technical topics, and the platform pushes relevant articles based on user subscriptions. Users can bookmark articles, share them on social media, and view their reading history.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the article aggregation core system fully implemented?",
+      "description": "Review whether the code implements the core article aggregation system with proper data structures for articles, topics, and user subscriptions. Check if the relationship between articles and topics is properly modeled, and if the subscription mechanism allows users to follow/unfollow topics. Score 0 if the core system is missing, 5 if only basic structures are implemented, and 10 if the system includes content categorization, proper indexing, and efficient subscription management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user subscription and article recommendation system functional?",
+      "description": "Evaluate whether the platform can effectively match articles to user interests based on their subscriptions. Check for the implementation of notification/push mechanisms when new relevant content is available. Look for personalization features such as recommendation strength settings or frequency controls. Deduct 5 points if there's no prioritization algorithm for pushing content, and 3 points if the subscription management UI is difficult to use. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the user interaction features (bookmarking, sharing, history) properly implemented?",
+      "description": "Check whether the code includes proper implementations for bookmarking articles (with organization features like folders/tags), sharing functionality to major social media platforms (with proper API integrations and preview generation), and comprehensive reading history tracking with filtering options. Deduct 3 points for each major feature that's poorly implemented, and 5 points if any feature is completely missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the content visualization and article presentation well-designed?",
+      "description": "Evaluate how articles are displayed to users. Look for proper text formatting, image handling, code snippet presentation (with syntax highlighting if technical), and responsive design that works well on different screen sizes. Check for features like dark mode, font size adjustments, and reading progress indicators. Deduct 3 points for poor typography, 3 points for non-responsive design, and 4 points for lack of reading experience enhancements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, network interruption, invalid article data, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper input validation, error boundary implementation, and graceful degradation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered content summarization 2. Reading time estimations 3. Interactive highlighting/annotation 4. Community discussion integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple bookmark systems coexisting) 2. Function modules unrelated to article aggregation (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/UI/state management layers), component reusability, state management approach, and build process. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated or lacks proper dependency management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance when navigating between articles/topics. Deduct 5 points for each operation without feedback, 3 points for visual lag during content loading, and 5 points for hard-to-find subscription management or bookmark functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

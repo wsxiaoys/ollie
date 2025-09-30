@@ -1,0 +1,68 @@
+{
+  "index": 1511,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for display. Write a weekly quest system in JS where players can only claim a task once every seven days.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the weekly quest timing mechanism correctly implemented?",
+      "description": "Check if the code properly implements a 7-day cooldown period using Date objects and timestamp comparisons. Verify that the system prevents claiming the same quest before 7 days have elapsed. Score 0 if time tracking is missing, 5 if basic timestamp comparison exists but has edge cases (like timezone issues), 10 if the implementation is robust with proper date manipulation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is quest state persistence implemented effectively?",
+      "description": "Review whether the code includes a proper persistence mechanism (localStorage, sessionStorage, cookies, or simulated database) to track claimed quests across browser sessions. Deduct 5 points if data is only stored in memory and lost on refresh, 3 points if persistence exists but without expiry management. Full points require proper data serialization and retrieval with error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the quest data structure well-designed?",
+      "description": "Evaluate if the quest objects are properly structured with necessary properties (ID, title, description, rewards, cooldown period, completion criteria, etc.). Deduct 3 points for each missing essential property, 5 points if quests lack unique identifiers, and 5 points if the data structure doesn't support quest status tracking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interface for the quest system complete and functional?",
+      "description": "Check if the code implements a proper UI for displaying available quests, claimed quests, cooldown timers, and reward information. Score 0 if no UI exists, 5 if a basic list is provided without visual cues for status, 10 if the interface clearly shows quest status with countdown timers and responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid dates, browser storage limitations, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual countdown timers 2. Quest categories or difficulty levels 3. Progressive reward systems). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timer implementations) 2. Function modules unrelated to quest system (e.g., unrelated game mechanics) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating quest logic/view/data layers), function organization, and code reusability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between UI rendering and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the quest claiming interaction conforms to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for available vs. cooldown quests. Deduct 5 points for each operation without feedback, 3 points for jarring transitions when claiming quests, and 5 points for confusing status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "easy"
+}

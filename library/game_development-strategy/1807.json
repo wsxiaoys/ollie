@@ -1,0 +1,68 @@
+{
+  "index": 1807,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. I would like you to create a Pokémon type matchup query mini-program based on your knowledge and what's available on the internet. The requirement is that when I click to select an opponent's type, it recommends Pokémon types that are effective against it. The selection buttons should not require scrolling after clicking - all type buttons should fit on a single screen.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the type matchup system correctly implemented?",
+      "description": "Review whether the code accurately implements the Pokémon type effectiveness chart with all 18 types, including dual-type calculations. Check if the effectiveness multipliers (2x, 0.5x, 0x) are correctly applied. Score 0 if the type matchup data is incorrect, 5 if only single-type matchups are implemented, and 10 if both single and dual-type calculations are fully accurate.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the UI display all Pokémon types without requiring scrolling?",
+      "description": "Evaluate if all 18 Pokémon type buttons fit on a single screen without requiring scrolling. The layout should be responsive to different screen sizes and maintain visibility of all options. Deduct 5 points if scrolling is needed on standard desktop screens, and 10 points if multiple types are hidden or inaccessible without scrolling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the type selection interface intuitive and user-friendly?",
+      "description": "Check if the type selection mechanism is intuitive with clear visual distinction between selected and unselected states. The interface should allow for easy selection/deselection of single or dual types. Deduct 3 points if the selection state isn't clearly visible, 5 points if the dual-type selection is confusing, and 8 points if the selection mechanism is completely non-intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the recommended counter types clearly presented?",
+      "description": "Assess if the recommended counter types are visually distinct and sorted by effectiveness. The results should show why a type is recommended (e.g., '4x effective against Fire/Steel'). Deduct 3 points if effectiveness multipliers aren't shown, 5 points if recommendations aren't sorted by effectiveness, and 8 points if the results are difficult to interpret. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid type combinations, browser compatibility issues, mobile responsiveness, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual type icons with official Pokémon styling 2. Showing example Pokémon of recommended types 3. Interactive visualization of effectiveness relationships). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to select types) 2. Function modules unrelated to type matchups (e.g., a Pokédex that distracts from the core functionality) 3. Fancy effects that affect performance (e.g., unnecessary animations when selecting types). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/logic layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (using official Pokémon type colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Type selection feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback when displaying effectiveness results. Deduct 5 points for each operation without feedback, 3 points for visual after-images during rapid type selection, and 5 points for hard-to-find effectiveness information. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "easy"
+}

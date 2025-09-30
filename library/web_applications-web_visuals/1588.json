@@ -1,0 +1,68 @@
+{
+  "index": 1588,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable when possible. I am using Arduino IDE to develop for ESP32. I want to develop an HTML page with a button in the middle. When the button is clicked, it should open a new page. When opening the page, it should call function A(), and when closing the page, it should call function B().",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HTML page correctly structured with a centered button?",
+      "description": "Examine if the HTML document has proper DOCTYPE, head, body sections, and if the button is accurately centered using CSS (flex, grid, or absolute positioning). Button should be properly styled with appropriate size (at least 44x44px for touch targets), contrast ratio (at least 4.5:1 for AA compliance), and hover/active states. Deduct 5 points if button styling is minimal or non-existent, 3 points if centering is approximate rather than precise. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the navigation functionality properly implemented?",
+      "description": "Check if the button click handler correctly navigates to a new page using appropriate methods (window.location, <a> tag with href, or history API). Assess whether the navigation maintains proper browser history state. Deduct 5 points if navigation occurs but breaks browser back button functionality, 7 points if navigation is implemented incorrectly or incompletely. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are functions A() and B() correctly implemented and called at appropriate lifecycle events?",
+      "description": "Verify that function A() is properly called when the new page loads (using window.onload, DOMContentLoaded, or equivalent ESP32 approach) and function B() is called when closing/navigating away (using beforeunload, pagehide, or equivalent). Examine if both functions are defined with proper scoping. Deduct 5 points if only one function works correctly, 10 points if neither function works. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the ESP32 integration correctly implemented?",
+      "description": "Evaluate whether the code includes proper ESP32 server setup using ESP32WebServer or equivalent library. Check if the HTML is served correctly from SPIFFS or embedded strings, and if any required ESP32-specific configurations are present (like CORS settings for local development). Deduct 5 points if the implementation works but has inefficient memory usage patterns for an embedded system, 10 points if ESP32 integration is missing or fundamentally flawed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, page reload, rapid button clicking, etc.) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smooth transition animations between pages 2. Persistent state management across navigation 3. Offline functionality with service workers). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event listeners or multiple ways to trigger the same action 2. Unnecessary libraries or frameworks for a simple ESP32 application 3. Overly complex solutions for simple requirements that may impact ESP32 performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating HTML/CSS/JS, using appropriate ESP32 file structure), error handling, and code readability. Deduct 5 points if global scope is polluted; deduct 5 points if the code is not optimized for ESP32's memory constraints; deduct 5 points if variable/function naming is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for jarring transitions, and 5 points for unclear interactive elements. Consider ESP32's processing limitations when evaluating animation smoothness. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

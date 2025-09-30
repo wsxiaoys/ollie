@@ -1,0 +1,68 @@
+{
+  "index": 163,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Please help me implement the following requirement using SVG code: Create a computer monitor with a bunch of different colored buttons.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the SVG monitor structure properly implemented?",
+      "description": "Evaluate whether the SVG code properly implements the basic structure of a computer monitor, including the screen, bezel, stand, and proper proportions. Check if the viewBox and dimensions are appropriately set. Score 0 if the monitor is not recognizable, 5 if only basic shapes are used without details, and 10 if the monitor looks realistic with appropriate perspective and dimensions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the buttons diverse and well-designed?",
+      "description": "Assess the variety, positioning, and design of the buttons. There should be multiple buttons with different colors as specified in the requirements. Buttons should have proper size, consistent spacing, and positioned logically on the monitor. Deduct 2 points if fewer than 5 different colored buttons are included, 3 points if button spacing is inconsistent, and 5 points if buttons lack visual affordance (like bevels, shadows, or hover states). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the SVG code structured with proper grouping and naming conventions?",
+      "description": "Review whether the SVG elements are logically grouped (<g> elements) with appropriate IDs/classes for different components (monitor body, screen, buttons, etc.). Check if there are comments explaining complex parts. Deduct 3 points for flat structure without grouping, 3 points for missing IDs/classes on important elements, and 4 points for no code documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include any interactive features?",
+      "description": "Check if the buttons have interactive functionality, such as hover effects, click responses, or animations. Evaluate whether JavaScript or CSS is used to create interactivity. Score 0 if no interactivity exists, 5 if basic hover states are implemented, and 10 if buttons show comprehensive interaction feedback (visual changes, animations, etc.) on user actions.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common issues (such as browser rendering differences, scaling issues, or viewing on different screen sizes). Code with strong robustness should use relative units, have fallback options, and avoid hard-coded values. Deduct 3 points for each critical browser compatibility issue, 2 points for missing viewBox attribute, and 5 points if the SVG breaks on resizing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Screen content animation 2. Power LED indicator 3. Realistic button shadows/highlights 4. Monitor adjustment features). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate SVG elements performing the same function 2. Unnecessarily complex paths that could be simplified 3. Excessive visual elements that distract from the main requirement. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization, reusable components, and optimization techniques. Deduct 3 points if there's excessive code duplication (e.g., repeated definitions for similar buttons); deduct 3 points if SVG paths are unnecessarily complex or unoptimized; deduct 4 points if there's no separation of structure, presentation, and behavior. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3-4 primary colors excluding button colors) 2) Proper proportions and perspective 3) Realistic material representation (plastic, glass, metal textures as appropriate). Deduct 3 points for unrealistic proportions, 4 points for inappropriate use of colors creating visual disharmony, and 3 points for inconsistent lighting/shadow effects. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the visual presentation polished and refined?",
+      "description": "Judge the level of detail and finish in the implementation: 1) Smooth curves and clean lines 2) Appropriate use of gradients, shadows, or highlights for depth 3) Attention to small details like button labels, ports, or brand elements. Deduct 3 points for jagged edges or imprecise paths, 3 points for flat appearance without depth cues, and 4 points for missing important details that would make the monitor look realistic. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 52,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a custom character system where players can choose and customize their character's appearance and attributes before starting the game.\n\n**Task**: Design a custom character system that allows players to select and customize their character's appearance and attributes before starting the game.\n\n**Hint**: You can provide different appearance options, equipment choices, and let players combine them according to their preferences.\n\nInclude comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the character appearance customization system fully implemented?",
+      "description": "Review whether the code accurately implements various customization options (face, hair, body, skin tone, etc.) with real-time preview functionality. Score 0 if customization options are missing, 5 if only basic options are available, and 10 if a comprehensive set of appearance options with visual representation is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the character attribute allocation system properly implemented?",
+      "description": "Check whether the code implements a balanced attribute system (strength, agility, intelligence, etc.) with proper constraints (e.g., point allocation limits, minimum/maximum values). Verify if there's validation to prevent cheating. Score 0 if attribute customization is missing, 5 if basic attributes exist but lack validation, and 10 if a complete system with proper validation and visual feedback is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the equipment and accessory customization feature implemented?",
+      "description": "Evaluate whether players can select and preview different equipment items (weapons, armor, accessories) with visual representation. Check if equipment affects character attributes appropriately. Deduct 5 points if equipment doesn't visually appear on the character, 3 points if equipment doesn't affect attributes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a character save/load mechanism implemented?",
+      "description": "Assess whether the code includes functionality to save customized characters (using localStorage or similar) and load them later. Check for export/import options and multiple character slot support. Deduct 5 points if only temporary session storage is used, and 3 points if there's no way to manage multiple character profiles. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input values, missing selections, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted character recommendations 2. Character backstory generator 3. Social sharing of character designs). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to modify the same attribute) 2. Function modules unrelated to character customization (e.g., a built-in minigame) 3. Fancy effects that affect performance (e.g., excessive particle effects or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/data/logic layers), code reusability, and proper documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comments are insufficient or misleading. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when changing character options 2) Smooth transitions when swapping between different character parts 3) Intuitive drag-and-drop or slider controls. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between customization options, and 5 points for confusing navigation within the customization interface. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "medium"
+}

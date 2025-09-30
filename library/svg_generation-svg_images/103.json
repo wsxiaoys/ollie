@@ -1,0 +1,68 @@
+{
+  "index": 103,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable when possible.\nPlease help me use code to implement the following requirement, using SVG code to create: Design a mechanical device with dynamically rotating gears, using <path> and <animateTransform> elements to create gear rotation animations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Gear Geometrical Implementation",
+      "description": "Review whether the SVG code accurately implements gear teeth using <path> elements with proper mathematical calculations. Check if the teeth profiles are geometrically correct using involute curves or appropriate approximations. Score 0 if gears are just basic circles, 5 if teeth are represented but geometrically inaccurate, and 10 if teeth are precisely calculated with proper involute profiles.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Mechanical Rotation Animation",
+      "description": "Evaluate whether <animateTransform> is correctly implemented to create smooth gear rotations around proper centers. Verify that rotation speed is consistent with gear ratios (larger gears should rotate slower than smaller ones in proper proportion to their diameters). Deduct 5 points if animations are jerky or inconsistent, and 3 points if rotation centers are improperly positioned. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Gear Meshing Mechanics",
+      "description": "Check if the code implements proper gear meshing with teeth that correctly interlock without overlap or gaps. Verify that the rotation directions of adjacent gears are opposite (clockwise vs counter-clockwise). Deduct 5 points if gears visibly overlap or have significant gaps, and 3 points if rotation directions are incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Mechanical System Complexity",
+      "description": "Assess the complexity of the mechanical system. Check for the inclusion of different gear types (spur gears, bevel gears, planetary gears), gear trains, or compound mechanisms. Award 3 points for basic gear pairs, 7 points for intermediate complexity with 3-5 interacting gears, and 10 points for complex gear trains with multiple interconnected mechanisms or planetary gear systems.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle parameter changes without breaking (such as changing gear sizes, teeth counts, or rotation speeds). Check for the use of variables and parameterized functions rather than hard-coded values. Code with strong robustness should be adaptable and scale without visual artifacts, giving 10 points. If the robustness is average, give 5 points, and if changes would break the implementation, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the visualization (e.g., 1. User-interactive controls for speed/direction 2. Dynamic gear highlighting on mouseover 3. Physical simulation elements like friction or inertia). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Implementation",
+      "description": "Strictly check three types of redundancy: 1. Duplicate definitions of similar gear elements 2. Unused or non-contributing graphical elements 3. Over-complex animations that harm performance without adding visual value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core mechanics are obscured by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular SVG structure (such as using <defs> and <use> for repeated elements, organizing with <g> groups), code maintainability, and optimization. Deduct 5 points if global attributes pollute elements; deduct 5 points if the code has excessive repetition instead of reusable components; deduct 5 points if the SVG lacks proper viewBox settings or optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Visual Design Quality",
+      "description": "Evaluate whether the mechanical device has professional visual design: 1) Appropriate color scheme for mechanical components (not exceeding 3 primary colors) 2) Proper proportions and balanced layout 3) Visual depth using gradients, shadows, or highlights. Deduct 3 points for visually imbalanced elements, 5 points for unrealistic mechanical appearance, and 5 points for poor use of space. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Animation Smoothness",
+      "description": "Judge whether the gear animations provide a realistic mechanical feel: 1) Consistent rotation speeds based on gear ratios 2) Smooth transitions without jumps or flickers 3) Appropriate animation timing for mechanical movement (not too fast or too slow). Deduct 5 points for jerky animations, 3 points for unrealistic movement physics, and 5 points for performance issues causing frame drops. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

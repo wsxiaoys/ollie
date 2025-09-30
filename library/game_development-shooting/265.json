@@ -1,0 +1,68 @@
+{
+  "index": 265,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure to ensure the code you generate is executable. Create a web version of Contra for me that can be played directly after running.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Contra gameplay mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the classic Contra mechanics: running, jumping, shooting in 8 directions, and weapon power-ups. Check if the character movement feels responsive (< 50ms delay) and if the hit detection system works correctly for both player and enemy interactions. Score 0 if the core mechanics are missing, 5 if basic movement and shooting are implemented but lack refinement, and 10 if the gameplay feels authentic to the original Contra experience.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the level design and progression system properly implemented?",
+      "description": "Evaluate whether the code includes at least one complete level with proper enemy placement, terrain obstacles (platforms, water, etc.), and a boss fight at the end. Check if the game has a proper level progression system (either through multiple levels or checkpoints). Deduct 5 points if the level design is too simplistic or empty, and 3 points if there's no boss implementation. Give full 10 points only if the level design captures the essence of Contra's challenging but fair gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the enemy AI and variety properly implemented?",
+      "description": "Check if the game includes multiple enemy types with distinct behaviors (e.g., stationary shooters, runners, jumpers, and turrets). Evaluate whether the enemy AI provides adequate challenge without being unfair. Verify if enemies spawn at appropriate rates and locations. Deduct 5 points if enemy AI is too simplistic (just moving in one direction), and 3 points if there's less than 3 different enemy types. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the weapon system and power-up collection mechanism implemented?",
+      "description": "Assess whether the code implements Contra's iconic weapon system, including at least 3 different weapon types (e.g., spread gun, laser, rapid fire) and the power-up collection mechanism. Check if weapon switching works correctly and if there's appropriate visual and audio feedback when collecting power-ups. Deduct 5 points if only the default weapon is implemented, and 3 points if weapon switching has bugs. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid user input, browser window resizing, focus loss, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Two-player cooperative mode 2. Custom level editor 3. Secret areas and unlockable content). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to Contra gameplay (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., excessive particle effects that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), sprite and asset management, and game loop implementation. Deduct 5 points if global state pollution is found or proper design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no proper game state management system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows the classic Contra aesthetic while maintaining modern UI principles: 1) Faithful sprite artwork and animations that respect the original style 2) Proper HUD layout showing lives, score, and current weapon 3) Consistent pixel art style throughout the game. Deduct 3 points for inconsistent visual style, 5 points for a hard-to-read HUD, and 5 points for low-quality or mismatched sprite artwork. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game runs at a consistent frame rate (ideally 60 FPS) and whether the controls are responsive: 1) Input lag < 50ms 2) Smooth animations without stuttering 3) Appropriate sound effects and visual feedback for all actions. Deduct 5 points if the game has noticeable frame drops, 3 points for delayed input response, and 5 points if sound effects are missing or mismatched. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

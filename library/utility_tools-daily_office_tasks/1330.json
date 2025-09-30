@@ -1,0 +1,68 @@
+{
+  "index": 1330,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the generated code is executable for demonstration. Generate a weather forecast query tool.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the weather data retrieval fully implemented?",
+      "description": "Review whether the code properly implements API calls to a weather service (like OpenWeatherMap, AccuWeather, etc.), with proper error handling for failed requests, rate limiting, and API key management. Score 0 if no actual data retrieval is implemented, 5 if basic retrieval without error handling is present, 10 if comprehensive handling with fallback mechanisms is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is location detection or manual location input properly implemented?",
+      "description": "Check whether the tool allows for automatic geolocation detection (using browser API) and/or manual location input with proper validation and geocoding. Deduct 5 points if geolocation permissions are not properly handled, 3 points if there's no search suggestion/autocomplete for location names, and 5 points if location validation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is forecast visualization comprehensive and user-friendly?",
+      "description": "Evaluate whether the tool displays current conditions, hourly forecasts, and multi-day forecasts with appropriate visual representations (icons, graphs, etc.). Deduct 3 points if temperature trends aren't visualized graphically, 5 points if weather condition icons are missing or unclear, and 5 points if the forecast doesn't include essential metrics like precipitation probability, humidity, and wind. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there functionality for saving preferences or favorite locations?",
+      "description": "Check if the tool implements local storage or other persistence mechanisms to save user preferences (temperature units, locations, etc.) and allows for quick access to multiple saved locations. Deduct 5 points if no persistence is implemented, 3 points if only partial preferences are saved, and 5 points if there's no way to manage multiple locations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, API downtime, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Weather alerts/notifications 2. Historical weather data comparison 3. Interactive weather maps 4. Air quality or UV index information). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant API calls for the same data 2. Function modules unrelated to weather forecasting 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API service/UI components/state management), proper error handling, and code maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns between data fetching and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Responsive design that works on multiple screen sizes. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for non-responsive layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Loading states shown when fetching data 2) Transition animation duration controlled between 300-500ms 3) Clear visual hierarchy and information architecture. Deduct 5 points for missing loading indicators during API calls, 3 points for jarring transitions between views, and 5 points for cluttered information display that overwhelms the user. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 565,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Implement a building blueprint management system that allows online preview of CAD files, supports layer toggle control, provides version comparison (highlighting modified sections), allows construction teams to submit questions about drawings (pinpointing specific coordinates), and automatically generates change notification forms.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the online CAD file preview system fully implemented?",
+      "description": "Review whether the code correctly implements a web-based CAD viewer using technologies like Three.js, SVG, or canvas. Check for essential viewing controls (pan/zoom/rotate), proper rendering of CAD formats (DXF/DWG), and handling of large files through progressive loading or LOD techniques. Score 0 if no preview functionality exists, 5 if basic viewing is implemented, and 10 if a complete professional-grade CAD viewing experience is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the layer toggle control system properly designed?",
+      "description": "Evaluate the implementation of layer management, including visibility toggles for each layer, proper naming/organization, and performance optimization when toggling multiple layers. Check if the system preserves layer information from original CAD files and if layer states persist between sessions. Deduct 5 points if layer categories are not hierarchically organized, 3 points if toggling causes performance issues, and 2 points if layer visibility states are not saved. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the version comparison and highlight functionality effective?",
+      "description": "Examine the diff visualization system that highlights changes between blueprint versions. Check for color-coded change indication (additions/modifications/deletions), ability to toggle between versions, and performance when comparing complex drawings. Proper implementation should include metadata about what changed and when. Deduct 5 points if the comparison is manual rather than automated, 3 points if only basic highlighting is available, and 2 points if the system can't handle complex blueprint differences. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the coordinate-based question submission system implemented?",
+      "description": "Assess the implementation of the annotation/question system that allows construction teams to submit queries about specific coordinates. Check for spatial pinpointing accuracy, metadata capture (who/when/what), notification system for responses, and historical tracking of resolved questions. A robust implementation should include categorization of question types and priority levels. Deduct 3 points if coordinate accuracy is poor, 3 points if there's no tracking system, and 4 points if the question resolution workflow is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed CAD files, network interruptions, concurrent edits, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted blueprint analysis to detect potential design conflicts 2. AR/VR integration for immersive blueprint review 3. Automated measurement tools that calculate materials needed). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file parsers doing the same job) 2. Function modules unrelated to blueprint management (e.g., a built-in generic chat system) 3. Fancy effects that affect performance (e.g., unnecessary 3D animations when 2D would suffice). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating CAD processing/UI/annotation layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast CAD manipulation, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "hard"
+}

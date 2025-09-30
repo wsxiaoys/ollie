@@ -1,0 +1,68 @@
+{
+  "index": 311,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable.\n\nMicroservice 1: Authentication Microservice\nAPI Controller Code:\n```csharp\nnamespace AuthService.Controllers\n{\n    [ApiController]\n    [Route(\"api/[controller]\")]\n    public class AuthController : ControllerBase\n    {\n        private readonly UserManager<IdentityUser> _userManager;\n        private readonly SignInManager<IdentityUser> _signInManager;\n        private readonly IConfiguration _configuration;\n\n        public AuthController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, IConfiguration configuration)\n        {\n            _userManager = userManager;\n            _signInManager = signInManager;\n            _configuration = configuration;\n        }\n\n        [HttpPost(\"register\")]\n        public async Task<IActionResult> Register(RegisterModel model)\n        {\n            var user = new IdentityUser { UserName = model.Username, Email = model.Email };\n            var result = await _userManager.CreateAsync(user, model.Password);\n\n            if (result.Succeeded)\n            {\n                return Ok();\n            }\n\n            return BadRequest(result.Errors);\n        }\n\n        [HttpPost(\"login\")]\n        public async Task<IActionResult> Login(LoginModel model)\n        {\n            var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, false, false);\n\n            if (result.Succeeded)\n            {\n                var user = await _userManager.FindByNameAsync(model.Username);\n                try\n                {\n                    var token = GenerateJwtToken(user!);\n\n\n                    return Ok(new { token });\n                }\n                catch(Exception e)\n                {\n                    throw e;\n                }\n            }\n\n            return Unauthorized();\n        }\n\n        private string GenerateJwtToken(IdentityUser user)\n        {\n            var claims = new[]\n            {\n                new Claim(JwtRegisteredClaimNames.Sub, user.UserName!),\n                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())\n            };\n\n            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration[\"Jwt:Key\"]!));\n            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);\n\n            var token = new JwtSecurityToken(\n                issuer: _configuration[\"Jwt:Issuer\"],\n                audience: _configuration[\"Jwt:Audience\"],\n                claims: claims,\n                expires: DateTime.Now.AddMinutes(30),\n                signingCredentials: creds);\n\n            return new JwtSecurityTokenHandler().WriteToken(token);\n        }\n    }\n}\n```\n\nMicroservice 2: Timestamp Microservice:\nController Code:\n```csharp\nnamespace TimestampService.Controllers\n{\n    [ApiController]\n    [Route(\"api/[controller]\")]\n    [Authorize] // Add this attribute to require authentication\n    public class TimestampController : ControllerBase\n    {\n        private readonly TimestampDbContext _context;\n\n        public TimestampController(TimestampDbContext context)\n        {\n            _context = context;\n        }\n\n        [HttpGet]\n        public IActionResult GetTimestamp()\n        {\n            var timestamp = new TimestampRecord\n            {\n                Timestamp = DateTime.UtcNow\n            };\n\n            _context.Timestamps.Add(timestamp);\n            _context.SaveChanges();\n\n            return Ok(timestamp);\n        }\n    }\n}\n```\n\nNow please help me create a Blazor Server project: Blazor has two interfaces: a login interface that authenticates through the API, and a work page that requires login to access. If not logged in, it redirects to the login page (implemented using @Attribute Authorize). The work page has a button and a textbox. When the button is clicked, it retrieves values from microservice 2, where the authentication token is the same as the Blazor verification token, and displays the returned values in the textbox.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Blazor authentication implementation complete?",
+      "description": "Check if the Blazor project correctly implements authentication using JWT tokens from the Auth microservice. The code should include proper token storage (localStorage/sessionStorage), token validation, handling token expiration, and redirect logic. Verify that authentication state is preserved across page refreshes.Score 0 if authentication is not implemented, 5 if basic token storage exists but without proper validation/expiration handling, 10 if complete with refresh token mechanism and secure storage.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the login interface properly implemented?",
+      "description": "Evaluate if the login interface includes username/password fields with proper validation (required fields, minimum length, etc.), appropriate error handling (displaying API error messages), loading states during authentication, and proper handling of API responses. Check for CSRF protection if using cookie-based auth.Score 0 if basic login form is missing, 5 if form exists but lacks validation or error handling, 10 if the form has complete validation, error handling, and security measures.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the work page and authorization correctly implemented?",
+      "description": "Check if the work page is properly protected with [Authorize] attribute, has proper UI components (button and textbox as required), and correctly redirects unauthorized users to the login page. Examine if the authorization is validated both on the client and server sides to prevent unauthorized access.Score 0 if authorization is missing, 5 if authorization exists but redirect logic is flawed or inconsistent, 10 if authorization is complete with proper redirect logic and security checks.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the API integration with microservice 2 properly implemented?",
+      "description": "Verify if the Blazor application correctly passes JWT tokens to the Timestamp microservice, handles API responses appropriately, and updates UI based on responses. Check for proper error handling for API failures, network issues, and token validation problems.Score 0 if API integration is missing, 5 if basic integration exists but lacks error handling, 10 if integration includes proper error handling, loading states, and retry mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, token expiration during session, network interruption, validation errors, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper exception handling and fallback mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Persistent login with refresh token 2. Multi-factor authentication 3. User session management with logout functionality 4. Dark mode for the application 5. Responsive design for mobile compatibility).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant authentication methods or token validations 2. Unnecessary API calls or state management 3. Excessive UI elements that complicate the user experience.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating authentication logic/UI components/API services), component reusability, code organization, and proper dependency injection. Check for code duplication, global state management, and adherence to Blazor best practices.Deduct 5 points if global state pollution is found or proper component structure is not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if dependency injection is not properly utilized.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check for consistent styling between login and work pages.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback during API calls and authentication. Check loading indicators during API operations and transitions between pages.Deduct 5 points for each operation without feedback, 3 points for visual lag during operations, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

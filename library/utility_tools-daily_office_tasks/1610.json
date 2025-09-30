@@ -1,0 +1,68 @@
+{
+  "index": 1610,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable and ready for demonstration. Please help me write a complete mini-program for medication reminders for elderly people that I can directly copy and paste for use.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the medication reminder core functionality fully implemented?",
+      "description": "Evaluate whether the code implements essential medication reminder features: scheduling reminders, setting medication details (name, dosage, frequency), notification system, and acknowledgment of taken medication. Score 0 if core functionality is missing, 5 if basic reminders are implemented without flexibility, and 10 if the system includes multiple scheduling options (daily, weekly, specific times) with medication details management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the elderly user interface properly designed for accessibility?",
+      "description": "Check if the UI follows elderly-friendly design principles: large text (at least 16px), high contrast colors (contrast ratio ≥ 7:1), simplified navigation, clear buttons (minimum 44x44px touch targets), and minimal steps to complete tasks. Deduct 3 points for each accessibility guideline violated. Award full points only if the interface demonstrates specific considerations for elderly users including font scaling options.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the application include caregiver integration features?",
+      "description": "Assess whether the code implements caregiver monitoring capabilities: missed medication alerts, medication adherence tracking, remote monitoring dashboard, and emergency contact integration. Deduct 3 points if remote monitoring is missing, 3 points if adherence tracking is absent, and 4 points if emergency contact functionality is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data persistence and offline functionality properly implemented?",
+      "description": "Evaluate if the code properly handles data storage (local storage or database implementation), synchronization mechanisms, and offline functionality. Check for proper data validation, backup mechanisms, and recovery procedures. Deduct 5 points if medication data isn't persistent after app restart, and 5 points if the app requires constant internet connection to function. Full score for complete offline capability with data integrity protection.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect inputs, network interruption, system notifications being blocked, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Medication identification using camera 2. Voice-based reminders and commands 3. Adaptive reminder timing based on user habits 4. Gamification elements for medication adherence). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems coexisting) 2. Function modules unrelated to medication reminders (e.g., a built-in games section) 3. Fancy effects that affect performance (e.g., unnecessary animations that might confuse elderly users). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/UI/notification layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 16px for elderly users, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to elderly users' perception characteristics: 1) Clear feedback for every action 2) Transition animation duration controlled between 400-700ms (slightly longer for elderly users) 3) Obvious visual and possibly auditory cues for important actions. Deduct 5 points for each operation without feedback, 3 points for confusing transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

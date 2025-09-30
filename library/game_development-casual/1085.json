@@ -1,0 +1,68 @@
+{
+  "index": 1085,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code whenever possible. Write me a small program that can randomly draw prizes.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core prize drawing functionality fully implemented?",
+      "description": "Verify if the code correctly implements a random selection algorithm that fairly selects prizes based on their probability distribution. Score 0 if no random selection is implemented, 5 if basic random selection exists but without proper distribution control, and 10 if the implementation includes configurable probability weights for different prizes.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the prize pool management system properly designed?",
+      "description": "Evaluate whether the code allows for dynamic prize pool configuration, including adding/removing prizes, setting prize quantities, and managing prize availability. Deduct 5 points if the prize pool is hardcoded, 3 points if quantities aren't tracked properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a proper prize distribution validation mechanism?",
+      "description": "Check if the program includes methods to verify the fairness of the distribution (e.g., statistical testing, distribution visualization, or logging). Score 0 if no validation exists, 5 if basic logging is implemented, and 10 if comprehensive statistical validation is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the program handle edge cases in prize drawing?",
+      "description": "Assess whether the code properly handles situations like empty prize pools, prizes running out, probability edge cases (0% or 100%), and ensures no unexpected behavior. Deduct 3 points for each unhandled edge case. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, unexpected data types, out-of-bounds values, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual prize drawing animation 2. Historical drawing records with statistics 3. Prize inventory management). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple random selection algorithms) 2. Function modules unrelated to prize drawing (e.g., a built-in calculator) 3. Fancy effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating prize definition/drawing logic/user interface), unit test coverage, and appropriate use of language features. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if best practices for the chosen language are not followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the user interface (if applicable) follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects (if applicable) conform to human perception characteristics: 1) Clear visual feedback during and after prize drawing 2) Appropriate animation timing for suspense without excessive delay 3) Clear visual indication of prize results. Deduct 5 points for lack of visual feedback, 3 points for confusing or overly lengthy animations, and 5 points for unclear result presentation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

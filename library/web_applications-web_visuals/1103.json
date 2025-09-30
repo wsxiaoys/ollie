@@ -1,0 +1,68 @@
+{
+  "index": 1103,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration purposes. https://gridstackjs.com/ is the official website of gridstackjs. I want to create a large screen designer based on it with: left component list, layer management, top menu bar, middle layer area, and right property configuration panel. It should allow dynamically adding and dragging Vue components, dynamically adjusting component layers, and support features like screen theme colors, background images, and responsive design. Please implement this based on Vue3 + TypeScript.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the layout structure properly implemented with all required panels?",
+      "description": "Review whether the code correctly implements the five main areas (left component list, layer management, top menu bar, middle layer area, right property configuration panel) using proper Vue 3 components and CSS grid/flex layouts. Check if responsive breakpoints are properly defined and if the layout adapts well to different screen sizes. Deduct 3 points if any section is missing, 3 points for improper responsive design implementation, and 5 points if the panels cannot be resized or collapsed.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is GridStack.js correctly integrated with Vue 3 and TypeScript?",
+      "description": "Examine whether GridStack.js is properly wrapped as Vue components with TypeScript interfaces. Check if GridStack events are properly bound to Vue methods, if GridStack options are properly typed, and if the integration follows Vue 3 Composition API patterns. Score 10 points if fully implemented with proper type safety, 5 points if basic functionality works but with type issues, 0 points if the integration is broken or incomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the component drag-and-drop system fully functional?",
+      "description": "Verify if components can be dragged from the left panel to the grid area with proper preview and positioning. Check if the drag interactions handle edge cases (grid boundaries, overlapping elements, etc.) and if the component is properly instantiated upon drop with correct properties. Evaluate if custom drag handles are implemented and if position data is properly synchronized with the state management system. Deduct 5 points if drag-and-drop doesn't work consistently, 3 points if it lacks visual feedback during drag.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the layer management system properly implemented?",
+      "description": "Assess if the layer panel correctly displays all components in the design with proper hierarchy, allows reordering through drag-and-drop, and synchronizes z-index changes with the GridStack instance. Check if layer visibility toggling, locking, and selection highlighting are implemented. Deduct 5 points if z-index management is broken, 3 points if layer reordering doesn't work properly, and 2 points if visual indicators for selection/visibility are missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as component loading errors, network interruptions, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Check if there are proper validation for user inputs, error boundaries for components, and defensive programming practices. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Component templates/presets system 2. Undo/redo functionality 3. Export/import capability 4. Real-time collaboration 5. Component animation editor). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management solutions coexisting) 2. Function modules unrelated to screen design (e.g., built-in irrelevant tools) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review TypeScript type definitions (proper interfaces, generics, and type guards), component composition (proper props/emits definitions, lifecycle handling), and build process setup. Check if the application follows Vue 3 best practices (Composition API usage, proper refs/reactive objects). Deduct 5 points if TypeScript is used incorrectly or has any \"any\" types; deduct 5 points if Vue components are poorly structured; deduct 3 points if there's no proper build configuration or optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for the editor UI (distinguishable from the designed content) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy between panels. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic panel organization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback when interacting with components 2) Smooth animations for resizing/moving components (60fps) 3) Clear visual indicators for selection, hover states, and active elements 4) Proper loading states for asynchronous operations. Deduct 5 points for sluggish drag operations, 3 points for missing interaction feedback, and 5 points for confusing UI states during operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

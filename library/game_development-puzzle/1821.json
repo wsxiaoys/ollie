@@ -1,0 +1,68 @@
+{
+  "index": 1821,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration purposes. Write a Minesweeper game using HTML code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Minesweeper game mechanics fully implemented?",
+      "description": "Check if the code correctly implements mine placement, cell revealing logic, and win/loss detection. The game should generate random mine positions, calculate adjacent mine counts, handle recursive revealing of empty cells, and detect game completion conditions. Score 0 if core game mechanics are missing, 5 if basic functionality works but with flaws, 10 if completely implemented according to traditional Minesweeper rules.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game board dynamically generated with configurable difficulty levels?",
+      "description": "Evaluate if the code allows for different board sizes (beginner: 9x9 with 10 mines, intermediate: 16x16 with 40 mines, expert: 30x16 with 99 mines) and proper mine density. The board should be generated programmatically, not hardcoded. Deduct 5 points if only one difficulty level is implemented, 3 points if the mine distribution algorithm has clustering issues, and 2 points if board size isn't responsive to window size.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are all user interactions properly handled?",
+      "description": "Check if the game properly handles left-click (reveal cell), right-click (flag/mark mine), and potentially middle-click (chord) operations. Timer functionality should start on first click, and the first click should never be a mine. Award 10 points if all standard Minesweeper interactions are implemented, 5 points if basic interactions work but with limitations, 0 points if interactions are broken or inconsistent.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a functional game state management system?",
+      "description": "Evaluate if the game tracks and manages states properly (new game, in-progress, won, lost) with appropriate UI indicators. Check if the game includes a counter for remaining mines/flags, a timer, and a way to restart the game. Deduct 3 points if state transitions are buggy, 3 points if game statistics aren't displayed, and 4 points if there's no game reset functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases (such as rapid clicking, right-clicking already revealed cells, resizing the window, etc.) and prevent common bugs like accidental page navigation on right-click. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Save/load game state 2. Custom themes or color schemes 3. Animation effects for explosions or victories 4. Hint system or undo functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event handlers that could cause memory leaks 2. Unnecessary DOM manipulation that could be handled more efficiently 3. Fancy effects that affect performance without enhancing gameplay. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of game logic, UI rendering, and event handling), code organization, and maintainability. Check for proper use of constants, meaningful variable names, and appropriate comments. Deduct 5 points if global scope is polluted with variables, 3 points if there's significant code duplication, and 2 points if the HTML structure is not semantic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game UI follows classic Minesweeper aesthetics while maintaining modern design principles: 1) Clear visual distinction between revealed/unrevealed cells 2) Proper color coding for numbers 3) Proportional grid sizing and readable font. Deduct 3 points for poor cell spacing, 4 points for unclear number colors, and 3 points for inconsistent styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game provides immediate visual feedback for user actions: 1) Cell reveal animations under 100ms 2) Clear visual indication of flagged cells and revealed numbers 3) Distinct game over state visualization. Deduct 3 points for laggy cell reveals, 3 points for unclear flagging indicators, and 4 points for abrupt or jarring game over presentation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

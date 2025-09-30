@@ -1,0 +1,68 @@
+{
+  "index": 1216,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Write HTML code that displays a file list where users can click to download files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HTML structure semantically correct and accessible?",
+      "description": "Check whether the code uses proper semantic HTML elements (<ul>, <li> for lists, <a> for download links) and includes accessibility attributes (aria-* attributes, proper alt text for icons). Score 0 if basic HTML structure is missing, 5 if semantic structure exists but lacks accessibility features, 10 if fully semantic and accessible.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the file download functionality correctly implemented?",
+      "description": "Verify if the download links use the 'download' attribute and 'href' pointing to actual files or implement programmatic download via JavaScript. Check if the code handles different file types appropriately. Score 0 if download functionality is missing, 5 if basic download links exist but lack proper attributes or error handling, 10 if fully implemented with proper attributes and error states.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the file list display relevant file metadata?",
+      "description": "Evaluate whether the file list shows important metadata (file size, type, modification date, etc.). Score 0 if no metadata is displayed, 5 if only basic filename is shown, 10 if comprehensive metadata is displayed in a well-organized format.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there visual feedback for download actions?",
+      "description": "Check if the interface provides visual indicators for download initiation, progress, and completion (hover effects, loading indicators, success/error notifications). Score 0 if no feedback exists, 5 if basic feedback is implemented but lacks comprehensiveness, 10 if complete visual feedback system is in place.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases (empty file lists, broken links, large files, unsupported file types) and provides fallback mechanisms. Code with strong robustness should handle these situations gracefully with appropriate error messages. Give 10 points if fully robust, 5 points if average handling of errors, 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for additional useful features beyond basic requirements (e.g., 1. File preview before download 2. Sorting/filtering options 3. Batch download functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check for redundancies: 1. Unnecessary scripts or libraries for a simple feature 2. Duplicate download mechanisms 3. Excessive styling unrelated to core functionality. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of HTML, CSS, JavaScript), naming conventions, and performance considerations. Deduct 5 points for inline styles/scripts when they should be separate; deduct 3 points for poor naming conventions; deduct 2 points for unoptimized resources that could impact performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate visual design: 1) Consistent spacing and alignment of list items 2) Appropriate use of color to indicate file types or statuses 3) Proper typography with adequate text contrast and hierarchy. Deduct 3 points for inconsistent spacing, 3 points for poor color choices affecting readability, 4 points for inadequate text contrast. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge interaction quality: 1) Clear hover/active states for download links 2) Immediate visual feedback on click 3) Responsive design that adapts to different screen sizes. Deduct 3 points for missing hover states, 3 points for lack of click feedback, 4 points if the design breaks on mobile or smaller viewports. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "easy"
+}

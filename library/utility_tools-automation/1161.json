@@ -1,0 +1,68 @@
+{
+  "index": 1161,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create a JSX script for one-click photo cutout in Photoshop 2025.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the JSX script structure and Photoshop API integration correctly implemented?",
+      "description": "Review whether the JSX script properly uses Photoshop's ExtendScript API, includes correct app.activeDocument references, and implements proper layer manipulation methods. Check if the script handles document validation, layer creation, and selection operations according to Photoshop 2025 specifications. Score 0 if basic Photoshop objects are not accessed, 5 if only simple operations work, and 10 if all core Photoshop APIs are properly integrated with error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the automated cutout algorithm implementation effective and accurate?",
+      "description": "Evaluate whether the script implements intelligent subject detection using Photoshop's built-in AI features (like 'Select Subject' or 'Remove Background'), includes edge refinement algorithms, and handles complex backgrounds. Check if the script uses proper selection methods like colorRange(), contract(), expand(), and feather() for precise cutouts. Deduct 5 points if edge detection is poor, 3 points if transparency handling is incomplete. Full score requires advanced selection refinement and multi-layer support.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the one-click workflow optimization properly designed with batch processing capability?",
+      "description": "Check whether the script provides true one-click functionality with minimal user intervention, includes batch processing for multiple images, and implements proper file handling (open, save, export). Evaluate if the script supports different input formats, automatic output naming conventions, and progress tracking. Deduct 5 points if manual intervention is required for each image, 3 points if batch processing fails on different file types. Full score requires seamless automation with robust file management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is comprehensive user preference and output format management implemented?",
+      "description": "Assess whether the script includes user-configurable settings (output format, quality, transparency options), supports multiple export formats (PNG, PSD, TIFF), and provides preview functionality before final processing. Check if the script remembers user preferences, includes undo functionality, and handles different color modes. Deduct 5 points if only basic PNG export is supported, 3 points if no user customization options exist. Full score requires complete preference management and format flexibility.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as locked layers, no active document, unsupported file formats, memory limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include try-catch blocks, proper error logging, and graceful degradation. Give 10 points if fully robust, 5 points if basic error handling exists, and 0 points if no exception handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance the cutout workflow?",
+      "description": "Check whether the code includes advanced features that improve the cutout experience (e.g., 1. Hair/fur detail preservation algorithms 2. Smart background replacement suggestions 3. Automatic edge color correction 4. Batch watermark removal 5. AI-powered subject recognition training). Add 3 points for each practical innovative feature implemented that goes beyond basic cutout functionality (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant selection methods (e.g., multiple similar cutout algorithms running simultaneously) 2. Unrelated image editing features (e.g., built-in filters or artistic effects) 3. Performance-heavy operations that don't improve cutout quality (e.g., unnecessary high-resolution previews). Deduct 3 points for each redundancy found, and directly deduct 10 points if redundant code significantly impacts script performance or core functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating selection logic, file handling, and UI components), proper function organization, and code maintainability. Check for consistent naming conventions, adequate commenting, and reusable function structures. Deduct 5 points if global variable pollution is found or no modular pattern is used; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if functions are not properly documented or organized. Full score requires clean, maintainable architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the user interface (if implemented) meet professional design standards?",
+      "description": "If the script includes a UI panel, evaluate whether it follows Adobe's design guidelines: 1) Consistent with Photoshop's native UI styling 2) Proper spacing and alignment (following 4px grid system) 3) Clear button hierarchy and iconography 4) Appropriate color scheme matching Photoshop's theme. Deduct 3 points for each UI element that doesn't match Adobe standards, 5 points for poor visual hierarchy, and 5 points for confusing layout. Full score for native-looking, intuitive interface.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the script performance optimized and processing feedback clear?",
+      "description": "Judge whether the script provides clear processing feedback: 1) Progress indicators during cutout operations 2) Processing time optimization for large files 3) Memory usage management 4) Clear status messages and completion notifications. Deduct 5 points for each operation without user feedback, 3 points if processing hangs on large files without indication, and 5 points if memory usage is not optimized. Full score requires smooth performance with comprehensive user feedback throughout the process.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

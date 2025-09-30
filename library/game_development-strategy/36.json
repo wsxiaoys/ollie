@@ -1,0 +1,68 @@
+{
+  "index": 36,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable and demonstrable.\n\nPlease use HTML and JavaScript to implement a points system.\n\n**Task**: Implement a points system where players can earn points by completing tasks and defeating enemies, which can be used to redeem rewards.\n\n**Hint**: Set up point earning and redemption functions, and provide various reward options.\n\nPlease add comments in the code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the points earning mechanism fully implemented?",
+      "description": "Review whether the code accurately implements multiple point earning scenarios through HTML/JavaScript, including task completion rewards, enemy defeat bonuses, and achievement unlocks. Check if point calculations are precise and if different earning rates are properly configured. Score 0 if no earning logic is implemented, 5 if only basic single-source earning exists, and 10 if multiple comprehensive earning mechanisms with proper validation are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the points redemption system properly designed?",
+      "description": "Check whether the redemption system includes comprehensive reward categories, proper point deduction logic, and transaction validation. Evaluate if the system handles insufficient points gracefully and maintains transaction integrity. Deduct 5 points if redemption validation is missing, and 3 points if transaction rollback mechanisms are not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is persistent data storage and retrieval implemented?",
+      "description": "Evaluate whether the system uses appropriate storage mechanisms (localStorage/sessionStorage/IndexedDB) for maintaining player points and transaction history. Check if data persistence survives page refreshes and browser sessions. Deduct 5 points if data is lost on refresh, and 3 points if transaction history is not properly maintained. Require proper data serialization and deserialization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is comprehensive points management interface constructed?",
+      "description": "Check whether the code includes complete points management features, including real-time balance display, transaction history viewing, reward catalog browsing, and point earning progress tracking. Deduct 5 points if balance updates are not real-time, and 3 points if transaction history lacks proper filtering/sorting. Give 10 points if all management features are fully implemented with proper user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as negative point attempts, invalid redemption requests, data corruption, concurrent operations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Point multiplier events/bonuses 2. Achievement badges and progress visualization 3. Point prediction and earning analytics 4. Social sharing of achievements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple point calculation logics coexisting) 2. Function modules unrelated to points system (e.g., built-in games or media players) 3. Fancy effects that affect performance (e.g., excessive animations on every point change). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating points logic/UI/storage layers), proper commenting for developer understanding, and code organization. Deduct 5 points if global state pollution is found or no design patterns are used; deduct 5 points if code comments are insufficient or unclear (less than 20% comment coverage); deduct 5 points if the code structure is poorly organized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for points display and rewards. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Point earning feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for redemption actions 4) Smooth point counter animations. Deduct 5 points for each operation without feedback, 3 points for jarring point updates without smooth transitions, and 5 points for hard-to-find reward categories or redemption buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "easy"
+}

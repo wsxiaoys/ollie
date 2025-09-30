@@ -1,0 +1,68 @@
+{
+  "index": 534,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable. Please implement a Bubble Shooter style game. The player controls a cannon at the bottom, adjusts the angle by moving the mouse, and clicks to shoot colored bubbles. Above is a matrix of colored bubbles arranged in hexagonal patterns. When a shot bubble connects with 3 or more bubbles of the same color, they are eliminated. Requirements: 1. Bubble physics and adhesion algorithm 2. Matrix structure detection 3. Trajectory prediction line 4. Chain elimination animation.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Bubble physics and adhesion algorithm implementation",
+      "description": "Evaluate whether the code accurately simulates bubble physics (movement, collision) and properly implements the adhesion algorithm that makes bubbles stick to the grid. Check if bubbles correctly snap to the hexagonal grid when they collide with other bubbles or the ceiling.0 points if bubble physics is missing, 5 points if basic movement is implemented but adhesion has issues, 10 points if physics behaves realistically and adhesion is pixel-perfect. Deduct 3 points if there are edge cases where bubbles behave erratically.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Hexagonal matrix structure and detection algorithm",
+      "description": "Review the implementation of the hexagonal grid structure and the algorithm for detecting connected bubbles. Check if the code efficiently identifies clusters of 3+ same-colored bubbles and properly manages the matrix state after eliminations.0 points if the hexagonal structure is not implemented, 5 points if basic structure exists but has detection flaws, 10 points if the hexagonal grid is perfectly implemented with efficient neighbor detection algorithms. Deduct 3 points if the algorithm fails in complex scenarios (e.g., bubbles becoming orphaned).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Trajectory prediction line accuracy",
+      "description": "Assess the trajectory prediction line's accuracy in showing where bubbles will travel, including proper bounce physics off walls. The prediction should update in real-time as the player moves the mouse.0 points if trajectory prediction is missing, 5 points if basic straight-line prediction exists, 10 points if prediction handles bounces accurately. Deduct 3 points if the prediction doesn't match actual bubble movement or flickers during mouse movement.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Chain elimination animation quality",
+      "description": "Evaluate the visual feedback and animations when bubbles are eliminated. Check for smooth popping animations, proper scoring displays, and visual/audio feedback that enhances player satisfaction.0 points if no elimination animations exist, 5 points for basic disappearing effects, 10 points for professional animations with particle effects and sound synchronization. Deduct 3 points if animations cause performance issues or visual glitches.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code robustness and error handling",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid-fire clicks, extreme angles, browser resizing, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points. Deduct 3 points for each uncaught exception that breaks gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative features that enhance gameplay",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups/special bubbles 2. Difficulty progression 3. Score multipliers 4. Visual/audio feedback systems).Add 3 points for each practical innovative feature implemented (maximum 10 points). Features must be fully functional and meaningfully impact gameplay to receive points.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Code optimization and performance",
+      "description": "Assess whether the game maintains stable 60 FPS performance even with many bubbles and animations. Check for optimization techniques like object pooling, efficient collision detection, and proper canvas rendering.Deduct 3 points for each performance issue (e.g., frame drops during animations, input lag, memory leaks). Deduct 5 points if the game becomes unplayable on standard hardware when the grid fills up. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering quality and code organization",
+      "description": "Review modular design (separation of game logic/view/physics), use of appropriate design patterns, and code reusability. Check for proper encapsulation and minimal global state.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game logic and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Visual design and user interface quality",
+      "description": "Evaluate whether the overall design follows game design principles: 1) Consistent bubble color scheme with clear differentiation 2) Proper UI layout with score/level information 3) Readable fonts and intuitive controls.Deduct 3 points for each unclear visual element, 5 points for poor color choices that make matching difficult, and 5 points for unintuitive UI that hinders gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Game feel and interaction responsiveness",
+      "description": "Judge whether the game controls feel satisfying and responsive: 1) Cannon rotation follows mouse smoothly 2) Shooting has immediate feedback 3) Bubble collisions feel impactful with appropriate sound/visual effects.Deduct 5 points for input lag exceeding 100ms, 3 points for jerky animations, and 5 points for unclear feedback when shooting or eliminating bubbles. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

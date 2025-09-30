@@ -1,0 +1,68 @@
+{
+  "index": 1489,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring that the generated code is executable for display. Please help me generate a bar chart comparison diagram based on the given content:\n\n┌───────────────┬─────────────┬─────────────┐  \n│       Item             │   Traditional Mode Consumption   │   Circular Mode Savings       │  \n├───────────────┼─────────────┼─────────────┤  \n│ Raw Wood Consumption   │ Equivalent to destroying 20 mu of forest | Recycled paper raw materials: 800 tons │  \n│ Carbon Dioxide Emissions│ Equal to annual emissions of 160 cars | Equivalent to planting 7000 fir trees │  \n│ Student Economic Burden │ Reduction of 35,000 bubble tea drinks | Convertible to 25,000 cups of campus benefits │  \n└───────────────┴─────────────┴─────────────┘",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the bar chart properly implemented with HTML/CSS/JavaScript?",
+      "description": "Evaluate whether the code uses appropriate web technologies (SVG, Canvas, or CSS) to render the bar chart. Check for proper initialization, scaling, and rendering of bars. Score 0 if no functional chart is created, 5 if basic bars are displayed but with issues, and 10 if the implementation is complete and visually correct.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data from the table correctly represented in the visualization?",
+      "description": "Verify that all data points from the provided table (Raw Wood, Carbon Dioxide, Student Economic Burden) are accurately represented in the chart. All 3 categories and their corresponding values for both Traditional Mode and Circular Mode must be visualized. Deduct 3 points for each missing or incorrectly represented data point. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are appropriate scales and units used for the different metrics?",
+      "description": "Check if the visualization handles the different units (forest area, tons, car emissions, trees, bubble tea drinks, campus benefits) appropriately. The visualization should normalize these different metrics for comparison or provide clear unit indicators. Deduct 4 points if units are misrepresented, 3 points if scales are inappropriate for comparison, and 3 points if no unit indicators are provided. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the chart effectively communicate the comparison between Traditional Mode and Circular Mode?",
+      "description": "Assess whether the visualization clearly shows the contrast between consumption and savings. The chart should visually distinguish between the two modes (e.g., through color coding, positioning, or labels) and make the comparison intuitive. Deduct 5 points if modes are not visually differentiated, 3 points if the comparison is unclear, and 2 points if labels don't clearly indicate which mode is which. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, different screen sizes, browser compatibility issues, etc.) and provide appropriate fallbacks. Code with strong robustness should have responsive design considerations and graceful degradation. Give 10 points for comprehensive error handling and responsiveness, 5 points for average robustness, and 0 points if these considerations are absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visualization experience (e.g., 1. Interactive tooltips showing detailed information 2. Animation transitions when switching views 3. Additional data visualization like percentage comparisons). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization functions 2. Visualization elements unrelated to the data comparison 3. Fancy effects that affect performance or clarity (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization is obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/interaction logic), code reusability, and maintainability. Deduct 5 points if global variables are overused or proper encapsulation is missing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern data visualization principles: 1) Harmonious color matching (no more than 3 primary colors with appropriate contrast) 2) Proper layout spacing and positioning 3) Professional typography (readable font size ≥ 12px, appropriate font choices). Deduct 3 points for each visual clutter element, 5 points for poor color choices that hinder data interpretation, and 5 points for illegible text or improper labeling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the chart interactive and user-friendly?",
+      "description": "Judge whether the chart provides appropriate interactivity: 1) Responsive tooltips or information on hover/click 2) Smooth transitions if data views can be changed 3) Clear visual cues for interactive elements. Deduct 5 points if there's no interactivity when it would benefit understanding, 3 points for laggy interactions, and 5 points if interactive elements aren't intuitive or accessible. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

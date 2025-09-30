@@ -1,0 +1,68 @@
+{
+  "index": 1731,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Please create a mobile shooting game for me, with the source code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core shooting mechanism fully implemented?",
+      "description": "Review whether the code accurately implements the shooting mechanics including weapon system, hit detection, damage calculation, and shooting effects. Score 0 if the core shooting logic is missing, 5 points if basic shooting is implemented without hit feedback, and 10 points if the full shooting system with proper collision detection, damage feedback and varying weapon types is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mobile touchscreen control system properly designed?",
+      "description": "Evaluate whether the game uses appropriate mobile input methods such as virtual joysticks, touch gestures, gyroscope controls, etc. Check for touch event handling, multi-touch support, and responsive controls that adapt to different screen sizes. Deduct 5 points if the controls are not optimized for mobile (e.g., keyboard controls), and 3 points if touch areas are too small or overlapping. Score 10 points for intuitive mobile-first controls with alternative input methods.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game loop and performance optimization implemented?",
+      "description": "Check whether the game implements a proper game loop with consistent frame rate handling, physics updates separate from rendering, and efficient resource management. Verify if the code includes mobile-specific optimizations like sprite batching, texture compression, and power management. Deduct 5 points if the game loop doesn't handle variable frame rates, and 5 points if there are no mobile optimization techniques. Give 10 points for a complete implementation with both features.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game include a complete progression system?",
+      "description": "Assess whether the game includes level progression, scoring/reward systems, character/weapon upgrades, and appropriate difficulty scaling. Evaluate whether game state is properly saved between sessions using local storage or other persistence methods. Deduct 5 points if there's no progression system, and 3 points if progression exists but lacks save functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as touch events outside game area, device rotation, background/foreground transitions, memory constraints, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects that affect gameplay 2. Destructible environments 3. AI opponents with adaptive difficulty). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to a mobile shooting game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems that cause frame drops on mobile). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handlers), asset management system, and build process for mobile deployment. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no consideration for mobile packaging and deployment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional mobile game design standards?",
+      "description": "Evaluate whether the UI follows mobile game design principles: 1) Touch-friendly button sizes (minimum 44x44pt) 2) Clear visual hierarchy with proper contrast 3) Responsive layout that works on different screen sizes and orientations. Deduct 3 points for each element that's too small for touch input, 5 points for poor visibility under different lighting conditions, and 5 points for layouts that don't adapt to device orientation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile gaming experience optimized?",
+      "description": "Judge whether the game is truly optimized for mobile: 1) Short gameplay sessions suitable for on-the-go play 2) Battery consumption considerations 3) Offline play capability 4) Appropriate use of device vibration and audio for feedback. Deduct 5 points for each missing mobile-specific optimization, 3 points for excessive battery drain without optimization attempts, and 5 points for requiring constant network connection without offline mode. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "medium"
+}

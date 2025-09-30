@@ -1,0 +1,68 @@
+{
+  "index": 415,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate can be executed and displayed. How can I add two menu items in Gradio, one for dynamically switching dark mode, and another for dynamically switching themes?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are the menu items correctly implemented in Gradio?",
+      "description": "Review whether the code properly implements menu items using Gradio's API components. Check for correct use of gr.Dropdown, gr.Radio, or custom components for theme selection. Score 0 if no menu implementation, 5 if basic implementation without proper styling, 10 if fully implemented with proper Gradio component integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the dark mode switching functionality working correctly?",
+      "description": "Verify the dark mode toggle functionality works dynamically without page refresh. Check for proper event handling that applies CSS changes or theme classes. Examine if the implementation uses Gradio's built-in theme methods or custom JavaScript. Score 0 if not implemented, 5 if implemented but requires page refresh, 10 if fully dynamic with smooth transition effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the theme switching functionality implemented properly?",
+      "description": "Evaluate if multiple themes can be selected and applied dynamically. Check if the code includes proper theme definitions or uses Gradio's built-in themes. Verify the theme switcher updates all UI elements consistently. Score 0 if theme switching is missing, 5 if only basic theme changes work, 10 if comprehensive theme switching with consistent application across the interface.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper state management for persistent theme preferences?",
+      "description": "Check if the code maintains user theme preferences across sessions using local storage, cookies, or server-side storage. Verify if theme state is properly synchronized between client and server components. Score 0 if no state persistence, 5 if basic persistence without synchronization, 10 if complete persistence mechanism with proper synchronization.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser incompatibilities, CSS conflicts, theme application failures) and provide friendly error handling or fallback mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Theme preview thumbnails 2. Automatic time-based theme switching 3. Custom theme creation interface). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple theme switching methods) 2. Function modules unrelated to theming (e.g., unnecessary UI components) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI logic from theme logic), code reusability, and maintainability. Deduct 5 points if global variable pollution is found or proper encapsulation is not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code is not structured logically for easy maintenance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the menu items follow modern design principles: 1) Visually distinguishable from other UI elements 2) Proper spacing and positioning in the interface 3) Professional typography and iconography. Deduct 3 points for poor visual hierarchy, 5 points for inconsistent styling with the rest of the interface, and 5 points for poor accessibility (e.g., low contrast). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the theme switching conforms to human perception characteristics: 1) Theme changes apply without visible flickering 2) Transition effects between themes are smooth (200-400ms) 3) Clear visual feedback when selecting themes. Deduct 5 points for jarring theme transitions, 3 points for delayed application of theme changes, and 5 points for lack of visual feedback during selection. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

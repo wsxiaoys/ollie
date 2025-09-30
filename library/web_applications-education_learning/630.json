@@ -1,0 +1,68 @@
+{
+  "index": 630,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure the code you generate is executable. Develop a programming knowledge learning tool that displays HTML/CSS/JavaScript concepts, with a real-time editing area below that allows users to input code and see the results (such as generated HTML structures or CSS styles) previewed immediately alongside.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the real-time preview functionality fully implemented?",
+      "description": "Review whether the code implements a seamless real-time preview system that updates as users type, with minimal delay (<100ms). Check for proper event listeners (e.g., 'input' events), debounce mechanisms for performance, and accurate rendering of HTML/CSS/JavaScript results. Score 0 if preview is not implemented, 5 if basic preview exists but has significant delay/bugs, 10 if preview works flawlessly with immediate feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the HTML/CSS/JavaScript concept display system comprehensive?",
+      "description": "Evaluate whether the tool provides clear explanations of key web development concepts, with well-structured categories and subcategories. Check for inclusion of basic concepts (e.g., HTML structure, CSS selectors, JavaScript variables) and advanced topics (e.g., CSS grid, JavaScript promises). Deduct 2 points for each major conceptual area missing, 1 point for incomplete explanations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the code editor functionality properly implemented?",
+      "description": "Assess the code editor for essential features: syntax highlighting, line numbers, auto-indentation, and proper handling of tab characters. Examine whether it supports multiple language modes (HTML/CSS/JavaScript) with appropriate highlighting for each. Deduct 3 points if syntax highlighting is missing, 2 points for lack of line numbers, 2 points for no auto-indentation, and 3 points if language switching is not supported or buggy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper error handling and debugging support?",
+      "description": "Check whether the tool provides meaningful error messages when user code contains syntax errors or runtime exceptions. Verify that errors are displayed in a user-friendly manner with appropriate highlighting of problematic code sections. Look for features like console output integration and debugging hints. Deduct 5 points if errors are not caught or displayed, 3 points if error messages are cryptic/unhelpful, and 2 points if line references are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malicious code injection attempts, extremely large code inputs, infinite loops in user code, etc.) and provide containment or graceful failure. Code with strong robustness should use sandboxing techniques like iframes with proper security attributes or Web Workers for JavaScript execution. Give 10 points for comprehensive protection, 5 points for basic safeguards, and 0 points if no protection mechanisms exist.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Code snippets library for quick learning 2. Interactive challenges with automated validation 3. Visualization of DOM structure or CSS box model 4. Split view for before/after code changes). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple preview rendering engines) 2. Function modules unrelated to code learning (e.g., built-in games unrelated to programming) 3. Fancy effects that affect performance (e.g., excessive animations that distract from learning). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/editor logic/preview rendering), code reusability, and appropriate design patterns. Deduct 5 points if global state pollution is found or if appropriate design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation of concerns between different functional components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern learning tool design principles: 1) Clear visual hierarchy with concept display prominently separated from code input/output areas 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (monospace fonts for code, sans-serif for instructions, with proper size contrast). Deduct 3 points for each crowded visual element, 5 points for poor contrast between code and instructions, and 5 points for chaotic layout that hampers the learning experience. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects facilitate learning: 1) Preview updates within 200ms of code changes 2) Smooth transitions when switching between concept categories 3) Clear visual focus guidance for the currently selected concept or code section. Deduct 5 points for sluggish preview updates, 3 points for jarring transitions between views, and 5 points for confusing navigation that makes it difficult to track learning progress. Consider whether resize handles exist for adjusting the ratio between editor and preview. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

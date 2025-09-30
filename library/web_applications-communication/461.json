@@ -1,0 +1,68 @@
+{
+  "index": 461,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration purposes. Design an online whiteboard application where users can draw graphics in real-time, supporting synchronized content for multiple users, and offering undo and clear functions.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic canvas drawing functionality fully implemented?",
+      "description": "Review whether the code accurately implements the core drawing capability using HTML5 Canvas API, with proper event handling for mouse/touch interactions. Check for support of different drawing tools (pen, shapes, text) with configurable properties (color, thickness, opacity). Score 0 if no drawing functionality exists, 5 if only basic freehand drawing is implemented, and 10 if multiple drawing tools with customizable properties are available.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is real-time multi-user synchronization properly implemented?",
+      "description": "Evaluate the WebSocket/WebRTC implementation for real-time data transmission between users. Check for optimized data transfer (sending only incremental changes rather than full canvas state), conflict resolution mechanisms, and user presence indicators. Deduct 5 points if synchronization has noticeable lag (>200ms), 3 points if there's no user cursor visibility, and 5 points if conflict handling is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are undo/redo and clear functions properly implemented?",
+      "description": "Check whether the application maintains a proper action history stack to support multi-level undo/redo operations across all drawing actions. Verify that clear functionality works correctly and is synchronized to all users. Deduct 5 points if undo history is limited to less than 10 steps, 3 points if redo functionality is missing, and 5 points if clear actions aren't properly synchronized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper state management and persistence?",
+      "description": "Assess whether the application maintains whiteboard state during page refresh/reconnection, and if it provides options to save/export content in common formats (PNG, SVG, JSON). Check for auto-save functionality and session recovery. Deduct 5 points if state is lost on page refresh, 3 points if export options are limited, and 5 points if there's no auto-save capability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruptions, browser compatibility issues, memory limitations with large canvases, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted drawing tools 2. Collaborative annotation with voice chat 3. Interactive presentation mode with pointer tools 4. Template library for common diagrams). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar drawing functions (e.g., multiple overlapping pen tools) 2. Function modules unrelated to whiteboard collaboration (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down drawing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing logic/UI/networking layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional toolbar organization (grouped by function, with clear icons). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic toolbar layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the drawing experience feels natural and responsive: 1) Drawing latency ≤ 50ms 2) Smooth rendering without jitter during rapid strokes 3) Clear visual feedback for tool selection and actions. Deduct 5 points for noticeable lag when drawing, 3 points for jerky rendering on complex drawings, and 5 points for confusing tool state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 755,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable. HTML page is required to display the following information: IP address, deployed services (e.g., Gateway*1, Worker ID*2), CPU utilization, and memory utilization.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the IP address information correctly implemented?",
+      "description": "Check if the code properly fetches and displays the server's IP address information. It should use reliable methods like server-side APIs or JavaScript's fetch to retrieve this data. Score 0 if IP address is hardcoded or missing, 5 if it's implemented but without validation or formatting, and 10 if properly implemented with IPv4/IPv6 support and proper formatting.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the deployed services (Gateway, Worker ID) properly displayed?",
+      "description": "Verify that the code properly retrieves and displays the Gateway and Worker ID information. Check whether it uses appropriate server-side data sources or API endpoints. Deduct 5 points if service information is hardcoded, 3 points if only partial service information is shown. Full score requires dynamic service discovery with proper error handling when services are unavailable.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is CPU utilization monitoring implemented correctly?",
+      "description": "Evaluate whether the code includes accurate CPU utilization monitoring with appropriate data retrieval methods (server-side metrics API or JavaScript performance APIs). Check for real-time updates (using WebSockets or polling). Deduct 5 points if utilization data is simulated, 3 points if updates are too infrequent (>10s), and 3 points if there's no historical trending. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is memory utilization monitoring implemented correctly?",
+      "description": "Check if the code properly retrieves and displays memory utilization data with appropriate units (MB/GB), percentage indicators, and visualization. Deduct 5 points if memory metrics are simulated, 3 points if there's no distinction between different memory types (heap/non-heap or used/available), and 3 points if there's no warning mechanism for high memory usage. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, API failures, missing data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-refresh with configurable intervals 2. Visual alerts for abnormal metrics 3. Interactive graphs showing historical data). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to fetch the same metrics) 2. Function modules unrelated to system monitoring (e.g., unnecessary UI elements) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data retrieval/processing/visualization layers), error handling patterns, and code maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between data retrieval and presentation layers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Data refresh doesn't interrupt user interaction 2) Loading states shown during data retrieval 3) Smooth transitions when data changes. Deduct 5 points for each refresh that disrupts user experience, 3 points for missing loading indicators, and 5 points for jarring data transitions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "medium"
+}

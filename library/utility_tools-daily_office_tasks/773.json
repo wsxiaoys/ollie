@@ -1,0 +1,68 @@
+{
+  "index": 773,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. I want to create an APP that includes work item categorization, task lists, and a Pomodoro timer. What APP integration platform should I use, and can you provide the complete programming code?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the work item categorization system properly implemented?",
+      "description": "Evaluate whether the code implements a comprehensive categorization system that allows for hierarchical organization (projects > categories > tasks), tag-based filtering, and priority assignment. Check if it includes data validation for category creation/editing and proper handling of category deletion (including orphaned tasks). Score 0 if categorization is absent, 5 if basic categorization exists, and 10 if advanced features like custom fields or category-based analytics are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the task list functionality complete and intuitive?",
+      "description": "Examine the task list implementation for core features like task creation, editing, deletion, status tracking, due dates, reminders, and sorting/filtering options. Check if the code handles task dependencies, recurring tasks, and progress tracking. Deduct 5 points if basic CRUD operations are missing, and 3 points if there's no offline data persistence. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Pomodoro timer properly implemented with standard features?",
+      "description": "Review the Pomodoro timer code for accurate time tracking, configurable work/break intervals, audio notifications, and session counting. Check if it handles background execution and device sleep modes correctly. Deduct 5 points if timer continues running in background without proper notifications, 3 points if customization options are limited, and 5 points if there's no session history. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the integration between components seamless and logical?",
+      "description": "Assess how well the three main components (categorization, task lists, and Pomodoro timer) are integrated. Check if tasks can be associated with timer sessions, if completed pomodoros update task progress, and if the categorization system affects task visibility. Deduct 5 points if components operate in isolation, 3 points if data sharing between components requires manual user intervention. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect input data, network interruption, app backgrounding, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based task prioritization 2. Visual productivity analytics 3. Social accountability features 4. Voice command support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timer implementations) 2. Function modules unrelated to productivity management 3. Fancy effects that affect performance (e.g., excessive animations that slow down task entry). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/UI/data persistence layers), test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "medium"
+}

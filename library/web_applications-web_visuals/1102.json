@@ -1,0 +1,68 @@
+{
+  "index": 1102,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. H5 implementation of panoramic VR effect code (without introducing other library files)",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the panoramic VR rendering core implemented correctly?",
+      "description": "Verify the implementation of the spherical projection algorithm, ensuring correct texture mapping using equirectangular projection. Check if the code includes proper handling of field of view (FOV), aspect ratio, and perspective distortion correction. Score 0 if no spherical projection is implemented, 5 if basic projection exists with inaccuracies, and 10 if the projection correctly renders 360° imagery with proper distortion handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mouse/touch interaction for camera control properly implemented?",
+      "description": "Evaluate the implementation of drag-to-rotate functionality, including proper event listeners for both mouse and touch inputs. Check for smooth damping effects, proper calculation of rotation angles based on input deltas, and prevention of gimbal lock. Look for inertia implementation for natural movement. Deduct 5 points if only one input method is supported, 3 points if interaction feels jerky or unnatural, and 2 points if edge cases (like rapid movements) aren't handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is device orientation support implemented for mobile VR experience?",
+      "description": "Assess whether the code uses the DeviceOrientation API to allow navigation via physical device movement. Check if the implementation includes proper permission handling, fallbacks for unsupported devices, and calibration options. Verify that orientation changes are translated correctly to camera rotation. Score 0 if completely missing, 5 if implemented but with significant limitations (e.g., works only in certain orientations), and 10 if fully functional with smooth and accurate tracking.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the panoramic image loading and texture management efficient?",
+      "description": "Check if the code implements proper image loading with progress indicators, error handling for failed loads, and optimization techniques like mip-mapping or progressive loading for large panoramic images. Verify that memory management is considered for large textures. Deduct 3 points if no loading feedback is provided, 5 points if image optimizations are absent, and 5 points if errors in loading aren't gracefully handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported browsers, WebGL initialization failures, image loading errors, etc.) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should detect WebGL support, handle various aspect ratios, and manage resource limitations gracefully. Give 10 points for comprehensive error handling, 5 points for partial error handling, and 0 points if exceptions are unmanaged.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the VR experience (e.g., 1. Hotspot navigation system 2. Animated transitions between panoramas 3. Customizable viewing filters 4. Audio spatialization tied to viewing direction). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate rendering approaches coexisting unnecessarily 2. Overly complex shader code for simple effects 3. Unused event listeners or abandoned experimental features still present in the code. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core VR functionality is impaired by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the code structure for separation of concerns (renderer, controls, UI components), proper namespacing to avoid global pollution, and appropriate commenting. Check for hard-coded values that should be configurable parameters. Deduct 5 points for excessive global variables, 5 points for poor code organization (monolithic structure), and 5 points for inadequate documentation of the API or functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether UI elements (controls, loading indicators, hotspots) follow modern design principles: 1) Minimal and unobtrusive UI that doesn't distract from the immersive experience 2) Clear iconography for interactive elements 3) Proper contrast ensuring visibility against varying panorama backgrounds. Deduct 3 points for cluttered UI elements, 5 points for controls that obscure the VR experience, and 5 points for poor visibility of interactive elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the performance optimization adequate for smooth VR experience?",
+      "description": "Judge whether the implementation maintains 60fps minimum for a smooth VR experience: 1) Efficient WebGL practices (proper use of buffers, minimal state changes) 2) Render optimizations like frustum culling or level-of-detail 3) Appropriate texture size management for mobile devices. Deduct 5 points for each noticeable frame drop during rotation, 5 points for excessive memory usage causing browser warnings, and 5 points if the code doesn't adapt rendering quality for different devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "hard"
+}

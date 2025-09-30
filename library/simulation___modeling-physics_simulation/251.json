@@ -1,0 +1,68 @@
+{
+  "index": 251,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to ensure that the generated code is executable for display. Help me generate a frontend program code for a solar celestial movement.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the solar system celestial body model correctly implemented?",
+      "description": "Review whether the code accurately implements celestial bodies with proper orbital mechanics calculations. Check for correct representation of planets, moons, and the sun with proportional sizes and realistic textures. Score 0 if celestial bodies are missing, 5 if basic shapes exist but lack details, and 10 if the model includes accurate planetary characteristics (size ratios, textures, axial tilts).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are orbital paths and celestial movements scientifically accurate?",
+      "description": "Evaluate whether the orbital calculations follow Kepler's laws with proper elliptical paths and varying orbital velocities. Verify that planets rotate on their axes while orbiting the sun, and moons correctly orbit their planets. Deduct 5 points if orbits are perfectly circular (unrealistic), 3 points if orbital speeds are constant (not following Kepler's second law), and 2 points if axial rotations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a time control system for the solar system simulation?",
+      "description": "Check for implementation of time controls like play/pause, speed adjustment (faster/slower), and time jumping capabilities. Ensure that relative orbital periods are maintained when speed is adjusted. Deduct 5 points if only play/pause exists without speed control, 3 points if the time scale is fixed, and 2 points if there's no visual indicator of the current time scale. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an interactive camera/viewpoint control system?",
+      "description": "Evaluate whether users can change perspectives (zoom in/out, pan, rotate view), switch focus between different celestial bodies, or choose preset viewpoints (e.g., from Earth, top-down view). Deduct 5 points if only basic zoom is implemented, 3 points if rotation controls are unintuitive, and 5 points if changing focus between planets isn't possible. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, browser compatibility issues, performance degradation on slower devices) and provide graceful fallbacks or adjustments. Code with strong robustness should adapt to different screen sizes, maintain consistent frame rates by adjusting detail levels, and handle WebGL/Canvas API failures. Give 10 points for excellent robustness, 5 points for average handling, and 0 points if these edge cases aren't addressed.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realistic lighting effects with shadows 2. Comet or asteroid simulation 3. Space events like solar flares or eclipses 4. Interactive information panels with astronomical data). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar rendering methods 2. Function modules unrelated to celestial movements (e.g., an unnecessary audio player) 3. Excessive visual effects that significantly impact performance (e.g., too many particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics calculations from rendering logic, reusable celestial body components), code organization patterns, and performance optimization techniques. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization strategies are implemented (e.g., object pooling, LOD). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional astronomical visualization standards?",
+      "description": "Evaluate whether the overall design follows professional astronomical visualization principles: 1) Scientific color schemes for celestial bodies 2) Proper scale indicators or reference grid 3) Clean UI controls that don't obstruct the main view. Deduct 3 points for each visually inaccurate celestial representation, 5 points for unrealistic space background (e.g., bright blue space), and 5 points for obtrusive UI elements that block important parts of the simulation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation and interaction conform to astronomical visualization standards: 1) Consistent frame rate ≥30fps 2) Smooth transitions when changing viewpoints 3) Responsive controls with appropriate momentum/inertia effects for camera movement. Deduct 5 points for stuttering animations, 3 points for abrupt camera transitions, and 5 points for delayed response to user input. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "hard"
+}

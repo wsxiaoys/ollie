@@ -1,0 +1,68 @@
+{
+  "index": 1098,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for display. Help me create a full-screen calendar webpage that includes all 12 months. The top of the page should have a year selector, and it should be able to display workdays, rest days, and holidays by importing a JSON date sequence.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the full-screen calendar layout properly implemented?",
+      "description": "Evaluate whether the HTML/CSS implementation creates a true full-screen calendar with proper grid layout for all 12 months. Check if the layout is responsive across different screen sizes and maintains proper aspect ratios. Score 0 if not full-screen, 5 if full-screen but with layout issues, and 10 if perfectly implemented with responsive design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the year selector functionality complete?",
+      "description": "Examine if the year selector is implemented at the top of the page with proper event handling. Check for features like dropdown/input field, validation (preventing non-numeric or invalid years), and smooth year transitions that preserve view state. Deduct 3 points if only basic year changing works, 5 points if validation is missing, and 7 points if year transitions cause visual glitches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the JSON date import mechanism correctly implemented?",
+      "description": "Assess the code's ability to parse and display workdays, rest days, and holidays from imported JSON data. Check for proper error handling when processing malformed JSON, the presence of a loading state, and efficient data processing. Deduct 5 points if there's no error handling, 3 points if the calendar doesn't update reactively when new JSON is loaded, and 5 points if date categories (workday/rest day/holiday) aren't visually distinct. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the date rendering and visualization accurate?",
+      "description": "Check whether the calendar correctly handles leap years, month lengths, and first day of month positioning. Verify that today's date is highlighted and dates outside the current month are visually distinguished. Deduct 5 points for each date calculation error (like incorrect leap year handling), 3 points if today's date isn't highlighted, and 5 points if the calendar grid doesn't properly align with weekdays. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid JSON data, out of range years, browser resize events, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animation effects for month transitions 2. Keyboard shortcuts for navigation 3. Interactive tooltips for holidays with descriptions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple date calculation methods) 2. Function modules unrelated to calendar display (e.g., unnecessary widgets) 3. Fancy effects that affect performance (e.g., excessive animations that slow down rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/date logic/state management), code reusability, and the presence of comments or documentation. Deduct 5 points if global state management is chaotic or overly complex; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no documentation or comments explaining complex logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for different date types (workdays, rest days, holidays) 2) Proper layout spacing between months and within date cells 3) Professional typography for month names, weekday headers, and date numbers (consistent font sizes and proper contrast). Deduct 3 points for each inconsistent visual element, 5 points for poor color choices that hinder readability, and 5 points for cluttered month layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Year changing response delay ≤ 100ms 2) Smooth transitions between years without jarring visual changes 3) Clear visual feedback when selecting dates or changing views. Deduct 5 points for laggy year transitions, 3 points for missing hover states on interactive elements, and 5 points if the calendar re-renders in a visually disruptive way. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

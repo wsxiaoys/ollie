@@ -1,0 +1,68 @@
+{
+  "index": 682,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple, easy-to-understand comments. Don't output anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code and ensure the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output to evaluate its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or using user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nImplement a batch image compression tool. Users can upload multiple images and select a compression quality percentage. The tool needs to compress the images and provide a packaged download function.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the batch image upload functionality fully implemented?",
+      "description": "Review whether the code accurately implements multiple file selection through HTML file input with 'multiple' attribute, includes proper file type validation (JPEG, PNG, WebP, etc.), and handles file size limitations. Check if drag-and-drop upload is supported and if upload progress indicators are provided. Score 0 if basic multi-file upload is not working, 5 if only basic upload without validation is implemented, and 10 if all upload features including drag-and-drop and progress tracking are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image compression algorithm properly implemented?",
+      "description": "Evaluate whether the compression logic uses Canvas API or similar technology to resize and compress images with configurable quality settings. Check if the tool maintains aspect ratios, supports different output formats, and provides real-time compression preview. Deduct 5 points if compression quality control is not implemented, 3 points if aspect ratio is not preserved, and 2 points if no compression preview is available. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the batch processing mechanism efficiently designed?",
+      "description": "Check whether the batch processing uses Web Workers or similar asynchronous processing to prevent UI blocking, includes progress tracking for individual files and overall batch progress, and handles concurrent processing limits. Evaluate if error handling for individual file failures doesn't stop the entire batch. Deduct 5 points if processing blocks the UI, 3 points if no progress indication is provided, and 2 points if one file failure stops all processing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the packaged download functionality complete?",
+      "description": "Verify whether the code implements ZIP file generation using JSZip or similar library, provides download triggers with proper file naming, and includes compression statistics (original vs compressed sizes). Check if the download handles large file batches without memory issues. Deduct 5 points if ZIP packaging is not implemented, 3 points if download fails for large batches, and 2 points if no compression statistics are provided. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted image files, unsupported formats, memory limitations, network interruptions, and browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like extremely large files or invalid image data, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time file size comparison charts 2. Batch rename functionality with custom patterns 3. Image format conversion options 4. EXIF data preservation settings 5. Compression quality preview with before/after comparison). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple compression algorithms doing the same job) 2. Function modules unrelated to image compression (e.g., built-in image editor with complex filters) 3. Fancy effects that affect performance (e.g., heavy animations during compression). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core compression functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file handling/compression logic/UI layers), proper error handling, and code organization. Deduct 5 points if global state pollution is found or no separation of concerns; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper file cleanup or memory management is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for upload area, settings, and download sections. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout of compression controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) File upload feedback delay ≤ 100ms 2) Compression progress animations are smooth and informative 3) Quality slider provides real-time preview updates 4) Clear visual focus guidance during batch processing. Deduct 5 points for each operation without feedback, 3 points for laggy progress indicators, and 5 points if compression quality changes don't provide immediate visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

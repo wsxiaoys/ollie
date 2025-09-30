@@ -1,0 +1,68 @@
+{
+  "index": 772,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration. Help me write an HTML page where I need to embed a Unity cloud rendering URL and interact with it.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HTML page correctly structured for embedding a Unity WebGL application?",
+      "description": "Check whether the HTML document has proper DOCTYPE declaration, meta tags, and follows HTML5 standards. Verify if the Unity iframe or container div is structured correctly with appropriate dimensions and responsive design considerations. Deduct 5 points if responsive design is missing, 3 points if incomplete meta tags, and 2 points if semantic HTML elements are not used. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Unity cloud rendering URL properly integrated?",
+      "description": "Evaluate whether the code uses the correct embedding technique (iframe, WebGL container, etc.) for the Unity cloud rendering URL. Check for proper URL handling, loading states, and error handling when the Unity content is unavailable. Deduct 5 points if the embedding approach is incorrect, 3 points if loading indicators are missing, and 2 points if error states aren't handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the communication between HTML and Unity implemented?",
+      "description": "Review whether the code includes proper JavaScript bridge functions for bi-directional communication between the webpage and Unity application. Check if the implementation uses standard Unity external call patterns (e.g., SendMessage, JSLib) and properly handles asynchronous messaging. Deduct 5 points if bidirectional communication is missing, 3 points if event listeners are improperly implemented, and 2 points if security considerations are ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the Unity interaction controls well-designed?",
+      "description": "Assess whether external UI controls for Unity interaction are implemented (like buttons, sliders, input fields) that can trigger actions in the Unity application. Check if the controls follow a consistent design pattern and provide visual feedback when interacting with Unity. Deduct 3 points if controls are inconsistently designed, 5 points if there's no visual feedback for interactions, and 2 points if control labeling is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as Unity failing to load, network interruptions, browser compatibility issues, etc.) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom loading animations while Unity initializes 2. Fullscreen toggle with proper UI adaptation 3. Performance monitoring with visual indicators). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same Unity interaction) 2. Function modules unrelated to Unity integration (e.g., unnecessary animations or effects) 3. Fancy effects that affect performance (e.g., heavy background animations competing with Unity rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI logic/Unity communication/error handling), maintainability, and documentation quality. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code duplication rate is too high (over 30%); deduct 2 points if comments and documentation are insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching between HTML UI and Unity content 2) Proper layout with clear separation between controls and Unity viewport 3) Professional font system and consistent styling. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms for Unity communication 2) Proper loading and transition states when interacting with Unity 3) Clear visual guidance for available interactions. Deduct 5 points for each operation without feedback, 3 points for delayed Unity responses without indicators, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

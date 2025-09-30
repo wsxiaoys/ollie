@@ -1,0 +1,68 @@
+{
+  "index": 752,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Create a web game where a person is being chased by a gorilla from behind - a parkour/running game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core parkour game mechanics fully implemented?",
+      "description": "Review whether the code implements the basic parkour/running mechanics including player movement, jumping, obstacles generation, collision detection, and scoring system. The character must be able to run forward with the gorilla chasing from behind. Score 0 if the core mechanics are absent, 5 if basic movement and obstacle detection exist but without proper chase dynamics, and 10 if the complete parkour system with difficulty progression is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the gorilla chase AI behavior properly designed?",
+      "description": "Evaluate the gorilla's AI behavior - it should dynamically pursue the player with appropriate difficulty scaling (increasing speed over time or when player performs well). Check if the gorilla has realistic animations and movement patterns. Deduct 5 points if the gorilla moves in a straight line without any intelligence, 3 points if the chase animation lacks smoothness, and 2 points if there's no difficulty progression. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game controls responsive and intuitive?",
+      "description": "Check if the game implements touch/keyboard controls that respond within 50ms, allowing the player to jump, slide, or dodge obstacles. Controls should be clearly explained and consistent. Deduct 5 points if input lag exceeds 100ms, 5 points if controls are not explained in-game, and 3 points if the control scheme is overly complicated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game environment properly generated and infinite?",
+      "description": "Assess whether the code implements procedural generation of the game environment for endless running, with appropriate memory management (removing off-screen elements). Check if obstacle patterns are varied and thematically appropriate. Deduct 5 points if the environment is static/finite, 3 points if obstacles are too repetitive, and 5 points if there are performance issues with environment generation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, browser resizing, device orientation changes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups that temporarily slow the gorilla 2. Environmental interaction like swinging vines 3. Different biomes/environments as the game progresses). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple jump mechanics that serve the same purpose) 2. Function modules unrelated to parkour gameplay (e.g., an unnecessary inventory system) 3. Fancy effects that affect performance (e.g., excessive particle systems causing frame drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), asset management, and performance optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no asset preloading strategy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Consistent visual theme (jungle/urban environment) 2) Clear UI elements that don't obstruct gameplay (score display, distance meter) 3) Appropriate visual feedback for actions (jump animations, collision effects). Deduct 3 points for each interfering UI element, 5 points for inconsistent visual style, and 5 points for hard-to-read text during gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game maintains consistent frame rate (minimum 30 FPS) and whether animations are fluid: 1) Character animation transitions are smooth 2) Obstacle appearance and removal are seamless 3) Game speed changes gradually rather than abruptly. Deduct 5 points for frame rate drops below 30 FPS, 3 points for jerky animations during critical gameplay moments, and 5 points for abrupt visual changes that disrupt gameplay flow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

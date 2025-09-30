@@ -1,0 +1,68 @@
+{
+  "index": 290,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Use VSCode to help me create a frontend login system that includes user registration, user login, and administrator login.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user registration system properly implemented?",
+      "description": "Check if the registration form includes essential fields (username, email, password, confirm password), client-side validation (email format, password strength, matching passwords), feedback mechanisms for validation errors, and proper handling of form submission. Score 0 if registration functionality is missing, 5 if basic form exists but lacks validation, 10 if fully implemented with comprehensive validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the user login functionality complete?",
+      "description": "Evaluate if the login form includes necessary fields (username/email, password), implements authentication logic, provides proper error handling for failed login attempts, and includes 'remember me' and 'forgot password' options. Deduct 3 points if password masking/visibility toggle is missing, 3 points if login error messages are not user-friendly, 5 points if no session management is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the administrator login functionality properly distinguished?",
+      "description": "Assess whether the admin login is properly separated from regular user login, includes additional security measures (such as two-factor authentication or CAPTCHA), and provides appropriate access controls to admin functionalities. Deduct 5 points if admin and user logins are not clearly differentiated, 3 points if no additional security is implemented for admin access, 5 points if there's no proper access control validation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the frontend-backend integration approach well-designed?",
+      "description": "Check if the code includes clear API endpoints for authentication operations, proper data transmission methods (forms/fetch/axios), response handling, and token-based authentication implementation. Deduct 3 points if API calls are not properly structured, 5 points if no token-based authentication is implemented, 3 points if error handling for API failures is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid inputs, session timeouts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Progressive UI revealing complexity as needed 2. Social login integration 3. Passwordless login options 4. Biometric authentication support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple validation logics coexisting) 2. Function modules unrelated to authentication (e.g., unnecessary dashboard elements) 3. Fancy effects that affect performance (e.g., excessive animations in login flow). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating authentication logic/UI components/API services), code reusability, naming conventions, and proper comments. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional form design (consistent input sizes, aligned labels). Deduct 3 points for each misaligned form element, 5 points for inconsistent visual styling between forms, and 5 points for poor mobile responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback within 100ms 2) Smooth transitions between registration and login forms 3) Clear visual indicators of validation states. Deduct 5 points for forms without loading states during submission, 3 points for jarring transitions between authentication steps, and 5 points for validation feedback that appears with significant delay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

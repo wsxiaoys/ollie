@@ -1,0 +1,68 @@
+{
+  "index": 834,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable where possible. Vue3 combined with WebGIS to overlay bar charts on offline city and county base maps",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 integration with WebGIS properly implemented?",
+      "description": "Review whether the code correctly integrates Vue3 with WebGIS libraries (like OpenLayers, Leaflet, or ArcGIS JS API). Check for proper component architecture, reactive data handling with Composition API, and lifecycle management when rendering the map. Score 0 if no integration exists, 5 if basic integration exists but with errors, and 10 if the integration is flawlessly implemented with proper Vue3 paradigms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the offline map functionality fully implemented?",
+      "description": "Evaluate the implementation of offline maps by checking for local tile management, proper configuration of tile sources, coordinate system support, and graceful fallback when network is unavailable. Verify that all city and county boundaries are correctly rendered. Deduct 3 points if tile caching logic is missing, 5 points if the offline mode has significant rendering issues, and 3 points if no feedback is provided when map data is unavailable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the bar charts correctly overlaid and georeferenced on the map?",
+      "description": "Check whether the bar charts are accurately positioned on the map using geographic coordinates and properly scaled across zoom levels. Verify that the charts include features like tooltips, dynamic updates, and appropriate visual encoding. Deduct 5 points if charts don't align with geographic features, 3 points if they lack responsive scaling during zoom operations, and 5 points if the visual design makes the underlying map illegible. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an efficient data binding mechanism between map features and chart data?",
+      "description": "Assess how the code establishes connections between geospatial features and the corresponding data for visualization. Check for proper data normalization, efficient data structure design, and optimization for rendering performance. Score 0 if there's no clear data binding strategy, 5 if a basic strategy exists but with performance issues, and 10 if an optimized and scalable approach is implemented with efficient reactivity mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations such as missing map tiles, malformed GeoJSON data, undefined chart values, browser resize events, and touch/mobile interactions. Code with strong robustness should provide appropriate error boundaries, fallback UI states, and defensive programming techniques. Give 10 points for comprehensive error handling, 5 points for average coverage of edge cases, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive filtering of chart data directly on the map, 2. Time-series animation capabilities, 3. Custom themeable visualization styles, 4. Comparative analysis tools between regions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant map layer management implementations, 2. Excessive chart libraries when simpler solutions would suffice, 3. Fancy effects that affect map rendering performance (e.g., unnecessary animations or high-frequency updates). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of map services, data services, and visualization components), unit test coverage for critical components, and build optimization for map assets. Deduct 5 points if global state pollution is found; deduct 5 points if component reusability is poor or prop drilling is excessive; deduct 5 points if no optimization for map tile loading and chart rendering exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional cartographic and visualization standards?",
+      "description": "Evaluate whether the design follows both cartographic and data visualization principles: 1) Appropriate color schemes for both map features and chart elements, 2) Proper visual hierarchy between base map and data overlays, 3) Legible labels and chart annotations across different zoom levels. Deduct 3 points for poor contrast between charts and map, 5 points for information overload obscuring important geographical features, and 5 points for ineffective visual encoding of data variables. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the map interaction and chart responsiveness smooth and intuitive?",
+      "description": "Judge whether the interaction design meets user expectations: 1) Map pan/zoom operations remain smooth with chart overlays, 2) Chart interactions (hover, click) provide immediate feedback (≤100ms), 3) Appropriate level-of-detail rendering at different zoom levels. Deduct 5 points for laggy map operations with charts visible, 3 points for charts that don't update properly during map navigation, and 5 points if the application becomes unresponsive on mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

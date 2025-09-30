@@ -1,0 +1,68 @@
+{
+  "index": 604,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure to ensure the generated code is executable for demonstration. Develop a video resolution conversion tool that supports converting uploaded videos to specified resolutions (maintaining aspect ratio), provides intelligent upscaling algorithm options (such as bicubic interpolation), and can batch process multiple video files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core video resolution conversion functionality fully implemented?",
+      "description": "Review whether the code implements the essential video conversion functionality with proper libraries (FFmpeg, OpenCV, etc.). Check if it maintains aspect ratio during conversion and supports standard resolutions (720p, 1080p, 4K). Score 0 if conversion functionality is missing, 5 if basic conversion exists but without aspect ratio preservation, and 10 if all requirements are properly implemented with progress tracking.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are multiple upscaling algorithm options provided?",
+      "description": "Verify implementation of different upscaling algorithms (bicubic, bilinear, Lanczos, AI-based like ESRGAN). Check if the code allows users to select algorithms and includes proper documentation about each algorithm's strengths. Deduct 3 points if only one algorithm is implemented, 5 points if algorithms are implemented but without proper comparison information, and 10 points if multiple algorithms with preview capability are available.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the batch processing functionality properly implemented?",
+      "description": "Evaluate whether the code supports processing multiple videos simultaneously or in sequence. Check for queue management, progress tracking per file, and ability to cancel/pause the batch process. Deduct 5 points if batch processing exists but without proper status reporting, 3 points if it lacks pause/resume capability. Full score of 10 if it includes all features with efficient resource management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a user-friendly interface for video upload and parameter configuration?",
+      "description": "Assess if the interface provides drag-and-drop functionality, multiple file selection, preview thumbnails, and intuitive parameter controls (resolution selection, algorithm choice, output format). Deduct 3 points for missing upload progress indicators, 3 points for lack of input validation, and 4 points for unintuitive parameter controls. Full 10 points requires responsive design with mobile compatibility.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common exceptions (corrupt video files, unsupported formats, insufficient disk space, memory limitations during processing). Check for graceful error handling with user-friendly messages and recovery options. Code with strong robustness should validate inputs and provide detailed logging. Give 10 points if all scenarios are handled, 5 for partial handling, 0 if critical errors crash the application.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview of different algorithms 2. Smart resolution recommendation based on content analysis 3. Automated batch profiles for different target devices). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple conversion pipelines) 2. Function modules unrelated to video processing (e.g., a built-in media player with features beyond preview) 3. Resource-intensive features that affect performance (e.g., unnecessary real-time filters). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of UI/conversion logic/file handling), error handling patterns, and performance optimization techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization is implemented for large video processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Operation feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual progress indicators during conversion. Deduct 5 points for each operation without feedback, 3 points for jumpy progress indicators, and 5 points for interface freezing during processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "medium"
+}

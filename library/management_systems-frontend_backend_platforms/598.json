@@ -1,0 +1,68 @@
+{
+  "index": 598,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Please write code to implement a medical equipment maintenance management system for managing the maintenance and upkeep of various medical devices in a hospital (such as CT scanners, MRI machines, ultrasound devices, etc.). The system needs to record basic information for each device (device ID, name, model, manufacturer, purchase date, department, etc.), technical parameters, and maintenance requirements (such as maintenance cycle, key inspection items, etc.). Equipment administrators (username: equipment, password: 123456) can create periodic maintenance schedules, and the system automatically generates maintenance tasks and reminders according to the schedule. Maintenance engineers (username: engineer, password: 123456) receive tasks, perform maintenance work, fill out maintenance records (inspection items, test data, replaced parts, maintenance results, etc.), and upload on-site photos or test reports. Medical staff can report device malfunctions (describing the fault symptoms, urgency level, etc.), and maintenance engineers accept the orders, process them, and record the repair process. System administrators (username: admin, password: 123456) can view maintenance history of all equipment, fault frequency statistics, average repair time and other metrics, and generate equipment reliability analysis reports. The system should also support spare parts inventory management functions, recording the inventory status of spare parts needed for maintenance and issuing warnings when inventory is insufficient.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core equipment management system properly implemented?",
+      "description": "Review whether the code accurately implements CRUD operations for medical equipment (device ID, name, model, manufacturer, purchase date, department, technical parameters, maintenance requirements). Check if there's proper data validation for equipment registration and updates, and if the system enforces unique device IDs. Score 0 if equipment management is missing, 5 if basic registration exists without validation, and 10 if complete with proper validation and relationship modeling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the maintenance schedule generation and task management system fully functional?",
+      "description": "Evaluate whether the system automatically generates maintenance tasks based on equipment maintenance cycles. Check if it includes notification mechanisms for upcoming maintenance, proper task assignment to engineers, and status tracking (pending, in-progress, completed). Deduct 5 points if automatic scheduling is missing, and 3 points if notification system is not implemented. Score 10 if the system handles recurring maintenance with proper prioritization algorithms.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the maintenance record keeping and fault reporting workflows properly implemented?",
+      "description": "Check if engineers can properly log maintenance activities with required fields (inspection items, test data, replaced parts, results) and if medical staff can submit fault reports with appropriate urgency levels. Verify if the system supports photo/document uploads and maintains a complete audit trail. Deduct 5 points if file upload functionality is missing, 3 points if the workflow has logical gaps. Score 10 if the complete maintenance lifecycle is properly tracked.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the spare parts inventory management system functional?",
+      "description": "Assess whether the system tracks spare parts inventory with proper stock level monitoring. Verify if it includes low-stock alerts, integration with maintenance records for automatic inventory deduction, and inventory history. Score 0 if inventory management is missing, 5 if basic tracking exists without alerts, and 10 if complete with proper integration to maintenance workflows and automated threshold alerts.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network issues, concurrent edits, server failures) and provide friendly error prompts or recovery mechanisms. Code should implement proper exception handling, input validation, and transaction management. If the robustness is excellent with comprehensive error handling, give 10 points. If it's average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive maintenance using equipment usage patterns 2. Mobile app integration with QR code scanning for equipment 3. Interactive equipment location maps 4. AI-based fault diagnosis suggestions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to record the same maintenance data) 2. Function modules unrelated to medical equipment maintenance (e.g., a built-in general chat system) 3. Fancy effects that affect performance (e.g., unnecessary animations in critical workflows). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data access/business logic/presentation layers), unit test coverage, and build process automation. Examine proper use of design patterns appropriate for maintenance workflows. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles suitable for a healthcare setting: 1) Clean, professional color scheme (predominantly white with accent colors) 2) Proper layout spacing with clear hierarchical information display 3) Professional font system optimized for readability in clinical environments. Deduct 3 points for each cluttered screen, 5 points for inappropriate color schemes in a medical context, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects support efficient workflows for busy healthcare professionals: 1) Quick response times for common operations (≤ 100ms) 2) Appropriate feedback for maintenance task status changes 3) Clear visual indicators for urgent items requiring attention. Deduct 5 points for each critical operation without feedback, 3 points for confusing state transitions, and 5 points for hard-to-locate critical functions like emergency repair requests. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

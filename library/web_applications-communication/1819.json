@@ -1,0 +1,68 @@
+{
+  "index": 1819,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Write a simple login page using HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic login form structure properly implemented?",
+      "description": "Check if the HTML contains a proper form element with method and action attributes, input fields for username/email and password, and a submit button. Form must have appropriate semantic structure. Deduct 3 points for missing form tags, 2 points for missing method/action attributes, and 2 points for using non-semantic elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are all essential input fields and their attributes correctly implemented?",
+      "description": "Verify that username/email and password fields use appropriate input types (text/email and password), have name attributes, placeholder text, and required attributes. Each field should also have proper labels associated through 'for' attributes or nested structure. Deduct 2 points for each missing input type, 2 points for missing labels, and 2 points for missing required attributes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is form validation implemented?",
+      "description": "Assess if client-side validation is implemented using HTML5 attributes (required, pattern, minlength, etc.) or JavaScript. Check for email format validation and password complexity requirements. Score 10 points for comprehensive validation with error messages, 5 points for basic HTML5 validation attributes only, and 0 points if validation is completely missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are CSRF protection and secure form submission implemented?",
+      "description": "Check for CSRF token implementation, secure form submission using HTTPS (action starts with 'https://'), and proper method (POST for login forms). Also check for autocomplete attributes and prevention of credential exposure. Deduct 3 points for missing CSRF protection, 3 points for insecure HTTP submission, and 4 points for using GET method. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form validation failures, network errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Social login options 2. Remember me functionality 3. Password strength indicator 4. Two-factor authentication option). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant form fields not needed for login 2. Excessive script imports unrelated to login functionality 3. Unnecessary complex structures that could be simplified. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core login function is complicated by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (HTML structure, script, and style separation), naming conventions, and overall code cleanliness. Deduct 3 points if inline styles are excessively used; deduct 3 points if JavaScript is not properly separated or organized; deduct 4 points if the HTML structure lacks semantic meaning or proper indentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean, well-spaced form layout 2) Consistent form styling (input sizes, button styles) 3) Readable typography (font size ≥ 14px, sufficient contrast). Deduct 3 points for inconsistent styling, 3 points for poor spacing/alignment, and 4 points for accessibility issues (contrast, focus indicators). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the user experience well-considered?",
+      "description": "Judge whether the login page considers UX best practices: 1) Clear error messages that appear near the relevant field 2) Logical tab order for keyboard navigation 3) 'Forgot password' link 4) Visual feedback on form submission. Deduct 2.5 points for each missing UX element. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

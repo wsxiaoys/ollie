@@ -1,0 +1,68 @@
+{
+  "index": 989,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Please ensure that the code you generate is executable. Can you write a Super Mario game with a higher level of complexity?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Super Mario gameplay mechanism fully implemented?",
+      "description": "Review whether the code accurately implements the essential Super Mario mechanics including player movement (running, jumping), collisions with platforms and enemies, power-ups (mushroom, fire flower, star), and level transitions. Score 0 if the core gameplay is not implemented, 5 if only basic movement and platforms are implemented, and 10 if all classic mechanics including pipe travel and enemy interactions are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the enemy AI and interaction system complete?",
+      "description": "Check whether diverse enemy types with distinct behaviors are implemented (Goomba, Koopa Troopa, Piranha Plant, etc.), and whether enemy-player interactions follow the proper Super Mario rules (stomping, shell mechanics, fire flower attacks). Deduct 3 points if enemies don't have proper movement patterns, 3 points if enemy-player interactions are inconsistent with classic Super Mario mechanics, and 4 points if less than three enemy types are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the level design system comprehensive and flexible?",
+      "description": "Evaluate if the game includes a proper level representation system that can handle different types of terrain, obstacles, collectibles, and secrets. Check for multiple levels with increasing difficulty and variety. Deduct 5 points if the level design is hardcoded without a reusable system, 3 points if environmental hazards (pits, lava) are missing, and 2 points if there's no level progression. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are power-ups and scoring mechanisms implemented correctly?",
+      "description": "Assess whether the code properly implements the classic power-up system (size change, abilities), coin collection, score tracking, lives system, and time limits. Deduct 3 points if visual transformations for power-ups are missing, 3 points if the scoring system doesn't follow Super Mario conventions, and 4 points if the life system and game-over conditions are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, edge collisions, simultaneous events, etc.) and provide appropriate fallbacks or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom character skins 2. Level editor 3. Speed-running mode with timer 4. Multiplayer capabilities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple physics engines coexisting) 2. Function modules unrelated to Super Mario (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling layers), implementation of common game design patterns, and code organization. Deduct 5 points if global state pollution is found or game loop architecture is poor; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no asset loading system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the visual design follows classic Super Mario aesthetics while maintaining modern standards: 1) Consistent pixel art style or modern visual approach 2) Clear UI elements for score, lives, and power-ups 3) Distinctive character and enemy designs. Deduct 3 points for inconsistent art styles, 4 points for cluttered or unclear UI elements, and 3 points for poor visual feedback for player actions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game performance optimized and response time appropriate?",
+      "description": "Judge whether the game maintains proper frame rate (60 FPS target) and has appropriate input response: 1) Input lag ≤ 50ms 2) Consistent animation timing 3) Proper handling of collision detection without performance drops. Deduct 5 points if the game stutters during normal gameplay, 3 points for delayed input response, and 2 points if asset loading causes noticeable pauses. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

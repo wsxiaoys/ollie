@@ -1,0 +1,68 @@
+{
+  "index": 863,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration purposes. Vue3 creating OpenLayers",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the OpenLayers map initialization fully implemented with Vue3?",
+      "description": "Check if the code properly initializes an OpenLayers map within the Vue3 component lifecycle (mounted/onMounted). Verify that the map instance is correctly created with proper viewport size, initial center coordinates, and zoom level. The map should be properly destroyed when the component is unmounted. Score 0 if map initialization is missing, 5 if basic initialization exists but lacks proper lifecycle management, and 10 if fully implemented with reactive properties.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are Vue3 Composition API features properly utilized for OpenLayers integration?",
+      "description": "Evaluate whether the code makes appropriate use of Vue3's Composition API (ref, reactive, computed, watch) to manage OpenLayers objects and their states. Check for proper reactive wrappers around map objects, map layers, and map controls. Deduct 5 points if only Options API is used, deduct 3 points if reactivity is not properly implemented with map state changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a comprehensive layer management system implemented?",
+      "description": "Review if the code implements a flexible layer management system that allows adding/removing different types of layers (Vector, Tile, WMS, etc.). Check if layer visibility and properties can be controlled reactively through Vue components. Deduct 5 points if only basic layers are implemented without customization options, deduct 3 points if layer management lacks reactivity. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are OpenLayers events properly integrated with the Vue3 event system?",
+      "description": "Assess if OpenLayers events (click, pointermove, etc.) are properly connected to Vue3's event handling system. Check for proper event listeners setup and cleanup in component lifecycle hooks. Map interactions should update Vue reactive state, and Vue state changes should be reflected in the map. Deduct 5 points if events are not properly cleaned up, and deduct 3 points if there's no bidirectional synchronization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as failed map loading, layer loading errors, invalid coordinates, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper null checks before accessing properties, try-catch blocks for error-prone operations, and graceful fallbacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Custom Vue3 composables for map features 2. Transition animations for layer switching 3. Integration with Vue3's Teleport for map controls). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of OpenLayers functionality already available through API (e.g., reimplementing zoom controls) 2. Unnecessary wrapper components that add complexity without value 3. Heavy visual effects that impair map performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core map functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of map service, component logic, and UI elements), TypeScript usage for OpenLayers types, and proper project structure. Deduct 5 points if global state pollution is found; deduct 5 points if OpenLayers instances are not properly typed; deduct 5 points if the code lacks reusable composables for common map operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the map UI follows modern design principles: 1) Clean map controls with proper spacing and sizing 2) Consistent styling between Vue components and map elements 3) Responsive design that adapts to different viewport sizes. Deduct 3 points for each overlapping control element, 5 points for inconsistent styling between Vue components and map elements, and 5 points for non-responsive map layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the map interaction smooth and seamless?",
+      "description": "Judge whether the map interactions perform well: 1) Map pan/zoom operations respond within 100ms 2) Layer switching animations complete within 300-500ms 3) Clear visual feedback for user interactions with map features. Deduct 5 points for noticeable lag in map operations, 3 points for jerky animations during transitions, and 5 points if the map becomes unresponsive during data loading operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

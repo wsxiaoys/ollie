@@ -1,0 +1,68 @@
+{
+  "index": 580,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Implement an in-browser recording studio that supports multi-track recording (at least 3 tracks). Each track should provide real-time monitoring during recording, include a metronome function (with adjustable BPM and time signature), allow waveform alignment editing after recording, and support exporting individual track files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-track recording functionality fully implemented?",
+      "description": "Review whether the code properly implements Web Audio API with MediaRecorder to handle at least 3 simultaneous recording tracks. Check if each track has independent recording controls (record/stop/pause), proper audio input selection, and correct audio buffering. Score 0 if multi-track recording is not implemented, 5 if only basic recording works but tracks interfere with each other, and 10 if all tracks can be independently recorded with proper isolation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is real-time monitoring implemented correctly?",
+      "description": "Evaluate the implementation of real-time audio monitoring during recording. Check for proper audio routing using AudioNodes, minimal latency (under 50ms), and volume control for monitoring. Verify that the monitoring doesn't create feedback loops and can be toggled on/off per track. Deduct 5 points if monitoring has noticeable delays, 3 points if volume control is missing, and 5 points if monitoring creates audio artifacts.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the metronome function complete and accurate?",
+      "description": "Check if the metronome uses proper timing mechanisms (like AudioContext.currentTime for precision) instead of setTimeout/setInterval. Verify that BPM adjustment (range at least 40-240) works correctly and time signature changes (at least 2/4, 3/4, 4/4, 6/8) are properly implemented with accent beats. Deduct 5 points if timing drifts after 60 seconds, 3 points if time signatures are limited, and 5 points if visual metronome indication is missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the waveform visualization and editing functionality properly implemented?",
+      "description": "Evaluate the waveform rendering using Canvas/WebGL (not just static images), zoom functionality, and alignment editing capabilities. Verify that recorded tracks can be moved in time relative to each other with millisecond precision, and that the visualization updates in real-time. Deduct 5 points if waveforms aren't interactive, 3 points if zoom functionality is missing, and 5 points if alignment editing doesn't maintain audio quality.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone permission denials, browser compatibility issues, memory limitations when recording long sessions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle browser audio API differences between Chrome, Firefox and Safari. Give 10 points if fully robust, 5 points if average, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time audio effects processing 2. Automatic silence detection/trimming 3. Beat detection for auto-alignment 4. Keyboard shortcuts for common operations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar audio processing functions 2. Function modules unrelated to audio recording (e.g., a built-in video player) 3. Fancy effects that affect performance (e.g., excessive animations that consume CPU needed for audio processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/UI/storage layers), unit test coverage for critical audio functions, and proper memory management for audio buffers. Deduct 5 points if global audio context pollution is found or design patterns are not used; deduct 5 points if audio processing creates memory leaks when recording long sessions; deduct 5 points if the code doesn't handle browser-specific audio implementations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional recording studio standards?",
+      "description": "Evaluate whether the overall design follows professional DAW principles: 1) Clear track separation with visual color coding 2) Proper signal level meters with peak indicators 3) Professional timeline with proper time markings (bars/beats and time). Deduct 3 points for each missing standard control (mute/solo buttons), 5 points for unintuitive track layouts, and 5 points for unclear recording status indicators. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the export functionality complete and professional?",
+      "description": "Judge whether the export function supports standard audio formats (WAV at minimum, ideally MP3, OGG too), allows individual track exports as well as mixed output, and provides file naming and metadata options. Verify that exported files maintain original audio quality. Deduct 5 points if only one export format is supported, 3 points if individual track export is missing, and 5 points if the export process blocks the UI thread or doesn't show progress. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

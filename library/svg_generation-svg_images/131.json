@@ -1,0 +1,68 @@
+{
+  "index": 131,
+  "question": "You are a coding expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code can be executed for display whenever possible.\nPlease help me implement the following requirement using SVG code: Create an image of the Burkina Faso flag, featuring a star.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the flag's aspect ratio correctly implemented?",
+      "description": "Check if the SVG dimensions maintain the official 2:3 ratio (height:width) of the Burkina Faso flag. The viewBox should be properly set to preserve this ratio. Score 0 if completely incorrect, 5 if approximate but not precise, 10 if exactly matching the official 2:3 ratio.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the flag colors accurately represented?",
+      "description": "Verify that the flag uses the exact official colors: red (#EF2B2D) for the top half, green (#009E49) for the bottom half, and yellow (#FCD116) for the star. Deduct 3 points for each incorrect color or if approximate colors are used without the correct hex codes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the star correctly positioned and proportioned?",
+      "description": "Evaluate whether the yellow star is properly centered in the flag and correctly sized (approximately 1/3 of the flag's height). The star must have the proper shape with 5 points of equal length and correct angles. Deduct 5 points if the star is misplaced, 5 points if incorrectly sized, and 5 points if the star shape is malformed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SVG implementation efficient and well-structured?",
+      "description": "Review whether the SVG uses the most appropriate elements (rect for the rectangles, polygon or path for the star). Check for optimal implementation without unnecessary complexity or redundant elements. Deduct 5 points if inappropriate elements are used, 3 points if there are redundant shape definitions, and 5 points if the code is excessively verbose. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code includes proper SVG structure with namespaces, appropriate viewBox settings, and will render correctly across different browsers and screen sizes. Check if there are fallbacks or alternative rendering methods if needed. Code with strong robustness should handle various display environments effectively, giving 10 points. If the robustness is average, give 5 points, and if there are obvious rendering issues, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visual experience (e.g., 1. Subtle animation when hovering over the flag 2. Interactive elements that provide information about Burkina Faso 3. Responsive design adaptations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant graphical elements or shapes that could be simplified 2. Unnecessary attributes or styling that don't contribute to the flag's appearance 3. Excessive animation or effects that distract from the flag's representation. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core representation is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the code organization (such as proper indentation, meaningful variable names), efficiency (minimal use of path operations), and maintainability. Deduct 5 points if there's inconsistent formatting; deduct 5 points if there's excessive nesting or complexity; deduct 5 points if the code lacks comments or documentation for complex parts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the implementation meet professional design standards?",
+      "description": "Evaluate whether the overall design follows flag design principles: 1) Clean edges and precise positioning 2) Proper contrast between elements 3) Faithful reproduction of the official flag. Deduct 3 points for each visible rendering artifact, 5 points for poor color contrast, and 5 points for significant deviation from the official design. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the code accessible and compatible?",
+      "description": "Judge whether the implementation includes accessibility features such as: 1) Appropriate title and description tags 2) ARIA attributes where applicable 3) Compatible with assistive technologies. Also check if the SVG works across different browsers and devices. Deduct 5 points for missing accessibility features, 3 points for compatibility issues, and 5 points if the SVG doesn't scale appropriately. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

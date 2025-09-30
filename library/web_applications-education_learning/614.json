@@ -1,0 +1,68 @@
+{
+  "index": 614,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Implement an interactive audio teaching platform for instrument learning. Users can upload reference audio (such as piano or guitar pieces) or choose from a built-in music library, then use a microphone to play or hum along. The system needs to analyze the user's audio input in real-time, compare it with the reference audio, and provide scoring and feedback on pitch and rhythm accuracy. The interface should include sheet music display (supporting simple staff notation or numbered musical notation), real-time feedback area (showing correct/incorrect notes), and progress statistics. Provide slow playback functionality and section-by-section practice options to help users gradually master difficult passages.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio input and comparison mechanism fully implemented?",
+      "description": "Review whether the code accurately implements microphone input capture, audio processing pipeline, and comparison with reference audio. Check for pitch detection algorithms (e.g., autocorrelation, FFT-based) and rhythm analysis capabilities. Score 0 if core audio processing is missing, 5 if basic pitch detection works but rhythm analysis is incomplete, and 10 if the system can detect both pitch and timing accuracy with precision ≥90%.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the music sheet display functionality properly implemented?",
+      "description": "Evaluate if the code implements both staff notation and numbered musical notation rendering, with proper measures, clefs, and time signatures. Check if notes are highlighted in sync with playback and if user performance is visually mapped to the notation in real-time. Deduct 5 points if only one notation system is implemented, 3 points if note highlighting is missing or inaccurate, and 2 points if the sheet music doesn't adapt to different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the learning assistance features working correctly?",
+      "description": "Check if the code implements slow playback functionality (with adjustable tempo), section-by-section practice options, and looping capabilities. Verify that audio quality is maintained at slower speeds (using time-stretching algorithms without pitch distortion). Deduct 4 points if slow playback causes audio artifacts, 3 points if section selection is imprecise, and 3 points if there's no visual indicator for section boundaries. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the feedback and scoring system comprehensive and accurate?",
+      "description": "Evaluate the real-time feedback mechanisms: visual indicators for pitch accuracy (±10 cents tolerance), rhythm timing feedback (±50ms tolerance), and detailed performance metrics. Check if the scoring algorithm weights both note accuracy and timing appropriately. Deduct 5 points if feedback is significantly delayed (>300ms), 3 points if the scoring system lacks granularity, and 2 points if there's no performance history tracking. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone permission denial, buffer underruns, audio format incompatibilities, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper error handling for WebAudio API calls and graceful fallbacks for unsupported features, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Harmonic analysis visualization 2. AI-generated accompaniment adaptation 3. Social learning features like performance sharing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing pipelines) 2. Function modules unrelated to music learning (e.g., built-in games unrelated to practice) 3. Fancy effects that affect audio processing performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/UI/data management layers), unit test coverage for critical audio processing functions, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Audio-visual feedback synchronization ≤ 50ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance on performance elements. Deduct 5 points for each audio-visual desynchronization, 3 points for jerky animations during audio processing, and 5 points for confusing performance feedback indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

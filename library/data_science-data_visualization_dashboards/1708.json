@@ -1,0 +1,68 @@
+{
+  "index": 1708,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable where possible. Create code for uploading data automatically through Dash and Plotly, and visualize it by time intervals and values of temperature and pressure.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data uploading functionality properly implemented?",
+      "description": "Examine whether the code provides a complete file upload component in Dash that supports various file formats (CSV, Excel, JSON), with proper validation of file types and size limits. Check for clear user feedback during the upload process and appropriate error handling for invalid files. Score 0 if no upload functionality exists, 5 if basic upload exists but lacks validation, 10 if the upload component is robust with all necessary validations and user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data parsing and preprocessing implemented effectively?",
+      "description": "Verify that the code includes proper parsing of uploaded data, handling of time-series conversion (string to datetime), data cleaning (removing nulls, duplicates), and appropriate sampling/aggregation for large datasets. Check for robust error handling for malformed data. Deduct 5 points if time parsing is incorrect, 3 points if data cleaning is absent, and 3 points if there's no handling for large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the time interval visualization functionality correctly implemented?",
+      "description": "Evaluate whether the code implements time-based visualizations with proper time axis formatting, zoom/pan capabilities, and time interval selection tools. Check if users can select custom time ranges or use predefined intervals (hourly, daily, weekly, monthly). Deduct 5 points if the time axis is not properly formatted, 5 points if time interval selection is missing, and 3 points if zoom/pan capabilities are absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are temperature and pressure visualizations implemented with appropriate charts and features?",
+      "description": "Review if the code provides appropriate visualization types for temperature and pressure data (line charts, scatter plots, heatmaps), with proper color scales, legends, and dual y-axes where needed. Check for correlation views between temperature and pressure. Deduct 5 points if inappropriate chart types are used, 3 points if color scales are misleading, and 3 points if correlation views are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, incorrect data formats, server disconnection, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic statistical summary updates 2. Anomaly detection for temperature/pressure spikes 3. Interactive threshold alerts 4. Export options for visualizations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant visualization components showing the same data in similar ways 2. Unnecessary data transformations that don't improve visualization quality 3. Excessive animations or effects that slow down performance without adding analytical value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/callback functions), code reusability, and appropriate comments. Deduct 5 points if global variables are overused; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if critical sections lack comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the dashboard design follows modern design principles: 1) Harmonious color matching for temperature/pressure indicators (no more than 3 primary colors) 2) Proper layout spacing between charts and controls 3) Professional typography with consistent font sizes. Deduct 3 points for each cluttered dashboard section, 5 points for poorly contrasting colors that hinder data interpretation, and 5 points for inconsistent layout causing poor visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Chart updates occur within 300ms of user input 2) Smooth transitions when filtering or changing time intervals 3) Clear visual indication of loading states during data processing. Deduct 5 points for each interaction without feedback, 3 points for choppy animations during transitions, and 5 points for controls that don't visually indicate their state. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

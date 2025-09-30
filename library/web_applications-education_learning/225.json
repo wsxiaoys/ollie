@@ -1,0 +1,68 @@
+{
+  "index": 225,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable and can be demonstrated. Please help me create a Flask+Vue project that implements login page redirection to the main page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Flask backend fully implemented with proper authentication?",
+      "description": "Examine if the Flask API endpoints are properly set up for authentication (login/register/logout), with session management or JWT token implementation. Check for password hashing, CSRF protection, and proper HTTP status code responses. Score 0 if authentication is missing, 5 if basic auth is implemented but insecure, 10 if it's complete with security best practices.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue frontend login page correctly implemented?",
+      "description": "Verify if the Vue login component includes proper form validation (required fields, email format, password strength), error handling with user feedback, and accessibility features. Form submission should prevent multiple submissions and display loading states. Deduct 3 points if validation is missing, 2 points if error handling is poor, and 2 points if the UI is not responsive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the redirection mechanism properly implemented?",
+      "description": "Evaluate whether the redirection after login is properly implemented with Vue Router, including route guards for protected routes, authentication state management (Vuex/Pinia), and handling of unauthorized access attempts. Check if there's proper redirection to the originally requested page after login. Deduct 5 points if route guards are missing, 3 points if state persistence is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper integration between Flask and Vue?",
+      "description": "Check if the project structure properly separates frontend and backend, with correct API communication setup (Axios/Fetch with proper error handling). Verify if CORS is configured, proxy settings in development are correct, and if the production build setup is provided. Deduct 3 points for missing CORS handling, 3 points for improper API error handling, and 4 points if there's no production deployment configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid credentials, session expiration, network errors, etc.) and provide friendly error prompts or recovery mechanisms. Check for input sanitization to prevent XSS, rate limiting for login attempts, and proper error logging. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Remember-me functionality 2. Social login integration 3. Two-factor authentication 4. Password strength meter with visual feedback 5. Personalized welcome screen after login). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant authentication mechanisms coexisting 2. Unnecessary dependencies or libraries 3. Over-engineered solutions for simple requirements. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of concerns between components, services, and stores), code organization (following Vue and Flask best practices), error handling, and build process automation. Deduct 3 points if global state is mismanaged; deduct 3 points if the code has high duplication; deduct 2 points if environment variables are hardcoded; deduct 2 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the login and main page designs follow modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic form layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the login process and transition to the main page conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance and loading indicators. Deduct 5 points for operations without feedback, 3 points for jarring transitions between pages, and 5 points for confusing navigation patterns after login. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

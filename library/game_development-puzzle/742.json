@@ -1,0 +1,68 @@
+{
+  "index": 742,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that the code you provide is executable. I want to create a simple 2048 game code. Please write out the code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core 2048 game logic correctly implemented?",
+      "description": "Verify that the code correctly implements the 2048 game rules, including merging tiles with the same number, generating new tiles randomly (with proper 2/4 probability distribution), and detecting win/lose conditions. Score 0 if the core logic is missing, 5 if only basic movement is implemented, and 10 if all game rules are properly implemented including edge cases.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the grid management system properly designed?",
+      "description": "Check whether the code efficiently handles the 4×4 grid, including proper data structure for the game board, accurate collision detection for merging tiles, and correct directional movement handling (up, down, left, right). Deduct 3 points if the grid implementation is inefficient, 5 points if directional movement has bugs, and 7 points if the merging logic is incorrect.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is user input handling implemented correctly?",
+      "description": "Evaluate whether the code properly captures keyboard inputs (arrow keys) or touch/swipe gestures on mobile, with appropriate event listeners and handlers. Check for input debouncing to prevent rapid inputs causing issues. Deduct 5 points if only keyboard or only touch is implemented, 3 points if input validation is missing, and 5 points if there's no input feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management complete?",
+      "description": "Examine if the code includes proper game state management (new game, game over, win detection, score tracking). Check for the ability to restart the game and maintain high scores. Deduct 3 points if score tracking is missing, 3 points if game over detection is flawed, and 5 points if the game cannot be restarted properly.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, rapid inputs, browser refreshes) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animations for tile movements 2. Undo functionality 3. Custom board sizes beyond 4×4 4. Local storage for game persistence). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to check for valid moves) 2. Function modules unrelated to 2048 game mechanics 3. Fancy effects that affect performance (e.g., excessive animations that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic from UI rendering), code organization, naming conventions, and comments. Deduct 5 points if global variables are excessively used; deduct 5 points if the code has poor structure or high duplication; deduct 3 points if comments are missing or misleading. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game UI follows modern design principles: 1) Consistent color scheme for different tile values 2) Proper layout and tile spacing 3) Clear typography with readable font sizes. Deduct 3 points for inconsistent tile styling, 5 points for poor color contrast affecting readability, and 5 points for uneven spacing or alignment issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animations and transitions enhance the gameplay experience: 1) Smooth tile sliding animations (150-300ms duration) 2) Appropriate feedback for merging tiles 3) Visual cues for new tile generation. Deduct 5 points for jerky or missing animations, 3 points for lack of visual feedback on actions, and 5 points for animations that interfere with gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "easy"
+}

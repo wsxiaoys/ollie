@@ -1,0 +1,68 @@
+{
+  "index": 1041,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Develop a small application for assessing enterprise digital transformation maturity, preferably one that can be operated by scanning a QR code, and provide an operation guide.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the digital transformation assessment functionality fully implemented?",
+      "description": "Review whether the code accurately implements a comprehensive assessment system with properly defined maturity dimensions (e.g., technology, people, process, customer experience), scoring mechanics, and result interpretation. Score 0 if the core assessment logic is missing, 5 if only basic scoring is implemented without proper dimensions, and 10 if the assessment framework follows industry standards (like CMMI or other recognized maturity models) with clear dimension definitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the QR code scanning and mobile responsiveness properly implemented?",
+      "description": "Check whether the application includes a functional QR code generation system and properly implements the scanning mechanism (either using device camera APIs or a third-party library like jsQR). Verify if the application is fully responsive across different mobile devices (iOS/Android) with appropriate viewport settings and flexible layouts. Deduct 5 points if QR code scanning fails on common devices, and 3 points if the mobile layout breaks on standard screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is data storage and result persistence implemented?",
+      "description": "Evaluate whether the application provides proper data persistence options (localStorage, sessionStorage, server-side storage, exportable reports). Check if assessment results can be saved, retrieved, and compared over time to track maturity progress. Deduct 5 points if results cannot be saved between sessions, and 3 points if there's no way to export or share results. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the visualization of assessment results effective and insightful?",
+      "description": "Assess whether the application presents results using appropriate data visualizations (radar charts, heatmaps, progress indicators) that effectively communicate maturity levels across different dimensions. Check if benchmarking against industry standards or peers is included. Deduct 5 points for basic text-only results, 3 points for non-interactive visualizations, and 2 points if visualization lacks comparative context. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as offline usage, input validation, handling incomplete assessments, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered recommendations based on assessment results 2. Integration with business KPIs to show correlation 3. Peer comparison with anonymized industry data). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple assessment frameworks without clear purpose) 2. Function modules unrelated to digital transformation assessment (e.g., unrelated analytics) 3. Fancy effects that affect performance (e.g., heavy animations that slow down the application). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating assessment logic/view/data layers), proper error handling, and code maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between the UI and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Question transitions feel natural and intuitive 2) Loading states provide feedback during processing 3) Clear visual progress indicators during the assessment. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between assessment sections, and 5 points for confusing navigation or unclear next steps. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

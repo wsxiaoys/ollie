@@ -1,0 +1,68 @@
+{
+  "index": 282,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Help me design a \"Northern Expedition Monopoly\" game programming in HTML format, with detailed specifications.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Monopoly game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the monopoly board with property acquisition, movement mechanics, and token handling through HTML/JavaScript. Score 0 if the core game loop isn't implemented, 5 if only basic movement is implemented, and 10 if property ownership, rent collection, and special tile actions (like chance cards, jail) are fully included with Northern Expedition theme integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Northern Expedition theme properly integrated?",
+      "description": "Check whether the historical context of the Northern Expedition (1926-1928) is accurately represented in the game elements. Properties should reflect historical locations, cards should include period-appropriate events, and visual elements should match the historical setting. Deduct 5 points if the theme is superficial, 3 points if historical inaccuracies are present. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management effectively implemented?",
+      "description": "Evaluate whether the code includes complete game state tracking (player turns, property ownership, money, position) and persistence between turns. Check if state changes are properly triggered by player actions and if the game state can be saved/loaded. Deduct 5 points if state management is buggy, and 3 points if there's no save/load functionality. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the player interaction system intuitive and complete?",
+      "description": "Assess whether the game provides clear UI elements for player actions (rolling dice, buying properties, ending turns, trading) and if feedback is provided for all actions. Check if the game supports multiple players and handles player turns correctly. Deduct 5 points if core actions are missing UI elements, 3 points if player feedback is unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, unexpected user inputs, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Historical events that affect gameplay 2. Character selection with different abilities based on historical figures 3. Dynamic board that evolves with game progress). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle the same game event) 2. Function modules unrelated to the Northern Expedition Monopoly theme (e.g., irrelevant mini-games) 3. Fancy effects that affect performance (e.g., excessive animations that slow gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), reusability of components, and code maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles while incorporating period-appropriate aesthetics: 1) Harmonious color matching that evokes 1920s China 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Typography that balances readability with period-appropriate styling. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for whose turn it is and what actions are available. Deduct 5 points for each operation without feedback, 3 points for animation stuttering during dice rolls or token movement, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

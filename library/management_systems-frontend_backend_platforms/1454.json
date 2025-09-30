@@ -1,0 +1,68 @@
+{
+  "index": 1454,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible.\n\n+-----------------------------+\n|          Access Layer       |\n|-----------------------------|\n| PC Client                   |\n+-----------------------------+\n            ↓\n+-----------------------------+\n|          Frontend UI        |\n|-----------------------------|\n| HTML                        |\n| CSS                         |\n| JavaScript                  |\n| BootStrap                   |\n+-----------------------------+\n            ↓\n+-----------------------------+\n|       Presentation Layer    |\n|-----------------------------|\n| POST requests               |\n| GET requests                |\n+-----------------------------+\n            ↓\n+-----------------------------+\n|        Business Layer       |\n|-----------------------------|\n| User Functions:             |\n|  - Login/Registration       |\n|  - Browse NBA Fan Community |",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user authentication system fully implemented?",
+      "description": "Review whether the code accurately implements a secure login/registration system, including input validation, proper password hashing, session management, and CSRF protection. Score 0 if authentication is not implemented, 5 if basic login/registration exists but lacks security features, and 10 if it includes comprehensive security measures like rate limiting and multi-factor authentication options.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the NBA Fan Community browsing functionality complete?",
+      "description": "Check whether the community browsing system includes content filtering, pagination, search functionality, and proper data loading states. Deduct 3 points if pagination is missing, 3 points if search functionality is absent, and 2 points if there are no loading states. A complete implementation should display NBA-related content in an organized manner with proper user interaction. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the frontend-backend communication properly implemented?",
+      "description": "Evaluate the implementation of HTTP requests (GET/POST) between the presentation layer and business layer, including proper error handling, status code interpretation, and response processing. Check for API versioning, consistent response formats, and proper content-type headers. Deduct 5 points if error handling is missing, and 3 points if requests lack proper headers or payload formatting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the system architecture properly implemented according to the specified layers?",
+      "description": "Assess whether the code properly follows the specified four-layer architecture (Access Layer, Frontend UI, Presentation Layer, Business Layer) with clear separation of concerns. Check that each layer only communicates with adjacent layers and maintains proper encapsulation. Deduct 3 points for each instance of layer violation (e.g., Access Layer directly communicating with Business Layer). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid inputs, authentication failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time NBA score updates 2. Personalized content recommendations 3. Interactive fan polls/surveys). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user profile systems) 2. Function modules unrelated to NBA fan community (e.g., general sports news not specific to NBA) 3. Fancy effects that affect performance (e.g., excessive animations or unnecessary API calls). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, services, and API calls), code organization, and responsive design implementation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if responsive design principles aren't followed for different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

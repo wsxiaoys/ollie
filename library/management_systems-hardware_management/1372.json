@@ -1,0 +1,68 @@
+{
+  "index": 1372,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Hello, I need to create an HMI for a hydraulic baler. Please make a demo for me. This HMI is a 7-inch resistive touchscreen with a resolution of 800*480.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the HMI interface design optimized for a 7-inch resistive touchscreen?",
+      "description": "Evaluate whether the interface elements are appropriately sized for finger touch (minimum 40x40px touch targets) on a resistive screen, and if the layout properly utilizes the 800x480 resolution. Button spacing should be at least 10px to prevent mis-touches common with resistive screens. Deduct 5 points if touch targets are too small, 5 points if elements extend beyond screen boundaries, and 5 points if text is illegible at normal viewing distance for industrial equipment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the hydraulic baler control functions fully implemented?",
+      "description": "Check if the HMI includes essential hydraulic baler controls such as start/stop buttons, pressure monitoring, bale density adjustment, emergency stop function, and cycle monitoring. Score 0 if core baler functions are missing, 5 if only basic controls are implemented, and 10 if comprehensive control including safety interlocks, pressure regulation, and operational modes (automatic/manual) are included. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time system monitoring and visualization implemented?",
+      "description": "Assess whether the interface displays critical real-time data like hydraulic pressure, cylinder position, motor status, and system temperature with appropriate gauges, indicators or trend graphs. Verify that visualization updates at appropriate intervals (≤500ms for critical parameters). Deduct 5 points if visualizations are static/non-updating, 3 points if update frequency is inadequate, and 5 points if key operational parameters are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are alarm management and error handling systems properly designed?",
+      "description": "Evaluate the implementation of alarm prioritization, visual/audible notifications for critical issues (pressure anomalies, motor overload, safety breaches), and troubleshooting guidance. Verify that errors are logged with timestamps and that the system provides clear recovery instructions. Deduct 5 points if alarms lack prioritization, 3 points if visual distinction between alarm levels is poor, and 5 points if no error logging mechanism exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as sensor failures, communication interruptions, touch misalignments, rapid repeated presses) and provide appropriate error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. User-customizable dashboard layout 2. Integrated maintenance scheduling 3. Multi-language support with automatic detection 4. Gesture controls for common actions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to access the same controls) 2. Function modules unrelated to baler operation (e.g., unnecessary entertainment features) 3. Fancy effects that affect performance on limited industrial hardware (e.g., complex animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/control logic/data processing layers), code maintainability for industrial settings, and efficient use of limited hardware resources. Deduct 5 points if global state pollution is found; deduct 5 points if the code is not optimized for the limited processing power of industrial HMIs; deduct 5 points if the code lacks proper documentation for maintenance technicians. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet industrial HMI design standards?",
+      "description": "Evaluate whether the design follows industrial HMI principles: 1) High contrast colors suitable for varying light conditions 2) Consistent status indicator placement 3) Use of industrial-standard iconography 4) Glare-resistant color schemes for shop floor environments. Deduct 3 points for poor contrast that affects readability, 5 points for non-standard symbols that could cause operator confusion, and 5 points for cluttered screens that hinder quick information scanning. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction appropriate for industrial use?",
+      "description": "Judge whether the interactions are suitable for industrial environments: 1) Confirmation dialogs for critical operations 2) Touch feedback appropriate for gloved operation 3) Visible system status at all times. Deduct 5 points for lack of operation confirmation for critical functions, 3 points for touch targets requiring precise touching unsuitable for gloved hands, and 5 points for operations requiring more than 3 steps to access emergency functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "medium"
+}

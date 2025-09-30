@@ -1,0 +1,68 @@
+{
+  "index": 998,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. Design a WeChat Mini Program for shopping that can search and compare prices of the same products across different websites, identify the lowest priced item, and allow direct purchase within the mini program. Please generate source code for this mini program that can be directly copied and used.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the product search and price comparison system fully implemented?",
+      "description": "Review whether the code accurately implements the search functionality that can query products across different e-commerce platforms, and if it correctly extracts and compares pricing data. Score 0 if the core search functionality is not implemented, 5 if only basic searching is available without proper price comparison logic, and 10 if the system can effectively search, normalize, and compare prices from multiple sources with proper sorting options.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the lowest price identification mechanism implemented?",
+      "description": "Check whether the code includes logic to identify and highlight the lowest priced items across platforms. Evaluate if the system properly handles edge cases like identical prices, different shipping costs, or seller ratings affecting the overall value. Score 0 if no lowest price identification exists, 5 if basic comparison exists but doesn't account for additional costs/factors, and 10 if comprehensive price analysis with visual indicators is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the in-app purchase system properly designed and integrated?",
+      "description": "Evaluate whether the code implements the direct purchase functionality within the mini program without redirecting to external websites. Check for WeChat payment API integration, order management system, and purchase confirmation flow. Score 0 if no in-app purchase exists, 5 if purchase flow exists but requires external redirection, and 10 if the complete purchase system is integrated with WeChat Pay and order tracking.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the multi-platform data integration mechanism properly implemented?",
+      "description": "Check if the code includes proper APIs or web scraping mechanisms to gather product data from multiple e-commerce platforms. Evaluate the approach for handling different data structures, authentication requirements, and rate limiting from various sources. Score 0 if no integration exists, 5 if basic integration with only 1-2 platforms, and 10 if comprehensive integration with multiple major platforms using proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as search failures, network interruptions, price fluctuations, and payment issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Price history charts 2. Automatic coupon application 3. Product authenticity verification 4. Community reviews integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search mechanisms coexisting) 2. Function modules unrelated to shopping comparison (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations on product listings). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/API layers), use of WeChat Mini Program best practices, and proper component reusability. Deduct 5 points if global state management is poorly implemented; deduct 5 points if the code has high duplication rate (over 30%); deduct 5 points if proper Mini Program lifecycle hooks are not utilized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design guidelines: 1) Consistent with WeChat's design language 2) Proper layout spacing and hierarchy 3) Professional typography system (following WeChat's font standards). Deduct 3 points for each UI element that doesn't follow WeChat design principles, 5 points for inconsistent visual hierarchy, and 5 points for poor information architecture. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to WeChat Mini Program performance standards: 1) Search results loading time ≤ 2 seconds 2) Smooth transitions between product details 3) Responsive UI with proper loading states. Deduct 5 points for each interaction without loading feedback, 3 points for janky scrolling in product lists, and 5 points for non-intuitive navigation between key screens. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

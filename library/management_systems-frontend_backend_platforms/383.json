@@ -1,0 +1,68 @@
+{
+  "index": 383,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the generated code is executable and demonstrable. Using VC++ MFC 2022, develop a software for ceramic tile surface defect detection that automatically captures tile images using an industrial camera, then performs inference using a YOLOv model to produce results. Please help me design this project, including the interface and functionality, as well as user operations in specific detail. Also, provide the software code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the industrial camera integration and image acquisition system fully implemented?",
+      "description": "Review whether the code properly implements industrial camera SDK integration (such as Basler, FLIR, or Hikvision camera APIs) through MFC framework, including camera initialization, parameter configuration (exposure, gain, frame rate), real-time image capture, and buffer management. Check if the system supports multiple camera brands and provides camera status monitoring. Score 0 if camera integration is not implemented, 5 if only basic capture is implemented without parameter control, and 10 if full camera control with error handling is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the YOLOv model inference engine properly integrated and optimized?",
+      "description": "Evaluate whether the YOLO model integration uses appropriate inference frameworks (ONNX Runtime, TensorRT, or OpenCV DNN) with proper preprocessing (image normalization, resizing) and postprocessing (NMS, confidence filtering). Check if the system supports model switching, batch processing, and GPU acceleration. Deduct 5 points if inference time exceeds 500ms per image, 3 points if confidence threshold is not configurable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the defect detection results processing and visualization system comprehensive?",
+      "description": "Check whether the detection results include proper bounding box rendering, defect classification labels, confidence scores, and defect statistics. Evaluate if the system provides result export functionality (XML/JSON/CSV formats), defect image cropping, and historical result database storage. Deduct 5 points if detection results are not properly visualized, 3 points if export functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete workflow automation and quality control system implemented?",
+      "description": "Review whether the software includes automated workflow management such as continuous monitoring mode, batch processing capabilities, quality control thresholds, alarm mechanisms for defective tiles, and production line integration interfaces. Check if the system provides calibration tools, ROI selection, and inspection parameter adjustment. Deduct 5 points if automation workflow is not implemented, 3 points if quality control features are missing. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as camera disconnection, model loading failure, memory overflow, invalid image formats, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper exception handling, resource cleanup, and graceful degradation. Give 10 points if fully robust, 5 points if partially handled, and 0 points if no exception handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance industrial usability?",
+      "description": "Check whether the code includes advanced features that improve industrial application value (e.g., 1. Real-time defect trend analysis and reporting 2. Multi-spectral imaging support 3. AI-assisted defect severity grading 4. Production line speed optimization 5. Remote monitoring capabilities). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image processing pipelines) 2. Function modules unrelated to defect detection (e.g., built-in games or entertainment features) 3. Resource-intensive effects that impact real-time performance (e.g., unnecessary animations during detection). Deduct 3 points for each redundancy found, and directly deduct 10 points if core detection functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating camera control/image processing/AI inference/UI layers), proper MFC architecture usage, memory management, and thread safety. Deduct 5 points if memory leaks are found or improper resource management; deduct 5 points if the code lacks proper class hierarchy design; deduct 5 points if threading is not properly implemented for real-time processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet industrial software standards?",
+      "description": "Evaluate whether the MFC interface follows industrial software design principles: 1) Professional color scheme suitable for factory environments (high contrast, easy readability) 2) Logical layout with clear functional grouping 3) Industrial-standard fonts and sizing (minimum 12px for readability in industrial settings) 4) Proper status indicators and progress feedback. Deduct 3 points for each cluttered interface element, 5 points for poor color contrast affecting readability, and 5 points for non-intuitive control placement. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the real-time performance and user interaction optimized for industrial use?",
+      "description": "Judge whether the software meets industrial real-time requirements: 1) Image capture and display refresh rate ≥ 10 FPS 2) Detection result display latency ≤ 200ms 3) Clear visual indicators for system status and operation feedback 4) Keyboard shortcuts for frequent operations. Deduct 5 points for each operation without immediate feedback, 3 points for laggy real-time display, and 5 points for missing critical status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1806,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration whenever possible. I need to create a webpage for tracking feedback from meeting participants with the following features: 1. Ability to import multiple attendance lists containing departments, personnel, and phone numbers. 2. The webpage should be able to compile and summarize departments, personnel, and phone numbers. 3. Remove duplicate entries, and implement this in an intranet environment.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data import functionality fully implemented?",
+      "description": "Review whether the code provides multiple methods for importing attendance data (CSV, Excel, JSON, manual entry), handles various file formats correctly, and includes proper error handling for malformed data. Check if the import validates the required fields (departments, personnel, phone numbers). Score 0 if import functionality is missing, 5 if only basic import is available, and 10 if multiple import methods with validation are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data compilation and summarization feature implemented effectively?",
+      "description": "Evaluate whether the code properly compiles and summarizes the imported data, providing statistical information by department, personnel counts, and contact information. Check if the system offers sorting, filtering, and search capabilities. Score 0 if summarization is missing, 5 if basic compilation exists but lacks advanced features, and 10 if comprehensive data summarization with multiple viewing options is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the duplicate detection and removal system work properly?",
+      "description": "Assess the duplicate detection algorithm to confirm it can identify duplicate entries based on multiple criteria (exact matches, fuzzy matching on names, similar phone numbers). Verify that the system allows for manual review of potential duplicates before removal and maintains an audit log of merged/removed entries. Deduct 5 points if only exact matching is used, and 3 points if no user confirmation for removal exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the solution compatible with intranet environment constraints?",
+      "description": "Check if the implementation works entirely client-side or uses minimal server requirements suitable for intranet deployment. Verify that it doesn't rely on external services, CDNs, or APIs that would be inaccessible in an isolated network. Evaluate if local storage or internal database options are properly implemented for data persistence. Score 0 if incompatible with intranet, 5 if partially compatible with modifications needed, and 10 if fully intranet-ready.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed input data, missing fields, network interruption, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Intelligent duplicate suggestion system 2. Data visualization of attendance patterns 3. Export options with customizable reports). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same data processing) 2. Function modules unrelated to attendance tracking (e.g., a built-in calendar system) 3. Fancy effects that affect performance (e.g., unnecessary animations or transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing logic from UI components), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling through attendance lists, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

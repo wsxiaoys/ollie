@@ -1,0 +1,68 @@
+{
+  "index": 769,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Ensure that the code you generate is executable whenever possible. Write programming code for a game similar to \"Yang Le Ge Yang\" (Sheep a Sheep).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanic of matching and eliminating similar elements implemented?",
+      "description": "Review whether the code accurately implements the key 'Sheep a Sheep' mechanic where players match and eliminate identical elements (typically in groups of three). Check if the code includes collision detection, element matching logic, and clearing animations. Score 0 if core mechanics are missing, 5 if basic matching is implemented without proper animations or feedback, and 10 if the complete elimination system with visual feedback is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the difficulty progression system properly designed?",
+      "description": "Evaluate whether the code implements the progressively harder levels with increasing complexity of element stacking and overlapping (characteristic of 'Sheep a Sheep'). Check for implementation of the element layering system, proper visibility of partially covered items, and difficulty scaling algorithms. Deduct 5 points if the layering system is flawed, 3 points if difficulty progression is absent, and 5 points if the stacking visualization is confusing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the inventory/holding area for temporary elements implemented?",
+      "description": "Check if the code includes the signature mechanic of a temporary storage area (typically at the bottom of the screen) that can hold a limited number of elements before the player must make matches. Verify that the code properly handles overflow conditions, displays clear visual feedback when the area is nearly full, and implements the game-over condition when this area exceeds capacity. Score 0 if this feature is absent, 5 if implemented with bugs, 10 if fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the scoring system and victory condition properly implemented?",
+      "description": "Assess whether the code includes a proper scoring mechanism that rewards faster completions, combo matches, or strategic play. Check if victory conditions are clearly defined (clearing all elements from the board) and if end-of-level transitions are handled smoothly. Deduct 5 points if scoring is simplistic or missing, 3 points if victory conditions are buggy, and 3 points if level transitions are abrupt. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid clicks, rapid-fire user inputs, window resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special power-ups or combo systems 2. Unique visual themes or customizable elements 3. Social features like sharing results or leaderboards). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to restart a level) 2. Function modules unrelated to the core gameplay (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game mechanics and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching with clear visual hierarchy 2) Proper layout with adequate spacing between clickable elements (preventing mis-clicks) 3) Readable text with appropriate contrast against backgrounds. Deduct 3 points for cluttered UI elements, 5 points for poor color combinations that strain the eyes, and 5 points for elements that are too small to interact with comfortably. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations and interactions feel satisfying: 1) Element selection/matching has immediate visual and possibly audio feedback 2) Animations for matching/clearing last between 200-400ms for satisfaction without delay 3) Clear indication of available moves and game state. Deduct 5 points for laggy animations, 3 points for unclear feedback when selecting elements, and 5 points if the game becomes visually confusing during intense gameplay. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

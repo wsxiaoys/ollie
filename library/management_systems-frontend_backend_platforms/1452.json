@@ -1,0 +1,68 @@
+{
+  "index": 1452,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the generated code is executable for demonstration. Develop a Chinese financial system using Python, React, and MySQL, including the creation, deletion, modification, and review of accounting vouchers, chart of accounts balance sheet, and financial statements. The system must comply with Chinese accounting law. Access should be restricted to authorized logged-in users only. Please provide detailed code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Authentication and Authorization System Implementation",
+      "description": "Evaluate the implementation of a secure user authentication and authorization system. Check for proper login flow, session management, password hashing, and role-based access control that restricts financial data access to authorized users only. Review JWT implementation, refresh token mechanism, and protection against common security threats.0 points if basic authentication is missing, 5 points if authentication exists but has security flaws, 10 points for a comprehensive secure solution with proper role management that fully restricts system access to authorized users only.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Accounting Voucher Management Implementation",
+      "description": "Assess the completeness of the voucher system (借贷凭证系统) including creation, modification, deletion, and review workflows. Check if the code enforces double-entry bookkeeping principles with balanced debits and credits. Verify implementation of voucher numbering, date validation, and approval workflow states conforming to Chinese accounting standards.0 points if voucher management is incomplete, 5 points if basic CRUD operations are present but lack validation or approval workflow, 10 points for a comprehensive implementation that includes all accounting validation rules and proper audit trails.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Chart of Accounts and Ledger System",
+      "description": "Review the implementation of the chart of accounts (会计科目表) according to Chinese accounting standards. Check if the account hierarchy is properly designed with appropriate account categories (assets, liabilities, equity, revenue, expenses), account codes, and balancing attributes. Verify that the ledger system properly maintains running balances and historical transactions.0 points if the chart of accounts is missing or fundamentally flawed, 5 points for basic implementation without proper hierarchy or Chinese accounting compliance, 10 points for a complete implementation that follows the latest Chinese accounting standards with proper account relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Financial Statement Generation",
+      "description": "Evaluate the code that generates financial statements (balance sheet/资产负债表, income statement/利润表, cash flow statement/现金流量表) according to Chinese GAAP. Check if the statements correctly aggregate account balances, handle profit calculations, and format the output according to official templates required by Chinese regulatory authorities.0 points if financial statements are missing, 5 points if statements are generated but with calculation errors or non-compliant formatting, 10 points for accurate statements that fully comply with Chinese accounting law and regulatory requirements.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (invalid accounting entries, concurrent edits, database connection issues, etc.) and provide friendly error prompts or recovery mechanisms. Check exception handling, input validation, and transaction integrity.0 points if no exception handling exists, 5 points for basic error handling but missing transaction integrity, 10 points for comprehensive error handling with proper transaction management and data consistency guarantees.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Financial Features",
+      "description": "Check whether the code includes innovative features that enhance the financial system experience (e.g., 1. Real-time financial dashboard, 2. Automated tax calculation for Chinese tax law, 3. AI-assisted anomaly detection in financial data, 4. Mobile-responsive design for approvals on the go).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Code Redundancy and Efficiency",
+      "description": "Strictly check for: 1. Redundant implementations of similar financial calculations, 2. Function modules unrelated to accounting needs, 3. Inefficient database queries that would impact performance with large financial datasets.Deduct 3 points for each significant redundancy found, and directly deduct 10 points if core financial functions are compromised by redundant or inefficient code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality and Architecture",
+      "description": "Review the system architecture, examining separation of concerns between backend (Python), frontend (React), and database (MySQL). Check for proper API design, component reusability, and adherence to best practices in each technology stack. Evaluate code organization, naming conventions, and documentation.Deduct 5 points if business and presentation logic are mixed, 5 points if the code lacks proper documentation for financial functions, 5 points if there's no clear architectural pattern. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "UI Design for Financial Data Presentation",
+      "description": "Evaluate whether the React UI follows professional financial system design principles: 1) Clear hierarchy of financial information, 2) Proper data tables for financial entries with sorting/filtering capabilities, 3) Intuitive navigation between different accounting modules, 4) Professional reporting views with proper number formatting for currency.Deduct 3 points for poor financial data visualization, 5 points for confusing navigation between accounting modules, 5 points for improper decimal or currency formatting in financial displays. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Compliance with Chinese Accounting Law",
+      "description": "Judge whether the system implements required regulatory compliance features: 1) Proper audit trails for all financial transactions, 2) Implementation of required accounting periods and closing procedures, 3) Support for Chinese-specific accounting documents and reporting requirements, 4) Data retention policies according to Chinese law.Deduct 5 points for each missing compliance feature, 3 points for incomplete implementation of Chinese accounting standards, and 5 points for any feature that directly contradicts Chinese accounting regulations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

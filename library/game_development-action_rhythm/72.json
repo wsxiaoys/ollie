@@ -1,0 +1,68 @@
+{
+  "index": 72,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\nPlease implement a \"Catch Fruit\" game using HTML and JavaScript.\n\nTask: Create a fruit-catching game where players need to catch falling fruits within a limited time.\n\nHint: Use timers and collision detection to implement the game logic.\n\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game loop fully implemented?",
+      "description": "Review whether the code implements the essential game mechanics through HTML/JavaScript, including fruit generation, gravity simulation for falling objects, player-controlled basket/character movement, and precise collision detection. Score 0 if the core interaction logic is missing, 5 if only basic movement without proper collision detection is implemented, and 10 if the complete game cycle with variable difficulty is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the timer and scoring system implemented correctly?",
+      "description": "Check if the game includes a functional countdown timer that properly terminates the game, and a scoring system that accurately tracks successful fruit catches. Verify that the score is properly incremented when fruits are caught and that the timer decrements correctly. Deduct 5 points if the timer doesn't end the game, 3 points if score calculation has bugs, and 2 points if there's no visual feedback when points are earned. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are multiple fruit types implemented with varying behaviors?",
+      "description": "Evaluate whether the game features different fruit types with distinct visual appearances, falling speeds, point values, or special effects. Deduct 5 points if only a single fruit type exists, 3 points if fruits look different but behave identically, and 2 points if there's insufficient variety (less than 3 types). Give full 10 points for rich variety with meaningful gameplay differences.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game difficulty progression properly implemented?",
+      "description": "Assess if the game's difficulty increases over time through mechanisms like faster falling fruits, more fruits appearing simultaneously, or introduction of obstacles/distractions. Check if level progression or wave system is clearly communicated to players. Deduct 5 points if difficulty remains static throughout gameplay, and 3 points if difficulty curve is too steep or unbalanced. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, rapid input changes, performance issues on slower devices, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special bonus fruits with unique effects 2. Power-ups that modify gameplay 3. Combo system for catching multiple fruits in succession). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems coexisting) 2. Function modules unrelated to fruit catching (e.g., unnecessary minigames) 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game entities, physics, rendering, and input handling), code readability, and comprehensive commenting as requested. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comments are missing or unhelpful. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (clear separation between game area, score display, and timer) 3) Professional font system (readable text size, consistent styling). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Responsive player movement with minimal input lag 2) Smooth animations for falling fruits and catching interactions 3) Clear visual and audio feedback when fruits are caught or missed. Deduct 5 points for each operation without feedback, 3 points for choppy animations during gameplay, and 5 points for unresponsive controls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 856,
+  "question": "You are a coding expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. I'm a beginner and want to create a word-matching game in HTML where I can upload word information and then play the game based on my words. What information do I need to provide to you?\n\nThe structure of the Excel file is shown in the image:",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the word-matching game core functionality fully implemented?",
+      "description": "Review whether the code implements the basic word-matching game mechanics, including word pairing logic, input validation, and scoring system. Score 0 if core game logic is missing, 5 if basic matching is implemented without validation, and 10 if the game includes comprehensive matching mechanisms with proper feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Excel file upload and parsing functionality properly implemented?",
+      "description": "Check whether the code handles Excel file uploads correctly, parses the structure according to the specified format, and handles errors gracefully. Deduct 5 points if parsing is incomplete or error-prone, 3 points if only limited file formats are supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there proper data validation and error handling for the uploaded content?",
+      "description": "Evaluate whether the code validates the uploaded Excel data (checking for empty cells, incorrect formats, etc.) and provides clear feedback to users. Deduct 3 points if basic validation is missing, 5 points if error messages are not user-friendly. Check if the system can handle malformed Excel files or unexpected content. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a proper mechanism for word storage and game state persistence?",
+      "description": "Assess whether the game maintains state between sessions (using localStorage, cookies, or server storage) and saves user progress. Deduct 5 points if the game doesn't save progress at all, 3 points if it only uses temporary storage. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid file formats, network issues during upload, browser compatibility issues) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple game modes like timed challenges 2. Visual animations for successful matches 3. Progress tracking and statistics). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to upload files) 2. Function modules unrelated to word matching (e.g., unnecessary media players) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data management layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling for the file upload process. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast gameplay, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

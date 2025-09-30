@@ -1,0 +1,68 @@
+{
+  "index": 494,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible.\n\n======== ROLE ========\nYou are an experienced code expert. I'm providing you with a software development requirement description, and I need you to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code that is thoroughly commented with simple, easy-to-understand language. Don't output anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code and ensure the project is fully executable\n2. Ensure that all code files you output are complete without omitting any code\n3. Before final output, carefully review and check all code to evaluate its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nPlease implement a front-end interface for a multiplayer online competitive shooting game. Players can create or join rooms to battle with other players on the same map. The interface should include real-time player positions, a scoreboard, chat functionality, etc. Support selection and switching between different weapons, and synchronize each player's shooting actions and battle results in real-time.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game interface and visual rendering implemented?",
+      "description": "Check if the code properly implements the game's visual interface using HTML/CSS/JavaScript with a proper game canvas or DOM elements for player representation. The interface should display player characters, weapons, bullet trajectories, and map elements. Score 0 if there's no visual game interface, 5 if basic elements are displayed but lack animations, and 10 if the game has a fully interactive visual system with proper sprite rendering or 3D models.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the player movement and combat system fully implemented?",
+      "description": "Evaluate whether the code implements player movement mechanics (WASD/arrow keys), aiming (mouse or joystick), shooting mechanics with different weapons, hit detection, damage calculation, and player health management. Score 0 if these core mechanics are missing, 5 if basic movement and shooting exist but lack weapon differentiation or proper hit detection, and 10 if the system includes different weapon behaviors, bullet physics, and accurate hit registration.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the room creation and player matchmaking functionality implemented?",
+      "description": "Assess whether the code properly implements room creation with custom settings, room listing, joining functionality, and player readiness states. Check if the lobby system allows players to see available rooms, create new rooms with custom parameters, join existing rooms, and prepare for matches. Score 0 if these features are missing, 5 if only basic room functionality exists, and 10 if the system includes advanced features like room passwords, player limits, and match configuration options.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is real-time multiplayer synchronization properly implemented?",
+      "description": "Check if the code includes WebSocket or similar technology for real-time player position updates, shooting actions, and game state synchronization. Evaluate whether client-side prediction and server reconciliation techniques are used to handle network latency. Score 0 if no synchronization exists, 5 if basic position updates work but with noticeable lag, and 10 if the implementation includes advanced techniques like interpolation, lag compensation, and smooth rendering during network fluctuations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, player disconnection, invalid inputs, browser compatibility issues, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Destructible environments 2. Weather effects that impact gameplay 3. Kill-cam replays 4. Custom weapon skins or character customization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple input handling systems) 2. Function modules unrelated to the shooting game (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive particle systems that cause frame drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/network layers), code reusability, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Harmonious color matching suitable for a shooting game (high contrast for important elements like health/ammo) 2) Proper layout spacing (HUD elements don't obstruct gameplay) 3) Clear visual hierarchy with readable text (even during intense action). Deduct 3 points for cluttered HUD elements, 5 points for poor color choices that affect gameplay visibility, and 5 points for inconsistent UI styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Input response delay ≤ 50ms for shooter games 2) Smooth animations for weapon switching, reloading, and character movement 3) Clear visual and audio feedback for hits and damage. Deduct 5 points for input lag, 3 points for choppy animations during critical gameplay moments, and 5 points for confusing or missing feedback on important actions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "hard"
+}

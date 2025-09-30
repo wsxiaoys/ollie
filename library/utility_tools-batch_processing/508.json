@@ -1,0 +1,68 @@
+{
+  "index": 508,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure any code you generate is executable and demonstrable.\n\n======== ROLE ========\nYou are an experienced code expert. You will be provided with a software development requirement description, and you are required to generate project code according to these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You should always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirement involves external API access or requires user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nImplement a file format conversion tool that supports common file format conversions, such as PDF to Word, image format conversion, etc. After users upload files and select the target format, the tool will convert and provide a download link.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload system properly implemented?",
+      "description": "Evaluate whether the code implements a complete file upload system that handles multiple file formats, includes proper MIME type validation, and manages file size limits. Check for proper error handling during the upload process (network issues, timeouts, etc.). Score 0 if file upload is missing, 5 if basic upload is implemented but lacks validation, and 10 if the upload system is robust with progress indicators and proper validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the format conversion functionality comprehensively implemented?",
+      "description": "Examine whether the code supports a diverse range of file format conversions as required (PDF to Word, image format conversions, etc.). Check if the conversion logic is properly implemented with appropriate libraries/tools. Deduct 2 points for each major format conversion missing from the requirements. Deduct 5 points if conversion quality options are not available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the download system properly implemented?",
+      "description": "Assess whether the code generates proper download links for converted files, implements appropriate security measures (such as expiring links or authentication), and handles large file downloads efficiently. Check if download progress is displayed to the user. Score 0 if download functionality is missing, 5 if basic download is available without security considerations, and 10 if a complete, secure download system is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper error handling and conversion status feedback?",
+      "description": "Evaluate how the application handles conversion errors, provides status updates during conversion processes, and communicates issues to users. Check for the presence of conversion job queuing for large files or batch processing. Deduct 5 points if error messages are generic/unhelpful, and 5 points if there's no real-time status feedback during conversion. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted files, unsupported formats, conversion failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch conversion capability 2. Preview of conversion results before download 3. Conversion history management). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file handling libraries for the same purpose) 2. Function modules unrelated to file conversion (e.g., built-in social sharing that's not requested) 3. Fancy effects that affect performance (e.g., unnecessary animations during file processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/conversion logic/file handling layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload/conversion feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for the conversion workflow. Deduct 5 points for each operation without feedback, 3 points for visual hiccups during file processing, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Batch Processing",
+  "difficulty": "medium"
+}

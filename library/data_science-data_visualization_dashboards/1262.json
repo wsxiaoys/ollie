@@ -1,0 +1,68 @@
+{
+  "index": 1262,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Based on the uploaded operational data, create a data platform product for mobile devices for use by company executives.\n\nThe indicators at the top of the document are the metrics that executives are particularly concerned with. The first column of the document records all data from January 1, 2025 to March 10, 2025, where \"Group,\" \"Team,\" \"Region,\" \"Market,\" and \"Platform\" are dimensional data. Among them: Region stores several countries or regional areas, Market stores the names of countries and regions, and Platform is the platform that generates business volume. Order quantity, sales amount, receipt amount, spending, new product count, active product count are all natural indicators, while average order value, ROI, receipt rate, and return rate are derived indicators calculated from natural indicators using formulas. See the formulas in each cell of the document for calculation details.\n\nFlexibly utilize the combinations of dimensions and indicators in the document to create an HTML page for a mobile commerce data platform product suitable for company executives, and integrate it into a larger HTML page for display.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Executive Data Dashboard Implementation",
+      "description": "Evaluate whether the code implements a comprehensive executive dashboard that displays key metrics (order quantity, sales amount, receipt amount, spending, new product count, active product count, average order value, ROI, receipt rate, return rate) in an organized and easily scannable format. The implementation should prioritize the metrics explicitly mentioned as being of particular concern to executives.0 points if core metrics are missing, 5 points if basic metrics are displayed without proper organization, 10 points for a complete implementation with all required metrics visually highlighted for executive focus.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Dimensional Data Filtering & Exploration",
+      "description": "Check if the implementation allows executives to explore data across all required dimensions (Group, Team, Region, Market, Platform). The interface should enable filtering and drill-down capabilities appropriate for mobile executive use, with special attention to the hierarchical relationship between Region and Market.Deduct 2 points for each missing dimension filter. Deduct 5 points if hierarchical relationship between Region and Market is not properly implemented. Full score requires intuitive dimension navigation suitable for executive users.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Time Series Analysis & Trending",
+      "description": "Assess if the code provides time series visualization for the date range (January 1, 2025 to March 10, 2025) with appropriate granularity options (daily, weekly, monthly). Executives should be able to identify trends and patterns over time for key metrics.Deduct 5 points if time navigation is missing or severely limited. Deduct 3 points if trend visualization is basic without comparison functionality. Full score requires interactive time series charts with trend indicators and period-over-period comparisons.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Derived KPI Calculation Accuracy",
+      "description": "Verify that derived indicators (average order value, ROI, receipt rate, return rate) are calculated correctly according to the formulas provided in the document. The implementation should show both the result and provide access to the calculation method for transparency.Deduct 3 points for each incorrectly calculated derived metric. Deduct 2 points if the calculation method isn't accessible or transparent. Full implementation requires accurate calculations with tooltips or information panels explaining formulas.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, loading failures, filter combinations with no results, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases.0 points if no error handling exists, 5 points if basic error handling is present but not comprehensive, 10 points for robust error handling with user-friendly recovery options and appropriate executive-level messaging.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Executive Features",
+      "description": "Check whether the code includes surprise features that enhance the executive experience (e.g., 1. Automated insights highlighting significant changes 2. Executive summary with AI-generated narrative 3. One-click sharing to executive meetings 4. Custom alert thresholds for KPIs).Add 3 points for each practical innovative feature implemented specifically for executive users (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualizations 2. Function modules unrelated to executive decision-making 3. Fancy effects that affect mobile performance and distract from data comprehension.Deduct 3 points for each redundancy found, and directly deduct 10 points if core executive functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Code Engineering Quality",
+      "description": "Review modular design (such as separating data processing/visualization/interaction layers), reusable components, and mobile-specific optimizations. Analyze whether the code structure supports future extensions with new metrics or dimensions.Deduct 5 points if global state management is poor or design patterns are not used; deduct 5 points if code duplication rate is high; deduct 5 points if mobile optimization is insufficient (e.g., no consideration for touch interactions, offline capabilities). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Executive UI/UX Design Quality",
+      "description": "Evaluate whether the interface follows executive dashboard design principles: 1) Clean visual hierarchy highlighting key metrics 2) Proper information density for mobile screens (not overcrowded) 3) Professional typography system with excellent readability on mobile devices 4) Color coding that effectively communicates performance status (red/yellow/green or similar).Deduct 3 points for cluttered layouts, 5 points for poor information hierarchy, 3 points for hard-to-read text on mobile, and 3 points for ineffective use of color for status indication. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Mobile-First Interaction Design",
+      "description": "Judge whether the mobile interactions account for executive usage patterns: 1) Touch-optimized elements (min tap target size ≥ 44px) 2) One-handed operation capability for critical functions 3) Fast-loading visualizations (<2s) 4) Gesture support for common data exploration tasks 5) Orientation adaptability.Deduct 2 points for each mobile interaction pattern violation. Deduct 5 points if the interface requires constant zooming or precision tapping. Deduct 3 points if performance is sluggish on mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "hard"
+}

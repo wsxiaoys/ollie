@@ -1,0 +1,68 @@
+{
+  "index": 317,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and displayable. Design a web-based racing game. Output the HTML code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core racing game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the basic racing game elements: a movable player vehicle, track boundaries, collision detection, and speed/acceleration control. Score 0 if the core movement mechanics are missing, 5 if only basic movement is implemented without proper physics, and 10 if a complete racing system with realistic physics is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game loop and animation framework properly implemented?",
+      "description": "Check if the code uses requestAnimationFrame or similar method for smooth rendering, maintains consistent frame rate (target 60fps), and handles timing correctly for speed calculations. Deduct 5 points if animations are jerky or inconsistent, 3 points if there's no delta time calculation for frame independence, and 2 points if there's no FPS monitoring/optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the racing track and environment well-designed?",
+      "description": "Evaluate whether the game includes a properly defined racing track with clear boundaries, checkpoints, and lap counting. Check if there's background scenery and proper perspective effects to create depth. Deduct 5 points if the track design is too simplistic (just straight lines), 3 points if there's no lap tracking system, and 3 points if the environment lacks visual depth. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game have proper controls and player feedback?",
+      "description": "Assess the implementation of keyboard/touch controls, with clear visual/audio feedback for actions like acceleration, braking, and collisions. Check for control responsiveness and customization options. Deduct 5 points if controls feel unresponsive (>100ms delay), 3 points if there's no visual feedback for player actions, and 3 points if control options aren't adaptable to different devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid keyboard input, browser resizing, focus/blur events when switching tabs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects 2. Car customization options 3. Ghost car of best lap 4. Interactive sound effects based on speed/terrain). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple control schemes that conflict) 2. Function modules unrelated to racing (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects causing frame drops). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling layers), code reusability, and optimization techniques. Deduct 5 points if global state pollution is found; deduct 3 points if magic numbers are used throughout instead of constants; deduct 5 points if the code has no comments or documentation for complex algorithms. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game UI principles: 1) Clear heads-up display with speedometer, lap counter, and timer 2) Proper contrast between game elements and background 3) Professional font system (readable during gameplay, consistent styling). Deduct 3 points for each crowded visual element, 5 points for poor contrast making game elements hard to distinguish, and 5 points for chaotic UI layout that obstructs gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to racing game standards: 1) Responsive controls with immediate visual feedback 2) Smooth camera movements following the car 3) Appropriate sense of speed with visual cues (motion blur, environment elements). Deduct 5 points for input lag >100ms, 3 points for jerky camera movements during turns, and 5 points for lack of speed perception. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

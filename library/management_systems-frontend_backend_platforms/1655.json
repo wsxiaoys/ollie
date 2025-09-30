@@ -1,0 +1,68 @@
+{
+  "index": 1655,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Create a web application that displays a list of articles and implements CRUD (create, read, update, delete) functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the CRUD functionality fully implemented?",
+      "description": "Verify if the application correctly implements all CRUD operations (Create, Read, Update, Delete) for articles. Check whether forms for adding and editing articles are properly validated. Score 0 if core CRUD operations are missing, 5 if basic operations exist but with limited validation, and 10 if all operations are implemented with proper validation (required fields, data types, etc.).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the article listing functionality properly implemented?",
+      "description": "Review whether the code implements proper listing of articles with features like pagination, sorting, or filtering. Check if the list displays relevant article information (title, date, excerpt, etc.). Deduct 3 points if pagination is missing for large datasets, 2 points if sorting/filtering options are not available, and 3 points if the display of article information is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is data persistence implemented?",
+      "description": "Evaluate whether the application properly stores data (using localStorage, IndexedDB, backend API, etc.) and maintains state between sessions. Check if data loading states and error handling are implemented. Deduct 5 points if no persistence mechanism is implemented, 3 points if error states aren't handled, and 3 points if loading states aren't managed properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the UI/UX for article management intuitive?",
+      "description": "Assess if the interface provides clear visual cues for CRUD operations, confirmation dialogs for destructive actions (delete), and intuitive navigation between article views. Check for proper feedback after operations. Deduct 3 points for missing confirmation dialogs, 3 points for unclear action buttons, and 4 points for lack of operation feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as form validation errors, network issues, empty states, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Rich text editor for articles 2. Article tagging/categorization system 3. Search functionality with highlighting 4. Article reading time estimation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to delete an article) 2. Function modules unrelated to article management (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/state/UI components), code organization, reusable components, and proper state management. Deduct 5 points if global state is overused or components are tightly coupled; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if naming conventions are inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast operations, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

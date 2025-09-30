@@ -1,0 +1,68 @@
+{
+  "index": 1324,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate, professional responses. Be sure that the code you provide is executable. Based on the content, help me build a personalized learning recommendation website powered by knowledge graphs from scratch, step by step. The frontend will use Vue, the backend will use the Django framework, and MySQL will serve as the database.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the knowledge graph construction and visualization fully implemented?",
+      "description": "Review whether the code accurately implements knowledge graph data modeling through Vue.js frontend and Django backend, including node/edge relationships, graph traversal algorithms, and interactive visualization components. Check if D3.js or similar libraries are properly integrated for graph rendering. Score 0 if core graph structure is missing, 5 if only basic nodes/edges are displayed, and 10 if complete interactive knowledge graph with search, filtering, and relationship exploration is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the personalized recommendation algorithm properly implemented?",
+      "description": "Evaluate whether the recommendation engine includes collaborative filtering, content-based filtering, or hybrid approaches. Check if user behavior tracking, learning path analysis, and preference modeling are implemented. Verify integration between Django models and recommendation logic. Deduct 5 points if only basic similarity matching is used, 3 points if real-time recommendation updates are missing. Full score requires sophisticated ML-based recommendations with A/B testing capability.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the full-stack architecture properly designed with Vue-Django-MySQL integration?",
+      "description": "Check whether the system follows proper RESTful API design between Vue frontend and Django backend, with appropriate serializers, viewsets, and routing. Evaluate MySQL database schema design for users, learning materials, knowledge entities, and relationships. Deduct 5 points if API versioning is missing, 3 points if database indexing is inadequate. Requires proper CORS handling, authentication middleware, and optimized query performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the learning progress tracking and analytics system complete?",
+      "description": "Verify implementation of user learning journey tracking, progress visualization, achievement systems, and learning analytics dashboard. Check if the system includes learning path optimization, completion rates, time-spent analytics, and adaptive difficulty adjustment. Deduct 5 points if progress persistence is not implemented, 3 points if analytics visualization is basic. Full score requires comprehensive learning insights with predictive analytics.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust and handles edge cases effectively?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid graph queries, failed API calls, database connection issues, malformed learning data, etc.) and provides friendly error prompts or recovery mechanisms. Code with strong robustness should include proper exception handling, input validation, and graceful degradation, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there innovative features that enhance the learning experience?",
+      "description": "Check whether the code includes compelling features that improve personalization (e.g., 1. AI-powered learning path generation 2. Social learning communities with peer recommendations 3. Adaptive content difficulty based on performance 4. Multi-modal content integration 5. Gamification elements). Add 2-3 points for each well-implemented innovative feature that demonstrates technical sophistication (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant or unnecessary features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate recommendation logic implementations 2. Unused Vue components or Django apps unrelated to learning recommendations 3. Over-engineered graph visualizations that impact performance without adding value. Deduct 3 points for each redundancy found, and directly deduct 10 points if core learning recommendation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code demonstrate proper engineering quality and architecture?",
+      "description": "Review modular design separating concerns (Vue components, Django apps, database layers), proper state management (Vuex), API documentation, and testing coverage. Deduct 5 points if global state pollution is found or if Django best practices are ignored; deduct 5 points if code duplication rate exceeds 30%; deduct 5 points if no automated testing or CI/CD pipeline is implemented. Full score requires clean architecture with proper separation of concerns.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the user interface meet modern educational platform design standards?",
+      "description": "Evaluate whether the Vue.js frontend follows contemporary educational UX principles: 1) Intuitive navigation with clear learning paths 2) Accessible color contrast ratios (WCAG 2.1 AA compliance) 3) Responsive design across devices 4) Professional typography hierarchy with readable font sizes (≥14px body text). Deduct 3 points for each cluttered interface element, 5 points for poor accessibility, and 5 points for non-responsive layout components. Full score requires polished educational platform aesthetics.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the interactive elements smooth and provide excellent user experience?",
+      "description": "Judge whether dynamic interactions meet educational platform standards: 1) Knowledge graph navigation with smooth zoom/pan (60fps) 2) Recommendation updates with loading states ≤200ms 3) Form submissions with proper validation feedback 4) Search functionality with real-time suggestions 5) Progress indicators and achievement animations. Deduct 5 points for each laggy interaction, 3 points for missing loading states, and 5 points for confusing navigation flow. Full score requires seamless, intuitive learning experience.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

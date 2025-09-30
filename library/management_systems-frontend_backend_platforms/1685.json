@@ -1,0 +1,68 @@
+{
+  "index": 1685,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Be sure to provide executable code examples when possible. https://www.sowoll.com/#/dashboard Connect to generate a Vue3 + Vue3 + Element Plus project",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue3 project setup correctly implemented?",
+      "description": "Check if the code includes proper Vue3 initialization using createApp, proper configuration of Vue Router, and correct loading of Element Plus. Verify that the package.json includes the correct dependencies (vue@^3.x, element-plus, vue-router@^4.x), and that vite.config.js or vue.config.js is properly set up. Score 0 if Vue3 is not correctly configured, 5 if basic setup exists but is incomplete, and 10 if full configuration with proper imports, plugin registration, and environment variables is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Element Plus properly integrated and configured?",
+      "description": "Evaluate whether Element Plus components are properly imported (either globally or on-demand with auto imports), theme customization is implemented, and icon libraries are correctly set up. Check if CSS imports for Element Plus are correctly placed in main.js or index.html. Deduct 5 points if the importing strategy leads to bundle bloat, 3 points if theme configuration is missing, and 2 points if icon setup is incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dashboard layout properly implemented?",
+      "description": "Review whether the dashboard layout uses appropriate Element Plus components (such as el-container, el-header, el-aside, el-main) and proper responsive design. Check if the sidebar menu is collapsible and if the layout adapts to different screen sizes. Score 0 if no dashboard layout is implemented, 5 if basic layout exists but lacks responsiveness, and 10 if a fully responsive, well-structured dashboard with proper navigation components is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is proper state management implemented for the dashboard?",
+      "description": "Assess whether the code implements proper state management with Vue3's Composition API (ref, reactive), Pinia, or Vuex. Check for separation of concerns between views and state, and verify that dashboard data is properly reactive. Deduct 5 points if global state is mismanaged, 3 points if props/emits are improperly used, and 5 points if reactivity isn't properly leveraged. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as API failures, loading states, form validation errors) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include try/catch blocks, error boundaries, and loading indicators. Give 10 points for comprehensive error handling and input validation, 5 points if basic error handling exists, and 0 points if exceptions are not handled at all.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dark/light theme toggle 2. Custom dashboard layout saving 3. Interactive data visualizations 4. Keyboard shortcuts for common operations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant component registrations or imports 2. Feature modules unrelated to the dashboard context 3. Heavy animations or effects that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component composition (single-responsibility components), file structure organization, code style consistency, and build process configuration. Deduct 5 points if component coupling is too high; deduct 5 points if naming conventions are inconsistent; deduct 5 points if no ESLint/Prettier configuration is present. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent use of Element Plus design language 2) Proper whitespace and component spacing 3) Professional typography with consistent font hierarchy. Deduct 3 points for each inconsistent UI element, 5 points for misaligned components, and 5 points for inconsistent use of Element Plus styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions conform to best practices: 1) Appropriate loading indicators for async operations 2) Smooth transitions between routes 3) Feedback for user actions within 100ms. Deduct 5 points for missing loading states during data fetching, 3 points for abrupt page transitions, and 5 points for unresponsive UI during heavy operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

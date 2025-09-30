@@ -1,0 +1,68 @@
+{
+  "index": 1787,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable whenever possible. Please help me create a small program that can analyze the asymptotic time complexity of input C language program fragments (note that these are incomplete program fragments) and output the results in Big O notation. Please generate this as an HTML program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the C code parsing functionality implemented correctly?",
+      "description": "Evaluate whether the code accurately parses and identifies common C language constructs that affect time complexity (loops, recursive calls, nested structures). Check if it handles different loop types (for, while, do-while), can identify loop boundaries and increment patterns, and recognizes function calls. Score 0 if parsing is absent, 5 if only basic structures are recognized, and 10 if comprehensive parsing of complex C fragments is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the time complexity analysis algorithm implemented properly?",
+      "description": "Assess the correctness of the time complexity calculation logic. Check if it properly identifies and combines nested loops (O(n²)), logarithmic patterns (O(log n)), recursive complexity patterns, and handles multiple code paths. The analysis should correctly determine constants vs. variable factors. Deduct 5 points if it only handles simple loops, and 3 points if it misidentifies recursive complexity. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the complexity detection comprehensive across various algorithm patterns?",
+      "description": "Check whether the analyzer can recognize common algorithm patterns and their complexities: divide-and-conquer (O(n log n)), binary search (O(log n)), polynomial time algorithms (O(n^k)), and exponential complexities (O(2^n)). Must correctly identify amortized complexity cases and combine multiple complexity sources. Deduct 5 points if complex algorithm patterns are misidentified, and 3 points if edge cases like O(n log n) are missed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interface and visualization of analysis results effective?",
+      "description": "Evaluate the clarity and intuitiveness of how analysis results are presented. The interface should show the original code alongside the complexity analysis, highlight critical code sections affecting complexity, and provide meaningful explanations. The Big O notation should be properly formatted and visualized. Deduct 5 points if visualization is minimal, and 3 points if complex results lack clear explanation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incomplete code fragments, syntax errors, infinite loops, uncommon C syntax, or malformed input) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive complexity growth visualization 2. Comparative analysis of multiple code fragments 3. Suggestions for optimization with examples). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar analysis functions 2. Function modules unrelated to complexity analysis (e.g., a full C compiler) 3. Fancy effects that affect performance (e.g., unnecessary animations that slow down analysis). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating parsing/analysis/visualization layers), clear algorithm documentation, and maintainable structure. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments explaining complex analysis logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for code highlighting and complexity indicators 2) Proper layout spacing between code sections and analysis results 3) Professional font system with monospace for code and readable fonts for explanations. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Analysis feedback delay ≤ 500ms for typical code fragments 2) Smooth transitions when showing detailed explanations 3) Clear visual indications during analysis process. Deduct 5 points for operations without feedback, 3 points for laggy response on complex inputs, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

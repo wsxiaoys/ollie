@@ -1,0 +1,68 @@
+{
+  "index": 1253,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable and demonstrable.\n\nhttp://www.xxtmooc.com/u/xi2v/pay?pid=1384&type=alipay&out_trade_no=2025032016561201700\nThis is a callback URL for successful payment, which will redirect to a frontend payment verification page.\n\nPlease help me design a frontend payment verification page that receives callback parameters where xi2v is the agent ID.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the code properly parse and validate the callback URL parameters?",
+      "description": "Check if the code extracts and validates all URL parameters (pid, type, out_trade_no, agent ID from URL path) using proper JavaScript methods. Test if it handles URL encoding/decoding correctly. Score 0 if no parameter parsing exists, 5 if basic extraction exists but validation is missing, 10 if comprehensive parameter validation with security checks is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the payment verification logic implemented correctly?",
+      "description": "Evaluate if the code includes verification API calls with proper error handling. Check if it implements signature verification, transaction status checks, and amount verification. Deduct 5 points if verification is only client-side without server confirmation, 3 points if there's no retry mechanism for failed verification. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are security measures implemented to prevent payment fraud?",
+      "description": "Review if the code includes anti-CSRF measures, XSS prevention, parameter tampering detection, and proper use of HTTPS for API calls. Check for replay attack prevention mechanisms like nonce or timestamp verification. Deduct 10 points if security is completely neglected, 5 points if basic but insufficient security exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the agent ID (xi2v) handling correctly implemented?",
+      "description": "Verify if the agent ID is properly extracted from the URL path, validated, and used in subsequent API calls or revenue attribution. Check if the code properly handles different agent formats and edge cases. Deduct 5 points if agent ID validation is missing, 3 points if revenue attribution is not tracked. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing parameters, network interruption, verification timeout, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time transaction verification status 2. QR code for receipt 3. Animation for successful payment). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple verification logics coexisting) 2. Function modules unrelated to payment verification (e.g., unnecessary user profile features) 3. Fancy effects that affect performance (e.g., heavy animations during critical verification processes). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API calls/UI/state management), error handling mechanisms, and maintainable structure. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code is not properly commented or documented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback when verification starts ≤ 100ms 2) Loading indicators for API calls 3) Clear success/failure states with appropriate transitions. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between verification states, and 5 points for confusing success/failure indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

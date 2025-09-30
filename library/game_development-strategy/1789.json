@@ -1,0 +1,68 @@
+{
+  "index": 1789,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Create a mobile version of Chinese chess (Xiangqi) that allows for human vs. computer gameplay, which can be opened directly on a mobile phone.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core Chinese chess (Xiangqi) game logic fully implemented?",
+      "description": "Review whether the code accurately implements the board structure (9x10 grid), all pieces with correct movement rules (General/King, Advisor, Elephant, Horse, Chariot, Cannon, Soldier/Pawn), and game rules (check, checkmate, stalemate, river crossing for pawns). Score 0 if the core logic is missing, 5 if only basic piece movement is implemented, and 10 if all Chinese chess rules are correctly implemented with move validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the human vs. computer AI opponent functionality implemented?",
+      "description": "Evaluate the AI implementation for the computer opponent. Check for basic move generation, evaluation function, search algorithms (minimax/alpha-beta pruning/MCTS), and difficulty levels. Deduct 5 points if AI makes illegal moves, 3 points if AI strategy is too simplistic (random moves), and 2 points if there are no difficulty options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the mobile-specific UI/UX properly implemented?",
+      "description": "Assess if the interface is truly mobile-optimized with responsive design, touch controls (vs. mouse events), proper viewport settings, and mobile gestures support. Deduct 5 points if the board doesn't resize properly for different screens, 3 points if touch areas are too small (<44px), and 3 points if no mobile-specific meta tags are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management and persistence implemented?",
+      "description": "Check whether the code includes game state management (move history, undo/redo functionality) and persistence (saving game state locally via localStorage/IndexedDB). Evaluate if players can continue games after closing the browser. Deduct 5 points if move history isn't tracked, 5 points if no save/load functionality exists, and 3 points if the persistence mechanism isn't reliable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, browser back button usage, network fluctuations, device orientation changes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move hints with color-coded suggestions 2. Audio feedback with traditional Chinese sounds 3. Animation for capturing pieces 4. AR view of the chessboard). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple move validation logics) 2. Function modules unrelated to Chinese chess (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance on mobile devices (e.g., excessive animations that drain battery). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), optimization for mobile (asset loading strategy, touch event debouncing), and offline capabilities. Deduct 5 points if global state pollution is found or proper patterns aren't used; deduct 5 points if the code isn't minified/optimized for mobile; deduct 5 points if there's no manifest file or offline support. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile design principles: 1) Traditional Chinese chess aesthetics with modern UI elements 2) Proper touch target sizing (minimum 44×44px) 3) Clear visual hierarchy with contrasting piece colors. Deduct 3 points for each hard-to-see game element, 5 points for poor contrast between pieces and board, and 5 points for text that's too small to read on mobile (<16px). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive on mobile devices?",
+      "description": "Judge whether the dynamic effects are optimized for mobile: 1) Touch response delay ≤ 100ms 2) Smooth piece movement animation (60fps) 3) Clear visual/haptic feedback for moves. Deduct 5 points for laggy animations on mid-range devices, 3 points for lack of touch feedback, and 5 points for non-optimized assets causing slowdowns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

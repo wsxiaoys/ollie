@@ -1,0 +1,68 @@
+{
+  "index": 971,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the generated code is executable for demonstration. Now for the question: write me a small HTML Gomoku (Five-in-a-Row) game with the chessboard designed in the shape of the Earth.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Gomoku game core logic fully implemented?",
+      "description": "Review whether the code accurately implements the Gomoku game rules including win detection (5 consecutive pieces), turn switching between players, and preventing moves on occupied positions. Score 0 if the core game logic is missing, 5 if basic functionality works but has edge cases, and 10 if the implementation is complete and bug-free.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Earth-shaped chessboard properly implemented?",
+      "description": "Evaluate whether the chessboard genuinely resembles Earth (either using CSS border-radius for a spherical appearance, SVG with Earth continents, or Canvas with a spherical projection). Check if the game pieces are properly positioned on the curved surface with appropriate perspective adjustments. Give 0 points if it's just a regular board, 5 points if it's round but lacks Earth features, and 10 points for a realistic Earth representation with continents, oceans, and proper spherical distortion handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the board implement proper coordinate mapping?",
+      "description": "Verify whether the coordinate system handles the spherical nature of the Earth-shaped board correctly, including accurate click detection on the curved surface and proper piece placement. Check if the coordinate calculation accounts for distortion at the poles or edges. Deduct 5 points if there's noticeable misalignment when placing pieces, and 3 points if edge cases (like poles) aren't handled properly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there appropriate visual feedback for game state?",
+      "description": "Check if the interface provides clear visual indicators for whose turn it is, valid moves, win conditions, and game completion. Evaluate whether the visuals incorporate Earth-themed elements (e.g., different continents lighting up, atmospheric effects). Deduct 5 points if win detection has no clear visual celebration, 3 points if turn indication is unclear. Full score is 10 points if feedback is both clear and thematically appropriate.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle abnormal situations (incorrect inputs, rapid clicking, browser resizing, etc.) and provides friendly error handling. Code with strong robustness should prevent board state corruption and handle edge cases like simultaneous clicks or invalid placements. Give 10 points for comprehensive error handling, 5 points for average implementation, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Day/night cycle on the Earth board 2. Animated piece placement with geographical effects 3. Sound effects based on continent placement 4. Gravity or rotation effects for the Earth). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Multiple implementations of similar functions (e.g., duplicate win-checking algorithms) 2. Function modules unrelated to Gomoku or Earth theme (e.g., unrelated animations) 3. Excessive effects that affect performance (e.g., constant rotating Earth that hurts gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are impaired by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of game logic/view/event handling), code reusability, and maintainability. Deduct 5 points if global variables are overused or if the code structure is monolithic; deduct 5 points if there's significant code duplication; deduct 5 points if the code lacks comments or is poorly organized. The full score is 10 points for clean, well-structured code.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows modern principles: 1) Earth colors are realistic and harmonious 2) Game elements have proper contrast against the Earth background 3) Text is legible (instructions, status messages, etc.) with appropriate size and contrast. Deduct 3 points for poor piece visibility, 5 points for unrealistic Earth coloration, and 5 points for cluttered UI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive?",
+      "description": "Judge whether the interaction feels natural: 1) Pieces place immediately on click (≤100ms) 2) Visual cues show valid placement positions 3) Earth visualization doesn't interfere with gameplay. Deduct 5 points if piece placement feels delayed, 3 points if the Earth representation makes it difficult to see the game state, and 5 points if players might be confused about where to click. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "easy"
+}

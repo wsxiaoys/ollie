@@ -1,0 +1,68 @@
+{
+  "index": 845,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration when possible. Create a powerful and beautiful Android Launcher for a 1920x720 resolution car IVI display screen, and generate the code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the car launcher UI properly optimized for 1920x720 resolution?",
+      "description": "Check if the layout is explicitly designed for 1920x720 resolution with appropriate density considerations. All UI elements should be correctly sized for this specific wide-format display. Examine if the code includes specific configuration for landscape orientation and handles the wider aspect ratio (8:3) properly. Deduct 5 points if the layout doesn't adapt well to this resolution, and 10 points if elements are cut off or distorted. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the launcher optimized for in-vehicle usage patterns?",
+      "description": "Review whether the code implements car-specific UI considerations: 1) Large tap targets (at least 56dp for critical functions) 2) Glanceability with minimal driver distraction 3) Quick access to navigation, media, and communication functions in the primary viewing area. Deduct 5 points if touch targets are too small for driving conditions, and 5 points if critical functions require more than 2 taps. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the launcher responsive to different driving contexts?",
+      "description": "Evaluate if the code implements context awareness: 1) Day/night mode switching based on ambient light sensors 2) Driving mode that simplifies UI when vehicle is in motion 3) Integration with vehicle state APIs. Score 3 points for each implemented context adaptation feature. Deduct all 10 points if the launcher lacks any driving context awareness features.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the launcher provide proper integration with Android Auto or vehicle systems?",
+      "description": "Check if the code includes appropriate system integration: 1) Hooks for Android Auto compatibility 2) Vehicle telemetry data display (speed, fuel level) 3) HVAC controls integration. Score 3 points for each well-implemented integration point. If the launcher is completely isolated from vehicle systems with no integration paths, score 0 points. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as system resource constraints, unexpected app crashes, transient connectivity loss, etc.) and provide graceful degradation. Check for error handling in background services and UI rendering code. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the car experience (e.g., 1. Voice command integration 2. Customizable quick action panels 3. Contextual suggestions based on time/location). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Unnecessary animations that might distract drivers 2. Duplicate app launching methods that confuse users 3. Heavy visual elements that impact performance on automotive hardware. Deduct 3 points for each redundancy found, and directly deduct 10 points if safety-critical functions are obstructed by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review architecture design (such as MVVM pattern adoption, separation of UI/business logic), memory management for limited automotive hardware, and power efficiency considerations. Deduct 5 points if global state pollution is found; deduct 5 points if the code causes memory leaks; deduct 5 points if wake locks are abused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional automotive design standards?",
+      "description": "Evaluate whether the overall design follows modern automotive UI principles: 1) Limited color palette with high contrast for visibility 2) Clear visual hierarchy prioritizing essential driving information 3) Consistent iconography sized appropriately for glanceable interactions. Deduct 3 points for each distracting visual element, 5 points for text smaller than 18sp, and 5 points for low-contrast color schemes that impact visibility in variable lighting. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction optimized for in-vehicle use?",
+      "description": "Judge whether the interactions conform to driver safety considerations: 1) Touch feedback delay ≤ 100ms 2) Minimal animations during driving 3) Voice feedback for critical interactions. Deduct 5 points for each distracting animation, 5 points for gesture controls requiring fine motor skills, and 5 points for interaction flows requiring more than 2 seconds of visual attention. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 589,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Design a warehouse management system with the following features: 1. Display inventory list after login; 2. Administrators can add or reduce product inventory and set minimum inventory thresholds; 3. Front-end warning when inventory exceeds thresholds; 4. Users can filter or search products by category; 5. Export current inventory as an Excel file.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the login and authentication system fully implemented?",
+      "description": "Review whether the code includes a complete login system with proper authentication, session management, and user role differentiation (admin vs regular users). Check for secure password handling, CSRF protection, and proper logout functionality. Score 0 if authentication is missing, 5 if basic authentication exists but lacks security features, and 10 if a complete secure system is implemented with role-based access control.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the inventory display functionality properly implemented?",
+      "description": "Evaluate whether the inventory list displays all necessary product information (ID, name, quantity, category, price, threshold values) in a clean table or grid format. Check for proper pagination if the inventory is large, sorting capabilities, and responsive design that works on different screen sizes. Deduct 3 points if any critical product information is missing, 3 points if the display is not responsive, and 2 points if sorting/pagination is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the inventory management functions for administrators properly implemented?",
+      "description": "Check if administrators can add new products, update existing inventory levels, and set minimum inventory thresholds. Verify that the code includes input validation, prevents negative inventory values, and provides confirmation dialogs for critical operations. Deduct 5 points if threshold management is missing, 3 points if inventory adjustment lacks validation, and 3 points if there's no confirmation for destructive operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the threshold warning system properly implemented?",
+      "description": "Assess whether the code implements visual alerts (color coding, icons, notifications) when inventory falls below the defined thresholds. Check if the warning system works in real-time and is visually distinct. Verify if there's a dashboard or summary view highlighting critical inventory items. Deduct 5 points if warnings are not visually prominent, 3 points if they're not real-time, and 5 points if the warning system is entirely missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid inputs, concurrent user operations, etc.) and provide friendly error prompts or recovery mechanisms. Check for proper exception handling, input validation, and graceful degradation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Inventory trend analysis/visualization 2. Barcode/QR code scanning integration 3. Smart inventory recommendations based on usage patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to edit inventory) 2. Function modules unrelated to warehouse management (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/service/UI layers), unit test coverage, and build process automation. Check for proper code comments and documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the search/filter and export functionality properly implemented?",
+      "description": "Judge whether the search and filter functions are intuitive and effective: 1) Search responds in under 300ms 2) Filter options are clearly categorized 3) Export function produces a properly formatted Excel file with all relevant inventory data. Deduct 5 points if search functionality is slow or buggy, 3 points if filtering is limited or confusing, and 5 points if the Excel export is missing or incomplete. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

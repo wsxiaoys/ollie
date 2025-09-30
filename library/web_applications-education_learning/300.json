@@ -1,0 +1,68 @@
+{
+  "index": 300,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display.\n\nlet base_data = [\n  {\n    // testing_project field\n    label: \"Test Project\",\n    search: null,\n    tensile_strength: \"Tensile Strength\",\n    elongation_at_break: \"Elongation at Break\",\n    flexural_strength: \"Flexural Strength\",\n    flexural_modulus: \"Flexural Modulus\",\n    izod_impact_strength: \"Izod Impact Strength\",\n    heat_deflection_temp: \"Heat Deflection Temperature\",\n    dielectric_strength: \"Dielectric Strength\",\n    volume_resistivity: \"Volume Resistivity\",\n    density: \"Density\",\n    melt_flow_rate: \"Melt Flow Rate\",\n    molding_shrinkage: \"Molding Shrinkage\",\n    flammability_1_5mm: \"1.5mm Flammability Rating\",\n    flammability_3_0mm: \"3.0mm Flammability Rating\",\n    yellow_card: \"Yellow Card Number\",\n    rti_elec: \"RTI (Elec)\",\n    rti_imp: \"RTI (Imp)\",\n    rti_str: \"RTI (Str)\",\n    hwi: \"HWI\",\n    hai: \"HAI\",\n    cti: \"CTI\",\n    outdoor_performance: \"Outdoor Performance\",\n    ball_pressure_temp: \"Ball Pressure Temperature\",\n    rohs: \"RoHS\",\n    reach_svhc: \"REACH, SVHC\",\n    quotation: \"Quotation\",\n    remarks: \"Remarks\"\n  },\n  {\n    // testing_standards field\n    label: \"Testing Standards\",\n    search: null,\n    tensile_strength: \"ASTM D638\",\n    elongation_at_break: \"ASTM D638\",\n    flexural_strength: \"ASTM D790\",\n    flexural_modulus: \"ASTM D790\",\n    izod_impact_strength: \"ASTM D256\",\n    heat_deflection_temp: \"ASTM D648\",\n    dielectric_strength: \"ASTM D149\",\n    volume_resistivity: \"ASTM D257\",\n    density: \"ASTM D792\",\n    melt_flow_rate: \"ASTM D1238\",\n    molding_shrinkage: \"ASTM D955\",\n    flammability_1_5mm: \"UL-94\",\n    flammability_3_0mm: \"UL-94\",\n    yellow_card: \"/\",\n    rti_elec: \"UL 746B\",\n    rti_imp: \"UL 746B\",\n    rti_str: \"UL 746B\",\n    hwi: \"UL 746B\",\n    hai: \"UL 746B\",\n    cti: \"UL 746B\",\n    outdoor_performance: \"UL 746B\",\n    ball_pressure_temp: \"IEC 60695-10-2\",\n    rohs: \"/\",\n    reach_svhc: \"/\",\n    quotation: \"\",\n    remarks: \"\"\n  },\n  {\n    // testing_conditions field\n    label: \"Testing Conditions\",\n    search: null,\n    tensile_strength: \"50mm/min\",\n    elongation_at_break: \"50mm/min\",\n    flexural_strength: \"2mm/min\",\n    flexural_modulus: \"2mm/min\",\n    izod_impact_strength: \"3.2mm, 23℃\",\n    heat_deflection_temp: \"1.82MPa, 6.4mm\",\n    dielectric_strength: \"1.6mm\",\n    volume_resistivity: \"/\",\n    density: \"23℃\",\n    melt_flow_rate: \"230℃, 2.16kg\",\n    molding_shrinkage: \"23℃\",\n    flammability_1_5mm: \"1.5mm\",\n    flammability_3_0mm: \"3.0mm\",\n    yellow_card: \"/\",\n    rti_elec: \"1.5mm\",\n    rti_imp: \"1.5mm\",\n    rti_str: \"1.5mm\",\n    hwi: \"1.5mm\",\n    hai: \"1.5mm\",\n    cti: \"1.5mm\",\n    outdoor_performance: \"/\",\n    ball_pressure_temp: \"3.0mm\",\n    rohs: \"/\",\n    reach_svhc: \"/\",\n    quotation: \"\",\n    remarks: \"\"\n  },\n  {\n    // unit field\n    label: \"Unit\",\n    search: null,\n    tensile_strength: \"Mpa\",\n    elongation_at_break: \"Tensile Strength\",\n    flexural_strength: \"Mpa\",\n    flexural_modulus: \"Mpa\",\n    izod_impact_strength: \"J/m2\",\n    heat_deflection_temp: \"℃\",\n    dielectric_strength: \"kV/mm\",\n    volume_resistivity: \"Ω·cm\",\n    density: \"g/cm3\",\n    melt_flow_rate: \"g/10min\",\n    molding_shrinkage: \"%\",\n    flammability_1_5mm: \"/\",\n    flammability_3_0mm: \"/\",\n    yellow_card: \"/\",\n    rti_elec: \"℃\",\n    rti_imp: \"℃\",\n    rti_str: \"℃\",\n    hwi: \"℃\",\n    hai: \"℃\",\n    cti: \"℃\",\n    outdoor_performance: \"/\",\n    ball_pressure_temp: \"℃\",\n    rohs: \"/\",\n    reach_svhc: \"/\",\n    quotation: \"\",\n    remarks: \"\"\n  },\n  {\n    // range field\n    label: \"Specifications\",\n    search: null,\n    tensile_strength: \"≥13\",\n    elongation_at_break: \"Tensile Strength\",\n    flexural_strength: \"≥15\",\n    flexural_modulus: \"≥800\",\n    izod_impact_strength: \"≥300\",\n    heat_deflection_temp: \"≥70\",\n    dielectric_strength: \"≥14\",\n    volume_resistivity: \"≥1E+14\",\n    density: \"0.80 - 1.25\",\n    melt_flow_rate: \"≥1.0\",\n    molding_shrinkage: \"≤1.8\",\n    flammability_1_5mm: \"V-0\",\n    flammability_3_0mm: \"5VA\",\n    yellow_card: \"/\",\n    rti_elec: \"≥80\",\n    rti_imp: \"≥80\",\n    rti_str: \"≥80\",\n    hwi: \"≤4\",\n    hai: \"≤3\",\n    cti: \"≤3\",\n    outdoor_performance: \"/\",\n    ball_pressure_temp: \"/\",\n    rohs: \"PASS\",\n    reach_svhc: \"PASS\",\n    quotation: \"\",\n    remarks: \"\"\n  }\n]\n\nWrite a multi-line fixed header based on this, using Element UI syntax, where each object corresponds to a row in the header.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Element UI table header structure correctly implemented?",
+      "description": "Verify that the table header uses proper Element UI syntax with el-table and el-table-column components. The header structure should support the multi-line fixed header requirement with correct row spans and column spans. Each object in base_data should correspond to a row in the header.Deduct 5 points if the table structure is not using Element UI components, 5 points if fixed header functionality is not implemented, and 5 points if multi-line header configuration is incorrect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the implementation correctly map all data from base_data to the table?",
+      "description": "Check whether all fields from the base_data array (including testing_project, testing_standards, testing_conditions, unit, and range specifications) are properly displayed in the table header. The implementation should handle all 23+ fields without omissions.Deduct 2 points for each missing field. Deduct 5 points if data mapping is inconsistent or illogical. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is proper alignment and styling applied to the table headers?",
+      "description": "Evaluate whether the table headers use appropriate alignment (text-align), padding, and styling to ensure readability. Headers should have consistent appearance with proper text wrapping for long content.Deduct 3 points for inconsistent text alignment, 3 points for improper padding or spacing, and 4 points if long text handling causes layout issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation include proper fixed header functionality?",
+      "description": "Check if the table implements proper fixed header functionality when scrolling, ensuring that header remains visible while scrolling through data rows. Verify that the header-with-body alignment is maintained during horizontal scrolling.Deduct 5 points if fixed header functionality is not implemented, 3 points if header-body alignment issues occur during scrolling, and 2 points if there are performance issues with large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle potential issues such as missing data fields, null values, or empty strings. Check for error handling when data structure changes or when special characters appear in the data.Evaluate whether the code can handle common abnormal situations (such as null/undefined values, empty strings, etc.) and provide fallback mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Column filtering/sorting 2. Responsive design for different screen sizes 3. Tooltip explanations for technical terms 4. Export functionality to CSV/Excel).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to style the same element) 2. Function modules unrelated to the data display (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive DOM operations).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating component/style/logic), code reusability, and maintainability. Check if the implementation follows Vue/Element UI best practices.Deduct 5 points if global state pollution is found or component design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper Vue lifecycle hooks are not utilized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with Element UI theme 2) Proper layout spacing and header heights 3) Consistent typography (font sizes, weights, etc.).Deduct 3 points for each crowded visual element, 5 points for inconsistent styling with Element UI standards, and 5 points for chaotic alignment of header content. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the table provides good user interaction: 1) Smooth scrolling performance 2) Responsive to screen resizing 3) Clear visual feedback for user interactions like sorting or filtering.Deduct 5 points for laggy scrolling performance with large datasets, 3 points for lack of responsive design considerations, and 5 points for missing user interaction feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

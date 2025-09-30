@@ -1,0 +1,68 @@
+{
+  "index": 513,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Translation\n\nYou are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure any code you generate is executable and can be demonstrated.\n\n======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description, and you are asked to generate project code based on this requirement. Strictly follow the rules to help users generate complete project code that is fully annotated with simple and easy-to-understand language. Do not output anything else.\n\n======== OUTPUT RULES ========\n1. You should always generate complete, runnable project code. Please ensure the project is complete and executable.\n2. Ensure all code files you output are complete, do not omit any code.\n3. Before delivering the final output, carefully review and check all code, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated.\n4. If the requirements include external API access needs or require the use of user data (images, videos, audio, etc.), please provide simulated data.\n\n======== PROJECT REQUIREMENTS ========\nBuild an online text-to-speech (TTS) tool where users can input text, select voice type (such as male/female, slow/fast), generate corresponding audio files, and play them back.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the text input functionality properly implemented?",
+      "description": "Check if the application provides a robust text input area that can handle various lengths of text (short sentences to paragraphs), supports different character sets, and includes proper validation. The input component should have appropriate placeholder text, character count, and potentially allow for file uploads of text documents.Score 0 if text input is missing or severely limited, 5 if basic input exists but lacks validation or support for longer texts, and 10 if the implementation is complete with validation, character limits, and proper handling of special characters.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the voice selection options comprehensive and well-implemented?",
+      "description": "Evaluate whether the code implements multiple voice options (male/female, slow/fast, different accents/languages) as specified, and if the selection UI is intuitive. Voice options should be clearly labeled and organized logically with preview functionality.Deduct 3 points for each missing major voice type category (gender, speed, accent), 2 points if voice previewing is absent, and 2 points if the selection UI is confusing or poorly labeled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the TTS conversion and audio generation properly implemented?",
+      "description": "Assess whether the code properly implements the TTS conversion process, either through a browser API (like SpeechSynthesis API) or a simulated external API. Check if there's appropriate error handling for API failures, loading states during conversion, and proper audio file generation.Score 0 if TTS functionality is not implemented, 5 if basic conversion works but lacks error handling or fails with longer texts, and 10 if the implementation is complete with proper error handling, progress indicators, and support for various text lengths.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio playback functionality fully implemented?",
+      "description": "Check if the application provides complete audio playback controls including play, pause, stop, volume adjustment, playback speed, and a progress bar with seeking functionality. The UI should update dynamically to reflect the current playback state.Deduct 2 points for each missing essential control (play/pause, volume, progress tracking), 3 points if seeking functionality is absent, and 2 points if visual feedback during playback is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty input, very long text, network interruption during TTS conversion, unsupported voice types, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Realtime text highlighting during playback 2. Export options for audio in multiple formats 3. Voice customization beyond basic options 4. Batch processing of multiple text entries).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio player implementations) 2. Function modules unrelated to TTS (e.g., a built-in image editor) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, TTS logic, and audio playback), code organization, performance optimization techniques, and proper use of modern web development practices.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if modern web development practices are ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy between text input, voice selection, and playback sections.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Visual feedback when generating audio ≤ 200ms 2) Smooth transitions between different states (idle, processing, playback) 3) Intuitive controls that respond immediately to user input 4) Clear loading indicators during TTS processing.Deduct 5 points for each operation without feedback, 3 points for laggy transitions during state changes, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "hard"
+}

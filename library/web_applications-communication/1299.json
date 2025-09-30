@@ -1,0 +1,68 @@
+{
+  "index": 1299,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Please use Vue 3 to implement an app similar to TikTok, with only 2 video elements to mimic TikTok's infinite scroll effect.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the infinite scroll effect correctly implemented?",
+      "description": "Review whether the code accurately implements the infinite scroll effect using only 2 video elements (preloading/swapping mechanism). Check if videos are properly loaded, played, and swapped as the user scrolls. Score 0 if implementation is missing, 5 if basic scrolling works but has noticeable gaps, and 10 if the infinite scroll is seamless like TikTok's.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the video playback and control system properly implemented?",
+      "description": "Evaluate if videos autoplay when visible, pause when scrolled away, and have proper controls (play/pause, sound on/off). Check if videos preload correctly to avoid buffering during scrolling. Deduct 5 points if videos don't autoplay/pause appropriately, and 3 points if basic controls are missing or non-functional. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the core TikTok-like UI components present?",
+      "description": "Check if essential UI elements are implemented: video feed, like/comment/share buttons, user profile info, caption text. Deduct 2 points for each missing essential component. Give 10 points if all core elements are present and properly positioned according to TikTok's layout standards.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Vue 3 Composition API utilized effectively?",
+      "description": "Assess whether the implementation leverages Vue 3's Composition API appropriately (ref, reactive, computed, watch, lifecycle hooks). Examine if state management is handled properly for video switching. Deduct 5 points if using primarily Options API instead, and 3 points if reactive state isn't properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (network issues, video loading errors, different screen sizes, orientation changes). Code should gracefully handle these situations with appropriate error states or fallbacks. Give 10 points if all major edge cases are handled, 5 points if only some are covered, and 0 points if error handling is absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Video transitions/effects 2. Double-tap like animation 3. Video progress bar). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video loading mechanisms) 2. Function modules unrelated to the TikTok-like experience 3. Fancy effects that affect scrolling performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component organization (separation of concerns between UI/logic/services), code reusability, and proper Vue best practices. Deduct 5 points if components are monolithic or too coupled; deduct 5 points if there's excessive code duplication; deduct 5 points if Vue reactivity system is misused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows TikTok's design language: 1) Dark theme with high contrast 2) Proper spacing of interactive elements (safe touch areas of at least 44×44px) 3) Typography hierarchy (captions vs. usernames vs. counts). Deduct 3 points for each significant deviation from TikTok's visual identity, 5 points for poor contrast affecting readability, and 5 points for overcrowded UI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the app feels native and responsive: 1) Video switching happens within 100ms of scroll completion 2) UI interactions provide immediate feedback 3) Animations are fluid (60fps) during scrolling and transitions. Deduct 5 points if video switching has noticeable delay, 3 points for janky scrolling, and 5 points if interactive elements have delayed response. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

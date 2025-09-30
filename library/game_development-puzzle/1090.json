@@ -1,0 +1,68 @@
+{
+  "index": 1090,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. I want to develop a word-matching game (similar to \"Link-Link\") with custom word uploading functionality, implemented using HTML+CSS+JS.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core word-matching game mechanism fully implemented?",
+      "description": "Review whether the code accurately implements the word-matching system through HTML/JavaScript, including word pair detection, successful matching logic, and game progression tracking. Check for proper randomization of word positions, clear highlighting of selected words, and verification of valid matches. Score 0 if the core game logic is missing, 5 if basic matching is implemented but with flaws, and 10 if the mechanism works flawlessly with proper game flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the custom word uploading functionality properly implemented?",
+      "description": "Evaluate the implementation of the word upload system, including input validation, proper storage mechanism (localStorage, sessionStorage, or other client-side solutions), and integration with the game system. Check if users can upload their own word sets, if the system validates entries (preventing duplicates, empty strings, etc.), and if uploaded words are properly incorporated into the game. Deduct 5 points if validation is missing, 3 points if the storage mechanism is insecure or inefficient.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there a complete game state management system?",
+      "description": "Check whether the code includes proper game state management like tracking matches, score calculation, win/lose conditions, game reset, and saving game progress. Verify if the game properly transitions between states (start screen, gameplay, victory/defeat screens) and maintains game context correctly. Deduct 5 points if score tracking is missing or flawed, 3 points if state transitions are buggy, and 5 points if there's no proper game ending logic.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an effective timer and scoring system?",
+      "description": "Assess the implementation of time constraints and scoring mechanics. Check for a visual timer display, score calculation based on match speed/difficulty, and potentially bonus points for consecutive matches. Verify that the scoring system is fair and the timer functions correctly (pausing when necessary, proper countdown visualization). Deduct 5 points for missing timer, 3 points for overly simplistic scoring, and 5 points for timer bugs affecting gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as incorrect selections, rapid clicking, browser refresh, empty word lists, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Difficulty levels with varying time constraints 2. Visual/audio effects for successful matches 3. Leaderboard system 4. Word categories or themes). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems coexisting) 2. Function modules unrelated to word-matching (e.g., unnecessary animations or widgets) 3. Fancy effects that affect performance (e.g., excessive particles or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, naming conventions, and maintainability. Deduct 5 points if global variable pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments for complex logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Responsive design for different screen sizes. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for selected words 4) Smooth animations for matching and clearing words. Deduct 5 points for each operation without feedback, 3 points for jarring animations or transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "easy"
+}

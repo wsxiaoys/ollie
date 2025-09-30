@@ -1,0 +1,68 @@
+{
+  "index": 1411,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and expert responses. Be sure that any code you produce is executable and displayable. How do I create an app for practicing new vocabulary words from the \"Reading and Writing\" section at the end of each lesson in the 8th grade second semester Chinese Language Arts textbook (non-provincial edition)?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the vocabulary management system fully implemented?",
+      "description": "Review whether the code accurately implements a database/storage system for vocabulary words, with proper categorization by textbook lessons. Check if it includes CRUD operations (Create, Read, Update, Delete) for words, definitions, and example sentences. Score 0 if core vocabulary storage is not implemented, 5 if basic storage exists without lesson organization, and 10 if complete vocabulary management with lesson-based organization is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the learning modes comprehensive and pedagogically sound?",
+      "description": "Evaluate whether multiple learning modes are implemented (e.g., flashcards, multiple choice, fill-in-the-blank, matching exercises). Check if the implementation follows spaced repetition principles and adapts to the student's performance. Deduct 3 points if spaced repetition is missing, 3 points if there are fewer than 3 practice modes, and 2 points if performance tracking is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the lesson-based organization properly structured?",
+      "description": "Assess whether the app correctly organizes vocabulary by lessons according to the textbook structure. Check if it allows navigation between lessons, tracking completion rates, and provides lesson-specific statistics. Deduct 5 points if lessons cannot be individually selected, 3 points if progress tracking per lesson is missing, and 2 points if there's no visual indication of lesson completion status. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the progress tracking and performance analysis feature implemented?",
+      "description": "Check if the code includes comprehensive progress tracking, performance analysis, and visualization of learning outcomes. Score should reflect implementation of learning curves, mistake frequency analysis, and time-based performance metrics. Deduct 4 points if visualization is missing, 3 points if historical performance comparison is absent, and 3 points if there's no weak-point identification system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input, network interruption, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the learning experience (e.g., 1. Audio pronunciation of vocabulary 2. Handwriting recognition for character practice 3. Contextual usage examples from real texts 4. Gamification elements that motivate continued learning). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar learning activities 2. Function modules unrelated to vocabulary learning 3. Fancy effects that affect performance or distract from learning. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core learning functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/logic/UI layers), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between UI and business logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet educational application standards?",
+      "description": "Evaluate whether the design follows educational UX principles: 1) Age-appropriate visual elements for 8th graders 2) Distraction-free learning environment 3) Clear instructional cues 4) Proper text size and readability (min 16px font size). Deduct 3 points for each distracting visual element, 5 points for poor readability, and 5 points for inappropriate or confusing navigation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the learning interaction intuitive and responsive?",
+      "description": "Judge whether the interaction design supports effective learning: 1) Immediate feedback on answers within 500ms 2) Clear indication of correct/incorrect responses 3) Intuitive input methods appropriate for Chinese character entry 4) Smooth transitions between learning activities. Deduct 3 points for delayed feedback, 3 points for confusing response indicators, and 4 points for cumbersome character input methods. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

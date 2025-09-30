@@ -1,0 +1,68 @@
+{
+  "index": 273,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable.\n\nThis is a Python face-swapping project I found on GitHub. Here's the file structure, and now I'd like you to help me create a frontend interface where I can upload the face image I want to swap and the target face image, then click a generate button to perform the face swap and display the successfully swapped face image in the frontend interface. Below is the Python code from the run.py file:\n\n```python\n#!/usr/bin/env python3\n\nfrom roop import core\nfrom inference_codeformer import inference_codeformer\n\nif __name__ == \"__main__\":\n    newface = r\"inputs/1.jpg\"  # New face image\n    oldface = r\"inputs/4.jpg\"  # Old face image\n    savepath = r\"outputs/output_009.png\"\n\n    core.run(newface, oldface, savepath)\n    inference_codeformer.run(savepath)",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic face-swapping functionality properly implemented in the frontend?",
+      "description": "Check whether the frontend interface correctly implements the core functionality to upload two face images (source and target) and trigger the face-swapping process. The interface should include clear upload areas for both images with proper labeling and a generate button. Score 0 if uploads aren't implemented, 5 if only basic uploads work without proper validation, and 10 if the interface handles the complete workflow with clear visual guidance.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the backend integration with the Python face-swapping code properly implemented?",
+      "description": "Evaluate whether the frontend properly communicates with the Python backend (core.run and inference_codeformer.run functions). This includes handling API calls, processing responses, and managing errors. Check if the implementation uses appropriate techniques like AJAX, fetch API, or WebSockets. Deduct 5 points if there's no error handling, and 3 points if the backend communication is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is image preview functionality implemented before and after face-swapping?",
+      "description": "Check if the interface provides image previews of both source images before processing and the resulting face-swapped image after processing. The previews should be properly sized, maintain aspect ratios, and be clearly labeled. Deduct 5 points if only the result is shown without previews of source images, and 3 points if previews exist but have rendering issues. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there appropriate feedback during the face-swapping process?",
+      "description": "Evaluate whether the interface provides clear loading indicators, progress updates, or status messages during the face-swapping operation. Users should know when the process starts, its current status, and when it completes. Deduct 5 points if there's no loading indicator, and 3 points if the feedback is present but unclear or misleading. Full score is 10 points for comprehensive, user-friendly processing feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid image uploads, network interruption, backend errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Face detection preview with markers 2. Image adjustment tools before processing 3. Gallery of previous swaps 4. Image comparison slider). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image processing methods) 2. Function modules unrelated to face-swapping (e.g., unnecessary social media integration) 3. Fancy effects that affect performance (e.g., heavy animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/API/processing logic), code organization, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

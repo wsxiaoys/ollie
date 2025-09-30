@@ -1,0 +1,68 @@
+{
+  "index": 1451,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that the code you provide is executable and demonstrable. For an iOS native project, please implement a secondary page using React Native that resembles the native tableview, which can scroll up and down and respond to cell selection. Please provide the complete code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete React Native component implemented that resembles iOS UITableView?",
+      "description": "Evaluate whether the code implements a proper React Native component that visually and functionally resembles the native iOS UITableView. Check for proper section headers, row styling, separators, and overall visual fidelity to native iOS components. Score 0 if the component is missing or barely resembles a UITableView, 5 if basic structure is implemented but with visual inconsistencies, and 10 if it's virtually indistinguishable from a native implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the implementation handle vertical scrolling properly?",
+      "description": "Verify that the React Native implementation properly handles vertical scrolling with iOS-like momentum, bounce effects, scroll indicators, and pull-to-refresh capabilities. Check if FlatList or ScrollView is configured correctly with appropriate performance optimizations. Deduct 3 points if scrolling performance is poor, 3 points if iOS-specific scroll behaviors are missing, and 5 points if scrolling functionality is broken. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is cell selection implemented with proper visual feedback?",
+      "description": "Examine whether cell selection provides the standard iOS highlight effect, proper onPress handlers, and appropriate visual feedback. Check if selection state is properly managed and if there's a haptic feedback implementation. Deduct 5 points if selection visual effect is missing or incorrect, 3 points if selection callback is not implemented, and 2 points if there's no deselection handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the integration between React Native and iOS native properly configured?",
+      "description": "Evaluate if the code includes proper React Native to iOS native bridge configuration, including navigation handling between native screens and React Native views. Check for proper module registration, event handling across the bridge, and configuration of the RCTRootView. Deduct 5 points for missing native module integration, 3 points for improper navigation handling, and 5 points for broken communication between native and React Native. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as data loading failures, network issues, state inconsistencies) and provide friendly error handling. Check for proper componentDidCatch implementations, error boundaries, and fallback UIs. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Swipe actions on cells 2. Interactive cell animations 3. Advanced section indexing like in native Contacts app). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant state management or component re-rendering 2. Unnecessarily complex animations that affect performance 3. Overuse of third-party libraries for simple tasks. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component architecture (proper separation of concerns, stateless/stateful components), TypeScript/PropTypes usage, and code organization. Deduct 5 points if there's no component decomposition; deduct 5 points if prop validation is missing; deduct 5 points if styling approach is inconsistent or inline styles are overused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet iOS design standards?",
+      "description": "Evaluate whether the design follows iOS Human Interface Guidelines: 1) Proper use of system colors 2) Standard font usage (SF Pro or equivalent) 3) Proper margins and layout constraints matching iOS defaults (typically 16pt horizontal margins). Deduct 3 points for each non-iOS-like visual element, 5 points for Android-looking components, and 5 points for improper use of navigation bars or toolbars. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to iOS interaction standards: 1) Proper cell highlight timings 2) Standard iOS animation durations (typically 0.3s for most transitions) 3) Proper gesture handling that doesn't interfere with native gestures. Deduct 5 points for each janky animation, 3 points for incorrect timing in interactions, and 5 points for gesture conflicts with native iOS gestures. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Mobile App Development",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 787,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Help me write a detailed daily schedule planner.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core scheduling functionality fully implemented?",
+      "description": "Evaluate if the code properly implements calendar representation, event creation, modification, and deletion. Check for proper date handling, time slot management, and conflict detection. Score 0 if basic scheduling is missing, 5 if only simple event adding is implemented, and 10 if the planner includes comprehensive event management with validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the planner include task categorization and priority management?",
+      "description": "Verify if the code allows users to categorize tasks (work, personal, etc.), set priorities (high, medium, low), and filter/sort based on these attributes. Check for visual indicators of priority levels. Deduct 3 points if categorization is missing, 3 points if priority setting is absent, and 4 points if no filtering/sorting mechanisms exist. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there persistent data storage and retrieval functionality?",
+      "description": "Check if the planner implements data persistence using localStorage, IndexedDB, or server-side storage. Assess if data is properly loaded on application start and saved on changes. Verify existence of backup/export functionality. Deduct 5 points if data isn't persisted between sessions, 3 points if there's no export option, and 2 points if data validation is missing before storage. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are notifications and reminders implemented effectively?",
+      "description": "Evaluate if the planner includes notifications for upcoming events, deadline reminders, and customizable alert timing. Check if the implementation uses browser notifications, sound alerts, or visual cues. Score 0 if reminders are completely missing, 5 if only basic visual reminders exist, and 10 if comprehensive notification options with timing preferences are available.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases (invalid date inputs, concurrent edits, browser refresh, etc.) and provides friendly error messages or recovery mechanisms. Check for form validation, proper error handling, and data integrity protection. Give 10 points if all common edge cases are handled gracefully, 5 points if basic validation exists but some scenarios are unhandled, and 0 points if critical errors can easily occur.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for standout features that enhance usability (e.g., 1. Natural language processing for quick event creation 2. AI-suggested optimal scheduling 3. Integration with external calendars 4. Weather information relevant to planning). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check for three types of redundancy: 1. Duplicate scheduling mechanisms that perform similar functions differently 2. Overly complex features irrelevant to daily planning 3. Unnecessary animations or visual effects that hinder performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core planning functionality is obscured by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of UI/logic/storage layers), implementation of design patterns, naming conventions, and comments. Check for modular structure and reusable components. Deduct 5 points for global variable abuse, 3 points for inconsistent naming or poor readability, and 2 points for inadequate comments. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate if the design follows modern UI principles: 1) Clean and consistent color scheme (max 3-4 colors) 2) Proper whitespace and layout hierarchy 3) Responsive design for different screen sizes 4) Readable typography (proper contrast, size ≥14px). Deduct 3 points for each cluttered view, 2 points for inconsistent styling, and 5 points for poor mobile adaptation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive?",
+      "description": "Judge whether interactions feel natural and efficient: 1) Quick response to user inputs (<100ms) 2) Logical tab order and keyboard navigation 3) Clear visual feedback for actions 4) Intuitive drag-and-drop for event management if implemented. Deduct 3 points for each laggy interaction, 2 points for confusing navigation patterns, and 5 points if key planning operations require excessive clicks. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

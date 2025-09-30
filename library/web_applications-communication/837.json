@@ -1,0 +1,68 @@
+{
+  "index": 837,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Please help me create a feature in a WeChat Mini Program that allows filling out forms through voice input, structured as a component. The component's name should be \"Voice\" (as in the Chinese pinyin \"yuyin\"). Please write the code for all 4 files, using the \"simultaneous interpretation\" method we discussed earlier.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Voice component properly structured according to WeChat Mini Program standards?",
+      "description": "Check if the component follows the correct WXML, WXSS, JS, JSON structure with proper component declaration. The component should have a clear interface for integration. Verify that the component configuration in JSON properly registers the component with appropriate properties and options. Score 0 if missing essential files, 5 if basic structure exists but with issues, 10 if perfectly structured according to Mini Program best practices.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the voice input feature implement proper voice recognition and text conversion?",
+      "description": "Evaluate the use of WeChat Mini Program's voice recognition APIs (like wx.startRecord and wx.getRecorderManager). Check if the implementation handles permissions, recording states, and converts speech to text accurately. The component should show appropriate UI states during recording (indicating recording in progress). Deduct 5 points if permissions handling is missing, 3 points if recording state management is poor. Full score requires robust error handling for recognition failures.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the form integration functionality properly implemented?",
+      "description": "Assess how the converted text is integrated with form fields. The component should allow targeting specific form fields and inserting recognized text appropriately. Check if the component can handle different input types (text, number, etc.) and support both appending and replacing text modes. Deduct 5 points if field targeting is missing, 3 points if it doesn't handle different input types. Award 10 points for seamless integration with any form field.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the real-time feedback mechanism implemented during voice recording?",
+      "description": "Verify if the code includes visual and/or audio feedback during recording (animation, volume indication, transcription progress). Check if there's real-time text preview before final form submission. The solution should provide clear user feedback about recognition accuracy. Deduct 5 points for missing visual feedback, 3 points for no interim results display. Full score requires comprehensive user feedback during the entire voice input process.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission denial, network issues, recognition failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Noise cancellation 2. Multi-language support 3. Voice command shortcuts). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple recording initialization methods) 2. Function modules unrelated to voice input (e.g., unnecessary image processing) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/business logic/API calls), code reusability, and maintenance potential. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no documentation for component usage. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat Mini Program design principles: 1) Consistent with WeChat's visual language 2) Proper layout spacing following WeChat's spacing guidelines 3) Professional typography consistent with WeChat standards. Deduct 3 points for each inconsistent visual element, 5 points for designs that clash with WeChat's style, and 5 points for accessibility issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the voice input interactions feel natural and intuitive: 1) Clear indication when recording starts/stops 2) Smooth transitions between recording states 3) Intuitive placement of recorded text in forms. Deduct 5 points for each operation without feedback, 3 points for laggy transitions between states, and 5 points for confusing user flow. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

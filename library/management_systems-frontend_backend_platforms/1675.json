@@ -1,0 +1,68 @@
+{
+  "index": 1675,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure the code you generate is executable and demonstrable. Write a mini program to implement features such as real-time monitoring video viewing, historical playback, etc., including time-based viewing functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the real-time video monitoring system fully implemented?",
+      "description": "Review whether the code properly implements real-time video streaming functionality using technologies like WebRTC, HLS, or RTSP. Check if it handles stream initialization, buffering strategies, and quality adaptation based on network conditions. Score 0 if video monitoring is not implemented, 5 if basic streaming is implemented without optimizations, and 10 if it includes adaptive bitrate streaming with minimal latency (<2 seconds).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the historical video playback functionality complete?",
+      "description": "Evaluate whether the code implements a robust video archive system with features like seeking, timestamp navigation, and different playback speeds. Check if it uses efficient video indexing for quick access to specific time segments and if it handles large video files properly. Deduct 5 points if seeking is not smooth or has significant lag, and 3 points if playback speed controls are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is time-based viewing functionality properly implemented?",
+      "description": "Check if the time navigation system allows precise selection of date/time ranges with proper calendar UI and timeline scrubbing. Verify if the code efficiently handles time zone conversions and displays timestamps accurately. Deduct 4 points if the timeline UI is not intuitive, 3 points if it lacks proper date range selection, and 3 points if timestamp display is inaccurate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a seamless transition between live and recorded content?",
+      "description": "Evaluate if the program provides smooth transitions between live streaming and historical playback modes without requiring page reloads or significant UI changes. Check if the application maintains context when switching modes and properly manages the video buffer. Deduct 5 points if mode switching requires page refresh, 3 points if UI consistency is broken between modes, and 2 points if there's noticeable delay (>1s) during transitions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common video streaming issues (network interruptions, codec incompatibilities, broken streams) and provides graceful error handling with informative user feedback. Check for proper memory management during long streaming sessions and resilience against unexpected inputs. Give 10 points for comprehensive error handling with recovery strategies, 5 points for basic error detection without recovery options, and 0 points if errors crash the application.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based motion detection alerts 2. Video analytics/object recognition 3. Multi-camera synchronized viewing 4. Smart bookmarking of important events). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Multiple competing implementations of similar video processing functions 2. Excessive UI elements unrelated to video surveillance (e.g., unnecessary social features) 3. Resource-intensive visual effects that impact streaming performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core video functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing logic/UI components/data management), code reusability, and performance optimization techniques. Deduct 5 points if global state management is chaotic; deduct 3 points if stream handling and UI rendering are not properly separated; deduct 2 points if the codebase lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional surveillance system standards?",
+      "description": "Evaluate whether the design follows professional video monitoring principles: 1) Clear video display area with proper aspect ratio preservation 2) Non-intrusive controls that don't obscure important content 3) High-contrast UI elements for visibility in dark environments. Deduct 3 points for each poorly arranged control panel, 4 points for improper video scaling/cropping, and 3 points for color schemes that strain the eyes during extended viewing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the video playback interaction smooth and responsive?",
+      "description": "Judge whether the video controls behave according to user expectations: 1) Seeking response time ≤ 200ms 2) Play/pause toggle ≤ 100ms 3) Intuitive timeline navigation with preview thumbnails. Deduct 4 points for laggy timeline scrubbing, 3 points for delayed playback controls, and 3 points for confusing timeline indicators that make it difficult to locate specific moments. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

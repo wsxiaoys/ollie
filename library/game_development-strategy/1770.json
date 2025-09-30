@@ -1,0 +1,68 @@
+{
+  "index": 1770,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Design a tower defense game that can be played on mobile phones using HTML language.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core tower defense game mechanics fully implemented?",
+      "description": "Evaluate whether the code implements the basic tower defense mechanics (tower placement, enemy pathing, wave system, currency/resources). Check for collision detection between projectiles and enemies, and proper damage calculation. Score 0 if core gameplay is missing, 5 if only basic functionality exists, 10 if there's a complete, balanced gameplay system with variety of towers and enemies.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mobile-first design approach properly implemented?",
+      "description": "Verify if the implementation includes touch controls, responsive design (using viewport meta tags, media queries, flexible grid layouts), and appropriate UI scaling for mobile screens. Check for touch event handling (touchstart, touchmove, touchend) instead of only mouse events. Deduct 5 points if there's no touch support, 3 points if the layout breaks on common mobile resolutions (320px-428px width). Full score requires fully functional touch controls with proper hit areas (≥44px).",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game loop and performance optimization suitable for mobile devices?",
+      "description": "Assess if the game loop uses requestAnimationFrame properly, implements throttling for intensive operations, and optimizes rendering for mobile GPUs. Check for battery-efficient code (avoiding constant redraws, using object pooling). Deduct 5 points if the frame rate drops below 30fps on mid-range devices, 3 points if there's no performance monitoring. Give 10 points if the game maintains 60fps with proper resource management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game state management and progression system properly designed?",
+      "description": "Evaluate if the code includes save/load functionality (using localStorage), level progression, difficulty scaling, and persistent upgrades. Check for proper pause/resume functionality when the browser tab loses focus or during incoming calls. Deduct 5 points if there's no state persistence between sessions, 3 points if the game doesn't handle interruptions gracefully. Give 10 points for a complete progression system with multiple levels and challenges.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as touch input errors, orientation changes, memory limitations on low-end devices, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects that affect gameplay 2. Social sharing of gameplay results 3. Unique tower combination mechanics). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple wave generation systems) 2. Function modules unrelated to tower defense gameplay (e.g., unnecessary mini-games) 3. Heavy visual effects that affect mobile performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game entities/rendering/input handling), code organization, and potential for maintenance/extension. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no asset preloading or optimized resource management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet mobile gaming design standards?",
+      "description": "Evaluate whether the UI follows mobile game design best practices: 1) Touch targets of at least 44px × 44px 2) Clear visual hierarchy and contrast for outdoor visibility 3) Properly sized text (minimum 16px) 4) Minimal UI that doesn't obstruct gameplay. Deduct 3 points for each UI element that's too small for touch, 5 points for poor contrast that hampers outdoor visibility, and 5 points for cluttered interfaces that obscure the game field. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and optimized for mobile?",
+      "description": "Judge whether the touch interactions feel natural and responsive: 1) Touch response time ≤ 100ms 2) Smooth dragging for tower placement 3) Intuitive pinch-to-zoom and swipe gestures 4) Haptic feedback for important actions. Deduct 5 points for touch latency > 200ms, 3 points for janky animations during gameplay, and 5 points for imprecise hitboxes that cause user frustration. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

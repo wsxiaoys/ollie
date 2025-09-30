@@ -1,0 +1,68 @@
+{
+  "index": 138,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable and can be displayed. Please help me implement the following requirement using SVG code: create a scene where it is snowing during the Christmas holiday.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Are the Christmas scene elements comprehensively implemented?",
+      "description": "Review whether the SVG code accurately creates a complete Christmas scene including essential holiday elements such as Christmas tree, snow-covered ground, buildings/houses, and festive decorations. Check if the scene composition follows proper layering (background, middle ground, foreground). Score 0 if only basic shapes are present, 5 if core Christmas elements are included but lack detail, and 10 if a rich, detailed Christmas scene with multiple thematic elements is fully rendered.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the snowfall animation effect realistically implemented?",
+      "description": "Evaluate whether the snowfall animation uses proper SVG animation techniques (such as <animateTransform> or CSS animations) to create realistic snow movement. Check if snowflakes have varying sizes, falling speeds, and trajectories to simulate natural snowfall. Verify if snow accumulation effects are present. Deduct 5 points if snowflakes move unnaturally (same speed/direction), and 3 points if snow lacks size variation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the SVG graphics optimized for performance and scalability?",
+      "description": "Check whether the SVG code uses efficient rendering techniques such as proper use of <defs>, <use> elements for repeated patterns, and appropriate coordinate systems. Evaluate if the snowfall animation uses transforms instead of position changes for better performance. Deduct 5 points if excessive DOM manipulation is used for animation, and 3 points if snowflake objects are not properly reused or recycled. Verify scalability across different viewport sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the scene lighting and atmospheric depth properly established?",
+      "description": "Assess whether the code implements proper visual depth through layering, gradients, and lighting effects such as street lamps, window lights, or moonlight. Check if atmospheric perspective is achieved through color variation and opacity changes. Evaluate if the overall mood captures the cozy Christmas evening ambiance. Deduct 5 points if the scene appears flat without depth cues, and 3 points if lighting effects are inconsistent. Give 10 points if fully atmospheric with proper depth and lighting.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (such as browser compatibility issues, animation performance on low-end devices, viewport size changes, etc.) and provide graceful degradation. Code with strong robustness should include proper fallbacks and error handling, giving 10 points. If the robustness is average, give 5 points, and if no edge cases are considered, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes delightful features that enhance the Christmas experience (e.g., 1. Interactive elements like clickable ornaments 2. Dynamic weather intensity controls 3. Twinkling star effects 4. Sound integration triggers 5. Day/night transition effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animations (e.g., multiple snowfall systems coexisting) 2. Elements unrelated to Christmas scene (e.g., summer flowers, beach elements) 3. Excessive effects that impact performance (e.g., thousands of simultaneous particles). Deduct 3 points for each redundancy found, and directly deduct 10 points if core scene rendering is affected by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review SVG structure organization (proper grouping with <g> elements), reusable component design, and clean code practices. Deduct 5 points if inline styles are overused instead of CSS classes; deduct 5 points if the code structure is poorly organized with deep nesting; deduct 5 points if no consideration for maintainability or extensibility. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the visual design meet professional Christmas aesthetic standards?",
+      "description": "Evaluate whether the overall design follows Christmas design principles: 1) Harmonious holiday color palette (traditional reds, greens, whites, golds) 2) Proper composition balance and visual hierarchy 3) Consistent art style throughout the scene. Deduct 3 points for each clashing color combination, 5 points for unbalanced composition that draws attention away from focal points, and 5 points for inconsistent artistic styles within the same scene. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the animations smooth and performance-optimized?",
+      "description": "Judge whether the snowfall and other animations run smoothly: 1) Animation frame rate remains stable (≥30fps) 2) No visual stuttering or jank during continuous playback 3) Smooth transitions between animation states 4) Proper easing functions for natural movement. Deduct 5 points for each animation that causes performance issues, 3 points for choppy or jerky motion, and 5 points for animations that don't loop seamlessly. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

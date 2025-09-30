@@ -1,0 +1,68 @@
+{
+  "index": 1720,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Implement a Galton board program using HTML language.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Galton board physics simulation accurately implemented?",
+      "description": "Review whether the code accurately implements the physics of ball movement through HTML/JavaScript, including gravity simulation, collision detection with pegs, and realistic bouncing mechanics. The ball should exhibit proper acceleration due to gravity and random deflection upon hitting pegs. Score 0 if no physics simulation is implemented, 5 if only basic gravity is present without proper collision mechanics, and 10 if realistic physics with proper momentum and random distribution is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the visual representation of the Galton board properly constructed?",
+      "description": "Check whether the HTML/CSS implementation includes a proper triangular peg arrangement, collection bins at the bottom, and clear visual boundaries. The pegs should be arranged in a mathematically correct pattern that creates the binomial distribution. Deduct 5 points if the peg arrangement is irregular or mathematically incorrect, and 3 points if the visual proportions don't match a real Galton board. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the program demonstrate proper statistical distribution visualization?",
+      "description": "Evaluate whether the simulation produces and displays the characteristic bell curve (normal distribution) when multiple balls are dropped. The program should include a histogram or counter showing ball accumulation in each bin, and ideally overlay the theoretical binomial distribution curve. Deduct 5 points if no statistical visualization is provided, and 3 points if the distribution doesn't converge to the expected bell curve after sufficient trials. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive controls and animation features properly implemented?",
+      "description": "Check whether the code includes user controls for dropping balls (single or multiple), adjusting simulation speed, resetting the board, and pausing/resuming animation. The ball animation should be smooth and visually appealing with proper frame rates. Deduct 5 points if no user controls are provided, and 3 points if animations are choppy or lack smooth transitions. Give 10 points if comprehensive controls with smooth animations are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, browser performance limitations, edge cases in physics calculations, etc.) and provide friendly error handling or performance optimization. Code with strong robustness should prevent memory leaks during long simulations and handle browser compatibility issues. Give 10 points for excellent robustness, 5 points for average handling, and 0 points if no exception handling is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the educational or entertainment value (e.g., 1. Real-time probability calculations and predictions 2. Customizable board parameters (peg count, ball size) 3. Sound effects synchronized with collisions 4. Historical data tracking and comparison). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ball drop mechanisms coexisting) 2. Function modules unrelated to Galton board simulation (e.g., unrelated games or calculators) 3. Excessive visual effects that impact performance (e.g., complex particle systems that slow down the physics). Deduct 3 points for each redundancy found, and directly deduct 10 points if core simulation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/rendering/UI control layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or object-oriented principles are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if functions are not properly separated or commented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with clear contrast between pegs, balls, and background 2) Proper proportional relationships between board elements 3) Professional typography for labels and statistics (font size ≥ 14px, clear hierarchy). Deduct 3 points for each visually cluttered element, 5 points for poor color contrast that affects readability, and 5 points for disproportionate element sizing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Ball animation frame rate ≥ 30fps for smooth motion 2) Interactive button response delay ≤ 100ms 3) Collision animations that provide clear visual feedback 4) Smooth statistical updates without jarring jumps. Deduct 5 points for each choppy animation sequence, 3 points for delayed user input response, and 5 points for unclear visual feedback during interactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 522,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable when possible. Develop an online shopping website with a homepage that displays recommendations based on users' browsing history. The product details page should include a live streaming feature for product introductions. The shopping cart page needs to support price protection (such as automatic refunds if prices drop). After placing an order, provide an after-sales service portal (for returns, exchanges, repairs, etc.).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the homepage recommendation system fully implemented?",
+      "description": "Review whether the code accurately implements a user browsing history-based recommendation system, including data collection, processing algorithms, and rendering mechanisms. Check if it includes user behavior tracking, recommendation algorithm implementation (collaborative filtering, content-based, or hybrid approach), and personalization features. Score 0 if recommendation logic is not implemented, 5 if only basic static recommendations exist, and 10 if a complete dynamic recommendation system with user history integration is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the product details page with live streaming feature properly implemented?",
+      "description": "Evaluate the implementation of the live streaming feature on the product details page. Check for WebRTC or similar technology implementation, stream quality controls, chat functionality alongside the stream, and recording/playback capabilities. Deduct 3 points if the streaming lacks real-time interaction features, 3 points if there's no chat functionality, and 4 points if there are no stream quality controls or the implementation is purely simulated without actual streaming capability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the shopping cart price protection mechanism implemented?",
+      "description": "Check whether the code includes a robust price protection system that monitors price changes and automatically processes refunds. Verify if the implementation includes price history tracking, threshold-based triggers, notification system for users, and automated refund processing. Deduct 3 points if only price monitoring exists without automatic refunds, 4 points if there's no verification mechanism to prevent abuse, and 3 points if there's no user interface to track price protection status. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the after-sales service portal comprehensive and functional?",
+      "description": "Assess if the after-sales portal supports all specified functionalities (returns, exchanges, repairs) with proper workflow management. Check for ticket creation, status tracking, communication tools between users and support staff, and integration with order management. Deduct 3 points for each missing key function (returns process, exchange workflow, repair request system), and 5 points if there's no status tracking system. Award full 10 points only if all features are implemented with intuitive user flow.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, network failures, server errors, concurrent user actions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should implement proper error boundaries, form validation, API error handling, and transactional operations for critical functions. Give 10 points for comprehensive error handling throughout the application, 5 points if only critical paths are protected, and 0 points if exceptions are largely unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the shopping experience (e.g., 1. AR product visualization 2. Voice-based shopping assistant 3. Social sharing with integrated reviews 4. AI-powered outfit recommendations). Add 3 points for each practical innovative feature implemented that genuinely improves user experience rather than serving as a gimmick (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementation of similar functions (e.g., multiple cart systems working in parallel) 2. Function modules unrelated to e-commerce (e.g., news feeds not tied to shopping) 3. Performance-heavy effects that impact page load time (e.g., excessive animations or auto-playing videos). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core shopping functions are negatively affected by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the architecture (separation of concerns, state management), code organization (component reusability, service abstraction), testing strategy, and build process. Deduct 3 points if there's no clear separation between data and presentation layers; deduct 3 points if the code has high duplication rates (>20%); deduct 2 points if responsive design principles aren't followed; deduct 2 points if there's no automated build or deployment process. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Consistent product card design with clear pricing and action buttons 2) Logical information hierarchy with proper whitespace 3) Responsive layouts that adapt to different devices 4) Clear visual distinction between interactive and static elements. Deduct 3 points for inconsistent product displays, 3 points for cluttered layouts, and 4 points for poor mobile adaptability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the shopping interactions meet user expectations: 1) Add-to-cart confirmation within 200ms 2) Smooth transitions between product listings and details 3) Real-time cart updates without page reloads 4) Intuitive form progression during checkout. Deduct 3 points for each interaction that causes visible lag, 2 points for each abrupt transition between states, and 5 points if the checkout flow has confusing navigation or unexpected steps. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

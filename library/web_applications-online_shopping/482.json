@@ -1,0 +1,68 @@
+{
+  "index": 482,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Build a product bundling feature for an online shopping mall, where when users purchase a certain item, they can see \"Bundle Offers,\" and by clicking on them, related products are automatically added to the shopping cart, and the total amount is updated.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the product bundling feature fully implemented?",
+      "description": "Review whether the code accurately implements the core bundling functionality, including displaying bundle offers, adding bundled products to cart, and updating the total amount. Score 0 if the core functionality is missing, 5 if only basic bundling without proper UI integration is implemented, and 10 if the feature is fully functional with clear visual representation and intuitive user interaction.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the shopping cart system properly implemented?",
+      "description": "Evaluate whether the shopping cart functionality is complete, with features like adding/removing items, quantity adjustment, price calculation, and persistent state management. Check for real-time updates when items are added/removed and proper handling of cart operations. Deduct 3 points if quantity adjustment is missing, 3 points if price calculation has errors, and 4 points if cart state isn't properly maintained across user sessions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are bundle offers properly displayed and integrated?",
+      "description": "Check how bundle offers are presented to users. Bundle offers should be clearly visible, show cost savings, include relevant product information, and be contextually displayed next to the main product. Deduct 3 points if savings aren't highlighted, 3 points if bundle offers lack visual distinction from regular products, and 4 points if the offers aren't contextually relevant to the main product. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the price calculation logic accurate and transparent?",
+      "description": "Review whether the price calculation system correctly handles individual products, bundles, potential discounts, taxes, and shipping costs. The calculations must be accurate and transparent to users. Deduct 3 points for calculation errors, 4 points if bundle discounts aren't clearly shown, and 3 points if the breakdown of costs isn't visible to users. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, out-of-stock items, price changes during shopping, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Bundle recommendation based on browsing history 2. Dynamic bundle pricing based on selected options 3. Visual comparison of buying individually vs. bundled). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart update mechanisms) 2. Function modules unrelated to shopping (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations when adding items to cart). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating product/cart/pricing logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to e-commerce UX best practices: 1) Cart update feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual cues when bundle items are added to cart. Deduct 5 points for each operation without feedback, 3 points for jarring animations during bundle addition, and 5 points for confusing UI states after user interactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 487,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure the code you provide is executable for demonstration. Develop a video auto-editing tool where, after users upload long videos, the algorithm automatically detects scene transition points (sudden changes in images), generates a suggested list of editing points, allows users to adjust them, and then automatically splits video segments to export a collection of selected clips.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and processing system fully implemented?",
+      "description": "Review whether the code provides a complete upload interface with progress indication, handles various video formats (MP4, MOV, AVI, etc.), and properly manages file chunks for large videos. Check if video metadata extraction is implemented for resolution, duration, fps, and codec information. Score 0 if upload functionality is missing, 5 if basic upload works without proper error handling, and 10 if comprehensive upload with progress tracking and format validation is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the scene transition detection algorithm effectively implemented?",
+      "description": "Evaluate the algorithm's technical approach for detecting scene changes (e.g., pixel difference calculation, histogram comparison, machine learning-based detection). Check if the algorithm includes sensitivity adjustment parameters, false positive filtering, and optimization for processing speed. Deduct 5 points if only basic frame differencing is used without refinement, 3 points if the algorithm is not configurable, and 2 points if processing is inefficient for longer videos. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the editing point suggestion and adjustment interface user-friendly?",
+      "description": "Check if the interface displays detected scene transitions with visual indicators (thumbnails or waveforms), allows drag-and-drop adjustment of edit points, and includes features like zooming in/out on the timeline. Review the precision of frame selection controls and undo/redo functionality. Deduct 5 points if manual adjustment is difficult, 3 points if visual indicators are inadequate, and 2 points if precise frame selection is not possible. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video splitting and export functionality complete?",
+      "description": "Examine if the code handles video segment extraction without re-encoding when possible, maintains original video quality, supports batch export of multiple segments, and provides export progress feedback. Check for export format options and quality settings. Score 0 if export functionality is missing, 5 if basic export works but lacks options or feedback, and 10 if comprehensive export with quality preservation and format options is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted video files, browser crashes during upload, memory limitations with large videos, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper exception handling, temporary storage for in-progress edits, and resume capabilities. Give 10 points for comprehensive error handling, 5 points if only basic error handling exists, and 0 points if exceptions are not handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based content recognition for smart suggestions 2. Audio waveform visualization for better edit point selection 3. Batch processing of multiple videos). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar video processing functions 2. Function modules unrelated to video editing (e.g., built-in social sharing that could be handled separately) 3. Fancy effects that affect performance (e.g., unnecessary animations during processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing logic/UI/file handling layers), unit test coverage, and performance optimization. Examine the use of Web Workers for non-UI tasks and efficient memory management for video processing. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no optimization for memory usage with large videos exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional video timeline design with clear markers and indicators. Deduct 3 points for each crowded visual element, 5 points for poor timeline visualization, and 5 points for chaotic control panel layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the video editing interactions conform to professional standards: 1) Real-time preview responds within 500ms 2) Scrubbing through video is smooth at 24+ fps 3) Edit point adjustment has clear visual feedback. Deduct 5 points for laggy preview rendering, 3 points for jerky timeline navigation, and 5 points for unresponsive controls during video processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

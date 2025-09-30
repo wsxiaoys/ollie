@@ -1,0 +1,68 @@
+{
+  "index": 362,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for display when possible. Create a frontend program that demonstrates Earth's rotation and revolution.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Earth rotation accurately implemented?",
+      "description": "Check if the code correctly simulates Earth's rotation around its axis (approximately 23.5° tilt) with proper day/night cycle visualization. The rotation should be smooth and at an appropriate speed (either real-time scaled or user-controllable). Deduct 5 points if the rotation axis is incorrect, 3 points if there's no visual indication of day/night transition, and 5 points if rotation animation isn't smooth (jerky or inconsistent).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is Earth's revolution around the Sun properly demonstrated?",
+      "description": "Evaluate if the code accurately shows Earth's elliptical orbit around the Sun, including proper positioning, orbital path visualization, and seasonal changes. The revolution should demonstrate the relationship between Earth's axial tilt and seasons. Deduct 5 points if the orbit shape is incorrectly circular rather than elliptical, 3 points if seasonal changes aren't indicated, and 5 points if the orbital mechanics appear physically unrealistic.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the celestial bodies visually realistic?",
+      "description": "Assess whether the Earth and Sun models use appropriate textures, lighting effects, and proportional sizing. The Earth should have recognizable continents, oceans, and possibly cloud layers. The Sun should have appropriate lighting effects. Score 0 if basic spheres are used without textures, 5 if basic textures are applied but lighting is flat, and 10 if both bodies are realistically rendered with proper texturing and lighting.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an interactive user interface for controlling the simulation?",
+      "description": "Check if the implementation includes user controls for adjusting simulation speed, pausing/resuming, zooming in/out, and changing viewing angles. Verify if there are additional educational features like information overlays or tooltips. Deduct 3 points for each missing core control (speed, pause, view adjustment) and 2 points if the controls aren't intuitive.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, performance throttling on different devices, touch vs mouse input, etc.) and provide graceful degradation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Moon phases visualization 2. Real-time shadows based on Sun position 3. Atmospheric scattering effects 4. Educational overlays showing equinoxes/solstices). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization techniques 2. Function modules unrelated to Earth's rotation/revolution (e.g., a built-in music player) 3. Fancy effects that affect performance without educational value. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating rendering/physics/UI layers), reusable components, and optimization techniques. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 3 points if the code doesn't use appropriate 3D libraries (Three.js, Babylon.js, etc.) efficiently; deduct 5 points if there are no performance optimizations for rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean UI that doesn't obstruct the celestial visualization 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a visually distracting UI, and 5 points for poor contrast between UI elements and the space background. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Animation runs at consistent 60fps 2) Camera transitions are smooth when changing perspectives 3) Zooming maintains focus point properly. Deduct 5 points for noticeable frame drops during animation, 3 points for abrupt camera movements, and 5 points for confusing spatial orientation when navigating the scene. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

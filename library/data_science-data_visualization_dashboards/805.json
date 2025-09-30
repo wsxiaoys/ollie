@@ -1,0 +1,68 @@
+{
+  "index": 805,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable for demonstration. Please provide me with a complete example of using ECharts in UniApp, using Vue 3 syntax.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "ECharts component integration quality",
+      "description": "Check if the code properly integrates ECharts in UniApp with Vue 3. Verify the implementation includes proper lifecycle management (import, initialization, rendering, resizing, and destruction). Score 0 if ECharts is not properly initialized, 5 if basic initialization exists but lifecycle hooks are incomplete, and 10 if ECharts initialization is fully integrated with Vue 3 lifecycle methods.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "UniApp cross-platform compatibility",
+      "description": "Evaluate how the code handles platform differences between H5, WeChat Mini Program, App (iOS/Android), etc. Check for platform-specific adaptations (like using canvas-id for mini program and ref for H5). Deduct 3 points for each major platform not supported. Deduct 5 points if no platform detection or adaptation is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Vue 3 Composition API implementation",
+      "description": "Verify that the code properly uses Vue 3 Composition API (setup(), ref, reactive, computed, etc.) rather than Options API. Check for proper reactivity handling with ECharts data. Score 0 if no Vue 3 features are used, 5 if basic setup() is used but reactivity is poorly handled, and 10 if the code demonstrates excellent use of Composition API with proper reactivity for chart data.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Chart data update mechanism",
+      "description": "Evaluate how chart data updates are handled. Check if the code implements proper watchers for reactive data, debouncing for frequent updates, and optimized rendering. Deduct 5 points if charts need full reinitialization on data changes. Deduct 3 points if updates cause visible flickering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as component unmounting during chart rendering, network data loading failures, resize events, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Touch gesture interactions 2. Smooth animation transitions between data updates 3. Theme switching capability 4. Chart state persistence). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant initialization logic (e.g., multiple chart instances for the same data) 2. Unnecessary or duplicated data transformation 3. Excessive options configuration unrelated to the demonstrated chart. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating chart configurations, data handling, and component logic), reusability, and performance considerations. Deduct 5 points if chart options are hardcoded instead of modularized; deduct 5 points if there's no separation between data fetching and visualization logic; deduct 5 points if performance optimizations like debouncing window resize events are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the chart design follows modern visualization principles: 1) Appropriate color scheme for data visualization (colorblind-friendly) 2) Proper spacing and sizing of chart elements 3) Clear labels and legends. Deduct 3 points for cluttered visualization, 5 points for poor color choices that hinder data interpretation, and 5 points for missing or confusing labels/legends. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the chart interactions conform to expected behavior: 1) Responsive tooltips appearing within 100ms 2) Smooth zoom/pan/drill-down animations 3) Touch-friendly interaction areas for mobile. Deduct 5 points for laggy rendering on data updates, 3 points for jerky animations, and 5 points for non-intuitive interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

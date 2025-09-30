@@ -1,0 +1,68 @@
+{
+  "index": 142,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\nPlease implement a gravity control feature using HTML and JavaScript. \n\n**Task**: Implement a gravity control feature that allows players to temporarily change the direction of gravity in the level to solve puzzles.\n\n**Hint**: You can control the gravity direction through keyboard inputs, and design levels that require specific gravity states to pass through.\n\nPlease include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the gravity control mechanism fully implemented?",
+      "description": "Review whether the code accurately implements gravity physics simulation using JavaScript, including proper acceleration, terminal velocity, and collision response. Check if the gravity direction can be changed via keyboard inputs as specified in the requirements. Score 0 if gravity simulation is missing, 5 if only basic gravity is implemented in one direction, and 10 if directional gravity control (up, down, left, right) with proper physics is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are interactive puzzle elements designed that utilize the gravity mechanics?",
+      "description": "Evaluate whether the code includes interactive elements (movable objects, platforms, obstacles) that respond to gravity changes. Score 5 if basic objects that respond to gravity are implemented, and 10 if there are multiple interactive elements designed specifically to create meaningful puzzle scenarios with the gravity control mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there level design that requires specific gravity states to complete?",
+      "description": "Check if at least one complete level is implemented that requires changing gravity direction to solve. Evaluate whether the level design challenges players to use the gravity mechanism strategically. Score 3 if a basic level exists, 7 if the level has interesting challenges, and 10 if multiple levels with escalating complexity in gravity usage are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is proper visual feedback provided for gravity changes?",
+      "description": "Assess whether the code provides clear visual indicators when gravity direction changes (such as UI indicators, environment shifts, or particle effects). Score 0 if no visual feedback exists, 5 if basic indicators are implemented, and 10 if comprehensive, intuitive visual feedback is provided that clearly communicates the current gravity state to the player.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid gravity switching, edge cases in physics calculations, object intersections) and provide recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Time-limited gravity shifts 2. Gravity strength adjustment 3. Special objects that have their own gravity fields). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar physics functions 2. Function modules unrelated to the gravity puzzle (e.g., unnecessary gameplay elements) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating physics engine/game logic/rendering), code comments as required in the task, and overall structure. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comprehensive comments explaining the implementation process are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Clear distinction between game elements and UI elements. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for confusing game vs UI elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the gravity transition animation smooth and intuitive?",
+      "description": "Judge whether the gravity transition effects conform to human perception characteristics: 1) Visual indication begins ≤ 100ms after input 2) Transition animation duration controlled between 200-400ms 3) Objects respond naturally to gravity changes with appropriate acceleration curves. Deduct 5 points for abrupt gravity transitions, 3 points for unrealistic object movement during transitions, and 5 points for lack of directional indicators for current gravity state. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

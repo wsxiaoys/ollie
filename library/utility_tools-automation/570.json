@@ -1,0 +1,68 @@
+{
+  "index": 570,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Develop a network packet capture and analysis tool that can capture HTTP/HTTPS requests and responses in the browser, displaying information such as request headers, response bodies, and time consumption. Support filtering requests by URL, status code, content type, and other conditions, and allow exporting captured data in HAR format. Provide request replay and editing functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the network packet capture mechanism fully implemented?",
+      "description": "Review whether the code accurately implements HTTP/HTTPS request interception using browser APIs (such as chrome.webRequest, Service Worker, or browser DevTools Protocol). Check if it includes complete capture of request/response headers, body content, timing information, and WebSocket connections. Score 0 if core capture functionality is missing, 5 if only basic HTTP requests are captured, and 10 if comprehensive packet capture including HTTPS, redirects, and error responses is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time analysis and display system implemented?",
+      "description": "Evaluate whether the implementation includes real-time parsing and display of captured packets with detailed information (headers, payload, timing, size). Check for proper handling of different content types (JSON, XML, images, etc.) and encoding formats. Deduct 5 points if response body parsing is incomplete, and 3 points if timing analysis lacks precision. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are comprehensive filtering and search capabilities provided?",
+      "description": "Check whether the filtering system supports multiple criteria including URL patterns, HTTP methods, status codes, content types, request size, and custom header values. Evaluate if advanced search features like regex matching and boolean operators are implemented. Deduct 5 points if filtering is limited to basic criteria only, and 3 points if search performance is poor with large datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are HAR export and request replay functions fully constructed?",
+      "description": "Verify whether the code includes complete HAR (HTTP Archive) format export functionality with proper JSON structure and all required fields. Check if request replay and editing features allow modification of headers, parameters, and body content with validation. Deduct 5 points if HAR export is incomplete or invalid, and 5 points if replay functionality lacks proper error handling. Give 10 points if fully implemented with import/export capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed requests, large payloads, network timeouts, browser permission denials, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases including memory management for large captures. Give 10 points for comprehensive error handling, 5 points if robustness is average, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the analysis experience (e.g., 1. Real-time network performance metrics and visualization 2. Automatic API documentation generation from captured requests 3. Request diff comparison tools 4. Security vulnerability detection). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar capture mechanisms (e.g., multiple packet capture libraries coexisting) 2. Function modules unrelated to network analysis (e.g., built-in text editor with full IDE features) 3. Excessive visual effects that impact performance (e.g., real-time 3D network topology animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core analysis functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating capture engine/analysis logic/UI layers), memory management for large datasets, and performance optimization. Deduct 5 points if memory leaks are found or inefficient data structures are used; deduct 5 points if the code lacks proper architecture patterns; deduct 5 points if there's no consideration for handling high-volume traffic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles for developer tools: 1) Harmonious color coding for different HTTP methods and status codes 2) Proper layout with collapsible panels and efficient space usage 3) Professional monospace fonts for code display and proper syntax highlighting. Deduct 3 points for each cluttered data visualization, 5 points for poor color contrast affecting readability, and 5 points for chaotic information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interface handles real-time data updates efficiently: 1) Live packet capture display without UI freezing 2) Smooth scrolling through large datasets with virtualization 3) Responsive filtering and search with debounced input 4) Quick access to detailed packet information. Deduct 5 points for each laggy interaction during high-traffic capture, 3 points for delayed search results, and 5 points for unresponsive UI during data processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 922,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and can be demonstrated. I need code or a program that can mark points on an electronic map and insert photos at those points.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the map initialization and basic functionality properly implemented?",
+      "description": "Review whether the code correctly initializes a map using a standard mapping API (like Google Maps, Leaflet, or Mapbox), with proper API keys and configuration. Check if the map renders correctly with appropriate initial zoom level and center coordinates. Score 0 if no map is displayed, 5 if basic map display works but with initialization issues, and 10 if the map initializes perfectly with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the marker placement functionality fully implemented?",
+      "description": "Evaluate whether users can add markers to the map through clicks or coordinate input. Check if markers persist after placement and if their positions are accurately maintained when zooming or panning. Deduct 5 points if marker placement works but lacks user interaction feedback, 3 points if markers don't maintain accurate positions, and 5 points if no custom styling options are available. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the photo upload and attachment system well-designed?",
+      "description": "Check if the code includes functionality to upload photos (through drag-and-drop, file picker, or URL input) and attach them to specific markers. Verify that multiple file formats are supported (at least JPG, PNG, GIF) and that proper validation occurs for file size and type. Deduct 5 points if only one upload method is available, 3 points if file validation is missing, and 5 points if large photos aren't resized/compressed for performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the photo-marker association and display functionality effective?",
+      "description": "Assess whether photos are visibly associated with their respective markers and if they display properly when interacting with markers (on click, hover, etc.). Check for preview thumbnails, full-size viewing options, and if multiple photos per marker are supported. Deduct 5 points if the photo-marker visual association is unclear, 3 points if there's no larger view option for photos, and 5 points if multiple photos per marker aren't supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid image files, network interruption during uploads, marker placement outside valid map areas, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Geolocation to add markers at user's current position 2. Clustering for managing many markers 3. Photo editing/filters before attaching to markers 4. Export/import functionality for saving marked maps). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add markers with duplicate code) 2. Function modules unrelated to map/photo features (e.g., unnecessary social sharing widgets) 3. Fancy effects that affect performance (e.g., excessive animations when showing photos). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating map logic/photo handling/UI components), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Marker placement feedback delay ≤ 100ms 2) Photo loading indicators when attaching images 3) Smooth transitions when opening/viewing photos from markers. Deduct 5 points for each operation without feedback, 3 points for laggy photo loading without indicators, and 5 points for abrupt transitions when interacting with markers and photos. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

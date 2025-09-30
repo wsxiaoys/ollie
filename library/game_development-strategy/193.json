@@ -1,0 +1,68 @@
+{
+  "index": 193,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable.\nPlease use HTML and JavaScript to implement randomly generated levels.\n\n**Task**: Implement a simple random level generation feature that creates different level layouts each time the game starts.\n\n**Hint**: You can use a random number generator and predefined level modules to dynamically create levels.\n\nInclude comments in your code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the random level generation algorithm correctly implemented?",
+      "description": "Review whether the code implements effective random level generation logic through HTML/JavaScript, including proper random number generation, level layout algorithms (such as procedural generation, template-based generation, or rule-based generation), and ensures each generated level is playable and balanced. Score 0 if no random generation is implemented, 5 if only basic random placement is implemented, and 10 if a sophisticated generation algorithm with validation is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are predefined level modules and templates properly designed?",
+      "description": "Check whether the implementation includes well-structured predefined level components, templates, or building blocks that can be combined randomly. Evaluate if the modular system supports scalability and variation. The system should include different types of level elements (obstacles, paths, collectibles, etc.) and rules for their combination. Deduct 5 points if modules are too simple or limited, and 3 points if combination rules are poorly defined. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is level validation and playability assurance implemented?",
+      "description": "Evaluate whether the random generation includes validation mechanisms to ensure generated levels are completable and balanced. This should include path-finding validation, difficulty balancing, and rejection of impossible or trivial layouts. Check if the system can regenerate levels that fail validation. Deduct 5 points if no validation exists, 3 points if validation is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the level generation system flexible and configurable?",
+      "description": "Check whether the code provides configurable parameters for level generation (such as difficulty settings, size parameters, density controls, theme variations). Evaluate if the system supports different generation modes or styles. The implementation should allow easy modification of generation parameters without code changes. Deduct 5 points if the system is hardcoded with no flexibility, and 3 points if configuration options are limited. Give 10 points if fully configurable.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid random seeds, generation failures, memory constraints, infinite loops in generation algorithms, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Biome-based generation with smooth transitions 2. Procedural narrative elements 3. Adaptive difficulty based on player performance 4. Level sharing via seed codes 5. Real-time generation preview). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar generation functions (e.g., multiple random algorithms doing the same thing) 2. Function modules unrelated to level generation (e.g., built-in music player, unnecessary animations) 3. Overly complex generation that affects performance (e.g., generating too much detail that isn't used). Deduct 3 points for each redundancy found, and directly deduct 10 points if core generation functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating generation logic/rendering/data structures), code documentation quality, and proper commenting as specified in requirements. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comments are insufficient or unclear for other developers to understand. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the level visualization follows modern design principles: 1) Harmonious color matching for different level elements (no more than 3 primary colors per theme) 2) Proper visual hierarchy and spacing (element spacing follows the 8px multiple principle) 3) Clear visual distinction between different level components 4) Professional rendering quality. Deduct 3 points for each visually confusing element, 5 points for poor color combinations that make gameplay difficult, and 5 points for chaotic visual layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the level generation and rendering performance optimized?",
+      "description": "Judge whether the generation and display performance meets user expectations: 1) Level generation time ≤ 2 seconds for complex levels 2) Smooth rendering without frame drops during generation 3) Efficient memory usage without leaks 4) Responsive UI during generation process. Deduct 5 points for each generation that takes too long, 3 points for visible performance issues during rendering, and 5 points for unresponsive interface during generation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "easy"
+}

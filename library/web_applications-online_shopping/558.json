@@ -1,0 +1,68 @@
+{
+  "index": 558,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration when possible. Develop an online shopping website with a homepage displaying product recommendations based on user interest graphs. The product detail pages should include AR size measurement functionality (e.g., for furniture dimensions). The shopping cart page needs to support gift wrapping options. After placing an order, provide order splitting and shipping functionality.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the homepage interest-based recommendation system fully implemented?",
+      "description": "Review whether the code implements a user interest graph-based recommendation algorithm with proper data structures for tracking user behavior, calculating affinity scores, and displaying personalized product recommendations. Score 0 if no recommendation system exists, 5 points for basic category filtering, and 10 points for a fully functional system with behavior analysis, interest weighting, and dynamic updates based on user interactions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the AR size measurement functionality properly implemented on product detail pages?",
+      "description": "Evaluate the AR functionality for measuring furniture dimensions. Check whether it includes WebXR integration, camera access permissions handling, surface detection algorithms, 3D model rendering with accurate scaling, and measurement overlay tools. Score 0 if AR features are missing, 5 points for basic model viewing without measurement, and 10 points for complete measurement functionality with calibration and persistence.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the gift wrapping feature complete in the shopping cart?",
+      "description": "Check if the shopping cart supports gift wrapping options with features like wrapping paper selection, gift message input, per-item or entire order wrapping options, and visual preview of wrapped items. Score 0 if gift wrapping is absent, 5 points for basic options without preview, and 10 points for complete functionality with visual previews and pricing integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are order splitting and shipping functionalities implemented?",
+      "description": "Assess whether the code includes proper order processing that can intelligently split orders based on inventory location, shipping methods, or vendor specifications, and provides tracking information. Check for optimization algorithms that minimize shipping costs. Score 0 if missing, 5 points for basic order management, and 10 points for sophisticated splitting logic with tracking integration.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases such as network failures during checkout, inventory changes during browsing, invalid payment information, AR compatibility issues, and form validation errors. Code with strong robustness should provide meaningful error messages and graceful degradation. Give 10 points for comprehensive error handling, 5 points for partial implementation, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for surprise features that enhance the shopping experience (e.g., 1. Social shopping with friends in real-time 2. Visual search capability using camera 3. Virtual try-on for products 4. Sustainability impact calculators for purchases). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Multiple implementations of similar features (e.g., several shopping cart systems) 2. Features unrelated to e-commerce (e.g., built-in games unrelated to shopping) 3. Performance-heavy effects that slow page loading (e.g., excessive animations or high-resolution images without optimization). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core shopping functions are compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular architecture (separation of product catalog, cart, user authentication, AR functionality), state management patterns, API design, responsive design implementation, and build optimization. Deduct 5 points if global state is poorly managed; deduct 5 points if there's no component reusability or high code duplication; deduct 5 points if there's no bundling or minification process. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows e-commerce best practices: 1) Clear product hierarchy with proper whitespace 2) Consistent product card layouts with uniform image ratios 3) Accessibility compliance including contrast ratios and text sizes 4) Mobile-first responsive design with appropriate breakpoints. Deduct 3 points for inconsistent product displays, 5 points for cluttered navigation paths, and 5 points for poor mobile adaptation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the shopping interactions feel natural: 1) Add-to-cart animations provide clear feedback within 100ms 2) Product filtering updates occur without page reloads 3) AR mode transitions are smooth without jarring UI changes 4) Checkout process has clear step indicators and progress feedback. Deduct 5 points for each interaction without visual feedback, 3 points for janky scrolling or animations, and 5 points for confusing multi-step processes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

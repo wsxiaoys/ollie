@@ -1,0 +1,68 @@
+{
+  "index": 955,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional replies. Make sure the generated code is executable whenever possible. Help me write a web-based software that implements search functionality for Word and PDF files.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload and parsing functionality fully implemented?",
+      "description": "Review whether the code accurately implements file upload handling for both Word (.docx, .doc) and PDF formats through HTML file input and JavaScript. Check if proper file type validation, size limits, and content extraction are implemented. Score 0 if core file parsing is not implemented, 5 if only basic upload without parsing is present, and 10 if complete text extraction from both formats with error handling is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the search algorithm and indexing system properly implemented?",
+      "description": "Evaluate whether the search functionality includes efficient text indexing, keyword matching algorithms (exact match, fuzzy search, boolean operators), and result ranking mechanisms. Check for search performance optimization and real-time search suggestions. Deduct 5 points if no indexing strategy is used, 3 points if search is case-sensitive only, and 3 points if no search result highlighting is implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the search result display and navigation system well-designed?",
+      "description": "Check whether the code provides comprehensive search result presentation including file previews, context snippets with highlighted keywords, pagination or infinite scroll, and sorting options (by relevance, date, file type). Evaluate if result navigation allows users to jump to specific locations within documents. Deduct 5 points if no result preview is available, 3 points if no keyword highlighting in results. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the file management and storage system properly constructed?",
+      "description": "Review whether the system includes proper file storage management (local storage, session storage, or server-side), file organization features (folders, tags, categories), and document metadata handling (creation date, file size, last modified). Check for file deletion, bulk operations, and search history functionality. Deduct 5 points if no persistent storage is implemented, 3 points if no file organization features exist. Give 10 points if fully implemented with backup mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted files, unsupported formats, large file processing, memory limitations, and network interruptions) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the search experience (e.g., 1. OCR capability for scanned PDFs 2. Advanced search filters by date/size/content type 3. Search result export functionality 4. Full-text search with regex support 5. Search analytics and statistics). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file parsing libraries for the same format) 2. Function modules unrelated to search functionality (e.g., built-in document editor) 3. Fancy effects that affect search performance (e.g., excessive animations during search). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core search functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file parsing/search engine/UI layers), error handling patterns, and code organization structure. Deduct 5 points if global state pollution is found or no proper separation of concerns; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper async/await patterns for file operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the search interface follows modern design principles: 1) Clean search bar design with proper spacing 2) Intuitive file type icons and visual hierarchy 3) Professional color scheme with sufficient contrast 4) Responsive layout for different screen sizes. Deduct 3 points for each cluttered visual element, 5 points for poor search result readability, and 5 points for inconsistent styling across components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the search interaction smooth and responsive?",
+      "description": "Judge whether the search functionality provides optimal user experience: 1) Search input response time ≤ 200ms for auto-suggestions 2) File upload progress indicators and feedback 3) Loading states during search operations 4) Smooth transitions between search states. Deduct 5 points for each operation without proper feedback, 3 points for laggy search input, and 5 points for unclear loading states during file processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "hard"
+}

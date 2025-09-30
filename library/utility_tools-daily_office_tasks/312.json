@@ -1,0 +1,68 @@
+{
+  "index": 312,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Develop a clock application using Tauri.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core clock functionality completely implemented?",
+      "description": "Check if the code implements all essential clock features: current time display with hours, minutes, seconds, and possibly milliseconds; proper time zone handling; and accurate time updates (ideally using requestAnimationFrame for smooth UI updates rather than setInterval). Score 0 if core time display is missing, 5 if basic functionality exists but has accuracy issues, and 10 if all core clock features are fully implemented with high precision.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Tauri integration properly implemented?",
+      "description": "Evaluate whether the code correctly leverages Tauri APIs for native functionality including window management, OS integration, and possibly system tray features. Check for proper initialization of Tauri in the project structure (correct tauri.conf.json configuration, appropriate cargo dependencies). Deduct 5 points if essential Tauri features aren't used, 3 points if permissions aren't properly configured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are additional clock features implemented?",
+      "description": "Assess if the implementation includes extended functionality like multiple time zones, alarms/timers, stopwatch, world clock, or countdown features. Each well-implemented additional feature is worth 2-3 points. Deduct points if these features are poorly implemented or contain bugs. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there cross-platform compatibility?",
+      "description": "Check if the code properly handles platform-specific considerations for Windows, macOS, and Linux through Tauri's APIs. Review whether the configuration accounts for different operating system behaviors, such as app lifecycle, notifications, and system tray integration. Deduct 5 points if the app works on only one platform, and 3 points if minor platform-specific issues exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as system time changes, daylight saving transitions, permission denials, or resource constraints) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Customizable clock faces/themes 2. Desktop widget mode with transparency 3. Time synchronization with atomic clock servers). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple timer implementations) 2. Function modules unrelated to clock functionality (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that consume battery). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating time logic/view/platform-specific code), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not properly configured for Tauri. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "medium"
+}

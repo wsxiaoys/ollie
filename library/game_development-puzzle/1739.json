@@ -1,0 +1,68 @@
+{
+  "index": 1739,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration whenever possible. Help me create a match-three game based on the following names:\nXu Mingyang\nDai Ziyang\nZhong Zijia\nLi Junxian\nYang Jiming\nZhang Zirou\nChen Yinlong\nZhong Muxi\nLin Zilin\nLi Hanyu\nHuang Ziqing\nXiong Ganzhen\nXie Ziheng\nZhu Minghan\n\nThe code should be in HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the match-three game core mechanics fully implemented?",
+      "description": "Evaluate whether the code implements the essential match-three mechanics: grid initialization, piece swapping, matching detection (horizontal, vertical, and potentially diagonal matches of 3+ same pieces), clearing matched pieces, and filling empty spaces with new pieces. Score 0 if core gameplay is missing, 5 if basic matching works but has flaws, 10 if all mechanics work seamlessly.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the provided names properly integrated into the gameplay?",
+      "description": "Check if all 14 names (Xu Mingyang, Dai Ziyang, etc.) are effectively incorporated into the game elements, either as characters, piece types, or thematic elements. Deduct 1 point for each name missing from the gameplay. If names are merely displayed but not meaningfully integrated into the mechanics, score no more than 5 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management properly implemented?",
+      "description": "Review the implementation of game state tracking (score, level, remaining moves, etc.), state transitions (game start, pause, win/lose conditions), and persistent state management. Score 0 if state management is absent, 5 if basic state tracking exists but lacks proper transitions, 10 if comprehensive state management is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the game include appropriate feedback and animation systems?",
+      "description": "Evaluate whether the game provides proper visual/audio feedback for actions (swapping, matching, special combos) and smooth animations for piece movement, matching, and board refilling. Deduct 3 points if animations are missing, 2 points if matching feedback is unclear, and 5 points if user actions have no visual response.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common edge cases (invalid moves, rapid clicking, board deadlocks with no possible matches) and provides adequate error handling. Code with strong robustness should prevent game-breaking scenarios and recover gracefully from unexpected states, giving 10 points. If the robustness is average, give 5 points, and if no error handling exists, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special combo pieces or power-ups 2. Unique match patterns beyond the standard three 3. Character-specific abilities based on the provided names). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check for three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring systems) 2. Function modules unrelated to match-three gameplay 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down the game). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or if design patterns are not used appropriately; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game UI follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (game grid properly sized and centered) 3) Professional font system (readable text for score/level display, consistent typography). Deduct 3 points for each cluttered UI element, 5 points for jarring color combinations, and 5 points for poor readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game interactions meet user expectations: 1) Piece selection and swapping feels immediate (≤100ms response) 2) Chain reactions and animations complete within a reasonable timeframe 3) Clear visual indication of valid/invalid moves. Deduct 5 points for delayed response to user input, 3 points for choppy animations, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "medium"
+}

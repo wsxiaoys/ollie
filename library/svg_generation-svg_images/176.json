@@ -1,0 +1,68 @@
+{
+  "index": 176,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the generated code is executable for demonstration purposes. \nPlease help me implement the following requirement using code, specifically using SVG code. The requirement is to create: Design a 3D cube with dynamic shadow effects, using <rect> and <animateTransform> elements.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "3D cube implementation completeness",
+      "description": "Evaluate whether the SVG code properly implements all six faces of a 3D cube using <rect> elements with appropriate positioning, dimensions, and perspective. Check if the faces are correctly positioned to create a convincing 3D effect. Score 0 if fewer than 4 faces are implemented, 5 if all faces are present but with incorrect perspective, and 10 for a complete and accurate 3D representation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Dynamic shadow effect implementation",
+      "description": "Assess the shadow implementation quality and realism. The shadow should change dynamically as the cube rotates, with proper opacity, blur effects (using <feGaussianBlur>), and accurate positioning relative to the light source. Deduct 5 points if the shadow is static, 3 points if shadow direction doesn't match the light source, and 2 points if shadow intensity doesn't vary with distance/angle. Full score requires physically accurate shadow projection.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Animation quality using <animateTransform>",
+      "description": "Evaluate the animation implementation using <animateTransform> elements. Check for smooth rotation on multiple axes, proper timing functions (ease-in-out), and appropriate animation duration. Deduct 3 points for single-axis rotation only, 3 points for abrupt/jerky animations, and 4 points if animation doesn't loop properly or has noticeable jumps between cycles. The full score requires multi-axis, smooth, continuous animation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Proper transformation and perspective handling",
+      "description": "Assess how well the SVG handles 3D transformations and perspective. Check for proper use of transform attributes (rotate, translate), perspective settings, and maintaining correct face visibility during rotation. Deduct 5 points if perspective distortion is unrealistic, 3 points if transformations aren't properly synchronized across elements, and 2 points for improper z-index management during rotation. Full score requires mathematically correct 3D transformations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code robustness",
+      "description": "Evaluate whether the code can handle various viewport sizes, browser compatibility, and performance under different conditions. Code with strong robustness should use relative units, include fallbacks for unsupported features, and maintain performance with minimal CPU usage. Deduct 3 points for fixed pixel dimensions, 4 points for browser-specific implementations without fallbacks, and 3 points for inefficient code that causes performance issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative features",
+      "description": "Check whether the code includes surprise features that enhance the visualization (e.g., 1. User-controlled rotation via mouse/touch interaction 2. Light source position adjustment 3. Texture mapping on cube faces 4. Responsive design that adapts to container size). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant features and code efficiency",
+      "description": "Strictly check for: 1. Redundant elements that serve the same purpose 2. Unnecessary filters or effects that impact performance 3. Excessive attributes that could be consolidated in CSS 4. Animations that compete with or cancel each other out. Deduct 2.5 points for each redundancy found, and directly deduct 10 points if the core functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering quality",
+      "description": "Review the code structure, commenting, organization, and best practices. Evaluate use of groups (<g>), proper naming conventions, reusable components, and optimization techniques. Deduct 3 points for ungrouped elements, 3 points for missing or misleading comments on complex transformations, 2 points for duplicated code patterns, and 2 points for not using CSS for styling where appropriate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Visual design quality",
+      "description": "Evaluate whether the cube design follows professional standards: 1) Harmonious color scheme for the cube faces 2) Appropriate contrast between faces to enhance 3D effect 3) Balanced proportions and dimensions 4) Professional finish with subtle details. Deduct 2.5 points for clashing colors, 2.5 points for poor contrast making faces indistinguishable, 2.5 points for disproportionate dimensions, and 2.5 points for lack of finishing details. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Animation smoothness and performance",
+      "description": "Judge whether the animations conform to natural movement: 1) Consistent frame rate without jitter 2) Appropriate animation timing (not too fast/slow) 3) Smooth transitions between animation states 4) Efficient implementation that doesn't cause browser lag. Deduct 2.5 points for each issue: jerky animations, inappropriate timing, abrupt transitions, or poor performance. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "medium"
+}

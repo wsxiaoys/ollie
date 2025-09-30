@@ -1,0 +1,68 @@
+{
+  "index": 243,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Use Vue2 and uniApp to create a membership card.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the membership card core functionality fully implemented?",
+      "description": "Review whether the Vue2 components properly implement the membership card with appropriate data structures (user information, card status, points/balance) and necessary interactions (view details, use card). Score 0 if the core card functionality is missing, 5 if basic display is implemented, and 10 if full functionality including conditional rendering based on membership levels is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the uniApp cross-platform adaptation correctly implemented?",
+      "description": "Evaluate whether the code properly uses uniApp's conditional compilation (@ifdef), responsive layouts, and platform-specific API calls. Check if styles adapt to different screen sizes and device capabilities. Deduct 3 points if only one platform works well, 5 points if platform-specific features aren't utilized appropriately. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the membership card state management properly designed?",
+      "description": "Examine whether the solution properly manages membership data (using Vuex or similar state management), implements appropriate caching strategies for offline usage, and handles state transitions (card activation, expiration, level upgrades). Deduct 5 points if there's no persistent storage solution, 3 points if state updates aren't reactive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are authentication and security measures appropriately implemented?",
+      "description": "Check if the membership card includes necessary security features such as token-based authentication, secure storage of sensitive information, and protection against unauthorized access. Assess if the solution includes verification methods (QR codes, barcodes) for in-store usage. Deduct 5 points if authentication is missing, 3 points if there's no expiration/refresh mechanism. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid card data, expired memberships, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic card visual effects based on usage 2. Location-based promotions integration 3. Interactive point redemption animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple card display components with overlapping functionality) 2. Function modules unrelated to membership cards (e.g., a built-in game unrelated to the loyalty program) 3. Fancy effects that affect performance (e.g., excessive animations that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components/API services/state management), component reusability, and build configuration for uniApp. Deduct 5 points if global properties are overused or Vue best practices are ignored; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if conditional compilation isn't properly handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the membership card design follows modern design principles: 1) Harmonious color matching suitable for brand identity (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Card flip/reveal animations feel natural with proper easing 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback when scanning or using the card. Deduct 5 points for each operation without feedback, 3 points for jerky animations during transitions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

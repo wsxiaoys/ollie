@@ -1,0 +1,68 @@
+{
+  "index": 488,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. Implement an enterprise wireless network device management system for managing the company's WiFi access points, wireless controllers, and other devices. The system requires administrator login (username: admin, password: 123456), the ability to add wireless devices (device name, model, MAC address, IP address, location), monitor device status and connected user count, and configure wireless network parameters. The system needs to display device distribution on a floor plan along with signal coverage heat maps, showing signal strength, channel utilization and other information. It should also support viewing historical connection data and generating network performance reports.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the administrator authentication system properly implemented?",
+      "description": "Check if the login system uses secure authentication practices: 1) Password hashing rather than plaintext storage 2) CSRF protection 3) Session timeout and management 4) Brute force protection mechanisms. Verify the implementation of the required credentials (username: admin, password: 123456) as a starting point, but evaluate if there's a secure way to change these default credentials. Score 0 if authentication is missing, 5 if basic authentication exists but has security flaws, 10 if authentication is secure and properly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the wireless device management system fully implemented?",
+      "description": "Evaluate if the system properly implements the addition, editing, and deletion of wireless devices with all required fields (device name, model, MAC address, IP address, location). Check if input validation exists for MAC address format, IP address format, and required fields. Assess if the device listing includes filtering, sorting, and search capabilities. Score 0 if device management is missing, 5 if basic management exists but lacks validation or complete CRUD operations, 10 if fully implemented with proper validation and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the device status monitoring system effectively implemented?",
+      "description": "Review the implementation of real-time device status monitoring, including connection status (online/offline), connected user count, bandwidth utilization, and error rates. Check if the system includes alerts for device issues, polling mechanisms or WebSocket for updates, and visual status indicators. Deduct 5 points if there's no real-time or near real-time updates, 3 points if monitoring metrics are incomplete. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the floor plan visualization with signal coverage heat maps properly implemented?",
+      "description": "Assess the quality of the floor plan visualization system: 1) Accurate device positioning on the floor plan 2) Visual representation of signal strength using color gradients 3) Channel utilization visualization 4) Interactive elements for device selection and information display. Check if the heat map calculation appears realistic based on device positions and obstacles. Deduct 5 points if the heat map visualization is static rather than dynamic, 3 points if device positioning is not customizable. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network device connectivity issues, invalid user inputs, server errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Predictive analytics for network issues 2. Mobile app integration for notifications 3. Automated optimization suggestions based on usage patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to view the same device data) 2. Function modules unrelated to network management (e.g., a built-in game or entertainment feature) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the dashboard). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/visualization/network layers), code organization, naming conventions, and build process automation. Evaluate the separation of concerns between backend and frontend components. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Enterprise-appropriate color scheme with clear status indicators 2) Proper layout spacing for dashboard elements 3) Professional typography with clear hierarchy for monitoring data vs. controls. Examine screenshots for crowded interface elements, confusing data visualization, or poorly organized navigation. Deduct 3 points for each usability issue, 5 points for poor information architecture, and 5 points for inaccessible color choices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the historical data and reporting system comprehensive?",
+      "description": "Judge whether the historical connection data and network performance reporting system meets enterprise needs: 1) Data visualization with appropriate charts 2) Date range selection for historical analysis 3) Export capabilities for reports (PDF, CSV) 4) Customizable metrics and KPIs. Evaluate if performance trend analysis is available and if reports contain actionable insights. Deduct 5 points if reports are static only, 3 points if data filtering is limited, and 5 points if export functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

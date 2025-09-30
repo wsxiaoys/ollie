@@ -1,0 +1,68 @@
+{
+  "index": 1744,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Create a browser dinosaur game themed game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core dinosaur game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the dinosaur character movement (jump/duck), obstacle generation system, and collision detection through HTML/JavaScript. Check if it includes proper physics simulation for jumping arc and gravity effects. Score 0 if core game loop is missing, 5 if only basic jumping is implemented, and 10 if all mechanics including ducking, variable jump height, and accurate collision boundaries are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the progressive difficulty and scoring system implemented?",
+      "description": "Evaluate whether the game includes dynamic speed acceleration, obstacle frequency adjustment, and a comprehensive scoring mechanism. Check if the difficulty curve is well-balanced with proper obstacle spacing and speed ramping. Deduct 5 points if speed doesn't increase over time, 3 points if obstacle generation is static, and 2 points if scoring system lacks milestone rewards. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game state management and restart functionality properly designed?",
+      "description": "Check whether the code includes complete game state transitions (start/playing/game over/restart), high score persistence using localStorage, and smooth state switching. Evaluate if the restart mechanism properly resets all game variables and maintains score history. Deduct 5 points if game states are not properly managed, 3 points if high scores aren't saved, and 2 points if restart doesn't clean up properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the visual rendering and animation system comprehensive?",
+      "description": "Assess whether the code implements smooth sprite animations for the dinosaur (running/jumping/ducking), scrolling background effects, and obstacle animations. Check if the rendering uses efficient techniques like requestAnimationFrame and proper sprite management. Give 10 points if all animations are smooth and optimized, 5 points if basic animations exist but lack polish, and 0 points if animations are choppy or missing. Deduct 3 points for performance issues during rendering.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid key presses, browser tab switching, window resizing, and edge case collisions) and provide appropriate error handling. Code with strong robustness should effectively manage game pause/resume when tab loses focus, handle multiple simultaneous inputs gracefully, and recover from unexpected errors. Give 10 points for comprehensive error handling, 5 points for basic robustness, and 0 points if no exception handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance gameplay?",
+      "description": "Check whether the code includes engaging features beyond basic gameplay (e.g., 1. Multiple obstacle types with different behaviors 2. Power-ups or special abilities 3. Day/night cycle or weather effects 4. Sound effects and background music 5. Particle effects for actions). Add 2-3 points for each well-implemented innovative feature that adds meaningful gameplay value (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Features unrelated to the dinosaur game concept (e.g., built-in chat system) 3. Overly complex visual effects that impact performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if core game performance is significantly impacted by unnecessary features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating game logic/rendering/input handling), code organization with clear class structures, and proper variable naming conventions. Deduct 5 points if global variables are overused or game logic is mixed with rendering; deduct 5 points if code duplication rate exceeds 30%; deduct 3 points if functions are overly long (>50 lines) without proper decomposition. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet modern game UI standards?",
+      "description": "Evaluate whether the visual design follows game UI principles: 1) Cohesive pixel art or modern graphic style 2) Readable score display with appropriate contrast 3) Clear game state indicators (start screen, game over screen) 4) Proper use of colors that don't strain eyes during extended play. Deduct 3 points for each UI element that lacks visual hierarchy, 5 points for poor color choices that affect gameplay visibility, and 5 points for inconsistent art style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are the controls responsive and gameplay smooth?",
+      "description": "Judge whether the game controls meet responsive gaming standards: 1) Input response delay ≤ 50ms for jump/duck actions 2) Consistent 60fps performance during gameplay 3) Smooth collision feedback without jarring interruptions 4) Intuitive control scheme (spacebar/arrow keys). Deduct 5 points for each control that feels unresponsive, 3 points for frame rate drops during normal gameplay, and 5 points for unclear visual feedback on player actions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

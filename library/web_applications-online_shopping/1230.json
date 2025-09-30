@@ -1,0 +1,68 @@
+{
+  "index": 1230,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Be sure to ensure that the code you generate is executable for demonstration. Uniapp Vue3 JD multi-condition product filtering list page",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the multi-condition filtering system properly implemented?",
+      "description": "Review whether the code implements comprehensive filtering capabilities including price ranges, categories, brands, ratings, etc. Check if the filters can be combined and applied simultaneously with proper state management. Score 0 if filtering is not implemented, 5 if only basic filtering is available, and 10 if advanced features like filter history, quick reset, and saved filter preferences are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the product list rendering optimized for performance?",
+      "description": "Evaluate if virtual scrolling or pagination is implemented for large datasets. Check for lazy loading of images, skeleton screens during loading, and proper caching mechanisms. Deduct 5 points if rendering causes noticeable lag on mobile devices, and 3 points if no optimization techniques are used. Full score requires implementing both client-side caching and progressive loading.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Uni-App cross-platform compatibility ensured?",
+      "description": "Check whether the code uses Uni-App's conditional compilation to handle platform differences (H5, WeChat Mini Program, App). Verify platform-specific APIs are properly encapsulated. Deduct 3 points for each platform-specific issue found. Full score requires testing on at least 3 platforms with consistent behavior and UI rendering.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the implementation follow Vue 3 best practices?",
+      "description": "Assess if the code utilizes Vue 3's Composition API effectively, with proper setup() functions, reactive states, computed properties, and lifecycle hooks. Check for proper component organization and reusability. Deduct 5 points if still using Options API, 3 points if refs are overused instead of reactive, and 5 points if no reactive state management solution is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, empty data sets, filter combinations with no results, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Voice search capability 2. AR product preview 3. Product comparison tool 4. Smart filter recommendations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple sorting implementations) 2. Function modules unrelated to product filtering (e.g., unneeded social sharing) 3. Fancy effects that affect performance (e.g., heavy animations on filter changes). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/component/store layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet JD's design standards?",
+      "description": "Evaluate whether the overall design follows JD's design principles: 1) Consistent with JD's color scheme (main red color, white background) 2) Proper layout spacing (following JD's typical grid system) 3) Professional product card design with proper information hierarchy. Deduct 3 points for each inconsistent design element, 5 points for color combinations that don't match JD's branding, and 5 points for chaotic product information display. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Filter application response ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual feedback when filters are applied. Deduct 5 points for each filtering operation without feedback, 3 points for visual stuttering during list updates, and 5 points for confusing filter selection indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "easy"
+}

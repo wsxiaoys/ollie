@@ -1,0 +1,68 @@
+{
+  "index": 1642,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the generated code is executable for demonstration. Help me create a web game similar to Agar.io, requiring it to be identical to the original. I have no programming knowledge whatsoever. It should be made in a format that can be saved as a notepad file, then directly run in a web browser.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core gameplay of Agar.io accurately implemented?",
+      "description": "Review whether the code correctly implements the fundamental mechanics of Agar.io: 1) Player-controlled cell that grows by consuming smaller cells 2) Shrinking mechanism when splitting 3) Cell splitting functionality 4) Proper mass/size relationship. Score 0 if these core mechanics are missing, 5 if only basic movement and consumption are implemented, and 10 if all features including splitting, ejecting mass, and proper growth/shrinkage dynamics are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the multiplayer simulation properly implemented?",
+      "description": "Check whether the code includes AI opponents that mimic player behavior when real multiplayer is unavailable (since true multiplayer would require server infrastructure). Evaluate if these AI cells follow convincing movement patterns, demonstrate varied strategies (aggressive/passive), and properly interact with the player's cell. Deduct 5 points if AI behavior is too predictable, 3 points if they don't react to player actions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the physics and collision detection accurately implemented?",
+      "description": "Assess whether the physics system correctly handles: 1) Size-based consumption rules 2) Momentum and mass effects on movement speed 3) Collision detection between cells of different sizes 4) Proper handling of cell merging after splitting. Deduct 3 points for each physics inconsistency with the original game, and 5 points if cells pass through each other incorrectly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game environment and food generation system properly implemented?",
+      "description": "Evaluate the implementation of: 1) Randomly generated food pellets 2) Properly scaled game map 3) Zoom functionality that adjusts based on player cell size 4) Virus cells that can split larger players. Deduct 3 points if food generation is not continuous, 5 points if the map lacks boundaries, and 5 points if viruses don't function correctly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid mouse movements, browser resize, performance issues on slower devices) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience beyond the original Agar.io (e.g., 1. Custom skins selection 2. Local high score tracking 3. Different game modes like timed challenges). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar functions (e.g., multiple ways to handle the same game event) 2. Function modules unrelated to the Agar.io concept (e.g., unnecessary menu systems) 3. Fancy effects that affect performance (e.g., excessive particle effects or animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, and whether the single HTML file structure is well-organized for a beginner to understand. Deduct 5 points if global variable pollution is excessive; deduct 5 points if the code is not commented or explained for beginners; deduct 5 points if the game loop implementation is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision match the original Agar.io design?",
+      "description": "Evaluate whether the visual implementation matches Agar.io's clean aesthetic: 1) Simple colored circles with proper gradients 2) Clear size differentiation 3) Minimal UI elements for score and leaderboard 4) Clean playing field with subtle grid pattern. Deduct 3 points for each visual element that differs significantly from the original, 5 points for an overcomplicated interface, and 5 points for missing essential UI components like the leaderboard. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game's interactions match the original Agar.io experience: 1) Smooth mouse-following movement 2) Responsive splitting with Space key 3) Proper mass ejection with W key 4) Seamless camera zoom as player grows. Deduct 5 points for input lag exceeding 100ms, 3 points for choppy animations during rapid growth/movement, and 5 points for incorrect handling of key commands. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

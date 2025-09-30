@@ -1,0 +1,68 @@
+{
+  "index": 876,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Help me implement a step-by-step animation simulation of fire evacuation based on Cesium, including steps such as fire outbreak, alarm activation, personnel evacuation, fire truck arrival, firefighting, etc.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Cesium environment properly initialized with appropriate terrain and imagery?",
+      "description": "Check if the code includes proper Cesium initialization, with correct API keys, terrain provider configuration, and high-resolution imagery for realistic building representation. The viewer should have proper camera controls and navigation settings. Score 0 if Cesium is not initialized, 5 if basic initialization is present but lacks optimization, and 10 if fully configured with performance optimizations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the fire simulation physics and visual effects realistically implemented?",
+      "description": "Review the fire simulation algorithm for realism including fire spread patterns, smoke propagation physics, and environmental factors (wind, building materials). Visual effects should include particle systems for flames/smoke with proper opacity, color gradients, and lighting. Deduct 5 points if fire spread is unrealistic, 3 points if smoke physics is missing, and 3 points if visual effects lack dynamic elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the evacuation path-finding and crowd simulation properly implemented?",
+      "description": "Evaluate the evacuation algorithm implementation including A* or Dijkstra's for path-finding, crowd density considerations, and bottleneck handling. Check for agent-based modeling with realistic human behaviors (panic, group dynamics, leader-following). Deduct 5 points if basic path-finding is missing, 3 points if crowd density is not considered, and 5 points if evacuation doesn't account for fire spread. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the emergency response elements (alarm systems, fire trucks, firefighters) accurately modeled?",
+      "description": "Examine implementation of alarm activation logic, emergency vehicle routing with traffic consideration, and firefighter deployment strategies. Check for realistic time delays between steps and proper coordination of resources. Deduct 3 points if alarms don't trigger properly, 5 points if emergency vehicles don't follow realistic routes, and 5 points if firefighting logic doesn't consider fire intensity and type. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing 3D models, API failures, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time statistics dashboard of evacuees 2. Multiple fire scenarios with different outcomes 3. Interactive training mode for evacuation planning). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple path-finding algorithms running simultaneously) 2. Function modules unrelated to fire evacuation (e.g., unnecessary weather effects) 3. Fancy effects that affect performance (e.g., excessive particle systems that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating fire simulation/evacuation logic/rendering layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for UI elements and fire visualization 2) Proper layout spacing for control panels and information displays 3) Professional font system for alerts and statistics. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animation transitions between evacuation phases feel natural: 1) Smooth camera transitions between scenes 2) Proper timing of events in the evacuation sequence 3) Clear visual indicators of the current phase. Deduct 5 points for jerky camera movements, 3 points for unrealistic timing between evacuation steps, and 5 points for lack of user controls to pause/resume the simulation. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-3D Simulation",
+  "difficulty": "hard"
+}

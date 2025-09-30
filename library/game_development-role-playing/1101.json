@@ -1,0 +1,68 @@
+{
+  "index": 1101,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration. Help me create a cultivation/immortal progression game that can run directly on a mobile device. Here are my ideas and requirements: At the start of the game, the main character's attribute values are randomly generated. The game should include a training system, equipment system, cultivation techniques and skills system, challenge/dungeon system, log functionality, leveling system, and some simple UI.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the character generation system properly implemented?",
+      "description": "Review whether the code correctly implements random attribute generation with balanced constraints. Check if attributes include at least 5 core stats (e.g., strength, spirit, agility) with proper min/max ranges and distribution curves. Score 0 if not implemented, 5 if basic randomization exists but lacks balance controls, and 10 if it includes attribute correlation rules and balanced generation algorithms that prevent overpowered initial characters.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cultivation/training system comprehensive and engaging?",
+      "description": "Evaluate whether the cultivation system includes multiple cultivation paths with distinct progression mechanics. Check for meditation timers, resource consumption, breakthrough mechanics, and bottleneck challenges. Deduct 5 points if cultivation progression is linear without bottlenecks, deduct 3 points if it lacks resource management, and deduct 2 points if there's no visual feedback for cultivation progress. The full score is 10 points only if the system includes at least 3 distinct cultivation paths with unique mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the equipment and inventory systems properly implemented?",
+      "description": "Check whether the equipment system includes different gear slots, item rarities, attribute bonuses, and set effects. Review inventory management including sorting, filtering, and item comparison. Score 0 if equipment is purely cosmetic, 5 if basic equipment affects stats but lacks variety, and 10 if the system includes crafting, upgrading, refinement mechanics, and special equipment with unique effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the skills and techniques system comprehensive?",
+      "description": "Assess the implementation of cultivation techniques and combat skills with proper cooldowns, resource costs, damage calculations, and skill trees. Examine whether techniques have different cultivation requirements and progression paths. Deduct 5 points if skills lack visual effects, deduct 3 points if skill progression is linear without choices, and deduct 2 points if there are fewer than 10 unique skills. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, network interruption, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather affecting cultivation 2. NPC relationship system with story consequences 3. Procedurally generated secret realms). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple progression systems that function identically) 2. Function modules unrelated to cultivation gameplay (e.g., mini-games that don't contribute to progression) 3. Fancy effects that affect performance (e.g., excessive particle effects during cultivation). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data layers), code reusability, and mobile optimization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if mobile-specific optimizations are missing (touch controls, battery usage). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile game UI principles: 1) Harmonious color matching (no more than 3 primary colors with a consistent theme) 2) Proper layout spacing (element spacing follows the 8px multiple principle, touch targets ≥ 44px) 3) Professional font system (body font size ≥ 16px, readable on small screens). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and mobile-friendly?",
+      "description": "Judge whether the dynamic effects conform to mobile interaction standards: 1) Touch feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) One-handed operation friendly layout. Deduct 5 points for each operation without feedback, 3 points for janky animations during state transitions, and 5 points if the game requires two hands for basic operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "hard"
+}

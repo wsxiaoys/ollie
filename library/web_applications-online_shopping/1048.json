@@ -1,0 +1,68 @@
+{
+  "index": 1048,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Write a program for placing orders at stores in a WeChat Mini Program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Mini Program order placement system structure complete?",
+      "description": "Review whether the code implements the essential components of a WeChat Mini Program order system: pages for product listing, product details, shopping cart, order confirmation, and order history. Check for proper navigation flow between these components. Score 0 if core pages are missing, 5 if basic pages exist but lack proper connections, and 10 if the complete order flow is implemented with all necessary transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the implementation integrate properly with WeChat Mini Program APIs?",
+      "description": "Evaluate whether the code correctly uses WeChat-specific APIs like wx.request for network calls, wx.login for authentication, wx.payment for payment processing, and wx.getUserInfo for user profiles. Deduct 3 points if any critical WeChat API is missing, 5 points if APIs are used incorrectly, and 7 points if no WeChat-specific APIs are utilized at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data persistence and state management properly implemented?",
+      "description": "Check whether the code includes proper data storage using wx.setStorage/getStorage for local data, cloud database for remote persistence, and whether it handles synchronization between offline and online states. Evaluate if the shopping cart state persists across app restarts. Deduct 3 points if only local storage is used without cloud backup, 5 points if data can be lost during navigation, and 7 points if no persistence mechanism exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the payment flow securely and correctly implemented?",
+      "description": "Assess whether the payment process follows WeChat Pay security practices, including proper signature verification, order number generation, and completion handling. Check for payment status verification and receipt generation. Deduct 5 points if the payment flow lacks security measures, 3 points if receipt/confirmation is missing, and 7 points if the entire payment process is simulated without actual WeChat Pay integration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, payment failures, product out-of-stock, invalid inputs) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Voice-based product search 2. AR product preview 3. Social sharing with custom images 4. Smart recommendations based on previous orders). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to calculate the same total price) 2. Function modules unrelated to order placement (e.g., built-in games) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the ordering process). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, business logic, and API services), component reusability, and code organization following WeChat Mini Program best practices. Deduct 5 points if global state pollution is found or MVVM pattern is not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if custom components are not created for reusable elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat design guidelines: 1) Consistent with WeChat visual language (proper use of colors, buttons, and form elements) 2) Proper layout spacing (following WeChat's component spacing principles) 3) Professional typography (following WeChat's font hierarchy). Deduct 3 points for each inconsistent visual element, 5 points for layouts that don't match WeChat standards, and 5 points for non-native looking components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to WeChat Mini Program user experience: 1) Page transitions match WeChat's native feel 2) Loading states are properly indicated 3) Button and interaction feedback is immediate and clear. Deduct 5 points for each operation without feedback, 3 points for jerky animations or transitions, and 5 points for interactions that feel non-native to the WeChat environment. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

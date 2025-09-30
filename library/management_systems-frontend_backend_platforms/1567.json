@@ -1,0 +1,68 @@
+{
+  "index": 1567,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Design a stock trading management software using Python and PySide6, with a Treeview displaying account lists on the left, portfolio holdings in the upper right, and transaction details in the lower right. The window should automatically resize. The account list, portfolio holdings, and transaction details should automatically connect to an SQLite database. Use pd.to_sql and pd.read_sql for database operations, and implement DDL for the database structure.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic UI layout properly implemented with PySide6?",
+      "description": "Check if the code creates a main window with a proper layout containing a TreeView for account lists on the left, portfolio holdings in the upper right, and transaction details in the lower right. Evaluate whether QSplitter or appropriate layout managers (QVBoxLayout, QHBoxLayout, QGridLayout) are used to organize these widgets. Verify that the TreeView properly displays hierarchical account data. Score 0 if basic layout is missing, 5 if layout exists but has structural issues, and 10 if layout is properly implemented with all required components.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is automatic window resizing implemented correctly?",
+      "description": "Examine whether the application implements proper window resize policies using sizePolicy attributes, minimum/maximum size constraints, or stretch factors in layouts. Check that all components (TreeView, portfolio table, transaction table) resize proportionally when the main window is resized. Verify that scrollbars appear when content exceeds the available space. Deduct 5 points if resizing behavior is inconsistent or if some UI elements become unusable during resizing. Deduct 3 points if only basic Qt automatic resizing is used without thoughtful constraints.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the SQLite database structure properly implemented with DDL?",
+      "description": "Review whether the code includes proper Data Definition Language (DDL) statements that create the necessary tables with appropriate fields, data types, and constraints (PRIMARY KEY, FOREIGN KEY, NOT NULL, etc.) for accounts, portfolio holdings, and transactions. Check if relationships between tables are properly defined. Deduct 5 points if table relationships are incorrect or missing, 3 points if constraints are incomplete, and 2 points if data types are inappropriate for financial data. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data synchronization between UI and database implemented correctly?",
+      "description": "Evaluate whether the code properly uses pd.to_sql for writing data and pd.read_sql for reading data from the SQLite database. Check if data changes in the UI are properly committed to the database and if data changes in the database are properly reflected in the UI. Verify that database transactions are properly managed (commit/rollback) and that the application handles database errors. Deduct 5 points if there's no error handling for database operations, 3 points if transaction management is missing, and 5 points if two-way synchronization is incomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as database connection failures, data format errors, invalid user inputs, etc.) and provide friendly error prompts or recovery mechanisms. Check if the application validates user inputs and handles edge cases properly. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time stock price updates 2. Visual portfolio performance charts 3. Trade alert notifications 4. Customizable dashboard widgets). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple database connection methods coexisting) 2. Function modules unrelated to stock trading management (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations or unnecessary real-time updates). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/data/business logic layers), implementation of design patterns, and code organization. Check if the code follows PEP 8 guidelines and includes proper documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's insufficient documentation for key functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows consistent principles) 3) Professional font system (readable font size, appropriate line height). Check if the UI elements are aligned properly and if the application uses Qt style sheets or themes consistently. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the application suitable for financial data management?",
+      "description": "Judge whether the application meets specific requirements for financial software: 1) Proper decimal precision for monetary values 2) Clear visual distinction between debits and credits 3) Data integrity safeguards 4) Transaction history preservation 5) Date filtering capabilities. Deduct 3 points for each missing financial-specific feature, 5 points for improper money calculations, and 5 points for lack of data validation specific to financial transactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

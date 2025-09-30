@@ -1,0 +1,68 @@
+{
+  "index": 548,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. Implement a social media short video generator where users can upload image and video materials, and the system provides various video templates (such as stories, product showcases, travel logs, etc.). Users can replace materials in templates, adjust duration, add text and stickers. Support adding background music and adjusting volume, and export the finished product in different sizes and formats suitable for Instagram, TikTok and WeChat.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the material upload and management system fully implemented?",
+      "description": "Review whether the code implements a complete upload system that handles both images and videos with proper validation, processing, and storage management. Check for file type validation, size limits, progress indicators, and thumbnail generation. Score 0 if upload functionality is missing, 5 if basic upload exists but lacks proper validation or processing, 10 if the system includes comprehensive asset management with tagging, categorization, and search capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the video templates properly implemented with customization options?",
+      "description": "Evaluate whether the code provides a variety of templates (stories, product showcases, travel logs, etc.) with placeholder slots for user content. Check if templates include timing information, transition effects, and customizable sections. Deduct 3 points if fewer than 5 template options are provided, 5 points if templates cannot be previewed before selection, and 3 points if template customization is limited. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the timeline editor functionality complete?",
+      "description": "Verify whether the code implements an interactive timeline editor that allows users to adjust clip duration, arrange segments, add transitions, and precisely control the video flow. Check for frame-accurate editing capabilities, drag-and-drop functionality, and preview options. Deduct 5 points if the timeline lacks visual representation of content, 3 points if trimming functionality is missing, and 5 points if there's no real-time preview of changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are text overlay and sticker functionalities properly implemented?",
+      "description": "Assess whether the code allows adding text with customizable fonts, sizes, colors, and animations, as well as sticker/overlay placement with scaling and rotation options. Check for text timing controls, animation presets, and sticker library management. Score 0 if text/sticker functionality is missing, 5 if basic implementation exists but lacks animation or positioning flexibility, and 10 if it includes advanced features like text effects, sticker categories, and keyframe animation control.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported file formats, oversized uploads, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-assisted video creation suggestions 2. Voice-to-text caption generation 3. One-click theme application with color correction). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video processing libraries doing the same job) 2. Function modules unrelated to video creation (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., excessive background animations in the editor). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing logic/UI/state management), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the audio handling and export functionality complete?",
+      "description": "Judge whether the code properly implements audio features (background music addition, volume adjustment, fade in/out) and export capabilities for different platforms. Check if the system can export in various aspect ratios (9:16 for TikTok, 4:5 for Instagram, 1:1 for others) and appropriate quality settings. Deduct 5 points if audio waveform visualization is missing, 3 points if volume normalization is not implemented, and 5 points if exports don't include platform-specific metadata or optimizations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

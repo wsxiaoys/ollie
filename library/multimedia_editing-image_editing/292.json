@@ -1,0 +1,68 @@
+{
+  "index": 292,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable.\n\n```\nbuild() {\n  Column(){\n    Image($r('app.media.logo'))\n      .width(120)\n      .height(120)\n      .margin({bottom: 30})\n    \n    Text('User Login')\n      .fontSize(32)\n      .fontWeight(FontWeight.Bold)\n      .margin({bottom: 40})\n      .fontColor('#333')\n    \n    TextInput({placeholder: 'Please enter username'})\n      .width('80%')\n      .height(50)\n      .margin({bottom: 20})\n      .fontSize(18)\n      .borderRadius(8)\n      .backgroundColor('#f5f5f5')\n      .padding({left: 15})\n      .onChange((value: string) => {this.username = value})\n    \n    TextInput({placeholder: 'Please enter password'})\n      .width('80%')\n      .height(50)\n      .margin({bottom: 30})\n      .fontSize(18)\n      .borderRadius(8)\n      .backgroundColor('#f5f5f5')\n      .padding({left: 15})\n      .type(InputType.Password)\n      .onChange((value: string) => {this.password = value})\n    \n    Button('Login')\n      .width('80%')\n      .height(50)\n      .margin({bottom: 15})\n      .fontSize(18)\n      .fontWeight(FontWeight.Medium)\n      .backgroundColor('#4285f4')\n      .borderRadius(25)\n      .onClick(() => {this.handleLogin()})\n    \n    Button('Register')\n      .width('80%')\n      .height(50)\n      .fontSize(18)\n      .fontWeight(FontWeight.Medium)\n      .backgroundColor('#34a853')\n      .borderRadius(25)\n      .onClick(()=>{\n        router.pushUrl({url:'pages/RegisterPage'})\n      })\n  }\n  .width('100%')\n  .height('100%')\n  .justifyContent(FlexAlign.Center)\n  .backgroundImage($r('app.media.background'))\n  .backgroundImageSize(ImageSize.Cover)\n}\n```\n\nPlease improve the style to make it look better and add a logo.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the login interface layout properly implemented and visually balanced?",
+      "description": "Review whether the layout elements (logo, title, input fields, buttons) are properly aligned, spaced, and sized. Check if the column arrangement provides a clear visual hierarchy and if the justifyContent property correctly centers the content. Deduct 3 points if elements appear crowded or misaligned, 5 points if the visual hierarchy is confusing, and 5 points if responsive layout considerations are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the input fields properly designed with appropriate user feedback?",
+      "description": "Evaluate if text input fields include proper validation feedback, focus states, and error handling. Check if the password field properly obscures text and if there are clear visual cues for input status. Deduct 3 points if validation feedback is missing, 3 points if there's no visual indication of focus state, and 4 points if there's no error handling for invalid inputs. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the authentication flow complete with proper error handling?",
+      "description": "Assess whether the handleLogin() function includes proper user authentication logic, loading states, error messages, and security measures (like input sanitization). Deduct 5 points if there's no loading state during authentication, 5 points if error handling is inadequate, and 5 points if no security measures are implemented for handling credentials. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the navigation between login and registration pages properly implemented?",
+      "description": "Check if the navigation using router.pushUrl() is correctly implemented with proper state management between pages. Verify if there's a way to return to the login page from registration and if the navigation preserves user input when appropriate. Deduct 3 points if back navigation is missing, 4 points if state isn't preserved appropriately between navigations, and 3 points if there are no animations for page transitions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty inputs, network issues during login, memory leaks) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Biometric authentication option 2. Remember me functionality 3. Password strength indicator 4. Social login options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant style declarations (e.g., multiple margin definitions) 2. Unnecessary components that don't contribute to the login functionality 3. Overly complex animations that might affect performance on lower-end devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/state management), reusability of components, and proper organization of resources. Deduct 5 points if business logic is mixed with UI code; deduct 5 points if there's significant code duplication; deduct 5 points if resources like images are not properly organized. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows consistent principles) 3) Professional font system (appropriate font sizes and weights for hierarchy). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for inconsistent visual styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback for button presses 2) Smooth transitions between states 3) Appropriate loading indicators. Deduct 5 points for each interaction without feedback, 3 points for jarring transitions, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

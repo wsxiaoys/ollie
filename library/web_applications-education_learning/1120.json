@@ -1,0 +1,68 @@
+{
+  "index": 1120,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for display.\n\n<view class=\"container\">\n  <image src=\"../images/wificonfigbackground.jpg\" class=\"background-image\"></image>\n  <view class=\"content\">\n    <!-- Top title -->\n    <view class=\"header\">\n      <text class=\"title\">Wi-Fi Scan</text>\n    </view>\n    <view class=\"header\">\n      <text class=\"subtitle\">Select any Wi-Fi to connect</text>\n    </view>\n\n    <!-- Wi-Fi list -->\n    <scroll-view class=\"wifi-list\" scroll-y=\"true\" style=\"height: 400rpx;\">\n      <view wx:for=\"{{wifiList}}\" wx:key=\"ssid\" class=\"wifi-item\" bindtap=\"connectWifi\" data-ssid=\"{{item.ssid}}\">\n        <text class=\"wifi-ssid\">{{item.ssid}}</text>\n        <text class=\"wifi-signal\">Signal strength: {{item.rssi}} dBm</text>\n      </view>\n    </scroll-view>\n\n    <!-- Refresh button -->\n    <button bindtap=\"scanWifi\">Refresh Wi-Fi List</button>\n\n     <!-- Return to Wi-Fi configuration -->\n     <button bindtap=\"navigateToWificonfig\">Return to Wi-Fi Configuration</button>\n  </view>\n</view>   .container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100vh;\n    background-color: #f0f8f0;\n  }\n  \n  .background-image {\n    position: absolute;\n    top: 10rpx;\n    right: 0rpx;\n    width: 500rpx;\n    height: 500rpx;\n    background-color: transparent;\n    mix-blend-mode: multiply;\n  }\n  \n  .content {\n    width: 90%;\n    max-width: 600rpx;\n    background-color: rgba(255, 255, 255, 0.2);\n    padding: 40rpx;\n    border-radius: 20rpx;\n    box-shadow: 0 10rpx 30rpx rgba(0, 0, 0, 0.1);\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-top: 450rpx;\n  }\n  \n  .header {\n    text-align: center;\n    margin-bottom: 30rpx;\n  }\n  \n  .title {\n    font-size: 68rpx;\n    font-weight: bold;\n    color: #4CAF50;\n    margin-bottom: 10rpx;\n  }\n  \n  .subtitle {\n    font-size: 32rpx;\n    color: #81C784;\n  }\n  \n  .wifi-list {\n    width: 100%;\n    margin-top: 5rpx;\n  }\n  \n  .wifi-item {\n    padding: 10rpx;\n    border-bottom: 2rpx solid #ddd;\n    align-items: center; /* horizontal centering */\n    justify-content: center; /* vertical centering */\n    text-align: center; /* text centering */\n    margin-bottom: 20rpx; /* spacing with next item */\n  }\n  \n  .wifi-ssid {\n    font-size: 32rpx;\n    color: #333;\n    margin-bottom: 10rpx; /* spacing between SSID and signal strength */\n  }\n  \n  .wifi-signal {\n    font-size: 28rpx;\n    color: #666;\n  }\n\n    /* Login button */\n    button {\n        padding: 17px 20px;\n        border-radius: 50px;\n        cursor: pointer;\n        border: 0;\n        background-color: #8BC34A; /* base color: green */\n        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;\n        letter-spacing: 1.5px;\n        text-transform: uppercase;\n        font-size: 15px;\n        transition: all 0.5s ease;\n        margin-bottom: 20rpx; /* increased spacing between buttons */\n      }\n      \n      button:hover {\n        letter-spacing: 3px;\n        background-color: #689F38; /* hover color: dark green */\n        color: hsl(0, 0%, 100%); /* text color: white */\n        box-shadow: rgb(104 159 56 / 50%) 0px 7px 29px 0px; /* shadow color: dark green */\n      }\n      \n      button:active {\n        letter-spacing: 3px;\n        background-color: #33691E; /* click color: deeper green */\n        color: hsl(0, 0%, 100%); /* text color: white */\n        box-shadow: rgb(51 105 30 / 50%) 0px 0px 0px 0px; /* shadow color: deeper green */\n        transform: translateY(10px);\n        transition: 100ms;\n      }\n   Develop a WeChat Mini Program for a botanical garden, following this style to help me create a botanical garden interface",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Mini Program interface for the botanical garden completely implemented?",
+      "description": "Review whether the code implements a botanical garden interface following the style shown in the example code. Check if it includes necessary elements such as plant listings, garden maps, information displays, and relevant botanical garden features.Score 0 if the core botanical garden elements are missing, 5 if only basic elements are implemented, and 10 if a comprehensive botanical garden interface is created with proper categorization and display of plant information.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Wi-Fi connectivity functionality adapted for botanical garden usage?",
+      "description": "Evaluate whether the Wi-Fi connectivity features from the sample code are appropriately adapted to serve botanical garden visitors (such as connecting to garden hotspots, location-based plant information, or interactive garden tours).Deduct 5 points if the Wi-Fi functionality is merely copied without adaptation to botanical context. Deduct 3 points if the connection process lacks garden-specific features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are botanical garden specific features implemented?",
+      "description": "Check if the code includes features specific to a botanical garden experience: plant identification/catalog, tour scheduling, educational content, seasonal highlights, or event information.Deduct 5 points if fewer than three botanical-specific features are implemented. Deduct 3 points if features exist but lack depth or proper implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the navigation system intuitive for garden visitors?",
+      "description": "Assess whether the navigation system would help visitors effectively explore the garden with features like map integration, location markers, guided tours, search functionality, and path recommendations.Deduct 5 points if the navigation lacks spatial orientation features. Deduct 3 points if the user flow is confusing or requires more than 3 taps to reach key features. Give 10 points if navigation is intuitive and garden-oriented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing images, offline usage in garden areas with poor connectivity, location services failures, etc.) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance the botanical garden experience?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR plant identification 2. Seasonal bloom notifications 3. Interactive plant care guides 4. Community photo sharing of plants).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple map views with the same purpose) 2. Function modules unrelated to botanical gardens (e.g., unnecessary gaming elements) 3. Fancy effects that affect performance (e.g., heavy animations that would drain battery during garden visits).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating botanical data/view/location services layers), component reusability, and WeChat Mini Program best practices.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the Mini Program API usage is incorrect or outdated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional botanical garden design standards?",
+      "description": "Evaluate whether the design follows nature-inspired design principles: 1) Natural color palette (greens, earth tones, with subtle accent colors) 2) Proper spacing that creates visual breathing room 3) Typography that prioritizes readability outdoors (minimum 16px font size, high contrast). Check if plant imagery is high quality and accurately displayed.Deduct 3 points for each cluttered visual element, 5 points for unnatural color combinations, and 5 points for poor image quality of plant specimens. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction suitable for outdoor garden usage?",
+      "description": "Judge whether the app is designed for real-world garden use: 1) Large touch targets for outdoor usage (≥ 44px) 2) High contrast display readable in sunlight 3) Battery-efficient interactions 4) Offline functionality for areas with poor connectivity.Deduct 5 points for interactions that would be difficult in outdoor settings, 3 points for battery-intensive features without warnings, and 5 points for features that absolutely require connectivity without alternatives. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

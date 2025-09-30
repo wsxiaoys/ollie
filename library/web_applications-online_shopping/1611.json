@@ -1,0 +1,68 @@
+{
+  "index": 1611,
+  "question": "You are a coding expert. Please use your professional knowledge to provide accurate and expert responses. Make sure the code you generate is executable for demonstration. Create an HTML page that mimics the Taobao order list page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic structure of the Taobao order list page implemented?",
+      "description": "Examine whether the code includes all essential components of a Taobao order list: header with logo and search functionality, navigation menu, order filtering options, order items with product images/details/prices, pagination controls, and footer. Score 0 if missing more than half of these elements, 5 if missing 1-2 key components, and 10 for complete implementation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are order items accurately represented with all necessary information?",
+      "description": "Check if each order item displays: order number, order date, store name with icon, product thumbnails, product titles, SKU attributes (size, color), price, quantity, payment status, order status (awaiting payment/shipping/delivered), and action buttons (pay/confirm receipt/review). Deduct 1 point for each missing element, with a maximum deduction of 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the order filtering and search functionality implemented?",
+      "description": "Verify implementation of Taobao's typical filtering tabs (All Orders, To Be Paid, To Be Shipped, To Be Received, etc.), date range selectors, and keyword search for orders. Test if filters update the displayed orders appropriately. Score 0 if no filtering exists, 5 if only tab filtering works, 10 if all filtering options are functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the interactive elements and state transitions properly implemented?",
+      "description": "Evaluate if order status transitions are handled (e.g., moving from 'To Be Paid' to 'To Be Shipped' after payment), action button state changes, and hover effects on interactive elements. Check for confirmation dialogs on critical actions. Deduct 3 points if status transitions are missing, 3 points if button states don't update, and 4 points if hover effects or confirmations are absent.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty order lists, long product names, missing images, various screen sizes, etc.) and provide friendly error messages or fallbacks. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Order status progress visualization 2. Batch operations for multiple orders 3. Quick reorder functionality 4. Animated transitions between states). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to filter orders) 2. Function modules unrelated to an order list (e.g., product recommendation carousel) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code reusability for list items, and appropriate event handling. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if event listeners are not properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards and match Taobao's style?",
+      "description": "Evaluate whether the design follows Taobao's characteristic orange and white color scheme, typography, and layout patterns. Check for: 1) Proper color usage matching Taobao's brand 2) Consistent spacing and alignment 3) Typography hierarchy matching Taobao's style. Deduct 3 points for each significant visual deviation from Taobao's style, 5 points for inappropriate color schemes, and 5 points for inconsistent layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

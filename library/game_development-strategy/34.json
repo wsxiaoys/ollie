@@ -1,0 +1,68 @@
+{
+  "index": 34,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration.\nPlease implement a HTML and JavaScript \n### Game Rules\n1. **Choose Mode**: Player can choose to play as black or white against the system.\n2. **Piece Movement**: Following international chess rules, players take turns moving pieces, including pawns, rooks, knights, bishops, queen, and king.\n3. **End Game**: Win the game by checkmate or opponent's surrender.\n\n### Game Features\n- **Single Player**: Players can play a single-player game against the system, which will respond accordingly to the player's moves.\n- **Interactive Teaching**: Players can click on pieces to see possible moves, helping beginners understand piece movements and strategies.\n\n### Game Tips\n- **Opening Layout**: Learn and apply classic opening layouts to establish a good foundation for the middle and end game.\n- **Middle Game Strategy**: Improve overall understanding of the game, especially how to use different piece combinations to create threats.\n- **Endgame Skills**: Master movements with fewer pieces, particularly how to effectively use the king and queen in the final phase.\n\n### Summary\n'Cheap AI Chess' is a chess game suitable for beginners and those looking to improve. Through its simple interface and friendly interactive design, it allows players to easily learn and enjoy the fun of chess.\ngame, and add some comments to the code so that other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the chess game implementation complete?",
+      "description": "Review whether the code accurately implements the chessboard with all chess pieces (pawns, rooks, knights, bishops, queen, and king) using HTML/JavaScript, and whether it includes proper validation of legal moves according to international chess rules. Check for special moves like castling, en passant, and pawn promotion. Score 0 if the core game logic is missing, 5 if only basic movement is implemented, and 10 if all standard chess rules are correctly implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the AI opponent properly implemented?",
+      "description": "Evaluate the AI implementation - does it make valid moves and respond to the player's strategies? Check for different difficulty levels if implemented. A basic implementation that makes random legal moves scores 5 points. An AI that shows some strategic thinking scores 8 points. A well-implemented AI with opening book knowledge, tactical awareness, and endgame skills scores 10 points. Score 0 if the AI is not functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the mode selection (playing as black or white) implemented?",
+      "description": "Verify that players can choose to play as either black or white pieces, with the AI taking the opposite role. The selection should be clearly presented in the UI, and the game should properly initialize based on the player's choice. Score 0 if the feature is missing, 5 if partially implemented with issues, and 10 if fully functional with proper game state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the interactive teaching feature implemented?",
+      "description": "Check whether clicking on pieces shows possible legal moves. The highlighting should be clear and accurate according to chess rules, including consideration of checks, pins, and other restrictions. Score 0 if the feature is missing, 5 if it shows basic moves without considering all rules, and 10 if it accurately displays all possible legal moves with visual cues that are easy to understand.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, attempting to move opponent's pieces, moves that would leave the king in check, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move analysis/suggestions 2. Game history recording and playback 3. Opening book references 4. Visual representation of piece threats/protections). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to validate moves) 2. Function modules unrelated to the chess game requirements (e.g., unnecessary animations or unrelated features) 3. Fancy effects that affect performance (e.g., excessive graphical effects that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/controller layers), code commenting as requested, and organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if code comments are insufficient or unclear. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional representation of the chessboard and pieces (clear distinction between pieces, proper sizing). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Move feedback delay ≤ 100ms 2) Piece movement animations if implemented are smooth and not distracting 3) Clear visual indication of whose turn it is and game state (check, checkmate). Deduct 5 points for each operation without feedback, 3 points for jerky animations, and 5 points for unclear game state indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

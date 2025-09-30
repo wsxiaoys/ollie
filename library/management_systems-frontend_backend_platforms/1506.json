@@ -1,0 +1,68 @@
+{
+  "index": 1506,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration. Help me write a shared bicycle management system, including the process and code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the bicycle management core system fully implemented?",
+      "description": "Review whether the code accurately implements bicycle inventory management, user registration/authentication, rental/return processes, and billing calculations through a complete tech stack. Must include bicycle status tracking (available/rented/maintenance), location-based search, and real-time availability updates. Score 0 if core CRUD operations are missing, 5 if only basic rental logic is implemented, and 10 if all management workflows including pricing tiers and damage reporting are fully functional.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time location tracking and map integration implemented?",
+      "description": "Check whether the system integrates mapping services (Google Maps/OpenStreetMap) with real-time GPS tracking, geofencing for parking zones, and proximity-based bicycle search. Must include live location updates, route planning, and parking zone validation. Deduct 5 points if GPS accuracy is below 10 meters, and 3 points if map rendering performance is poor (>2s load time). Full score requires seamless map interaction with clustering for dense areas.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the payment and billing system properly designed with transaction security?",
+      "description": "Evaluate whether the payment integration includes secure payment gateways, transaction logging, refund mechanisms, and multi-tier pricing (hourly/daily/monthly passes). Must implement proper encryption for payment data and transaction rollback capabilities. Deduct 5 points if payment security standards (PCI DSS) are not followed, 3 points if transaction history is incomplete. Requires proper handling of failed payments and automatic billing suspension.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the administrative dashboard and analytics system comprehensive?",
+      "description": "Check whether the code includes a complete admin panel with bicycle fleet monitoring, usage analytics, maintenance scheduling, and user management. Must provide real-time KPI dashboards, revenue reports, and predictive maintenance alerts. Deduct 5 points if data visualization is missing, 3 points if export functionality is absent. Give 10 points if advanced analytics like demand forecasting and optimal bike distribution algorithms are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network timeouts, GPS signal loss, payment failures, concurrent rentals of the same bike, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should include proper error boundaries, graceful degradation, and data consistency checks, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance user experience (e.g., 1. AI-powered bike maintenance prediction 2. Gamification with riding challenges and rewards 3. Carbon footprint tracking 4. Social features like group rides 5. AR for bike finding). Add 3 points for each practical innovative feature implemented (maximum 10 points). Features must be functional, not just UI mockups.",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple payment processing logics) 2. Function modules unrelated to bicycle management (e.g., built-in social media feed) 3. Performance-heavy effects that slow down core operations (e.g., complex 3D bike models). Deduct 3 points for each redundancy found, and directly deduct 10 points if core bike rental functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular architecture (separation of API/business logic/UI layers), database design normalization, API documentation, and deployment scripts. Deduct 5 points if database relationships are poorly designed or no indexing strategy exists; deduct 5 points if API endpoints lack proper validation and documentation; deduct 5 points if no environment configuration management. Full score requires clean architecture patterns and automated testing.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Consistent color scheme with proper contrast ratios (WCAG AA compliant) 2) Intuitive navigation with clear information hierarchy 3) Mobile-responsive design with touch-friendly controls (minimum 44px touch targets) 4) Professional typography with readable font sizes. Deduct 3 points for each accessibility violation, 5 points for poor mobile optimization, and 5 points for inconsistent UI patterns across pages.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the user interactions provide immediate feedback and smooth transitions: 1) Map interactions respond within 100ms 2) Form submissions show loading states 3) Real-time updates (bike availability) refresh smoothly without jarring changes 4) Touch gestures work intuitively on mobile. Deduct 5 points for each unresponsive interaction, 3 points for janky animations or slow map panning, and 5 points if critical actions lack visual feedback or confirmation dialogs.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

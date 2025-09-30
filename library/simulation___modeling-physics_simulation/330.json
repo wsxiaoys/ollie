@@ -1,0 +1,68 @@
+{
+  "index": 330,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable for display. Use JavaScript and HTML5 canvas to draw Lichtenberg figures.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Lichtenberg figure generation algorithm correctly implemented?",
+      "description": "Examine whether the code implements a proper dielectric breakdown model (DBM) or similar fractal algorithm for Lichtenberg figures, with appropriate randomization and branching probabilities. Verify that the algorithm follows physical principles like path of least resistance, proper bifurcation patterns, and gradual branch thinning. Score 0 if no fractal algorithm is implemented, 5 if basic branching exists but lacks physical accuracy, 10 if the algorithm produces realistic lightning-like patterns with proper physics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Canvas API properly utilized for rendering?",
+      "description": "Check if the code correctly initializes the HTML5 Canvas context, sets appropriate dimensions, and uses proper drawing methods (like lineTo, moveTo, stroke) efficiently. Verify proper use of canvas transformations if needed, and assess if the implementation avoids unnecessary redrawing. Deduct 5 points if canvas operations are inefficient, 3 points if resolution/scaling issues exist, and 2 points if canvas clearing/state management is improper. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there effective parameter control for the visualization?",
+      "description": "Evaluate whether the code allows for controlling key parameters of Lichtenberg figures, such as branching probability, segment length, angles, color gradients, and growth speed. Check if at least 5 parameters can be adjusted via UI controls (sliders, inputs, etc.). Score 0 if no parameters are customizable, 5 if only basic parameters exist, 10 if comprehensive controls with real-time updates are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the animation/growth process smooth and visually appealing?",
+      "description": "Assess if the Lichtenberg figure grows organically over time with smooth animation rather than appearing instantly. Check if requestAnimationFrame is used for rendering, growth speed is controllable, and the animation maintains consistent FPS (ideally 60fps). Deduct 5 points if the animation is choppy or inconsistent, 3 points if growth appears unnatural, and 2 points if there's no visualization of the growth process. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resize, user input errors, performance degradation with complex figures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive figure manipulation by mouse/touch 2. Multiple color schemes or visual styles 3. Ability to save/export the generated figures). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple drawing routines that do the same thing) 2. Function modules unrelated to Lichtenberg figure generation (e.g., unnecessary UI elements) 3. Fancy effects that affect performance (e.g., excessive particle effects that slow down the main visualization). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating algorithm/rendering/UI layers), maintainability, and optimization for performance. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimizations are implemented for complex figures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for the UI (complementing the Lichtenberg figure colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Parameter adjustment reflects immediately in the visualization 3) Clear visual focus guidance for interactive elements. Deduct 5 points for each operation without feedback, 3 points for significant lag when adjusting parameters, and 5 points for controls that don't clearly indicate their function. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

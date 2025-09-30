@@ -1,0 +1,68 @@
+{
+  "index": 640,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the code you generate is executable for demonstration. Please develop an online dynamic sticker tool where users can upload images and add animated stickers (such as animated emojis, dynamic text effects, etc.) to their images. Users should be able to adjust the position, size, and animation effects of the stickers, preview the dynamic effects, and then download the processed image in GIF or video format.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image upload and processing system fully implemented?",
+      "description": "Review whether the code supports multiple image formats (JPEG, PNG, WebP) with proper file validation, size limits, and error handling. Check if image preview, canvas rendering, and memory management are properly implemented. Score 0 if basic upload is missing, 5 if only basic upload works without validation, and 10 if complete image processing pipeline with optimization is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the animated sticker library and management system complete?",
+      "description": "Evaluate whether the system includes a comprehensive sticker library with categorized animated emojis, dynamic text effects, and custom animation templates. Check if stickers support multiple formats (GIF, CSS animations, Canvas animations) and include proper loading states. Deduct 5 points if animation performance is poor (>16ms frame time), 3 points if sticker categories are limited (<10 types). Full score requires 20+ animated stickers with smooth performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the sticker manipulation controls precise and intuitive?",
+      "description": "Check whether users can accurately position, resize, rotate, and layer stickers with touch/mouse controls. Evaluate if the system includes snap-to-grid, multi-select, undo/redo, and transform handles. Require smooth drag-and-drop with visual feedback. Deduct 5 points if transformation controls are clunky or imprecise, 3 points if layering/z-index management is missing. Full score needs pixel-perfect control with gesture support.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the real-time preview and export functionality robust?",
+      "description": "Assess whether the system provides real-time preview of animated compositions with accurate timing and synchronization. Check if export supports multiple formats (GIF, MP4, WebM) with quality/size options and progress indicators. Deduct 5 points if preview doesn't match final export, 5 points if export quality is poor or fails frequently. Require frame-accurate preview and reliable multi-format export.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as oversized files, corrupted images, browser compatibility issues, memory limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like network failures during upload, canvas memory limits, and animation conflicts, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the creative experience (e.g., 1. AI-powered sticker suggestions based on image content 2. Collaborative editing with real-time sharing 3. Advanced animation timeline editor 4. Social sharing with custom templates 5. Voice-to-text animated captions). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation engines (e.g., multiple canvas renderers coexisting) 2. Function modules unrelated to sticker editing (e.g., built-in photo filters or games) 3. Performance-heavy effects that don't add value (e.g., excessive particle systems or 3D transforms). Deduct 3 points for each redundancy found, and directly deduct 10 points if core sticker functionality is compromised by bloated features.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating upload/canvas/animation/export modules), performance optimization for canvas operations, and proper asset management. Deduct 5 points if memory leaks are found in animation loops or canvas operations; deduct 5 points if code duplication rate is high (over 30%); deduct 5 points if no performance monitoring or optimization is implemented. Full score requires clean architecture with efficient rendering pipeline.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the creative tool interface follows modern design principles: 1) Intuitive toolbar layout with clear iconography 2) Consistent spacing and visual hierarchy (8px grid system) 3) Professional color scheme suitable for creative work 4) Proper typography with readable labels (≥14px). Deduct 3 points for each cluttered interface element, 5 points for poor contrast or accessibility issues, and 5 points for confusing navigation or tool organization. Full score requires polished, designer-friendly interface.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the creative workflow feels responsive and natural: 1) Sticker drag operations with <50ms latency 2) Animation preview at consistent 30+ FPS 3) Smooth zoom/pan controls for canvas navigation 4) Immediate visual feedback for all tool interactions. Deduct 5 points for each laggy interaction, 3 points for animation stuttering or frame drops, and 5 points for unresponsive touch/click areas. Full score requires fluid, professional-grade creative tool performance.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "hard"
+}

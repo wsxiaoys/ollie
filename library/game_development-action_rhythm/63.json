@@ -1,0 +1,68 @@
+{
+  "index": 63,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a Sound Reaction system.\n\n**Task**: Add a sound reaction mechanism to the game where players need to react to specific sound effects to avoid dangers or seize opportunities.\n\n**Hint**: You can play specific sound effects and set up events that require players to react quickly, such as avoiding traps or attacking enemies.\n\nPlease include comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Sound Loading and Management System",
+      "description": "Evaluate whether the code implements a comprehensive sound asset management system with preloading capabilities, format compatibility checks, and fallback mechanisms for unsupported formats.0 points if sound loading is not implemented, 5 points if basic audio loading exists but without error handling, 10 points for a complete system with preloading, multiple format support, and proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Sound-based Event Triggering",
+      "description": "Check if the code effectively connects sound events to gameplay mechanisms, including accurate sound detection timing windows and appropriate feedback when reactions are required.0 points if sound events don't connect to gameplay, 5 points if basic sound-to-action connections exist but timing windows are too rigid, 10 points for well-calibrated reaction timing with clear user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Player Reaction Input Mechanisms",
+      "description": "Evaluate the implementation of input detection for player reactions to sounds, including keyboard/mouse/touch controls with appropriate debouncing and accessibility options.0 points if reaction inputs aren't implemented, 5 points for basic input detection without accessibility features, 10 points for comprehensive input options with accessibility support and precise timing validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Audio-Visual Feedback System",
+      "description": "Review how the system provides visual cues that correspond to audio signals, ensuring players can identify required reactions even with sound-off or for hearing-impaired users.0 points if no visual accompaniment to audio cues exists, 5 points if basic visual indicators are present, 10 points for a complete synchronized audio-visual system with accessibility considerations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code handles common abnormal situations (such as browser audio API limitations, autoplay restrictions, audio device changes, etc.) and provides friendly error prompts or recovery mechanisms.0 points if no exceptions are handled, 5 points if some but not all key edge cases are addressed, 10 points for comprehensive error handling covering all major audio-related contingencies.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment based on reaction time, 2. Sound visualization for better accessibility, 3. Custom user sound uploads).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check three types of redundancy: 1. Duplicate audio handling logic, 2. Unnecessary audio processing that impacts performance, 3. Over-complex audio features that don't contribute to the core reaction mechanics.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Code Engineering Quality",
+      "description": "Review modular design (separate audio engine/game logic/UI), audio resource management patterns, and code organization principles.Deduct 5 points if global audio state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between audio logic and game mechanics. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Standards",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clear visual indicators for audio events, 2) Proper feedback animation for reactions, 3) Professional sound control UI (volume controls, mute options).Deduct 3 points for each unclear audio-related visual indicator, 5 points for confusing reaction feedback, and 5 points for missing essential audio controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Audio-Reaction Performance",
+      "description": "Judge the responsiveness and performance of the audio reaction system: 1) Audio-reaction latency ≤ 100ms, 2) Consistent frame rate during sound playback, 3) Efficient memory management for audio resources.Deduct 5 points for noticeable audio lag, 3 points for performance drops during intensive audio playback, and 5 points for memory leaks in audio handling. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

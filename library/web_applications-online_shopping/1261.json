@@ -1,0 +1,68 @@
+{
+  "index": 1261,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you provide is executable and demonstrable. Please design a homepage for a restaurant WeChat mini-program.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core mini-program structure properly implemented?",
+      "description": "Review whether the code accurately implements the basic structure of a WeChat mini-program with proper file organization (app.js, app.json, app.wxss, and page files). Check if page registration follows the standard mini-program pattern and if global configurations are correctly set. Score 0 if the basic structure is missing, 5 if only partial structure is implemented, and 10 if the complete mini-program architecture is properly configured.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the restaurant homepage include all essential UI components?",
+      "description": "Evaluate if the code includes all necessary restaurant homepage components: header with logo, food category navigation, featured dish carousel, promotion banners, restaurant information section (hours, location, contact), and a bottom navigation bar. Each missing essential component deducts 2 points. The implementation should follow WeChat mini-program standards using <view>, <image>, <text> and other native components correctly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the mini-program navigation system properly designed?",
+      "description": "Check whether the code implements a proper navigation system including tab bar configuration in app.json, internal page navigation using navigator components, and proper event handling for user interactions. Deduct 3 points if tab bar is missing, 3 points if page navigation functions are incomplete, and 4 points if the navigation doesn't follow WeChat mini-program best practices. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the code appropriately handle data binding and state management?",
+      "description": "Assess whether the implementation uses WeChat mini-program's data binding features correctly (Page data object, setData method), includes proper lifecycle methods (onLoad, onShow), and implements clean state management for dynamic content like dish listings, promotions, or order status. Deduct 5 points for improper data binding, 3 points for missing essential lifecycle methods, and 2 points for inefficient state management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failure when loading restaurant data, image loading errors, unexpected user inputs, etc.) and provide friendly error prompts or fallback mechanisms. Code with strong robustness should include try-catch blocks, conditional rendering for loading states, and proper error handling. Give 10 points for comprehensive error handling, 5 points for basic handling, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the restaurant experience (e.g., 1. Animated dish recommendations 2. Integrated table reservation system 3. Interactive menu with ingredient highlighting 4. Loyalty points visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to access the same menu) 2. Function modules unrelated to restaurant experience (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review component reusability (such as creating custom components for menu items, section headers), proper file organization, consistent naming conventions, and appropriate commenting. Deduct 3 points if global variable pollution is found; deduct 3 points if the code duplication rate is too high (over 30%); deduct 4 points if the component structure is chaotic or non-existent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows WeChat mini-program design principles: 1) Consistent with WeChat visual language 2) Proper layout spacing (following the 8px rule) 3) Appropriate typography hierarchy (at least 3 text sizes for different content importance) 4) Restaurant branding integration. Deduct 3 points for cluttered layouts, 3 points for inconsistent styling, 2 points for poor typography, and 2 points for weak brand integration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile interaction optimized for restaurant scenarios?",
+      "description": "Judge whether the interactions are optimized for restaurant-specific user flows: 1) One-handed operation accessibility 2) Quick access to menu/ordering 3) Clear call-to-actions for reservations or delivery 4) Logical information hierarchy for decision making. Deduct 3 points for requiring two hands to operate key functions, 3 points for buried critical restaurant information, 2 points for confusing ordering process, and 2 points for poor touch target sizing (< 44px). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "easy"
+}

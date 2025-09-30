@@ -1,0 +1,68 @@
+{
+  "index": 1698,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and expert responses. Be sure to ensure that the code you generate is executable for demonstration. Please create in markdown a nested webpage with clickable expandable sections.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the nested webpage structure properly implemented?",
+      "description": "Review whether the HTML implements a clean nested structure with properly defined sections. Check if the code uses appropriate semantic HTML5 elements (like `<section>`, `<article>`, `<details>`, etc.) rather than just generic `<div>` tags. Score 0 if there's no nested structure, 5 if basic nesting is implemented but with poor semantics, and 10 if the structure is both semantic and properly organized.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the expandable sections fully functional?",
+      "description": "Evaluate the implementation of expandable/collapsible sections. Check if the implementation uses native HTML (`<details>` and `<summary>`) or JavaScript-driven toggles. Test if clicking works properly to expand/collapse content without page reloads. Full 10 points requires smooth transitions, proper state management (remembering open/closed states), and accessible controls. Deduct 5 points if implementation only works in certain browsers or has accessibility issues.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the markdown properly rendered to HTML?",
+      "description": "Check if Markdown syntax is correctly transformed into HTML elements. Verify that all Markdown features (headers, lists, code blocks, emphasis, links, etc.) render properly. Score 0 if Markdown isn't converted at all, 5 if basic conversion is done but with formatting errors, and 10 if all Markdown elements are rendered correctly including nested Markdown elements within expandable sections.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is proper event handling implemented for interactions?",
+      "description": "Analyze the JavaScript event handling for the clickable components. Check for event delegation rather than individual listeners, proper stopping of event propagation where needed, and performance considerations for nested elements. Deduct 4 points if events cause unnecessary re-renders, 3 points if there are memory leaks from unremoved listeners, and 5 points if mobile touch events aren't properly supported. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles edge cases such as deeply nested content, special characters in content, browser compatibility issues, and potential script errors. Code with strong robustness should gracefully degrade in older browsers and handle content loading failures. Score 10 points for comprehensive error handling and fallbacks, 5 points for basic error handling, and 0 points if no error handling exists.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Smooth animations for expanding/collapsing, 2. Search functionality within nested content, 3. Breadcrumb navigation for deep nesting, 4. Keyboard shortcuts for navigation). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementations of the same functionality, 2. Unnecessary libraries for simple tasks (e.g., using full jQuery just for toggles), 3. Overly complex solutions for straightforward requirements. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functionality is obscured by unnecessary code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review code organization (separation of HTML, CSS, and JavaScript), modularity, use of modern practices (like ES6+ features), and maintainability. Deduct 5 points for inline styles or scripts that should be separated; deduct 5 points for unmaintainable spaghetti code; deduct 5 points for lack of comments on complex functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows modern principles: 1) Consistent visual hierarchy for nested elements, 2) Proper indentation and visual cues for depth, 3) Clear indicators for expandable content, 4) Responsive design that works on different screen sizes. Deduct 3 points for inconsistent visual indicators, 5 points for poor readability at different nesting levels, and 5 points for designs that break on mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the interactions feel natural: 1) Expand/collapse animations under 300ms, 2) No layout shifts when toggling content, 3) Clear visual feedback for interactive elements, 4) Smooth scrolling to expanded content. Deduct 5 points for jarring animations, 3 points for layout jumps during interactions, and 5 points for latency over 200ms when responding to clicks. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

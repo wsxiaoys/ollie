@@ -1,0 +1,68 @@
+{
+  "index": 1044,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration. Create a code editing DEMO using arco-design and codemirror.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the code editor implementation complete?",
+      "description": "Check whether the CodeMirror integration with Arco Design is properly implemented. Verify if core editor functionality such as syntax highlighting, line numbers, and basic editing features are working. Score 0 if CodeMirror is not properly initialized, 5 if only basic functionality is included, and 10 if advanced features like code folding, search/replace, and auto-indentation are also implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is theme integration with Arco Design properly implemented?",
+      "description": "Evaluate if the CodeMirror editor is properly styled to match Arco Design's theme system. Check if the editor respects theme switching (light/dark mode) and uses consistent colors and styles from Arco Design. Deduct 5 points if the editor looks out of place within the Arco Design environment, and 3 points if theme switching is not synchronized between the UI and editor. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the toolbar/control panel functionality comprehensive?",
+      "description": "Assess whether the code editor includes a well-designed toolbar with essential coding operations (e.g., language selection, formatting, undo/redo). Check if the toolbar uses Arco Design components (Button, Select, etc.) correctly. Deduct 3 points for each missing essential functionality, and 5 points if the toolbar is not implemented at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is language support and syntax highlighting properly implemented?",
+      "description": "Check if the implementation supports multiple programming languages with proper syntax highlighting. The editor should support at least 3 common languages (e.g., JavaScript, HTML, CSS). Verify if language switching works correctly and if syntax highlighting updates accordingly. Deduct 3 points for each major language missing support, and 5 points if syntax highlighting fails. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input, large file loading, editor state corruption) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time code linting/error checking 2. Code snippets library 3. Split-view editing or preview functionality). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to perform the same operation) 2. Function modules unrelated to code editing (e.g., unrelated media players) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editor logic/UI components/state management), component reusability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper component composition principles are not followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows Arco Design principles: 1) Consistent use of Arco Design components without mixing other UI libraries 2) Proper layout spacing following Arco's spacing system 3) Professional typography adhering to Arco's font hierarchy. Deduct 3 points for each inconsistently styled component, 5 points for layout that breaks Arco grid system, and 5 points for typography that doesn't follow Arco guidelines. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Editor responsiveness with input lag ≤ 50ms 2) Smooth transitions between editor states/modes with duration controlled between 150-300ms 3) Clear visual feedback for actions. Deduct 5 points for perceptible input lag, 3 points for janky transitions, and 5 points for actions without visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "easy"
+}

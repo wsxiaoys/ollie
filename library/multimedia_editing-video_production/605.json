@@ -1,0 +1,68 @@
+{
+  "index": 605,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be demonstrated. Design an online video background removal tool where users can upload videos with green screens, which will automatically remove the background and replace it with user-selected images or videos. Support real-time preview of changes and allow users to download the processed videos.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the green screen background removal algorithm accurately implemented?",
+      "description": "Review whether the code implements precise chroma key algorithm using HTML5 Canvas/WebGL, including HSV color space conversion, edge feathering, and shadow handling. Check if it supports adjustable tolerance parameters and multiple green shade detection. Score 0 if core removal logic is missing, 5 if only basic color threshold removal is implemented, and 10 if advanced edge smoothing and color spill correction are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the video upload and processing pipeline robust?",
+      "description": "Evaluate whether the implementation includes chunked file upload, progress tracking, and format validation (MP4/WebM/MOV support). Check for memory management during large video processing and worker thread utilization to prevent UI blocking. Deduct 5 points if no progress indication, 3 points if browser crashes on large files. Full score requires seamless handling of videos up to 100MB.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is real-time preview functionality implemented with acceptable performance?",
+      "description": "Check whether the preview system uses efficient frame sampling (every 3-5 frames) and WebGL acceleration for real-time rendering. Evaluate if preview updates respond within 500ms of parameter changes. Deduct 5 points if preview lags exceed 1 second, 3 points if no frame rate optimization. Requires smooth 15+ FPS preview for videos under 1080p.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the background replacement system comprehensively designed?",
+      "description": "Verify whether the code supports multiple background types (static images, videos, solid colors) with proper scaling and positioning controls. Check for aspect ratio preservation, background loop handling for shorter clips, and blend mode options. Deduct 5 points if no background scaling options, 3 points if video backgrounds don't loop properly. Full score requires advanced compositing features.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, memory overflow, processing failures, corrupted uploads, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered edge refinement 2. Batch processing multiple videos 3. Custom mask drawing tools 4. Background blur effects 5. Motion tracking for moving subjects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video decoders coexisting) 2. Function modules unrelated to video processing (e.g., built-in social sharing widgets) 3. Fancy effects that affect performance (e.g., unnecessary particle systems during processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/UI/file handling layers), error handling coverage, and build process automation. Deduct 5 points if global state pollution is found or memory leaks occur; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper cleanup of video resources. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for video controls. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic control layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Parameter adjustment feedback delay ≤ 100ms 2) Smooth timeline scrubbing without stuttering 3) Clear loading states during processing 4) Intuitive drag-and-drop for file uploads. Deduct 5 points for each operation without feedback, 3 points for jerky video playback, and 5 points for confusing processing status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

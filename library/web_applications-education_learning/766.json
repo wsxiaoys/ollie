@@ -1,0 +1,68 @@
+{
+  "index": 766,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration purposes. Now, I want to create an exam paper grading interface that includes both automatic grading for objective questions and manual grading capabilities for subjective questions that teachers can use.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the automatic grading system for objective questions fully implemented?",
+      "description": "Review whether the code accurately implements automatic scoring algorithms for multiple choice, true/false, fill-in-the-blank, and matching questions. Check if it includes answer key comparison logic, partial credit calculation, and score aggregation mechanisms. Score 0 if basic auto-grading is not implemented, 5 if only simple multiple choice grading works, and 10 if all objective question types are handled with sophisticated scoring rules including partial credit and negative marking.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the manual grading interface for subjective questions professionally designed?",
+      "description": "Evaluate whether the manual grading interface provides efficient tools for teachers including: rubric-based scoring, annotation tools, comment systems, and score adjustment capabilities. Check for features like drag-and-drop scoring, keyboard shortcuts, and batch operations. Deduct 5 points if annotation tools are missing, 3 points if rubric integration is absent. Full score requires seamless teacher workflow optimization.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is comprehensive exam paper management and data persistence implemented?",
+      "description": "Check whether the system includes complete exam paper lifecycle management: paper creation/import, student response collection, grading progress tracking, and result export functionality. Evaluate data storage mechanisms, backup systems, and grade calculation accuracy. Deduct 5 points if progress cannot be saved mid-grading, 3 points if export formats are limited. Requires robust data integrity and recovery mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are advanced grading features and analytics provided?",
+      "description": "Assess whether the system includes sophisticated features like: statistical analysis (grade distribution, question difficulty analysis), plagiarism detection for text responses, grade normalization tools, and comparative grading interfaces. Check for features like anonymous grading, multiple grader support, and grade dispute resolution workflows. Full implementation of analytics dashboard and reporting tools required for maximum score.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input data, file upload failures, network interruptions, concurrent grading conflicts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the grading experience (e.g., 1. AI-assisted essay scoring suggestions 2. Voice-to-text annotation capabilities 3. Collaborative grading with real-time teacher coordination 4. Smart question flagging based on response patterns). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple score calculation methods coexisting) 2. Function modules unrelated to grading (e.g., built-in social media features) 3. Fancy effects that slow down grading workflow (e.g., excessive animations during score entry). Deduct 3 points for each redundancy found, and directly deduct 10 points if core grading functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating grading logic/UI components/data layers), unit test coverage for scoring algorithms, and build process automation. Deduct 5 points if global state pollution is found or MVC patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the grading interface follows modern educational software design principles: 1) Harmonious color scheme suitable for long grading sessions (no more than 3 primary colors, eye-friendly palette) 2) Proper layout spacing with clear question-answer separation 3) Professional typography (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for eye-straining color combinations, and 5 points for chaotic paper layout organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the grading workflow interaction smooth and seamless?",
+      "description": "Judge whether the grading interactions optimize teacher efficiency: 1) Score input feedback delay ≤ 100ms 2) Smooth transitions between questions (300-500ms) 3) Clear visual indicators for graded/ungraded items 4) Intuitive navigation between students and questions. Deduct 5 points for each operation without immediate feedback, 3 points for laggy scrolling through long responses, and 5 points for unclear grading progress indicators.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "hard"
+}

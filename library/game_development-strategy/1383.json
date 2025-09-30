@@ -1,0 +1,68 @@
+{
+  "index": 1383,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Please ensure that the code you generate is executable for demonstration. I only have Notepad on my computer, so please help me write a Hearts card game using Notepad.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Hearts card game core logic fully implemented?",
+      "description": "Review whether the code accurately implements Hearts game rules through HTML/JavaScript, including proper card dealing (13 cards per player), card passing mechanism (left/right/across/no pass rotation), trick-taking logic, and scoring system (hearts = 1 point, Queen of Spades = 13 points, shooting the moon = 26 points to others). Score 0 if core game mechanics are missing, 5 if only basic trick-taking is implemented, and 10 if all official Hearts rules are correctly included with proper score calculation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the AI opponent intelligence system properly designed?",
+      "description": "Check whether the AI players demonstrate realistic card play strategies including: basic card counting, avoiding dangerous leads, strategic passing decisions, and appropriate risk assessment for shooting the moon attempts. The AI should exhibit different difficulty levels and playing styles. Deduct 5 points if AI makes obviously poor decisions, and 3 points if AI behavior is too predictable or mechanical. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game state management and turn-based system implemented correctly?",
+      "description": "Evaluate whether the game properly manages turn sequences, validates legal plays (must follow suit if possible, no hearts/Queen of Spades on first trick unless hearts broken), tracks game progress across multiple hands, and maintains accurate score tracking until a player reaches 100 points. Deduct 5 points if turn validation is missing, and 3 points if game state becomes inconsistent during play. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete game flow and user interaction system constructed?",
+      "description": "Check whether the code includes complete game lifecycle management: game initialization, card passing phase UI, trick-playing interface, score display after each hand, and game-over conditions with final rankings. Must include intuitive card selection, play confirmation, and game restart functionality. Deduct 5 points if any major game phase is missing UI, and 3 points if user cannot easily understand current game state. Give 10 points if fully implemented with clear game progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid card selections, clicking during AI turns, rapid clicking, browser refresh, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Card play history with move analysis 2. Customizable AI difficulty and personality 3. Statistics tracking across multiple games 4. Hint system for beginners 5. Animated card movements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple scoring calculation methods coexisting) 2. Function modules unrelated to Hearts gameplay (e.g., built-in calculator or timer) 3. Fancy effects that affect performance (e.g., excessive particle animations or heavy graphics). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core game functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/UI rendering/AI strategy), code organization in a single HTML file, and clean function structure. Deduct 5 points if global state pollution is found or functions are poorly organized; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if code is not properly commented for Notepad editing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with proper card suit colors (no more than 4 primary colors) 2) Proper layout spacing with clear card arrangement (element spacing follows consistent principles) 3) Professional typography (readable font sizes ≥ 14px, clear score display). Deduct 3 points for each crowded visual element, 5 points for poor color contrast making cards hard to distinguish, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the card game interactions conform to user expectations: 1) Card selection feedback ≤ 100ms with clear visual indication 2) Smooth card play animations between 300-500ms 3) Clear visual focus on playable cards and current player turn 4) Intuitive hover effects and click states. Deduct 5 points for each operation without visual feedback, 3 points for confusing game state indicators, and 5 points for hard-to-identify selectable cards. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

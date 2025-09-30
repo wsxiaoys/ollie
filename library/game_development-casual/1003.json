@@ -1,0 +1,68 @@
+{
+  "index": 1003,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable for demonstration purposes. Write a WeChat Mini Program similar to Google's T-Rex running game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanism fully implemented?",
+      "description": "Review whether the code accurately implements the core T-Rex running game mechanics, including the main character's jump action, obstacle generation and movement, collision detection, score tracking, and game speed progression. Score 0 if the core gameplay is missing, 5 if only basic jumping and obstacles are implemented, and 10 if all features from the original T-Rex game (including ducking, night mode transitions, etc.) are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Mini Program structure correctly implemented?",
+      "description": "Check whether the code follows WeChat Mini Program specifications with proper file structure (app.js, app.json, app.wxss, pages structure), correct usage of WXML and WXSS instead of HTML/CSS, and appropriate implementation of the Mini Program lifecycle events. Deduct 5 points if the basic structure is incorrect, 3 points if lifecycle methods are misused, and 2 points if configuration files are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game canvas rendering optimized for Mini Program environment?",
+      "description": "Evaluate whether the game uses wx.createCanvas or wx.createContext appropriately, implements proper frame rate management (using wx.requestAnimationFrame instead of setInterval), and handles device pixel ratio for different screen resolutions. Check if memory usage is optimized through object pooling and proper garbage collection. Deduct 3 points for each performance anti-pattern. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are WeChat Mini Program specific features utilized?",
+      "description": "Check whether the code leverages Mini Program specific capabilities like touch events instead of keyboard inputs, vibration feedback on collision, cloud storage for high scores, and share functionality. Examine if the program handles app suspension and resumption correctly. Deduct 2 points for each missed opportunity to integrate WeChat-specific features. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as device rotation, Mini Program being switched to background, memory constraints, low battery mode, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. WeChat friend leaderboards 2. Character customization 3. Alternative game modes 4. Integration with WeChat user profile). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple jump mechanics coexisting) 2. Function modules unrelated to the game (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., complex animations that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view layers), proper component encapsulation, and adherence to Mini Program best practices. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the project structure is disorganized or inconsistent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles and Mini Program UI guidelines: 1) Harmonious color matching (maintaining the original game's minimalist style while fitting WeChat's aesthetic) 2) Proper layout for both horizontal and vertical orientations 3) Professional font system (readable text at various sizes). Deduct 3 points for each crowded visual element, 5 points for inconsistent styling, and 5 points for poor adaptation to different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the game controls and animations respond appropriately to touch inputs: 1) Jump response delay ≤ 50ms 2) Consistent frame rate without stuttering (ideally 60fps) 3) Clear visual feedback for all interactions. Deduct 5 points for input lag exceeding 100ms, 3 points for inconsistent frame rates, and 5 points for unclear collision feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

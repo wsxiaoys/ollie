@@ -1,0 +1,68 @@
+{
+  "index": 1820,
+  "question": "You are a code expert. Please use your specialized knowledge to generate accurate and professional responses. Ensure that the code you generate is executable for demonstration. This is downloaded student information, and now students need to verify the information. To ensure information security, please output a web page code with functionality that requires students to enter their student ID to view their own information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the student ID verification system properly implemented?",
+      "description": "Check if the code implements a secure verification mechanism that only allows students to access their own information after entering a valid student ID. Score 0 if there's no verification logic, 5 if basic verification exists but has security flaws, and 10 if the verification is robust with proper validation patterns and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the student information data structure well-designed?",
+      "description": "Evaluate whether the code includes a proper data structure for storing student information (e.g., array of objects, Map, or database connection). Check if it includes essential fields like name, ID, major, etc. Deduct 3 points if missing critical fields, 3 points if using inefficient data structures, and 5 points if no clear structure is defined. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the information display system implemented correctly?",
+      "description": "Verify that after successful ID verification, the system properly displays only the relevant student's information. Check if the display is organized, complete, and doesn't leak other students' data. Deduct 5 points if all student data is exposed in client-side code, 5 points if information display is incomplete, and 3 points if the display mechanism has glitches. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are security measures implemented to protect student data?",
+      "description": "Assess whether appropriate security measures are in place, such as input sanitization, prevention of client-side data exposure, protection against XSS attacks, and CSRF protection. Deduct 3 points for each missing essential security feature. Give 10 points only if comprehensive security measures are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid student IDs, empty input, special characters, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Two-factor authentication 2. Session timeout for security 3. Progressive information disclosure 4. Information edit functionality with validation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple verification methods coexisting) 2. Function modules unrelated to student information verification (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast interactions, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "easy"
+}

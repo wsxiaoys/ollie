@@ -1,0 +1,68 @@
+{
+  "index": 1112,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate can be executed properly. As a product manager, you need to create a page prototype for a short report overview. The page should present the following information: user overview, product overview, resource overview, key work order indicators, key business indicators, service activation order overview, service order overview, fault order overview and other key statistical information, SLA degradation events statistics, and inspection abnormal events statistics. Please expand appropriately based on each display content and provide an HTML page.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the dashboard structure comprehensive and well-organized?",
+      "description": "Evaluate whether the HTML structure provides all 10 required sections: user overview, product overview, resource overview, key work order indicators, key business indicators, service activation order overview, service order overview, fault order overview, SLA degradation events statistics, and inspection abnormal events statistics. Each section should have clear headers and be logically organized in the page layout. Score 0 if fewer than 7 sections are implemented, 5 if 7-9 sections are present but poorly organized, and 10 if all 10 sections are implemented with logical grouping and clear visual hierarchy.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the data visualization appropriate for each content type?",
+      "description": "Review whether the code implements appropriate chart types for different data: line charts for trends, bar charts for comparisons, pie/donut charts for proportions, tables for detailed data, cards for KPIs, etc. Each visualization should match its data type and purpose. Deduct 2 points for each major section using inappropriate visualization types. Score 0 if most visualizations are inappropriate, 5 if basic visualizations are used but not optimized for data types, and 10 if all visualizations are appropriate and enhance data comprehension.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the dashboard interactive and provides drill-down capabilities?",
+      "description": "Check whether the implementation includes interactive elements like filters, date range selectors, tooltips on hover, and drill-down capabilities for deeper analysis. Evaluate if the interactions enhance data exploration. Score 0 if no interactive elements are present, 5 if basic interactions (like tooltips) exist but lack meaningful drill-down capabilities, and 10 if comprehensive interactive features are implemented with proper state management for user selections.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the dashboard provide data loading, refresh mechanisms, and error handling?",
+      "description": "Evaluate whether the code implements proper data loading mechanisms (Ajax/Fetch), provides refresh capabilities (manual or automatic), displays loading states, and handles data loading errors gracefully. The implementation should include placeholders during loading and user-friendly error messages. Deduct 5 points if no loading states are shown, 3 points if error handling is missing, and 2 points if refresh functionality isn't implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty data sets, malformed data, browser compatibility issues, responsive layout breakpoints, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time data updates with visual transitions 2. Cross-section data correlation highlighting 3. Customizable dashboard layout with drag-and-drop). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualizations (e.g., multiple chart libraries used for similar charts) 2. Overcomplicated features unrelated to the dashboard purpose (e.g., unnecessary animations) 3. Heavy visual effects that affect performance (e.g., excessive transitions or 3D effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core dashboard functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/view/controller layers), code reusability for similar components, and build optimization. Deduct 5 points if global variables are excessively used or proper JavaScript patterns are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no performance optimization measures are implemented (like efficient DOM manipulation). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern dashboard design principles: 1) Harmonious color matching with a consistent color scheme 2) Proper layout spacing and grid system 3) Professional typography hierarchy (contrasting sizes for headers vs. data). Deduct 3 points for each inconsistent design element, 5 points for visually overwhelming information density, and 5 points for poor contrast that affects readability. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dashboard responsive and accessible?",
+      "description": "Judge whether the implementation works across different screen sizes and meets basic accessibility standards: 1) Responsive layout with appropriate breakpoints 2) Semantic HTML with proper ARIA attributes 3) Sufficient color contrast and keyboard navigation support. Deduct 5 points if the layout breaks on mobile or tablet views, 3 points for each major accessibility violation, and 5 points if screen readers cannot interpret the dashboard content properly. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1438,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Help me write a code for a Tonghuashun K-line chart where the rising limit/ceiling price is displayed as a yellow solid bar.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Does the K-line chart implementation include the basic candlestick visualization?",
+      "description": "Check if the code correctly implements the fundamental K-line chart with proper visualization of OHLC (Open, High, Low, Close) data using candlestick representation. Verify if candles correctly display rising (typically red/white) and falling (typically green/black) states. Score 0 if candlesticks are not implemented, 5 if basic implementation exists but with issues, 10 if properly implemented with clear visual distinction.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the rising limit/ceiling price functionality correctly implemented with yellow solid bars?",
+      "description": "Evaluate whether the code specifically identifies and visualizes rising limit/ceiling price conditions (typically 10% price increase in Chinese markets) with yellow solid bars as required. Check if the detection logic for limit-up conditions is accurate. Deduct 5 points if the yellow bars are present but implementation is incorrect, deduct 7 points if the concept is misunderstood. Give 0 points if the feature is completely missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation include proper data handling and processing?",
+      "description": "Review how the code processes financial data, including data cleaning, normalization, and handling of missing values. Check if the code can accommodate various data formats (CSV, JSON, API responses) and if it includes proper validation. Assess if time/date handling follows proper standards. Deduct 3 points for each major data handling issue, with a maximum deduction of 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the chart responsive and interactive?",
+      "description": "Check if the chart includes essential interactive features like zooming, panning, tooltips showing detailed information on hover, and crosshair functionality. Assess whether the chart resizes appropriately for different screen sizes. Deduct 2 points for each missing interactive feature and 4 points if responsiveness is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data input, network failures when fetching data, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Volume profile analysis 2. Technical indicators overlay options 3. Pattern recognition highlighting 4. Comparison with index or other stocks). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar visualization methods 2. Feature modules unrelated to financial charts (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive rendering operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating chart logic/view/data processing layers), component reusability, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between data processing and visualization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional financial chart standards?",
+      "description": "Evaluate whether the chart follows professional financial visualization principles: 1) Appropriate color scheme for financial data (standard industry colors) 2) Clean grid lines and axis labels 3) Professional typography with readable font sizes 4) Clear visual hierarchy between primary and secondary elements. Deduct 2.5 points for each visual element that doesn't meet industry standards. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the performance optimized for large datasets?",
+      "description": "Judge whether the implementation considers performance optimization for large financial datasets: 1) Data downsampling techniques for different zoom levels 2) Virtual rendering for off-screen elements 3) Efficient drawing methods (Canvas/WebGL vs. SVG for large datasets) 4) Throttling/debouncing for interactive events. Deduct 2.5 points for each missing optimization technique. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "medium"
+}

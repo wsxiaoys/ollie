@@ -1,0 +1,68 @@
+{
+  "index": 763,
+  "question": "You are a code expert, please utilize your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration purposes. Develop a real-time monitoring video page with Hikvision based on the PDF development documentation in conjunction with Vue.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Hikvision SDK integration correctly implemented?",
+      "description": "Review whether the code correctly integrates Hikvision Web SDK according to the official PDF documentation, including proper initialization of video plugins, camera connection establishment, and stream decoding capabilities. Check if the implementation handles different video formats (H.264/H.265) and supports multiple resolution options. Score 0 if SDK is not properly integrated, 5 if basic video display works but lacks format support, and 10 if all streaming protocols and formats are fully supported with proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the real-time video streaming functionality fully operational?",
+      "description": "Evaluate whether the real-time video streaming maintains stable connection with minimal latency (<500ms), includes proper buffer management to prevent video freezing, and implements automatic stream quality adjustment based on network conditions. Check if the system supports multiple concurrent video streams and handles stream switching seamlessly. Deduct 5 points if latency exceeds 1 second, deduct 3 points if buffer overflow occurs during network fluctuations. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Vue.js architecture properly designed with component modularity?",
+      "description": "Check whether the Vue.js implementation follows best practices with proper component separation (video player, control panel, device management), state management using Vuex/Pinia, and reactive data binding for real-time status updates. Evaluate if the component lifecycle methods properly handle video resource allocation and cleanup. Deduct 5 points if components are tightly coupled, deduct 3 points if memory leaks occur during component destruction. Award 10 points for clean modular architecture.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the monitoring control features comprehensively implemented?",
+      "description": "Assess whether essential monitoring controls are implemented including PTZ (Pan-Tilt-Zoom) operations, video recording start/stop, snapshot capture, playback functionality, and device status monitoring. Check if the interface provides intuitive controls for brightness/contrast adjustment and supports preset position management. Deduct 3 points for each missing core control feature, deduct 5 points if PTZ operations have noticeable delays. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network disconnection, device offline, authentication failures, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should implement automatic reconnection, graceful degradation, and clear error messaging, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the monitoring experience (e.g., 1. AI-powered motion detection alerts 2. Multi-screen video wall layout 3. Real-time video analytics overlay 4. Mobile-responsive touch controls 5. Video export with timestamp watermarks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video player instances for same stream) 2. Function modules unrelated to video monitoring (e.g., built-in chat system) 3. Heavy visual effects that impact video performance (e.g., complex CSS animations during streaming). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core video functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating video streaming/UI components/API layers), TypeScript usage for type safety, proper error boundaries, and build optimization for video streaming performance. Deduct 5 points if global state pollution is found or Vue composition API is not properly utilized; deduct 5 points if bundle size is not optimized for video streaming; deduct 5 points if no proper testing setup for video components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional monitoring system standards?",
+      "description": "Evaluate whether the design follows professional monitoring interface principles: 1) Dark theme optimized for long-term viewing 2) High contrast elements for critical controls 3) Proper video aspect ratio maintenance 4) Professional control panel layout with logical grouping. Deduct 3 points for each poorly positioned control element, 5 points for eye-straining color schemes inappropriate for monitoring, and 5 points for video distortion or improper scaling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the video controls and interactions meet professional monitoring standards: 1) PTZ control response time ≤ 200ms 2) Video switching without black screen flicker 3) Control panel overlay without interfering video viewing 4) Smooth zoom and pan operations without stuttering. Deduct 5 points for each laggy control response, 3 points for video artifacts during operation transitions, and 5 points for unresponsive touch/click areas in video player. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

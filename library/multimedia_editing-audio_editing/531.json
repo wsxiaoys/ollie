@@ -1,0 +1,68 @@
+{
+  "index": 531,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. ======== ROLE ========\nYou are an experienced code expert. I'm providing you with a software development requirement description, and you need to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand language comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You should always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot execute or contains errors, regenerate it\n4. If the requirements involve external API access or user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nDevelop a web-based audio sampler that supports loading multiple drum kit samples (Kick/Snare/HiHat). Implement a 16-step sequencer where each step can trigger different samples, with support for adjusting BPM and volume/pan for each sample.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio loading mechanism properly implemented?",
+      "description": "Check whether the code correctly implements audio sample loading using Web Audio API, supports multiple drum kit samples (at minimum Kick, Snare, and HiHat), and handles audio file loading states properly. Verify error handling for failed audio loads and format compatibility (mp3, wav, etc.).0 points if audio loading is missing, 5 points if only basic loading exists without error handling, 10 points if comprehensive with preloading optimization and proper error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the 16-step sequencer correctly implemented?",
+      "description": "Evaluate if the sequencer properly implements a 16-step grid interface where users can toggle steps for each drum sample. The sequencer should visually indicate the current playing step, support proper timing based on BPM, and maintain accurate playback timing using requestAnimationFrame or precise timers instead of setTimeout.0 points if the sequencer is missing/non-functional, 5 points for basic implementation with timing issues, 10 points for a robust implementation with sample-accurate timing and visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the BPM adjustment functionality implemented?",
+      "description": "Check if the code provides an interface to adjust tempo (BPM), whether it correctly calculates note timing based on BPM changes, and if it handles transitions between tempos smoothly without audio glitches. The implementation should support a reasonable range (e.g., 60-200 BPM).0 points if BPM control is missing, 5 points for basic implementation with calculation issues, 10 points for fully functional BPM control with smooth transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are volume and pan controls for each sample implemented?",
+      "description": "Verify if each drum sample has individual volume and pan controls that affect audio output in real-time. Check if the controls use appropriate Web Audio API nodes (GainNode for volume, StereoPannerNode for pan) and update parameter values smoothly without clicks or pops.0 points if controls are missing, 5 points if only basic implementation without smooth transitions, 10 points for complete implementation with visualization and smooth parameter changes.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as audio context suspension on mobile devices, browser autoplay restrictions, audio buffer errors, etc.) and provide friendly error prompts or recovery mechanisms. Check if there's a fallback mechanism when Web Audio API is not supported.0 points if no exception handling exists, 5 points if basic error handling is implemented, 10 points for comprehensive error handling with user-friendly recovery options.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Pattern saving/loading functionality 2. Sample replacement/customization 3. Audio effects like reverb/delay 4. MIDI export). Each practical innovative feature earns additional points.Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check for: 1. Redundant implementation of similar audio functions (e.g., multiple volume control mechanisms) 2. Function modules unrelated to audio sampling (e.g., unnecessary visual effects) 3. Performance-heavy features that affect audio timing (e.g., excessive animations during playback).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core audio functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio engine/UI/state management), appropriate use of design patterns, code reusability, and performance optimization for audio processing. Check if audio worklets or workers are used for performance-critical tasks where appropriate.Deduct 5 points if global state pollution is found; deduct 5 points if the code has high duplication; deduct 5 points if audio processing blocks the main thread unnecessarily. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern music application design principles: 1) Clear visual indication of steps and playback position 2) Proper contrast between active and inactive steps 3) Professional layout of controls with logical grouping. Check if the interface is intuitive for music production.Deduct 3 points for each confusing UI element, 5 points for poor readability of sequencer states, and 5 points for illogically placed controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the audio performance smooth and responsive?",
+      "description": "Judge whether the audio engine performs according to industry standards: 1) Audio latency ≤ 20ms 2) No audible clicks or pops during playback 3) Smooth timing even when UI is busy 4) Sample triggering is precisely timed according to musical grid. Check for buffer underruns or timing drift during extended playback.Deduct 5 points for audible latency issues, 3 points for occasional timing glitches, and 5 points for unstable playback under load. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 797,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when possible. Implement a customer service chat function using Thymeleaf, WebSocket, Spring Boot, MyBatis, and MySQL, with offline support functionality and complete front-end and back-end code. The customer service system should support one-to-many communications.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WebSocket implementation complete for real-time chat?",
+      "description": "Review whether the WebSocket communication is properly implemented with Spring's STOMP support, including connection establishment, message routing, and error handling. Check for proper endpoint configuration, message converters, and session management. Score 0 if WebSocket is not implemented, 5 if basic messaging works but lacks proper error handling or reconnection logic, and 10 if fully implemented with heartbeat mechanism and connection state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the offline support functionality properly implemented?",
+      "description": "Evaluate whether the system can handle offline scenarios by storing undelivered messages in the database and delivering them when users reconnect. Check if read receipts are implemented, and if the system can track message delivery status. Deduct 5 points if offline messages aren't persisted, 3 points if there's no visual indication of message delivery status, and 2 points if there's no mechanism to handle message order when delivering offline messages. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the one-to-many communication model properly designed?",
+      "description": "Check if the system allows customer service representatives to handle multiple customers simultaneously with proper UI for switching between conversations, conversation grouping, and prioritization. Verify if there's a queuing system for unattended customers. Deduct 5 points if there's no way to handle multiple conversations simultaneously, 3 points if there's no conversation prioritization, and 2 points if there's no visual indication of new messages in inactive conversations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the database design complete and properly implemented with MyBatis?",
+      "description": "Evaluate the database schema design for users, conversations, messages, and their relationships. Check if MyBatis mappers, XML configurations, and DTOs are properly implemented. Look for proper transaction management and connection pooling. Deduct 5 points if the schema design doesn't support the requirements, 3 points if there are no indexes on frequently queried columns, and 2 points if there's no pagination for message history. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as WebSocket disconnections, database connection failures, concurrent access issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered response suggestions 2. Sentiment analysis for customer messages 3. Automatic translation for multi-language support 4. File/image sharing with preview). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple message sending mechanisms) 2. Function modules unrelated to customer service chat (e.g., unnecessary social features) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating controller/service/repository layers), unit test coverage, and build process automation. Check if Spring Boot best practices are followed. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Thymeleaf templates and CSS follow modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Review if the chat interface is intuitive with clear visual hierarchy. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Message sending/receiving feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Check if new messages are appropriately highlighted and if there are typing indicators. Deduct 5 points for each operation without feedback, 3 points for jerky scrolling when loading message history, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 615,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Design an audio segmentation labeling tool where users can upload audio, add labels to different time segments, and export a file containing the time segment information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio upload and playback system fully implemented?",
+      "description": "Review whether the code accurately implements audio file upload functionality through HTML5 File API, supports multiple audio formats (MP3, WAV, OGG), and includes proper audio playback controls with accurate time tracking. Score 0 if basic audio handling is not implemented, 5 if only basic upload/play is working, and 10 if full audio manipulation with precise timeline control is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the time segment labeling functionality correctly implemented?",
+      "description": "Check whether the interface allows users to select time ranges on the audio timeline, create labels for segments, edit existing labels, and delete unwanted segments. The implementation should include visual feedback for segment selection and proper validation of time boundaries. Deduct 5 points if segment overlap handling is missing, and 3 points if label editing functionality is incomplete. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the timeline visualization and interaction design professional?",
+      "description": "Evaluate whether the audio timeline uses proper waveform visualization or time ruler display, allows precise time selection through mouse/touch interactions, and provides zoom in/out functionality for detailed editing. Visual indicators should clearly show current playback position, selected segments, and labeled regions. Deduct 5 points if waveform rendering is missing or poorly implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the export functionality complete with proper data structure?",
+      "description": "Check whether the code includes complete export functionality that generates files containing segment information (start time, end time, labels) in standard formats (JSON, CSV, or XML). The export should include metadata like audio filename, total duration, and creation timestamp. Deduct 5 points if data validation before export is missing, and 3 points if multiple export formats are not supported. Give 10 points if fully implemented with proper data integrity checks.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported audio formats, corrupted files, invalid time ranges, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automatic silence detection for segment suggestions 2. Keyboard shortcuts for efficient labeling 3. Real-time waveform analysis 4. Batch labeling operations 5. Audio speed adjustment for detailed review). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio loading mechanisms coexisting) 2. Function modules unrelated to audio labeling (e.g., built-in audio effects or filters) 3. Fancy effects that affect performance (e.g., complex 3D visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/UI/data export layers), error handling coverage, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper separation of concerns is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with clear visual hierarchy 2) Proper layout spacing with adequate whitespace 3) Professional typography with readable font sizes (≥ 14px) 4) Intuitive iconography for audio controls. Deduct 3 points for each crowded visual element, 5 points for poor contrast ratios affecting readability, and 5 points for inconsistent visual styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Audio playback response delay ≤ 100ms 2) Timeline scrubbing is smooth without audio glitches 3) Segment selection provides immediate visual feedback 4) Hover states and active states are clearly indicated. Deduct 5 points for each laggy interaction, 3 points for audio playback stuttering during timeline manipulation, and 5 points for unclear interactive elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 542,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for demonstration.\n\n======== ROLE ========\nYou are an experienced code expert. I am providing you with a software development requirement description. Based on these project requirements, please generate the project code. Strictly follow the rules to help users generate complete project code with simple, easy-to-understand language and thorough comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code; ensure the project is fully executable\n2. Make sure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot run or contains errors, regenerate it\n4. If the requirements include external API access or user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nDevelop a network diagnostic tool with: 1. Visual Ping route tracing 2. Bandwidth test progress circle 3. Result generation and report sharing 4. Historical record comparison feature 5. Abnormal node map location",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Visual Ping route tracing functionality fully implemented?",
+      "description": "Review whether the code accurately implements a visual ping route tracer with node-by-node path visualization, hop latency metrics, and packet loss indication. Check if the visualization includes an interactive traceroute map showing the network path with proper node representation and connection lines.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Bandwidth test progress circle properly implemented?",
+      "description": "Evaluate the implementation of the bandwidth test progress circle, checking for proper animation, accurate percentage representation, and real-time updating. The component should visually represent download/upload speeds with a circular progress indicator that fills as the test proceeds.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the Result generation and report sharing features complete?",
+      "description": "Check whether the code includes functionality to generate comprehensive diagnostic reports with timestamp, ISP information, and network metrics. Verify if sharing options (direct link, PDF export, social media integration) are implemented and functioning correctly.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Historical record comparison feature implemented effectively?",
+      "description": "Assess whether the code implements functionality to store, retrieve, and compare historical diagnostic results. Check if the comparative visualization effectively highlights differences between tests, showing performance trends over time.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common network diagnostic scenarios (intermittent connections, timeouts, packet loss) and provide helpful error messaging. Check for proper exception handling, retry mechanisms, and graceful degradation when services are unavailable.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the diagnostic experience (e.g., 1. Network health scoring system 2. Predictive performance alerts 3. ISP comparison in your area 4. Interactive topology visualization).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate network testing methods with overlapping results 2. Functionality unrelated to network diagnostics 3. Performance-intensive visualizations that slow down the core functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of network testing logic, data processing, and visualization layers), test coverage for core functions, and build process automation. Check for proper error handling specific to network operations.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the diagnostic tool's UI follows modern dashboard design principles: 1) Clean layout with proper information hierarchy 2) Consistent color scheme for status indicators (red for errors, yellow for warnings, green for normal) 3) Proper data visualization for network metrics with appropriate charts.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the diagnostic tool provides responsive feedback during network operations: 1) Real-time updates during ongoing tests 2) Smooth transitions between test phases 3) Clear progress indicators for long-running operations.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "hard"
+}

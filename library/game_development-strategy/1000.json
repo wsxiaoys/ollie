@@ -1,0 +1,68 @@
+{
+  "index": 1000,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable for demonstration. Please write me a code for a 3D checkers game that I can play with my desktop friends.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 3D checkers game board and piece visualization properly implemented?",
+      "description": "Review whether the code implements a true 3D representation of the checkers board and pieces using appropriate technologies (Three.js, WebGL, etc.). Check if the perspective allows clear view of all positions, pieces are distinguishable, and the 3D coordinate system is properly mapped to game logic. Score 0 if only 2D visualization, 5 if basic 3D with limited camera angles, and 10 if full 3D implementation with adjustable camera angles.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the checkers game rules correctly implemented?",
+      "description": "Evaluate whether the code implements all standard checkers rules: piece movement, capturing mechanics (including multiple jumps), king promotion, and win conditions. Check if the game properly validates legal moves and prevents illegal ones. Deduct 5 points if king movement rules are incorrect, 3 points if multiple jumps aren't enforced when available, and 5 points if win conditions are improperly detected.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the local multiplayer functionality properly implemented?",
+      "description": "Check whether the code includes proper turn management between players, clear indication of whose turn it is, and suitable mechanics for local play (such as board rotation between turns or clear player indicators). Deduct 5 points if the turn system is buggy, 3 points if there's no visual indication of current player, and 5 points if the game doesn't properly reset between matches.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the user interaction with the 3D environment intuitive and responsive?",
+      "description": "Assess whether the code implements intuitive selection and movement of pieces in 3D space. Check if there's highlighting of valid moves, clear feedback on selection, and smooth animation of moves. Deduct 5 points if piece selection is unreliable, 3 points if valid moves aren't highlighted, and 5 points if movement animations are jarring or missing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as out-of-bounds input, user operation errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Different visual themes for the board and pieces 2. Replay functionality with move history 3. Customizable piece animations or special effects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to select pieces) 2. Function modules unrelated to the checkers game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects or shader complexity). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/3D rendering/user input layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between rendering and game logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for the 3D environment and UI elements 2) Proper layout spacing for UI components 3) Clear distinction between game elements and controls. Deduct 3 points for each cluttered UI element, 5 points for poor contrast between board and pieces, and 5 points for inconsistent design language between 3D elements and UI. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the 3D performance optimized for desktop play?",
+      "description": "Judge whether the 3D implementation is optimized for desktop environments: 1) Maintains stable 60fps on mid-range hardware 2) Uses appropriate level of detail for models and textures 3) Implements proper culling and rendering optimizations. Deduct 5 points for noticeable frame drops during normal play, 3 points for excessive memory usage, and 5 points for lack of graphics options to accommodate different hardware capabilities. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

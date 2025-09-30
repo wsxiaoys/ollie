@@ -1,0 +1,68 @@
+{
+  "index": 1160,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration whenever possible. Provide a complete trading system component framework.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core trading functionality fully implemented?",
+      "description": "Review whether the code accurately implements essential trading operations (buy/sell orders, order types, order book management). Check if trade matching logic, price determination, and execution flow are correctly implemented. Score 0 if core trading logic is missing, 5 if basic order placement exists but lacks matching engine, and 10 if the system includes comprehensive order management with various order types (market, limit, stop, etc.).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the trading system architecture properly designed?",
+      "description": "Evaluate the overall system architecture, including separation of concerns, component interactions, and scalability considerations. Check if the design follows recognized patterns like event-driven architecture or microservices. Deduct 5 points if components are tightly coupled, 3 points if there's no clear separation between core trading logic and presentation layer, and 3 points if the design doesn't account for high throughput scenarios. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the risk management system implemented?",
+      "description": "Check for implementation of essential risk controls including position limits, exposure calculations, margin requirements, and circuit breakers. Deduct 3 points if there's no pre-trade risk validation, 3 points if margin calculation is missing, and 5 points if there are no circuit breakers or timeout mechanisms for extreme market conditions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are market data handling and order book visualization properly implemented?",
+      "description": "Assess the market data processing pipeline and order book visualization components. Check if the system can efficiently process market data updates, maintain an accurate order book, and present it visually. Deduct 5 points if real-time updates aren't supported, 3 points if depth visualization is missing or poorly implemented, and 3 points if there's no historical data view. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors, invalid orders, market data interruptions, etc.) and provide friendly error handling or recovery mechanisms. Check if edge cases like partial fills, order cancellations during matching, and race conditions are properly handled. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the trading experience (e.g., 1. Real-time portfolio performance analytics 2. Market sentiment indicators integration 3. Automated trading strategy builder with backtesting). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple order validation mechanisms) 2. Function modules unrelated to trading (e.g., built-in social media features) 3. Fancy visualizations that affect performance (e.g., unnecessary 3D charts). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating trading logic/market data/UI layers), test coverage for critical components, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional trading platform standards?",
+      "description": "Evaluate whether the design follows modern trading platform principles: 1) Professional color scheme (dark mode with accent colors) 2) Clean, information-dense layout with proper spacing 3) Clear visual hierarchy for important trading data. Deduct 3 points for cluttered trading screens, 5 points for poor data visualization choices, and 5 points for non-responsive layouts that waste screen space. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the trading interaction experience optimized?",
+      "description": "Judge whether the trading interactions conform to user expectations: 1) Order entry speed ≤ 100ms 2) Real-time updates without user-initiated refreshes 3) Clear confirmations for critical actions. Deduct 5 points for slow order entry, 3 points for laggy market data updates, and 5 points for confusing trade confirmation workflows. Check if keyboard shortcuts for power users are implemented. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

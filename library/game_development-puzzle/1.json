@@ -1,0 +1,68 @@
+{
+  "index": 1,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Gameplay\n- **Drag and Rotate**: Manipulate blocks to form paths that guide Cub to the destination.\n- **Solve Puzzles**: Each level is designed with specific challenges and obstacles.\n\n# Game Features\n- **Intuitive Controls**: Control the game through simple drag and click operations.\n- **Creative Design**: Each level has a unique layout and solution.\n\n# Game Tips\n- **Strategic Planning**: Plan your moves and rotations in advance to optimize the path.\n- **Observation and Adaptation**: Pay attention to the characteristics and challenges of new levels, and adjust your strategy accordingly.\n\n# Summary\n\"Cub n Pup - Puzzle Game Demo\" is a grid-based, connection-element strategy puzzle game. Players need to drag and rotate blocks to ensure the puppy (Cub) can reach the Star's position. This game fully utilizes creative thinking and strategic planning, providing a challenging and entertaining puzzle-solving experience.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core puzzle gameplay mechanic fully implemented?",
+      "description": "Review whether the code accurately implements the block manipulation system through HTML/JavaScript, including drag functionality, rotation mechanics, and path validation for the puppy's movement. Score 0 if the core interaction logic is not implemented, 5 if only basic dragging is implemented without rotation, and 10 if both dragging and rotation mechanics work seamlessly with proper collision detection.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the level navigation and progression system implemented?",
+      "description": "Check whether the game includes a proper level selection interface, progress tracking, level completion validation, and the ability to advance to subsequent levels. Deduct 5 points if there's no level progression system, 3 points if progression exists but without state persistence between sessions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the path-finding and goal validation mechanics properly implemented?",
+      "description": "Evaluate whether the code correctly implements path validation to check if Cub can reach the Star destination, including handling of obstacles and ensuring continuous path connections. Deduct 5 points if path validation is simplistic (only checking start/end points), and 3 points if the validation doesn't account for all possible edge cases. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the block manipulation system intuitive and responsive?",
+      "description": "Assess whether the block dragging and rotation controls feel natural and responsive, with proper visual feedback during interaction. Check for snap-to-grid functionality, rotation pivot points, and ghost previews of potential placements. Deduct 5 points if dragging feels laggy, and 3 points if rotation lacks clear visual guidance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking, dragging outside boundaries, browser resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual path previews when hovering blocks 2. Undo/redo functionality 3. Hint system for stuck players). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple dragging systems coexisting) 2. Function modules unrelated to the puzzle game (e.g., a built-in social media feed) 3. Fancy effects that affect performance (e.g., unnecessary particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional game design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching with consistent theme 2) Proper layout spacing with clear grid visualization 3) Professional UI elements with clear affordances. Deduct 3 points for each inconsistent visual element, 5 points for clashing colors, and 5 points for unclear or confusing game state representation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Block manipulation response delay ≤ 100ms 2) Path animation and level transitions between 300-500ms 3) Clear visual and audio feedback for successful/unsuccessful moves. Deduct 5 points for each operation without feedback, 3 points for jerky animations during block movement, and 5 points for confusing or missing feedback when reaching the goal. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "hard"
+}

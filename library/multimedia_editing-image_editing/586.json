@@ -1,0 +1,68 @@
+{
+  "index": 586,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration.\n\n======== ROLE ========\nYou are an experienced code expert. I am providing you with a software development requirement description and asking you to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments. Don't output anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code. Please ensure the project is fully executable\n2. Ensure all code files you output are complete, don't omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nWrite code to create a frontend project for batch image annotation. Users upload multiple images and can add text annotations to each image on the frontend interface. The annotation position can be customized. After completing the annotations, users can batch download the annotated images.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image upload functionality properly implemented?",
+      "description": "Evaluate whether the code provides a robust mechanism for selecting and uploading multiple images. Check if it handles various image formats (JPG, PNG, GIF, etc.), validates file types and sizes, and provides appropriate feedback during the upload process. The implementation should include drag-and-drop support and a traditional file browser option.0 points if image upload is not implemented; 5 points if basic upload is implemented but lacks validation or multi-file support; 10 points for complete implementation with proper validation, progress indicators, and error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image annotation feature fully functional?",
+      "description": "Check if the code allows users to add text annotations at custom positions on the images. Examine whether the annotation interface is intuitive, allows positioning via click or drag, and supports customization of text properties (font, size, color). Verify that annotations persist when switching between images and can be edited or deleted after creation.0 points if annotation functionality is missing; 5 points if basic text placement is implemented but lacks customization options; 10 points for a complete annotation system with positioning, styling options, and edit capabilities.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the batch processing capability implemented effectively?",
+      "description": "Assess whether the code supports efficient handling of multiple images. Check for a gallery or carousel view that allows users to navigate between uploaded images, maintain annotations separately for each image, and process all images as a batch when downloading. Look for optimization techniques that handle large numbers of images without performance degradation.0 points if only single image processing is supported; 5 points if batch viewing is implemented but lacks efficient navigation or separate annotation storage; 10 points for complete batch processing with optimization for large sets.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the batch download functionality properly implemented?",
+      "description": "Examine whether users can download all annotated images with a single action. Check if the code correctly merges annotations with original images, preserves image quality, and provides options for output format. Verify that the download process includes proper progress indication and handles potential errors gracefully.0 points if download functionality is missing; 5 points if download works but only for individual images or with quality loss; 10 points for complete batch download with preserved quality and format options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations such as browser compatibility issues, large file uploads, unsupported image formats, or memory constraints. Check for appropriate error handling, fallback mechanisms, and user-friendly error messages.0 points if no exception handling exists; 5 points if basic error catching is implemented but lacks recovery mechanisms; 10 points for comprehensive error handling with graceful degradation and helpful user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-adjustment of text color based on background brightness 2. Templates for common annotation patterns 3. Image enhancement tools 4. AI-assisted annotation positioning).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image processing libraries doing the same thing) 2. Function modules unrelated to image annotation (e.g., unnecessary social sharing features) 3. Fancy effects that affect performance (e.g., excessive animations that slow down the interface).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating annotation logic/image processing/UI components), code reusability, and appropriate use of design patterns. Check for proper state management, clean component hierarchy, and well-structured data flow.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation of concerns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check if the interface remains clean and focused on the primary task of image annotation.Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Responsive annotation placement with immediate visual feedback 2) Smooth transitions when switching between images 3) Intuitive drag-and-drop functionality for positioning annotations. Check if the interface remains responsive even when working with multiple high-resolution images.Deduct 5 points for each operation without feedback, 3 points for laggy performance during annotation placement, and 5 points for confusing navigation between images. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 506,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code can be executed as shown. ======== ROLE ========\nYou are an experienced code specialist. Given a software development requirement description, you are asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code that is fully commented with simple, easy-to-understand language, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. Always generate complete, runnable project code; ensure the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n======== PROJECT REQUIREMENTS ========\nPlease write code to implement a financial management system where finance personnel can enter income and expense items and generate financial reports; administrators can view all financial records and perform data analysis and statistics.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the financial data management system fully implemented?",
+      "description": "Review whether the code accurately implements income and expense entry functionality through HTML/JavaScript forms, including data validation, category classification, and amount calculation. Check if it supports multiple transaction types (income/expense), date selection, description fields, and category management. Score 0 if core financial entry logic is not implemented, 5 if only basic income/expense recording is available, and 10 if comprehensive financial transaction management with validation is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the financial report generation function implemented?",
+      "description": "Evaluate whether the system can generate comprehensive financial reports including income statements, expense summaries, and period-based analysis. Check for chart visualization (pie charts, bar charts, line graphs), export functionality (PDF/Excel), and customizable date ranges. Deduct 5 points if no visual charts are provided, and 3 points if export functionality is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the role-based access control and user management designed?",
+      "description": "Check whether the system implements proper role separation between finance personnel and administrators, with appropriate permission controls. Finance staff should only access entry and basic reports, while administrators can view all records and perform advanced analytics. Deduct 5 points if role authentication is missing, and 3 points if permission boundaries are not properly enforced. Verify login/logout functionality and session management. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data analysis and statistics module constructed?",
+      "description": "Evaluate whether the code includes comprehensive data analysis features such as trend analysis, category-wise spending patterns, monthly/yearly comparisons, and statistical summaries. Check for filtering capabilities, search functionality, and advanced analytics like budget vs actual comparisons. Deduct 5 points if only basic listing is provided without analysis, and 3 points if statistical calculations are inaccurate. Give 10 points if fully implemented with interactive analytics.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid financial amounts, date format errors, unauthorized access attempts, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the financial management experience (e.g., 1. Automated expense categorization using AI 2. Budget alerts and notifications 3. Receipt image upload and OCR processing 4. Financial goal tracking 5. Multi-currency support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple calculation logics coexisting) 2. Function modules unrelated to financial management (e.g., a built-in game or social features) 3. Fancy effects that affect performance (e.g., excessive animations on financial data). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core financial functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data layer/business logic/presentation layers), input validation, and code organization. Deduct 5 points if global state pollution is found or MVC patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no proper error handling or logging mechanisms exist. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the financial interface follows professional business application design: 1) Clean and trustworthy color scheme (preferably blues/grays for financial apps) 2) Proper data table layouts with clear headers and sorting 3) Professional typography (financial figures clearly readable, proper alignment). Deduct 3 points for each cluttered data presentation, 5 points for unprofessional color choices that reduce trust, and 5 points for poor number formatting or alignment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the financial data interaction smooth and intuitive?",
+      "description": "Judge whether the financial operations are user-friendly: 1) Form submission feedback ≤ 100ms 2) Data loading states and progress indicators 3) Intuitive navigation between different financial views 4) Clear visual feedback for successful transactions. Deduct 5 points for each operation without proper feedback, 3 points for slow data rendering that affects user experience, and 5 points for confusing navigation that makes financial tasks difficult to complete. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

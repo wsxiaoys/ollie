@@ -1,0 +1,68 @@
+{
+  "index": 372,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Based on the image content, write a similar HTML code that can upload images and analyze results.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the image upload functionality fully implemented?",
+      "description": "Check if the HTML/JavaScript code provides a complete image upload mechanism including: file input control, drag-and-drop support, preview functionality, and validation for file types (images only) and sizes. Score 0 if no upload functionality exists, 5 if only basic file input is implemented, and 10 if it includes multiple upload methods with proper validation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image analysis functionality implemented?",
+      "description": "Evaluate whether the code includes client-side or server-side image analysis capabilities such as basic properties extraction (dimensions, format, size) or more advanced features (object detection, color analysis, etc.). Deduct 5 points if only metadata display is implemented without actual analysis, and 3 points if the analysis lacks depth. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the result visualization properly implemented?",
+      "description": "Assess how the analysis results are presented to users - through text descriptions, charts, overlays on the image, or other visual methods. Check if the visualization is clear, informative and interactive. Deduct 5 points if results are only displayed as plain text, and 3 points if visualizations lack interactivity. Full score requires comprehensive and interactive visualizations.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there appropriate feedback during the upload and analysis process?",
+      "description": "Verify if the code implements loading indicators, progress bars, or other feedback mechanisms during file upload and processing. Check for proper error handling and user notifications. Deduct 5 points if there's no visual feedback during processing, and 3 points if error states are not properly communicated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid file uploads, failed analysis, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch processing multiple images 2. Comparison views between original and analyzed images 3. Exportable analysis reports). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image processing pipelines) 2. Function modules unrelated to image upload and analysis 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/processing/visualization logic), error handling patterns, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate feedback after upload action 2) Transition animation during analysis process 3) Clear visual indication of completed analysis. Deduct 5 points for each operation without feedback, 3 points for jarring transitions between states, and 5 points for confusing workflow that doesn't guide users. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

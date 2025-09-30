@@ -1,0 +1,68 @@
+{
+  "index": 1214,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable. I need a piece of code that can create a mind map. I have a PDF file called \"《Chinese Modern Literature: Thirty Years》Study Guide_11950065\". My requirement is to organize the key points, difficult areas, required reading lists, timeline events, authors and their works, as well as their literary significance mentioned in the file, and create a mind map from this information. Please generate a complete, runnable code for me.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the mind map core structure implementation complete?",
+      "description": "Review whether the code implements a tree data structure to support the hierarchical organization of mind map nodes and provides methods to add, delete, edit, and navigate these nodes. Check if the data model logically separates nodes, connections, and content. Score 0 if fundamental mind map structure is missing, 5 if a basic tree structure is implemented but lacks manipulation functions, and 10 if a robust hierarchical data structure with full CRUD operations is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the code provide PDF parsing and content extraction functionality?",
+      "description": "Examine whether the code includes reliable PDF parsing capabilities (e.g., using libraries like pdf.js, pdfminer, PyPDF2) that extract text content, identify headings/sections, and recognize structural elements from the '《Chinese Modern Literature: Thirty Years》Study Guide'. Deduct 5 points if only basic text extraction is implemented without structure recognition, deduct 3 points if the extraction fails to handle Chinese characters properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is there intelligent content categorization for Chinese literature elements?",
+      "description": "Assess whether the code contains algorithms or patterns to automatically identify and categorize key literary elements (key points, difficult areas, reading lists, timeline events, authors and works, literary significance) from the extracted text. Check for natural language processing techniques or rule-based systems to organize content. Score 0 if no categorization exists, 5 if basic keyword matching is used, and 10 if sophisticated content analysis with context awareness is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the visualization component effectively render the mind map?",
+      "description": "Evaluate the quality of the mind map rendering - check if it uses appropriate libraries (D3.js, GoJS, vis.js) or implements custom graphics rendering. The visualization should support zooming, panning, and proper hierarchical layout with Chinese text rendering. Deduct 5 points if the layout algorithm results in overlapping nodes, 3 points if zoom/pan controls are missing, and 5 points if Chinese characters display incorrectly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common error cases (invalid PDF format, parsing failures, empty sections, memory limitations with large files) and provides appropriate error messages or recovery mechanisms. Code with strong robustness should properly validate inputs, handle Unicode/Chinese characters correctly, and manage memory efficiently. Score 10 for comprehensive error handling, 5 for basic validation, and 0 if critical errors are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Auto-summarization of literary concepts 2. Integration with literature databases for additional context 3. Timeline visualization for historical literary events 4. Author relationship network visualization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant data processing pipelines (multiple text extraction methods without clear purpose) 2. Feature modules unrelated to literature mind mapping (e.g., built-in document editor) 3. Excessive visual effects that impact performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if core mind mapping functionality is compromised by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of PDF parsing, data processing, mind map visualization), code reusability, documentation quality, and development workflow integration. Deduct 5 points if global variables are overused or module boundaries are unclear; deduct 5 points if code duplication exceeds 30%; deduct 5 points if documentation is insufficient for complex functions. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the mind map design follows modern visualization principles: 1) Appropriate use of color to distinguish different categories of literature concepts 2) Clear hierarchical spacing between mind map levels 3) Legible typography for Chinese text (appropriate font choice, sufficient size). Deduct 3 points for visually cluttered node arrangements, 5 points for poor color contrast that affects readability, and 5 points for improper handling of long Chinese text. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the mind map interactions suit user expectations: 1) Responsive node expansion/collapse (≤100ms) 2) Smooth transitions when navigating between different levels (300-500ms) 3) Intuitive controls for reorganizing nodes. Deduct 5 points for laggy rendering with many nodes, 3 points for jarring transitions between mind map states, and 5 points for unintuitive node manipulation controls. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Mermaid Flowcharts-Mind Maps",
+  "difficulty": "medium"
+}

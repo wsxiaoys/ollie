@@ -1,0 +1,68 @@
+{
+  "index": 398,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you generate is executable. Write an HTML text-to-speech program that categorizes voices by language, with a rich variety of voice options. Include support for downloading audio, pausing and resuming playback, and provide a good user interface and interaction experience. Use responsive design to adapt to different screen sizes.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the text-to-speech core functionality fully implemented?",
+      "description": "Evaluate whether the code correctly implements the Web Speech API or a similar TTS library to convert text to speech. Check if the speech synthesis includes essential controls (start, pause, resume, stop) and proper error handling. Score 0 if speech synthesis is not implemented, 5 if only basic functionality exists without proper controls, and 10 if all core TTS features work correctly.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the solution categorize voices by language effectively?",
+      "description": "Check if the implementation organizes available voices by language/locale and displays them in a user-friendly way. Evaluate whether users can easily filter and select voices by language group. Deduct 5 points if languages are not categorized at all, 3 points if categorization exists but is difficult to navigate. Full score requires clear language grouping with proper localized display names.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is voice variety and selection implemented correctly?",
+      "description": "Review if the code properly retrieves all available system voices and provides sufficient details about each voice (name, language, gender if available). Check if the selection mechanism allows easy switching between voices with immediate feedback. Deduct 5 points if voice options are limited without technical reason, 3 points if voice details are insufficient for informed selection.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is audio download functionality properly implemented?",
+      "description": "Assess whether the code includes a working mechanism to download the synthesized speech as an audio file (typically MP3 or WAV). Check if it handles longer texts by providing progress indicators during conversion and if filenames are appropriate. Deduct 5 points if download sometimes fails on longer texts, 3 points if the download exists but without proper file naming or format options.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported voices, browser compatibility issues, network interruptions, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visualizing speech with waveforms 2. Speech rate/pitch adjustment sliders 3. Saving favorite voice settings 4. Text preprocessing for better pronunciation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing chains) 2. Function modules unrelated to text-to-speech (e.g., a built-in video player) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating TTS logic/UI components/audio processing), error handling coverage, and cross-browser compatibility. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if browser compatibility is not addressed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the responsive design properly implemented?",
+      "description": "Judge whether the interface adapts smoothly to different screen sizes: 1) Controls remain accessible and usable on mobile devices 2) No horizontal scrolling on standard screen sizes 3) Media queries properly handle breakpoints for desktop, tablet, and mobile. Deduct 5 points for each major responsive failure (e.g., unusable on mobile), 3 points for layout shifts during resize, and 3 points for touch targets smaller than 44px on mobile. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

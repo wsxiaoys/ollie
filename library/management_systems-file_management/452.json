@@ -1,0 +1,68 @@
+{
+  "index": 452,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Please design an image management system using Visual Studio C# that can store images from a folder into a SQL Server database table through a form interface, and also read images from the SQL Server table and display them one by one. How should this be implemented?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the database design and connection properly implemented?",
+      "description": "Review whether the code includes appropriate table schema with image data type (varbinary/image), proper connection string management, and parameterized queries to prevent SQL injection. Check if error handling for database connections is implemented. Score 0 if database connectivity is missing, 5 if basic connection exists but has security issues, 10 if fully implemented with transaction support and connection pooling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the image import functionality fully implemented?",
+      "description": "Evaluate whether the code allows browsing and selecting folder(s), handles multiple file formats (at least JPG, PNG, GIF, BMP), validates file sizes and types, shows progress during batch uploads, and properly converts images to binary data. Deduct 3 points if no file type validation exists, 3 points if progress indication is missing during large uploads, and 5 points if multi-file selection is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the image retrieval and display functionality properly implemented?",
+      "description": "Check whether the code efficiently loads images from the database, implements pagination or lazy loading for large collections, provides thumbnail generation, and properly handles image display with zoom/pan capabilities. Score 0 if image retrieval is not implemented, 5 if basic display exists but lacks optimization, and 10 if advanced features like caching and metadata display are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are image manipulation features available?",
+      "description": "Assess whether the application includes basic image manipulation features such as rotation, resizing, cropping, adding metadata, or applying simple filters before saving to the database. Each implemented feature counts for 2 points, with a maximum of 10 points. If no manipulation features are available, score 0.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as database connection failures, invalid image files, out-of-memory issues during large image processing, etc.) and provide friendly error prompts or recovery mechanisms. Check for exception handling, input validation, and graceful degradation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Image metadata extraction and searching 2. Facial recognition for organizing photos 3. Batch processing with customizable templates 4. Cloud backup integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image loading methods that do the same thing) 2. Function modules unrelated to image management (e.g., a built-in web browser) 3. Fancy effects that affect performance (e.g., unnecessary animations during database operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating database access/business logic/UI layers), naming conventions adherence, commenting quality, and error logging. Deduct 5 points if global variables are overused; deduct 3 points if the code lacks proper documentation; deduct 5 points if the code duplication rate is too high (over 30%). Check if the code follows C# best practices and design patterns. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional standards?",
+      "description": "Evaluate whether the UI follows Windows design guidelines: 1) Consistent control spacing and alignment 2) Proper form layout (logical grouping of controls) 3) Appropriate use of standard Windows controls vs. custom controls 4) Responsive design that handles window resizing. Deduct 3 points for misaligned controls, 3 points for confusing navigation, and 5 points for non-standard UI patterns that would confuse users. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the application performance optimized?",
+      "description": "Judge whether the application handles resources efficiently: 1) Proper memory management when dealing with large images 2) Database query optimization (indexing, paging) 3) Background processing for time-consuming operations 4) Resource disposal using IDisposable pattern. Deduct 3 points for memory leaks, 3 points for UI freezing during operations, 5 points for inefficient database queries loading entire image collections at once. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "medium"
+}

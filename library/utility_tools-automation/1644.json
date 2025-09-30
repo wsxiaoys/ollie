@@ -1,0 +1,68 @@
+{
+  "index": 1644,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code whenever possible. I'm asking this question because I want to transmit users' real-time voice recordings to an SDK that will automatically convert speech to text. For example, a user could open an English video and simultaneously open my application, so while watching English videos, they can get real-time text conversion. Then, I'll call a text translation API to convert the text into Chinese. Please give me detailed instructions on how to create this project using Electron and implement a real-time voice recording demo.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the voice recording functionality properly implemented?",
+      "description": "Check whether the code correctly implements access to the microphone using Electron's native APIs or Web APIs (getUserMedia), and whether it properly handles permission requests and denials. Evaluate whether the recording process includes proper audio sampling rate (minimum 16kHz for speech recognition), bit depth (minimum 16-bit), and format configuration. Score 0 if recording functionality is missing, 5 if basic recording is implemented but with configuration issues, and 10 if properly implemented with customizable audio parameters and resource cleanup.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is real-time audio streaming to the speech recognition SDK implemented correctly?",
+      "description": "Evaluate whether the code establishes proper streaming connections to a speech recognition SDK (like Google Speech-to-Text, Amazon Transcribe, or Mozilla DeepSpeech). Check if the audio data is properly chunked and streamed in real-time rather than processed after complete recording. Ensure the implementation handles rate limiting, reconnection, and authentication with the SDK. Score 0 if no streaming implementation exists, 5 if basic implementation but without proper error handling or optimization, and 10 if fully implemented with buffering strategies and connection management.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the speech-to-text conversion properly integrated and displayed?",
+      "description": "Review whether the transcribed text is displayed in real-time with appropriate UI updates. Check if interim results are handled differently from final results, and if the text display includes timestamps or speaker identification if available. Verify if the implementation addresses common STT challenges like handling speech disfluencies and punctuation. Deduct 5 points if there's significant display lag (>500ms), and 3 points if the text formatting is poor or unreadable. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the text translation API integration implemented effectively?",
+      "description": "Evaluate the integration with a translation API (like Google Translate, DeepL, or Microsoft Translator). Check if the code handles API rate limits, caching of frequent translations, and batching of text segments for efficiency. Assess whether the translation happens in near real-time and if the implementation includes fallback mechanisms when API calls fail. Deduct 5 points if translations have significant delays (>1s), and 3 points if no error handling exists for API failures. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as microphone disconnection, API rate limiting, network interruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Noise cancellation for better recognition 2. Multi-language support with automatic language detection 3. Exportable transcription history with timestamps 4. Voice activity detection to reduce API costs). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple audio processing libraries doing the same job) 2. Function modules unrelated to voice recording and translation (e.g., unnecessary media playback features) 3. Fancy effects that affect performance (e.g., complex visualizations that consume CPU). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating recording/recognition/translation/UI layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the application performance optimized?",
+      "description": "Judge whether the application is optimized for performance: 1) CPU usage remains under 15% during recording 2) Memory leaks are prevented with proper resource disposal 3) Electron's IPC communication is optimized to avoid blocking the main thread. Deduct 3 points if CPU spikes above 30% during normal operation, 5 points if memory usage grows consistently during usage, and 5 points if the UI freezes during intensive operations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Automation",
+  "difficulty": "medium"
+}

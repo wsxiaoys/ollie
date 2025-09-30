@@ -1,0 +1,68 @@
+{
+  "index": 1546,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable and demonstrable. Here's how technological changes affect future talent demands:\n\nTable 1: Talent Demand Change Table\nTechnological Direction | Key Areas | Talent Demand Growth Rate (2024-2030)\n---|---|---\nAI & Big Data | Smart Grid, Power System Optimization | 50%\nInternet of Things | Smart Grid, Home, Industrial Automation | 60%\nEnergy Storage Technology | Storage Equipment Design, Energy Management Systems | 70%\nNew Energy Technology | Solar, Wind Power, Microgrids | 90%\nElectrified Intelligent Transportation | New Energy Vehicles, Transportation Power Infrastructure | 80%\n\nPlease generate a chart that combines bar and line graphs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the chart correctly implemented with combined bar and line graphs?",
+      "description": "Evaluate whether the implementation properly combines bar and line charts in a single visualization to represent the technological data. The bars should represent one metric (e.g., key areas count) while the line should represent another (e.g., growth rate). Check if the correct HTML5 Canvas/SVG elements are used with proper rendering of both chart types. Score 0 if only one chart type is implemented, 5 if both are implemented but poorly integrated, and 10 if there's seamless integration with proper visual differentiation.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is all data from Table 1 accurately represented in the visualization?",
+      "description": "Verify that all five technological directions, their key areas, and corresponding growth rates (2024-2030) are accurately displayed in the chart. Check that the values match exactly with the provided table (AI & Big Data: 50%, IoT: 60%, etc.). Deduct 2 points for each missing or inaccurate data point. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the chart have proper axes, scales, and legends?",
+      "description": "Examine whether the chart includes clearly labeled x and y axes with appropriate scales, units (percentage for growth rate), and a legend that distinguishes between the bar and line elements. Verify that the scales are appropriate for the data range (0-100% for growth rates). Deduct 3 points for missing axes labels, 3 points for inappropriate scaling, and 4 points for missing or confusing legends. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the chart interactive with appropriate user experience features?",
+      "description": "Assess whether the chart includes interactive features such as tooltips showing precise values on hover, zoom/pan capabilities for detailed exploration, or clicking functionality to highlight specific technological areas. Check if transitions are smooth when interacting with the chart. Deduct 3 points for each missing essential interactive feature, and 5 points if there's no interactivity at all. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data, browser compatibility issues, screen size adaptation, etc.) and provide graceful fallbacks. Code with strong robustness should validate input data, implement error handling for rendering failures, and adapt responsively to different screen sizes. Give 10 points for comprehensive robustness, 5 points for average handling, and 0 points if no edge cases are considered.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the chart includes surprise features that enhance the experience (e.g., 1. Dynamic data updates with animations 2. Additional trend projections beyond 2030 3. Interactive filtering by technology category). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant visualization components showing the same data in multiple ways 2. Unnecessary decorative elements that don't add informational value 3. Excessive animations or effects that distract from data comprehension. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core visualization is obscured by redundant elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization rendering/interaction handlers), reusability of chart components, and maintainability. Deduct 5 points if global variable pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no separation between data and presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern data visualization principles: 1) Harmonious color palette that distinguishes between chart elements while maintaining cohesion 2) Proper spacing and alignment of chart components 3) Professional typography with readable labels and titles (font size ≥ 12px for charts). Deduct 3 points for each cluttered visual element, 5 points for poor color choices that hinder data interpretation, and 5 points for overlapping or unreadable text. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Chart rendering and data updates occur within 500ms 2) Transition animations duration controlled between 300-500ms 3) Clear visual feedback for interaction states. Deduct 5 points for noticeable lag when interacting with the chart, 3 points for jarring or stuttering animations, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1028,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the code you generate is executable. I want to develop a small game with the following design: 1. A horizontal line from left to right in the screen, serving as the ground; 2. The main character appears on the left side of the screen, on the ground; 3. The main character's position remains fixed, while enemies continuously appear from the right side of the screen on the ground; 4. When the screen is clicked, the main character can jump up to avoid enemies; 5. If the main character collides with an enemy, the game is over. I plan to develop this small game with Cursor. Please help me organize a plan and generate a complete solution document for Cursor development. You can ask me questions after understanding the above content, one question at a time, until the plan is complete.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the game scene setup properly implemented?",
+      "description": "Check if the code correctly implements a horizontal ground line, a fixed-position main character, and right-to-left enemy movement. All elements should be properly positioned and scaled relative to the canvas/viewport. Score 0 if any core element is missing, 5 if elements exist but with positioning issues, and 10 if all elements are properly implemented with appropriate scaling on different screen sizes.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the jump mechanism functional and responsive?",
+      "description": "Evaluate if the jump action is properly triggered by screen clicks/taps, with appropriate physics (gravity effect, proper arc trajectory). The jump should have natural acceleration and deceleration with proper timing (not too quick or too slow). Deduct 5 points if there's noticeable input lag (>100ms), 3 points if the jump physics feels unnatural, and 2 points if jump height is inconsistent or inappropriate for gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the enemy generation and movement system well-implemented?",
+      "description": "Review if enemies spawn with appropriate timing (increasing difficulty over time), move at consistent speeds, and display proper animation if applicable. Check if the enemy generation logic includes variety (different speeds, sizes, or types) for gameplay interest. Deduct 5 points if enemies spawn at fixed intervals without progression difficulty, 3 points if movement is jerky/inconsistent, and 5 points if there's no variety in enemy types or behaviors. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the collision detection accurate and reliable?",
+      "description": "Assess the collision detection algorithm between the character and enemies. It should be precise (not triggering on near misses), performance-optimized, and visually matched to the sprites (no invisible collisions). Deduct 5 points if hitboxes don't match visual elements, 5 points if collisions are inconsistently detected, and 3 points if there's noticeable performance impact from collision checks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input, window resizing, focus loss, browser back/forward navigation, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups or special abilities 2. Score multiplier system 3. Particle effects for jumps/collisions 4. Dynamic background elements). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple jump mechanics) 2. Function modules unrelated to the core gameplay (e.g., unnecessary mini-games within the main game) 3. Fancy effects that affect performance (e.g., excessive particles that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game mechanics, rendering, and input handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color matching with good contrast between characters, enemies and background 2) Proper visual hierarchy with clear differentiation between interactive and non-interactive elements 3) Professional font system for score display and game messages. Deduct 3 points for each cluttered visual element, 5 points for poor contrast that affects gameplay visibility, and 5 points for inconsistent art style. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game runs at consistent framerate (ideally 60fps), provides immediate feedback to player actions, and maintains smooth animations throughout gameplay. Deduct 5 points if the game stutters during normal gameplay, 5 points if there's noticeable input delay when jumping, and 3 points if enemy movement isn't smooth and consistent. Also check if the game provides clear visual and audio feedback for key events (jumps, collisions, game over). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

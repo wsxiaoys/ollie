@@ -1,0 +1,68 @@
+{
+  "index": 546,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Laboratory Instrument Calibration Management System\n\nYou are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration. Please write code to implement a laboratory instrument calibration management system for managing precision instruments that require regular calibration. The system needs to record each instrument's basic information (instrument number, name, model, accuracy class, etc.), calibration cycle, and historical calibration records (calibration date, calibration institution, calibration results, certificate number, etc.). The system needs to display the most recent calibration date and the next calibration due date, and automatically send reminder notifications before calibration expires. Laboratory personnel (username lab-user, password 123456) can view the calibration status of all instruments and submit calibration requests. The metrology supervisor (username metrology, password 123456) reviews applications, arranges calibration plans, registers calibration results, and uploads scanned calibration certificates. System administrators (username admin, password 123456) can add/edit instrument information, set calibration cycles and reminder times, and generate calibration statistical reports. The system should also support calibration cost management functionality to record and track calibration expenditures for various instruments.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the instrument management functionality fully implemented?",
+      "description": "Review whether the code implements a complete instrument database with all required fields (instrument number, name, model, accuracy class, etc.). Check if CRUD operations for instruments are properly implemented and secured. Score 0 if basic instrument management is missing, 5 if only basic fields are implemented, 10 if complete with advanced features like instrument categories, location tracking, and status indicators.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the calibration tracking system properly implemented?",
+      "description": "Evaluate whether the system correctly records calibration cycles, calculates next due dates, maintains complete historical records, and properly links calibration certificates. Score 0 if calibration tracking is absent, 5 if basic tracking exists but has calculation issues, and 10 if the system includes comprehensive history, accurate date calculations, and proper certificate management.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the reminder notification system functional?",
+      "description": "Check if the system includes an automatic notification mechanism triggered by approaching calibration due dates. Verify if it supports multiple notification methods (email, in-system alerts, etc.), customizable reminder periods, and escalation for overdue calibrations. Deduct 5 points if notifications are manual only, 3 points if only one notification channel is implemented. Full score for a robust, configurable notification system with confirmation tracking.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the role-based access control system properly implemented?",
+      "description": "Evaluate whether the three required roles (lab user, metrology supervisor, admin) are correctly implemented with appropriate permissions for each function. Check for secure authentication, proper session management, and access restrictions. Deduct 5 points if any role is missing core functionality, 5 points for security vulnerabilities in authentication. Full score requires complete permission management with audit trails for sensitive operations.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid date inputs, duplicate instrument numbers, certificate upload failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-based prediction of calibration drift 2. QR code generation for quick instrument information access 3. Dashboard with visual calibration status indicators). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple notification systems with overlapping functionality) 2. Function modules unrelated to calibration management (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., heavy animations on critical paths). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating database/business logic/view layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 709,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for demonstration. How can I use Xterm.js to implement a terminal for Vue and Gin projects—connecting to a remote server and controlling it? Please provide me with complete code (as fully functional as possible).",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Xterm.js integration with Vue.js correctly implemented?",
+      "description": "Check whether the Xterm.js terminal is properly initialized in a Vue component with essential options (cursorBlink, fontSize, theme configuration). Verify event handling setup for terminal input/output. Score 0 if terminal isn't functional, 5 if basic terminal display works but lacks essential options, and 10 if the terminal is fully configured with proper lifecycle management (mounted/destroyed hooks, resize handling).",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the WebSocket connection to the Gin backend properly implemented?",
+      "description": "Evaluate the WebSocket connection implementation between Vue frontend and Gin backend, including connection establishment, message handling, and error handling. Connection must include authentication mechanism and reconnection strategy. Deduct 5 points if authentication is missing, 3 points if reconnection strategy is incomplete, and 2 points if there's no connection status indicator. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Gin backend properly handling terminal sessions?",
+      "description": "Review the Gin backend implementation for terminal sessions, including session creation/management, command execution, and output streaming. Check for TTY allocation, proper environment variables setting, and signal handling (SIGINT, SIGTERM). Deduct 5 points if process management is incomplete, 3 points if session persistence isn't implemented, and 5 points if security measures are inadequate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SSH/remote terminal connection properly implemented?",
+      "description": "Assess the implementation of SSH/remote terminal connection, including authentication methods (password, key-based), session management, and terminal resizing capabilities. Verify proper handling of different shell environments and terminal types. Deduct 5 points if authentication options are limited, 3 points if terminal resize isn't handled, and 5 points if connection state management is missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (network disconnection, authentication failures, server errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like connection timeouts, unexpected terminal exits, and concurrent users, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Terminal session recording/playback 2. Split terminal functionality 3. Command history with search 4. Syntax highlighting for common commands 5. Auto-completion). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to connect to a server) 2. Function modules unrelated to terminal functionality (e.g., a built-in file manager when not needed) 3. Fancy effects that affect performance (e.g., excessive animations in the terminal UI). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating terminal logic/UI/network layers), clear component structure, code comments, and error handling. Deduct 5 points if global state management is misused; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no proper error logging system. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet professional terminal standards?",
+      "description": "Evaluate whether the terminal interface follows professional design principles: 1) Proper color scheme with good contrast 2) Monospace font with appropriate size and line height 3) Clear cursor visibility and blinking options 4) Responsive design that adapts to container size. Deduct 3 points for poor text readability, 5 points for a cluttered interface with unnecessary elements, and 5 points for non-responsive terminal dimensions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the terminal interaction smooth and responsive?",
+      "description": "Judge whether the terminal interaction conforms to expected behavior: 1) Input latency ≤ 100ms 2) Smooth scrolling without flickering 3) Proper handling of keyboard shortcuts and special keys (Ctrl+C, arrow keys, Tab). Deduct 5 points for noticeable input lag, 3 points for rendering issues during rapid output, and 5 points for incorrect handling of special keys or key combinations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "hard"
+}

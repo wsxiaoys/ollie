@@ -1,0 +1,68 @@
+{
+  "index": 453,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable. I need your help to write an HTML music player page. 1. It should be able to play 10 music tracks plus one interference audio. 2. After playing each music track, it will automatically play the interference audio once and then continue to the next music track, cycling through this pattern. 3. It also needs a pause button. When I press the pause button, the music won't stop immediately, but will pause after the current track finishes playing.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Music Player Core Functionality Implementation",
+      "description": "Evaluate whether the HTML/JavaScript code correctly implements the music player with 10 tracks and one interference audio. Check if the audio sources are properly defined and if the player initializes correctly.Score 0 if the player doesn't load any tracks, 5 if it loads but doesn't play properly, and 10 if all tracks are properly defined with appropriate metadata (artist, title, duration) and load correctly.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Automatic Play Sequence Logic",
+      "description": "Assess whether the code properly implements the required play sequence: a music track followed by the interference audio, then the next music track, in a continuous cycle.Deduct 5 points if the sequence logic is flawed (e.g., interference audio doesn't play after each track), deduct 3 points if the transition between tracks isn't smooth. Full score requires proper event listeners for the 'ended' event to trigger the correct sequence.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Deferred Pause Functionality",
+      "description": "Check if the pause button correctly implements the requirement to pause after the current track finishes playing rather than immediately.Deduct 10 points if pause occurs immediately. Deduct 5 points if the pause functionality works but doesn't resume from the correct position. The full score requires state management to remember the pause request and execute it only after the current track completes.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Playlist Management System",
+      "description": "Evaluate how well the code manages the playlist of 10 tracks plus the interference audio, including tracking the current position and handling the cycling behavior.Deduct 5 points if the playlist doesn't properly cycle back to the beginning after reaching the end. Deduct 3 points if the current track is not clearly indicated in the UI. Full score requires efficient playlist data structure with proper indexing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as audio loading failures, user rapid clicking, browser compatibility issues) and provide friendly error prompts or recovery mechanisms.Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visualizer for audio frequencies 2. Volume normalization between tracks and interference 3. Playlist reordering capabilities).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Redundant Features",
+      "description": "Strictly check three types of redundancy: 1. Redundant audio handling logic 2. Function modules unrelated to the music player (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive DOM manipulations during playback).Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular design (such as separating audio handling logic from UI components), code organization, and maintainability.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between audio handling and UI components. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Interface Design Quality",
+      "description": "Evaluate whether the music player interface follows modern design principles: 1) Intuitive controls with clear visual hierarchy 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional typography system (track titles clearly differentiated from artist names, timestamps in monospace font).Deduct 3 points for each confusing control element, 5 points for poor readability of track information, and 5 points for chaotic player layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Playback Experience Quality",
+      "description": "Judge whether the playback experience meets user expectations: 1) Visual indication of current playing track 2) Smooth transition between tracks and interference audio 3) Responsive controls with appropriate feedback.Deduct 5 points for missing visual indication of currently playing item, 3 points for audible gaps or pops between tracks, and 5 points for controls that don't provide visual feedback when activated. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Audio Player",
+  "difficulty": "hard"
+}

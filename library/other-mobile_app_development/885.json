@@ -1,0 +1,68 @@
+{
+  "index": 885,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Help me develop a React app that is compatible with both Android and iOS.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the React Native cross-platform framework properly implemented?",
+      "description": "Review whether the code correctly uses React Native components and APIs that are compatible with both Android and iOS platforms. Check if platform-specific code is properly separated using Platform.OS or platform-specific file extensions (.android.js, .ios.js). Score 0 if using web-only React components, 5 if basic cross-platform components are used but lacks platform optimization, and 10 if comprehensive platform-specific adaptations are implemented with proper fallback mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are native device features and permissions properly integrated?",
+      "description": "Evaluate whether the app correctly implements native device capabilities (camera, GPS, push notifications, file system access) with proper permission handling for both platforms. Check if the code includes runtime permission requests for Android 6+ and iOS privacy descriptions. Deduct 5 points if permissions are not properly requested, and 3 points if there's no graceful degradation when permissions are denied. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the navigation and routing system cross-platform compatible?",
+      "description": "Check whether the navigation implementation (React Navigation or similar) properly handles platform-specific navigation patterns - Android back button behavior, iOS swipe gestures, and platform-appropriate transitions. Evaluate if deep linking works on both platforms and if the navigation state is properly managed. Deduct 5 points if platform-specific navigation behaviors are not handled, and 3 points if deep linking is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the build and deployment pipeline configured for both platforms?",
+      "description": "Review whether the project includes proper build configurations for both Android (gradle files, signing configs) and iOS (Xcode project, provisioning profiles). Check if automated build scripts, environment-specific configurations, and continuous integration/deployment are set up. Deduct 5 points if build configurations are incomplete for either platform, and 5 points if no automated deployment pipeline exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, device orientation changes, app backgrounding/foregrounding, memory warnings, etc.) and provide friendly error boundaries or recovery mechanisms. Code with strong robustness should effectively handle these mobile-specific edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes impressive features that enhance the mobile experience (e.g., 1. Advanced gesture recognition 2. Offline-first data synchronization 3. Adaptive UI based on device capabilities 4. Integration with platform-specific features like Siri Shortcuts or Android Widgets). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant platform-specific implementations (e.g., duplicate navigation logic for iOS/Android) 2. Unnecessary third-party libraries that increase bundle size 3. Over-engineered animations that impact performance on lower-end devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core mobile functionality is interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular architecture (proper separation of business logic, UI components, and platform-specific code), TypeScript usage, testing setup (unit tests, integration tests, E2E tests), and code organization. Deduct 5 points if there's poor state management or missing type definitions; deduct 5 points if test coverage is below 70%; deduct 5 points if the project structure doesn't follow React Native best practices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet mobile platform standards?",
+      "description": "Evaluate whether the UI follows platform-specific design guidelines (Material Design for Android, Human Interface Guidelines for iOS): 1) Appropriate touch target sizes (minimum 44pt for iOS, 48dp for Android) 2) Platform-consistent navigation patterns and visual elements 3) Proper handling of different screen densities and safe areas. Deduct 3 points for each non-platform-compliant UI element, 5 points for poor touch accessibility, and 5 points for inconsistent visual hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile interaction smooth and performant?",
+      "description": "Judge whether the app performance meets mobile standards: 1) App startup time ≤ 3 seconds 2) 60fps scrolling and animations with no frame drops 3) Proper memory management without leaks 4) Responsive touch interactions with appropriate haptic feedback. Deduct 5 points for each performance bottleneck identified, 3 points for janky animations or slow transitions, and 5 points for poor touch responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Other-Mobile App Development",
+  "difficulty": "medium"
+}

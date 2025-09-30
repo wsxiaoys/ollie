@@ -1,0 +1,68 @@
+{
+  "index": 464,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. Design a video watermark tool that allows users to upload a video, drag and drop to select a watermark image, position the watermark on the video, set its display time, and finally generate and export the watermarked video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video upload and processing functionality fully implemented?",
+      "description": "Review whether the code supports multiple video formats (MP4, AVI, MOV, WebM) with proper format validation and file size limits. Check if video metadata extraction (duration, resolution, frame rate) is implemented correctly. Evaluate progress tracking during upload and proper error handling for corrupted files. Score 0 if basic upload is missing, 5 if only single format supported with basic validation, and 10 if comprehensive multi-format support with robust error handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the drag-and-drop watermark positioning system accurately implemented?",
+      "description": "Check whether the drag-and-drop interface provides real-time visual feedback with accurate coordinate mapping to video frames. Evaluate if the system includes snap-to-grid functionality, boundary constraints, and precise pixel-level positioning. Review if watermark scaling and rotation controls are implemented with proper aspect ratio maintenance. Deduct 5 points if drag boundaries are not enforced, 3 points if visual feedback is laggy (>50ms delay). Full score requires smooth real-time preview with sub-pixel accuracy.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the watermark timing and display control system properly designed?",
+      "description": "Evaluate whether the timeline interface allows precise start/end time selection with frame-accurate control. Check if the system supports multiple watermark layers with independent timing controls and z-index management. Review fade-in/fade-out effects implementation and keyframe-based animation support. Deduct 5 points if timing granularity exceeds 100ms, 3 points if timeline scrubbing is not smooth. Full score requires professional-grade timeline control with multi-layer support.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video export and rendering engine efficiently implemented?",
+      "description": "Check whether the rendering engine supports hardware acceleration (WebGL/WebAssembly) for efficient processing. Evaluate output quality options (resolution, bitrate, codec selection) and progress tracking during export. Review whether the system maintains original video quality while properly compositing watermarks. Deduct 5 points if export time exceeds 3x video duration for standard processing, 5 points if output quality degradation is noticeable. Full score requires optimized rendering with quality preservation.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, memory overflow during processing, network interruption during upload, invalid watermark images, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch watermarking for multiple videos 2. Animated watermarks with transparency effects 3. Template library with preset watermark styles 4. Real-time preview with playback controls). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload handlers coexisting) 2. Function modules unrelated to video watermarking (e.g., built-in video editing suite) 3. Fancy effects that affect processing performance (e.g., excessive real-time filters during preview). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core watermarking functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/UI/file handling layers), memory management for large video files, and proper cleanup of temporary resources. Deduct 5 points if memory leaks are found or Web Workers are not used for heavy processing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no progress indicators are implemented for long operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching with proper contrast ratios for video editing interface 2) Proper layout spacing with clear separation between video preview, controls, and timeline 3) Professional typography with readable labels and timestamps. Deduct 3 points for each crowded control panel, 5 points for poor video-to-UI contrast that affects usability, and 5 points for chaotic timeline or control layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to professional video editing standards: 1) Drag operations provide immediate visual feedback ≤ 16ms (60fps) 2) Video preview updates maintain smooth playback without stuttering 3) Timeline scrubbing responds instantly with frame-accurate seeking 4) Export progress updates smoothly without blocking UI. Deduct 5 points for each laggy interaction, 3 points for choppy video preview during watermark positioning, and 5 points for unresponsive controls during processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

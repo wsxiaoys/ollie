@@ -1,0 +1,68 @@
+{
+  "index": 618,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code is executable for demonstration.\n\n======== Role ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code according to this requirement. Strictly follow the rules to help users generate complete project code that is fully commented in simple and easy-to-understand language. Don't output anything else.\n\n======== Output Rules ========\n1. Always generate complete, runnable project code; please ensure the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, it needs to be regenerated\n4. If the requirements involve external API access or need to use user data (images, videos, audio, etc.), please provide simulated data\n\n======== Project Requirements ========\nImplement an image comparison tool where, after a user uploads two images, they can use a horizontal slider to see real-time display of the different areas where the two images overlap. After completion, provide a save function for the comparison screenshot.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the dual image upload functionality fully implemented?",
+      "description": "Review whether the code accurately implements file upload handling through HTML input elements and JavaScript, including drag-and-drop upload support, file type validation (accepting common image formats like JPG, PNG, GIF, WebP), file size limits (recommended ≤10MB), and proper error handling for invalid files. Score 0 if basic upload is not working, 5 if only single upload method is implemented, and 10 if multiple upload methods with comprehensive validation are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the horizontal slider comparison mechanism properly implemented?",
+      "description": "Check whether the slider control accurately divides and displays the two images in real-time, including smooth dragging interaction, proper image alignment and scaling, CSS clip-path or overflow masking for seamless transition effects, and responsive behavior on different screen sizes. Deduct 5 points if images are not properly aligned, 3 points if slider movement is jerky or unresponsive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the real-time image overlay and difference detection implemented?",
+      "description": "Evaluate whether the system provides real-time visual feedback when images overlap, including proper image scaling to match dimensions, canvas-based pixel-level comparison for highlighting differences, and smooth transition effects during slider movement. Deduct 5 points if images don't scale proportionally, 3 points if difference highlighting is missing or inaccurate. Check for performance optimization during real-time processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the screenshot save functionality complete and reliable?",
+      "description": "Check whether the code includes complete screenshot capture functionality using HTML5 Canvas API, proper image rendering at current slider position, support for different output formats (PNG/JPG), and reliable download mechanism. Deduct 5 points if screenshot doesn't capture current comparison state, 3 points if download fails on different browsers. Give 10 points if fully implemented with cross-browser compatibility.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted image files, extremely large/small images, network interruption during upload, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple comparison modes like side-by-side or overlay blend 2. Zoom functionality for detailed inspection 3. Batch comparison support 4. Image metadata display 5. Comparison history). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple upload handlers coexisting) 2. Function modules unrelated to image comparison (e.g., built-in image editor) 3. Fancy effects that affect performance (e.g., excessive animations during comparison). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating upload logic/comparison engine/UI components), error handling consistency, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if memory leaks occur during image processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for upload areas and comparison zone. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Slider drag response delay ≤ 100ms 2) Image transition animations controlled between 200-400ms 3) Clear visual feedback for upload progress and comparison states 4) Smooth performance during real-time comparison without frame drops. Deduct 5 points for each operation without feedback, 3 points for laggy slider movement, and 5 points for unclear interface states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

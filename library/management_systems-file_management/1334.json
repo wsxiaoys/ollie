@@ -1,0 +1,68 @@
+{
+  "index": 1334,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Design a file upload process that uploads files to a cloud file server, and implement it with code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload implementation fully functional?",
+      "description": "Review whether the code accurately implements file selection, validation, and upload functionality. Check if it handles multiple file types, size restrictions, and provides proper upload controls. Score 0 if core upload functionality is missing, 5 if basic upload works but lacks validation, and 10 if it includes robust file selection, validation, and upload mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the cloud storage integration properly implemented?",
+      "description": "Evaluate whether the code includes proper authentication and integration with cloud services (AWS S3, Google Cloud Storage, Azure Blob, etc.). Check for proper credential management, endpoint configuration, and error handling. Deduct 5 points if credentials are hardcoded, 3 points if there's no proper error handling for cloud service failures. Full score requires secure authentication, proper bucket/container configuration, and comprehensive error handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the implementation include progress tracking and status updates?",
+      "description": "Check if the code provides real-time progress updates during file upload, including percentage completion, transfer speed, and estimated time remaining. Verify that users receive clear visual feedback about the upload status (queued, uploading, completed, failed). Deduct 5 points if there's no progress tracking, and 3 points if status updates are incomplete or unclear. Give 10 points for comprehensive progress tracking with appropriate UI elements.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper error handling and retry mechanism?",
+      "description": "Assess whether the code handles common upload failures (network interruptions, server errors, timeouts) and provides retry capabilities. Check if it implements chunked uploads for large files to handle interruptions gracefully. Deduct 5 points if error handling is minimal, and 3 points if retry functionality is missing. Full score requires comprehensive error handling, user-friendly error messages, and intelligent retry mechanisms.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle edge cases such as zero-byte files, files with special characters in names, very large files, simultaneous uploads, and browser compatibility issues. Code with strong robustness should effectively handle these scenarios, giving 10 points. If the robustness is average, give 5 points, and if no edge cases are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Drag-and-drop file upload 2. Image preview before upload 3. Automatic file compression 4. Resumable uploads 5. Client-side encryption). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file selection methods that do the same thing) 2. Function modules unrelated to file upload (e.g., unnecessary image editing features) 3. Fancy effects that affect performance (e.g., excessive animations during upload). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/API/validation logic), error handling strategies, and code maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no documentation or comments for key functions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the upload interface follows modern design principles: 1) Clear visual hierarchy for upload controls 2) Proper feedback indicators (loading spinners, progress bars) 3) Consistent styling with proper spacing and alignment. Deduct 3 points for cluttered layout, 5 points for inconsistent visual elements, and 5 points for poor accessibility features (e.g., no keyboard support, missing ARIA attributes). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Upload button feedback delay ≤ 100ms 2) Smooth progress animations 3) Clear visual states for different upload phases (queued, uploading, complete, error). Deduct 5 points for each operation without feedback, 3 points for jerky animations or progress updates, and 5 points if the user can't easily distinguish between different upload states. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "easy"
+}

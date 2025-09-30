@@ -1,0 +1,68 @@
+{
+  "index": 1575,
+  "question": "You are a code expert, please utilize your professional knowledge to generate accurate and professional responses. Be sure to create executable code that can be demonstrated. Include an HTML format attendance system that can import tables.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core attendance system functionality fully implemented?",
+      "description": "Review whether the code accurately implements the fundamental attendance tracking features, including user registration, check-in/check-out functionality, and attendance records storage. Score 0 if the core functions are missing, 5 if basic attendance tracking is implemented but lacks advanced features, and 10 if all necessary attendance tracking features are comprehensively included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the table import functionality properly implemented?",
+      "description": "Check if the system allows importing attendance data from various table formats (CSV, Excel, etc.). Verify that the import process includes data validation, error handling, and proper display of imported data. Deduct 5 points if the import function is basic without validation, 3 points if only one format is supported, and 2 points if the UI for import is unintuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are data validation and sanitation mechanisms implemented?",
+      "description": "Evaluate whether the code includes proper input validation for all form fields, handles edge cases (like duplicate entries, invalid dates/times), and sanitizes data to prevent XSS attacks. Score 0 if no validation exists, 5 if basic validation is implemented but with security gaps, and 10 if comprehensive validation and sanitation are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there an effective data persistence and retrieval mechanism?",
+      "description": "Assess whether the attendance data is properly stored (client-side storage, server interaction, or both) and can be efficiently retrieved for reporting and analysis. Check if data persistence handles browser refreshes and includes backup mechanisms. Deduct 5 points for poor data structure design and 3 points if data retrieval is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid data input, failed imports, network issues, browser compatibility) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time attendance analytics 2. Automatic absence notifications 3. Customizable reporting options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to import the same data format) 2. Function modules unrelated to attendance tracking (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary animations for basic operations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data/UI/import-export layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the code lacks comments or documentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Table sorting/filtering response time ≤ 300ms 3) Clear visual guidance for import process steps. Deduct 5 points for each operation without feedback, 3 points for sluggish table operations, and 5 points for confusing import/export workflows. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

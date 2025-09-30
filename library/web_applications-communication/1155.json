@@ -1,0 +1,68 @@
+{
+  "index": 1155,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable for demonstration. Write me code for implementing a streaming text display using Vue + Axios + ThinkPHP with the Deepseek API.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the streaming text display core functionality fully implemented?",
+      "description": "Review whether the code accurately implements real-time streaming text display through Vue.js reactive data binding, including proper handling of Server-Sent Events (SSE) or chunked transfer encoding. Check if text chunks are progressively rendered with smooth character-by-character or word-by-word animation effects. Score 0 if streaming display is not implemented, 5 if only basic text appending is shown, and 10 if smooth streaming with proper buffering and display control is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue + Axios integration properly architected?",
+      "description": "Evaluate whether Axios is correctly configured for streaming requests with proper responseType settings (stream/text), timeout handling, and progress monitoring. Check if Vue's reactive system is properly utilized for real-time UI updates without performance bottlenecks. Deduct 5 points if request cancellation is not implemented, and 3 points if memory leaks occur during long streaming sessions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the ThinkPHP backend streaming response correctly implemented?",
+      "description": "Check whether the ThinkPHP backend properly implements streaming response with correct headers (Transfer-Encoding: chunked or Content-Type: text/event-stream), handles Deepseek API integration with proper error handling and rate limiting. Verify if the backend maintains persistent connections and implements proper buffer flushing. Deduct 5 points if API key security is not handled, and 3 points if streaming connection drops are not managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Deepseek API integration robust and complete?",
+      "description": "Evaluate whether the Deepseek API integration includes proper authentication, request formatting, response parsing, and error handling for various API response scenarios. Check if streaming parameters are correctly configured and if API rate limits and quotas are properly managed. Deduct 5 points if API response validation is missing, and 3 points if retry mechanisms for failed requests are not implemented. Give 10 points if fully implemented with comprehensive error recovery.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, API timeouts, malformed responses, component unmounting during streaming, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle these edge cases and provide graceful degradation, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the streaming experience (e.g., 1. Real-time typing sound effects synchronized with text appearance 2. Customizable streaming speed controls 3. Text highlighting with different colors for different content types 4. Export functionality for streamed content 5. Pause/resume streaming capabilities). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple text rendering methods coexisting) 2. Function modules unrelated to streaming text display (e.g., built-in file management system) 3. Fancy effects that affect streaming performance (e.g., complex particle animations during text rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if core streaming functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API service/Vue components/utility functions), proper Vue composition API or options API usage, and TypeScript integration if applicable. Deduct 5 points if global state pollution is found or Vue best practices are not followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper component lifecycle management is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the streaming text display follows modern design principles: 1) Harmonious color matching with proper contrast for readability 2) Proper typography with adequate line spacing (1.4-1.6x) and font sizing 3) Clean layout with appropriate whitespace and visual hierarchy 4) Loading states and progress indicators. Deduct 3 points for each poorly designed visual element, 5 points for poor text readability, and 5 points for chaotic layout during streaming. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the streaming animation smooth and seamless?",
+      "description": "Judge whether the streaming text animation conforms to human reading patterns: 1) Consistent streaming speed without jarring stops 2) Smooth cursor or typing indicator animations 3) Proper text wrapping and overflow handling 4) No visual glitches during rapid text updates 5) Responsive design that works across different screen sizes. Deduct 5 points for each choppy animation, 3 points for text rendering artifacts, and 5 points for poor mobile streaming experience. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "hard"
+}

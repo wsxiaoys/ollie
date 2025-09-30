@@ -1,0 +1,68 @@
+{
+  "index": 1473,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable and can be demonstrated. I want to create a facial expression recognition project that can recognize my expressions through my webcam. Please provide me with the complete project code.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the facial expression detection functionality completely implemented?",
+      "description": "Evaluate whether the code correctly implements real-time facial detection, facial landmark extraction, and expression classification (at least 6 basic emotions: happy, sad, angry, surprised, fearful, disgusted). Score 0 if facial detection is missing, 5 if only basic detection without expression classification is implemented, and 10 if both detection and accurate multi-expression classification are fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the webcam integration properly implemented?",
+      "description": "Check whether the code includes proper webcam access (with browser permissions handling), video streaming setup, frame capture at appropriate intervals (15-30 fps), and fallback mechanisms for devices without cameras. Deduct 5 points if there's no error handling for camera permission denial, 3 points if the frame rate isn't optimized, and 2 points if there's no camera availability check. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the machine learning model implementation appropriate?",
+      "description": "Assess whether the code uses a suitable pre-trained model (like TensorFlow.js with MobileNet, face-api.js, or custom CNN) with proper model loading, inference optimization, and model versioning. Evaluate if model size balances accuracy vs. performance (under 10MB for browser usage). Deduct 5 points if the model accuracy is below industry standards, 3 points if inference time exceeds 100ms per frame. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the expression visualization and feedback system well-designed?",
+      "description": "Review how expression results are visualized (e.g., emotion labels, confidence percentages, facial landmark overlays, emotion history graphs). Check for real-time feedback with low latency (<200ms), smooth transitions between detected expressions, and clear confidence indicators. Deduct 5 points if visualization is minimal or unclear, 3 points if there's significant lag in the feedback loop. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as poor lighting conditions, multiple faces in frame, profile views, occlusions, webcam disconnection, etc.) and provide graceful degradation or recovery. Code with strong robustness should log errors, provide user feedback for issues, and implement appropriate fallbacks, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Expression-triggered animations or effects 2. Expression history tracking with statistics 3. Expression-based avatar mirroring 4. Multi-user comparison mode). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementations of similar detection algorithms 2. Unnecessary processing steps that impact performance 3. Excessive UI elements unrelated to expression recognition. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/model/controller components), error handling, performance optimization techniques (like requestAnimationFrame usage, canvas vs. DOM manipulation), and code commenting. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no performance optimization for continuous video processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clear visual hierarchy highlighting expression results 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Appropriate use of color to indicate different emotions 4) Professional typography for results display. Deduct 3 points for each crowded visual element, 5 points for poor visual distinction between emotions, and 5 points for chaotic camera feed and result positioning. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Expression detection latency ≤ 200ms 2) Smooth transitions when expression changes 3) Responsive UI even during intensive processing. Deduct 5 points for noticeable frame drops during detection, 3 points for jerky visualization transitions, and 5 points for UI freezes during model processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Machine Learning",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 629,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable for demonstration purposes. Develop a frontend application for vocal removal from audio where users can upload audio files containing vocals, click a \"remove vocals\" button to eliminate the vocals from the audio, and then listen to and download the processed audio after completion.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the audio file upload functionality properly implemented?",
+      "description": "Review if the code includes a proper file upload component with audio format validation (.mp3, .wav, etc.), size limitations, and error handling. Check if the code provides clear feedback on upload progress and success/failure states. Score 0 if not implemented, 5 if only basic upload exists without validation, and 10 if complete with format validation, error handling and visual feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the vocal removal algorithm implementation effective?",
+      "description": "Evaluate the technical implementation of the vocal removal algorithm. Check if it uses proper DSP techniques like center channel isolation, frequency filtering, or phase cancellation. Advanced implementations should include adjustable parameters like frequency ranges or isolation intensity. Deduct 5 points if only using basic stereo channel subtraction without optimizations, 3 points if using pre-built libraries without proper configuration. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the audio processing feedback and progress indication implemented?",
+      "description": "Assess whether the application shows real-time processing status, completion percentage, or estimated time remaining. Check if visual feedback is provided during processing (like waveform visualization or progress bar). Deduct 5 points if the UI freezes during processing without feedback, 3 points if only basic loading indicators are used without specific progress information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the audio playback and download functionality complete?",
+      "description": "Check if the application implements audio playback controls (play, pause, seek) for both original and processed audio with proper visualization (waveform or spectrum). Verify if the download functionality includes appropriate format options and metadata preservation. Deduct 5 points if playback controls are missing or broken, 3 points if download functionality lacks format options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common edge cases like unsupported audio formats, corrupted files, browser compatibility issues, and memory constraints for large audio files. Check if proper error handling and recovery mechanisms exist. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time audio spectrum visualization 2. Multiple vocal isolation algorithms to choose from 3. Batch processing capabilities 4. Audio quality enhancement options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar audio processing functions 2. Function modules unrelated to vocal removal (e.g., unnecessary social sharing features) 3. Fancy effects that affect processing performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing logic/UI/file handling layers), use of appropriate design patterns, and performance optimization techniques. Deduct 5 points if global state pollution is found; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no optimization for memory usage during audio processing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for jerky animations during audio waveform rendering, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "easy"
+}

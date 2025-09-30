@@ -1,0 +1,68 @@
+{
+  "index": 287,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable for demonstration. Write a front-end program that simulates walking.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the walking animation physically accurate?",
+      "description": "Evaluate whether the walking animation correctly implements biomechanical principles: leg swing motion, weight shifting, and proper stride length. Score 0 if there's no animation cycle, 5 if basic keyframes are implemented but movement looks unnatural, and 10 if the walking demonstrates a complete gait cycle with natural weight transfer and proper foot placement.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the character model properly constructed?",
+      "description": "Check whether the character model has appropriate joint articulation for walking (hip, knee, ankle joints with correct rotation constraints). Deduct 3 points if joints bend unnaturally, 5 points if the model lacks necessary articulation points, and 5 points if proportions are significantly distorted. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the walk cycle timing natural and adjustable?",
+      "description": "Review whether the animation timing follows natural human walking patterns (approximately 1-2 seconds per cycle) and whether speed can be adjusted dynamically. Score 0 if timing is fixed and unnatural, 5 if basic timing is implemented but lacks variability, and 10 if the animation includes configurable speed, acceleration/deceleration, and natural timing.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the walking simulation include environmental interaction?",
+      "description": "Assess whether the walking character can interact with environmental elements (e.g., adjusting to terrain height differences, avoiding obstacles, responding to surface friction). Deduct 5 points if the character walks through obstacles, 3 points if terrain adaptation is missing, and 3 points if no surface interaction exists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, browser compatibility issues, performance optimization for slower devices, etc.) and provide smooth degradation when needed. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. User-controllable camera angles 2. Weather/lighting effects that affect walking style 3. Footprint/sound effects synchronized with steps). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar animation functions 2. Function modules unrelated to walking simulation 3. Fancy effects that affect performance (e.g., excessive particle effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating animation logic/rendering/user input layers), performance optimization, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no optimization for animation performance. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean visual presentation of the walking character 2) Proper contrast between character and background 3) Professional UI elements if present (controls, settings panels). Deduct 3 points for each crowded visual element, 5 points for poor contrast making it hard to see the animation, and 5 points for chaotic layout of controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and free of visual artifacts?",
+      "description": "Judge whether the animation runs at consistent frame rates (minimum 30fps) and transitions smoothly between animation phases. Check for: 1) No visible stuttering 2) Smooth transitions between animation cycles 3) No clipping or floating issues. Deduct 5 points for noticeable frame drops, 3 points for jerky transitions between animation steps, and 5 points for persistent clipping issues. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "medium"
+}

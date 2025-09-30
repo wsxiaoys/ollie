@@ -1,0 +1,68 @@
+{
+  "index": 664,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when displayed.\n\n======== Role ========\nYou are an experienced code expert. You have been provided with a software development requirement description and are asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== Output Rules ========\n1. Always generate complete, runnable project code, ensuring the project is fully executable\n2. Ensure all code files you output are complete, do not omit any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access needs, or require using user data (images, videos, audio, etc.), please provide simulated data\n\n======== Project Requirements Description ========\nCreate a device repair platform where users can scan device QR codes to automatically populate device information and submit repair orders (including fault video uploads). After maintenance staff accept the order, the status changes to \"in process\", and users can view the maintenance staff's location on a map in real-time. Completion requires user electronic signature confirmation.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the QR code scanning and device information retrieval functionality fully implemented?",
+      "description": "Check if the code implements a camera interface to scan QR codes using HTML5 navigator.mediaDevices or a dedicated library like jsQR/zxing.Verify if there's proper error handling when the camera cannot be accessed or the QR code format is invalid.Review whether the code includes logic to parse the QR code data and query a device database/API to populate device information automatically.Examine if the UI clearly shows the scanning process and provides feedback during scanning. 0 points if QR scanning is missing, 5 points for basic QR scanning without auto-population, 10 points if fully implemented with error handling and proper device information retrieval",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the repair order submission system with video upload functionality implemented correctly?",
+      "description": "Verify if the form includes all necessary fields for a repair order (device info, issue description, contact details).Check if video recording/uploading is implemented using MediaRecorder API or file upload with proper format validation.Examine if there's progress indication during video uploads and proper handling of large files.Review whether the code implements client-side validation before submission and server-side validation upon receipt. 0 points if order submission is missing, 5 points if basic form exists without video upload, 10 points if complete with video upload functionality and proper validation",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the order status management system properly implemented?",
+      "description": "Check if the code implements a proper state machine for order status (submitted, accepted, in-process, completed).Verify if status changes trigger appropriate notifications to users.Review whether maintenance staff have an interface to accept orders and update status.Examine if the status is visually clear to users at all stages of the repair process. 0 points if status management is missing, 5 points if basic status tracking exists but lacks notifications or maintenance interface, 10 points if fully implemented with all required functionality",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the real-time location tracking of maintenance staff properly implemented?",
+      "description": "Verify if the code uses Geolocation API for staff location tracking with proper update frequency.Check if a mapping library (like Google Maps, Leaflet) is correctly integrated with proper API key management.Review whether the map updates in real-time using WebSockets or a polling mechanism.Examine if there are privacy controls for maintenance staff and appropriate user permissions. 0 points if location tracking is missing, 5 points if basic mapping exists without real-time updates, 10 points if fully implemented with real-time tracking and privacy controls",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (offline usage, location services disabled, camera access denied).Check if there's appropriate error handling and user feedback for all possible error states.Review whether the application implements data persistence in case of disconnection.Verify if there are fallback mechanisms when key features aren't available. 0 points if no exception handling exists, 5 points if basic error handling is implemented, 10 points if comprehensive error handling and recovery mechanisms are in place",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for unexpected useful features (e.g., AR view for device troubleshooting, voice-guided repair instructions, repair history analytics).Review if there are smart suggestions based on common device issues.Examine if there are accessibility features beyond standard requirements.Verify if there are features that enhance user experience significantly. Add 3 points for each practical innovative feature implemented (maximum 10 points)",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Check for duplicate implementations of similar functions.Identify function modules unrelated to the repair platform core functionality.Look for performance-heavy animations or effects that aren't essential.Review if any features detract from the main user flow. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design separating concerns (device scanning, order management, location tracking, user authentication).Check for unit tests covering critical functionality.Verify if there's a build process with proper asset optimization.Examine code organization, naming conventions, and documentation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is high; deduct 5 points if the build process is not automated. The full score is 10 points",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate color scheme consistency across the application.Check spacing and layout consistency following design principles.Review typography hierarchy and readability.Verify if the UI is responsive across different device sizes. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the electronic signature confirmation system properly implemented?",
+      "description": "Verify if the signature capture uses an appropriate drawing mechanism (Canvas API or dedicated library).Check if signatures are properly validated before acceptance.Review if signatures are securely stored with proper timestamping.Examine if the signature process is legally compliant with clear terms shown to users. 0 points if signature functionality is missing, 5 points if basic signature capture exists without validation, 10 points if fully implemented with security measures and legal compliance",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

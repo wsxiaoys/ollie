@@ -1,0 +1,68 @@
+{
+  "index": 1318,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration purposes. Create a floating text website using jQuery.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the floating text functionality properly implemented?",
+      "description": "Review whether the code uses jQuery to create elements that float across the screen with smooth animation. Check if the text moves in different directions, speeds, or patterns. Score 0 if no animation exists, 5 if only basic linear movement is implemented, and 10 if there are multiple floating patterns (e.g., sine wave, circular, bounce) with configurable parameters.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the text generation and management system complete?",
+      "description": "Evaluate whether the code includes mechanisms to generate texts dynamically, manage their lifecycle (creation, animation, removal), and handle text overlap. Deduct 3 points if text elements pile up without being removed after leaving the viewport. Deduct 4 points if there's no system to prevent excessive DOM elements. Score 10 if the implementation includes efficient object pooling or equivalent performance optimizations.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the interaction with the floating text implemented?",
+      "description": "Check whether users can interact with floating text (e.g., click to remove, hover to pause, drag to reposition). Deduct 5 points if no interaction is implemented. Score full 10 points if multiple intuitive interaction methods are available with appropriate visual feedback (e.g., color change on hover, subtle animation on click).",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there customization functionality for the floating text?",
+      "description": "Assess whether the code allows customization of text appearance (color, size, font, opacity) and behavior (speed, direction, rotation). Score 3 points for basic customization options, 7 points if users can adjust settings through UI controls, and 10 points if there's a complete settings panel with real-time preview functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid user interactions, browser resize, mobile device orientation changes) and provide graceful degradation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Physics-based interactions like gravity 2. Text that reacts to mouse movement 3. Themed text groups with different behaviors). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant event handlers causing memory leaks 2. Unnecessary DOM manipulations that could be handled with CSS 3. Complex animations that could be simplified with CSS transitions/animations. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review jQuery usage best practices (like proper selectors, event delegation, chain operations), code organization (namespacing, modular structure), and performance considerations (animation frame management, DOM manipulation efficiency). Deduct 5 points for excessive direct DOM manipulations; deduct 5 points if jQuery selectors are inefficient; deduct 5 points if event handlers aren't properly cleaned up. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for both text and background 2) Proper contrast ensuring readability of floating text 3) Thoughtful typography choices (appropriate font families, sizes, and weights). Deduct 3 points for poor color combinations affecting readability, 5 points for inconsistent text styling, and 5 points for cluttered visual presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation performance optimized?",
+      "description": "Judge whether the animation implementation follows performance best practices: 1) Using requestAnimationFrame instead of setInterval/setTimeout 2) Applying hardware acceleration where appropriate (transform/opacity) 3) Properly handling large numbers of elements without frame drops. Deduct 5 points for noticeable jank during animation, 3 points for excessive reflows/repaints, and 5 points for significant performance degradation with multiple texts. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "medium"
+}

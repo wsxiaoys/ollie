@@ -1,0 +1,68 @@
+{
+  "index": 1563,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate can be executed and displayed. Integrate real-time market data to show buy and sell signals with 90% accuracy and 30% return rate. After generating the code, conduct practical testing.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the market data integration system fully implemented?",
+      "description": "Review whether the code properly integrates with market data APIs (like Yahoo Finance, Alpha Vantage, or IEX Cloud), implements proper error handling for API limits/failures, and correctly parses the returned data. Score 0 if no real market data integration is implemented, 5 if basic integration exists but lacks error handling, and 10 if comprehensive data fetching with fallback mechanisms and caching strategies is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the buy/sell signal algorithms properly implemented with verification?",
+      "description": "Evaluate whether the code implements substantiated technical analysis algorithms (such as MACD, RSI, Bollinger Bands) or machine learning models with proper backtesting framework. Check if the claimed 90% accuracy is verified with proper statistical testing (precision, recall, F1 score) on out-of-sample data. Score 0 if algorithms are merely referenced without implementation, 5 if basic indicators are implemented but lack validation, and 10 if comprehensive signal generation with statistical validation is provided.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is a performance backtesting system implemented to verify the 30% return rate?",
+      "description": "Check whether the code includes a proper backtesting framework that accounts for transaction costs, slippage, and market impact. Verify that the claimed 30% return is tested against historical data with proper risk-adjusted metrics (Sharpe ratio, maximum drawdown, Sortino ratio). Deduct 5 points if backtesting doesn't include transaction costs, and 3 points if risk metrics are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the visualization of market data and signals well-implemented?",
+      "description": "Review whether the code implements interactive charts (using libraries like D3.js, Highcharts, or Plotly) that clearly mark buy/sell signals on price data, with proper tooltips, zoom functionality, and time period selection. Score 0 if no visualization is implemented, 5 if basic static charts are provided, and 10 if fully interactive visualizations with clear signal indicators and performance metrics are included.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing data points, API failures, market holidays, extreme volatility, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time alerts via email/SMS 2. Portfolio optimization suggestions 3. Market sentiment analysis integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar technical indicators 2. Function modules unrelated to trading (e.g., unnecessary social media integration) 3. Fancy effects that affect performance (e.g., excessive animations that slow down market data updates). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data fetching/analysis/visualization layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional financial dashboard standards?",
+      "description": "Evaluate whether the design follows professional financial interface principles: 1) Appropriate color schemes for market data (red/green for price changes, muted colors for background) 2) Clear data hierarchy with proper emphasis on key metrics 3) Professional typography with high readability for numbers. Deduct 3 points for each misleading visual element, 5 points for inappropriate color schemes that hinder data interpretation, and 5 points for cluttered dashboards that obscure critical information. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive for real-time market updates?",
+      "description": "Judge whether the dynamic effects support effective market monitoring: 1) Real-time data updates without page refresh 2) Smooth transitions when new data points arrive 3) Responsive interface that maintains performance even with high-frequency data. Deduct 5 points for each second of lag in data updates, 3 points for jumpy/disruptive transitions during data refreshes, and 5 points for performance degradation during market hours. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Predictive Modeling",
+  "difficulty": "hard"
+}

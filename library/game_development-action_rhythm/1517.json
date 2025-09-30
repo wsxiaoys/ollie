@@ -1,0 +1,68 @@
+{
+  "index": 1517,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable whenever possible. The classic brick-breaking game code can be run in a browser.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core brick-breaking gameplay mechanics fully implemented?",
+      "description": "Review whether the code accurately implements essential game elements: paddle control, ball physics, brick collision detection, and score tracking. Score 0 if the core mechanics are missing, 5 if only basic collisions work, and 10 if all expected features (varying brick types, ball physics, proper boundary handling) are present.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the game have proper collision detection and physics?",
+      "description": "Evaluate ball physics implementation including angle reflection on paddle hits, proper wall bouncing, and brick collision accuracy. Check for edge cases like corner hits and multi-brick collisions. Deduct 3 points for unrealistic physics, 5 points for major collision bugs. Full score requires smooth, realistic physics with proper acceleration handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game's difficulty progression and level design implemented?",
+      "description": "Check if the code includes multiple levels or difficulty progression (increasing speed, complex brick patterns, special bricks). Examine if there's a proper game loop with level transitions. Award 10 points for comprehensive level systems with increasing challenge, 5 points for basic progression, 0 for single-state gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are power-ups and special game features implemented?",
+      "description": "Assess the implementation of game-enhancing features like paddle size changes, multi-ball, ball speed modifications, or special brick types. Look for proper visual feedback when acquiring power-ups and their effect timing management. Award 10 points for diverse, well-balanced power-up system, 5 for basic power-ups, 0 if none exist.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input changes, browser resize, focus loss, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should effectively manage these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Particle effects on brick destruction 2. Dynamic soundtrack that changes with gameplay 3. Unique themes or visual styles). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to brick-breaking (e.g., unintegrated mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems causing lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), proper use of OOP or functional patterns, and code maintainability. Deduct 5 points if global state is overused or if game loop timing isn't handled properly; deduct 5 points if the code duplication rate is too high; deduct 5 points if there's no separation between game mechanics and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game visuals follow modern game design principles: 1) Consistent visual style and color palette 2) Clear visual hierarchy and readable UI elements 3) Appropriate use of animation and transitions that don't interfere with gameplay. Deduct 3 points for inconsistent visual elements, 5 points for poor readability or usability issues, and 5 points for visual elements that hinder gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the game responsive and provides good user feedback?",
+      "description": "Judge whether the game provides appropriate feedback to user actions: 1) Immediate paddle response to input (≤ 50ms) 2) Clear visual and possibly audio feedback on collisions 3) Readable score display and game state indicators. Deduct 5 points for input lag, 3 points for missing collision feedback, and 5 points for unclear game state information. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "medium"
+}

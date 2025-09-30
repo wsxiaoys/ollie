@@ -1,0 +1,68 @@
+{
+  "index": 369,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Help me create an HTML file with a geometric drawing board functionality that supports drawing shapes, measuring lengths, and angles.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the geometric shape drawing functionality fully implemented?",
+      "description": "Review whether the code accurately implements multiple geometric shape drawing through HTML5 Canvas/SVG, including basic shapes (lines, circles, rectangles, polygons) and advanced shapes (bezier curves, arcs). Check if the drawing implements precise coordinate tracking, real-time preview during drawing, and shape completion validation. Score 0 if core drawing logic is missing, 5 if only basic shapes are implemented, and 10 if comprehensive geometric shapes with smooth drawing experience are fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the length and angle measurement system accurately implemented?",
+      "description": "Evaluate whether the measurement tools include pixel-to-unit conversion, real-time distance calculation between points, angle measurement with visual indicators, and measurement result display with appropriate precision (2-3 decimal places). Check if measurement tools provide visual feedback with measurement lines/arcs overlay. Deduct 5 points if measurement accuracy is below 95%, and 3 points if visual measurement indicators are unclear. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the interactive drawing board control system well-designed?",
+      "description": "Check whether the drawing board includes comprehensive control mechanisms: shape selection tools, undo/redo functionality, clear canvas option, zoom in/out capabilities, and pan/drag canvas functionality. Evaluate if mouse/touch event handling supports both desktop and mobile interactions. Deduct 5 points if undo/redo is missing, 3 points if zoom functionality is not smooth, and 2 points if mobile touch support is inadequate. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the drawing state management and persistence properly constructed?",
+      "description": "Evaluate whether the code implements drawing state management including save/load drawings to localStorage, export functionality (PNG/SVG format), and drawing history tracking. Check if the system maintains drawing layer management and shape property editing capabilities. Deduct 5 points if save/load functionality is missing, 3 points if export quality is poor, and 2 points if drawing history is not maintained. Give 10 points if fully implemented with robust state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid coordinate input, canvas size overflow, unsupported browser features, memory leaks during extensive drawing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases including canvas performance optimization for complex drawings. Give 10 points for excellent robustness, 5 points for average handling, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the drawing experience (e.g., 1. Grid snap functionality with customizable grid size 2. Shape templates library 3. Color palette with custom color mixing 4. Geometric construction tools like compass and ruler simulation 5. Real-time coordinate display). Add 2-3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar drawing functions (e.g., multiple circle drawing methods coexisting) 2. Function modules unrelated to geometric drawing (e.g., built-in games or unrelated utilities) 3. Fancy effects that affect drawing performance (e.g., excessive animations during drawing). Deduct 3 points for each redundancy found, and directly deduct 10 points if core drawing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating drawing engine/UI controls/measurement tools), code organization with clear separation of concerns, and proper event handling architecture. Deduct 5 points if global state pollution is found or no design patterns are used; deduct 5 points if code duplication rate is too high (over 25%); deduct 3 points if drawing performance is not optimized for complex scenes. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the drawing board interface follows modern design principles: 1) Intuitive tool palette with clear iconography 2) Proper contrast between canvas and UI elements 3) Consistent spacing and alignment (following 8px grid system) 4) Professional color scheme with adequate visual hierarchy. Deduct 3 points for each cluttered UI element, 5 points for poor color contrast affecting usability, and 5 points for inconsistent visual design language. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the drawing interactions conform to user expectations: 1) Drawing response delay ≤ 50ms for smooth line drawing 2) Tool switching feedback within 100ms 3) Smooth zoom/pan operations without lag 4) Clear visual feedback for all interactive elements 5) Intuitive cursor changes for different tools. Deduct 5 points for each laggy drawing operation, 3 points for unclear tool state indication, and 5 points for poor drawing smoothness on high-resolution displays. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 1538,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration. Player Setup: Enter player names, and teams (optional).\nRound Management: Update points and add/subtract scores as the game progresses by using the point toggle zone.\nFont and Appearance: Customize appearance settings for the display.\nOutput: Ensure the display is broadcasted as an overlay or separate window in your livestream. Filtering out green background for a better vision.\nReset Game: Reset the game by clicking \"Reset Game\".",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the player setup system fully implemented?",
+      "description": "Check if the code accurately implements player name input and team assignment functions, including input validation, data storage, and interface display. Evaluate whether it supports multi-player management, team editing, and real-time updates of player information. If core player management functions are not implemented, score 0; if only basic input is implemented, score 5; if all player setup functions are fully implemented, score 10.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the turn management and scoring system precisely implemented?",
+      "description": "Check if the implementation of the score-switching area includes accurate score addition/subtraction logic, real-time score updates, and turn state management. Evaluate whether it has score history, undo functionality, and data persistence. If scoring logic is incorrect, deduct 5 points; if turn management is missing, deduct 3 points; if data persistence is not implemented, deduct 3 points. Full score is 10.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the font and appearance customization system complete?",
+      "description": "Evaluate whether the code provides full font selection, color customization, size adjustment, and layout settings. Check if it supports real-time preview, style saving, and theme switching. If the font system is missing, deduct 5 points; if color customization is absent, deduct 3 points; if style saving is not implemented, deduct 2 points. Full score is 10.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the live broadcast output and green screen filtering professionally implemented?",
+      "description": "Check if professional live broadcast overlay output, independent window mode, and green screen background filtering are implemented. Evaluate the precision of the chroma key algorithm, output resolution adaptation, and streaming compatibility. If green screen filtering is poor, deduct 5 points; if independent window mode is missing, deduct 3 points; if live output is unstable, deduct 2 points. Full score is 10.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "How robust is the code?",
+      "description": "Evaluate whether the code can handle common exceptions (e.g., out-of-bounds input, network interruptions, user operation errors) and provide friendly error prompts or recovery mechanisms. Highly robust code should effectively handle these edge cases, scoring 10. Moderately robust code scores 5, and code that does not handle exceptions scores 0.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Does it have innovative features that stand out?",
+      "description": "Check if the code includes surprising features that enhance the experience (e.g., 1. real-time data visualization charts, 2. automatic match template import, 3. social media sharing, 4. voice broadcast). Each practical innovative feature implemented adds 3 points (maximum 10).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there redundant features?",
+      "description": "Strictly check for three types of redundancy: 1. Duplicate implementations of similar functions (e.g., multiple scoring logics coexisting), 2. Function modules unrelated to the scoring system (e.g., built-in music player), 3. Flashy effects that impact performance (e.g., particle explosion animations). For each redundancy found, deduct 3 points; if redundant code interferes with core functions, deduct 10 points directly.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code meet engineering quality standards?",
+      "description": "Review modular design (e.g., separation of data logic/view/tool layers), unit test coverage, and build process automation. Deduct 5 points for global state pollution or unused design patterns; deduct 5 points for high code duplication (over 30%); deduct 5 points for non-automated build processes. Full score is 10.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface visually meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern principles: 1) Harmonious color scheme (no more than 3 primary colors), 2) Reasonable layout spacing (element spacing follows the 8px multiple rule), 3) Professional font system (main text size ≥14px, line height ≥1.5x). For each instance of crowded visual elements, deduct 3 points; for jarring color schemes, deduct 5 points; for chaotic text-image layouts, deduct 5 points. Full score is 10.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Are dynamic interactions smooth and seamless?",
+      "description": "Judge whether animations align with human perception: 1) Click feedback delay ≤100ms, 2) Transition animation duration between 300-500ms, 3) Clear visual focus guidance. For each instance of unresponsive operations, deduct 5 points; for visual ghosting during rapid scrolling, deduct 3 points; for hard-to-find key function buttons, deduct 5 points. Full score is 10.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "medium"
+}

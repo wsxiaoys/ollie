@@ -1,0 +1,68 @@
+{
+  "index": 590,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that the code you generate is executable for demonstration purposes. Develop an online shopping platform where users can see personalized product recommendations after logging in. The product list should support paginated loading, and users can search for products. The product detail page includes user reviews and supports adding products to a wishlist. The wishlist is separate from the shopping cart, but supports one-click transfer of wishlist items to the shopping cart.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user authentication system properly implemented?",
+      "description": "Evaluate the implementation of login/registration functionality, session management, and profile management. Check if the code includes proper password hashing, CSRF protection, and secure cookie handling. Score 0 if authentication is missing, 5 if basic authentication exists but lacks security features, and 10 if it includes all required security measures and supports social login options.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the personalized recommendation system fully functional?",
+      "description": "Check if the code implements a recommendation algorithm based on user behavior data (browsing history, past purchases, etc.). Verify if it updates in real-time when user preferences change. Deduct 5 points if it's a static recommendation system not tied to user behavior, 3 points if it lacks real-time updates, and 2 points if it doesn't handle cold start problems for new users. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the paginated product list properly implemented?",
+      "description": "Review the pagination implementation for efficiency and user experience. Check if it includes: server-side pagination with limit/offset parameters, lazy loading for images, and proper state management during navigation. Deduct 5 points if pagination is client-side only with all products loaded at once, 3 points if there's no loading state indication, and 2 points if performance optimization is missing for large product lists. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the wishlist and cart functionalities correctly implemented with seamless interaction?",
+      "description": "Verify the separation between wishlist and shopping cart data structures, the one-click transfer functionality from wishlist to cart, and persistence of both across sessions. Check if there's proper item quantity management and duplicate item handling. Deduct 5 points if the one-click transfer is missing, 3 points if wishlist items aren't persistent across sessions, and 2 points if there's no visual feedback during transfers. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network errors during API calls, invalid user input, product unavailability, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time product stock notifications 2. AR product visualization 3. Social sharing with personalized recommendation links). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to add to cart) 2. Function modules unrelated to e-commerce (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations on product cards). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/state management/UI components), test coverage for critical paths (checkout flow, payment processing), and build process optimization. Deduct 5 points if global state management is chaotic; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if performance optimization for image loading or API caching is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern e-commerce design principles: 1) Consistent product card layout with clear pricing and CTAs 2) Proper white space utilization for readability 3) Professional typography hierarchy that emphasizes product information. Deduct 3 points for each inconsistent UI element, 5 points for unclear product information hierarchy, and 5 points for poor mobile responsiveness. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to e-commerce UX best practices: 1) Product search with auto-suggestions appearing within 200ms 2) Smooth cart/wishlist animations when adding products 3) Clear visual feedback for all user actions. Deduct 5 points for laggy search interactions, 3 points for abrupt page transitions when navigating between products, and 5 points for missing loading states during API calls. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

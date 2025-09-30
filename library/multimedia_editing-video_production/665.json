@@ -1,0 +1,68 @@
+{
+  "index": 665,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the generated code is executable. Implement a video background replacement/green screen processing tool that allows users to upload videos with green screen (or blue screen), automatically detects and removes the background color, and replaces it with user-uploaded images or video backgrounds. Provide chroma key control parameters (such as hue range, tolerance, smoothness, etc.) for adjustment to optimize keying effects. Support real-time preview and export of the final composite video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the chroma key algorithm accurately implemented?",
+      "description": "Review whether the code correctly implements chroma key background removal algorithms, including HSV color space conversion, hue range detection, tolerance control, and edge smoothness processing. Check if it supports both green screen and blue screen detection with proper color distance calculations. Score 0 if basic color detection is missing, 5 if only simple RGB threshold is implemented, and 10 if advanced HSV-based chroma key with edge feathering is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the video processing pipeline properly constructed?",
+      "description": "Evaluate whether the video processing workflow includes frame-by-frame extraction, background replacement compositing, and re-encoding functionality. Check if WebGL/Canvas is used for hardware acceleration and if proper memory management prevents browser crashes during large video processing. Deduct 5 points if no frame buffering mechanism exists, and 3 points if video encoding format compatibility is limited. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are comprehensive chroma key control parameters provided?",
+      "description": "Check whether the interface provides essential control parameters including hue range slider, color tolerance adjustment, edge smoothness control, spill suppression, and alpha channel fine-tuning. Verify if real-time parameter adjustment updates the preview immediately. Deduct 5 points if key parameters like tolerance or smoothness are missing, and 3 points if parameter changes don't reflect in real-time preview. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is real-time preview and export functionality fully implemented?",
+      "description": "Evaluate whether the system provides smooth real-time preview of the chroma key effect with acceptable frame rate (≥15fps for preview). Check if video export supports multiple formats (MP4, WebM) with quality options and progress indication. Deduct 5 points if preview is laggy or non-responsive, and 5 points if export functionality is incomplete or crashes. Give 10 points if both preview and export work seamlessly.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported video formats, oversized files, memory overflow, corrupted video data, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered auto chroma key detection 2. Batch processing multiple videos 3. Advanced compositing modes like screen/multiply 4. Custom mask drawing tools). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple color detection algorithms coexisting unnecessarily) 2. Function modules unrelated to video processing (e.g., built-in social sharing widgets) 3. Fancy effects that affect performance (e.g., excessive UI animations during video processing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core video processing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating video processing/UI/file handling layers), worker thread usage for heavy processing, and proper error handling. Deduct 5 points if main thread blocking is found during video processing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no progress indication exists for long operations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear parameter control layout with proper visual hierarchy. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic control panel layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Parameter adjustment feedback delay ≤ 200ms 2) Video preview playback controls are responsive 3) Clear visual focus guidance for upload areas and control panels 4) Smooth transitions between different processing states. Deduct 5 points for each operation without feedback, 3 points for jerky parameter adjustments, and 5 points for unclear upload/processing status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "medium"
+}

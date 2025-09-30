@@ -1,0 +1,68 @@
+{
+  "index": 1058,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable. Create a mini program for WiFi sharing, with interfaces reserved for advertisement integration.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WiFi sharing core functionality implemented?",
+      "description": "Evaluate whether the code implements the essential WiFi sharing mechanism, including scanning available networks, displaying WiFi information (SSID, signal strength, security type), and generating QR codes or other sharing methods. Score 0 if core functionality is missing, 5 if only basic display is implemented, and 10 if complete with encryption handling and connection verification.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the advertisement integration interface properly designed?",
+      "description": "Check if the code includes well-defined interfaces for ad integration (banner ads, interstitial ads, rewarded ads). Verify if placeholder components are strategically positioned without disrupting user flow, with proper event hooks for ad loading/display. Deduct 5 points if interfaces are poorly defined, 3 points if ad placements interfere with core functionality. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the program handle WiFi permissions and security appropriately?",
+      "description": "Assess whether the code properly requests and handles necessary permissions (location services for WiFi scanning, network access). Verify if it implements security measures to protect sensitive WiFi credentials (password encryption/masking, secure sharing). Deduct 5 points for missing permission handling, 5 points for security vulnerabilities. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is cross-platform compatibility addressed?",
+      "description": "Evaluate whether the mini program works across multiple platforms (Android/iOS/Web), with appropriate platform detection and conditional logic for platform-specific WiFi APIs. Check if it gracefully degrades functionality when certain features aren't available. Deduct 5 points if major platforms are unsupported, 3 points if platform-specific bugs exist. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as permission denied, network unavailable, disconnected WiFi, invalid credentials) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. WiFi speed testing functionality 2. Password strength assessment 3. Connection history with usage statistics 4. Automatic reconnection to preferred networks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple WiFi scanning methods coexisting) 2. Function modules unrelated to WiFi sharing (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations when displaying WiFi lists). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating WiFi service/UI/ad integration layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scanning updates, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Hardware Management",
+  "difficulty": "easy"
+}

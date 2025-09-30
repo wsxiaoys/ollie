@@ -1,0 +1,68 @@
+{
+  "index": 1116,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Pay attention to ensuring that the generated code is executable for demonstration. Write an HTML program that creates a double-layer Rubik's cube photo effect.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the double-layer Rubik's cube photo effect correctly implemented?",
+      "description": "Check whether the code successfully creates a visual effect where photos are displayed on a double-layer Rubik's cube structure. The implementation should show correct perspective and layering with photos mapped onto cube faces. Score 0 if the effect is not implemented, 5 if only a basic cube with images is created, and 10 if a true double-layer structure with proper depth and perspective is achieved.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the HTML/CSS 3D transformation properly implemented?",
+      "description": "Evaluate the use of CSS 3D transforms (transform-style, perspective, rotateX/Y/Z) to create the cube structure. Check if the code correctly implements proper perspective origin, backface visibility, and z-index management. Deduct 5 points if the 3D illusion breaks at certain angles, 3 points if the perspective depth feels unnatural, and 5 points if transforms are improperly nested. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the cube rotation and interaction mechanism well-designed?",
+      "description": "Assess whether user interactions (mouse/touch) allow intuitive rotation of the cube. The code should include proper event handling, smooth transition between states, and maintain the integrity of the cube during rotation. Deduct 5 points if rotation is jerky, 3 points if the rotation axis is inconsistent with user input direction, and 5 points if the cube structure distorts during rotation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the photo mapping and texture handling properly implemented?",
+      "description": "Check if images are properly mapped to cube faces without distortion, if image preloading is implemented, and if the code handles different image aspect ratios. Deduct 3 points for visible seams between cube faces, 5 points for image distortion, and 5 points if images aren't responsive to container size changes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing images, browser compatibility issues, variable screen sizes, etc.) and provide fallbacks or graceful degradation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Animated cube assembly/disassembly 2. Dynamic photo transitions when rotating 3. Light/shadow effects that respond to cube orientation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant CSS properties that override each other 2. Unnecessary JavaScript calculations that don't contribute to the core functionality 3. Excessive visual elements that distract from the Rubik's cube photo effect. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating structure/style/interaction logic), code reusability, and performance optimization. Deduct 5 points if global variables are overused or if there's no separation of concerns; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no performance optimizations (e.g., for animations). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Clean presentation of the cube without visual clutter 2) Proper contrast between cube elements and background 3) Professional UI elements for any controls. Deduct 3 points for each instance of poor element spacing, 5 points for clashing colors that affect visibility, and 5 points for awkward positioning of the cube in the viewport. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the animations and transitions conform to human perception characteristics: 1) Smooth rotation without frame drops 2) Appropriate easing functions for natural movement 3) Clear visual feedback during interactions. Deduct 5 points for jerky animations, 3 points for abrupt transitions between states, and 5 points for delayed response to user input (>100ms). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Image Editing",
+  "difficulty": "medium"
+}

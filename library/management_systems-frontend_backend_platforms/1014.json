@@ -1,0 +1,68 @@
+{
+  "index": 1014,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate is executable. Write a fully operational code for an age-friendly renovation consulting app with the following requirements:\n\n1. Free registration for part-time/full-time designers, with the platform taking a 10% commission from each design project fee.\n\n2. Designers can freely choose projects. After accepting a job, the platform takes 10% of the deposit, and the project will be listed on the platform.\n\n3. Clients can select designers based on style preferences, with past case studies available for reference. Style consultation is free. Based on client preferences, designers will create style concepts. To obtain initial design drafts (which only include effect renderings without dimensions, just a general layout), clients must pay a deposit of 30% of the total project amount. The platform takes a 10% commission from this deposit. The platform only provides design solutions and consultation, not renovation materials or labor.\n\n4. After signing a contract and paying the 30% deposit, clients can view preliminary renderings (without source files).\n\n5. If clients are satisfied with the design, they pay the remaining balance. Designers will then visit the site to make detailed adjustments, maintain ongoing communication, provide source files, and implement the design plan.\n\n6. Please help me identify any design considerations I may have overlooked.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the registration and user management system fully implemented?",
+      "description": "Review whether the code implements separate registration flows for designers and clients with appropriate validation, profile management, and authentication mechanisms. Check if designers can upload portfolios/past projects, and whether verification mechanisms for professional credentials are included. Score 0 if core registration functionality is missing, 5 if basic registration exists without role differentiation, and 10 if full registration with proper role separation and profile management is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the project listing and selection system properly implemented?",
+      "description": "Evaluate whether the system allows clients to post renovation projects with requirements, and designers to browse and accept projects. Check if the system handles the 10% platform commission calculation correctly, and if project status tracking (available, in progress, completed) is implemented. Deduct 5 points if commission calculation is incorrect, 3 points if project status transitions are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the payment processing and deposit system securely implemented?",
+      "description": "Check if the code implements the 30% deposit payment flow securely, with proper validation and error handling. Verify that payment confirmations are sent to all parties, and the platform's 10% commission is calculated correctly. Score 0 if payment handling is absent, 5 if only basic payment functionality exists without proper security measures, and 10 if a complete, secure payment system with commission handling is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the design workflow and deliverables system well-structured?",
+      "description": "Assess whether the code includes functionality for: free style consultation, concept creation, preliminary rendering viewing (without source files), and final deliverables after full payment. Check if there's a mechanism for designers to upload work and clients to review it. Deduct 5 points if the staged deliverable process is not implemented, and 3 points if there's no distinction between preliminary and final deliverables. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as payment failures, incomplete user profiles, abandoned projects, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AR visualization of design concepts in client's space 2. AI-assisted style matching system 3. Interactive revision tracking for design iterations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple payment processing systems) 2. Function modules unrelated to renovation consulting (e.g., a built-in social network) 3. Fancy effects that affect performance (e.g., excessive animations on critical paths). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating business logic/UI/data layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Check if the interface is age-friendly with adequate text size, contrast, and intuitive navigation. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Assess if the app provides appropriate feedback during critical operations like payments and project submissions. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast sliding, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

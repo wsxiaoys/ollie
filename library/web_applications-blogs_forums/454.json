@@ -1,0 +1,68 @@
+{
+  "index": 454,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you provide can be executed and demonstrated. The frontend uses Vue 3, Element Plus, SASS, Tailwind CSS, and TypeScript, while the backend uses Koa + MongoDB. Please provide me with the frontend and backend code for a blog system.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Vue 3 frontend architecture properly implemented?",
+      "description": "Review whether the code follows Vue 3 best practices, including Composition API usage, proper component structure, and TypeScript integration. Check if essential features like reactive state management, computed properties, and lifecycle hooks are implemented correctly. Score 0 if Vue 3 features are poorly implemented, 5 if basic implementation exists but with architectural issues, and 10 if properly implemented with TypeScript interfaces and type checking.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the blog's frontend UI system effectively built with Element Plus and styled appropriately?",
+      "description": "Evaluate whether Element Plus components are properly utilized for the blog interface (e.g., layout containers, navigation, article cards, pagination, forms). Check for SASS customization of Element Plus themes to maintain brand consistency. Deduct 5 points if Element Plus is barely used, 3 points if components are used but not customized, and 2 points if accessibility features are ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the frontend styling system using Tailwind CSS and SASS implemented effectively?",
+      "description": "Check whether Tailwind utility classes are used appropriately alongside SASS for custom styling. Evaluate if there's a consistent design system with variables for colors, spacing, and typography in SASS files. Deduct 3 points for inconsistent utility usage, 4 points for CSS specificity conflicts, and 5 points if the responsive design is broken on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the Koa backend architecture well-structured with MongoDB integration?",
+      "description": "Review the Koa middleware structure, routing organization, and MongoDB schema design. Check for proper error handling, authentication middleware, and RESTful API implementation. Evaluate if MongoDB operations use modern patterns (async/await) and proper indexing. Deduct 3 points for missing middleware error handling, 4 points for poor MongoDB schema design, and 5 points if security best practices are ignored. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common abnormal situations (such as network failures, database connection issues, invalid input data, authentication failures) and provides friendly error prompts or recovery mechanisms. Frontend should handle API errors gracefully, and backend should implement proper validation and error responses. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the blog system includes surprise features that enhance the experience (e.g., 1. Real-time content collaboration 2. AI-powered content suggestions 3. Advanced markdown editor with preview 4. Integrated SEO optimization tools). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple state management approaches mixed) 2. Function modules unrelated to blogging (e.g., a complex game inside a blog) 3. Fancy effects that affect performance (e.g., heavy animations on blog list). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of concerns between components, services, and stores), TypeScript type coverage, code reusability, and build process configuration. Deduct 5 points if global state pollution is found; deduct 3 points if TypeScript is used poorly with 'any' types; deduct 2 points if the code duplication rate is high (over 20%); deduct 5 points if the build process and deployment strategy are not configured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the blog design follows modern design principles: 1) Harmonious color matching using SASS variables consistently 2) Proper layout spacing using Tailwind's spacing system 3) Professional typography system with proper font hierarchy. Deduct 3 points for inconsistent spacing, 5 points for poor readability in blog content, and 5 points for chaotic layout on mobile devices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to user experience best practices: 1) Blog loading states and skeleton screens 2) Smooth transitions between pages with Vue Router 3) Responsive interactions with immediate feedback. Deduct 5 points for missing loading states, 3 points for jarring page transitions, and 5 points for slow or unresponsive UI interactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Blogs/Forums",
+  "difficulty": "easy"
+}

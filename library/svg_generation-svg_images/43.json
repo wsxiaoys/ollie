@@ -1,0 +1,68 @@
+{
+  "index": 43,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure that the code you generate is executable. Please help me implement this SVG image using code. The carboy has an airlock for carbonation during homebrewing.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the carboy shape accurately represented in SVG?",
+      "description": "Evaluate whether the SVG code properly implements the characteristic flask-like shape of a carboy with appropriate proportions (wider bottom, narrowed neck). Check if the path/polygon elements use correct coordinates to create a visually accurate representation. Score 0 if the carboy shape is incorrect, 5 if basic shape is present but proportions are off, and 10 for accurate representation with proper curvature and dimensions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the airlock mechanism correctly depicted with functional accuracy?",
+      "description": "Review whether the airlock is implemented with proper structural details showing the S-shaped or three-piece design that allows gas to escape but prevents air from entering. Verify if the implementation shows the water/liquid barrier inside the airlock. Deduct 5 points if the airlock is visually present but lacks functional detail, and deduct another 3 points if the connection to the carboy is incorrect or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the SVG implement appropriate transparency and liquid level visualization?",
+      "description": "Check whether the code uses transparency effects to show the glass nature of the carboy and visibility of liquid contents. Evaluate if the liquid level is clearly depicted with proper opacity/fill attributes. Deduct 3 points if transparency is missing, 5 points if the liquid level is not visible or poorly implemented, and 3 points if the refractive properties of glass are not suggested visually. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the SVG code structured to demonstrate the carbonation process visually?",
+      "description": "Analyze whether the code includes visual elements representing the carbonation process, such as bubbles rising through the liquid and/or gas movement through the airlock. Check if animations are implemented to show the dynamic nature of fermentation. Score 0 if no carbonation visualization exists, 5 if static bubbles are present, and 10 if animations showing the active fermentation process are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the SVG code handles viewBox properly to ensure consistent display across different screen sizes. Check if there are fallback options for browsers with limited SVG support and whether clip-paths or masks are implemented correctly. Code with strong robustness should work consistently across browsers, giving 10 points. If the robustness is average with some browser compatibility issues, give 5 points, and if it fails in multiple environments, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the visualization (e.g., 1. Interactive elements that respond to user hovering/clicking 2. Color changes indicating fermentation stages 3. Realistic liquid physics simulation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant SVG elements that contribute nothing visually 2. Excessive detail that increases file size without improving visual quality 3. Complex animations or effects that obscure the main subject rather than enhance it. Deduct 3 points for each redundancy found, and directly deduct 10 points if these redundancies significantly impact loading performance.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review SVG structure including proper grouping (<g> elements), meaningful IDs/classes, and code reusability. Check if the code uses variables for repeating values and implements efficient path commands rather than excessive points. Deduct 5 points if elements are not logically grouped; deduct 5 points if there's excessive repetition instead of reusing elements; deduct 5 points if the code lacks comments explaining complex parts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design follows modern SVG best practices: 1) Harmonious color scheme appropriate for glass and liquid representation 2) Proper balance of detail vs. minimalism 3) Professional use of gradients and lighting effects to suggest dimensional glass properties. Deduct 3 points for unrealistic coloring, 5 points for flat/unconvincing glass representation, and 5 points for poor lighting or shadow implementation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether any included animations conform to natural physics: 1) Bubbles rise at realistic speeds 2) Liquid movement appears natural with appropriate easing 3) Any transitions are smooth with appropriate timing functions. Deduct 5 points for jerky animations, 3 points for unrealistic motion physics, and 5 points for animations that run too quickly or slowly to be convincing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "SVG Generation-SVG Images",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 91,
+  "question": "You are a code expert. Please use your professional knowledge to provide accurate and professional responses. Make sure the generated code is executable. Create a game using HTML where a character sprints forward, ensuring it can run directly in the frontend.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic game character and movement system implemented?",
+      "description": "Check whether the code implements a character that moves forward continuously with proper animation frames. Verify if the character maintains consistent forward movement (sprinting) without stopping. Score 0 if there's no character movement, 5 if there's basic movement without animation, and 10 if the character has smooth sprinting animation with proper frame transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game environment and background properly implemented?",
+      "description": "Evaluate if the game has a scrolling background or environment elements that create the illusion of the character moving forward. Check for parallax scrolling effects (multiple layers moving at different speeds) and if the environment repeats seamlessly. Score 0 if there's no background, 5 if there's a static or basic scrolling background, and 10 if there's a well-implemented parallax scrolling effect with seamless transitions.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the game controls responsive and intuitive?",
+      "description": "Review if the game includes user input handling (keyboard/touch controls) for actions like jumping, ducking, or changing lanes. Test the responsiveness of controls (input lag <50ms) and verify if there are visual cues for available actions. Score 0 if there are no controls, 5 if basic controls exist but feel sluggish, and 10 if controls are responsive and intuitive with appropriate feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a game loop with proper frame management?",
+      "description": "Check if the code implements a proper game loop using requestAnimationFrame() or similar methods, maintaining consistent frame rates (ideally 60fps) and including time-based movement calculations instead of frame-based to ensure consistent speed across different devices. Score 0 if there's no game loop, 5 if there's a basic loop without performance optimization, and 10 if there's a well-optimized game loop with frame timing.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, tab switching, device orientation changes, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic difficulty adjustment 2. Character customization 3. Special power-ups or abilities 4. Weather/time effects that affect gameplay). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the sprint game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle effects that cause lag). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), asset preloading, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if assets are loaded during gameplay causing stutters. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Consistent visual style and theme 2) Clear distinction between game elements and UI elements 3) Professional font system (readable text during movement, appropriate size for game context). Deduct 3 points for each inconsistent visual element, 5 points for confusing UI/game element boundaries, and 5 points for poorly implemented text elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Character responds to input within 100ms 2) Animation transitions are smooth without flickering 3) Clear visual feedback for player actions and collisions. Deduct 5 points for each operation without feedback, 3 points for frame drops during animation transitions, and 5 points for unclear collision feedback. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "easy"
+}

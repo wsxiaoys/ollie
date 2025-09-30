@@ -1,0 +1,68 @@
+{
+  "index": 1669,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration. Create a page with draggable directory upload functionality using HTML and JavaScript.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the drag-and-drop directory upload functionality fully implemented?",
+      "description": "Check if the code implements the core HTML5 FileSystem API with proper directory reading capabilities. Verify that it handles the 'webkitdirectory' attribute for input elements and uses DataTransfer API for drag operations. Score 0 if drag-and-drop is not implemented, 5 if only file (not directory) upload works, and 10 if full directory structure upload is supported with proper event handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the directory structure properly maintained and displayed?",
+      "description": "Evaluate whether the uploaded directory structure is preserved and visually represented to the user. Check if the code processes the relative paths from FileList entries and rebuilds the nested structure accurately. Deduct 5 points if folders are flattened, 3 points if subfolder nesting is limited to a single level. Award full points only if the complete directory hierarchy is preserved with proper indentation or tree visualization.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are appropriate file handling mechanisms implemented?",
+      "description": "Review the implementation of file handling including type detection, size validation, and preview generation. Check if the code provides file type icons, size formatting (KB/MB), and thumbnail previews for supported formats (images, PDFs). Deduct 3 points if there's no file size limit, 4 points if file type validation is missing, and 3 points if there are no file previews. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there proper user feedback during the upload process?",
+      "description": "Check if the code provides visual feedback for the upload process including drag-over states, progress indicators, success/error notifications, and abort capabilities. Deduct 3 points for missing drag-over visual cues, 4 points for no upload progress indicator, and 3 points for absence of completion/error feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported browsers, invalid file types, empty directories, oversized files, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Instant search within uploaded files 2. Auto-categorization of files by type 3. File preview directly in the interface). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file parsing methods) 2. Function modules unrelated to directory upload (e.g., unnecessary analytics) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data processing layers), event delegation usage, and memory management. Deduct 5 points if global namespace pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if memory leaks are detected in large file handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional upload area styling (clear drop zone with proper contrast). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for an ambiguous drop target area. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Immediate visual feedback when dragging over drop zone 2) Smooth transition animations for file listing (300-500ms) 3) Clear visual hierarchy in directory tree display. Deduct 5 points for each operation without feedback, 3 points for janky animations during directory expansion, and 5 points for confusing interaction patterns. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "easy"
+}

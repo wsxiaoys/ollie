@@ -1,0 +1,68 @@
+{
+  "index": 450,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you generate can be executed and displayed. Help me create a survival-style game with pixel art aesthetics that can run in a computer browser, implemented in a single HTML file. Please carefully check the code to ensure the program runs properly. I may add modification requests later.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game loop and survival mechanics well-implemented?",
+      "description": "Evaluate whether the game properly implements essential survival mechanics (health, hunger, energy systems) and if the game loop handles game state updates correctly. Check for day-night cycle implementation, resource depletion, and progressive difficulty. Score 0 if core mechanics are missing, 5 if basic systems exist but lack depth, 10 if there's a comprehensive survival system with balanced mechanics.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "How well is the pixel art aesthetic implemented?",
+      "description": "Assess the quality and consistency of pixel art visuals. Look for proper scaling (no blur), consistent pixel size ratio, appropriate color palette (limited colors for authentic retro feel), and pixelated animations. Deduct 5 points if graphics are inconsistent in style, 3 points if using non-pixel art elements, and 5 points for improper scaling. Score 10 for authentic, cohesive pixel art that enhances gameplay.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the player movement and interaction system properly implemented?",
+      "description": "Examine the player control system including keyboard/mouse controls, collision detection, interaction with game objects, and inventory management. Check for smooth movement animations and responsive controls (≤100ms delay). Deduct 5 points for clunky controls, 5 points for collision detection issues, and 3 points if interactions lack visual feedback. Full score requires fluid movement and intuitive interactions.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "How well does the game handle resource management and crafting?",
+      "description": "Evaluate the implementation of gathering resources, inventory system, and crafting mechanics. Look for balanced resource distribution, intuitive crafting interface, and progression system through crafted items. Score 0 if these systems are absent, 5 if basic implementation exists, and 10 if there's a comprehensive system with meaningful choices and progression.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, browser compatibility issues, performance degradation on low-end devices) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Procedural world generation 2. Dynamic weather system 3. Ecosystem with AI creatures interacting). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to track player stats) 2. Function modules unrelated to survival gameplay (e.g., an unnecessary minigame) 3. Fancy effects that affect performance (e.g., excessive particles that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, and optimization for browser performance. Deduct 5 points if global variables are overused; deduct 5 points if the code structure is monolithic without clear separation of concerns; deduct 5 points if there are noticeable frame rate issues or memory leaks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI design maintains pixel art consistency while being functional: 1) Appropriate scaling of UI elements 2) Clear visual hierarchy with important information easily readable 3) UI elements that match the game's aesthetic. Deduct 3 points for inconsistent UI style, 5 points for cluttered/unreadable UI, and 5 points for UI elements that break the pixel art immersion. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game provides appropriate feedback and satisfying interactions: 1) Visual/audio feedback for player actions within 100ms 2) Smooth transitions between game states 3) Clear indication of damage, healing, or status effects. Deduct 5 points for actions without feedback, 3 points for choppy animations, and 5 points for confusing status indicators. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "medium"
+}

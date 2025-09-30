@@ -1,0 +1,68 @@
+{
+  "index": 1357,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure the generated code is executable for display. \n\nNumber | Construction Task | Start Date | End Date | Duration (Days)\n--- | --- | --- | --- | ---\n1 | Site Leveling and Enclosure Setup | XXXX/XX/XX | XXXX/XX/XX | XX\n2 | Foundation Excavation and Pouring | XXXX/XX/XX | XXXX/XX/XX | XX\n3 | Main Structure Construction | XXXX/XX/XX | XXXX/XX/XX | XX\n4 | Roof and Wall Construction | XXXX/XX/XX | XXXX/XX/XX | XX\n5 | Interior Finishing and Decoration | XXXX/XX/XX | XXXX/XX/XX | XX\n6 | Exterior Engineering and Landscaping | XXXX/XX/XX | XXXX/XX/XX | XX\n\nPlease provide me with the code to output a Gantt chart.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic Gantt chart structure correctly implemented?",
+      "description": "Evaluate whether the code properly creates a visual timeline representation with horizontal bars for each construction task. Check if the chart includes a timeline axis, task labels, and proper date formatting. Score 0 if the basic structure is missing, 5 points if the structure is present but with deficiencies, and 10 points for a complete and properly structured Gantt chart.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the tasks and date ranges accurately displayed?",
+      "description": "Verify that all 6 construction tasks are correctly represented with their respective start and end dates. The bars should be proportionally sized according to the duration and correctly positioned on the timeline. Deduct 2 points for each incorrectly displayed task or date conversion error. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the time axis implementation complete and accurate?",
+      "description": "Check if the time axis is properly scaled, with clear interval markings, appropriate date labels, and consistent spacing. The axis should accommodate the full project timeline from the earliest start date to the latest end date. Deduct 5 points if the time scale is inconsistent or if date calculations are incorrect, and 3 points if the axis lacks proper labeling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Does the Gantt chart include visual indicators for progress tracking or milestones?",
+      "description": "Assess whether the implementation includes features for tracking progress (like percent complete indicators, today's date marker) or milestone markers. Give 3 points for basic progress indicators, 3 points for milestone visualization, and 4 points for interactive progress updating capabilities. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid dates, missing data, browser compatibility issues) and provide appropriate error handling. Code with strong robustness should validate inputs and gracefully handle edge cases, giving 10 points. If the robustness is average, give 5 points, and if no error handling is implemented, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Task dependency visualization 2. Critical path highlighting 3. Interactive tooltips with detailed information 4. Zoom and pan capabilities). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple date parsing methods) 2. Function modules unrelated to Gantt charts (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., excessive animations or renderings). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/rendering/interaction layers), reusability, and maintainability. Deduct 5 points if global variables are excessively used; deduct 3 points if the code is not properly commented; deduct 3 points if there's significant code duplication. Check if the implementation follows modern development practices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the chart follows data visualization best practices: 1) Clear visual hierarchy with task labels aligned properly 2) Appropriate color coding (consistent, accessible, meaningful) 3) Sufficient contrast between elements and background. Deduct 3 points for poor alignment, 3 points for inappropriate color choices, and 4 points for cluttered or hard-to-read visual presentation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and responsive?",
+      "description": "Judge whether the chart provides appropriate interaction capabilities: 1) Hovering effects for additional information 2) Smooth transitions when updating data or filtering 3) Responsive design that adapts to different screen sizes. Deduct 3 points for lack of hover states, 4 points for jarring transitions or no transitions, and 3 points for poor responsiveness across devices. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 985,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for display. Please help me create HTML code for the Google Chrome dinosaur game.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core game mechanic properly implemented?",
+      "description": "Check if the code implements the essential dinosaur jumping/ducking mechanics, obstacle generation, and collision detection. Score 0 if no game logic is implemented, 5 if basic jumping exists but collision detection is flawed, and 10 if all core mechanics work correctly including proper hit-box calculations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the game rendering and animation system properly implemented?",
+      "description": "Evaluate the implementation of game rendering using Canvas/CSS animations, including proper frame-rate management (ideally 60fps), smooth sprite animations, and parallax scrolling for background elements. Deduct 5 points if animation is choppy (< 30fps), 3 points if sprite sheets are not utilized efficiently, and 3 points if there's no parallax effect. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game difficulty progression correctly implemented?",
+      "description": "Check if the game includes progressive difficulty scaling (increasing speed, more obstacles, day-night transitions) based on score/time. Deduct 5 points if speed remains constant throughout gameplay, 3 points if obstacle patterns don't vary with difficulty, and 5 points if there's no difficulty curve. Full score for implementing all original Chrome dinosaur game progression features.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the score tracking and high score system fully functional?",
+      "description": "Evaluate if the code properly implements score tracking (based on distance/time), displays the current score in real-time, and maintains a persistent high score using localStorage. Deduct 3 points if score display isn't properly formatted (e.g., leading zeros), 5 points if high scores aren't persistent across sessions, and 3 points if score milestones aren't celebrated (e.g., score flashing at intervals).",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as window resizing, browser performance issues, focus loss, input lag) and provide graceful degradation or recovery mechanisms. Code with strong robustness should handle these edge cases effectively, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Power-ups like shields or slow-motion 2. Alternative character skins 3. Mobile touch/tilt support). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple collision detection systems) 2. Function modules unrelated to the dinosaur game (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/rendering/input handling), code organization, and performance optimization. Deduct 5 points if global state pollution is found or best practices aren't followed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the game loop implementation is inefficient or causes memory leaks. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual design matches the original Google Chrome dinosaur game's minimalist pixel art style: 1) Proper monochromatic palette 2) Correct sprite proportions and animations 3) Clean, non-pixelated rendering at various zoom levels. Deduct 3 points for unnecessary visual elements, 5 points for inappropriate graphics style, and 5 points for incorrect aspect ratios or sprite dimensions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game controls feel responsive and match the original: 1) Input response delay ≤ 50ms 2) Appropriate jump height and timing windows 3) Intuitive keyboard/touch controls with visual feedback. Deduct 5 points for input lag, 3 points for jerky character movement, and 5 points for unintuitive control schemes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Action/Rhythm",
+  "difficulty": "hard"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 839,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Help me implement a fixed deposit system with operations including entry, cancellation, full/partial early settlement, full settlement, additional deposits, reduced extensions, etc. The frontend should use React, Ant Design, and TypeScript, while the backend should be implemented with Spring Boot 2.7.7, MyBatis, and MySQL. Ensure all mappers use annotations and all POJOs use Lombok. Display all code in full without additional explanations or interpretations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the fixed deposit core functionality implemented?",
+      "description": "Evaluate whether the code implements all the required core functionalities: deposit entry, cancellation, full/partial early settlement, full settlement, additional deposits, and reduced extensions. Each operation should have proper validation, transaction handling, and calculation logic. Score 0 if less than 3 core operations are implemented, 5 if only basic operations are present, and 10 if all specified operations with complete business rules are implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the interest calculation system accurate and complete?",
+      "description": "Check if the interest calculation logic handles different scenarios correctly: regular interest accrual, early withdrawal penalties, additional deposit adjustments, and term extensions. The system should use appropriate compounding methods and account for edge cases like leap years and partial months. Deduct 3 points if calculations don't handle decimal precision properly, 4 points if early withdrawal penalties are incorrect, and 5 points if the interest calculation fails on edge cases. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are all backend APIs and data persistence layers properly implemented?",
+      "description": "Verify that all necessary Spring Boot REST endpoints are created with proper request/response handling, all MyBatis mappers use annotations as required, and database schema design follows normalization principles. Check if transaction management is implemented for critical operations and appropriate error handling exists. Deduct 3 points for missing endpoints, 3 points for improper transaction handling, and 4 points for incorrect database design. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the React frontend implementation complete with all required screens and components?",
+      "description": "Assess whether all required screens are implemented: deposit creation, management dashboard, transaction history, settlement screens, etc. Check if TypeScript is properly used with appropriate interfaces and type definitions. Evaluate if Ant Design components are correctly implemented and follow the library's best practices. Deduct 3 points for each missing major screen, 3 points for improper TypeScript usage, and 4 points for inconsistent Ant Design implementation. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code handles common abnormal situations (invalid inputs, concurrent modifications, system failures, etc.) and provides appropriate error handling and recovery mechanisms. Check for input validation, exception handling, and proper error messages. Code with strong robustness should handle edge cases effectively. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if exceptions are not handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check for surprise features that enhance user experience (e.g., 1. Real-time interest calculation preview 2. Deposit maturity notifications 3. Interactive what-if scenarios for early withdrawals 4. Visual reporting of deposit performance). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple interest calculation methods) 2. Function modules unrelated to fixed deposits (e.g., built-in currency converter not needed for core functionality) 3. Fancy effects that affect performance (e.g., unnecessary animations in a financial application). Deduct 3 points for each redundancy found, and directly deduct 10 points if core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review the code's architectural design (separation of concerns between frontend/backend, proper layering), adherence to TypeScript/Java coding standards, use of design patterns, test coverage, and build process automation. Check if Lombok is correctly used for all POJOs as required. Deduct 3 points if global state management is poor, 3 points if code duplication rate is high, 2 points if tests are missing, and 2 points if Lombok is misused. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the Ant Design implementation follows professional financial application design principles: 1) Consistent use of Ant Design's design language 2) Clear information hierarchy for financial data 3) Professional typography suitable for financial figures (monospaced fonts for numbers, proper decimal alignment). Deduct 3 points for inconsistent component styling, 3 points for poor information density in financial views, and 4 points for inaccessible or hard-to-read financial data displays. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the React application provides appropriate user feedback: 1) Loading states during API calls 2) Form validation feedback 3) Confirmation dialogs for critical financial operations 4) Smooth transitions between application states. Deduct 3 points for missing loading indicators, 3 points for abrupt state changes, and 4 points for lack of confirmation mechanisms for critical financial transactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

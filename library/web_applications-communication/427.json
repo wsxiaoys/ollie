@@ -1,0 +1,68 @@
+{
+  "index": 427,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. Create a window in Java 1.8 that resembles a WeChat chat window. It should look nice and match the recent WeChat interface appearance.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core WeChat chat window UI layout properly implemented?",
+      "description": "Evaluate whether the code implements a proper layout resembling the WeChat chat window, including the main conversation area, input area, message bubbles, and navigation elements. Score 0 if the basic layout is missing, 5 if only a basic structure is implemented, and 10 if the layout closely resembles the authentic WeChat interface with proper proportions and organization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the WeChat-specific UI components accurately represented?",
+      "description": "Check whether the code includes accurate representations of WeChat's distinctive UI elements such as green/white message bubbles with proper rounded corners, profile pictures, timestamps, message status indicators, and emoji support. Deduct 2 points for each major WeChat UI component missing, and 1 point for each inaccurate styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the navigation and control system properly implemented?",
+      "description": "Review whether the code implements WeChat's navigation system including back button, menu options, and navigation between different sections (chats, contacts, discover, me). Evaluate if proper listeners and event handling are implemented for these controls. Score 0 if navigation is missing, 5 if basic navigation exists but lacks some elements, and 10 if the complete navigation system is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the chat functionality demonstrations implemented?",
+      "description": "Assess whether the code demonstrates basic chat functionalities like sending messages, displaying message history, showing typing indicators, and message timestamps. Deduct 3 points if sending/receiving messages isn't functional, 2 points if message history isn't persistent within the session, and 2 points if timestamps or read receipts are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty messages, window resizing, very long messages, and special characters) and provide friendly error handling. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Message animation effects 2. Dark mode support 3. Custom themes 4. Voice message simulation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle messages) 2. Function modules unrelated to WeChat chat (e.g., unnecessary games or utilities) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/logic/data layers), proper Java conventions, design patterns, and code organization. Deduct 5 points if global state pollution is found or MVC/MVP patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper OOP principles aren't followed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the design follows WeChat's design language: 1) Correct color scheme (main WeChat green #7BB32E, background gray #EBEBEB, etc.) 2) Proper layout spacing and alignment 3) Professional font system (matching WeChat's typography). Deduct 3 points for each visual inconsistency with WeChat's design, 5 points for incorrect color palette, and 5 points for improper spacing or alignment. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the UI interactions match WeChat's behavior: 1) Immediate message sending feedback 2) Smooth message bubble animations 3) Responsive controls with appropriate hover/click effects. Deduct 3 points for each laggy animation, 3 points for missing interaction feedback, and 5 points for jerky scrolling or unresponsive UI elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "medium"
+}

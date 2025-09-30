@@ -1,0 +1,68 @@
+{
+  "index": 758,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Make sure that the code you generate is executable. Help me design a line inspection application with a frontend implemented in UniApp and a backend developed in JavaScript. The app should allow users to upload inspection photos and submit issues encountered during the inspection process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the UniApp frontend architecture properly implemented?",
+      "description": "Review whether the code includes proper UniApp component structure, page navigation, lifecycle hooks, and responsive layout. Check for proper use of conditional rendering, data binding, and event handling within the Vue-based framework. Score 0 if fundamental UniApp structure is missing, 5 if basic functionality exists but lacks optimization for multiple platforms, and 10 if the code demonstrates cross-platform compatibility (iOS, Android, H5) with adaptive designs.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the photo capture and upload functionality fully implemented?",
+      "description": "Examine the implementation of device camera access, photo processing (compression, EXIF data handling, image optimization), and multi-photo upload queue management. Verify the code manages upload progress indicators, retry mechanisms on failure, and proper error handling. Deduct 4 points if image compression is missing, 3 points if upload progress tracking is not implemented, and 3 points if there's no offline photo storage for later upload. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the inspection issue submission system comprehensively designed?",
+      "description": "Evaluate whether the system provides form validation for issue reporting, categorization capabilities, severity level assignment, location tagging (GPS coordinates), and association with uploaded photos. Check for draft saving functionality and submission confirmation. Deduct 3 points if geolocation is not implemented, 4 points if the relationship between photos and issues is poorly managed, and 3 points if validation is inadequate. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the backend JavaScript implementation secure and efficient?",
+      "description": "Assess the backend code for proper authentication (JWT implementation), file storage security, input sanitization, and RESTful API design. Verify that the backend includes rate limiting, proper error handling with meaningful status codes, and logging capabilities. Deduct 3 points for missing authentication, 3 points for unsecured file uploads, 2 points for SQL injection vulnerabilities, and 2 points for improper error handling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network interruption, photo upload failure, form submission errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should handle edge cases like device permission denials, low storage warnings, and offline mode operations. Give 10 points for comprehensive error handling, 5 points for average robustness, and 0 points if exceptions are unhandled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Voice-to-text for issue descriptions 2. Automated issue categorization using image recognition 3. AR markers for spatial reference 4. Offline operation mode with synchronization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Duplicate implementations of similar functions (e.g., multiple photo processing methods) 2. Function modules unrelated to inspection tasks 3. Unnecessarily complex animations or effects that affect performance on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if core inspection functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separation of concerns between UI components, business logic, and API services), component reusability, and build/deployment configuration. Deduct 5 points if global state management is poorly implemented; deduct 3 points if there's excessive component coupling; deduct 2 points if there's no environment configuration for development/production. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI follows mobile-first design principles: 1) Appropriate touch target sizes (minimum 44×44px) 2) Clear visual hierarchy with proper contrast ratios 3) Consistent design language across all screens 4) Proper form factor adaptation for various device sizes. Deduct 3 points for poor tap target sizing, 3 points for inconsistent design elements, and 4 points for layouts that break on different screen sizes. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and intuitive?",
+      "description": "Judge whether the app's interactions follow mobile UX best practices: 1) Response to user actions within 100ms 2) Clear loading states for network operations 3) Intuitive form navigation and submission process 4) Smooth transitions between app sections. Deduct 3 points for sluggish photo upload previews, 3 points for confusing navigation patterns, and 4 points for unclear feedback during inspection submission. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

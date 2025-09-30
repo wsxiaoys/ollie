@@ -1,0 +1,68 @@
+{
+  "index": 1326,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure the generated code is executable for demonstration. I also need a UI interface with 2 buttons: one for \"Start\" and one for \"Exit.\" After clicking Start, the app should run in the background, allowing users to control their phone through eyebrow movements.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the eyebrow movement detection system fully implemented?",
+      "description": "Review whether the code accurately implements facial landmark detection through computer vision libraries (like MediaPipe/OpenCV), specifically targeting eyebrow region tracking. Check if it includes proper calibration for different users, noise filtering, and gesture recognition accuracy. Score 0 if core detection logic is missing, 5 if only basic face detection is implemented, and 10 if precise eyebrow movement patterns are accurately captured with >90% recognition rate.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the phone control mapping functionality implemented?",
+      "description": "Check whether the eyebrow movements are properly mapped to phone control actions (swipe, tap, scroll, etc.). Evaluate if the system includes customizable gesture-to-action mapping, sensitivity adjustment, and multi-directional control support. Deduct 5 points if only basic directional mapping exists, and 3 points if no sensitivity calibration is provided. The full score requires comprehensive control coverage including navigation, app switching, and text input assistance.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the background service architecture properly designed with camera access management?",
+      "description": "Evaluate whether the background service properly handles camera resource management, permission requests, and system-level integration without blocking other apps. Check for proper service lifecycle management, memory optimization, and battery usage consideration. Deduct 5 points if camera resource conflicts occur, and 5 points if the service doesn't properly handle system interruptions (calls, notifications). Requires seamless background operation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the complete accessibility and calibration system constructed?",
+      "description": "Check whether the code includes comprehensive user calibration flow, accessibility settings for different physical abilities, and adaptive learning for individual eyebrow movement patterns. Evaluate if it provides feedback mechanisms, adjustment tutorials, and personalization options. Deduct 5 points if no calibration process exists, and 3 points if accessibility considerations are minimal. Give 10 points if fully adaptive system with learning capabilities is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as poor lighting conditions, camera obstruction, multiple faces in frame, system resource constraints, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should gracefully handle edge cases like face detection failures, camera permission denials, and hardware limitations, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance accessibility and user experience (e.g., 1. Voice feedback for movement confirmation 2. Gesture recording and playback for complex actions 3. Integration with system accessibility services 4. Multi-user profile support 5. Gesture macro creation). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar detection algorithms (e.g., multiple face detection libraries running simultaneously) 2. Function modules unrelated to eyebrow control (e.g., built-in games or entertainment features) 3. Resource-intensive effects that impact detection performance (e.g., heavy UI animations during detection). Deduct 3 points for each redundancy found, and directly deduct 10 points if core detection functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating detection engine/control mapping/UI layers), proper error handling, and performance optimization. Deduct 5 points if memory leaks in camera handling are found or poor separation of concerns; deduct 5 points if the detection loop blocks the main thread; deduct 5 points if no proper resource cleanup mechanisms exist. The full score requires clean architecture with proper threading and resource management.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet accessibility design standards?",
+      "description": "Evaluate whether the UI design follows accessibility principles: 1) High contrast design suitable for users with visual impairments 2) Large, easily identifiable buttons (minimum 44px touch targets) 3) Clear visual feedback for all interactions 4) Simple, uncluttered layout focusing on essential controls. Deduct 3 points for each accessibility guideline violation, 5 points for poor color contrast ratios (<4.5:1), and 5 points for confusing button layouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the real-time performance smooth and responsive?",
+      "description": "Judge whether the detection and control response meets real-time requirements: 1) Detection frame rate ≥ 15fps for smooth tracking 2) Gesture-to-action delay ≤ 200ms 3) Consistent performance across different lighting conditions 4) No noticeable lag in background operation. Deduct 5 points for each stuttering interaction, 3 points for inconsistent detection rates, and 5 points for performance degradation during extended use. The full score requires consistently smooth real-time operation.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Machine Learning",
+  "difficulty": "hard"
+}

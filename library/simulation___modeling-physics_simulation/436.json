@@ -1,0 +1,68 @@
+{
+  "index": 436,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Note that you should ensure the code you generate is executable for demonstration. Write a frontend program that simulates the celestial movement of the sun.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the basic sun simulation implemented correctly?",
+      "description": "Evaluate whether the code accurately implements the fundamental celestial physics of sun movement with proper positioning and trajectory calculations. Score 0 if there's no movement simulation, 5 if basic static representation only, and 10 if the sun follows a realistic arc path across the screen with proper timing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the visualization technique appropriate and efficient?",
+      "description": "Assess whether the visualization uses appropriate technologies (Canvas, SVG, WebGL, or CSS animations) for smooth rendering. Check if the implementation considers performance optimization like requestAnimationFrame instead of setInterval. Deduct 5 points if the chosen technology causes performance issues, 3 points if rendering is choppy above 60fps. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Does the simulation incorporate scientifically accurate celestial mechanics?",
+      "description": "Check whether the code uses actual astronomical equations for simulating the sun's apparent movement (considering Earth's rotation, axial tilt, and orbital position). Evaluate the accuracy of dawn/dusk transitions and day length variations. Score 3 points for basic day/night cycle, 7 points with seasonal variations, 10 points for complete astronomical accuracy.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are interactive features and controls provided?",
+      "description": "Review whether the code includes user controls to adjust simulation parameters (time acceleration, location/latitude selection, date selector). Evaluate if the UI offers real-time feedback when parameters change. Deduct 3 points for each missing core control, 2 points for controls without visual feedback. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as browser resizing, invalid user inputs, animation frame drops, etc.) and provide graceful degradation. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Atmospheric scattering effects for realistic sunrise/sunset colors 2. Integration with real-world time data 3. Celestial events highlighting like solstices/equinoxes). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant calculations that could be optimized or cached 2. Feature modules unrelated to sun movement (e.g., unnecessary weather effects) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating simulation logic from rendering), code reusability, and documentation quality. Deduct 5 points if global variable pollution is found; deduct 5 points if the code duplication rate is too high; deduct 5 points if there are no comments explaining astronomical calculations. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the visual representation follows modern design principles: 1) Realistic sun coloration with proper gradients and glow effects 2) Harmonious background/sky color transitions 3) Proper scaling and proportions. Deduct 3 points for unrealistic sun appearance, 5 points for abrupt color transitions in the sky, and 5 points for disproportionate elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the animation smooth and natural?",
+      "description": "Judge whether the sun's movement appears natural and fluid: 1) Smooth continuous motion rather than jumpy updates 2) Proper easing for sunrise/sunset transitions 3) Realistic light intensity changes throughout the day. Deduct 5 points for jerky movement, 3 points for unrealistic speed variations, and 5 points for abrupt lighting changes. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Simulation & Modeling-Physics Simulation",
+  "difficulty": "easy"
+}

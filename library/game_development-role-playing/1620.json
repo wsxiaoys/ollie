@@ -1,0 +1,68 @@
+{
+  "index": 1620,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure that the generated code is executable for display. I want a game about building a sect, with a fictional background, avoiding fantasy, blood, horror, urgent choices, and focusing more on character development. I am the new sect master (16 years old, unmarried), with a family that includes my mother and a minor sibling (brother or sister). The game mainly focuses on recruiting disciples and expanding the sect storyline.\n\nResponse settings: For each round, update the time and character information in the main interface in real-time, wrap all information in separate pseudo code blocks, use asterisks for prompts, quotation marks for dialogues, add emoji expressions, use tree diagrams to show character relationship networks, and ensure code blocks fit mobile display dimensions. Reply \"next month\" to advance to the next month, reply \"restart\" to regenerate character information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the sect building game foundation completely implemented?",
+      "description": "Check if the code implements the core game mechanics including time progression system, character attribute tracking, and sect management features. The implementation should handle the player as a 16-year-old sect master with family relationships (mother and sibling). Score 0 if core game loop is missing, 5 if basic mechanics exist but lack depth, 10 if comprehensive sect building mechanics are implemented with proper character relationships.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the disciple recruitment and character development system implemented?",
+      "description": "Evaluate the disciple recruitment mechanism, character attribute growth system, and relationship development features. Check if characters have unique personalities, backgrounds, and development paths. Disciples should have their own motivations and growth trajectories. Deduct 5 points if characters lack distinct personalities, 3 points if growth mechanics are simplistic or linear, and 5 points if there's no meaningful character interaction system.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the time progression and event system properly implemented?",
+      "description": "Review the 'next month' functionality that advances game time and triggers appropriate events. Check if the system includes random events, scheduled storylines, and consequences of previous choices. Event probability should be balanced, with event chains that build on previous player decisions. Deduct 5 points if time progression is buggy, 3 points if events are too repetitive or disconnect from context, and 5 points if there's no state persistence between time jumps.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the character relationship network visualization properly implemented?",
+      "description": "Assess the tree diagram implementation for character relationship networks. The visualization should be clear, interactive, and update dynamically as relationships evolve. Check if the relationships show hierarchy, loyalty, affection and other relevant metrics between sect master, family members, and disciples. Deduct 5 points if the visualization is static, 5 points if relationships aren't properly tracked in the data model, and 8 points if the tree diagram is unreadable or doesn't render properly on mobile.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid user inputs, edge cases in character interactions, corrupt game state) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic story generation based on character traits 2. Procedurally generated sect challenges 3. Complex faction dynamics with rival sects). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple character creation systems) 2. Function modules unrelated to sect building (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/data management layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between presentation and game logic. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional formatting of pseudo code blocks, asterisks for prompts, and quotation marks for dialogues. Deduct 3 points for each crowded visual element, 5 points for inconsistent emoji usage, and 5 points for poor mobile display optimization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the storytelling and narrative design compelling and appropriate?",
+      "description": "Judge whether the narrative avoids fantasy, blood, horror, and urgent choices as specified, while focusing on character development. Evaluate if the storytelling provides meaningful choices, avoids clichés, and creates an engaging progression for the young sect master. Deduct 5 points for inappropriate content, 3 points for shallow character development, and 5 points for restrictive or railroaded storytelling without player agency. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Role-Playing",
+  "difficulty": "medium"
+}

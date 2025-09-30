@@ -1,0 +1,68 @@
+{
+  "index": 974,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Ensure that the code you provide is executable. Prioritize using Meitu's pre-signed URL solution, and only switch to third-party storage if stability issues arise.\n\nI would like to implement something similar. Please provide detailed code for a program that opens with an interface containing adjustable beauty parameters. After setting the parameters and clicking \"Start Retouching,\" the software will monitor a specified folder, automatically process any incoming images using the preset retouching parameters, and then export them to a designated output folder.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the user interface for beauty parameter adjustment fully implemented?",
+      "description": "Review whether the code implements an intuitive UI with clearly labeled sliders/controls for beauty parameters (like smoothing, whitening, slimming, eye enlargement, etc.). Check if parameter ranges are appropriate with reasonable defaults. Score 0 if there's no UI implementation, 5 if only basic controls exist without proper organization, and 10 if a comprehensive, well-designed parameter adjustment panel is provided with visual previews of effects.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the folder monitoring system properly implemented?",
+      "description": "Evaluate the implementation of the directory watcher that detects new image files. Check if it uses proper file system events (rather than polling), handles various edge cases (partially written files, temporary files, non-image files), and manages system resources efficiently. Deduct 5 points if monitoring is unstable or uses excessive polling, and 3 points if it doesn't handle edge cases properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the image processing pipeline correctly implemented with Meitu's pre-signed URL solution?",
+      "description": "Check whether the code properly integrates with Meitu's pre-signed URL API for image processing, including authentication, parameter formatting, and error handling. Verify that the solution correctly constructs API requests with beauty parameters and processes responses. Deduct 5 points if the implementation doesn't use Meitu's solution as primary, and 10 points if there's no proper error handling or fallback mechanism. Full score of 10 points requires complete implementation with proper documentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the automatic batch processing workflow complete?",
+      "description": "Evaluate if the code includes a complete workflow from detecting new images to processing and saving them in the output folder. Check for proper threading/async processing to prevent UI freezing, progress indicators, and logging of successes/failures. Score 10 if the system handles batches efficiently with proper concurrency controls, 5 if basic functionality exists but with synchronous blocking operations, and 0 if the workflow is incomplete.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network failures, invalid images, disk full errors, permission issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time preview of effects 2. Preset templates for different scenarios 3. Batch processing statistics and reports). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image loading paths) 2. Function modules unrelated to the core requirements (e.g., built-in social media sharing) 3. Fancy effects that affect performance (e.g., unnecessary animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI/image processing/file system modules), error handling, logging, and configuration management. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if configuration is hardcoded. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Parameter adjustment reflects changes instantly or with appropriate visual feedback 2) Processing status clearly visible with progress indicators 3) Clear visual distinction between processed and unprocessed images. Deduct 5 points for each operation without feedback, 3 points for laggy parameter adjustments, and 5 points for unclear processing status. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Batch Processing",
+  "difficulty": "medium"
+}

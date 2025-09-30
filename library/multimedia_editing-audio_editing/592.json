@@ -1,0 +1,68 @@
+{
+  "index": 592,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable and demonstrable. Design an online audio concatenation tool that supports uploading multiple audio clips, allows users to freely adjust the order of audio concatenation in the interface, and export the synthesized audio.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "1. Is the audio upload and format handling system fully implemented?",
+      "description": "Review whether the code accurately implements multi-file audio upload through HTML5 File API, and whether it includes support for common audio formats (MP3, WAV, AAC, OGG). Check if audio format validation, file size limits, and format conversion capabilities are included. Score 0 if core upload functionality is not implemented, 5 if only basic single-file upload is supported, and 10 if multi-format batch upload with validation is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "2. Is the audio concatenation engine and processing logic implemented?",
+      "description": "Check whether the Web Audio API or similar technology is properly implemented for audio concatenation, including audio buffer management, seamless audio stitching, and real-time preview capabilities. Evaluate if the concatenation maintains audio quality without distortion. Deduct 5 points if audio gaps or clicks are present during concatenation, and 3 points if real-time preview is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "3. Is the drag-and-drop interface for audio sequence management designed and functional?",
+      "description": "Evaluate whether the interface provides intuitive drag-and-drop functionality for reordering audio clips, including visual feedback during dragging, drop zone indicators, and smooth animation transitions. Check if the interface displays audio waveforms, duration, and file names clearly. Deduct 5 points if drag-and-drop is non-functional or clunky, and 3 points if visual feedback is poor. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "4. Is the audio export and download functionality complete?",
+      "description": "Check whether the code includes complete audio export capabilities with multiple format options (MP3, WAV), quality settings, and proper file naming. Evaluate if the export process includes progress indicators and handles large file exports efficiently. Deduct 5 points if export functionality is missing or limited to one format, and 3 points if no progress feedback is provided during export. Give 10 points if fully implemented with multiple format support.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "5. Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted audio files, unsupported formats, memory limitations, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle file size limits, audio processing errors, and graceful degradation. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "6. Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time waveform visualization during editing 2. Audio fade-in/fade-out effects between clips 3. Batch processing with templates 4. Audio normalization and volume adjustment 5. Keyboard shortcuts for power users). Add 2 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "7. Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple upload handlers coexisting) 2. Function modules unrelated to audio processing (e.g., built-in video editor) 3. Heavy effects that impact audio processing performance (e.g., complex 3D visualizations). Deduct 3 points for each redundancy found, and directly deduct 10 points if core audio functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "8. Does the code have engineering quality?",
+      "description": "Review modular design (such as separating audio processing/UI/file handling layers), error handling patterns, and code organization. Deduct 5 points if global state pollution is found or proper separation of concerns is missing; deduct 5 points if the code duplication rate is too high (over 30%); deduct 3 points if no proper audio cleanup/disposal is implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "9. Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching suitable for audio editing (no more than 3 primary colors) 2) Proper layout spacing with clear audio track separation 3) Professional typography with readable labels and controls 4) Intuitive iconography for audio functions. Deduct 3 points for each crowded visual element, 5 points for poor color contrast affecting usability, and 5 points for confusing layout of audio controls. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "10. Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to audio editing workflow expectations: 1) Drag-and-drop response time ≤ 100ms 2) Audio preview starts within 200ms of user action 3) Smooth waveform rendering without stuttering 4) Clear visual feedback for all audio operations 5) Responsive progress indicators during processing. Deduct 5 points for each laggy interaction, 3 points for delayed audio feedback, and 5 points for unresponsive UI during audio processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Audio Editing",
+  "difficulty": "medium"
+}

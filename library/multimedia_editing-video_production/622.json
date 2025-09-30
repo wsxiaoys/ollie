@@ -1,0 +1,68 @@
+{
+  "index": 622,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Try to ensure the generated code can be executed and demonstrated. ======== ROLE ========\nYou are an experienced code expert. You are provided with a software development requirement description and asked to generate project code based on these requirements. Strictly follow the rules to help users generate complete project code with simple and easy-to-understand comments, without outputting anything else.\n\n======== OUTPUT RULES ========\n1. You will always generate complete, runnable project code. Please ensure the project is complete and executable\n2. Make sure all code files you output are complete, without omitting any code\n3. Carefully review and check all code before final output, evaluating its executability. If the code cannot be executed or contains errors, regenerate it\n4. If the requirements involve external API access or using user data (images, videos, audio, etc.), please provide mock data\n\n======== PROJECT REQUIREMENTS ========\nDevelop a video editing timeline manager where users can upload multiple video and audio files, arrange video and audio clips on the timeline through drag-and-drop operations to complete editing, and finally generate and export the video.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the video timeline component fully implemented?",
+      "description": "Review whether the code implements a complete timeline interface with time markers, zoom controls, and frame-accurate positioning. Check if the timeline supports multiple video/audio tracks and if scrubbing/playback functionality is properly synchronized with the video preview. Score 0 if core timeline visualization is missing, 5 if basic timeline exists but lacks essential features, 10 if the timeline is fully featured with professional-grade precision.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the drag-and-drop media arrangement functionality properly implemented?",
+      "description": "Evaluate the drag-and-drop implementation for arranging video and audio clips on the timeline. Check if the code handles drag start/over/end events correctly, includes visual feedback during dragging, supports clip trimming/splitting, and maintains proper snapping to adjacent clips or time markers. Deduct 3 points if drag positioning is inaccurate, 3 points if visual feedback during dragging is poor, and 4 points if clip operations (trimming/splitting) are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the video/audio upload and management system complete?",
+      "description": "Check if the code implements complete media upload functionality with proper file validation, progress indicators, and error handling. Verify if uploaded assets are properly organized in a media library with thumbnails/waveforms and if the system efficiently handles memory management for large media files. Deduct 4 points if media preview generation is missing, 3 points if file format validation is inadequate, and 3 points if there's no progress feedback during uploads. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the video export and rendering functionality implemented?",
+      "description": "Assess whether the rendering pipeline correctly handles timeline data to generate a final video output. Check if the code includes export resolution options, format selection, quality settings, and progress indicators. Verify if the implementation handles frame-accurate video/audio synchronization during rendering. Deduct 5 points if rendering progress feedback is missing, 3 points if export quality options are limited, and 2 points if the rendering process lacks error handling or cancellation options. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as unsupported file formats, very large video files, browser memory limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered automatic scene detection 2. Auto-generated transitions between clips 3. Audio waveform visualization 4. Real-time video effects preview). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple video processing libraries doing the same work) 2. Function modules unrelated to video editing (e.g., a built-in social network) 3. Fancy effects that affect performance (e.g., excessive animations in the UI that slow down editing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating editing logic/UI/rendering pipeline), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows professional video editing software principles: 1) Appropriate dark theme with proper contrast for long editing sessions 2) Clear visual hierarchy between timeline, preview area, and controls 3) Professional iconography consistent with industry standards. Deduct 3 points for cluttered workspace layout, 5 points for poor contrast that hinders timeline readability, and 5 points for confusing or inconsistent icon usage. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the timeline interaction conforms to video editing workflow expectations: 1) Frame-accurate scrubbing with minimal latency 2) Smooth zooming and panning without stuttering 3) Responsive clip manipulation with immediate visual feedback. Deduct 5 points for laggy playback or scrubbing, 3 points for jerky timeline navigation, and 5 points for delayed feedback when manipulating clips. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Multimedia Editing-Video Production",
+  "difficulty": "hard"
+}

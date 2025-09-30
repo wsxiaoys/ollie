@@ -1,0 +1,68 @@
+{
+  "index": 9,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. \n\nPlease help me implement the following requirements using SVG code: Design an interactive chess game that allows users to move pieces and view game history, implemented using SVG and JavaScript.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the chess board and pieces visualization accurately implemented using SVG?",
+      "description": "Review whether the SVG code correctly implements the 8x8 chess board grid with proper colors (alternating light and dark squares) and all chess pieces with standard representations. Check if the elements have appropriate ids/classes for manipulation. Pieces should be properly sized and centered in squares. Score 0 if the board is incomplete, 5 if board exists but pieces are improperly represented, 10 if all pieces have proper SVG paths with clean design.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is piece movement and selection properly implemented?",
+      "description": "Evaluate the interaction mechanism for selecting and moving pieces. Check if the code includes proper event listeners (mousedown/click/drag), visual feedback for selection, and validation for legal chess moves. Deduct 5 points if drag-and-drop functionality is missing, 3 points if there's no visual indication of selected pieces, and 5 points if legal move validation is absent. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the chess game logic fully implemented?",
+      "description": "Assess whether the code implements the complete ruleset of chess, including special moves like castling, en passant, pawn promotion, and checks/checkmates. Examine if turn-based gameplay is enforced. Score 0 if basic piece movement rules are missing, 5 if basic rules exist but special moves are not implemented, and 10 if all chess rules are correctly enforced with proper game state management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the game history viewer functional and comprehensive?",
+      "description": "Check whether the game history is properly recorded and displayed using a standardized format (like algebraic notation). Verify if users can navigate through previous moves, with the board updating accordingly. Deduct 5 points if history is not visually accessible, 3 points if the notation is non-standard or difficult to read, and 5 points if historical positions cannot be reviewed on the board. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid moves, browser resizing, out-of-sequence operations) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Move suggestions highlighting 2. Captured pieces display 3. Check/checkmate animations or indicators 4. Interactive move analysis). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to select pieces) 2. Function modules unrelated to chess visualization (e.g., unnecessary animations) 3. Fancy effects that affect performance (e.g., complex shadows or gradients that slow rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/user interaction layers), code organization, and maintainability. Check if SVG elements are properly structured and manipulated. Deduct 5 points if global state pollution is found; deduct 5 points if the code lacks comments or uses cryptic variable names; deduct 5 points if SVG manipulation is inefficient or uses poor practices. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the SVG design follows modern design principles: 1) Harmonious color matching between board and pieces 2) Proper visual hierarchy with clear distinction between interactive and static elements 3) Clean, readable design for game history view. Deduct 3 points for each visually cluttered element, 5 points for poor color combinations that affect readability, and 5 points for inconsistent styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Piece movement animations feel natural (200-300ms) 2) Selection and highlighting provide immediate visual feedback (≤100ms) 3) Game history navigation is intuitive and responsive. Deduct 5 points for choppy animations, 3 points for delayed visual feedback, and 5 points if the interface becomes unresponsive during animations. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Strategy",
+  "difficulty": "hard"
+}

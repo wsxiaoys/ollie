@@ -1,0 +1,68 @@
+{
+  "index": 1556,
+  "question": "You are a coding expert. Please use your professional knowledge to generate accurate and professional responses. Take care to ensure that your generated code is executable and can be demonstrated. Please help write code for a message board.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is a complete message board data structure implemented?",
+      "description": "Review whether the code properly implements the core data structures for a message board: message objects (with timestamps, user IDs, content), user profiles, and threading/reply relationships. Score 0 if no data structure is defined, 5 if only basic message objects are created, and 10 if a complete relational structure including replies, likes, and metadata is implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are essential CRUD operations fully implemented?",
+      "description": "Check if the code includes all necessary Create, Read, Update, Delete operations for message board functionality: posting messages, viewing messages (including pagination), editing posts, and deleting messages. Deduct 3 points for each missing operation. Proper validation and error handling for each operation should be present. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is user authentication and authorization implemented?",
+      "description": "Evaluate whether the code includes user registration, login functionality, and proper authorization controls (who can edit/delete which messages). Score 0 if no authentication exists, 5 if basic authentication without proper security measures (like password hashing) is implemented, and 10 if a complete secure authentication system with session management is present.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data persistence properly implemented?",
+      "description": "Assess how the message board data is stored and persisted: Is there a database connection (SQL/NoSQL)? Are there migrations or schema definitions? Is there proper data sanitization to prevent injection attacks? Deduct 5 points if data is only stored in memory without persistence, and 3 points if there's no data validation or sanitization. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid inputs, server errors, concurrent editing conflicts, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time updates with WebSockets 2. Rich text formatting or markdown support 3. @mentions and notifications 4. Emoji reactions). Add 2.5 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple user authentication methods without clear purpose) 2. Function modules unrelated to a message board (e.g., a built-in game) 3. Fancy effects that affect performance (e.g., excessive animations or visual effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating models, views, controllers or appropriate frontend/backend architecture), code reusability, and maintainability. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no error handling or logging. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times) 4) Clear visual hierarchy for message threads. Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Form submission feedback delay ≤ 100ms 2) Smooth loading states when fetching messages 3) Clear visual feedback for user actions (posting, editing, deleting). Deduct 5 points for each operation without feedback, 3 points for jarring transitions between pages or states, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Communication",
+  "difficulty": "easy"
+}

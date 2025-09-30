@@ -1,0 +1,68 @@
+{
+  "index": 533,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Create a real estate showcase website with virtual reality (VR) functionality. The homepage should feature a full-screen video background with a transparent navigation bar at the top. The property listing page should use a card layout, with each card displaying brief information and a 360° panorama preview icon when hovered over. Clicking on a property card takes users to a detail page, where the top section displays a property photo carousel with thumbnail navigation and gesture-based swiping. Add a 3D floor plan viewer that allows users to switch between different floors and room views. Implement a VR house tour feature where users can virtually navigate through rooms using VR glasses or their phone's gyroscope. Add a property comparison tool that can simultaneously compare multiple properties' features and prices.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the homepage with full-screen video background and transparent navigation properly implemented?",
+      "description": "Review whether the code correctly implements a full-screen video background with autoplay, appropriate compression for performance, and fallback content. The navigation bar should have proper transparency effects with readable text that remains visible against varying video backgrounds. Score 0 if none implemented, 5 if basic implementation with flaws (e.g., poor mobile responsiveness, performance issues with video), 10 if flawlessly implemented with responsive design and performance optimization.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the property listing page with card layout and 360° preview functionality properly implemented?",
+      "description": "Check if the property cards display essential information (price, location, bedrooms, bathrooms) in an organized layout. Each card should show a 360° panorama icon on hover, with proper transitions. Score 0 if card layout is missing, 5 if cards exist but lack hover effects or have poor responsive design, and 10 if cards are fully functional with smooth hover transitions and optimized loading of preview thumbnails.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the property detail page with photo carousel and thumbnail navigation effectively implemented?",
+      "description": "Evaluate the implementation of the photo carousel with gestures for swiping on mobile and tablet devices. Check if thumbnail navigation properly syncs with the main carousel view. Score 0 if carousel is absent, 5 if basic carousel exists but lacks gesture support or thumbnail navigation, and 10 if fully implemented with smooth transitions, preloading of adjacent images, and proper touch/mouse event handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Are the 3D floor plan viewer and VR house tour features properly implemented?",
+      "description": "Assess whether the 3D floor plan viewer can switch between different floors and room views as specified. The VR tour should work with both VR glasses and phone gyroscopes. Score 0 if features are missing, 5 if implemented but with limited functionality (e.g., only works on certain devices, poor performance), and 10 if fully implemented with optimized 3D rendering, appropriate textures, and smooth navigation controls.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as missing property data, slow network connections, browser compatibility issues, device orientation changes) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. AI-powered property recommendations 2. Augmented reality measurement tools for room dimensions 3. Virtual furniture placement to visualize spaces). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple image viewers with overlapping purposes) 2. Function modules unrelated to real estate showcase (e.g., unnecessary social media feeds) 3. Fancy effects that affect performance (e.g., excessive particle animations in background). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating UI components, data fetching, and 3D/VR rendering services), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern real estate website principles: 1) Harmonious color matching that reflects luxury/comfort (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) VR navigation responds within 100ms to prevent motion sickness 2) 3D floor plan interactions feel natural with appropriate weight/physics 3) Clear visual cues for interactive elements vs. static content. Deduct 5 points for each operation without feedback, 3 points for jitter or frame drops during VR navigation, and 5 points for disorienting transitions between views. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

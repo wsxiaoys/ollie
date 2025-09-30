@@ -1,0 +1,68 @@
+{
+  "index": 1307,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code that can be demonstrated. Read from Excel, display POIs and clustering situations on a map, and visualize through HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Excel data reading functionality properly implemented?",
+      "description": "Evaluate whether the code correctly reads data from Excel files (XLSX/XLS) including error handling for missing files, incorrect formats, and large datasets. Check if the code uses appropriate libraries (e.g., SheetJS, xlsx, pandas) and maintains data integrity. Score 0 if there's no Excel reading implementation, 5 if basic reading is implemented but with limitations, and 10 if robust Excel processing with error handling is fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the POI data extraction and processing properly implemented?",
+      "description": "Review whether the code correctly extracts Point of Interest (POI) data from the Excel file, validates geographic coordinates (latitude/longitude), handles missing or invalid POI data, and transforms data into an appropriate format for mapping. Deduct 5 points if coordinate validation is missing, 3 points if there's no handling for incomplete data, and 2 points if data transformation is inefficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the clustering algorithm implementation effective?",
+      "description": "Assess the clustering algorithm implementation (e.g., K-means, DBSCAN, hierarchical clustering) for grouping POIs. Check if the algorithm is appropriate for geospatial data, includes proper parameter selection, and has optimization for performance with larger datasets. Deduct 5 points if the clustering doesn't account for geographic distance properly, 3 points if parameter tuning options are missing, and 2 points if performance issues exist with larger datasets. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the map visualization implementation complete?",
+      "description": "Evaluate whether the map implementation includes proper initialization (using libraries like Leaflet, Google Maps API, or OpenLayers), correct POI placement, appropriate zoom levels, distinguishable cluster visualizations, and interactive elements. Deduct 5 points if the map lacks proper initialization or responsive design, 3 points if POI markers lack clarity or distinction, and 3 points if clustering visualization is not intuitive. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as malformed Excel data, invalid coordinates, browser compatibility issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Heatmap visualization as an alternative view 2. Time-series animation for temporal POI data 3. Advanced filtering options for clusters 4. Custom cluster inspection tools). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple mapping libraries used simultaneously) 2. Function modules unrelated to POI visualization (e.g., unnecessary analytics tools) 3. Fancy effects that affect performance (e.g., excessive animations that slow down map rendering). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data loading/processing/visualization layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching for map elements and clusters (distinguishable but not jarring) 2) Proper layout spacing for controls and information panels 3) Professional font system for labels and information displays (readable at various zoom levels). Deduct 3 points for cluttered map controls, 5 points for indistinguishable cluster/POI markers, and 5 points for illegible text elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the map interactions conform to user expectations: 1) Responsive zooming and panning without lag 2) Clear visual feedback when selecting POIs or clusters 3) Smooth transitions when switching between cluster views and individual POIs. Deduct 5 points for laggy map rendering, 3 points for unresponsive POI selection, and 5 points for abrupt transitions between clustering levels. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

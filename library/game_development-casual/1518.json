@@ -1,0 +1,68 @@
+{
+  "index": 1518,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to make the generated code executable and ready for demonstration. Help me write a 2D casual, easy-to-learn racing game for mobile phones with clear graphics and appealing colors.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core racing game mechanics fully implemented?",
+      "description": "Review whether the code accurately implements the basic racing mechanics including player movement controls, collision detection, track boundaries, and speed management. Score 0 if core racing mechanics are missing, 5 if only basic movement is implemented, and 10 if all expected racing features (acceleration, braking, steering, obstacles) are properly implemented with physics considerations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the mobile touch control system properly designed?",
+      "description": "Check whether the implementation includes touch-friendly controls appropriate for mobile devices (such as tilt controls, touch steering, on-screen buttons). Evaluate responsiveness across different screen sizes and device orientations. Deduct 5 points if controls are not optimized for touch interfaces, 3 points if there's noticeable input lag. Full score requires multi-touch support and alternative control schemes.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the game properly optimized for mobile performance?",
+      "description": "Evaluate whether the code implements mobile optimization techniques such as asset compression, minimal DOM manipulation, efficient rendering loops, and battery consumption considerations. Check if the game maintains a stable framerate (minimum 30 FPS). Deduct 5 points for each significant performance issue that would cause lag or battery drain on mid-range devices.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the 2D casual visual style appropriately implemented?",
+      "description": "Assess if the graphics match the 'casual, easy-to-learn' requirement with clear, appealing visuals. Check for consistent art style, appropriate animations, and visual feedback. Deduct 5 points if graphics are inconsistent, 5 points if visual feedback for player actions is inadequate, and 3 points if animations are choppy or missing. The full score requires polished, cohesive visuals.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as screen rotation, browser tab switching, touch event interruptions, memory constraints on low-end devices) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Dynamic weather effects 2. Customizable vehicles 3. Unique power-ups or boost mechanisms 4. Social features like ghost racing). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple movement control systems coexisting) 2. Function modules unrelated to the racing game (e.g., unnecessary mini-games) 3. Fancy effects that affect performance (e.g., excessive particle systems). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling layers), asset loading management, and code organization. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no efficient asset loading strategy for mobile. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern mobile game design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (accommodating for touch targets at least 44x44 pixels) 3) Clear information hierarchy with appropriate font sizes (readable on small screens). Deduct 3 points for each cluttered UI element, 5 points for a visually conflicting color scheme, and 5 points for text that's too small to read on mobile. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Touch response delay ≤ 50ms 2) Transition animation duration controlled between 200-400ms for mobile 3) Clear visual and audio feedback for all interactions. Deduct 5 points for each interaction without feedback, 3 points for jerky animations during gameplay, and 5 points for UI elements that obscure important game action. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "hard"
+}

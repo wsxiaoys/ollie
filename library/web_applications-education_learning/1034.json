@@ -1,0 +1,68 @@
+{
+  "index": 1034,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Be sure to provide executable code for demonstration whenever possible. Create a web-based student course selection system with both student and teacher interfaces.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the student interface fully implemented?",
+      "description": "Evaluate whether the code implements all essential student functionalities including course browsing, filtering, registration, schedule viewing, and dropping courses. Check if the interface displays course details (name, code, instructor, schedule, capacity), handles conflicts, and confirms actions. Score 0 if core functionality is missing, 5 for basic implementation, 10 if complete with validation and user feedback.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the teacher interface properly implemented?",
+      "description": "Examine if the teacher interface includes course creation/editing, student roster management, capacity control, and approval workflows (if applicable). Verify that teachers can view enrolled students, manage waitlists, and export class data. Deduct 5 points if basic CRUD operations are missing, and 3 points if student management features are incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the data model and state management properly designed?",
+      "description": "Assess whether the system uses appropriate data structures for courses, students, enrollments, and schedules. Check if relationships between entities are clearly defined and maintained consistently. Evaluate state management (using context, Redux, or similar patterns) for proper data flow. Deduct 5 points for data inconsistency issues, 3 points for inefficient data structures, and 5 points for global state pollution. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is authentication and role-based access control implemented?",
+      "description": "Verify if the system implements proper authentication (login/logout) and maintains session state. Check if role-based permissions separate student and teacher actions. Evaluate if unauthorized access attempts are properly handled. Deduct 10 points if authentication is missing, 5 points if role separation is incomplete, and 3 points if session management has security flaws. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as duplicate registrations, course conflicts, full courses, invalid inputs, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Visual schedule calendar view 2. Real-time course availability notifications 3. Interactive course recommendation system based on student history). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to display the same data) 2. Function modules unrelated to course registration (e.g., a built-in chat system) 3. Fancy effects that affect performance (e.g., excessive animations). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating API/UI/state management layers), component reusability, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast course browsing/selection, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Education/Learning",
+  "difficulty": "medium"
+}

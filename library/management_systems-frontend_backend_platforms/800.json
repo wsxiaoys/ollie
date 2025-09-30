@@ -1,0 +1,68 @@
+{
+  "index": 800,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure that any code you generate is executable and demonstrable. Develop a complete bookshelf application using Electron that has an interface similar to Apple Books, with capabilities for adding, deleting, modifying, and searching.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Apple Books-like interface design fully implemented?",
+      "description": "Review whether the code accurately replicates Apple Books' visual design through HTML/CSS/JavaScript, including the grid/list view toggle, book cover display with proper shadows and rounded corners, and smooth transitions between views. Check if the interface includes the characteristic typography, color scheme (light/dark mode support), and layout proportions matching Apple Books. Score 0 if basic UI structure is missing, 5 if only basic layout is implemented without proper styling, and 10 if the interface closely matches Apple Books' aesthetic standards.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the CRUD operations (add, delete, modify, search) fully functional?",
+      "description": "Evaluate whether all four core operations are properly implemented: 1) Add books with metadata input forms and file import capabilities 2) Delete books with confirmation dialogs and proper cleanup 3) Modify book information with inline editing or modal forms 4) Search functionality with real-time filtering and advanced search options. Check if data persistence is handled correctly using Electron's file system or database integration. Deduct 3 points for each missing operation, and 2 points if operations lack proper validation or error handling. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the Electron application architecture properly structured?",
+      "description": "Check whether the Electron app follows best practices with proper main/renderer process separation, secure IPC communication, and appropriate context isolation. Evaluate if the app includes proper window management, menu integration, and platform-specific features. Verify that security measures are in place (nodeIntegration disabled, contextIsolation enabled). Deduct 5 points if security vulnerabilities exist, 3 points if IPC communication is not properly structured, and 2 points if platform integration is missing. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the data management and persistence system robust?",
+      "description": "Assess whether the application includes a comprehensive data management system for book storage, metadata handling, and file organization. Check if the system supports various book formats, maintains data integrity, includes backup/restore functionality, and handles large libraries efficiently. Evaluate if the database schema (SQLite/JSON) is well-designed with proper indexing for search performance. Deduct 5 points if no persistent storage is implemented, 3 points if data integrity mechanisms are missing, and 2 points if performance optimization is lacking. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted book files, disk space issues, invalid metadata, network errors for online features, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the user experience (e.g., 1. Reading progress tracking with visual indicators 2. Smart book recommendations based on reading history 3. Export/import library functionality 4. Book preview with flip animation 5. Reading statistics dashboard). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple search mechanisms coexisting) 2. Function modules unrelated to bookshelf management (e.g., built-in games or unrelated utilities) 3. Excessive animations or effects that impact performance (e.g., complex 3D transitions). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core bookshelf functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (separating UI components, data layer, and Electron-specific modules), proper error handling, and build process automation. Check for proper TypeScript usage if applicable, ESLint configuration, and packaging scripts. Deduct 5 points if global state pollution is found or proper architecture patterns are not used; deduct 3 points if code duplication rate is high (over 25%); deduct 2 points if build/packaging process is not properly configured. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching consistent with Apple's design language 2) Proper layout spacing with consistent margins and padding 3) Professional typography system with appropriate font sizes and hierarchy 4) Responsive grid layout for different window sizes. Deduct 3 points for each visually inconsistent element, 5 points for poor color harmony that doesn't match Apple Books aesthetic, and 3 points for improper spacing or alignment issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to Apple's Human Interface Guidelines: 1) Hover states and click feedback with proper timing 2) Smooth transitions between grid and list views 3) Fluid animations for book operations (add/delete/modify) 4) Responsive scrolling and loading states 5) Proper focus management for keyboard navigation. Deduct 4 points for each missing interaction feedback, 3 points for janky animations or performance issues, and 3 points for poor accessibility support. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "hard"
+}

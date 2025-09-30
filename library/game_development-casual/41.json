@@ -1,0 +1,68 @@
+{
+  "index": 41,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement a game with the following:\n\n### Gameplay\n1. **Direction Control**: Use direction buttons to change the character's walking direction.\n2. **Character Switching**: Switch between different characters to view their respective walking animations.\n\n### Game Features\n- **Animation Technology**: Uses CSS animation techniques to achieve smooth walking effects.\n- **Character Diversity**: Includes various different characters and walking animations.\n- **Interactive Experience**: Users can control the animation interactively, increasing the sense of participation in the game.\n\n### Summary\nThis demonstration is not just a game but also an educational tool to help developers learn and master CSS animation techniques. Include comments in your code to help other developers understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the direction control system fully implemented?",
+      "description": "Evaluate whether the code implements a complete directional control system with at least four directions (up, down, left, right). Check if the directional inputs are properly connected to character movement and if the character's facing direction changes appropriately. Deduct 5 points if diagonal movement is missing when it would enhance gameplay, 3 points if direction change has noticeable delay (>100ms). Award full points only if directional controls are intuitive and responsive.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the character switching mechanism fully functional?",
+      "description": "Review whether the code allows seamless switching between multiple characters (minimum 3 distinct characters required). Check if each character retains their state when switched away from and returns to that state when selected again. Verify that character switching doesn't interrupt ongoing animations. Deduct 5 points if there are fewer than 3 characters, 3 points if switching causes visual glitches, and 2 points if character state isn't properly preserved during switches.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the CSS animation techniques properly implemented?",
+      "description": "Assess the quality of CSS animation implementation. Look for proper use of keyframes, transitions, and transforms. Check for smooth sprite animations with appropriate frame rates (minimum 8 frames per animation cycle). Evaluate whether the animations use best practices like hardware acceleration. Deduct 5 points for jerky animations, 3 points for improper sprite sheet handling, and 2 points if animations don't properly loop or transition between states.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is character diversity adequately represented?",
+      "description": "Evaluate whether each character has unique visual attributes and animation styles. Each character should have distinct walking animations for all implemented directions. Characters should differ in appearance beyond simple color swaps (different sprites, sizes, or animation speeds). Deduct 3 points for each character that shares animations with another, 5 points if all characters are mere palette swaps, and 2 points if animation quality varies significantly between characters.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid direction changes, multiple buttons pressed simultaneously, browser resizing, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Environmental interactions 2. Dynamic weather/lighting effects 3. Character-specific special animations 4. Sound effects synchronized with animations). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple animation systems coexisting) 2. Function modules unrelated to the walking game (e.g., a built-in calculator) 3. Fancy effects that affect performance (e.g., unnecessary particle systems or filters). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating animation logic/input handling/character data), code organization, and implementation of design patterns. Check for comprehensive code comments as requested in the requirements. Deduct 5 points if global state pollution is found; deduct 3 points if the code duplication rate is too high (over 30%); deduct 3 points if educational comments are inadequate or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional UI for controls (clearly visible buttons with appropriate sizing). Deduct 3 points for cluttered control elements, 5 points for visually jarring color combinations, and 3 points for poor spatial organization of game elements. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Control input feedback delay ≤ 100ms 2) Animation transitions appear natural without stuttering 3) Clear visual feedback for character selection and direction changes. Deduct 5 points for noticeable input lag, 3 points for animation stuttering during direction changes, and 3 points if the active character or direction isn't clearly indicated. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Casual",
+  "difficulty": "easy"
+}

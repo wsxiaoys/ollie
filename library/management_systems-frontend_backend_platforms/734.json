@@ -1,0 +1,68 @@
+{
+  "index": 734,
+  "question": "You are a code expert. Please utilize your professional knowledge to generate accurate and professional responses. Be sure to provide executable code when possible. Can you help me design an inventory management app? It should include features for tracking purchase prices, sales prices, and time-related information.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the inventory data management system fully implemented?",
+      "description": "Review whether the code accurately implements inventory item tracking with proper data structures for storing purchase prices, sales prices, quantities, and time-related information (purchase date, expiry date, last updated). Check if CRUD operations are properly implemented with data validation. Score 0 if core inventory operations are missing, 5 if only basic add/remove is implemented, and 10 if comprehensive inventory management with price tracking and temporal data is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the price tracking and profit calculation functionality implemented?",
+      "description": "Check whether the system includes accurate purchase price recording, sales price management, and automatic profit margin calculations. Verify if price history tracking is implemented and supports multiple pricing tiers. Deduct 5 points if profit calculations are incorrect, and 3 points if price history is not maintained. Evaluate whether bulk pricing and discount mechanisms are handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is comprehensive time-based tracking and reporting designed?",
+      "description": "Evaluate whether the system implements proper timestamp management for all inventory operations, including purchase dates, sales transactions, and stock movements. Check if time-based reports (daily, weekly, monthly sales) are generated accurately. Deduct 5 points if date filtering is not functional. Verify if expiry date tracking and low-stock alerts based on time thresholds are implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is data persistence and backup mechanism constructed?",
+      "description": "Check whether the code includes reliable data storage solutions (localStorage, IndexedDB, or server-side database integration) with proper data serialization. Evaluate if backup and restore functionality is implemented to prevent data loss. Deduct 5 points if data persistence is unreliable, and 3 points if no backup mechanism exists. Verify if data export/import features (CSV, JSON) are available. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid price inputs, negative quantities, date format errors, data corruption, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should validate all user inputs, handle edge cases gracefully, and provide clear error messages. Give 10 points for comprehensive error handling, 5 points if robustness is average, and 0 points if no exceptions are handled.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes value-added features that enhance inventory management (e.g., 1. Barcode scanning integration 2. Automated reorder point calculations 3. Supplier comparison tools 4. Mobile-responsive design 5. Advanced analytics dashboard). Evaluate practical utility and implementation quality. Add 3 points for each well-implemented innovative feature (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple price calculation methods coexisting) 2. Function modules unrelated to inventory management (e.g., built-in games or social features) 3. Excessive animations or effects that slow down inventory operations. Deduct 3 points for each redundancy found, and directly deduct 10 points if core inventory functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data layer/business logic/presentation layers), code organization, and maintainability. Deduct 5 points if global state pollution is found or proper architecture patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if no error logging or debugging mechanisms exist. Evaluate if the codebase follows consistent naming conventions and documentation standards. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the UI design follows modern business application principles: 1) Professional color scheme suitable for business use (no more than 3 primary colors) 2) Proper data table layout with clear hierarchy (consistent spacing following 8px grid) 3) Readable typography system (body font ≥ 14px, proper contrast ratios). Deduct 3 points for each cluttered interface element, 5 points for unprofessional color choices, and 5 points for poor data presentation layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and efficient?",
+      "description": "Judge whether the interface interactions optimize workflow efficiency: 1) Form submission feedback ≤ 100ms 2) Data loading transitions between 300-500ms 3) Clear visual feedback for all user actions 4) Efficient keyboard shortcuts for common operations. Deduct 5 points for each operation without immediate feedback, 3 points for slow data table rendering, and 5 points for confusing navigation or hard-to-find essential functions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-Frontend/Backend Platforms",
+  "difficulty": "medium"
+}

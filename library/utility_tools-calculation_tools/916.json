@@ -1,0 +1,68 @@
+{
+  "index": 916,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be careful to ensure the code you generate is executable for demonstration. Help me design a pension calculator that can calculate how much retirement pension one can receive based on local social security and personal contribution circumstances.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the pension calculation logic comprehensive and accurate?",
+      "description": "Evaluate whether the code correctly implements all essential pension calculation formulas, including base salary calculation, years of contribution, contribution rates, and inflation adjustments. Score 0 if calculations are missing or incorrect, 5 if basic calculations are present but lack adjustments for different scenarios, and 10 if the implementation handles multiple pension calculation methods with proper documentation of formulas used.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Does the calculator handle various contribution scenarios?",
+      "description": "Check if the calculator accommodates different contribution patterns (regular vs. irregular contributions), career breaks, varying contribution rates over time, and different retirement ages. Deduct 3 points if only constant contribution rates are supported, 3 points if it cannot handle contribution gaps, and 4 points if retirement age flexibility is not implemented. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are regional/national pension system variations supported?",
+      "description": "Assess whether the code includes configurable parameters for different pension systems, tax treatments, and benefit structures across regions. Score 0 if only one fixed system is implemented, 5 if limited parameterization exists, and 10 if the calculator can be easily configured for multiple national/regional pension systems with different rules and formulas.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there future value projection with economic factors?",
+      "description": "Evaluate if the calculator incorporates economic variables like inflation rates, investment returns for personal contributions, and adjustments for cost of living. Deduct 4 points if inflation is not considered, 3 points if investment growth is simplified/missing, and 3 points if there's no sensitivity analysis for different economic scenarios. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as negative values, extremely high values, missing inputs, non-numeric inputs, etc.) and provide friendly error prompts or validation mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Multiple visualization methods for comparing different scenarios 2. Tax optimization suggestions 3. Integration with retirement lifestyle cost calculators). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar calculation methods 2. Function modules unrelated to pension calculation (e.g., general financial calculators) 3. Unnecessary complex visualizations that affect performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating calculation logic/view/data validation layers), unit test coverage, and documentation quality. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there are no comments explaining complex pension formulas. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional form design with clear input labels and appropriate validation messages. Deduct 3 points for each crowded input section, 5 points for confusing result displays, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and user-friendly?",
+      "description": "Judge whether the calculator provides an intuitive user experience: 1) Real-time calculation updates without page refresh 2) Clear visualization of how input changes affect pension outcomes 3) Mobile responsiveness for different screen sizes. Deduct 5 points for delayed calculation feedback, 3 points for confusing input mechanisms, and 5 points if results are not displayed in an easily understandable format (e.g., both graphical and numerical). The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Calculation Tools",
+  "difficulty": "hard"
+}

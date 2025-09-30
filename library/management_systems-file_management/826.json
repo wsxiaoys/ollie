@@ -1,0 +1,68 @@
+{
+  "index": 826,
+  "question": "You are a code expert, please use your professional knowledge to generate accurate, professional responses. Make sure the generated code is executable for demonstration. Implement Word document import with online editing in a Vue project, with the ability to save and then export it.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Word document import functionality fully implemented?",
+      "description": "Review whether the code accurately implements Word document parsing through Vue.js components, including support for multiple formats (.docx, .doc), proper handling of document structure (paragraphs, tables, images, formatting), and preservation of original document styling. Score 0 if basic import is not working, 5 if only plain text import is supported, and 10 if complete document structure and formatting are preserved during import.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the online editing system comprehensively functional?",
+      "description": "Check whether the Vue-based editor includes essential editing features: rich text formatting (bold, italic, underline, font selection), paragraph alignment, list management, table insertion/editing, image handling, and undo/redo operations. Verify real-time content synchronization and cursor position management. Deduct 5 points if table editing is missing, 3 points if formatting toolbar is incomplete. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the document save mechanism properly designed with version control?",
+      "description": "Evaluate whether the save functionality implements auto-save intervals (every 30-60 seconds), manual save triggers, and proper data persistence. Check for version history tracking, conflict resolution for concurrent edits, and data integrity validation. Deduct 5 points if auto-save is missing, 3 points if no version tracking exists. Verify that save operations handle network failures gracefully. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the document export functionality complete and accurate?",
+      "description": "Check whether the code includes comprehensive export capabilities that maintain document fidelity when converting back to Word format. Verify support for multiple export formats (.docx, .pdf), preservation of formatting, images, tables, and document metadata. Evaluate export speed and file size optimization. Deduct 5 points if formatting is lost during export, 3 points if images are not properly embedded. Give 10 points if export maintains 100% visual fidelity.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted document files, network interruption during save/export, large file uploads, browser memory limitations, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Real-time collaborative editing with multiple cursors 2. Smart content suggestions and auto-complete 3. Document commenting and review system 4. Advanced search and replace with regex support 5. Template library integration). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple save mechanisms coexisting) 2. Function modules unrelated to document editing (e.g., built-in games or social features) 3. Fancy effects that affect performance (e.g., excessive animations during typing). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core document editing functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review Vue.js best practices implementation (proper component composition, Vuex/Pinia state management, router configuration), modular design separating document processing/editor/storage layers, TypeScript usage, unit test coverage, and build process automation. Deduct 5 points if Vue reactivity is misused or component lifecycle is not properly managed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the document editor interface follows modern design principles: 1) Clean toolbar design with intuitive icons 2) Proper document canvas layout with realistic paper appearance 3) Harmonious color scheme suitable for long reading sessions 4) Professional typography with appropriate font rendering 5) Responsive design for different screen sizes. Deduct 3 points for each cluttered interface element, 5 points for poor contrast ratios affecting readability, and 5 points for non-intuitive navigation. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the editing experience conforms to user expectations: 1) Typing response delay ≤ 50ms with no input lag 2) Smooth scrolling performance even with large documents 3) Instant formatting application without flicker 4) Responsive toolbar interactions 5) Smooth import/export progress indicators. Deduct 5 points for each noticeable performance bottleneck, 3 points for choppy animations during editing, and 5 points for unresponsive UI elements during document processing. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "medium"
+}

@@ -1,0 +1,68 @@
+{
+  "index": 884,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable. How can I use VS CODE to create a small program that imports content from Excel spreadsheets and adds a print button for printing, allowing computers without Office software installed to print Excel tables?",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the Excel file import function correctly implemented?",
+      "description": "Evaluate whether the code can properly parse different Excel file formats (XLS, XLSX, CSV), handle large files without performance issues, and correctly preserve formatting (including merged cells, number formats, etc.). Deduct 5 points if only one file format is supported, 5 points if large files (>5MB) cause memory issues, and 5 points if complex formatting is lost. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the visual representation of Excel data complete and accurate?",
+      "description": "Check if the code properly displays all Excel components (tables, charts, formulas) with correct styling (fonts, colors, borders, cell alignments). Deduct 5 points if formula results are shown but not the formulas themselves when needed, 3 points if styling significantly differs from the original Excel file, and 5 points if charts or complex tables are not rendered correctly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the print functionality properly implemented?",
+      "description": "Assess if the print feature supports page setup options (orientation, margins, scaling), print preview, and generates a print-ready version that accurately represents the Excel data. Deduct 5 points if page setup options are missing, 3 points if the print preview doesn't match the actual output, and 5 points if the printed output has significant formatting issues. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the solution compatible with computers without Office installed?",
+      "description": "Verify that the code works completely independently of Microsoft Office components, using only web technologies or standalone libraries that don't require Office dependencies. Check if installation instructions are clear and account for different operating systems. Deduct 10 points if any dependency on Office components exists, 5 points if third-party libraries require complex installation steps. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as corrupted Excel files, unsupported features, encoding issues, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Batch processing of multiple files 2. Excel sheet selection and filtering options 3. Print-specific optimizations like header/footer customization). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant libraries or dependencies that serve the same purpose 2. Feature modules unrelated to Excel viewing or printing 3. Unnecessary processing steps that slow down performance. Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating file parsing/display/printing layers), error handling coverage, and project structure. Deduct 5 points if global variables are overused or proper design patterns are not applied; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if proper documentation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) File loading feedback with progress indication 2) Print dialog appears within 300ms of button click 3) Clear visual indicators during processing steps. Deduct 5 points for operations without feedback, 3 points for laggy UI during file processing, and 5 points for confusing navigation or hidden important features. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Utility Tools-Daily Office Tasks",
+  "difficulty": "medium"
+}

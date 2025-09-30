@@ -1,0 +1,68 @@
+{
+  "index": 270,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the code you generate is executable for demonstration purposes. Implement Windows-like multi-window functionality in HTML.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Window Creation and Management System",
+      "description": "Evaluate whether the code properly implements a window creation system with the ability to create, close, minimize, maximize, and restore windows. Check if windows have proper title bars, borders, and control buttons that respond to user interactions.0 points if window creation is not implemented; 5 points if basic window creation exists but lacks some controls; 10 points if the implementation includes all standard window controls (minimize, maximize, restore, close) with proper functionality.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Window Dragging and Resizing",
+      "description": "Assess the implementation of window dragging (by title bar) and resizing (by borders or corners) functionality. Check if the code uses proper mouse event handling for smooth dragging and resizing operations, including cursor style changes when hovering over resize areas.0 points if dragging/resizing is not implemented; 5 points if only dragging is implemented or if resizing has significant limitations; 10 points if both dragging and resizing work smoothly with proper visual feedback and edge handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Z-Index Management and Focus Handling",
+      "description": "Evaluate the window stacking order management (z-index) and focus handling. Windows should come to front when clicked, and the active window should be visually distinguished from inactive ones. Check if there's proper management of window focus state.0 points if no z-index management exists; 5 points if basic z-index handling is implemented but with focus issues; 10 points if windows properly stack, with clear visual indication of the active window and correct focus management.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Window Content Management",
+      "description": "Check how window content is handled - whether windows can load different types of content (HTML elements, iframes, dynamic content), and if content correctly scales/scrolls when windows are resized. Evaluate if window content is properly contained within window boundaries.0 points if windows cannot hold content properly; 5 points if basic content display works but with limitations in scaling/scrolling; 10 points if windows can handle various content types with proper scaling, scrolling and containment.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Code Robustness",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicks, resizing beyond screen boundaries, memory management for multiple windows, etc.) and provide friendly error handling or recovery mechanisms.0 points if no exception handling exists; 5 points if basic error handling is implemented but some edge cases are unhandled; 10 points if comprehensive error handling is implemented with graceful degradation.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Innovative Features Implementation",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Snap-to-grid functionality 2. Window snapping to screen edges 3. Window grouping/tabbing 4. Virtual desktop/workspace implementation).Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Feature Redundancy",
+      "description": "Strictly check for redundancies: 1. Redundant implementation of similar functions (e.g., multiple window management systems coexisting) 2. Function modules unrelated to window management 3. Fancy effects that affect performance without adding value.Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Engineering Quality",
+      "description": "Review modular design (separation of window management logic from presentation), code organization, use of appropriate design patterns, and reusability of components. Check for proper event handling cleanup to avoid memory leaks.Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if event listeners aren't properly managed. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Visual Design and Windows UI Standards",
+      "description": "Evaluate whether the windows follow standard UI conventions and have a professional appearance: 1) Consistent visual styling 2) Proper spacing and padding within window elements 3) Professional-looking window decorations (title bars, borders, buttons) that match Windows-like aesthetics.Deduct 3 points for each inconsistent visual element, 5 points for non-standard window controls placement, and 5 points for unprofessional window styling. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Interaction Feedback and Animation Quality",
+      "description": "Judge whether the window interactions provide appropriate feedback and animations: 1) Windows respond immediately to user actions 2) Smooth minimize/maximize animations 3) Visual feedback during dragging/resizing operations 4) Appropriate transitions between window states.Deduct 5 points for each operation without feedback, 3 points for choppy or unnatural animations, and 5 points for missing visual cues during important interactions. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Web Visuals",
+  "difficulty": "easy"
+}

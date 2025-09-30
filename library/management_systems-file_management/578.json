@@ -1,0 +1,68 @@
+{
+  "index": 578,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate, professional responses. Make sure the code you generate is executable when possible. Please write an online file storage and sharing management system where users can upload, download, and delete their own files, and can share files with others through generated sharing links. If a file is shared, the system will record the number of shares. Administrators can log in to the backend to view information about all files and can delete files that do not comply with regulations.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the file upload and download functionality fully implemented?",
+      "description": "Review whether the code properly implements file uploads with chunk handling, progress tracking, and resumable uploads. Check if download functionality includes proper headers for content disposition, content type detection, and download progress indicators. Score 0 if core upload/download functionality is missing, 5 if basic implementation without optimizations, 10 if fully implemented with all optimizations.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the file sharing mechanism properly implemented?",
+      "description": "Evaluate whether the system generates secure, unique sharing links with optional expiration dates and access controls (view-only vs. download). Check if the sharing counter works correctly and is updated atomically. Deduct 5 points if link security is weak (predictable IDs), 3 points if sharing counter isn't atomic, and 3 points if access controls are missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the user authentication and permission system properly implemented?",
+      "description": "Check if the system implements proper authentication (with secure password storage), authorization for file operations (users can only manage their own files), and admin privileges (can view all files and delete inappropriate content). Verify session management and CSRF protection. Deduct 5 points for weak authentication, 5 points for permission issues, 3 points for missing session timeouts. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the administration panel functional and comprehensive?",
+      "description": "Evaluate whether the admin interface provides file listing with filtering/sorting options, user activity monitoring, content moderation tools, and system statistics. Check if admins can effectively identify and remove inappropriate content. Deduct 3 points if file filtering is missing, 3 points if activity logs are inadequate, 5 points if moderation tools are insufficient. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as large file uploads, upload interruptions, duplicate filenames, storage quota overflows, invalid file types, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Automatic file categorization/tagging 2. File previews for common formats 3. Version history tracking 4. File encryption options). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple file upload methods with overlapping functionality) 2. Function modules unrelated to file storage/sharing (e.g., built-in chat systems) 3. Fancy effects that affect performance (e.g., complex animations during file transfers). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating storage/authentication/sharing logic), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance 4) Intuitive drag-and-drop file operations. Deduct 5 points for each operation without feedback, 3 points for visual after-images during file browsing, and 5 points for hard-to-find key function buttons. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Management Systems-File Management",
+  "difficulty": "hard"
+}

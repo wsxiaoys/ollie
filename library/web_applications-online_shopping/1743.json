@@ -1,0 +1,68 @@
+{
+  "index": 1743,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration purposes. Write an HTML page for food ordering and delivery.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the food ordering system core functionality fully implemented?",
+      "description": "Review whether the code accurately implements menu browsing, item selection, shopping cart management, and order placement through HTML/JavaScript. Must include food categorization, price calculation, quantity adjustment, and order summary generation. Score 0 if core ordering logic is missing, 5 if only basic menu display is implemented, and 10 if complete ordering workflow with cart persistence is included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the delivery tracking and management system implemented?",
+      "description": "Check whether the delivery functionality includes real-time order status updates, delivery time estimation, and tracking interface. Should implement order state management (pending, preparing, dispatched, delivered) with visual progress indicators. Deduct 5 points if status updates are missing, and 3 points if delivery time estimation is not provided. Full score requires interactive tracking with map integration or timeline view.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is user account and payment integration properly designed?",
+      "description": "Evaluate whether the system includes user registration/login, address management, payment method selection, and order history. Must provide secure form validation, address auto-completion, and multiple payment options simulation. Deduct 5 points if user session management is missing, and 3 points if payment form validation is inadequate. Full score requires complete user profile management with order history.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is restaurant and menu management comprehensively constructed?",
+      "description": "Check whether the code includes restaurant selection, detailed menu with categories, item descriptions, images, and dietary information (vegetarian, allergens, etc.). Must implement search/filter functionality, restaurant ratings, and availability status. Deduct 5 points if menu categorization is missing, and 3 points if search functionality is not implemented. Give 10 points if fully implemented with rich metadata.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid form input, network timeouts, empty cart submission, invalid addresses, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle edge cases like duplicate orders, payment failures, and session timeouts, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the user experience (e.g., 1. Real-time order customization with visual builder 2. AI-powered food recommendations 3. Live delivery tracking with estimated arrival 4. Social features like reviews and photo sharing 5. Loyalty points system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart management systems) 2. Function modules unrelated to food ordering (e.g., built-in games or social media feeds) 3. Excessive animations that slow down ordering process (e.g., heavy 3D effects on menu items). Deduct 3 points for each redundancy found, and directly deduct 10 points if core ordering functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating menu logic/cart management/UI components), code organization, and maintainability. Deduct 5 points if global state pollution is found or no clear separation of concerns; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if no consistent naming conventions or poor code structure. The full score is 10 points for well-organized, maintainable code.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern food delivery app principles: 1) Appetizing color scheme with food-appropriate palette 2) Proper layout spacing with clear visual hierarchy (element spacing follows 8px grid) 3) Professional typography (readable font sizes ≥ 14px, appropriate line height ≥ 1.5) 4) High-quality food imagery presentation. Deduct 3 points for each crowded visual element, 5 points for unappetizing color combinations, and 5 points for poor food image presentation.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the ordering flow provides optimal user experience: 1) Immediate feedback for add-to-cart actions (≤ 100ms) 2) Smooth transitions between menu sections (300-500ms) 3) Clear visual feedback for quantity changes and cart updates 4) Intuitive navigation with breadcrumbs 5) Loading states for all async operations. Deduct 5 points for each operation without visual feedback, 3 points for jarring transitions, and 5 points for confusing navigation flow.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

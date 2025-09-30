@@ -1,0 +1,68 @@
+{
+  "index": 207,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable for demonstration. For a Vue 3 interface, organize a data list by extracting time as the x-axis and values as the y-axis data, arranging them into three line charts.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the data extraction and organization logic correctly implemented?",
+      "description": "Evaluate whether the code accurately extracts time values for x-axis and corresponding values for y-axis from the provided dataset. Check for proper data validation, formatting (especially time/date parsing using libraries like dayjs or date-fns), and error handling for invalid data points. Score 0 if data extraction is missing, 5 if basic extraction is done but with formatting issues, and 10 if extraction includes robust validation and proper type handling.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the Vue 3 implementation following best practices?",
+      "description": "Check whether the code properly uses Vue 3's Composition API (setup(), ref(), computed(), etc.) and follows Vue 3's reactive principles. Evaluate proper component structure, lifecycle hooks usage, and reactivity management. Deduct 5 points if using Options API instead of Composition API without justification, 3 points if reactivity is broken when data changes, and 5 points if Vue 3 specific features are ignored. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Are the three line charts properly implemented and configured?",
+      "description": "Verify the implementation of three distinct line charts using a suitable charting library (e.g., ECharts, Chart.js, D3.js). Assess whether each chart is correctly configured with appropriate axes, legends, tooltips, and responsive design. Deduct 5 points if charts don't resize properly, 3 points if interactive features like tooltips are missing, and 5 points if customization options are not utilized. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the time axis (x-axis) properly formatted and scaled?",
+      "description": "Evaluate time axis implementation including proper time formatting, appropriate time intervals, handling of irregular time data, and time zone considerations. Check for time range selection/filtering capabilities. Deduct 5 points for inappropriate time formatting, 3 points for missing time scale adaptability, and 5 points for incorrect time sorting. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as empty datasets, malformed data, asynchronous loading failures, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive data point highlighting across all charts 2. Dynamic theme switching 3. Animation transitions between data updates). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple charting libraries used simultaneously) 2. Function modules unrelated to data visualization (e.g., unnecessary UI components) 3. Fancy effects that affect performance (e.g., excessive animations or 3D effects). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating data processing/visualization/UI layers), component reusability, and build process optimization. Deduct 5 points if global state pollution is found or composition functions aren't properly utilized; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if performance optimizations are neglected (like memoization with computed/memo). The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color schemes for the three charts (distinguishable but coordinated) 2) Proper layout spacing and chart proportions 3) Professional typography for labels, legends and tooltips (readable font sizes, appropriate contrast). Deduct 3 points for each crowded visual element, 5 points for clashing colors between charts, and 5 points for poor information hierarchy. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Responsive hover/click feedback on data points ≤ 100ms 2) Smooth transitions between data updates or filtering 3) Intuitive zoom/pan interactions if implemented. Deduct 5 points for laggy chart rendering, 3 points for abrupt transitions between states, and 5 points for confusing interactive elements. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Data Science-Data Visualization Dashboards",
+  "difficulty": "easy"
+}

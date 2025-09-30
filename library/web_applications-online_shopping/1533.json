@@ -1,0 +1,68 @@
+{
+  "index": 1533,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the generated code is executable when demonstrated. Write code suitable for the WeChat Developer Tool and store it in separate plain documents for easy maintenance. The code needs to implement a delivery platform that integrates with SF Express City Services. The provided code must be functional and runnable. Also, inform me about what type of legal domain name is required, as I already have a registered legal domain name. Store the code in demo and home files, which will serve as two separate tabs.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the WeChat Mini Program structure and SF Express API integration fully implemented?",
+      "description": "Review whether the code accurately implements WeChat Mini Program framework structure with proper app.js, app.json configuration, and successfully integrates SF Express City Services API including order creation, tracking, and status management. Score 0 if core API integration is missing, 5 if only basic order creation is implemented, and 10 if complete delivery lifecycle management is included with proper error handling and response parsing.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the demo and home tab functionalities properly separated and implemented?",
+      "description": "Check whether the code provides clear separation between demo and home modules as separate tabs, with demo showcasing platform features and home providing actual delivery services. Evaluate navigation consistency, data sharing between tabs, and independent functionality. Deduct 5 points if tab switching is not smooth, and 3 points if data persistence between tabs is not handled properly. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the delivery platform core business logic comprehensively designed?",
+      "description": "Evaluate whether the platform includes essential delivery features: address management, delivery scheduling, real-time tracking, price calculation, and order history. Check if the code handles different delivery types (same-city, express), time slot selection, and recipient management. Deduct 5 points if order status synchronization is missing, and 5 points if address validation is not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is WeChat Mini Program compliance and domain configuration properly handled?",
+      "description": "Check whether the code includes proper WeChat Mini Program authorization flows, payment integration preparation, and domain whitelist configuration guidance. Evaluate if HTTPS requirements are addressed and if the code provides clear instructions for domain setup. Deduct 5 points if WeChat compliance requirements are not met, and 3 points if domain configuration guidance is incomplete. Give 10 points if fully compliant with WeChat ecosystem requirements.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as network timeouts, API failures, invalid addresses, payment errors, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should effectively handle WeChat Mini Program lifecycle events and API rate limiting, giving 10 points. If robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that enhance delivery experience?",
+      "description": "Check whether the code includes value-added features that improve user experience (e.g., 1. Real-time delivery tracking with map visualization 2. Smart address suggestions based on location 3. Delivery time prediction with traffic analysis 4. Multi-language support for international users). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple address validation logics) 2. Function modules unrelated to delivery services (e.g., built-in games or social features) 3. Excessive animations that affect performance on mobile devices. Deduct 3 points for each redundancy found, and directly deduct 10 points if core delivery functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have proper WeChat Mini Program engineering quality?",
+      "description": "Review modular design following WeChat Mini Program best practices (proper component separation, utils organization, API encapsulation), code reusability, and build optimization. Deduct 5 points if global data pollution is found or WeChat-specific patterns are not used; deduct 5 points if code duplication rate is too high (over 30%); deduct 5 points if WeChat Mini Program performance optimization is not implemented. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface design meet WeChat Mini Program and delivery platform standards?",
+      "description": "Evaluate whether the UI follows WeChat Design Guidelines and delivery platform conventions: 1) Consistent with WeChat native components styling 2) Clear delivery status indicators and progress tracking 3) Mobile-optimized layout with proper touch targets (≥44px) 4) Appropriate use of WeChat color scheme. Deduct 3 points for each non-compliant UI element, 5 points for poor mobile adaptation, and 5 points for inconsistent design patterns. Full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the mobile interaction smooth and delivery-focused?",
+      "description": "Judge whether interactions are optimized for mobile delivery scenarios: 1) Quick address input with location services 2) One-tap order placement with minimal steps 3) Smooth scrolling in order lists and tracking pages 4) Appropriate loading states for API calls 5) Clear feedback for delivery status changes. Deduct 5 points for each clunky interaction, 3 points for slow API response handling, and 5 points for unclear delivery status communication. Full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "hard"
+}

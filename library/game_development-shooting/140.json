@@ -1,0 +1,68 @@
+{
+  "index": 140,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Be sure to ensure that the generated code is executable for demonstration.\n\nPlease use HTML and JavaScript to implement an \"Aerial Attack\" game where players can attack in the air, striking airborne enemies or targets.\n\n**Task**: Design an aerial attack system where players can perform attacks in the air to strike airborne enemies or targets.\n\n**Hint**: You can set the range and effect of aerial attacks, and design levels that require aerial combat.\n\nPlease add some comments in your code so other developers can understand your implementation process.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the core aerial attack game mechanics fully implemented?",
+      "description": "Check whether the code implements fundamental aerial game mechanics including player jumping/flying controls, gravity simulation, aerial attack triggering, collision detection for airborne targets, and hit registration. Score 0 if core aerial mechanics are absent, 5 points if basic aerial movement exists without proper attack mechanics, and 10 points if the implementation includes intuitive aerial controls with responsive attack systems.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Are the enemy/target systems properly designed for aerial combat?",
+      "description": "Evaluate whether the game includes airborne enemies or targets with varied movement patterns (stationary, patrolling, homing, etc.) and appropriate hit detection for aerial combat. Check if enemies have different behaviors, heights, and attack patterns requiring aerial strategy. Deduct 5 points if enemies are only ground-based, 3 points if aerial enemies exist but lack varied behavior. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the level design optimized for aerial gameplay?",
+      "description": "Assess whether the game environment encourages and necessitates aerial combat through platforms at different heights, vertical level progression, or obstacles that require aerial navigation. Check if the game provides opportunities and incentives for aerial attacks rather than just ground combat. Deduct 5 points if the game can be completed entirely on the ground, and 3 points if aerial sections feel disconnected from the core gameplay. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is there a proper game progression and scoring system?",
+      "description": "Review whether the game includes meaningful progression through levels, difficulty scaling, score tracking for aerial combos/achievements, and performance metrics. Check if there are special rewards for aerial combat prowess or combo systems that encourage mastery of aerial mechanics. Deduct 5 points for lack of progression, 3 points if scoring doesn't specifically reward aerial play. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid input sequences, collision edge cases, physics anomalies, etc.) and provide friendly error handling or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special aerial combo systems 2. Weather effects affecting aerial movement 3. Destructible environments from aerial attacks). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple jump mechanics with overlapping purposes) 2. Function modules unrelated to aerial combat (e.g., an unnecessary inventory system) 3. Fancy effects that affect performance (e.g., excessive particle effects during standard attacks). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game entities/physics/input handling), code organization, reusability, and readability. Evaluate the quality of comments explaining the implementation process as requested. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if comments are insufficient or unhelpful. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the game UI follows modern game design principles: 1) Clear visual distinction between player, enemies, and interactive elements 2) Proper HUD layout showing relevant information (health, score, etc.) 3) Visual feedback for aerial attacks and successful hits. Deduct 3 points for cluttered UI elements, 5 points for unclear visual hierarchies, and 5 points for insufficient feedback during gameplay actions. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations and interactions conform to responsive gameplay standards: 1) Immediate response to player input (≤50ms) 2) Smooth transition animations for jumps/attacks 3) Clear visual effects for aerial attacks and hits. Deduct 5 points for input lag, 3 points for choppy animations during aerial movement, and 5 points for confusing or missing visual feedback during combat. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Shooting",
+  "difficulty": "easy"
+}

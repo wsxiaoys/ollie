@@ -1,0 +1,68 @@
+{
+  "index": 1320,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you provide is executable for demonstration. Create a small program for showcasing products for a store that sells wholesale and retail condiments and seasonings.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the product showcase system fully implemented?",
+      "description": "Review whether the code accurately implements a product catalog system for condiments and seasonings, including product listings, categories, search functionality, and detailed product views. Score 0 if the core display logic is not implemented, 5 if only basic product listing is implemented, and 10 if the complete showcase with filtering and sorting options is fully included.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the wholesale/retail price differentiation properly implemented?",
+      "description": "Check whether the code handles both wholesale and retail pricing models, including quantity-based discounts, minimum order quantities for wholesale, price comparison features, and unit price calculations. Deduct 5 points if wholesale pricing logic is missing, and 3 points if quantity discounts are not handled. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the product data management system properly designed?",
+      "description": "Evaluate whether the product data structure is well-designed with proper attributes for condiments (such as ingredients, allergens, volume/weight, origin, expiration information, etc.). Check if data can be loaded from external sources and if the system supports CRUD operations. Deduct 5 points if the data model is overly simplistic, and 3 points if data validation is missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the shopping cart or order management functionality implemented?",
+      "description": "Check whether the code includes functionality for adding products to cart, managing quantities, calculating totals (with appropriate tax/shipping considerations for wholesale vs retail), and facilitating the checkout process. Deduct 5 points if cart persistence is not implemented, and 3 points if the quantity management for bulk orders is inadequate. Give 10 points if fully implemented.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as invalid input, out-of-stock items, pricing calculation edge cases, etc.) and provide friendly error prompts or recovery mechanisms. Code with strong robustness should be able to effectively handle these edge cases, giving 10 points. If the robustness is average, give 5 points, and if no exceptions are handled, give 0 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Interactive product visualization 2. Flavor profile comparison tools 3. Recipe suggestions based on selected condiments). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple cart calculation methods) 2. Function modules unrelated to condiment/seasoning sales (e.g., an unrelated news feed) 3. Fancy effects that affect performance (e.g., excessive animations on product hover). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating product data/view/cart logic layers), unit test coverage, and build process automation. Deduct 5 points if global state pollution is found or design patterns are not used; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if the build process is not automated. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern design principles: 1) Harmonious color matching (appropriate for a food/culinary business with no more than 3 primary colors) 2) Proper layout spacing (element spacing follows the 8px multiple principle) 3) Professional font system (body font size ≥ 14px, line height over 1.5 times). Deduct 3 points for each crowded visual element, 5 points for a glaring color combination, and 5 points for chaotic text-image layout. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the dynamic effects conform to human perception characteristics: 1) Click feedback delay ≤ 100ms 2) Transition animation duration controlled between 300-500ms 3) Clear visual focus guidance for product selection and cart operations. Deduct 5 points for each operation without feedback, 3 points for visual after-images during fast scrolling through product lists, and 5 points for hard-to-find key function buttons like 'add to cart' or 'checkout'. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Web Applications-Online Shopping",
+  "difficulty": "medium"
+}

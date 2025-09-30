@@ -1,0 +1,68 @@
+{
+  "index": 624,
+  "question": "You are a code expert. Please use your professional knowledge to generate accurate and professional responses. Make sure the code you produce is executable. Design a match-3 game with an 8x8 grid that randomly generates different colored blocks. Users can swap adjacent blocks to form matches of three or more of the same color. After elimination, blocks from above will fall to fill the gaps. Display the score and remaining moves.",
+  "checklist": [
+    {
+      "id": 0,
+      "title": "Is the 8x8 grid properly implemented with random color generation?",
+      "description": "Review whether the code accurately creates an 8x8 grid structure, properly initializes it with random colored blocks, and ensures visual representation of different colors. Each block should have a distinct visual identity (either through CSS colors, images, or SVG). Score 0 if the grid implementation is incorrect/missing, 5 if basic implementation exists but lacks proper randomization, and 10 if fully implemented with visually distinct blocks and proper randomization algorithm that prevents initial matches.",
+      "maxScore": 10
+    },
+    {
+      "id": 1,
+      "title": "Is the block swapping mechanism correctly implemented?",
+      "description": "Evaluate the swapping mechanism between adjacent blocks. The code should include: 1) User interaction to select blocks (click/touch/drag), 2) Validation that blocks are adjacent, 3) Visual feedback during swapping, and 4) Rejection of invalid swaps with appropriate feedback. Deduct 3 points if adjacency validation is missing, 2 points if visual feedback is absent, and 5 points if invalid swaps aren't handled properly. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 2,
+      "title": "Is the match detection and elimination system properly implemented?",
+      "description": "Check whether the code can detect horizontal and vertical matches of 3 or more same-colored blocks. The algorithm should handle complex matches (T-shapes, L-shapes) and cascading matches. Deduct 5 points if only basic straight-line matches are detected, 3 points if complex matches are missed, and 3 points if the elimination animation is abrupt or missing. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 3,
+      "title": "Is the gravity system (falling blocks) properly implemented?",
+      "description": "Assess the gravity mechanism that makes blocks fall to fill empty spaces after matches are eliminated. The code should include: 1) Proper detection of empty spaces, 2) Smooth animation for falling blocks, 3) Correct handling of multiple falling blocks in the same column. Deduct 3 points for jerky animations, 5 points if blocks don't always fill all gaps, and 2 points if the falling timing is too fast/slow for good user experience. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 4,
+      "title": "Is the code robust?",
+      "description": "Evaluate whether the code can handle common abnormal situations (such as rapid clicking during animations, browser resizing, touch/mouse input differences, etc.) and provide friendly error handling. Code with strong robustness should prevent game state corruption and handle edge cases like attempting to swap during animations. Give 10 points for comprehensive error handling, 5 points for basic error handling, and 0 points if exceptions could crash the game.",
+      "maxScore": 10
+    },
+    {
+      "id": 5,
+      "title": "Are there any innovative features that are eye-catching?",
+      "description": "Check whether the code includes surprise features that enhance the experience (e.g., 1. Special power-ups when matching 4+ blocks, 2. Combo score multipliers, 3. Interactive tutorial, 4. Difficulty progression system). Add 3 points for each practical innovative feature implemented (maximum 10 points).",
+      "maxScore": 10
+    },
+    {
+      "id": 6,
+      "title": "Are there any redundant features?",
+      "description": "Strictly check three types of redundancy: 1. Redundant implementation of similar functions (e.g., multiple ways to handle the same game event), 2. Function modules unrelated to match-3 gameplay (e.g., an unnecessary settings panel with irrelevant options), 3. Fancy effects that affect performance (e.g., excessive particle systems that slow down gameplay). Deduct 3 points for each redundancy found, and directly deduct 10 points if the core functions are interfered with by redundant code.",
+      "maxScore": 10
+    },
+    {
+      "id": 7,
+      "title": "Does the code have engineering quality?",
+      "description": "Review modular design (such as separating game logic/view/input handling), performance optimization for animations, and code maintainability. Deduct 5 points if global state is poorly managed; deduct 5 points if the code duplication rate is too high (over 30%); deduct 5 points if there's no clear separation between game logic and rendering. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 8,
+      "title": "Does the interface vision meet professional design standards?",
+      "description": "Evaluate whether the overall design follows modern game design principles: 1) Harmonious color palette that makes matched blocks clearly distinguishable, 2) Proper layout with score and moves prominently displayed, 3) Balanced visual hierarchy with game grid as the focal point. Deduct 3 points for each hard-to-distinguish block color, 5 points for cluttered UI elements, and 5 points for poor readability of score/moves. The full score is 10 points.",
+      "maxScore": 10
+    },
+    {
+      "id": 9,
+      "title": "Is the dynamic interaction smooth and seamless?",
+      "description": "Judge whether the game animations conform to match-3 genre expectations: 1) Block selection feedback ≤ 100ms, 2) Swap animation duration between 200-400ms, 3) Elimination and falling animations that feel satisfying but don't slow gameplay. Deduct 5 points for missing swap animations, 3 points for jerky block falling, and 5 points for animations that feel too slow or make the game unresponsive. The full score is 10 points.",
+      "maxScore": 10
+    }
+  ],
+  "class": "Game Development-Puzzle",
+  "difficulty": "easy"
+}
