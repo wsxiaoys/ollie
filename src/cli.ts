@@ -4,6 +4,7 @@ import { spawn } from "node:child_process";
 import process from "node:process";
 import { Command } from "@commander-js/extra-typings";
 import { buildPrompt } from "./prompt";
+import * as path from "node:path";
 
 // Manually parse arguments to handle -- separator
 const separatorIndex = process.argv.indexOf("--");
@@ -12,11 +13,14 @@ const pochiArgs = separatorIndex === -1 ? [] : process.argv.slice(separatorIndex
 
 const program = new Command()
   .name("ollie")
-  .description("Spawn a pochi subprocess with a web URL prompt")
+  .description("Spawn a pochi subprocess with a web URL prompt");
+
+program
+  .command("eval", { isDefault: true })
+  .description("Evaluate a web URL")
   .requiredOption("-u, --url <url>", "Web URL to evaluate")
   .requiredOption("-q, --question <text>", "Original question/task that led to creating the sourceDir/url")
   .requiredOption("-d, --dir <path>", "Source code directory to evaluate")
-  .requiredOption("-c, --checklist-dir <path>", "Directory contains checklist")
   .action(async (options) => {
     try {
       const exitCode = await runPochi(options, pochiArgs);
@@ -32,11 +36,18 @@ const program = new Command()
     }
   });
 
+program
+  .command("library")
+  .description("Show the library directory")
+  .action(() => {
+    console.log(getChecklistDir());
+  });
+
 
 await program.parseAsync(ollieArgs);
 
-async function runPochi(options: {url: string, dir: string, question: string, checklistDir: string}, pochiArgs: string[]): Promise<number> {
-  const instructions = buildPrompt(options.url, options.dir, options.checklistDir, options.question);
+async function runPochi(options: {url: string, dir: string, question: string}, pochiArgs: string[]): Promise<number> {
+  const instructions = buildPrompt(options.url, options.dir, getChecklistDir(), options.question);
   return new Promise((resolve, reject) => {
     const child = spawn("pochi", pochiArgs, {
       stdio: ["pipe", "inherit", "inherit"],
@@ -62,4 +73,8 @@ async function runPochi(options: {url: string, dir: string, question: string, ch
       resolve(code ?? 0);
     });
   });
+}
+
+function getChecklistDir(): string {
+  return path.join(__filename, "../../", "library");
 }

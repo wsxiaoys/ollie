@@ -1,11 +1,16 @@
 {
-  "name": "ollie",
+  "name": "@getollie/cli",
+  "private": "false",
   "version": "0.0.1",
   "module": "index.ts",
   "type": "module",
   "bin": {
     "ollie": "src/cli.ts"
   },
+  "files": [
+    "src",
+    "library"
+  ],
   "devDependencies": {
     "@types/bun": "latest",
     "ollie": "."
