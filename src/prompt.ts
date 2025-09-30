@@ -35,6 +35,8 @@ Before start evaluation, please read origin task carefully, and find 1-2 related
 }
 \`\`\`
 
+You must use attemptCompletion to write the final JSON object, without markdown format wrapping, or any other text.
+
 ## Question Context
 
 ${questionContext}
