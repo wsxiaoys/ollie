@@ -3,28 +3,13 @@
 import { spawn } from "node:child_process";
 import process from "node:process";
 import { Command } from "@commander-js/extra-typings";
-import { InvalidArgumentError } from "commander";
+import { buildPrompt } from "./prompt";
 
 const program = new Command()
   .name("ollie")
   .description("Spawn a pochi subprocess with a web URL prompt")
-  .argument("[url]", "Web URL to evaluate", (value) => {
-    let parsed: URL;
-
-    try {
-      parsed = new URL(value);
-    } catch {
-      throw new InvalidArgumentError("URL must be a valid absolute URL");
-    }
-
-    return parsed.toString();
-  })
+  .argument("<url>", "Web URL to evaluate")
   .action(async (url) => {
-
-    if (!url) {
-      return program.help({ error: false });
-    }
-
     try {
       const exitCode = await runPochi(url);
       process.exit(exitCode);
@@ -43,17 +28,21 @@ const program = new Command()
 await program.parseAsync(process.argv);
 
 async function runPochi(url: string): Promise<number> {
+  const instructions = buildPrompt(url);
   return new Promise((resolve, reject) => {
     const child = spawn("pochi", {
       stdio: ["pipe", "inherit", "inherit"],
-      env: process.env,
+      env: {
+        PATH: process.env.PATH,
+        POCHI_CUSTOM_INSTRUCTIONS: instructions,
+      }
     });
 
     child.on("error", (error) => {
       reject(new Error(`Failed to start pochi: ${error.message}`));
     });
 
-    child.stdin.write(`${url}\n`);
+    child.stdin.write(`Please start evaluation\n`);
     child.stdin.end();
 
     child.on("close", (code, signal) => {
