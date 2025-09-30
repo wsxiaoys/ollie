@@ -5,14 +5,20 @@ import process from "node:process";
 import { Command } from "@commander-js/extra-typings";
 import { buildPrompt } from "./prompt";
 
+// Manually parse arguments to handle -- separator
+const separatorIndex = process.argv.indexOf("--");
+const ollieArgs = separatorIndex === -1 ? process.argv : process.argv.slice(0, separatorIndex);
+const pochiArgs = separatorIndex === -1 ? [] : process.argv.slice(separatorIndex + 1);
+
 const program = new Command()
   .name("ollie")
   .description("Spawn a pochi subprocess with a web URL prompt")
-  .argument("<url>", "Web URL to evaluate")
+  .requiredOption("-u, --url <url>", "Web URL to evaluate")
+  .requiredOption("-q, --question <text>", "Original question/task that led to creating the sourceDir/url")
   .requiredOption("-d, --dir <path>", "Source code directory to evaluate", process.cwd())
-  .action(async (url, options) => {
+  .action(async (options) => {
     try {
-      const exitCode = await runPochi(url, options.dir);
+      const exitCode = await runPochi(options.url, options.dir, options.question, pochiArgs);
       process.exit(exitCode);
     } catch (error) {
       if (error instanceof Error) {
@@ -26,14 +32,13 @@ const program = new Command()
   });
 
 
-await program.parseAsync(process.argv);
+await program.parseAsync(ollieArgs);
 
-async function runPochi(url: string, sourceDir: string): Promise<number> {
-  const instructions = buildPrompt(url);
+async function runPochi(url: string, sourceDir: string, question: string, pochiArgs: string[]): Promise<number> {
+  const instructions = buildPrompt(url, sourceDir, undefined, question);
   return new Promise((resolve, reject) => {
-    const child = spawn("pochi", {
+    const child = spawn("pochi", pochiArgs, {
       stdio: ["pipe", "inherit", "inherit"],
-      cwd: sourceDir,
       env: {
         PATH: process.env.PATH,
         POCHI_CUSTOM_INSTRUCTIONS: instructions,

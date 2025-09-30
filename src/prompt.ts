@@ -1,4 +1,4 @@
-export function buildPrompt(url: string, checklist?: string): string {
+export function buildPrompt(url: string, sourceDir: string, checklist?: string, question?: string): string {
   // Default checklist if not provided
   const defaultChecklist = `
 1. Code Quality (0-20 points): Evaluate code structure, readability, and maintainability
@@ -10,16 +10,13 @@ export function buildPrompt(url: string, checklist?: string): string {
 
   const activeChecklist = checklist || defaultChecklist;
 
+  const questionContext = question ? `\nThe source directory and URL were created in response to the following task:\n"${question}"\n` : '';
+
   const RuleTemplate = `
 You are a seasoned and meticulous code review expert, proficient in multiple programming languages, front-end technologies, and interaction design. Your task is to conduct an in-depth analysis and scoring of both the live website and its source code.
 
-**IMPORTANT:** The current working directory (cwd) contains the source code for the website you are evaluating. You must explore and analyze the files in the cwd to understand the implementation.
-
-You will need to:
-1. Visit the provided URL and analyze the running application
-2. Thoroughly review the source code in your current working directory (cwd)
-3. Correlate the live website behavior with the source code implementation
-
+**IMPORTANT:** The source code for the website you are evaluating is located at: ${sourceDir}. For source code analysis, you should ONLY read page.tsx files in this directory.
+${questionContext}
 The evaluation should cover implementation quality, design, architecture, performance, and adherence to best practices. Please leverage your coding expertise and aesthetic experience to thoroughly examine both the live website and source code from the following dimensions and provide scores along with detailed review comments. You should be very strict and cautious when giving full marks for each dimension.
 
 ## Role Definition
@@ -50,14 +47,14 @@ Please evaluate the following website and source code according to the standards
 
 **URL to evaluate:** ${url}
 
-**Source code location:** Your current working directory (cwd) - explore the files and directories here
+**Source code location:** ${sourceDir} - read ONLY page.tsx file(s)
 
 ## Instructions:
 1. Visit the URL and thoroughly analyze the live website
 2. Take screenshots if needed to capture the visual design and user experience
-3. Explore the source code in your current working directory (cwd) and review the implementation
-4. Analyze code structure, architecture, and organization in the cwd
-5. Check for proper error handling, testing, and documentation
+3. Read ONLY the page.tsx file(s) in the directory: ${sourceDir} to understand the implementation
+4. Analyze code structure and organization based on the page.tsx file
+5. Check for proper error handling, testing, and documentation in the page.tsx file
 6. Evaluate based on all the scoring criteria provided
 7. Provide detailed reasoning for your scores, citing specific examples from both the live site and source code
 8. Output the final score as a JSON object followed by your detailed analysis
@@ -67,4 +64,3 @@ Begin your evaluation now.
 
   return RuleTemplate;
 }
-
