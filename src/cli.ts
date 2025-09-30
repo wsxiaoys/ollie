@@ -15,10 +15,11 @@ const program = new Command()
   .description("Spawn a pochi subprocess with a web URL prompt")
   .requiredOption("-u, --url <url>", "Web URL to evaluate")
   .requiredOption("-q, --question <text>", "Original question/task that led to creating the sourceDir/url")
-  .requiredOption("-d, --dir <path>", "Source code directory to evaluate", process.cwd())
+  .requiredOption("-d, --dir <path>", "Source code directory to evaluate")
+  .requiredOption("-c, --checklist-dir <path>", "Directory contains checklist")
   .action(async (options) => {
     try {
-      const exitCode = await runPochi(options.url, options.dir, options.question, pochiArgs);
+      const exitCode = await runPochi(options, pochiArgs);
       process.exit(exitCode);
     } catch (error) {
       if (error instanceof Error) {
@@ -34,8 +35,8 @@ const program = new Command()
 
 await program.parseAsync(ollieArgs);
 
-async function runPochi(url: string, sourceDir: string, question: string, pochiArgs: string[]): Promise<number> {
-  const instructions = buildPrompt(url, sourceDir, undefined, question);
+async function runPochi(options: {url: string, dir: string, question: string, checklistDir: string}, pochiArgs: string[]): Promise<number> {
+  const instructions = buildPrompt(options.url, options.dir, options.checklistDir, options.question);
   return new Promise((resolve, reject) => {
     const child = spawn("pochi", pochiArgs, {
       stdio: ["pipe", "inherit", "inherit"],

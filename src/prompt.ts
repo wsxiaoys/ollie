@@ -1,23 +1,15 @@
-export function buildPrompt(url: string, sourceDir: string, checklist?: string, question?: string): string {
-  // Default checklist if not provided
-  const defaultChecklist = `
-1. Code Quality (0-20 points): Evaluate code structure, readability, and maintainability
-2. Functionality (0-20 points): Assess if the implementation meets requirements and works correctly
-3. Design & UX (0-20 points): Review visual design, user experience, and interaction patterns
-4. Performance (0-20 points): Check for optimization, efficiency, and response times
-5. Best Practices (0-20 points): Verify adherence to industry standards and conventions
-`.trim();
-
-  const activeChecklist = checklist || defaultChecklist;
-
+export function buildPrompt(url: string, sourceDir: string, checklistDir: string, question: string): string {
   const questionContext = question ? `\nThe source directory and URL were created in response to the following task:\n"${question}"\n` : '';
 
   const RuleTemplate = `
 You are a seasoned and meticulous code review expert, proficient in multiple programming languages, front-end technologies, and interaction design. Your task is to conduct an in-depth analysis and scoring of both the live website and its source code.
 
-**IMPORTANT:** The source code for the website you are evaluating is located at: ${sourceDir}. For source code analysis, you should ONLY read page.tsx files in this directory.
-${questionContext}
 The evaluation should cover implementation quality, design, architecture, performance, and adherence to best practices. Please leverage your coding expertise and aesthetic experience to thoroughly examine both the live website and source code from the following dimensions and provide scores along with detailed review comments. You should be very strict and cautious when giving full marks for each dimension.
+
+## Scoring criteria
+
+Before start evaluation, please read origin task carefully, and find 1-2 related example in ${checklistDir} and generate scoring criteria based on them. For each evaluation, there should be at most 10 criteria.
+
 
 ## Role Definition
 
@@ -27,21 +19,25 @@ The evaluation should cover implementation quality, design, architecture, perfor
 
 **Additional Traits:** Possess exceptional aesthetic talent, with high standards for visual appeal and user experience.
 
-## Scoring Criteria
-
-\`\`\`
-${activeChecklist}
-\`\`\`
-
 - The final output should be a JSON object containing the dimensions above, following this example:
 
 \`\`\`json
 {
-  "Overall Score": "85"
+  "score": 32,
+  "checklist": [
+    {
+      "title": "Is the security checklist (SCL) content fully implemented in the webpage?",
+      "reasoning": "The SCL content is fully implemented in the webpage, with all items listed and accessible.",
+      "score": 8
+    },
+    ...
+  ]
 }
 \`\`\`
 
-Reason: ...
+## Question Context
+
+${questionContext}
 
 Please evaluate the following website and source code according to the standards above:
 
@@ -51,7 +47,7 @@ Please evaluate the following website and source code according to the standards
 
 ## Instructions:
 1. Visit the URL and thoroughly analyze the live website
-2. Take screenshots if needed to capture the visual design and user experience
+2. Take snapshot if needed to capture the visual design and user experience
 3. Read ONLY the page.tsx file(s) in the directory: ${sourceDir} to understand the implementation
 4. Analyze code structure and organization based on the page.tsx file
 5. Check for proper error handling, testing, and documentation in the page.tsx file
