@@ -9,9 +9,10 @@ const program = new Command()
   .name("ollie")
   .description("Spawn a pochi subprocess with a web URL prompt")
   .argument("<url>", "Web URL to evaluate")
-  .action(async (url) => {
+  .requiredOption("-d, --dir <path>", "Source code directory to evaluate", process.cwd())
+  .action(async (url, options) => {
     try {
-      const exitCode = await runPochi(url);
+      const exitCode = await runPochi(url, options.dir);
       process.exit(exitCode);
     } catch (error) {
       if (error instanceof Error) {
@@ -27,11 +28,12 @@ const program = new Command()
 
 await program.parseAsync(process.argv);
 
-async function runPochi(url: string): Promise<number> {
+async function runPochi(url: string, sourceDir: string): Promise<number> {
   const instructions = buildPrompt(url);
   return new Promise((resolve, reject) => {
     const child = spawn("pochi", {
       stdio: ["pipe", "inherit", "inherit"],
+      cwd: sourceDir,
       env: {
         PATH: process.env.PATH,
         POCHI_CUSTOM_INSTRUCTIONS: instructions,
