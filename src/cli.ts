@@ -47,9 +47,10 @@ program
 await program.parseAsync(ollieArgs);
 
 async function runPochi(options: {url: string, dir: string, question: string}, pochiArgs: string[]): Promise<number> {
-  const instructions = buildPrompt(options.url, options.dir, getChecklistDir(), options.question);
+  const instructions = buildPrompt(options.url, options.dir, options.question);
   return new Promise((resolve, reject) => {
     const child = spawn("pochi", pochiArgs, {
+      cwd: getChecklistDir(),
       stdio: ["pipe", "inherit", "inherit"],
       env: {
         ...process.env,

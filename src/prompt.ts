@@ -1,4 +1,4 @@
-export function buildPrompt(url: string, sourceDir: string, checklistDir: string, question: string): string {
+export function buildPrompt(url: string, sourceDir: string, question: string): string {
   const questionContext = question ? `\nThe source directory and URL were created in response to the following task:\n"${question}"\n` : '';
 
   const RuleTemplate = `
@@ -25,9 +25,22 @@ ${questionContext}
 
 ## Scoring Criteria
 
-Before starting the evaluation, please read the original task carefully, and find 3-4 related examples in ${checklistDir} to generate scoring criteria based on them. For each evaluation, there should be at most 10 criteria. 
+Before starting the evaluation, you need to generate scoring criteria based on the original question:
+- DO NOT USE readFile BEFORE you have located the checklist, you MUST get the filepath in system-reminder or listFiles first, otherwise you will likely get the error as the file doesn't exist.
+- use listFiles with recursive on current working directory to locate the checklist that's most related to the original task.
+- Find 3-4 related examples to generate scoring criteria based on them, there should be at most 10 criteria.
+- You write down scoring criteria using executeCommand with "echo".
 
-**Important:** Please list all scoring criteria before you start evaluation, using a similar format as examples in ${checklistDir}.
+Example:
+{
+  "checklist": [
+    {
+      "title": "Are download and project application features properly implemented?",
+      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 5 points if there's no batch download option, and 4 points if project application functionality is incomplete. The full score is 10 points."
+    },
+    ...
+  ]
+}
 
 ## Evaluation Steps
 
@@ -37,6 +50,7 @@ Before starting the evaluation, please read the original task carefully, and fin
 4. Analyze code structure and organization based on the page.tsx file
 5. Check for proper error handling, testing, and documentation in the page.tsx file
 6. Evaluate based on all the scoring criteria provided
+7. Always generate the reasoning first, then wrap up the score.
 7. Provide detailed reasoning for your scores, citing specific examples from both the live site and source code
 
 ---
@@ -63,8 +77,8 @@ This is a **READ-ONLY** evaluation process. You should only observe, analyze, an
 <negative_example>
 \`\`\`json
 {
-  "score": 32,
   "checklist": [...]
+  "score": 32,
 }
 \`\`\`
 <negative_example>
@@ -72,24 +86,39 @@ This is a **READ-ONLY** evaluation process. You should only observe, analyze, an
 <negative_example>
 Here is my evaluation:
 {
-  "score": 32,
   "checklist": [...]
+  "score": 32,
 }
 
 The evaluation is complete.
 </negative_example>
 
-<positive_example>
+You shall not put score before the reasoning.
+<negative_example>
 {
-  "score": 32,
   "checklist": [
     {
-      "title": "Is the security checklist (SCL) content fully implemented in the webpage?",
-      "reasoning": "The SCL content is fully implemented in the webpage, with all items listed and accessible.",
-      "score": 8
+      ...
+      "score": 1,
+      "reasoning": "..."
     },
     ...
-  ]
+  ],
+}
+</negative_example>
+
+<positive_example>
+{
+  "checklist": [
+    {
+      "title": "Are download and project application features properly implemented?",
+      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 5 points if there's no batch download option, and 4 points if project application functionality is incomplete. The full score is 10 points.",
+      "reasoning": "The code implements download functionality for WAV and MP3 formats, but lacks batch download and project application features. Deducting 5 points for batch download and 4 points for project application, resulting in a score of 1 points.",
+      "score": 1
+    },
+    ...
+  ],
+  "score": 32
 }
 </positive_example>
 `.trim();
