@@ -55,7 +55,7 @@ Before starting the evaluation, generate scoring criteria based on the original 
 ## Evaluation Steps
 
 1. Visit the URL and thoroughly analyze the live website.
-2. Use screenshot tool take_screenshot if needed to capture the visual design and user experience. (set full page to false, quality factor to 92 and use jpeg format)
+2. Use screenshot tool take_screenshot if needed to capture the visual design and user experience. (set full page to true, quality factor to 92 and use jpeg format)
 3. Read ONLY the page.tsx file(s) in the directory: ${sourceDir} to understand the implementation.
 4. Analyze the code structure and organization based on the page.tsx file.
 5. Check for proper error handling, testing, and documentation in the page.tsx file.
