@@ -1,6 +1,4 @@
 export function buildPrompt(url: string, sourceDir: string, question: string): string {
-  const questionContext = question ? `\nThe source directory and URL were created in response to the following task:\n"${question}"\n` : '';
-
   const RuleTemplate = `
 # Code Review Evaluation Task
 
@@ -21,7 +19,8 @@ Your evaluation should cover implementation quality, design, architecture, perfo
 **URL to evaluate:** ${url}
 
 **Source code location:** ${sourceDir} (read ONLY page.tsx file(s))
-${questionContext}
+
+**Original Task**: ${question}
 
 ## Scoring Criteria
 
@@ -30,23 +29,33 @@ Before starting the evaluation, generate scoring criteria based on the original 
 - Use listFiles with recursive enabled on the current working directory to locate the checklist most relevant to the original task.
 - Find 3-4 related examples to generate scoring criteria based on them; there should be at most 10 criteria.
 - The web page is designed to be self-contained, with everything included in the page.tsx file, so do not treat this as a maintainability flaw.
-- Write down the scoring criteria using executeCommand with "echo" (as below), NEVER use writeFile to save the criteria.
+- Write down scoring criteria as json in text block, DO NOT USE ANY TOOLS.
 
-Example:
+<example>
+\`\`\`json
 {
   "checklist": [
     {
       "title": "Are download and project application features properly implemented?",
       "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 5 points if there's no batch download option, and 4 points if project application functionality is incomplete. The full score is 10 points."
     },
-    ...
+    {
+      "title": "Is the user interface intuitive and responsive?",
+      "description": "Evaluate the ease of use, clarity of controls, and responsiveness of the interface across different screen sizes. Deduct 2 points for any significant usability issues or lack of responsiveness. The full score is 5 points."
+    },
+    {
+      "title": "Are audio effects accurately applied and previewable?",
+      "description": "Verify that applied audio effects are processed correctly and that users can preview the results before finalizing. Deduct 3 points for inaccuracies in effect application and 2 points for the absence of a preview function. The full score is 5 points."
+    }
   ]
 }
+\`\`\`
+</example>
 
 ## Evaluation Steps
 
 1. Visit the URL and thoroughly analyze the live website.
-2. Take snapshots if needed to capture the visual design and user experience.
+2. Use screenshot tool take_screenshot if needed to capture the visual design and user experience. (set full page to false, quality factor to 92 and use jpeg format)
 3. Read ONLY the page.tsx file(s) in the directory: ${sourceDir} to understand the implementation.
 4. Analyze the code structure and organization based on the page.tsx file.
 5. Check for proper error handling, testing, and documentation in the page.tsx file.
@@ -64,6 +73,7 @@ Example:
 - writeToFile
 - applyDiff
 - multiApplyDiff
+- executeCommand
 
 This is a **READ-ONLY** evaluation process. You should only observe, analyze, and score—never modify any files.
 
@@ -75,16 +85,20 @@ This is a **READ-ONLY** evaluation process. You should only observe, analyze, an
 - NO explanatory text before or after the JSON.
 - NO additional commentary.
 
-<negative_example>
+<bad-example>
 \`\`\`json
 {
   "checklist": [...]
   "score": 32,
 }
 \`\`\`
-</negative_example>
 
-<negative_example>
+<reasoning>
+Output contains markdown code blocks and text before/after the JSON.
+</reasoning>
+</bad-example>
+
+<bad-example>
 Here is my evaluation:
 {
   "checklist": [...]
@@ -92,10 +106,13 @@ Here is my evaluation:
 }
 
 The evaluation is complete.
-</negative_example>
 
-Do not put the score before the reasoning.
-<negative_example>
+<reasoning>
+Output contains commentary text before/after the JSON.
+</reasoning>
+</bad-example>
+
+<bad-example>
 {
   "checklist": [
     {
@@ -106,9 +123,13 @@ Do not put the score before the reasoning.
     ...
   ],
 }
-</negative_example>
 
-<positive_example>
+<reasoning>
+Should not put the score before the reasoning.
+</reasoning>
+</bad-example>
+
+<example>
 {
   "checklist": [
     {
@@ -121,7 +142,22 @@ Do not put the score before the reasoning.
   ],
   "score": 32
 }
-</positive_example>
+</example>
+
+<example>
+{
+  "checklist": [
+    {
+      "title": "Are download and project application features properly implemented?",
+      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 5 points if there's no batch download option, and 4 points if project application functionality is incomplete. The full score is 10 points.",
+      "reasoning": "The code implements download functionality for WAV and MP3 formats, but lacks batch download and project application features. Deducting 5 points for batch download and 4 points for project application, resulting in a score of 1 point.",
+      "score": 1
+    },
+    ...
+  ],
+  "score": 32
+}
+</example>
 `.trim();
 
   return RuleTemplate;
