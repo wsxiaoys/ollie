@@ -52,7 +52,7 @@ async function runPochi(options: {url: string, dir: string, question: string}, p
     const child = spawn("pochi", pochiArgs, {
       stdio: ["pipe", "inherit", "inherit"],
       env: {
-        PATH: process.env.PATH,
+        ...process.env,
         POCHI_CUSTOM_INSTRUCTIONS: instructions,
       }
     });
