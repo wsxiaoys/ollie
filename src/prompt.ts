@@ -29,8 +29,8 @@ Before starting the evaluation, generate scoring criteria based on the original 
 - DO NOT use readFile before you have located the checklist; you MUST obtain the filepath using system-reminder or listFiles first, otherwise you may encounter errors if the file does not exist.
 - Use listFiles with recursive enabled on the current working directory to locate the checklist most relevant to the original task.
 - Find 3-4 related examples to generate scoring criteria based on them; there should be at most 10 criteria.
-- Write down the scoring criteria using executeCommand with "echo".
 - The web page is designed to be self-contained, with everything included in the page.tsx file, so do not treat this as a maintainability flaw.
+- Write down the scoring criteria using executeCommand with "echo" (as below), NEVER use writeFile to save the criteria.
 
 Example:
 {
