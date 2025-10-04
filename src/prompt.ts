@@ -1,28 +1,25 @@
-export function buildPrompt(url: string, sourceDir: string, question: string): string {
-  const RuleTemplate = `
-# Code Review Evaluation Task
+export function buildPrompt(url: string, sourceDir: string, question: string, checklist: any = null): string {
+  let scoringCriteriaSection = '';
+  
+  if (checklist && Array.isArray(checklist)) {
+    // Use the provided checklist
+    const checklistJson = {
+      checklist: checklist.map((item: any) => ({
+        title: item.title,
+        description: item.description
+      }))
+    };
+    
+    scoringCriteriaSection = `## Scoring Criteria
 
-You are a seasoned and meticulous code review expert, proficient in multiple programming languages, front-end technologies, and interaction design. Your task is to conduct an in-depth analysis and scoring of both the live website and its source code.
+Use the following pre-defined scoring criteria for evaluation:
 
-Your evaluation should cover implementation quality, design, architecture, performance, and adherence to best practices. Leverage your coding expertise and aesthetic judgment to thoroughly examine both the live website and source code. Be strict and cautious when awarding full marks for each dimension.
-
-## Role Definition
-
-**Responsibilities:** Act as an authoritative member of a technical review committee, ensuring objectivity, comprehensiveness, and impartiality.
-
-**Attitude:** Rigorous, professional, and unsparing, with a keen eye for detail and potential risks.
-
-**Additional Traits:** Possess exceptional aesthetic sensibility, with high standards for visual appeal and user experience.
-
-## Evaluation Target
-
-**URL to evaluate:** ${url}
-
-**Source code location:** ${sourceDir} (read ONLY page.tsx file(s))
-
-**Original Task**: ${question}
-
-## Scoring Criteria
+\`\`\`json
+${JSON.stringify(checklistJson, null, 2)}
+\`\`\``;
+  } else {
+    // Let the model generate criteria
+    scoringCriteriaSection = `## Scoring Criteria
 
 Before starting the evaluation, generate scoring criteria based on the original question:
 - DO NOT use readFile before you have located the checklist; you MUST obtain the filepath using system-reminder or listFiles first, otherwise you may encounter errors if the file does not exist.
@@ -50,7 +47,33 @@ Before starting the evaluation, generate scoring criteria based on the original 
   ]
 }
 \`\`\`
-</example>
+</example>`;
+  }
+
+  const RuleTemplate = `
+# Code Review Evaluation Task
+
+You are a seasoned and meticulous code review expert, proficient in multiple programming languages, front-end technologies, and interaction design. Your task is to conduct an in-depth analysis and scoring of both the live website and its source code.
+
+Your evaluation should cover implementation quality, design, architecture, performance, and adherence to best practices. Leverage your coding expertise and aesthetic judgment to thoroughly examine both the live website and source code. Be strict and cautious when awarding full marks for each dimension.
+
+## Role Definition
+
+**Responsibilities:** Act as an authoritative member of a technical review committee, ensuring objectivity, comprehensiveness, and impartiality.
+
+**Attitude:** Rigorous, professional, and unsparing, with a keen eye for detail and potential risks.
+
+**Additional Traits:** Possess exceptional aesthetic sensibility, with high standards for visual appeal and user experience.
+
+## Evaluation Target
+
+**URL to evaluate:** ${url}
+
+**Source code location:** ${sourceDir} (read ONLY page.tsx file(s))
+
+**Original Task**: ${question}
+
+${scoringCriteriaSection}
 
 ## Evaluation Steps
 
@@ -162,3 +185,4 @@ Should not put the score before the reasoning.
 
   return RuleTemplate;
 }
+

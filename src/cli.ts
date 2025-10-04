@@ -4,6 +4,7 @@ import { spawn } from "node:child_process";
 import process from "node:process";
 import { Command } from "@commander-js/extra-typings";
 import { buildPrompt } from "./prompt";
+import { findRelevantChecklist } from "./find-checklist";
 import * as path from "node:path";
 
 // Manually parse arguments to handle -- separator
@@ -21,6 +22,7 @@ program
   .requiredOption("-u, --url <url>", "Web URL to evaluate")
   .requiredOption("-q, --question <text>", "Original question/task that led to creating the sourceDir/url")
   .requiredOption("-d, --dir <path>", "Source code directory to evaluate")
+  .option("--strict-checklist", "Use precise checklist lookup instead of having the model generate criteria")
   .action(async (options) => {
     try {
       const exitCode = await runPochi(options, pochiArgs);
@@ -46,8 +48,17 @@ program
 
 await program.parseAsync(ollieArgs);
 
-async function runPochi(options: {url: string, dir: string, question: string}, pochiArgs: string[]): Promise<number> {
-  const instructions = buildPrompt(options.url, options.dir, options.question);
+async function runPochi(options: {url: string, dir: string, question: string, strictChecklist?: boolean}, pochiArgs: string[]): Promise<number> {
+  let checklist = null;
+  
+  if (options.strictChecklist) {
+    checklist = await findRelevantChecklist(options.question, getChecklistDir());
+    if (!checklist) {
+      console.warn("Warning: Could not find a relevant checklist for the given question. Proceeding without strict checklist.");
+    }
+  }
+  
+  const instructions = buildPrompt(options.url, options.dir, options.question, checklist);
   return new Promise((resolve, reject) => {
     const child = spawn("pochi", pochiArgs, {
       cwd: getChecklistDir(),
