@@ -46,13 +46,11 @@ export async function findRelevantChecklist(question: string, checklistDir: stri
     
     const best = allChecklists[0];
     if (best && best.similarity > 0.85) {
-      console.log(`Found checklist: ${best.filePath} (similarity: ${best.similarity.toFixed(2)})`);
       return best.data.checklist;
     }
     
     return null;
   } catch (error) {
-    console.error(`Error finding checklist: ${error}`);
     return null;
   }
 }
