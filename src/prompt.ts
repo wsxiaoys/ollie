@@ -25,6 +25,7 @@ Before starting the evaluation, generate scoring criteria based on the original 
 - DO NOT use readFile before you have located the checklist; you MUST obtain the filepath using system-reminder or listFiles first, otherwise you may encounter errors if the file does not exist.
 - Use listFiles with recursive enabled on the current working directory to locate the checklist most relevant to the original task.
 - Find 3-4 related examples to generate scoring criteria based on them; there should be at most 10 criteria.
+- **CRITICAL**: Each criterion MUST have a maximum score of exactly 10 points. Structure each description to clearly state "Maximum score is 10 points" at the end.
 - The web page is designed to be self-contained, with everything included in the page.tsx file, so do not treat this as a maintainability flaw.
 - Write down scoring criteria as json in text block, DO NOT USE ANY TOOLS.
 
@@ -34,15 +35,15 @@ Before starting the evaluation, generate scoring criteria based on the original 
   "checklist": [
     {
       "title": "Are download and project application features properly implemented?",
-      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 5 points if there's no batch download option, and 4 points if project application functionality is incomplete. The full score is 10 points."
+      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 3 points if there's no batch download option, and 4 points if project application functionality is incomplete. Maximum score is 10 points."
     },
     {
       "title": "Is the user interface intuitive and responsive?",
-      "description": "Evaluate the ease of use, clarity of controls, and responsiveness of the interface across different screen sizes. Deduct 2 points for any significant usability issues or lack of responsiveness. The full score is 5 points."
+      "description": "Evaluate the ease of use, clarity of controls, and responsiveness of the interface across different screen sizes. Deduct 2 points for each significant usability issue, 3 points if not mobile-responsive, and 2 points for unclear navigation. Maximum score is 10 points."
     },
     {
       "title": "Are audio effects accurately applied and previewable?",
-      "description": "Verify that applied audio effects are processed correctly and that users can preview the results before finalizing. Deduct 3 points for inaccuracies in effect application and 2 points for the absence of a preview function. The full score is 5 points."
+      "description": "Verify that applied audio effects are processed correctly and that users can preview the results before finalizing. Deduct 4 points for major inaccuracies in effect application, 3 points for the absence of a preview function, and 3 points for performance issues. Maximum score is 10 points."
     }
   ]
 }
@@ -83,8 +84,9 @@ ${scoringCriteriaSection}
 4. Analyze the code structure and organization based on the page.tsx file.
 5. Check for proper error handling, testing, and documentation in the page.tsx file.
 6. Evaluate based on all the provided scoring criteria.
-7. Always generate the reasoning first, then provide the score.
+7. **For each criterion, assign a score between 1 and 10 (inclusive).** Always write the reasoning first, then provide the score.
 8. Provide detailed reasoning for your scores, citing specific examples from both the live site and source code.
+9. Calculate the total score by summing all individual criterion scores.
 
 ---
 
@@ -107,6 +109,15 @@ This is a **READ-ONLY** evaluation process. You should only observe, analyze, an
 - NO markdown code blocks (\`\`\`json).
 - NO explanatory text before or after the JSON.
 - NO additional commentary.
+
+### 3. SCORING REQUIREMENTS
+
+⚠️ **Each checklist item MUST be scored on a scale of 1-10:**
+- Minimum score per item: 1
+- Maximum score per item: 10
+- Scores must be integers (whole numbers only)
+- Total score is the sum of all individual criterion scores
+- This applies all check list item (and override whatever requirements might exists in checklist)
 
 <bad-example>
 \`\`\`json
@@ -152,37 +163,42 @@ Should not put the score before the reasoning.
 </reasoning>
 </bad-example>
 
-<example>
+<good-example>
 {
   "checklist": [
     {
       "title": "Are download and project application features properly implemented?",
-      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 5 points if there's no batch download option, and 4 points if project application functionality is incomplete. The full score is 10 points.",
-      "reasoning": "The code implements download functionality for WAV and MP3 formats, but lacks batch download and project application features. Deducting 5 points for batch download and 4 points for project application, resulting in a score of 1 point.",
-      "score": 1
+      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 3 points if there's no batch download option, and 4 points if project application functionality is incomplete. Maximum score is 10 points.",
+      "reasoning": "The code implements download functionality for WAV and MP3 formats, but lacks batch download and project application features. Deducting 3 points for missing batch download and 4 points for missing project application functionality.",
+      "score": 3
     },
-    ...
+    {
+      "title": "Is the user interface intuitive and responsive?",
+      "description": "Evaluate the ease of use, clarity of controls, and responsiveness of the interface across different screen sizes. Deduct 2 points for each significant usability issue, 3 points if not mobile-responsive, and 2 points for unclear navigation. Maximum score is 10 points.",
+      "reasoning": "The interface is clean and intuitive with clear controls. It's fully responsive across different screen sizes with no major usability issues. Minor improvement could be made to icon clarity.",
+      "score": 9
+    },
+    {
+      "title": "Are audio effects accurately applied and previewable?",
+      "description": "Verify that applied audio effects are processed correctly and that users can preview the results before finalizing. Deduct 4 points for major inaccuracies in effect application, 3 points for the absence of a preview function, and 3 points for performance issues. Maximum score is 10 points.",
+      "reasoning": "Audio effects are applied accurately and preview functionality works well. No noticeable performance issues during testing.",
+      "score": 10
+    }
   ],
-  "score": 32
+  "score": 22
 }
-</example>
 
-<example>
-{
-  "checklist": [
-    {
-      "title": "Are download and project application features properly implemented?",
-      "description": "Check whether the code provides functionality to download individual or multiple sound effects in common formats (WAV, MP3) and the ability to apply selected effects to audio projects (e.g., timeline integration, batch processing). Deduct 3 points for each missing download format, 5 points if there's no batch download option, and 4 points if project application functionality is incomplete. The full score is 10 points.",
-      "reasoning": "The code implements download functionality for WAV and MP3 formats, but lacks batch download and project application features. Deducting 5 points for batch download and 4 points for project application, resulting in a score of 1 point.",
-      "score": 1
-    },
-    ...
-  ],
-  "score": 32
-}
-</example>
+<reasoning>
+This is a good example because:
+- Each checklist item has a score between 1-10 (scores: 3, 9, 10)
+- Reasoning is provided before the score for each item
+- Total score (22) is the sum of individual scores (3 + 9 + 10)
+- Descriptions clearly state "Maximum score is 10 points"
+- No markdown code blocks or extra commentary
+- Raw JSON format only
+</reasoning>
+</good-example>
 `.trim();
 
   return RuleTemplate;
 }
-
