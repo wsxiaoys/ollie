@@ -84,7 +84,7 @@ ${scoringCriteriaSection}
 4. Analyze the code structure and organization based on the page.tsx file.
 5. Check for proper error handling, testing, and documentation in the page.tsx file.
 6. Evaluate based on all the provided scoring criteria.
-7. **For each criterion, assign a score between 1 and 10 (inclusive).** Always write the reasoning first, then provide the score.
+7. **For each criterion, assign a score between 0 and 10 (inclusive).** Always write the reasoning first, then provide the score.
 8. Provide detailed reasoning for your scores, citing specific examples from both the live site and source code.
 9. Calculate the total score by summing all individual criterion scores.
 
@@ -112,8 +112,8 @@ This is a **READ-ONLY** evaluation process. You should only observe, analyze, an
 
 ### 3. SCORING REQUIREMENTS
 
-⚠️ **Each checklist item MUST be scored on a scale of 1-10:**
-- Minimum score per item: 1
+⚠️ **Each checklist item MUST be scored on a scale of 0-10:**
+- Minimum score per item: 0
 - Maximum score per item: 10
 - Scores must be integers (whole numbers only)
 - Total score is the sum of all individual criterion scores
@@ -190,7 +190,7 @@ Should not put the score before the reasoning.
 
 <reasoning>
 This is a good example because:
-- Each checklist item has a score between 1-10 (scores: 3, 9, 10)
+- Each checklist item has a score between 0-10 (scores: 3, 9, 10)
 - Reasoning is provided before the score for each item
 - Total score (22) is the sum of individual scores (3 + 9 + 10)
 - Descriptions clearly state "Maximum score is 10 points"
